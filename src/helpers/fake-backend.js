@@ -2,7 +2,7 @@
 let users = JSON.parse(localStorage.getItem('users'))
     || [{ username: "admin", email: "admin@themesbrand.com", password: "123456" }];
 
-export function configureFakeBackend() {
+export default function configureFakeBackend() {
 
     let realFetch = window.fetch;
     window.fetch = function (url, opts) {
