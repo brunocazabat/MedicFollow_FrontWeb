@@ -31,6 +31,7 @@ export default {
       authError: null,
       tryingToLogIn: false,
       isAuthError: false,
+      showPassword: false,
     };
   },
   validations: {
@@ -47,6 +48,9 @@ export default {
     notification() {
       return this.$store ? this.$store.state.notification : null;
     },
+    buttonLabel() {
+      return this.showPassword ? "Hide" : "Show";
+    },
   },
   methods: {
     ...authMethods,
@@ -55,6 +59,7 @@ export default {
     // Try to log the user in with the username
     // and password they provided.
     tryToLogIn() {
+      alert("oui");
       this.submitted = true;
       // stop here if form is invalid
       this.v$.$touch();
@@ -88,16 +93,11 @@ export default {
                 this.isAuthError = true;
               })
           );
-        } else if (process.env.VUE_APP_DEFAULT_AUTH === "fakebackend") {
-          const { email, password } = this;
-          if (email && password) {
-            this.login({
-              email,
-              password,
-            });
-          }
         }
       }
+    },
+    toggleShow() {
+      this.showPassword = !this.showPassword;
     },
   },
 };
@@ -138,7 +138,7 @@ export default {
                   />
                 </router-link>
               </div>
-              <p class="mt-3 fs-15 fw-medium" style="color: white;">
+              <p class="mt-3 fs-15 fw-medium" style="color: white">
                 Votre outil de communication avec vos proches
               </p>
             </div>
@@ -203,6 +203,18 @@ export default {
                       >
                       <div class="position-relative auth-pass-inputgroup mb-3">
                         <input
+                          v-if="showPassword"
+                          type="text"
+                          v-model="password"
+                          class="form-control pe-5"
+                          :class="{
+                            'is-invalid': submitted && v$.password.$error,
+                          }"
+                          placeholder="Enter password"
+                          id="password-input"
+                        />
+                        <input
+                          v-else
                           type="password"
                           v-model="password"
                           class="form-control pe-5"
@@ -213,6 +225,7 @@ export default {
                           id="password-input"
                         />
                         <button
+                          @click="toggleShow"
                           class="
                             btn btn-link
                             position-absolute
@@ -223,7 +236,7 @@ export default {
                           type="button"
                           id="password-addon"
                         >
-                          <i class="ri-eye-fill align-middle"></i>
+                          <em class="ri-eye-fill align-middle"></em>
                         </button>
                         <div
                           v-if="submitted && v$.password.$error"
@@ -249,7 +262,11 @@ export default {
                     </div>
 
                     <div class="mt-4">
-                      <button class="btn btn-success w-100" type="submit">
+                      <button
+                        @click="tryToLogIn"
+                        class="btn btn-success w-100"
+                        type="submit"
+                      >
                         Sign In
                       </button>
                     </div>
@@ -279,7 +296,7 @@ export default {
             <!-- end card -->
 
             <div class="mt-4 text-center">
-              <p class="mb-0" style="color: white;">
+              <p class="mb-0" style="color: white">
                 Don't have an account ?
                 <router-link
                   to="/register"
@@ -305,7 +322,7 @@ export default {
             <div class="text-center">
               <p class="mb-0 text-muted">
                 &copy; {{ new Date().getFullYear() }} MedicFollow. Crafted with
-                <i class="mdi mdi-heart text-danger"></i> by MedicFollow
+                <em class="mdi mdi-heart text-danger"></em> by MedicFollow
               </p>
             </div>
           </div>

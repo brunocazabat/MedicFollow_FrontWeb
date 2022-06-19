@@ -17,10 +17,6 @@ import Particles from "particles.vue3";
 import '@/assets/scss/config/material/app.scss';
 import '@vueform/slider/themes/default.css';
 
-import configureFakeBackend from './helpers/fake-backend';
-
-configureFakeBackend();
-
 AOS.init({
     easing: 'ease-out-back',
     duration: 1000
