@@ -48,9 +48,6 @@ export default {
     notification() {
       return this.$store ? this.$store.state.notification : null;
     },
-    buttonLabel() {
-      return this.showPassword ? "Hide" : "Show";
-    },
   },
   methods: {
     ...authMethods,
