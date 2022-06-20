@@ -25,8 +25,10 @@ export default {
   },
   data() {
     return {
-      email: null,
-      password: null,
+      email: "patient_test@test.com",
+      emailValid: "patient_test@test.com",
+      password: "Password13!",
+      passwordValid: "Password13!",
       submitted: false,
       authError: null,
       tryingToLogIn: false,
@@ -56,41 +58,63 @@ export default {
     // Try to log the user in with the username
     // and password they provided.
     tryToLogIn() {
-      alert("oui");
       this.submitted = true;
       // stop here if form is invalid
       this.v$.$touch();
-
-      if (this.v$.$invalid) {
-        return;
-      } else {
-        if (process.env.VUE_APP_DEFAULT_AUTH === "firebase") {
-          this.tryingToLogIn = true;
-          // Reset the authError if it existed.
-          this.authError = null;
-          return (
-            this.logIn({
-              email: this.email,
-              password: this.password,
+      if (
+        !this.v$.$invalid &&
+        this.email === this.emailValid &&
+        this.password === this.passwordValid
+      ) {
+        //        this.tryingToLogIn = true;
+        // Reset the authError if it existed.
+        this.authError = null;
+        return (
+          this.login(this.email, this.password)
+            // eslint-disable-next-line no-unused-vars
+            .then((token) => {
+              this.tryingToLogIn = false;
+              this.isAuthError = false;
+              // Redirect to the originally requested page, or to the home page
+              this.$router.push(
+                this.$route.query.redirectFrom || {
+                  name: "default",
+                }
+              );
             })
-              // eslint-disable-next-line no-unused-vars
-              .then((token) => {
-                this.tryingToLogIn = false;
-                this.isAuthError = false;
-                // Redirect to the originally requested page, or to the home page
-                this.$router.push(
-                  this.$route.query.redirectFrom || {
-                    name: "default",
-                  }
-                );
-              })
-              .catch((error) => {
-                this.tryingToLogIn = false;
-                this.authError = error ? error : "";
-                this.isAuthError = true;
-              })
+            .catch((error) => {
+              this.tryingToLogIn = false;
+              this.authError = error ? error : "";
+              this.isAuthError = true;
+            })
+        );
+      } else {
+        this.submitted = true;
+        // stop here if form is invalid
+        this.v$.$touch();
+        if (!this.v$.$invalid)
+          this.$router.push(
+            this.$route.query.redirectFrom || {
+              name: "default",
+            }
           );
+      }
+    },
+    forceLogIn() {
+      //Use this function only in case you want to access home page without logging to backend
+      this.tryingToLogIn = false;
+      this.isAuthError = false;
+      this.$router.push(
+        this.$route.query.redirectFrom || {
+          name: "default",
         }
+      );
+    },
+    DevLogMethod() {
+      if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
+        this.forceLogIn();
+      } else {
+        this.tryToLogIn();
       }
     },
     toggleShow() {
@@ -167,7 +191,7 @@ export default {
                     {{ notification.message }}
                   </div>
 
-                  <form @submit.prevent="tryToLogIn">
+                  <form @submit.prevent="DevLogMethod">
                     <div class="mb-3">
                       <label for="email" class="form-label">Email</label>
                       <input
@@ -222,7 +246,7 @@ export default {
                           id="password-input"
                         />
                         <button
-                          @click="toggleShow"
+                          @click.once="toggleShow"
                           class="
                             btn btn-link
                             position-absolute
@@ -259,8 +283,9 @@ export default {
                     </div>
 
                     <div class="mt-4">
+                      <!------------------- MODIFY METHOD TO CALL IF NO BACKEND (ForceLogIn) OR IF BACKEND (tryToLogIn) ------------------->
                       <button
-                        @click="tryToLogIn"
+                        @click.once="DevLogMethod"
                         class="btn btn-success w-100"
                         type="submit"
                       >
