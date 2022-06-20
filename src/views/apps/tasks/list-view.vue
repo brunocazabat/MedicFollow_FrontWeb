@@ -56,7 +56,7 @@
         allTask: [{
             id: 1,
             taskId: "#VLZ632",
-            project: "Velzon - v1.0.0",
+            project: "MedicFollow - v1.0.0",
             task: "Error message when placing an orders?",
             creater: "Robert McMahon",
             subItem: [{

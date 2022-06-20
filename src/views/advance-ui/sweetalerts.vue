@@ -193,7 +193,7 @@ export default {
         icon: "info",
         html:
           "You can use <b>bold text</b>, " +
-          '<a href="//Themesbrand.in/">links</a> ' +
+          '<a href="//MedicFollow.in/">links</a> ' +
           "and other HTML tags",
         showCancelButton: true,
         confirmButtonClass: "btn btn-success me-2",

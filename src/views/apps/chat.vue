@@ -38,7 +38,7 @@
         chatMessagesData: chatMessagesData,
         title: "Chat",
         items: [{
-            text: "Velzon",
+            text: "MedicFollow",
             href: "/",
           },
           {

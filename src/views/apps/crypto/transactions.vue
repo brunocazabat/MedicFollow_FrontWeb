@@ -39,7 +39,7 @@ export default {
       title: "Transactions",
       items: [
         {
-          text: "Velzon",
+          text: "MedicFollow",
           href: "/",
         },
         {

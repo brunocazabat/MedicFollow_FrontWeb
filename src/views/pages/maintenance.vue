@@ -187,8 +187,8 @@ export default {};
           <div class="col-lg-12">
             <div class="text-center">
               <p class="mb-0 text-muted">
-                &copy; {{ new Date().getFullYear() }} Velzon. Crafted with
-                <i class="mdi mdi-heart text-danger"></i> by Themesbrand
+                &copy; {{ new Date().getFullYear() }} MedicFollow. Crafted with
+                <i class="mdi mdi-heart text-danger"></i> by MedicFollow
               </p>
             </div>
           </div>

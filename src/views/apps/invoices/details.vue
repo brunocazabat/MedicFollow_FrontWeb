@@ -15,7 +15,7 @@
             return {
                 title: "Invoice Details",
                 items: [{
-                        text: "Velzon",
+                        text: "MedicFollow",
                         href: "/",
                     },
                     {

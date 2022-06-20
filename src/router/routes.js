@@ -967,22 +967,6 @@ export default [
     component: () => import('../views/auth/errors/ofline')
   },
   {
-    path: '/auth/logout-basic',
-    name: 'logout-basic',
-    meta: {
-      title: "Logout", authRequired: mode,
-    },
-    component: () => import('../views/auth/logout/basic')
-  },
-  {
-    path: '/auth/logout-cover',
-    name: 'logout-cover',
-    meta: {
-      title: "Logout", authRequired: mode,
-    },
-    component: () => import('../views/auth/logout/cover')
-  },
-  {
     path: '/auth/success-msg-basic',
     name: 'success-msg-basic',
     meta: {

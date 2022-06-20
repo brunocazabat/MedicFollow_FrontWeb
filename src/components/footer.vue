@@ -3,11 +3,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6">
-                {{new Date().getFullYear()}} © Velzon.
+                {{new Date().getFullYear()}} © MedicFollow.
             </div>
             <div class="col-sm-6">
                 <div class="text-sm-end d-none d-sm-block">
-                    Design & Develop by Themesbrand
+                    Design & Develop by MedicFollow
                 </div>
             </div>
         </div>

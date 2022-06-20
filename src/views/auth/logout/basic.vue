@@ -175,7 +175,7 @@
                                     <p class="text-muted">Thank you for using <span class="fw-semibold">velzon</span>
                                         admin template</p>
                                     <div class="mt-4">
-                                        <router-link to="/auth/signin-basic" class="btn btn-success w-100">Sign In
+                                        <router-link to="/login" class="btn btn-success w-100">Sign In
                                         </router-link>
                                     </div>
                                 </div>
@@ -199,8 +199,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center">
-                            <p class="mb-0 text-muted">&copy; {{new Date().getFullYear()}} Velzon. Crafted with <i
-                                    class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                            <p class="mb-0 text-muted">&copy; {{new Date().getFullYear()}} MedicFollow. Crafted with <i
+                                    class="mdi mdi-heart text-danger"></i> by MedicFollow</p>
                         </div>
                     </div>
                 </div>

@@ -70,7 +70,7 @@
       return {
         title: "Widgets",
         items: [{
-            text: "Velzon",
+            text: "MedicFollow",
             href: "/",
           },
           {

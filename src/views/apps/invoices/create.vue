@@ -20,7 +20,7 @@
       return {
         title: "Create Invoice",
         items: [{
-            text: "Velzon",
+            text: "MedicFollow",
             href: "/",
           },
           {
