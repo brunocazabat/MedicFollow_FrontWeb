@@ -1,5 +1,9 @@
 <script>
-import { BriefcaseIcon , AwardIcon, ClockIcon} from '@zhuowenli/vue-feather-icons'
+import {
+  BriefcaseIcon,
+  AwardIcon,
+  ClockIcon
+} from '@zhuowenli/vue-feather-icons'
 
 export default {
   setup() {
@@ -7,50 +11,50 @@ export default {
       projectsWidgets: [
         {
           id: 1,
-          feaIcon: "briefcase",
-          feaIconClass: "primary",
-          label: "Active Projects",
-          counter: "825",
-          suffix: "",
-          badgeClass: "danger",
-          icon: "ri-arrow-down-s-line",
-          percentage: "5.02 %",
-          caption: "Projects this month",
+          feaIcon: 'briefcase',
+          feaIconClass: 'primary',
+          label: 'Active Projects',
+          counter: '825',
+          suffix: '',
+          badgeClass: 'danger',
+          icon: 'ri-arrow-down-s-line',
+          percentage: '5.02 %',
+          caption: 'Projects this month'
         },
         {
           id: 2,
-          feaIcon: "award",
-          feaIconClass: "warning",
-          label: "New Leads",
-          counter: "7522",
-          separator: ",",
-          suffix: "",
-          badgeClass: "success",
-          icon: "ri-arrow-up-s-line",
-          percentage: "3.58 %",
-          caption: "Leads this month",
+          feaIcon: 'award',
+          feaIconClass: 'warning',
+          label: 'New Leads',
+          counter: '7522',
+          separator: ',',
+          suffix: '',
+          badgeClass: 'success',
+          icon: 'ri-arrow-up-s-line',
+          percentage: '3.58 %',
+          caption: 'Leads this month'
         },
         {
           id: 3,
-          feaIcon: "clock",
-          feaIconClass: "info",
-          label: "Total Hours",
-          counter: "168h 40m",
-          suffix: "m",
-          badgeClass: "danger",
-          icon: "ri-arrow-down-s-line",
-          percentage: "10.35 %",
-          caption: "Work this month",
-        },
-      ],
-    };
+          feaIcon: 'clock',
+          feaIconClass: 'info',
+          label: 'Total Hours',
+          counter: '168h 40m',
+          suffix: 'm',
+          badgeClass: 'danger',
+          icon: 'ri-arrow-down-s-line',
+          percentage: '10.35 %',
+          caption: 'Work this month'
+        }
+      ]
+    }
   },
   components: {
     BriefcaseIcon,
     AwardIcon,
     ClockIcon
-  },
-};
+  }
+}
 </script>
 
 <template>
@@ -67,16 +71,16 @@ export default {
                 'bg-soft-info text-info': item.feaIconClass === 'info'
               }"
             >
-            <template v-if="item.feaIcon == 'briefcase'">
-              <BriefcaseIcon size="24"></BriefcaseIcon>
+              <template v-if="item.feaIcon == 'briefcase'">
+                <BriefcaseIcon size="24"></BriefcaseIcon>
               </template>
 
               <template v-if="item.feaIcon == 'award'">
-              <AwardIcon  size="24"></AwardIcon>
+                <AwardIcon size="24"></AwardIcon>
               </template>
 
               <template v-if="item.feaIcon == 'clock'">
-              <ClockIcon size="24"></ClockIcon>
+                <ClockIcon size="24"></ClockIcon>
               </template>
             </span>
           </div>
@@ -86,16 +90,10 @@ export default {
             </p>
             <div class="d-flex align-items-center mb-3">
               <h4 class="fs-4 flex-grow-1 mb-0">
-                <span class="counter-value">{{
-                  item.counter
-                }}</span>
+                <span class="counter-value">{{ item.counter }}</span>
               </h4>
               <span :class="`badge badge-soft-${item.badgeClass} fs-12`"
-                ><i
-                  :class="`${
-                    item.icon
-                  } fs-13 align-middle me-1`"
-                ></i
+                ><em :class="`${item.icon} fs-13 align-middle me-1`"></em
                 >{{ item.percentage }}</span
               >
             </div>

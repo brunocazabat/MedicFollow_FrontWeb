@@ -1,41 +1,41 @@
 <script>
-import SwiperCore from "swiper";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/swiper-bundle.css";
+import SwiperCore from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/swiper-bundle.css'
 
-SwiperCore.use([]);
+SwiperCore.use([])
 
-import Layout from "../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../app.config";
+import Layout from '../../layouts/main.vue'
+import PageHeader from '@/components/page-header'
+import appConfig from '../../../app.config'
 
 export default {
   page: {
-    title: "Search Results",
-    meta: [{ name: "description", content: appConfig.description }],
+    title: 'Search Results',
+    meta: [{ name: 'description', content: appConfig.description }]
   },
   data() {
     return {
-      title: "Search Results",
+      title: 'Search Results',
       items: [
         {
-          text: "Pages",
-          href: "/",
+          text: 'Pages',
+          href: '/'
         },
         {
-          text: "Search Results",
-          active: true,
-        },
-      ],
-    };
+          text: 'Search Results',
+          active: true
+        }
+      ]
+    }
   },
   components: {
     Layout,
     PageHeader,
     Swiper,
-    SwiperSlide,
-  },
-};
+    SwiperSlide
+  }
+}
 </script>
 
 <template>
@@ -52,28 +52,16 @@ export default {
                     <div class="position-relative mb-3">
                       <input
                         type="text"
-                        class="
-                          form-control form-control-lg
-                          bg-light
-                          border-light
-                        "
+                        class="form-control form-control-lg bg-light border-light"
                         placeholder="Search here.."
                         value="Admin Dashboard"
                       />
                       <a
-                        class="
-                          btn btn-link
-                          link-success
-                          btn-lg
-                          position-absolute
-                          end-0
-                          top-0
-                          shadow-none
-                        "
+                        class="btn btn-link link-success btn-lg position-absolute end-0 top-0 shadow-none"
                         data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasExample"
                         aria-controls="offcanvasExample"
-                        ><i class="ri-mic-fill"></i
+                        ><em class="ri-mic-fill"></em
                       ></a>
                     </div>
                   </div>
@@ -82,7 +70,7 @@ export default {
                       type="submit"
                       class="btn btn-primary btn-lg waves-effect waves-light"
                     >
-                      <i class="mdi mdi-magnify me-1"></i> Search
+                      <em class="mdi mdi-magnify me-1"></em> Search
                     </button>
                   </div>
                 </div>
@@ -114,16 +102,10 @@ export default {
                   aria-label="Close"
                 ></button>
                 <div
-                  class="
-                    d-flex
-                    flex-column
-                    h-100
-                    justify-content-center
-                    align-items-center
-                  "
+                  class="d-flex flex-column h-100 justify-content-center align-items-center"
                 >
                   <div class="search-voice">
-                    <i class="ri-mic-fill align-middle"></i>
+                    <em class="ri-mic-fill align-middle"></em>
                     <span class="voice-wave"></span>
                     <span class="voice-wave"></span>
                     <span class="voice-wave"></span>
@@ -143,7 +125,9 @@ export default {
                   role="tab"
                   aria-selected="false"
                 >
-                  <i class="ri-search-2-line text-muted align-bottom me-1"></i>
+                  <em
+                    class="ri-search-2-line text-muted align-bottom me-1"
+                  ></em>
                   All Results
                 </a>
               </li>
@@ -156,7 +140,7 @@ export default {
                   role="tab"
                   aria-selected="true"
                 >
-                  <i class="ri-image-fill text-muted align-bottom me-1"></i>
+                  <em class="ri-image-fill text-muted align-bottom me-1"></em>
                   Images
                 </a>
               </li>
@@ -168,7 +152,9 @@ export default {
                   role="tab"
                   aria-selected="false"
                 >
-                  <i class="ri-list-unordered text-muted align-bottom me-1"></i>
+                  <em
+                    class="ri-list-unordered text-muted align-bottom me-1"
+                  ></em>
                   News
                 </a>
               </li>
@@ -180,7 +166,7 @@ export default {
                   role="tab"
                   aria-selected="false"
                 >
-                  <i class="ri-video-line text-muted align-bottom me-1"></i>
+                  <em class="ri-video-line text-muted align-bottom me-1"></em>
                   Videos
                 </a>
               </li>
@@ -194,7 +180,7 @@ export default {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <i class="ri-settings-4-line align-middle me-1"></i>
+                    <em class="ri-settings-4-line align-middle me-1"></em>
                     Settings
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
@@ -228,8 +214,8 @@ export default {
                     https://themesbrand.com/velzon/index.html
                   </p>
                   <p class="text-muted mb-2">
-                    MedicFollow admin is super flexible, powerful, clean, modern &
-                    responsive admin template based on
+                    MedicFollow admin is super flexible, powerful, clean, modern
+                    & responsive admin template based on
                     <span class="fw-semibold">bootstrap 5</span> stable with
                     unlimited possibilities. You can simply change to any layout
                     or mode by changing a couple of lines of code. You can start
@@ -239,26 +225,19 @@ export default {
                     experience.
                   </p>
                   <ul
-                    class="
-                      list-inline
-                      d-flex
-                      align-items-center
-                      g-3
-                      text-muted
-                      fs-14
-                      mb-0
-                    "
+                    class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0"
                   >
                     <li class="list-inline-item me-3">
-                      <i class="ri-thumb-up-line align-middle me-1"></i>10
+                      <em class="ri-thumb-up-line align-middle me-1"></em>10
                     </li>
                     <li class="list-inline-item me-3">
-                      <i class="ri-question-answer-line align-middle me-1"></i>8
+                      <em class="ri-question-answer-line align-middle me-1"></em
+                      >8
                     </li>
                     <li class="list-inline-item">
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                          <i class="ri-user-line"></i>
+                          <em class="ri-user-line"></em>
                         </div>
                         <div class="flex-grow-1 fs-13 ms-1">
                           <span class="fw-medium">MedicFollow</span>
@@ -279,9 +258,7 @@ export default {
                       <div class="row g-2">
                         <div class="col-md-3 col-sm-6">
                           <div>
-                            <a
-                              class="image-popup d-block"
-                            >
+                            <a class="image-popup d-block">
                               <img
                                 src="@/assets/images/small/img-1.jpg"
                                 alt=""
@@ -293,9 +270,7 @@ export default {
                         <!--end col-->
                         <div class="col-md-3 col-sm-6">
                           <div>
-                            <a
-                              class="image-popup d-block"
-                            >
+                            <a class="image-popup d-block">
                               <img
                                 src="@/assets/images/small/img-3.jpg"
                                 alt=""
@@ -307,9 +282,7 @@ export default {
                         <!--end col-->
                         <div class="col-md-3 col-sm-6">
                           <div>
-                            <a
-                              class="image-popup d-block"
-                            >
+                            <a class="image-popup d-block">
                               <img
                                 src="@/assets/images/small/img-4.jpg"
                                 alt=""
@@ -334,7 +307,9 @@ export default {
 
                               <div class="bg-overlay"></div>
                               <div class="nav-icon">
-                                <i class="ri-image-fill align-middle me-1"></i>
+                                <em
+                                  class="ri-image-fill align-middle me-1"
+                                ></em>
                                 99+
                               </div>
                             </a>
@@ -369,27 +344,19 @@ export default {
                     etc.
                   </p>
                   <ul
-                    class="
-                      list-inline
-                      d-flex
-                      align-items-center
-                      g-3
-                      text-muted
-                      fs-14
-                      mb-0
-                    "
+                    class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0"
                   >
                     <li class="list-inline-item me-3">
-                      <i class="ri-thumb-up-line align-middle me-1"></i>485
+                      <em class="ri-thumb-up-line align-middle me-1"></em>485
                     </li>
                     <li class="list-inline-item me-3">
-                      <i class="ri-question-answer-line align-middle me-1"></i
+                      <em class="ri-question-answer-line align-middle me-1"></em
                       >167
                     </li>
                     <li class="list-inline-item">
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                          <i class="ri-user-line"></i>
+                          <em class="ri-user-line"></em>
                         </div>
                         <div class="flex-grow-1 fs-13 ms-1">
                           <span class="fw-medium">MedicFollow</span>
@@ -421,27 +388,19 @@ export default {
                     couple of lines code.
                   </p>
                   <ul
-                    class="
-                      list-inline
-                      d-flex
-                      align-items-center
-                      g-3
-                      text-muted
-                      fs-14
-                      mb-0
-                    "
+                    class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0"
                   >
                     <li class="list-inline-item me-3">
-                      <i class="ri-thumb-up-line align-middle me-1"></i>69
+                      <em class="ri-thumb-up-line align-middle me-1"></em>69
                     </li>
                     <li class="list-inline-item me-3">
-                      <i class="ri-question-answer-line align-middle me-1"></i
+                      <em class="ri-question-answer-line align-middle me-1"></em
                       >43
                     </li>
                     <li class="list-inline-item">
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                          <i class="ri-user-line"></i>
+                          <em class="ri-user-line"></em>
                         </div>
                         <div class="flex-grow-1 fs-13 ms-1">
                           <span class="fw-medium">MedicFollow</span>
@@ -471,27 +430,19 @@ export default {
                     lines code.
                   </p>
                   <ul
-                    class="
-                      list-inline
-                      d-flex
-                      align-items-center
-                      g-3
-                      text-muted
-                      fs-14
-                      mb-0
-                    "
+                    class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0"
                   >
                     <li class="list-inline-item me-3">
-                      <i class="ri-thumb-up-line align-middle me-1"></i>102
+                      <em class="ri-thumb-up-line align-middle me-1"></em>102
                     </li>
                     <li class="list-inline-item me-3">
-                      <i class="ri-question-answer-line align-middle me-1"></i
+                      <em class="ri-question-answer-line align-middle me-1"></em
                       >36
                     </li>
                     <li class="list-inline-item">
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                          <i class="ri-user-line"></i>
+                          <em class="ri-user-line"></em>
                         </div>
                         <div class="flex-grow-1 fs-13 ms-1">
                           <span class="fw-medium">MedicFollow</span>
@@ -503,15 +454,11 @@ export default {
 
                 <div>
                   <ul
-                    class="
-                      pagination pagination-separated
-                      justify-content-center
-                      mb-0
-                    "
+                    class="pagination pagination-separated justify-content-center mb-0"
                   >
                     <li class="page-item disabled">
                       <a href="javascript:void(0);" class="page-link"
-                        ><i class="mdi mdi-chevron-left"></i
+                        ><em class="mdi mdi-chevron-left"></em
                       ></a>
                     </li>
                     <li class="page-item active">
@@ -531,7 +478,7 @@ export default {
                     </li>
                     <li class="page-item">
                       <a href="javascript:void(0);" class="page-link"
-                        ><i class="mdi mdi-chevron-right"></i
+                        ><em class="mdi mdi-chevron-right"></em
                       ></a>
                     </li>
                   </ul>
@@ -546,19 +493,13 @@ export default {
                         :spaceBetween="10"
                         :pagination="{
                           el: '.swiper-pagination',
-                          clickable: true,
+                          clickable: true
                         }"
                       >
                         <swiper-slide>
                           <div class="swiper-slide">
                             <div
-                              class="
-                                d-flex
-                                align-items-center
-                                border border-dashed
-                                rounded
-                                p-2
-                              "
+                              class="d-flex align-items-center border border-dashed rounded p-2"
                             >
                               <div class="flex-shrink-0">
                                 <img
@@ -581,13 +522,7 @@ export default {
                         <swiper-slide>
                           <div class="swiper-slide">
                             <div
-                              class="
-                                d-flex
-                                align-items-center
-                                border border-dashed
-                                rounded
-                                p-2
-                              "
+                              class="d-flex align-items-center border border-dashed rounded p-2"
                             >
                               <div class="flex-shrink-0">
                                 <img
@@ -610,13 +545,7 @@ export default {
                         <swiper-slide>
                           <div class="swiper-slide">
                             <div
-                              class="
-                                d-flex
-                                align-items-center
-                                border border-dashed
-                                rounded
-                                p-2
-                              "
+                              class="d-flex align-items-center border border-dashed rounded p-2"
                             >
                               <div class="flex-shrink-0">
                                 <img
@@ -639,13 +568,7 @@ export default {
                         <swiper-slide>
                           <div class="swiper-slide">
                             <div
-                              class="
-                                d-flex
-                                align-items-center
-                                border border-dashed
-                                rounded
-                                p-2
-                              "
+                              class="d-flex align-items-center border border-dashed rounded p-2"
                             >
                               <div class="flex-shrink-0">
                                 <img
@@ -668,13 +591,7 @@ export default {
                         <swiper-slide>
                           <div class="swiper-slide">
                             <div
-                              class="
-                                d-flex
-                                align-items-center
-                                border border-dashed
-                                rounded
-                                p-2
-                              "
+                              class="d-flex align-items-center border border-dashed rounded p-2"
                             >
                               <div class="flex-shrink-0">
                                 <img
@@ -697,13 +614,7 @@ export default {
                         <swiper-slide>
                           <div class="swiper-slide">
                             <div
-                              class="
-                                d-flex
-                                align-items-center
-                                border border-dashed
-                                rounded
-                                p-2
-                              "
+                              class="d-flex align-items-center border border-dashed rounded p-2"
                             >
                               <div class="flex-shrink-0">
                                 <img
@@ -726,13 +637,7 @@ export default {
                         <swiper-slide>
                           <div class="swiper-slide">
                             <div
-                              class="
-                                d-flex
-                                align-items-center
-                                border border-dashed
-                                rounded
-                                p-2
-                              "
+                              class="d-flex align-items-center border border-dashed rounded p-2"
                             >
                               <div class="flex-shrink-0">
                                 <img
@@ -755,13 +660,7 @@ export default {
                         <swiper-slide>
                           <div class="swiper-slide">
                             <div
-                              class="
-                                d-flex
-                                align-items-center
-                                border border-dashed
-                                rounded
-                                p-2
-                              "
+                              class="d-flex align-items-center border border-dashed rounded p-2"
                             >
                               <div class="flex-shrink-0">
                                 <img
@@ -784,13 +683,7 @@ export default {
                         <swiper-slide>
                           <div class="swiper-slide">
                             <div
-                              class="
-                                d-flex
-                                align-items-center
-                                border border-dashed
-                                rounded
-                                p-2
-                              "
+                              class="d-flex align-items-center border border-dashed rounded p-2"
                             >
                               <div class="flex-shrink-0">
                                 <img
@@ -848,42 +741,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -925,42 +796,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -1002,42 +851,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -1077,42 +904,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -1154,42 +959,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -1231,42 +1014,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -1308,42 +1069,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -1385,42 +1124,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -1462,42 +1179,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -1539,42 +1234,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -1616,42 +1289,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -1694,42 +1345,20 @@ export default {
                               <div class="d-flex gap-3">
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-thumb-up-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-thumb-up-fill text-muted align-bottom me-1"
+                                  ></em>
                                   2.2K
                                 </button>
                                 <button
                                   type="button"
-                                  class="
-                                    btn btn-sm
-                                    fs-12
-                                    btn-link
-                                    text-body text-decoration-none
-                                    px-0
-                                  "
+                                  class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0"
                                 >
-                                  <i
-                                    class="
-                                      ri-question-answer-fill
-                                      text-muted
-                                      align-bottom
-                                      me-1
-                                    "
-                                  ></i>
+                                  <em
+                                    class="ri-question-answer-fill text-muted align-bottom me-1"
+                                  ></em>
                                   1.3K
                                 </button>
                               </div>
@@ -1743,15 +1372,11 @@ export default {
                   <!--end row-->
                   <div class="mt-4">
                     <ul
-                      class="
-                        pagination pagination-separated
-                        justify-content-center
-                        mb-0
-                      "
+                      class="pagination pagination-separated justify-content-center mb-0"
                     >
                       <li class="page-item disabled">
                         <a href="javascript:void(0);" class="page-link"
-                          ><i class="mdi mdi-chevron-left"></i
+                          ><em class="mdi mdi-chevron-left"></em
                         ></a>
                       </li>
                       <li class="page-item active">
@@ -1771,7 +1396,7 @@ export default {
                       </li>
                       <li class="page-item">
                         <a href="javascript:void(0);" class="page-link"
-                          ><i class="mdi mdi-chevron-right"></i
+                          ><em class="mdi mdi-chevron-right"></em
                         ></a>
                       </li>
                     </ul>
@@ -1809,25 +1434,15 @@ export default {
                             </h5>
                             <ul class="list-inline mb-0">
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-user-3-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-user-3-fill text-success align-middle me-1"
+                                ></em>
                                 James Ballard
                               </li>
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-calendar-2-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-calendar-2-fill text-success align-middle me-1"
+                                ></em>
                                 23 Nov, 2021
                               </li>
                             </ul>
@@ -1866,25 +1481,15 @@ export default {
                             </h5>
                             <ul class="list-inline mb-0">
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-user-3-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-user-3-fill text-success align-middle me-1"
+                                ></em>
                                 Ruby Griffin
                               </li>
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-calendar-2-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-calendar-2-fill text-success align-middle me-1"
+                                ></em>
                                 23 Nov, 2021
                               </li>
                             </ul>
@@ -1924,25 +1529,15 @@ export default {
                             </h5>
                             <ul class="list-inline mb-0">
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-user-3-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-user-3-fill text-success align-middle me-1"
+                                ></em>
                                 Elwood Arter
                               </li>
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-calendar-2-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-calendar-2-fill text-success align-middle me-1"
+                                ></em>
                                 23 Nov, 2021
                               </li>
                             </ul>
@@ -1981,25 +1576,15 @@ export default {
                             </h5>
                             <ul class="list-inline mb-0">
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-user-3-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-user-3-fill text-success align-middle me-1"
+                                ></em>
                                 Nancy Martino
                               </li>
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-calendar-2-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-calendar-2-fill text-success align-middle me-1"
+                                ></em>
                                 23 Nov, 2021
                               </li>
                             </ul>
@@ -2039,25 +1624,15 @@ export default {
                             </h5>
                             <ul class="list-inline mb-0">
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-user-3-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-user-3-fill text-success align-middle me-1"
+                                ></em>
                                 Erica Kernan
                               </li>
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-calendar-2-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-calendar-2-fill text-success align-middle me-1"
+                                ></em>
                                 11 Nov, 2021
                               </li>
                             </ul>
@@ -2097,25 +1672,15 @@ export default {
                             </h5>
                             <ul class="list-inline mb-0">
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-user-3-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-user-3-fill text-success align-middle me-1"
+                                ></em>
                                 Jason McQuaid
                               </li>
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-calendar-2-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-calendar-2-fill text-success align-middle me-1"
+                                ></em>
                                 14 Nov, 2021
                               </li>
                             </ul>
@@ -2154,25 +1719,15 @@ export default {
                             </h5>
                             <ul class="list-inline mb-0">
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-user-3-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-user-3-fill text-success align-middle me-1"
+                                ></em>
                                 Henry Baird
                               </li>
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-calendar-2-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-calendar-2-fill text-success align-middle me-1"
+                                ></em>
                                 19 Nov, 2021
                               </li>
                             </ul>
@@ -2211,25 +1766,15 @@ export default {
                             </h5>
                             <ul class="list-inline mb-0">
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-user-3-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-user-3-fill text-success align-middle me-1"
+                                ></em>
                                 Elwood Arter
                               </li>
                               <li class="list-inline-item">
-                                <i
-                                  class="
-                                    ri-calendar-2-fill
-                                    text-success
-                                    align-middle
-                                    me-1
-                                  "
-                                ></i>
+                                <em
+                                  class="ri-calendar-2-fill text-success align-middle me-1"
+                                ></em>
                                 10 Aug, 2021
                               </li>
                             </ul>
@@ -2245,15 +1790,11 @@ export default {
 
                 <div class="mt-4">
                   <ul
-                    class="
-                      pagination pagination-separated
-                      justify-content-center
-                      mb-0
-                    "
+                    class="pagination pagination-separated justify-content-center mb-0"
                   >
                     <li class="page-item disabled">
                       <a href="javascript:void(0);" class="page-link"
-                        ><i class="mdi mdi-chevron-left"></i
+                        ><em class="mdi mdi-chevron-left"></em
                       ></a>
                     </li>
                     <li class="page-item active">
@@ -2273,7 +1814,7 @@ export default {
                     </li>
                     <li class="page-item">
                       <a href="javascript:void(0);" class="page-link"
-                        ><i class="mdi mdi-chevron-right"></i
+                        ><em class="mdi mdi-chevron-right"></em
                       ></a>
                     </li>
                   </ul>
@@ -2304,46 +1845,36 @@ export default {
                         </div>
                         <div class="flex-grow-1 ms-sm-3 mt-2 mt-sm-0">
                           <p class="text-muted mb-0">
-                            MedicFollow admin is super flexible, powerful, clean,
-                            modern & responsive admin template based on
+                            MedicFollow admin is super flexible, powerful,
+                            clean, modern & responsive admin template based on
                             <b>bootstrap 5</b> stable with unlimited
                             possibilities. You can simply change to any layout
                             or mode by changing a couple of lines of code. You
                             can start small and large projects or update design
-                            in your existing project using MedicFollow it is very
-                            quick and easy as it is beautiful, adroit, and
+                            in your existing project using MedicFollow it is
+                            very quick and easy as it is beautiful, adroit, and
                             delivers the ultimate user experience.
                           </p>
                           <div class="border border-dashed mb-1 mt-3"></div>
                           <ul
-                            class="
-                              list-inline
-                              d-flex
-                              align-items-center
-                              g-3
-                              text-muted
-                              fs-14
-                              mb-0
-                            "
+                            class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0"
                           >
                             <li class="list-inline-item me-3">
-                              <i class="ri-thumb-up-line align-middle me-1"></i
+                              <em
+                                class="ri-thumb-up-line align-middle me-1"
+                              ></em
                               >335
                             </li>
                             <li class="list-inline-item me-3">
-                              <i
-                                class="
-                                  ri-question-answer-line
-                                  align-middle
-                                  me-1
-                                "
-                              ></i
+                              <em
+                                class="ri-question-answer-line align-middle me-1"
+                              ></em
                               >102
                             </li>
                             <li class="list-inline-item">
                               <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                  <i class="ri-user-line"></i>
+                                  <em class="ri-user-line"></em>
                                 </div>
                                 <div class="flex-grow-1 fs-13 ms-1">
                                   <span class="fw-medium">MedicFollow</span>
@@ -2376,46 +1907,36 @@ export default {
                         </div>
                         <div class="flex-grow-1 ms-sm-3 mt-2 mt-sm-0">
                           <p class="text-muted mb-0">
-                            MedicFollow admin is super flexible, powerful, clean,
-                            modern & responsive admin template based on
+                            MedicFollow admin is super flexible, powerful,
+                            clean, modern & responsive admin template based on
                             <b>bootstrap 5</b> stable with unlimited
                             possibilities. You can simply change to any layout
                             or mode by changing a couple of lines of code. You
                             can start small and large projects or update design
-                            in your existing project using MedicFollow it is very
-                            quick and easy as it is beautiful, adroit, and
+                            in your existing project using MedicFollow it is
+                            very quick and easy as it is beautiful, adroit, and
                             delivers the ultimate user experience.
                           </p>
                           <div class="border border-dashed mb-1 mt-3"></div>
                           <ul
-                            class="
-                              list-inline
-                              d-flex
-                              align-items-center
-                              g-3
-                              text-muted
-                              fs-14
-                              mb-0
-                            "
+                            class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0"
                           >
                             <li class="list-inline-item me-3">
-                              <i class="ri-thumb-up-line align-middle me-1"></i
+                              <em
+                                class="ri-thumb-up-line align-middle me-1"
+                              ></em
                               >485
                             </li>
                             <li class="list-inline-item me-3">
-                              <i
-                                class="
-                                  ri-question-answer-line
-                                  align-middle
-                                  me-1
-                                "
-                              ></i
+                              <em
+                                class="ri-question-answer-line align-middle me-1"
+                              ></em
                               >167
                             </li>
                             <li class="list-inline-item">
                               <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                  <i class="ri-user-line"></i>
+                                  <em class="ri-user-line"></em>
                                 </div>
                                 <div class="flex-grow-1 fs-13 ms-1">
                                   <span class="fw-medium">MedicFollow</span>
@@ -2431,8 +1952,8 @@ export default {
                     <div class="list-element mt-4">
                       <h5 class="mb-1">
                         <a href="javascript:void(0);"
-                          >MedicFollow - The Most Popular Bootstrap 5 HTML, Angular &
-                          React Js Admin</a
+                          >MedicFollow - The Most Popular Bootstrap 5 HTML,
+                          Angular & React Js Admin</a
                         >
                       </h5>
                       <p class="text-success">
@@ -2449,46 +1970,36 @@ export default {
                         </div>
                         <div class="flex-grow-1 ms-sm-3 mt-2 mt-sm-0">
                           <p class="text-muted mb-0">
-                            MedicFollow admin is super flexible, powerful, clean,
-                            modern & responsive admin template based on
+                            MedicFollow admin is super flexible, powerful,
+                            clean, modern & responsive admin template based on
                             <b>bootstrap 5</b> stable with unlimited
                             possibilities. You can simply change to any layout
                             or mode by changing a couple of lines of code. You
                             can start small and large projects or update design
-                            in your existing project using MedicFollow it is very
-                            quick and easy as it is beautiful, adroit, and
+                            in your existing project using MedicFollow it is
+                            very quick and easy as it is beautiful, adroit, and
                             delivers the ultimate user experience.
                           </p>
                           <div class="border border-dashed mb-1 mt-3"></div>
                           <ul
-                            class="
-                              list-inline
-                              d-flex
-                              align-items-center
-                              g-3
-                              text-muted
-                              fs-14
-                              mb-0
-                            "
+                            class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0"
                           >
                             <li class="list-inline-item me-3">
-                              <i class="ri-thumb-up-line align-middle me-1"></i
+                              <em
+                                class="ri-thumb-up-line align-middle me-1"
+                              ></em
                               >122
                             </li>
                             <li class="list-inline-item me-3">
-                              <i
-                                class="
-                                  ri-question-answer-line
-                                  align-middle
-                                  me-1
-                                "
-                              ></i
+                              <em
+                                class="ri-question-answer-line align-middle me-1"
+                              ></em
                               >51
                             </li>
                             <li class="list-inline-item">
                               <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                  <i class="ri-user-line"></i>
+                                  <em class="ri-user-line"></em>
                                 </div>
                                 <div class="flex-grow-1 fs-13 ms-1">
                                   <span class="fw-medium">MedicFollow</span>
@@ -2522,46 +2033,36 @@ export default {
                         </div>
                         <div class="flex-grow-1 ms-sm-3 mt-2 mt-sm-0">
                           <p class="text-muted mb-0">
-                            MedicFollow admin is super flexible, powerful, clean,
-                            modern & responsive admin template based on
+                            MedicFollow admin is super flexible, powerful,
+                            clean, modern & responsive admin template based on
                             <b>bootstrap 5</b> stable with unlimited
                             possibilities. You can simply change to any layout
                             or mode by changing a couple of lines of code. You
                             can start small and large projects or update design
-                            in your existing project using MedicFollow it is very
-                            quick and easy as it is beautiful, adroit, and
+                            in your existing project using MedicFollow it is
+                            very quick and easy as it is beautiful, adroit, and
                             delivers the ultimate user experience.
                           </p>
                           <div class="border border-dashed mb-1 mt-3"></div>
                           <ul
-                            class="
-                              list-inline
-                              d-flex
-                              align-items-center
-                              g-3
-                              text-muted
-                              fs-14
-                              mb-0
-                            "
+                            class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0"
                           >
                             <li class="list-inline-item me-3">
-                              <i class="ri-thumb-up-line align-middle me-1"></i
+                              <em
+                                class="ri-thumb-up-line align-middle me-1"
+                              ></em
                               >485
                             </li>
                             <li class="list-inline-item me-3">
-                              <i
-                                class="
-                                  ri-question-answer-line
-                                  align-middle
-                                  me-1
-                                "
-                              ></i
+                              <em
+                                class="ri-question-answer-line align-middle me-1"
+                              ></em
                               >69
                             </li>
                             <li class="list-inline-item">
                               <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                  <i class="ri-user-line"></i>
+                                  <em class="ri-user-line"></em>
                                 </div>
                                 <div class="flex-grow-1 fs-13 ms-1">
                                   <span class="fw-medium">MedicFollow</span>
@@ -2594,46 +2095,36 @@ export default {
                         </div>
                         <div class="flex-grow-1 ms-sm-3 mt-2 mt-sm-0">
                           <p class="text-muted mb-0">
-                            MedicFollow admin is super flexible, powerful, clean,
-                            modern & responsive admin template based on
+                            MedicFollow admin is super flexible, powerful,
+                            clean, modern & responsive admin template based on
                             <b>bootstrap 5</b> stable with unlimited
                             possibilities. You can simply change to any layout
                             or mode by changing a couple of lines of code. You
                             can start small and large projects or update design
-                            in your existing project using MedicFollow it is very
-                            quick and easy as it is beautiful, adroit, and
+                            in your existing project using MedicFollow it is
+                            very quick and easy as it is beautiful, adroit, and
                             delivers the ultimate user experience.
                           </p>
                           <div class="border border-dashed mb-1 mt-3"></div>
                           <ul
-                            class="
-                              list-inline
-                              d-flex
-                              align-items-center
-                              g-3
-                              text-muted
-                              fs-14
-                              mb-0
-                            "
+                            class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0"
                           >
                             <li class="list-inline-item me-3">
-                              <i class="ri-thumb-up-line align-middle me-1"></i
+                              <em
+                                class="ri-thumb-up-line align-middle me-1"
+                              ></em
                               >58
                             </li>
                             <li class="list-inline-item me-3">
-                              <i
-                                class="
-                                  ri-question-answer-line
-                                  align-middle
-                                  me-1
-                                "
-                              ></i
+                              <em
+                                class="ri-question-answer-line align-middle me-1"
+                              ></em
                               >24
                             </li>
                             <li class="list-inline-item">
                               <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                  <i class="ri-user-line"></i>
+                                  <em class="ri-user-line"></em>
                                 </div>
                                 <div class="flex-grow-1 fs-13 ms-1">
                                   <span class="fw-medium">MedicFollow</span>
@@ -2652,9 +2143,9 @@ export default {
                       id="loadmore"
                       class="btn btn-link text-success mt-2"
                     >
-                      <i
+                      <em
                         class="mdi mdi-loading mdi-spin fs-20 align-middle me-2"
-                      ></i>
+                      ></em>
                       Load more
                     </button>
                   </div>

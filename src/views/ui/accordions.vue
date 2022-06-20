@@ -264,7 +264,7 @@ SlickText account.
                       aria-expanded="true"
                       aria-controls="accor_iconExamplecollapse1"
                     >
-                      <i class="ri-global-line me-2"></i> How Does Age
+                      <em class="ri-global-line me-2"></em> How Does Age
                       Verification Work?
                     </button>
                   </h2>
@@ -292,7 +292,7 @@ SlickText account.
                       aria-expanded="false"
                       aria-controls="accor_iconExamplecollapse2"
                     >
-                      <i class="ri-user-location-line me-2"></i> How Does Link
+                      <em class="ri-user-location-line me-2"></em> How Does Link
                       Tracking Work?
                     </button>
                   </h2>
@@ -321,7 +321,7 @@ SlickText account.
                       aria-expanded="false"
                       aria-controls="accor_iconExamplecollapse3"
                     >
-                      <i class="ri-pen-nib-line me-2"></i> How Do I Set Up the
+                      <em class="ri-pen-nib-line me-2"></em> How Do I Set Up the
                       Drip Feature?
                     </button>
                   </h2>
@@ -426,7 +426,7 @@ aliquam ultrices mauris.
                       aria-expanded="true"
                       aria-controls="accor_withouticoncollapse1"
                     >
-                      <i class="ri-global-line me-2"></i> How Does Age
+                      <em class="ri-global-line me-2"></em> How Does Age
                       Verification Work?
                     </button>
                   </h2>
@@ -458,7 +458,7 @@ aliquam ultrices mauris.
                       aria-expanded="false"
                       aria-controls="accor_withouticoncollapse2"
                     >
-                      <i class="ri-user-location-line me-2"></i> How Does Link
+                      <em class="ri-user-location-line me-2"></em> How Does Link
                       Tracking Work?
                     </button>
                   </h2>
@@ -491,7 +491,7 @@ aliquam ultrices mauris.
                       aria-expanded="false"
                       aria-controls="accor_withouticoncollapse3"
                     >
-                      <i class="ri-pen-nib-line me-2"></i> How Do I Set Up the
+                      <em class="ri-pen-nib-line me-2"></em> How Do I Set Up the
                       Drip Feature?
                     </button>
                   </h2>
@@ -1893,7 +1893,7 @@ This is some placeholder content for a horizontal collapse. It's hidden by defau
                   aria-expanded="true"
                   aria-controls="collapseWithicon"
                 >
-                  <i class="ri-arrow-down-circle-line fs-16"></i>
+                  <em class="ri-arrow-down-circle-line fs-16"></em>
                 </a>
                 <button
                   class="btn btn-light"
@@ -1903,7 +1903,7 @@ This is some placeholder content for a horizontal collapse. It's hidden by defau
                   aria-expanded="false"
                   aria-controls="collapseWithicon2"
                 >
-                  <i class="ri-filter-2-line"></i>
+                  <em class="ri-filter-2-line"></em>
                 </button>
               </div>
               <div class="collapse show" id="collapseWithicon">

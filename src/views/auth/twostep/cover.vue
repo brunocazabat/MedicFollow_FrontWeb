@@ -26,7 +26,7 @@ export default {
                                                 </div>
                                                 <div class="mt-auto">
                                                     <div class="mb-3">
-                                                        <i class="ri-double-quotes-l display-4 text-success"></i>
+                                                        <em class="ri-double-quotes-l display-4 text-success"></em>
                                                     </div>
 
                                                     <div id="qoutescarouselIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -62,7 +62,7 @@ export default {
                                             <div class="mb-4">
                                                 <div class="avatar-lg mx-auto">
                                                     <div class="avatar-title bg-light text-primary display-5 rounded-circle shadow">
-                                                        <i class="ri-mail-line"></i>
+                                                        <em class="ri-mail-line"></em>
                                                     </div>
                                                 </div>
                                             </div>
@@ -149,7 +149,7 @@ export default {
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <p class="mb-0">&copy; {{new Date().getFullYear()}} MedicFollow. Crafted with <i class="mdi mdi-heart text-danger"></i> by MedicFollow</p>
+                                <p class="mb-0">&copy; {{new Date().getFullYear()}} MedicFollow. Crafted with <em class="mdi mdi-heart text-danger"></em> by MedicFollow</p>
                             </div>
                         </div>
                     </div>

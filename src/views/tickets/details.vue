@@ -44,7 +44,7 @@ export default {
                                     <div class="col-md">
                                         <h4 class="fw-semibold">#VLZ135 - Create an Excellent UI for a Dashboard</h4>
                                         <div class="hstack gap-3 flex-wrap">
-                                            <div class="text-muted"><i class="ri-building-line align-bottom me-1"></i> MedicFollow</div>
+                                            <div class="text-muted"><em class="ri-building-line align-bottom me-1"></em> MedicFollow</div>
                                             <div class="vr"></div>
                                             <div class="text-muted">Create Date : <span class="fw-medium">20 Dec, 2021</span></div>
                                             <div class="vr"></div>
@@ -60,19 +60,19 @@ export default {
                                 <div class="hstack gap-1 flex-wrap">
                                     <button type="button" class="btn avatar-xs mt-n1 p-0 favourite-btn shadow-none active">
                                         <span class="avatar-title bg-transparent fs-15">
-                                            <i class="ri-star-fill"></i>
+                                            <em class="ri-star-fill"></em>
                                         </span>
                                     </button>
                                     <button type="button" class="btn py-0 fs-16 text-body shadow-none" id="settingDropdown" data-bs-toggle="dropdown">
-                                        <i class="ri-share-line"></i>
+                                        <em class="ri-share-line"></em>
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="settingDropdown">
-                                        <li><a class="dropdown-item" href="#"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="ri-share-forward-fill align-bottom me-2 text-muted"></i> Share with</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete</a></li>
+                                        <li><a class="dropdown-item" href="#"><em class="ri-eye-fill align-bottom me-2 text-muted"></em> View</a></li>
+                                        <li><a class="dropdown-item" href="#"><em class="ri-share-forward-fill align-bottom me-2 text-muted"></em> Share with</a></li>
+                                        <li><a class="dropdown-item" href="#"><em class="ri-delete-bin-fill align-bottom me-2 text-muted"></em> Delete</a></li>
                                         </ul>
                                     <button type="button" class="btn py-0 fs-16 text-body shadow-none">
-                                        <i class="ri-flag-line"></i>
+                                        <em class="ri-flag-line"></em>
                                     </button>
                                 </div>
                             </div><!--end col-->
@@ -126,7 +126,7 @@ userIdx: {}
                             <div class="flex-grow-1 ms-3">
                                 <h5 class="fs-13">Joseph Parker <small class="text-muted">20 Dec 2021 - 05:47AM</small></h5>
                                 <p class="text-muted">I am getting message from customers that when they place order always get error message .</p>
-                                <a href="javascript: void(0);" class="badge text-muted bg-light"><i class="mdi mdi-reply"></i> Reply</a>
+                                <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                 <div class="d-flex mt-4">
                                     <div class="flex-shrink-0">
                                         <img src="@/assets/images/users/avatar-10.jpg" alt="" class="avatar-xs rounded-circle shadow" />
@@ -134,7 +134,7 @@ userIdx: {}
                                     <div class="flex-grow-1 ms-3">
                                         <h5 class="fs-13">Alexis Clarke <small class="text-muted">22 Dec 2021 - 02:32PM</small></h5>
                                         <p class="text-muted">Please be sure to check your Spam mailbox to see if your email filters have identified the email from Dell as spam.</p>
-                                        <a href="javascript: void(0);" class="badge text-muted bg-light"><i class="mdi mdi-reply"></i> Reply</a>
+                                        <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +146,7 @@ userIdx: {}
                             <div class="flex-grow-1 ms-3">
                                 <h5 class="fs-13">Donald Palmer <small class="text-muted">24 Dec 2021 - 05:20PM</small></h5>
                                 <p class="text-muted">If you have further questions, please contact Customer Support from the “Action Menu” on your <a href="javascript:void(0);" class="text-decoration-underline">Online Order Support</a>.</p>
-                                <a href="javascript: void(0);" class="badge text-muted bg-light"><i class="mdi mdi-reply"></i> Reply</a>
+                                <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                             </div>
                         </div>
                         <div class="d-flex">
@@ -164,7 +164,7 @@ userIdx: {}
                                         <img src="@/assets/images/small/img-5.jpg" alt="" class="img-fluid rounded">
                                     </div>
                                 </div>
-                                <a href="javascript: void(0);" class="badge text-muted bg-light"><i class="mdi mdi-reply"></i> Reply</a>
+                                <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                 <div class="d-flex mt-4">
                                     <div class="flex-shrink-0">
                                         <img src="@/assets/images/users/avatar-6.jpg" alt="" class="avatar-xs rounded-circle shadow" />
@@ -172,7 +172,7 @@ userIdx: {}
                                     <div class="flex-grow-1 ms-3">
                                         <h5 class="fs-13">Donald Palmer <small class="text-muted">8 sec ago</small></h5>
                                         <p class="text-muted">Other shipping methods are available at checkout if you want your purchase delivered faster.</p>
-                                        <a href="javascript: void(0);" class="badge text-muted bg-light"><i class="mdi mdi-reply"></i> Reply</a>
+                                        <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                     </div>
                                 </div>
                             </div>
@@ -294,7 +294,7 @@ userIdx: {}
                     <div class="d-flex align-items-center border border-dashed p-2 rounded">
                         <div class="flex-shrink-0 avatar-sm">
                             <div class="avatar-title bg-light rounded">
-                                <i class="ri-file-zip-line fs-20 text-primary"></i>
+                                <em class="ri-file-zip-line fs-20 text-primary"></em>
                             </div>
                         </div>
                         <div class="flex-grow-1 ms-3">
@@ -302,14 +302,14 @@ userIdx: {}
                             <small class="text-muted">3.2 MB</small>
                         </div>
                         <div class="hstack gap-3 fs-16">
-                            <a href="javascript:void(0);" class="text-muted"><i class="ri-download-2-line"></i></a>
-                            <a href="javascript:void(0);" class="text-muted"><i class="ri-delete-bin-line"></i></a>
+                            <a href="javascript:void(0);" class="text-muted"><em class="ri-download-2-line"></em></a>
+                            <a href="javascript:void(0);" class="text-muted"><em class="ri-delete-bin-line"></em></a>
                         </div>
                     </div>
                     <div class="d-flex  align-items-center border border-dashed p-2 rounded mt-2">
                         <div class="flex-shrink-0 avatar-sm">
                             <div class="avatar-title bg-light rounded">
-                                <i class="ri-file-ppt-2-line fs-20 text-danger"></i>
+                                <em class="ri-file-ppt-2-line fs-20 text-danger"></em>
                             </div>
                         </div>
                         <div class="flex-grow-1 ms-3">
@@ -317,8 +317,8 @@ userIdx: {}
                             <small class="text-muted">4.5 MB</small>
                         </div>
                         <div class="hstack gap-3 fs-16">
-                            <a href="javascript:void(0);" class="text-muted"><i class="ri-download-2-line"></i></a>
-                            <a href="javascript:void(0);" class="text-muted"><i class="ri-delete-bin-line"></i></a>
+                            <a href="javascript:void(0);" class="text-muted"><em class="ri-download-2-line"></em></a>
+                            <a href="javascript:void(0);" class="text-muted"><em class="ri-delete-bin-line"></em></a>
                         </div>
                     </div>
                 </div>

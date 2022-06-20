@@ -1,15 +1,15 @@
 <script>
-import Multiselect from "@vueform/multiselect";
-import "@vueform/multiselect/themes/default.css";
-import flatPickr from "vue-flatpickr-component";
-import "flatpickr/dist/flatpickr.css";
+import Multiselect from '@vueform/multiselect'
+import '@vueform/multiselect/themes/default.css'
+import flatPickr from 'vue-flatpickr-component'
+import 'flatpickr/dist/flatpickr.css'
 
-import Layout from "../../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../../app.config";
+import Layout from '../../../layouts/main.vue'
+import PageHeader from '@/components/page-header'
+import appConfig from '../../../../app.config'
 
-import Lottie from "@/components/widgets/lottie.vue";
-import animationData from "@/components/widgets/msoeawqm.json";
+import Lottie from '@/components/widgets/lottie.vue'
+import animationData from '@/components/widgets/msoeawqm.json'
 
 export default {
   components: {
@@ -17,29 +17,29 @@ export default {
     PageHeader,
     lottie: Lottie,
     Multiselect,
-    flatPickr,
+    flatPickr
   },
   page: {
-    title: "Orders",
-    meta: [{ name: "description", content: appConfig.description }],
+    title: 'Orders',
+    meta: [{ name: 'description', content: appConfig.description }]
   },
   data() {
     return {
-      title: "Orders",
+      title: 'Orders',
       items: [
         {
-          text: "Crypto",
-          href: "/",
+          text: 'Crypto',
+          href: '/'
         },
         {
-          text: "Orders",
-          active: true,
-        },
+          text: 'Orders',
+          active: true
+        }
       ],
       date: null,
       rangeDateconfig: {
-        mode: "range",
-        dateFormat: "d M, Y",
+        mode: 'range',
+        dateFormat: 'd M, Y'
       },
       value2: null,
       value1: null,
@@ -47,186 +47,186 @@ export default {
       posts: [
         {
           id: 1,
-          date: ["02 Jan, 2022", "03:45PM"],
-          img: require("@/assets/images/svg/crypto-icons/btc.svg"),
-          coinName: "Bitcoin (BTC)",
-          type: "Buy",
-          typeClass: "success",
-          quantity: "08",
-          orderValue: "$3,70,683.2",
-          avgPrice: "$46,154.30",
-          price: "$46,335.40",
-          status: "Successful",
-          statusClass: "success",
+          date: ['02 Jan, 2022', '03:45PM'],
+          img: require('@/assets/images/svg/crypto-icons/btc.svg'),
+          coinName: 'Bitcoin (BTC)',
+          type: 'Buy',
+          typeClass: 'success',
+          quantity: '08',
+          orderValue: '$3,70,683.2',
+          avgPrice: '$46,154.30',
+          price: '$46,335.40',
+          status: 'Successful',
+          statusClass: 'success'
         },
         {
           id: 2,
-          date: ["27 Dec, 2021", "02:47PM"],
-          img: require("@/assets/images/svg/crypto-icons/eth.svg"),
-          coinName: "Ethereum (ETH)",
-          type: "Sell",
-          typeClass: "danger",
-          quantity: "50",
-          orderValue: "$1,87,433",
-          avgPrice: "$3,744.48",
-          price: "$3,748.66",
-          status: "Cancelled",
-          statusClass: "danger",
+          date: ['27 Dec, 2021', '02:47PM'],
+          img: require('@/assets/images/svg/crypto-icons/eth.svg'),
+          coinName: 'Ethereum (ETH)',
+          type: 'Sell',
+          typeClass: 'danger',
+          quantity: '50',
+          orderValue: '$1,87,433',
+          avgPrice: '$3,744.48',
+          price: '$3,748.66',
+          status: 'Cancelled',
+          statusClass: 'danger'
         },
         {
           id: 3,
-          date: ["19 Dec, 2021", "10:24AM"],
-          img: require("@/assets/images/svg/crypto-icons/xmr.svg"),
-          coinName: "Monero (XMR)",
-          type: "Sell",
-          typeClass: "danger",
-          quantity: "150",
-          orderValue: "$33,982.5",
-          avgPrice: "$227.30",
-          price: "$226.55",
-          status: "Successful",
-          statusClass: "success",
+          date: ['19 Dec, 2021', '10:24AM'],
+          img: require('@/assets/images/svg/crypto-icons/xmr.svg'),
+          coinName: 'Monero (XMR)',
+          type: 'Sell',
+          typeClass: 'danger',
+          quantity: '150',
+          orderValue: '$33,982.5',
+          avgPrice: '$227.30',
+          price: '$226.55',
+          status: 'Successful',
+          statusClass: 'success'
         },
         {
           id: 4,
-          date: ["19 Dec, 2021", "11:20AM"],
-          img: require("@/assets/images/svg/crypto-icons/mkr.svg"),
-          coinName: "Maker (MKR",
-          type: "Buy",
-          typeClass: "success",
-          quantity: "60",
-          orderValue: "$1,43,445",
-          avgPrice: "$2,470.30",
-          price: "$2,390.75",
-          status: "Pending",
-          statusClass: "warning",
+          date: ['19 Dec, 2021', '11:20AM'],
+          img: require('@/assets/images/svg/crypto-icons/mkr.svg'),
+          coinName: 'Maker (MKR',
+          type: 'Buy',
+          typeClass: 'success',
+          quantity: '60',
+          orderValue: '$1,43,445',
+          avgPrice: '$2,470.30',
+          price: '$2,390.75',
+          status: 'Pending',
+          statusClass: 'warning'
         },
         {
           id: 5,
-          date: ["11 Dec, 2021", "02:47PM"],
-          img: require("@/assets/images/svg/crypto-icons/yfi.svg"),
-          coinName: "Yearn.finance (YFI)",
-          type: "Buy",
-          typeClass: "success",
-          quantity: "25",
-          orderValue: "$9,81,906",
-          avgPrice: "$37,632.17",
-          price: "$39,276.24",
-          status: "Cancelled",
-          statusClass: "danger",
+          date: ['11 Dec, 2021', '02:47PM'],
+          img: require('@/assets/images/svg/crypto-icons/yfi.svg'),
+          coinName: 'Yearn.finance (YFI)',
+          type: 'Buy',
+          typeClass: 'success',
+          quantity: '25',
+          orderValue: '$9,81,906',
+          avgPrice: '$37,632.17',
+          price: '$39,276.24',
+          status: 'Cancelled',
+          statusClass: 'danger'
         },
         {
           id: 6,
-          date: ["05 Dec, 2021", "09:20AM"],
-          img: require("@/assets/images/svg/crypto-icons/mkr.svg"),
-          coinName: "Maker (MKR)",
-          type: "Sell",
-          typeClass: "danger",
-          quantity: "20",
-          orderValue: "$50,243",
-          avgPrice: "$2,324.65",
-          price: "$2,512.15",
-          status: "Successful",
-          statusClass: "success",
+          date: ['05 Dec, 2021', '09:20AM'],
+          img: require('@/assets/images/svg/crypto-icons/mkr.svg'),
+          coinName: 'Maker (MKR)',
+          type: 'Sell',
+          typeClass: 'danger',
+          quantity: '20',
+          orderValue: '$50,243',
+          avgPrice: '$2,324.65',
+          price: '$2,512.15',
+          status: 'Successful',
+          statusClass: 'success'
         },
         {
           id: 7,
-          date: ["28 Nov, 2021", "11:42AM"],
-          img: require("@/assets/images/svg/crypto-icons/ltc.svg"),
-          coinName: "Litecoin (LTC)",
-          type: "Buy",
-          typeClass: "success",
-          quantity: "200",
-          orderValue: "$29,500",
-          avgPrice: "$144.00",
-          price: "$147.50",
-          status: "Pending",
-          statusClass: "warning",
+          date: ['28 Nov, 2021', '11:42AM'],
+          img: require('@/assets/images/svg/crypto-icons/ltc.svg'),
+          coinName: 'Litecoin (LTC)',
+          type: 'Buy',
+          typeClass: 'success',
+          quantity: '200',
+          orderValue: '$29,500',
+          avgPrice: '$144.00',
+          price: '$147.50',
+          status: 'Pending',
+          statusClass: 'warning'
         },
         {
           id: 8,
-          date: ["19 Nov, 2021", "03:36PM"],
-          img: require("@/assets/images/svg/crypto-icons/xmr.svg"),
-          coinName: "Monero (XMR)",
-          type: "Sell",
-          typeClass: "danger",
-          quantity: "75",
-          orderValue: "$17,874",
-          avgPrice: "$221.61",
-          price: "$238.32",
-          status: "Successful",
-          statusClass: "success",
+          date: ['19 Nov, 2021', '03:36PM'],
+          img: require('@/assets/images/svg/crypto-icons/xmr.svg'),
+          coinName: 'Monero (XMR)',
+          type: 'Sell',
+          typeClass: 'danger',
+          quantity: '75',
+          orderValue: '$17,874',
+          avgPrice: '$221.61',
+          price: '$238.32',
+          status: 'Successful',
+          statusClass: 'success'
         },
         {
           id: 9,
-          date: ["27 Oct, 2021", "03:36PM"],
-          img: require("@/assets/images/svg/crypto-icons/dash.svg"),
-          coinName: "Dash (DASH)",
-          type: "Buy",
-          typeClass: "success",
-          quantity: "45",
-          orderValue: "$14,962.5",
-          avgPrice: "$147.39",
-          price: "$142.5",
-          status: "Cancelled",
-          statusClass: "danger",
+          date: ['27 Oct, 2021', '03:36PM'],
+          img: require('@/assets/images/svg/crypto-icons/dash.svg'),
+          coinName: 'Dash (DASH)',
+          type: 'Buy',
+          typeClass: 'success',
+          quantity: '45',
+          orderValue: '$14,962.5',
+          avgPrice: '$147.39',
+          price: '$142.5',
+          status: 'Cancelled',
+          statusClass: 'danger'
         },
         {
           id: 10,
-          date: ["27 Oct, 2021", "03:36PM"],
-          img: require("@/assets/images/svg/crypto-icons/neo.svg"),
-          coinName: "Neo (NEO)",
-          type: "Sell",
-          typeClass: "danger",
-          quantity: "36",
-          orderValue: "$77,232.24",
-          avgPrice: "$2,274.21",
-          price: "$2,145.34",
-          status: "Pending",
-          statusClass: "warning",
+          date: ['27 Oct, 2021', '03:36PM'],
+          img: require('@/assets/images/svg/crypto-icons/neo.svg'),
+          coinName: 'Neo (NEO)',
+          type: 'Sell',
+          typeClass: 'danger',
+          quantity: '36',
+          orderValue: '$77,232.24',
+          avgPrice: '$2,274.21',
+          price: '$2,145.34',
+          status: 'Pending',
+          statusClass: 'warning'
         },
         {
           id: 11,
-          date: ["21 Oct, 2021", "11:45AM"],
-          img: require("@/assets/images/svg/crypto-icons/mln.svg"),
-          coinName: "Enzyme (MLN)",
-          type: "Sell",
-          typeClass: "danger",
-          quantity: "68",
-          orderValue: "$6,296.8",
-          avgPrice: "$94.21",
-          price: "$92.60",
-          status: "Successful",
-          statusClass: "success",
+          date: ['21 Oct, 2021', '11:45AM'],
+          img: require('@/assets/images/svg/crypto-icons/mln.svg'),
+          coinName: 'Enzyme (MLN)',
+          type: 'Sell',
+          typeClass: 'danger',
+          quantity: '68',
+          orderValue: '$6,296.8',
+          avgPrice: '$94.21',
+          price: '$92.60',
+          status: 'Successful',
+          statusClass: 'success'
         },
         {
           id: 12,
-          date: ["24 Sep, 2021", "02:32AM"],
-          img: require("@/assets/images/svg/crypto-icons/eth.svg"),
-          coinName: "Ethereum (ETH)",
-          type: "Buy",
-          typeClass: "success",
-          quantity: "72",
-          orderValue: "$2,69,602.56",
-          avgPrice: "$3,744.48",
-          price: "$3,748.66",
-          status: "Cancelled",
-          statusClass: "danger",
-        },
+          date: ['24 Sep, 2021', '02:32AM'],
+          img: require('@/assets/images/svg/crypto-icons/eth.svg'),
+          coinName: 'Ethereum (ETH)',
+          type: 'Buy',
+          typeClass: 'success',
+          quantity: '72',
+          orderValue: '$2,69,602.56',
+          avgPrice: '$3,744.48',
+          price: '$3,748.66',
+          status: 'Cancelled',
+          statusClass: 'danger'
+        }
       ],
       page: 1,
       perPage: 10,
       pages: [],
-      defaultOptions: { animationData: animationData },
-    };
+      defaultOptions: { animationData: animationData }
+    }
   },
   computed: {
     displayedPosts() {
-      return this.paginate(this.posts);
+      return this.paginate(this.posts)
     },
     resultQuery() {
       if (this.searchQuery) {
-        const search = this.searchQuery.toLowerCase();
+        const search = this.searchQuery.toLowerCase()
         return this.displayedPosts.filter((data) => {
           return (
             data.coinName.toLowerCase().includes(search) ||
@@ -237,42 +237,42 @@ export default {
             data.avgPrice.toLowerCase().includes(search) ||
             data.price.toLowerCase().includes(search) ||
             data.status.toLowerCase().includes(search)
-          );
-        });
+          )
+        })
       } else {
-        return this.displayedPosts;
+        return this.displayedPosts
       }
-    },
+    }
   },
   watch: {
     posts() {
-      this.setPages();
-    },
+      this.setPages()
+    }
   },
   created() {
-    this.setPages();
+    this.setPages()
   },
   filters: {
     trimWords(value) {
-      return value.split(" ").splice(0, 20).join(" ") + "...";
-    },
+      return value.split(' ').splice(0, 20).join(' ') + '...'
+    }
   },
   methods: {
     setPages() {
-      let numberOfPages = Math.ceil(this.posts.length / this.perPage);
+      let numberOfPages = Math.ceil(this.posts.length / this.perPage)
       for (let index = 1; index <= numberOfPages; index++) {
-        this.pages.push(index);
+        this.pages.push(index)
       }
     },
     paginate(posts) {
-      let page = this.page;
-      let perPage = this.perPage;
-      let from = page * perPage - perPage;
-      let to = page * perPage;
-      return posts.slice(from, to);
-    },
-  },
-};
+      let page = this.page
+      let perPage = this.perPage
+      let from = page * perPage - perPage
+      let to = page * perPage
+      return posts.slice(from, to)
+    }
+  }
+}
 </script>
 
 <template>
@@ -301,14 +301,14 @@ export default {
                     class="form-control search"
                     placeholder="Search to orders..."
                   />
-                  <i class="ri-search-line search-icon"></i>
+                  <em class="ri-search-line search-icon"></em>
                 </div>
               </div>
               <!--end col-->
               <div class="col-xl-3 col-md-6">
                 <div class="input-group">
                   <span class="input-group-text" id="basic-addon1"
-                    ><i class="ri-calendar-2-line"></i
+                    ><em class="ri-calendar-2-line"></em
                   ></span>
 
                   <flat-pickr
@@ -329,7 +329,7 @@ export default {
                   :options="[
                     { value: '', label: 'Select Type' },
                     { value: 'Buy', label: 'Sell' },
-                    { value: 'Sell', label: 'Buy' },
+                    { value: 'Sell', label: 'Buy' }
                   ]"
                 />
               </div>
@@ -344,7 +344,7 @@ export default {
                   :options="[
                     { value: '', label: 'Select Status' },
                     { value: 'Successful', label: 'Successful' },
-                    { value: 'Cancelled', label: 'Cancelled' },
+                    { value: 'Cancelled', label: 'Cancelled' }
                   ]"
                 />
               </div>
@@ -397,7 +397,11 @@ export default {
                     <td>
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                          <img :src="data.img" alt="" class="avatar-xxs shadow rounded-circle" />
+                          <img
+                            :src="data.img"
+                            alt=""
+                            class="avatar-xxs shadow rounded-circle"
+                          />
                         </div>
                         <a
                           href="javascript:void(0);"
@@ -462,9 +466,9 @@ export default {
                 <ul class="pagination listjs-pagination mb-0">
                   <li
                     :class="{
-                              active: pageNumber == page,
-                              disabled: pageNumber == '...',
-                            }"
+                      active: pageNumber == page,
+                      disabled: pageNumber == '...'
+                    }"
                     v-for="(pageNumber, index) in pages.slice(
                       page - 1,
                       page + 5

@@ -424,25 +424,25 @@
               <div class="col-sm-3">
                 <div class="search-box">
                   <input type="text" class="form-control search" placeholder="Search for..." />
-                  <i class="ri-search-line search-icon"></i>
+                  <em class="ri-search-line search-icon"></em>
                 </div>
               </div>
               <div class="col-sm-auto ms-auto">
                 <div class="hstack gap-2">
                   <button class="btn btn-soft-danger" @click="deleteMultiple">
-                    <i class="ri-delete-bin-2-line"></i>
+                    <em class="ri-delete-bin-2-line"></em>
                   </button>
                   <button type="button" class="btn btn-info" data-bs-toggle="offcanvas" href="#offcanvasExample">
-                    <i class="ri-filter-3-line align-bottom me-1"></i> Fliters
+                    <em class="ri-filter-3-line align-bottom me-1"></em> Fliters
                   </button>
                   <button type="button" class="btn btn-success add-btn" id="create-btn" data-bs-toggle="modal"
                     href="#showModal" @click="addnew">
-                    <i class="ri-add-line align-bottom me-1"></i> Add Leads
+                    <em class="ri-add-line align-bottom me-1"></em> Add Leads
                   </button>
                   <span class="dropdown">
                     <button class="btn btn-soft-info btn-icon fs-14" type="button" id="dropdownMenuButton1"
                       data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="ri-settings-4-line"></i>
+                      <em class="ri-settings-4-line"></em>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                       <li><a class="dropdown-item" href="#">Copy</a></li>
@@ -519,27 +519,27 @@
                           <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="Call">
                             <a href="javascript:void(0);" class="text-muted d-inline-block">
-                              <i class="ri-phone-line fs-16"></i>
+                              <em class="ri-phone-line fs-16"></em>
                             </a>
                           </li>
                           <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="Message">
                             <a href="javascript:void(0);" class="text-muted d-inline-block">
-                              <i class="ri-question-answer-line fs-16"></i>
+                              <em class="ri-question-answer-line fs-16"></em>
                             </a>
                           </li>
                           <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="View">
-                            <a href="javascript:void(0);"><i class="ri-eye-fill align-bottom text-muted"></i></a>
+                            <a href="javascript:void(0);"><em class="ri-eye-fill align-bottom text-muted"></em></a>
                           </li>
                           <li class="list-inline-item" data-bs-toggle="modal" href="#showModal" data-bs-trigger="hover"
                             data-bs-placement="top" title="Edit" @click="editdata(data)">
-                            <a class="edit-item-btn"><i class="ri-pencil-fill align-bottom text-muted"></i></a>
+                            <a class="edit-item-btn"><em class="ri-pencil-fill align-bottom text-muted"></em></a>
                           </li>
                           <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="Delete" @click="deletedata(data)">
                             <a class="remove-item-btn" data-bs-toggle="modal">
-                              <i class="ri-delete-bin-fill align-bottom text-muted"></i>
+                              <em class="ri-delete-bin-fill align-bottom text-muted"></em>
                             </a>
                           </li>
                         </ul>

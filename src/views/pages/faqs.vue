@@ -32,8 +32,8 @@ export default {
                                     <h4 class="display-6 coming-soon-text">Frequently asked questions</h4>
                                     <p class="text-success fs-15 mt-3">If you can not find answer to your question in our FAQ, you can always contact us or email us. We will answer you shortly!</p>
                                     <div class="hstack flex-wrap gap-2">
-                                        <button type="button" class="btn btn-primary btn-label rounded-pill"><i class="ri-mail-line label-icon align-middle rounded-pill fs-16 me-2"></i> Email Us</button>
-                                        <button type="button" class="btn btn-info btn-label rounded-pill"><i class="ri-twitter-line label-icon align-middle rounded-pill fs-16 me-2"></i> Send Us Tweet</button>
+                                        <button type="button" class="btn btn-primary btn-label rounded-pill"><em class="ri-mail-line label-icon align-middle rounded-pill fs-16 me-2"></em> Email Us</button>
+                                        <button type="button" class="btn btn-info btn-label rounded-pill"><em class="ri-twitter-line label-icon align-middle rounded-pill fs-16 me-2"></em> Send Us Tweet</button>
                                     </div>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ export default {
                         <div class="mt-3">
                             <div class="d-flex align-items-center mb-2">
                                 <div class="flex-shrink-0 me-1">
-                                    <i class="ri-question-line fs-24 align-middle text-success me-1"></i>
+                                    <em class="ri-question-line fs-24 align-middle text-success me-1"></em>
                                 </div>
                                 <div class="flex-grow-1">
                                     <h5 class="fs-16 mb-0 fw-semibold">General Questions</h5>
@@ -117,7 +117,7 @@ export default {
                         <div class="mt-3">
                             <div class="d-flex align-items-center mb-2">
                                 <div class="flex-shrink-0 me-1">
-                                    <i class="ri-user-settings-line fs-24 align-middle text-success me-1"></i>
+                                    <em class="ri-user-settings-line fs-24 align-middle text-success me-1"></em>
                                 </div>
                                 <div class="flex-grow-1">
                                     <h5 class="fs-16 mb-0 fw-semibold">Manage Account</h5>
@@ -181,7 +181,7 @@ export default {
                         <div class="mt-3">
                             <div class="d-flex align-items-center mb-2">
                                 <div class="flex-shrink-0 me-1">
-                                    <i class="ri-shield-keyhole-line fs-24 align-middle text-success me-1"></i>
+                                    <em class="ri-shield-keyhole-line fs-24 align-middle text-success me-1"></em>
                                 </div>
                                 <div class="flex-grow-1">
                                     <h5 class="fs-16 mb-0 fw-semibold">Privacy &amp; Security</h5>

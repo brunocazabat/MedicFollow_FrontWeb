@@ -1,148 +1,148 @@
 <script>
-import { CountTo } from "vue3-count-to";
+import { CountTo } from 'vue3-count-to'
 
-import Layout from "../../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../../app.config";
+import Layout from '../../../layouts/main.vue'
+import PageHeader from '@/components/page-header'
+import appConfig from '../../../../app.config'
 
 export default {
   components: {
     Layout,
     PageHeader,
-    CountTo,
+    CountTo
   },
   page: {
-    title: "Widgets",
-    meta: [{ name: "description", content: appConfig.description }],
+    title: 'Widgets',
+    meta: [{ name: 'description', content: appConfig.description }]
   },
   data() {
     return {
       posts: [
         {
-          image: require("@/assets/images/svg/crypto-icons/btc.svg"),
-          currency_name: "Bitcoin (BTC)",
-          price: "47071",
-          pairs: "BTC/USD",
-          high: "28,722.76",
-          low: "68,789.63",
-          market: "888,411,910",
-          volume: 1.5,
+          image: require('@/assets/images/svg/crypto-icons/btc.svg'),
+          currency_name: 'Bitcoin (BTC)',
+          price: '47071',
+          pairs: 'BTC/USD',
+          high: '28,722.76',
+          low: '68,789.63',
+          market: '888,411,910',
+          volume: 1.5
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/eth.svg"),
-          currency_name: "Ethereum (ETH)",
-          price: "3,813.14",
-          pairs: "ETH/USDT",
-          high: "4,036.24",
-          low: "3,588.14",
-          market: "314,520,675",
-          volume: 0.42,
+          image: require('@/assets/images/svg/crypto-icons/eth.svg'),
+          currency_name: 'Ethereum (ETH)',
+          price: '3,813.14',
+          pairs: 'ETH/USDT',
+          high: '4,036.24',
+          low: '3,588.14',
+          market: '314,520,675',
+          volume: 0.42
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/ltc.svg"),
-          currency_name: "Litecoin (LTC)",
-          price: "149.65",
-          pairs: "LTC/USDT",
-          high: "412.96",
-          low: "104.33",
-          market: "314,520,675",
-          volume: 0.89,
+          image: require('@/assets/images/svg/crypto-icons/ltc.svg'),
+          currency_name: 'Litecoin (LTC)',
+          price: '149.65',
+          pairs: 'LTC/USDT',
+          high: '412.96',
+          low: '104.33',
+          market: '314,520,675',
+          volume: 0.89
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/fil.svg"),
-          currency_name: "Filecoin (FIL)",
-          price: "35.21",
-          pairs: "FIL/USD",
-          high: "36.41",
-          low: "35.03",
-          market: "374,618,945.51",
-          volume: 0.84,
+          image: require('@/assets/images/svg/crypto-icons/fil.svg'),
+          currency_name: 'Filecoin (FIL)',
+          price: '35.21',
+          pairs: 'FIL/USD',
+          high: '36.41',
+          low: '35.03',
+          market: '374,618,945.51',
+          volume: 0.84
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/eth.svg"),
-          currency_name: "Ethereum (ETH)",
-          price: "3,813.14",
-          pairs: "ETH/USDT",
-          high: "4,036.24",
-          low: "3,588.14",
-          market: "314,520,675",
-          volume: 0.42,
+          image: require('@/assets/images/svg/crypto-icons/eth.svg'),
+          currency_name: 'Ethereum (ETH)',
+          price: '3,813.14',
+          pairs: 'ETH/USDT',
+          high: '4,036.24',
+          low: '3,588.14',
+          market: '314,520,675',
+          volume: 0.42
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/btc.svg"),
-          currency_name: "Bitcoin (BTC)",
-          price: "47,071.60",
-          pairs: "BTC/USD",
-          high: "28,722.76",
-          low: "68,789.63",
-          market: "888,411,910",
-          volume: 1.5,
+          image: require('@/assets/images/svg/crypto-icons/btc.svg'),
+          currency_name: 'Bitcoin (BTC)',
+          price: '47,071.60',
+          pairs: 'BTC/USD',
+          high: '28,722.76',
+          low: '68,789.63',
+          market: '888,411,910',
+          volume: 1.5
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/aave.svg"),
-          currency_name: "Aave (AAVE)",
-          price: "275.47",
-          pairs: "AAVE/USDT",
-          high: "277.11",
-          low: "255.01",
-          market: "156,209,195.18",
-          volume: 8.2,
+          image: require('@/assets/images/svg/crypto-icons/aave.svg'),
+          currency_name: 'Aave (AAVE)',
+          price: '275.47',
+          pairs: 'AAVE/USDT',
+          high: '277.11',
+          low: '255.01',
+          market: '156,209,195.18',
+          volume: 8.2
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/dot.svg"),
-          currency_name: "Polkadot (DOT)",
-          price: "28.88",
-          pairs: "DOT/USD",
-          high: "30.56",
-          low: "28.66",
-          market: "880,387,980.14",
-          volume: 1.03,
+          image: require('@/assets/images/svg/crypto-icons/dot.svg'),
+          currency_name: 'Polkadot (DOT)',
+          price: '28.88',
+          pairs: 'DOT/USD',
+          high: '30.56',
+          low: '28.66',
+          market: '880,387,980.14',
+          volume: 1.03
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/ant.svg"),
-          currency_name: "Aragon (ANT)",
-          price: "13.31",
-          pairs: "ANT/USD",
-          high: "13.85",
-          low: "12.53",
-          market: "156,209,195.18",
-          volume: 3.96,
+          image: require('@/assets/images/svg/crypto-icons/ant.svg'),
+          currency_name: 'Aragon (ANT)',
+          price: '13.31',
+          pairs: 'ANT/USD',
+          high: '13.85',
+          low: '12.53',
+          market: '156,209,195.18',
+          volume: 3.96
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/ada.svg"),
-          currency_name: "Cardano (ADA)",
-          price: "1.35",
-          pairs: "ADA/USD",
-          high: "1.39",
-          low: "1.32",
-          market: "880,387,980.14",
-          volume: 0.42,
-        },
+          image: require('@/assets/images/svg/crypto-icons/ada.svg'),
+          currency_name: 'Cardano (ADA)',
+          price: '1.35',
+          pairs: 'ADA/USD',
+          high: '1.39',
+          low: '1.32',
+          market: '880,387,980.14',
+          volume: 0.42
+        }
       ],
       page: 1,
       perPage: 8,
       pages: [],
-      title: "Buy & Sell",
+      title: 'Buy & Sell',
       items: [
         {
-          text: "Crypto",
-          href: "/",
+          text: 'Crypto',
+          href: '/'
         },
         {
-          text: "Buy & Sell",
-          active: true,
-        },
+          text: 'Buy & Sell',
+          active: true
+        }
       ],
-      searchQuery: null,
-    };
+      searchQuery: null
+    }
   },
   computed: {
     displayedPosts() {
-      return this.paginate(this.posts);
+      return this.paginate(this.posts)
     },
     resultQuery() {
       if (this.searchQuery) {
-        const search = this.searchQuery.toLowerCase();
+        const search = this.searchQuery.toLowerCase()
         return this.displayedPosts.filter((data) => {
           return (
             data.currency_name.toLowerCase().includes(search) ||
@@ -152,40 +152,40 @@ export default {
             data.low.toLowerCase().includes(search) ||
             data.market.toLowerCase().includes(search) ||
             data.volume.toLowerCase().includes(search)
-          );
-        });
+          )
+        })
       } else {
-        return this.displayedPosts;
+        return this.displayedPosts
       }
-    },
+    }
   },
   watch: {
     posts() {
-      this.setPages();
-    },
+      this.setPages()
+    }
   },
   created() {
-    this.setPages();
+    this.setPages()
   },
   filters: {
     trimWords(value) {
-      return value.split(" ").splice(0, 20).join(" ") + "...";
-    },
+      return value.split(' ').splice(0, 20).join(' ') + '...'
+    }
   },
   methods: {
     setPages() {
-      let numberOfPages = Math.ceil(this.posts.length / this.perPage);
+      let numberOfPages = Math.ceil(this.posts.length / this.perPage)
       for (let index = 1; index <= numberOfPages; index++) {
-        this.pages.push(index);
+        this.pages.push(index)
       }
     },
     paginate(posts) {
-      let page = this.page;
-      let perPage = this.perPage;
-      let from = page * perPage - perPage;
-      let to = page * perPage;
-      return posts.slice(from, to);
-    },
+      let page = this.page
+      let perPage = this.perPage
+      let from = page * perPage - perPage
+      let to = page * perPage
+      return posts.slice(from, to)
+    }
   },
   setup() {
     const options = {
@@ -194,415 +194,415 @@ export default {
           data: [
             {
               x: new Date(1538778600000),
-              y: [6629.81, 6650.5, 6623.04, 6633.33],
+              y: [6629.81, 6650.5, 6623.04, 6633.33]
             },
             {
               x: new Date(1538780400000),
-              y: [6632.01, 6643.59, 6620, 6630.11],
+              y: [6632.01, 6643.59, 6620, 6630.11]
             },
             {
               x: new Date(1538782200000),
-              y: [6630.71, 6648.95, 6623.34, 6635.65],
+              y: [6630.71, 6648.95, 6623.34, 6635.65]
             },
             {
               x: new Date(1538784000000),
-              y: [6635.65, 6651, 6629.67, 6638.24],
+              y: [6635.65, 6651, 6629.67, 6638.24]
             },
             {
               x: new Date(1538785800000),
-              y: [6638.24, 6640, 6620, 6624.47],
+              y: [6638.24, 6640, 6620, 6624.47]
             },
             {
               x: new Date(1538787600000),
-              y: [6624.53, 6636.03, 6621.68, 6624.31],
+              y: [6624.53, 6636.03, 6621.68, 6624.31]
             },
             {
               x: new Date(1538789400000),
-              y: [6624.61, 6632.2, 6617, 6626.02],
+              y: [6624.61, 6632.2, 6617, 6626.02]
             },
             {
               x: new Date(1538791200000),
-              y: [6627, 6627.62, 6584.22, 6603.02],
+              y: [6627, 6627.62, 6584.22, 6603.02]
             },
             {
               x: new Date(1538793000000),
-              y: [6605, 6608.03, 6598.95, 6604.01],
+              y: [6605, 6608.03, 6598.95, 6604.01]
             },
             {
               x: new Date(1538794800000),
-              y: [6604.5, 6614.4, 6602.26, 6608.02],
+              y: [6604.5, 6614.4, 6602.26, 6608.02]
             },
             {
               x: new Date(1538796600000),
-              y: [6608.02, 6610.68, 6601.99, 6608.91],
+              y: [6608.02, 6610.68, 6601.99, 6608.91]
             },
             {
               x: new Date(1538798400000),
-              y: [6608.91, 6618.99, 6608.01, 6612],
+              y: [6608.91, 6618.99, 6608.01, 6612]
             },
             {
               x: new Date(1538800200000),
-              y: [6612, 6615.13, 6605.09, 6612],
+              y: [6612, 6615.13, 6605.09, 6612]
             },
             {
               x: new Date(1538802000000),
-              y: [6612, 6624.12, 6608.43, 6622.95],
+              y: [6612, 6624.12, 6608.43, 6622.95]
             },
             {
               x: new Date(1538803800000),
-              y: [6623.91, 6623.91, 6615, 6615.67],
+              y: [6623.91, 6623.91, 6615, 6615.67]
             },
             {
               x: new Date(1538805600000),
-              y: [6618.69, 6618.74, 6610, 6610.4],
+              y: [6618.69, 6618.74, 6610, 6610.4]
             },
             {
               x: new Date(1538807400000),
-              y: [6611, 6622.78, 6610.4, 6614.9],
+              y: [6611, 6622.78, 6610.4, 6614.9]
             },
             {
               x: new Date(1538809200000),
-              y: [6614.9, 6626.2, 6613.33, 6623.45],
+              y: [6614.9, 6626.2, 6613.33, 6623.45]
             },
             {
               x: new Date(1538811000000),
-              y: [6623.48, 6627, 6618.38, 6620.35],
+              y: [6623.48, 6627, 6618.38, 6620.35]
             },
             {
               x: new Date(1538812800000),
-              y: [6619.43, 6620.35, 6610.05, 6615.53],
+              y: [6619.43, 6620.35, 6610.05, 6615.53]
             },
             {
               x: new Date(1538814600000),
-              y: [6615.53, 6617.93, 6610, 6615.19],
+              y: [6615.53, 6617.93, 6610, 6615.19]
             },
             {
               x: new Date(1538816400000),
-              y: [6615.19, 6621.6, 6608.2, 6620],
+              y: [6615.19, 6621.6, 6608.2, 6620]
             },
             {
               x: new Date(1538818200000),
-              y: [6619.54, 6625.17, 6614.15, 6620],
+              y: [6619.54, 6625.17, 6614.15, 6620]
             },
             {
               x: new Date(1538820000000),
-              y: [6620.33, 6634.15, 6617.24, 6624.61],
+              y: [6620.33, 6634.15, 6617.24, 6624.61]
             },
             {
               x: new Date(1538821800000),
-              y: [6625.95, 6626, 6611.66, 6617.58],
+              y: [6625.95, 6626, 6611.66, 6617.58]
             },
             {
               x: new Date(1538823600000),
-              y: [6619, 6625.97, 6595.27, 6598.86],
+              y: [6619, 6625.97, 6595.27, 6598.86]
             },
             {
               x: new Date(1538825400000),
-              y: [6598.86, 6598.88, 6570, 6587.16],
+              y: [6598.86, 6598.88, 6570, 6587.16]
             },
             {
               x: new Date(1538827200000),
-              y: [6588.86, 6600, 6580, 6593.4],
+              y: [6588.86, 6600, 6580, 6593.4]
             },
             {
               x: new Date(1538829000000),
-              y: [6593.99, 6598.89, 6585, 6587.81],
+              y: [6593.99, 6598.89, 6585, 6587.81]
             },
             {
               x: new Date(1538830800000),
-              y: [6587.81, 6592.73, 6567.14, 6578],
+              y: [6587.81, 6592.73, 6567.14, 6578]
             },
             {
               x: new Date(1538832600000),
-              y: [6578.35, 6581.72, 6567.39, 6579],
+              y: [6578.35, 6581.72, 6567.39, 6579]
             },
             {
               x: new Date(1538834400000),
-              y: [6579.38, 6580.92, 6566.77, 6575.96],
+              y: [6579.38, 6580.92, 6566.77, 6575.96]
             },
             {
               x: new Date(1538836200000),
-              y: [6575.96, 6589, 6571.77, 6588.92],
+              y: [6575.96, 6589, 6571.77, 6588.92]
             },
             {
               x: new Date(1538838000000),
-              y: [6588.92, 6594, 6577.55, 6589.22],
+              y: [6588.92, 6594, 6577.55, 6589.22]
             },
             {
               x: new Date(1538839800000),
-              y: [6589.3, 6598.89, 6589.1, 6596.08],
+              y: [6589.3, 6598.89, 6589.1, 6596.08]
             },
             {
               x: new Date(1538841600000),
-              y: [6597.5, 6600, 6588.39, 6596.25],
+              y: [6597.5, 6600, 6588.39, 6596.25]
             },
             {
               x: new Date(1538843400000),
-              y: [6598.03, 6600, 6588.73, 6595.97],
+              y: [6598.03, 6600, 6588.73, 6595.97]
             },
             {
               x: new Date(1538845200000),
-              y: [6595.97, 6602.01, 6588.17, 6602],
+              y: [6595.97, 6602.01, 6588.17, 6602]
             },
             {
               x: new Date(1538847000000),
-              y: [6602, 6607, 6596.51, 6599.95],
+              y: [6602, 6607, 6596.51, 6599.95]
             },
             {
               x: new Date(1538848800000),
-              y: [6600.63, 6601.21, 6590.39, 6591.02],
+              y: [6600.63, 6601.21, 6590.39, 6591.02]
             },
             {
               x: new Date(1538850600000),
-              y: [6591.02, 6603.08, 6591, 6591],
+              y: [6591.02, 6603.08, 6591, 6591]
             },
             {
               x: new Date(1538852400000),
-              y: [6591, 6601.32, 6585, 6592],
+              y: [6591, 6601.32, 6585, 6592]
             },
             {
               x: new Date(1538854200000),
-              y: [6593.13, 6596.01, 6590, 6593.34],
+              y: [6593.13, 6596.01, 6590, 6593.34]
             },
             {
               x: new Date(1538856000000),
-              y: [6593.34, 6604.76, 6582.63, 6593.86],
+              y: [6593.34, 6604.76, 6582.63, 6593.86]
             },
             {
               x: new Date(1538857800000),
-              y: [6593.86, 6604.28, 6586.57, 6600.01],
+              y: [6593.86, 6604.28, 6586.57, 6600.01]
             },
             {
               x: new Date(1538859600000),
-              y: [6601.81, 6603.21, 6592.78, 6596.25],
+              y: [6601.81, 6603.21, 6592.78, 6596.25]
             },
             {
               x: new Date(1538861400000),
-              y: [6596.25, 6604.2, 6590, 6602.99],
+              y: [6596.25, 6604.2, 6590, 6602.99]
             },
             {
               x: new Date(1538863200000),
-              y: [6602.99, 6606, 6584.99, 6587.81],
+              y: [6602.99, 6606, 6584.99, 6587.81]
             },
             {
               x: new Date(1538865000000),
-              y: [6587.81, 6595, 6583.27, 6591.96],
+              y: [6587.81, 6595, 6583.27, 6591.96]
             },
             {
               x: new Date(1538866800000),
-              y: [6591.97, 6596.07, 6585, 6588.39],
+              y: [6591.97, 6596.07, 6585, 6588.39]
             },
             {
               x: new Date(1538868600000),
-              y: [6587.6, 6598.21, 6587.6, 6594.27],
+              y: [6587.6, 6598.21, 6587.6, 6594.27]
             },
             {
               x: new Date(1538870400000),
-              y: [6596.44, 6601, 6590, 6596.55],
+              y: [6596.44, 6601, 6590, 6596.55]
             },
             {
               x: new Date(1538872200000),
-              y: [6598.91, 6605, 6596.61, 6600.02],
+              y: [6598.91, 6605, 6596.61, 6600.02]
             },
             {
               x: new Date(1538874000000),
-              y: [6600.55, 6605, 6589.14, 6593.01],
+              y: [6600.55, 6605, 6589.14, 6593.01]
             },
             {
               x: new Date(1538875800000),
-              y: [6593.15, 6605, 6592, 6603.06],
+              y: [6593.15, 6605, 6592, 6603.06]
             },
             {
               x: new Date(1538877600000),
-              y: [6603.07, 6604.5, 6599.09, 6603.89],
+              y: [6603.07, 6604.5, 6599.09, 6603.89]
             },
             {
               x: new Date(1538879400000),
-              y: [6604.44, 6604.44, 6600, 6603.5],
+              y: [6604.44, 6604.44, 6600, 6603.5]
             },
             {
               x: new Date(1538881200000),
-              y: [6603.5, 6603.99, 6597.5, 6603.86],
+              y: [6603.5, 6603.99, 6597.5, 6603.86]
             },
             {
               x: new Date(1538883000000),
-              y: [6603.85, 6605, 6600, 6604.07],
+              y: [6603.85, 6605, 6600, 6604.07]
             },
             {
               x: new Date(1538884800000),
-              y: [6604.98, 6606, 6604.07, 6606],
-            },
-          ],
-        },
+              y: [6604.98, 6606, 6604.07, 6606]
+            }
+          ]
+        }
       ],
       chartOptions: {
         chart: {
-          type: "candlestick",
+          type: 'candlestick',
           height: 360,
           toolbar: {
-            show: false,
-          },
+            show: false
+          }
         },
         plotOptions: {
           candlestick: {
             colors: {
-              upward: "#45CB85",
-              downward: "#f06548",
-            },
-          },
+              upward: '#45CB85',
+              downward: '#f06548'
+            }
+          }
         },
         xaxis: {
-          type: "datetime",
+          type: 'datetime'
         },
         yaxis: {
           tooltip: {
-            enabled: true,
+            enabled: true
           },
           labels: {
             formatter: function (value) {
-              return "$" + value;
-            },
-          },
+              return '$' + value
+            }
+          }
         },
         tooltip: {
           shared: true,
           y: [
             {
               formatter: function (y) {
-                if (typeof y !== "undefined") {
-                  return y.toFixed(0);
+                if (typeof y !== 'undefined') {
+                  return y.toFixed(0)
                 }
-                return y;
-              },
+                return y
+              }
             },
             {
               formatter: function (y) {
-                if (typeof y !== "undefined") {
-                  return "$" + y.toFixed(2) + "k";
+                if (typeof y !== 'undefined') {
+                  return '$' + y.toFixed(2) + 'k'
                 }
-                return y;
-              },
+                return y
+              }
             },
             {
               formatter: function (y) {
-                if (typeof y !== "undefined") {
-                  return y.toFixed(0) + " Sales";
+                if (typeof y !== 'undefined') {
+                  return y.toFixed(0) + ' Sales'
                 }
-                return y;
-              },
-            },
-          ],
-        },
-      },
-    };
+                return y
+              }
+            }
+          ]
+        }
+      }
+    }
     const data = [
       {
-        image: require("@/assets/images/svg/crypto-icons/btc.svg"),
-        currency_name: "Bitcoin (BTC)",
-        price: "$47,071.60",
-        pairs: "BTC/USD",
-        high: "$28,722.76",
-        low: "$68,789.63",
-        market: "$888,411,910",
-        volume: 1.5,
+        image: require('@/assets/images/svg/crypto-icons/btc.svg'),
+        currency_name: 'Bitcoin (BTC)',
+        price: '$47,071.60',
+        pairs: 'BTC/USD',
+        high: '$28,722.76',
+        low: '$68,789.63',
+        market: '$888,411,910',
+        volume: 1.5
       },
       {
-        image: require("@/assets/images/svg/crypto-icons/eth.svg"),
-        currency_name: "Ethereum (ETH)",
-        price: "$3,813.14",
-        pairs: "ETH/USDT",
-        high: "$4,036.24",
-        low: "$3,588.14",
-        market: "$314,520,675",
-        volume: 0.42,
+        image: require('@/assets/images/svg/crypto-icons/eth.svg'),
+        currency_name: 'Ethereum (ETH)',
+        price: '$3,813.14',
+        pairs: 'ETH/USDT',
+        high: '$4,036.24',
+        low: '$3,588.14',
+        market: '$314,520,675',
+        volume: 0.42
       },
       {
-        image: require("@/assets/images/svg/crypto-icons/ltc.svg"),
-        currency_name: "Litecoin (LTC)",
-        price: "$149.65",
-        pairs: "LTC/USDT",
-        high: "$412.96",
-        low: "$104.33",
-        market: "$314,520,675",
-        volume: 0.89,
+        image: require('@/assets/images/svg/crypto-icons/ltc.svg'),
+        currency_name: 'Litecoin (LTC)',
+        price: '$149.65',
+        pairs: 'LTC/USDT',
+        high: '$412.96',
+        low: '$104.33',
+        market: '$314,520,675',
+        volume: 0.89
       },
       {
-        image: require("@/assets/images/svg/crypto-icons/fil.svg"),
-        currency_name: "Filecoin (FIL)",
-        price: "$35.21",
-        pairs: "FIL/USD",
-        high: "$36.41",
-        low: "$35.03",
-        market: "$374,618,945.51",
-        volume: 0.84,
+        image: require('@/assets/images/svg/crypto-icons/fil.svg'),
+        currency_name: 'Filecoin (FIL)',
+        price: '$35.21',
+        pairs: 'FIL/USD',
+        high: '$36.41',
+        low: '$35.03',
+        market: '$374,618,945.51',
+        volume: 0.84
       },
       {
-        image: require("@/assets/images/svg/crypto-icons/eth.svg"),
-        currency_name: "Ethereum (ETH)",
-        price: "$3,813.14",
-        pairs: "ETH/USDT",
-        high: "$4,036.24",
-        low: "$3,588.14",
-        market: "$314,520,675",
-        volume: 0.42,
+        image: require('@/assets/images/svg/crypto-icons/eth.svg'),
+        currency_name: 'Ethereum (ETH)',
+        price: '$3,813.14',
+        pairs: 'ETH/USDT',
+        high: '$4,036.24',
+        low: '$3,588.14',
+        market: '$314,520,675',
+        volume: 0.42
       },
       {
-        image: require("@/assets/images/svg/crypto-icons/btc.svg"),
-        currency_name: "Bitcoin (BTC)",
-        price: "$47,071.60",
-        pairs: "BTC/USD",
-        high: "$28,722.76",
-        low: "$68,789.63",
-        market: "$888,411,910",
-        volume: 1.5,
+        image: require('@/assets/images/svg/crypto-icons/btc.svg'),
+        currency_name: 'Bitcoin (BTC)',
+        price: '$47,071.60',
+        pairs: 'BTC/USD',
+        high: '$28,722.76',
+        low: '$68,789.63',
+        market: '$888,411,910',
+        volume: 1.5
       },
       {
-        image: require("@/assets/images/svg/crypto-icons/aave.svg"),
-        currency_name: "Aave (AAVE)",
-        price: "$275.47",
-        pairs: "AAVE/USDT",
-        high: "$277.11",
-        low: "$255.01",
-        market: "$156,209,195.18",
-        volume: 8.2,
+        image: require('@/assets/images/svg/crypto-icons/aave.svg'),
+        currency_name: 'Aave (AAVE)',
+        price: '$275.47',
+        pairs: 'AAVE/USDT',
+        high: '$277.11',
+        low: '$255.01',
+        market: '$156,209,195.18',
+        volume: 8.2
       },
       {
-        image: require("@/assets/images/svg/crypto-icons/dot.svg"),
-        currency_name: "Polkadot (DOT)",
-        price: "$28.88",
-        pairs: "DOT/USD",
-        high: "$30.56",
-        low: "$28.66",
-        market: "$880,387,980.14",
-        volume: 1.03,
+        image: require('@/assets/images/svg/crypto-icons/dot.svg'),
+        currency_name: 'Polkadot (DOT)',
+        price: '$28.88',
+        pairs: 'DOT/USD',
+        high: '$30.56',
+        low: '$28.66',
+        market: '$880,387,980.14',
+        volume: 1.03
       },
       {
-        image: require("@/assets/images/svg/crypto-icons/ant.svg"),
-        currency_name: "Aragon (ANT)",
-        price: "$13.31",
-        pairs: "ANT/USD",
-        high: "$13.85",
-        low: "$12.53",
-        market: "$156,209,195.18",
-        volume: 3.96,
+        image: require('@/assets/images/svg/crypto-icons/ant.svg'),
+        currency_name: 'Aragon (ANT)',
+        price: '$13.31',
+        pairs: 'ANT/USD',
+        high: '$13.85',
+        low: '$12.53',
+        market: '$156,209,195.18',
+        volume: 3.96
       },
       {
-        image: require("@/assets/images/svg/crypto-icons/ada.svg"),
-        currency_name: "Cardano (ADA)",
-        price: "$1.35",
-        pairs: "ADA/USD",
-        high: "$1.39",
-        low: "$1.32",
-        market: "$880,387,980.14",
-        volume: 0.42,
-      },
-    ];
+        image: require('@/assets/images/svg/crypto-icons/ada.svg'),
+        currency_name: 'Cardano (ADA)',
+        price: '$1.35',
+        pairs: 'ADA/USD',
+        high: '$1.39',
+        low: '$1.32',
+        market: '$880,387,980.14',
+        volume: 0.42
+      }
+    ]
     return {
       options,
-      data,
-    };
-  },
-};
+      data
+    }
+  }
+}
 </script>
 
 <template>
@@ -629,7 +629,7 @@ export default {
                 <div
                   class="avatar-title bg-soft-danger text-danger fs-22 rounded"
                 >
-                  <i class="ri-shopping-bag-line"></i>
+                  <em class="ri-shopping-bag-line"></em>
                 </div>
               </div>
             </div>
@@ -655,7 +655,7 @@ export default {
               </div>
               <div class="flex-shrink-0 avatar-sm">
                 <div class="avatar-title bg-soft-info text-info fs-22 rounded">
-                  <i class="ri-funds-line"></i>
+                  <em class="ri-funds-line"></em>
                 </div>
               </div>
             </div>
@@ -683,7 +683,7 @@ export default {
                 <div
                   class="avatar-title bg-soft-warning text-warning fs-22 rounded"
                 >
-                  <i class="ri-arrow-left-down-fill"></i>
+                  <em class="ri-arrow-left-down-fill"></em>
                 </div>
               </div>
             </div>
@@ -711,7 +711,7 @@ export default {
                 <div
                   class="avatar-title bg-soft-success text-success fs-22 rounded"
                 >
-                  <i class="ri-arrow-right-up-fill"></i>
+                  <em class="ri-arrow-right-up-fill"></em>
                 </div>
               </div>
             </div>
@@ -729,19 +729,34 @@ export default {
           <div class="card-header border-0 align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">Market Graph</h4>
             <div>
-              <button type="button" class="btn btn-soft-secondary btn-sm me-1 shadow-none">
+              <button
+                type="button"
+                class="btn btn-soft-secondary btn-sm me-1 shadow-none"
+              >
                 1H
               </button>
-              <button type="button" class="btn btn-soft-secondary btn-sm me-1 shadow-none">
+              <button
+                type="button"
+                class="btn btn-soft-secondary btn-sm me-1 shadow-none"
+              >
                 7D
               </button>
-              <button type="button" class="btn btn-soft-secondary btn-sm me-1 shadow-none">
+              <button
+                type="button"
+                class="btn btn-soft-secondary btn-sm me-1 shadow-none"
+              >
                 1M
               </button>
-              <button type="button" class="btn btn-soft-secondary btn-sm me-1 shadow-none">
+              <button
+                type="button"
+                class="btn btn-soft-secondary btn-sm me-1 shadow-none"
+              >
                 1Y
               </button>
-              <button type="button" class="btn btn-soft-primary btn-sm me-1 shadow-none">
+              <button
+                type="button"
+                class="btn btn-soft-primary btn-sm me-1 shadow-none"
+              >
                 ALL
               </button>
             </div>
@@ -761,7 +776,7 @@ export default {
                       <p class="text-muted text-uppercase fw-medium mb-0">
                         Bitcoin (BTC)
                         <small class="badge badge-soft-success"
-                          ><i class="ri-arrow-right-up-line align-bottom"></i>
+                          ><em class="ri-arrow-right-up-line align-bottom"></em>
                           2.15%</small
                         >
                       </p>
@@ -1066,7 +1081,7 @@ export default {
           <div class="col-auto ms-auto">
             <div class="d-flex gap-2">
               <button class="btn btn-success">
-                <i class="ri-equalizer-line align-bottom me-1"></i> Filters
+                <em class="ri-equalizer-line align-bottom me-1"></em> Filters
               </button>
             </div>
           </div>
@@ -1080,7 +1095,7 @@ export default {
             class="form-control search border-0 py-3"
             placeholder="Search to currency..."
           />
-          <i class="ri-search-line search-icon"></i>
+          <em class="ri-search-line search-icon"></em>
         </div>
       </div>
       <div class="card-body">
@@ -1115,9 +1130,11 @@ export default {
                 <td>
                   <div class="d-flex align-items-center fw-medium">
                     <img :src="data.image" alt="" class="avatar-xxs me-2" />
-                    <a href="javascript:void(0);" class="currency_name text-body">{{
-                      data.currency_name
-                    }}</a>
+                    <a
+                      href="javascript:void(0);"
+                      class="currency_name text-body"
+                      >{{ data.currency_name }}</a
+                    >
                   </div>
                 </td>
                 <td class="current_value">{{ data.price }}</td>
@@ -1130,15 +1147,17 @@ export default {
                     class="fs-13 mb-0"
                     :class="{
                       'text-danger': data.volume > 1,
-                      'text-success': data.volume < 1,
+                      'text-success': data.volume < 1
                     }"
                   >
-                    <i class="mdi mdi-trending-up align-middle me-1"></i
+                    <em class="mdi mdi-trending-up align-middle me-1"></em
                     >{{ data.volume }}%
                   </h6>
                 </td>
                 <td>
-                  <button class="btn btn-sm btn-soft-info shadow-none">Trade Now</button>
+                  <button class="btn btn-sm btn-soft-info shadow-none">
+                    Trade Now
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -1159,7 +1178,7 @@ export default {
               <li
                 :class="{
                   active: pageNumber == page,
-                  disabled: pageNumber == '...',
+                  disabled: pageNumber == '...'
                 }"
                 v-for="(pageNumber, index) in pages.slice(page - 1, page + 5)"
                 :key="index"

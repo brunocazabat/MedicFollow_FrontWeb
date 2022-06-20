@@ -1,47 +1,47 @@
 <script>
-import flatPickr from "vue-flatpickr-component";
-import "flatpickr/dist/flatpickr.css";
-import Multiselect from "@vueform/multiselect";
-import "@vueform/multiselect/themes/default.css";
+import flatPickr from 'vue-flatpickr-component'
+import 'flatpickr/dist/flatpickr.css'
+import Multiselect from '@vueform/multiselect'
+import '@vueform/multiselect/themes/default.css'
 
-import Layout from "../../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../../app.config";
+import Layout from '../../../layouts/main.vue'
+import PageHeader from '@/components/page-header'
+import appConfig from '../../../../app.config'
 
 export default {
   page: {
-    title: "ICO List",
-    meta: [{ name: "description", content: appConfig.description }],
+    title: 'ICO List',
+    meta: [{ name: 'description', content: appConfig.description }]
   },
   data() {
     return {
-      title: "ICO List",
+      title: 'ICO List',
       items: [
         {
-          text: "Crypto",
-          href: "/",
+          text: 'Crypto',
+          href: '/'
         },
         {
-          text: "ICO List",
-          active: true,
-        },
+          text: 'ICO List',
+          active: true
+        }
       ],
       value: null,
       value1: null,
       date: null,
       rangeDateconfig: {
-        mode: "range",
-        dateFormat: "d M, Y",
-      },
-    };
+        mode: 'range',
+        dateFormat: 'd M, Y'
+      }
+    }
   },
   components: {
     Layout,
     PageHeader,
     Multiselect,
-    flatPickr,
-  },
-};
+    flatPickr
+  }
+}
 </script>
 
 <template>
@@ -59,7 +59,7 @@ export default {
               <div
                 class="avatar-title bg-soft-warning text-warning fs-22 rounded"
               >
-                <i class="ri-upload-2-line"></i>
+                <em class="ri-upload-2-line"></em>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default {
               <div
                 class="avatar-title bg-soft-success text-success fs-22 rounded"
               >
-                <i class="ri-remote-control-line"></i>
+                <em class="ri-remote-control-line"></em>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default {
             </div>
             <div class="flex-shrink-0 avatar-sm">
               <div class="avatar-title bg-soft-info text-info fs-22 rounded">
-                <i class="ri-flashlight-fill"></i>
+                <em class="ri-flashlight-fill"></em>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default {
               <div
                 class="avatar-title bg-soft-danger text-danger fs-22 rounded"
               >
-                <i class="ri-hand-coin-line"></i>
+                <em class="ri-hand-coin-line"></em>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default {
               <div
                 class="avatar-title bg-soft-primary text-primary fs-22 rounded"
               >
-                <i class="ri-donut-chart-line"></i>
+                <em class="ri-donut-chart-line"></em>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ export default {
                 class="form-control"
                 placeholder="Search to ICOs..."
               />
-              <i class="ri-search-line search-icon"></i>
+              <em class="ri-search-line search-icon"></em>
             </div>
           </div>
           <!--end col-->
@@ -171,7 +171,7 @@ export default {
               :options="[
                 { value: 'Active', label: 'Active' },
                 { value: 'Ended', label: 'Ended' },
-                { value: 'Upcoming', label: 'Upcoming' },
+                { value: 'Upcoming', label: 'Upcoming' }
               ]"
             />
           </div>
@@ -189,14 +189,14 @@ export default {
                 { value: '2', label: '2 star' },
                 { value: '3', label: '3 star' },
                 { value: '4', label: '4 star' },
-                { value: '5', label: '5 star' },
+                { value: '5', label: '5 star' }
               ]"
             />
           </div>
           <!--end col-->
           <div class="col-xxl-1 col-lg-4">
             <button class="btn btn-primary w-100">
-              <i class="ri-equalizer-line align-bottom me-1"></i> Filters
+              <em class="ri-equalizer-line align-bottom me-1"></em> Filters
             </button>
           </div>
         </div>
@@ -215,7 +215,7 @@ export default {
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/btc.svg"
                     alt=""
@@ -230,7 +230,7 @@ export default {
               <div>
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -243,11 +243,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  4.8 <i class="ri-star-fill align-bottom text-warning"></i>
+                  4.8 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-danger mb-0">
-                <i class="ri-time-line align-bottom"></i> 05 Days
+                <em class="ri-time-line align-bottom"></em> 05 Days
               </h6>
             </div>
           </div>
@@ -257,7 +257,7 @@ export default {
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/companies/img-6.png"
                     alt=""
@@ -272,7 +272,7 @@ export default {
               <div>
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -285,11 +285,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  4.4 <i class="ri-star-fill align-bottom text-warning"></i>
+                  4.4 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-danger mb-0">
-                <i class="ri-time-line align-bottom"></i> 15 Days
+                <em class="ri-time-line align-bottom"></em> 15 Days
               </h6>
             </div>
           </div>
@@ -299,7 +299,7 @@ export default {
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/vtc.svg"
                     alt=""
@@ -314,7 +314,7 @@ export default {
               <div>
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -327,11 +327,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  2.7 <i class="ri-star-fill align-bottom text-warning"></i>
+                  2.7 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-warning mb-0">
-                <i class="ri-time-line align-bottom"></i> 25 Jan, 2022
+                <em class="ri-time-line align-bottom"></em> 25 Jan, 2022
               </h6>
             </div>
           </div>
@@ -341,7 +341,7 @@ export default {
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/xsg.svg"
                     alt=""
@@ -356,7 +356,7 @@ export default {
               <div>
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -369,11 +369,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  3.2 <i class="ri-star-fill align-bottom text-warning"></i>
+                  3.2 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-warning mb-0">
-                <i class="ri-time-line align-bottom"></i> 04 Feb, 2022
+                <em class="ri-time-line align-bottom"></em> 04 Feb, 2022
               </h6>
             </div>
           </div>
@@ -383,7 +383,7 @@ export default {
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/companies/img-8.png"
                     alt=""
@@ -398,7 +398,7 @@ export default {
               <div>
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -411,11 +411,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  3.9 <i class="ri-star-fill align-bottom text-warning"></i>
+                  3.9 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-warning mb-0">
-                <i class="ri-time-line align-bottom"></i> 05 March, 2022
+                <em class="ri-time-line align-bottom"></em> 05 March, 2022
               </h6>
             </div>
           </div>
@@ -434,7 +434,7 @@ export default {
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/bela.svg"
                     alt=""
@@ -449,7 +449,7 @@ export default {
               <div>
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -462,11 +462,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  2.8 <i class="ri-star-fill align-bottom text-warning"></i>
+                  2.8 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-muted mb-0">
-                <i class="ri-time-line align-bottom"></i> 02 Jan, 2022
+                <em class="ri-time-line align-bottom"></em> 02 Jan, 2022
               </h6>
             </div>
           </div>
@@ -476,7 +476,7 @@ export default {
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/arn.svg"
                     alt=""
@@ -491,7 +491,7 @@ export default {
               <div>
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -504,11 +504,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  2.1 <i class="ri-star-fill align-bottom text-warning"></i>
+                  2.1 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-muted mb-0">
-                <i class="ri-time-line align-bottom"></i> 23 Dec, 2021
+                <em class="ri-time-line align-bottom"></em> 23 Dec, 2021
               </h6>
             </div>
           </div>
@@ -518,7 +518,7 @@ export default {
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/cs.svg"
                     alt=""
@@ -533,7 +533,7 @@ export default {
               <div>
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -546,11 +546,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  3.0 <i class="ri-star-fill align-bottom text-warning"></i>
+                  3.0 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-muted mb-0">
-                <i class="ri-time-line align-bottom"></i> 04 Oct, 2021
+                <em class="ri-time-line align-bottom"></em> 04 Oct, 2021
               </h6>
             </div>
           </div>
@@ -569,7 +569,7 @@ export default {
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/add.svg"
                     alt=""
@@ -584,7 +584,7 @@ export default {
               <div>
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -594,11 +594,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  4.7 <i class="ri-star-fill align-bottom text-warning"></i>
+                  4.7 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-primary mb-0">
-                <i class="ri-time-line align-bottom"></i> 15 Jan, 2022
+                <em class="ri-time-line align-bottom"></em> 15 Jan, 2022
               </h6>
             </div>
           </div>
@@ -608,7 +608,7 @@ export default {
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/atm.svg"
                     alt=""
@@ -623,7 +623,7 @@ export default {
               <div>
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -633,7 +633,7 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  3.5 <i class="ri-star-fill align-bottom text-warning"></i>
+                  3.5 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-muted mb-0">-</h6>
@@ -652,12 +652,12 @@ export default {
         </div>
         <div class="card mb-2 ribbon-box ribbon-fill right">
           <div class="ribbon ribbon-info shadow-none">
-            <i class="ri-flashlight-fill me-1"></i> 1
+            <em class="ri-flashlight-fill me-1"></em> 1
           </div>
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/bcbc.svg"
                     alt=""
@@ -672,7 +672,7 @@ export default {
               <div class="me-4">
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -685,11 +685,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  4.9 <i class="ri-star-fill align-bottom text-warning"></i>
+                  4.9 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-warning mb-0">
-                <i class="ri-time-line align-bottom"></i> 16 Feb, 2022
+                <em class="ri-time-line align-bottom"></em> 16 Feb, 2022
               </h6>
             </div>
           </div>
@@ -697,12 +697,12 @@ export default {
         <!--end card-->
         <div class="card mb-2 ribbon-box ribbon-fill right">
           <div class="ribbon ribbon-info shadow-none">
-            <i class="ri-flashlight-fill me-1"></i> 2
+            <em class="ri-flashlight-fill me-1"></em> 2
           </div>
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/bix.svg"
                     alt=""
@@ -717,7 +717,7 @@ export default {
               <div class="me-4">
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -730,11 +730,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  4.7 <i class="ri-star-fill align-bottom text-warning"></i>
+                  4.7 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-warning mb-0">
-                <i class="ri-time-line align-bottom"></i> 23 Jan, 2022
+                <em class="ri-time-line align-bottom"></em> 23 Jan, 2022
               </h6>
             </div>
           </div>
@@ -742,12 +742,12 @@ export default {
         <!--end card-->
         <div class="card mb-2 ribbon-box ribbon-fill right">
           <div class="ribbon ribbon-info shadow-none">
-            <i class="ri-flashlight-fill me-1"></i> 3
+            <em class="ri-flashlight-fill me-1"></em> 3
           </div>
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/rise.svg"
                     alt=""
@@ -762,7 +762,7 @@ export default {
               <div class="me-4">
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -775,11 +775,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  3.2 <i class="ri-star-fill align-bottom text-warning"></i>
+                  3.2 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-warning mb-0">
-                <i class="ri-time-line align-bottom"></i> 30 Dec, 2021
+                <em class="ri-time-line align-bottom"></em> 30 Dec, 2021
               </h6>
             </div>
           </div>
@@ -787,12 +787,12 @@ export default {
         <!--end card-->
         <div class="card ribbon-box ribbon-fill right">
           <div class="ribbon ribbon-info shadow-none">
-            <i class="ri-flashlight-fill me-1"></i> 4
+            <em class="ri-flashlight-fill me-1"></em> 4
           </div>
           <div class="card-body">
             <div class="d-flex mb-3">
               <div class="flex-shrink-0 avatar-sm">
-                <div class="avatar-title bg-light rounded shadow"> 
+                <div class="avatar-title bg-light rounded shadow">
                   <img
                     src="@/assets/images/svg/crypto-icons/ark.svg"
                     alt=""
@@ -807,7 +807,7 @@ export default {
               <div class="me-4">
                 <a href="javascript:void(0);" class="badge badge-soft-primary"
                   >Visit Website
-                  <i class="ri-arrow-right-up-line align-bottom"></i
+                  <em class="ri-arrow-right-up-line align-bottom"></em
                 ></a>
               </div>
             </div>
@@ -820,11 +820,11 @@ export default {
             <div class="d-flex">
               <div class="flex-grow-1">
                 <h6 class="mb-0">
-                  3.2 <i class="ri-star-fill align-bottom text-warning"></i>
+                  3.2 <em class="ri-star-fill align-bottom text-warning"></em>
                 </h6>
               </div>
               <h6 class="flex-shrink-0 text-warning mb-0">
-                <i class="ri-time-line align-bottom"></i> 02 Dec, 2021
+                <em class="ri-time-line align-bottom"></em> 02 Dec, 2021
               </h6>
             </div>
           </div>

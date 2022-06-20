@@ -156,7 +156,7 @@ export default {};
                 <p class="fs-14">Please check back in sometime</p>
                 <div class="mt-4 pt-2">
                   <router-link to="/" class="btn btn-success"
-                    ><i class="mdi mdi-home me-1"></i> Back to Home</router-link
+                    ><em class="mdi mdi-home me-1"></em> Back to Home</router-link
                   >
                 </div>
               </div>

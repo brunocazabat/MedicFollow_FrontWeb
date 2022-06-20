@@ -27,7 +27,7 @@ export default {
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-success mb-0">
-                  <i class="ri-arrow-up-line align-middle"></i> 16.24 %
+                  <em class="ri-arrow-up-line align-middle"></em> 16.24 %
                 </span>
                 vs. previous month
               </p>
@@ -58,7 +58,7 @@ export default {
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-danger mb-0">
-                  <i class="ri-arrow-down-line align-middle"></i> 3.96 %
+                  <em class="ri-arrow-down-line align-middle"></em> 3.96 %
                 </span>
                 vs. previous month
               </p>
@@ -93,7 +93,7 @@ export default {
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-danger mb-0">
-                  <i class="ri-arrow-down-line align-middle"></i> 0.24 %
+                  <em class="ri-arrow-down-line align-middle"></em> 0.24 %
                 </span>
                 vs. previous month
               </p>
@@ -124,7 +124,7 @@ export default {
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-success mb-0">
-                  <i class="ri-arrow-up-line align-middle"></i> 7.05 %
+                  <em class="ri-arrow-up-line align-middle"></em> 7.05 %
                 </span>
                 vs. previous month
               </p>

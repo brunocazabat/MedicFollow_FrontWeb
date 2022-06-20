@@ -92,7 +92,7 @@
         <div class="dropdown card-header-dropdown">
           <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            <span class="text-muted fs-16"><i class="mdi mdi-dots-vertical align-middle"></i></span>
+            <span class="text-muted fs-16"><em class="mdi mdi-dots-vertical align-middle"></em></span>
           </a>
           <div class="dropdown-menu dropdown-menu-end">
             <a class="dropdown-item" href="#">Today</a>
@@ -113,7 +113,7 @@
             <tr>
               <td>
                 <h4 class="text-truncate fs-14 fs-medium mb-0">
-                  <i class="ri-stop-fill align-middle fs-18 text-primary me-2"></i>Desktop Users
+                  <em class="ri-stop-fill align-middle fs-18 text-primary me-2"></em>Desktop Users
                 </h4>
               </td>
               <td>
@@ -123,14 +123,14 @@
               </td>
               <td class="text-end">
                 <p class="text-success fw-medium fs-12 mb-0">
-                  <i class="ri-arrow-up-s-fill fs-5 align-middle"></i>2.08%
+                  <em class="ri-arrow-up-s-fill fs-5 align-middle"></em>2.08%
                 </p>
               </td>
             </tr>
             <tr>
               <td>
                 <h4 class="text-truncate fs-14 fs-medium mb-0">
-                  <i class="ri-stop-fill align-middle fs-18 text-warning me-2"></i>Mobile Users
+                  <em class="ri-stop-fill align-middle fs-18 text-warning me-2"></em>Mobile Users
                 </h4>
               </td>
               <td>
@@ -140,14 +140,14 @@
               </td>
               <td class="text-end">
                 <p class="text-danger fw-medium fs-12 mb-0">
-                  <i class="ri-arrow-down-s-fill fs-5 align-middle"></i>10.52%
+                  <em class="ri-arrow-down-s-fill fs-5 align-middle"></em>10.52%
                 </p>
               </td>
             </tr>
             <tr>
               <td>
                 <h4 class="text-truncate fs-14 fs-medium mb-0">
-                  <i class="ri-stop-fill align-middle fs-18 text-info me-2"></i>Tablet Users
+                  <em class="ri-stop-fill align-middle fs-18 text-info me-2"></em>Tablet Users
                 </h4>
               </td>
               <td>
@@ -157,7 +157,7 @@
               </td>
               <td class="text-end">
                 <p class="text-danger fw-medium fs-12 mb-0">
-                  <i class="ri-arrow-down-s-fill fs-5 align-middle"></i>7.36%
+                  <em class="ri-arrow-down-s-fill fs-5 align-middle"></em>7.36%
                 </p>
               </td>
             </tr>

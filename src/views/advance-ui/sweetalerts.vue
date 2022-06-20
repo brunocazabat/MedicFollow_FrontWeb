@@ -1,285 +1,285 @@
 <script>
-import Swal from "sweetalert2";
+import Swal from 'sweetalert2'
 
-import Layout from "../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../app.config";
+import Layout from '../../layouts/main.vue'
+import PageHeader from '@/components/page-header'
+import appConfig from '../../../app.config'
 
 export default {
   page: {
-    title: "Sweetalert",
-    meta: [{ name: "description", content: appConfig.description }],
+    title: 'Sweetalert',
+    meta: [{ name: 'description', content: appConfig.description }]
   },
   data() {
     return {
-      title: "Sweet Alert",
+      title: 'Sweet Alert',
       items: [
         {
-          text: "Advance UI",
-          href: "/",
+          text: 'Advance UI',
+          href: '/'
         },
         {
-          text: "Sweet Alert",
-          active: true,
-        },
-      ],
-    };
+          text: 'Sweet Alert',
+          active: true
+        }
+      ]
+    }
   },
   components: {
     Layout,
-    PageHeader,
+    PageHeader
   },
   methods: {
     showAlert() {
-      Swal.fire("Any fool can use a computer!");
+      Swal.fire('Any fool can use a computer!')
     },
     titleText() {
-      Swal.fire("The Internet?", "That thing is still around?", "question");
+      Swal.fire('The Internet?', 'That thing is still around?', 'question')
     },
     successmsg() {
-      Swal.fire("Good job!", "You clicked the button!", "success");
+      Swal.fire('Good job!', 'You clicked the button!', 'success')
     },
     position() {
       Swal.fire({
-        position: "top-end",
-        icon: "success",
-        title: "Your work has been saved",
+        position: 'top-end',
+        icon: 'success',
+        title: 'Your work has been saved',
         showConfirmButton: false,
-        timer: 1500,
-      });
+        timer: 1500
+      })
     },
     confirm() {
       Swal.fire({
-        title: "Are you sure?",
+        title: 'Are you sure?',
         text: "You won't be able to revert this!",
-        icon: "warning",
+        icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: "#34c38f",
-        cancelButtonColor: "#f46a6a",
-        confirmButtonText: "Yes, delete it!",
+        confirmButtonColor: '#34c38f',
+        cancelButtonColor: '#f46a6a',
+        confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
         if (result.value) {
-          Swal.fire("Deleted!", "Your file has been deleted.", "success");
+          Swal.fire('Deleted!', 'Your file has been deleted.', 'success')
         }
-      });
+      })
     },
     cancel() {
       const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
-          confirmButton: "btn btn-success",
-          cancelButton: "btn btn-danger ml-2",
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-danger ml-2'
         },
-        buttonsStyling: false,
-      });
+        buttonsStyling: false
+      })
 
       swalWithBootstrapButtons
         .fire({
-          title: "Are you sure?",
+          title: 'Are you sure?',
           text: "You won't be able to revert this!",
-          icon: "warning",
-          confirmButtonText: "Yes, delete it!",
-          cancelButtonText: "No, cancel!",
-          showCancelButton: true,
+          icon: 'warning',
+          confirmButtonText: 'Yes, delete it!',
+          cancelButtonText: 'No, cancel!',
+          showCancelButton: true
         })
         .then((result) => {
           if (result.value) {
             swalWithBootstrapButtons.fire(
-              "Deleted!",
-              "Your file has been deleted.",
-              "success"
-            );
+              'Deleted!',
+              'Your file has been deleted.',
+              'success'
+            )
           } else if (
             /* Read more about handling dismissals below */
             result.dismiss === Swal.DismissReason.cancel
           ) {
             swalWithBootstrapButtons.fire(
-              "Cancelled",
-              "Your imaginary file is safe :)",
-              "error"
-            );
+              'Cancelled',
+              'Your imaginary file is safe :)',
+              'error'
+            )
           }
-        });
+        })
     },
     saError() {
       Swal.fire({
-        title: "Oops...",
-        text: "Something went wrong!",
-        icon: "error",
-        confirmButtonClass: "btn btn-primary w-xs mt-2",
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        icon: 'error',
+        confirmButtonClass: 'btn btn-primary w-xs mt-2',
         buttonsStyling: false,
         footer: '<a href="">Why do I have this issue?</a>',
-        showCloseButton: true,
-      });
+        showCloseButton: true
+      })
     },
     content() {
       Swal.fire({
-        imageUrl: "https://placeholder.pics/svg/300x1500",
+        imageUrl: 'https://placeholder.pics/svg/300x1500',
         imageHeight: 1500,
-        imageAlt: "A tall image",
-        confirmButtonClass: "btn btn-primary w-xs mt-2",
+        imageAlt: 'A tall image',
+        confirmButtonClass: 'btn btn-primary w-xs mt-2',
         buttonsStyling: false,
-        showCloseButton: true,
-      });
+        showCloseButton: true
+      })
     },
     threeButton() {
       Swal.fire({
-        title: "Do you want to save the changes?",
+        title: 'Do you want to save the changes?',
         showDenyButton: true,
         showCancelButton: true,
-        confirmButtonText: "Save",
-        confirmButtonClass: "btn btn-success w-xs me-2",
-        cancelButtonClass: "btn btn-danger w-xs",
-        denyButtonClass: "btn btn-info w-xs me-2",
+        confirmButtonText: 'Save',
+        confirmButtonClass: 'btn btn-success w-xs me-2',
+        cancelButtonClass: 'btn btn-danger w-xs',
+        denyButtonClass: 'btn btn-info w-xs me-2',
         buttonsStyling: false,
         denyButtonText: "Don't save",
-        showCloseButton: true,
+        showCloseButton: true
       }).then(function (result) {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
           Swal.fire({
-            title: "Saved!",
-            icon: "success",
-            confirmButtonClass: "btn btn-primary w-xs",
-            buttonsStyling: false,
-          });
+            title: 'Saved!',
+            icon: 'success',
+            confirmButtonClass: 'btn btn-primary w-xs',
+            buttonsStyling: false
+          })
         } else if (result.isDenied) {
           Swal.fire({
-            title: "Changes are not saved",
-            icon: "info",
-            confirmButtonClass: "btn btn-primary w-xs",
-            buttonsStyling: false,
-          });
+            title: 'Changes are not saved',
+            icon: 'info',
+            confirmButtonClass: 'btn btn-primary w-xs',
+            buttonsStyling: false
+          })
         }
-      });
+      })
     },
     imageHeader() {
       Swal.fire({
-        title: "Sweet!",
-        text: "Modal with a custom image.",
-        imageUrl: require("@/assets/images/logo-dark.png"),
+        title: 'Sweet!',
+        text: 'Modal with a custom image.',
+        imageUrl: require('@/assets/images/logo-dark.png'),
         imageHeight: 20,
-        confirmButtonColor: "#556ee6",
-      });
+        confirmButtonColor: '#556ee6'
+      })
     },
     timer() {
-      let timerInterval;
+      let timerInterval
       Swal.fire({
-        title: "Auto close alert!",
-        html: "I will close in <b></b> milliseconds.",
+        title: 'Auto close alert!',
+        html: 'I will close in <b></b> milliseconds.',
         timer: 2000,
         timerProgressBar: true,
         onBeforeOpen: () => {
-          Swal.showLoading();
+          Swal.showLoading()
           timerInterval = setInterval(() => {
-            Swal.getContent().querySelector("b").textContent =
-              Swal.getTimerLeft();
-          }, 100);
+            Swal.getContent().querySelector('b').textContent =
+              Swal.getTimerLeft()
+          }, 100)
         },
         onClose: () => {
-          clearInterval(timerInterval);
-        },
+          clearInterval(timerInterval)
+        }
       }).then((result) => {
         if (
           /* Read more about handling dismissals below */
           result.dismiss === Swal.DismissReason.timer
         ) {
-          console.log("I was closed by the timer"); // eslint-disable-line
+          console.log('I was closed by the timer') // eslint-disable-line
         }
-      });
+      })
     },
     custom() {
       Swal.fire({
-        title: "<i>HTML</i> <u>example</u>",
-        icon: "info",
+        title: '<em>HTML</em> <u>example</u>',
+        icon: 'info',
         html:
-          "You can use <b>bold text</b>, " +
+          'You can use <b>bold text</b>, ' +
           '<a href="//MedicFollow.in/">links</a> ' +
-          "and other HTML tags",
+          'and other HTML tags',
         showCancelButton: true,
-        confirmButtonClass: "btn btn-success me-2",
-        cancelButtonClass: "btn btn-danger",
+        confirmButtonClass: 'btn btn-success me-2',
+        cancelButtonClass: 'btn btn-danger',
         buttonsStyling: false,
         confirmButtonText:
-          '<i class="ri-thumb-up-fill align-bottom me-1"></i> Great!',
-        cancelButtonText: '<i class="ri-thumb-down-fill align-bottom"></i>',
-      });
+          '<em class="ri-thumb-up-fill align-bottom me-1"></em> Great!',
+        cancelButtonText: '<em class="ri-thumb-down-fill align-bottom"></em>'
+      })
     },
     customBackground() {
       Swal.fire({
-        title: "Custom width, padding, background.",
+        title: 'Custom width, padding, background.',
         width: 600,
         padding: 100,
-        confirmButtonColor: "#556ee6",
+        confirmButtonColor: '#556ee6',
         background:
-          "#fff url(//subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/geometry.png)",
-      });
+          '#fff url(//subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/geometry.png)'
+      })
     },
     ajax() {
       Swal.fire({
-        title: "Submit email to run ajax request",
-        input: "email",
+        title: 'Submit email to run ajax request',
+        input: 'email',
         showCancelButton: true,
-        confirmButtonText: "Submit",
+        confirmButtonText: 'Submit',
         showLoaderOnConfirm: true,
-        confirmButtonColor: "#556ee6",
-        cancelButtonColor: "#f46a6a",
+        confirmButtonColor: '#556ee6',
+        cancelButtonColor: '#f46a6a',
         preConfirm: (email) => {
           // eslint-disable-next-line no-unused-vars
           return new Promise(function (resolve, reject) {
             setTimeout(function () {
-              if (email === "taken@example.com") {
-                Promise.reject(new Error("This email is already taken."));
+              if (email === 'taken@example.com') {
+                Promise.reject(new Error('This email is already taken.'))
               } else {
-                resolve();
+                resolve()
               }
-            }, 2000);
-          });
+            }, 2000)
+          })
         },
-        allowOutsideClick: false,
+        allowOutsideClick: false
       }).then((email) => {
         Swal.fire({
-          title: "Ajax request finished!",
-          html: "Submitted email: " + email,
-        });
-      });
+          title: 'Ajax request finished!',
+          html: 'Submitted email: ' + email
+        })
+      })
     },
     chain() {
       Swal.mixin({
-        input: "text",
-        confirmButtonText: "Next &rarr;",
+        input: 'text',
+        confirmButtonText: 'Next &rarr;',
         showCancelButton: true,
-        confirmButtonColor: "#556ee6",
-        cancelButtonColor: "#74788d",
-        progressSteps: ["1", "2", "3"],
+        confirmButtonColor: '#556ee6',
+        cancelButtonColor: '#74788d',
+        progressSteps: ['1', '2', '3']
       })
         .queue([
           {
-            title: "Question 1",
-            text: "Chaining swal2 modals is easy",
+            title: 'Question 1',
+            text: 'Chaining swal2 modals is easy'
           },
-          "Question 2",
-          "Question 3",
+          'Question 2',
+          'Question 3'
         ])
         .then((result) => {
           if (result.value) {
             Swal.fire({
-              title: "All done!",
+              title: 'All done!',
               html:
-                "Your answers: <pre><code>" +
+                'Your answers: <pre><code>' +
                 JSON.stringify(result.value) +
-                "</code></pre>",
-              confirmButtonText: "Lovely!",
-            });
+                '</code></pre>',
+              confirmButtonText: 'Lovely!'
+            })
           }
-        });
+        })
     },
     dynamicQueue() {
-      var ipAPI = "https://api.ipify.org?format=json";
+      var ipAPI = 'https://api.ipify.org?format=json'
       Swal.queue([
         {
-          title: "Your public IP",
-          confirmButtonText: "Show my public IP",
-          text: "Your public IP will be received " + "via AJAX request",
+          title: 'Your public IP',
+          confirmButtonText: 'Show my public IP',
+          text: 'Your public IP will be received ' + 'via AJAX request',
           showLoaderOnConfirm: true,
           preConfirm: () => {
             return fetch(ipAPI)
@@ -287,16 +287,16 @@ export default {
               .then((data) => Swal.insertQueueStep(data.ip))
               .catch(() => {
                 Swal.insertQueueStep({
-                  type: "error",
-                  title: "Unable to get your public IP",
-                });
-              });
-          },
-        },
-      ]);
-    },
-  },
-};
+                  type: 'error',
+                  title: 'Unable to get your public IP'
+                })
+              })
+          }
+        }
+      ])
+    }
+  }
+}
 </script>
 
 <template>
@@ -542,7 +542,5 @@ export default {
       <!-- end col -->
     </div>
     <!-- end row -->
-
- 
   </Layout>
 </template>

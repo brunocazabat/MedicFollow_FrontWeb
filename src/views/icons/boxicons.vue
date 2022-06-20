@@ -45,2353 +45,2353 @@ export default {
                                         <h5>Regular</h5>
                                         <div class="row icon-demo-content">
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-lemon"></i> bx bx-lemon
+                                                <em class="bx bx-lemon"></em> bx bx-lemon
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cable-car"></i> bx bx-cable-car
+                                                <em class="bx bx-cable-car"></em> bx bx-cable-car
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cricket-ball"></i> bx bx-cricket-ball
+                                                <em class="bx bx-cricket-ball"></em> bx bx-cricket-ball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-male-female"></i> bx bx-male-female
+                                                <em class="bx bx-male-female"></em> bx bx-male-female
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-baguette"></i> bx bx-baguette
+                                                <em class="bx bx-baguette"></em> bx bx-baguette
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-fork"></i> bx bx-fork
+                                                <em class="bx bx-fork"></em> bx bx-fork
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-knife"></i> bx bx-knife
+                                                <em class="bx bx-knife"></em> bx bx-knife
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-circle-half"></i> bx bx-circle-half
+                                                <em class="bx bx-circle-half"></em> bx bx-circle-half
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-circle-three-quarter"></i> bx bx-circle-three-quarter
+                                                <em class="bx bx-circle-three-quarter"></em> bx bx-circle-three-quarter
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-circle-quarter"></i> bx bx-circle-quarter
+                                                <em class="bx bx-circle-quarter"></em> bx bx-circle-quarter
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bowl-rice"></i> bx bx-bowl-rice
+                                                <em class="bx bx-bowl-rice"></em> bx bx-bowl-rice
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bowl-hot"></i> bx bx-bowl-hot
+                                                <em class="bx bx-bowl-hot"></em> bx bx-bowl-hot
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-popsicle"></i> bx bx-popsicle
+                                                <em class="bx bx-popsicle"></em> bx bx-popsicle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cross"></i> bx bx-cross
+                                                <em class="bx bx-cross"></em> bx bx-cross
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-scatter-chart"></i> bx bx-scatter-chart
+                                                <em class="bx bx-scatter-chart"></em> bx bx-scatter-chart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-money-withdraw"></i> bx bx-money-withdraw
+                                                <em class="bx bx-money-withdraw"></em> bx bx-money-withdraw
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-candles"></i> bx bx-candles
+                                                <em class="bx bx-candles"></em> bx bx-candles
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-math"></i> bx bx-math
+                                                <em class="bx bx-math"></em> bx bx-math
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-party"></i> bx bx-party
+                                                <em class="bx bx-party"></em> bx bx-party
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-leaf"></i> bx bx-leaf
+                                                <em class="bx bx-leaf"></em> bx bx-leaf
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-injection"></i> bx bx-injection
+                                                <em class="bx bx-injection"></em> bx bx-injection
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-expand-vertical"></i> bx bx-expand-vertical
+                                                <em class="bx bx-expand-vertical"></em> bx bx-expand-vertical
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-expand-horizontal"></i> bx bx-expand-horizontal
+                                                <em class="bx bx-expand-horizontal"></em> bx bx-expand-horizontal
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-collapse-vertical"></i> bx bx-collapse-vertical
+                                                <em class="bx bx-collapse-vertical"></em> bx bx-collapse-vertical
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-collapse-horizontal"></i> bx bx-collapse-horizontal
+                                                <em class="bx bx-collapse-horizontal"></em> bx bx-collapse-horizontal
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-collapse-alt"></i> bx bx-collapse-alt
+                                                <em class="bx bx-collapse-alt"></em> bx bx-collapse-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-qr"></i> bx bx-qr
+                                                <em class="bx bx-qr"></em> bx bx-qr
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-qr-scan"></i> bx bx-qr-scan
+                                                <em class="bx bx-qr-scan"></em> bx bx-qr-scan
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-podcast"></i> bx bx-podcast
+                                                <em class="bx bx-podcast"></em> bx bx-podcast
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-checkbox-minus"></i> bx bx-checkbox-minus
+                                                <em class="bx bx-checkbox-minus"></em> bx bx-checkbox-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-speaker"></i> bx bx-speaker
+                                                <em class="bx bx-speaker"></em> bx bx-speaker
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-registered"></i> bx bx-registered
+                                                <em class="bx bx-registered"></em> bx bx-registered
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-phone-off"></i> bx bx-phone-off
+                                                <em class="bx bx-phone-off"></em> bx bx-phone-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-buildings"></i> bx bx-buildings
+                                                <em class="bx bx-buildings"></em> bx bx-buildings
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-store-alt"></i> bx bx-store-alt
+                                                <em class="bx bx-store-alt"></em> bx bx-store-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bar-chart-alt-2"></i> bx bx-bar-chart-alt-2
+                                                <em class="bx bx-bar-chart-alt-2"></em> bx bx-bar-chart-alt-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-dots"></i> bx bx-message-dots
+                                                <em class="bx bx-message-dots"></em> bx bx-message-dots
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-rounded-dots"></i> bx bx-message-rounded-dots
+                                                <em class="bx bx-message-rounded-dots"></em> bx bx-message-rounded-dots
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-memory-card"></i> bx bx-memory-card
+                                                <em class="bx bx-memory-card"></em> bx bx-memory-card
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wallet-alt"></i> bx bx-wallet-alt
+                                                <em class="bx bx-wallet-alt"></em> bx bx-wallet-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-slideshow"></i> bx bx-slideshow
+                                                <em class="bx bx-slideshow"></em> bx bx-slideshow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-square"></i> bx bx-message-square
+                                                <em class="bx bx-message-square"></em> bx bx-message-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-square-dots"></i> bx bx-message-square-dots
+                                                <em class="bx bx-message-square-dots"></em> bx bx-message-square-dots
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-book-content"></i> bx bx-book-content
+                                                <em class="bx bx-book-content"></em> bx bx-book-content
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chat"></i> bx bx-chat
+                                                <em class="bx bx-chat"></em> bx bx-chat
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-edit-alt"></i> bx bx-edit-alt
+                                                <em class="bx bx-edit-alt"></em> bx bx-edit-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-mouse-alt"></i> bx bx-mouse-alt
+                                                <em class="bx bx-mouse-alt"></em> bx bx-mouse-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bug-alt"></i> bx bx-bug-alt
+                                                <em class="bx bx-bug-alt"></em> bx bx-bug-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-notepad"></i> bx bx-notepad
+                                                <em class="bx bx-notepad"></em> bx bx-notepad
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-video-recording"></i> bx bx-video-recording
+                                                <em class="bx bx-video-recording"></em> bx bx-video-recording
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shape-square"></i> bx bx-shape-square
+                                                <em class="bx bx-shape-square"></em> bx bx-shape-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shape-triangle"></i> bx bx-shape-triangle
+                                                <em class="bx bx-shape-triangle"></em> bx bx-shape-triangle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-ghost"></i> bx bx-ghost
+                                                <em class="bx bx-ghost"></em> bx bx-ghost
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-mail-send"></i> bx bx-mail-send
+                                                <em class="bx bx-mail-send"></em> bx bx-mail-send
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-code-alt"></i> bx bx-code-alt
+                                                <em class="bx bx-code-alt"></em> bx bx-code-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-grid"></i> bx bx-grid
+                                                <em class="bx bx-grid"></em> bx bx-grid
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-user-pin"></i> bx bx-user-pin
+                                                <em class="bx bx-user-pin"></em> bx bx-user-pin
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-run"></i> bx bx-run
+                                                <em class="bx bx-run"></em> bx bx-run
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-copy-alt"></i> bx bx-copy-alt
+                                                <em class="bx bx-copy-alt"></em> bx bx-copy-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-transfer-alt"></i> bx bx-transfer-alt
+                                                <em class="bx bx-transfer-alt"></em> bx bx-transfer-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-book-open"></i> bx bx-book-open
+                                                <em class="bx bx-book-open"></em> bx bx-book-open
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-landscape"></i> bx bx-landscape
+                                                <em class="bx bx-landscape"></em> bx bx-landscape
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-comment"></i> bx bx-comment
+                                                <em class="bx bx-comment"></em> bx bx-comment
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-comment-dots"></i> bx bx-comment-dots
+                                                <em class="bx bx-comment-dots"></em> bx bx-comment-dots
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pyramid"></i> bx bx-pyramid"
+                                                <em class="bx bx-pyramid"></em> bx bx-pyramid"
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cylinder"></i> bx bx-cylinder
+                                                <em class="bx bx-cylinder"></em> bx bx-cylinder
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-lock-alt"></i> bx bx-lock-alt
+                                                <em class="bx bx-lock-alt"></em> bx bx-lock-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-lock-open-alt"></i> bx bx-lock-open-alt
+                                                <em class="bx bx-lock-open-alt"></em> bx bx-lock-open-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-left-arrow-alt"></i> bx bx-left-arrow-alt
+                                                <em class="bx bx-left-arrow-alt"></em> bx bx-left-arrow-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-right-arrow-alt"></i> bx bx-right-arrow-alt
+                                                <em class="bx bx-right-arrow-alt"></em> bx bx-right-arrow-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-up-arrow-alt"></i> bx bx-up-arrow-alt
+                                                <em class="bx bx-up-arrow-alt"></em> bx bx-up-arrow-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-down-arrow-alt"></i> bx bx-down-arrow-alt
+                                                <em class="bx bx-down-arrow-alt"></em> bx bx-down-arrow-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shape-circle"></i> bx bx-shape-circle
+                                                <em class="bx bx-shape-circle"></em> bx bx-shape-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cycling"></i> bx bx-cycling
+                                                <em class="bx bx-cycling"></em> bx bx-cycling
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dna"></i> bx bx-dna
+                                                <em class="bx bx-dna"></em> bx bx-dna
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bowling-ball"></i> bx bx-bowling-ball
+                                                <em class="bx bx-bowling-ball"></em> bx bx-bowling-ball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-search-alt-2"></i> bx bx-search-alt-2
+                                                <em class="bx bx-search-alt-2"></em> bx bx-search-alt-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-plus-medical"></i> bx bx-plus-medical
+                                                <em class="bx bx-plus-medical"></em> bx bx-plus-medical
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-street-view"></i> bx bx-street-view
+                                                <em class="bx bx-street-view"></em> bx bx-street-view
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-droplet"></i> bx bx-droplet
+                                                <em class="bx bx-droplet"></em> bx bx-droplet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-paint-roll"></i> bx bx-paint-roll
+                                                <em class="bx bx-paint-roll"></em> bx bx-paint-roll
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shield-alt-2"></i> bx bx-shield-alt-2
+                                                <em class="bx bx-shield-alt-2"></em> bx bx-shield-alt-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-error-alt"></i> bx bx-error-alt
+                                                <em class="bx bx-error-alt"></em> bx bx-error-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-square"></i> bx bx-square
+                                                <em class="bx bx-square"></em> bx bx-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-square-rounded"></i> bx bx-square-rounded
+                                                <em class="bx bx-square-rounded"></em> bx bx-square-rounded
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-polygon"></i> bx bx-polygon
+                                                <em class="bx bx-polygon"></em> bx bx-polygon
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cube-alt"></i> bx bx-cube-alt
+                                                <em class="bx bx-cube-alt"></em> bx bx-cube-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cuboid"></i> bx bx-cuboid
+                                                <em class="bx bx-cuboid"></em> bx bx-cuboid
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-user-voice"></i> bx bx-user-voice
+                                                <em class="bx bx-user-voice"></em> bx bx-user-voice
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-accessibility"></i> bx bx-accessibility
+                                                <em class="bx bx-accessibility"></em> bx bx-accessibility
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-building-house"></i> bx bx-building-house
+                                                <em class="bx bx-building-house"></em> bx bx-building-house
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-doughnut-chart"></i> bx bx-doughnut-chart
+                                                <em class="bx bx-doughnut-chart"></em> bx bx-doughnut-chart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-log-in-circle"></i> bx bx-log-in-circle
+                                                <em class="bx bx-log-in-circle"></em> bx bx-log-in-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-log-out-circle"></i> bx bx-log-out-circle
+                                                <em class="bx bx-log-out-circle"></em> bx bx-log-out-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-check-square"></i> bx bx-check-square
+                                                <em class="bx bx-check-square"></em> bx bx-check-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-alt"></i> bx bx-message-alt
+                                                <em class="bx bx-message-alt"></em> bx bx-message-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-alt-dots"></i> bx bx-message-alt-dots
+                                                <em class="bx bx-message-alt-dots"></em> bx bx-message-alt-dots
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-no-entry"></i> bx bx-no-entry
+                                                <em class="bx bx-no-entry"></em> bx bx-no-entry
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-palette"></i> bx bx-palette
+                                                <em class="bx bx-palette"></em> bx bx-palette
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-basket"></i> bx bx-basket
+                                                <em class="bx bx-basket"></em> bx bx-basket
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-purchase-tag-alt"></i> bx bx-purchase-tag-alt
+                                                <em class="bx bx-purchase-tag-alt"></em> bx bx-purchase-tag-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-receipt"></i> bx bx-receipt
+                                                <em class="bx bx-receipt"></em> bx bx-receipt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-line-chart"></i> bx bx-line-chart
+                                                <em class="bx bx-line-chart"></em> bx bx-line-chart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-map-pin"></i> bx bx-map-pin
+                                                <em class="bx bx-map-pin"></em> bx bx-map-pin
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-hive"></i> bx bx-hive
+                                                <em class="bx bx-hive"></em> bx bx-hive
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-band-aid"></i> bx bx-band-aid
+                                                <em class="bx bx-band-aid"></em> bx bx-band-aid
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-credit-card-alt"></i> bx bx-credit-card-alt
+                                                <em class="bx bx-credit-card-alt"></em> bx bx-credit-card-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wifi-off"></i> bx bx-wifi-off
+                                                <em class="bx bx-wifi-off"></em> bx bx-wifi-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-brightness-half"></i> bx bx-brightness-half
+                                                <em class="bx bx-brightness-half"></em> bx bx-brightness-half
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-brightness"></i> bx bx-brightness
+                                                <em class="bx bx-brightness"></em> bx bx-brightness
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-filter-alt"></i> bx bx-filter-alt
+                                                <em class="bx bx-filter-alt"></em> bx bx-filter-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dialpad-alt"></i> bx bx-dialpad-alt
+                                                <em class="bx bx-dialpad-alt"></em> bx bx-dialpad-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-border-right"></i> bx bx-border-right
+                                                <em class="bx bx-border-right"></em> bx bx-border-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-border-left"></i> bx bx-border-left
+                                                <em class="bx bx-border-left"></em> bx bx-border-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-border-top"></i> bx bx-border-top
+                                                <em class="bx bx-border-top"></em> bx bx-border-top
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-border-bottom"></i> bx bx-border-bottom
+                                                <em class="bx bx-border-bottom"></em> bx bx-border-bottom
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-border-all"></i> bx bx-border-all
+                                                <em class="bx bx-border-all"></em> bx bx-border-all
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-mobile-landscape"></i> bx bx-mobile-landscape
+                                                <em class="bx bx-mobile-landscape"></em> bx bx-mobile-landscape
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-mobile-vibration"></i> bx bx-mobile-vibration
+                                                <em class="bx bx-mobile-vibration"></em> bx bx-mobile-vibration
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-gas-pump"></i> bx bx-gas-pump
+                                                <em class="bx bx-gas-pump"></em> bx bx-gas-pump
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pie-chart-alt-2"></i> bx bx-pie-chart-alt-2
+                                                <em class="bx bx-pie-chart-alt-2"></em> bx bx-pie-chart-alt-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-time-five"></i> bx bx-time-five
+                                                <em class="bx bx-time-five"></em> bx bx-time-five
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-briefcase-alt-2"></i> bx bx-briefcase-alt-2
+                                                <em class="bx bx-briefcase-alt-2"></em> bx bx-briefcase-alt-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-brush-alt"></i> bx bx-brush-alt
+                                                <em class="bx bx-brush-alt"></em> bx bx-brush-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-customize"></i> bx bx-customize
+                                                <em class="bx bx-customize"></em> bx bx-customize
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-radio"></i> bx bx-radio
+                                                <em class="bx bx-radio"></em> bx bx-radio
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-printer"></i> bx bx-printer
+                                                <em class="bx bx-printer"></em> bx bx-printer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sort-a-z"></i> bx bx-sort-a-z
+                                                <em class="bx bx-sort-a-z"></em> bx bx-sort-a-z
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sort-z-a"></i> bx bx-sort-z-a
+                                                <em class="bx bx-sort-z-a"></em> bx bx-sort-z-a
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-conversation"></i> bx bx-conversation
+                                                <em class="bx bx-conversation"></em> bx bx-conversation
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-exit"></i> bx bx-exit
+                                                <em class="bx bx-exit"></em> bx bx-exit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-extension"></i> bx bx-extension
+                                                <em class="bx bx-extension"></em> bx bx-extension
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-face"></i> bx bx-face
+                                                <em class="bx bx-face"></em> bx bx-face
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-file-find"></i> bx bx-file-find
+                                                <em class="bx bx-file-find"></em> bx bx-file-find
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-label"></i> bx bx-label
+                                                <em class="bx bx-label"></em> bx bx-label
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-check-shield"></i> bx bx-check-shield
+                                                <em class="bx bx-check-shield"></em> bx bx-check-shield
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-border-radius"></i> bx bx-border-radius
+                                                <em class="bx bx-border-radius"></em> bx bx-border-radius
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-add-to-queue"></i> bx bx-add-to-queue
+                                                <em class="bx bx-add-to-queue"></em> bx bx-add-to-queue
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-archive-in"></i> bx bx-archive-in
+                                                <em class="bx bx-archive-in"></em> bx bx-archive-in
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-archive-out"></i> bx bx-archive-out
+                                                <em class="bx bx-archive-out"></em> bx bx-archive-out
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-alarm-add"></i> bx bx-alarm-add
+                                                <em class="bx bx-alarm-add"></em> bx bx-alarm-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-space-bar"></i> bx bx-space-bar
+                                                <em class="bx bx-space-bar"></em> bx bx-space-bar
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-image-alt"></i> bx bx-image-alt
+                                                <em class="bx bx-image-alt"></em> bx bx-image-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-image-add"></i> bx bx-image-add
+                                                <em class="bx bx-image-add"></em> bx bx-image-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-fridge"></i> bx bx-fridge
+                                                <em class="bx bx-fridge"></em> bx bx-fridge
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dish"></i> bx bx-dish
+                                                <em class="bx bx-dish"></em> bx bx-dish
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-spa"></i> bx bx-spa
+                                                <em class="bx bx-spa"></em> bx bx-spa
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cake"></i> bx bx-cake
+                                                <em class="bx bx-cake"></em> bx bx-cake
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bolt-circle"></i> bx bx-bolt-circle
+                                                <em class="bx bx-bolt-circle"></em> bx bx-bolt-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-tone"></i> bx bx-tone
+                                                <em class="bx bx-tone"></em> bx bx-tone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bitcoin"></i> bx bx-bitcoin
+                                                <em class="bx bx-bitcoin"></em> bx bx-bitcoin
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-lira"></i> bx bx-lira
+                                                <em class="bx bx-lira"></em> bx bx-lira
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-ruble"></i> bx bx-ruble
+                                                <em class="bx bx-ruble"></em> bx bx-ruble
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-rupee"></i> bx bx-rupee
+                                                <em class="bx bx-rupee"></em> bx bx-rupee
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-euro"></i> bx bx-euro
+                                                <em class="bx bx-euro"></em> bx bx-euro
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pound"></i> bx bx-pound
+                                                <em class="bx bx-pound"></em> bx bx-pound
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-won"></i> bx bx-won
+                                                <em class="bx bx-won"></em> bx bx-won
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-yen"></i> bx bx-yen
+                                                <em class="bx bx-yen"></em> bx bx-yen
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shekel"></i> bx bx-shekel
+                                                <em class="bx bx-shekel"></em> bx bx-shekel
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-health"></i> bx bx-health
+                                                <em class="bx bx-health"></em> bx bx-health
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-clinic"></i> bx bx-clinic
+                                                <em class="bx bx-clinic"></em> bx bx-clinic
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-male"></i> bx bx-male
+                                                <em class="bx bx-male"></em> bx bx-male
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-female"></i> bx bx-female
+                                                <em class="bx bx-female"></em> bx bx-female
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-male-sign"></i> bx bx-male-sign
+                                                <em class="bx bx-male-sign"></em> bx bx-male-sign
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-female-sign"></i> bx bx-female-sign
+                                                <em class="bx bx-female-sign"></em> bx bx-female-sign
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-food-tag"></i> bx bx-food-tag
+                                                <em class="bx bx-food-tag"></em> bx bx-food-tag
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-food-menu"></i> bx bx-food-menu
+                                                <em class="bx bx-food-menu"></em> bx bx-food-menu
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-meh-alt"></i> bx bx-meh-alt
+                                                <em class="bx bx-meh-alt"></em> bx bx-meh-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wink-tongue"></i> bx bx-wink-tongue
+                                                <em class="bx bx-wink-tongue"></em> bx bx-wink-tongue
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-happy-alt"></i> bx bx-happy-alt
+                                                <em class="bx bx-happy-alt"></em> bx bx-happy-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cool"></i> bx bx-cool
+                                                <em class="bx bx-cool"></em> bx bx-cool
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-tired"></i> bx bx-tired
+                                                <em class="bx bx-tired"></em> bx bx-tired
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-smile"></i> bx bx-smile
+                                                <em class="bx bx-smile"></em> bx bx-smile
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-angry"></i> bx bx-angry
+                                                <em class="bx bx-angry"></em> bx bx-angry
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-happy-heart-eyes"></i> bx bx-happy-heart-eyes
+                                                <em class="bx bx-happy-heart-eyes"></em> bx bx-happy-heart-eyes
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dizzy"></i> bx bx-dizzy
+                                                <em class="bx bx-dizzy"></em> bx bx-dizzy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wink-smile"></i> bx bx-wink-smile
+                                                <em class="bx bx-wink-smile"></em> bx bx-wink-smile
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-confused"></i> bx bx-confused
+                                                <em class="bx bx-confused"></em> bx bx-confused
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sleepy"></i> bx bx-sleepy
+                                                <em class="bx bx-sleepy"></em> bx bx-sleepy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shocked"></i> bx bx-shocked
+                                                <em class="bx bx-shocked"></em> bx bx-shocked
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-happy-beaming"></i> bx bx-happy-beaming
+                                                <em class="bx bx-happy-beaming"></em> bx bx-happy-beaming
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-meh-blank"></i> bx bx-meh-blank
+                                                <em class="bx bx-meh-blank"></em> bx bx-meh-blank
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-laugh"></i> bx bx-laugh
+                                                <em class="bx bx-laugh"></em> bx bx-laugh
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-upside-down"></i> bx bx-upside-down
+                                                <em class="bx bx-upside-down"></em> bx bx-upside-down
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-diamond"></i> bx bx-diamond
+                                                <em class="bx bx-diamond"></em> bx bx-diamond
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-align-left"></i> bx bx-align-left
+                                                <em class="bx bx-align-left"></em> bx bx-align-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-align-middle"></i> bx bx-align-middle
+                                                <em class="bx bx-align-middle"></em> bx bx-align-middle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-align-right"></i> bx bx-align-right
+                                                <em class="bx bx-align-right"></em> bx bx-align-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-arrow-back"></i> bx bx-arrow-back
+                                                <em class="bx bx-arrow-back"></em> bx bx-arrow-back
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bell-minus"></i> bx bx-bell-minus
+                                                <em class="bx bx-bell-minus"></em> bx bx-bell-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bell-off"></i> bx bx-bell-off
+                                                <em class="bx bx-bell-off"></em> bx bx-bell-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bell-plus"></i> bx bx-bell-plus
+                                                <em class="bx bx-bell-plus"></em> bx bx-bell-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bell"></i> bx bx-bell
+                                                <em class="bx bx-bell"></em> bx bx-bell
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bookmark"></i> bx bx-bookmark
+                                                <em class="bx bx-bookmark"></em> bx bx-bookmark
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bookmarks"></i> bx bx-bookmarks
+                                                <em class="bx bx-bookmarks"></em> bx bx-bookmarks
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bullseye"></i> bx bx-bullseye
+                                                <em class="bx bx-bullseye"></em> bx bx-bullseye
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-camera-off"></i> bx bx-camera-off
+                                                <em class="bx bx-camera-off"></em> bx bx-camera-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-camera"></i> bx bx-camera
+                                                <em class="bx bx-camera"></em> bx bx-camera
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-captions"></i> bx bx-captions
+                                                <em class="bx bx-captions"></em> bx bx-captions
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-checkbox-checked"></i> bx bx-checkbox-checked
+                                                <em class="bx bx-checkbox-checked"></em> bx bx-checkbox-checked
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-checkbox"></i> bx bx-checkbox
+                                                <em class="bx bx-checkbox"></em> bx bx-checkbox
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-checkbox-square"></i> bx bx-checkbox-square
+                                                <em class="bx bx-checkbox-square"></em> bx bx-checkbox-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-down"></i> bx bx-chevron-down
+                                                <em class="bx bx-chevron-down"></em> bx bx-chevron-down
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-up"></i> bx bx-chevron-up
+                                                <em class="bx bx-chevron-up"></em> bx bx-chevron-up
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-left"></i> bx bx-chevron-left
+                                                <em class="bx bx-chevron-left"></em> bx bx-chevron-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-right"></i> bx bx-chevron-right
+                                                <em class="bx bx-chevron-right"></em> bx bx-chevron-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevrons-down"></i> bx bx-chevrons-down
+                                                <em class="bx bx-chevrons-down"></em> bx bx-chevrons-down
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevrons-up"></i> bx bx-chevrons-up
+                                                <em class="bx bx-chevrons-up"></em> bx bx-chevrons-up
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevrons-right"></i> bx bx-chevrons-right
+                                                <em class="bx bx-chevrons-right"></em> bx bx-chevrons-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevrons-left"></i> bx bx-chevrons-left
+                                                <em class="bx bx-chevrons-left"></em> bx bx-chevrons-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-clipboard"></i> bx bx-clipboard
+                                                <em class="bx bx-clipboard"></em> bx bx-clipboard
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-code-curly"></i> bx bx-code-curly
+                                                <em class="bx bx-code-curly"></em> bx bx-code-curly
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-code"></i> bx bx-code
+                                                <em class="bx bx-code"></em> bx bx-code
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-coffee"></i> bx bx-coffee
+                                                <em class="bx bx-coffee"></em> bx bx-coffee
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-copy"></i> bx bx-copy
+                                                <em class="bx bx-copy"></em> bx bx-copy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-copyright"></i> bx bx-copyright
+                                                <em class="bx bx-copyright"></em> bx bx-copyright
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-down-arrow-circle"></i> bx bx-down-arrow-circle
+                                                <em class="bx bx-down-arrow-circle"></em> bx bx-down-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-error-circle"></i> bx bx-error-circle
+                                                <em class="bx bx-error-circle"></em> bx bx-error-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-error"></i> bx bx-error
+                                                <em class="bx bx-error"></em> bx bx-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-exit-fullscreen"></i> bx bx-exit-fullscreen
+                                                <em class="bx bx-exit-fullscreen"></em> bx bx-exit-fullscreen
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-fast-forward-circle"></i> bx bx-fast-forward-circle
+                                                <em class="bx bx-fast-forward-circle"></em> bx bx-fast-forward-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-fast-forward"></i> bx bx-fast-forward
+                                                <em class="bx bx-fast-forward"></em> bx bx-fast-forward
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-first-page"></i> bx bx-first-page
+                                                <em class="bx bx-first-page"></em> bx bx-first-page
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-folder-minus"></i> bx bx-folder-minus
+                                                <em class="bx bx-folder-minus"></em> bx bx-folder-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-folder-plus"></i> bx bx-folder-plus
+                                                <em class="bx bx-folder-plus"></em> bx bx-folder-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-folder"></i> bx bx-folder
+                                                <em class="bx bx-folder"></em> bx bx-folder
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-fullscreen"></i> bx bx-fullscreen
+                                                <em class="bx bx-fullscreen"></em> bx bx-fullscreen
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-hide"></i> bx bx-hide
+                                                <em class="bx bx-hide"></em> bx bx-hide
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-image"></i> bx bx-image
+                                                <em class="bx bx-image"></em> bx bx-image
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-info-circle"></i> bx bx-info-circle
+                                                <em class="bx bx-info-circle"></em> bx bx-info-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-align-justify"></i> bx bx-align-justify
+                                                <em class="bx bx-align-justify"></em> bx bx-align-justify
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-key"></i> bx bx-key
+                                                <em class="bx bx-key"></em> bx bx-key
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-last-page"></i> bx bx-last-page
+                                                <em class="bx bx-last-page"></em> bx bx-last-page
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-left-arrow-circle"></i> bx bx-left-arrow-circle
+                                                <em class="bx bx-left-arrow-circle"></em> bx bx-left-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-left-down-arrow-circle"></i> bx bx-left-down-arrow-circle
+                                                <em class="bx bx-left-down-arrow-circle"></em> bx bx-left-down-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-left-indent"></i> bx bx-left-indent
+                                                <em class="bx bx-left-indent"></em> bx bx-left-indent
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-left-top-arrow-circle"></i> bx bx-left-top-arrow-circle
+                                                <em class="bx bx-left-top-arrow-circle"></em> bx bx-left-top-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-menu"></i> bx bx-menu
+                                                <em class="bx bx-menu"></em> bx bx-menu
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-microphone"></i> bx bx-microphone
+                                                <em class="bx bx-microphone"></em> bx bx-microphone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-minus-circle"></i> bx bx-minus-circle
+                                                <em class="bx bx-minus-circle"></em> bx bx-minus-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-moon"></i> bx bx-moon
+                                                <em class="bx bx-moon"></em> bx bx-moon
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pause-circle"></i> bx bx-pause-circle
+                                                <em class="bx bx-pause-circle"></em> bx bx-pause-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pause"></i> bx bx-pause
+                                                <em class="bx bx-pause"></em> bx bx-pause
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-play-circle"></i> bx bx-play-circle
+                                                <em class="bx bx-play-circle"></em> bx bx-play-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-play"></i> bx bx-play
+                                                <em class="bx bx-play"></em> bx bx-play
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-plus-circle"></i> bx bx-plus-circle
+                                                <em class="bx bx-plus-circle"></em> bx bx-plus-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-question-mark"></i> bx bx-question-mark"
+                                                <em class="bx bx-question-mark"></em> bx bx-question-mark"
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-radio-circle-marked"></i> bx bx-radio-circle-marked
+                                                <em class="bx bx-radio-circle-marked"></em> bx bx-radio-circle-marked
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-radio-circle"></i> bx bx-radio-circle
+                                                <em class="bx bx-radio-circle"></em> bx bx-radio-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-rectangle"></i> bx bx-rectangle
+                                                <em class="bx bx-rectangle"></em> bx bx-rectangle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-rewind"></i> bx bx-rewind
+                                                <em class="bx bx-rewind"></em> bx bx-rewind
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-reset"></i> bx bx-reset
+                                                <em class="bx bx-reset"></em> bx bx-reset
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-right-arrow-circle"></i> bx bx-right-arrow-circle
+                                                <em class="bx bx-right-arrow-circle"></em> bx bx-right-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-right-down-arrow-circle"></i> bx bx-right-down-arrow-circle
+                                                <em class="bx bx-right-down-arrow-circle"></em> bx bx-right-down-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-right-indent"></i> bx bx-right-indent
+                                                <em class="bx bx-right-indent"></em> bx bx-right-indent
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-right-top-arrow-circle"></i> bx bx-right-top-arrow-circle
+                                                <em class="bx bx-right-top-arrow-circle"></em> bx bx-right-top-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-rss"></i> bx bx-rss
+                                                <em class="bx bx-rss"></em> bx bx-rss
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-search"></i> bx bx-search
+                                                <em class="bx bx-search"></em> bx bx-search
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-show"></i> bx bx-show
+                                                <em class="bx bx-show"></em> bx bx-show
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-skip-next"></i> bx bx-skip-next
+                                                <em class="bx bx-skip-next"></em> bx bx-skip-next
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-skip-previous"></i> bx bx-skip-previous
+                                                <em class="bx bx-skip-previous"></em> bx bx-skip-previous
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-stop-circle"></i> bx bx-stop-circle
+                                                <em class="bx bx-stop-circle"></em> bx bx-stop-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-stop"></i> bx bx-stop
+                                                <em class="bx bx-stop"></em> bx bx-stop
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-stopwatch"></i> bx bx-stopwatch
+                                                <em class="bx bx-stopwatch"></em> bx bx-stopwatch
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sync"></i> bx bx-sync
+                                                <em class="bx bx-sync"></em> bx bx-sync
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-time"></i> bx bx-time
+                                                <em class="bx bx-time"></em> bx bx-time
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-toggle-left"></i> bx bx-toggle-left
+                                                <em class="bx bx-toggle-left"></em> bx bx-toggle-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-toggle-right"></i> bx bx-toggle-right
+                                                <em class="bx bx-toggle-right"></em> bx bx-toggle-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-trending-down"></i> bx bx-trending-down
+                                                <em class="bx bx-trending-down"></em> bx bx-trending-down
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-trending-up"></i> bx bx-trending-up
+                                                <em class="bx bx-trending-up"></em> bx bx-trending-up
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-up-arrow-circle"></i> bx bx-up-arrow-circle
+                                                <em class="bx bx-up-arrow-circle"></em> bx bx-up-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-vertical-center"></i> bx bx-vertical-center
+                                                <em class="bx bx-vertical-center"></em> bx bx-vertical-center
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-video"></i> bx bx-video
+                                                <em class="bx bx-video"></em> bx bx-video
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-volume-full"></i> bx bx-volume-full
+                                                <em class="bx bx-volume-full"></em> bx bx-volume-full
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-volume-low"></i> bx bx-volume-low
+                                                <em class="bx bx-volume-low"></em> bx bx-volume-low
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-volume-mute"></i> bx bx-volume-mute
+                                                <em class="bx bx-volume-mute"></em> bx bx-volume-mute
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-volume"></i> bx bx-volume
+                                                <em class="bx bx-volume"></em> bx bx-volume
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-x-circle"></i> bx bx-x-circle
+                                                <em class="bx bx-x-circle"></em> bx bx-x-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-zoom-in"></i> bx bx-zoom-in
+                                                <em class="bx bx-zoom-in"></em> bx bx-zoom-in
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-zoom-out"></i> bx bx-zoom-out
+                                                <em class="bx bx-zoom-out"></em> bx bx-zoom-out
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-archive"></i> bx bx-archive
+                                                <em class="bx bx-archive"></em> bx bx-archive
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-at"></i> bx bx-at
+                                                <em class="bx bx-at"></em> bx bx-at
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bar-chart-alt"></i> bx bx-bar-chart-alt
+                                                <em class="bx bx-bar-chart-alt"></em> bx bx-bar-chart-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bar-chart-square"></i> bx bx-bar-chart-square
+                                                <em class="bx bx-bar-chart-square"></em> bx bx-bar-chart-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bar-chart"></i> bx bx-bar-chart
+                                                <em class="bx bx-bar-chart"></em> bx bx-bar-chart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-basketball"></i> bx bx-basketball
+                                                <em class="bx bx-basketball"></em> bx bx-basketball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-block"></i> bx bx-block
+                                                <em class="bx bx-block"></em> bx bx-block
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-book-bookmark"></i> bx bx-book-bookmark
+                                                <em class="bx bx-book-bookmark"></em> bx bx-book-bookmark
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-book"></i> bx bx-book
+                                                <em class="bx bx-book"></em> bx bx-book
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bookmark-minus"></i> bx bx-bookmark-minus
+                                                <em class="bx bx-bookmark-minus"></em> bx bx-bookmark-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bookmark-plus"></i> bx bx-bookmark-plus
+                                                <em class="bx bx-bookmark-plus"></em> bx bx-bookmark-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-briefcase"></i> bx bx-briefcase
+                                                <em class="bx bx-briefcase"></em> bx bx-briefcase
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-broadcast"></i> bx bx-broadcast
+                                                <em class="bx bx-broadcast"></em> bx bx-broadcast
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-building"></i> bx bx-building
+                                                <em class="bx bx-building"></em> bx bx-building
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bug"></i> bx bx-bug
+                                                <em class="bx bx-bug"></em> bx bx-bug
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bluetooth"></i> bx bx-bluetooth
+                                                <em class="bx bx-bluetooth"></em> bx bx-bluetooth
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bulb"></i> bx bx-bulb
+                                                <em class="bx bx-bulb"></em> bx bx-bulb
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-buoy"></i> bx bx-buoy
+                                                <em class="bx bx-buoy"></em> bx bx-buoy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar-plus"></i> bx bx-calendar-plus
+                                                <em class="bx bx-calendar-plus"></em> bx bx-calendar-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar-check"></i> bx bx-calendar-check
+                                                <em class="bx bx-calendar-check"></em> bx bx-calendar-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar-minus"></i> bx bx-calendar-minus
+                                                <em class="bx bx-calendar-minus"></em> bx bx-calendar-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar-x"></i> bx bx-calendar-x
+                                                <em class="bx bx-calendar-x"></em> bx bx-calendar-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar"></i> bx bx-calendar
+                                                <em class="bx bx-calendar"></em> bx bx-calendar
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chart"></i> bx bx-chart
+                                                <em class="bx bx-chart"></em> bx bx-chart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cloud-download"></i> bx bx-cloud-download
+                                                <em class="bx bx-cloud-download"></em> bx bx-cloud-download
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cloud-upload"></i> bx bx-cloud-upload
+                                                <em class="bx bx-cloud-upload"></em> bx bx-cloud-upload
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cloud"></i> bx bx-cloud
+                                                <em class="bx bx-cloud"></em> bx bx-cloud
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-terminal"></i> bx bx-terminal
+                                                <em class="bx bx-terminal"></em> bx bx-terminal
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-crosshair"></i> bx bx-crosshair
+                                                <em class="bx bx-crosshair"></em> bx bx-crosshair
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-compass"></i> bx bx-compass
+                                                <em class="bx bx-compass"></em> bx bx-compass
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-data"></i> bx bx-data
+                                                <em class="bx bx-data"></em> bx bx-data
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-desktop"></i> bx bx-desktop
+                                                <em class="bx bx-desktop"></em> bx bx-desktop
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-directions"></i> bx bx-directions
+                                                <em class="bx bx-directions"></em> bx bx-directions
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dollar"></i> bx bx-dollar
+                                                <em class="bx bx-dollar"></em> bx bx-dollar
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dots-horizontal-rounded"></i> bx bx-dots-horizontal-rounded
+                                                <em class="bx bx-dots-horizontal-rounded"></em> bx bx-dots-horizontal-rounded
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dots-horizontal"></i> bx bx-dots-horizontal
+                                                <em class="bx bx-dots-horizontal"></em> bx bx-dots-horizontal
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dots-vertical-rounded"></i> bx bx-dots-vertical-rounded
+                                                <em class="bx bx-dots-vertical-rounded"></em> bx bx-dots-vertical-rounded
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dots-vertical"></i> bx bx-dots-vertical
+                                                <em class="bx bx-dots-vertical"></em> bx bx-dots-vertical
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-download"></i> bx bx-download
+                                                <em class="bx bx-download"></em> bx bx-download
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-envelope"></i> bx bx-envelope
+                                                <em class="bx bx-envelope"></em> bx bx-envelope
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-gift"></i> bx bx-gift
+                                                <em class="bx bx-gift"></em> bx bx-gift
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-globe"></i> bx bx-globe
+                                                <em class="bx bx-globe"></em> bx bx-globe
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-devices"></i> bx bx-devices
+                                                <em class="bx bx-devices"></em> bx bx-devices
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-headphone"></i> bx bx-headphone
+                                                <em class="bx bx-headphone"></em> bx bx-headphone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-heart"></i> bx bx-heart
+                                                <em class="bx bx-heart"></em> bx bx-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-home"></i> bx bx-home
+                                                <em class="bx bx-home"></em> bx bx-home
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-laptop"></i> bx bx-laptop
+                                                <em class="bx bx-laptop"></em> bx bx-laptop
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-layer"></i> bx bx-layer
+                                                <em class="bx bx-layer"></em> bx bx-layer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-link-alt"></i> bx bx-link-alt
+                                                <em class="bx bx-link-alt"></em> bx bx-link-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-link"></i> bx bx-link
+                                                <em class="bx bx-link"></em> bx bx-link
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-list-plus"></i> bx bx-list-plus
+                                                <em class="bx bx-list-plus"></em> bx bx-list-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-list-ul"></i> bx bx-list-ul
+                                                <em class="bx bx-list-ul"></em> bx bx-list-ul
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-list-minus"></i> bx bx-list-minus
+                                                <em class="bx bx-list-minus"></em> bx bx-list-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-lock-open"></i> bx bx-lock-open
+                                                <em class="bx bx-lock-open"></em> bx bx-lock-open
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-lock"></i> bx bx-lock
+                                                <em class="bx bx-lock"></em> bx bx-lock
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-map-alt"></i> bx bx-map-alt
+                                                <em class="bx bx-map-alt"></em> bx bx-map-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-map"></i> bx bx-map
+                                                <em class="bx bx-map"></em> bx bx-map
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-rounded"></i> bx bx-message-rounded
+                                                <em class="bx bx-message-rounded"></em> bx bx-message-rounded
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message"></i> bx bx-message
+                                                <em class="bx bx-message"></em> bx bx-message
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-mobile-alt"></i> bx bx-mobile-alt
+                                                <em class="bx bx-mobile-alt"></em> bx bx-mobile-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-mobile"></i> bx bx-mobile
+                                                <em class="bx bx-mobile"></em> bx bx-mobile
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-navigation"></i> bx bx-navigation
+                                                <em class="bx bx-navigation"></em> bx bx-navigation
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-phone"></i> bx bx-phone
+                                                <em class="bx bx-phone"></em> bx bx-phone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pie-chart"></i> bx bx-pie-chart
+                                                <em class="bx bx-pie-chart"></em> bx bx-pie-chart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-send"></i> bx bx-send
+                                                <em class="bx bx-send"></em> bx bx-send
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sidebar"></i> bx bx-sidebar
+                                                <em class="bx bx-sidebar"></em> bx bx-sidebar
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sitemap"></i> bx bx-sitemap
+                                                <em class="bx bx-sitemap"></em> bx bx-sitemap
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-spreadsheet"></i> bx bx-spreadsheet
+                                                <em class="bx bx-spreadsheet"></em> bx bx-spreadsheet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-tab"></i> bx bx-tab
+                                                <em class="bx bx-tab"></em> bx bx-tab
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-tag"></i> bx bx-tag
+                                                <em class="bx bx-tag"></em> bx bx-tag
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-target-lock"></i> bx bx-target-lock
+                                                <em class="bx bx-target-lock"></em> bx bx-target-lock
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-tennis-ball"></i> bx bx-tennis-ball
+                                                <em class="bx bx-tennis-ball"></em> bx bx-tennis-ball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-alarm"></i> bx bx-alarm
+                                                <em class="bx bx-alarm"></em> bx bx-alarm
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-upload"></i> bx bx-upload
+                                                <em class="bx bx-upload"></em> bx bx-upload
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-usb"></i> bx bx-usb
+                                                <em class="bx bx-usb"></em> bx bx-usb
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-video-off"></i> bx bx-video-off
+                                                <em class="bx bx-video-off"></em> bx bx-video-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-voicemail"></i> bx bx-voicemail
+                                                <em class="bx bx-voicemail"></em> bx bx-voicemail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wifi"></i> bx bx-wifi
+                                                <em class="bx bx-wifi"></em> bx bx-wifi
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-window-open"></i> bx bx-window-open
+                                                <em class="bx bx-window-open"></em> bx bx-window-open
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-window"></i> bx bx-window
+                                                <em class="bx bx-window"></em> bx bx-window
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-windows"></i> bx bx-windows
+                                                <em class="bx bx-windows"></em> bx bx-windows
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-duplicate"></i> bx bx-duplicate
+                                                <em class="bx bx-duplicate"></em> bx bx-duplicate
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-table"></i> bx bx-table
+                                                <em class="bx bx-table"></em> bx bx-table
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-x"></i> bx bx-x
+                                                <em class="bx bx-x"></em> bx bx-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-adjust"></i> bx bx-adjust
+                                                <em class="bx bx-adjust"></em> bx bx-adjust
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-album"></i> bx bx-album
+                                                <em class="bx bx-album"></em> bx bx-album
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-anchor"></i> bx bx-anchor
+                                                <em class="bx bx-anchor"></em> bx bx-anchor
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-award"></i> bx bx-award
+                                                <em class="bx bx-award"></em> bx bx-award
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bold"></i> bx bx-bold
+                                                <em class="bx bx-bold"></em> bx bx-bold
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calculator"></i> bx bx-calculator
+                                                <em class="bx bx-calculator"></em> bx bx-calculator
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cart"></i> bx bx-cart
+                                                <em class="bx bx-cart"></em> bx bx-cart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-check"></i> bx bx-check
+                                                <em class="bx bx-check"></em> bx bx-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cloud-drizzle"></i> bx bx-cloud-drizzle
+                                                <em class="bx bx-cloud-drizzle"></em> bx bx-cloud-drizzle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cloud-light-rain"></i> bx bx-cloud-light-rain
+                                                <em class="bx bx-cloud-light-rain"></em> bx bx-cloud-light-rain
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cloud-lightning"></i> bx bx-cloud-lightning
+                                                <em class="bx bx-cloud-lightning"></em> bx bx-cloud-lightning
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cloud-rain"></i> bx bx-cloud-rain
+                                                <em class="bx bx-cloud-rain"></em> bx bx-cloud-rain
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cloud-snow"></i> bx bx-cloud-snow
+                                                <em class="bx bx-cloud-snow"></em> bx bx-cloud-snow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cog"></i> bx bx-cog
+                                                <em class="bx bx-cog"></em> bx bx-cog
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-columns"></i> bx bx-columns
+                                                <em class="bx bx-columns"></em> bx bx-columns
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-credit-card"></i> bx bx-credit-card
+                                                <em class="bx bx-credit-card"></em> bx bx-credit-card
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-crop"></i> bx bx-crop
+                                                <em class="bx bx-crop"></em> bx bx-crop
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cube"></i> bx bx-cube
+                                                <em class="bx bx-cube"></em> bx bx-cube
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cut"></i> bx bx-cut
+                                                <em class="bx bx-cut"></em> bx bx-cut
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-detail"></i> bx bx-detail
+                                                <em class="bx bx-detail"></em> bx bx-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shield-quarter"></i> bx bx-shield-quarter
+                                                <em class="bx bx-shield-quarter"></em> bx bx-shield-quarter
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-edit"></i> bx bx-edit
+                                                <em class="bx bx-edit"></em> bx bx-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-file"></i> bx bx-file
+                                                <em class="bx bx-file"></em> bx bx-file
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-filter"></i> bx bx-filter
+                                                <em class="bx bx-filter"></em> bx bx-filter
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-font"></i> bx bx-font
+                                                <em class="bx bx-font"></em> bx bx-font
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-git-branch"></i> bx bx-git-branch
+                                                <em class="bx bx-git-branch"></em> bx bx-git-branch
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-git-commit"></i> bx bx-git-commit
+                                                <em class="bx bx-git-commit"></em> bx bx-git-commit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-git-compare"></i> bx bx-git-compare
+                                                <em class="bx bx-git-compare"></em> bx bx-git-compare
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-git-merge"></i> bx bx-git-merge
+                                                <em class="bx bx-git-merge"></em> bx bx-git-merge
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-git-pull-request"></i> bx bx-git-pull-request
+                                                <em class="bx bx-git-pull-request"></em> bx bx-git-pull-request
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-git-repo-forked"></i> bx bx-git-repo-forked
+                                                <em class="bx bx-git-repo-forked"></em> bx bx-git-repo-forked
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-group"></i> bx bx-group
+                                                <em class="bx bx-group"></em> bx bx-group
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-hash"></i> bx bx-hash
+                                                <em class="bx bx-hash"></em> bx bx-hash
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-heading"></i> bx bx-heading
+                                                <em class="bx bx-heading"></em> bx bx-heading
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-home-alt"></i> bx bx-home-alt
+                                                <em class="bx bx-home-alt"></em> bx bx-home-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-italic"></i> bx bx-italic
+                                                <em class="bx bx-italic"></em> bx bx-italic
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-joystick"></i> bx bx-joystick
+                                                <em class="bx bx-joystick"></em> bx bx-joystick
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-link-external"></i> bx bx-link-external
+                                                <em class="bx bx-link-external"></em> bx bx-link-external
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-log-in"></i> bx bx-log-in
+                                                <em class="bx bx-log-in"></em> bx bx-log-in
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-log-out"></i> bx bx-log-out
+                                                <em class="bx bx-log-out"></em> bx bx-log-out
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-microphone-off"></i> bx bx-microphone-off
+                                                <em class="bx bx-microphone-off"></em> bx bx-microphone-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-minus"></i> bx bx-minus
+                                                <em class="bx bx-minus"></em> bx bx-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-mouse"></i> bx bx-mouse
+                                                <em class="bx bx-mouse"></em> bx bx-mouse
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-move"></i> bx bx-move
+                                                <em class="bx bx-move"></em> bx bx-move
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-music"></i> bx bx-music
+                                                <em class="bx bx-music"></em> bx bx-music
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-notification"></i> bx bx-notification
+                                                <em class="bx bx-notification"></em> bx bx-notification
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-package"></i> bx bx-package
+                                                <em class="bx bx-package"></em> bx bx-package
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-paragraph"></i> bx bx-paragraph
+                                                <em class="bx bx-paragraph"></em> bx bx-paragraph
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-paste"></i> bx bx-paste
+                                                <em class="bx bx-paste"></em> bx bx-paste
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pencil"></i> bx bx-pencil
+                                                <em class="bx bx-pencil"></em> bx bx-pencil
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pin"></i> bx bx-pin
+                                                <em class="bx bx-pin"></em> bx bx-pin
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-plus"></i> bx bx-plus
+                                                <em class="bx bx-plus"></em> bx bx-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-power-off"></i> bx bx-power-off
+                                                <em class="bx bx-power-off"></em> bx bx-power-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pulse"></i> bx bx-pulse
+                                                <em class="bx bx-pulse"></em> bx bx-pulse
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-save"></i> bx bx-save
+                                                <em class="bx bx-save"></em> bx bx-save
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-screenshot"></i> bx bx-screenshot
+                                                <em class="bx bx-screenshot"></em> bx bx-screenshot
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-select-multiple"></i> bx bx-select-multiple
+                                                <em class="bx bx-select-multiple"></em> bx bx-select-multiple
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-share-alt"></i> bx bx-share-alt
+                                                <em class="bx bx-share-alt"></em> bx bx-share-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-share"></i> bx bx-share
+                                                <em class="bx bx-share"></em> bx bx-share
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shield-alt"></i> bx bx-shield-alt
+                                                <em class="bx bx-shield-alt"></em> bx bx-shield-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shield"></i> bx bx-shield
+                                                <em class="bx bx-shield"></em> bx bx-shield
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shopping-bag"></i> bx bx-shopping-bag
+                                                <em class="bx bx-shopping-bag"></em> bx bx-shopping-bag
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shuffle"></i> bx bx-shuffle
+                                                <em class="bx bx-shuffle"></em> bx bx-shuffle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sort"></i> bx bx-sort
+                                                <em class="bx bx-sort"></em> bx bx-sort
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-star"></i> bx bx-star
+                                                <em class="bx bx-star"></em> bx bx-star
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sun"></i> bx bx-sun
+                                                <em class="bx bx-sun"></em> bx bx-sun
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-text"></i> bx bx-text
+                                                <em class="bx bx-text"></em> bx bx-text
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-trash"></i> bx bx-trash
+                                                <em class="bx bx-trash"></em> bx bx-trash
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-trophy"></i> bx bx-trophy
+                                                <em class="bx bx-trophy"></em> bx bx-trophy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-underline"></i> bx bx-underline
+                                                <em class="bx bx-underline"></em> bx bx-underline
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-user-check"></i> bx bx-user-check
+                                                <em class="bx bx-user-check"></em> bx bx-user-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-user-circle"></i> bx bx-user-circle
+                                                <em class="bx bx-user-circle"></em> bx bx-user-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-user-minus"></i> bx bx-user-minus
+                                                <em class="bx bx-user-minus"></em> bx bx-user-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-user-plus"></i> bx bx-user-plus
+                                                <em class="bx bx-user-plus"></em> bx bx-user-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-user-x"></i> bx bx-user-x
+                                                <em class="bx bx-user-x"></em> bx bx-user-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-user"></i> bx bx-user
+                                                <em class="bx bx-user"></em> bx bx-user
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-barcode"></i> bx bx-barcode
+                                                <em class="bx bx-barcode"></em> bx bx-barcode
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-crown"></i> bx bx-crown
+                                                <em class="bx bx-crown"></em> bx bx-crown
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dislike"></i> bx bx-dislike
+                                                <em class="bx bx-dislike"></em> bx bx-dislike
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-down-arrow"></i> bx bx-down-arrow
+                                                <em class="bx bx-down-arrow"></em> bx bx-down-arrow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-export"></i> bx bx-export
+                                                <em class="bx bx-export"></em> bx bx-export
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-first-aid"></i> bx bx-first-aid
+                                                <em class="bx bx-first-aid"></em> bx bx-first-aid
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-flag"></i> bx bx-flag
+                                                <em class="bx bx-flag"></em> bx bx-flag
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-history"></i> bx bx-history
+                                                <em class="bx bx-history"></em> bx bx-history
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-joystick-alt"></i> bx bx-joystick-alt
+                                                <em class="bx bx-joystick-alt"></em> bx bx-joystick-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-left-arrow"></i> bx bx-left-arrow
+                                                <em class="bx bx-left-arrow"></em> bx bx-left-arrow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-like"></i> bx bx-like
+                                                <em class="bx bx-like"></em> bx bx-like
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-list-check"></i> bx bx-list-check
+                                                <em class="bx bx-list-check"></em> bx bx-list-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-poll"></i> bx bx-poll
+                                                <em class="bx bx-poll"></em> bx bx-poll
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-radar"></i> bx bx-radar
+                                                <em class="bx bx-radar"></em> bx bx-radar
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-redo"></i> bx bx-redo
+                                                <em class="bx bx-redo"></em> bx bx-redo
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-reply-all"></i> bx bx-reply-all
+                                                <em class="bx bx-reply-all"></em> bx bx-reply-all
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-reply"></i> bx bx-reply
+                                                <em class="bx bx-reply"></em> bx bx-reply
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-repost"></i> bx bx-repost
+                                                <em class="bx bx-repost"></em> bx bx-repost
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-revision"></i> bx bx-revision
+                                                <em class="bx bx-revision"></em> bx bx-revision
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-right-arrow"></i> bx bx-right-arrow
+                                                <em class="bx bx-right-arrow"></em> bx bx-right-arrow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-subdirectory-left"></i> bx bx-subdirectory-left
+                                                <em class="bx bx-subdirectory-left"></em> bx bx-subdirectory-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-subdirectory-right"></i> bx bx-subdirectory-right
+                                                <em class="bx bx-subdirectory-right"></em> bx bx-subdirectory-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-support"></i> bx bx-support
+                                                <em class="bx bx-support"></em> bx bx-support
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-timer"></i> bx bx-timer
+                                                <em class="bx bx-timer"></em> bx bx-timer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-undo"></i> bx bx-undo
+                                                <em class="bx bx-undo"></em> bx bx-undo
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-up-arrow"></i> bx bx-up-arrow
+                                                <em class="bx bx-up-arrow"></em> bx bx-up-arrow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-phone-call"></i> bx bx-phone-call
+                                                <em class="bx bx-phone-call"></em> bx bx-phone-call
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-aperture"></i> bx bx-aperture
+                                                <em class="bx bx-aperture"></em> bx bx-aperture
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-film"></i> bx bx-film
+                                                <em class="bx bx-film"></em> bx bx-film
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-folder-open"></i> bx bx-folder-open
+                                                <em class="bx bx-folder-open"></em> bx bx-folder-open
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-task"></i> bx bx-task
+                                                <em class="bx bx-task"></em> bx bx-task
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-server"></i> bx bx-server
+                                                <em class="bx bx-server"></em> bx bx-server
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-battery"></i> bx bx-battery
+                                                <em class="bx bx-battery"></em> bx bx-battery
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar-alt"></i> bx bx-calendar-alt
+                                                <em class="bx bx-calendar-alt"></em> bx bx-calendar-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-import"></i> bx bx-import
+                                                <em class="bx bx-import"></em> bx bx-import
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-ruler"></i> bx bx-ruler
+                                                <em class="bx bx-ruler"></em> bx bx-ruler
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-horizontal-center"></i> bx bx-horizontal-center
+                                                <em class="bx bx-horizontal-center"></em> bx bx-horizontal-center
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-rotate-right"></i> bx bx-rotate-right
+                                                <em class="bx bx-rotate-right"></em> bx bx-rotate-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-rename"></i> bx bx-rename
+                                                <em class="bx bx-rename"></em> bx bx-rename
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-collapse"></i> bx bx-collapse
+                                                <em class="bx bx-collapse"></em> bx bx-collapse
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-phone-incoming"></i> bx bx-phone-incoming
+                                                <em class="bx bx-phone-incoming"></em> bx bx-phone-incoming
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-phone-outgoing"></i> bx bx-phone-outgoing
+                                                <em class="bx bx-phone-outgoing"></em> bx bx-phone-outgoing
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-body"></i> bx bx-body
+                                                <em class="bx bx-body"></em> bx bx-body
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cast"></i> bx bx-cast
+                                                <em class="bx bx-cast"></em> bx bx-cast
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chip"></i> bx bx-chip
+                                                <em class="bx bx-chip"></em> bx bx-chip
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-skip-next-circle"></i> bx bx-skip-next-circle
+                                                <em class="bx bx-skip-next-circle"></em> bx bx-skip-next-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-skip-previous-circle"></i> bx bx-skip-previous-circle
+                                                <em class="bx bx-skip-previous-circle"></em> bx bx-skip-previous-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-hdd"></i> bx bx-hdd
+                                                <em class="bx bx-hdd"></em> bx bx-hdd
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-store"></i> bx bx-store
+                                                <em class="bx bx-store"></em> bx bx-store
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-globe-alt"></i> bx bx-globe-alt
+                                                <em class="bx bx-globe-alt"></em> bx bx-globe-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-upvote"></i> bx bx-upvote
+                                                <em class="bx bx-upvote"></em> bx bx-upvote
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-downvote"></i> bx bx-downvote
+                                                <em class="bx bx-downvote"></em> bx bx-downvote
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-news"></i> bx bx-news
+                                                <em class="bx bx-news"></em> bx bx-news
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pie-chart-alt"></i> bx bx-pie-chart-alt
+                                                <em class="bx bx-pie-chart-alt"></em> bx bx-pie-chart-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-images"></i> bx bx-images
+                                                <em class="bx bx-images"></em> bx bx-images
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-purchase-tag"></i> bx bx-purchase-tag
+                                                <em class="bx bx-purchase-tag"></em> bx bx-purchase-tag
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pen"></i> bx bx-pen
+                                                <em class="bx bx-pen"></em> bx bx-pen
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-expand"></i> bx bx-expand
+                                                <em class="bx bx-expand"></em> bx bx-expand
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-paperclip"></i> bx bx-paperclip
+                                                <em class="bx bx-paperclip"></em> bx bx-paperclip
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-closet"></i> bx bx-closet
+                                                <em class="bx bx-closet"></em> bx bx-closet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-tv"></i> bx bx-tv
+                                                <em class="bx bx-tv"></em> bx bx-tv
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-collection"></i> bx bx-collection
+                                                <em class="bx bx-collection"></em> bx bx-collection
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-station"></i> bx bx-station
+                                                <em class="bx bx-station"></em> bx bx-station
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wallet"></i> bx bx-wallet
+                                                <em class="bx bx-wallet"></em> bx bx-wallet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-briefcase-alt"></i> bx bx-briefcase-alt
+                                                <em class="bx bx-briefcase-alt"></em> bx bx-briefcase-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-hourglass"></i> bx bx-hourglass
+                                                <em class="bx bx-hourglass"></em> bx bx-hourglass
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-carousel"></i> bx bx-carousel
+                                                <em class="bx bx-carousel"></em> bx bx-carousel
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-infinite"></i> bx bx-infinite
+                                                <em class="bx bx-infinite"></em> bx bx-infinite
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-plug"></i> bx bx-plug
+                                                <em class="bx bx-plug"></em> bx bx-plug
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-notification-off"></i> bx bx-notification-off
+                                                <em class="bx bx-notification-off"></em> bx bx-notification-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-window-close"></i> bx bx-window-close
+                                                <em class="bx bx-window-close"></em> bx bx-window-close
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-command"></i> bx bx-command
+                                                <em class="bx bx-command"></em> bx bx-command
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-grid-alt"></i> bx bx-grid-alt
+                                                <em class="bx bx-grid-alt"></em> bx bx-grid-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-trash-alt"></i> bx bx-trash-alt
+                                                <em class="bx bx-trash-alt"></em> bx bx-trash-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chalkboard"></i> bx bx-chalkboard
+                                                <em class="bx bx-chalkboard"></em> bx bx-chalkboard
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-loader"></i> bx bx-loader
+                                                <em class="bx bx-loader"></em> bx bx-loader
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-slider"></i> bx bx-slider
+                                                <em class="bx bx-slider"></em> bx bx-slider
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-paper-plane"></i> bx bx-paper-plane
+                                                <em class="bx bx-paper-plane"></em> bx bx-paper-plane
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-selection"></i> bx bx-selection
+                                                <em class="bx bx-selection"></em> bx bx-selection
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-world"></i> bx bx-world
+                                                <em class="bx bx-world"></em> bx bx-world
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dock-bottom"></i> bx bx-dock-bottom
+                                                <em class="bx bx-dock-bottom"></em> bx bx-dock-bottom
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dock-right"></i> bx bx-dock-right
+                                                <em class="bx bx-dock-right"></em> bx bx-dock-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dock-top"></i> bx bx-dock-top
+                                                <em class="bx bx-dock-top"></em> bx bx-dock-top
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dock-left"></i> bx bx-dock-left
+                                                <em class="bx bx-dock-left"></em> bx bx-dock-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-layout"></i> bx bx-layout
+                                                <em class="bx bx-layout"></em> bx bx-layout
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-alarm-off"></i> bx bx-alarm-off
+                                                <em class="bx bx-alarm-off"></em> bx bx-alarm-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wrench"></i> bx bx-wrench
+                                                <em class="bx bx-wrench"></em> bx bx-wrench
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-loader-circle"></i> bx bx-loader-circle
+                                                <em class="bx bx-loader-circle"></em> bx bx-loader-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-loader-alt"></i> bx bx-loader-alt
+                                                <em class="bx bx-loader-alt"></em> bx bx-loader-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-car"></i> bx bx-car
+                                                <em class="bx bx-car"></em> bx bx-car
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cart-alt"></i> bx bx-cart-alt
+                                                <em class="bx bx-cart-alt"></em> bx bx-cart-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-happy"></i> bx bx-happy
+                                                <em class="bx bx-happy"></em> bx bx-happy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-meh"></i> bx bx-meh
+                                                <em class="bx bx-meh"></em> bx bx-meh
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sad"></i> bx bx-sad
+                                                <em class="bx bx-sad"></em> bx bx-sad
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-slider-alt"></i> bx bx-slider-alt
+                                                <em class="bx bx-slider-alt"></em> bx bx-slider-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-certification"></i> bx bx-certification
+                                                <em class="bx bx-certification"></em> bx bx-certification
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-rocket"></i> bx bx-rocket
+                                                <em class="bx bx-rocket"></em> bx bx-rocket
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-check-circle"></i> bx bx-check-circle
+                                                <em class="bx bx-check-circle"></em> bx bx-check-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bus"></i> bx bx-bus
+                                                <em class="bx bx-bus"></em> bx bx-bus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-check-double"></i> bx bx-check-double
+                                                <em class="bx bx-check-double"></em> bx bx-check-double
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dumbbell"></i> bx bx-dumbbell
+                                                <em class="bx bx-dumbbell"></em> bx bx-dumbbell
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bot"></i> bx bx-bot
+                                                <em class="bx bx-bot"></em> bx bx-bot
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-area"></i> bx bx-area
+                                                <em class="bx bx-area"></em> bx bx-area
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bed"></i> bx bx-bed
+                                                <em class="bx bx-bed"></em> bx bx-bed
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bath"></i> bx bx-bath
+                                                <em class="bx bx-bath"></em> bx bx-bath
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-train"></i> bx bx-train
+                                                <em class="bx bx-train"></em> bx bx-train
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-taxi"></i> bx bx-taxi
+                                                <em class="bx bx-taxi"></em> bx bx-taxi
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-movie"></i> bx bx-movie
+                                                <em class="bx bx-movie"></em> bx bx-movie
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-hotel"></i> bx bx-hotel
+                                                <em class="bx bx-hotel"></em> bx bx-hotel
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-planet"></i> bx bx-planet
+                                                <em class="bx bx-planet"></em> bx bx-planet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-list-ol"></i> bx bx-list-ol
+                                                <em class="bx bx-list-ol"></em> bx bx-list-ol
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-video-plus"></i> bx bx-video-plus
+                                                <em class="bx bx-video-plus"></em> bx bx-video-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-menu-alt-left"></i> bx bx-menu-alt-left
+                                                <em class="bx bx-menu-alt-left"></em> bx bx-menu-alt-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-menu-alt-right"></i> bx bx-menu-alt-right
+                                                <em class="bx bx-menu-alt-right"></em> bx bx-menu-alt-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-box"></i> bx bx-box
+                                                <em class="bx bx-box"></em> bx bx-box
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-restaurant"></i> bx bx-restaurant
+                                                <em class="bx bx-restaurant"></em> bx bx-restaurant
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-swim"></i> bx bx-swim
+                                                <em class="bx bx-swim"></em> bx bx-swim
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-water"></i> bx bx-water
+                                                <em class="bx bx-water"></em> bx bx-water
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wind"></i> bx bx-wind
+                                                <em class="bx bx-wind"></em> bx bx-wind
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dialpad"></i> bx bx-dialpad
+                                                <em class="bx bx-dialpad"></em> bx bx-dialpad
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-handicap"></i> bx bx-handicap
+                                                <em class="bx bx-handicap"></em> bx bx-handicap
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-font-size"></i> bx bx-font-size
+                                                <em class="bx bx-font-size"></em> bx bx-font-size
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-code-block"></i> bx bx-code-block
+                                                <em class="bx bx-code-block"></em> bx bx-code-block
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-photo-album"></i> bx bx-photo-album
+                                                <em class="bx bx-photo-album"></em> bx bx-photo-album
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-strikethrough"></i> bx bx-strikethrough
+                                                <em class="bx bx-strikethrough"></em> bx bx-strikethrough
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-file-blank"></i> bx bx-file-blank
+                                                <em class="bx bx-file-blank"></em> bx bx-file-blank
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-highlight"></i> bx bx-highlight
+                                                <em class="bx bx-highlight"></em> bx bx-highlight
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-font-color"></i> bx bx-font-color
+                                                <em class="bx bx-font-color"></em> bx bx-font-color
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-fingerprint"></i> bx bx-fingerprint
+                                                <em class="bx bx-fingerprint"></em> bx bx-fingerprint
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-transfer"></i> bx bx-transfer
+                                                <em class="bx bx-transfer"></em> bx bx-transfer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-circle"></i> bx bx-circle
+                                                <em class="bx bx-circle"></em> bx bx-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-ball"></i> bx bx-ball
+                                                <em class="bx bx-ball"></em> bx bx-ball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-football"></i> bx bx-football
+                                                <em class="bx bx-football"></em> bx bx-football
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dollar-circle"></i> bx bx-dollar-circle
+                                                <em class="bx bx-dollar-circle"></em> bx bx-dollar-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-search-alt"></i> bx bx-search-alt
+                                                <em class="bx bx-search-alt"></em> bx bx-search-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-analyse"></i> bx bx-analyse
+                                                <em class="bx bx-analyse"></em> bx bx-analyse
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-disc"></i> bx bx-disc
+                                                <em class="bx bx-disc"></em> bx bx-disc
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-equalizer"></i> bx bx-equalizer
+                                                <em class="bx bx-equalizer"></em> bx bx-equalizer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-stats"></i> bx bx-stats
+                                                <em class="bx bx-stats"></em> bx bx-stats
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-move-horizontal"></i> bx bx-move-horizontal
+                                                <em class="bx bx-move-horizontal"></em> bx bx-move-horizontal
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-move-vertical"></i> bx bx-move-vertical
+                                                <em class="bx bx-move-vertical"></em> bx bx-move-vertical
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-grid-horizontal"></i> bx bx-grid-horizontal
+                                                <em class="bx bx-grid-horizontal"></em> bx bx-grid-horizontal
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-grid-vertical"></i> bx bx-grid-vertical
+                                                <em class="bx bx-grid-vertical"></em> bx bx-grid-vertical
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-grid-small"></i> bx bx-grid-small
+                                                <em class="bx bx-grid-small"></em> bx bx-grid-small
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-badge"></i> bx bx-badge
+                                                <em class="bx bx-badge"></em> bx bx-badge
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-id-card"></i> bx bx-id-card
+                                                <em class="bx bx-id-card"></em> bx bx-id-card
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sort-up"></i> bx bx-sort-up
+                                                <em class="bx bx-sort-up"></em> bx bx-sort-up
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sort-down"></i> bx bx-sort-down
+                                                <em class="bx bx-sort-down"></em> bx bx-sort-down
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-note"></i> bx bx-note
+                                                <em class="bx bx-note"></em> bx bx-note
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-test-tube"></i> bx bx-test-tube
+                                                <em class="bx bx-test-tube"></em> bx bx-test-tube
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-help-circle"></i> bx bx-help-circle
+                                                <em class="bx bx-help-circle"></em> bx bx-help-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-card"></i> bx bx-card
+                                                <em class="bx bx-card"></em> bx bx-card
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-rewind-circle"></i> bx bx-rewind-circle
+                                                <em class="bx bx-rewind-circle"></em> bx bx-rewind-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-magnet"></i> bx bx-magnet
+                                                <em class="bx bx-magnet"></em> bx bx-magnet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar-event"></i> bx bx-calendar-event
+                                                <em class="bx bx-calendar-event"></em> bx bx-calendar-event
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-left"></i> bx bx-caret-left
+                                                <em class="bx bx-caret-left"></em> bx bx-caret-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-up"></i> bx bx-caret-up
+                                                <em class="bx bx-caret-up"></em> bx bx-caret-up
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-right"></i> bx bx-caret-right
+                                                <em class="bx bx-caret-right"></em> bx bx-caret-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-down"></i> bx bx-caret-down
+                                                <em class="bx bx-caret-down"></em> bx bx-caret-down
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-show-alt"></i> bx bx-show-alt
+                                                <em class="bx bx-show-alt"></em> bx bx-show-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-badge-check"></i> bx bx-badge-check
+                                                <em class="bx bx-badge-check"></em> bx bx-badge-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-rotate-left"></i> bx bx-rotate-left
+                                                <em class="bx bx-rotate-left"></em> bx bx-rotate-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-brush"></i> bx bx-brush
+                                                <em class="bx bx-brush"></em> bx bx-brush
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-unlink"></i> bx bx-unlink
+                                                <em class="bx bx-unlink"></em> bx bx-unlink
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-paint"></i> bx bx-paint
+                                                <em class="bx bx-paint"></em> bx bx-paint
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-joystick-button"></i> bx bx-joystick-button
+                                                <em class="bx bx-joystick-button"></em> bx bx-joystick-button
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-font-family"></i> bx bx-font-family
+                                                <em class="bx bx-font-family"></em> bx bx-font-family
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-repeat"></i> bx bx-repeat
+                                                <em class="bx bx-repeat"></em> bx bx-repeat
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-walk"></i> bx bx-walk
+                                                <em class="bx bx-walk"></em> bx bx-walk
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-money"></i> bx bx-money
+                                                <em class="bx bx-money"></em> bx bx-money
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-home-circle"></i> bx bx-home-circle
+                                                <em class="bx bx-home-circle"></em> bx bx-home-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-location-plus"></i> bx bx-location-plus
+                                                <em class="bx bx-location-plus"></em> bx bx-location-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-arch"></i> bx bx-arch
+                                                <em class="bx bx-arch"></em> bx bx-arch
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-atom"></i> bx bx-atom
+                                                <em class="bx bx-atom"></em> bx bx-atom
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-baseball"></i> bx bx-baseball
+                                                <em class="bx bx-baseball"></em> bx bx-baseball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-beer"></i> bx bx-beer
+                                                <em class="bx bx-beer"></em> bx bx-beer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bible"></i> bx bx-bible
+                                                <em class="bx bx-bible"></em> bx bx-bible
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bomb"></i> bx bx-bomb
+                                                <em class="bx bx-bomb"></em> bx bx-bomb
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bus-school"></i> bx bx-bus-school
+                                                <em class="bx bx-bus-school"></em> bx bx-bus-school
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cabinet"></i> bx bx-cabinet
+                                                <em class="bx bx-cabinet"></em> bx bx-cabinet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar-edit"></i> bx bx-calendar-edit
+                                                <em class="bx bx-calendar-edit"></em> bx bx-calendar-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-coffee-togo"></i> bx bx-coffee-togo
+                                                <em class="bx bx-coffee-togo"></em> bx bx-coffee-togo
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-pointer"></i> bx bx-pointer
+                                                <em class="bx bx-pointer"></em> bx bx-pointer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-microchip"></i> bx bx-microchip
+                                                <em class="bx bx-microchip"></em> bx bx-microchip
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-heart-circle"></i> bx bx-heart-circle
+                                                <em class="bx bx-heart-circle"></em> bx bx-heart-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-heart-square"></i> bx bx-heart-square
+                                                <em class="bx bx-heart-square"></em> bx bx-heart-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-home-heart"></i> bx bx-home-heart
+                                                <em class="bx bx-home-heart"></em> bx bx-home-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-info-square"></i> bx bx-info-square
+                                                <em class="bx bx-info-square"></em> bx bx-info-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-layer-plus"></i> bx bx-layer-plus
+                                                <em class="bx bx-layer-plus"></em> bx bx-layer-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-layer-minus"></i> bx bx-layer-minus
+                                                <em class="bx bx-layer-minus"></em> bx bx-layer-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-recycle"></i> bx bx-recycle
+                                                <em class="bx bx-recycle"></em> bx bx-recycle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-traffic-cone"></i> bx bx-traffic-cone
+                                                <em class="bx bx-traffic-cone"></em> bx bx-traffic-cone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wifi-2"></i> bx bx-wifi-2
+                                                <em class="bx bx-wifi-2"></em> bx bx-wifi-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wifi-1"></i> bx bx-wifi-1
+                                                <em class="bx bx-wifi-1"></em> bx bx-wifi-1
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wifi-0"></i> bx bx-wifi-0
+                                                <em class="bx bx-wifi-0"></em> bx bx-wifi-0
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-mask"></i> bx bx-mask
+                                                <em class="bx bx-mask"></em> bx bx-mask
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-low-vision"></i> bx bx-low-vision
+                                                <em class="bx bx-low-vision"></em> bx bx-low-vision
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-been-here"></i> bx bx-been-here
+                                                <em class="bx bx-been-here"></em> bx bx-been-here
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-current-location"></i> bx bx-current-location
+                                                <em class="bx bx-current-location"></em> bx bx-current-location
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-arrow-from-top"></i> bx bx-arrow-from-top
+                                                <em class="bx bx-arrow-from-top"></em> bx bx-arrow-from-top
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-arrow-from-bottom"></i> bx bx-arrow-from-bottom
+                                                <em class="bx bx-arrow-from-bottom"></em> bx bx-arrow-from-bottom
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-arrow-from-left"></i> bx bx-arrow-from-left
+                                                <em class="bx bx-arrow-from-left"></em> bx bx-arrow-from-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-arrow-from-right"></i> bx bx-arrow-from-right
+                                                <em class="bx bx-arrow-from-right"></em> bx bx-arrow-from-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-arrow-to-right"></i> bx bx-arrow-to-right
+                                                <em class="bx bx-arrow-to-right"></em> bx bx-arrow-to-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-arrow-to-left"></i> bx bx-arrow-to-left
+                                                <em class="bx bx-arrow-to-left"></em> bx bx-arrow-to-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-arrow-to-top"></i> bx bx-arrow-to-top
+                                                <em class="bx bx-arrow-to-top"></em> bx bx-arrow-to-top
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-arrow-to-bottom"></i> bx bx-arrow-to-bottom
+                                                <em class="bx bx-arrow-to-bottom"></em> bx bx-arrow-to-bottom
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-book-reader"></i> bx bx-book-reader
+                                                <em class="bx bx-book-reader"></em> bx bx-book-reader
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-scan"></i> bx bx-scan
+                                                <em class="bx bx-scan"></em> bx bx-scan
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar-week"></i> bx bx-calendar-week
+                                                <em class="bx bx-calendar-week"></em> bx bx-calendar-week
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-glasses"></i> bx bx-glasses
+                                                <em class="bx bx-glasses"></em> bx bx-glasses
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-glasses-alt"></i> bx bx-glasses-alt
+                                                <em class="bx bx-glasses-alt"></em> bx bx-glasses-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-border-none"></i> bx bx-border-none
+                                                <em class="bx bx-border-none"></em> bx bx-border-none
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-border-inner"></i> bx bx-border-inner
+                                                <em class="bx bx-border-inner"></em> bx bx-border-inner
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dice-1"></i> bx bx-dice-1
+                                                <em class="bx bx-dice-1"></em> bx bx-dice-1
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dice-2"></i> bx bx-dice-2
+                                                <em class="bx bx-dice-2"></em> bx bx-dice-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dice-3"></i> bx bx-dice-3
+                                                <em class="bx bx-dice-3"></em> bx bx-dice-3
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dice-4"></i> bx bx-dice-4
+                                                <em class="bx bx-dice-4"></em> bx bx-dice-4
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dice-5"></i> bx bx-dice-5
+                                                <em class="bx bx-dice-5"></em> bx bx-dice-5
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-dice-6"></i> bx bx-dice-6
+                                                <em class="bx bx-dice-6"></em> bx bx-dice-6
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-webcam"></i> bx bx-webcam
+                                                <em class="bx bx-webcam"></em> bx bx-webcam
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-spray-can"></i> bx bx-spray-can
+                                                <em class="bx bx-spray-can"></em> bx bx-spray-can
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sticker"></i> bx bx-sticker
+                                                <em class="bx bx-sticker"></em> bx bx-sticker
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-tachometer"></i> bx bx-tachometer
+                                                <em class="bx bx-tachometer"></em> bx bx-tachometer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-game"></i> bx bx-game
+                                                <em class="bx bx-game"></em> bx bx-game
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-abacus"></i> bx bx-abacus
+                                                <em class="bx bx-abacus"></em> bx bx-abacus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-alarm-snooze"></i> bx bx-alarm-snooze
+                                                <em class="bx bx-alarm-snooze"></em> bx bx-alarm-snooze
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-alarm-exclamation"></i> bx bx-alarm-exclamation
+                                                <em class="bx bx-alarm-exclamation"></em> bx bx-alarm-exclamation
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-medal"></i> bx bx-medal
+                                                <em class="bx bx-medal"></em> bx bx-medal
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-task-x"></i> bx bx-task-x
+                                                <em class="bx bx-task-x"></em> bx bx-task-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-barcode-reader"></i> bx bx-barcode-reader
+                                                <em class="bx bx-barcode-reader"></em> bx bx-barcode-reader
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-blanket"></i> bx bx-blanket
+                                                <em class="bx bx-blanket"></em> bx bx-blanket
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bone"></i> bx bx-bone
+                                                <em class="bx bx-bone"></em> bx bx-bone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bong"></i> bx bx-bong
+                                                <em class="bx bx-bong"></em> bx bx-bong
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-book-alt"></i> bx bx-book-alt
+                                                <em class="bx bx-book-alt"></em> bx bx-book-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-book-heart"></i> bx bx-book-heart
+                                                <em class="bx bx-book-heart"></em> bx bx-book-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-book-add"></i> bx bx-book-add
+                                                <em class="bx bx-book-add"></em> bx bx-book-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bracket"></i> bx bx-bracket
+                                                <em class="bx bx-bracket"></em> bx bx-bracket
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-brain"></i> bx bx-brain
+                                                <em class="bx bx-brain"></em> bx bx-brain
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-border-outer"></i> bx bx-border-outer
+                                                <em class="bx bx-border-outer"></em> bx bx-border-outer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-braille"></i> bx bx-braille
+                                                <em class="bx bx-braille"></em> bx bx-braille
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-window-alt"></i> bx bx-window-alt
+                                                <em class="bx bx-window-alt"></em> bx bx-window-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar-heart"></i> bx bx-calendar-heart
+                                                <em class="bx bx-calendar-heart"></em> bx bx-calendar-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-wine"></i> bx bx-wine
+                                                <em class="bx bx-wine"></em> bx bx-wine
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-vial"></i> bx bx-vial
+                                                <em class="bx bx-vial"></em> bx bx-vial
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-color-fill"></i> bx bx-color-fill
+                                                <em class="bx bx-color-fill"></em> bx bx-color-fill
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-capsule"></i> bx bx-capsule
+                                                <em class="bx bx-capsule"></em> bx bx-capsule
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-eraser"></i> bx bx-eraser
+                                                <em class="bx bx-eraser"></em> bx bx-eraser
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-drink"></i> bx bx-drink
+                                                <em class="bx bx-drink"></em> bx bx-drink
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cctv"></i> bx bx-cctv
+                                                <em class="bx bx-cctv"></em> bx bx-cctv
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chair"></i> bx bx-chair
+                                                <em class="bx bx-chair"></em> bx bx-chair
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-network-chart"></i> bx bx-network-chart
+                                                <em class="bx bx-network-chart"></em> bx bx-network-chart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-vector"></i> bx bx-vector
+                                                <em class="bx bx-vector"></em> bx bx-vector
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar-exclamation"></i> bx bx-calendar-exclamation
+                                                <em class="bx bx-calendar-exclamation"></em> bx bx-calendar-exclamation
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-calendar-star"></i> bx bx-calendar-star
+                                                <em class="bx bx-calendar-star"></em> bx bx-calendar-star
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-camera-home"></i> bx bx-camera-home
+                                                <em class="bx bx-camera-home"></em> bx bx-camera-home
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-camera-movie"></i> bx bx-camera-movie
+                                                <em class="bx bx-camera-movie"></em> bx bx-camera-movie
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-right-circle"></i> bx bx-caret-right-circle
+                                                <em class="bx bx-caret-right-circle"></em> bx bx-caret-right-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-left-circle"></i> bx bx-caret-left-circle
+                                                <em class="bx bx-caret-left-circle"></em> bx bx-caret-left-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-up-circle"></i> bx bx-caret-up-circle
+                                                <em class="bx bx-caret-up-circle"></em> bx bx-caret-up-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-down-circle"></i> bx bx-caret-down-circle
+                                                <em class="bx bx-caret-down-circle"></em> bx bx-caret-down-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-right-square"></i> bx bx-caret-right-square
+                                                <em class="bx bx-caret-right-square"></em> bx bx-caret-right-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-up-square"></i> bx bx-caret-up-square
+                                                <em class="bx bx-caret-up-square"></em> bx bx-caret-up-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-left-square"></i> bx bx-caret-left-square
+                                                <em class="bx bx-caret-left-square"></em> bx bx-caret-left-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-caret-down-square"></i> bx bx-caret-down-square
+                                                <em class="bx bx-caret-down-square"></em> bx bx-caret-down-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shield-x"></i> bx bx-shield-x
+                                                <em class="bx bx-shield-x"></em> bx bx-shield-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-line-chart-down"></i> bx bx-line-chart-down
+                                                <em class="bx bx-line-chart-down"></em> bx bx-line-chart-down
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-down-circle"></i> bx bx-chevron-down-circle
+                                                <em class="bx bx-chevron-down-circle"></em> bx bx-chevron-down-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-up-circle"></i> bx bx-chevron-up-circle
+                                                <em class="bx bx-chevron-up-circle"></em> bx bx-chevron-up-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-left-circle"></i> bx bx-chevron-left-circle
+                                                <em class="bx bx-chevron-left-circle"></em> bx bx-chevron-left-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-right-circle"></i> bx bx-chevron-right-circle
+                                                <em class="bx bx-chevron-right-circle"></em> bx bx-chevron-right-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-down-square"></i> bx bx-chevron-down-square
+                                                <em class="bx bx-chevron-down-square"></em> bx bx-chevron-down-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-up-square"></i> bx bx-chevron-up-square
+                                                <em class="bx bx-chevron-up-square"></em> bx bx-chevron-up-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-left-square"></i> bx bx-chevron-left-square
+                                                <em class="bx bx-chevron-left-square"></em> bx bx-chevron-left-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-chevron-right-square"></i> bx bx-chevron-right-square
+                                                <em class="bx bx-chevron-right-square"></em> bx bx-chevron-right-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-church"></i> bx bx-church
+                                                <em class="bx bx-church"></em> bx bx-church
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-coin"></i> bx bx-coin
+                                                <em class="bx bx-coin"></em> bx bx-coin
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-coin-stack"></i> bx bx-coin-stack
+                                                <em class="bx bx-coin-stack"></em> bx bx-coin-stack
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-unite"></i> bx bx-unite
+                                                <em class="bx bx-unite"></em> bx bx-unite
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-minus-front"></i> bx bx-minus-front
+                                                <em class="bx bx-minus-front"></em> bx bx-minus-front
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-intersect"></i> bx bx-intersect
+                                                <em class="bx bx-intersect"></em> bx bx-intersect
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-exclude"></i> bx bx-exclude
+                                                <em class="bx bx-exclude"></em> bx bx-exclude
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-minus-back"></i> bx bx-minus-back
+                                                <em class="bx bx-minus-back"></em> bx bx-minus-back
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-merge"></i> bx bx-merge
+                                                <em class="bx bx-merge"></em> bx bx-merge
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-trim"></i> bx bx-trim
+                                                <em class="bx bx-trim"></em> bx bx-trim
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-outline"></i> bx bx-outline
+                                                <em class="bx bx-outline"></em> bx bx-outline
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-meteor"></i> bx bx-meteor
+                                                <em class="bx bx-meteor"></em> bx bx-meteor
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-refresh"></i> bx bx-refresh
+                                                <em class="bx bx-refresh"></em> bx bx-refresh
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-home-smile"></i> bx bx-home-smile
+                                                <em class="bx bx-home-smile"></em> bx bx-home-smile
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-envelope-open"></i> bx bx-envelope-open
+                                                <em class="bx bx-envelope-open"></em> bx bx-envelope-open
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-alt-add"></i> bx bx-message-alt-add
+                                                <em class="bx bx-message-alt-add"></em> bx bx-message-alt-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-alt-check"></i> bx bx-message-alt-check
+                                                <em class="bx bx-message-alt-check"></em> bx bx-message-alt-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-alt-error"></i> bx bx-message-alt-error
+                                                <em class="bx bx-message-alt-error"></em> bx bx-message-alt-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-alt-x"></i> bx bx-message-alt-x
+                                                <em class="bx bx-message-alt-x"></em> bx bx-message-alt-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-alt-minus"></i> bx bx-message-alt-minus
+                                                <em class="bx bx-message-alt-minus"></em> bx bx-message-alt-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-alt-edit"></i> bx bx-message-alt-edit
+                                                <em class="bx bx-message-alt-edit"></em> bx bx-message-alt-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-alt-detail"></i> bx bx-message-alt-detail
+                                                <em class="bx bx-message-alt-detail"></em> bx bx-message-alt-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-rounded-check"></i> bx bx-message-rounded-check
+                                                <em class="bx bx-message-rounded-check"></em> bx bx-message-rounded-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-rounded-error"></i> bx bx-message-rounded-error
+                                                <em class="bx bx-message-rounded-error"></em> bx bx-message-rounded-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-rounded-x"></i> bx bx-message-rounded-x
+                                                <em class="bx bx-message-rounded-x"></em> bx bx-message-rounded-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-rounded-minus"></i> bx bx-message-rounded-minus
+                                                <em class="bx bx-message-rounded-minus"></em> bx bx-message-rounded-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-rounded-edit"></i> bx bx-message-rounded-edit
+                                                <em class="bx bx-message-rounded-edit"></em> bx bx-message-rounded-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-rounded-add"></i> bx bx-message-rounded-add
+                                                <em class="bx bx-message-rounded-add"></em> bx bx-message-rounded-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-rounded-detail"></i> bx bx-message-rounded-detail
+                                                <em class="bx bx-message-rounded-detail"></em> bx bx-message-rounded-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-check"></i> bx bx-message-check
+                                                <em class="bx bx-message-check"></em> bx bx-message-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-error"></i> bx bx-message-error
+                                                <em class="bx bx-message-error"></em> bx bx-message-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-x"></i> bx bx-message-x
+                                                <em class="bx bx-message-x"></em> bx bx-message-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-minus"></i> bx bx-message-minus
+                                                <em class="bx bx-message-minus"></em> bx bx-message-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-edit"></i> bx bx-message-edit
+                                                <em class="bx bx-message-edit"></em> bx bx-message-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-add"></i> bx bx-message-add
+                                                <em class="bx bx-message-add"></em> bx bx-message-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-detail"></i> bx bx-message-detail
+                                                <em class="bx bx-message-detail"></em> bx bx-message-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-square-check"></i> bx bx-message-square-check
+                                                <em class="bx bx-message-square-check"></em> bx bx-message-square-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-square-error"></i> bx bx-message-square-error
+                                                <em class="bx bx-message-square-error"></em> bx bx-message-square-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-square-x"></i> bx bx-message-square-x
+                                                <em class="bx bx-message-square-x"></em> bx bx-message-square-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-square-minus"></i> bx bx-message-square-minus
+                                                <em class="bx bx-message-square-minus"></em> bx bx-message-square-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-square-edit"></i> bx bx-message-square-edit
+                                                <em class="bx bx-message-square-edit"></em> bx bx-message-square-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-square-add"></i> bx bx-message-square-add
+                                                <em class="bx bx-message-square-add"></em> bx bx-message-square-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-message-square-detail"></i> bx bx-message-square-detail
+                                                <em class="bx bx-message-square-detail"></em> bx bx-message-square-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-comment-check"></i> bx bx-comment-check
+                                                <em class="bx bx-comment-check"></em> bx bx-comment-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-comment-error"></i> bx bx-comment-error
+                                                <em class="bx bx-comment-error"></em> bx bx-comment-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-comment-x"></i> bx bx-comment-x
+                                                <em class="bx bx-comment-x"></em> bx bx-comment-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-comment-edit"></i> bx bx-comment-edit
+                                                <em class="bx bx-comment-edit"></em> bx bx-comment-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-comment-minus"></i> bx bx-comment-minus
+                                                <em class="bx bx-comment-minus"></em> bx bx-comment-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-comment-add"></i> bx bx-comment-add
+                                                <em class="bx bx-comment-add"></em> bx bx-comment-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-comment-detail"></i> bx bx-comment-detail
+                                                <em class="bx bx-comment-detail"></em> bx bx-comment-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-cookie"></i> bx bx-cookie
+                                                <em class="bx bx-cookie"></em> bx bx-cookie
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-credit-card-front"></i> bx bx-credit-card-front
+                                                <em class="bx bx-credit-card-front"></em> bx bx-credit-card-front
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-door-open"></i> bx bx-door-open
+                                                <em class="bx bx-door-open"></em> bx bx-door-open
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-donate-heart"></i> bx bx-donate-heart
+                                                <em class="bx bx-donate-heart"></em> bx bx-donate-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-donate-blood"></i> bx bx-donate-blood
+                                                <em class="bx bx-donate-blood"></em> bx bx-donate-blood
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-shape-polygon"></i> bx bx-shape-polygon
+                                                <em class="bx bx-shape-polygon"></em> bx bx-shape-polygon
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bookmark-heart"></i> bx bx-bookmark-heart
+                                                <em class="bx bx-bookmark-heart"></em> bx bx-bookmark-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-sort-alt-2"></i> bx bx-sort-alt-2
+                                                <em class="bx bx-sort-alt-2"></em> bx bx-sort-alt-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-category"></i> bx bx-category
+                                                <em class="bx bx-category"></em> bx bx-category
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-category-alt"></i> bx bx-category-alt
+                                                <em class="bx bx-category-alt"></em> bx bx-category-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bookmark-alt"></i> bx bx-bookmark-alt
+                                                <em class="bx bx-bookmark-alt"></em> bx bx-bookmark-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bookmark-alt-plus"></i> bx bx-bookmark-alt-plus
+                                                <em class="bx bx-bookmark-alt-plus"></em> bx bx-bookmark-alt-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-bookmark-alt-minus"></i> bx bx-bookmark-alt-minus
+                                                <em class="bx bx-bookmark-alt-minus"></em> bx bx-bookmark-alt-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-tag-alt"></i> bx bx-tag-alt
+                                                <em class="bx bx-tag-alt"></em> bx bx-tag-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-movie-play"></i> bx bx-movie-play
+                                                <em class="bx bx-movie-play"></em> bx bx-movie-play
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-expand-alt"></i> bx bx-expand-alt
+                                                <em class="bx bx-expand-alt"></em> bx bx-expand-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-library"></i> bx bx-library
+                                                <em class="bx bx-library"></em> bx bx-library
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bx-trip"></i> bx bx-trip
+                                                <em class="bx bx-trip"></em> bx bx-trip
                                             </div>
                                         </div>
                                         <!--Regular end row -->
@@ -2401,1943 +2401,1943 @@ export default {
 
                                         <div class="row icon-demo-content">
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-lemon"></i> bx bxs-lemon
+                                                <em class="bx bxs-lemon"></em> bx bxs-lemon
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cable-car"></i> bx bxs-cable-car
+                                                <em class="bx bxs-cable-car"></em> bx bxs-cable-car
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cricket-ball"></i> bx bxs-cricket-ball
+                                                <em class="bx bxs-cricket-ball"></em> bx bxs-cricket-ball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-tree-alt"></i> bx bxs-tree-alt
+                                                <em class="bx bxs-tree-alt"></em> bx bxs-tree-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-invader"></i> bx bxs-invader
+                                                <em class="bx bxs-invader"></em> bx bxs-invader
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-baguette"></i> bx bxs-baguette
+                                                <em class="bx bxs-baguette"></em> bx bxs-baguette
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-circle-half"></i> bx bxs-circle-half
+                                                <em class="bx bxs-circle-half"></em> bx bxs-circle-half
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-circle-three-quarter"></i> bx bxs-circle-three-quarter
+                                                <em class="bx bxs-circle-three-quarter"></em> bx bxs-circle-three-quarter
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-circle-quarter"></i> bx bxs-circle-quarter
+                                                <em class="bx bxs-circle-quarter"></em> bx bxs-circle-quarter
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bowl-rice"></i> bx bxs-bowl-rice
+                                                <em class="bx bxs-bowl-rice"></em> bx bxs-bowl-rice
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bowl-hot"></i> bx bxs-bowl-hot
+                                                <em class="bx bxs-bowl-hot"></em> bx bxs-bowl-hot
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-popsicle"></i> bx bxs-popsicle
+                                                <em class="bx bxs-popsicle"></em> bx bxs-popsicle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-party"></i> bx bxs-party
+                                                <em class="bx bxs-party"></em> bx bxs-party
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-leaf"></i> bx bxs-leaf
+                                                <em class="bx bxs-leaf"></em> bx bxs-leaf
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-injection"></i> bx bxs-injection
+                                                <em class="bx bxs-injection"></em> bx bxs-injection
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dog"></i> bx bxs-dog
+                                                <em class="bx bxs-dog"></em> bx bxs-dog
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cat"></i> bx bxs-cat
+                                                <em class="bx bxs-cat"></em> bx bxs-cat
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hand"></i> bx bxs-hand
+                                                <em class="bx bxs-hand"></em> bx bxs-hand
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-checkbox-minus"></i> bx bxs-checkbox-minus
+                                                <em class="bx bxs-checkbox-minus"></em> bx bxs-checkbox-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-speaker"></i> bx bxs-speaker
+                                                <em class="bx bxs-speaker"></em> bx bxs-speaker
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-registered"></i> bx bxs-registered
+                                                <em class="bx bxs-registered"></em> bx bxs-registered
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-phone-off"></i> bx bxs-phone-off
+                                                <em class="bx bxs-phone-off"></em> bx bxs-phone-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-buildings"></i> bx bxs-buildings
+                                                <em class="bx bxs-buildings"></em> bx bxs-buildings
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-store-alt"></i> bx bxs-store-alt
+                                                <em class="bx bxs-store-alt"></em> bx bxs-store-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bar-chart-alt-2"></i> bx bxs-bar-chart-alt-2
+                                                <em class="bx bxs-bar-chart-alt-2"></em> bx bxs-bar-chart-alt-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-dots"></i> bx bxs-message-dots
+                                                <em class="bx bxs-message-dots"></em> bx bxs-message-dots
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-rounded-dots"></i> bx bxs-message-rounded-dots
+                                                <em class="bx bxs-message-rounded-dots"></em> bx bxs-message-rounded-dots
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-devices"></i> bx bxs-devices
+                                                <em class="bx bxs-devices"></em> bx bxs-devices
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-memory-card"></i> bx bxs-memory-card
+                                                <em class="bx bxs-memory-card"></em> bx bxs-memory-card
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-wallet-alt"></i> bx bxs-wallet-alt
+                                                <em class="bx bxs-wallet-alt"></em> bx bxs-wallet-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bank"></i> bx bxs-bank
+                                                <em class="bx bxs-bank"></em> bx bxs-bank
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-slideshow"></i> bx bxs-slideshow
+                                                <em class="bx bxs-slideshow"></em> bx bxs-slideshow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-square"></i> bx bxs-message-square
+                                                <em class="bx bxs-message-square"></em> bx bxs-message-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-square-dots"></i> bx bxs-message-square-dots
+                                                <em class="bx bxs-message-square-dots"></em> bx bxs-message-square-dots
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-book-content"></i> bx bxs-book-content
+                                                <em class="bx bxs-book-content"></em> bx bxs-book-content
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chat"></i> bx bxs-chat
+                                                <em class="bx bxs-chat"></em> bx bxs-chat
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-edit-alt"></i> bx bxs-edit-alt
+                                                <em class="bx bxs-edit-alt"></em> bx bxs-edit-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-mouse-alt"></i> bx bxs-mouse-alt
+                                                <em class="bx bxs-mouse-alt"></em> bx bxs-mouse-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bug-alt"></i> bx bxs-bug-alt
+                                                <em class="bx bxs-bug-alt"></em> bx bxs-bug-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-notepad"></i> bx bxs-notepad
+                                                <em class="bx bxs-notepad"></em> bx bxs-notepad
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-video-recording"></i> bx bxs-video-recording
+                                                <em class="bx bxs-video-recording"></em> bx bxs-video-recording
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-direction-left"></i> bx bxs-direction-left
+                                                <em class="bx bxs-direction-left"></em> bx bxs-direction-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-ghost"></i> bx bxs-ghost
+                                                <em class="bx bxs-ghost"></em> bx bxs-ghost
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-quote-single-left"></i> bx bxs-quote-single-left
+                                                <em class="bx bxs-quote-single-left"></em> bx bxs-quote-single-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-quote-single-right"></i> bx bxs-quote-single-right
+                                                <em class="bx bxs-quote-single-right"></em> bx bxs-quote-single-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user-pin"></i> bx bxs-user-pin
+                                                <em class="bx bxs-user-pin"></em> bx bxs-user-pin
                                             </div>
                         
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-copy-alt"></i> bx bxs-copy-alt
+                                                <em class="bx bxs-copy-alt"></em> bx bxs-copy-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-doc"></i> bx bxs-file-doc
+                                                <em class="bx bxs-file-doc"></em> bx bxs-file-doc
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-html"></i> bx bxs-file-html
+                                                <em class="bx bxs-file-html"></em> bx bxs-file-html
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-comment-detail"></i> bx bxs-comment-detail
+                                                <em class="bx bxs-comment-detail"></em> bx bxs-comment-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-comment-add"></i> bx bxs-comment-add
+                                                <em class="bx bxs-comment-add"></em> bx bxs-comment-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-css"></i> bx bxs-file-css
+                                                <em class="bx bxs-file-css"></em> bx bxs-file-css
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-js"></i> bx bxs-file-js
+                                                <em class="bx bxs-file-js"></em> bx bxs-file-js
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-json"></i> bx bxs-file-json
+                                                <em class="bx bxs-file-json"></em> bx bxs-file-json
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-md"></i> bx bxs-file-md
+                                                <em class="bx bxs-file-md"></em> bx bxs-file-md
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-txt"></i> bx bxs-file-txt
+                                                <em class="bx bxs-file-txt"></em> bx bxs-file-txt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-png"></i> bx bxs-file-png
+                                                <em class="bx bxs-file-png"></em> bx bxs-file-png
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-jpg"></i> bx bxs-file-jpg
+                                                <em class="bx bxs-file-jpg"></em> bx bxs-file-jpg
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-gif"></i> bx bxs-file-gif
+                                                <em class="bx bxs-file-gif"></em> bx bxs-file-gif
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-analyse"></i> bx bxs-analyse
+                                                <em class="bx bxs-analyse"></em> bx bxs-analyse
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-plane-take-off"></i> bx bxs-plane-take-off
+                                                <em class="bx bxs-plane-take-off"></em> bx bxs-plane-take-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-plane-land"></i> bx bxs-plane-land
+                                                <em class="bx bxs-plane-land"></em> bx bxs-plane-land
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-parking"></i> bx bxs-parking
+                                                <em class="bx bxs-parking"></em> bx bxs-parking
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-id-card"></i> bx bxs-id-card
+                                                <em class="bx bxs-id-card"></em> bx bxs-id-card
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-adjust-alt"></i> bx bxs-adjust-alt
+                                                <em class="bx bxs-adjust-alt"></em> bx bxs-adjust-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-landscape"></i> bx bxs-landscape
+                                                <em class="bx bxs-landscape"></em> bx bxs-landscape
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-traffic"></i> bx bxs-traffic
+                                                <em class="bx bxs-traffic"></em> bx bxs-traffic
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-comment"></i> bx bxs-comment
+                                                <em class="bx bxs-comment"></em> bx bxs-comment
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-comment-dots"></i> bx bxs-comment-dots
+                                                <em class="bx bxs-comment-dots"></em> bx bxs-comment-dots
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-wine"></i> bx bxs-wine
+                                                <em class="bx bxs-wine"></em> bx bxs-wine
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-pyramid"></i> bx bxs-pyramid
+                                                <em class="bx bxs-pyramid"></em> bx bxs-pyramid
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cylinder"></i> bx bxs-cylinder
+                                                <em class="bx bxs-cylinder"></em> bx bxs-cylinder
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-graduation"></i> bx bxs-graduation
+                                                <em class="bx bxs-graduation"></em> bx bxs-graduation
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-lock-alt"></i> bx bxs-lock-alt
+                                                <em class="bx bxs-lock-alt"></em> bx bxs-lock-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-lock-open-alt"></i> bx bxs-lock-open-alt
+                                                <em class="bx bxs-lock-open-alt"></em> bx bxs-lock-open-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hourglass-top"></i> bx bxs-hourglass-top
+                                                <em class="bx bxs-hourglass-top"></em> bx bxs-hourglass-top
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hourglass-bottom"></i> bx bxs-hourglass-bottom
+                                                <em class="bx bxs-hourglass-bottom"></em> bx bxs-hourglass-bottom
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bowling-ball"></i> bx bxs-bowling-ball
+                                                <em class="bx bxs-bowling-ball"></em> bx bxs-bowling-ball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-search-alt-2"></i> bx bxs-search-alt-2
+                                                <em class="bx bxs-search-alt-2"></em> bx bxs-search-alt-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-droplet-half"></i> bx bxs-droplet-half
+                                                <em class="bx bxs-droplet-half"></em> bx bxs-droplet-half
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-paint-roll"></i> bx bxs-paint-roll
+                                                <em class="bx bxs-paint-roll"></em> bx bxs-paint-roll
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-shield-alt-2"></i> bx bxs-shield-alt-2
+                                                <em class="bx bxs-shield-alt-2"></em> bx bxs-shield-alt-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-error-alt"></i> bx bxs-error-alt
+                                                <em class="bx bxs-error-alt"></em> bx bxs-error-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-square"></i> bx bxs-square
+                                                <em class="bx bxs-square"></em> bx bxs-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-square-rounded"></i> bx bxs-square-rounded
+                                                <em class="bx bxs-square-rounded"></em> bx bxs-square-rounded
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-polygon"></i> bx bxs-polygon
+                                                <em class="bx bxs-polygon"></em> bx bxs-polygon
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cube-alt"></i> bx bxs-cube-alt
+                                                <em class="bx bxs-cube-alt"></em> bx bxs-cube-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cuboid"></i> bx bxs-cuboid
+                                                <em class="bx bxs-cuboid"></em> bx bxs-cuboid
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user-voice"></i> bx bxs-user-voice
+                                                <em class="bx bxs-user-voice"></em> bx bxs-user-voice
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-building-house"></i> bx bxs-building-house
+                                                <em class="bx bxs-building-house"></em> bx bxs-building-house
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-doughnut-chart"></i> bx bxs-doughnut-chart
+                                                <em class="bx bxs-doughnut-chart"></em> bx bxs-doughnut-chart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-circle"></i> bx bxs-circle
+                                                <em class="bx bxs-circle"></em> bx bxs-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-log-in-circle"></i> bx bxs-log-in-circle
+                                                <em class="bx bxs-log-in-circle"></em> bx bxs-log-in-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-log-out-circle"></i> bx bxs-log-out-circle
+                                                <em class="bx bxs-log-out-circle"></em> bx bxs-log-out-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-log-in"></i> bx bxs-log-in
+                                                <em class="bx bxs-log-in"></em> bx bxs-log-in
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-log-out"></i> bx bxs-log-out
+                                                <em class="bx bxs-log-out"></em> bx bxs-log-out
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-notification"></i> bx bxs-notification
+                                                <em class="bx bxs-notification"></em> bx bxs-notification
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-notification-off"></i> bx bxs-notification-off
+                                                <em class="bx bxs-notification-off"></em> bx bxs-notification-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-check-square"></i> bx bxs-check-square
+                                                <em class="bx bxs-check-square"></em> bx bxs-check-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-alt"></i> bx bxs-message-alt
+                                                <em class="bx bxs-message-alt"></em> bx bxs-message-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-alt-dots"></i> bx bxs-message-alt-dots
+                                                <em class="bx bxs-message-alt-dots"></em> bx bxs-message-alt-dots
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-no-entry"></i> bx bxs-no-entry
+                                                <em class="bx bxs-no-entry"></em> bx bxs-no-entry
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-traffic-barrier"></i> bx bxs-traffic-barrier
+                                                <em class="bx bxs-traffic-barrier"></em> bx bxs-traffic-barrier
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-component"></i> bx bxs-component
+                                                <em class="bx bxs-component"></em> bx bxs-component
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-plane-alt"></i> bx bxs-plane-alt
+                                                <em class="bx bxs-plane-alt"></em> bx bxs-plane-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-palette"></i> bx bxs-palette
+                                                <em class="bx bxs-palette"></em> bx bxs-palette
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-basket"></i> bx bxs-basket
+                                                <em class="bx bxs-basket"></em> bx bxs-basket
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-purchase-tag-alt"></i> bx bxs-purchase-tag-alt
+                                                <em class="bx bxs-purchase-tag-alt"></em> bx bxs-purchase-tag-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-receipt"></i> bx bxs-receipt
+                                                <em class="bx bxs-receipt"></em> bx bxs-receipt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-map-pin"></i> bx bxs-map-pin
+                                                <em class="bx bxs-map-pin"></em> bx bxs-map-pin
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-band-aid"></i> bx bxs-band-aid
+                                                <em class="bx bxs-band-aid"></em> bx bxs-band-aid
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-credit-card-alt"></i> bx bxs-credit-card-alt
+                                                <em class="bx bxs-credit-card-alt"></em> bx bxs-credit-card-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-credit-card"></i> bx bxs-credit-card
+                                                <em class="bx bxs-credit-card"></em> bx bxs-credit-card
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-paint"></i> bx bxs-paint
+                                                <em class="bx bxs-paint"></em> bx bxs-paint
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-brightness-half"></i> bx bxs-brightness-half
+                                                <em class="bx bxs-brightness-half"></em> bx bxs-brightness-half
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-brightness"></i> bx bxs-brightness
+                                                <em class="bx bxs-brightness"></em> bx bxs-brightness
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-rectangle"></i> bx bxs-rectangle
+                                                <em class="bx bxs-rectangle"></em> bx bxs-rectangle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-right-arrow"></i> bx bxs-right-arrow
+                                                <em class="bx bxs-right-arrow"></em> bx bxs-right-arrow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-left-arrow"></i> bx bxs-left-arrow
+                                                <em class="bx bxs-left-arrow"></em> bx bxs-left-arrow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-up-arrow"></i> bx bxs-up-arrow
+                                                <em class="bx bxs-up-arrow"></em> bx bxs-up-arrow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-down-arrow"></i> bx bxs-down-arrow
+                                                <em class="bx bxs-down-arrow"></em> bx bxs-down-arrow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-right-top-arrow-circle"></i> bx bxs-right-top-arrow-circle
+                                                <em class="bx bxs-right-top-arrow-circle"></em> bx bxs-right-top-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-right-down-arrow-circle"></i> bx bxs-right-down-arrow-circle
+                                                <em class="bx bxs-right-down-arrow-circle"></em> bx bxs-right-down-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-left-top-arrow-circle"></i> bx bxs-left-top-arrow-circle
+                                                <em class="bx bxs-left-top-arrow-circle"></em> bx bxs-left-top-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-left-down-arrow-circle"></i> bx bxs-left-down-arrow-circle
+                                                <em class="bx bxs-left-down-arrow-circle"></em> bx bxs-left-down-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-institution"></i> bx bxs-institution
+                                                <em class="bx bxs-institution"></em> bx bxs-institution
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-school"></i> bx bxs-school
+                                                <em class="bx bxs-school"></em> bx bxs-school
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chalkboard"></i> bx bxs-chalkboard
+                                                <em class="bx bxs-chalkboard"></em> bx bxs-chalkboard
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-skip-previous-circle"></i> bx bxs-skip-previous-circle
+                                                <em class="bx bxs-skip-previous-circle"></em> bx bxs-skip-previous-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-skip-next-circle"></i> bx bxs-skip-next-circle
+                                                <em class="bx bxs-skip-next-circle"></em> bx bxs-skip-next-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-data"></i> bx bxs-data
+                                                <em class="bx bxs-data"></em> bx bxs-data
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-mobile"></i> bx bxs-mobile
+                                                <em class="bx bxs-mobile"></em> bx bxs-mobile
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-folder-minus"></i> bx bxs-folder-minus
+                                                <em class="bx bxs-folder-minus"></em> bx bxs-folder-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bell-plus"></i> bx bxs-bell-plus
+                                                <em class="bx bxs-bell-plus"></em> bx bxs-bell-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bell-minus"></i> bx bxs-bell-minus
+                                                <em class="bx bxs-bell-minus"></em> bx bxs-bell-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-search"></i> bx bxs-search
+                                                <em class="bx bxs-search"></em> bx bxs-search
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-zoom-in"></i> bx bxs-zoom-in
+                                                <em class="bx bxs-zoom-in"></em> bx bxs-zoom-in
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-zoom-out"></i> bx bxs-zoom-out
+                                                <em class="bx bxs-zoom-out"></em> bx bxs-zoom-out
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-grid"></i> bx bxs-grid
+                                                <em class="bx bxs-grid"></em> bx bxs-grid
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user-x"></i> bx bxs-user-x
+                                                <em class="bx bxs-user-x"></em> bx bxs-user-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user-check"></i> bx bxs-user-check
+                                                <em class="bx bxs-user-check"></em> bx bxs-user-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-compass"></i> bx bxs-compass
+                                                <em class="bx bxs-compass"></em> bx bxs-compass
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-stopwatch"></i> bx bxs-stopwatch
+                                                <em class="bx bxs-stopwatch"></em> bx bxs-stopwatch
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-timer"></i> bx bxs-timer
+                                                <em class="bx bxs-timer"></em> bx bxs-timer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-time"></i> bx bxs-time
+                                                <em class="bx bxs-time"></em> bx bxs-time
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-pie-chart-alt-2"></i> bx bxs-pie-chart-alt-2
+                                                <em class="bx bxs-pie-chart-alt-2"></em> bx bxs-pie-chart-alt-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-time-five"></i> bx bxs-time-five
+                                                <em class="bx bxs-time-five"></em> bx bxs-time-five
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bookmarks"></i> bx bxs-bookmarks
+                                                <em class="bx bxs-bookmarks"></em> bx bxs-bookmarks
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bookmark-minus"></i> bx bxs-bookmark-minus
+                                                <em class="bx bxs-bookmark-minus"></em> bx bxs-bookmark-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-briefcase-alt-2"></i> bx bxs-briefcase-alt-2
+                                                <em class="bx bxs-briefcase-alt-2"></em> bx bxs-briefcase-alt-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar"></i> bx bxs-calendar
+                                                <em class="bx bxs-calendar"></em> bx bxs-calendar
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar-alt"></i> bx bxs-calendar-alt
+                                                <em class="bx bxs-calendar-alt"></em> bx bxs-calendar-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar-plus"></i> bx bxs-calendar-plus
+                                                <em class="bx bxs-calendar-plus"></em> bx bxs-calendar-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar-minus"></i> bx bxs-calendar-minus
+                                                <em class="bx bxs-calendar-minus"></em> bx bxs-calendar-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar-x"></i> bx bxs-calendar-x
+                                                <em class="bx bxs-calendar-x"></em> bx bxs-calendar-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar-check"></i> bx bxs-calendar-check
+                                                <em class="bx bxs-calendar-check"></em> bx bxs-calendar-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar-event"></i> bx bxs-calendar-event
+                                                <em class="bx bxs-calendar-event"></em> bx bxs-calendar-event
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-customize"></i> bx bxs-customize
+                                                <em class="bx bxs-customize"></em> bx bxs-customize
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-carousel"></i> bx bxs-carousel
+                                                <em class="bx bxs-carousel"></em> bx bxs-carousel
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-rewind-circle"></i> bx bxs-rewind-circle
+                                                <em class="bx bxs-rewind-circle"></em> bx bxs-rewind-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-fast-forward-circle"></i> bx bxs-fast-forward-circle
+                                                <em class="bx bxs-fast-forward-circle"></em> bx bxs-fast-forward-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-mobile-vibration"></i> bx bxs-mobile-vibration
+                                                <em class="bx bxs-mobile-vibration"></em> bx bxs-mobile-vibration
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-quote-alt-left"></i> bx bxs-quote-alt-left
+                                                <em class="bx bxs-quote-alt-left"></em> bx bxs-quote-alt-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-quote-alt-right"></i> bx bxs-quote-alt-right
+                                                <em class="bx bxs-quote-alt-right"></em> bx bxs-quote-alt-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-layout"></i> bx bxs-layout
+                                                <em class="bx bxs-layout"></em> bx bxs-layout
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-brush-alt"></i> bx bxs-brush-alt
+                                                <em class="bx bxs-brush-alt"></em> bx bxs-brush-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-exit"></i> bx bxs-exit
+                                                <em class="bx bxs-exit"></em> bx bxs-exit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-extension"></i> bx bxs-extension
+                                                <em class="bx bxs-extension"></em> bx bxs-extension
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-find"></i> bx bxs-file-find
+                                                <em class="bx bxs-file-find"></em> bx bxs-file-find
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-face"></i> bx bxs-face
+                                                <em class="bx bxs-face"></em> bx bxs-face
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-label"></i> bx bxs-label
+                                                <em class="bx bxs-label"></em> bx bxs-label
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-check-shield"></i> bx bxs-check-shield
+                                                <em class="bx bxs-check-shield"></em> bx bxs-check-shield
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-add-to-queue"></i> bx bxs-add-to-queue
+                                                <em class="bx bxs-add-to-queue"></em> bx bxs-add-to-queue
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-archive-in"></i> bx bxs-archive-in
+                                                <em class="bx bxs-archive-in"></em> bx bxs-archive-in
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-archive-out"></i> bx bxs-archive-out
+                                                <em class="bx bxs-archive-out"></em> bx bxs-archive-out
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-alarm-add"></i> bx bxs-alarm-add
+                                                <em class="bx bxs-alarm-add"></em> bx bxs-alarm-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-image-add"></i> bx bxs-image-add
+                                                <em class="bx bxs-image-add"></em> bx bxs-image-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-fridge"></i> bx bxs-fridge
+                                                <em class="bx bxs-fridge"></em> bx bxs-fridge
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dish"></i> bx bxs-dish
+                                                <em class="bx bxs-dish"></em> bx bxs-dish
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-spa"></i> bx bxs-spa
+                                                <em class="bx bxs-spa"></em> bx bxs-spa
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cake"></i> bx bxs-cake
+                                                <em class="bx bxs-cake"></em> bx bxs-cake
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-city"></i> bx bxs-city
+                                                <em class="bx bxs-city"></em> bx bxs-city
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bolt-circle"></i> bx bxs-bolt-circle
+                                                <em class="bx bxs-bolt-circle"></em> bx bxs-bolt-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-caret-up-circle"></i> bx bxs-caret-up-circle
+                                                <em class="bx bxs-caret-up-circle"></em> bx bxs-caret-up-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-caret-down-circle"></i> bx bxs-caret-down-circle
+                                                <em class="bx bxs-caret-down-circle"></em> bx bxs-caret-down-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-caret-left-circle"></i> bx bxs-caret-left-circle
+                                                <em class="bx bxs-caret-left-circle"></em> bx bxs-caret-left-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-caret-right-circle"></i> bx bxs-caret-right-circle
+                                                <em class="bx bxs-caret-right-circle"></em> bx bxs-caret-right-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-tone"></i> bx bxs-tone
+                                                <em class="bx bxs-tone"></em> bx bxs-tone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-baby-carriage"></i> bx bxs-baby-carriage
+                                                <em class="bx bxs-baby-carriage"></em> bx bxs-baby-carriage
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hand-up"></i> bx bxs-hand-up
+                                                <em class="bx bxs-hand-up"></em> bx bxs-hand-up
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hand-right"></i> bx bxs-hand-right
+                                                <em class="bx bxs-hand-right"></em> bx bxs-hand-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hand-down"></i> bx bxs-hand-down
+                                                <em class="bx bxs-hand-down"></em> bx bxs-hand-down
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hand-left"></i> bx bxs-hand-left
+                                                <em class="bx bxs-hand-left"></em> bx bxs-hand-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-clinic"></i> bx bxs-clinic
+                                                <em class="bx bxs-clinic"></em> bx bxs-clinic
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-offer"></i> bx bxs-offer
+                                                <em class="bx bxs-offer"></em> bx bxs-offer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-food-menu"></i> bx bxs-food-menu
+                                                <em class="bx bxs-food-menu"></em> bx bxs-food-menu
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-camera-plus"></i> bx bxs-camera-plus
+                                                <em class="bx bxs-camera-plus"></em> bx bxs-camera-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-business"></i> bx bxs-business
+                                                <em class="bx bxs-business"></em> bx bxs-business
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-angry"></i> bx bxs-angry
+                                                <em class="bx bxs-angry"></em> bx bxs-angry
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-happy-heart-eyes"></i> bx bxs-happy-heart-eyes
+                                                <em class="bx bxs-happy-heart-eyes"></em> bx bxs-happy-heart-eyes
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dizzy"></i> bx bxs-dizzy
+                                                <em class="bx bxs-dizzy"></em> bx bxs-dizzy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-wink-smile"></i> bx bxs-wink-smile
+                                                <em class="bx bxs-wink-smile"></em> bx bxs-wink-smile
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-smile"></i> bx bxs-smile
+                                                <em class="bx bxs-smile"></em> bx bxs-smile
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-meh"></i> bx bxs-meh
+                                                <em class="bx bxs-meh"></em> bx bxs-meh
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-meh-alt"></i> bx bxs-meh-alt
+                                                <em class="bx bxs-meh-alt"></em> bx bxs-meh-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-confused"></i> bx bxs-confused
+                                                <em class="bx bxs-confused"></em> bx bxs-confused
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-sleepy"></i> bx bxs-sleepy
+                                                <em class="bx bxs-sleepy"></em> bx bxs-sleepy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-sad"></i> bx bxs-sad
+                                                <em class="bx bxs-sad"></em> bx bxs-sad
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-happy"></i> bx bxs-happy
+                                                <em class="bx bxs-happy"></em> bx bxs-happy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-shocked"></i> bx bxs-shocked
+                                                <em class="bx bxs-shocked"></em> bx bxs-shocked
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-happy-beaming"></i> bx bxs-happy-beaming
+                                                <em class="bx bxs-happy-beaming"></em> bx bxs-happy-beaming
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-tired"></i> bx bxs-tired
+                                                <em class="bx bxs-tired"></em> bx bxs-tired
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cool"></i> bx bxs-cool
+                                                <em class="bx bxs-cool"></em> bx bxs-cool
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-meh-blank"></i> bx bxs-meh-blank
+                                                <em class="bx bxs-meh-blank"></em> bx bxs-meh-blank
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-laugh"></i> bx bxs-laugh
+                                                <em class="bx bxs-laugh"></em> bx bxs-laugh
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-happy-alt"></i> bx bxs-happy-alt
+                                                <em class="bx bxs-happy-alt"></em> bx bxs-happy-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-upside-down"></i> bx bxs-upside-down
+                                                <em class="bx bxs-upside-down"></em> bx bxs-upside-down
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-wink-tongue"></i> bx bxs-wink-tongue
+                                                <em class="bx bxs-wink-tongue"></em> bx bxs-wink-tongue
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-comment-error"></i> bx bxs-comment-error
+                                                <em class="bx bxs-comment-error"></em> bx bxs-comment-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-vial"></i> bx bxs-vial
+                                                <em class="bx bxs-vial"></em> bx bxs-vial
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-adjust"></i> bx bxs-adjust
+                                                <em class="bx bxs-adjust"></em> bx bxs-adjust
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-alarm"></i> bx bxs-alarm
+                                                <em class="bx bxs-alarm"></em> bx bxs-alarm
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-alarm-off"></i> bx bxs-alarm-off
+                                                <em class="bx bxs-alarm-off"></em> bx bxs-alarm-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-album"></i> bx bxs-album
+                                                <em class="bx bxs-album"></em> bx bxs-album
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-archive"></i> bx bxs-archive
+                                                <em class="bx bxs-archive"></em> bx bxs-archive
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-camera"></i> bx bxs-camera
+                                                <em class="bx bxs-camera"></em> bx bxs-camera
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-camera-off"></i> bx bxs-camera-off
+                                                <em class="bx bxs-camera-off"></em> bx bxs-camera-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-folder"></i> bx bxs-folder
+                                                <em class="bx bxs-folder"></em> bx bxs-folder
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-folder-plus"></i> bx bxs-folder-plus
+                                                <em class="bx bxs-folder-plus"></em> bx bxs-folder-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-award"></i> bx bxs-award
+                                                <em class="bx bxs-award"></em> bx bxs-award
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bar-chart-square"></i> bx bxs-bar-chart-square
+                                                <em class="bx bxs-bar-chart-square"></em> bx bxs-bar-chart-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-barcode"></i> bx bxs-barcode
+                                                <em class="bx bxs-barcode"></em> bx bxs-barcode
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-battery"></i> bx bxs-battery
+                                                <em class="bx bxs-battery"></em> bx bxs-battery
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-battery-charging"></i> bx bxs-battery-charging
+                                                <em class="bx bxs-battery-charging"></em> bx bxs-battery-charging
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-battery-full"></i> bx bxs-battery-full
+                                                <em class="bx bxs-battery-full"></em> bx bxs-battery-full
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bell"></i> bx bxs-bell
+                                                <em class="bx bxs-bell"></em> bx bxs-bell
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bell-off"></i> bx bxs-bell-off
+                                                <em class="bx bxs-bell-off"></em> bx bxs-bell-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bolt"></i> bx bxs-bolt
+                                                <em class="bx bxs-bolt"></em> bx bxs-bolt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-book"></i> bx bxs-book
+                                                <em class="bx bxs-book"></em> bx bxs-book
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-book-bookmark"></i> bx bxs-book-bookmark
+                                                <em class="bx bxs-book-bookmark"></em> bx bxs-book-bookmark
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bookmark"></i> bx bxs-bookmark
+                                                <em class="bx bxs-bookmark"></em> bx bxs-bookmark
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bookmark-plus"></i> bx bxs-bookmark-plus
+                                                <em class="bx bxs-bookmark-plus"></em> bx bxs-bookmark-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-book-open"></i> bx bxs-book-open
+                                                <em class="bx bxs-book-open"></em> bx bxs-book-open
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bookmark-star"></i> bx bxs-bookmark-star
+                                                <em class="bx bxs-bookmark-star"></em> bx bxs-bookmark-star
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-briefcase"></i> bx bxs-briefcase
+                                                <em class="bx bxs-briefcase"></em> bx bxs-briefcase
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-briefcase-alt"></i> bx bxs-briefcase-alt
+                                                <em class="bx bxs-briefcase-alt"></em> bx bxs-briefcase-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bug"></i> bx bxs-bug
+                                                <em class="bx bxs-bug"></em> bx bxs-bug
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-building"></i> bx bxs-building
+                                                <em class="bx bxs-building"></em> bx bxs-building
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bulb"></i> bx bxs-bulb
+                                                <em class="bx bxs-bulb"></em> bx bxs-bulb
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-buoy"></i> bx bxs-buoy
+                                                <em class="bx bxs-buoy"></em> bx bxs-buoy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calculator"></i> bx bxs-calculator
+                                                <em class="bx bxs-calculator"></em> bx bxs-calculator
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-captions"></i> bx bxs-captions
+                                                <em class="bx bxs-captions"></em> bx bxs-captions
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-car"></i> bx bxs-car
+                                                <em class="bx bxs-car"></em> bx bxs-car
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cart-alt"></i> bx bxs-cart-alt
+                                                <em class="bx bxs-cart-alt"></em> bx bxs-cart-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cart"></i> bx bxs-cart
+                                                <em class="bx bxs-cart"></em> bx bxs-cart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chart"></i> bx bxs-chart
+                                                <em class="bx bxs-chart"></em> bx bxs-chart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chip"></i> bx bxs-chip
+                                                <em class="bx bxs-chip"></em> bx bxs-chip
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cloud-download"></i> bx bxs-cloud-download
+                                                <em class="bx bxs-cloud-download"></em> bx bxs-cloud-download
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cloud-upload"></i> bx bxs-cloud-upload
+                                                <em class="bx bxs-cloud-upload"></em> bx bxs-cloud-upload
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cloud"></i> bx bxs-cloud
+                                                <em class="bx bxs-cloud"></em> bx bxs-cloud
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-coffee"></i> bx bxs-coffee
+                                                <em class="bx bxs-coffee"></em> bx bxs-coffee
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cog"></i> bx bxs-cog
+                                                <em class="bx bxs-cog"></em> bx bxs-cog
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-collection"></i> bx bxs-collection
+                                                <em class="bx bxs-collection"></em> bx bxs-collection
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-contact"></i> bx bxs-contact
+                                                <em class="bx bxs-contact"></em> bx bxs-contact
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-copy"></i> bx bxs-copy
+                                                <em class="bx bxs-copy"></em> bx bxs-copy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-coupon"></i> bx bxs-coupon
+                                                <em class="bx bxs-coupon"></em> bx bxs-coupon
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-crown"></i> bx bxs-crown
+                                                <em class="bx bxs-crown"></em> bx bxs-crown
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cube"></i> bx bxs-cube
+                                                <em class="bx bxs-cube"></em> bx bxs-cube
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-detail"></i> bx bxs-detail
+                                                <em class="bx bxs-detail"></em> bx bxs-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-discount"></i> bx bxs-discount
+                                                <em class="bx bxs-discount"></em> bx bxs-discount
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dislike"></i> bx bxs-dislike
+                                                <em class="bx bxs-dislike"></em> bx bxs-dislike
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dock-bottom"></i> bx bxs-dock-bottom
+                                                <em class="bx bxs-dock-bottom"></em> bx bxs-dock-bottom
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dock-left"></i> bx bxs-dock-left
+                                                <em class="bx bxs-dock-left"></em> bx bxs-dock-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dock-right"></i> bx bxs-dock-right
+                                                <em class="bx bxs-dock-right"></em> bx bxs-dock-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dock-top"></i> bx bxs-dock-top
+                                                <em class="bx bxs-dock-top"></em> bx bxs-dock-top
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-down-arrow-circle"></i> bx bxs-down-arrow-circle
+                                                <em class="bx bxs-down-arrow-circle"></em> bx bxs-down-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-download"></i> bx bxs-download
+                                                <em class="bx bxs-download"></em> bx bxs-download
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-downvote"></i> bx bxs-downvote
+                                                <em class="bx bxs-downvote"></em> bx bxs-downvote
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-drink"></i> bx bxs-drink
+                                                <em class="bx bxs-drink"></em> bx bxs-drink
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-droplet"></i> bx bxs-droplet
+                                                <em class="bx bxs-droplet"></em> bx bxs-droplet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-duplicate"></i> bx bxs-duplicate
+                                                <em class="bx bxs-duplicate"></em> bx bxs-duplicate
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-eject"></i> bx bxs-eject
+                                                <em class="bx bxs-eject"></em> bx bxs-eject
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-envelope"></i> bx bxs-envelope
+                                                <em class="bx bxs-envelope"></em> bx bxs-envelope
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-error-circle"></i> bx bxs-error-circle
+                                                <em class="bx bxs-error-circle"></em> bx bxs-error-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-error"></i> bx bxs-error
+                                                <em class="bx bxs-error"></em> bx bxs-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-image"></i> bx bxs-file-image
+                                                <em class="bx bxs-file-image"></em> bx bxs-file-image
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file"></i> bx bxs-file
+                                                <em class="bx bxs-file"></em> bx bxs-file
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-filter-alt"></i> bx bxs-filter-alt
+                                                <em class="bx bxs-filter-alt"></em> bx bxs-filter-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-first-aid"></i> bx bxs-first-aid
+                                                <em class="bx bxs-first-aid"></em> bx bxs-first-aid
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-flag-alt"></i> bx bxs-flag-alt
+                                                <em class="bx bxs-flag-alt"></em> bx bxs-flag-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-flag"></i> bx bxs-flag
+                                                <em class="bx bxs-flag"></em> bx bxs-flag
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-gift"></i> bx bxs-gift
+                                                <em class="bx bxs-gift"></em> bx bxs-gift
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-grid-alt"></i> bx bxs-grid-alt
+                                                <em class="bx bxs-grid-alt"></em> bx bxs-grid-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-group"></i> bx bxs-group
+                                                <em class="bx bxs-group"></em> bx bxs-group
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hdd"></i> bx bxs-hdd
+                                                <em class="bx bxs-hdd"></em> bx bxs-hdd
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-heart"></i> bx bxs-heart
+                                                <em class="bx bxs-heart"></em> bx bxs-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hide"></i> bx bxs-hide
+                                                <em class="bx bxs-hide"></em> bx bxs-hide
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-home"></i> bx bxs-home
+                                                <em class="bx bxs-home"></em> bx bxs-home
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hot"></i> bx bxs-hot
+                                                <em class="bx bxs-hot"></em> bx bxs-hot
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hourglass"></i> bx bxs-hourglass
+                                                <em class="bx bxs-hourglass"></em> bx bxs-hourglass
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-image"></i> bx bxs-image
+                                                <em class="bx bxs-image"></em> bx bxs-image
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-inbox"></i> bx bxs-inbox
+                                                <em class="bx bxs-inbox"></em> bx bxs-inbox
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-info-circle"></i> bx bxs-info-circle
+                                                <em class="bx bxs-info-circle"></em> bx bxs-info-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-joystick-alt"></i> bx bxs-joystick-alt
+                                                <em class="bx bxs-joystick-alt"></em> bx bxs-joystick-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-joystick"></i> bx bxs-joystick
+                                                <em class="bx bxs-joystick"></em> bx bxs-joystick
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-layer"></i> bx bxs-layer
+                                                <em class="bx bxs-layer"></em> bx bxs-layer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-left-arrow-circle"></i> bx bxs-left-arrow-circle
+                                                <em class="bx bxs-left-arrow-circle"></em> bx bxs-left-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-like"></i> bx bxs-like
+                                                <em class="bx bxs-like"></em> bx bxs-like
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-lock-open"></i> bx bxs-lock-open
+                                                <em class="bx bxs-lock-open"></em> bx bxs-lock-open
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-lock"></i> bx bxs-lock
+                                                <em class="bx bxs-lock"></em> bx bxs-lock
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-map-alt"></i> bx bxs-map-alt
+                                                <em class="bx bxs-map-alt"></em> bx bxs-map-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-map"></i> bx bxs-map
+                                                <em class="bx bxs-map"></em> bx bxs-map
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-rounded"></i> bx bxs-message-rounded
+                                                <em class="bx bxs-message-rounded"></em> bx bxs-message-rounded
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message"></i> bx bxs-message
+                                                <em class="bx bxs-message"></em> bx bxs-message
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-microphone-off"></i> bx bxs-microphone-off
+                                                <em class="bx bxs-microphone-off"></em> bx bxs-microphone-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-microphone"></i> bx bxs-microphone
+                                                <em class="bx bxs-microphone"></em> bx bxs-microphone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-minus-circle"></i> bx bxs-minus-circle
+                                                <em class="bx bxs-minus-circle"></em> bx bxs-minus-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-moon"></i> bx bxs-moon
+                                                <em class="bx bxs-moon"></em> bx bxs-moon
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-mouse"></i> bx bxs-mouse
+                                                <em class="bx bxs-mouse"></em> bx bxs-mouse
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-music"></i> bx bxs-music
+                                                <em class="bx bxs-music"></em> bx bxs-music
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-navigation"></i> bx bxs-navigation
+                                                <em class="bx bxs-navigation"></em> bx bxs-navigation
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-news"></i> bx bxs-news
+                                                <em class="bx bxs-news"></em> bx bxs-news
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-package"></i> bx bxs-package
+                                                <em class="bx bxs-package"></em> bx bxs-package
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-paper-plane"></i> bx bxs-paper-plane
+                                                <em class="bx bxs-paper-plane"></em> bx bxs-paper-plane
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-paste"></i> bx bxs-paste
+                                                <em class="bx bxs-paste"></em> bx bxs-paste
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-pen"></i> bx bxs-pen
+                                                <em class="bx bxs-pen"></em> bx bxs-pen
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-pencil"></i> bx bxs-pencil
+                                                <em class="bx bxs-pencil"></em> bx bxs-pencil
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-phone-call"></i> bx bxs-phone-call
+                                                <em class="bx bxs-phone-call"></em> bx bxs-phone-call
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-phone-incoming"></i> bx bxs-phone-incoming
+                                                <em class="bx bxs-phone-incoming"></em> bx bxs-phone-incoming
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-phone-outgoing"></i> bx bxs-phone-outgoing
+                                                <em class="bx bxs-phone-outgoing"></em> bx bxs-phone-outgoing
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-phone"></i> bx bxs-phone
+                                                <em class="bx bxs-phone"></em> bx bxs-phone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-pie-chart-alt"></i> bx bxs-pie-chart-alt
+                                                <em class="bx bxs-pie-chart-alt"></em> bx bxs-pie-chart-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-pie-chart"></i> bx bxs-pie-chart
+                                                <em class="bx bxs-pie-chart"></em> bx bxs-pie-chart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-pin"></i> bx bxs-pin
+                                                <em class="bx bxs-pin"></em> bx bxs-pin
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-playlist"></i> bx bxs-playlist
+                                                <em class="bx bxs-playlist"></em> bx bxs-playlist
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-plug"></i> bx bxs-plug
+                                                <em class="bx bxs-plug"></em> bx bxs-plug
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-plus-circle"></i> bx bxs-plus-circle
+                                                <em class="bx bxs-plus-circle"></em> bx bxs-plus-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-printer"></i> bx bxs-printer
+                                                <em class="bx bxs-printer"></em> bx bxs-printer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-purchase-tag"></i> bx bxs-purchase-tag
+                                                <em class="bx bxs-purchase-tag"></em> bx bxs-purchase-tag
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-quote-left"></i> bx bxs-quote-left
+                                                <em class="bx bxs-quote-left"></em> bx bxs-quote-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-quote-right"></i> bx bxs-quote-right
+                                                <em class="bx bxs-quote-right"></em> bx bxs-quote-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-radio"></i> bx bxs-radio
+                                                <em class="bx bxs-radio"></em> bx bxs-radio
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-rename"></i> bx bxs-rename
+                                                <em class="bx bxs-rename"></em> bx bxs-rename
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-report"></i> bx bxs-report
+                                                <em class="bx bxs-report"></em> bx bxs-report
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-right-arrow-circle"></i> bx bxs-right-arrow-circle
+                                                <em class="bx bxs-right-arrow-circle"></em> bx bxs-right-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-ruler"></i> bx bxs-ruler
+                                                <em class="bx bxs-ruler"></em> bx bxs-ruler
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-save"></i> bx bxs-save
+                                                <em class="bx bxs-save"></em> bx bxs-save
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-sort-alt"></i> bx bxs-sort-alt
+                                                <em class="bx bxs-sort-alt"></em> bx bxs-sort-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-select-multiple"></i> bx bxs-select-multiple
+                                                <em class="bx bxs-select-multiple"></em> bx bxs-select-multiple
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-send"></i> bx bxs-send
+                                                <em class="bx bxs-send"></em> bx bxs-send
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-server"></i> bx bxs-server
+                                                <em class="bx bxs-server"></em> bx bxs-server
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-share-alt"></i> bx bxs-share-alt
+                                                <em class="bx bxs-share-alt"></em> bx bxs-share-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-share"></i> bx bxs-share
+                                                <em class="bx bxs-share"></em> bx bxs-share
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-shield"></i> bx bxs-shield
+                                                <em class="bx bxs-shield"></em> bx bxs-shield
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-shopping-bag-alt"></i> bx bxs-shopping-bag-alt
+                                                <em class="bx bxs-shopping-bag-alt"></em> bx bxs-shopping-bag-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-shopping-bag"></i> bx bxs-shopping-bag
+                                                <em class="bx bxs-shopping-bag"></em> bx bxs-shopping-bag
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-show"></i> bx bxs-show
+                                                <em class="bx bxs-show"></em> bx bxs-show
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-spreadsheet"></i> bx bxs-spreadsheet
+                                                <em class="bx bxs-spreadsheet"></em> bx bxs-spreadsheet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-star"></i> bx bxs-star
+                                                <em class="bx bxs-star"></em> bx bxs-star
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-store"></i> bx bxs-store
+                                                <em class="bx bxs-store"></em> bx bxs-store
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-sun"></i> bx bxs-sun
+                                                <em class="bx bxs-sun"></em> bx bxs-sun
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-t-shirt"></i> bx bxs-t-shirt
+                                                <em class="bx bxs-t-shirt"></em> bx bxs-t-shirt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-tag-x"></i> bx bxs-tag-x
+                                                <em class="bx bxs-tag-x"></em> bx bxs-tag-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-tag"></i> bx bxs-tag
+                                                <em class="bx bxs-tag"></em> bx bxs-tag
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-tennis-ball"></i> bx bxs-tennis-ball
+                                                <em class="bx bxs-tennis-ball"></em> bx bxs-tennis-ball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-terminal"></i> bx bxs-terminal
+                                                <em class="bx bxs-terminal"></em> bx bxs-terminal
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-to-top"></i> bx bxs-to-top
+                                                <em class="bx bxs-to-top"></em> bx bxs-to-top
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-toggle-left"></i> bx bxs-toggle-left
+                                                <em class="bx bxs-toggle-left"></em> bx bxs-toggle-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-toggle-right"></i> bx bxs-toggle-right
+                                                <em class="bx bxs-toggle-right"></em> bx bxs-toggle-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-torch"></i> bx bxs-torch
+                                                <em class="bx bxs-torch"></em> bx bxs-torch
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-trash-alt"></i> bx bxs-trash-alt
+                                                <em class="bx bxs-trash-alt"></em> bx bxs-trash-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-trash"></i> bx bxs-trash
+                                                <em class="bx bxs-trash"></em> bx bxs-trash
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-trophy"></i> bx bxs-trophy
+                                                <em class="bx bxs-trophy"></em> bx bxs-trophy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-truck"></i> bx bxs-truck
+                                                <em class="bx bxs-truck"></em> bx bxs-truck
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-up-arrow-circle"></i> bx bxs-up-arrow-circle
+                                                <em class="bx bxs-up-arrow-circle"></em> bx bxs-up-arrow-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-upvote"></i> bx bxs-upvote
+                                                <em class="bx bxs-upvote"></em> bx bxs-upvote
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user-circle"></i> bx bxs-user-circle
+                                                <em class="bx bxs-user-circle"></em> bx bxs-user-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user-detail"></i> bx bxs-user-detail
+                                                <em class="bx bxs-user-detail"></em> bx bxs-user-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user-minus"></i> bx bxs-user-minus
+                                                <em class="bx bxs-user-minus"></em> bx bxs-user-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user-plus"></i> bx bxs-user-plus
+                                                <em class="bx bxs-user-plus"></em> bx bxs-user-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user"></i> bx bxs-user
+                                                <em class="bx bxs-user"></em> bx bxs-user
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-video-off"></i> bx bxs-video-off
+                                                <em class="bx bxs-video-off"></em> bx bxs-video-off
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-video"></i> bx bxs-video
+                                                <em class="bx bxs-video"></em> bx bxs-video
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-videos"></i> bx bxs-videos
+                                                <em class="bx bxs-videos"></em> bx bxs-videos
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-volume-full"></i> bx bxs-volume-full
+                                                <em class="bx bxs-volume-full"></em> bx bxs-volume-full
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-volume-low"></i> bx bxs-volume-low
+                                                <em class="bx bxs-volume-low"></em> bx bxs-volume-low
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-volume-mute"></i> bx bxs-volume-mute
+                                                <em class="bx bxs-volume-mute"></em> bx bxs-volume-mute
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-volume"></i> bx bxs-volume
+                                                <em class="bx bxs-volume"></em> bx bxs-volume
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-wallet"></i> bx bxs-wallet
+                                                <em class="bx bxs-wallet"></em> bx bxs-wallet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-watch-alt"></i> bx bxs-watch-alt
+                                                <em class="bx bxs-watch-alt"></em> bx bxs-watch-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-watch"></i> bx bxs-watch
+                                                <em class="bx bxs-watch"></em> bx bxs-watch
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-widget"></i> bx bxs-widget
+                                                <em class="bx bxs-widget"></em> bx bxs-widget
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-wrench"></i> bx bxs-wrench
+                                                <em class="bx bxs-wrench"></em> bx bxs-wrench
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-x-circle"></i> bx bxs-x-circle
+                                                <em class="bx bxs-x-circle"></em> bx bxs-x-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-zap"></i> bx bxs-zap
+                                                <em class="bx bxs-zap"></em> bx bxs-zap
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-folder-open"></i> bx bxs-folder-open
+                                                <em class="bx bxs-folder-open"></em> bx bxs-folder-open
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-battery-low"></i> bx bxs-battery-low
+                                                <em class="bx bxs-battery-low"></em> bx bxs-battery-low
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-conversation"></i> bx bxs-conversation
+                                                <em class="bx bxs-conversation"></em> bx bxs-conversation
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dashboard"></i> bx bxs-dashboard
+                                                <em class="bx bxs-dashboard"></em> bx bxs-dashboard
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-plus"></i> bx bxs-file-plus
+                                                <em class="bx bxs-file-plus"></em> bx bxs-file-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-certification"></i> bx bxs-certification
+                                                <em class="bx bxs-certification"></em> bx bxs-certification
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-rocket"></i> bx bxs-rocket
+                                                <em class="bx bxs-rocket"></em> bx bxs-rocket
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-check-circle"></i> bx bxs-check-circle
+                                                <em class="bx bxs-check-circle"></em> bx bxs-check-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-checkbox"></i> bx bxs-checkbox
+                                                <em class="bx bxs-checkbox"></em> bx bxs-checkbox
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-checkbox-checked"></i> bx bxs-checkbox-checked
+                                                <em class="bx bxs-checkbox-checked"></em> bx bxs-checkbox-checked
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-star-half"></i> bx bxs-star-half
+                                                <em class="bx bxs-star-half"></em> bx bxs-star-half
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bus"></i> bx bxs-bus
+                                                <em class="bx bxs-bus"></em> bx bxs-bus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bot"></i> bx bxs-bot
+                                                <em class="bx bxs-bot"></em> bx bxs-bot
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-area"></i> bx bxs-area
+                                                <em class="bx bxs-area"></em> bx bxs-area
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bed"></i> bx bxs-bed
+                                                <em class="bx bxs-bed"></em> bx bxs-bed
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bath"></i> bx bxs-bath
+                                                <em class="bx bxs-bath"></em> bx bxs-bath
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-train"></i> bx bxs-train
+                                                <em class="bx bxs-train"></em> bx bxs-train
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-taxi"></i> bx bxs-taxi
+                                                <em class="bx bxs-taxi"></em> bx bxs-taxi
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-movie"></i> bx bxs-movie
+                                                <em class="bx bxs-movie"></em> bx bxs-movie
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-planet"></i> bx bxs-planet
+                                                <em class="bx bxs-planet"></em> bx bxs-planet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-video-plus"></i> bx bxs-video-plus
+                                                <em class="bx bxs-video-plus"></em> bx bxs-video-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-box"></i> bx bxs-box
+                                                <em class="bx bxs-box"></em> bx bxs-box
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-key"></i> bx bxs-key
+                                                <em class="bx bxs-key"></em> bx bxs-key
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-photo-album"></i> bx bxs-photo-album
+                                                <em class="bx bxs-photo-album"></em> bx bxs-photo-album
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bell-ring"></i> bx bxs-bell-ring
+                                                <em class="bx bxs-bell-ring"></em> bx bxs-bell-ring
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-blank"></i> bx bxs-file-blank
+                                                <em class="bx bxs-file-blank"></em> bx bxs-file-blank
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-edit"></i> bx bxs-edit
+                                                <em class="bx bxs-edit"></em> bx bxs-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-ball"></i> bx bxs-ball
+                                                <em class="bx bxs-ball"></em> bx bxs-ball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-film"></i> bx bxs-film
+                                                <em class="bx bxs-film"></em> bx bxs-film
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dollar-circle"></i> bx bxs-dollar-circle
+                                                <em class="bx bxs-dollar-circle"></em> bx bxs-dollar-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-skull"></i> bx bxs-skull
+                                                <em class="bx bxs-skull"></em> bx bxs-skull
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-image-alt"></i> bx bxs-image-alt
+                                                <em class="bx bxs-image-alt"></em> bx bxs-image-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-microphone-alt"></i> bx bxs-microphone-alt
+                                                <em class="bx bxs-microphone-alt"></em> bx bxs-microphone-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-x-square"></i> bx bxs-x-square
+                                                <em class="bx bxs-x-square"></em> bx bxs-x-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-plus-square"></i> bx bxs-plus-square
+                                                <em class="bx bxs-plus-square"></em> bx bxs-plus-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-minus-square"></i> bx bxs-minus-square
+                                                <em class="bx bxs-minus-square"></em> bx bxs-minus-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-disc"></i> bx bxs-disc
+                                                <em class="bx bxs-disc"></em> bx bxs-disc
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-flame"></i> bx bxs-flame
+                                                <em class="bx bxs-flame"></em> bx bxs-flame
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-badge"></i> bx bxs-badge
+                                                <em class="bx bxs-badge"></em> bx bxs-badge
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-note"></i> bx bxs-note
+                                                <em class="bx bxs-note"></em> bx bxs-note
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-help-circle"></i> bx bxs-help-circle
+                                                <em class="bx bxs-help-circle"></em> bx bxs-help-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-card"></i> bx bxs-card
+                                                <em class="bx bxs-card"></em> bx bxs-card
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-magnet"></i> bx bxs-magnet
+                                                <em class="bx bxs-magnet"></em> bx bxs-magnet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-ambulance"></i> bx bxs-ambulance
+                                                <em class="bx bxs-ambulance"></em> bx bxs-ambulance
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-left-arrow-square"></i> bx bxs-left-arrow-square
+                                                <em class="bx bxs-left-arrow-square"></em> bx bxs-left-arrow-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-up-arrow-square"></i> bx bxs-up-arrow-square
+                                                <em class="bx bxs-up-arrow-square"></em> bx bxs-up-arrow-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-down-arrow-square"></i> bx bxs-down-arrow-square
+                                                <em class="bx bxs-down-arrow-square"></em> bx bxs-down-arrow-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-right-arrow-square"></i> bx bxs-right-arrow-square
+                                                <em class="bx bxs-right-arrow-square"></em> bx bxs-right-arrow-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user-badge"></i> bx bxs-user-badge
+                                                <em class="bx bxs-user-badge"></em> bx bxs-user-badge
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-gas-pump"></i> bx bxs-gas-pump
+                                                <em class="bx bxs-gas-pump"></em> bx bxs-gas-pump
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-landmark"></i> bx bxs-landmark
+                                                <em class="bx bxs-landmark"></em> bx bxs-landmark
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-badge-check"></i> bx bxs-badge-check
+                                                <em class="bx bxs-badge-check"></em> bx bxs-badge-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-coffee-alt"></i> bx bxs-coffee-alt
+                                                <em class="bx bxs-coffee-alt"></em> bx bxs-coffee-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-brush"></i> bx bxs-brush
+                                                <em class="bx bxs-brush"></em> bx bxs-brush
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-keyboard"></i> bx bxs-keyboard
+                                                <em class="bx bxs-keyboard"></em> bx bxs-keyboard
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-megaphone"></i> bx bxs-megaphone
+                                                <em class="bx bxs-megaphone"></em> bx bxs-megaphone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-directions"></i> bx bxs-directions
+                                                <em class="bx bxs-directions"></em> bx bxs-directions
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-direction-right"></i> bx bxs-direction-right
+                                                <em class="bx bxs-direction-right"></em> bx bxs-direction-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-joystick-button"></i> bx bxs-joystick-button
+                                                <em class="bx bxs-joystick-button"></em> bx bxs-joystick-button
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-flask"></i> bx bxs-flask
+                                                <em class="bx bxs-flask"></em> bx bxs-flask
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-capsule"></i> bx bxs-capsule
+                                                <em class="bx bxs-capsule"></em> bx bxs-capsule
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-color-fill"></i> bx bxs-color-fill
+                                                <em class="bx bxs-color-fill"></em> bx bxs-color-fill
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-hotel"></i> bx bxs-hotel
+                                                <em class="bx bxs-hotel"></em> bx bxs-hotel
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-magic-wand"></i> bx bxs-magic-wand
+                                                <em class="bx bxs-magic-wand"></em> bx bxs-magic-wand
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-eraser"></i> bx bxs-eraser
+                                                <em class="bx bxs-eraser"></em> bx bxs-eraser
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cloud-rain"></i> bx bxs-cloud-rain
+                                                <em class="bx bxs-cloud-rain"></em> bx bxs-cloud-rain
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cloud-lightning"></i> bx bxs-cloud-lightning
+                                                <em class="bx bxs-cloud-lightning"></em> bx bxs-cloud-lightning
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-eyedropper"></i> bx bxs-eyedropper
+                                                <em class="bx bxs-eyedropper"></em> bx bxs-eyedropper
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user-rectangle"></i> bx bxs-user-rectangle
+                                                <em class="bx bxs-user-rectangle"></em> bx bxs-user-rectangle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-plane"></i> bx bxs-plane
+                                                <em class="bx bxs-plane"></em> bx bxs-plane
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-tree"></i> bx bxs-tree
+                                                <em class="bx bxs-tree"></em> bx bxs-tree
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-factory"></i> bx bxs-factory
+                                                <em class="bx bxs-factory"></em> bx bxs-factory
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-ship"></i> bx bxs-ship
+                                                <em class="bx bxs-ship"></em> bx bxs-ship
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-yin-yang"></i> bx bxs-yin-yang
+                                                <em class="bx bxs-yin-yang"></em> bx bxs-yin-yang
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-pdf"></i> bx bxs-file-pdf
+                                                <em class="bx bxs-file-pdf"></em> bx bxs-file-pdf
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-home-circle"></i> bx bxs-home-circle
+                                                <em class="bx bxs-home-circle"></em> bx bxs-home-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-location-plus"></i> bx bxs-location-plus
+                                                <em class="bx bxs-location-plus"></em> bx bxs-location-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-arch"></i> bx bxs-arch
+                                                <em class="bx bxs-arch"></em> bx bxs-arch
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-badge-dollar"></i> bx bxs-badge-dollar
+                                                <em class="bx bxs-badge-dollar"></em> bx bxs-badge-dollar
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-beer"></i> bx bxs-beer
+                                                <em class="bx bxs-beer"></em> bx bxs-beer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bible"></i> bx bxs-bible
+                                                <em class="bx bxs-bible"></em> bx bxs-bible
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bomb"></i> bx bxs-bomb
+                                                <em class="bx bxs-bomb"></em> bx bxs-bomb
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bus-school"></i> bx bxs-bus-school
+                                                <em class="bx bxs-bus-school"></em> bx bxs-bus-school
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cabinet"></i> bx bxs-cabinet
+                                                <em class="bx bxs-cabinet"></em> bx bxs-cabinet
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar-edit"></i> bx bxs-calendar-edit
+                                                <em class="bx bxs-calendar-edit"></em> bx bxs-calendar-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-car-wash"></i> bx bxs-car-wash
+                                                <em class="bx bxs-car-wash"></em> bx bxs-car-wash
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-car-garage"></i> bx bxs-car-garage
+                                                <em class="bx bxs-car-garage"></em> bx bxs-car-garage
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-car-mechanic"></i> bx bxs-car-mechanic
+                                                <em class="bx bxs-car-mechanic"></em> bx bxs-car-mechanic
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-car-crash"></i> bx bxs-car-crash
+                                                <em class="bx bxs-car-crash"></em> bx bxs-car-crash
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-coffee-togo"></i> bx bxs-coffee-togo
+                                                <em class="bx bxs-coffee-togo"></em> bx bxs-coffee-togo
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chess"></i> bx bxs-chess
+                                                <em class="bx bxs-chess"></em> bx bxs-chess
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dryer"></i> bx bxs-dryer
+                                                <em class="bx bxs-dryer"></em> bx bxs-dryer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-washer"></i> bx bxs-washer
+                                                <em class="bx bxs-washer"></em> bx bxs-washer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-pointer"></i> bx bxs-pointer
+                                                <em class="bx bxs-pointer"></em> bx bxs-pointer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-microchip"></i> bx bxs-microchip
+                                                <em class="bx bxs-microchip"></em> bx bxs-microchip
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-piano"></i> bx bxs-piano
+                                                <em class="bx bxs-piano"></em> bx bxs-piano
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-export"></i> bx bxs-file-export
+                                                <em class="bx bxs-file-export"></em> bx bxs-file-export
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-import"></i> bx bxs-file-import
+                                                <em class="bx bxs-file-import"></em> bx bxs-file-import
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-flag-checkered"></i> bx bxs-flag-checkered
+                                                <em class="bx bxs-flag-checkered"></em> bx bxs-flag-checkered
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-heart-circle"></i> bx bxs-heart-circle
+                                                <em class="bx bxs-heart-circle"></em> bx bxs-heart-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-heart-square"></i> bx bxs-heart-square
+                                                <em class="bx bxs-heart-square"></em> bx bxs-heart-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-home-heart"></i> bx bxs-home-heart
+                                                <em class="bx bxs-home-heart"></em> bx bxs-home-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-info-square"></i> bx bxs-info-square
+                                                <em class="bx bxs-info-square"></em> bx bxs-info-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-layer-plus"></i> bx bxs-layer-plus
+                                                <em class="bx bxs-layer-plus"></em> bx bxs-layer-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-layer-minus"></i> bx bxs-layer-minus
+                                                <em class="bx bxs-layer-minus"></em> bx bxs-layer-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-traffic-cone"></i> bx bxs-traffic-cone
+                                                <em class="bx bxs-traffic-cone"></em> bx bxs-traffic-cone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-mask"></i> bx bxs-mask
+                                                <em class="bx bxs-mask"></em> bx bxs-mask
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-low-vision"></i> bx bxs-low-vision
+                                                <em class="bx bxs-low-vision"></em> bx bxs-low-vision
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-radiation"></i> bx bxs-radiation
+                                                <em class="bx bxs-radiation"></em> bx bxs-radiation
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-been-here"></i> bx bxs-been-here
+                                                <em class="bx bxs-been-here"></em> bx bxs-been-here
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-arrow-from-top"></i> bx bxs-arrow-from-top
+                                                <em class="bx bxs-arrow-from-top"></em> bx bxs-arrow-from-top
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-arrow-from-bottom"></i> bx bxs-arrow-from-bottom
+                                                <em class="bx bxs-arrow-from-bottom"></em> bx bxs-arrow-from-bottom
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-arrow-from-left"></i> bx bxs-arrow-from-left
+                                                <em class="bx bxs-arrow-from-left"></em> bx bxs-arrow-from-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-arrow-from-right"></i> bx bxs-arrow-from-right
+                                                <em class="bx bxs-arrow-from-right"></em> bx bxs-arrow-from-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-arrow-to-right"></i> bx bxs-arrow-to-right
+                                                <em class="bx bxs-arrow-to-right"></em> bx bxs-arrow-to-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-arrow-to-left"></i> bx bxs-arrow-to-left
+                                                <em class="bx bxs-arrow-to-left"></em> bx bxs-arrow-to-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-arrow-to-top"></i> bx bxs-arrow-to-top
+                                                <em class="bx bxs-arrow-to-top"></em> bx bxs-arrow-to-top
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-arrow-to-bottom"></i> bx bxs-arrow-to-bottom
+                                                <em class="bx bxs-arrow-to-bottom"></em> bx bxs-arrow-to-bottom
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-book-reader"></i> bx bxs-book-reader
+                                                <em class="bx bxs-book-reader"></em> bx bxs-book-reader
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-edit-location"></i> bx bxs-edit-location
+                                                <em class="bx bxs-edit-location"></em> bx bxs-edit-location
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-ev-station"></i> bx bxs-ev-station
+                                                <em class="bx bxs-ev-station"></em> bx bxs-ev-station
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-shapes"></i> bx bxs-shapes
+                                                <em class="bx bxs-shapes"></em> bx bxs-shapes
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-florist"></i> bx bxs-florist
+                                                <em class="bx bxs-florist"></em> bx bxs-florist
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-pizza"></i> bx bxs-pizza
+                                                <em class="bx bxs-pizza"></em> bx bxs-pizza
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar-week"></i> bx bxs-calendar-week
+                                                <em class="bx bxs-calendar-week"></em> bx bxs-calendar-week
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dice-1"></i> bx bxs-dice-1
+                                                <em class="bx bxs-dice-1"></em> bx bxs-dice-1
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dice-2"></i> bx bxs-dice-2
+                                                <em class="bx bxs-dice-2"></em> bx bxs-dice-2
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dice-3"></i> bx bxs-dice-3
+                                                <em class="bx bxs-dice-3"></em> bx bxs-dice-3
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dice-4"></i> bx bxs-dice-4
+                                                <em class="bx bxs-dice-4"></em> bx bxs-dice-4
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dice-5"></i> bx bxs-dice-5
+                                                <em class="bx bxs-dice-5"></em> bx bxs-dice-5
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-dice-6"></i> bx bxs-dice-6
+                                                <em class="bx bxs-dice-6"></em> bx bxs-dice-6
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-webcam"></i> bx bxs-webcam
+                                                <em class="bx bxs-webcam"></em> bx bxs-webcam
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-spray-can"></i> bx bxs-spray-can
+                                                <em class="bx bxs-spray-can"></em> bx bxs-spray-can
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-file-archive"></i> bx bxs-file-archive
+                                                <em class="bx bxs-file-archive"></em> bx bxs-file-archive
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-sticker"></i> bx bxs-sticker
+                                                <em class="bx bxs-sticker"></em> bx bxs-sticker
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-tachometer"></i> bx bxs-tachometer
+                                                <em class="bx bxs-tachometer"></em> bx bxs-tachometer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-thermometer"></i> bx bxs-thermometer
+                                                <em class="bx bxs-thermometer"></em> bx bxs-thermometer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-game"></i> bx bxs-game
+                                                <em class="bx bxs-game"></em> bx bxs-game
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-alarm-snooze"></i> bx bxs-alarm-snooze
+                                                <em class="bx bxs-alarm-snooze"></em> bx bxs-alarm-snooze
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-alarm-exclamation"></i> bx bxs-alarm-exclamation
+                                                <em class="bx bxs-alarm-exclamation"></em> bx bxs-alarm-exclamation
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevrons-left"></i> bx bxs-chevrons-left
+                                                <em class="bx bxs-chevrons-left"></em> bx bxs-chevrons-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevrons-right"></i> bx bxs-chevrons-right
+                                                <em class="bx bxs-chevrons-right"></em> bx bxs-chevrons-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevrons-up"></i> bx bxs-chevrons-up
+                                                <em class="bx bxs-chevrons-up"></em> bx bxs-chevrons-up
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevrons-down"></i> bx bxs-chevrons-down
+                                                <em class="bx bxs-chevrons-down"></em> bx bxs-chevrons-down
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-down"></i> bx bxs-chevron-down
+                                                <em class="bx bxs-chevron-down"></em> bx bxs-chevron-down
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-up"></i> bx bxs-chevron-up
+                                                <em class="bx bxs-chevron-up"></em> bx bxs-chevron-up
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-right"></i> bx bxs-chevron-right
+                                                <em class="bx bxs-chevron-right"></em> bx bxs-chevron-right
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-left"></i> bx bxs-chevron-left
+                                                <em class="bx bxs-chevron-left"></em> bx bxs-chevron-left
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-guitar-amp"></i> bx bxs-guitar-amp
+                                                <em class="bx bxs-guitar-amp"></em> bx bxs-guitar-amp
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-up-arrow-alt"></i> bx bxs-up-arrow-alt
+                                                <em class="bx bxs-up-arrow-alt"></em> bx bxs-up-arrow-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-down-arrow-alt"></i> bx bxs-down-arrow-alt
+                                                <em class="bx bxs-down-arrow-alt"></em> bx bxs-down-arrow-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-left-arrow-alt"></i> bx bxs-left-arrow-alt
+                                                <em class="bx bxs-left-arrow-alt"></em> bx bxs-left-arrow-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-right-arrow-alt"></i> bx bxs-right-arrow-alt
+                                                <em class="bx bxs-right-arrow-alt"></em> bx bxs-right-arrow-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-medal"></i> bx bxs-medal
+                                                <em class="bx bxs-medal"></em> bx bxs-medal
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-shopping-bags"></i> bx bxs-shopping-bags
+                                                <em class="bx bxs-shopping-bags"></em> bx bxs-shopping-bags
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-baseball"></i> bx bxs-baseball
+                                                <em class="bx bxs-baseball"></em> bx bxs-baseball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-basketball"></i> bx bxs-basketball
+                                                <em class="bx bxs-basketball"></em> bx bxs-basketball
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-blanket"></i> bx bxs-blanket
+                                                <em class="bx bxs-blanket"></em> bx bxs-blanket
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-binoculars"></i> bx bxs-binoculars
+                                                <em class="bx bxs-binoculars"></em> bx bxs-binoculars
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bone"></i> bx bxs-bone
+                                                <em class="bx bxs-bone"></em> bx bxs-bone
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bong"></i> bx bxs-bong
+                                                <em class="bx bxs-bong"></em> bx bxs-bong
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-book-alt"></i> bx bxs-book-alt
+                                                <em class="bx bxs-book-alt"></em> bx bxs-book-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-book-heart"></i> bx bxs-book-heart
+                                                <em class="bx bxs-book-heart"></em> bx bxs-book-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-book-add"></i> bx bxs-book-add
+                                                <em class="bx bxs-book-add"></em> bx bxs-book-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-brain"></i> bx bxs-brain
+                                                <em class="bx bxs-brain"></em> bx bxs-brain
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-window-alt"></i> bx bxs-window-alt
+                                                <em class="bx bxs-window-alt"></em> bx bxs-window-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar-heart"></i> bx bxs-calendar-heart
+                                                <em class="bx bxs-calendar-heart"></em> bx bxs-calendar-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cctv"></i> bx bxs-cctv
+                                                <em class="bx bxs-cctv"></em> bx bxs-cctv
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-network-chart"></i> bx bxs-network-chart
+                                                <em class="bx bxs-network-chart"></em> bx bxs-network-chart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-vector"></i> bx bxs-vector
+                                                <em class="bx bxs-vector"></em> bx bxs-vector
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar-exclamation"></i> bx bxs-calendar-exclamation
+                                                <em class="bx bxs-calendar-exclamation"></em> bx bxs-calendar-exclamation
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-calendar-star"></i> bx bxs-calendar-star
+                                                <em class="bx bxs-calendar-star"></em> bx bxs-calendar-star
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-camera-home"></i> bx bxs-camera-home
+                                                <em class="bx bxs-camera-home"></em> bx bxs-camera-home
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-camera-movie"></i> bx bxs-camera-movie
+                                                <em class="bx bxs-camera-movie"></em> bx bxs-camera-movie
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-backpack"></i> bx bxs-backpack
+                                                <em class="bx bxs-backpack"></em> bx bxs-backpack
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cart-download"></i> bx bxs-cart-download
+                                                <em class="bx bxs-cart-download"></em> bx bxs-cart-download
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cart-add"></i> bx bxs-cart-add
+                                                <em class="bx bxs-cart-add"></em> bx bxs-cart-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-car-battery"></i> bx bxs-car-battery
+                                                <em class="bx bxs-car-battery"></em> bx bxs-car-battery
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-caret-right-square"></i> bx bxs-caret-right-square
+                                                <em class="bx bxs-caret-right-square"></em> bx bxs-caret-right-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-caret-up-square"></i> bx bxs-caret-up-square
+                                                <em class="bx bxs-caret-up-square"></em> bx bxs-caret-up-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-caret-left-square"></i> bx bxs-caret-left-square
+                                                <em class="bx bxs-caret-left-square"></em> bx bxs-caret-left-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-caret-down-square"></i> bx bxs-caret-down-square
+                                                <em class="bx bxs-caret-down-square"></em> bx bxs-caret-down-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-shield-x"></i> bx bxs-shield-x
+                                                <em class="bx bxs-shield-x"></em> bx bxs-shield-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-down-circle"></i> bx bxs-chevron-down-circle
+                                                <em class="bx bxs-chevron-down-circle"></em> bx bxs-chevron-down-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-up-circle"></i> bx bxs-chevron-up-circle
+                                                <em class="bx bxs-chevron-up-circle"></em> bx bxs-chevron-up-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-left-circle"></i> bx bxs-chevron-left-circle
+                                                <em class="bx bxs-chevron-left-circle"></em> bx bxs-chevron-left-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-right-circle"></i> bx bxs-chevron-right-circle
+                                                <em class="bx bxs-chevron-right-circle"></em> bx bxs-chevron-right-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-down-square"></i> bx bxs-chevron-down-square
+                                                <em class="bx bxs-chevron-down-square"></em> bx bxs-chevron-down-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-up-square"></i> bx bxs-chevron-up-square
+                                                <em class="bx bxs-chevron-up-square"></em> bx bxs-chevron-up-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-left-square"></i> bx bxs-chevron-left-square
+                                                <em class="bx bxs-chevron-left-square"></em> bx bxs-chevron-left-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-chevron-right-square"></i> bx bxs-chevron-right-square
+                                                <em class="bx bxs-chevron-right-square"></em> bx bxs-chevron-right-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-church"></i> bx bxs-church
+                                                <em class="bx bxs-church"></em> bx bxs-church
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-coin"></i> bx bxs-coin
+                                                <em class="bx bxs-coin"></em> bx bxs-coin
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-coin-stack"></i> bx bxs-coin-stack
+                                                <em class="bx bxs-coin-stack"></em> bx bxs-coin-stack
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bullseye"></i> bx bxs-bullseye
+                                                <em class="bx bxs-bullseye"></em> bx bxs-bullseye
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-meteor"></i> bx bxs-meteor
+                                                <em class="bx bxs-meteor"></em> bx bxs-meteor
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-home-smile"></i> bx bxs-home-smile
+                                                <em class="bx bxs-home-smile"></em> bx bxs-home-smile
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-envelope-open"></i> bx bxs-envelope-open
+                                                <em class="bx bxs-envelope-open"></em> bx bxs-envelope-open
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-alt-add"></i> bx bxs-message-alt-add
+                                                <em class="bx bxs-message-alt-add"></em> bx bxs-message-alt-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-alt-check"></i> bx bxs-message-alt-check
+                                                <em class="bx bxs-message-alt-check"></em> bx bxs-message-alt-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-alt-error"></i> bx bxs-message-alt-error
+                                                <em class="bx bxs-message-alt-error"></em> bx bxs-message-alt-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-alt-x"></i> bx bxs-message-alt-x
+                                                <em class="bx bxs-message-alt-x"></em> bx bxs-message-alt-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-alt-minus"></i> bx bxs-message-alt-minus
+                                                <em class="bx bxs-message-alt-minus"></em> bx bxs-message-alt-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-alt-edit"></i> bx bxs-message-alt-edit
+                                                <em class="bx bxs-message-alt-edit"></em> bx bxs-message-alt-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-alt-detail"></i> bx bxs-message-alt-detail
+                                                <em class="bx bxs-message-alt-detail"></em> bx bxs-message-alt-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-rounded-check"></i> bx bxs-message-rounded-check
+                                                <em class="bx bxs-message-rounded-check"></em> bx bxs-message-rounded-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-rounded-error"></i> bx bxs-message-rounded-error
+                                                <em class="bx bxs-message-rounded-error"></em> bx bxs-message-rounded-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-rounded-x"></i> bx bxs-message-rounded-x
+                                                <em class="bx bxs-message-rounded-x"></em> bx bxs-message-rounded-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-rounded-minus"></i> bx bxs-message-rounded-minus
+                                                <em class="bx bxs-message-rounded-minus"></em> bx bxs-message-rounded-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-rounded-edit"></i> bx bxs-message-rounded-edit
+                                                <em class="bx bxs-message-rounded-edit"></em> bx bxs-message-rounded-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-rounded-add"></i> bx bxs-message-rounded-add
+                                                <em class="bx bxs-message-rounded-add"></em> bx bxs-message-rounded-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-rounded-detail"></i> bx bxs-message-rounded-detail
+                                                <em class="bx bxs-message-rounded-detail"></em> bx bxs-message-rounded-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-check"></i> bx bxs-message-check
+                                                <em class="bx bxs-message-check"></em> bx bxs-message-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-error"></i> bx bxs-message-error
+                                                <em class="bx bxs-message-error"></em> bx bxs-message-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-x"></i> bx bxs-message-x
+                                                <em class="bx bxs-message-x"></em> bx bxs-message-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-minus"></i> bx bxs-message-minus
+                                                <em class="bx bxs-message-minus"></em> bx bxs-message-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-edit"></i> bx bxs-message-edit
+                                                <em class="bx bxs-message-edit"></em> bx bxs-message-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-add"></i> bx bxs-message-add
+                                                <em class="bx bxs-message-add"></em> bx bxs-message-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-detail"></i> bx bxs-message-detail
+                                                <em class="bx bxs-message-detail"></em> bx bxs-message-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-square-check"></i> bx bxs-message-square-check
+                                                <em class="bx bxs-message-square-check"></em> bx bxs-message-square-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-square-error"></i> bx bxs-message-square-error
+                                                <em class="bx bxs-message-square-error"></em> bx bxs-message-square-error
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-square-x"></i> bx bxs-message-square-x
+                                                <em class="bx bxs-message-square-x"></em> bx bxs-message-square-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-square-minus"></i> bx bxs-message-square-minus
+                                                <em class="bx bxs-message-square-minus"></em> bx bxs-message-square-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-square-edit"></i> bx bxs-message-square-edit
+                                                <em class="bx bxs-message-square-edit"></em> bx bxs-message-square-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-square-add"></i> bx bxs-message-square-add
+                                                <em class="bx bxs-message-square-add"></em> bx bxs-message-square-add
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-message-square-detail"></i> bx bxs-message-square-detail
+                                                <em class="bx bxs-message-square-detail"></em> bx bxs-message-square-detail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-comment-check"></i> bx bxs-comment-check
+                                                <em class="bx bxs-comment-check"></em> bx bxs-comment-check
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-comment-x"></i> bx bxs-comment-x
+                                                <em class="bx bxs-comment-x"></em> bx bxs-comment-x
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-comment-edit"></i> bx bxs-comment-edit
+                                                <em class="bx bxs-comment-edit"></em> bx bxs-comment-edit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-comment-minus"></i> bx bxs-comment-minus
+                                                <em class="bx bxs-comment-minus"></em> bx bxs-comment-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-cookie"></i> bx bxs-cookie
+                                                <em class="bx bxs-cookie"></em> bx bxs-cookie
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-copyright"></i> bx bxs-copyright
+                                                <em class="bx bxs-copyright"></em> bx bxs-copyright
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-credit-card-front"></i> bx bxs-credit-card-front
+                                                <em class="bx bxs-credit-card-front"></em> bx bxs-credit-card-front
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-crop"></i> bx bxs-crop
+                                                <em class="bx bxs-crop"></em> bx bxs-crop
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-diamond"></i> bx bxs-diamond
+                                                <em class="bx bxs-diamond"></em> bx bxs-diamond
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-door-open"></i> bx bxs-door-open
+                                                <em class="bx bxs-door-open"></em> bx bxs-door-open
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-donate-heart"></i> bx bxs-donate-heart
+                                                <em class="bx bxs-donate-heart"></em> bx bxs-donate-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-donate-blood"></i> bx bxs-donate-blood
+                                                <em class="bx bxs-donate-blood"></em> bx bxs-donate-blood
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bookmark-heart"></i> bx bxs-bookmark-heart
+                                                <em class="bx bxs-bookmark-heart"></em> bx bxs-bookmark-heart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-category"></i> bx bxs-category
+                                                <em class="bx bxs-category"></em> bx bxs-category
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-category-alt"></i> bx bxs-category-alt
+                                                <em class="bx bxs-category-alt"></em> bx bxs-category-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bookmark-alt"></i> bx bxs-bookmark-alt
+                                                <em class="bx bxs-bookmark-alt"></em> bx bxs-bookmark-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bookmark-alt-plus"></i> bx bxs-bookmark-alt-plus
+                                                <em class="bx bxs-bookmark-alt-plus"></em> bx bxs-bookmark-alt-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-bookmark-alt-minus"></i> bx bxs-bookmark-alt-minus
+                                                <em class="bx bxs-bookmark-alt-minus"></em> bx bxs-bookmark-alt-minus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-face-mask"></i> bx bxs-face-mask
+                                                <em class="bx bxs-face-mask"></em> bx bxs-face-mask
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-tv"></i> bx bxs-tv
+                                                <em class="bx bxs-tv"></em> bx bxs-tv
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-tag-alt"></i> bx bxs-tag-alt
+                                                <em class="bx bxs-tag-alt"></em> bx bxs-tag-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-movie-play"></i> bx bxs-movie-play
+                                                <em class="bx bxs-movie-play"></em> bx bxs-movie-play
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-user-account"></i> bx bxs-user-account
+                                                <em class="bx bxs-user-account"></em> bx bxs-user-account
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-virus"></i> bx bxs-virus
+                                                <em class="bx bxs-virus"></em> bx bxs-virus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxs-virus-block"></i> bx bxs-virus-block
+                                                <em class="bx bxs-virus-block"></em> bx bxs-virus-block
                                             </div>
                                         </div>
                                         <!--Solid Icons end row -->
@@ -4346,451 +4346,451 @@ export default {
                                         <p class="text-muted mb-0">Use class <code>&lt;i class="bx bl-**">&lt;/i></code></p>
                                         <div class="row icon-demo-content">                                        
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-meta"></i> bx bxl-meta
+                                                <em class="bx bxl-meta"></em> bx bxl-meta
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-upwork"></i> bx bxl-upwork
+                                                <em class="bx bxl-upwork"></em> bx bxl-upwork
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-netlify"></i> bx bxl-netlify
+                                                <em class="bx bxl-netlify"></em> bx bxl-netlify
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-java"></i> bx bxl-java
+                                                <em class="bx bxl-java"></em> bx bxl-java
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-heroku"></i> bx bxl-heroku
+                                                <em class="bx bxl-heroku"></em> bx bxl-heroku
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-go-lang"></i> bx bxl-go-lang
+                                                <em class="bx bxl-go-lang"></em> bx bxl-go-lang
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-gmail"></i> bx bxl-gmail
+                                                <em class="bx bxl-gmail"></em> bx bxl-gmail
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-flask"></i> bx bxl-flask
+                                                <em class="bx bxl-flask"></em> bx bxl-flask
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-99designs"></i> bx bxl-99designs
+                                                <em class="bx bxl-99designs"></em> bx bxl-99designs
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-venmo"></i> bx bxl-venmo
+                                                <em class="bx bxl-venmo"></em> bx bxl-venmo
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-docker"></i> bx bxl-docker
+                                                <em class="bx bxl-docker"></em> bx bxl-docker
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-aws"></i> bx bxl-aws
+                                                <em class="bx bxl-aws"></em> bx bxl-aws
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-tiktok"></i> bx bxl-tiktok
+                                                <em class="bx bxl-tiktok"></em> bx bxl-tiktok
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-sketch"></i> bx bxl-sketch
+                                                <em class="bx bxl-sketch"></em> bx bxl-sketch
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-steam"></i> bx bxl-steam
+                                                <em class="bx bxl-steam"></em> bx bxl-steam
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-trip-advisor"></i> bx bxl-trip-advisor
+                                                <em class="bx bxl-trip-advisor"></em> bx bxl-trip-advisor
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-visual-studio"></i> bx bxl-visual-studio
+                                                <em class="bx bxl-visual-studio"></em> bx bxl-visual-studio
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-unity"></i> bx bxl-unity
+                                                <em class="bx bxl-unity"></em> bx bxl-unity
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-php"></i> bx bxl-php
+                                                <em class="bx bxl-php"></em> bx bxl-php
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-discord-alt"></i> bx bxl-discord-alt
+                                                <em class="bx bxl-discord-alt"></em> bx bxl-discord-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-flutter"></i> bx bxl-flutter
+                                                <em class="bx bxl-flutter"></em> bx bxl-flutter
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-mastodon"></i> bx bxl-mastodon
+                                                <em class="bx bxl-mastodon"></em> bx bxl-mastodon
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-tailwind-css"></i> bx bxl-tailwind-css
+                                                <em class="bx bxl-tailwind-css"></em> bx bxl-tailwind-css
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-instagram-alt"></i> bx bxl-instagram-alt
+                                                <em class="bx bxl-instagram-alt"></em> bx bxl-instagram-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-facebook-circle"></i> bx bxl-facebook-circle
+                                                <em class="bx bxl-facebook-circle"></em> bx bxl-facebook-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-jquery"></i> bx bxl-jquery
+                                                <em class="bx bxl-jquery"></em> bx bxl-jquery
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-imdb"></i> bx bxl-imdb
+                                                <em class="bx bxl-imdb"></em> bx bxl-imdb
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-pinterest-alt"></i> bx bxl-pinterest-alt
+                                                <em class="bx bxl-pinterest-alt"></em> bx bxl-pinterest-alt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-adobe"></i> bx bxl-adobe
+                                                <em class="bx bxl-adobe"></em> bx bxl-adobe
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-algolia"></i> bx bxl-algolia
+                                                <em class="bx bxl-algolia"></em> bx bxl-algolia
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-audible"></i> bx bxl-audible
+                                                <em class="bx bxl-audible"></em> bx bxl-audible
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-figma"></i> bx bxl-figma
+                                                <em class="bx bxl-figma"></em> bx bxl-figma
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-etsy"></i> bx bxl-etsy
+                                                <em class="bx bxl-etsy"></em> bx bxl-etsy
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-gitlab"></i> bx bxl-gitlab
+                                                <em class="bx bxl-gitlab"></em> bx bxl-gitlab
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-patreon"></i> bx bxl-patreon
+                                                <em class="bx bxl-patreon"></em> bx bxl-patreon
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-redbubble"></i> bx bxl-redbubble
+                                                <em class="bx bxl-redbubble"></em> bx bxl-redbubble
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-facebook"></i> bx bxl-facebook
+                                                <em class="bx bxl-facebook"></em> bx bxl-facebook
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-github"></i> bx bxl-github
+                                                <em class="bx bxl-github"></em> bx bxl-github
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-google"></i> bx bxl-google
+                                                <em class="bx bxl-google"></em> bx bxl-google
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-instagram"></i> bx bxl-instagram
+                                                <em class="bx bxl-instagram"></em> bx bxl-instagram
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-twitter"></i> bx bxl-twitter
+                                                <em class="bx bxl-twitter"></em> bx bxl-twitter
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-youtube"></i> bx bxl-youtube
+                                                <em class="bx bxl-youtube"></em> bx bxl-youtube
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-whatsapp"></i> bx bxl-whatsapp
+                                                <em class="bx bxl-whatsapp"></em> bx bxl-whatsapp
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-tumblr"></i> bx bxl-tumblr
+                                                <em class="bx bxl-tumblr"></em> bx bxl-tumblr
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-behance"></i> bx bxl-behance
+                                                <em class="bx bxl-behance"></em> bx bxl-behance
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-dribbble"></i> bx bxl-dribbble
+                                                <em class="bx bxl-dribbble"></em> bx bxl-dribbble
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-vimeo"></i> bx bxl-vimeo
+                                                <em class="bx bxl-vimeo"></em> bx bxl-vimeo
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-linkedin"></i> bx bxl-linkedin
+                                                <em class="bx bxl-linkedin"></em> bx bxl-linkedin
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-bitcoin"></i> bx bxl-bitcoin
+                                                <em class="bx bxl-bitcoin"></em> bx bxl-bitcoin
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-facebook-square"></i> bx bxl-facebook-square
+                                                <em class="bx bxl-facebook-square"></em> bx bxl-facebook-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-google-plus"></i> bx bxl-google-plus
+                                                <em class="bx bxl-google-plus"></em> bx bxl-google-plus
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-google-plus-circle"></i> bx bxl-google-plus-circle
+                                                <em class="bx bxl-google-plus-circle"></em> bx bxl-google-plus-circle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-linkedin-square"></i> bx bxl-linkedin-square
+                                                <em class="bx bxl-linkedin-square"></em> bx bxl-linkedin-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-medium"></i> bx bxl-medium
+                                                <em class="bx bxl-medium"></em> bx bxl-medium
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-medium-square"></i> bx bxl-medium-square
+                                                <em class="bx bxl-medium-square"></em> bx bxl-medium-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-skype"></i> bx bxl-skype
+                                                <em class="bx bxl-skype"></em> bx bxl-skype
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-slack-old"></i> bx bxl-slack-old
+                                                <em class="bx bxl-slack-old"></em> bx bxl-slack-old
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-slack"></i> bx bxl-slack
+                                                <em class="bx bxl-slack"></em> bx bxl-slack
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-twitch"></i> bx bxl-twitch
+                                                <em class="bx bxl-twitch"></em> bx bxl-twitch
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-discord"></i> bx bxl-discord
+                                                <em class="bx bxl-discord"></em> bx bxl-discord
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-reddit"></i> bx bxl-reddit
+                                                <em class="bx bxl-reddit"></em> bx bxl-reddit
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-pinterest"></i> bx bxl-pinterest
+                                                <em class="bx bxl-pinterest"></em> bx bxl-pinterest
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-blogger"></i> bx bxl-blogger
+                                                <em class="bx bxl-blogger"></em> bx bxl-blogger
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-apple"></i> bx bxl-apple
+                                                <em class="bx bxl-apple"></em> bx bxl-apple
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-android"></i> bx bxl-android
+                                                <em class="bx bxl-android"></em> bx bxl-android
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-play-store"></i> bx bxl-play-store
+                                                <em class="bx bxl-play-store"></em> bx bxl-play-store
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-windows"></i> bx bxl-windows
+                                                <em class="bx bxl-windows"></em> bx bxl-windows
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-vk"></i> bx bxl-vk
+                                                <em class="bx bxl-vk"></em> bx bxl-vk
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-pocket"></i> bx bxl-pocket
+                                                <em class="bx bxl-pocket"></em> bx bxl-pocket
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-messenger"></i> bx bxl-messenger
+                                                <em class="bx bxl-messenger"></em> bx bxl-messenger
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-500px"></i> bx bxl-500px
+                                                <em class="bx bxl-500px"></em> bx bxl-500px
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-angular"></i> bx bxl-angular
+                                                <em class="bx bxl-angular"></em> bx bxl-angular
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-codepen"></i> bx bxl-codepen
+                                                <em class="bx bxl-codepen"></em> bx bxl-codepen
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-creative-commons"></i> bx bxl-creative-commons
+                                                <em class="bx bxl-creative-commons"></em> bx bxl-creative-commons
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-digitalocean"></i> bx bxl-digitalocean
+                                                <em class="bx bxl-digitalocean"></em> bx bxl-digitalocean
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-deviantart"></i> bx bxl-deviantart
+                                                <em class="bx bxl-deviantart"></em> bx bxl-deviantart
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-discourse"></i> bx bxl-discourse
+                                                <em class="bx bxl-discourse"></em> bx bxl-discourse
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-dropbox"></i> bx bxl-dropbox
+                                                <em class="bx bxl-dropbox"></em> bx bxl-dropbox
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-drupal"></i> bx bxl-drupal
+                                                <em class="bx bxl-drupal"></em> bx bxl-drupal
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-ebay"></i> bx bxl-ebay
+                                                <em class="bx bxl-ebay"></em> bx bxl-ebay
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-amazon"></i> bx bxl-amazon
+                                                <em class="bx bxl-amazon"></em> bx bxl-amazon
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-digg"></i> bx bxl-digg
+                                                <em class="bx bxl-digg"></em> bx bxl-digg
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-unsplash"></i> bx bxl-unsplash
+                                                <em class="bx bxl-unsplash"></em> bx bxl-unsplash
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-wikipedia"></i> bx bxl-wikipedia
+                                                <em class="bx bxl-wikipedia"></em> bx bxl-wikipedia
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-sass"></i> bx bxl-sass
+                                                <em class="bx bxl-sass"></em> bx bxl-sass
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-foursquare"></i> bx bxl-foursquare
+                                                <em class="bx bxl-foursquare"></em> bx bxl-foursquare
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-invision"></i> bx bxl-invision
+                                                <em class="bx bxl-invision"></em> bx bxl-invision
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-opera"></i> bx bxl-opera
+                                                <em class="bx bxl-opera"></em> bx bxl-opera
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-airbnb"></i> bx bxl-airbnb
+                                                <em class="bx bxl-airbnb"></em> bx bxl-airbnb
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-yelp"></i> bx bxl-yelp
+                                                <em class="bx bxl-yelp"></em> bx bxl-yelp
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-quora"></i> bx bxl-quora
+                                                <em class="bx bxl-quora"></em> bx bxl-quora
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-git"></i> bx bxl-git
+                                                <em class="bx bxl-git"></em> bx bxl-git
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-html5"></i> bx bxl-html5
+                                                <em class="bx bxl-html5"></em> bx bxl-html5
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-product-hunt"></i> bx bxl-product-hunt
+                                                <em class="bx bxl-product-hunt"></em> bx bxl-product-hunt
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-magento"></i> bx bxl-magento
+                                                <em class="bx bxl-magento"></em> bx bxl-magento
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-stack-overflow"></i> bx bxl-stack-overflow
+                                                <em class="bx bxl-stack-overflow"></em> bx bxl-stack-overflow
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-firefox"></i> bx bxl-firefox
+                                                <em class="bx bxl-firefox"></em> bx bxl-firefox
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-javascript"></i> bx bxl-javascript
+                                                <em class="bx bxl-javascript"></em> bx bxl-javascript
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-nodejs"></i> bx bxl-nodejs
+                                                <em class="bx bxl-nodejs"></em> bx bxl-nodejs
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-kickstarter"></i> bx bxl-kickstarter
+                                                <em class="bx bxl-kickstarter"></em> bx bxl-kickstarter
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-vuejs"></i> bx bxl-vuejs
+                                                <em class="bx bxl-vuejs"></em> bx bxl-vuejs
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-bing"></i> bx bxl-bing
+                                                <em class="bx bxl-bing"></em> bx bxl-bing
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-react"></i> bx bxl-react
+                                                <em class="bx bxl-react"></em> bx bxl-react
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-periscope"></i> bx bxl-periscope
+                                                <em class="bx bxl-periscope"></em> bx bxl-periscope
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-wordpress"></i> bx bxl-wordpress
+                                                <em class="bx bxl-wordpress"></em> bx bxl-wordpress
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-telegram"></i> bx bxl-telegram
+                                                <em class="bx bxl-telegram"></em> bx bxl-telegram
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-stripe"></i> bx bxl-stripe
+                                                <em class="bx bxl-stripe"></em> bx bxl-stripe
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-edge"></i> bx bxl-edge
+                                                <em class="bx bxl-edge"></em> bx bxl-edge
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-paypal"></i> bx bxl-paypal
+                                                <em class="bx bxl-paypal"></em> bx bxl-paypal
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-internet-explorer"></i> bx bxl-internet-explorer
+                                                <em class="bx bxl-internet-explorer"></em> bx bxl-internet-explorer
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-joomla"></i> bx bxl-joomla
+                                                <em class="bx bxl-joomla"></em> bx bxl-joomla
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-dailymotion"></i> bx bxl-dailymotion
+                                                <em class="bx bxl-dailymotion"></em> bx bxl-dailymotion
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-chrome"></i> bx bxl-chrome
+                                                <em class="bx bxl-chrome"></em> bx bxl-chrome
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-baidu"></i> bx bxl-baidu
+                                                <em class="bx bxl-baidu"></em> bx bxl-baidu
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-visa"></i> bx bxl-visa
+                                                <em class="bx bxl-visa"></em> bx bxl-visa
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-mastercard"></i> bx bxl-mastercard
+                                                <em class="bx bxl-mastercard"></em> bx bxl-mastercard
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-redux"></i> bx bxl-redux
+                                                <em class="bx bxl-redux"></em> bx bxl-redux
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-bootstrap"></i> bx bxl-bootstrap
+                                                <em class="bx bxl-bootstrap"></em> bx bxl-bootstrap
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-yahoo"></i> bx bxl-yahoo
+                                                <em class="bx bxl-yahoo"></em> bx bxl-yahoo
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-microsoft"></i> bx bxl-microsoft
+                                                <em class="bx bxl-microsoft"></em> bx bxl-microsoft
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-css3"></i> bx bxl-css3
+                                                <em class="bx bxl-css3"></em> bx bxl-css3
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-jsfiddle"></i> bx bxl-jsfiddle
+                                                <em class="bx bxl-jsfiddle"></em> bx bxl-jsfiddle
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-shopify"></i> bx bxl-shopify
+                                                <em class="bx bxl-shopify"></em> bx bxl-shopify
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-flickr"></i> bx bxl-flickr
+                                                <em class="bx bxl-flickr"></em> bx bxl-flickr
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-less"></i> bx bxl-less
+                                                <em class="bx bxl-less"></em> bx bxl-less
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-snapchat"></i> bx bxl-snapchat
+                                                <em class="bx bxl-snapchat"></em> bx bxl-snapchat
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-soundcloud"></i> bx bxl-soundcloud
+                                                <em class="bx bxl-soundcloud"></em> bx bxl-soundcloud
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-spotify"></i> bx bxl-spotify
+                                                <em class="bx bxl-spotify"></em> bx bxl-spotify
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-trello"></i> bx bxl-trello
+                                                <em class="bx bxl-trello"></em> bx bxl-trello
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-wix"></i> bx bxl-wix
+                                                <em class="bx bxl-wix"></em> bx bxl-wix
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-mailchimp"></i> bx bxl-mailchimp
+                                                <em class="bx bxl-mailchimp"></em> bx bxl-mailchimp
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-medium-old"></i> bx bxl-medium-old
+                                                <em class="bx bxl-medium-old"></em> bx bxl-medium-old
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-squarespace"></i> bx bxl-squarespace
+                                                <em class="bx bxl-squarespace"></em> bx bxl-squarespace
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-whatsapp-square"></i> bx bxl-whatsapp-square
+                                                <em class="bx bxl-whatsapp-square"></em> bx bxl-whatsapp-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-flickr-square"></i> bx bxl-flickr-square
+                                                <em class="bx bxl-flickr-square"></em> bx bxl-flickr-square
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-dev-to"></i> bx bxl-dev-to
+                                                <em class="bx bxl-dev-to"></em> bx bxl-dev-to
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-zoom"></i> bx bxl-zoom
+                                                <em class="bx bxl-zoom"></em> bx bxl-zoom
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-microsoft-teams"></i> bx bxl-microsoft-teams
+                                                <em class="bx bxl-microsoft-teams"></em> bx bxl-microsoft-teams
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-blender"></i> bx bxl-blender
+                                                <em class="bx bxl-blender"></em> bx bxl-blender
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-kubernetes"></i> bx bxl-kubernetes
+                                                <em class="bx bxl-kubernetes"></em> bx bxl-kubernetes
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-google-cloud"></i> bx bxl-google-cloud
+                                                <em class="bx bxl-google-cloud"></em> bx bxl-google-cloud
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-django"></i> bx bxl-django
+                                                <em class="bx bxl-django"></em> bx bxl-django
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-spring-boot"></i> bx bxl-spring-boot
+                                                <em class="bx bxl-spring-boot"></em> bx bxl-spring-boot
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-tux"></i> bx bxl-tux
+                                                <em class="bx bxl-tux"></em> bx bxl-tux
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-markdown"></i> bx bxl-markdown
+                                                <em class="bx bxl-markdown"></em> bx bxl-markdown
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-python"></i> bx bxl-python
+                                                <em class="bx bxl-python"></em> bx bxl-python
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-ok-ru"></i> bx bxl-ok-ru
+                                                <em class="bx bxl-ok-ru"></em> bx bxl-ok-ru
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-firebase"></i> bx bxl-firebase
+                                                <em class="bx bxl-firebase"></em> bx bxl-firebase
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-sm-6">
-                                                <i class="bx bxl-c-plus-plus"></i> bx bxl-c-plus-plus
+                                                <em class="bx bxl-c-plus-plus"></em> bx bxl-c-plus-plus
                                             </div>
                                         </div>
                                         <!--Logos end row -->

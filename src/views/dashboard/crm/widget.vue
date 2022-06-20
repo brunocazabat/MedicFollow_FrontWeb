@@ -74,11 +74,11 @@ export default {
           <div class="py-4 px-3">
             <h5 class="text-muted text-uppercase fs-13">
               {{ item.label }}
-              <i :class="`${item.badge} fs-18 float-end align-middle`"></i>
+              <em :class="`${item.badge} fs-18 float-end align-middle`"></em>
             </h5>
             <div class="d-flex align-items-center">
               <div class="flex-shrink-0">
-                <i :class="`${item.icon} display-6 text-muted`"></i>
+                <em :class="`${item.icon} display-6 text-muted`"></em>
               </div>
               <div class="flex-grow-1 ms-3">
                 <h2 class="mb-0">

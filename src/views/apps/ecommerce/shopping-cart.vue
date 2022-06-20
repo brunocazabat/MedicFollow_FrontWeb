@@ -1,174 +1,173 @@
 <script>
-import Layout from "../../../layouts/main.vue";
-import appConfig from "../../../../app.config";
-import PageHeader from "@/components/page-header";
+import Layout from '../../../layouts/main.vue'
+import appConfig from '../../../../app.config'
+import PageHeader from '@/components/page-header'
 
-import animationData from "@/components/widgets/nkmsrxys.json";
-import animationData1 from "@/components/widgets/gsqxdxog.json";
+import animationData from '@/components/widgets/nkmsrxys.json'
+import animationData1 from '@/components/widgets/gsqxdxog.json'
 
-import Lottie from "@/components/widgets/lottie.vue";
+import Lottie from '@/components/widgets/lottie.vue'
 
 export default {
   page: {
-    title: "Shopping Cart",
+    title: 'Shopping Cart',
     meta: [
       {
-        name: "description",
-        content: appConfig.description,
-      },
-    ],
+        name: 'description',
+        content: appConfig.description
+      }
+    ]
   },
   components: {
     Layout,
     PageHeader,
-    lottie: Lottie,
+    lottie: Lottie
   },
   data() {
     return {
-      title: "Shopping Cart",
+      title: 'Shopping Cart',
       items: [
         {
-          text: "Ecommerce",
-          href: "/",
+          text: 'Ecommerce',
+          href: '/'
         },
         {
-          text: "Shopping Cart",
-          active: true,
-        },
+          text: 'Shopping Cart',
+          active: true
+        }
       ],
       taxRate: 0.125,
       shippingRate: 65.0,
       discountRate: 0.15,
-      quantity: "",
-      currencySign: "$",
+      quantity: '',
+      currencySign: '$',
       defaultOptions: { animationData: animationData },
       defaultOptions1: { animationData: animationData1 },
       value: 2,
       value1: 1,
-      value2: 1,
-    };
+      value2: 1
+    }
   },
 
   mounted() {
     // Remove product from cart
-    const removeProduct = document.getElementById("removeItemModal");
-    removeProduct.addEventListener("show.bs.modal", (e) => {
+    const removeProduct = document.getElementById('removeItemModal')
+    removeProduct.addEventListener('show.bs.modal', (e) => {
       document
-        .getElementById("remove-product")
-        .addEventListener("click", () => {
-          e.relatedTarget.closest(".product").remove();
-          document.getElementById("close-modal").click();
-          this.recalculateCart();
-        });
-    });
+        .getElementById('remove-product')
+        .addEventListener('click', () => {
+          e.relatedTarget.closest('.product').remove()
+          document.getElementById('close-modal').click()
+          this.recalculateCart()
+        })
+    })
 
     setTimeout(() => {
-      this.isData();
-    }, 100);
+      this.isData()
+    }, 100)
   },
   methods: {
     isData() {
-      const plus = document.getElementsByClassName("plus");
-      const minus = document.getElementsByClassName("minus");
-      var product = document.getElementsByClassName("product");
+      const plus = document.getElementsByClassName('plus')
+      const minus = document.getElementsByClassName('minus')
+      var product = document.getElementsByClassName('product')
 
       if (plus) {
         Array.prototype.forEach.call(plus, (e) => {
-          e.addEventListener("click", (event) => {
+          e.addEventListener('click', (event) => {
+            let par = event.target.closest('.input-step')
 
-            let par = event.target.closest(".input-step");
-          
-            par.getElementsByClassName("product-quantity")[0].value++;
+            par.getElementsByClassName('product-quantity')[0].value++
             Array.prototype.forEach.call(product, () => {
-              this.updateQuantity(event.target);
-            });
-          });
-        });
+              this.updateQuantity(event.target)
+            })
+          })
+        })
       }
 
       if (minus) {
         Array.prototype.forEach.call(minus, (e) => {
-          e.addEventListener("click", (event) => {
-            let par = event.target.closest(".input-step");
-              if(par.getElementsByClassName("product-quantity")[0].value > 0)
-                par.getElementsByClassName("product-quantity")[0].value--;
-              Array.prototype.forEach.call(product, () => {
-              this.updateQuantity(event.target);
-            });
-          });
-        });
+          e.addEventListener('click', (event) => {
+            let par = event.target.closest('.input-step')
+            if (par.getElementsByClassName('product-quantity')[0].value > 0)
+              par.getElementsByClassName('product-quantity')[0].value--
+            Array.prototype.forEach.call(product, () => {
+              this.updateQuantity(event.target)
+            })
+          })
+        })
       }
     },
 
     updateQuantity(quantityInput) {
-      var productRow = quantityInput.closest(".product");
-      var price;
+      var productRow = quantityInput.closest('.product')
+      var price
 
       Array.prototype.forEach.call(
-        productRow.getElementsByClassName("product-price"),
+        productRow.getElementsByClassName('product-price'),
         (e) => {
-          price = parseFloat(e.innerHTML);
+          price = parseFloat(e.innerHTML)
         }
-      );
+      )
 
       if (
         quantityInput.previousElementSibling &&
         quantityInput.previousElementSibling.classList.contains(
-          "product-quantity"
+          'product-quantity'
         )
       ) {
-        this.quantity = quantityInput.previousElementSibling.value;
+        this.quantity = quantityInput.previousElementSibling.value
       } else if (
         quantityInput.nextElementSibling &&
-        quantityInput.nextElementSibling.classList.contains("product-quantity")
+        quantityInput.nextElementSibling.classList.contains('product-quantity')
       ) {
-        this.quantity = quantityInput.nextElementSibling.value;
+        this.quantity = quantityInput.nextElementSibling.value
       }
-      var linePrice = price * this.quantity;
+      var linePrice = price * this.quantity
       /* Update line price display and recalc cart totals */
       Array.prototype.forEach.call(
-        productRow.getElementsByClassName("product-line-price"),
+        productRow.getElementsByClassName('product-line-price'),
         (e) => {
-          e.innerHTML = linePrice.toFixed(2);
-          this.recalculateCart();
+          e.innerHTML = linePrice.toFixed(2)
+          this.recalculateCart()
         }
-      );
+      )
     },
     recalculateCart() {
-      var subtotal = 0;
+      var subtotal = 0
 
       Array.prototype.forEach.call(
-        document.getElementsByClassName("product"),
+        document.getElementsByClassName('product'),
         (item) => {
           Array.prototype.forEach.call(
-            item.getElementsByClassName("product-line-price"),
+            item.getElementsByClassName('product-line-price'),
             (e) => {
-              subtotal += parseFloat(e.innerHTML);
+              subtotal += parseFloat(e.innerHTML)
             }
-          );
+          )
         }
-      );
+      )
 
       /* Calculate totals */
-      var tax = subtotal * this.taxRate;
-      var discount = subtotal * this.discountRate;
+      var tax = subtotal * this.taxRate
+      var discount = subtotal * this.discountRate
 
-      var shipping = subtotal > 0 ? this.shippingRate : 0;
-      var total = subtotal + tax + shipping - discount;
+      var shipping = subtotal > 0 ? this.shippingRate : 0
+      var total = subtotal + tax + shipping - discount
 
-      document.getElementById("cart-subtotal").innerHTML =
-        this.currencySign + subtotal.toFixed(2);
-      document.getElementById("cart-tax").innerHTML =
-        this.currencySign + tax.toFixed(2);
-      document.getElementById("cart-shipping").innerHTML =
-        this.currencySign + shipping.toFixed(2);
-      document.getElementById("cart-total").innerHTML =
-        this.currencySign + total.toFixed(2);
-      document.getElementById("cart-discount").innerHTML =
-        "-" + this.currencySign + discount.toFixed(2);
-    },
-  },
-};
+      document.getElementById('cart-subtotal').innerHTML =
+        this.currencySign + subtotal.toFixed(2)
+      document.getElementById('cart-tax').innerHTML =
+        this.currencySign + tax.toFixed(2)
+      document.getElementById('cart-shipping').innerHTML =
+        this.currencySign + shipping.toFixed(2)
+      document.getElementById('cart-total').innerHTML =
+        this.currencySign + total.toFixed(2)
+      document.getElementById('cart-discount').innerHTML =
+        '-' + this.currencySign + discount.toFixed(2)
+    }
+  }
+}
 </script>
 
 <template>
@@ -251,15 +250,17 @@ export default {
                       class="d-block text-body p-1 px-2"
                       data-bs-toggle="modal"
                       data-bs-target="#removeItemModal"
-                      ><i
+                      ><em
                         class="ri-delete-bin-fill text-muted align-bottom me-1"
-                      ></i>
+                      ></em>
                       Remove</a
                     >
                   </div>
                   <div>
                     <a href="#" class="d-block text-body p-1 px-2"
-                      ><i class="ri-star-fill text-muted align-bottom me-1"></i>
+                      ><em
+                        class="ri-star-fill text-muted align-bottom me-1"
+                      ></em>
                       Add Wishlist</a
                     >
                   </div>
@@ -340,15 +341,17 @@ export default {
                       class="d-block text-body p-1 px-2"
                       data-bs-toggle="modal"
                       data-bs-target="#removeItemModal"
-                      ><i
+                      ><em
                         class="ri-delete-bin-fill text-muted align-bottom me-1"
-                      ></i>
+                      ></em>
                       Remove</a
                     >
                   </div>
                   <div>
                     <a href="#" class="d-block text-body p-1 px-2"
-                      ><i class="ri-star-fill text-muted align-bottom me-1"></i>
+                      ><em
+                        class="ri-star-fill text-muted align-bottom me-1"
+                      ></em>
                       Add Wishlist</a
                     >
                   </div>
@@ -429,15 +432,17 @@ export default {
                       class="d-block text-body p-1 px-2"
                       data-bs-toggle="modal"
                       data-bs-target="#removeItemModal"
-                      ><i
+                      ><em
                         class="ri-delete-bin-fill text-muted align-bottom me-1"
-                      ></i>
+                      ></em>
                       Remove</a
                     >
                   </div>
                   <div>
                     <a href="#" class="d-block text-body p-1 px-2"
-                      ><i class="ri-star-fill text-muted align-bottom me-1"></i>
+                      ><em
+                        class="ri-star-fill text-muted align-bottom me-1"
+                      ></em>
                       Add Wishlist</a
                     >
                   </div>
@@ -461,9 +466,9 @@ export default {
           <router-link
             to="/ecommerce/checkout"
             class="btn btn-success btn-label right ms-auto"
-            ><i
+            ><em
               class="ri-arrow-right-line label-icon align-bottom fs-16 ms-2"
-            ></i>
+            ></em>
             Checkout</router-link
           >
         </div>
@@ -538,7 +543,7 @@ export default {
                 :options="defaultOptions"
                 :height="80"
                 :width="80"
-                style="margin:0px;"
+                style="margin: 0px"
               />
               <div class="ms-2">
                 <h5 class="fs-14 text-danger fw-semibold">

@@ -1,60 +1,60 @@
 <script>
-import { ref, watch } from "vue";
-import useVuelidate from "@vuelidate/core";
-import Multiselect from "@vueform/multiselect";
-import "@vueform/multiselect/themes/default.css";
-import flatPickr from "vue-flatpickr-component";
-import "flatpickr/dist/flatpickr.css";
+import { ref, watch } from 'vue'
+import useVuelidate from '@vuelidate/core'
+import Multiselect from '@vueform/multiselect'
+import '@vueform/multiselect/themes/default.css'
+import flatPickr from 'vue-flatpickr-component'
+import 'flatpickr/dist/flatpickr.css'
 
-import Layout from "../../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../../app.config";
-import DropZone from "@/components/widgets/dropZone";
+import Layout from '../../../layouts/main.vue'
+import PageHeader from '@/components/page-header'
+import appConfig from '../../../../app.config'
+import DropZone from '@/components/widgets/dropZone'
 
-import Lottie from "@/components/widgets/lottie.vue";
-import animationData from "@/components/widgets/lupuorrc.json";
+import Lottie from '@/components/widgets/lottie.vue'
+import animationData from '@/components/widgets/lupuorrc.json'
 
 export default {
   page: {
-    title: "KYC Application",
-    meta: [{ name: "description", content: appConfig.description }],
+    title: 'KYC Application',
+    meta: [{ name: 'description', content: appConfig.description }]
   },
   setup() {
-    let files = ref([]);
-    let dropzoneFile = ref("");
+    let files = ref([])
+    let dropzoneFile = ref('')
     const drop = (e) => {
-      dropzoneFile.value = e.dataTransfer.files[0];
-      files.value.push(dropzoneFile.value);
-    };
+      dropzoneFile.value = e.dataTransfer.files[0]
+      files.value.push(dropzoneFile.value)
+    }
     const selectedFile = () => {
-      dropzoneFile.value = document.querySelector(".dropzoneFile").files[0];
-      files.value.push(dropzoneFile.value);
-    };
-     watch(
+      dropzoneFile.value = document.querySelector('.dropzoneFile').files[0]
+      files.value.push(dropzoneFile.value)
+    }
+    watch(
       () => [...files.value],
       (currentValue) => {
-        return currentValue;
+        return currentValue
       }
-    );
-    return { dropzoneFile, drop, selectedFile, files, v$: useVuelidate() };
+    )
+    return { dropzoneFile, drop, selectedFile, files, v$: useVuelidate() }
   },
   data() {
     return {
-      title: "KYC Application",
+      title: 'KYC Application',
       items: [
         {
-          text: "Crypto",
-          href: "/",
+          text: 'Crypto',
+          href: '/'
         },
         {
-          text: "KYC Application",
-          active: true,
-        },
+          text: 'KYC Application',
+          active: true
+        }
       ],
       date: null,
       defaultOptions: { animationData: animationData },
-      value: null,
-    };
+      value: null
+    }
   },
   components: {
     Layout,
@@ -66,60 +66,60 @@ export default {
   },
   mounted() {
     // Checkout nav tab
-    document.querySelectorAll(".checkout-tab").forEach((form) => {
+    document.querySelectorAll('.checkout-tab').forEach((form) => {
       // next tab
-      form.querySelectorAll(".nexttab").forEach((nextButton) => {
-        var tabEl = form.querySelectorAll('button[data-bs-toggle="pill"]');
+      form.querySelectorAll('.nexttab').forEach((nextButton) => {
+        var tabEl = form.querySelectorAll('button[data-bs-toggle="pill"]')
         tabEl.forEach(function (item) {
-          item.addEventListener("show.bs.tab", (event) => {
-            event.target.classList.add("done");
-          });
-        });
-        nextButton.addEventListener("click", () => {
-          var nextTab = nextButton.getAttribute("data-nexttab");
-          document.getElementById(nextTab).click();
-        });
-      });
+          item.addEventListener('show.bs.tab', (event) => {
+            event.target.classList.add('done')
+          })
+        })
+        nextButton.addEventListener('click', () => {
+          var nextTab = nextButton.getAttribute('data-nexttab')
+          document.getElementById(nextTab).click()
+        })
+      })
 
       //Pervies tab
-      form.querySelectorAll(".previestab").forEach((prevButton) => {
-        prevButton.addEventListener("click", () => {
-          var prevTab = prevButton.getAttribute("data-previous");
-          var totalDone = prevButton.closest("form");
+      form.querySelectorAll('.previestab').forEach((prevButton) => {
+        prevButton.addEventListener('click', () => {
+          var prevTab = prevButton.getAttribute('data-previous')
+          var totalDone = prevButton.closest('form')
           for (var i = totalDone - 1; i < totalDone; i++) {
-            prevButton.closest("form").querySelectorAll(".custom-nav .done")[i]
-              ? prevButton.closest("form").querySelectorAll(".custom-nav .done")[i].classList.remove("done")
-              : "";
+            prevButton.closest('form').querySelectorAll('.custom-nav .done')[i] ? prevButton
+                  .closest('form')
+                  .querySelectorAll('.custom-nav .done')[i].classList.remove('done') : ''
           }
-          document.getElementById(prevTab).click();
-        });
-      });
+          document.getElementById(prevTab).click()
+        })
+      })
 
       // Step number click
-      var tabButtons = form.querySelectorAll('button[data-bs-toggle="pill"]');
+      var tabButtons = form.querySelectorAll('button[data-bs-toggle="pill"]')
       tabButtons.forEach((button, i) => {
-        button.setAttribute("data-position", i);
-        button.addEventListener("click", () => {
-          form.querySelectorAll(".custom-nav .done").length > 0
-            ? form.querySelectorAll(".custom-nav .done").forEach((doneTab) => {
-                doneTab.classList.remove("done");
+        button.setAttribute('data-position', i)
+        button.addEventListener('click', () => {
+          form.querySelectorAll('.custom-nav .done').length > 0
+            ? form.querySelectorAll('.custom-nav .done').forEach((doneTab) => {
+                doneTab.classList.remove('done')
               })
-            : "";
+            : ''
           for (var j = 0; j <= i; j++) {
-            tabButtons[j].classList.contains("active")
-              ? tabButtons[j].classList.remove("done")
-              : tabButtons[j].classList.add("done");
+            tabButtons[j].classList.contains('active')
+              ? tabButtons[j].classList.remove('done')
+              : tabButtons[j].classList.add('done')
           }
-        });
-      });
-    });
+        })
+      })
+    })
   },
   methods: {
     deleteRecord(ele) {
-      ele.target.parentElement.parentElement.remove();
-    },
-  },
-};
+      ele.target.parentElement.parentElement.remove()
+    }
+  }
+}
 </script>
 
 <template>
@@ -415,12 +415,12 @@ export default {
                             { value: 'Syria', label: 'Syria' },
                             {
                               value: 'United Kingdom',
-                              label: 'United Kingdom',
+                              label: 'United Kingdom'
                             },
                             {
                               value: 'United States of America',
-                              label: 'United States of America',
-                            },
+                              label: 'United States of America'
+                            }
                           ]"
                         />
                       </div>
@@ -433,9 +433,9 @@ export default {
                           class="btn btn-primary btn-label right ms-auto nexttab"
                           data-nexttab="pills-bill-address-tab"
                         >
-                          <i
+                          <em
                             class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"
-                          ></i>
+                          ></em>
                           Next Step
                         </button>
                       </div>
@@ -528,9 +528,9 @@ export default {
                           class="btn btn-light btn-label previestab"
                           data-previous="pills-bill-info-tab"
                         >
-                          <i
+                          <em
                             class="ri-arrow-left-line label-icon align-middle fs-16 me-2"
-                          ></i
+                          ></em
                           >Back to Personal Info
                         </button>
                         <button
@@ -538,9 +538,9 @@ export default {
                           class="btn btn-primary btn-label right ms-auto nexttab"
                           data-nexttab="pills-payment-tab"
                         >
-                          <i
+                          <em
                             class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"
-                          ></i
+                          ></em
                           >Next Step
                         </button>
                       </div>
@@ -606,39 +606,43 @@ export default {
                     </div>
                   </div>
 
-                  <DropZone @drop.prevent="drop" @change="selectedFile" class="mb-2" />
+                  <DropZone
+                    @drop.prevent="drop"
+                    @change="selectedFile"
+                    class="mb-2"
+                  />
                   <div class="vstack gap-2">
-                  <div
-                    class="border rounded"
-                    v-for="(file, index) of files"
-                    :key="index"
-                  >
-                    <div class="d-flex align-items-center p-2">
-                      <div class="flex-grow-1">
-                        <div class="pt-1">
-                          <h5 class="fs-14 mb-1" data-dz-name="">
-                            {{ file.name }}
-                          </h5>
-                          <p class="fs-13 text-muted mb-0" data-dz-size="">
-                            <strong>{{ file.size / 1024 }}</strong> KB
-                          </p>
-                          <strong
-                            class="error text-danger"
-                            data-dz-errormessage=""
-                          ></strong>
+                    <div
+                      class="border rounded"
+                      v-for="(file, index) of files"
+                      :key="index"
+                    >
+                      <div class="d-flex align-items-center p-2">
+                        <div class="flex-grow-1">
+                          <div class="pt-1">
+                            <h5 class="fs-14 mb-1" data-dz-name="">
+                              {{ file.name }}
+                            </h5>
+                            <p class="fs-13 text-muted mb-0" data-dz-size="">
+                              <strong>{{ file.size / 1024 }}</strong> KB
+                            </p>
+                            <strong
+                              class="error text-danger"
+                              data-dz-errormessage=""
+                            ></strong>
+                          </div>
+                        </div>
+                        <div class="flex-shrink-0 ms-3">
+                          <button
+                            data-dz-remove=""
+                            class="btn btn-sm btn-danger"
+                            @click="deleteRecord"
+                          >
+                            Delete
+                          </button>
                         </div>
                       </div>
-                      <div class="flex-shrink-0 ms-3">
-                        <button
-                          data-dz-remove=""
-                          class="btn btn-sm btn-danger"
-                          @click="deleteRecord"
-                        >
-                          Delete
-                        </button>
-                      </div>
                     </div>
-                  </div>
                   </div>
                   <!-- end dropzon-preview -->
                   <div class="d-flex align-items-start gap-3 mt-4">
@@ -647,9 +651,9 @@ export default {
                       class="btn btn-light btn-label previestab"
                       data-previous="pills-bill-address-tab"
                     >
-                      <i
+                      <em
                         class="ri-arrow-left-line label-icon align-middle fs-16 me-2"
-                      ></i
+                      ></em
                       >Back to Bank Details
                     </button>
                     <button
@@ -657,9 +661,9 @@ export default {
                       class="btn btn-primary btn-label right ms-auto nexttab"
                       data-nexttab="pills-finish-tab"
                     >
-                      <i
+                      <em
                         class="ri-save-line label-icon align-middle fs-16 ms-2"
-                      ></i
+                      ></em
                       >Submit
                     </button>
                   </div>
@@ -697,11 +701,11 @@ export default {
                           data-bs-dismiss="modal"
                         >
                           Done
-                          <i class="ri-thumb-up-fill align-bottom me-1"></i>
+                          <em class="ri-thumb-up-fill align-bottom me-1"></em>
                         </button>
                         <button type="button" class="btn btn-primary">
-                          <i class="ri-home-4-line align-bottom ms-1"></i> Back
-                          to Home
+                          <em class="ri-home-4-line align-bottom ms-1"></em>
+                          Back to Home
                         </button>
                       </div>
                     </div>

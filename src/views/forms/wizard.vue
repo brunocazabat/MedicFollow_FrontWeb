@@ -170,7 +170,7 @@ document.querySelectorAll(".form-steps").forEach(function (form) {
                                                     </div>
                                                     <div class="d-flex align-items-start gap-3 mt-4">
                                                         <button type="button" class="btn btn-success btn-label right ms-auto nexttab
-nexttab" data-nexttab="pills-info-desc-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to more info</button>
+nexttab" data-nexttab="pills-info-desc-tab"><em class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></em>Go to more info</button>
                                                     </div>  
                                                 </div>
                                                 <!-- end tab pane -->
@@ -184,7 +184,7 @@ nexttab" data-nexttab="pills-info-desc-tab"><i class="ri-arrow-right-line label-
                                                                     <input id="profile-img-file-input" type="file" class="profile-img-file-input" accept="image/png, image/jpeg">
                                                                     <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
                                                                         <span class="avatar-title rounded-circle bg-light text-body">
-                                                                            <i class="ri-camera-fill"></i>
+                                                                            <em class="ri-camera-fill"></em>
                                                                         </span>
                                                                     </label>
                                                                 </div>
@@ -198,9 +198,9 @@ nexttab" data-nexttab="pills-info-desc-tab"><i class="ri-arrow-right-line label-
                                                         </div>
                                                     </div>
                                                     <div class="d-flex align-items-start gap-3 mt-4">
-                                                        <button type="button" class="btn btn-link text-decoration-none btn-label previestab" data-previous="pills-gen-info-tab" ><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to General</button>
+                                                        <button type="button" class="btn btn-link text-decoration-none btn-label previestab" data-previous="pills-gen-info-tab" ><em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em> Back to General</button>
                                                         <button type="button" class="btn btn-success btn-label right ms-auto nexttab
-nexttab" data-nexttab="pills-success-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Submit</button>
+nexttab" data-nexttab="pills-success-tab"><em class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></em>Submit</button>
                                                     </div>
                                                 </div>
                                                 <!-- end tab pane -->
@@ -286,7 +286,7 @@ nexttab" data-nexttab="pills-success-tab"><i class="ri-arrow-right-line label-ic
                                                     </div>
                                                     <div class="d-flex align-items-start gap-3 mt-4">
                                                         <button type="button" class="btn btn-success btn-label right ms-auto nexttab
-nexttab" data-nexttab="steparrow-description-info-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to more info</button>
+nexttab" data-nexttab="steparrow-description-info-tab"><em class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></em>Go to more info</button>
                                                     </div>  
                                                 </div>
                                                 <!-- end tab pane -->
@@ -303,9 +303,9 @@ nexttab" data-nexttab="steparrow-description-info-tab"><i class="ri-arrow-right-
                                                         </div>
                                                     </div>
                                                     <div class="d-flex align-items-start gap-3 mt-4">
-                                                        <button type="button" class="btn btn-light btn-label previestab" data-previous="steparrow-gen-info-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to General</button>
+                                                        <button type="button" class="btn btn-light btn-label previestab" data-previous="steparrow-gen-info-tab"><em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em> Back to General</button>
                                                         <button type="button" class="btn btn-success btn-label right ms-auto nexttab
-nexttab" data-nexttab="pills-experience-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Submit</button>
+nexttab" data-nexttab="pills-experience-tab"><em class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></em>Submit</button>
                                                     </div>
                                                 </div>
                                                 <!-- end tab pane -->
@@ -315,7 +315,7 @@ nexttab" data-nexttab="pills-experience-tab"><i class="ri-arrow-right-line label
                                                             
                                                         <div class="avatar-md mt-5 mb-4 mx-auto">
                                                             <div class="avatar-title bg-light text-success display-4 rounded-circle">
-                                                                <i class="ri-checkbox-circle-fill"></i>
+                                                                <em class="ri-checkbox-circle-fill"></em>
                                                             </div>
                                                         </div>
                                                         <h5>Well Done !</h5>
@@ -347,28 +347,28 @@ nexttab" data-nexttab="pills-experience-tab"><i class="ri-arrow-right-line label
                                                     <div class="nav flex-column custom-nav nav-pills" role="tablist" aria-orientation="vertical">
                                                         <button class="nav-link done" id="v-pills-bill-info-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bill-info" type="button" role="tab" aria-controls="v-pills-bill-info" aria-selected="true">
                                                             <span class="step-title me-2">
-                                                                <i class="ri-close-circle-fill step-icon me-2"></i>
+                                                                <em class="ri-close-circle-fill step-icon me-2"></em>
                                                                 Step 1
                                                             </span>
                                                             Billing Info
                                                         </button>
                                                         <button class="nav-link active" id="v-pills-bill-address-tab" data-bs-toggle="pill" data-bs-target="#v-pills-bill-address" type="button" role="tab" aria-controls="v-pills-bill-address" aria-selected="false">
                                                             <span class="step-title me-2">
-                                                                <i class="ri-close-circle-fill step-icon me-2"></i>
+                                                                <em class="ri-close-circle-fill step-icon me-2"></em>
                                                                 Step 2
                                                             </span>
                                                             Address
                                                         </button>
                                                         <button class="nav-link" id="v-pills-payment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-payment" type="button" role="tab" aria-controls="v-pills-payment" aria-selected="false">
                                                             <span class="step-title me-2">
-                                                                <i class="ri-close-circle-fill step-icon me-2"></i>
+                                                                <em class="ri-close-circle-fill step-icon me-2"></em>
                                                                 Step 3
                                                             </span>
                                                             Payment
                                                         </button>
                                                         <button class="nav-link" id="v-pills-finish-tab" data-bs-toggle="pill" data-bs-target="#v-pills-finish" type="button" role="tab" aria-controls="v-pills-finish" aria-selected="false">
                                                             <span class="step-title me-2">
-                                                                <i class="ri-close-circle-fill step-icon me-2"></i>
+                                                                <em class="ri-close-circle-fill step-icon me-2"></em>
                                                                 Step 4
                                                             </span>
                                                             Finish
@@ -414,7 +414,7 @@ nexttab" data-nexttab="pills-experience-tab"><i class="ri-arrow-right-line label
 
                                                                 <div class="d-flex align-items-start gap-3 mt-4">
                                                                     <button type="button" class="btn btn-success btn-label right ms-auto nexttab
-nexttab" data-nexttab="v-pills-bill-address-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to Shipping</button>
+nexttab" data-nexttab="v-pills-bill-address-tab"><em class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></em>Go to Shipping</button>
                                                                 </div> 
                                                             </div>
                                                             <!-- end tab pane -->
@@ -471,9 +471,9 @@ nexttab" data-nexttab="v-pills-bill-address-tab"><i class="ri-arrow-right-line l
                                                                     </div>
                                                                 </div>
                                                                 <div class="d-flex align-items-start gap-3 mt-4">
-                                                                    <button type="button" class="btn btn-light btn-label previestab" data-previous="v-pills-bill-info-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to Billing Info</button>
+                                                                    <button type="button" class="btn btn-light btn-label previestab" data-previous="v-pills-bill-info-tab"><em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em> Back to Billing Info</button>
                                                                     <button type="button" class="btn btn-success btn-label right ms-auto nexttab
-nexttab" data-nexttab="v-pills-payment-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to Payment</button>
+nexttab" data-nexttab="v-pills-payment-tab"><em class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></em>Go to Payment</button>
                                                                 </div>
                                                             </div>
                                                             <!-- end tab pane -->
@@ -536,9 +536,9 @@ nexttab" data-nexttab="v-pills-payment-tab"><i class="ri-arrow-right-line label-
                                                                 </div>
 
                                                                 <div class="d-flex align-items-start gap-3 mt-4">
-                                                                    <button type="button" class="btn btn-light btn-label previestab" data-previous="v-pills-bill-address-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to Shipping Info</button>
+                                                                    <button type="button" class="btn btn-light btn-label previestab" data-previous="v-pills-bill-address-tab"><em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em> Back to Shipping Info</button>
                                                                     <button type="button" class="btn btn-success btn-label right ms-auto nexttab
-nexttab" data-nexttab="v-pills-finish-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i> Order Complete</button>
+nexttab" data-nexttab="v-pills-finish-tab"><em class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></em> Order Complete</button>
                                                                 </div>
                                                             </div>
                                                             <!-- end tab pane -->
@@ -566,7 +566,7 @@ nexttab" data-nexttab="v-pills-finish-tab"><i class="ri-arrow-right-line label-i
 
                                                 <div class="col-lg-3">
                                                     <div class="d-flex justify-content-between align-items-center mb-3">
-                                                        <h5 class="fs-14 text-primary mb-0"><i class="ri-shopping-cart-fill align-middle me-2"></i> Your cart</h5>
+                                                        <h5 class="fs-14 text-primary mb-0"><em class="ri-shopping-cart-fill align-middle me-2"></em> Your cart</h5>
                                                         <span class="badge bg-danger rounded-pill">3</span>
                                                     </div>
                                                     <ul class="list-group mb-3">

@@ -117,7 +117,7 @@ export default {
                 <ol class="breadcrumb p-3 py-2 bg-light mb-0">
                   <li class="breadcrumb-item">
                     <a href="#">
-                      <i class="ri-home-5-fill"></i>
+                      <em class="ri-home-5-fill"></em>
                     </a>
                   </li>
                   <li class="breadcrumb-item">
@@ -290,7 +290,7 @@ export default {
                       <ul class="pagination">
                         <li class="page-item disabled">
                           <span class="page-link">
-                            <i class="mdi mdi-chevron-left"></i>
+                            <em class="mdi mdi-chevron-left"></em>
                           </span>
                         </li>
                         <li class="page-item">
@@ -307,7 +307,7 @@ export default {
                         </li>
                         <li class="page-item">
                           <a class="page-link" href="#">
-                            <i class="mdi mdi-chevron-right"></i>
+                            <em class="mdi mdi-chevron-right"></em>
                           </a>
                         </li>
                       </ul>

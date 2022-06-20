@@ -1,11 +1,9 @@
 <script>
 export default {
   setup() {
-    return {
-   
-    };
-  },
-};
+    return {}
+  }
+}
 </script>
 
 <template>
@@ -22,7 +20,7 @@ export default {
             aria-expanded="false"
           >
             <span class="text-muted"
-              >All Tasks <i class="mdi mdi-chevron-down ms-1"></i
+              >All Tasks <em class="mdi mdi-chevron-down ms-1"></em
             ></span>
           </a>
           <div class="dropdown-menu dropdown-menu-end">

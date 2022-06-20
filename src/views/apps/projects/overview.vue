@@ -56,7 +56,7 @@ export default {
                                         <div>
                                             <h4 class="fw-bold">MedicFollow - Admin & Dashboard</h4>
                                             <div class="hstack gap-3 flex-wrap">
-                                                <div><i class="ri-building-line align-bottom me-1"></i> MedicFollow</div>
+                                                <div><em class="ri-building-line align-bottom me-1"></em> MedicFollow</div>
                                                 <div class="vr"></div>
                                                 <div>Create Date : <span class="fw-medium">15 Sep, 2021</span></div>
                                                 <div class="vr"></div>
@@ -72,13 +72,13 @@ export default {
                             <div class="col-md-auto">
                                 <div class="hstack gap-1 flex-wrap">
                                     <button type="button" class="btn py-0 fs-16 favourite-btn active shadow-none" >
-                                        <i class="ri-star-fill" @click="toggleFavourite"></i>
+                                        <em class="ri-star-fill" @click="toggleFavourite"></em>
                                     </button>
                                     <button type="button" class="btn py-0 fs-16 text-body shadow-none">
-                                        <i class="ri-share-line"></i>
+                                        <em class="ri-share-line"></em>
                                     </button>
                                     <button type="button" class="btn py-0 fs-16 text-body shadow-none">
-                                        <i class="ri-flag-line"></i>
+                                        <em class="ri-flag-line"></em>
                                     </button>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@ export default {
                                                             <div class="flex-shrink-0 me-3">
                                                                 <div class="avatar-sm">
                                                                     <div class="avatar-title bg-light text-secondary rounded fs-24 shadow shadow">
-                                                                        <i class="ri-folder-zip-line"></i>
+                                                                        <em class="ri-folder-zip-line"></em>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -192,14 +192,14 @@ export default {
                                                             </div>
                                                             <div class="flex-shrink-0 ms-2">
                                                                 <div class="d-flex gap-1">
-                                                                    <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none shadow-none"><i class="ri-download-2-line"></i></button>
+                                                                    <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none shadow-none"><em class="ri-download-2-line"></em></button>
                                                                     <div class="dropdown">
                                                                         <button class="btn btn-icon text-muted btn-sm fs-18 shadow-none dropdown shadow-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                            <i class="ri-more-fill"></i>
+                                                                            <em class="ri-more-fill"></em>
                                                                         </button>
                                                                         <ul class="dropdown-menu">
-                                                                            <li><a class="dropdown-item" href="#"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Rename</a></li>
-                                                                            <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete</a></li>
+                                                                            <li><a class="dropdown-item" href="#"><em class="ri-pencil-fill align-bottom me-2 text-muted"></em> Rename</a></li>
+                                                                            <li><a class="dropdown-item" href="#"><em class="ri-delete-bin-fill align-bottom me-2 text-muted"></em> Delete</a></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -214,7 +214,7 @@ export default {
                                                             <div class="flex-shrink-0 me-3">
                                                                 <div class="avatar-sm">
                                                                     <div class="avatar-title bg-light text-secondary rounded fs-24 shadow shadow">
-                                                                        <i class="ri-file-ppt-2-line"></i>
+                                                                        <em class="ri-file-ppt-2-line"></em>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -224,14 +224,14 @@ export default {
                                                             </div>
                                                             <div class="flex-shrink-0 ms-2">
                                                                 <div class="d-flex gap-1">
-                                                                    <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none shadow-none"><i class="ri-download-2-line"></i></button>
+                                                                    <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none shadow-none"><em class="ri-download-2-line"></em></button>
                                                                     <div class="dropdown">
                                                                         <button class="btn btn-icon text-muted btn-sm fs-18 shadow-none dropdown shadow-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                            <i class="ri-more-fill"></i>
+                                                                            <em class="ri-more-fill"></em>
                                                                         </button>
                                                                         <ul class="dropdown-menu">
-                                                                            <li><a class="dropdown-item" href="#"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Rename</a></li>
-                                                                            <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete</a></li>
+                                                                            <li><a class="dropdown-item" href="#"><em class="ri-pencil-fill align-bottom me-2 text-muted"></em> Rename</a></li>
+                                                                            <li><a class="dropdown-item" href="#"><em class="ri-delete-bin-fill align-bottom me-2 text-muted"></em> Delete</a></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -255,7 +255,7 @@ export default {
                                     <div class="flex-shrink-0">
                                         <div class="dropdown card-header-dropdown">
                                             <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span class="text-muted">Recent<i class="mdi mdi-chevron-down ms-1"></i></span>
+                                                <span class="text-muted">Recent<em class="mdi mdi-chevron-down ms-1"></em></span>
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-end">
                                                 <a class="dropdown-item" href="#">Recent</a>
@@ -276,7 +276,7 @@ export default {
                                             <div class="flex-grow-1 ms-3">
                                                 <h5 class="fs-13">Joseph Parker <small class="text-muted ms-2">20 Dec 2021 - 05:47AM</small></h5>
                                                 <p class="text-muted">I am getting message from customers that when they place order always get error message .</p>
-                                                <a href="javascript: void(0);" class="badge text-muted bg-light"><i class="mdi mdi-reply"></i> Reply</a>
+                                                <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                                 <div class="d-flex mt-4">
                                                     <div class="flex-shrink-0">
                                                         <img src="@/assets/images/users/avatar-10.jpg" alt="" class="avatar-xs rounded-circle" />
@@ -284,7 +284,7 @@ export default {
                                                     <div class="flex-grow-1 ms-3">
                                                         <h5 class="fs-13">Alexis Clarke <small class="text-muted ms-2">22 Dec 2021 - 02:32PM</small></h5>
                                                         <p class="text-muted">Please be sure to check your Spam mailbox to see if your email filters have identified the email from Dell as spam.</p>
-                                                        <a href="javascript: void(0);" class="badge text-muted bg-light"><i class="mdi mdi-reply"></i> Reply</a>
+                                                        <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -296,7 +296,7 @@ export default {
                                             <div class="flex-grow-1 ms-3">
                                                 <h5 class="fs-13">Donald Palmer <small class="text-muted ms-2">24 Dec 2021 - 05:20PM</small></h5>
                                                 <p class="text-muted">If you have further questions, please contact Customer Support from the “Action Menu” on your <a href="javascript:void(0);" class="text-decoration-underline">Online Order Support</a>.</p>
-                                                <a href="javascript: void(0);" class="badge text-muted bg-light"><i class="mdi mdi-reply"></i> Reply</a>
+                                                <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                             </div>
                                         </div>
                                         <div class="d-flex">
@@ -314,7 +314,7 @@ export default {
                                                         <img src="@/assets/images/small/img-5.jpg" alt="" class="img-fluid rounded">
                                                     </div>
                                                 </div>
-                                                <a href="javascript: void(0);" class="badge text-muted bg-light"><i class="mdi mdi-reply"></i> Reply</a>
+                                                <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                                 <div class="d-flex mt-4">
                                                     <div class="flex-shrink-0">
                                                         <img src="@/assets/images/users/avatar-6.jpg" alt="" class="avatar-xs rounded-circle" />
@@ -322,7 +322,7 @@ export default {
                                                     <div class="flex-grow-1 ms-3">
                                                         <h5 class="fs-13">Donald Palmer <small class="text-muted ms-2">8 sec ago</small></h5>
                                                         <p class="text-muted">Other shipping methods are available at checkout if you want your purchase delivered faster.</p>
-                                                        <a href="javascript: void(0);" class="badge text-muted bg-light"><i class="mdi mdi-reply"></i> Reply</a>
+                                                        <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -335,7 +335,7 @@ export default {
                                                 <textarea class="form-control bg-light border-light" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your comment..."></textarea>
                                             </div>
                                             <div class="col-12 text-end">
-                                                <button type="button" class="btn btn-ghost-secondary btn-icon waves-effect me-1 shadow-none"><i class="ri-attachment-line fs-16"></i></button>
+                                                <button type="button" class="btn btn-ghost-secondary btn-icon waves-effect me-1 shadow-none"><em class="ri-attachment-line fs-16"></em></button>
                                                 <a href="javascript:void(0);" class="btn btn-success">Post Comments</a>
                                             </div>
                                         </div>
@@ -368,7 +368,7 @@ export default {
                                 <div class="card-header align-items-center d-flex border-bottom-dashed">
                                     <h4 class="card-title mb-0 flex-grow-1">Members</h4>
                                     <div class="flex-shrink-0">
-                                        <button type="button" class="btn btn-soft-danger btn-sm shadow-none" data-bs-toggle="modal" data-bs-target="#inviteMembersModal"><i class="ri-share-line me-1 align-bottom"></i> Invite Member</button>
+                                        <button type="button" class="btn btn-soft-danger btn-sm shadow-none" data-bs-toggle="modal" data-bs-target="#inviteMembersModal"><em class="ri-share-line me-1 align-bottom"></em> Invite Member</button>
                                     </div>
                                 </div>
 
@@ -387,12 +387,12 @@ export default {
                                                         <button type="button" class="btn btn-light btn-sm">Message</button>
                                                         <div class="dropdown">
                                                             <button class="btn btn-icon btn-sm fs-16 text-muted dropdown shado shadow-nonew-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -413,12 +413,12 @@ export default {
                                                         <button type="button" class="btn btn-light btn-sm">Message</button>
                                                         <div class="dropdown">
                                                             <button class="btn btn-icon btn-sm fs-16 text-muted dropdown shado shadow-nonew-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -437,12 +437,12 @@ export default {
                                                         <button type="button" class="btn btn-light btn-sm">Message</button>
                                                         <div class="dropdown">
                                                             <button class="btn btn-icon btn-sm fs-16 text-muted dropdown shado shadow-nonew-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -461,12 +461,12 @@ export default {
                                                         <button type="button" class="btn btn-light btn-sm">Message</button>
                                                         <div class="dropdown">
                                                             <button class="btn btn-icon btn-sm fs-16 text-muted dropdown shadow-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -487,12 +487,12 @@ export default {
                                                         <button type="button" class="btn btn-light btn-sm">Message</button>
                                                         <div class="dropdown">
                                                             <button class="btn btn-icon btn-sm fs-16 text-muted dropdown shadow-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -511,12 +511,12 @@ export default {
                                                         <button type="button" class="btn btn-light btn-sm">Message</button>
                                                         <div class="dropdown">
                                                             <button class="btn btn-icon btn-sm fs-16 text-muted dropdown shadow-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -535,7 +535,7 @@ export default {
                                 <div class="card-header align-items-center d-flex border-bottom-dashed">
                                     <h4 class="card-title mb-0 flex-grow-1">Attachments</h4>
                                     <div class="flex-shrink-0">
-                                        <button type="button" class="btn btn-soft-info btn-sm shadow-none"><i class="ri-upload-2-fill me-1 align-bottom"></i> Upload</button>
+                                        <button type="button" class="btn btn-soft-info btn-sm shadow-none"><em class="ri-upload-2-fill me-1 align-bottom"></em> Upload</button>
                                     </div>
                                 </div>
 
@@ -547,7 +547,7 @@ export default {
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar-sm">
                                                         <div class="avatar-title bg-light text-secondary rounded fs-24 shadow shadow">
-                                                            <i class="ri-folder-zip-line"></i>
+                                                            <em class="ri-folder-zip-line"></em>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -557,14 +557,14 @@ export default {
                                                 </div>
                                                 <div class="flex-shrink-0 ms-2">
                                                     <div class="d-flex gap-1">
-                                                        <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none"><i class="ri-download-2-line"></i></button>
+                                                        <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none"><em class="ri-download-2-line"></em></button>
                                                         <div class="dropdown">
                                                             <button class="btn btn-icon text-muted btn-sm fs-18 shadow-none dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Rename</a></li>
-                                                                <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete</a></li>
+                                                                <li><a class="dropdown-item" href="#"><em class="ri-pencil-fill align-bottom me-2 text-muted"></em> Rename</a></li>
+                                                                <li><a class="dropdown-item" href="#"><em class="ri-delete-bin-fill align-bottom me-2 text-muted"></em> Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -577,7 +577,7 @@ export default {
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar-sm">
                                                         <div class="avatar-title bg-light text-secondary rounded fs-24 shadow">
-                                                            <i class="ri-file-ppt-2-line"></i>
+                                                            <em class="ri-file-ppt-2-line"></em>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -587,14 +587,14 @@ export default {
                                                 </div>
                                                 <div class="flex-shrink-0 ms-2">
                                                     <div class="d-flex gap-1">
-                                                        <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none"><i class="ri-download-2-line"></i></button>
+                                                        <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none"><em class="ri-download-2-line"></em></button>
                                                         <div class="dropdown">
                                                             <button class="btn btn-icon text-muted btn-sm fs-18 shadow-none dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Rename</a></li>
-                                                                <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete</a></li>
+                                                                <li><a class="dropdown-item" href="#"><em class="ri-pencil-fill align-bottom me-2 text-muted"></em> Rename</a></li>
+                                                                <li><a class="dropdown-item" href="#"><em class="ri-delete-bin-fill align-bottom me-2 text-muted"></em> Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -607,7 +607,7 @@ export default {
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar-sm">
                                                         <div class="avatar-title bg-light text-secondary rounded fs-24 shadow">
-                                                            <i class="ri-folder-zip-line"></i>
+                                                            <em class="ri-folder-zip-line"></em>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -617,14 +617,14 @@ export default {
                                                 </div>
                                                 <div class="flex-shrink-0 ms-2">
                                                     <div class="d-flex gap-1">
-                                                        <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none"><i class="ri-download-2-line"></i></button>
+                                                        <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none"><em class="ri-download-2-line"></em></button>
                                                         <div class="dropdown">
                                                             <button class="btn btn-icon text-muted btn-sm fs-18 shadow-none dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Rename</a></li>
-                                                                <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete</a></li>
+                                                                <li><a class="dropdown-item" href="#"><em class="ri-pencil-fill align-bottom me-2 text-muted"></em> Rename</a></li>
+                                                                <li><a class="dropdown-item" href="#"><em class="ri-delete-bin-fill align-bottom me-2 text-muted"></em> Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -637,7 +637,7 @@ export default {
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar-sm">
                                                         <div class="avatar-title bg-light text-secondary rounded fs-24 shadow">
-                                                            <i class="ri-image-2-line"></i>
+                                                            <em class="ri-image-2-line"></em>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -647,14 +647,14 @@ export default {
                                                 </div>
                                                 <div class="flex-shrink-0 ms-2">
                                                     <div class="d-flex gap-1">
-                                                        <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none"><i class="ri-download-2-line"></i></button>
+                                                        <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none"><em class="ri-download-2-line"></em></button>
                                                         <div class="dropdown">
                                                             <button class="btn btn-icon text-muted btn-sm fs-18 shadow-none dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </button>
                                                             <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#"><i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Rename</a></li>
-                                                                <li><a class="dropdown-item" href="#"><i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete</a></li>
+                                                                <li><a class="dropdown-item" href="#"><em class="ri-pencil-fill align-bottom me-2 text-muted"></em> Rename</a></li>
+                                                                <li><a class="dropdown-item" href="#"><em class="ri-delete-bin-fill align-bottom me-2 text-muted"></em> Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -701,7 +701,7 @@ export default {
                                                         <div class="d-flex align-items-center">
                                                             <div class="avatar-sm">
                                                                 <div class="avatar-title bg-light text-secondary rounded fs-24 shadow">
-                                                                    <i class="ri-folder-zip-line"></i>
+                                                                    <em class="ri-folder-zip-line"></em>
                                                                 </div>
                                                             </div>
                                                             <div class="ms-3 flex-grow-1">
@@ -715,13 +715,13 @@ export default {
                                                     <td>
                                                         <div class="dropdown">
                                                             <a href="javascript:void(0);" class="btn btn-soft-secondary btn-sm btn-icon shadow-none" data-bs-toggle="dropdown" aria-expanded="true">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-bottom text-muted"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-bottom text-muted"></i>Download</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill me-2 align-bottom text-muted"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-download-2-fill me-2 align-bottom text-muted"></em>Download</a></li>
                                                                 <li class="dropdown-divider"></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -731,7 +731,7 @@ export default {
                                                         <div class="d-flex align-items-center">
                                                             <div class="avatar-sm">
                                                                 <div class="avatar-title bg-light text-danger rounded fs-24">
-                                                                    <i class="ri-file-pdf-fill"></i>
+                                                                    <em class="ri-file-pdf-fill"></em>
                                                                 </div>
                                                             </div>
                                                             <div class="ms-3 flex-grow-1">
@@ -745,13 +745,13 @@ export default {
                                                     <td>
                                                         <div class="dropdown">
                                                             <a href="javascript:void(0);" class="btn btn-soft-secondary btn-sm btn-icon shadow-none" data-bs-toggle="dropdown" aria-expanded="true">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-bottom text-muted"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-bottom text-muted"></i>Download</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill me-2 align-bottom text-muted"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-download-2-fill me-2 align-bottom text-muted"></em>Download</a></li>
                                                                 <li class="dropdown-divider"></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -761,7 +761,7 @@ export default {
                                                         <div class="d-flex align-items-center">
                                                             <div class="avatar-sm">
                                                                 <div class="avatar-title bg-light text-secondary rounded fs-24 shadow">
-                                                                    <i class="ri-video-line"></i>
+                                                                    <em class="ri-video-line"></em>
                                                                 </div>
                                                             </div>
                                                             <div class="ms-3 flex-grow-1">
@@ -775,13 +775,13 @@ export default {
                                                     <td>
                                                         <div class="dropdown">
                                                             <a href="javascript:void(0);" class="btn btn-soft-secondary btn-sm btn-icon shadow-none" data-bs-toggle="dropdown" aria-expanded="true">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-bottom text-muted"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-bottom text-muted"></i>Download</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill me-2 align-bottom text-muted"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-download-2-fill me-2 align-bottom text-muted"></em>Download</a></li>
                                                                 <li class="dropdown-divider"></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -791,7 +791,7 @@ export default {
                                                         <div class="d-flex align-items-center">
                                                             <div class="avatar-sm">
                                                                 <div class="avatar-title bg-light text-success rounded fs-24">
-                                                                    <i class="ri-file-excel-fill"></i>
+                                                                    <em class="ri-file-excel-fill"></em>
                                                                 </div>
                                                             </div>
                                                             <div class="ms-3 flex-grow-1">
@@ -805,13 +805,13 @@ export default {
                                                     <td>
                                                         <div class="dropdown">
                                                             <a href="javascript:void(0);" class="btn btn-soft-secondary btn-sm btn-icon shadow-none" data-bs-toggle="dropdown" aria-expanded="true">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-bottom text-muted"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-bottom text-muted"></i>Download</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill me-2 align-bottom text-muted"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-download-2-fill me-2 align-bottom text-muted"></em>Download</a></li>
                                                                 <li class="dropdown-divider"></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -821,7 +821,7 @@ export default {
                                                         <div class="d-flex align-items-center">
                                                             <div class="avatar-sm">
                                                                 <div class="avatar-title bg-light text-warning rounded fs-24">
-                                                                    <i class="ri-folder-fill"></i>
+                                                                    <em class="ri-folder-fill"></em>
                                                                 </div>
                                                             </div>
                                                             <div class="ms-3 flex-grow-1">
@@ -835,13 +835,13 @@ export default {
                                                     <td>
                                                         <div class="dropdown">
                                                             <a href="javascript:void(0);" class="btn btn-soft-secondary btn-sm btn-icon shadow-none" data-bs-toggle="dropdown" aria-expanded="true">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-bottom text-muted"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-bottom text-muted"></i>Download</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill me-2 align-bottom text-muted"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-download-2-fill me-2 align-bottom text-muted"></em>Download</a></li>
                                                                 <li class="dropdown-divider"></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -851,7 +851,7 @@ export default {
                                                         <div class="d-flex align-items-center">
                                                             <div class="avatar-sm">
                                                                 <div class="avatar-title bg-light text-danger rounded fs-24">
-                                                                    <i class="ri-image-2-fill"></i>
+                                                                    <em class="ri-image-2-fill"></em>
                                                                 </div>
                                                             </div>
                                                             <div class="ms-3 flex-grow-1">
@@ -865,13 +865,13 @@ export default {
                                                     <td>
                                                         <div class="dropdown">
                                                             <a href="javascript:void(0);" class="btn btn-soft-secondary btn-sm btn-icon shadow-none" data-bs-toggle="dropdown" aria-expanded="true">
-                                                                <i class="ri-more-fill"></i>
+                                                                <em class="ri-more-fill"></em>
                                                             </a>
                                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill me-2 align-bottom text-muted"></i>View</a></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-download-2-fill me-2 align-bottom text-muted"></i>Download</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill me-2 align-bottom text-muted"></em>View</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-download-2-fill me-2 align-bottom text-muted"></em>Download</a></li>
                                                                 <li class="dropdown-divider"></li>
-                                                                <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></i>Delete</a></li>
+                                                                <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill me-2 align-bottom text-muted"></em>Delete</a></li>
                                                             </ul>
                                                         </div>
                                                     </td>
@@ -880,7 +880,7 @@ export default {
                                         </table>
                                     </div>
                                     <div class="text-center mt-3">
-                                        <a href="javascript:void(0);" class="text-success "><i class="mdi mdi-loading mdi-spin fs-20 align-middle me-2"></i> Load more </a>
+                                        <a href="javascript:void(0);" class="text-success "><em class="mdi mdi-loading mdi-spin fs-20 align-middle me-2"></em> Load more </a>
                                     </div>
                                 </div>
                             </div>
@@ -911,7 +911,7 @@ export default {
                                     </div>
                                     <div class="flex-grow-1 ms-3">
                                         <h6 class="mb-1">Nancy Martino <span class="badge bg-soft-secondary text-secondary align-middle">In Progress</span></h6>
-                                        <p class="text-muted mb-2"><i class="ri-file-text-line align-middle ms-2"></i> Create new project Buildng product</p>
+                                        <p class="text-muted mb-2"><em class="ri-file-text-line align-middle ms-2"></em> Create new project Buildng product</p>
                                         <div class="avatar-group mb-2">
                                             <a href="javascript: void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Christi">
                                                 <img src="@/assets/images/users/avatar-4.jpg" alt="" class="rounded-circle avatar-xs" />
@@ -976,7 +976,7 @@ export default {
                                     <div class="flex-shrink-0">
                                         <div class="avatar-xs acitivity-avatar">
                                             <div class="avatar-title rounded-circle bg-soft-danger text-danger">
-                                                <i class="ri-shopping-bag-line"></i>
+                                                <em class="ri-shopping-bag-line"></em>
                                             </div>
                                         </div>
                                     </div>
@@ -1000,7 +1000,7 @@ export default {
                                     <div class="flex-shrink-0">
                                         <div class="avatar-xs acitivity-avatar">
                                             <div class="avatar-title rounded-circle bg-soft-info text-info shadow">
-                                                <i class="ri-line-chart-line"></i>
+                                                <em class="ri-line-chart-line"></em>
                                             </div>
                                         </div>
                                     </div>
@@ -1031,13 +1031,13 @@ export default {
                             <div class="d-flex">
                                 <div class="search-box me-2">
                                     <input type="text" class="form-control" placeholder="Search member...">
-                                    <i class="ri-search-line search-icon"></i>
+                                    <em class="ri-search-line search-icon"></em>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-auto">
                             <div>
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#inviteMembersModal"><i class="ri-share-line me-1 align-bottom"></i> Invite Member</button>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#inviteMembersModal"><em class="ri-share-line me-1 align-bottom"></em> Invite Member</button>
                             </div>
                         </div>
                     </div>
@@ -1052,18 +1052,18 @@ export default {
                                             <div class="col">
                                                 <div class="flex-shrink-0 me-2">
                                                     <button type="button" class="btn fs-16 p-0 favourite-btn shadow-none ">
-                                                        <i class="ri-star-fill"></i>
+                                                        <em class="ri-star-fill"></em>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="col text-end dropdown">
                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="ri-more-fill fs-17"></i>
+                                                    <em class="ri-more-fill fs-17"></em>
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1107,18 +1107,18 @@ export default {
                                             <div class="col">
                                                 <div class="flex-shrink-0 me-2">
                                                     <button type="button" class="btn fs-16 p-0 favourite-btn shadow-none active">
-                                                        <i class="ri-star-fill"></i>
+                                                        <em class="ri-star-fill"></em>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="col text-end dropdown">
                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="ri-more-fill fs-17"></i>
+                                                    <em class="ri-more-fill fs-17"></em>
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1164,18 +1164,18 @@ export default {
                                             <div class="col">
                                                 <div class="flex-shrink-0 me-2">
                                                     <button type="button" class="btn fs-16 p-0 favourite-btn shadow-none active">
-                                                        <i class="ri-star-fill"></i>
+                                                        <em class="ri-star-fill"></em>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="col text-end dropdown">
                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="ri-more-fill fs-17"></i>
+                                                    <em class="ri-more-fill fs-17"></em>
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1219,18 +1219,18 @@ export default {
                                             <div class="col">
                                                 <div class="flex-shrink-0 me-2">
                                                     <button type="button" class="btn fs-16 p-0 favourite-btn shadow-none">
-                                                        <i class="ri-star-fill"></i>
+                                                        <em class="ri-star-fill"></em>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="col text-end dropdown">
                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="ri-more-fill fs-17"></i>
+                                                    <em class="ri-more-fill fs-17"></em>
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1274,18 +1274,18 @@ export default {
                                             <div class="col">
                                                 <div class="flex-shrink-0 me-2">
                                                     <button type="button" class="btn fs-16 p-0 favourite-btn shadow-none">
-                                                        <i class="ri-star-fill"></i>
+                                                        <em class="ri-star-fill"></em>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="col text-end dropdown">
                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="ri-more-fill fs-17"></i>
+                                                    <em class="ri-more-fill fs-17"></em>
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1331,18 +1331,18 @@ export default {
                                             <div class="col">
                                                 <div class="flex-shrink-0 me-2">
                                                     <button type="button" class="btn fs-16 p-0 favourite-btn shadow-none">
-                                                        <i class="ri-star-fill"></i>
+                                                        <em class="ri-star-fill"></em>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="col text-end dropdown">
                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="ri-more-fill fs-17"></i>
+                                                    <em class="ri-more-fill fs-17"></em>
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1386,18 +1386,18 @@ export default {
                                             <div class="col">
                                                 <div class="flex-shrink-0 me-2">
                                                     <button type="button" class="btn fs-16 p-0 favourite-btn shadow-none">
-                                                        <i class="ri-star-fill"></i>
+                                                        <em class="ri-star-fill"></em>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="col text-end dropdown">
                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="ri-more-fill fs-17"></i>
+                                                    <em class="ri-more-fill fs-17"></em>
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1443,18 +1443,18 @@ export default {
                                             <div class="col">
                                                 <div class="flex-shrink-0 me-2">
                                                     <button type="button" class="btn fs-16 p-0 favourite-btn shadow-none">
-                                                        <i class="ri-star-fill"></i>
+                                                        <em class="ri-star-fill"></em>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="col text-end dropdown">
                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="ri-more-fill fs-17"></i>
+                                                    <em class="ri-more-fill fs-17"></em>
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1498,18 +1498,18 @@ export default {
                                             <div class="col">
                                                 <div class="flex-shrink-0 me-2">
                                                     <button type="button" class="btn fs-16 p-0 favourite-btn shadow-none">
-                                                        <i class="ri-star-fill"></i>
+                                                        <em class="ri-star-fill"></em>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="col text-end dropdown">
                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="ri-more-fill fs-17"></i>
+                                                    <em class="ri-more-fill fs-17"></em>
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1553,18 +1553,18 @@ export default {
                                             <div class="col">
                                                 <div class="flex-shrink-0 me-2">
                                                     <button type="button" class="btn fs-16 p-0 favourite-btn shadow-none">
-                                                        <i class="ri-star-fill"></i>
+                                                        <em class="ri-star-fill"></em>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="col text-end dropdown">
                                                 <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="ri-more-fill fs-17"></i>
+                                                    <em class="ri-more-fill fs-17"></em>
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-eye-fill text-muted me-2 align-bottom"></i>View</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-star-fill text-muted me-2 align-bottom"></i>Favourite</a></li>
-                                                    <li><a class="dropdown-item" href="javascript:void(0);"><i class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></i>Delete</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-eye-fill text-muted me-2 align-bottom"></em>View</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-star-fill text-muted me-2 align-bottom"></em>Favourite</a></li>
+                                                    <li><a class="dropdown-item" href="javascript:void(0);"><em class="ri-delete-bin-5-fill text-muted me-2 align-bottom"></em>Delete</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1613,13 +1613,13 @@ export default {
                         </div> <!-- end col -->
                         <div class="col-sm-6">
                             <ul class="pagination pagination-separated justify-content-center justify-content-sm-end mb-sm-0">
-                                <li class="page-item disabled"> <a href="#" class="page-link"><i class="mdi mdi-chevron-left"></i></a> </li>
+                                <li class="page-item disabled"> <a href="#" class="page-link"><em class="mdi mdi-chevron-left"></em></a> </li>
                                 <li class="page-item"> <a href="#" class="page-link">1</a> </li>
                                 <li class="page-item active"> <a href="#" class="page-link">2</a> </li>
                                 <li class="page-item"> <a href="#" class="page-link">3</a> </li>
                                 <li class="page-item"> <a href="#" class="page-link">4</a> </li>
                                 <li class="page-item"> <a href="#" class="page-link">5</a> </li>
-                                <li class="page-item"> <a href="#" class="page-link"><i class="mdi mdi-chevron-right"></i></a> </li>
+                                <li class="page-item"> <a href="#" class="page-link"><em class="mdi mdi-chevron-right"></em></a> </li>
                             </ul>
                         </div><!-- end col -->
                     </div><!-- end row -->

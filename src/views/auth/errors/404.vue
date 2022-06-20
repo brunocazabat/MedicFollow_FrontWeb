@@ -35,7 +35,7 @@ export default {
                                         <h1 class="text-primary mb-4">Oops !</h1>
                                         <h4 class="text-uppercase">Sorry, Page not Found 😭</h4>
                                         <p class="text-muted mb-4">The page you are looking for not available!</p>
-                                        <router-link to="/" class="btn btn-success"><i class="mdi mdi-home me-1"></i>Back to home</router-link>
+                                        <router-link to="/" class="btn btn-success"><em class="mdi mdi-home me-1"></em>Back to home</router-link>
                                     </div>
                                 </div>
                             </div>

@@ -5,58 +5,58 @@ export default {
       dealsStatus: [
         {
           id: 1,
-          name: "Absternet LLC",
-          date: "Sep 20, 2021",
-          img: require("@/assets/images/users/avatar-1.jpg"),
-          representativeName: "Donald Risher",
-          badgeClass: "success",
-          status: "Deal Won",
-          statusValue: "$100.1K",
+          name: 'Absternet LLC',
+          date: 'Sep 20, 2021',
+          img: require('@/assets/images/users/avatar-1.jpg'),
+          representativeName: 'Donald Risher',
+          badgeClass: 'success',
+          status: 'Deal Won',
+          statusValue: '$100.1K'
         },
         {
           id: 2,
-          name: "Raitech Soft",
-          date: "Sep 23, 2021",
-          img: require("@/assets/images/users/avatar-2.jpg"),
-          representativeName: "Sofia Cunha",
-          badgeClass: "warning",
-          status: "Intro Call",
-          statusValue: "$150K",
+          name: 'Raitech Soft',
+          date: 'Sep 23, 2021',
+          img: require('@/assets/images/users/avatar-2.jpg'),
+          representativeName: 'Sofia Cunha',
+          badgeClass: 'warning',
+          status: 'Intro Call',
+          statusValue: '$150K'
         },
         {
           id: 3,
-          name: "William PVT",
-          date: "Sep 27, 2021",
-          img: require("@/assets/images/users/avatar-3.jpg"),
-          representativeName: "Luis Rocha",
-          badgeClass: "danger",
-          status: "Stuck",
-          statusValue: "$78.18K",
+          name: 'William PVT',
+          date: 'Sep 27, 2021',
+          img: require('@/assets/images/users/avatar-3.jpg'),
+          representativeName: 'Luis Rocha',
+          badgeClass: 'danger',
+          status: 'Stuck',
+          statusValue: '$78.18K'
         },
         {
           id: 4,
-          name: "Loiusee LLP",
-          date: "Sep 30, 2021",
-          img: require("@/assets/images/users/avatar-4.jpg"),
-          representativeName: "Vitoria Rodrigues",
-          badgeClass: "success",
-          status: "Deal Won",
-          statusValue: "$180K",
+          name: 'Loiusee LLP',
+          date: 'Sep 30, 2021',
+          img: require('@/assets/images/users/avatar-4.jpg'),
+          representativeName: 'Vitoria Rodrigues',
+          badgeClass: 'success',
+          status: 'Deal Won',
+          statusValue: '$180K'
         },
         {
           id: 5,
-          name: "Apple Inc.",
-          date: "Sep 30, 2021",
-          img: require("@/assets/images/users/avatar-6.jpg"),
-          representativeName: "Vitoria Rodrigues",
-          badgeClass: "info",
-          status: "New Lead",
-          statusValue: "$78.9K",
-        },
-      ],
-    };
-  },
-};
+          name: 'Apple Inc.',
+          date: 'Sep 30, 2021',
+          img: require('@/assets/images/users/avatar-6.jpg'),
+          representativeName: 'Vitoria Rodrigues',
+          badgeClass: 'info',
+          status: 'New Lead',
+          statusValue: '$78.9K'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <template>
@@ -73,9 +73,9 @@ export default {
             aria-expanded="false"
           >
             <span class="text-muted"
-              >02 Nov 2021 to 31 Dec 2021<i
+              >02 Nov 2021 to 31 Dec 2021<em
                 class="mdi mdi-chevron-down ms-1"
-              ></i
+              ></em
             ></span>
           </a>
           <div class="dropdown-menu dropdown-menu-end">
@@ -105,23 +105,27 @@ export default {
           </thead>
 
           <tbody>
-            <tr v-for="(item, index) of dealsStatus" :key="index"> 
-              <td>{{item.name}}</td>
-              <td>{{item.date}}</td>
+            <tr v-for="(item, index) of dealsStatus" :key="index">
+              <td>{{ item.name }}</td>
+              <td>{{ item.date }}</td>
               <td>
                 <img
                   :src="`${item.img}`"
                   alt=""
                   class="avatar-xs rounded-circle me-2 shadow"
                 />
-                <a href="#javascript: void(0);" class="text-body fw-medium"
-                  >{{item.representativeName}}</a
-                >
+                <a href="#javascript: void(0);" class="text-body fw-medium">{{
+                  item.representativeName
+                }}</a>
               </td>
               <td>
-                <span :class="'badge badge-soft-'+item.badgeClass+' p-2'">{{item.status}}</span>
+                <span :class="'badge badge-soft-' + item.badgeClass + ' p-2'">{{
+                  item.status
+                }}</span>
               </td>
-              <td><div class="text-nowrap">{{item.statusValue}}</div></td>
+              <td>
+                <div class="text-nowrap">{{ item.statusValue }}</div>
+              </td>
             </tr>
           </tbody>
           <!-- end tbody -->

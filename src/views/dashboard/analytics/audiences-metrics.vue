@@ -145,7 +145,7 @@
           <div class="p-3 border border-dashed border-start-0">
             <h5 class="mb-1">
               <count-to :startVal='0' :endVal='854' :duration='5000'></count-to>
-              <span class="text-success ms-1 fs-12">49%<i class="ri-arrow-right-up-line ms-1 align-middle"></i></span>
+              <span class="text-success ms-1 fs-12">49%<em class="ri-arrow-right-up-line ms-1 align-middle"></em></span>
             </h5>
             <p class="text-muted mb-0">Avg. Session</p>
           </div>
@@ -155,7 +155,7 @@
           <div class="p-3 border border-dashed border-start-0">
             <h5 class="mb-1">
               <count-to :startVal='0' :endVal='1278' :duration='4000'></count-to>
-              <span class="text-success ms-1 fs-12">60%<i class="ri-arrow-right-up-line ms-1 align-middle"></i></span>
+              <span class="text-success ms-1 fs-12">60%<em class="ri-arrow-right-up-line ms-1 align-middle"></em></span>
             </h5>
             <p class="text-muted mb-0">Conversion Rate</p>
           </div>
@@ -166,7 +166,7 @@
             <h5 class="mb-1">
               <count-to :startVal='0' :endVal='3' :duration='4000'></count-to>m
               <count-to :startVal='0' :endVal='40' :duration='4000'></count-to>sec
-              <span class="text-success ms-1 fs-12">37%<i class="ri-arrow-right-up-line ms-1 align-middle"></i></span>
+              <span class="text-success ms-1 fs-12">37%<em class="ri-arrow-right-up-line ms-1 align-middle"></em></span>
             </h5>
             <p class="text-muted mb-0">Avg. Session Duration</p>
           </div>

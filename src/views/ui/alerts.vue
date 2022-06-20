@@ -1,50 +1,50 @@
 <script>
-import Layout from "../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
+import Layout from '../../layouts/main.vue'
+import PageHeader from '@/components/page-header'
 
-import "prismjs";
-import "prismjs/themes/prism.css";
+import 'prismjs'
+import 'prismjs/themes/prism.css'
 
 export default {
   data() {
     return {
-      title: "Alerts",
+      title: 'Alerts',
       items: [
         {
-          text: "Base UI",
-          href: "/",
+          text: 'Base UI',
+          href: '/'
         },
         {
-          text: "Alerts",
-          active: true,
-        },
-      ],
-    };
+          text: 'Alerts',
+          active: true
+        }
+      ]
+    }
   },
   components: {
     Layout,
-    PageHeader,
+    PageHeader
   },
   mounted() {
-    const checkbox = document.getElementsByClassName("code-switcher");
+    const checkbox = document.getElementsByClassName('code-switcher')
     Array.from(checkbox).forEach((check) => {
-      check.addEventListener("change", () => {
-        const card = check.closest(".card");
-        const preview = card.querySelector(".live-preview");
-        const code = card.querySelector(".code-view");
+      check.addEventListener('change', () => {
+        const card = check.closest('.card')
+        const preview = card.querySelector('.live-preview')
+        const code = card.querySelector('.code-view')
         if (check.checked) {
           // do this
-          preview.classList.add("d-none");
-          code.classList.remove("d-none");
+          preview.classList.add('d-none')
+          code.classList.remove('d-none')
         } else {
           // do that
-          preview.classList.remove("d-none");
-          code.classList.add("d-none");
+          preview.classList.remove('d-none')
+          code.classList.add('d-none')
         }
-      });
-    });
-  },
-};
+      })
+    })
+  }
+}
 </script>
 
 <template>
@@ -263,7 +263,10 @@ export default {
                   </div>
 
                   <h6>Info Alert</h6>
-                  <div class="alert alert-info alert-borderless shadow" role="alert">
+                  <div
+                    class="alert alert-info alert-borderless shadow"
+                    role="alert"
+                  >
                     <strong>Don't forget' it !</strong> A simple
                     <b>info alert</b> —check it out!
                   </div>
@@ -362,16 +365,18 @@ export default {
           <div class="card-body">
             <p class="text-muted">
               Use the
-              <code>dismissible</code> to <code>b-alert</code> to add dismissing button to
-              the alert.
+              <code>dismissible</code> to <code>b-alert</code> to add dismissing
+              button to the alert.
             </p>
             <div class="live-preview">
               <div class="row">
                 <div class="col-xl-6">
                   <h6>Primary Alert</h6>
-  <b-alert  show dismissible>  <strong>Hi!</strong> A simple
+                  <b-alert show dismissible>
+                    <strong>Hi!</strong> A simple
                     <b>Dismissible primary Alert</b>
-                    — check it out! </b-alert>
+                    — check it out!
+                  </b-alert>
 
                   <div
                     class="alert alert-primary alert-dismissible fade show shadow"
@@ -926,7 +931,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-primary alert-border-left alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-user-smile-line me-3 align-middle fs-16"></i>
+                    <em class="ri-user-smile-line me-3 align-middle fs-16"></em>
                     <strong>Primary</strong>
                     - Left border alert
                     <button
@@ -942,7 +947,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-secondary alert-border-left alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-check-double-line me-3 align-middle fs-16"></i>
+                    <em
+                      class="ri-check-double-line me-3 align-middle fs-16"
+                    ></em>
                     <strong>Secondary</strong>
                     - Left border alert
                     <button
@@ -958,9 +965,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-success alert-border-left alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i
+                    <em
                       class="ri-notification-off-line me-3 align-middle fs-16"
-                    ></i>
+                    ></em>
                     <strong>Success</strong>
                     - Left border alert
                     <button
@@ -976,9 +983,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-danger alert-border-left alert-dismissible fade show mb-xl-0 shadow"
                     role="alert"
                   >
-                    <i
+                    <em
                       class="ri-error-warning-line me-3 align-middle fs-16"
-                    ></i>
+                    ></em>
                     <strong>Danger</strong>
                     - Left border alert
                     <button
@@ -996,7 +1003,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-warning alert-border-left alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-alert-line me-3 align-middle fs-16"></i>
+                    <em class="ri-alert-line me-3 align-middle fs-16"></em>
                     <strong>Warning</strong>
                     - Left border alert
                     <button
@@ -1012,7 +1019,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-info alert-border-left alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-airplay-line me-3 align-middle fs-16"></i>
+                    <em class="ri-airplay-line me-3 align-middle fs-16"></em>
                     <strong>Info</strong>
                     - Left border alert
                     <button
@@ -1028,7 +1035,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-light alert-border-left alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-mail-line me-3 align-middle fs-16"></i>
+                    <em class="ri-mail-line me-3 align-middle fs-16"></em>
                     <strong>Light</strong>
                     - Left border alert
                     <button
@@ -1044,7 +1051,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-dark alert-border-left alert-dismissible fade show mb-0 shadow"
                     role="alert"
                   >
-                    <i class="ri-refresh-line me-3 align-middle fs-16"></i>
+                    <em class="ri-refresh-line me-3 align-middle fs-16"></em>
                     <strong>Dark</strong>
                     - Left border alert
                     <button
@@ -1150,7 +1157,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-primary alert-dismissible alert-solid alert-label-icon fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-user-smile-line label-icon"></i>
+                    <em class="ri-user-smile-line label-icon"></em>
                     <strong>Primary</strong> - Label icon alert
                     <button
                       type="button"
@@ -1165,7 +1172,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-secondary alert-dismissible alert-solid alert-label-icon fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-check-double-line label-icon"></i>
+                    <em class="ri-check-double-line label-icon"></em>
                     <strong>Secondary</strong>
                     - Label icon alert
                     <button
@@ -1181,7 +1188,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-success alert-dismissible alert-solid alert-label-icon fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-notification-off-line label-icon"></i>
+                    <em class="ri-notification-off-line label-icon"></em>
                     <strong>Success</strong>
                     - Label icon alert
                     <button
@@ -1197,7 +1204,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-danger alert-dismissible alert-solid alert-label-icon fade show mb-xl-0 shadow"
                     role="alert"
                   >
-                    <i class="ri-error-warning-line label-icon"></i>
+                    <em class="ri-error-warning-line label-icon"></em>
                     <strong>Danger</strong>
                     - Label icon alert
                     <button
@@ -1215,7 +1222,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-warning alert-dismissible alert-solid alert-label-icon fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-alert-line label-icon"></i>
+                    <em class="ri-alert-line label-icon"></em>
                     <strong>warning</strong> - Label icon alert
                     <button
                       type="button"
@@ -1230,7 +1237,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-info alert-dismissible alert-solid alert-label-icon fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-airplay-line label-icon"></i>
+                    <em class="ri-airplay-line label-icon"></em>
                     <strong>Info</strong> - Label icon alert
                     <button
                       type="button"
@@ -1245,7 +1252,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-light alert-dismissible alert-solid alert-label-icon fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-mail-line label-icon"></i>
+                    <em class="ri-mail-line label-icon"></em>
                     <strong>Light</strong> - Label icon alert
                     <button
                       type="button"
@@ -1260,7 +1267,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-dark alert-dismissible alert-solid alert-label-icon fade show mb-0 shadow"
                     role="alert"
                   >
-                    <i class="ri-refresh-line label-icon"></i>
+                    <em class="ri-refresh-line label-icon"></em>
                     <strong>Dark</strong> - Label icon alert
                     <button
                       type="button"
@@ -1377,9 +1384,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                       ></button>
                       <div class="d-flex">
                         <div class="flex-shrink-0 me-3">
-                          <i
+                          <em
                             class="ri-error-warning-line fs-16 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">
                           <h5 class="alert-heading">Well done !</h5>
@@ -1412,7 +1419,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                       ></button>
                       <div class="d-flex">
                         <div class="flex-shrink-0 me-3">
-                          <i class="ri-alert-line fs-16 align-middle"></i>
+                          <em class="ri-alert-line fs-16 align-middle"></em>
                         </div>
                         <div class="flex-grow-1">
                           <h5 class="alert-heading">
@@ -1448,9 +1455,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                       ></button>
                       <div class="d-flex">
                         <div class="flex-shrink-0 me-3">
-                          <i
+                          <em
                             class="ri-notification-off-line fs-16 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">
                           <h5 class="alert-heading">Yey! Everything worked!</h5>
@@ -1483,7 +1490,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                       ></button>
                       <div class="d-flex">
                         <div class="flex-shrink-0 me-3">
-                          <i class="ri-alert-line fs-16 align-middle"></i>
+                          <em class="ri-alert-line fs-16 align-middle"></em>
                         </div>
                         <div class="flex-grow-1">
                           <h5 class="alert-heading">
@@ -1627,9 +1634,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-primary alert-top-border alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i
+                    <em
                       class="ri-user-smile-line me-3 align-middle fs-16 text-primary"
-                    ></i>
+                    ></em>
                     <strong>Primary</strong>
                     - Top border alert
                     <button
@@ -1645,9 +1652,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-secondary alert-top-border alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i
+                    <em
                       class="ri-check-double-line me-3 align-middle fs-16 text-secondary"
-                    ></i>
+                    ></em>
                     <strong>Secondary</strong>
                     - Top border alert
                     <button
@@ -1663,9 +1670,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-success alert-top-border alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i
+                    <em
                       class="ri-notification-off-line me-3 align-middle fs-16 text-success"
-                    ></i>
+                    ></em>
                     <strong>Success</strong>
                     - Top border alert
                     <button
@@ -1681,9 +1688,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-danger alert-top-border alert-dismissible fade show mb-xl-0 shadow"
                     role="alert"
                   >
-                    <i
+                    <em
                       class="ri-error-warning-line me-3 align-middle fs-16 text-danger"
-                    ></i>
+                    ></em>
                     <strong>Danger</strong>
                     - Top border alert
                     <button
@@ -1701,9 +1708,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-warning alert-top-border alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i
+                    <em
                       class="ri-alert-line me-3 align-middle fs-16 text-warning"
-                    ></i>
+                    ></em>
                     <strong>Warning</strong>
                     - Top border alert
                     <button
@@ -1719,9 +1726,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-info alert-top-border alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i
+                    <em
                       class="ri-airplay-line me-3 align-middle fs-16 text-info"
-                    ></i>
+                    ></em>
                     <strong>Info</strong>
                     - Top border alert
                     <button
@@ -1737,9 +1744,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-light alert-top-border alert-dismissible fade show shadow"
                     role="alert"
                   >
-                    <i
+                    <em
                       class="ri-mail-line me-3 align-middle fs-16 text-dark"
-                    ></i>
+                    ></em>
                     <strong>Light</strong>
                     - Top border alert
                     <button
@@ -1755,9 +1762,9 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-dark alert-top-border alert-dismissible fade show mb-0 shadow"
                     role="alert"
                   >
-                    <i
+                    <em
                       class="ri-refresh-line me-3 align-middle fs-16 text-dark"
-                    ></i>
+                    ></em>
                     <strong>Dark</strong>
                     - Top border alert
                     <button
@@ -1863,7 +1870,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-primary alert-dismissible alert-label-icon label-arrow fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-user-smile-line label-icon"></i>
+                    <em class="ri-user-smile-line label-icon"></em>
                     <strong>Primary</strong> - Label icon arrow alert
                     <button
                       type="button"
@@ -1878,7 +1885,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-secondary alert-dismissible alert-label-icon label-arrow fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-check-double-line label-icon"></i>
+                    <em class="ri-check-double-line label-icon"></em>
                     <strong>Secondary</strong> - Label icon arrow alert
                     <button
                       type="button"
@@ -1893,7 +1900,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-success alert-dismissible alert-label-icon label-arrow fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-notification-off-line label-icon"></i>
+                    <em class="ri-notification-off-line label-icon"></em>
                     <strong>Success</strong>
                     - Label icon arrow alert
                     <button
@@ -1909,7 +1916,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-danger alert-dismissible alert-label-icon label-arrow fade show mb-xl-0 shadow"
                     role="alert"
                   >
-                    <i class="ri-error-warning-line label-icon"></i>
+                    <em class="ri-error-warning-line label-icon"></em>
                     <strong>Danger</strong>
                     - Label icon arrow alert
                     <button
@@ -1927,7 +1934,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-warning alert-dismissible alert-label-icon label-arrow fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-alert-line label-icon"></i>
+                    <em class="ri-alert-line label-icon"></em>
                     <strong>Warning</strong> - Label icon arrow alert
                     <button
                       type="button"
@@ -1942,7 +1949,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-info alert-dismissible alert-label-icon label-arrow fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-airplay-line label-icon"></i>
+                    <em class="ri-airplay-line label-icon"></em>
                     <strong>Info</strong> - Label icon arrow alert
                     <button
                       type="button"
@@ -1957,7 +1964,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-light alert-dismissible alert-label-icon label-arrow fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-mail-line label-icon"></i>
+                    <em class="ri-mail-line label-icon"></em>
                     <strong>Light</strong>
                     - Label icon arrow alert
                     <button
@@ -1973,7 +1980,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-dark alert-dismissible alert-label-icon label-arrow fade show mb-0 shadow"
                     role="alert"
                   >
-                    <i class="ri-refresh-line label-icon"></i>
+                    <em class="ri-refresh-line label-icon"></em>
                     <strong>Dark</strong>
                     - Label icon arrow alert
                     <button
@@ -2081,7 +2088,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-primary alert-dismissible alert-label-icon rounded-label fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-user-smile-line label-icon"></i>
+                    <em class="ri-user-smile-line label-icon"></em>
                     <strong>Primary</strong> - Rounded label alert
                     <button
                       type="button"
@@ -2096,7 +2103,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-secondary alert-dismissible alert-label-icon rounded-label fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-check-double-line label-icon"></i>
+                    <em class="ri-check-double-line label-icon"></em>
                     <strong>Secondary</strong>
                     - Rounded label alert
                     <button
@@ -2112,7 +2119,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-success alert-dismissible alert-label-icon rounded-label fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-notification-off-line label-icon"></i>
+                    <em class="ri-notification-off-line label-icon"></em>
                     <strong>Success</strong>
                     - Rounded label alert
                     <button
@@ -2128,7 +2135,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-danger alert-dismissible alert-label-icon rounded-label fade show mb-xl-0 shadow"
                     role="alert"
                   >
-                    <i class="ri-error-warning-line label-icon"></i>
+                    <em class="ri-error-warning-line label-icon"></em>
                     <strong>Danger</strong>
                     - Rounded label alert
                     <button
@@ -2146,7 +2153,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-warning alert-dismissible alert-label-icon rounded-label fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-alert-line label-icon"></i>
+                    <em class="ri-alert-line label-icon"></em>
                     <strong>Warning</strong> - Rounded label alert
                     <button
                       type="button"
@@ -2161,7 +2168,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-info alert-dismissible alert-label-icon rounded-label fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-airplay-line label-icon"></i>
+                    <em class="ri-airplay-line label-icon"></em>
                     <strong>Info</strong> - Rounded label alert
                     <button
                       type="button"
@@ -2176,7 +2183,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-light alert-dismissible alert-label-icon rounded-label fade show shadow"
                     role="alert"
                   >
-                    <i class="ri-mail-line label-icon"></i>
+                    <em class="ri-mail-line label-icon"></em>
                     <strong>Light</strong> - Rounded label alert
                     <button
                       type="button"
@@ -2191,7 +2198,7 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                     class="alert alert-dark alert-dismissible alert-label-icon rounded-label fade show mb-0 shadow"
                     role="alert"
                   >
-                    <i class="ri-refresh-line label-icon"></i>
+                    <em class="ri-refresh-line label-icon"></em>
                     <strong>Dark</strong> - Rounded label alert
                     <button
                       type="button"
@@ -2294,18 +2301,27 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
               <div class="row">
                 <div class="col-xl-6">
                   <h6>Primary Solid Alert</h6>
-                  <div class="alert alert-primary alert-solid shadow" role="alert">
+                  <div
+                    class="alert alert-primary alert-solid shadow"
+                    role="alert"
+                  >
                     <strong>Hi!</strong> - Solid <b>primary alert</b> example
                   </div>
 
                   <h6>Secondary Solid Alert</h6>
-                  <div class="alert alert-secondary alert-solid shadow" role="alert">
+                  <div
+                    class="alert alert-secondary alert-solid shadow"
+                    role="alert"
+                  >
                     <strong>How are you!</strong> - Solid
                     <b>secondary alert</b> example
                   </div>
 
                   <h6>Success Solid Alert</h6>
-                  <div class="alert alert-success alert-solid shadow" role="alert">
+                  <div
+                    class="alert alert-success alert-solid shadow"
+                    role="alert"
+                  >
                     <strong>Yey! Everything worked!</strong> - Solid
                     <b>success alert</b> example
                   </div>
@@ -2322,7 +2338,10 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
 
                 <div class="col-xl-6">
                   <h6>Warning Solid Alert</h6>
-                  <div class="alert alert-warning alert-solid shadow" role="alert">
+                  <div
+                    class="alert alert-warning alert-solid shadow"
+                    role="alert"
+                  >
                     <strong>Uh oh, something went wrong!</strong> - Solid
                     <b>warning alert</b> example
                   </div>
@@ -2334,13 +2353,19 @@ A simple &lt;b&gt;Dark alert&lt;/b&gt; with &lt;a href=&quot;#&quot; class=&quot
                   </div>
 
                   <h6>Light Solid Alert</h6>
-                  <div class="alert alert-light alert-solid shadow" role="alert">
+                  <div
+                    class="alert alert-light alert-solid shadow"
+                    role="alert"
+                  >
                     <strong>Mind Your Step!</strong> - Solid
                     <b>secondary alert</b> example
                   </div>
 
                   <h6>Dark Solid Alert</h6>
-                  <div class="alert alert-dark alert-solid mb-0 shadow" role="alert">
+                  <div
+                    class="alert alert-dark alert-solid mb-0 shadow"
+                    role="alert"
+                  >
                     <strong>Did you know?</strong> - Solid
                     <b>dark alert</b> example
                   </div>

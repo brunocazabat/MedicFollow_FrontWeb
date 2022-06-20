@@ -730,14 +730,14 @@ export default {
                             type="button"
                             class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
                           >
-                            <i class="ri-thumb-up-fill text-muted align-bottom me-1"></i>
+                            <em class="ri-thumb-up-fill text-muted align-bottom me-1"></em>
                             2.2K
                           </button>
                           <button
                             type="button"
                             class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
                           >
-                            <i class="ri-question-answer-fill text-muted align-bottom me-1"></i>
+                            <em class="ri-question-answer-fill text-muted align-bottom me-1"></em>
                             1.3K
                           </button>
                         </div>
@@ -772,14 +772,14 @@ export default {
                             type="button"
                             class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
                           >
-                            <i class="ri-thumb-up-fill text-muted align-bottom me-1"></i>
+                            <em class="ri-thumb-up-fill text-muted align-bottom me-1"></em>
                             3.2K
                           </button>
                           <button
                             type="button"
                             class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
                           >
-                            <i class="ri-question-answer-fill text-muted align-bottom me-1"></i>
+                            <em class="ri-question-answer-fill text-muted align-bottom me-1"></em>
                             1.1K
                           </button>
                         </div>
@@ -814,14 +814,14 @@ export default {
                             type="button"
                             class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
                           >
-                            <i class="ri-thumb-up-fill text-muted align-bottom me-1"></i>
+                            <em class="ri-thumb-up-fill text-muted align-bottom me-1"></em>
                             632
                           </button>
                           <button
                             type="button"
                             class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
                           >
-                            <i class="ri-question-answer-fill text-muted align-bottom me-1"></i>
+                            <em class="ri-question-answer-fill text-muted align-bottom me-1"></em>
                             95
                           </button>
                         </div>
@@ -856,14 +856,14 @@ export default {
                             type="button"
                             class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
                           >
-                            <i class="ri-thumb-up-fill text-muted align-bottom me-1"></i>
+                            <em class="ri-thumb-up-fill text-muted align-bottom me-1"></em>
                             825
                           </button>
                           <button
                             type="button"
                             class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
                           >
-                            <i class="ri-question-answer-fill text-muted align-bottom me-1"></i>
+                            <em class="ri-question-answer-fill text-muted align-bottom me-1"></em>
                             101
                           </button>
                         </div>
@@ -898,14 +898,14 @@ export default {
                             type="button"
                             class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
                           >
-                            <i class="ri-thumb-up-fill text-muted align-bottom me-1"></i>
+                            <em class="ri-thumb-up-fill text-muted align-bottom me-1"></em>
                             3.4K
                           </button>
                           <button
                             type="button"
                             class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
                           >
-                            <i class="ri-question-answer-fill text-muted align-bottom me-1"></i>
+                            <em class="ri-question-answer-fill text-muted align-bottom me-1"></em>
                             1.3k
                           </button>
                         </div>

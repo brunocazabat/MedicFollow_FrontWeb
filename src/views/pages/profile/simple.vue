@@ -1,40 +1,40 @@
 <script>
-import SwiperCore, { Thumbs, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/swiper-bundle.css";
+import SwiperCore, { Thumbs, Navigation, Pagination } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/swiper-bundle.css'
 
-SwiperCore.use([Thumbs, Navigation, Pagination]);
+SwiperCore.use([Thumbs, Navigation, Pagination])
 
-import Layout from "../../../layouts/main.vue";
-import appConfig from "../../../../app.config";
+import Layout from '../../../layouts/main.vue'
+import appConfig from '../../../../app.config'
 
 export default {
   page: {
-    title: "Profile",
-    meta: [{ name: "description", content: appConfig.description }],
+    title: 'Profile',
+    meta: [{ name: 'description', content: appConfig.description }]
   },
   data() {
     return {
-      title: "Profile",
+      title: 'Profile',
       items: [
         {
-          text: "MedicFollow",
-          href: "/",
+          text: 'MedicFollow',
+          href: '/'
         },
         {
-          text: "Profile",
-          active: true,
-        },
+          text: 'Profile',
+          active: true
+        }
       ],
-      thumbsSwiper: null,
-    };
+      thumbsSwiper: null
+    }
   },
   components: {
     Layout,
     Swiper,
-    SwiperSlide,
-  },
-};
+    SwiperSlide
+  }
+}
 </script>
 
 <template>
@@ -66,15 +66,15 @@ export default {
             <p class="text-white-75">Owner & Founder</p>
             <div class="hstack text-white-50 gap-1">
               <div class="me-2">
-                <i
+                <em
                   class="ri-map-pin-user-line me-1 text-white-75 fs-16 align-middle"
-                ></i
+                ></em
                 >California, United States
               </div>
               <div>
-                <i
+                <em
                   class="ri-building-line me-1 text-white-75 fs-16 align-middle"
-                ></i
+                ></em
                 >MedicFollow
               </div>
             </div>
@@ -118,7 +118,7 @@ export default {
                   href="#overview-tab"
                   role="tab"
                 >
-                  <i class="ri-airplay-fill d-inline-block d-md-none"></i>
+                  <em class="ri-airplay-fill d-inline-block d-md-none"></em>
                   <span class="d-none d-md-inline-block">Overview</span>
                 </a>
               </li>
@@ -129,7 +129,7 @@ export default {
                   href="#activities"
                   role="tab"
                 >
-                  <i class="ri-list-unordered d-inline-block d-md-none"></i>
+                  <em class="ri-list-unordered d-inline-block d-md-none"></em>
                   <span class="d-none d-md-inline-block">Activities</span>
                 </a>
               </li>
@@ -140,7 +140,7 @@ export default {
                   href="#projects"
                   role="tab"
                 >
-                  <i class="ri-price-tag-line d-inline-block d-md-none"></i>
+                  <em class="ri-price-tag-line d-inline-block d-md-none"></em>
                   <span class="d-none d-md-inline-block">Projects</span>
                 </a>
               </li>
@@ -151,14 +151,15 @@ export default {
                   href="#documents"
                   role="tab"
                 >
-                  <i class="ri-folder-4-line d-inline-block d-md-none"></i>
+                  <em class="ri-folder-4-line d-inline-block d-md-none"></em>
                   <span class="d-none d-md-inline-block">Documents</span>
                 </a>
               </li>
             </ul>
             <div class="flex-shrink-0">
               <router-link to="/pages/profile-setting" class="btn btn-success"
-                ><i class="ri-edit-box-line align-bottom"></i> Edit Profile</router-link
+                ><em class="ri-edit-box-line align-bottom"></em> Edit
+                Profile</router-link
               >
             </div>
           </div>
@@ -235,7 +236,7 @@ export default {
                             <span
                               class="avatar-title rounded-circle fs-16 bg-dark text-light shadow"
                             >
-                              <i class="ri-github-fill"></i>
+                              <em class="ri-github-fill"></em>
                             </span>
                           </a>
                         </div>
@@ -247,7 +248,7 @@ export default {
                             <span
                               class="avatar-title rounded-circle fs-16 bg-primary shadow"
                             >
-                              <i class="ri-global-fill"></i>
+                              <em class="ri-global-fill"></em>
                             </span>
                           </a>
                         </div>
@@ -259,7 +260,7 @@ export default {
                             <span
                               class="avatar-title rounded-circle fs-16 bg-success shadow"
                             >
-                              <i class="ri-dribbble-fill"></i>
+                              <em class="ri-dribbble-fill"></em>
                             </span>
                           </a>
                         </div>
@@ -271,7 +272,7 @@ export default {
                             <span
                               class="avatar-title rounded-circle fs-16 bg-danger shadow"
                             >
-                              <i class="ri-pinterest-fill"></i>
+                              <em class="ri-pinterest-fill"></em>
                             </span>
                           </a>
                         </div>
@@ -341,7 +342,7 @@ export default {
                               data-bs-toggle="dropdown"
                               aria-expanded="false"
                             >
-                              <i class="ri-more-2-fill fs-14"></i>
+                              <em class="ri-more-2-fill fs-14"></em>
                             </a>
 
                             <ul
@@ -383,7 +384,7 @@ export default {
                               type="button"
                               class="btn btn-sm btn-outline-success shadow-none"
                             >
-                              <i class="ri-user-add-line align-middle"></i>
+                              <em class="ri-user-add-line align-middle"></em>
                             </button>
                           </div>
                         </div>
@@ -408,7 +409,7 @@ export default {
                               type="button"
                               class="btn btn-sm btn-outline-success shadow-none"
                             >
-                              <i class="ri-user-add-line align-middle"></i>
+                              <em class="ri-user-add-line align-middle"></em>
                             </button>
                           </div>
                         </div>
@@ -433,7 +434,7 @@ export default {
                               type="button"
                               class="btn btn-sm btn-outline-success shadow-none"
                             >
-                              <i class="ri-user-add-line align-middle"></i>
+                              <em class="ri-user-add-line align-middle"></em>
                             </button>
                           </div>
                         </div>
@@ -458,7 +459,7 @@ export default {
                               data-bs-toggle="dropdown"
                               aria-expanded="false"
                             >
-                              <i class="ri-more-2-fill fs-14"></i>
+                              <em class="ri-more-2-fill fs-14"></em>
                             </a>
 
                             <ul
@@ -569,7 +570,7 @@ export default {
                               <div
                                 class="avatar-title bg-light rounded-circle fs-16 text-primary shadow"
                               >
-                                <i class="ri-user-2-fill"></i>
+                                <em class="ri-user-2-fill"></em>
                               </div>
                             </div>
                             <div class="flex-grow-1 overflow-hidden">
@@ -589,7 +590,7 @@ export default {
                               <div
                                 class="avatar-title bg-light rounded-circle fs-16 text-primary shadow"
                               >
-                                <i class="ri-global-line"></i>
+                                <em class="ri-global-line"></em>
                               </div>
                             </div>
                             <div class="flex-grow-1 overflow-hidden">
@@ -757,9 +758,9 @@ export default {
                                               class="d-flex border border-dashed p-2 rounded position-relative shadow"
                                             >
                                               <div class="flex-shrink-0">
-                                                <i
+                                                <em
                                                   class="ri-image-2-line fs-17 text-danger"
-                                                ></i>
+                                                ></em>
                                               </div>
                                               <div class="flex-grow-1 ms-2">
                                                 <h6 class="mb-0">
@@ -779,9 +780,9 @@ export default {
                                               class="d-flex border border-dashed p-2 rounded position-relative shadow"
                                             >
                                               <div class="flex-shrink-0">
-                                                <i
+                                                <em
                                                   class="ri-file-zip-line fs-17 text-info"
-                                                ></i>
+                                                ></em>
                                               </div>
                                               <div class="flex-grow-1 ms-2">
                                                 <h6 class="mb-0">
@@ -852,7 +853,7 @@ export default {
                                             <div
                                               class="avatar-title bg-light text-muted rounded-circle shadow"
                                             >
-                                              <i class="ri-user-3-fill"></i>
+                                              <em class="ri-user-3-fill"></em>
                                             </div>
                                           </div>
                                           <div class="flex-grow-1 ms-3">
@@ -1066,9 +1067,9 @@ export default {
                                             <div
                                               class="avatar-title rounded-circle bg-light text-danger shadow"
                                             >
-                                              <i
+                                              <em
                                                 class="ri-shopping-bag-line"
-                                              ></i>
+                                              ></em>
                                             </div>
                                           </div>
                                           <div class="flex-grow-1 ms-3">
@@ -1102,13 +1103,13 @@ export default {
                                             <div
                                               class="avatar-title bg-light text-success rounded-circle shadow"
                                             >
-                                              <i class="ri-home-3-line"></i>
+                                              <em class="ri-home-3-line"></em>
                                             </div>
                                           </div>
                                           <div class="flex-grow-1 ms-3">
                                             <h6 class="fs-14 mb-1">
-                                              MedicFollow admin dashboard templates
-                                              layout upload
+                                              MedicFollow admin dashboard
+                                              templates layout upload
                                             </h6>
                                             <small class="text-muted"
                                               >We talked about a project on
@@ -1316,9 +1317,9 @@ export default {
                                               class="d-flex border border-dashed p-2 rounded position-relative shadow"
                                             >
                                               <div class="flex-shrink-0">
-                                                <i
+                                                <em
                                                   class="ri-image-2-line fs-17 text-danger"
-                                                ></i>
+                                                ></em>
                                               </div>
                                               <div class="flex-grow-1 ms-2">
                                                 <h6 class="mb-0">
@@ -1338,9 +1339,9 @@ export default {
                                               class="d-flex border border-dashed p-2 rounded position-relative shadow"
                                             >
                                               <div class="flex-shrink-0">
-                                                <i
+                                                <em
                                                   class="ri-file-zip-line fs-17 text-info"
-                                                ></i>
+                                                ></em>
                                               </div>
                                               <div class="flex-grow-1 ms-2">
                                                 <h6 class="mb-0">
@@ -1360,9 +1361,9 @@ export default {
                                               class="d-flex border border-dashed p-2 rounded position-relative shadow"
                                             >
                                               <div class="flex-shrink-0">
-                                                <i
+                                                <em
                                                   class="ri-file-zip-line fs-17 text-info"
-                                                ></i>
+                                                ></em>
                                               </div>
                                               <div class="flex-grow-1 ms-2">
                                                 <h6 class="mb-0">
@@ -1485,7 +1486,7 @@ export default {
                                             <div
                                               class="avatar-title bg-light text-muted rounded-circle shadow"
                                             >
-                                              <i class="ri-user-3-fill"></i>
+                                              <em class="ri-user-3-fill"></em>
                                             </div>
                                           </div>
                                           <div class="flex-grow-1 ms-3">
@@ -1652,7 +1653,6 @@ export default {
 
                       <!-- Swiper -->
                       <div class="swiper project-swiper">
-                        
                         <swiper
                           :slides-per-view="3"
                           :space-between="50"
@@ -2030,7 +2030,6 @@ export default {
                           </swiper-slide>
                           <!-- end slide item -->
                         </swiper>
-                      
                       </div>
                     </div>
                     <!-- end card body -->
@@ -2085,7 +2084,7 @@ export default {
                           >
                         </h6>
                         <p class="text-muted mb-2">
-                          <i class="ri-file-text-line align-middle ms-2"></i>
+                          <em class="ri-file-text-line align-middle ms-2"></em>
                           Create new project Buildng product
                         </p>
                         <div class="avatar-group mb-2">
@@ -2224,7 +2223,7 @@ export default {
                           <div
                             class="avatar-title rounded-circle bg-soft-danger text-danger"
                           >
-                            <i class="ri-shopping-bag-line"></i>
+                            <em class="ri-shopping-bag-line"></em>
                           </div>
                         </div>
                       </div>
@@ -2267,7 +2266,7 @@ export default {
                           <div
                             class="avatar-title rounded-circle bg-soft-info text-info"
                           >
-                            <i class="ri-line-chart-line"></i>
+                            <em class="ri-line-chart-line"></em>
                           </div>
                         </div>
                       </div>
@@ -2551,7 +2550,9 @@ export default {
                           <div class="d-flex">
                             <div class="flex-grow-1 text-muted overflow-hidden">
                               <h5 class="fs-14 text-truncate">
-                                <a href="#" class="text-dark">MedicFollow Project</a>
+                                <a href="#" class="text-dark"
+                                  >MedicFollow Project</a
+                                >
                               </h5>
                               <p class="text-muted text-truncate mb-0">
                                 Last Update :
@@ -3144,7 +3145,7 @@ export default {
                         >
                           <li class="page-item disabled">
                             <a href="javascript:void(0);" class="page-link"
-                              ><i class="mdi mdi-chevron-left"></i
+                              ><em class="mdi mdi-chevron-left"></em
                             ></a>
                           </li>
                           <li class="page-item active">
@@ -3174,7 +3175,7 @@ export default {
                           </li>
                           <li class="page-item">
                             <a href="javascript:void(0);" class="page-link"
-                              ><i class="mdi mdi-chevron-right"></i
+                              ><em class="mdi mdi-chevron-right"></em
                             ></a>
                           </li>
                         </ul>
@@ -3200,7 +3201,7 @@ export default {
                         id="formFile"
                       />
                       <label for="formFile" class="btn btn-danger"
-                        ><i class="ri-upload-2-fill me-1 align-bottom"></i>
+                        ><em class="ri-upload-2-fill me-1 align-bottom"></em>
                         Upload File</label
                       >
                     </div>
@@ -3226,7 +3227,7 @@ export default {
                                     <div
                                       class="avatar-title bg-soft-primary text-primary rounded fs-20 shadow"
                                     >
-                                      <i class="ri-file-zip-fill"></i>
+                                      <em class="ri-file-zip-fill"></em>
                                     </div>
                                   </div>
                                   <div class="ms-3 flex-grow-1">
@@ -3250,7 +3251,7 @@ export default {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="true"
                                   >
-                                    <i class="ri-equalizer-fill"></i>
+                                    <em class="ri-equalizer-fill"></em>
                                   </a>
                                   <ul
                                     class="dropdown-menu dropdown-menu-end"
@@ -3260,9 +3261,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-eye-fill me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >View</a
                                       >
                                     </li>
@@ -3270,9 +3271,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-download-2-fill me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >Download</a
                                       >
                                     </li>
@@ -3281,9 +3282,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-delete-bin-5-line me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >Delete</a
                                       >
                                     </li>
@@ -3298,7 +3299,7 @@ export default {
                                     <div
                                       class="avatar-title bg-soft-danger text-danger rounded fs-20 shadow"
                                     >
-                                      <i class="ri-file-pdf-fill"></i>
+                                      <em class="ri-file-pdf-fill"></em>
                                     </div>
                                   </div>
                                   <div class="ms-3 flex-grow-1">
@@ -3322,7 +3323,7 @@ export default {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="true"
                                   >
-                                    <i class="ri-equalizer-fill"></i>
+                                    <em class="ri-equalizer-fill"></em>
                                   </a>
                                   <ul
                                     class="dropdown-menu dropdown-menu-end"
@@ -3332,9 +3333,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-eye-fill me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >View</a
                                       >
                                     </li>
@@ -3342,9 +3343,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-download-2-fill me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >Download</a
                                       >
                                     </li>
@@ -3353,9 +3354,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-delete-bin-5-line me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >Delete</a
                                       >
                                     </li>
@@ -3370,7 +3371,7 @@ export default {
                                     <div
                                       class="avatar-title bg-soft-secondary text-secondary rounded fs-20 shadow"
                                     >
-                                      <i class="ri-video-line"></i>
+                                      <em class="ri-video-line"></em>
                                     </div>
                                   </div>
                                   <div class="ms-3 flex-grow-1">
@@ -3394,7 +3395,7 @@ export default {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="true"
                                   >
-                                    <i class="ri-equalizer-fill"></i>
+                                    <em class="ri-equalizer-fill"></em>
                                   </a>
                                   <ul
                                     class="dropdown-menu dropdown-menu-end"
@@ -3404,9 +3405,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-eye-fill me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >View</a
                                       >
                                     </li>
@@ -3414,9 +3415,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-download-2-fill me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >Download</a
                                       >
                                     </li>
@@ -3425,9 +3426,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-delete-bin-5-line me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >Delete</a
                                       >
                                     </li>
@@ -3442,7 +3443,7 @@ export default {
                                     <div
                                       class="avatar-title bg-soft-success text-success rounded fs-20 shadow"
                                     >
-                                      <i class="ri-file-excel-fill"></i>
+                                      <em class="ri-file-excel-fill"></em>
                                     </div>
                                   </div>
                                   <div class="ms-3 flex-grow-1">
@@ -3466,7 +3467,7 @@ export default {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="true"
                                   >
-                                    <i class="ri-equalizer-fill"></i>
+                                    <em class="ri-equalizer-fill"></em>
                                   </a>
                                   <ul
                                     class="dropdown-menu dropdown-menu-end"
@@ -3476,9 +3477,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-eye-fill me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >View</a
                                       >
                                     </li>
@@ -3486,9 +3487,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-download-2-fill me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >Download</a
                                       >
                                     </li>
@@ -3497,9 +3498,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-delete-bin-5-line me-2 align-middle text-muted"
-                                        ></i
+                                        ></em
                                         >Delete</a
                                       >
                                     </li>
@@ -3514,7 +3515,7 @@ export default {
                                     <div
                                       class="avatar-title bg-soft-info text-info rounded fs-20 shadow"
                                     >
-                                      <i class="ri-folder-line"></i>
+                                      <em class="ri-folder-line"></em>
                                     </div>
                                   </div>
                                   <div class="ms-3 flex-grow-1">
@@ -3538,7 +3539,7 @@ export default {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="true"
                                   >
-                                    <i class="ri-equalizer-fill"></i>
+                                    <em class="ri-equalizer-fill"></em>
                                   </a>
                                   <ul
                                     class="dropdown-menu dropdown-menu-end"
@@ -3548,9 +3549,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-eye-fill me-2 align-middle"
-                                        ></i
+                                        ></em
                                         >View</a
                                       >
                                     </li>
@@ -3558,9 +3559,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-download-2-fill me-2 align-middle"
-                                        ></i
+                                        ></em
                                         >Download</a
                                       >
                                     </li>
@@ -3568,9 +3569,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-delete-bin-5-line me-2 align-middle"
-                                        ></i
+                                        ></em
                                         >Delete</a
                                       >
                                     </li>
@@ -3585,7 +3586,7 @@ export default {
                                     <div
                                       class="avatar-title bg-soft-danger text-danger rounded fs-20 shadow"
                                     >
-                                      <i class="ri-image-2-fill"></i>
+                                      <em class="ri-image-2-fill"></em>
                                     </div>
                                   </div>
                                   <div class="ms-3 flex-grow-1">
@@ -3609,7 +3610,7 @@ export default {
                                     data-bs-toggle="dropdown"
                                     aria-expanded="true"
                                   >
-                                    <i class="ri-equalizer-fill"></i>
+                                    <em class="ri-equalizer-fill"></em>
                                   </a>
                                   <ul
                                     class="dropdown-menu dropdown-menu-end"
@@ -3619,9 +3620,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-eye-fill me-2 align-middle"
-                                        ></i
+                                        ></em
                                         >View</a
                                       >
                                     </li>
@@ -3629,9 +3630,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-download-2-fill me-2 align-middle"
-                                        ></i
+                                        ></em
                                         >Download</a
                                       >
                                     </li>
@@ -3639,9 +3640,9 @@ export default {
                                       <a
                                         class="dropdown-item"
                                         href="javascript:void(0);"
-                                        ><i
+                                        ><em
                                           class="ri-delete-bin-5-line me-2 align-middle"
-                                        ></i
+                                        ></em
                                         >Delete</a
                                       >
                                     </li>
@@ -3654,9 +3655,9 @@ export default {
                       </div>
                       <div class="text-center mt-3">
                         <a href="javascript:void(0);" class="text-success"
-                          ><i
+                          ><em
                             class="mdi mdi-loading mdi-spin fs-20 align-middle me-2"
-                          ></i>
+                          ></em>
                           Load more
                         </a>
                       </div>

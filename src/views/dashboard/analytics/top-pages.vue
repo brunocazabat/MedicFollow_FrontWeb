@@ -11,7 +11,7 @@ export default {
                                         <div class="flex-shrink-0">
                                             <div class="dropdown card-header-dropdown">
                                                 <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                   <span class="text-muted fs-16"><i class="mdi mdi-dots-vertical align-middle"></i></span>
+                                                   <span class="text-muted fs-16"><em class="mdi mdi-dots-vertical align-middle"></em></span>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-end">
                                                     <a class="dropdown-item" href="#">Today</a>

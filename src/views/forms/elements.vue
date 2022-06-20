@@ -129,7 +129,7 @@
                                         <div class="form-icon">
                                             <input type="email" class="form-control form-control-icon" id="iconInput"
                                                 placeholder="example@gmail.com">
-                                            <i class="ri-mail-unread-line"></i>
+                                            <em class="ri-mail-unread-line"></em>
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@
                                         <div class="form-icon right">
                                             <input type="email" class="form-control form-control-icon"
                                                 id="iconrightInput" placeholder="example@gmail.com">
-                                            <i class="ri-mail-unread-line"></i>
+                                            <em class="ri-mail-unread-line"></em>
                                         </div>
                                     </div>
                                 </div>

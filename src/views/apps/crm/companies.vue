@@ -435,21 +435,21 @@
             <div class="d-flex align-items-center flex-wrap gap-2">
               <div class="flex-grow-1">
                 <button class="btn btn-info add-btn me-1" data-bs-toggle="modal" href="#showModal" @click="addnew">
-                  <i class="ri-add-fill me-1 align-bottom"></i> Add Company
+                  <em class="ri-add-fill me-1 align-bottom"></em> Add Company
                 </button>
                 <button class="btn btn-soft-danger" @click="deleteMultiple">
-                  <i class="ri-delete-bin-2-line"></i>
+                  <em class="ri-delete-bin-2-line"></em>
                 </button>
               </div>
               <div class="flex-shrink-0">
                 <div class="hstack text-nowrap gap-2">
                   <button class="btn btn-danger">
-                    <i class="ri-filter-2-line me-1 align-bottom"></i> Filters
+                    <em class="ri-filter-2-line me-1 align-bottom"></em> Filters
                   </button>
                   <button class="btn btn-soft-success shadow-none">Import</button>
                   <button type="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"
                     class="btn btn-soft-info shadow-none">
-                    <i class="ri-more-2-fill"></i>
+                    <em class="ri-more-2-fill"></em>
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
                     <li><a class="dropdown-item" href="#">All</a></li>
@@ -471,7 +471,7 @@
               <div class="col-md-3">
                 <div class="search-box">
                   <input type="text" class="form-control search" placeholder="Search for company..." />
-                  <i class="ri-search-line search-icon"></i>
+                  <em class="ri-search-line search-icon"></em>
                 </div>
               </div>
               <div class="col-md-auto ms-auto">
@@ -539,7 +539,7 @@
                       <td class="industry_type">{{ data.industry_type }}</td>
                       <td>
                         <span class="star_value">{{ data.star_value }}</span>
-                        <i class="ri-star-fill text-warning align-bottom"></i>
+                        <em class="ri-star-fill text-warning align-bottom"></em>
                       </td>
                       <td class="location">{{ data.location }}</td>
                       <td>
@@ -547,27 +547,27 @@
                           <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="Call">
                             <a href="javascript:void(0);" class="text-muted d-inline-block">
-                              <i class="ri-phone-line fs-16"></i>
+                              <em class="ri-phone-line fs-16"></em>
                             </a>
                           </li>
                           <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="Message">
                             <a href="javascript:void(0);" class="text-muted d-inline-block">
-                              <i class="ri-question-answer-line fs-16"></i>
+                              <em class="ri-question-answer-line fs-16"></em>
                             </a>
                           </li>
                           <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="View" @click="showdetail(data)">
-                            <a href="javascript:void(0);"><i class="ri-eye-fill align-bottom text-muted"></i></a>
+                            <a href="javascript:void(0);"><em class="ri-eye-fill align-bottom text-muted"></em></a>
                           </li>
                           <li class="list-inline-item" data-bs-toggle="modal" data-bs-trigger="hover"
                             data-bs-placement="top" title="Edit" href="#showModal" @click="editdata(data)">
-                            <a class="edit-item-btn"><i class="ri-pencil-fill align-bottom text-muted"></i></a>
+                            <a class="edit-item-btn"><em class="ri-pencil-fill align-bottom text-muted"></em></a>
                           </li>
                           <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="Delete" @click="deletedata(data)">
                             <a class="remove-item-btn">
-                              <i class="ri-delete-bin-fill align-bottom text-muted"></i>
+                              <em class="ri-delete-bin-fill align-bottom text-muted"></em>
                             </a>
                           </li>
                         </ul>
@@ -631,17 +631,17 @@
             <ul class="list-inline mb-0">
               <li class="list-inline-item avatar-xs">
                 <a href="javascript:void(0);" class="avatar-title bg-soft-success text-success fs-15 rounded">
-                  <i class="ri-global-line"></i>
+                  <em class="ri-global-line"></em>
                 </a>
               </li>
               <li class="list-inline-item avatar-xs">
                 <a href="javascript:void(0);" class="avatar-title bg-soft-danger text-danger fs-15 rounded">
-                  <i class="ri-mail-line"></i>
+                  <em class="ri-mail-line"></em>
                 </a>
               </li>
               <li class="list-inline-item avatar-xs">
                 <a href="javascript:void(0);" class="avatar-title bg-soft-warning text-warning fs-15 rounded">
-                  <i class="ri-question-answer-line"></i>
+                  <em class="ri-question-answer-line"></em>
                 </a>
               </li>
             </ul>
@@ -674,7 +674,7 @@
                   <tr>
                     <td class="fw-medium" scope="row">Rating</td>
                     <td>
-                      <span id="rtng">4.0</span> <i class="ri-star-fill text-warning align-bottom"></i>
+                      <span id="rtng">4.0</span> <em class="ri-star-fill text-warning align-bottom"></em>
                     </td>
                   </tr>
                   <tr>

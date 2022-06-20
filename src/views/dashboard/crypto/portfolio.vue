@@ -106,7 +106,7 @@
         <div class="dropdown">
           <button class="btn btn-soft-primary btn-sm shadow-none" data-bs-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            <span class="text-uppercase">Btc<i class="mdi mdi-chevron-down align-middle ms-1"></i></span>
+            <span class="text-uppercase">Btc<em class="mdi mdi-chevron-down align-middle ms-1"></em></span>
           </button>
           <div class="dropdown-menu dropdown-menu-end">
             <a class="dropdown-item" href="#">BTC</a>
@@ -131,7 +131,7 @@
             <div class="flex-grow-1 ms-2">
               <h6 class="mb-1">Bitcoin</h6>
               <p class="fs-12 mb-0 text-muted">
-                <i class="mdi mdi-circle fs-10 align-middle text-primary me-1"></i>BTC
+                <em class="mdi mdi-circle fs-10 align-middle text-primary me-1"></em>BTC
               </p>
             </div>
             <div class="flex-shrink-0 text-end">
@@ -151,7 +151,7 @@
             <div class="flex-grow-1 ms-2">
               <h6 class="mb-1">Ethereum</h6>
               <p class="fs-12 mb-0 text-muted">
-                <i class="mdi mdi-circle fs-10 align-middle text-info me-1"></i>ETH
+                <em class="mdi mdi-circle fs-10 align-middle text-info me-1"></em>ETH
               </p>
             </div>
             <div class="flex-shrink-0 text-end">
@@ -171,7 +171,7 @@
             <div class="flex-grow-1 ms-2">
               <h6 class="mb-1">Litecoin</h6>
               <p class="fs-12 mb-0 text-muted">
-                <i class="mdi mdi-circle fs-10 align-middle text-warning me-1"></i>LTC
+                <em class="mdi mdi-circle fs-10 align-middle text-warning me-1"></em>LTC
               </p>
             </div>
             <div class="flex-shrink-0 text-end">
@@ -191,7 +191,7 @@
             <div class="flex-grow-1 ms-2">
               <h6 class="mb-1">Dash</h6>
               <p class="fs-12 mb-0 text-muted">
-                <i class="mdi mdi-circle fs-10 align-middle text-success me-1"></i>DASH
+                <em class="mdi mdi-circle fs-10 align-middle text-success me-1"></em>DASH
               </p>
             </div>
             <div class="flex-shrink-0 text-end">

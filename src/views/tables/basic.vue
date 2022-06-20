@@ -88,28 +88,28 @@ export default {
                                                             <td>Bobby Davis</td>
                                                             <td>October 15, 2021</td>
                                                             <td>$2,300</td>
-                                                            <td><a href="javascript:void(0);" class="link-success">View More <i class="ri-arrow-right-line align-middle"></i></a></td>
+                                                            <td><a href="javascript:void(0);" class="link-success">View More <em class="ri-arrow-right-line align-middle"></em></a></td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row"><a href="#" class="fw-medium">#VZ2109</a></th>
                                                             <td>Christopher Neal</td>
                                                             <td>October 7, 2021</td>
                                                             <td>$5,500</td>
-                                                            <td><a href="javascript:void(0);" class="link-success">View More <i class="ri-arrow-right-line align-middle"></i></a></td>
+                                                            <td><a href="javascript:void(0);" class="link-success">View More <em class="ri-arrow-right-line align-middle"></em></a></td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row"><a href="#" class="fw-medium">#VZ2108</a></th>
                                                             <td>Monkey Karry</td>
                                                             <td>October 5, 2021</td>
                                                             <td>$2,420</td>
-                                                            <td><a href="javascript:void(0);" class="link-success">View More <i class="ri-arrow-right-line align-middle"></i></a></td>
+                                                            <td><a href="javascript:void(0);" class="link-success">View More <em class="ri-arrow-right-line align-middle"></em></a></td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row"><a href="#" class="fw-medium">#VZ2107</a></th>
                                                             <td>James White</td>
                                                             <td>October 2, 2021</td>
                                                             <td>$7,452</td>
-                                                            <td><a href="javascript:void(0);" class="link-success">View More <i class="ri-arrow-right-line align-middle"></i></a></td>
+                                                            <td><a href="javascript:void(0);" class="link-success">View More <em class="ri-arrow-right-line align-middle"></em></a></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -352,11 +352,11 @@ export default {
                                                                     <td>Basic Plan</td>
                                                                     <td>$860</td>
                                                                     <td>Nov 22, 2021</td>
-                                                                    <td><i class="ri-checkbox-circle-line align-middle text-success"></i> Subscribed</td>
+                                                                    <td><em class="ri-checkbox-circle-line align-middle text-success"></em> Subscribed</td>
                                                                     <td>
                                                                         <div class="hstack gap-3 flex-wrap">
-                                                                            <a href="javascript:void(0);" class="link-success fs-15"><i class="ri-edit-2-line"></i></a>
-                                                                            <a href="javascript:void(0);" class="link-danger fs-15"><i class="ri-delete-bin-line"></i></a>
+                                                                            <a href="javascript:void(0);" class="link-success fs-15"><em class="ri-edit-2-line"></em></a>
+                                                                            <a href="javascript:void(0);" class="link-danger fs-15"><em class="ri-delete-bin-line"></em></a>
                                                                         </div>
                                                                     </td>
                                                                 </tr>
@@ -365,11 +365,11 @@ export default {
                                                                     <td>Premium Plan</td>
                                                                     <td>$1200</td>
                                                                     <td>Nov 10, 2021</td>
-                                                                    <td><i class="ri-close-circle-line align-middle text-danger"></i> Unsubscribed</td>
+                                                                    <td><em class="ri-close-circle-line align-middle text-danger"></em> Unsubscribed</td>
                                                                     <td>
                                                                         <div class="hstack gap-3 flex-wrap">
-                                                                            <a href="javascript:void(0);" class="link-success fs-15"><i class="ri-edit-2-line"></i></a>
-                                                                            <a href="javascript:void(0);" class="link-danger fs-15"><i class="ri-delete-bin-line"></i></a>
+                                                                            <a href="javascript:void(0);" class="link-success fs-15"><em class="ri-edit-2-line"></em></a>
+                                                                            <a href="javascript:void(0);" class="link-danger fs-15"><em class="ri-delete-bin-line"></em></a>
                                                                         </div>
                                                                     </td>
                                                                 </tr>
@@ -378,11 +378,11 @@ export default {
                                                                     <td>Basic Plan</td>
                                                                     <td>$860</td>
                                                                     <td>Nov 19, 2021</td>
-                                                                    <td><i class="ri-checkbox-circle-line align-middle text-success"></i> Subscribed</td>
+                                                                    <td><em class="ri-checkbox-circle-line align-middle text-success"></em> Subscribed</td>
                                                                     <td>
                                                                         <div class="hstack gap-3 flex-wrap">
-                                                                            <a href="javascript:void(0);" class="link-success fs-15"><i class="ri-edit-2-line"></i></a>
-                                                                            <a href="javascript:void(0);" class="link-danger fs-15"><i class="ri-delete-bin-line"></i></a>
+                                                                            <a href="javascript:void(0);" class="link-success fs-15"><em class="ri-edit-2-line"></em></a>
+                                                                            <a href="javascript:void(0);" class="link-danger fs-15"><em class="ri-delete-bin-line"></em></a>
                                                                         </div>
                                                                     </td>
                                                                 </tr>
@@ -391,11 +391,11 @@ export default {
                                                                     <td>Corporate Plan</td>
                                                                     <td>$1599</td>
                                                                     <td>Nov 22, 2021</td>
-                                                                    <td><i class="ri-checkbox-circle-line align-middle text-success"></i> Subscribed</td>
+                                                                    <td><em class="ri-checkbox-circle-line align-middle text-success"></em> Subscribed</td>
                                                                     <td>
                                                                         <div class="hstack gap-3 flex-wrap">
-                                                                            <a href="javascript:void(0);" class="link-success fs-15"><i class="ri-edit-2-line"></i></a>
-                                                                            <a href="javascript:void(0);" class="link-danger fs-15"><i class="ri-delete-bin-line"></i></a>
+                                                                            <a href="javascript:void(0);" class="link-success fs-15"><em class="ri-edit-2-line"></em></a>
+                                                                            <a href="javascript:void(0);" class="link-danger fs-15"><em class="ri-delete-bin-line"></em></a>
                                                                         </div>
                                                                     </td>
                                                                 </tr>
@@ -563,7 +563,7 @@ export default {
                                                                     <td>Amezon</td>
                                                                     <td>Cleo Carson</td>
                                                                     <td>$4,521</td>
-                                                                    <td><a href="javascript:void(0);"><i class="ri-download-2-line fs-17 lh-1 align-middle"></i></a></td>
+                                                                    <td><a href="javascript:void(0);"><em class="ri-download-2-line fs-17 lh-1 align-middle"></em></a></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">
@@ -575,7 +575,7 @@ export default {
                                                                     <td>Shoppers</td>
                                                                     <td>Juston Eichmann</td>
                                                                     <td>$7,546</td>
-                                                                    <td><a href="javascript:void(0);"><i class="ri-download-2-line fs-17 lh-1 align-middle"></i></a></td>
+                                                                    <td><a href="javascript:void(0);"><em class="ri-download-2-line fs-17 lh-1 align-middle"></em></a></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">
@@ -587,7 +587,7 @@ export default {
                                                                     <td>Flipkart</td>
                                                                     <td>Bettie Johson</td>
                                                                     <td>$1,350</td>
-                                                                    <td><a href="javascript:void(0);"><i class="ri-download-2-line fs-17 lh-1 align-middle"></i></a></td>
+                                                                    <td><a href="javascript:void(0);"><em class="ri-download-2-line fs-17 lh-1 align-middle"></em></a></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">
@@ -599,7 +599,7 @@ export default {
                                                                     <td>Shoppers</td>
                                                                     <td>Maritza Blanda</td>
                                                                     <td>$4,521</td>
-                                                                    <td><a href="javascript:void(0);"><i class="ri-download-2-line fs-17 lh-1 align-middle"></i></a></td>
+                                                                    <td><a href="javascript:void(0);"><em class="ri-download-2-line fs-17 lh-1 align-middle"></em></a></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -625,7 +625,7 @@ export default {
                                                                     <td>Basic Plan</td>
                                                                     <td>$860</td>
                                                                     <td>Nov 22, 2021</td>
-                                                                    <td><i class="ri-checkbox-circle-line align-middle text-success"></i> Subscribed</td>
+                                                                    <td><em class="ri-checkbox-circle-line align-middle text-success"></em> Subscribed</td>
                                                                     <td>
                                                                         <div class="form-check form-switch">
                                                                             <input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck1" checked="">
@@ -638,7 +638,7 @@ export default {
                                                                     <td>Premium Plan</td>
                                                                     <td>$1200</td>
                                                                     <td>Nov 10, 2021</td>
-                                                                    <td><i class="ri-close-circle-line align-middle text-danger"></i> Unsubscribed</td>
+                                                                    <td><em class="ri-close-circle-line align-middle text-danger"></em> Unsubscribed</td>
                                                                     <td>
                                                                         <div class="form-check form-switch">
                                                                             <input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck2">
@@ -651,7 +651,7 @@ export default {
                                                                     <td>Basic Plan</td>
                                                                     <td>$860</td>
                                                                     <td>Nov 19, 2021</td>
-                                                                    <td><i class="ri-checkbox-circle-line align-middle text-success"></i> Subscribed</td>
+                                                                    <td><em class="ri-checkbox-circle-line align-middle text-success"></em> Subscribed</td>
                                                                     <td>
                                                                         <div class="form-check form-switch">
                                                                             <input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck3">
@@ -664,7 +664,7 @@ export default {
                                                                     <td>Corporate Plan</td>
                                                                     <td>$1599</td>
                                                                     <td>Nov 22, 2021</td>
-                                                                    <td><i class="ri-checkbox-circle-line align-middle text-success"></i> Subscribed</td>
+                                                                    <td><em class="ri-checkbox-circle-line align-middle text-success"></em> Subscribed</td>
                                                                     <td>
                                                                         <div class="form-check form-switch">
                                                                             <input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck4" checked="">
@@ -1064,7 +1064,7 @@ export default {
                                                             <td>Amezon</td>
                                                             <td>Cleo Carson</td>
                                                             <td>$4,521</td>
-                                                            <td><a href="javascript:void(0);"><i class="ri-download-2-line fs-17 lh-1 align-middle"></i></a></td>
+                                                            <td><a href="javascript:void(0);"><em class="ri-download-2-line fs-17 lh-1 align-middle"></em></a></td>
                                                         </tr>
                                                         <tr class="table-active">
                                                             <th scope="row">
@@ -1077,7 +1077,7 @@ export default {
                                                             <td>Shoppers</td>
                                                             <td>Juston Eichmann</td>
                                                             <td>$7,546</td>
-                                                            <td><a href="javascript:void(0);"><i class="ri-download-2-line fs-17 lh-1 align-middle"></i></a></td>
+                                                            <td><a href="javascript:void(0);"><em class="ri-download-2-line fs-17 lh-1 align-middle"></em></a></td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">
@@ -1090,7 +1090,7 @@ export default {
                                                             <td>Flipkart</td>
                                                             <td>Bettie Johson</td>
                                                             <td>$1,350</td>
-                                                            <td><a href="javascript:void(0);"><i class="ri-download-2-line fs-17 lh-1 align-middle"></i></a></td>
+                                                            <td><a href="javascript:void(0);"><em class="ri-download-2-line fs-17 lh-1 align-middle"></em></a></td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">
@@ -1103,7 +1103,7 @@ export default {
                                                             <td>Shoppers</td>
                                                             <td class="table-active">Maritza Blanda</td>
                                                             <td>$4,521</td>
-                                                            <td><a href="javascript:void(0);"><i class="ri-download-2-line fs-17 lh-1 align-middle"></i></a></td>
+                                                            <td><a href="javascript:void(0);"><em class="ri-download-2-line fs-17 lh-1 align-middle"></em></a></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -1226,7 +1226,7 @@ export default {
                                                             <td>
                                                                 <div class="dropdown">
                                                                     <a href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
+                                                                        <em class="ri-more-2-fill"></em>
                                                                     </a>
                                                                     
                                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
@@ -1246,7 +1246,7 @@ export default {
                                                             <td>
                                                                 <div class="dropdown">
                                                                     <a href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
+                                                                        <em class="ri-more-2-fill"></em>
                                                                     </a>    
                                                                   
                                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
@@ -1266,7 +1266,7 @@ export default {
                                                             <td>
                                                                 <div class="dropdown">
                                                                     <a href="#" role="button" id="dropdownMenuLink3" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
+                                                                        <em class="ri-more-2-fill"></em>
                                                                     </a>
                                                                   
                                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
@@ -1286,7 +1286,7 @@ export default {
                                                             <td>
                                                                 <div class="dropdown">
                                                                     <a href="#" role="button" id="dropdownMenuLink4" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
+                                                                        <em class="ri-more-2-fill"></em>
                                                                     </a>
                                                                   
                                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
@@ -1441,7 +1441,7 @@ export default {
                                                             <td>
                                                                 <div class="dropdown">
                                                                     <a href="#" role="button" id="dropdownMenuLink5" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
+                                                                        <em class="ri-more-2-fill"></em>
                                                                     </a>
                                                                   
                                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
@@ -1461,7 +1461,7 @@ export default {
                                                             <td>
                                                                 <div class="dropdown">
                                                                     <a href="#" role="button" id="dropdownMenuLink6" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
+                                                                        <em class="ri-more-2-fill"></em>
                                                                     </a>
                                                                   
                                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
@@ -1481,7 +1481,7 @@ export default {
                                                             <td>
                                                                 <div class="dropdown">
                                                                     <a href="#" role="button" id="dropdownMenuLink7" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
+                                                                        <em class="ri-more-2-fill"></em>
                                                                     </a>
                                                                   
                                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
@@ -1501,7 +1501,7 @@ export default {
                                                             <td>
                                                                 <div class="dropdown">
                                                                     <a href="#" role="button" id="dropdownMenuLink8" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
+                                                                        <em class="ri-more-2-fill"></em>
                                                                     </a>
                                                                   
                                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink8">
@@ -1653,8 +1653,8 @@ export default {
                                                             <td><span class="badge badge-soft-success">Active</span></td>
                                                             <td>
                                                                 <div class="hstack gap-3 fs-15">
-                                                                    <a href="javascript:void(0);" class="link-primary"><i class="ri-settings-4-line"></i></a>
-                                                                    <a href="javascript:void(0);" class="link-danger"><i class="ri-delete-bin-5-line"></i></a>
+                                                                    <a href="javascript:void(0);" class="link-primary"><em class="ri-settings-4-line"></em></a>
+                                                                    <a href="javascript:void(0);" class="link-danger"><em class="ri-delete-bin-5-line"></em></a>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1666,8 +1666,8 @@ export default {
                                                             <td><span class="badge badge-soft-success">Active</span></td>
                                                             <td>
                                                                 <div class="hstack gap-3 fs-15">
-                                                                    <a href="javascript:void(0);" class="link-primary"><i class="ri-settings-4-line"></i></a>
-                                                                    <a href="javascript:void(0);" class="link-danger"><i class="ri-delete-bin-5-line"></i></a>
+                                                                    <a href="javascript:void(0);" class="link-primary"><em class="ri-settings-4-line"></em></a>
+                                                                    <a href="javascript:void(0);" class="link-danger"><em class="ri-delete-bin-5-line"></em></a>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1679,8 +1679,8 @@ export default {
                                                             <td><span class="badge badge-soft-success">Active</span></td>
                                                             <td>
                                                                 <div class="hstack gap-3 fs-15">
-                                                                    <a href="javascript:void(0);" class="link-primary"><i class="ri-settings-4-line"></i></a>
-                                                                    <a href="javascript:void(0);" class="link-danger"><i class="ri-delete-bin-5-line"></i></a>
+                                                                    <a href="javascript:void(0);" class="link-primary"><em class="ri-settings-4-line"></em></a>
+                                                                    <a href="javascript:void(0);" class="link-danger"><em class="ri-delete-bin-5-line"></em></a>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1692,8 +1692,8 @@ export default {
                                                             <td><span class="badge badge-soft-danger">Disabled</span></td>
                                                             <td>
                                                                 <div class="hstack gap-3 fs-15">
-                                                                    <a href="javascript:void(0);" class="link-primary"><i class="ri-settings-4-line"></i></a>
-                                                                    <a href="javascript:void(0);" class="link-danger"><i class="ri-delete-bin-5-line"></i></a>
+                                                                    <a href="javascript:void(0);" class="link-primary"><em class="ri-settings-4-line"></em></a>
+                                                                    <a href="javascript:void(0);" class="link-danger"><em class="ri-delete-bin-5-line"></em></a>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -2682,7 +2682,7 @@ export default {
                                                             </th>
                                                             <td><a href="#" class="fw-medium">#VZ2110</a></td>
                                                             <td>10 Oct, 14:47</td>
-                                                            <td class="text-success"><i class="ri-checkbox-circle-line fs-17 align-middle"></i> Paid</td>
+                                                            <td class="text-success"><em class="ri-checkbox-circle-line fs-17 align-middle"></em> Paid</td>
                                                             <td>
                                                                 <div class="d-flex gap-2 align-items-center">
                                                                     <div class="flex-shrink-0">
@@ -2705,7 +2705,7 @@ export default {
                                                             </th>
                                                             <td><a href="#" class="fw-medium">#VZ2109</a></td>
                                                             <td>17 Oct, 02:10</td>
-                                                            <td class="text-success"><i class="ri-checkbox-circle-line fs-17 align-middle"></i> Paid</td>
+                                                            <td class="text-success"><em class="ri-checkbox-circle-line fs-17 align-middle"></em> Paid</td>
                                                             <td>
                                                                 <div class="d-flex gap-2 align-items-center">
                                                                     <div class="flex-shrink-0">
@@ -2728,7 +2728,7 @@ export default {
                                                             </th>
                                                             <td><a href="#" class="fw-medium">#VZ2108</a></td>
                                                             <td>26 Oct, 08:20</td>
-                                                            <td class="text-primary"><i class="ri-refresh-line fs-17 align-middle"></i> Refunded</td>
+                                                            <td class="text-primary"><em class="ri-refresh-line fs-17 align-middle"></em> Refunded</td>
                                                             <td>
                                                                 <div class="d-flex gap-2 align-items-center">
                                                                     <div class="flex-shrink-0">
@@ -2751,7 +2751,7 @@ export default {
                                                             </th>
                                                             <td><a href="#" class="fw-medium">#VZ2107</a></td>
                                                             <td>02 Nov, 04:52</td>
-                                                            <td class="text-danger"><i class="ri-close-circle-line fs-17 align-middle"></i> Cancel</td>
+                                                            <td class="text-danger"><em class="ri-close-circle-line fs-17 align-middle"></em> Cancel</td>
                                                             <td>
                                                                 <div class="d-flex gap-2 align-items-center">
                                                                     <div class="flex-shrink-0">
@@ -2774,7 +2774,7 @@ export default {
                                                             </th>
                                                             <td><a href="#" class="fw-medium">#VZ2106</a></td>
                                                             <td>10 Nov, 07:20</td>
-                                                            <td class="text-success"><i class="ri-checkbox-circle-line fs-17 align-middle"></i> Paid</td>
+                                                            <td class="text-success"><em class="ri-checkbox-circle-line fs-17 align-middle"></em> Paid</td>
                                                             <td>
                                                                 <div class="d-flex gap-2 align-items-center">
                                                                     <div class="flex-shrink-0">

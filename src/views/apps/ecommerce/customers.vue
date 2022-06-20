@@ -435,14 +435,14 @@
               <div class="col-sm-auto">
                 <div>
                   <button class="btn btn-soft-danger me-1" @click="deleteMultiple">
-                    <i class="ri-delete-bin-2-line"></i>
+                    <em class="ri-delete-bin-2-line"></em>
                   </button>
                   <button type="button" class="btn btn-success add-btn me-1" data-bs-toggle="modal" id="create-btn"
                     data-bs-target="#showModal">
-                    <i class="ri-add-line align-bottom me-1"></i> Add Customer
+                    <em class="ri-add-line align-bottom me-1"></em> Add Customer
                   </button>
                   <button type="button" class="btn btn-info">
-                    <i class="ri-file-download-line align-bottom me-1"></i>
+                    <em class="ri-file-download-line align-bottom me-1"></em>
                     Import
                   </button>
                 </div>
@@ -456,7 +456,7 @@
                   <div class="search-box">
                     <input type="text" class="form-control search"
                       placeholder="Search for customer, email, phone, status or something..." />
-                    <i class="ri-search-line search-icon"></i>
+                    <em class="ri-search-line search-icon"></em>
                   </div>
                 </div>
                 <!--end col-->
@@ -485,7 +485,7 @@
                     <div class="col-sm-4">
                       <div>
                         <button type="button" class="btn btn-primary w-100" onclick="SearchData();">
-                          <i class="ri-equalizer-fill me-2 align-bottom"></i>Filters
+                          <em class="ri-equalizer-fill me-2 align-bottom"></em>Filters
                         </button>
                       </div>
                     </div>
@@ -542,13 +542,13 @@
                             data-bs-placement="top" title="Edit">
                             <a href="#editmodal" data-bs-toggle="modal"
                               class="text-primary d-inline-block edit-item-btn" @click="editdata(item)">
-                              <i class="ri-pencil-fill fs-16"></i>
+                              <em class="ri-pencil-fill fs-16"></em>
                             </a>
                           </li>
                           <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="Remove">
                             <a class="text-danger d-inline-block remove-item-btn" @click="deletedata(item)">
-                              <i class="ri-delete-bin-5-fill fs-16"></i>
+                              <em class="ri-delete-bin-5-fill fs-16"></em>
                             </a>
                           </li>
                         </ul>

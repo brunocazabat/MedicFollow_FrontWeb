@@ -114,7 +114,7 @@ export default {
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Get Report<i class="mdi mdi-chevron-down align-middle ms-1"></i>
+            Get Report<em class="mdi mdi-chevron-down align-middle ms-1"></em>
           </a>
           <div class="dropdown-menu dropdown-menu-end">
             <a class="dropdown-item" href="#">Download Report</a>
@@ -160,7 +160,7 @@ export default {
               <td>${{item.price}}</td>
               <td>
                 <h6 class="fs-14 mb-0" :class="'text-'+item.iconClass">
-                  <i class="align-middle me-1" :class="item.icon"></i>{{item.change}}
+                  <em class="align-middle me-1" :class="item.icon"></em>{{item.change}}
                 </h6>
               </td>
               <td>${{item.balance}}</td>

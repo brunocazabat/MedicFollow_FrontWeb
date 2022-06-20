@@ -564,10 +564,10 @@ export default {
                   class="form-control search"
                   placeholder="Search for transactions..."
                 />
-                <i class="ri-search-line search-icon"></i>
+                <em class="ri-search-line search-icon"></em>
               </div>
               <button class="btn btn-success">
-                <i class="ri-equalizer-line align-bottom me-1"></i> Filters
+                <em class="ri-equalizer-line align-bottom me-1"></em> Filters
               </button>
             </div>
           </div>
@@ -621,7 +621,7 @@ export default {
                           data.icon == 'ri-arrow-right-up-fill',
                       }"
                     >
-                      <i :class="data.icon"></i>
+                      <em :class="data.icon"></em>
                     </div>
                   </div>
                 </td>
@@ -660,7 +660,7 @@ export default {
                       'badge-soft-danger': data.status == 'Failed',
                       'badge-soft-warning': data.status == 'Processing',
                     }"
-                    ><i class="ri-time-line align-bottom"></i>
+                    ><em class="ri-time-line align-bottom"></em>
                     {{ data.status }}</span
                   >
                 </td>

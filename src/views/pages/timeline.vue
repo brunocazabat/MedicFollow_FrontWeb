@@ -45,7 +45,7 @@ export default {
                 <h5>Center Timeline</h5>
                 <div class="timeline">
                     <div class="timeline-item left">
-                        <i class="icon ri-stack-line"></i>
+                        <em class="icon ri-stack-line"></em>
                         <div class="date">15 Dec 2021</div>
                         <div class="content">
                             <div class="d-flex">
@@ -64,7 +64,7 @@ export default {
                         </div>
                     </div>
                     <div class="timeline-item right">
-                        <i class="icon ri-vip-diamond-line"></i>
+                        <em class="icon ri-vip-diamond-line"></em>
                         <div class="date">22 Oct 2021</div>
                         <div class="content">
                             <h5>Adding a new event with attachments</h5>
@@ -74,7 +74,7 @@ export default {
                                     <div class="d-flex border border-dashed p-2 rounded position-relative">
                                         <div class="flex-shrink-0 avatar-xs">
                                             <div class="avatar-title bg-soft-danger text-danger fs-15 rounded shadow">
-                                                <i class="ri-image-2-line"></i>
+                                                <em class="ri-image-2-line"></em>
                                             </div>
                                         </div>
                                         <div class="flex-shrink-0">
@@ -90,7 +90,7 @@ export default {
                                     <div class="d-flex border border-dashed p-2 rounded position-relative">
                                         <div class="flex-shrink-0 avatar-xs">
                                             <div class="avatar-title bg-soft-info text-info fs-15 rounded shadow">
-                                                <i class="ri-file-zip-line"></i>
+                                                <em class="ri-file-zip-line"></em>
                                             </div>
                                         </div>
                                         <div class="flex-grow-1 ms-2 overflow-hidden">
@@ -103,7 +103,7 @@ export default {
                         </div>
                     </div>
                     <div class="timeline-item left">
-                        <i class="icon ri-gift-line"></i>
+                        <em class="icon ri-gift-line"></em>
                         <div class="date">10 Jul 2021</div>
                         <div class="content">
                             <h5>Create new project buildng product</h5>
@@ -133,7 +133,7 @@ export default {
                         </div>
                     </div>
                     <div class="timeline-item right">
-                        <i class="icon ri-shield-star-line"></i>
+                        <em class="icon ri-shield-star-line"></em>
                         <div class="date">18 May 2021</div>
                         <div class="content">
                             <h5>Donald Palmer <small class="text-muted fs-13 fw-normal">- Has changed 2 attributes</small></h5>
@@ -146,7 +146,7 @@ export default {
                         </div>
                     </div>
                     <div class="timeline-item left">
-                        <i class="icon ri-user-smile-line"></i>
+                        <em class="icon ri-user-smile-line"></em>
                         <div class="date">10 Feb 2021</div>
                         <div class="content">
                             <h5>MedicFollow admin dashboard templates layout upload</h5>
@@ -168,14 +168,14 @@ export default {
                         </div>
                     </div>
                     <div class="timeline-item right">
-                        <i class="icon ri-fire-line"></i>
+                        <em class="icon ri-fire-line"></em>
                         <div class="date">01 Jan 2021</div>
                         <div class="content">
                             <h5>New ticket received <span class="badge bg-soft-success text-success fs-10 align-middle ms-1">Completed</span></h5>
                             <p class="text-muted mb-2">
                                 It is important for us that we receive email notifications when a ticket is created as our IT staff are mobile and will not always be looking at the dashboard for new tickets.
                             </p>
-                            <a href="javascript:void(0);" class="link-primary text-decoration-underline">Read More <i class="ri-arrow-right-line"></i></a>
+                            <a href="javascript:void(0);" class="link-primary text-decoration-underline">Read More <em class="ri-arrow-right-line"></em></a>
                         </div>
                     </div>
                 </div>

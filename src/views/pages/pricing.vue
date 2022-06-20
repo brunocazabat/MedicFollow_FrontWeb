@@ -1,66 +1,66 @@
 <script>
-import Layout from "../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../app.config";
+import Layout from '../../layouts/main.vue'
+import PageHeader from '@/components/page-header'
+import appConfig from '../../../app.config'
 
 export default {
   page: {
-    title: "Pricing",
-    meta: [{ name: "description", content: appConfig.description }],
+    title: 'Pricing',
+    meta: [{ name: 'description', content: appConfig.description }]
   },
   data() {
     return {
-      title: "Pricing",
+      title: 'Pricing',
       items: [
         {
-          text: "Pages",
-          href: "/",
+          text: 'Pages',
+          href: '/'
         },
         {
-          text: "Pricing",
-          active: true,
-        },
-      ],
-    };
+          text: 'Pricing',
+          active: true
+        }
+      ]
+    }
   },
   methods: {
     monthly() {
-      const highlightedItems = document.querySelectorAll(".month");
+      const highlightedItems = document.querySelectorAll('.month')
 
       highlightedItems.forEach(function (userItem) {
-        userItem.style.display = "block";
-      });
-      const highlightedItems2 = document.querySelectorAll(".annual");
+        userItem.style.display = 'block'
+      })
+      const highlightedItems2 = document.querySelectorAll('.annual')
 
       highlightedItems2.forEach(function (userItem) {
-        userItem.style.display = "none";
-      });
+        userItem.style.display = 'none'
+      })
     },
     anually() {
-      const highlightedItems = document.querySelectorAll(".month");
+      const highlightedItems = document.querySelectorAll('.month')
 
       highlightedItems.forEach(function (userItem) {
-        userItem.style.display = "none";
-      });
-      const highlightedItems2 = document.querySelectorAll(".annual");
+        userItem.style.display = 'none'
+      })
+      const highlightedItems2 = document.querySelectorAll('.annual')
 
       highlightedItems2.forEach(function (userItem) {
-        userItem.style.display = "block";
-      });
-    },
+        userItem.style.display = 'block'
+      })
+    }
   },
   mounted() {
-    const highlightedItems2 = document.querySelectorAll(".annual");
+    const highlightedItems2 = document.querySelectorAll('.annual')
 
     highlightedItems2.forEach(function (userItem) {
-      userItem.style.display = "none";
-    });
+      userItem.style.display = 'none'
+    })
   },
   components: {
     Layout,
-    PageHeader,
-  },
-};
+    PageHeader
+  }
+}
 </script>
 
 <template>
@@ -142,7 +142,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>3</b> Projects</div>
                 </div>
@@ -150,7 +150,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>299</b> Customers</div>
                 </div>
@@ -158,7 +158,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1">Scalable Bandwidth</div>
                 </div>
@@ -166,7 +166,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>5</b> FTP Login</div>
                 </div>
@@ -174,7 +174,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-danger me-1">
-                    <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-close-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>24/7</b> Support</div>
                 </div>
@@ -182,7 +182,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-danger me-1">
-                    <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-close-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>Unlimited</b> Storage</div>
                 </div>
@@ -190,7 +190,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-danger me-1">
-                    <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-close-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1">Domain</div>
                 </div>
@@ -233,7 +233,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>8</b> Projects</div>
                 </div>
@@ -241,7 +241,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>449</b> Customers</div>
                 </div>
@@ -249,7 +249,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1">Scalable Bandwidth</div>
                 </div>
@@ -257,7 +257,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>7</b> FTP Login</div>
                 </div>
@@ -265,7 +265,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>24/7</b> Support</div>
                 </div>
@@ -273,7 +273,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-danger me-1">
-                    <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-close-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>Unlimited</b> Storage</div>
                 </div>
@@ -281,7 +281,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-danger me-1">
-                    <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-close-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1">Domain</div>
                 </div>
@@ -323,7 +323,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>15</b> Projects</div>
                 </div>
@@ -331,7 +331,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>Unlimited</b> Customers</div>
                 </div>
@@ -339,7 +339,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1">Scalable Bandwidth</div>
                 </div>
@@ -347,7 +347,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>12</b> FTP Login</div>
                 </div>
@@ -355,7 +355,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>24/7</b> Support</div>
                 </div>
@@ -363,7 +363,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>35GB</b> Storage</div>
                 </div>
@@ -371,7 +371,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-danger me-1">
-                    <i class="ri-close-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-close-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1">Domain</div>
                 </div>
@@ -411,7 +411,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>Unlimited</b> Projects</div>
                 </div>
@@ -419,7 +419,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>Unlimited</b> Customers</div>
                 </div>
@@ -427,7 +427,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1">Scalable Bandwidth</div>
                 </div>
@@ -435,7 +435,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>Unlimited</b> FTP Login</div>
                 </div>
@@ -443,7 +443,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>24/7</b> Support</div>
                 </div>
@@ -451,7 +451,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1"><b>Unlimited</b> Storage</div>
                 </div>
@@ -459,7 +459,7 @@ export default {
               <li>
                 <div class="d-flex">
                   <div class="flex-shrink-0 text-success me-1">
-                    <i class="ri-checkbox-circle-fill fs-15 align-middle"></i>
+                    <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
                   </div>
                   <div class="flex-grow-1">Domain</div>
                 </div>
@@ -507,7 +507,7 @@ export default {
                     <div
                       class="avatar-title bg-light rounded-circle text-primary"
                     >
-                      <i class="ri-book-mark-line fs-20"></i>
+                      <em class="ri-book-mark-line fs-20"></em>
                     </div>
                   </div>
                 </div>
@@ -523,9 +523,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">Upto <b>3</b> Projects</div>
                       </div>
@@ -533,9 +533,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">Upto <b>299</b> Customers</div>
                       </div>
@@ -543,9 +543,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">Scalable Bandwidth</div>
                       </div>
@@ -553,9 +553,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1"><b>5</b> FTP Login</div>
                       </div>
@@ -563,9 +563,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-danger me-1">
-                          <i
+                          <em
                             class="ri-close-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1"><b>24/7</b> Support</div>
                       </div>
@@ -573,9 +573,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-danger me-1">
-                          <i
+                          <em
                             class="ri-close-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1"><b>Unlimited</b> Storage</div>
                       </div>
@@ -583,9 +583,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-danger me-1">
-                          <i
+                          <em
                             class="ri-close-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">Domain</div>
                       </div>
@@ -594,11 +594,7 @@ export default {
                   <div class="mt-4">
                     <a
                       href="javascript:void(0);"
-                      class="
-                        btn btn-soft-success
-                        w-100
-                        waves-effect waves-light
-                      "
+                      class="btn btn-soft-success w-100 waves-effect waves-light"
                       >Sign up free</a
                     >
                   </div>
@@ -621,14 +617,9 @@ export default {
                     </div>
                     <div class="avatar-sm">
                       <div
-                        class="
-                          avatar-title
-                          bg-light
-                          rounded-circle
-                          text-primary
-                        "
+                        class="avatar-title bg-light rounded-circle text-primary"
                       >
-                        <i class="ri-medal-line fs-20"></i>
+                        <em class="ri-medal-line fs-20"></em>
                       </div>
                     </div>
                   </div>
@@ -648,9 +639,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">Upto <b>15</b> Projects</div>
                       </div>
@@ -658,9 +649,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">
                           <b>Unlimited</b> Customers
@@ -670,9 +661,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">Scalable Bandwidth</div>
                       </div>
@@ -680,9 +671,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1"><b>12</b> FTP Login</div>
                       </div>
@@ -690,9 +681,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1"><b>24/7</b> Support</div>
                       </div>
@@ -700,9 +691,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-danger me-1">
-                          <i
+                          <em
                             class="ri-close-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1"><b>Unlimited</b> Storage</div>
                       </div>
@@ -710,9 +701,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-danger me-1">
-                          <i
+                          <em
                             class="ri-close-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">Domain</div>
                       </div>
@@ -741,14 +732,9 @@ export default {
                     </div>
                     <div class="avatar-sm">
                       <div
-                        class="
-                          avatar-title
-                          bg-light
-                          rounded-circle
-                          text-primary
-                        "
+                        class="avatar-title bg-light rounded-circle text-primary"
                       >
-                        <i class="ri-stack-line fs-20"></i>
+                        <em class="ri-stack-line fs-20"></em>
                       </div>
                     </div>
                   </div>
@@ -768,9 +754,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1"><b>Unlimited</b> Projects</div>
                       </div>
@@ -778,9 +764,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">
                           <b>Unlimited</b> Customers
@@ -790,9 +776,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">Scalable Bandwidth</div>
                       </div>
@@ -800,9 +786,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">
                           <b>Unlimited</b> FTP Login
@@ -812,9 +798,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1"><b>24/7</b> Support</div>
                       </div>
@@ -822,9 +808,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1"><b>Unlimited</b> Storage</div>
                       </div>
@@ -832,9 +818,9 @@ export default {
                     <li>
                       <div class="d-flex">
                         <div class="flex-shrink-0 text-success me-1">
-                          <i
+                          <em
                             class="ri-checkbox-circle-fill fs-15 align-middle"
-                          ></i>
+                          ></em>
                         </div>
                         <div class="flex-grow-1">Domain</div>
                       </div>
@@ -843,11 +829,7 @@ export default {
                   <div class="mt-4">
                     <a
                       href="javascript:void(0);"
-                      class="
-                        btn btn-soft-success
-                        w-100
-                        waves-effect waves-light
-                      "
+                      class="btn btn-soft-success w-100 waves-effect waves-light"
                       >Get started</a
                     >
                   </div>

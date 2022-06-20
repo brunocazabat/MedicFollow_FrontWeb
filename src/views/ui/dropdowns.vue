@@ -1990,7 +1990,7 @@ And this is more example text.
                                 <span
                                   class="avatar-title bg-soft-info text-info rounded-circle fs-16"
                                 >
-                                  <i class="bx bx-badge-check"></i>
+                                  <em class="bx bx-badge-check"></em>
                                 </span>
                               </div>
                               <div class="flex-1">
@@ -2004,7 +2004,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> Just
+                                    <em class="mdi mdi-clock-outline"></em> Just
                                     30 sec ago
                                   </span>
                                 </p>
@@ -2043,7 +2043,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 48 min
+                                    <em class="mdi mdi-clock-outline"></em> 48 min
                                     ago
                                   </span>
                                 </p>
@@ -2065,7 +2065,7 @@ And this is more example text.
                                 <span
                                   class="avatar-title bg-soft-danger text-danger rounded-circle fs-16"
                                 >
-                                  <i class="bx bx-message-square-dots"></i>
+                                  <em class="bx bx-message-square-dots"></em>
                                 </span>
                               </div>
                               <div class="flex-1">
@@ -2078,7 +2078,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 2 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 2 hrs
                                     ago
                                   </span>
                                 </p>
@@ -2116,7 +2116,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 4 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 4 hrs
                                     ago
                                   </span>
                                 </p>
@@ -2136,7 +2136,7 @@ And this is more example text.
                               class="btn btn-soft-success waves-effect waves-light"
                             >
                               View All Notifications
-                              <i class="ri-arrow-right-line align-middle"></i>
+                              <em class="ri-arrow-right-line align-middle"></em>
                             </button>
                           </div>
                         </div>
@@ -2177,7 +2177,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 30 min
+                                    <em class="mdi mdi-clock-outline"></em> 30 min
                                     ago
                                   </span>
                                 </p>
@@ -2216,7 +2216,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 2 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 2 hrs
                                     ago
                                   </span>
                                 </p>
@@ -2255,7 +2255,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 10 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 10 hrs
                                     ago
                                   </span>
                                 </p>
@@ -2293,7 +2293,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 3 days
+                                    <em class="mdi mdi-clock-outline"></em> 3 days
                                     ago
                                   </span>
                                 </p>
@@ -2313,7 +2313,7 @@ And this is more example text.
                               class="btn btn-soft-success waves-effect waves-light"
                             >
                               View All Messages
-                              <i class="ri-arrow-right-line align-middle"></i>
+                              <em class="ri-arrow-right-line align-middle"></em>
                             </button>
                           </div>
                         </div>
@@ -2428,7 +2428,7 @@ And this is more example text.
                                 <span
                                   class="avatar-title bg-soft-info text-info rounded-circle fs-16"
                                 >
-                                  <i class="bx bx-badge-check"></i>
+                                  <em class="bx bx-badge-check"></em>
                                 </span>
                               </div>
                               <div class="flex-1">
@@ -2442,7 +2442,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> Just
+                                    <em class="mdi mdi-clock-outline"></em> Just
                                     30 sec ago
                                   </span>
                                 </p>
@@ -2481,7 +2481,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 48 min
+                                    <em class="mdi mdi-clock-outline"></em> 48 min
                                     ago
                                   </span>
                                 </p>
@@ -2503,7 +2503,7 @@ And this is more example text.
                                 <span
                                   class="avatar-title bg-soft-danger text-danger rounded-circle fs-16"
                                 >
-                                  <i class="bx bx-message-square-dots"></i>
+                                  <em class="bx bx-message-square-dots"></em>
                                 </span>
                               </div>
                               <div class="flex-1">
@@ -2516,7 +2516,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 2 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 2 hrs
                                     ago
                                   </span>
                                 </p>
@@ -2554,7 +2554,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 4 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 4 hrs
                                     ago
                                   </span>
                                 </p>
@@ -2574,7 +2574,7 @@ And this is more example text.
                               class="btn btn-soft-success waves-effect waves-light"
                             >
                               View All Notifications
-                              <i class="ri-arrow-right-line align-middle"></i>
+                              <em class="ri-arrow-right-line align-middle"></em>
                             </button>
                           </div>
                         </div>
@@ -2615,7 +2615,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 30 min
+                                    <em class="mdi mdi-clock-outline"></em> 30 min
                                     ago
                                   </span>
                                 </p>
@@ -2654,7 +2654,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 2 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 2 hrs
                                     ago
                                   </span>
                                 </p>
@@ -2693,7 +2693,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 10 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 10 hrs
                                     ago
                                   </span>
                                 </p>
@@ -2731,7 +2731,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 3 days
+                                    <em class="mdi mdi-clock-outline"></em> 3 days
                                     ago
                                   </span>
                                 </p>
@@ -2751,7 +2751,7 @@ And this is more example text.
                               class="btn btn-soft-success waves-effect waves-light"
                             >
                               View All Messages
-                              <i class="ri-arrow-right-line align-middle"></i>
+                              <em class="ri-arrow-right-line align-middle"></em>
                             </button>
                           </div>
                         </div>
@@ -2866,7 +2866,7 @@ And this is more example text.
                                 <span
                                   class="avatar-title bg-soft-info text-info rounded-circle fs-16"
                                 >
-                                  <i class="bx bx-badge-check"></i>
+                                  <em class="bx bx-badge-check"></em>
                                 </span>
                               </div>
                               <div class="flex-1">
@@ -2880,7 +2880,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> Just
+                                    <em class="mdi mdi-clock-outline"></em> Just
                                     30 sec ago
                                   </span>
                                 </p>
@@ -2919,7 +2919,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 48 min
+                                    <em class="mdi mdi-clock-outline"></em> 48 min
                                     ago
                                   </span>
                                 </p>
@@ -2941,7 +2941,7 @@ And this is more example text.
                                 <span
                                   class="avatar-title bg-soft-danger text-danger rounded-circle fs-16"
                                 >
-                                  <i class="bx bx-message-square-dots"></i>
+                                  <em class="bx bx-message-square-dots"></em>
                                 </span>
                               </div>
                               <div class="flex-1">
@@ -2954,7 +2954,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 2 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 2 hrs
                                     ago
                                   </span>
                                 </p>
@@ -2992,7 +2992,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 4 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 4 hrs
                                     ago
                                   </span>
                                 </p>
@@ -3012,7 +3012,7 @@ And this is more example text.
                               class="btn btn-soft-success waves-effect waves-light"
                             >
                               View All Notifications
-                              <i class="ri-arrow-right-line align-middle"></i>
+                              <em class="ri-arrow-right-line align-middle"></em>
                             </button>
                           </div>
                         </div>
@@ -3053,7 +3053,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 30 min
+                                    <em class="mdi mdi-clock-outline"></em> 30 min
                                     ago
                                   </span>
                                 </p>
@@ -3092,7 +3092,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 2 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 2 hrs
                                     ago
                                   </span>
                                 </p>
@@ -3131,7 +3131,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 10 hrs
+                                    <em class="mdi mdi-clock-outline"></em> 10 hrs
                                     ago
                                   </span>
                                 </p>
@@ -3169,7 +3169,7 @@ And this is more example text.
                                   class="mb-0 fs-11 fw-medium text-uppercase text-muted"
                                 >
                                   <span>
-                                    <i class="mdi mdi-clock-outline"></i> 3 days
+                                    <em class="mdi mdi-clock-outline"></em> 3 days
                                     ago
                                   </span>
                                 </p>
@@ -3189,7 +3189,7 @@ And this is more example text.
                               class="btn btn-soft-success waves-effect waves-light"
                             >
                               View All Messages
-                              <i class="ri-arrow-right-line align-middle"></i>
+                              <em class="ri-arrow-right-line align-middle"></em>
                             </button>
                           </div>
                         </div>

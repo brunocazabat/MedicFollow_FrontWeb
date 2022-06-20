@@ -477,35 +477,35 @@
             <div class="live-preview">
               <div class="d-flex flex-wrap gap-2">
                 <span class="badge badge-label bg-primary">
-                  <i class="mdi mdi-circle-medium"></i>
+                  <em class="mdi mdi-circle-medium"></em>
                   Primary
                 </span>
                 <span class="badge badge-label bg-secondary">
-                  <i class="mdi mdi-circle-medium"></i>
+                  <em class="mdi mdi-circle-medium"></em>
                   Secondary
                 </span>
                 <span class="badge badge-label bg-success">
-                  <i class="mdi mdi-circle-medium"></i>
+                  <em class="mdi mdi-circle-medium"></em>
                   Success
                 </span>
                 <span class="badge badge-label bg-danger">
-                  <i class="mdi mdi-circle-medium"></i>
+                  <em class="mdi mdi-circle-medium"></em>
                   Danger
                 </span>
                 <span class="badge badge-label bg-warning">
-                  <i class="mdi mdi-circle-medium"></i>
+                  <em class="mdi mdi-circle-medium"></em>
                   Warning
                 </span>
                 <span class="badge badge-label bg-info">
-                  <i class="mdi mdi-circle-medium"></i> Info
+                  <em class="mdi mdi-circle-medium"></em> Info
                 </span>
 
                 <span class="badge badge-label bg-dark">
-                  <i class="mdi mdi-circle-medium"></i> Dark
+                  <em class="mdi mdi-circle-medium"></em> Dark
                 </span>
 
                 <span class="badge badge-label bg-light text-dark">
-                  <i class="mdi mdi-circle-medium"></i> Light
+                  <em class="mdi mdi-circle-medium"></em> Light
                 </span>
               </div>
             </div>
@@ -648,7 +648,7 @@
                     rounded
                   ">
                   <span class="avatar-title bg-transparent">
-                    <i class="bx bxs-envelope"></i>
+                    <em class="bx bxs-envelope"></em>
                   </span>
                   <span class="
                       position-absolute
@@ -673,7 +673,7 @@
                     rounded-circle
                   ">
                   <span class="avatar-title bg-transparent text-reset">
-                    <i class="bx bxs-bell"></i>
+                    <em class="bx bxs-bell"></em>
                   </span>
                 </button>
 
@@ -685,7 +685,7 @@
                     rounded-circle
                   ">
                   <span class="avatar-title bg-transparent text-reset">
-                    <i class="bx bx-menu"></i>
+                    <em class="bx bx-menu"></em>
                   </span>
                   <span class="
                       position-absolute

@@ -1,66 +1,66 @@
 <script>
-import Layout from "../../../layouts/main.vue";
-import appConfig from "../../../../app.config";
-import PageHeader from "@/components/page-header";
+import Layout from '../../../layouts/main.vue'
+import appConfig from '../../../../app.config'
+import PageHeader from '@/components/page-header'
 
-import animationData from "@/components/widgets/uetqnvvg.json";
-import Lottie from "@/components/widgets/lottie.vue";
+import animationData from '@/components/widgets/uetqnvvg.json'
+import Lottie from '@/components/widgets/lottie.vue'
 
 export default {
   page: {
-    title: "Order Details",
+    title: 'Order Details',
     meta: [
       {
-        name: "description",
-        content: appConfig.description,
-      },
-    ],
+        name: 'description',
+        content: appConfig.description
+      }
+    ]
   },
   data() {
     return {
-      title: "Order Details",
+      title: 'Order Details',
       items: [
         {
-          text: "Ecommerce",
-          href: "/",
+          text: 'Ecommerce',
+          href: '/'
         },
         {
-          text: "Order Details",
-          active: true,
-        },
+          text: 'Order Details',
+          active: true
+        }
       ],
       orderSummary: [
         {
           id: 1,
-          img: require("@/assets/images/products/img-8.png"),
-          product: "Sweatshirt for Men (Pink)",
+          img: require('@/assets/images/products/img-8.png'),
+          product: 'Sweatshirt for Men (Pink)',
           price: 119.99,
-          quantity: 2,
+          quantity: 2
         },
         {
           id: 2,
-          img: require("@/assets/images/products/img-7.png"),
-          product: "Noise Evolve Smartwatch",
+          img: require('@/assets/images/products/img-7.png'),
+          product: 'Noise Evolve Smartwatch',
           price: 94.99,
-          quantity: 1,
+          quantity: 1
         },
         {
           id: 3,
-          img: require("@/assets/images/products/img-3.png"),
-          product: "350 ml Glass Grocery Container",
+          img: require('@/assets/images/products/img-3.png'),
+          product: '350 ml Glass Grocery Container',
           price: 24.99,
-          quantity: 1,
-        },
+          quantity: 1
+        }
       ],
-       defaultOptions: { animationData: animationData },
-    };
+      defaultOptions: { animationData: animationData }
+    }
   },
   components: {
     Layout,
     PageHeader,
     lottie: Lottie
-  },
-};
+  }
+}
 </script>
 
 <template>
@@ -76,7 +76,7 @@ export default {
                 <router-link
                   to="/invoices/detail"
                   class="btn btn-success btn-sm"
-                  ><i class="ri-download-2-fill align-middle me-1"></i>
+                  ><em class="ri-download-2-fill align-middle me-1"></em>
                   Invoice</router-link
                 >
               </div>
@@ -130,9 +130,11 @@ export default {
                     <td>{{ item.quantity }}</td>
                     <td>
                       <div class="text-warning fs-15">
-                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i
-                        ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
-                        ><i class="ri-star-half-fill"></i>
+                        <em class="ri-star-fill"></em
+                        ><em class="ri-star-fill"></em
+                        ><em class="ri-star-fill"></em
+                        ><em class="ri-star-fill"></em
+                        ><em class="ri-star-half-fill"></em>
                       </div>
                     </td>
                     <td class="fw-medium text-end">$239.98</td>
@@ -183,15 +185,15 @@ export default {
                 <a
                   href="javascript:void(0);"
                   class="btn btn-soft-info btn-sm mt-2 mt-sm-0 shadow-none"
-                  ><i class="ri-map-pin-line align-middle me-1"></i> Change
+                  ><em class="ri-map-pin-line align-middle me-1"></em> Change
                   Address</a
                 >
                 <a
                   href="javascript:void(0);"
                   class="btn btn-soft-danger btn-sm mt-2 mt-sm-0 ms-1 shadow-none"
-                  ><i
+                  ><em
                     class="mdi mdi-archive-remove-outline align-middle me-1"
-                  ></i>
+                  ></em>
                   Cancel Order</a
                 >
               </div>
@@ -211,8 +213,10 @@ export default {
                     >
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0 avatar-xs">
-                          <div class="avatar-title bg-success rounded-circle shadow">
-                            <i class="ri-shopping-bag-line"></i>
+                          <div
+                            class="avatar-title bg-success rounded-circle shadow"
+                          >
+                            <em class="ri-shopping-bag-line"></em>
                           </div>
                         </div>
                         <div class="flex-grow-1 ms-3">
@@ -250,8 +254,10 @@ export default {
                     >
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0 avatar-xs">
-                          <div class="avatar-title bg-success rounded-circle shadow">
-                            <i class="mdi mdi-gift-outline"></i>
+                          <div
+                            class="avatar-title bg-success rounded-circle shadow"
+                          >
+                            <em class="mdi mdi-gift-outline"></em>
                           </div>
                         </div>
                         <div class="flex-grow-1 ms-3">
@@ -288,8 +294,10 @@ export default {
                     >
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0 avatar-xs">
-                          <div class="avatar-title bg-success rounded-circle shadow">
-                            <i class="ri-truck-line"></i>
+                          <div
+                            class="avatar-title bg-success rounded-circle shadow"
+                          >
+                            <em class="ri-truck-line"></em>
                           </div>
                         </div>
                         <div class="flex-grow-1 ms-3">
@@ -327,7 +335,7 @@ export default {
                           <div
                             class="avatar-title bg-light text-success rounded-circle shadow"
                           >
-                            <i class="ri-takeaway-fill"></i>
+                            <em class="ri-takeaway-fill"></em>
                           </div>
                         </div>
                         <div class="flex-grow-1 ms-3">
@@ -352,7 +360,7 @@ export default {
                           <div
                             class="avatar-title bg-light text-success rounded-circle shadow"
                           >
-                            <i class="mdi mdi-package-variant"></i>
+                            <em class="mdi mdi-package-variant"></em>
                           </div>
                         </div>
                         <div class="flex-grow-1 ms-3">
@@ -375,9 +383,9 @@ export default {
           <div class="card-header">
             <div class="d-flex">
               <h5 class="card-title flex-grow-1 mb-0">
-                <i
+                <em
                   class="mdi mdi-truck-fast-outline align-middle me-1 text-muted"
-                ></i>
+                ></em>
                 Logistics Details
               </h5>
               <div class="flex-shrink-0">
@@ -396,7 +404,7 @@ export default {
                 :options="defaultOptions"
                 :height="80"
                 :width="80"
-                />
+              />
               <h5 class="fs-16 mt-2">RQK Logistics</h5>
               <p class="text-muted mb-0">ID: MFDS1400457854</p>
               <p class="text-muted mb-0">Payment Mode : Debit Card</p>
@@ -434,11 +442,13 @@ export default {
                 </div>
               </li>
               <li>
-                <i class="ri-mail-line me-2 align-middle text-muted fs-16"></i
+                <em class="ri-mail-line me-2 align-middle text-muted fs-16"></em
                 >josephparker@gmail.com
               </li>
               <li>
-                <i class="ri-phone-line me-2 align-middle text-muted fs-16"></i
+                <em
+                  class="ri-phone-line me-2 align-middle text-muted fs-16"
+                ></em
                 >+(256) 245451 441
               </li>
             </ul>
@@ -448,7 +458,7 @@ export default {
         <div class="card">
           <div class="card-header">
             <h5 class="card-title mb-0">
-              <i class="ri-map-pin-line align-middle me-1 text-muted"></i>
+              <em class="ri-map-pin-line align-middle me-1 text-muted"></em>
               Billing Address
             </h5>
           </div>
@@ -466,7 +476,7 @@ export default {
         <div class="card">
           <div class="card-header">
             <h5 class="card-title mb-0">
-              <i class="ri-map-pin-line align-middle me-1 text-muted"></i>
+              <em class="ri-map-pin-line align-middle me-1 text-muted"></em>
               Shipping Address
             </h5>
           </div>
@@ -485,9 +495,9 @@ export default {
         <div class="card">
           <div class="card-header">
             <h5 class="card-title mb-0">
-              <i
+              <em
                 class="ri-secure-payment-line align-bottom me-1 text-muted"
-              ></i>
+              ></em>
               Payment Details
             </h5>
           </div>

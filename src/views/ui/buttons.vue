@@ -538,35 +538,35 @@
                     <a href="javascript:void(0);" class="btn btn-primary btn-label">
                       <div class="d-flex">
                         <div class="flex-shrink-0">
-                          <i class="
+                          <em class="
                               ri-user-smile-line
                               label-icon
                               align-middle
                               fs-16
                               me-2
-                            "></i>
+                            "></em>
                         </div>
                         <div class="flex-grow-1">Primary</div>
                       </div>
                     </a>
                     <b-button variant="success" class="btn-label">
-                      <i class="
+                      <em class="
                           ri-check-double-line
                           label-icon
                           align-middle
                           fs-16
                           me-2
-                        "></i>
+                        "></em>
                       Success
                     </b-button>
                     <b-button variant="warning" class="btn-label">
-                      <i class="
+                      <em class="
                           ri-error-warning-line
                           label-icon
                           align-middle
                           fs-16
                           me-2
-                        "></i>
+                        "></em>
                       Warning
                     </b-button>
                   </div>
@@ -575,36 +575,36 @@
                 <div class="col-lg-4">
                   <div class="d-flex flex-wrap gap-2 mb-3 mb-lg-0">
                     <b-button variant="primary" class="btn-label" pill>
-                      <i class="
+                      <em class="
                           ri-user-smile-line
                           label-icon
                           align-middle
                           rounded-pill
                           fs-16
                           me-2
-                        "></i>
+                        "></em>
                       Primary
                     </b-button>
                     <b-button variant="success" class="btn-label" pill>
-                      <i class="
+                      <em class="
                           ri-check-double-line
                           label-icon
                           align-middle
                           rounded-pill
                           fs-16
                           me-2
-                        "></i>
+                        "></em>
                       Success
                     </b-button>
                     <b-button variant="warning" class="btn-label" pill>
-                      <i class="
+                      <em class="
                           ri-error-warning-line
                           label-icon
                           align-middle
                           rounded-pill
                           fs-16
                           me-2
-                        "></i>
+                        "></em>
                       Warning
                     </b-button>
                   </div>
@@ -613,24 +613,24 @@
                 <div class="col-lg-4">
                   <div class="d-flex flex-wrap gap-2">
                     <b-button variant="primary" class="btn-label right">
-                      <i class="
+                      <em class="
                           ri-user-smile-line
                           label-icon
                           align-middle
                           fs-16
                           ms-2
-                        "></i>
+                        "></em>
                       Primary
                     </b-button>
                     <b-button pill variant="success" class="btn-label right">
-                      <i class="
+                      <em class="
                           ri-check-double-line
                           label-icon
                           align-middle
                           rounded-pill
                           fs-16
                           ms-2
-                        "></i>
+                        "></em>
                       Success
                     </b-button>
                   </div>
@@ -1283,13 +1283,13 @@ Single toggle
                 <div class="col-sm-6">
                   <b-button-group class="mt-4 mt-sm-0">
                     <b-button variant="light" class="btn-icon">
-                      <i class="ri-align-right"></i>
+                      <em class="ri-align-right"></em>
                     </b-button>
                     <b-button variant="light" class="btn-icon">
-                      <i class="ri-align-center"></i>
+                      <em class="ri-align-center"></em>
                     </b-button>
                     <b-button variant="light" class="btn-icon">
-                      <i class="ri-align-left"></i>
+                      <em class="ri-align-left"></em>
                     </b-button>
                   </b-button-group>
                 </div>
@@ -1341,16 +1341,16 @@ Single toggle
                 <div class="col-sm-6">
                   <div class="hstack gap-2">
                     <b-button variant="primary" class="btn-icon waves-effect waves-light">
-                      <i class="ri-map-pin-line"></i>
+                      <em class="ri-map-pin-line"></em>
                     </b-button>
                     <b-button variant="danger" class="btn-icon waves-effect waves-light">
-                      <i class="ri-delete-bin-5-line"></i>
+                      <em class="ri-delete-bin-5-line"></em>
                     </b-button>
                     <b-button variant="success" class="btn-icon waves-effect waves-light">
-                      <i class="ri-check-double-line"></i>
+                      <em class="ri-check-double-line"></em>
                     </b-button>
                     <b-button variant="light" class="btn-icon waves-effect">
-                      <i class="ri-brush-2-fill"></i>
+                      <em class="ri-brush-2-fill"></em>
                     </b-button>
                   </div>
                 </div>
@@ -1358,16 +1358,16 @@ Single toggle
                 <div class="col-sm-6">
                   <div class="hstack gap-2 mt-4 mt-sm-0">
                     <b-button variant="outline-primary" class="btn-icon waves-effect waves-light shadow-none">
-                      <i class="ri-24-hours-fill"></i>
+                      <em class="ri-24-hours-fill"></em>
                     </b-button>
                     <b-button variant="outline-danger" class="btn-icon waves-effect waves-light shadow-none">
-                      <i class="ri-customer-service-2-line"></i>
+                      <em class="ri-customer-service-2-line"></em>
                     </b-button>
                     <b-button variant="outline-success" class="btn-icon waves-effect waves-light shadow-none">
-                      <i class="ri-mail-send-line"></i>
+                      <em class="ri-mail-send-line"></em>
                     </b-button>
                     <b-button variant="outline-warning" class="btn-icon waves-effect waves-light shadow-none">
-                      <i class="ri-menu-2-line"></i>
+                      <em class="ri-menu-2-line"></em>
                     </b-button>
                   </div>
                 </div>

@@ -9,7 +9,7 @@
     class="dropzone position-relative"
   >
     <div class="mb-1">
-        <i class="display-4 text-muted ri-upload-cloud-2-fill"></i>
+        <em class="display-4 text-muted ri-upload-cloud-2-fill"></em>
     </div>
 
     <h5>Drop files here or click to upload.</h5>

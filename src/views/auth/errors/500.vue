@@ -20,7 +20,7 @@ export default {
                             <div>
                                 <h4>Internal Server Error!</h4>
                                 <p class="text-muted w-75 mx-auto">Server Error 500. We're not exactly sure what happened, but our servers say something is wrong.</p>
-                                <router-link to="/" class="btn btn-success"><i class="mdi mdi-home me-1"></i>Back to home</router-link>
+                                <router-link to="/" class="btn btn-success"><em class="mdi mdi-home me-1"></em>Back to home</router-link>
                             </div>
                         </div><!-- end col-->
                     </div>

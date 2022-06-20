@@ -105,7 +105,7 @@ export default {
             </span>
           </router-link>
           <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover" @click="initActiveMenu">
-            <i class="ri-record-circle-line"></i>
+            <em class="ri-record-circle-line"></em>
           </button>
         </div>
 

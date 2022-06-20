@@ -1,34 +1,34 @@
 <script>
-import Layout from "../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../app.config";
+import Layout from '../../layouts/main.vue'
+import PageHeader from '@/components/page-header'
+import appConfig from '../../../app.config'
 
 export default {
   page: {
-    title: "Team",
-    meta: [{ name: "description", content: appConfig.description }],
+    title: 'Team',
+    meta: [{ name: 'description', content: appConfig.description }]
   },
   data() {
     return {
-      title: "Team",
+      title: 'Team',
       items: [
         {
-          text: "Pages",
-          href: "/",
+          text: 'Pages',
+          href: '/'
         },
         {
-          text: "Team",
-          active: true,
-        },
-      ],
-    };
+          text: 'Team',
+          active: true
+        }
+      ]
+    }
   },
-  name: "Widgets",
+  name: 'Widgets',
   components: {
     Layout,
-    PageHeader,
-  },
-};
+    PageHeader
+  }
+}
 </script>
 
 <template>
@@ -44,7 +44,7 @@ export default {
                 class="form-control"
                 placeholder="Search for name, tasks, projects or something..."
               />
-              <i class="ri-search-line search-icon"></i>
+              <em class="ri-search-line search-icon"></em>
             </div>
           </div>
           <!--end col-->
@@ -53,23 +53,16 @@ export default {
               <button
                 type="button"
                 id="grid-view-button"
-                class="
-                  btn btn-soft-info
-                  nav-link
-                  btn-icon
-                  fs-14
-                  active
-                  filter-button shadow-none
-                "
+                class="btn btn-soft-info nav-link btn-icon fs-14 active filter-button shadow-none"
               >
-                <i class="ri-grid-fill"></i>
+                <em class="ri-grid-fill"></em>
               </button>
               <button
                 type="button"
                 id="list-view-button"
                 class="btn btn-soft-info nav-link btn-icon fs-14 filter-button shadow-none"
               >
-                <i class="ri-list-unordered"></i>
+                <em class="ri-list-unordered"></em>
               </button>
               <button
                 type="button"
@@ -78,7 +71,7 @@ export default {
                 aria-expanded="false"
                 class="btn btn-soft-info btn-icon fs-14 shadow-none"
               >
-                <i class="ri-more-2-fill"></i>
+                <em class="ri-more-2-fill"></em>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
                 <li><a class="dropdown-item" href="#">All</a></li>
@@ -91,7 +84,7 @@ export default {
                 data-bs-toggle="modal"
                 data-bs-target="#addmembers"
               >
-                <i class="ri-add-fill me-1 align-bottom"></i> Add Members
+                <em class="ri-add-fill me-1 align-bottom"></em> Add Members
               </button>
             </div>
           </div>
@@ -139,7 +132,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -149,7 +142,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -157,7 +150,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -165,9 +158,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -178,13 +171,7 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle
-                            flex-shrink-0
-                            shadow
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
                             src="@/assets/images/users/avatar-2.jpg"
@@ -265,7 +252,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -275,7 +262,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -283,7 +270,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -291,9 +278,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -305,20 +292,10 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle
-                            flex-shrink-0 shadow
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <div
-                            class="
-                              avatar-title
-                              bg-soft-danger
-                              text-danger
-                              rounded-circle
-                            "
+                            class="avatar-title bg-soft-danger text-danger rounded-circle"
                           >
                             HB
                           </div>
@@ -399,7 +376,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -409,7 +386,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -417,7 +394,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -425,9 +402,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -438,12 +415,7 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle
-                            flex-shrink-0 shadow
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
                             src="@/assets/images/users/avatar-3.jpg"
@@ -524,7 +496,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -534,7 +506,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -542,7 +514,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -550,9 +522,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -563,12 +535,7 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle 
-                            flex-shrink-0 shadow
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
                             src="@/assets/images/users/avatar-8.jpg"
@@ -648,7 +615,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -658,7 +625,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -666,7 +633,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -674,9 +641,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -687,20 +654,10 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle
-                            flex-shrink-0 shadow
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <div
-                            class="
-                              avatar-title
-                              bg-soft-success
-                              text-success
-                              rounded-circle
-                            "
+                            class="avatar-title bg-soft-success text-success rounded-circle"
                           >
                             ME
                           </div>
@@ -779,7 +736,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -789,7 +746,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -797,7 +754,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -805,9 +762,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -818,12 +775,7 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle
-                            flex-shrink-0 shadow
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
                             src="@/assets/images/users/avatar-4.jpg"
@@ -904,7 +856,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -914,7 +866,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -922,7 +874,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -930,9 +882,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -944,20 +896,10 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle
-                            flex-shrink-0 shadow
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <div
-                            class="
-                              avatar-title
-                              bg-soft-info
-                              text-info
-                              rounded-circle
-                            "
+                            class="avatar-title bg-soft-info text-info rounded-circle"
                           >
                             NC
                           </div>
@@ -1039,7 +981,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -1049,7 +991,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -1057,7 +999,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -1065,9 +1007,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -1079,12 +1021,7 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle
-                            flex-shrink-0 shadow
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
                             src="@/assets/images/users/avatar-6.jpg"
@@ -1168,7 +1105,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -1178,7 +1115,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -1186,7 +1123,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -1194,9 +1131,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -1208,12 +1145,7 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle
-                            flex-shrink-0 shadow
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
                             src="@/assets/images/users/avatar-5.jpg"
@@ -1298,7 +1230,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -1308,7 +1240,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -1316,7 +1248,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -1324,9 +1256,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -1338,21 +1270,10 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle
-                            flex-shrink-0
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0"
                         >
                           <div
-                            class="
-                              avatar-title
-                              border
-                              bg-light
-                              text-primary
-                              rounded-circle shadow
-                            "
+                            class="avatar-title border bg-light text-primary rounded-circle shadow"
                           >
                             DP
                           </div>
@@ -1433,7 +1354,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -1443,7 +1364,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -1451,7 +1372,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -1459,9 +1380,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -1473,12 +1394,7 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle  
-                            flex-shrink-0 shadow
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
                             src="@/assets/images/users/avatar-7.jpg"
@@ -1562,7 +1478,7 @@ export default {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <i class="ri-more-fill fs-17"></i>
+                            <em class="ri-more-fill fs-17"></em>
                           </a>
                           <ul
                             class="dropdown-menu dropdown-menu-end"
@@ -1572,7 +1488,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-eye-line me-2 align-middle"></i
+                                ><em class="ri-eye-line me-2 align-middle"></em
                                 >View</a
                               >
                             </li>
@@ -1580,7 +1496,7 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i class="ri-star-line me-2 align-middle"></i
+                                ><em class="ri-star-line me-2 align-middle"></em
                                 >Favorites</a
                               >
                             </li>
@@ -1588,9 +1504,9 @@ export default {
                               <a
                                 class="dropdown-item"
                                 href="javascript:void(0);"
-                                ><i
+                                ><em
                                   class="ri-delete-bin-5-line me-2 align-middle"
-                                ></i
+                                ></em
                                 >Delete</a
                               >
                             </li>
@@ -1602,20 +1518,10 @@ export default {
                     <div class="col-lg-4 col">
                       <div class="team-profile-img">
                         <div
-                          class="
-                            avatar-lg
-                            img-thumbnail
-                            rounded-circle
-                            flex-shrink-0
-                          "
+                          class="avatar-lg img-thumbnail rounded-circle flex-shrink-0"
                         >
                           <div
-                            class="
-                              avatar-title
-                              bg-soft-success
-                              text-success
-                              rounded-circle shadow
-                            "
+                            class="avatar-title bg-soft-success text-success rounded-circle shadow"
                           >
                             MW
                           </div>
@@ -1665,9 +1571,9 @@ export default {
             <div class="col-lg-12">
               <div class="text-center mb-3">
                 <a href="javascript:void(0);" class="text-success"
-                  ><i
+                  ><em
                     class="mdi mdi-loading mdi-spin fs-20 align-middle me-2"
-                  ></i>
+                  ></em>
                   Load More
                 </a>
               </div>
@@ -1822,7 +1728,7 @@ export default {
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        <i class="ri-more-fill fs-17"></i>
+                        <em class="ri-more-fill fs-17"></em>
                       </a>
                       <ul
                         class="dropdown-menu dropdown-menu-end"
@@ -1830,21 +1736,21 @@ export default {
                       >
                         <li>
                           <a class="dropdown-item" href="javascript:void(0);"
-                            ><i class="ri-eye-line me-2 align-middle"></i
+                            ><em class="ri-eye-line me-2 align-middle"></em
                             >View</a
                           >
                         </li>
                         <li>
                           <a class="dropdown-item" href="javascript:void(0);"
-                            ><i class="ri-star-line me-2 align-middle"></i
+                            ><em class="ri-star-line me-2 align-middle"></em
                             >Favorites</a
                           >
                         </li>
                         <li>
                           <a class="dropdown-item" href="javascript:void(0);"
-                            ><i
+                            ><em
                               class="ri-delete-bin-5-line me-2 align-middle"
-                            ></i
+                            ></em
                             >Delete</a
                           >
                         </li>
@@ -1872,29 +1778,17 @@ export default {
                   <div class="avatar-xs">
                     <a
                       href="javascript:void(0);"
-                      class="
-                        avatar-title
-                        bg-soft-secondary
-                        text-secondary
-                        rounded
-                        fs-16
-                      "
+                      class="avatar-title bg-soft-secondary text-secondary rounded fs-16"
                     >
-                      <i class="ri-facebook-fill"></i>
+                      <em class="ri-facebook-fill"></em>
                     </a>
                   </div>
                   <div class="avatar-xs">
                     <a
                       href="javascript:void(0);"
-                      class="
-                        avatar-title
-                        bg-soft-success
-                        text-success
-                        rounded
-                        fs-16
-                      "
+                      class="avatar-title bg-soft-success text-success rounded fs-16"
                     >
-                      <i class="ri-slack-fill"></i>
+                      <em class="ri-slack-fill"></em>
                     </a>
                   </div>
                   <div class="avatar-xs">
@@ -1902,21 +1796,15 @@ export default {
                       href="javascript:void(0);"
                       class="avatar-title bg-soft-info text-info rounded fs-16"
                     >
-                      <i class="ri-linkedin-fill"></i>
+                      <em class="ri-linkedin-fill"></em>
                     </a>
                   </div>
                   <div class="avatar-xs">
                     <a
                       href="javascript:void(0);"
-                      class="
-                        avatar-title
-                        bg-soft-danger
-                        text-danger
-                        rounded
-                        fs-16
-                      "
+                      class="avatar-title bg-soft-danger text-danger rounded fs-16"
                     >
-                      <i class="ri-dribbble-fill"></i>
+                      <em class="ri-dribbble-fill"></em>
                     </a>
                   </div>
                 </div>
@@ -1964,15 +1852,9 @@ export default {
                 <div class="d-flex mb-3">
                   <div class="flex-shrink-0 avatar-xs">
                     <div
-                      class="
-                        avatar-title
-                        bg-soft-danger
-                        text-danger
-                        rounded
-                        fs-16
-                      "
+                      class="avatar-title bg-soft-danger text-danger rounded fs-16"
                     >
-                      <i class="ri-image-2-line"></i>
+                      <em class="ri-image-2-line"></em>
                     </div>
                   </div>
                   <div class="flex-grow-1 ms-3">
@@ -1986,15 +1868,9 @@ export default {
                 <div class="d-flex mb-3">
                   <div class="flex-shrink-0 avatar-xs">
                     <div
-                      class="
-                        avatar-title
-                        bg-soft-secondary
-                        text-secondary
-                        rounded
-                        fs-16
-                      "
+                      class="avatar-title bg-soft-secondary text-secondary rounded fs-16"
                     >
-                      <i class="ri-file-zip-line"></i>
+                      <em class="ri-file-zip-line"></em>
                     </div>
                   </div>
                   <div class="flex-grow-1 ms-3">
@@ -2008,15 +1884,9 @@ export default {
                 <div class="d-flex mb-3">
                   <div class="flex-shrink-0 avatar-xs">
                     <div
-                      class="
-                        avatar-title
-                        bg-soft-success
-                        text-success
-                        rounded
-                        fs-16
-                      "
+                      class="avatar-title bg-soft-success text-success rounded fs-16"
                     >
-                      <i class="ri-live-line"></i>
+                      <em class="ri-live-line"></em>
                     </div>
                   </div>
                   <div class="flex-grow-1 ms-3">
@@ -2030,15 +1900,9 @@ export default {
                 <div class="d-flex">
                   <div class="flex-shrink-0 avatar-xs">
                     <div
-                      class="
-                        avatar-title
-                        bg-soft-primary
-                        text-primary
-                        rounded
-                        fs-16
-                      "
+                      class="avatar-title bg-soft-primary text-primary rounded fs-16"
                     >
-                      <i class="ri-error-warning-line"></i>
+                      <em class="ri-error-warning-line"></em>
                     </div>
                   </div>
                   <div class="flex-grow-1 ms-3">
@@ -2053,22 +1917,14 @@ export default {
             </div>
             <!--end offcanvas-body-->
             <div
-              class="
-                offcanvas-foorter
-                border
-                p-3
-                hstack
-                gap-3
-                text-center
-                position-relative
-              "
+              class="offcanvas-foorter border p-3 hstack gap-3 text-center position-relative"
             >
               <button class="btn btn-light w-100">
-                <i class="ri-question-answer-fill align-bottom ms-1"></i> Send
+                <em class="ri-question-answer-fill align-bottom ms-1"></em> Send
                 Message
               </button>
               <router-link to="/pages/profile" class="btn btn-primary w-100"
-                ><i class="ri-user-3-fill align-bottom ms-1"></i> View
+                ><em class="ri-user-3-fill align-bottom ms-1"></em> View
                 Profile</router-link
               >
             </div>

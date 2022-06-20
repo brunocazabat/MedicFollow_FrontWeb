@@ -38,32 +38,32 @@ export default {
     lottie: Lottie,
   },
   mounted() {
-    document.querySelectorAll(".checkout-tab").forEach( (form) => {
+    document.querySelectorAll(".checkout-tab").forEach((form) => {
       // next tab
-      form.querySelectorAll(".nexttab").forEach( (nextButton) => {
+      form.querySelectorAll(".nexttab").forEach((nextButton) => {
         var tabEl = form.querySelectorAll('button[data-bs-toggle="pill"]');
-        tabEl.forEach( (item) => {
-          item.addEventListener("show.bs.tab",  (event) => {
+        tabEl.forEach((item) => {
+          item.addEventListener("show.bs.tab", (event) => {
             event.target.classList.add("done");
           });
         });
-        nextButton.addEventListener("click",  ()   =>{
+        nextButton.addEventListener("click", () => {
           var nextTab = nextButton.getAttribute("data-nexttab");
           document.getElementById(nextTab).click();
         });
       });
 
       //Pervies tab
-      form.querySelectorAll(".previestab").forEach( (prevButton)  =>{
-        prevButton.addEventListener("click",  ()  =>{
+      form.querySelectorAll(".previestab").forEach((prevButton) => {
+        prevButton.addEventListener("click", () => {
           var prevTab = prevButton.getAttribute("data-previous");
           var totalDone = prevButton
             .closest("form")
             .querySelectorAll(".custom-nav .done").length;
           for (var i = totalDone - 1; i < totalDone; i++) {
-            prevButton.closest("form").querySelectorAll(".custom-nav .done")[i]
-              ? prevButton.closest("form").querySelectorAll(".custom-nav .done")[i].classList.remove("done")
-              : "";
+            prevButton.closest("form").querySelectorAll(".custom-nav .done")[i] ? prevButton
+                  .closest("form")
+                  .querySelectorAll(".custom-nav .done")[i].classList.remove("done") : "";
           }
           document.getElementById(prevTab).click();
         });
@@ -71,15 +71,13 @@ export default {
 
       // Step number click
       var tabButtons = form.querySelectorAll('button[data-bs-toggle="pill"]');
-      tabButtons.forEach( (button, i)  => {
+      tabButtons.forEach((button, i) => {
         button.setAttribute("data-position", i);
-        button.addEventListener("click",  () => {
+        button.addEventListener("click", () => {
           form.querySelectorAll(".custom-nav .done").length > 0
-            ? form
-                .querySelectorAll(".custom-nav .done")
-                .forEach( (doneTab)   =>{
-                  doneTab.classList.remove("done");
-                })
+            ? form.querySelectorAll(".custom-nav .done").forEach((doneTab) => {
+                doneTab.classList.remove("done");
+              })
             : "";
           for (var j = 0; j <= i; j++) {
             tabButtons[j].classList.contains("active")
@@ -117,18 +115,9 @@ export default {
                       aria-controls="pills-bill-info"
                       aria-selected="true"
                     >
-                      <i
-                        class="
-                          ri-user-2-line
-                          fs-16
-                          p-2
-                          bg-soft-primary
-                          text-primary
-                          rounded-circle
-                          align-middle
-                          me-2
-                        "
-                      ></i>
+                      <em
+                        class="ri-user-2-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"
+                      ></em>
                       Personal Info
                     </button>
                   </li>
@@ -143,18 +132,9 @@ export default {
                       aria-controls="pills-bill-address"
                       aria-selected="false"
                     >
-                      <i
-                        class="
-                          ri-truck-line
-                          fs-16
-                          p-2
-                          bg-soft-primary
-                          text-primary
-                          rounded-circle
-                          align-middle
-                          me-2
-                        "
-                      ></i>
+                      <em
+                        class="ri-truck-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"
+                      ></em>
                       Shipping Info
                     </button>
                   </li>
@@ -169,18 +149,9 @@ export default {
                       aria-controls="pills-payment"
                       aria-selected="false"
                     >
-                      <i
-                        class="
-                          ri-bank-card-line
-                          fs-16
-                          p-2
-                          bg-soft-primary
-                          text-primary
-                          rounded-circle
-                          align-middle
-                          me-2
-                        "
-                      ></i>
+                      <em
+                        class="ri-bank-card-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"
+                      ></em>
                       Payment Info
                     </button>
                   </li>
@@ -195,18 +166,9 @@ export default {
                       aria-controls="pills-finish"
                       aria-selected="false"
                     >
-                      <i
-                        class="
-                          ri-checkbox-circle-line
-                          fs-16
-                          p-2
-                          bg-soft-primary
-                          text-primary
-                          rounded-circle
-                          align-middle
-                          me-2
-                        "
-                      ></i
+                      <em
+                        class="ri-checkbox-circle-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"
+                      ></em
                       >Finish
                     </button>
                   </li>
@@ -376,15 +338,9 @@ export default {
                         class="btn btn-primary btn-label right ms-auto nexttab"
                         data-nexttab="pills-bill-address-tab"
                       >
-                        <i
-                          class="
-                            ri-truck-line
-                            label-icon
-                            align-middle
-                            fs-16
-                            ms-2
-                          "
-                        ></i
+                        <em
+                          class="ri-truck-line label-icon align-middle fs-16 ms-2"
+                        ></em
                         >Proceed to Shipping
                       </button>
                     </div>
@@ -437,12 +393,7 @@ export default {
                             for="shippingAddress01"
                           >
                             <span
-                              class="
-                                mb-4
-                                fw-semibold
-                                d-block
-                                text-muted text-uppercase
-                              "
+                              class="mb-4 fw-semibold d-block text-muted text-uppercase"
                               >Home Address</span
                             >
 
@@ -450,13 +401,7 @@ export default {
                               >Marcus Alfaro</span
                             >
                             <span
-                              class="
-                                text-muted
-                                fw-normal
-                                text-wrap
-                                mb-1
-                                d-block
-                              "
+                              class="text-muted fw-normal text-wrap mb-1 d-block"
                               >4739 Bubby Drive Austin, TX 78729</span
                             >
                             <span class="text-muted fw-normal d-block"
@@ -465,16 +410,7 @@ export default {
                           </label>
                         </div>
                         <div
-                          class="
-                            d-flex
-                            flex-wrap
-                            p-2
-                            py-1
-                            bg-light
-                            rounded-bottom
-                            border
-                            mt-n1
-                          "
+                          class="d-flex flex-wrap p-2 py-1 bg-light rounded-bottom border mt-n1"
                         >
                           <div>
                             <a
@@ -482,14 +418,9 @@ export default {
                               class="d-block text-body p-1 px-2"
                               data-bs-toggle="modal"
                               data-bs-target="#addAddressModal"
-                              ><i
-                                class="
-                                  ri-pencil-fill
-                                  text-muted
-                                  align-bottom
-                                  me-1
-                                "
-                              ></i>
+                              ><em
+                                class="ri-pencil-fill text-muted align-bottom me-1"
+                              ></em>
                               Edit</a
                             >
                           </div>
@@ -499,14 +430,9 @@ export default {
                               class="d-block text-body p-1 px-2"
                               data-bs-toggle="modal"
                               data-bs-target="#removeItemModal"
-                              ><i
-                                class="
-                                  ri-delete-bin-fill
-                                  text-muted
-                                  align-bottom
-                                  me-1
-                                "
-                              ></i>
+                              ><em
+                                class="ri-delete-bin-fill text-muted align-bottom me-1"
+                              ></em>
                               Remove</a
                             >
                           </div>
@@ -525,24 +451,13 @@ export default {
                             for="shippingAddress02"
                           >
                             <span
-                              class="
-                                mb-4
-                                fw-semibold
-                                d-block
-                                text-muted text-uppercase
-                              "
+                              class="mb-4 fw-semibold d-block text-muted text-uppercase"
                               >Office Address</span
                             >
 
                             <span class="fs-14 mb-2 d-block">James Honda</span>
                             <span
-                              class="
-                                text-muted
-                                fw-normal
-                                text-wrap
-                                mb-1
-                                d-block
-                              "
+                              class="text-muted fw-normal text-wrap mb-1 d-block"
                               >1246 Virgil Street Pensacola, FL 32501
                             </span>
                             <span class="text-muted fw-normal d-block"
@@ -551,16 +466,7 @@ export default {
                           </label>
                         </div>
                         <div
-                          class="
-                            d-flex
-                            flex-wrap
-                            p-2
-                            py-1
-                            bg-light
-                            rounded-bottom
-                            border
-                            mt-n1
-                          "
+                          class="d-flex flex-wrap p-2 py-1 bg-light rounded-bottom border mt-n1"
                         >
                           <div>
                             <a
@@ -568,14 +474,9 @@ export default {
                               class="d-block text-body p-1 px-2"
                               data-bs-toggle="modal"
                               data-bs-target="#addAddressModal"
-                              ><i
-                                class="
-                                  ri-pencil-fill
-                                  text-muted
-                                  align-bottom
-                                  me-1
-                                "
-                              ></i>
+                              ><em
+                                class="ri-pencil-fill text-muted align-bottom me-1"
+                              ></em>
                               Edit</a
                             >
                           </div>
@@ -585,14 +486,9 @@ export default {
                               class="d-block text-body p-1 px-2"
                               data-bs-toggle="modal"
                               data-bs-target="#removeItemModal"
-                              ><i
-                                class="
-                                  ri-delete-bin-fill
-                                  text-muted
-                                  align-bottom
-                                  me-1
-                                "
-                              ></i>
+                              ><em
+                                class="ri-delete-bin-fill text-muted align-bottom me-1"
+                              ></em>
                               Remove</a
                             >
                           </div>
@@ -618,14 +514,7 @@ export default {
                               for="shippingMethod01"
                             >
                               <span
-                                class="
-                                  fs-20
-                                  float-end
-                                  mt-2
-                                  text-wrap
-                                  d-block
-                                  fw-semibold
-                                "
+                                class="fs-20 float-end mt-2 text-wrap d-block fw-semibold"
                                 >Free</span
                               >
                               <span class="fs-14 mb-1 text-wrap d-block"
@@ -652,14 +541,7 @@ export default {
                               for="shippingMethod02"
                             >
                               <span
-                                class="
-                                  fs-20
-                                  float-end
-                                  mt-2
-                                  text-wrap
-                                  d-block
-                                  fw-semibold
-                                "
+                                class="fs-20 float-end mt-2 text-wrap d-block fw-semibold"
                                 >$24.99</span
                               >
                               <span class="fs-14 mb-1 text-wrap d-block"
@@ -682,15 +564,9 @@ export default {
                       class="btn btn-light btn-label previestab"
                       data-previous="pills-bill-info-tab"
                     >
-                      <i
-                        class="
-                          ri-arrow-left-line
-                          label-icon
-                          align-middle
-                          fs-16
-                          me-2
-                        "
-                      ></i
+                      <em
+                        class="ri-arrow-left-line label-icon align-middle fs-16 me-2"
+                      ></em
                       >Back to Personal Info
                     </button>
                     <button
@@ -698,15 +574,9 @@ export default {
                       class="btn btn-primary btn-label right ms-auto nexttab"
                       data-nexttab="pills-payment-tab"
                     >
-                      <i
-                        class="
-                          ri-bank-card-line
-                          label-icon
-                          align-middle
-                          fs-16
-                          ms-2
-                        "
-                      ></i
+                      <em
+                        class="ri-bank-card-line label-icon align-middle fs-16 ms-2"
+                      ></em
                       >Continue to Payment
                     </button>
                   </div>
@@ -743,7 +613,7 @@ export default {
                           />
                           <label class="form-check-label" for="paymentMethod01">
                             <span class="fs-16 text-muted me-2"
-                              ><i class="ri-paypal-fill align-bottom"></i
+                              ><em class="ri-paypal-fill align-bottom"></em
                             ></span>
                             <span class="fs-14 text-wrap">Paypal</span>
                           </label>
@@ -767,7 +637,7 @@ export default {
                           />
                           <label class="form-check-label" for="paymentMethod02">
                             <span class="fs-16 text-muted me-2"
-                              ><i class="ri-bank-card-fill align-bottom"></i
+                              ><em class="ri-bank-card-fill align-bottom"></em
                             ></span>
                             <span class="fs-14 text-wrap"
                               >Credit / Debit Card</span
@@ -793,9 +663,9 @@ export default {
                           />
                           <label class="form-check-label" for="paymentMethod03">
                             <span class="fs-16 text-muted me-2"
-                              ><i
+                              ><em
                                 class="ri-money-dollar-box-fill align-bottom"
-                              ></i
+                              ></em
                             ></span>
                             <span class="fs-14 text-wrap"
                               >Cash on Delivery</span
@@ -860,7 +730,7 @@ export default {
                       </div>
                     </div>
                     <div class="text-muted mt-2 fst-italic">
-                      <i data-feather="lock" class="text-muted icon-xs"></i>
+                      <em data-feather="lock" class="text-muted icon-xs"></em>
                       Your transaction is secured with SSL encryption
                     </div>
                   </div>
@@ -871,15 +741,9 @@ export default {
                       class="btn btn-light btn-label previestab"
                       data-previous="pills-bill-address-tab"
                     >
-                      <i
-                        class="
-                          ri-arrow-left-line
-                          label-icon
-                          align-middle
-                          fs-16
-                          me-2
-                        "
-                      ></i
+                      <em
+                        class="ri-arrow-left-line label-icon align-middle fs-16 me-2"
+                      ></em
                       >Back to Shipping
                     </button>
                     <button
@@ -887,15 +751,9 @@ export default {
                       class="btn btn-primary btn-label right ms-auto nexttab"
                       data-nexttab="pills-finish-tab"
                     >
-                      <i
-                        class="
-                          ri-shopping-basket-line
-                          label-icon
-                          align-middle
-                          fs-16
-                          ms-2
-                        "
-                      ></i
+                      <em
+                        class="ri-shopping-basket-line label-icon align-middle fs-16 ms-2"
+                      ></em
                       >Complete Order
                     </button>
                   </div>

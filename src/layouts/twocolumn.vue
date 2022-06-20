@@ -221,7 +221,7 @@
           </router-link>
           <button type="button" class=" btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
             id="vertical-hover">
-            <i class="ri-record-circle-line"></i>
+            <em class="ri-record-circle-line"></em>
           </button>
         </div>
 
@@ -233,78 +233,78 @@
                 <li>
                   <a class="nav-icon" href="#sidebarDashboards" role="button"
                     @click.prevent="updateMenu('sidebarDashboards')">
-                    <i class="ri-dashboard-2-line"></i>
+                    <em class="ri-dashboard-2-line"></em>
                   </a>
                 </li>
                 <li>
                   <a class="nav-icon" href="#sidebarApps" role="button" @click.prevent="updateMenu('sidebarApps')">
-                    <i class="ri-apps-2-line"></i>
+                    <em class="ri-apps-2-line"></em>
                   </a>
                 </li>
                 <li>
                   <a class="nav-icon" href="#sidebarAuth" role="button" @click.prevent="updateMenu('sidebarAuth')">
-                    <i class="ri-account-circle-line"></i>
+                    <em class="ri-account-circle-line"></em>
                   </a>
                 </li>
                 <li>
                   <a class="nav-icon" href="#sidebarPages" role="button" @click.prevent="updateMenu('sidebarPages')">
-                    <i class="ri-pages-line"></i>
+                    <em class="ri-pages-line"></em>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-icon" target="_blank" href="/landing">
-                    <i class="ri-rocket-line"></i>
+                    <em class="ri-rocket-line"></em>
                   </a>
                 </li>
                 <li>
                   <a class="nav-icon" href="#sidebarUI" role="button" @click.prevent="updateMenu('sidebarUI')">
-                    <i class="ri-pencil-ruler-2-line"></i>
+                    <em class="ri-pencil-ruler-2-line"></em>
                   </a>
                 </li>
                 <li>
                   <a class="nav-icon" href="#sidebarAdvanceUI" role="button"
                     @click.prevent="updateMenu('sidebarAdvanceUI')">
-                    <i class="ri-stack-line"></i>
+                    <em class="ri-stack-line"></em>
                   </a>
                 </li>
                 <li class="nav-item">
                   <router-link class="nav-icon" to="/widgets">
-                    <i class="ri-honour-line"></i>
+                    <em class="ri-honour-line"></em>
                   </router-link>
                 </li>
                 <li>
                   <a class="nav-icon" href="#sidebarForms" role="button" @click.prevent="updateMenu('sidebarForms')">
-                    <i class="ri-file-list-3-line"></i>
+                    <em class="ri-file-list-3-line"></em>
                   </a>
                 </li>
                 <li>
                   <a class="nav-icon" href="#sidebarTables" role="button" @click.prevent="updateMenu('sidebarTables')">
-                    <i class="ri-layout-grid-line"></i>
+                    <em class="ri-layout-grid-line"></em>
                   </a>
                 </li>
 
                 <li>
                   <a class="nav-icon" href="#sidebarCharts" role="button" @click.prevent="updateMenu('sidebarCharts')">
-                    <i class="ri-pie-chart-line"></i>
+                    <em class="ri-pie-chart-line"></em>
                   </a>
                 </li>
 
                 <li>
                   <a class="nav-icon" href="#sidebarIcons" role="button" @click.prevent="updateMenu('sidebarIcons')">
-                    <i class="ri-compasses-2-line"></i>
+                    <em class="ri-compasses-2-line"></em>
                   </a>
                 </li>
 
                 <li>
                   <a class="nav-icon" href="#sidebarMaps" role="button" @click.prevent="updateMenu('sidebarMaps')">
-                    <i class="ri-map-pin-line"></i>
+                    <em class="ri-map-pin-line"></em>
                   </a>
                 </li>
 
                 <li>
                   <a class="nav-icon" href="#sidebarMultilevel" role="button"
                     @click.prevent="updateMenu('sidebarMultilevel')">
-                    <i class="ri-share-line"></i>
+                    <em class="ri-share-line"></em>
                   </a>
                 </li>
               </SimpleBar>

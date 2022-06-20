@@ -507,14 +507,14 @@
               <h5 class="card-title mb-0 flex-grow-1">Order History</h5>
               <div class="flex-shrink-0">
                 <button class="btn btn-soft-danger me-1" @click="deleteMultiple">
-                  <i class="ri-delete-bin-2-line"></i>
+                  <em class="ri-delete-bin-2-line"></em>
                 </button>
                 <button type="button" class="btn btn-success add-btn" data-bs-toggle="modal" id="create-btn"
                   data-bs-target="#showModal">
-                  <i class="ri-add-line align-bottom me-1"></i> Create Order
+                  <em class="ri-add-line align-bottom me-1"></em> Create Order
                 </button>
                 <button type="button" class="btn btn-info ms-1">
-                  <i class="ri-file-download-line align-bottom me-1"></i> Import
+                  <em class="ri-file-download-line align-bottom me-1"></em> Import
                 </button>
               </div>
             </div>
@@ -526,7 +526,7 @@
                   <div class="search-box">
                     <input type="text" class="form-control search"
                       placeholder="Search for order ID, customer, order status or something..." />
-                    <i class="ri-search-line search-icon"></i>
+                    <em class="ri-search-line search-icon"></em>
                   </div>
                 </div>
                 <!--end col-->
@@ -570,7 +570,7 @@
                 <div class="col-xxl-1 col-sm-4">
                   <div>
                     <button type="button" class="btn btn-primary w-100" @click="SearchData">
-                      <i class="ri-equalizer-fill me-1 align-bottom"></i>
+                      <em class="ri-equalizer-fill me-1 align-bottom"></em>
                       Filters
                     </button>
                   </div>
@@ -586,34 +586,34 @@
                 <li class="nav-item">
                   <a class="nav-link active All py-3" data-bs-toggle="tab" id="All" href="#home1" role="tab"
                     @click="changecategory('All')" aria-selected="true">
-                    <i class="ri-store-2-fill me-1 align-bottom"></i> All Orders
+                    <em class="ri-store-2-fill me-1 align-bottom"></em> All Orders
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link py-3 Delivered" data-bs-toggle="tab" id="Delivered" href="#delivered" role="tab"
                     @click="changecategory('Delivered')" aria-selected="false">
-                    <i class="ri-checkbox-circle-line me-1 align-bottom"></i>
+                    <em class="ri-checkbox-circle-line me-1 align-bottom"></em>
                     Delivered
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link py-3 Pickups" data-bs-toggle="tab" id="Pickups" href="#pickups" role="tab"
                     @click="changecategory('Pickups')" aria-selected="false">
-                    <i class="ri-truck-line me-1 align-bottom"></i> Pickups
+                    <em class="ri-truck-line me-1 align-bottom"></em> Pickups
                     <span class="badge bg-danger align-middle ms-1">2</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link py-3 Returns" data-bs-toggle="tab" id="Returns" href="#returns" role="tab"
                     @click="changecategory('Returns')" aria-selected="false">
-                    <i class="ri-arrow-left-right-fill me-1 align-bottom"></i>
+                    <em class="ri-arrow-left-right-fill me-1 align-bottom"></em>
                     Returns
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link py-3 Cancelled" data-bs-toggle="tab" id="Cancelled" href="#cancelled" role="tab"
                     @click="changecategory('Cancelled')" aria-selected="false">
-                    <i class="ri-close-circle-line me-1 align-bottom"></i>
+                    <em class="ri-close-circle-line me-1 align-bottom"></em>
                     Cancelled
                   </a>
                 </li>
@@ -675,20 +675,20 @@
                           <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="View">
                             <router-link to="/ecommerce/order-details" class="text-primary d-inline-block">
-                              <i class="ri-eye-fill fs-16"></i>
+                              <em class="ri-eye-fill fs-16"></em>
                             </router-link>
                           </li>
                           <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="Edit">
                             <a class="text-primary d-inline-block edit-item-btn" data-bs-toggle="modal"
                               href="#EditModal" @click="editdata(data)">
-                              <i class="ri-pencil-fill fs-16"></i>
+                              <em class="ri-pencil-fill fs-16"></em>
                             </a>
                           </li>
                           <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover"
                             data-bs-placement="top" title="Remove">
                             <a class="text-danger d-inline-block remove-item-btn" @click="deletedata(data)">
-                              <i class="ri-delete-bin-5-fill fs-16"></i>
+                              <em class="ri-delete-bin-5-fill fs-16"></em>
                             </a>
                           </li>
                         </ul>

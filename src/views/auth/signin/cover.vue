@@ -26,7 +26,7 @@ export default {
                                                 </div>
                                                 <div class="mt-auto">
                                                     <div class="mb-3">
-                                                        <i class="ri-double-quotes-l display-4 text-success"></i>
+                                                        <em class="ri-double-quotes-l display-4 text-success"></em>
                                                     </div>
 
                                                     <div id="qoutescarouselIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -79,7 +79,7 @@ export default {
                                                         <label class="form-label" for="password-input">Password</label>
                                                         <div class="position-relative auth-pass-inputgroup mb-3">
                                                             <input type="password" class="form-control pe-5" placeholder="Enter password" id="password-input">
-                                                            <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted shadow-none" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                            <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted shadow-none" type="button" id="password-addon"><em class="ri-eye-fill align-middle"></em></button>
                                                         </div>
                                                     </div>
                             
@@ -98,10 +98,10 @@ export default {
                                                         </div>
         
                                                         <div>
-                                                            <button type="button" class="btn btn-primary btn-icon waves-effect waves-light"><i class="ri-facebook-fill fs-16"></i></button>
-                                                            <button type="button" class="btn btn-danger btn-icon waves-effect waves-light ms-1"><i class="ri-google-fill fs-16"></i></button>
-                                                            <button type="button" class="btn btn-dark btn-icon waves-effect waves-light ms-1"><i class="ri-github-fill fs-16"></i></button>
-                                                            <button type="button" class="btn btn-info btn-icon waves-effect waves-light ms-1"><i class="ri-twitter-fill fs-16"></i></button>
+                                                            <button type="button" class="btn btn-primary btn-icon waves-effect waves-light"><em class="ri-facebook-fill fs-16"></em></button>
+                                                            <button type="button" class="btn btn-danger btn-icon waves-effect waves-light ms-1"><em class="ri-google-fill fs-16"></em></button>
+                                                            <button type="button" class="btn btn-dark btn-icon waves-effect waves-light ms-1"><em class="ri-github-fill fs-16"></em></button>
+                                                            <button type="button" class="btn btn-info btn-icon waves-effect waves-light ms-1"><em class="ri-twitter-fill fs-16"></em></button>
                                                         </div>
                                                     </div>
                 
@@ -134,7 +134,7 @@ export default {
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <p class="mb-0">&copy; {{new Date().getFullYear()}} MedicFollow. Crafted with <i class="mdi mdi-heart text-danger"></i> by MedicFollow</p>
+                                <p class="mb-0">&copy; {{new Date().getFullYear()}} MedicFollow. Crafted with <em class="mdi mdi-heart text-danger"></em> by MedicFollow</p>
                             </div>
                         </div>
                     </div>

@@ -113,19 +113,19 @@ export default {
 
             <div class="row icon-demo-content">
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-18px mdi-account"></i> mdi-18px
+                <em class="mdi mdi-18px mdi-account"></em> mdi-18px
               </div>
 
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-24px mdi-account"></i> mdi-24px
+                <em class="mdi mdi-24px mdi-account"></em> mdi-24px
               </div>
 
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-36px mdi-account"></i> mdi-36px
+                <em class="mdi mdi-36px mdi-account"></em> mdi-36px
               </div>
 
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-48px mdi-account"></i> mdi-48px
+                <em class="mdi mdi-48px mdi-account"></em> mdi-48px
               </div>
             </div>
           </div>
@@ -142,25 +142,25 @@ export default {
 
             <div class="row icon-demo-content">
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-rotate-45 mdi-account"></i> mdi-rotate-45
+                <em class="mdi mdi-rotate-45 mdi-account"></em> mdi-rotate-45
               </div>
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-rotate-90 mdi-account"></i> mdi-rotate-90
+                <em class="mdi mdi-rotate-90 mdi-account"></em> mdi-rotate-90
               </div>
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-rotate-135 mdi-account"></i> mdi-rotate-135
+                <em class="mdi mdi-rotate-135 mdi-account"></em> mdi-rotate-135
               </div>
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-rotate-180 mdi-account"></i> mdi-rotate-180
+                <em class="mdi mdi-rotate-180 mdi-account"></em> mdi-rotate-180
               </div>
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-rotate-225 mdi-account"></i> mdi-rotate-225
+                <em class="mdi mdi-rotate-225 mdi-account"></em> mdi-rotate-225
               </div>
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-rotate-270 mdi-account"></i> mdi-rotate-270
+                <em class="mdi mdi-rotate-270 mdi-account"></em> mdi-rotate-270
               </div>
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-rotate-315 mdi-account"></i> mdi-rotate-315
+                <em class="mdi mdi-rotate-315 mdi-account"></em> mdi-rotate-315
               </div>
             </div>
           </div>
@@ -177,10 +177,10 @@ export default {
 
             <div class="row icon-demo-content">
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-spin mdi-loading"></i> mdi-spin
+                <em class="mdi mdi-spin mdi-loading"></em> mdi-spin
               </div>
               <div class="col-xl-3 col-lg-4 col-sm-6">
-                <i class="mdi mdi-spin mdi-star"></i> mdi-spin
+                <em class="mdi mdi-spin mdi-star"></em> mdi-spin
               </div>
             </div>
           </div>

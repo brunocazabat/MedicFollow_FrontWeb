@@ -1,16 +1,16 @@
 <script>
-import SwiperCore from "swiper";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/swiper-bundle.css";
+import SwiperCore from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/swiper-bundle.css'
 
-SwiperCore.use([]);
+SwiperCore.use([])
 
-import Layout from "../../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../../app.config";
+import Layout from '../../../layouts/main.vue'
+import PageHeader from '@/components/page-header'
+import appConfig from '../../../../app.config'
 
-import animationData from "@/components/widgets/msoeawqm.json";
-import Lottie from "@/components/widgets/lottie.vue";
+import animationData from '@/components/widgets/msoeawqm.json'
+import Lottie from '@/components/widgets/lottie.vue'
 
 export default {
   components: {
@@ -18,28 +18,28 @@ export default {
     PageHeader,
     lottie: Lottie,
     Swiper,
-    SwiperSlide,
+    SwiperSlide
   },
   page: {
-    title: "My Wallet",
-    meta: [{ name: "description", content: appConfig.description }],
+    title: 'My Wallet',
+    meta: [{ name: 'description', content: appConfig.description }]
   },
   data() {
     return {
-      title: "My Wallet",
+      title: 'My Wallet',
       items: [
         {
-          text: "Crypto",
-          href: "/",
+          text: 'Crypto',
+          href: '/'
         },
         {
-          text: "My Wallet",
-          active: true,
-        },
+          text: 'My Wallet',
+          active: true
+        }
       ],
       series: [
         {
-          name: "Balance",
+          name: 'Balance',
           data: [
             [1327359600000, 30.95],
             [1327446000000, 31.34],
@@ -315,242 +315,242 @@ export default {
             [1361487600000, 38.55],
             [1361746800000, 38.11],
             [1361833200000, 38.59],
-            [1361919600000, 39.6],
-          ],
-        },
+            [1361919600000, 39.6]
+          ]
+        }
       ],
       chartOptions: {
         chart: {
-          width: "100%",
+          width: '100%',
           height: 46,
-          type: "area",
+          type: 'area',
           sparkline: {
-            enabled: true,
+            enabled: true
           },
           toolbar: {
-            show: false,
-          },
+            show: false
+          }
         },
         dataLabels: {
-          enabled: false,
+          enabled: false
         },
         stroke: {
-          curve: "smooth",
-          width: 1.5,
+          curve: 'smooth',
+          width: 1.5
         },
         fill: {
-          type: "gradient",
+          type: 'gradient',
           gradient: {
             shadeIntensity: 1,
             inverseColors: false,
             opacityFrom: 0.45,
             opacityTo: 0.05,
-            stops: [50, 100, 100, 100],
-          },
-        },
+            stops: [50, 100, 100, 100]
+          }
+        }
       },
       market: [
         {
-          image: require("@/assets/images/svg/crypto-icons/btc.svg"),
-          currency_name: "Bitcoin (BTC)",
-          quantity: "08",
-          price: "47071",
-          value: "28722",
-          returns: "6878963",
-          volume: 1.5,
+          image: require('@/assets/images/svg/crypto-icons/btc.svg'),
+          currency_name: 'Bitcoin (BTC)',
+          quantity: '08',
+          price: '47071',
+          value: '28722',
+          returns: '6878963',
+          volume: 1.5
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/eth.svg"),
-          currency_name: "Ethereum (ETH)",
-          quantity: "50",
-          price: "3813",
-          value: "4036",
-          returns: "3588",
-          volume: 0.42,
+          image: require('@/assets/images/svg/crypto-icons/eth.svg'),
+          currency_name: 'Ethereum (ETH)',
+          quantity: '50',
+          price: '3813',
+          value: '4036',
+          returns: '3588',
+          volume: 0.42
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/xmr.svg"),
-          currency_name: "Monero (XMR)",
-          quantity: "150",
-          price: "227",
-          value: "226",
-          returns: "33982",
-          volume: 1.92,
+          image: require('@/assets/images/svg/crypto-icons/xmr.svg'),
+          currency_name: 'Monero (XMR)',
+          quantity: '150',
+          price: '227',
+          value: '226',
+          returns: '33982',
+          volume: 1.92
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/aave.svg"),
-          currency_name: "Aave (AAVE)",
-          quantity: "180",
-          price: "250",
-          value: "254",
-          returns: "45774",
-          volume: 3.96,
+          image: require('@/assets/images/svg/crypto-icons/aave.svg'),
+          currency_name: 'Aave (AAVE)',
+          quantity: '180',
+          price: '250',
+          value: '254',
+          returns: '45774',
+          volume: 3.96
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/mkr.svg"),
-          currency_name: "Maker (MKR)",
-          quantity: "60",
-          price: "2470",
-          value: "2390",
-          returns: "143445",
-          volume: 0.36,
+          image: require('@/assets/images/svg/crypto-icons/mkr.svg'),
+          currency_name: 'Maker (MKR)',
+          quantity: '60',
+          price: '2470',
+          value: '2390',
+          returns: '143445',
+          volume: 0.36
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/mkr.svg"),
-          currency_name: "Yearn.finance (YFI)",
-          quantity: "25",
-          price: "37632",
-          value: "39276",
-          returns: "981906",
-          volume: 3.96,
+          image: require('@/assets/images/svg/crypto-icons/mkr.svg'),
+          currency_name: 'Yearn.finance (YFI)',
+          quantity: '25',
+          price: '37632',
+          value: '39276',
+          returns: '981906',
+          volume: 3.96
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/mkr.svg"),
-          currency_name: "Maker (MKR)",
-          quantity: "60",
-          price: "37632",
-          value: "39276",
-          returns: "981906",
-          volume: 3.96,
+          image: require('@/assets/images/svg/crypto-icons/mkr.svg'),
+          currency_name: 'Maker (MKR)',
+          quantity: '60',
+          price: '37632',
+          value: '39276',
+          returns: '981906',
+          volume: 3.96
         },
         {
-          image: require("@/assets/images/svg/crypto-icons/mkr.svg"),
-          currency_name: "Yearn.finance (YFI)",
-          quantity: "25",
-          price: "37632",
-          value: "39276",
-          returns: "981906",
-          volume: 3.96,
-        },
+          image: require('@/assets/images/svg/crypto-icons/mkr.svg'),
+          currency_name: 'Yearn.finance (YFI)',
+          quantity: '25',
+          price: '37632',
+          value: '39276',
+          returns: '981906',
+          volume: 3.96
+        }
       ],
       cryptoSlider: [
         {
           id: 1,
-          img: require("@/assets/images/svg/crypto-icons/btc.svg"),
-          label: "Bitcoin",
-          price: "$1,523,647",
-          change: "+13.11%",
-          changeClass: "success",
-          coinName: "btc",
-          chartsColor: "#45CB85",
+          img: require('@/assets/images/svg/crypto-icons/btc.svg'),
+          label: 'Bitcoin',
+          price: '$1,523,647',
+          change: '+13.11%',
+          changeClass: 'success',
+          coinName: 'btc',
+          chartsColor: '#45CB85',
           series: [
             {
-              name: "Bitcoin",
-              data: [85, 68, 35, 90, 8, 11, 26, 54],
-            },
-          ],
+              name: 'Bitcoin',
+              data: [85, 68, 35, 90, 8, 11, 26, 54]
+            }
+          ]
         },
         {
           id: 2,
-          img: require("@/assets/images/svg/crypto-icons/ltc.svg"),
-          label: "Litecoin",
-          price: "$2,145,687",
-          change: "+15.08%",
-          changeClass: "success",
-          coinName: "ltc",
-          chartsColor: "#45CB85",
+          img: require('@/assets/images/svg/crypto-icons/ltc.svg'),
+          label: 'Litecoin',
+          price: '$2,145,687',
+          change: '+15.08%',
+          changeClass: 'success',
+          coinName: 'ltc',
+          chartsColor: '#45CB85',
           series: [
             {
-              name: "Litecoin",
-              data: [25, 50, 41, 87, 12, 36, 9, 54],
-            },
-          ],
+              name: 'Litecoin',
+              data: [25, 50, 41, 87, 12, 36, 9, 54]
+            }
+          ]
         },
         {
           id: 3,
-          img: require("@/assets/images/svg/crypto-icons/eth.svg"),
-          label: "Eathereum",
-          price: "$3,312,870",
-          change: "+08.57%",
-          changeClass: "success",
-          coinName: "etc",
-          chartsColor: "#45CB85",
+          img: require('@/assets/images/svg/crypto-icons/eth.svg'),
+          label: 'Eathereum',
+          price: '$3,312,870',
+          change: '+08.57%',
+          changeClass: 'success',
+          coinName: 'etc',
+          chartsColor: '#45CB85',
           series: [
             {
-              name: "Eathereum",
-              data: [36, 21, 65, 22, 35, 50, 29, 44],
-            },
-          ],
+              name: 'Eathereum',
+              data: [36, 21, 65, 22, 35, 50, 29, 44]
+            }
+          ]
         },
         {
           id: 4,
-          img: require("@/assets/images/svg/crypto-icons/bnb.svg"),
-          label: "Binance",
-          price: "$1,820,045",
-          change: "-09.21%",
-          changeClass: "danger",
-          coinName: "bnb",
-          chartsColor: "#f06548",
+          img: require('@/assets/images/svg/crypto-icons/bnb.svg'),
+          label: 'Binance',
+          price: '$1,820,045',
+          change: '-09.21%',
+          changeClass: 'danger',
+          coinName: 'bnb',
+          chartsColor: '#f06548',
           series: [
             {
-              name: "Binance",
-              data: [30, 58, 29, 89, 12, 36, 9, 54],
-            },
-          ],
+              name: 'Binance',
+              data: [30, 58, 29, 89, 12, 36, 9, 54]
+            }
+          ]
         },
         {
           id: 5,
-          img: require("@/assets/images/svg/crypto-icons/dash.svg"),
-          label: "Dash",
-          price: "$9,458,153",
-          change: "+12.07%",
-          changeClass: "success",
-          coinName: "dash",
-          chartsColor: "#45CB85",
+          img: require('@/assets/images/svg/crypto-icons/dash.svg'),
+          label: 'Dash',
+          price: '$9,458,153',
+          change: '+12.07%',
+          changeClass: 'success',
+          coinName: 'dash',
+          chartsColor: '#45CB85',
           series: [
             {
-              name: "Dash",
-              data: [24, 68, 39, 86, 29, 42, 11, 58],
-            },
-          ],
+              name: 'Dash',
+              data: [24, 68, 39, 86, 29, 42, 11, 58]
+            }
+          ]
         },
         {
           id: 6,
-          img: require("@/assets/images/svg/crypto-icons/usdt.svg"),
-          label: "Tether",
-          price: "$5,201,458",
-          change: "+14.99%",
-          changeClass: "success",
-          coinName: "usdt",
-          chartsColor: "#45CB85",
+          img: require('@/assets/images/svg/crypto-icons/usdt.svg'),
+          label: 'Tether',
+          price: '$5,201,458',
+          change: '+14.99%',
+          changeClass: 'success',
+          coinName: 'usdt',
+          chartsColor: '#45CB85',
           series: [
             {
-              name: "Dash",
-              data: [13, 76, 12, 85, 25, 60, 9, 54],
-            },
-          ],
+              name: 'Dash',
+              data: [13, 76, 12, 85, 25, 60, 9, 54]
+            }
+          ]
         },
         {
           id: 7,
-          img: require("@/assets/images/svg/crypto-icons/neo.svg"),
-          label: "NEO",
-          price: "$6,147,957",
-          change: "-05.07%",
-          changeClass: "danger",
-          coinName: "neo",
-          chartsColor: "#f06548",
+          img: require('@/assets/images/svg/crypto-icons/neo.svg'),
+          label: 'NEO',
+          price: '$6,147,957',
+          change: '-05.07%',
+          changeClass: 'danger',
+          coinName: 'neo',
+          chartsColor: '#f06548',
           series: [
             {
-              name: "Neo",
-              data: [9, 66, 41, 89, 12, 36, 25, 54],
-            },
-          ],
-        },
+              name: 'Neo',
+              data: [9, 66, 41, 89, 12, 36, 25, 54]
+            }
+          ]
+        }
       ],
       page: 1,
       perPage: 6,
       pages: [],
       searchQuery: null,
-      defaultOptions: { animationData: animationData },
-    };
+      defaultOptions: { animationData: animationData }
+    }
   },
   computed: {
     displayedPosts() {
-      return this.paginate(this.market);
+      return this.paginate(this.market)
     },
     resultQuery() {
       if (this.searchQuery) {
-        const search = this.searchQuery.toLowerCase();
+        const search = this.searchQuery.toLowerCase()
         return this.displayedPosts.filter((data) => {
           return (
             data.currency_name.toLowerCase().includes(search) ||
@@ -559,43 +559,43 @@ export default {
             data.value.toLowerCase().includes(search) ||
             data.returns.toLowerCase().includes(search) ||
             data.volume.includes(search)
-          );
-        });
+          )
+        })
       } else {
-        return this.displayedPosts;
+        return this.displayedPosts
       }
-    },
+    }
   },
   watch: {
     market() {
-      this.setPages();
-    },
+      this.setPages()
+    }
   },
   created() {
-    this.setPages();
+    this.setPages()
   },
   filters: {
     trimWords(value) {
-      return value.split(" ").splice(0, 20).join(" ") + "...";
-    },
+      return value.split(' ').splice(0, 20).join(' ') + '...'
+    }
   },
   methods: {
     setPages() {
-      let numberOfPages = Math.ceil(this.market.length / this.perPage);
+      let numberOfPages = Math.ceil(this.market.length / this.perPage)
       for (let index = 1; index <= numberOfPages; index++) {
-        this.pages.push(index);
+        this.pages.push(index)
       }
     },
     paginate(market) {
-      let page = this.page;
-      let perPage = this.perPage;
-      let from = page * perPage - perPage;
-      let to = page * perPage;
+      let page = this.page
+      let perPage = this.perPage
+      let from = page * perPage - perPage
+      let to = page * perPage
 
-      return market.slice(from, to);
-    },
-  },
-};
+      return market.slice(from, to)
+    }
+  }
+}
 </script>
 
 <template>
@@ -662,7 +662,7 @@ export default {
           </div>
           <div class="flexshrink-0">
             <button class="btn btn-success btn-sm">
-              <i class="ri-star-line align-bottom"></i> Add Watchlist
+              <em class="ri-star-line align-bottom"></em> Add Watchlist
             </button>
           </div>
         </div>
@@ -674,22 +674,22 @@ export default {
           :spaceBetween="24"
           :navigation="{
             nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            prevEl: '.swiper-button-prev'
           }"
           :autoplay="{
             delay: 2500,
-            disableOnInteraction: false,
+            disableOnInteraction: false
           }"
           :breakpoints="{
             640: {
-              slidesPerView: 2,
+              slidesPerView: 2
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 3
             },
             1600: {
-              slidesPerView: 4,
-            },
+              slidesPerView: 4
+            }
           }"
         >
           <template v-for="(item, index) of cryptoSlider" :key="index">
@@ -706,7 +706,7 @@ export default {
                         aria-expanded="false"
                       >
                         <span class="text-muted fs-18">
-                          <i class="mdi mdi-dots-horizontal"></i>
+                          <em class="mdi mdi-dots-horizontal"></em>
                         </span>
                       </a>
                       <div class="dropdown-menu dropdown-menu-end">
@@ -763,11 +763,21 @@ export default {
           >
             <h4 class="card-title mb-0 flex-grow-1">Market Status</h4>
             <div class="flex-shrink-0">
-              <div class="btn-group shadow" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-primary btn-sm shadow-none">
+              <div
+                class="btn-group shadow"
+                role="group"
+                aria-label="Basic example"
+              >
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm shadow-none"
+                >
                   Today
                 </button>
-                <button type="button" class="btn btn-outline-primary btn-sm shadow-none">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary btn-sm shadow-none"
+                >
                   Overall
                 </button>
               </div>
@@ -810,7 +820,11 @@ export default {
                     </td>
                     <td>
                       <div class="d-flex align-items-center fw-medium">
-                        <img :src="data.image" alt="" class="avatar-xxs me-2 shadow rounded-circle" />
+                        <img
+                          :src="data.image"
+                          alt=""
+                          class="avatar-xxs me-2 shadow rounded-circle"
+                        />
                         <a href="javascript:void(0)" class="currency_name">{{
                           data.currency_name
                         }}</a>
@@ -825,10 +839,10 @@ export default {
                         class="fs-13 mb-0"
                         :class="{
                           'text-danger': data.volume > 1,
-                          'text-success': data.volume < 1,
+                          'text-success': data.volume < 1
                         }"
                       >
-                        <i class="mdi mdi-trending-up align-middle me-1"></i
+                        <em class="mdi mdi-trending-up align-middle me-1"></em
                         >{{ data.volume }}%
                       </h6>
                     </td>
@@ -907,13 +921,13 @@ export default {
                 <p class="text-muted mb-0">
                   $25,10,974
                   <small class="badge badge-soft-success"
-                    ><i class="ri-arrow-right-up-line fs-13 align-bottom"></i
+                    ><em class="ri-arrow-right-up-line fs-13 align-bottom"></em
                     >4.37%</small
                   >
                 </p>
               </div>
               <div class="flex-shrink-0">
-                <i class="mdi mdi-wallet-outline text-primary h1"></i>
+                <em class="mdi mdi-wallet-outline text-primary h1"></em>
               </div>
             </div>
           </div>
@@ -928,13 +942,13 @@ export default {
                 <p class="text-muted mb-0">
                   $9,10,564
                   <small class="badge badge-soft-success"
-                    ><i class="ri-arrow-right-up-line fs-13 align-bottom"></i
+                    ><em class="ri-arrow-right-up-line fs-13 align-bottom"></em
                     >1.25%</small
                   >
                 </p>
               </div>
               <div class="flex-shrink-0">
-                <i class="ri-hand-coin-line text-primary h1"></i>
+                <em class="ri-hand-coin-line text-primary h1"></em>
               </div>
             </div>
           </div>
@@ -949,13 +963,13 @@ export default {
                 <p class="text-muted mb-0">
                   $18,22,730
                   <small class="badge badge-soft-success"
-                    ><i class="ri-arrow-right-up-line fs-13 align-bottom"></i
+                    ><em class="ri-arrow-right-up-line fs-13 align-bottom"></em
                     >8.34%</small
                   >
                 </p>
               </div>
               <div class="flex-shrink-0">
-                <i class="ri-line-chart-line text-primary h1"></i>
+                <em class="ri-line-chart-line text-primary h1"></em>
               </div>
             </div>
           </div>
@@ -1051,7 +1065,7 @@ export default {
                 to="/crypto/transactions"
                 class="btn btn-soft-info w-100"
                 >View All Transactions
-                <i class="ri-arrow-right-line align-bottom"></i
+                <em class="ri-arrow-right-line align-bottom"></em
               ></router-link>
             </div>
           </div>

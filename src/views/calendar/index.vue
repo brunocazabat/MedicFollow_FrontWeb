@@ -1,59 +1,59 @@
 <script>
-import Swal from "sweetalert2";
-import "@fullcalendar/core/vdom";
-import { SimpleBar } from "simplebar-vue3";
-import { CalendarIcon } from "@zhuowenli/vue-feather-icons";
+import Swal from 'sweetalert2'
+import '@fullcalendar/core/vdom'
+import { SimpleBar } from 'simplebar-vue3'
+import { CalendarIcon } from '@zhuowenli/vue-feather-icons'
 
-import dayGridPlugin from "@fullcalendar/daygrid";
-import timeGridPlugin from "@fullcalendar/timegrid";
-import interactionPlugin, { Draggable } from "@fullcalendar/interaction";
-import bootstrapPlugin from "@fullcalendar/bootstrap";
-import listPlugin from "@fullcalendar/list";
+import dayGridPlugin from '@fullcalendar/daygrid'
+import timeGridPlugin from '@fullcalendar/timegrid'
+import interactionPlugin, { Draggable } from '@fullcalendar/interaction'
+import bootstrapPlugin from '@fullcalendar/bootstrap'
+import listPlugin from '@fullcalendar/list'
 
-import FullCalendar from "@fullcalendar/vue3";
+import FullCalendar from '@fullcalendar/vue3'
 
-import { required, helpers } from "@vuelidate/validators";
-import useVuelidate from "@vuelidate/core";
+import { required, helpers } from '@vuelidate/validators'
+import useVuelidate from '@vuelidate/core'
 
-import Layout from "../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../app.config";
+import Layout from '../../layouts/main.vue'
+import PageHeader from '@/components/page-header'
+import appConfig from '../../../app.config'
 
-import { INITIAL_EVENTS, categories } from "./utils";
+import { INITIAL_EVENTS, categories } from './utils'
 
 export default {
   setup() {
-    return { v$: useVuelidate() };
+    return { v$: useVuelidate() }
   },
   validations: {
     event: {
       title: {
-        required: helpers.withMessage("Title is required", required),
+        required: helpers.withMessage('Title is required', required)
       },
       category: {
-        required: helpers.withMessage("Category is required", required),
-      },
-    },
+        required: helpers.withMessage('Category is required', required)
+      }
+    }
   },
   page: {
-    title: "Calendar",
-    meta: [{ name: "description", content: appConfig.description }],
+    title: 'Calendar',
+    meta: [{ name: 'description', content: appConfig.description }]
   },
   data() {
     return {
-      title: "Calendar",
+      title: 'Calendar',
       items: [
         {
-          text: "Apps",
-          href: "/",
+          text: 'Apps',
+          href: '/'
         },
         {
-          text: "Calendar",
-          active: true,
-        },
+          text: 'Calendar',
+          active: true
+        }
       ],
       calendarOptions: {
-        timeZone: "local",
+        timeZone: 'local',
         droppable: true,
         navLinks: true,
         plugins: [
@@ -61,16 +61,16 @@ export default {
           timeGridPlugin,
           interactionPlugin,
           bootstrapPlugin,
-          listPlugin,
+          listPlugin
         ],
-        themeSystem: "bootstrap",
+        themeSystem: 'bootstrap',
         headerToolbar: {
-          left: "prev,next today",
-          center: "title",
-          right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
         },
         windowResize: () => {
-          this.getInitialView();
+          this.getInitialView()
         },
         initialView: this.getInitialView(),
         initialEvents: INITIAL_EVENTS,
@@ -81,7 +81,7 @@ export default {
         weekends: true,
         dateClick: this.dateClicked,
         eventClick: this.editEvent,
-        eventsSet: this.handleEvents,
+        eventsSet: this.handleEvents
       },
       currentEvents: [],
       showModal: false,
@@ -93,14 +93,14 @@ export default {
       edit: {},
       deleteId: {},
       event: {
-        title: "",
-        category: "",
+        title: '',
+        category: ''
       },
       editevent: {
-        editTitle: "",
-        editcategory: "",
-      },
-    };
+        editTitle: '',
+        editcategory: ''
+      }
+    }
   },
   components: {
     Layout,
@@ -110,49 +110,49 @@ export default {
     CalendarIcon
   },
   mounted() {
-    new Draggable(document.getElementById("external-events"), {
-      itemSelector: ".external-event",
+    new Draggable(document.getElementById('external-events'), {
+      itemSelector: '.external-event',
       eventData: function (eventEl) {
         return {
           title: eventEl.innerText,
           start: new Date(),
-          className: eventEl.getAttribute("data-class"),
-        };
-      },
-    });
+          className: eventEl.getAttribute('data-class')
+        }
+      }
+    })
   },
   methods: {
     formatDate(date) {
       var monthNames = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-      ];
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December'
+      ]
       var d = new Date(date),
-        month = "" + monthNames[d.getMonth()],
-        day = "" + d.getDate(),
-        year = d.getFullYear();
-      if (month.length < 2) month = "0" + month;
-      if (day.length < 2) day = "0" + day;
-      return [day + " " + month, year].join(",");
+        month = '' + monthNames[d.getMonth()],
+        day = '' + d.getDate(),
+        year = d.getFullYear()
+      if (month.length < 2) month = '0' + month
+      if (day.length < 2) day = '0' + day
+      return [day + ' ' + month, year].join(',')
     },
 
     getInitialView() {
       if (window.innerWidth >= 768 && window.innerWidth < 1200) {
-        return "timeGridWeek";
+        return 'timeGridWeek'
       } else if (window.innerWidth <= 768) {
-        return "listMonth";
+        return 'listMonth'
       } else {
-        return "dayGridMonth";
+        return 'dayGridMonth'
       }
     },
     /**
@@ -160,102 +160,102 @@ export default {
      */
     // eslint-disable-next-line no-unused-vars
     handleSubmit(e) {
-      this.submitted = true;
+      this.submitted = true
 
       // stop here if form is invalid
-      this.v$.$touch();
+      this.v$.$touch()
       if (this.v$.$invalid) {
-        return;
+        return
       } else {
-        const title = this.event.title;
-        const category = this.event.category;
-        let calendarApi = this.newEventData.view.calendar;
+        const title = this.event.title
+        const category = this.event.category
+        let calendarApi = this.newEventData.view.calendar
 
         this.currentEvents = calendarApi.addEvent({
           id: this.newEventData.length + 1,
           title,
           start: this.newEventData.date,
           end: this.newEventData.date,
-          classNames: [category],
-        });
-        this.successmsg();
-        this.showModal = false;
-        this.newEventData = {};
+          classNames: [category]
+        })
+        this.successmsg()
+        this.showModal = false
+        this.newEventData = {}
       }
-      this.submitted = false;
-      this.event = {};
+      this.submitted = false
+      this.event = {}
     },
     // eslint-disable-next-line no-unused-vars
     hideModal(e) {
-      this.submitted = false;
-      this.showModal = false;
-      this.event = {};
+      this.submitted = false
+      this.showModal = false
+      this.event = {}
     },
     /**
      * Edit event modal submit
      */
     // eslint-disable-next-line no-unused-vars
     editSubmit(e) {
-      this.submit = true;
-      const editTitle = this.editevent.editTitle;
-      const editcategory = this.editevent.editcategory;
+      this.submit = true
+      const editTitle = this.editevent.editTitle
+      const editcategory = this.editevent.editcategory
 
-      this.edit.setProp("title", editTitle);
-      this.edit.setProp("classNames", editcategory);
-      this.successmsg();
-      this.eventModal = false;
+      this.edit.setProp('title', editTitle)
+      this.edit.setProp('classNames', editcategory)
+      this.successmsg()
+      this.eventModal = false
     },
 
     /**
      * Delete event
      */
     deleteEvent() {
-      this.edit.remove();
-      this.eventModal = false;
+      this.edit.remove()
+      this.eventModal = false
     },
     /**
      * Modal open for add event
      */
     dateClicked(info) {
-      this.newEventData = info;
-      this.showModal = true;
+      this.newEventData = info
+      this.showModal = true
     },
     /**
      * Modal open for edit event
      */
     editEvent(info) {
-      this.edit = info.event;
-      this.editevent.editTitle = this.edit.title;
-      this.editevent.editcategory = this.edit.classNames[0];
-      this.eventModal = true;
+      this.edit = info.event
+      this.editevent.editTitle = this.edit.title
+      this.editevent.editcategory = this.edit.classNames[0]
+      this.eventModal = true
     },
 
     closeModal() {
-      this.eventModal = false;
+      this.eventModal = false
     },
 
     confirm() {
       Swal.fire({
-        title: "Are you sure?",
+        title: 'Are you sure?',
         text: "You won't be able to delete this!",
-        icon: "warning",
+        icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: "#34c38f",
-        cancelButtonColor: "#f46a6a",
-        confirmButtonText: "Yes, delete it!",
+        confirmButtonColor: '#34c38f',
+        cancelButtonColor: '#f46a6a',
+        confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
         if (result.value) {
-          this.deleteEvent();
-          Swal.fire("Deleted!", "Event has been deleted.", "success");
+          this.deleteEvent()
+          Swal.fire('Deleted!', 'Event has been deleted.', 'success')
         }
-      });
+      })
     },
 
     /**
      * Show list of events
      */
     handleEvents(events) {
-      this.currentEvents = events;
+      this.currentEvents = events
     },
 
     /**
@@ -263,15 +263,15 @@ export default {
      */
     successmsg() {
       Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Event has been saved",
+        position: 'center',
+        icon: 'success',
+        title: 'Event has been saved',
         showConfirmButton: false,
-        timer: 1000,
-      });
-    },
-  },
-};
+        timer: 1000
+      })
+    }
+  }
+}
 </script>
 
 <template>
@@ -284,8 +284,12 @@ export default {
           <div class="col-xl-3">
             <div class="card card-h-100">
               <div class="card-body">
-                <button class="btn btn-primary w-100" id="btn-new-event" @click="showModal = true">
-                  <i class="mdi mdi-plus"></i> Create New Event
+                <button
+                  class="btn btn-primary w-100"
+                  id="btn-new-event"
+                  @click="showModal = true"
+                >
+                  <em class="mdi mdi-plus"></em> Create New Event
                 </button>
 
                 <div id="external-events">
@@ -297,36 +301,36 @@ export default {
                     class="external-event fc-event bg-soft-success text-success"
                     data-class="bg-soft-success"
                   >
-                    <i
+                    <em
                       class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                    ></i
+                    ></em
                     >New Event Planning
                   </div>
                   <div
                     class="external-event fc-event bg-soft-info text-info"
                     data-class="bg-soft-info"
                   >
-                    <i
+                    <em
                       class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                    ></i
+                    ></em
                     >Meeting
                   </div>
                   <div
                     class="external-event fc-event bg-soft-warning text-warning"
                     data-class="bg-soft-warning"
                   >
-                    <i
+                    <em
                       class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                    ></i
+                    ></em
                     >Generating Reports
                   </div>
                   <div
                     class="external-event fc-event bg-soft-danger text-danger"
                     data-class="bg-soft-danger"
                   >
-                    <i
+                    <em
                       class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                    ></i
+                    ></em
                     >Create New theme
                   </div>
                 </div>
@@ -348,9 +352,9 @@ export default {
                   <div class="card-body">
                     <div class="d-flex mb-3">
                       <div class="flex-grow-1">
-                        <i
+                        <em
                           :class="`mdi mdi-checkbox-blank-circle me-2 ${event.classNames[0]} `"
-                        ></i
+                        ></em
                         ><span class="fw-medium">{{
                           this.formatDate(event.start)
                         }}</span>

@@ -188,13 +188,13 @@ export default {
             <div class="row g-2">
                 <div class="col-lg-auto">
                     <div class="hstack gap-2">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createboardModal"><i class="ri-add-line align-bottom me-1"></i> Create Board</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createboardModal"><em class="ri-add-line align-bottom me-1"></em> Create Board</button>
                     </div>
                 </div><!--end col-->
                 <div class="col-lg-3 col-auto">
                     <div class="search-box">
                         <input type="text" class="form-control search" placeholder="Search for project, tasks...">
-                        <i class="ri-search-line search-icon"></i>
+                        <em class="ri-search-line search-icon"></em>
                     </div>
                 </div>
                 <div class="col-auto ms-sm-auto">
@@ -236,7 +236,7 @@ export default {
                 <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
                         <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="fw-medium text-muted fs-12">Priority<i class="mdi mdi-chevron-down ms-1"></i></span>
+                            <span class="fw-medium text-muted fs-12">Priority<em class="mdi mdi-chevron-down ms-1"></em></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#">Priority</a>
@@ -253,11 +253,11 @@ export default {
                             <div class="d-flex mb-2">
                                 <h6 class="fs-15 mb-0 flex-grow-1 text-truncate"><router-link to="/apps/tasks-details" class="text-body">{{data.title}}</router-link></h6>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><em class="ri-more-fill"></em></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</router-link></li>
-                                        <li><a class="dropdown-item" href="#"><i class="ri-edit-2-line align-bottom me-2 text-muted"></i> Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i> Delete</a></li>
+                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><em class="ri-eye-fill align-bottom me-2 text-muted"></em> View</router-link></li>
+                                        <li><a class="dropdown-item" href="#"><em class="ri-edit-2-line align-bottom me-2 text-muted"></em> Edit</a></li>
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><em class="ri-delete-bin-5-line align-bottom me-2 text-muted"></em> Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -296,13 +296,13 @@ export default {
                                 <div class="flex-shrink-0">
                                     <ul class="link-inline mb-0">
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-eye-line align-bottom"></i> 04</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-eye-line align-bottom"></em> 04</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-question-answer-line align-bottom"></i> 19</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-question-answer-line align-bottom"></em> 19</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-attachment-2 align-bottom"></i> 02</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-attachment-2 align-bottom"></em> 02</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -324,7 +324,7 @@ export default {
                 <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
                         <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="fw-medium text-muted fs-12">Priority<i class="mdi mdi-chevron-down ms-1"></i></span>
+                            <span class="fw-medium text-muted fs-12">Priority<em class="mdi mdi-chevron-down ms-1"></em></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#">Priority</a>
@@ -341,11 +341,11 @@ export default {
                             <div class="d-flex mb-2">
                                 <h6 class="fs-15 mb-0 flex-grow-1 text-truncate"><router-link to="/apps/tasks-details">{{data.title}}</router-link></h6>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><em class="ri-more-fill"></em></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</router-link></li>
-                                        <li><a class="dropdown-item" href="#"><i class="ri-edit-2-line align-bottom me-2 text-muted"></i> Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i> Delete</a></li>
+                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><em class="ri-eye-fill align-bottom me-2 text-muted"></em> View</router-link></li>
+                                        <li><a class="dropdown-item" href="#"><em class="ri-edit-2-line align-bottom me-2 text-muted"></em> Edit</a></li>
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><em class="ri-delete-bin-5-line align-bottom me-2 text-muted"></em> Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -384,13 +384,13 @@ export default {
                                 <div class="flex-shrink-0">
                                     <ul class="link-inline mb-0">
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-eye-line align-bottom"></i> 04</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-eye-line align-bottom"></em> 04</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-question-answer-line align-bottom"></i> 19</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-question-answer-line align-bottom"></em> 19</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-attachment-2 align-bottom"></i> 02</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-attachment-2 align-bottom"></em> 02</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -412,7 +412,7 @@ export default {
                 <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
                         <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="fw-medium text-muted fs-12">Priority<i class="mdi mdi-chevron-down ms-1"></i></span>
+                            <span class="fw-medium text-muted fs-12">Priority<em class="mdi mdi-chevron-down ms-1"></em></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#">Priority</a>
@@ -429,11 +429,11 @@ export default {
                             <div class="d-flex mb-2">
                                 <h6 class="fs-15 mb-0 flex-grow-1 text-truncate"><router-link to="/apps/tasks-details">{{data.title}}</router-link></h6>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><em class="ri-more-fill"></em></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</router-link></li>
-                                        <li><a class="dropdown-item" href="#"><i class="ri-edit-2-line align-bottom me-2 text-muted"></i> Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i> Delete</a></li>
+                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><em class="ri-eye-fill align-bottom me-2 text-muted"></em> View</router-link></li>
+                                        <li><a class="dropdown-item" href="#"><em class="ri-edit-2-line align-bottom me-2 text-muted"></em> Edit</a></li>
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><em class="ri-delete-bin-5-line align-bottom me-2 text-muted"></em> Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -472,13 +472,13 @@ export default {
                                 <div class="flex-shrink-0">
                                     <ul class="link-inline mb-0">
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-eye-line align-bottom"></i> 04</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-eye-line align-bottom"></em> 04</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-question-answer-line align-bottom"></i> 19</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-question-answer-line align-bottom"></em> 19</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-attachment-2 align-bottom"></i> 02</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-attachment-2 align-bottom"></em> 02</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -500,7 +500,7 @@ export default {
                 <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
                         <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="fw-medium text-muted fs-12">Priority<i class="mdi mdi-chevron-down ms-1"></i></span>
+                            <span class="fw-medium text-muted fs-12">Priority<em class="mdi mdi-chevron-down ms-1"></em></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#">Priority</a>
@@ -517,11 +517,11 @@ export default {
                             <div class="d-flex mb-2">
                                 <h6 class="fs-15 mb-0 flex-grow-1 text-truncate"><router-link to="/apps/tasks-details">{{data.title}}</router-link></h6>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><em class="ri-more-fill"></em></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</router-link></li>
-                                        <li><a class="dropdown-item" href="#"><i class="ri-edit-2-line align-bottom me-2 text-muted"></i> Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i> Delete</a></li>
+                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><em class="ri-eye-fill align-bottom me-2 text-muted"></em> View</router-link></li>
+                                        <li><a class="dropdown-item" href="#"><em class="ri-edit-2-line align-bottom me-2 text-muted"></em> Edit</a></li>
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><em class="ri-delete-bin-5-line align-bottom me-2 text-muted"></em> Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -560,13 +560,13 @@ export default {
                                 <div class="flex-shrink-0">
                                     <ul class="link-inline mb-0">
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-eye-line align-bottom"></i> 04</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-eye-line align-bottom"></em> 04</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-question-answer-line align-bottom"></i> 19</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-question-answer-line align-bottom"></em> 19</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-attachment-2 align-bottom"></i> 02</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-attachment-2 align-bottom"></em> 02</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -588,7 +588,7 @@ export default {
                 <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
                         <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="fw-medium text-muted fs-12">Priority<i class="mdi mdi-chevron-down ms-1"></i></span>
+                            <span class="fw-medium text-muted fs-12">Priority<em class="mdi mdi-chevron-down ms-1"></em></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#">Priority</a>
@@ -605,11 +605,11 @@ export default {
                             <div class="d-flex mb-2">
                                 <h6 class="fs-15 mb-0 flex-grow-1 text-truncate"><router-link to="/apps/tasks-details">{{data.title}}</router-link></h6>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><em class="ri-more-fill"></em></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</router-link></li>
-                                        <li><a class="dropdown-item" href="#"><i class="ri-edit-2-line align-bottom me-2 text-muted"></i> Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i> Delete</a></li>
+                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><em class="ri-eye-fill align-bottom me-2 text-muted"></em> View</router-link></li>
+                                        <li><a class="dropdown-item" href="#"><em class="ri-edit-2-line align-bottom me-2 text-muted"></em> Edit</a></li>
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><em class="ri-delete-bin-5-line align-bottom me-2 text-muted"></em> Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -648,13 +648,13 @@ export default {
                                 <div class="flex-shrink-0">
                                     <ul class="link-inline mb-0">
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-eye-line align-bottom"></i> 04</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-eye-line align-bottom"></em> 04</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-question-answer-line align-bottom"></i> 19</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-question-answer-line align-bottom"></em> 19</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-attachment-2 align-bottom"></i> 02</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-attachment-2 align-bottom"></em> 02</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -676,7 +676,7 @@ export default {
                 <div class="flex-shrink-0">
                     <div class="dropdown card-header-dropdown">
                         <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="fw-medium text-muted fs-12">Priority<i class="mdi mdi-chevron-down ms-1"></i></span>
+                            <span class="fw-medium text-muted fs-12">Priority<em class="mdi mdi-chevron-down ms-1"></em></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#">Priority</a>
@@ -693,11 +693,11 @@ export default {
                             <div class="d-flex mb-2">
                                 <h6 class="fs-15 mb-0 flex-grow-1 text-truncate"><router-link to="/apps/tasks-details">{{data.title}}</router-link></h6>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><i class="ri-more-fill"></i></a>
+                                    <a href="javascript:void(0);" class="text-muted" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"><em class="ri-more-fill"></em></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><i class="ri-eye-fill align-bottom me-2 text-muted"></i> View</router-link></li>
-                                        <li><a class="dropdown-item" href="#"><i class="ri-edit-2-line align-bottom me-2 text-muted"></i> Edit</a></li>
-                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><i class="ri-delete-bin-5-line align-bottom me-2 text-muted"></i> Delete</a></li>
+                                        <li><router-link class="dropdown-item" to="/apps/tasks-details"><em class="ri-eye-fill align-bottom me-2 text-muted"></em> View</router-link></li>
+                                        <li><a class="dropdown-item" href="#"><em class="ri-edit-2-line align-bottom me-2 text-muted"></em> Edit</a></li>
+                                        <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteRecordModal"><em class="ri-delete-bin-5-line align-bottom me-2 text-muted"></em> Delete</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -736,13 +736,13 @@ export default {
                                 <div class="flex-shrink-0">
                                     <ul class="link-inline mb-0">
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-eye-line align-bottom"></i> 04</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-eye-line align-bottom"></em> 04</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-question-answer-line align-bottom"></i> 19</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-question-answer-line align-bottom"></em> 19</a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0)" class="text-muted"><i class="ri-attachment-2 align-bottom"></i> 02</a>
+                                            <a href="javascript:void(0)" class="text-muted"><em class="ri-attachment-2 align-bottom"></em> 02</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -814,7 +814,7 @@ export default {
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-bs-dismiss="modal"><i class="ri-close-line align-bottom me-1"></i> Close</button>
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal"><em class="ri-close-line align-bottom me-1"></em> Close</button>
                     <button type="button" class="btn btn-success" id="addMember">Add Member</button>
                 </div>
             </div>

@@ -69,7 +69,7 @@
         <div class="dropdown card-header-dropdown">
           <a class="dropdown-btn text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            All Time <i class="mdi mdi-chevron-down ms-1"></i>
+            All Time <em class="mdi mdi-chevron-down ms-1"></em>
           </a>
           <div class="dropdown-menu dropdown-menu-end">
             <a class="dropdown-item" href="#">All Time</a>
@@ -90,7 +90,7 @@
           <div>
             <p class="text-muted mb-0">Total Projects</p>
             <p class="text-success fw-medium mb-0">
-              <span class="badge badge-soft-success p-1 rounded-circle"><i class="ri-arrow-right-up-line"></i></span>
+              <span class="badge badge-soft-success p-1 rounded-circle"><em class="ri-arrow-right-up-line"></em></span>
               +3 New
             </p>
           </div>
@@ -98,7 +98,7 @@
 
         <div class="d-flex justify-content-between border-bottom border-bottom-dashed py-2">
           <p class="fw-medium mb-0">
-            <i class="ri-checkbox-blank-circle-fill text-success align-middle me-2"></i>
+            <em class="ri-checkbox-blank-circle-fill text-success align-middle me-2"></em>
             Completed
           </p>
           <div>
@@ -109,7 +109,7 @@
         <!-- end -->
         <div class="d-flex justify-content-between border-bottom border-bottom-dashed py-2">
           <p class="fw-medium mb-0">
-            <i class="ri-checkbox-blank-circle-fill text-primary align-middle me-2"></i>
+            <em class="ri-checkbox-blank-circle-fill text-primary align-middle me-2"></em>
             In Progress
           </p>
           <div>
@@ -120,7 +120,7 @@
         <!-- end -->
         <div class="d-flex justify-content-between border-bottom border-bottom-dashed py-2">
           <p class="fw-medium mb-0">
-            <i class="ri-checkbox-blank-circle-fill text-warning align-middle me-2"></i>
+            <em class="ri-checkbox-blank-circle-fill text-warning align-middle me-2"></em>
             Yet to Start
           </p>
           <div>
@@ -131,7 +131,7 @@
         <!-- end -->
         <div class="d-flex justify-content-between py-2">
           <p class="fw-medium mb-0">
-            <i class="ri-checkbox-blank-circle-fill text-danger align-middle me-2"></i>
+            <em class="ri-checkbox-blank-circle-fill text-danger align-middle me-2"></em>
             Cancelled
           </p>
           <div>

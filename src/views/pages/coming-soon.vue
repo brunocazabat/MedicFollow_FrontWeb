@@ -162,7 +162,7 @@ export default {
 
                                     <div class="input-group countdown-input-group mx-auto my-4">
                                         <input type="email" class="form-control border-light shadow" placeholder="Enter your email address" aria-label="search result" aria-describedby="button-email">
-                                        <button class="btn btn-success" type="button" id="button-email">Send<i class="ri-send-plane-2-fill align-bottom ms-2"></i></button>
+                                        <button class="btn btn-success" type="button" id="button-email">Send<em class="ri-send-plane-2-fill align-bottom ms-2"></em></button>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +181,7 @@ export default {
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <p class="mb-0 text-muted">&copy; {{new Date().getFullYear()}} MedicFollow. Crafted with <i class="mdi mdi-heart text-danger"></i> by MedicFollow</p>
+                                <p class="mb-0 text-muted">&copy; {{new Date().getFullYear()}} MedicFollow. Crafted with <em class="mdi mdi-heart text-danger"></em> by MedicFollow</p>
                             </div>
                         </div>
                     </div>

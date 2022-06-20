@@ -164,7 +164,7 @@
                       display-3
                       rounded-circle
                     ">
-                    <i class="ri-checkbox-circle-fill"></i>
+                    <em class="ri-checkbox-circle-fill"></em>
                   </div>
                 </div>
                 <div class="mt-4 pt-2">

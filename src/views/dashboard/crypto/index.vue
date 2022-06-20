@@ -231,7 +231,7 @@ chartOptions: {
                 <div class="d-flex align-items-center">
                   <div class="avatar-sm flex-shrink-0">
                     <span class="avatar-title bg-light text-primary rounded-circle shadow fs-3">
-                      <i :class="`${item.icon} align-middle`"></i>
+                      <em :class="`${item.icon} align-middle`"></em>
                     </span>
                   </div>
                   <div class="flex-grow-1 ms-3">
@@ -247,7 +247,7 @@ chartOptions: {
                   </div>
                   <div class="flex-shrink-0 align-self-end">
                     <span :class="`badge badge-soft-${item.badgeColor}`">
-                      <i :class="`${item.badge} align-middle me-1`"></i>
+                      <em :class="`${item.badge} align-middle me-1`"></em>
                       {{ item.percentage }} %
                       <span></span>
                     </span>
@@ -319,7 +319,7 @@ chartOptions: {
                       aria-expanded="false"
                     >
                       <span class="text-muted fs-18">
-                        <i class="mdi mdi-dots-horizontal"></i>
+                        <em class="mdi mdi-dots-horizontal"></em>
                       </span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end">

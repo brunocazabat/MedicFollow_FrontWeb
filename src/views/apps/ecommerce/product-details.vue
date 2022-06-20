@@ -1,86 +1,86 @@
 <script>
-import { ref } from 'vue';
- import { Thumbs } from 'swiper';
+import { ref } from 'vue'
+import { Thumbs } from 'swiper'
 
-import Layout from "../../../layouts/main.vue";
-import appConfig from "../../../../app.config";
-import PageHeader from "@/components/page-header";
+import Layout from '../../../layouts/main.vue'
+import appConfig from '../../../../app.config'
+import PageHeader from '@/components/page-header'
 
-import SwiperCore, { Pagination, Navigation } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/swiper-bundle.css";
+import SwiperCore, { Pagination, Navigation } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/swiper-bundle.css'
 
-SwiperCore.use([Pagination, Navigation]);
+SwiperCore.use([Pagination, Navigation])
 
 export default {
   page: {
-    title: "Products Details",
+    title: 'Products Details',
     meta: [
       {
-        name: "description",
-        content: appConfig.description,
-      },
-    ],
+        name: 'description',
+        content: appConfig.description
+      }
+    ]
   },
-   setup() {
-      const thumbsSwiper = ref(null);
-      const setThumbsSwiper = (swiper) => {
-        thumbsSwiper.value = swiper;
-      };
-      return {
-        Thumbs,
-        thumbsSwiper,
-        setThumbsSwiper,
-      };
-    },
+  setup() {
+    const thumbsSwiper = ref(null)
+    const setThumbsSwiper = (swiper) => {
+      thumbsSwiper.value = swiper
+    }
+    return {
+      Thumbs,
+      thumbsSwiper,
+      setThumbsSwiper
+    }
+  },
   data() {
     return {
-      title: "Products Details",
+      title: 'Products Details',
       items: [
         {
-          text: "Ecommerce",
-          href: "/",
+          text: 'Ecommerce',
+          href: '/'
         },
         {
-          text: "Products Details",
-          active: true,
-        },
+          text: 'Products Details',
+          active: true
+        }
       ],
       productDetailsWidgets: [
         {
           id: 1,
-          icon: "ri-money-dollar-circle-fill",
-          label: "Price",
-          labelDetail: "$120.40",
+          icon: 'ri-money-dollar-circle-fill',
+          label: 'Price',
+          labelDetail: '$120.40'
         },
         {
           id: 2,
-          icon: "ri-file-copy-2-fill",
-          label: "No. of Orders",
-          labelDetail: "2,234",
+          icon: 'ri-file-copy-2-fill',
+          label: 'No. of Orders',
+          labelDetail: '2,234'
         },
         {
           id: 3,
-          icon: "ri-stack-fill",
-          label: "Available Stocks",
-          labelDetail: "1,230",
+          icon: 'ri-stack-fill',
+          label: 'Available Stocks',
+          labelDetail: '1,230'
         },
         {
           id: 4,
-          icon: "ri-inbox-archive-fill",
-          label: "Total Revenue",
-          labelDetail: "$60,645",
-        },
-      ],
-    };
+          icon: 'ri-inbox-archive-fill',
+          label: 'Total Revenue',
+          labelDetail: '$60,645'
+        }
+      ]
+    }
   },
   components: {
     Layout,
     PageHeader,
     Swiper,
-    SwiperSlide,
-  },
-};
+    SwiperSlide
+  }
+}
 </script>
 
 <template>
@@ -94,18 +94,14 @@ export default {
               <div class="col-xl-4 col-md-8 mx-auto">
                 <div class="product-img-slider sticky-side-div">
                   <swiper
-                  :modules="[Thumbs]"
-                   
+                    :modules="[Thumbs]"
                     class="product-thumbnail-slider p-2 rounded bg-light"
-                    
                     :navigation="{
                       nextEl: '.swiper-button-next bg-white shadow',
-                      prevEl: '.swiper-button-prev bg-white shadow',
+                      prevEl: '.swiper-button-prev bg-white shadow'
                     }"
                     :thumbs="{
-                      swiper: thumbnailSwiper,
-                    
-                    
+                      swiper: thumbnailSwiper
                     }"
                   >
                     <swiper-slide>
@@ -136,10 +132,9 @@ export default {
                         class="img-fluid d-block"
                       />
                     </swiper-slide>
-                   
                   </swiper>
-                   <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
                   <!-- end swiper thumbnail slide -->
                   <swiper
                     :modules="[Thumbs]"
@@ -148,8 +143,8 @@ export default {
                     :spaceBetween="10"
                     :slidesPerView="4"
                     :freeMode="true"
-                     watch-slides-progress
-                      @swiper="setThumbsSwiper"
+                    watch-slides-progress
+                    @swiper="setThumbsSwiper"
                   >
                     <swiper-slide>
                       <div class="nav-slide-item">
@@ -227,7 +222,7 @@ export default {
                           data-bs-placement="top"
                           title="Edit"
                         >
-                          <i class="ri-pencil-fill align-bottom"></i>
+                          <em class="ri-pencil-fill align-bottom"></em>
                         </router-link>
                       </div>
                     </div>
@@ -245,25 +240,28 @@ export default {
                   </div>
 
                   <div class="row mt-4">
-                    <div class="col-lg-3 col-sm-6" v-for="(item, index) of productDetailsWidgets" :key="index">
+                    <div
+                      class="col-lg-3 col-sm-6"
+                      v-for="(item, index) of productDetailsWidgets"
+                      :key="index"
+                    >
                       <div class="p-2 border border-dashed rounded">
                         <div class="d-flex align-items-center">
                           <div class="avatar-sm me-2">
                             <div
                               class="avatar-title rounded bg-transparent text-success fs-24"
                             >
-                              <i :class="`${item.icon}`"></i>
+                              <em :class="`${item.icon}`"></em>
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <p class="text-muted mb-1">{{item.label}} :</p>
-                            <h5 class="mb-0">{{item.labelDetail}}</h5>
+                            <p class="text-muted mb-1">{{ item.label }} :</p>
+                            <h5 class="mb-0">{{ item.labelDetail }}</h5>
                           </div>
                         </div>
                       </div>
                     </div>
                     <!-- end col -->
-                   
                   </div>
 
                   <div class="row">
@@ -367,7 +365,7 @@ export default {
                               class="btn avatar-xs p-0 d-flex align-items-center justify-content-center border rounded-circle fs-20 text-primary"
                               disabled
                             >
-                              <i class="ri-checkbox-blank-circle-fill"></i>
+                              <em class="ri-checkbox-blank-circle-fill"></em>
                             </button>
                           </div>
                           <div
@@ -380,7 +378,7 @@ export default {
                               type="button"
                               class="btn avatar-xs p-0 d-flex align-items-center justify-content-center border rounded-circle fs-20 text-secondary"
                             >
-                              <i class="ri-checkbox-blank-circle-fill"></i>
+                              <em class="ri-checkbox-blank-circle-fill"></em>
                             </button>
                           </div>
                           <div
@@ -393,7 +391,7 @@ export default {
                               type="button"
                               class="btn avatar-xs p-0 d-flex align-items-center justify-content-center border rounded-circle fs-20 text-success"
                             >
-                              <i class="ri-checkbox-blank-circle-fill"></i>
+                              <em class="ri-checkbox-blank-circle-fill"></em>
                             </button>
                           </div>
                           <div
@@ -406,7 +404,7 @@ export default {
                               type="button"
                               class="btn avatar-xs p-0 d-flex align-items-center justify-content-center border rounded-circle fs-20 text-info"
                             >
-                              <i class="ri-checkbox-blank-circle-fill"></i>
+                              <em class="ri-checkbox-blank-circle-fill"></em>
                             </button>
                           </div>
                           <div
@@ -419,7 +417,7 @@ export default {
                               type="button"
                               class="btn avatar-xs p-0 d-flex align-items-center justify-content-center border rounded-circle fs-20 text-warning"
                             >
-                              <i class="ri-checkbox-blank-circle-fill"></i>
+                              <em class="ri-checkbox-blank-circle-fill"></em>
                             </button>
                           </div>
                           <div
@@ -432,7 +430,7 @@ export default {
                               type="button"
                               class="btn avatar-xs p-0 d-flex align-items-center justify-content-center border rounded-circle fs-20 text-danger"
                             >
-                              <i class="ri-checkbox-blank-circle-fill"></i>
+                              <em class="ri-checkbox-blank-circle-fill"></em>
                             </button>
                           </div>
                           <div
@@ -445,7 +443,7 @@ export default {
                               type="button"
                               class="btn avatar-xs p-0 d-flex align-items-center justify-content-center border rounded-circle fs-20 text-light"
                             >
-                              <i class="ri-checkbox-blank-circle-fill"></i>
+                              <em class="ri-checkbox-blank-circle-fill"></em>
                             </button>
                           </div>
                           <div
@@ -458,7 +456,7 @@ export default {
                               type="button"
                               class="btn avatar-xs p-0 d-flex align-items-center justify-content-center border rounded-circle fs-20 text-dark"
                             >
-                              <i class="ri-checkbox-blank-circle-fill"></i>
+                              <em class="ri-checkbox-blank-circle-fill"></em>
                             </button>
                           </div>
                         </div>
@@ -486,27 +484,27 @@ export default {
                         <h5 class="fs-14">Features :</h5>
                         <ul class="list-unstyled">
                           <li class="py-1">
-                            <i
+                            <em
                               class="mdi mdi-circle-medium me-1 text-muted align-middle"
-                            ></i>
+                            ></em>
                             Full Sleeve
                           </li>
                           <li class="py-1">
-                            <i
+                            <em
                               class="mdi mdi-circle-medium me-1 text-muted align-middle"
-                            ></i>
+                            ></em>
                             Cotton
                           </li>
                           <li class="py-1">
-                            <i
+                            <em
                               class="mdi mdi-circle-medium me-1 text-muted align-middle"
-                            ></i>
+                            ></em>
                             All Sizes available
                           </li>
                           <li class="py-1">
-                            <i
+                            <em
                               class="mdi mdi-circle-medium me-1 text-muted align-middle"
-                            ></i>
+                            ></em>
                             4 Different Color
                           </li>
                         </ul>
@@ -616,27 +614,27 @@ export default {
                           </p>
                           <div>
                             <p class="mb-2">
-                              <i
+                              <em
                                 class="mdi mdi-circle-medium me-1 text-muted align-middle"
-                              ></i>
+                              ></em>
                               Machine Wash
                             </p>
                             <p class="mb-2">
-                              <i
+                              <em
                                 class="mdi mdi-circle-medium me-1 text-muted align-middle"
-                              ></i>
+                              ></em>
                               Fit Type: Regular
                             </p>
                             <p class="mb-2">
-                              <i
+                              <em
                                 class="mdi mdi-circle-medium me-1 text-muted align-middle"
-                              ></i>
+                              ></em>
                               100% Cotton
                             </p>
                             <p class="mb-0">
-                              <i
+                              <em
                                 class="mdi mdi-circle-medium me-1 text-muted align-middle"
-                              ></i>
+                              ></em>
                               Long sleeve
                             </p>
                           </div>
@@ -658,11 +656,11 @@ export default {
                               <div class="d-flex align-items-center">
                                 <div class="flex-grow-1">
                                   <div class="fs-16 align-middle text-warning">
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-fill"></i>
-                                    <i class="ri-star-half-fill"></i>
+                                    <em class="ri-star-fill"></em>
+                                    <em class="ri-star-fill"></em>
+                                    <em class="ri-star-fill"></em>
+                                    <em class="ri-star-fill"></em>
+                                    <em class="ri-star-half-fill"></em>
                                   </div>
                                 </div>
                                 <div class="flex-shrink-0">
@@ -853,7 +851,7 @@ export default {
                                       <div
                                         class="badge rounded-pill bg-success mb-0"
                                       >
-                                        <i class="mdi mdi-star"></i> 4.2
+                                        <em class="mdi mdi-star"></em> 4.2
                                       </div>
                                       <div class="vr"></div>
                                       <div class="flex-grow-1">
@@ -909,7 +907,7 @@ export default {
                                       <div
                                         class="badge rounded-pill bg-success mb-0"
                                       >
-                                        <i class="mdi mdi-star"></i> 4.0
+                                        <em class="mdi mdi-star"></em> 4.0
                                       </div>
                                       <div class="vr"></div>
                                       <div class="flex-grow-1">
@@ -941,7 +939,7 @@ export default {
                                       <div
                                         class="badge rounded-pill bg-success mb-0"
                                       >
-                                        <i class="mdi mdi-star"></i> 4.2
+                                        <em class="mdi mdi-star"></em> 4.2
                                       </div>
                                       <div class="vr"></div>
                                       <div class="flex-grow-1">
@@ -972,7 +970,7 @@ export default {
                                       <div
                                         class="badge rounded-pill bg-success mb-0"
                                       >
-                                        <i class="mdi mdi-star"></i> 4.1
+                                        <em class="mdi mdi-star"></em> 4.1
                                       </div>
                                       <div class="vr"></div>
                                       <div class="flex-grow-1">

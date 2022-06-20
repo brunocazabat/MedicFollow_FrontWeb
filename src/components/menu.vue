@@ -155,7 +155,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarDashboards">
-            <i class="ri-dashboard-2-line"></i>
+            <em class="ri-dashboard-2-line"></em>
             <span data-key="t-dashboards"> {{ $t("t-dashboards") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarDashboards">
@@ -192,7 +192,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarApps">
-            <i class="ri-apps-2-line"></i>
+            <em class="ri-apps-2-line"></em>
             <span data-key="t-apps"> {{ $t("t-apps") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarApps">
@@ -442,14 +442,14 @@
         </li>
 
         <li class="menu-title">
-          <i class="ri-more-fill"></i>
+          <em class="ri-more-fill"></em>
           <span data-key="t-pages">{{ $t("t-pages") }}</span>
         </li>
 
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarAuth">
-            <i class="ri-account-circle-line"></i>
+            <em class="ri-account-circle-line"></em>
             <span data-key="t-authentication">{{
               $t("t-authentication")
             }}</span>
@@ -654,7 +654,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarPages">
-            <i class="ri-pages-line"></i>
+            <em class="ri-pages-line"></em>
             <span data-key="t-pages">{{ $t("t-pages") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarPages">
@@ -731,14 +731,14 @@
 
 
         <li class="menu-title">
-          <i class="ri-more-fill"></i>
+          <em class="ri-more-fill"></em>
           <span data-key="t-components">{{ $t("t-components") }}</span>
         </li>
 
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarUI" data-bs-toggle="collapse" role="button" aria-expanded="false"
             aria-controls="sidebarUI">
-            <i class="ri-pencil-ruler-2-line"></i>
+            <em class="ri-pencil-ruler-2-line"></em>
             <span data-key="t-base-ui">{{ $t("t-base-ui") }}</span>
           </a>
           <div class="collapse menu-dropdown mega-dropdown-menu" id="sidebarUI">
@@ -845,7 +845,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarAdvanceUI">
-            <i class="ri-stack-line"></i>
+            <em class="ri-stack-line"></em>
             <span data-key="t-advance-ui">{{ $t("t-advance-ui") }}</span>
             <span class="badge badge-pill bg-success" data-key="t-new">{{
               $t("t-new")
@@ -885,7 +885,7 @@
 
         <li class="nav-item">
           <router-link class="nav-link menu-link" to="/widgets">
-            <i class="ri-honour-line"></i>
+            <em class="ri-honour-line"></em>
             <span data-key="t-widgets">{{ $t("t-widgets") }}</span>
           </router-link>
         </li>
@@ -893,7 +893,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarForms">
-            <i class="ri-file-list-3-line"></i>
+            <em class="ri-file-list-3-line"></em>
             <span data-key="t-forms">{{ $t("t-forms") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarForms">
@@ -954,7 +954,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarTables">
-            <i class="ri-layout-grid-line"></i>
+            <em class="ri-layout-grid-line"></em>
             <span data-key="t-tables">{{ $t("t-tables") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarTables">
@@ -974,7 +974,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarCharts">
-            <i class="ri-pie-chart-line"></i>
+            <em class="ri-pie-chart-line"></em>
             <span data-key="t-charts">{{ $t("t-charts") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarCharts">
@@ -1080,7 +1080,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarIcons" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarIcons">
-            <i class="ri-compasses-2-line"></i>
+            <em class="ri-compasses-2-line"></em>
             <span data-key="t-icons">{{ $t("t-icons") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarIcons">
@@ -1111,7 +1111,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarMaps">
-            <i class="ri-map-pin-line"></i>
+            <em class="ri-map-pin-line"></em>
             <span data-key="t-maps">{{ $t("t-maps") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarMaps">
@@ -1133,7 +1133,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarMultilevel" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarMultilevel">
-            <i class="ri-share-line"></i>
+            <em class="ri-share-line"></em>
             <span data-key="t-multi-level">{{ $t("t-multi-level") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarMultilevel">
@@ -1192,7 +1192,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarDashboards">
-            <i class="ri-dashboard-2-line"></i>
+            <em class="ri-dashboard-2-line"></em>
             <span data-key="t-dashboards"> {{ $t("t-dashboards") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarDashboards">
@@ -1229,7 +1229,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarApps">
-            <i class="ri-apps-2-line"></i>
+            <em class="ri-apps-2-line"></em>
             <span data-key="t-apps"> {{ $t("t-apps") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarApps">
@@ -1479,14 +1479,14 @@
         </li>
 
         <li class="menu-title">
-          <i class="ri-more-fill"></i>
+          <em class="ri-more-fill"></em>
           <span data-key="t-pages">{{ $t("t-pages") }}</span>
         </li>
 
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarAuth">
-            <i class="ri-account-circle-line"></i>
+            <em class="ri-account-circle-line"></em>
             <span data-key="t-authentication">{{
               $t("t-authentication")
             }}</span>
@@ -1691,7 +1691,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarPages">
-            <i class="ri-pages-line"></i>
+            <em class="ri-pages-line"></em>
             <span data-key="t-pages">{{ $t("t-pages") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarPages">
@@ -1765,7 +1765,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link menu-link" target="_blank" href="/landing">
-            <i class="ri-rocket-line"></i>
+            <em class="ri-rocket-line"></em>
             <span data-key="t-landing">{{ $t("t-landing") }}</span>
             <span class="badge badge-pill bg-danger" data-key="t-new">{{
               $t("t-new")
@@ -1773,14 +1773,14 @@
           </a>
         </li>
         <li class="menu-title">
-          <i class="ri-more-fill"></i>
+          <em class="ri-more-fill"></em>
           <span data-key="t-components">{{ $t("t-components") }}</span>
         </li>
 
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarUI" data-bs-toggle="collapse" role="button" aria-expanded="false"
             aria-controls="sidebarUI">
-            <i class="ri-pencil-ruler-2-line"></i>
+            <em class="ri-pencil-ruler-2-line"></em>
             <span data-key="t-base-ui">{{ $t("t-base-ui") }}</span>
           </a>
           <div class="collapse menu-dropdown mega-dropdown-menu" id="sidebarUI">
@@ -1887,7 +1887,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarAdvanceUI">
-            <i class="ri-stack-line"></i>
+            <em class="ri-stack-line"></em>
             <span data-key="t-advance-ui">{{ $t("t-advance-ui") }}</span>
 
           </a>
@@ -1924,7 +1924,7 @@
 
         <li class="nav-item">
           <router-link class="nav-link menu-link" to="/widgets">
-            <i class="ri-honour-line"></i>
+            <em class="ri-honour-line"></em>
             <span data-key="t-widgets">{{ $t("t-widgets") }}</span>
           </router-link>
         </li>
@@ -1932,7 +1932,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarForms">
-            <i class="ri-file-list-3-line"></i>
+            <em class="ri-file-list-3-line"></em>
             <span data-key="t-forms">{{ $t("t-forms") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarForms">
@@ -1993,7 +1993,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarTables">
-            <i class="ri-layout-grid-line"></i>
+            <em class="ri-layout-grid-line"></em>
             <span data-key="t-tables">{{ $t("t-tables") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarTables">
@@ -2013,7 +2013,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarCharts">
-            <i class="ri-pie-chart-line"></i>
+            <em class="ri-pie-chart-line"></em>
             <span data-key="t-charts">{{ $t("t-charts") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarCharts">
@@ -2119,7 +2119,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarIcons" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarIcons">
-            <i class="ri-compasses-2-line"></i>
+            <em class="ri-compasses-2-line"></em>
             <span data-key="t-icons">{{ $t("t-icons") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarIcons">
@@ -2150,7 +2150,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarMaps">
-            <i class="ri-map-pin-line"></i>
+            <em class="ri-map-pin-line"></em>
             <span data-key="t-maps">{{ $t("t-maps") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarMaps">
@@ -2172,7 +2172,7 @@
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarMultilevel" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarMultilevel">
-            <i class="ri-share-line"></i>
+            <em class="ri-share-line"></em>
             <span data-key="t-multi-level">{{ $t("t-multi-level") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarMultilevel">

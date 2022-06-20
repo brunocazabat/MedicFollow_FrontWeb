@@ -985,7 +985,7 @@ export default {
                         fs-16
                       "
                     >
-                      <i class="mdi mdi-facebook"></i>
+                      <em class="mdi mdi-facebook"></em>
                     </div>
                   </div>
                 </div>
@@ -1024,7 +1024,7 @@ export default {
                         fs-16
                       "
                     >
-                      <i class="mdi mdi-twitter"></i>
+                      <em class="mdi mdi-twitter"></em>
                     </div>
                   </div>
                 </div>
@@ -1063,7 +1063,7 @@ export default {
                         fs-16
                       "
                     >
-                      <i class="mdi mdi-github"></i>
+                      <em class="mdi mdi-github"></em>
                     </div>
                   </div>
                 </div>

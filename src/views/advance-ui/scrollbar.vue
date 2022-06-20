@@ -127,7 +127,7 @@ export default {
                                                             <div class="d-flex">
                                                                 <div class="flex-shrink-0 avatar-xs me-3">
                                                                     <span class="avatar-title bg-soft-info text-info rounded-circle fs-16 shadow">
-                                                                        <i class="ri-checkbox-circle-fill"></i>
+                                                                        <em class="ri-checkbox-circle-fill"></em>
                                                                     </span>
                                                                 </div>
                                                                 <div class="flex-grow-1 text-muted">
@@ -136,7 +136,7 @@ export default {
                                                                 </div>
                                                                 <div class="flex-shrink-0 ms-2">
                                                                     <div class="fs-11 text-muted">
-                                                                        <i class="mdi mdi-clock-outline"></i> 30 min ago
+                                                                        <em class="mdi mdi-clock-outline"></em> 30 min ago
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -154,7 +154,7 @@ export default {
 
                                                                 <div class="flex-shrink-0 ms-2">
                                                                     <div class="fs-11 text-muted">
-                                                                        <i class="mdi mdi-clock-outline"></i> 01 hr ago
+                                                                        <em class="mdi mdi-clock-outline"></em> 01 hr ago
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -164,7 +164,7 @@ export default {
                                                             <div class="d-flex">
                                                                 <div class="flex-shrink-0 avatar-xs me-3">
                                                                     <span class="avatar-title bg-soft-danger text-danger rounded-circle fs-16 shadow">
-                                                                        <i class="ri-message-2-fill"></i>
+                                                                        <em class="ri-message-2-fill"></em>
                                                                     </span>
                                                                 </div>
                                                                 <div class="flex-grow-1 text-muted">
@@ -172,7 +172,7 @@ export default {
                                                                 </div>
                                                                 <div class="flex-shrink-0 ms-2">
                                                                     <div class="fs-11 text-muted">
-                                                                        <i class="mdi mdi-clock-outline"></i> 02 hrs ago
+                                                                        <em class="mdi mdi-clock-outline"></em> 02 hrs ago
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -189,7 +189,7 @@ export default {
                                                                 </div>
                                                                 <div class="flex-shrink-0 ms-2">
                                                                     <div class="fs-11 text-muted">
-                                                                        <i class="mdi mdi-clock-outline"></i> 02 hrs ago
+                                                                        <em class="mdi mdi-clock-outline"></em> 02 hrs ago
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -198,7 +198,7 @@ export default {
                                                             <div class="d-flex">
                                                                 <div class="flex-shrink-0 avatar-xs me-3">
                                                                     <span class="avatar-title bg-soft-info text-info rounded-circle fs-16 shadow">
-                                                                        <i class="ri-checkbox-circle-fill"></i>
+                                                                        <em class="ri-checkbox-circle-fill"></em>
                                                                     </span>
                                                                 </div>
                                                                 <div class="flex-grow-1 text-muted">
@@ -207,13 +207,13 @@ export default {
                                                                 </div>
                                                                 <div class="flex-shrink-0 ms-2">
                                                                     <div class="fs-11 text-muted">
-                                                                        <i class="mdi mdi-clock-outline"></i> 30 min ago
+                                                                        <em class="mdi mdi-clock-outline"></em> 30 min ago
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </a>
                                                         <div class="text-center my-2">
-                                                            <a href="javascript:void(0);" class="text-success"><i class="mdi mdi-loading mdi-spin fs-20 align-middle me-2"></i> Load more </a>
+                                                            <a href="javascript:void(0);" class="text-success"><em class="mdi mdi-loading mdi-spin fs-20 align-middle me-2"></em> Load more </a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -362,7 +362,7 @@ export default {
                                                                         <div>2019 - 21</div>
                                                                     </div>
                                                                     <div class="flex-shrink-0 mx-3">
-                                                                        <i class="ri-arrow-right-fill text-muted"></i>
+                                                                        <em class="ri-arrow-right-fill text-muted"></em>
                                                                     </div>
                                                                     <div class="flex-grow-1 text-muted overflow-hidden">
                                                                         <h5 class="text-truncate fs-14 mb-1">Lead designer / Developer</h5>
@@ -376,7 +376,7 @@ export default {
                                                                         <div>2017 - 19</div>
                                                                     </div>
                                                                     <div class="flex-shrink-0 mx-3">
-                                                                        <i class="ri-arrow-right-fill text-muted"></i>
+                                                                        <em class="ri-arrow-right-fill text-muted"></em>
                                                                     </div>
                                                                     <div class="flex-grow-1 text-muted overflow-hidden">
                                                                         <h5 class="text-truncate fs-14 mb-1">Senior Graphic Designer</h5>
@@ -390,7 +390,7 @@ export default {
                                                                         <div>2016 - 17</div>
                                                                     </div>
                                                                     <div class="flex-shrink-0 mx-3">
-                                                                        <i class="ri-arrow-right-fill text-muted"></i>
+                                                                        <em class="ri-arrow-right-fill text-muted"></em>
                                                                     </div>
                                                                     <div class="flex-grow-1 text-muted overflow-hidden">
                                                                         <h5 class="text-truncate fs-14 mb-1">Graphic Designer</h5>
@@ -404,7 +404,7 @@ export default {
                                                                         <div>2017 - 16</div>
                                                                     </div>
                                                                     <div class="flex-shrink-0 mx-3">
-                                                                        <i class="ri-arrow-right-fill text-muted"></i>
+                                                                        <em class="ri-arrow-right-fill text-muted"></em>
                                                                     </div>
                                                                     <div class="flex-grow-1 text-muted overflow-hidden">
                                                                         <h5 class="text-truncate fs-14 mb-1">Graphic Designer</h5>
@@ -418,7 +418,7 @@ export default {
                                                                         <div>2016 - 15</div>
                                                                     </div>
                                                                     <div class="flex-shrink-0 mx-3">
-                                                                        <i class="ri-arrow-right-fill text-muted"></i>
+                                                                        <em class="ri-arrow-right-fill text-muted"></em>
                                                                     </div>
                                                                     <div class="flex-grow-1 text-muted overflow-hidden">
                                                                         <h5 class="text-truncate fs-14 mb-1">Graphic Designer</h5>
@@ -500,7 +500,7 @@ export default {
                                                                 </div>
                                                             </div>
                                                             <div class="flex-shrink-0 ms-2">
-                                                                <button type="button" class="btn btn-sm btn-outline-success shadow-none"><i class="ri-user-add-line align-middle"></i></button>
+                                                                <button type="button" class="btn btn-sm btn-outline-success shadow-none"><em class="ri-user-add-line align-middle"></em></button>
                                                             </div>
                                                         </div>
                                                         
@@ -515,7 +515,7 @@ export default {
                                                                 </div>
                                                             </div>
                                                             <div class="flex-shrink-0 ms-2">
-                                                                <button type="button" class="btn btn-sm btn-outline-success shadow-none"><i class="ri-user-add-line align-middle"></i></button>
+                                                                <button type="button" class="btn btn-sm btn-outline-success shadow-none"><em class="ri-user-add-line align-middle"></em></button>
                                                             </div>
                                                         </div>
 
@@ -530,7 +530,7 @@ export default {
                                                                 </div>
                                                             </div>
                                                             <div class="flex-shrink-0 ms-2">
-                                                                <button type="button" class="btn btn-sm btn-outline-success shadow-none"><i class="ri-user-add-line align-middle"></i></button>
+                                                                <button type="button" class="btn btn-sm btn-outline-success shadow-none"><em class="ri-user-add-line align-middle"></em></button>
                                                             </div>
                                                         </div>
                                                         <div class="d-flex align-items-center py-3">
@@ -544,7 +544,7 @@ export default {
                                                                 </div>
                                                             </div>
                                                             <div class="flex-shrink-0 ms-2">
-                                                                <button type="button" class="btn btn-sm btn-outline-success shadow-none"><i class="ri-user-add-line align-middle"></i></button>
+                                                                <button type="button" class="btn btn-sm btn-outline-success shadow-none"><em class="ri-user-add-line align-middle"></em></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -568,7 +568,7 @@ export default {
                                                         <a href="#" class="d-flex align-items-center py-2">
                                                             <div class="flex-shrink-0 avatar-xs me-3">
                                                                 <div class="avatar-title bg-light text-primary rounded-circle shadow">
-                                                                    <i class="ri-hashtag"></i>
+                                                                    <em class="ri-hashtag"></em>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-grow-1 overflow-hidden">
@@ -582,7 +582,7 @@ export default {
                                                         <a href="#" class="d-flex align-items-center py-2">
                                                             <div class="flex-shrink-0 avatar-xs me-3">
                                                                 <div class="avatar-title bg-light text-primary rounded-circle shadow">
-                                                                    <i class="ri-hashtag"></i>
+                                                                    <em class="ri-hashtag"></em>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-grow-1 overflow-hidden">
@@ -596,7 +596,7 @@ export default {
                                                         <a href="#" class="d-flex align-items-center py-2">
                                                             <div class="flex-shrink-0 avatar-xs me-3">
                                                                 <div class="avatar-title bg-light text-primary rounded-circle shadow">
-                                                                    <i class="ri-hashtag"></i>
+                                                                    <em class="ri-hashtag"></em>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-grow-1 overflow-hidden">
@@ -610,7 +610,7 @@ export default {
                                                         <a href="#" class="d-flex align-items-center py-2">
                                                             <div class="flex-shrink-0 avatar-xs me-3">
                                                                 <div class="avatar-title bg-light text-primary rounded-circle shadow">
-                                                                    <i class="ri-hashtag"></i>
+                                                                    <em class="ri-hashtag"></em>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-grow-1 overflow-hidden">
@@ -624,7 +624,7 @@ export default {
                                                         <a href="#" class="d-flex align-items-center py-2">
                                                             <div class="flex-shrink-0 avatar-xs me-3">
                                                                 <div class="avatar-title bg-light text-primary rounded-circle shadow">
-                                                                    <i class="ri-hashtag"></i>
+                                                                    <em class="ri-hashtag"></em>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-grow-1 overflow-hidden">
@@ -658,7 +658,7 @@ export default {
                                                                 <div>
                                                                     <div class="d-flex align-items-start">
                                                                         <div class="flex-grow-1">
-                                                                            <div class="badge bg-success bg-gradient mb-2"><i class="mdi mdi-star"></i> 4.1</div>
+                                                                            <div class="badge bg-success bg-gradient mb-2"><em class="mdi mdi-star"></em> 4.1</div>
                                                                         </div>
                                                                         <div class="flex-shrink-0">
                                                                             <p class="text-muted fs-13">12 Jul, 21</p>
@@ -674,16 +674,16 @@ export default {
                                                                         <div class="flex-shrink-0">
                                                                             <div class="hstack gap-3">
                                                                                 <div data-bs-toggle="tooltip" data-bs-placement="top" title="Like">
-                                                                                    <a href="#" class="text-muted"><i class="ri-thumb-up-line"></i></a>
+                                                                                    <a href="#" class="text-muted"><em class="ri-thumb-up-line"></em></a>
                                                                                 </div>
                                                                                 <div class="vr"></div>
                                                                                 <div data-bs-toggle="tooltip" data-bs-placement="top" title="Comment">
-                                                                                    <a href="#" class="text-muted"><i class="ri-discuss-line"></i></a>
+                                                                                    <a href="#" class="text-muted"><em class="ri-discuss-line"></em></a>
                                                                                 </div>
                                                                                 <div class="vr"></div>
                                                                                 <div class="dropdown">
                                                                                     <a class="text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                        <i class="ri-more-fill"></i>
+                                                                                        <em class="ri-more-fill"></em>
                                                                                     </a>
                                                                                 
                                                                                     <div class="dropdown-menu dropdown-menu-right">
@@ -701,7 +701,7 @@ export default {
                                                                 <div>
                                                                     <div class="d-flex align-items-start">
                                                                         <div class="flex-grow-1">
-                                                                            <div class="badge bg-success bg-gradient mb-2"><i class="mdi mdi-star"></i> 4.0</div>
+                                                                            <div class="badge bg-success bg-gradient mb-2"><em class="mdi mdi-star"></em> 4.0</div>
                                                                         </div>
                                                                         <div class="flex-shrink-0">
                                                                             <p class="text-muted fs-13">06 Jul, 21</p>
@@ -716,16 +716,16 @@ export default {
                                                                         <div class="flex-shrink-0">
                                                                             <div class="hstack gap-3">
                                                                                 <div data-bs-toggle="tooltip" data-bs-placement="top" title="Like">
-                                                                                    <a href="#" class="text-muted"><i class="ri-thumb-up-line"></i></a>
+                                                                                    <a href="#" class="text-muted"><em class="ri-thumb-up-line"></em></a>
                                                                                 </div>
                                                                                 <div class="vr"></div>
                                                                                 <div data-bs-toggle="tooltip" data-bs-placement="top" title="Comment">
-                                                                                    <a href="#" class="text-muted"><i class="ri-discuss-line"></i></a>
+                                                                                    <a href="#" class="text-muted"><em class="ri-discuss-line"></em></a>
                                                                                 </div>
                                                                                 <div class="vr"></div>
                                                                                 <div class="dropdown">
                                                                                     <a class="text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                        <i class="ri-more-fill"></i>
+                                                                                        <em class="ri-more-fill"></em>
                                                                                     </a>
                                                                                 
                                                                                     <div class="dropdown-menu dropdown-menu-right">
@@ -744,7 +744,7 @@ export default {
                                                                 <div>
                                                                     <div class="d-flex align-items-start">
                                                                         <div class="flex-grow-1">
-                                                                            <div class="badge bg-success bg-gradient mb-2"><i class="mdi mdi-star"></i> 4.2</div>
+                                                                            <div class="badge bg-success bg-gradient mb-2"><em class="mdi mdi-star"></em> 4.2</div>
                                                                         </div>
                                                                         <div class="flex-shrink-0">
                                                                             <p class="text-muted fs-13">26 Jun, 21</p>
@@ -759,16 +759,16 @@ export default {
                                                                         <div class="flex-shrink-0">
                                                                             <div class="hstack gap-3">
                                                                                 <div data-bs-toggle="tooltip" data-bs-placement="top" title="Like">
-                                                                                    <a href="#" class="text-muted"><i class="ri-thumb-up-line"></i></a>
+                                                                                    <a href="#" class="text-muted"><em class="ri-thumb-up-line"></em></a>
                                                                                 </div>
                                                                                 <div class="vr"></div>
                                                                                 <div data-bs-toggle="tooltip" data-bs-placement="top" title="Comment">
-                                                                                    <a href="#" class="text-muted"><i class="ri-discuss-line"></i></a>
+                                                                                    <a href="#" class="text-muted"><em class="ri-discuss-line"></em></a>
                                                                                 </div>
                                                                                 <div class="vr"></div>
                                                                                 <div class="dropdown">
                                                                                     <a class="text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                        <i class="ri-more-fill"></i>
+                                                                                        <em class="ri-more-fill"></em>
                                                                                     </a>
                                                                                 
                                                                                     <div class="dropdown-menu dropdown-menu-right">
@@ -787,7 +787,7 @@ export default {
                                                                 <div>
                                                                     <div class="d-flex align-items-start">
                                                                         <div class="flex-grow-1">
-                                                                            <div class="badge bg-success bg-gradient mb-2"><i class="mdi mdi-star"></i> 4.1</div>
+                                                                            <div class="badge bg-success bg-gradient mb-2"><em class="mdi mdi-star"></em> 4.1</div>
                                                                         </div>
                                                                         <div class="flex-shrink-0">
                                                                             <p class="text-muted fs-13">24 Jun, 21</p>
@@ -802,16 +802,16 @@ export default {
                                                                         <div class="flex-shrink-0">
                                                                             <div class="hstack gap-3">
                                                                                 <div data-bs-toggle="tooltip" data-bs-placement="top" title="Like">
-                                                                                    <a href="#" class="text-muted"><i class="ri-thumb-up-line"></i></a>
+                                                                                    <a href="#" class="text-muted"><em class="ri-thumb-up-line"></em></a>
                                                                                 </div>
                                                                                 <div class="vr"></div>
                                                                                 <div data-bs-toggle="tooltip" data-bs-placement="top" title="Comment">
-                                                                                    <a href="#" class="text-muted"><i class="ri-discuss-line"></i></a>
+                                                                                    <a href="#" class="text-muted"><em class="ri-discuss-line"></em></a>
                                                                                 </div>
                                                                                 <div class="vr"></div>
                                                                                 <div class="dropdown">
                                                                                     <a class="text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                        <i class="ri-more-fill"></i>
+                                                                                        <em class="ri-more-fill"></em>
                                                                                     </a>
                                                                                 
                                                                                     <div class="dropdown-menu dropdown-menu-right">

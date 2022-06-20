@@ -1,168 +1,168 @@
 <script>
-import Multiselect from "@vueform/multiselect";
-import "@vueform/multiselect/themes/default.css";
+import Multiselect from '@vueform/multiselect'
+import '@vueform/multiselect/themes/default.css'
 
-import Layout from "../../../layouts/main.vue";
-import appConfig from "../../../../app.config";
-import PageHeader from "@/components/page-header";
+import Layout from '../../../layouts/main.vue'
+import appConfig from '../../../../app.config'
+import PageHeader from '@/components/page-header'
 
 export default {
   page: {
-    title: "Sellers",
+    title: 'Sellers',
     meta: [
       {
-        name: "description",
-        content: appConfig.description,
-      },
-    ],
+        name: 'description',
+        content: appConfig.description
+      }
+    ]
   },
   data() {
     return {
-      title: "Sellers",
+      title: 'Sellers',
       items: [
         {
-          text: "Ecommerce",
-          href: "/",
+          text: 'Ecommerce',
+          href: '/'
         },
         {
-          text: "Sellers",
-          active: true,
-        },
+          text: 'Sellers',
+          active: true
+        }
       ],
-      date:null,
-      value:null,
+      date: null,
+      value: null,
       chartOptions: {
-       chart: {
-        type: "area",
-        height: 50,
-        sparkline: {
-            enabled: true,
+        chart: {
+          type: 'area',
+          height: 50,
+          sparkline: {
+            enabled: true
+          }
         },
-    },
-    fill: {
-        type: "gradient",
-        gradient: {
+        fill: {
+          type: 'gradient',
+          gradient: {
             shadeIntensity: 1,
             inverseColors: false,
             opacityFrom: 0.45,
             opacityTo: 0.05,
-            stops: [20, 100, 100, 100],
+            stops: [20, 100, 100, 100]
+          }
         },
-    },
-    stroke: {
-        curve: "smooth",
-        width: 2,
-    },
-    colors: ["#f44336"],
-    tooltip: {
-        fixed: {
-            enabled: false,
+        stroke: {
+          curve: 'smooth',
+          width: 2
         },
-        x: {
-            show: false,
-        },
-        y: {
+        colors: ['#f44336'],
+        tooltip: {
+          fixed: {
+            enabled: false
+          },
+          x: {
+            show: false
+          },
+          y: {
             title: {
-                formatter: function () {
-                    return "";
-                },
-            },
-        },
-        marker: {
-            show: false,
-        },
-    },
-    },
+              formatter: function () {
+                return ''
+              }
+            }
+          },
+          marker: {
+            show: false
+          }
+        }
+      },
       sellersList: [
         {
           id: 1,
           isTrending: true,
-          img: require("@/assets/images/companies/img-1.png"),
-          label: "Force Medicines",
-          name: "David Marshall",
-          stock: "452",
-          balance: "$45,415",
-          series: [{ data: [12, 14, 2, 47, 42, 15, 47, 75, 65, 19, 14] }],
+          img: require('@/assets/images/companies/img-1.png'),
+          label: 'Force Medicines',
+          name: 'David Marshall',
+          stock: '452',
+          balance: '$45,415',
+          series: [{ data: [12, 14, 2, 47, 42, 15, 47, 75, 65, 19, 14] }]
         },
         {
           id: 2,
           isTrending: false,
-          img: require("@/assets/images/companies/img-2.png"),
-          label: "Micro Design",
-          name: "Katia Stapleton",
-          stock: "784",
-          balance: "$97,642",
-           series: [{ data: [12, 14, 2, 47, 42, 15, 35, 75, 20, 67, 89] }],
+          img: require('@/assets/images/companies/img-2.png'),
+          label: 'Micro Design',
+          name: 'Katia Stapleton',
+          stock: '784',
+          balance: '$97,642',
+          series: [{ data: [12, 14, 2, 47, 42, 15, 35, 75, 20, 67, 89] }]
         },
         {
           id: 3,
           isTrending: false,
-          img: require("@/assets/images/companies/img-3.png"),
-          label: "Nesta Technologies",
-          name: "Harley Fuller",
-          stock: "320",
-          balance: "$27,102",
-          series: [{ data: [45, 20, 8, 42, 30, 5, 35, 79, 22, 54, 64] }],
+          img: require('@/assets/images/companies/img-3.png'),
+          label: 'Nesta Technologies',
+          name: 'Harley Fuller',
+          stock: '320',
+          balance: '$27,102',
+          series: [{ data: [45, 20, 8, 42, 30, 5, 35, 79, 22, 54, 64] }]
         },
         {
           id: 4,
           isTrending: true,
-          img: require("@/assets/images/companies/img-4.png"),
-           series: [{ data: [26, 15, 48, 12, 47, 19, 35, 19, 85, 68, 50] }],
-          label: "iTest Factory",
-          name: "Oliver Tyler",
-          stock: "159",
-          balance: "$14,933",
+          img: require('@/assets/images/companies/img-4.png'),
+          series: [{ data: [26, 15, 48, 12, 47, 19, 35, 19, 85, 68, 50] }],
+          label: 'iTest Factory',
+          name: 'Oliver Tyler',
+          stock: '159',
+          balance: '$14,933'
         },
         {
           id: 5,
           isTrending: false,
-          img: require("@/assets/images/companies/img-5.png"),
-           series: [{ data: [60, 67, 12, 49, 6, 78, 63, 51, 33, 8, 16] }],
-          label: "Meta4Systems",
-          name: "Zoe Dennis",
-          stock: "363",
-          balance: "$73,426",
+          img: require('@/assets/images/companies/img-5.png'),
+          series: [{ data: [60, 67, 12, 49, 6, 78, 63, 51, 33, 8, 16] }],
+          label: 'Meta4Systems',
+          name: 'Zoe Dennis',
+          stock: '363',
+          balance: '$73,426'
         },
         {
           id: 6,
           isTrending: true,
-          img: require("@/assets/images/companies/img-6.png"),
-           series: [{ data: [78, 63, 51, 33, 8, 16, 60, 67, 12, 49 ] }],
-          label: "Digitech Galaxy",
-          name: "John Roberts",
-          stock: "412",
-          balance: "$34,241",
+          img: require('@/assets/images/companies/img-6.png'),
+          series: [{ data: [78, 63, 51, 33, 8, 16, 60, 67, 12, 49] }],
+          label: 'Digitech Galaxy',
+          name: 'John Roberts',
+          stock: '412',
+          balance: '$34,241'
         },
         {
           id: 7,
           isTrending: true,
-          img: require("@/assets/images/companies/img-7.png"),
-           series: [{ data: [15, 35, 75, 20, 67, 8, 42, 30, 5, 35] }],
-          label: "Syntyce Solutions",
-          name: "Demi Allen",
-          stock: "945",
-          balance: "$17,200",
+          img: require('@/assets/images/companies/img-7.png'),
+          series: [{ data: [15, 35, 75, 20, 67, 8, 42, 30, 5, 35] }],
+          label: 'Syntyce Solutions',
+          name: 'Demi Allen',
+          stock: '945',
+          balance: '$17,200'
         },
         {
           id: 8,
           isTrending: false,
-          img: require("@/assets/images/companies/img-8.png"),
+          img: require('@/assets/images/companies/img-8.png'),
           series: [{ data: [45, 32, 68, 55, 36, 10, 48, 25, 74, 54] }],
-          label: "Zoetic Fashion",
-          name: "James Bowen",
-          stock: "784",
-          balance: "$97,642",
-        },
-      ],
-    };
+          label: 'Zoetic Fashion',
+          name: 'James Bowen',
+          stock: '784',
+          balance: '$97,642'
+        }
+      ]
+    }
   },
   components: {
     Layout,
     PageHeader,
     Multiselect
-  },
-};
+  }
+}
 </script>
 
 <template>
@@ -178,42 +178,45 @@ export default {
                 class="form-control search"
                 placeholder="Search for sellers & owner name or something..."
               />
-              <i class="ri-search-line search-icon"></i>
+              <em class="ri-search-line search-icon"></em>
             </div>
           </div>
           <!--end col-->
           <div class="col-xl-2 ms-auto">
             <div>
-              <Multiselect class="form-control"
-                          v-model="value"
-                          :close-on-select="true"
-                          :searchable="true"
-                          :create-option="true"
-                          :options="[
-                            { value: '', label: 'Select Categories' },
-                            { value: 'All', label: 'All' },
-                            { value: 'Retailer', label: 'Retailer' },
-                            { value: 'Health & Medicine', label: 'Health & Medicine' },
-                            { value: 'Manufacturer', label: 'Manufacturer' },
-                            { value: 'Food Service', label: 'Food Service' },
-                            { value: 'Computers & Electronics', label: 'Computers & Electronics' },
-                           
-                          ]"
-                        />
+              <Multiselect
+                class="form-control"
+                v-model="value"
+                :close-on-select="true"
+                :searchable="true"
+                :create-option="true"
+                :options="[
+                  { value: '', label: 'Select Categories' },
+                  { value: 'All', label: 'All' },
+                  { value: 'Retailer', label: 'Retailer' },
+                  { value: 'Health & Medicine', label: 'Health & Medicine' },
+                  { value: 'Manufacturer', label: 'Manufacturer' },
+                  { value: 'Food Service', label: 'Food Service' },
+                  {
+                    value: 'Computers & Electronics',
+                    label: 'Computers & Electronics'
+                  }
+                ]"
+              />
             </div>
           </div>
           <!--end col-->
           <div class="col-lg-auto">
             <div class="hstack gap-2">
               <button type="button" class="btn btn-danger">
-                <i class="ri-equalizer-fill me-1 align-bottom"></i> Filters
+                <em class="ri-equalizer-fill me-1 align-bottom"></em> Filters
               </button>
               <button
                 class="btn btn-success"
                 data-bs-toggle="modal"
                 data-bs-target="#addSeller"
               >
-                <i class="ri-add-fill me-1 align-bottom"></i> Add Seller
+                <em class="ri-add-fill me-1 align-bottom"></em> Add Seller
               </button>
             </div>
           </div>
@@ -224,39 +227,47 @@ export default {
     </div>
 
     <div class="row mt-4">
-      <div class="col-xl-3 col-lg-6" v-for="(item, index) of sellersList" :key="index">
+      <div
+        class="col-xl-3 col-lg-6"
+        v-for="(item, index) of sellersList"
+        :key="index"
+      >
         <div class="card ribbon-box right overflow-hidden">
           <div class="card-body text-center p-4">
-            <div class="ribbon ribbon-info ribbon-shape trending-ribbon" v-if="item.isTrending == true">
-              <i class="ri-flashlight-fill text-white align-bottom"></i>
+            <div
+              class="ribbon ribbon-info ribbon-shape trending-ribbon"
+              v-if="item.isTrending == true"
+            >
+              <em class="ri-flashlight-fill text-white align-bottom"></em>
               <span class="trending-ribbon-text">Trending</span>
             </div>
             <img :src="item.img" alt="" height="45" />
             <h5 class="mb-1 mt-4">
-              <router-link to="/ecommerce/seller-details" class="link-primary"
-                >{{item.label}}</router-link
+              <router-link
+                to="/ecommerce/seller-details"
+                class="link-primary"
+                >{{ item.label }}</router-link
               >
             </h5>
-            <p class="text-muted mb-4">{{item.name}}</p>
+            <p class="text-muted mb-4">{{ item.name }}</p>
             <div class="row justify-content-center">
               <div class="col-lg-8">
-               
-                   <apexchart
-              class="apex-charts"
-              dir="ltr"
-              height="50"
-              :series="item.series"
-              :options="chartOptions"
-            ></apexchart>
+                <apexchart
+                  class="apex-charts"
+                  dir="ltr"
+                  height="50"
+                  :series="item.series"
+                  :options="chartOptions"
+                ></apexchart>
               </div>
             </div>
             <div class="row mt-4">
               <div class="col-lg-6 border-end-dashed border-end">
-                <h5>{{item.stock}}</h5>
+                <h5>{{ item.stock }}</h5>
                 <span class="text-muted">Item Stock</span>
               </div>
               <div class="col-lg-6">
-                <h5>{{item.balance}}</h5>
+                <h5>{{ item.balance }}</h5>
                 <span class="text-muted">Wallet Balance</span>
               </div>
             </div>
@@ -271,7 +282,6 @@ export default {
         </div>
       </div>
       <!--end col-->
-      
     </div>
     <!--end row-->
 
@@ -288,7 +298,7 @@ export default {
         >
           <li class="page-item disabled">
             <a href="#" class="page-link"
-              ><i class="mdi mdi-chevron-left"></i
+              ><em class="mdi mdi-chevron-left"></em
             ></a>
           </li>
           <li class="page-item active"><a href="#" class="page-link">1</a></li>
@@ -298,7 +308,7 @@ export default {
           <li class="page-item"><a href="#" class="page-link">5</a></li>
           <li class="page-item">
             <a href="#" class="page-link"
-              ><i class="mdi mdi-chevron-right"></i
+              ><em class="mdi mdi-chevron-right"></em
             ></a>
           </li>
         </ul>
@@ -447,10 +457,10 @@ export default {
                           >Date of Birth</label
                         >
                         <flat-pickr
-                      v-model="date"
-                      placeholder="Enter your date of birth"
-                      class="form-control"
-                    ></flat-pickr>
+                          v-model="date"
+                          placeholder="Enter your date of birth"
+                          class="form-control"
+                        ></flat-pickr>
                       </div>
                     </div>
                     <!--end col-->
@@ -512,14 +522,17 @@ export default {
                     <!--end col-->
                     <div class="col-lg-12">
                       <div class="hstack gap-2 justify-content-end">
-                        <button type="button"
+                        <button
+                          type="button"
                           class="btn btn-link link-success text-decoration-none fw-medium"
                           data-bs-dismiss="modal"
                         >
-                          <i class="ri-close-line me-1 align-middle"></i> Close
+                          <em class="ri-close-line me-1 align-middle"></em>
+                          Close
                         </button>
                         <button type="button" class="btn btn-primary">
-                          <i class="ri-save-3-line align-bottom me-1"></i> Save
+                          <em class="ri-save-3-line align-bottom me-1"></em>
+                          Save
                         </button>
                       </div>
                     </div>
@@ -653,10 +666,12 @@ export default {
                           class="btn btn-link link-success text-decoration-none fw-medium"
                           data-bs-dismiss="modal"
                         >
-                          <i class="ri-close-line me-1 align-middle"></i> Close
+                          <em class="ri-close-line me-1 align-middle"></em>
+                          Close
                         </button>
                         <button type="submit" class="btn btn-primary">
-                          <i class="ri-save-3-line align-bottom me-1"></i> Save
+                          <em class="ri-save-3-line align-bottom me-1"></em>
+                          Save
                         </button>
                       </div>
                     </div>
@@ -742,10 +757,12 @@ export default {
                           class="btn btn-link link-success text-decoration-none fw-medium"
                           data-bs-dismiss="modal"
                         >
-                          <i class="ri-close-line me-1 align-middle"></i> Close
+                          <em class="ri-close-line me-1 align-middle"></em>
+                          Close
                         </button>
                         <button type="submit" class="btn btn-primary">
-                          <i class="ri-save-3-line align-bottom me-1"></i> Save
+                          <em class="ri-save-3-line align-bottom me-1"></em>
+                          Save
                         </button>
                       </div>
                     </div>

@@ -80,16 +80,16 @@ export default {
                         <div class="live-preview">
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <i class="ri-bill-line align-middle me-2"></i> Send the billing agreement
+                                    <em class="ri-bill-line align-middle me-2"></em> Send the billing agreement
                                 </li>
                                 <li class="list-group-item">
-                                    <i class="ri-file-copy-2-line align-middle me-2"></i>Send over all the documentation.
+                                    <em class="ri-file-copy-2-line align-middle me-2"></em>Send over all the documentation.
                                 </li>
                                 <li class="list-group-item">
-                                    <i class="ri-question-answer-line align-middle me-2"></i>Meeting with daron to review the intake form
+                                    <em class="ri-question-answer-line align-middle me-2"></em>Meeting with daron to review the intake form
                                 </li>
                                 <li class="list-group-item">
-                                    <i class="ri-secure-payment-line align-middle me-2"></i>Check uikings theme and give customer support
+                                    <em class="ri-secure-payment-line align-middle me-2"></em>Check uikings theme and give customer support
                                 </li>
                             </ul>
                         </div>
@@ -322,23 +322,23 @@ Erica Kernan
                         <div class="live-preview">
                             <div class="list-group list-group-fill-success">
                                 <a href="#" class="list-group-item list-group-item-action active">
-                                    <i class="ri-download-2-fill align-middle me-2"></i>Category Download
+                                    <em class="ri-download-2-fill align-middle me-2"></em>Category Download
                                 </a>
                                 <a href="#" class="list-group-item list-group-item-action">
-                                    <i class="ri-shield-check-line align-middle me-2"></i>Security Access
+                                    <em class="ri-shield-check-line align-middle me-2"></em>Security Access
                                 </a>
                                 <a href="#" class="list-group-item list-group-item-action">
-                                    <i class="ri-database-2-line align-middle me-2"></i>Storage folder
+                                    <em class="ri-database-2-line align-middle me-2"></em>Storage folder
                                 </a>
                                 <a href="#" class="list-group-item list-group-item-action">
-                                    <i class="ri-notification-3-line align-middle me-2"></i>Push Notification
+                                    <em class="ri-notification-3-line align-middle me-2"></em>Push Notification
                                 </a>
                                 <a
                                     href="#"
                                     class="list-group-item list-group-item-action disabled"
                                     tabindex="-1"
                                 >
-                                    <i class="ri-moon-fill align-middle me-2"></i>Dark Mode
+                                    <em class="ri-moon-fill align-middle me-2"></em>Dark Mode
                                 </a>
                             </div>
                         </div>
@@ -390,32 +390,32 @@ Erica Kernan
                                     class="list-group-item list-group-item-action active"
                                     aria-current="true"
                                 >
-                                    <i class="ri-reply-fill align-middle me-2"></i>Reply
+                                    <em class="ri-reply-fill align-middle me-2"></em>Reply
                                 </button>
                                 <button
                                     type="button"
                                     class="list-group-item list-group-item-action"
                                 >
-                                    <i class="ri-share-forward-fill align-middle me-2"></i>Forward Message
+                                    <em class="ri-share-forward-fill align-middle me-2"></em>Forward Message
                                 </button>
                                 <button
                                     type="button"
                                     class="list-group-item list-group-item-action"
                                 >
-                                    <i class="ri-equalizer-line align-middle me-2"></i>Filter Message
+                                    <em class="ri-equalizer-line align-middle me-2"></em>Filter Message
                                 </button>
                                 <button
                                     type="button"
                                     class="list-group-item list-group-item-action"
                                 >
-                                    <i class="ri-delete-bin-5-line align-middle me-2"></i>Delete Message
+                                    <em class="ri-delete-bin-5-line align-middle me-2"></em>Delete Message
                                 </button>
                                 <button
                                     type="button"
                                     class="list-group-item list-group-item-action"
                                     disabled
                                 >
-                                    <i class="ri-forbid-line align-middle me-2"></i>Block "Mark Spencer
+                                    <em class="ri-forbid-line align-middle me-2"></em>Block "Mark Spencer
                                 </button>
                             </div>
                         </div>
@@ -1293,19 +1293,19 @@ Wrong UX/UI Solution
                         <div class="live-preview">
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Send the billing agreement
+                                    <em class="mdi mdi-check-bold align-middle lh-1 me-2"></em> Send the billing agreement
                                 </li>
                                 <li class="list-group-item">
-                                    <i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Send over all the documentation.
+                                    <em class="mdi mdi-check-bold align-middle lh-1 me-2"></em> Send over all the documentation.
                                 </li>
                                 <li class="list-group-item">
-                                    <i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Meeting with daron to review the intake form
+                                    <em class="mdi mdi-check-bold align-middle lh-1 me-2"></em> Meeting with daron to review the intake form
                                 </li>
                                 <li class="list-group-item">
-                                    <i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Check uikings theme and give customer support
+                                    <em class="mdi mdi-check-bold align-middle lh-1 me-2"></em> Check uikings theme and give customer support
                                 </li>
                                 <li class="list-group-item">
-                                    <i class="mdi mdi-check-bold align-middle lh-1 me-2"></i> Start making a presentation
+                                    <em class="mdi mdi-check-bold align-middle lh-1 me-2"></em> Start making a presentation
                                 </li>
                             </ul>
                         </div>
@@ -1418,7 +1418,7 @@ Wrong UX/UI Solution
                                                         <div
                                                             class="avatar-title bg-soft-danger text-danger rounded"
                                                         >
-                                                            <i class="ri-netflix-fill"></i>
+                                                            <em class="ri-netflix-fill"></em>
                                                         </div>
                                                     </div>
                                                     <div class="flex-shrink-0 ms-2">
@@ -1440,7 +1440,7 @@ Wrong UX/UI Solution
                                                         <div
                                                             class="avatar-title bg-soft-success text-success rounded"
                                                         >
-                                                            <i class="ri-spotify-fill"></i>
+                                                            <em class="ri-spotify-fill"></em>
                                                         </div>
                                                     </div>
                                                     <div class="flex-shrink-0 ms-2">
@@ -1484,7 +1484,7 @@ Wrong UX/UI Solution
                                                         <div
                                                             class="avatar-title bg-soft-secondary text-secondary rounded"
                                                         >
-                                                            <i class="ri-paypal-fill"></i>
+                                                            <em class="ri-paypal-fill"></em>
                                                         </div>
                                                     </div>
                                                     <div class="flex-shrink-0 ms-2">

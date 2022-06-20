@@ -215,16 +215,16 @@ export default {
                                         <img src="@/assets/images/logo-light.png" class="card-logo card-logo-light" alt="logo light" height="15">
                                     </a>
                                     <nav class="nav nav-pills flex-column p-3 w-100">
-                                        <a class="nav-link" href="#item-1"><i class="ri-dashboard-2-line align-middle me-2 fs-16"></i> <span>Dashboards</span></a>
+                                        <a class="nav-link" href="#item-1"><em class="ri-dashboard-2-line align-middle me-2 fs-16"></em> <span>Dashboards</span></a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link" href="#item-1-1"><i class="ri-subtract-fill align-middle me-2 fs-15"></i> <span>Ecommerce</span></a>
-                                            <a class="nav-link" href="#item-1-2"><i class="ri-subtract-fill align-middle me-2 fs-15"></i> <span>Analytics</span></a>
+                                            <a class="nav-link" href="#item-1-1"><em class="ri-subtract-fill align-middle me-2 fs-15"></em> <span>Ecommerce</span></a>
+                                            <a class="nav-link" href="#item-1-2"><em class="ri-subtract-fill align-middle me-2 fs-15"></em> <span>Analytics</span></a>
                                         </nav>
-                                        <a class="nav-link active" href="#item-2"><i class="ri-pencil-ruler-2-line align-middle me-2 fs-16"></i> <span>Base UI</span></a>
-                                        <a class="nav-link" href="#item-3"><i class="ri-apps-2-line align-middle me-2 fs-16"></i> <span>Apps</span></a>
+                                        <a class="nav-link active" href="#item-2"><em class="ri-pencil-ruler-2-line align-middle me-2 fs-16"></em> <span>Base UI</span></a>
+                                        <a class="nav-link" href="#item-3"><em class="ri-apps-2-line align-middle me-2 fs-16"></em> <span>Apps</span></a>
                                         <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link" href="#item-3-1"><i class="ri-subtract-fill align-middle me-2 fs-15"></i> <span>Chat</span></a>
-                                            <a class="nav-link" href="#item-3-2"><i class="ri-subtract-fill align-middle me-2 fs-15"></i> <span>Email</span></a>
+                                            <a class="nav-link" href="#item-3-1"><em class="ri-subtract-fill align-middle me-2 fs-15"></em> <span>Chat</span></a>
+                                            <a class="nav-link" href="#item-3-2"><em class="ri-subtract-fill align-middle me-2 fs-15"></em> <span>Email</span></a>
                                         </nav>
                                     </nav>
                                 </nav>

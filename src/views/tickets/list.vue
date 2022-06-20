@@ -376,7 +376,7 @@ export default {
                 </h2>
                 <p class="mb-0 text-muted">
                   <span class="badge bg-light text-success mb-0">
-                    <i class="ri-arrow-up-line align-middle"></i> 17.32 %
+                    <em class="ri-arrow-up-line align-middle"></em> 17.32 %
                   </span>
                   vs. previous month
                 </p>
@@ -386,7 +386,7 @@ export default {
                   <span
                     class="avatar-title bg-soft-info text-info rounded-circle fs-4"
                   >
-                    <i class="ri-ticket-2-line"></i>
+                    <em class="ri-ticket-2-line"></em>
                   </span>
                 </div>
               </div>
@@ -413,7 +413,7 @@ export default {
                 </h2>
                 <p class="mb-0 text-muted">
                   <span class="badge bg-light text-danger mb-0">
-                    <i class="ri-arrow-down-line align-middle"></i> 0.96 %
+                    <em class="ri-arrow-down-line align-middle"></em> 0.96 %
                   </span>
                   vs. previous month
                 </p>
@@ -423,7 +423,7 @@ export default {
                   <span
                     class="avatar-title bg-soft-info text-info rounded-circle fs-4"
                   >
-                    <i class="mdi mdi-timer-sand"></i>
+                    <em class="mdi mdi-timer-sand"></em>
                   </span>
                 </div>
               </div>
@@ -449,7 +449,7 @@ export default {
                 </h2>
                 <p class="mb-0 text-muted">
                   <span class="badge bg-light text-danger mb-0">
-                    <i class="ri-arrow-down-line align-middle"></i> 3.87 %
+                    <em class="ri-arrow-down-line align-middle"></em> 3.87 %
                   </span>
                   vs. previous month
                 </p>
@@ -459,7 +459,7 @@ export default {
                   <span
                     class="avatar-title bg-soft-info text-info rounded-circle fs-4"
                   >
-                    <i class="ri-shopping-bag-line"></i>
+                    <em class="ri-shopping-bag-line"></em>
                   </span>
                 </div>
               </div>
@@ -485,7 +485,7 @@ export default {
                 </h2>
                 <p class="mb-0 text-muted">
                   <span class="badge bg-light text-success mb-0">
-                    <i class="ri-arrow-up-line align-middle"></i> 1.09 %
+                    <em class="ri-arrow-up-line align-middle"></em> 1.09 %
                   </span>
                   vs. previous month
                 </p>
@@ -495,7 +495,7 @@ export default {
                   <span
                     class="avatar-title bg-soft-info text-info rounded-circle fs-4"
                   >
-                    <i class="ri-delete-bin-line"></i>
+                    <em class="ri-delete-bin-line"></em>
                   </span>
                 </div>
               </div>
@@ -516,10 +516,10 @@ export default {
               <h5 class="card-title mb-0 flex-grow-1">Tickets</h5>
               <div class="flex-shrink-0">
                 <button class="btn btn-soft-danger me-1" @click="deleteMultiple">
-                  <i class="ri-delete-bin-2-line"></i>
+                  <em class="ri-delete-bin-2-line"></em>
                   </button>
                 <button class="btn btn-danger add-btn" data-bs-toggle="modal" data-bs-target="#showModal" @click="addnew">
-                  <i class="ri-add-line align-bottom me-1"></i> Create Tickets
+                  <em class="ri-add-line align-bottom me-1"></em> Create Tickets
                 </button>
               </div>
             </div>
@@ -536,7 +536,7 @@ export default {
                       class="form-control search bg-light border-light"
                       placeholder="Search for ticket details or something..."
                     />
-                    <i class="ri-search-line search-icon"></i>
+                    <em class="ri-search-line search-icon"></em>
                   </div>
                 </div>
                 <!--end col-->
@@ -576,7 +576,7 @@ export default {
                     class="btn btn-primary w-100"
                     onclick="SearchData();"
                   >
-                    <i class="ri-equalizer-fill me-1 align-bottom"></i>
+                    <em class="ri-equalizer-fill me-1 align-bottom"></em>
                     Filters
                   </button>
                 </div>
@@ -672,21 +672,21 @@ export default {
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
                         >
-                          <i class="ri-more-fill align-middle"></i>
+                          <em class="ri-more-fill align-middle"></em>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                           <li>
-                            <router-link class="dropdown-item" to="/apps/tickets-details"><i class="ri-eye-fill align-bottom me-2 text-muted"></i>
+                            <router-link class="dropdown-item" to="/apps/tickets-details"><em class="ri-eye-fill align-bottom me-2 text-muted"></em>
                               View</router-link>
                           </li>
                           <li>
                             <a class="dropdown-item edit-item-btn" href="#showModal" data-bs-toggle="modal" @click="editdata(data)">
-                              <i class="ri-pencil-fill align-bottom me-2 text-muted"></i> Edit
+                              <em class="ri-pencil-fill align-bottom me-2 text-muted"></em> Edit
                               </a>
                           </li>
                           <li>
                             <a class="dropdown-item remove-item-btn" @click="deletedata(data)">
-                              <i class="ri-delete-bin-fill align-bottom me-2 text-muted"></i>
+                              <em class="ri-delete-bin-fill align-bottom me-2 text-muted"></em>
                               Delete
                             </a>
                           </li>
@@ -782,7 +782,7 @@ export default {
                           class="btn btn-link link-success fw-medium text-decoration-none"
                           data-bs-dismiss="modal"
                         >
-                          <i class="ri-close-line me-1 align-middle"></i> Close
+                          <em class="ri-close-line me-1 align-middle"></em> Close
                         </button>
                         <button class="btn btn-danger" id="delete-record">
                           Yes, Delete It
