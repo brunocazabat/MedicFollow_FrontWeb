@@ -59,24 +59,16 @@ export default [
       title: "Dashboard",
       authRequired: mode,
     },
-    component: () => import("../views/dashboard/ecommerce/index.vue"),
+    component: () => import("../views/dashboard/home/index"),
   },
   {
-    path: "/dashboard/crypto",
+    path: "/dashboard/InactiveComponents/crypto",
     name: "dashboard-crypto",
     meta: {
       title: "Crypto",
       authRequired: mode,
     },
-    component: () => import("../views/dashboard/crypto/index"),
-  },
-  {
-    path: "/dashboard/projects",
-    name: "dashboard-projects",
-    meta: {
-      title: "Projects", authRequired: mode,
-    },
-    component: () => import("../views/dashboard/projects/index"),
+    component: () => import("../views/dashboard/InactiveComponents/crypto/index"),
   },
   {
     path: "/dashboard/crm",
@@ -84,15 +76,16 @@ export default [
     meta: {
       title: "CRM", authRequired: mode,
     },
-    component: () => import("../views/dashboard/crm/index"),
+    component: () => import("../views/dashboard/InactiveComponents/crm/index"),
   },
   {
     path: "/dashboard/analytics",
     name: "dashboard-analytics",
     meta: {
+      
       title: "Analytics", authRequired: mode,
     },
-    component: () => import("../views/dashboard/analytics/index"),
+    component: () => import("../views/dashboard/InactiveComponents/analytics/index"),
   },
   {
     path: "/logout",
@@ -965,22 +958,6 @@ export default [
       title: "Oflone", authRequired: mode,
     },
     component: () => import('../views/auth/errors/ofline')
-  },
-  {
-    path: '/auth/logout-basic',
-    name: 'logout-basic',
-    meta: {
-      title: "Logout", authRequired: mode,
-    },
-    component: () => import('../views/auth/logout/basic')
-  },
-  {
-    path: '/auth/logout-cover',
-    name: 'logout-cover',
-    meta: {
-      title: "Logout", authRequired: mode,
-    },
-    component: () => import('../views/auth/logout/cover')
   },
   {
     path: '/auth/success-msg-basic',
