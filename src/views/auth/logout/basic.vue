@@ -158,7 +158,6 @@
                                     <img src="@/assets/images/logo-light.png" alt="" height="20">
                                 </router-link>
                             </div>
-                            <p class="mt-3 fs-15 fw-medium">Premium Admin & Dashboard Template</p>
                         </div>
                     </div>
                 </div>
@@ -172,8 +171,7 @@
                                     :height="180" :width="180" />
                                 <div class="mt-4 pt-2">
                                     <h5>You are Logged Out</h5>
-                                    <p class="text-muted">Thank you for using <span class="fw-semibold">velzon</span>
-                                        admin template</p>
+                                    <p class="text-muted">Thank you for using <span class="fw-semibold">MedicFollow</span></p>
                                     <div class="mt-4">
                                         <router-link to="/login" class="btn btn-success w-100">Sign In
                                         </router-link>

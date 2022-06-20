@@ -203,8 +203,7 @@ export default {
           <div class="col-lg-12">
             <div class="text-center">
               <p class="mb-0 text-muted">
-                &copy; {{ new Date().getFullYear() }} MedicFollow. Crafted with
-                <i class="mdi mdi-heart text-danger"></i> by MedicFollow
+                &copy; {{ new Date().getFullYear() }} MedicFollow. 
               </p>
             </div>
           </div>
