@@ -10,12 +10,13 @@ export const userService = {
 function login(email, password) {
 
     const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password })
+        method: 'PUT',
+        headers: { 'accept': '*/*', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ "email": email, "password": password }),
+        redirect: 'follow'
     };
 
-    return fetch(`/users/authenticate`, requestOptions)
+    return fetch("http://127.0.0.1:8081/v1/users/", requestOptions)
         .then(handleResponse)
         .then(user => {
             // login successful if there's a jwt token in the response
