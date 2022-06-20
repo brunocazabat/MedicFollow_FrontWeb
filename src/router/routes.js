@@ -13,6 +13,17 @@ function DevMode() {
   return id;
 }
 
+function beforeResolve(_routeTo, _routeFrom, next) {
+  // If the user is already logged in
+  if (store.getters["auth/loggedIn"]) {
+    // Redirect to the home page instead
+    next({ name: "default" });
+  } else {
+    // Continue to the login page
+    next();
+  }
+}
+
 export default [
   {
     path: "/login",
@@ -20,17 +31,7 @@ export default [
     component: () => import("../views/account/login.vue"),
     meta: {
       title: "Login",
-      beforeResolve(routeTo, routeFrom, next) {
-        console.log(mode);
-        // If the user is already logged in
-        if (store.getters["auth/loggedIn"]) {
-          // Redirect to the home page instead
-          next({ name: "default" });
-        } else {
-          // Continue to the login page
-          next();
-        }
-      },
+      beforeResolve,
     },
   },
   {
@@ -39,16 +40,7 @@ export default [
     component: () => import("../views/account/register.vue"),
     meta: {
       title: "Register",
-      beforeResolve(routeTo, routeFrom, next) {
-        // If the user is already logged in
-        if (store.getters["auth/loggedIn"]) {
-          // Redirect to the home page instead
-          next({ name: "default" });
-        } else {
-          // Continue to the login page
-          next();
-        }
-      },
+      beforeResolve,
     },
   },
   {
@@ -57,16 +49,7 @@ export default [
     component: () => import("../views/account/forgot-password.vue"),
     meta: {
       title: "Forgot Password",
-      beforeResolve(routeTo, routeFrom, next) {
-        // If the user is already logged in
-        if (store.getters["auth/loggedIn"]) {
-          // Redirect to the home page instead
-          next({ name: "default" });
-        } else {
-          // Continue to the login page
-          next();
-        }
-      },
+      beforeResolve,
     },
   },
   {
@@ -116,7 +99,7 @@ export default [
     name: "logout",
     meta: {
       title: "Logout", authRequired: mode,
-      beforeResolve(routeTo, routeFrom, next) {
+      Resolve(_routeTo, routeFrom, next) {
         store.dispatch("authfack/logout");
         const authRequiredOnPreviousRoute = routeFrom.matched.some((route) =>
           route.push("/login")

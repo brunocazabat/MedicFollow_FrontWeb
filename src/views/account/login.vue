@@ -72,15 +72,8 @@ export default {
         return (
           this.login(this.email, this.password)
             // eslint-disable-next-line no-unused-vars
-            .then((token) => {
-              this.tryingToLogIn = false;
-              this.isAuthError = false;
-              // Redirect to the originally requested page, or to the home page
-              this.$router.push(
-                this.$route.query.redirectFrom || {
-                  name: "default",
-                }
-              );
+            .then((_token) => {
+              this.ForceLogIn()
             })
             .catch((error) => {
               this.tryingToLogIn = false;
@@ -100,7 +93,7 @@ export default {
           );
       }
     },
-    forceLogIn() {
+    ForceLogIn() {
       //Use this function only in case you want to access home page without logging to backend
       this.tryingToLogIn = false;
       this.isAuthError = false;
@@ -112,7 +105,7 @@ export default {
     },
     DevLogMethod() {
       if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
-        this.forceLogIn();
+        this.ForceLogIn();
       } else {
         this.tryToLogIn();
       }
