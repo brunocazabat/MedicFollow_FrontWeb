@@ -234,9 +234,6 @@ export default {
                   />
                 </router-link>
               </div>
-              <p class="mt-3 fs-15 fw-medium">
-                Premium Admin & Dashboard Template
-              </p>
             </div>
           </div>
         </div>
