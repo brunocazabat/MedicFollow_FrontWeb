@@ -41,7 +41,7 @@ export default {
       discount: '53.99',
       email: 'velzon@themesbrand.com',
       estimated_tax: '44.99',
-      img: 'assets/images/users/avatar-2.jpg',
+      img: 'assets/images/users/avatar-1.png',
       invoiceId: '#VL25000351',
       name: 'Diana Kohler',
       notes:

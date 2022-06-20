@@ -333,8 +333,8 @@ const scatterImagesChart = {
             opacity: 1,
             image: {
                 src: [
-                    require("@/assets/images/users/avatar-1.jpg"),
-                    require("@/assets/images/users/avatar-2.jpg"),
+                    require("@/assets/images/users/avatar-1.png"),
+                    require("@/assets/images/users/avatar-1.png"),
                 ],
                 width: 40,
                 height: 40,

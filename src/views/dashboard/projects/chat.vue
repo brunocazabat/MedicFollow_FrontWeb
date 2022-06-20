@@ -97,7 +97,7 @@ export default {
             <li class="chat-list left">
               <div class="conversation-list">
                 <div class="chat-avatar">
-                  <img src="@/assets/images/users/avatar-2.jpg" alt="" />
+                  <img src="@/assets/images/users/avatar-1.png" alt="" />
                 </div>
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
@@ -228,7 +228,7 @@ export default {
             <li class="chat-list left">
               <div class="conversation-list">
                 <div class="chat-avatar">
-                  <img src="@/assets/images/users/avatar-2.jpg" alt="" />
+                  <img src="@/assets/images/users/avatar-1.png" alt="" />
                 </div>
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
@@ -413,7 +413,7 @@ export default {
             <li class="chat-list left">
               <div class="conversation-list">
                 <div class="chat-avatar">
-                  <img src="@/assets/images/users/avatar-2.jpg" alt="" />
+                  <img src="@/assets/images/users/avatar-1.png" alt="" />
                 </div>
                 <div class="user-chat-content">
                   <div class="ctext-wrap">

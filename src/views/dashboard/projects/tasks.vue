@@ -74,7 +74,7 @@ export default {
                   data-bs-original-title="Mary Stoner"
                 >
                   <img
-                    src="@/assets/images/users/avatar-2.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="rounded-circle avatar-xxs shadow"
                   />
@@ -108,7 +108,7 @@ export default {
                   data-bs-original-title="Den Davis"
                 >
                   <img
-                    src="@/assets/images/users/avatar-7.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="rounded-circle avatar-xxs shadow"
                   />
@@ -142,7 +142,7 @@ export default {
                   data-bs-original-title="Alex Brown"
                 >
                   <img
-                    src="@/assets/images/users/avatar-6.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="rounded-circle avatar-xxs shadow"
                   />
@@ -176,7 +176,7 @@ export default {
                   data-bs-original-title="Prezy Morin"
                 >
                   <img
-                    src="@/assets/images/users/avatar-5.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="rounded-circle avatar-xxs shadow"
                   />
@@ -210,7 +210,7 @@ export default {
                   data-bs-original-title="Stine Nielsen"
                 >
                   <img
-                    src="@/assets/images/users/avatar-1.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="rounded-circle avatar-xxs shadow"
                   />
@@ -244,7 +244,7 @@ export default {
                   data-bs-original-title="Jansh William"
                 >
                   <img
-                    src="@/assets/images/users/avatar-4.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="rounded-circle avatar-xxs shadow"
                   />

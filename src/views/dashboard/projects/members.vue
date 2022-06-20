@@ -5,7 +5,7 @@ export default {
       teamMembers: [
         {
           id: 1,
-          img: require('@/assets/images/users/avatar-1.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Donald Risher',
           position: 'Product Manager',
           hours: '110',
@@ -15,7 +15,7 @@ export default {
         },
         {
           id: 2,
-          img: require('@/assets/images/users/avatar-2.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Jansh Brown',
           position: 'Lead Developer',
           hours: '83',
@@ -25,7 +25,7 @@ export default {
         },
         {
           id: 3,
-          img: require('@/assets/images/users/avatar-7.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Carroll Adams',
           position: 'Lead Designer',
           hours: '58',
@@ -35,7 +35,7 @@ export default {
         },
         {
           id: 4,
-          img: require('@/assets/images/users/avatar-4.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'William Pinto',
           position: 'UI/UX Designer',
           hours: '96',
@@ -45,7 +45,7 @@ export default {
         },
         {
           id: 5,
-          img: require('@/assets/images/users/avatar-6.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Garry Fournier',
           position: 'Web Designer',
           hours: '76',
@@ -55,7 +55,7 @@ export default {
         },
         {
           id: 6,
-          img: require('@/assets/images/users/avatar-5.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Susan Denton',
           position: 'Lead Designer',
           hours: '123',
@@ -65,7 +65,7 @@ export default {
         },
         {
           id: 7,
-          img: require('@/assets/images/users/avatar-3.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Joseph Jackson',
           position: 'React Developer',
           hours: '117',

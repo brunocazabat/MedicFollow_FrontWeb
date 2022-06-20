@@ -117,7 +117,7 @@ export default {
         {
           id: 1,
           invoiceId: '#VL25000351',
-          img: require('@/assets/images/users/avatar-2.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Diana Kohler',
           email: 'dianakohler@velzon.com',
           country: 'Brazil',
@@ -130,7 +130,7 @@ export default {
         {
           id: 2,
           invoiceId: '#VL25000352',
-          img: require('@/assets/images/users/avatar-3.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'James Morris',
           email: 'jamesmorris@velzon.com',
           country: 'Germany',
@@ -143,7 +143,7 @@ export default {
         {
           id: 3,
           invoiceId: '#VL25000353',
-          img: require('@/assets/images/users/avatar-4.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Dawn Koh',
           email: 'dawnkoh@velzon.com',
           country: 'United Kingdom',
@@ -156,7 +156,7 @@ export default {
         {
           id: 4,
           invoiceId: '#VL25000354',
-          img: require('@/assets/images/users/avatar-5.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Tonya Noble',
           email: 'tonynoble@velzon.com',
           country: 'Spain',
@@ -169,7 +169,7 @@ export default {
         {
           id: 5,
           invoiceId: '#VL25000355',
-          img: require('@/assets/images/users/avatar-6.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'David Nichols',
           email: 'davidnochols@velzon.com',
           country: 'United States of America',
@@ -182,7 +182,7 @@ export default {
         {
           id: 6,
           invoiceId: '#VL25000356',
-          img: require('@/assets/images/users/avatar-7.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Joseph Payten',
           email: 'josephpayten@velzon.com',
           country: 'France',
@@ -219,7 +219,7 @@ export default {
         {
           id: 9,
           invoiceId: '#VL25000359',
-          img: require('@/assets/images/users/avatar-8.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Ryan Cowie',
           email: 'rayancowie@velzon.com',
           country: 'France',
@@ -232,7 +232,7 @@ export default {
         {
           id: 10,
           invoiceId: '#VL25000360',
-          img: require('@/assets/images/users/avatar-4.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Christina Maier',
           email: 'christinamaier@velzon.com',
           country: 'United States of America',
@@ -245,7 +245,7 @@ export default {
         {
           id: 11,
           invoiceId: '#VL25000361',
-          img: require('@/assets/images/users/avatar-2.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Jennifer Winkel',
           email: 'jenniferwinkal@velzon.com',
           country: 'Brazil',
@@ -428,7 +428,7 @@ export default {
           row.date =
             dt + ' ' + monthNames[dd.getMonth()] + ', ' + dd.getFullYear()
           row.time = strTime
-          // var img = '@/assets/images/users/avatar-2.jpg';
+          // var img = '@/assets/images/users/avatar-1.png';
           row.image_src =
             'https://api-node.themesbrand.website/fileupload/users_bucket/' +
             row.img

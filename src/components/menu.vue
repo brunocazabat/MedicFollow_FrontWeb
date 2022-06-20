@@ -169,7 +169,7 @@
         </li>
         <li class="nav-item">
           <router-link class="nav-link menu-link" to="/pages/profile-setting">
-            <em class="ri-account-circle-line"></em>
+            <em class="mdi-cog-outline"></em>
             <span style="padding: 7px" data-key="t-settings">{{ $t("t-settings") }}</span>
           </router-link>
         </li>

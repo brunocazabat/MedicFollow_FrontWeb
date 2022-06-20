@@ -173,7 +173,7 @@ export default {}
                 </div>
                 <div class="user-thumb text-center">
                   <img
-                    src="@/assets/images/users/avatar-1.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     class="rounded-circle img-thumbnail avatar-lg shadow"
                     alt="thumbnail"
                   />

@@ -42,7 +42,7 @@ export default {
           subItem: [
             {
               id: 1,
-              imgFooter: require('@/assets/images/users/avatar-2.jpg')
+              imgFooter: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
@@ -62,7 +62,7 @@ export default {
           subItem: [
             {
               id: 1,
-              imgFooter: require('@/assets/images/users/avatar-3.jpg')
+              imgFooter: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
@@ -71,7 +71,7 @@ export default {
             },
             {
               id: 3,
-              imgFooter: require('@/assets/images/users/avatar-4.jpg')
+              imgFooter: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 4,
@@ -92,7 +92,7 @@ export default {
           subItem: [
             {
               id: 1,
-              imgFooter: require('@/assets/images/users/avatar-5.jpg')
+              imgFooter: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
@@ -150,11 +150,11 @@ export default {
             },
             {
               id: 2,
-              imgTeam: require('@/assets/images/users/avatar-5.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 3,
-              imgTeam: require('@/assets/images/users/avatar-6.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 4,
@@ -172,11 +172,11 @@ export default {
           subItem: [
             {
               id: 1,
-              imgTeam: require('@/assets/images/users/avatar-7.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
-              imgTeam: require('@/assets/images/users/avatar-8.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 3,
@@ -213,7 +213,7 @@ export default {
           subItem: [
             {
               id: 1,
-              imgTeam: require('@/assets/images/users/avatar-8.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
@@ -241,7 +241,7 @@ export default {
             },
             {
               id: 2,
-              imgTeam: require('@/assets/images/users/avatar-5.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 3,
@@ -261,11 +261,11 @@ export default {
           subItem: [
             {
               id: 1,
-              imgTeam: require('@/assets/images/users/avatar-9.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
-              imgTeam: require('@/assets/images/users/avatar-10.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 3,
@@ -285,7 +285,7 @@ export default {
           subItem: [
             {
               id: 1,
-              imgTeam: require('@/assets/images/users/avatar-3.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
@@ -294,7 +294,7 @@ export default {
             },
             {
               id: 3,
-              imgTeam: require('@/assets/images/users/avatar-4.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 4,
@@ -319,11 +319,11 @@ export default {
             },
             {
               id: 2,
-              imgTeam: require('@/assets/images/users/avatar-5.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 3,
-              imgTeam: require('@/assets/images/users/avatar-6.jpg')
+              imgTeam: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 4,

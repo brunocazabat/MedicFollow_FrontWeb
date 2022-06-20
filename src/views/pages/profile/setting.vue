@@ -81,7 +81,7 @@ export default {
                 class="profile-user position-relative d-inline-block mx-auto mb-4"
               >
                 <img
-                  src="@/assets/images/users/avatar-1.jpg"
+                  src="@/assets/images/users/avatar-1.png"
                   class="rounded-circle avatar-xl img-thumbnail user-profile-image shadow"
                   alt="user-profile-image"
                 />
