@@ -1,5 +1,18 @@
 import store from "@/state/store";
 
+var mode = DevMode();
+
+function DevMode() {
+  var id;
+  console.log(process.env.VUE_APP_DEFAULT_AUTH);
+  if (process.env.VUE_APP_DEFAULT_AUTH === 'DEV') {
+    id = false;
+  } else {
+    id = true;
+  }
+  return id;
+}
+
 export default [
   {
     path: "/login",
@@ -8,6 +21,7 @@ export default [
     meta: {
       title: "Login",
       beforeResolve(routeTo, routeFrom, next) {
+        console.log(mode);
         // If the user is already logged in
         if (store.getters["auth/loggedIn"]) {
           // Redirect to the home page instead
@@ -60,7 +74,7 @@ export default [
     name: "default",
     meta: {
       title: "Dashboard",
-      authRequired: true,
+      authRequired: mode,
     },
     component: () => import("../views/dashboard/ecommerce/index.vue"),
   },
@@ -69,7 +83,7 @@ export default [
     name: "dashboard-crypto",
     meta: {
       title: "Crypto",
-      authRequired: true,
+      authRequired: mode,
     },
     component: () => import("../views/dashboard/crypto/index"),
   },
@@ -77,7 +91,7 @@ export default [
     path: "/dashboard/projects",
     name: "dashboard-projects",
     meta: {
-      title: "Projects", authRequired: true,
+      title: "Projects", authRequired: mode,
     },
     component: () => import("../views/dashboard/projects/index"),
   },
@@ -85,7 +99,7 @@ export default [
     path: "/dashboard/crm",
     name: "dashboard-crm",
     meta: {
-      title: "CRM", authRequired: true,
+      title: "CRM", authRequired: mode,
     },
     component: () => import("../views/dashboard/crm/index"),
   },
@@ -93,7 +107,7 @@ export default [
     path: "/dashboard/analytics",
     name: "dashboard-analytics",
     meta: {
-      title: "Analytics", authRequired: true,
+      title: "Analytics", authRequired: mode,
     },
     component: () => import("../views/dashboard/analytics/index"),
   },
@@ -101,13 +115,9 @@ export default [
     path: "/logout",
     name: "logout",
     meta: {
-      title: "Logout", authRequired: true,
+      title: "Logout", authRequired: mode,
       beforeResolve(routeTo, routeFrom, next) {
-        if (process.env.VUE_APP_DEFAULT_AUTH === "firebase") {
-          store.dispatch("auth/logOut");
-        } else {
-          store.dispatch("authfack/logout");
-        }
+        store.dispatch("authfack/logout");
         const authRequiredOnPreviousRoute = routeFrom.matched.some((route) =>
           route.push("/login")
         );
@@ -122,212 +132,212 @@ export default [
   {
     path: "/calendar",
     name: "calendar",
-    meta: { title: "Calendar", authRequired: true },
+    meta: { title: "Calendar", authRequired: mode },
     component: () => import("../views/calendar/index"),
   },
   {
     path: "/chat",
     name: "chat",
-    meta: { title: "Chat", authRequired: true },
+    meta: { title: "Chat", authRequired: mode },
     component: () => import("../views/apps/chat"),
   },
   {
     path: "/mailbox",
     name: "mailbox",
-    meta: { title: "Mailbox", authRequired: true },
+    meta: { title: "Mailbox", authRequired: mode },
     component: () => import("../views/apps/mailbox"),
   },
   {
     path: "/apps/projects-list",
     name: "projects-list",
-    meta: { title: "Projects List", authRequired: true },
+    meta: { title: "Projects List", authRequired: mode },
     component: () => import("../views/apps/projects/list"),
   },
   {
     path: "/apps/projects-overview",
     name: "projects Overview",
-    meta: { title: "Projects-overview", authRequired: true },
+    meta: { title: "Projects-overview", authRequired: mode },
     component: () => import("../views/apps/projects/overview"),
   },
   {
     path: "/apps/projects-create",
     name: "projects-create",
-    meta: { title: "projects-create", authRequired: true },
+    meta: { title: "projects-create", authRequired: mode },
     component: () => import("../views/apps/projects/create"),
   },
   {
     path: "/apps/tasks-details",
     name: "tasks-details",
-    meta: { title: "Tasks Details", authRequired: true },
+    meta: { title: "Tasks Details", authRequired: mode },
     component: () => import("../views/apps/tasks/details"),
   },
   {
     path: "/apps/tasks-kanban",
     name: "tasks-kanban",
-    meta: { title: "Tasks Kanban", authRequired: true },
+    meta: { title: "Tasks Kanban", authRequired: mode },
     component: () => import("../views/apps/tasks/kanban"),
   },
   {
     path: "/apps/tasks-list-view",
     name: "tasks-list-view",
-    meta: { title: "Taks List", authRequired: true },
+    meta: { title: "Taks List", authRequired: mode },
     component: () => import("../views/apps/tasks/list-view"),
   },
   {
     path: "/apps/tickets-details",
     name: "tickets-details",
-    meta: { title: "Ticket Details", authRequired: true },
+    meta: { title: "Ticket Details", authRequired: mode },
     component: () => import("../views/tickets/details"),
   },
   {
     path: "/apps/tickets-list",
     name: "tickets-list",
-    meta: { title: "Tickets List", authRequired: true },
+    meta: { title: "Tickets List", authRequired: mode },
     component: () => import("../views/tickets/list"),
   },
   {
     path: "/apps/crm-contacts",
     name: "crm-contacts",
-    meta: { title: "CRM Contacts", authRequired: true },
+    meta: { title: "CRM Contacts", authRequired: mode },
     component: () => import("../views/apps/crm/contacts"),
   },
   {
     path: "/apps/crm-companies",
     name: "crm-companies",
-    meta: { title: "CRM companies", authRequired: true },
+    meta: { title: "CRM companies", authRequired: mode },
     component: () => import("../views/apps/crm/companies"),
   },
   {
     path: "/apps/crm-deals",
     name: "crm-deals",
-    meta: { title: "CRM Deals", authRequired: true },
+    meta: { title: "CRM Deals", authRequired: mode },
     component: () => import("../views/apps/crm/deals"),
   },
   {
     path: "/apps/crm-leads",
     name: "crm-leads",
-    meta: { title: "CRM Leads", authRequired: true },
+    meta: { title: "CRM Leads", authRequired: mode },
     component: () => import("../views/apps/crm/leads"),
   },
   {
     path: "/ecommerce/customers",
     name: "customers",
-    meta: { title: "Customers", authRequired: true },
+    meta: { title: "Customers", authRequired: mode },
     component: () => import("../views/apps/ecommerce/customers"),
   },
   {
     path: "/ecommerce/products",
     name: "products",
-    meta: { title: "Products", authRequired: true },
+    meta: { title: "Products", authRequired: mode },
     component: () => import("../views/apps/ecommerce/products"),
   },
   {
     path: "/ecommerce/product-details",
     name: "product-detail",
-    meta: { title: "Product Details", authRequired: true },
+    meta: { title: "Product Details", authRequired: mode },
     component: () => import("../views/apps/ecommerce/product-details"),
   },
   {
     path: "/ecommerce/orders",
     name: "orders",
-    meta: { title: "Orders", authRequired: true },
+    meta: { title: "Orders", authRequired: mode },
     component: () => import("../views/apps/ecommerce/orders"),
   },
   {
     path: "/ecommerce/order-details",
     name: "order-details",
-    meta: { title: "Order Details", authRequired: true },
+    meta: { title: "Order Details", authRequired: mode },
     component: () => import("../views/apps/ecommerce/order-details"),
   },
   {
     path: "/ecommerce/add-product",
     name: "add-product",
-    meta: { title: "Create Product", authRequired: true },
+    meta: { title: "Create Product", authRequired: mode },
     component: () => import("../views/apps/ecommerce/add-product"),
   },
   {
     path: "/ecommerce/shopping-cart",
     name: "shopping cart",
-    meta: { title: "Shopping Cart", authRequired: true },
+    meta: { title: "Shopping Cart", authRequired: mode },
     component: () => import("../views/apps/ecommerce/shopping-cart"),
   },
   {
     path: "/ecommerce/checkout",
     name: "checkout",
-    meta: { title: "Check Out", authRequired: true },
+    meta: { title: "Check Out", authRequired: mode },
     component: () => import("../views/apps/ecommerce/checkout"),
   },
   {
     path: "/ecommerce/sellers",
     name: "sellers",
-    meta: { title: "Sellers", authRequired: true },
+    meta: { title: "Sellers", authRequired: mode },
     component: () => import("../views/apps/ecommerce/sellers"),
   },
   {
     path: "/ecommerce/seller-details",
     name: "seller-details",
-    meta: { title: "Seller Details", authRequired: true },
+    meta: { title: "Seller Details", authRequired: mode },
     component: () => import("../views/apps/ecommerce/seller-details"),
   },
   {
     path: "/crypto/buy-sell",
     name: "buy/sell",
-    meta: { title: "Buy & Sell", authRequired: true },
+    meta: { title: "Buy & Sell", authRequired: mode },
     component: () => import("../views/apps/crypto/buy-sell"),
   },
   {
     path: "/crypto/kyc",
     name: "kyc",
-    meta: { title: "KYC Application", authRequired: true },
+    meta: { title: "KYC Application", authRequired: mode },
     component: () => import("../views/apps/crypto/kyc"),
   },
   {
     path: "/crypto/ico",
     name: "ico",
-    meta: { title: "ICO List", authRequired: true },
+    meta: { title: "ICO List", authRequired: mode },
     component: () => import("../views/apps/crypto/ico"),
   },
   {
     path: "/crypto/orders",
     name: "crypto-orders",
-    meta: { title: "Orders", authRequired: true },
+    meta: { title: "Orders", authRequired: mode },
     component: () => import("../views/apps/crypto/orders"),
   },
   {
     path: "/crypto/wallet",
     name: "wallet",
-    meta: { title: "My Wallet", authRequired: true },
+    meta: { title: "My Wallet", authRequired: mode },
     component: () => import("../views/apps/crypto/wallet"),
   },
   {
     path: "/crypto/transactions",
     name: "transactions",
-    meta: { title: "Transactions", authRequired: true },
+    meta: { title: "Transactions", authRequired: mode },
     component: () => import("../views/apps/crypto/transactions"),
   },
   {
     path: "/invoices/detail/:id?",
     name: "invoice-detail",
-    meta: { title: "Invoice Details", authRequired: true },
+    meta: { title: "Invoice Details", authRequired: mode },
     component: () => import("../views/apps/invoices/details"),
   },
   {
     path: "/invoices/list",
     name: "invoice-list",
-    meta: { title: "Invoice List", authRequired: true },
+    meta: { title: "Invoice List", authRequired: mode },
     component: () => import("../views/apps/invoices/list"),
   },
   {
     path: "/invoices/create",
     name: "invoice-create",
-    meta: { title: "Create Invoice", authRequired: true },
+    meta: { title: "Create Invoice", authRequired: mode },
     component: () => import("../views/apps/invoices/create"),
   },
   {
     path: "/ui/alerts",
     name: "Alerts",
     meta: {
-      title: "Alerts", authRequired: true,
+      title: "Alerts", authRequired: mode,
     },
     component: () => import("../views/ui/alerts"),
   },
@@ -335,345 +345,345 @@ export default [
     path: "/ui/buttons",
     name: "Buttons",
     meta: {
-      title: "Buttons", authRequired: true,
+      title: "Buttons", authRequired: mode,
     },
     component: () => import("../views/ui/buttons"),
   },
   {
     path: "/ui/cards",
     name: "Cards",
-    meta: { title: "Cards", authRequired: true },
+    meta: { title: "Cards", authRequired: mode },
     component: () => import("../views/ui/cards"),
   },
   {
     path: "/ui/carousel",
     name: "Carousel",
-    meta: { title: "Carousel", authRequired: true },
+    meta: { title: "Carousel", authRequired: mode },
     component: () => import("../views/ui/carousel"),
   },
   {
     path: "/ui/dropdowns",
     name: "Dropdowns",
-    meta: { title: "Dropdowns", authRequired: true },
+    meta: { title: "Dropdowns", authRequired: mode },
     component: () => import("../views/ui/dropdowns"),
   },
   {
     path: "/ui/grid",
     name: "Grid",
-    meta: { title: "Grid", authRequired: true },
+    meta: { title: "Grid", authRequired: mode },
     component: () => import("../views/ui/grid"),
   },
   {
     path: "/ui/images",
     name: "Images",
-    meta: { title: "Images", authRequired: true },
+    meta: { title: "Images", authRequired: mode },
     component: () => import("../views/ui/images"),
   },
   {
     path: "/ui/modals",
     name: "Modals",
-    meta: { title: "Modals", authRequired: true },
+    meta: { title: "Modals", authRequired: mode },
     component: () => import("../views/ui/modals"),
   },
   {
     path: "/ui/offcanvas",
     name: "offcanvas",
-    meta: { title: "Offcanvas", authRequired: true },
+    meta: { title: "Offcanvas", authRequired: mode },
     component: () => import("../views/ui/offcanvas"),
   },
   {
     path: "/ui/progress",
     name: "Progress",
-    meta: { title: "Progress", authRequired: true },
+    meta: { title: "Progress", authRequired: mode },
     component: () => import("../views/ui/progress"),
   },
   {
     path: "/ui/placeholders",
     name: "Placeholders",
-    meta: { title: "Placeholders", authRequired: true },
+    meta: { title: "Placeholders", authRequired: mode },
     component: () => import("../views/ui/placeholders"),
   },
   {
     path: "/ui/accordions",
     name: "accordions",
-    meta: { title: "Accordions", authRequired: true },
+    meta: { title: "Accordions", authRequired: mode },
     component: () => import("../views/ui/accordions"),
   },
   {
     path: "/ui/tabs",
     name: "tabs",
-    meta: { title: "Tabs", authRequired: true },
+    meta: { title: "Tabs", authRequired: mode },
     component: () => import("../views/ui/tabs"),
   },
   {
     path: "/ui/typography",
     name: "Typography",
-    meta: { title: "Typography", authRequired: true },
+    meta: { title: "Typography", authRequired: mode },
     component: () => import("../views/ui/typography"),
   },
   {
     path: "/ui/embed-video",
     name: "embed-video",
-    meta: { title: "Embed Video", authRequired: true },
+    meta: { title: "Embed Video", authRequired: mode },
     component: () => import("../views/ui/embed-video"),
   },
   {
     path: "/ui/ribbons",
     name: "ribbons",
-    meta: { title: "Ribbons", authRequired: true },
+    meta: { title: "Ribbons", authRequired: mode },
     component: () => import("../views/ui/ribbons"),
   },
   {
     path: "/ui/lists",
     name: "lists",
-    meta: { title: "Lists", authRequired: true },
+    meta: { title: "Lists", authRequired: mode },
     component: () => import("../views/ui/lists"),
   },
   {
     path: "/ui/utilities",
     name: "utilities",
-    meta: { title: "Utilities", authRequired: true },
+    meta: { title: "Utilities", authRequired: mode },
     component: () => import("../views/ui/utilities"),
   },
   {
     path: "/ui/notifications",
     name: "notifications",
-    meta: { title: "Notifications", authRequired: true },
+    meta: { title: "Notifications", authRequired: mode },
     component: () => import("../views/ui/notifications"),
   },
   {
     path: "/ui/general",
     name: "General",
-    meta: { title: "General", authRequired: true },
+    meta: { title: "General", authRequired: mode },
     component: () => import("../views/ui/general"),
   },
   {
     path: "/ui/colors",
     name: "Colors",
-    meta: { title: "Colors", authRequired: true },
+    meta: { title: "Colors", authRequired: mode },
     component: () => import("../views/ui/colors"),
   },
   {
     path: "/ui/badges",
     name: "badges",
-    meta: { title: "Badges", authRequired: true },
+    meta: { title: "Badges", authRequired: mode },
     component: () => import("../views/ui/badges"),
   },
   {
     path: "/ui/media",
     name: "media",
-    meta: { title: "Media", authRequired: true },
+    meta: { title: "Media", authRequired: mode },
     component: () => import("../views/ui/media"),
   },
   {
     path: "/widgets",
     name: "widgets",
-    meta: { title: "Widgets", authRequired: true },
+    meta: { title: "Widgets", authRequired: mode },
     component: () => import("../views/widgets/index"),
   },
   {
     path: "/icons/boxicons",
     name: "boxicons-icon",
-    meta: { title: "Boxicons", authRequired: true },
+    meta: { title: "Boxicons", authRequired: mode },
     component: () => import("../views/icons/boxicons"),
   },
   {
     path: "/icons/materialdesign",
     name: "Material Design",
-    meta: { title: "material Design", authRequired: true },
+    meta: { title: "material Design", authRequired: mode },
     component: () => import("../views/icons/materialdesign"),
   },
   {
     path: "/icons/feather",
     name: "feather",
-    meta: { title: "Feather", authRequired: true },
+    meta: { title: "Feather", authRequired: mode },
     component: () => import("../views/icons/feather"),
   },
   {
     path: "/icons/lineawesome",
     name: "lineawesome",
-    meta: { title: "Line Awesome", authRequired: true },
+    meta: { title: "Line Awesome", authRequired: mode },
     component: () => import("../views/icons/lineawesome"),
   },
   {
     path: "/icons/remix",
     name: "remix",
-    meta: { title: "Remix", authRequired: true },
+    meta: { title: "Remix", authRequired: mode },
     component: () => import("../views/icons/remix"),
   },
   {
     path: "/tables/basic",
     name: "basic-table",
-    meta: { title: "Basic Table", authRequired: true },
+    meta: { title: "Basic Table", authRequired: mode },
     component: () => import("../views/tables/basic"),
   },
   {
     path: "/tables/gridjs",
     name: "gridjs",
-    meta: { title: "Grid JS", authRequired: true },
+    meta: { title: "Grid JS", authRequired: mode },
     component: () => import("../views/tables/grid/index"),
   },
   {
     path: "/form/advanced",
     name: "form-advanced",
-    meta: { title: "Form Advance", authRequired: true },
+    meta: { title: "Form Advance", authRequired: mode },
     component: () => import("../views/forms/advanced"),
   },
   {
     path: "/form/elements",
     name: "form-elements",
-    meta: { title: "Form Elements", authRequired: true },
+    meta: { title: "Form Elements", authRequired: mode },
     component: () => import("../views/forms/elements"),
   },
   {
     path: "/form/layouts",
     name: "Form Layouts",
-    meta: { title: "Form Layouts", authRequired: true },
+    meta: { title: "Form Layouts", authRequired: mode },
     component: () => import("../views/forms/layouts"),
   },
   {
     path: "/form/editors",
     name: "Form Editors",
-    meta: { title: "Form Editors", authRequired: true },
+    meta: { title: "Form Editors", authRequired: mode },
     component: () => import("../views/forms/editors"),
   },
   {
     path: "/form/file-uploads",
     name: "File Uploads",
-    meta: { title: "File Uploads", authRequired: true },
+    meta: { title: "File Uploads", authRequired: mode },
     component: () => import("../views/forms/file-uploads"),
   },
   {
     path: "/form/validation",
     name: "Form Validation",
-    meta: { title: "Form Validation", authRequired: true },
+    meta: { title: "Form Validation", authRequired: mode },
     component: () => import("../views/forms/validation"),
   },
   {
     path: "/form/wizard",
     name: "Form Wizard",
-    meta: { title: "Form Wizard", authRequired: true },
+    meta: { title: "Form Wizard", authRequired: mode },
     component: () => import("../views/forms/wizard"),
   },
   {
     path: "/form/masks",
     name: "form-mask",
-    meta: { title: "Form Mask", authRequired: true },
+    meta: { title: "Form Mask", authRequired: mode },
     component: () => import("../views/forms/masks"),
   },
   {
     path: "/form/pickers",
     name: "form-pickers",
-    meta: { title: "Form Picker", authRequired: true },
+    meta: { title: "Form Picker", authRequired: mode },
     component: () => import("../views/forms/pickers"),
   },
   {
     path: "/form/range-sliders",
     name: "form-range-slider",
-    meta: { title: "Form Range Slider", authRequired: true },
+    meta: { title: "Form Range Slider", authRequired: mode },
     component: () => import("../views/forms/range-sliders"),
   },
   {
     path: "/form/select",
     name: "form-select",
-    meta: { title: "Form Select", authRequired: true },
+    meta: { title: "Form Select", authRequired: mode },
     component: () => import("../views/forms/select"),
   },
   {
     path: "/form/checkboxs-radios",
     name: "form-checkboxs-radio",
-    meta: { title: "Checkboxs & Radios", authRequired: true },
+    meta: { title: "Checkboxs & Radios", authRequired: mode },
     component: () => import("../views/forms/checkboxs-radios"),
   },
   {
     path: "/landing",
     name: "landing",
-    meta: { title: "Landing", authRequired: true },
+    meta: { title: "Landing", authRequired: mode },
     component: () => import("../views/landing/index"),
   },
   {
     path: "/pages/starter",
     name: "starter",
-    meta: { title: "Starter", authRequired: true },
+    meta: { title: "Starter", authRequired: mode },
     component: () => import("../views/pages/starter"),
   },
   {
     path: "/pages/profile",
     name: "profile",
-    meta: { title: "Profile", authRequired: true },
+    meta: { title: "Profile", authRequired: mode },
     component: () => import("../views/pages/profile/simple"),
   },
   {
     path: "/pages/profile-setting",
     name: "profile-setting",
-    meta: { title: "Setting", authRequired: true },
+    meta: { title: "Setting", authRequired: mode },
     component: () => import("../views/pages/profile/setting"),
   },
   {
     path: "/pages/maintenance",
     name: "maintenance",
-    meta: { title: "Maintanance", authRequired: true },
+    meta: { title: "Maintanance", authRequired: mode },
     component: () => import("../views/pages/maintenance"),
   },
   {
     path: "/pages/coming-soon",
     name: "coming-soon",
-    meta: { title: "Comming Soon", authRequired: true },
+    meta: { title: "Comming Soon", authRequired: mode },
     component: () => import("../views/pages/coming-soon"),
   },
   {
     path: "/pages/timeline",
     name: "timeline",
-    meta: { title: "Timeline", authRequired: true },
+    meta: { title: "Timeline", authRequired: mode },
     component: () => import("../views/pages/timeline"),
   },
   {
     path: "/pages/faqs",
     name: "FAQs",
-    meta: { title: "FAQs", authRequired: true },
+    meta: { title: "FAQs", authRequired: mode },
     component: () => import("../views/pages/faqs"),
   },
   {
     path: "/pages/pricing",
     name: "pricing",
-    meta: { title: "Pricing", authRequired: true },
+    meta: { title: "Pricing", authRequired: mode },
     component: () => import("../views/pages/pricing"),
   },
   {
     path: "/pages/team",
     name: "team",
-    meta: { title: "Team", authRequired: true },
+    meta: { title: "Team", authRequired: mode },
     component: () => import("../views/pages/team"),
   },
   {
     path: "/pages/search-results",
     name: "search-results",
-    meta: { title: "Search Results", authRequired: true },
+    meta: { title: "Search Results", authRequired: mode },
     component: () => import("../views/pages/search-results"),
   },
   {
     path: "/pages/sitemap",
     name: "sitemap",
-    meta: { title: "Sitemap", authRequired: true },
+    meta: { title: "Sitemap", authRequired: mode },
     component: () => import("../views/pages/sitemap"),
   },
   {
     path: "/charts/chartjs",
     name: "chartjs-chart",
-    meta: { title: "Chartjs", authRequired: true },
+    meta: { title: "Chartjs", authRequired: mode },
     component: () => import("../views/charts/chartjs/index"),
   },
   {
     path: "/charts/echart",
     name: "echart",
-    meta: { title: "Echarts", authRequired: true },
+    meta: { title: "Echarts", authRequired: mode },
     component: () => import("../views/charts/echart/index"),
   },
   {
     path: '/charts/apex-line',
     name: 'line',
     meta: {
-      title: "Line Charts", authRequired: true,
+      title: "Line Charts", authRequired: mode,
     },
     component: () => import('../views/charts/apex/line/index')
   },
@@ -681,7 +691,7 @@ export default [
     path: '/charts/apex-area',
     name: 'area-chart',
     meta: {
-      title: "Area Charts", authRequired: true,
+      title: "Area Charts", authRequired: mode,
     },
     component: () => import('../views/charts/apex/area/index')
   },
@@ -689,7 +699,7 @@ export default [
     path: '/charts/apex-bar',
     name: 'bar-chart',
     meta: {
-      title: "Bar Charts", authRequired: true,
+      title: "Bar Charts", authRequired: mode,
     },
     component: () => import('../views/charts/apex/bar/index')
   },
@@ -697,7 +707,7 @@ export default [
     path: '/charts/apex-column',
     name: 'column-chart',
     meta: {
-      title: "Column Charts", authRequired: true,
+      title: "Column Charts", authRequired: mode,
     },
     component: () => import('../views/charts/apex/column/index')
   },
@@ -706,7 +716,7 @@ export default [
     path: '/charts/apex-mixed',
     name: 'mixed-chart',
     meta: {
-      title: "Mixed Charts", authRequired: true,
+      title: "Mixed Charts", authRequired: mode,
     },
     component: () => import('../views/charts/apex/mixed/index')
   },
@@ -714,7 +724,7 @@ export default [
     path: '/charts/apex-candlestick',
     name: 'candlestick',
     meta: {
-      title: "Candlestick", authRequired: true,
+      title: "Candlestick", authRequired: mode,
     },
     component: () => import('../views/charts/apex/candlestick/index')
   },
@@ -722,7 +732,7 @@ export default [
     path: '/charts/apex-boxplot',
     name: 'boxplot',
     meta: {
-      title: "Boxplot", authRequired: true,
+      title: "Boxplot", authRequired: mode,
     },
     component: () => import('../views/charts/apex/boxplot/index')
   },
@@ -730,7 +740,7 @@ export default [
     path: '/charts/apex-bubble',
     name: 'bubble',
     meta: {
-      title: "Bubble Chart", authRequired: true,
+      title: "Bubble Chart", authRequired: mode,
     },
     component: () => import('../views/charts/apex/bubble/index')
   },
@@ -738,7 +748,7 @@ export default [
     path: '/charts/apex-scatter',
     name: 'scatter',
     meta: {
-      title: "Scatter", authRequired: true,
+      title: "Scatter", authRequired: mode,
     },
     component: () => import('../views/charts/apex/scatter/index')
   },
@@ -746,7 +756,7 @@ export default [
     path: '/charts/apex-heatmap',
     name: 'heatmap',
     meta: {
-      title: "Heatmap", authRequired: true,
+      title: "Heatmap", authRequired: mode,
     },
     component: () => import('../views/charts/apex/heatmap/index')
   },
@@ -754,7 +764,7 @@ export default [
     path: '/charts/apex-treemap',
     name: 'treemap',
     meta: {
-      title: "Treemap", authRequired: true,
+      title: "Treemap", authRequired: mode,
     },
     component: () => import('../views/charts/apex/treemap/index')
   },
@@ -762,7 +772,7 @@ export default [
     path: '/charts/apex-pie',
     name: 'pie',
     meta: {
-      title: "Apex Pie", authRequired: true,
+      title: "Apex Pie", authRequired: mode,
     },
     component: () => import('../views/charts/apex/pie/index')
   },
@@ -770,7 +780,7 @@ export default [
     path: '/charts/apex-radialbar',
     name: 'radialbar',
     meta: {
-      title: "Apex Radialbar", authRequired: true,
+      title: "Apex Radialbar", authRequired: mode,
     },
     component: () => import('../views/charts/apex/radiabar/index')
   },
@@ -778,7 +788,7 @@ export default [
     path: '/charts/apex-radar',
     name: 'radar',
     meta: {
-      title: "Apex Radar", authRequired: true,
+      title: "Apex Radar", authRequired: mode,
     },
     component: () => import('../views/charts/apex/radar/index')
   },
@@ -786,7 +796,7 @@ export default [
     path: '/charts/apex-polararea',
     name: 'polararea',
     meta: {
-      title: "Polararea", authRequired: true,
+      title: "Polararea", authRequired: mode,
     },
     component: () => import('../views/charts/apex/polararea/index')
   },
@@ -794,7 +804,7 @@ export default [
     path: '/advance-ui/animation',
     name: 'animation',
     meta: {
-      title: "Animation", authRequired: true,
+      title: "Animation", authRequired: mode,
     },
     component: () => import('../views/advance-ui/animation')
   },
@@ -802,7 +812,7 @@ export default [
     path: '/advance-ui/highlight',
     name: 'highlight',
     meta: {
-      title: "Highlight", authRequired: true,
+      title: "Highlight", authRequired: mode,
     },
     component: () => import('../views/advance-ui/highlight')
   },
@@ -810,7 +820,7 @@ export default [
     path: '/advance-ui/scrollbar',
     name: 'scrollbar',
     meta: {
-      title: "Scrollbar", authRequired: true,
+      title: "Scrollbar", authRequired: mode,
     },
     component: () => import('../views/advance-ui/scrollbar')
   },
@@ -818,7 +828,7 @@ export default [
     path: '/advance-ui/scrollspy',
     name: 'scrollspy',
     meta: {
-      title: "Scrollspy", authRequired: true,
+      title: "Scrollspy", authRequired: mode,
     },
     component: () => import('../views/advance-ui/scrollspy')
   },
@@ -826,7 +836,7 @@ export default [
     path: '/advance-ui/sweetalerts',
     name: 'sweetalerts',
     meta: {
-      title: "Sweet Alerts", authRequired: true,
+      title: "Sweet Alerts", authRequired: mode,
     },
     component: () => import('../views/advance-ui/sweetalerts')
   },
@@ -834,7 +844,7 @@ export default [
     path: '/advance-ui/swiper',
     name: 'Swiper Slider',
     meta: {
-      title: "Swiper", authRequired: true,
+      title: "Swiper", authRequired: mode,
     },
     component: () => import('../views/advance-ui/swiper')
   },
@@ -842,7 +852,7 @@ export default [
     path: '/auth/signin-basic',
     name: 'signin-basic',
     meta: {
-      title: "Signin Basic", authRequired: true,
+      title: "Signin Basic", authRequired: mode,
     },
     component: () => import('../views/auth/signin/basic')
   },
@@ -850,7 +860,7 @@ export default [
     path: '/auth/signin-cover',
     name: 'signin-cover',
     meta: {
-      title: "Signin Cover", authRequired: true,
+      title: "Signin Cover", authRequired: mode,
     },
     component: () => import('../views/auth/signin/cover')
   },
@@ -858,7 +868,7 @@ export default [
     path: '/auth/signup-basic',
     name: 'signup-basic',
     meta: {
-      title: "Signup Basic", authRequired: true,
+      title: "Signup Basic", authRequired: mode,
     },
     component: () => import('../views/auth/signup/basic')
   },
@@ -866,7 +876,7 @@ export default [
     path: '/auth/signup-cover',
     name: 'signup-cover',
     meta: {
-      title: "Signup Cover", authRequired: true,
+      title: "Signup Cover", authRequired: mode,
     },
     component: () => import('../views/auth/signup/cover')
   },
@@ -874,7 +884,7 @@ export default [
     path: '/auth/reset-pwd-basic',
     name: 'reset-pwd-basic',
     meta: {
-      title: "Reset Password", authRequired: true,
+      title: "Reset Password", authRequired: mode,
     },
     component: () => import('../views/auth/reset/basic')
   },
@@ -882,7 +892,7 @@ export default [
     path: '/auth/reset-pwd-cover',
     name: 'reset-pwd-cover',
     meta: {
-      title: "Reset Password", authRequired: true,
+      title: "Reset Password", authRequired: mode,
     },
     component: () => import('../views/auth/reset/cover')
   },
@@ -890,7 +900,7 @@ export default [
     path: '/auth/create-pwd-basic',
     name: 'create-pwd-basic',
     meta: {
-      title: "create Password", authRequired: true,
+      title: "create Password", authRequired: mode,
     },
     component: () => import('../views/auth/create/basic')
   },
@@ -898,7 +908,7 @@ export default [
     path: '/auth/create-pwd-cover',
     name: 'create-pwd-cover',
     meta: {
-      title: "create Password", authRequired: true,
+      title: "create Password", authRequired: mode,
     },
     component: () => import('../views/auth/create/cover')
   },
@@ -906,7 +916,7 @@ export default [
     path: '/auth/lockscreen-basic',
     name: 'lock-screen-basic',
     meta: {
-      title: "Lock Screen", authRequired: true,
+      title: "Lock Screen", authRequired: mode,
     },
     component: () => import('../views/auth/lockscreen/basic')
   },
@@ -914,7 +924,7 @@ export default [
     path: '/auth/lockscreen-cover',
     name: 'lock-screen-cover',
     meta: {
-      title: "Lock Screen", authRequired: true,
+      title: "Lock Screen", authRequired: mode,
     },
     component: () => import('../views/auth/lockscreen/cover')
   },
@@ -922,14 +932,14 @@ export default [
     path: '/auth/twostep-basic',
     name: 'twostep-basic',
     meta: {
-      title: "Two Step Auth", authRequired: true,
+      title: "Two Step Auth", authRequired: mode,
     },
     component: () => import('../views/auth/twostep/basic')
   }, {
     path: '/auth/twostep-cover',
     name: 'twostep-cover',
     meta: {
-      title: "Two Step Auth", authRequired: true,
+      title: "Two Step Auth", authRequired: mode,
     },
     component: () => import('../views/auth/twostep/cover')
   },
@@ -937,7 +947,7 @@ export default [
     path: '/auth/404',
     name: '404',
     meta: {
-      title: "Error 404", authRequired: true,
+      title: "Error 404", authRequired: mode,
     },
     component: () => import('../views/auth/errors/404')
   },
@@ -945,7 +955,7 @@ export default [
     path: '/auth/500',
     name: '500',
     meta: {
-      title: "Error 500", authRequired: true,
+      title: "Error 500", authRequired: mode,
     },
     component: () => import('../views/auth/errors/500')
   },
@@ -953,7 +963,7 @@ export default [
     path: '/auth/404-basic',
     name: '404-basic',
     meta: {
-      title: "Error 404", authRequired: true,
+      title: "Error 404", authRequired: mode,
     },
     component: () => import('../views/auth/errors/404-basic')
   },
@@ -961,7 +971,7 @@ export default [
     path: '/auth/404-cover',
     name: '404-cover',
     meta: {
-      title: "Error 404", authRequired: true,
+      title: "Error 404", authRequired: mode,
     },
     component: () => import('../views/auth/errors/404-cover')
   },
@@ -969,7 +979,7 @@ export default [
     path: '/auth/ofline',
     name: 'ofline',
     meta: {
-      title: "Oflone", authRequired: true,
+      title: "Oflone", authRequired: mode,
     },
     component: () => import('../views/auth/errors/ofline')
   },
@@ -977,7 +987,7 @@ export default [
     path: '/auth/logout-basic',
     name: 'logout-basic',
     meta: {
-      title: "Logout", authRequired: true,
+      title: "Logout", authRequired: mode,
     },
     component: () => import('../views/auth/logout/basic')
   },
@@ -985,7 +995,7 @@ export default [
     path: '/auth/logout-cover',
     name: 'logout-cover',
     meta: {
-      title: "Logout", authRequired: true,
+      title: "Logout", authRequired: mode,
     },
     component: () => import('../views/auth/logout/cover')
   },
@@ -993,7 +1003,7 @@ export default [
     path: '/auth/success-msg-basic',
     name: 'success-msg-basic',
     meta: {
-      title: "Success Message", authRequired: true,
+      title: "Success Message", authRequired: mode,
     },
     component: () => import('../views/auth/success-msg/basic')
   },
@@ -1001,7 +1011,7 @@ export default [
     path: '/auth/success-msg-cover',
     name: 'success-msg-cover',
     meta: {
-      title: "Success Message", authRequired: true,
+      title: "Success Message", authRequired: mode,
     },
     component: () => import('../views/auth/success-msg/cover')
   },
@@ -1009,14 +1019,14 @@ export default [
     path: "/maps/google",
     name: "Google Maps",
     meta: {
-      title: "Google Maps", authRequired: true,
+      title: "Google Maps", authRequired: mode,
     },
     component: () => import("../views/maps/google"),
   },
   {
     path: "/maps/leaflet",
     name: "Leaflet Maps",
-    meta: { title: "Leaflet Maps", authRequired: true },
+    meta: { title: "Leaflet Maps", authRequired: mode },
     component: () => import("../views/maps/leaflet/index"),
   },
 ];
