@@ -1,6 +1,6 @@
-// 
+//
 // _table.scss
-// 
+//
 
 .table {
     th {
@@ -13,17 +13,15 @@
         background-color: var(--#{$variable-prefix}light);
     }
 
-    >thead {
+    > thead {
         border-color: $table-border-color;
     }
-    >:not(:first-child) {
+    > :not(:first-child) {
         border-top-width: $table-border-width;
     }
 }
 
-
 .table-nowrap {
-
     th,
     td {
         white-space: nowrap;
@@ -32,17 +30,16 @@
 
 // card table
 
-.table-card{
+.table-card {
     margin: (-$card-spacer-y) (-$card-spacer-x);
 
     th,
     td {
-
-        &:first-child{
+        &:first-child {
             padding-left: 16px;
         }
 
-        &:last-child{
+        &:last-child {
             padding-right: 16px;
         }
     }
@@ -52,8 +49,7 @@
     }
 }
 
-@each $color,
-$value in $theme-colors {
+@each $color, $value in $theme-colors {
     .border-#{$color} {
         &.table {
             > thead {
@@ -64,7 +60,7 @@ $value in $theme-colors {
     .table-#{$color} {
         &.table {
             > thead {
-                border-bottom-color:lighten($value, 10%) !important;
+                border-bottom-color: lighten($value, 10%) !important;
             }
         }
     }
@@ -83,11 +79,12 @@ $value in $theme-colors {
     }
 }
 
-[data-layout-mode="dark"]{
-    .table-light{
+[data-layout-mode="dark"] {
+    .table-light {
         background-color: var(--#{$variable-prefix}light);
         color: var(--#{$variable-prefix}body-color);
-        th, td{
+        th,
+        td {
             background-color: var(--#{$variable-prefix}light);
         }
     }

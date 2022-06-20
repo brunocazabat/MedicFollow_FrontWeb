@@ -2,7 +2,6 @@
 // _authentication.scss
 //
 
-
 .auth-page-wrapper {
     .auth-page-content {
         padding-bottom: $footer-height;
@@ -49,7 +48,7 @@
         z-index: 1;
         pointer-events: none;
 
-        >svg {
+        > svg {
             width: 100%;
             height: auto;
             fill: var(--#{$variable-prefix}body-bg);
@@ -60,7 +59,7 @@
 // auth-pass-inputgroup
 
 .auth-pass-inputgroup {
-    input[type="text"]+.btn .ri-eye-fill {
+    input[type="text"] + .btn .ri-eye-fill {
         &:before {
             content: "\ecb6";
         }
@@ -101,7 +100,7 @@
 .auth-bg-cover {
     background: linear-gradient(-45deg, $primary 50%, $success);
 
-    >.bg-overlay {
+    > .bg-overlay {
         background-image: url("~@/assets/images/cover-pattern.png");
         background-position: center;
         background-size: cover;
@@ -110,12 +109,11 @@
     }
 
     .footer {
-        color: rgba($white, .5);
+        color: rgba($white, 0.5);
     }
 }
 
-
-//passowrd validations 
+//passowrd validations
 #password-contain {
     display: none;
 

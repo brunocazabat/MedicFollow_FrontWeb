@@ -104,13 +104,8 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="basicAreaChart.series"
-              :options="basicAreaChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="basicAreaChart.series"
+              :options="basicAreaChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -123,13 +118,8 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="splineAreaChart.series"
-              :options="splineAreaChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="splineAreaChart.series"
+              :options="splineAreaChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -146,54 +136,26 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <div
-              class="toolbar d-flex align-items-start justify-content-center flex-wrap gap-2"
-            >
-              <button
-                type="button"
-                class="btn btn-soft-primary timeline-btn btn-sm"
-                id="one_month"
-                @click="updateData('one_month')"
-                :class="{ active: selection === 'one_month' }"
-              >
+            <div class="toolbar d-flex align-items-start justify-content-center flex-wrap gap-2">
+              <button type="button" class="btn btn-soft-primary timeline-btn btn-sm" id="one_month"
+                @click="updateData('one_month')" :class="{ active: selection === 'one_month' }">
                 1M
               </button>
-              <button
-                type="button"
-                class="btn btn-soft-primary timeline-btn btn-sm"
-                id="six_months"
-                @click="updateData('six_months')"
-                :class="{ active: selection === 'six_months' }"
-              >
+              <button type="button" class="btn btn-soft-primary timeline-btn btn-sm" id="six_months"
+                @click="updateData('six_months')" :class="{ active: selection === 'six_months' }">
                 6M
               </button>
-              <button
-                type="button"
-                class="btn btn-soft-primary timeline-btn btn-sm"
-                id="one_year"
-                @click="updateData('one_year')"
-                :class="{ active: selection === 'one_year' }"
-              >
+              <button type="button" class="btn btn-soft-primary timeline-btn btn-sm" id="one_year"
+                @click="updateData('one_year')" :class="{ active: selection === 'one_year' }">
                 1Y
               </button>
-              <button
-                type="button"
-                class="btn btn-soft-primary timeline-btn btn-sm"
-                id="all"
-                @click="updateData('all')"
-                :class="{ active: selection === 'all' }"
-              >
+              <button type="button" class="btn btn-soft-primary timeline-btn btn-sm" id="all" @click="updateData('all')"
+                :class="{ active: selection === 'all' }">
                 ALL
               </button>
             </div>
-            <apexchart
-              ref="chart"
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="datetimeAreaChart.series"
-              :options="datetimeAreaChart.chartOptions"
-            ></apexchart>
+            <apexchart ref="chart" class="apex-charts" height="350" dir="ltr" :series="datetimeAreaChart.series"
+              :options="datetimeAreaChart.chartOptions"></apexchart>
           </div>
         </div>
         <!-- end card -->
@@ -206,13 +168,8 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="areaNegativeChart.series"
-              :options="areaNegativeChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="areaNegativeChart.series"
+              :options="areaNegativeChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -231,23 +188,14 @@ export default {
           <div class="card-body">
             <div class="bg-light">
               <div id="area_chart-months" class="apex-charts" dir="ltr"></div>
-              <apexchart
-                class="apex-charts"
-                height="130"
-                dir="ltr"
-                :series="areaMonthsChart.series"
-                :options="areaMonthsChart.chartOptions"
-              ></apexchart>
+              <apexchart class="apex-charts" height="130" dir="ltr" :series="areaMonthsChart.series"
+                :options="areaMonthsChart.chartOptions"></apexchart>
             </div>
 
             <div class="github-style d-flex align-items-center my-2">
               <div class="flex-shrink-0 me-2">
-                <img
-                  class="avatar-sm rounded"
-                  src="@/assets/images/users/avatar-1.png"
-                  data-hovercard-user-id="634573"
-                  alt=""
-                />
+                <img class="avatar-sm rounded" src="@/assets/images/users/avatar-1.png" data-hovercard-user-id="634573"
+                  alt="" />
               </div>
               <div class="flex-grow-1">
                 <a class="font-size-14 text-dark fw-medium">coder</a>
@@ -258,13 +206,8 @@ export default {
             </div>
 
             <div class="bg-light">
-              <apexchart
-                class="apex-charts"
-                height="170"
-                dir="ltr"
-                :series="areaYearsChart.series"
-                :options="areaYearsChart.chartOptions"
-              ></apexchart>
+              <apexchart class="apex-charts" height="170" dir="ltr" :series="areaYearsChart.series"
+                :options="areaYearsChart.chartOptions"></apexchart>
             </div>
           </div>
         </div>
@@ -278,13 +221,8 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="areaStackedChart.series"
-              :options="areaStackedChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="areaStackedChart.series"
+              :options="areaStackedChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -301,13 +239,8 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="areaIrregularChart.series"
-              :options="areaIrregularChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="areaIrregularChart.series"
+              :options="areaIrregularChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -320,13 +253,8 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="areaNullValueChart.series"
-              :options="areaNullValueChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="areaNullValueChart.series"
+              :options="areaNullValueChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->

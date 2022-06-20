@@ -317,12 +317,8 @@ export default {
             <h4 class="card-title">Basic</h4>
             <p class="card-title-dsec">Example of google maps.</p>
             <!-- basic map -->
-            <GoogleMap
-              api-key="AIzaSyAbvyBxmMbFhrzP9Z8moyYr6dCr-pzjhBE"
-              :center="{ lat: 2, lng: 2 }"
-              :zoom="5"
-              style="height: 300px"
-            ></GoogleMap>
+            <GoogleMap api-key="AIzaSyAbvyBxmMbFhrzP9Z8moyYr6dCr-pzjhBE" :center="{ lat: 2, lng: 2 }" :zoom="5"
+              style="height: 300px"></GoogleMap>
           </div>
         </div>
       </div>
@@ -332,19 +328,9 @@ export default {
             <h4 class="card-title">Markers</h4>
             <p class="card-title-dsec">Example of google maps.</p>
             <!-- Map with markers -->
-            <GoogleMap
-              :center="{ lat: 11, lng: 12 }"
-              :zoom="3"
-              style="height: 300px"
-            >
-              <Marker
-                v-for="(m, index) in markers"
-                :key="index"
-                :position="m.position"
-                :clickable="true"
-                :draggable="true"
-                @click="center = m.position"
-              ></Marker>
+            <GoogleMap :center="{ lat: 11, lng: 12 }" :zoom="3" style="height: 300px">
+              <Marker v-for="(m, index) in markers" :key="index" :position="m.position" :clickable="true"
+                :draggable="true" @click="center = m.position"></Marker>
             </GoogleMap>
           </div>
         </div>
@@ -358,16 +344,8 @@ export default {
             <h4 class="card-title">Polygon Editing</h4>
             <p class="card-title-dsec">Example of google maps.</p>
             <!-- Polygon editiong map -->
-            <GoogleMap
-              :center="{ lat: 1.38, lng: 103.8 }"
-              :zoom="12"
-              style="height: 300px"
-            >
-              <Polygon
-                :paths="paths"
-                :editable="true"
-                @paths_changed="updateEdited($event)"
-              ></Polygon>
+            <GoogleMap :center="{ lat: 1.38, lng: 103.8 }" :zoom="12" style="height: 300px">
+              <Polygon :paths="paths" :editable="true" @paths_changed="updateEdited($event)"></Polygon>
             </GoogleMap>
           </div>
         </div>
@@ -378,12 +356,7 @@ export default {
             <h4 class="card-title">Map type</h4>
             <p class="card-title-dsec">Example of google maps.</p>
             <!-- Set map type -->
-            <GoogleMap
-              :center="{ lat: 4, lng: 4 }"
-              :zoom="3"
-              style="height: 300px"
-              map-type-id="terrain"
-            ></GoogleMap>
+            <GoogleMap :center="{ lat: 4, lng: 4 }" :zoom="3" style="height: 300px" map-type-id="terrain"></GoogleMap>
           </div>
         </div>
       </div>

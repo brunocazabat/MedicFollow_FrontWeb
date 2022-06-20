@@ -354,10 +354,9 @@ export default {
     <div class="row g-4 mb-3">
       <div class="col-sm-auto">
         <div>
-          <router-link to="/apps/projects-create" class="btn btn-success"
-            ><em class="ri-add-line align-bottom me-1"></em> Add
-            New</router-link
-          >
+          <router-link to="/apps/projects-create" class="btn btn-success"><em
+              class="ri-add-line align-bottom me-1"></em> Add
+            New</router-link>
         </div>
       </div>
       <div class="col-sm">
@@ -367,28 +366,18 @@ export default {
             <em class="ri-search-line search-icon"></em>
           </div>
 
-          <Multiselect
-            class="multiselect form-control w-lg w-auto m-0"
-            v-model="value"
-            :close-on-select="true"
-            :searchable="true"
-            :create-option="true"
-            :options="[
+          <Multiselect class="multiselect form-control w-lg w-auto m-0" v-model="value" :close-on-select="true"
+            :searchable="true" :create-option="true" :options="[
               { value: 'Status', label: 'Status' },
               { value: 'Active', label: 'Active' },
               { value: 'Block', label: 'Block' }
-            ]"
-          />
+            ]" />
         </div>
       </div>
     </div>
 
     <div class="row">
-      <div
-        class="col-xxl-3 col-sm-6 project-card"
-        v-for="(item, index) of projectListWidgets1"
-        :key="index"
-      >
+      <div class="col-xxl-3 col-sm-6 project-card" v-for="(item, index) of projectListWidgets1" :key="index">
         <div class="card card-height-100">
           <div class="card-body">
             <div class="d-flex flex-column h-100">
@@ -398,55 +387,30 @@ export default {
                 </div>
                 <div class="flex-shrink-0">
                   <div class="d-flex gap-1 align-items-center">
-                    <button
-                      type="button"
-                      class="btn avatar-xs mt-n1 p-0 favourite-btn shadow-none"
-                      @click="toggleFavourite"
-                    >
+                    <button type="button" class="btn avatar-xs mt-n1 p-0 favourite-btn shadow-none"
+                      @click="toggleFavourite">
                       <span class="avatar-title bg-transparent fs-15">
                         <em class="ri-star-fill"></em>
                       </span>
                     </button>
                     <div class="dropdown">
-                      <button
-                        class="btn btn-link text-muted p-1 mt-n2 py-0 text-decoration-none fs-15 shadow-none"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="true"
-                      >
-                        <MoreHorizontalIcon
-                          class="icon-sm"
-                        ></MoreHorizontalIcon>
+                      <button class="btn btn-link text-muted p-1 mt-n2 py-0 text-decoration-none fs-15 shadow-none"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <MoreHorizontalIcon class="icon-sm"></MoreHorizontalIcon>
                       </button>
 
                       <div class="dropdown-menu dropdown-menu-end">
-                        <router-link
-                          class="dropdown-item"
-                          to="/apps/projects-overview"
-                          ><em
-                            class="ri-eye-fill align-bottom me-2 text-muted"
-                          ></em>
-                          View</router-link
-                        >
-                        <router-link
-                          class="dropdown-item"
-                          to="/apps/projects-create"
-                          ><em
-                            class="ri-pencil-fill align-bottom me-2 text-muted"
-                          ></em>
-                          Edit</router-link
-                        >
+                        <router-link class="dropdown-item" to="/apps/projects-overview"><em
+                            class="ri-eye-fill align-bottom me-2 text-muted"></em>
+                          View</router-link>
+                        <router-link class="dropdown-item" to="/apps/projects-create"><em
+                            class="ri-pencil-fill align-bottom me-2 text-muted"></em>
+                          Edit</router-link>
                         <div class="dropdown-divider"></div>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-bs-toggle="modal"
-                          data-bs-target="#removeProjectModal"
-                          ><em
-                            class="ri-delete-bin-fill align-bottom me-2 text-muted"
-                          ></em>
-                          Remove</a
-                        >
+                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                          data-bs-target="#removeProjectModal"><em
+                            class="ri-delete-bin-fill align-bottom me-2 text-muted"></em>
+                          Remove</a>
                       </div>
                     </div>
                   </div>
@@ -462,11 +426,7 @@ export default {
                 </div>
                 <div class="flex-grow-1">
                   <h5 class="mb-1 fs-15">
-                    <router-link
-                      to="/apps/projects-overview"
-                      class="text-dark"
-                      >{{ item.label }}</router-link
-                    >
+                    <router-link to="/apps/projects-overview" class="text-dark">{{ item.label }}</router-link>
                   </h5>
                   <p class="text-muted text-truncate-two-lines mb-3">
                     {{ item.caption }}
@@ -480,24 +440,14 @@ export default {
                   </div>
                   <div class="flex-shrink-0">
                     <div>
-                      <em
-                        class="ri-list-check align-bottom me-1 text-muted"
-                      ></em>
+                      <em class="ri-list-check align-bottom me-1 text-muted"></em>
                       {{ item.number }}
                     </div>
                   </div>
                 </div>
-                <div
-                  class="progress progress-sm animated-progress bg-soft-success"
-                >
-                  <div
-                    class="progress-bar bg-success"
-                    role="progressbar"
-                    aria-valuenow="34"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    :style="`width: ${item.progressBar};`"
-                  ></div>
+                <div class="progress progress-sm animated-progress bg-soft-success">
+                  <div class="progress-bar bg-success" role="progressbar" aria-valuenow="34" aria-valuemin="0"
+                    aria-valuemax="100" :style="`width: ${item.progressBar};`"></div>
                   <!-- /.progress-bar -->
                 </div>
                 <!-- /.progress -->
@@ -509,27 +459,14 @@ export default {
             <div class="d-flex align-items-center">
               <div class="flex-grow-1">
                 <div class="avatar-group">
-                  <a
-                    href="javascript: void(0);"
-                    v-for="(subitem, index) of item.subItem"
-                    :key="index"
-                    class="avatar-group-item shadow"
-                    data-bs-toggle="tooltip"
-                    data-bs-trigger="hover"
-                    data-bs-placement="top"
-                    title="Darline Williams"
-                  >
+                  <a href="javascript: void(0);" v-for="(subitem, index) of item.subItem" :key="index"
+                    class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover"
+                    data-bs-placement="top" title="Darline Williams">
                     <div class="avatar-xxs" v-if="!subitem.imgNumber">
-                      <img
-                        :src="subitem.imgFooter"
-                        alt=""
-                        class="rounded-circle img-fluid"
-                      />
+                      <img :src="subitem.imgFooter" alt="" class="rounded-circle img-fluid" />
                     </div>
                     <div class="avatar-xxs" v-if="!subitem.imgFooter">
-                      <div
-                        class="avatar-title fs-16 rounded-circle bg-light border-dashed border text-primary"
-                      >
+                      <div class="avatar-title fs-16 rounded-circle bg-light border-dashed border text-primary">
                         {{ subitem.imgNumber }}
                       </div>
                     </div>
@@ -553,75 +490,42 @@ export default {
     <!-- end row -->
 
     <div class="row">
-      <div
-        class="col-xxl-3 col-sm-6 project-card"
-        v-for="(item, index) of projectListWidgets2"
-        :key="index"
-      >
+      <div class="col-xxl-3 col-sm-6 project-card" v-for="(item, index) of projectListWidgets2" :key="index">
         <div class="card">
           <div class="card-body">
             <div class="p-3 mt-n3 mx-n3 bg-soft-danger rounded-top">
               <div class="d-flex align-items-center">
                 <div class="flex-grow-1">
                   <h5 class="mb-0 fs-14">
-                    <router-link
-                      to="/apps/projects-overview"
-                      class="text-dark"
-                      >{{ item.label }}</router-link
-                    >
+                    <router-link to="/apps/projects-overview" class="text-dark">{{ item.label }}</router-link>
                   </h5>
                 </div>
                 <div class="flex-shrink-0">
                   <div class="d-flex gap-1 align-items-center my-n2">
-                    <button
-                      type="button"
-                      class="btn avatar-xs p-0 favourite-btn shadow-none active"
-                      @click="toggleFavourite"
-                    >
+                    <button type="button" class="btn avatar-xs p-0 favourite-btn shadow-none active"
+                      @click="toggleFavourite">
                       <span class="avatar-title bg-transparent fs-15">
                         <em class="ri-star-fill"></em>
                       </span>
                     </button>
                     <div class="dropdown">
-                      <button
-                        class="btn btn-link text-muted p-1 mt-n2 py-0 text-decoration-none fs-15 shadow-none"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="true"
-                      >
-                        <MoreHorizontalIcon
-                          class="icon-sm"
-                        ></MoreHorizontalIcon>
+                      <button class="btn btn-link text-muted p-1 mt-n2 py-0 text-decoration-none fs-15 shadow-none"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <MoreHorizontalIcon class="icon-sm"></MoreHorizontalIcon>
                       </button>
 
                       <div class="dropdown-menu dropdown-menu-end">
-                        <router-link
-                          class="dropdown-item"
-                          to="/apps/projects-overview"
-                          ><em
-                            class="ri-eye-fill align-bottom me-2 text-muted"
-                          ></em>
-                          View</router-link
-                        >
-                        <router-link
-                          class="dropdown-item"
-                          to="/apps/projects-create"
-                          ><em
-                            class="ri-pencil-fill align-bottom me-2 text-muted"
-                          ></em>
-                          Edit</router-link
-                        >
+                        <router-link class="dropdown-item" to="/apps/projects-overview"><em
+                            class="ri-eye-fill align-bottom me-2 text-muted"></em>
+                          View</router-link>
+                        <router-link class="dropdown-item" to="/apps/projects-create"><em
+                            class="ri-pencil-fill align-bottom me-2 text-muted"></em>
+                          Edit</router-link>
                         <div class="dropdown-divider"></div>
-                        <a
-                          class="dropdown-item"
-                          href="#"
-                          data-bs-toggle="modal"
-                          data-bs-target="#removeProjectModal"
-                          ><em
-                            class="ri-delete-bin-fill align-bottom me-2 text-muted"
-                          ></em>
-                          Remove</a
-                        >
+                        <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                          data-bs-target="#removeProjectModal"><em
+                            class="ri-delete-bin-fill align-bottom me-2 text-muted"></em>
+                          Remove</a>
                       </div>
                     </div>
                   </div>
@@ -650,29 +554,16 @@ export default {
               <div class="d-flex align-items-center mt-3">
                 <p class="text-muted mb-0 me-2">Team :</p>
                 <div class="avatar-group">
-                  <a
-                    href="javascript: void(0);"
-                    v-for="(subItem, index) of item.subItem"
-                    :key="index"
-                    class="avatar-group-item shadow"
-                    data-bs-toggle="tooltip"
-                    data-bs-trigger="hover"
-                    data-bs-placement="top"
-                    title="Donna Kline"
-                  >
+                  <a href="javascript: void(0);" v-for="(subItem, index) of item.subItem" :key="index"
+                    class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover"
+                    data-bs-placement="top" title="Donna Kline">
                     <div class="avatar-xxs" v-if="!subItem.imgTeam">
-                      <div
-                        :class="`avatar-title rounded-circle bg-${subItem.bgColor}`"
-                      >
+                      <div :class="`avatar-title rounded-circle bg-${subItem.bgColor}`">
                         {{ subItem.imgNumber }}
                       </div>
                     </div>
                     <div class="avatar-xxs" v-if="!subItem.imgNumber">
-                      <img
-                        :src="subItem.imgTeam"
-                        alt=""
-                        class="rounded-circle img-fluid"
-                      />
+                      <img :src="subItem.imgTeam" alt="" class="rounded-circle img-fluid" />
                     </div>
                   </a>
                 </div>
@@ -688,14 +579,8 @@ export default {
                 </div>
               </div>
               <div class="progress progress-sm animated-progess">
-                <div
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 50%"
-                ></div>
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                  aria-valuemax="100" style="width: 50%"></div>
                 <!-- /.progress-bar -->
               </div>
               <!-- /.progress -->
@@ -710,64 +595,33 @@ export default {
     <!-- end row -->
 
     <div class="row">
-      <div
-        class="col-xxl-3 col-sm-6 project-card"
-        v-for="(item, index) of projectListWidgets3"
-        :key="index"
-      >
+      <div class="col-xxl-3 col-sm-6 project-card" v-for="(item, index) of projectListWidgets3" :key="index">
         <div class="card">
           <div class="card-body">
             <div class="p-3 mt-n3 mx-n3 bg-soft-secondary rounded-top">
-              <div
-                class="d-flex gap-1 align-items-center justify-content-end my-n2"
-              >
-                <button
-                  type="button"
-                  class="btn avatar-xs p-0 favourite-btn active"
-                  @click="toggleFavourite"
-                >
+              <div class="d-flex gap-1 align-items-center justify-content-end my-n2">
+                <button type="button" class="btn avatar-xs p-0 favourite-btn active" @click="toggleFavourite">
                   <span class="avatar-title bg-transparent fs-15">
                     <em class="ri-star-fill"></em>
                   </span>
                 </button>
                 <div class="dropdown">
-                  <button
-                    class="btn btn-link text-muted p-1 mt-n2 py-0 text-decoration-none fs-15 shadow-none"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="true"
-                  >
+                  <button class="btn btn-link text-muted p-1 mt-n2 py-0 text-decoration-none fs-15 shadow-none"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <MoreHorizontalIcon class="icon-sm"></MoreHorizontalIcon>
                   </button>
 
                   <div class="dropdown-menu dropdown-menu-end">
-                    <router-link
-                      class="dropdown-item"
-                      to="/apps/projects-overview"
-                      ><em
-                        class="ri-eye-fill align-bottom me-2 text-muted"
-                      ></em>
-                      View</router-link
-                    >
-                    <router-link
-                      class="dropdown-item"
-                      to="/apps/projects-create"
-                      ><em
-                        class="ri-pencil-fill align-bottom me-2 text-muted"
-                      ></em>
-                      Edit</router-link
-                    >
+                    <router-link class="dropdown-item" to="/apps/projects-overview"><em
+                        class="ri-eye-fill align-bottom me-2 text-muted"></em>
+                      View</router-link>
+                    <router-link class="dropdown-item" to="/apps/projects-create"><em
+                        class="ri-pencil-fill align-bottom me-2 text-muted"></em>
+                      Edit</router-link>
                     <div class="dropdown-divider"></div>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#removeProjectModal"
-                      ><em
-                        class="ri-delete-bin-fill align-bottom me-2 text-muted"
-                      ></em>
-                      Remove</a
-                    >
+                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#removeProjectModal"><em
+                        class="ri-delete-bin-fill align-bottom me-2 text-muted"></em>
+                      Remove</a>
                   </div>
                 </div>
               </div>
@@ -779,7 +633,7 @@ export default {
             <div class="py-3">
               <h5 class="fs-14 mb-3">
                 <router-link to="/apps/projects-overview" class="text-dark">{{
-                  item.label
+                    item.label
                 }}</router-link>
               </h5>
               <div class="row gy-3">
@@ -802,29 +656,16 @@ export default {
               <div class="d-flex align-items-center mt-3">
                 <p class="text-muted mb-0 me-2">Team :</p>
                 <div class="avatar-group">
-                  <a
-                    href="javascript: void(0);"
-                    v-for="(subItem, index) of item.subItem"
-                    :key="index"
-                    class="avatar-group-item shadow"
-                    data-bs-toggle="tooltip"
-                    data-bs-trigger="hover"
-                    data-bs-placement="top"
-                    title="Donna Kline"
-                  >
+                  <a href="javascript: void(0);" v-for="(subItem, index) of item.subItem" :key="index"
+                    class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover"
+                    data-bs-placement="top" title="Donna Kline">
                     <div class="avatar-xxs" v-if="!subItem.imgTeam">
-                      <div
-                        :class="`avatar-title rounded-circle bg-${subItem.bgColor}`"
-                      >
+                      <div :class="`avatar-title rounded-circle bg-${subItem.bgColor}`">
                         {{ subItem.imgNumber }}
                       </div>
                     </div>
                     <div class="avatar-xxs" v-if="!subItem.imgNumber">
-                      <img
-                        :src="subItem.imgTeam"
-                        alt=""
-                        class="rounded-circle img-fluid"
-                      />
+                      <img :src="subItem.imgTeam" alt="" class="rounded-circle img-fluid" />
                     </div>
                   </a>
                 </div>
@@ -843,14 +684,8 @@ export default {
                 </div>
               </div>
               <div class="progress progress-sm animated-progess">
-                <div
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  aria-valuenow="71"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  :style="`width: ${item.progressBar};`"
-                ></div>
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="71" aria-valuemin="0"
+                  aria-valuemax="100" :style="`width: ${item.progressBar};`"></div>
                 <!-- /.progress-bar -->
               </div>
               <!-- /.progress -->
@@ -877,9 +712,7 @@ export default {
       </div>
       <!-- end col -->
       <div class="col-sm-6">
-        <ul
-          class="pagination pagination-separated justify-content-center justify-content-sm-end mb-sm-0"
-        >
+        <ul class="pagination pagination-separated justify-content-center justify-content-sm-end mb-sm-0">
           <li class="page-item disabled">
             <a href="#" class="page-link">Previous</a>
           </li>

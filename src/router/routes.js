@@ -5,7 +5,7 @@ var mode = DevMode();
 function DevMode() {
   var id;
   console.log(process.env.VUE_APP_DEFAULT_AUTH);
-  if (process.env.VUE_APP_DEFAULT_AUTH === 'DEV') {
+  if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
     id = false;
   } else {
     id = true;
@@ -65,7 +65,8 @@ export default [
     path: "/logout",
     name: "logout",
     meta: {
-      title: "Logout", authRequired: mode,
+      title: "Logout",
+      authRequired: mode,
       Resolve(_routeTo, routeFrom, next) {
         store.dispatch("authfack/logout");
         const authRequiredOnPreviousRoute = routeFrom.matched.some((route) =>
@@ -77,7 +78,7 @@ export default [
         );
       },
     },
-    component: () => import("../views/auth/logout/basic")
+    component: () => import("../views/auth/logout/basic"),
   },
   {
     path: "/calendar",
@@ -158,51 +159,57 @@ export default [
     component: () => import("../views/pages/sitemap"),
   },
   {
-    path: '/auth/lockscreen-basic',
-    name: 'lock-screen-basic',
+    path: "/auth/lockscreen-basic",
+    name: "lock-screen-basic",
     meta: {
-      title: "Lock Screen", authRequired: mode,
+      title: "Lock Screen",
+      authRequired: mode,
     },
-    component: () => import('../views/auth/lockscreen/basic')
+    component: () => import("../views/auth/lockscreen/basic"),
   },
   {
-    path: '/auth/twostep-basic',
-    name: 'twostep-basic',
+    path: "/auth/twostep-basic",
+    name: "twostep-basic",
     meta: {
-      title: "Two Step Auth", authRequired: mode,
+      title: "Two Step Auth",
+      authRequired: mode,
     },
-    component: () => import('../views/auth/twostep/basic')
-  }, 
-  {
-    path: '/auth/twostep-cover',
-    name: 'twostep-cover',
-    meta: {
-      title: "Two Step Auth", authRequired: mode,
-    },
-    component: () => import('../views/auth/twostep/cover')
+    component: () => import("../views/auth/twostep/basic"),
   },
   {
-    path: '/auth/500',
-    name: '500',
+    path: "/auth/twostep-cover",
+    name: "twostep-cover",
     meta: {
-      title: "Error 500", authRequired: mode,
+      title: "Two Step Auth",
+      authRequired: mode,
     },
-    component: () => import('../views/auth/errors/500')
+    component: () => import("../views/auth/twostep/cover"),
   },
   {
-    path: '/auth/404-cover',
-    name: '404-cover',
+    path: "/auth/500",
+    name: "500",
     meta: {
-      title: "Error 404", authRequired: mode,
+      title: "Error 500",
+      authRequired: mode,
     },
-    component: () => import('../views/auth/errors/404-cover')
+    component: () => import("../views/auth/errors/500"),
   },
   {
-    path: '/auth/ofline',
-    name: 'ofline',
+    path: "/auth/404-cover",
+    name: "404-cover",
     meta: {
-      title: "Oflone", authRequired: mode,
+      title: "Error 404",
+      authRequired: mode,
     },
-    component: () => import('../views/auth/errors/ofline')
+    component: () => import("../views/auth/errors/404-cover"),
+  },
+  {
+    path: "/auth/ofline",
+    name: "ofline",
+    meta: {
+      title: "Oflone",
+      authRequired: mode,
+    },
+    component: () => import("../views/auth/errors/ofline"),
   },
 ];

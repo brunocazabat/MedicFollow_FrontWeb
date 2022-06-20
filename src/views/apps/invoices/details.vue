@@ -131,12 +131,12 @@ export default {
             data.status == 'Paid'
               ? 'badge-soft-success'
               : data.status == 'Cancel'
-              ? 'badge-soft-danger'
-              : data.status == 'Unpaid'
-              ? 'badge-soft-warning'
-              : data.status == 'Refund'
-              ? 'badge-soft-primary'
-              : ''
+                ? 'badge-soft-danger'
+                : data.status == 'Unpaid'
+                  ? 'badge-soft-warning'
+                  : data.status == 'Refund'
+                    ? 'badge-soft-primary'
+                    : ''
           console.log(itemclass)
           document.getElementById('payment-status').classList.add(itemclass)
 
@@ -179,18 +179,9 @@ export default {
           <div class="card-header border-bottom-dashed p-4">
             <div class="d-sm-flex">
               <div class="flex-grow-1">
-                <img
-                  src="@/assets/images/logo-dark.png"
-                  class="card-logo card-logo-dark"
-                  alt="logo dark"
-                  height="17"
-                />
-                <img
-                  src="@/assets/images/logo-light.png"
-                  class="card-logo card-logo-light"
-                  alt="logo light"
-                  height="17"
-                />
+                <img src="@/assets/images/logo-dark.png" class="card-logo card-logo-dark" alt="logo dark" height="17" />
+                <img src="@/assets/images/logo-light.png" class="card-logo card-logo-light" alt="logo light"
+                  height="17" />
                 <div class="mt-sm-5 mt-4">
                   <h6 class="text-muted text-uppercase fw-semibold">Address</h6>
                   <p class="text-muted mb-1" id="address-details">
@@ -203,8 +194,7 @@ export default {
               </div>
               <div class="flex-shrink-0 mt-sm-0 mt-3">
                 <h6>
-                  <span class="text-muted fw-normal"
-                    >Legal Registration No:
+                  <span class="text-muted fw-normal">Legal Registration No:
                   </span>
                   <span id="legal-register-no">{{ registration_no }}</span>
                 </h6>
@@ -214,17 +204,10 @@ export default {
                 </h6>
                 <h6>
                   <span class="text-muted fw-normal">Website:</span>
-                  <a
-                    href="https://themesbrand.com/"
-                    class="link-primary"
-                    target="_blank"
-                    id="website"
-                    >{{ website }}</a
-                  >
+                  <a href="https://themesbrand.com/" class="link-primary" target="_blank" id="website">{{ website }}</a>
                 </h6>
                 <h6 class="mb-0">
-                  <span class="text-muted fw-normal">Contact No: </span
-                  ><span id="contact-no">{{ contact }}</span>
+                  <span class="text-muted fw-normal">Contact No: </span><span id="contact-no">{{ contact }}</span>
                 </h6>
               </div>
             </div>
@@ -254,7 +237,7 @@ export default {
                   Payment Status
                 </p>
                 <span class="badge fs-11" id="payment-status">{{
-                  status
+                    status
                 }}</span>
               </div>
               <!--end col-->
@@ -315,9 +298,7 @@ export default {
           <!--end card-body-->
           <div class="card-body p-4">
             <div class="table-responsive">
-              <table
-                class="table table-borderless text-center table-nowrap align-middle mb-0"
-              >
+              <table class="table table-borderless text-center table-nowrap align-middle mb-0">
                 <thead>
                   <tr class="table-active">
                     <th scope="col" style="width: 50px">#</th>
@@ -341,9 +322,7 @@ export default {
                   <tr class="border-top border-top-dashed mt-2">
                     <td colspan="3"></td>
                     <td colspan="2" class="fw-medium p-0">
-                      <table
-                        class="table table-borderless text-start table-nowrap align-middle mb-0"
-                      >
+                      <table class="table table-borderless text-start table-nowrap align-middle mb-0">
                         <tbody>
                           <tr>
                             <td>Sub Total</td>
@@ -384,24 +363,24 @@ export default {
               <p class="text-muted mb-1">
                 Payment Method:
                 <span class="fw-medium" id="payment-method">{{
-                  payment_method
+                    payment_method
                 }}</span>
               </p>
               <p class="text-muted mb-1">
                 Card Holder:
                 <span class="fw-medium" id="card-holder-name">{{
-                  card_holder_name
+                    card_holder_name
                 }}</span>
               </p>
               <p class="text-muted mb-1">
                 Card Number:
                 <span class="fw-medium" id="card-number">{{
-                  card_number
+                    card_number
                 }}</span>
               </p>
               <p class="text-muted">
-                Total Amount: <span class="fw-medium" id="">$ </span
-                ><span id="card-total-amount">{{ total_amount }}</span>
+                Total Amount: <span class="fw-medium" id="">$ </span><span id="card-total-amount">{{ total_amount
+                }}</span>
               </p>
             </div>
             <div class="mt-4">
@@ -413,13 +392,11 @@ export default {
               </div>
             </div>
             <div class="hstack gap-2 justify-content-end d-print-none mt-4">
-              <a href="javascript:window.print()" class="btn btn-success"
-                ><em class="ri-printer-line align-bottom me-1"></em> Print</a
-              >
-              <a href="javascript:void(0);" class="btn btn-primary"
-                ><em class="ri-download-2-line align-bottom me-1"></em>
-                Download</a
-              >
+              <a href="javascript:window.print()" class="btn btn-success"><em
+                  class="ri-printer-line align-bottom me-1"></em> Print</a>
+              <a href="javascript:void(0);" class="btn btn-primary"><em
+                  class="ri-download-2-line align-bottom me-1"></em>
+                Download</a>
             </div>
           </div>
           <!--end card-body-->

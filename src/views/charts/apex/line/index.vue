@@ -56,7 +56,7 @@ export default {
           active: true,
         },
       ],
-    
+
     };
   },
   components: {
@@ -77,13 +77,8 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="basicLineChart.series"
-              :options="basicLineChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="basicLineChart.series"
+              :options="basicLineChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -97,13 +92,8 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="zoomableChart.series"
-              :options="zoomableChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="zoomableChart.series"
+              :options="zoomableChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -120,13 +110,8 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="lineDatalabelChart.series"
-              :options="lineDatalabelChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="lineDatalabelChart.series"
+              :options="lineDatalabelChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -140,13 +125,8 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="dashedLineChart.series"
-              :options="dashedLineChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="dashedLineChart.series"
+              :options="dashedLineChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -163,19 +143,14 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="lineAnnotation.series"
-              :options="lineAnnotation.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="lineAnnotation.series"
+              :options="lineAnnotation.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
       </div>
       <!--end col-->
-        <div class="col-lg-6">
+      <div class="col-lg-6">
         <div class="card">
           <div class="card-header">
             <h4 class="card-title mb-0">Brush Charts</h4>
@@ -183,21 +158,11 @@ export default {
           <!-- end card header -->
           <div class="card-body">
             <div>
-              <apexchart
-                class="apex-charts"
-                height="230"
-                dir="ltr"
-                :series="brushLineChart.series"
-                :options="brushLineChart.chartOptions"
-              ></apexchart>
+              <apexchart class="apex-charts" height="230" dir="ltr" :series="brushLineChart.series"
+                :options="brushLineChart.chartOptions"></apexchart>
 
-              <apexchart
-                class="apex-charts"
-                height="130"
-                dir="ltr"
-                :series="brushAreaChart.series"
-                :options="brushAreaChart.chartOptions"
-              ></apexchart>
+              <apexchart class="apex-charts" height="130" dir="ltr" :series="brushAreaChart.series"
+                :options="brushAreaChart.chartOptions"></apexchart>
             </div>
           </div>
         </div>
@@ -215,32 +180,22 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="steplineChart.series"
-              :options="steplineChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="steplineChart.series"
+              :options="steplineChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
       </div>
       <!--end col-->
-        <div class="col-lg-6">
+      <div class="col-lg-6">
         <div class="card">
           <div class="card-header">
             <h4 class="card-title mb-0">Gradient Charts</h4>
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="gradientLineChart.series"
-              :options="gradientLineChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="gradientLineChart.series"
+              :options="gradientLineChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -257,18 +212,13 @@ export default {
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="missingDataChart.series"
-              :options="missingDataChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="missingDataChart.series"
+              :options="missingDataChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
       </div>
-     
+
     </div>
     <!-- end row -->
   </Layout>

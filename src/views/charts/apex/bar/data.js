@@ -1,31 +1,36 @@
 // Basic Bar chart
-function getChartColorsArray(colors){
+function getChartColorsArray(colors) {
   colors = JSON.parse(colors);
   return colors.map(function (value) {
     var newValue = value.replace(" ", "");
     if (newValue.indexOf(",") === -1) {
-      var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
-          if (color) {
-          color = color.replace(" ", "");
-          return color;
-          }
-          else return newValue;
+      var color = getComputedStyle(document.documentElement).getPropertyValue(
+        newValue
+      );
+      if (color) {
+        color = color.replace(" ", "");
+        return color;
+      } else return newValue;
+    } else {
+      var val = value.split(",");
+      if (val.length == 2) {
+        var rgbaColor = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue(val[0]);
+        rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
+        return rgbaColor;
       } else {
-          var val = value.split(',');
-          if (val.length == 2) {
-              var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
-              rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
-              return rgbaColor;
-          } else {
-              return newValue;
-          }
+        return newValue;
       }
+    }
   });
 }
 const basicBarChart = {
-  series: [{
-    data: [380, 430, 450, 475, 550, 584, 780, 1100, 1220, 1365],
-  }, ],
+  series: [
+    {
+      data: [380, 430, 450, 475, 550, 584, 780, 1100, 1220, 1365],
+    },
+  ],
   chartOptions: {
     chart: {
       height: 350,
@@ -66,9 +71,11 @@ const basicBarChart = {
 // Custom DataLabels Bar
 
 const customDatalabelsChart = {
-  series: [{
-    data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380],
-  }, ],
+  series: [
+    {
+      data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380],
+    },
+  ],
   chartOptions: {
     chart: {
       type: "bar",
@@ -87,7 +94,9 @@ const customDatalabelsChart = {
         },
       },
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-secondary", "--vz-success", "--vz-info", "--vz-warning", "--vz-danger", "--vz-dark", "--vz-primary", "--vz-success", "--vz-secondary"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-secondary", "--vz-success", "--vz-info", "--vz-warning", "--vz-danger", "--vz-dark", "--vz-primary", "--vz-success", "--vz-secondary"]'
+    ),
     dataLabels: {
       enabled: true,
       textAnchor: "start",
@@ -156,7 +165,8 @@ const customDatalabelsChart = {
 // Stacked Bar Charts
 
 const stackedBarChart = {
-  series: [{
+  series: [
+    {
       name: "Marine Sprite",
       data: [44, 55, 41, 37, 22, 43, 21],
     },
@@ -229,14 +239,17 @@ const stackedBarChart = {
       horizontalAlign: "left",
       offsetX: 40,
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'
+    ),
   },
 };
 
 // Stacked Bars 100
 
 const stackedBar100Chart = {
-  series: [{
+  series: [
+    {
       name: "Marine Sprite",
       data: [44, 55, 41, 37, 22, 43, 21],
     },
@@ -300,57 +313,28 @@ const stackedBar100Chart = {
       horizontalAlign: "left",
       offsetX: 40,
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'
+    ),
   },
 };
 
 // Bar with Negative Values
 
 const barNegativeChart = {
-  series: [{
+  series: [
+    {
       name: "Males",
       data: [
-        0.4,
-        0.65,
-        0.76,
-        0.88,
-        1.5,
-        2.1,
-        2.9,
-        3.8,
-        3.9,
-        4.2,
-        4,
-        4.3,
-        4.1,
-        4.2,
-        4.5,
-        3.9,
-        3.5,
-        3,
+        0.4, 0.65, 0.76, 0.88, 1.5, 2.1, 2.9, 3.8, 3.9, 4.2, 4, 4.3, 4.1, 4.2,
+        4.5, 3.9, 3.5, 3,
       ],
     },
     {
       name: "Females",
       data: [
-        -0.8,
-        -1.05,
-        -1.06,
-        -1.18,
-        -1.4,
-        -2.2,
-        -2.85,
-        -3.7,
-        -3.96,
-        -4.22,
-        -4.3,
-        -4.4,
-        -4.1,
-        -4,
-        -4.1,
-        -3.4,
-        -3.1,
-        -2.8,
+        -0.8, -1.05, -1.06, -1.18, -1.4, -2.2, -2.85, -3.7, -3.96, -4.22, -4.3,
+        -4.4, -4.1, -4, -4.1, -3.4, -3.1, -2.8,
       ],
     },
   ],
@@ -448,70 +432,85 @@ const barNegativeChart = {
 
 // Bar with Markers
 const barMarkersChart = {
-  series: [{
-    name: "Actual",
-    data: [{
-        x: "2011",
-        y: 12,
-        goals: [{
-          name: "Expected",
-          value: 14,
-          strokeWidth: 5,
-          strokeColor: "#564ab1",
-        }, ],
-      },
-      {
-        x: "2012",
-        y: 44,
-        goals: [{
-          name: "Expected",
-          value: 54,
-          strokeWidth: 5,
-          strokeColor: "#564ab1",
-        }, ],
-      },
-      {
-        x: "2013",
-        y: 54,
-        goals: [{
-          name: "Expected",
-          value: 52,
-          strokeWidth: 5,
-          strokeColor: "#564ab1",
-        }, ],
-      },
-      {
-        x: "2014",
-        y: 66,
-        goals: [{
-          name: "Expected",
-          value: 65,
-          strokeWidth: 5,
-          strokeColor: "#564ab1",
-        }, ],
-      },
-      {
-        x: "2015",
-        y: 81,
-        goals: [{
-          name: "Expected",
-          value: 66,
-          strokeWidth: 5,
-          strokeColor: "#564ab1",
-        }, ],
-      },
-      {
-        x: "2016",
-        y: 67,
-        goals: [{
-          name: "Expected",
-          value: 70,
-          strokeWidth: 5,
-          strokeColor: "#564ab1",
-        }, ],
-      },
-    ],
-  }, ],
+  series: [
+    {
+      name: "Actual",
+      data: [
+        {
+          x: "2011",
+          y: 12,
+          goals: [
+            {
+              name: "Expected",
+              value: 14,
+              strokeWidth: 5,
+              strokeColor: "#564ab1",
+            },
+          ],
+        },
+        {
+          x: "2012",
+          y: 44,
+          goals: [
+            {
+              name: "Expected",
+              value: 54,
+              strokeWidth: 5,
+              strokeColor: "#564ab1",
+            },
+          ],
+        },
+        {
+          x: "2013",
+          y: 54,
+          goals: [
+            {
+              name: "Expected",
+              value: 52,
+              strokeWidth: 5,
+              strokeColor: "#564ab1",
+            },
+          ],
+        },
+        {
+          x: "2014",
+          y: 66,
+          goals: [
+            {
+              name: "Expected",
+              value: 65,
+              strokeWidth: 5,
+              strokeColor: "#564ab1",
+            },
+          ],
+        },
+        {
+          x: "2015",
+          y: 81,
+          goals: [
+            {
+              name: "Expected",
+              value: 66,
+              strokeWidth: 5,
+              strokeColor: "#564ab1",
+            },
+          ],
+        },
+        {
+          x: "2016",
+          y: 67,
+          goals: [
+            {
+              name: "Expected",
+              value: 70,
+              strokeWidth: 5,
+              strokeColor: "#564ab1",
+            },
+          ],
+        },
+      ],
+    },
+  ],
   chartOptions: {
     chart: {
       height: 350,
@@ -551,9 +550,11 @@ const barMarkersChart = {
 // Reversed Bar Chart
 
 const reversedBarChart = {
-  series: [{
-    data: [400, 430, 448, 470, 540, 580, 690],
-  }, ],
+  series: [
+    {
+      data: [400, 430, 448, 470, 540, 580, 690],
+    },
+  ],
   chartOptions: {
     colors: getChartColorsArray('["--vz-info"]'),
     chart: {
@@ -564,25 +565,29 @@ const reversedBarChart = {
       },
     },
     annotations: {
-      xaxis: [{
-        x: 500,
-        borderColor: "#299CDB",
-        label: {
+      xaxis: [
+        {
+          x: 500,
           borderColor: "#299CDB",
-          style: {
-            color: "#fff",
-            background: "#299CDB",
+          label: {
+            borderColor: "#299CDB",
+            style: {
+              color: "#fff",
+              background: "#299CDB",
+            },
+            text: "X annotation",
           },
-          text: "X annotation",
         },
-      }, ],
-      yaxis: [{
-        y: "July",
-        y2: "September",
-        label: {
-          text: "Y annotation",
+      ],
+      yaxis: [
+        {
+          y: "July",
+          y2: "September",
+          label: {
+            text: "Y annotation",
+          },
         },
-      }, ],
+      ],
     },
     plotOptions: {
       bar: {
@@ -622,7 +627,8 @@ const reversedBarChart = {
 // Patterned Charts
 
 const patternedBarChart = {
-  series: [{
+  series: [
+    {
       name: "Marine Sprite",
       data: [44, 55, 41, 37, 22, 43, 21],
     },
@@ -703,14 +709,17 @@ const patternedBarChart = {
       position: "right",
       offsetY: 40,
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger"]'
+    ),
   },
 };
 
 // Groupes Bar Charts
 
 const groupedBarChart = {
-  series: [{
+  series: [
+    {
       data: [44, 55, 41, 64, 22, 43, 21],
     },
     {
@@ -760,43 +769,15 @@ const groupedBarChart = {
 // Bar with Images
 
 const barImagesChart = {
-  series: [{
-    name: "coins",
-    data: [
-      2,
-      4,
-      3,
-      4,
-      3,
-      5,
-      5,
-      6.5,
-      6,
-      5,
-      4,
-      5,
-      8,
-      7,
-      7,
-      8,
-      8,
-      10,
-      9,
-      9,
-      12,
-      12,
-      11,
-      12,
-      13,
-      14,
-      16,
-      14,
-      15,
-      17,
-      19,
-      21,
-    ],
-  }, ],
+  series: [
+    {
+      name: "coins",
+      data: [
+        2, 4, 3, 4, 3, 5, 5, 6.5, 6, 5, 4, 5, 8, 7, 7, 8, 8, 10, 9, 9, 12, 12,
+        11, 12, 13, 14, 16, 14, 15, 17, 19, 21,
+      ],
+    },
+  ],
   chartOptions: {
     chart: {
       type: "bar",
@@ -853,19 +834,19 @@ const barImagesChart = {
     },
     fill: {
       type: "image",
-      opacity: .87,
+      opacity: 0.87,
       image: {
         src: ["@/assets/images/small/img-4.jpg"],
         width: 466,
-        height: 406
-      }
-    }
+        height: 406,
+      },
+    },
   },
 };
 
 export {
   basicBarChart,
-  customDatalabelsChart,  
+  customDatalabelsChart,
   stackedBarChart,
   stackedBar100Chart,
   barNegativeChart,

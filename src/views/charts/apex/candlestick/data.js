@@ -1,7 +1,6 @@
 import moment from "moment";
 import { seriesData, seriesDataLinear } from "../chart-series";
 
-
 //  Basic Candlestick Charts
 const basicCandlestickChart = {
   series: [
@@ -681,7 +680,7 @@ const categoryXaxisChart = {
     xaxis: {
       type: "category",
       labels: {
-        formatter: function(val) {
+        formatter: function (val) {
           // eslint-disable-next-line no-undef
           return moment(val).format("MMM DD HH:mm");
         },

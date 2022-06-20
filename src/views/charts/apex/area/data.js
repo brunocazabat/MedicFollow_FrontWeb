@@ -2,27 +2,30 @@
 import { series, githubdata, dataSeries } from "../chart-series";
 import moment from "moment";
 
-function getChartColorsArray(colors){
+function getChartColorsArray(colors) {
   colors = JSON.parse(colors);
   return colors.map(function (value) {
     var newValue = value.replace(" ", "");
     if (newValue.indexOf(",") === -1) {
-      var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
-          if (color) {
-          color = color.replace(" ", "");
-          return color;
-          }
-          else return newValue;
+      var color = getComputedStyle(document.documentElement).getPropertyValue(
+        newValue
+      );
+      if (color) {
+        color = color.replace(" ", "");
+        return color;
+      } else return newValue;
+    } else {
+      var val = value.split(",");
+      if (val.length == 2) {
+        var rgbaColor = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue(val[0]);
+        rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
+        return rgbaColor;
       } else {
-          var val = value.split(',');
-          if (val.length == 2) {
-              var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
-              rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
-              return rgbaColor;
-          } else {
-              return newValue;
-          }
+        return newValue;
       }
+    }
   });
 }
 
@@ -475,7 +478,6 @@ const datetimeAreaChart = {
   },
 };
 
-
 // Area with Nagetive Values
 
 const areaNegativeChart = {
@@ -743,7 +745,7 @@ const areaMonthsChart = {
         autoSelected: "pan",
       },
       events: {
-        mounted: function(chart) {
+        mounted: function (chart) {
           var commitsEl = document.querySelector(".cmeta span.commits");
           var commits = chart.getSeriesTotalXRange(
             chart.w.globals.minX,
@@ -752,7 +754,7 @@ const areaMonthsChart = {
 
           commitsEl.innerHTML = commits;
         },
-        updated: function(chart) {
+        updated: function (chart) {
           var commitsEl = document.querySelector(".cmeta span.commits");
           var commits = chart.getSeriesTotalXRange(
             chart.w.globals.minX,
@@ -835,7 +837,7 @@ const areaYearsChart = {
 
 // Stacked Area Charts
 
-var generateDayWiseTimeSeries = function(baseval, count, yrange) {
+var generateDayWiseTimeSeries = function (baseval, count, yrange) {
   var i = 0;
   var series = [];
   while (i < count) {
@@ -892,7 +894,7 @@ const areaStackedChart = {
       height: 350,
       stacked: true,
       events: {
-        selection: function(chart, e) {
+        selection: function (chart, e) {
           console.log(new Date(e.xaxis.min));
         },
       },
@@ -923,27 +925,27 @@ const areaStackedChart = {
 
 // Ireegular Time Series
 
-  var ts1 = 1388534400000;
-  var ts2 = 1388620800000;
-  var ts3 = 1389052800000;
+var ts1 = 1388534400000;
+var ts2 = 1388620800000;
+var ts3 = 1389052800000;
 
-  let dataSet = [[], [], []];
+let dataSet = [[], [], []];
 
-  for (var i = 0; i < 12; i++) {
-    ts1 = ts1 + 86400000;
-    var innerArr = [ts1, dataSeries[2][i].value];
-    dataSet[0].push(innerArr)
-  }
-  for (let i = 0; i < 18; i++) {
-    ts2 = ts2 + 86400000;
-    let innerArr = [ts2, dataSeries[1][i].value];
-    dataSet[1].push(innerArr)
-  }
-  for (let i = 0; i < 12; i++) {
-    ts3 = ts3 + 86400000;
-    let innerArr = [ts3, dataSeries[0][i].value];
-    dataSet[2].push(innerArr)
-  }
+for (var i = 0; i < 12; i++) {
+  ts1 = ts1 + 86400000;
+  var innerArr = [ts1, dataSeries[2][i].value];
+  dataSet[0].push(innerArr);
+}
+for (let i = 0; i < 18; i++) {
+  ts2 = ts2 + 86400000;
+  let innerArr = [ts2, dataSeries[1][i].value];
+  dataSet[1].push(innerArr);
+}
+for (let i = 0; i < 12; i++) {
+  ts3 = ts3 + 86400000;
+  let innerArr = [ts3, dataSeries[0][i].value];
+  dataSet[2].push(innerArr);
+}
 
 //Irregular Timeseries Chart
 
@@ -996,7 +998,7 @@ const areaIrregularChart = {
           colors: "#8e8da4",
         },
         offsetX: 0,
-        formatter: function(val) {
+        formatter: function (val) {
           return (val / 1000000).toFixed(2);
         },
       },
@@ -1015,7 +1017,7 @@ const areaIrregularChart = {
       labels: {
         rotate: -15,
         rotateAlways: true,
-        formatter: function(val, timestamp) {
+        formatter: function (val, timestamp) {
           return moment(new Date(timestamp)).format("DD MMM YYYY");
         },
       },
@@ -1036,7 +1038,9 @@ const areaIrregularChart = {
       horizontalAlign: "right",
       offsetX: -10,
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-warning", "--vz-success"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-warning", "--vz-success"]'
+    ),
   },
 };
 

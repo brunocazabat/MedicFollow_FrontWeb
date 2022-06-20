@@ -59,21 +59,14 @@ export default {
     <div class="row">
       <div class="col-lg-6">
         <div class="card">
-          <div
-            class="card-header justify-content-between d-flex align-items-center"
-          >
+          <div class="card-header justify-content-between d-flex align-items-center">
             <h4 class="card-title">Basic Radialbar Chart</h4>
-            
+
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="basicRadialBarChart.series"
-              :options="basicRadialBarChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="basicRadialBarChart.series"
+              :options="basicRadialBarChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -81,22 +74,15 @@ export default {
       <!-- end col -->
       <div class="col-lg-6">
         <div class="card">
-          <div
-            class="card-header justify-content-between d-flex align-items-center"
-          >
+          <div class="card-header justify-content-between d-flex align-items-center">
             <h4 class="card-title">Multiple Radialbar</h4>
-            
+
           </div>
           <!-- end card header -->
           <div class="card-body">
             <div id="multiple_radialbar" class="apex-charts" dir="ltr"></div>
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="multiRadialbarChart.series"
-              :options="multiRadialbarChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="multiRadialbarChart.series"
+              :options="multiRadialbarChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -108,21 +94,14 @@ export default {
     <div class="row">
       <div class="col-lg-6">
         <div class="card">
-          <div
-            class="card-header justify-content-between d-flex align-items-center"
-          >
+          <div class="card-header justify-content-between d-flex align-items-center">
             <h4 class="card-title">Circle Chart - Custom Angle</h4>
-            
+
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="circleAngleChart.series"
-              :options="circleAngleChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="circleAngleChart.series"
+              :options="circleAngleChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -130,21 +109,14 @@ export default {
       <!-- end col -->
       <div class="col-lg-6">
         <div class="card">
-          <div
-            class="card-header justify-content-between d-flex align-items-center"
-          >
+          <div class="card-header justify-content-between d-flex align-items-center">
             <h4 class="card-title">Gradient Circle Chart</h4>
-            
+
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="gradientRadialbarChart.series"
-              :options="gradientRadialbarChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="gradientRadialbarChart.series"
+              :options="gradientRadialbarChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -156,21 +128,14 @@ export default {
     <div class="row mb-4">
       <div class="col-lg-6">
         <div class="card h-100 mb-xl-0">
-          <div
-            class="card-header justify-content-between d-flex align-items-center"
-          >
+          <div class="card-header justify-content-between d-flex align-items-center">
             <h4 class="card-title">Stroked Circular Gauge</h4>
-            
+
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="strokedRadialbarChart.series"
-              :options="strokedRadialbarChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="strokedRadialbarChart.series"
+              :options="strokedRadialbarChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -178,21 +143,14 @@ export default {
       <!-- end col -->
       <div class="col-lg-6">
         <div class="card h-100 mb-xl-0">
-          <div
-            class="card-header justify-content-between d-flex align-items-center"
-          >
+          <div class="card-header justify-content-between d-flex align-items-center">
             <h4 class="card-title">Semi Circular Gauge</h4>
-            
+
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="semiRadialbarChart.series"
-              :options="semiRadialbarChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="semiRadialbarChart.series"
+              :options="semiRadialbarChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->

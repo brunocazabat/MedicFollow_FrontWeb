@@ -34,12 +34,7 @@ export default {
 </script>
 
 <template>
-  <l-map
-    :zoom="zoom"
-    :center="center"
-    :options="mapOptions"
-    style="height: 400px; width: 100%"
-  >
+  <l-map :zoom="zoom" :center="center" :options="mapOptions" style="height: 400px; width: 100%">
     <l-tile-layer :url="url" :attribution="attribution" />
     <l-marker :lat-lng="withTooltip">
       <l-tooltip :options="{ permanent: true, interactive: true }">

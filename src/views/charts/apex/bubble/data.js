@@ -1,25 +1,28 @@
 // Bubble Charts Generate Data
-function getChartColorsArray(colors){
+function getChartColorsArray(colors) {
   colors = JSON.parse(colors);
   return colors.map(function (value) {
     var newValue = value.replace(" ", "");
     if (newValue.indexOf(",") === -1) {
-      var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
-          if (color) {
-          color = color.replace(" ", "");
-          return color;
-          }
-          else return newValue;
+      var color = getComputedStyle(document.documentElement).getPropertyValue(
+        newValue
+      );
+      if (color) {
+        color = color.replace(" ", "");
+        return color;
+      } else return newValue;
+    } else {
+      var val = value.split(",");
+      if (val.length == 2) {
+        var rgbaColor = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue(val[0]);
+        rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
+        return rgbaColor;
       } else {
-          var val = value.split(',');
-          if (val.length == 2) {
-              var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
-              rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
-              return rgbaColor;
-          } else {
-              return newValue;
-          }
+        return newValue;
       }
+    }
   });
 }
 function generateData(baseval, count, yrange) {
@@ -98,7 +101,9 @@ const simpleBubbleChart = {
     yaxis: {
       max: 70,
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-info", "--vz-warning", "--vz-success"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-info", "--vz-warning", "--vz-success"]'
+    ),
   },
 };
 
@@ -168,7 +173,9 @@ const bubble3DChart = {
     theme: {
       palette: "palette2",
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger"]'
+    ),
   },
 };
 

@@ -389,15 +389,15 @@ export default {
           if (event.target.closest('li').classList.contains('active')) {
             checkedCount > 0
               ? (document.getElementById('email-topbar-actions').style.display =
-                  'block')
+                'block')
               : (document.getElementById('email-topbar-actions').style.display =
-                  'none')
+                'none')
           } else {
             checkedCount > 0
               ? (document.getElementById('email-topbar-actions').style.display =
-                  'block')
+                'block')
               : (document.getElementById('email-topbar-actions').style.display =
-                  'none')
+                'none')
           }
         })
       })
@@ -427,9 +427,9 @@ export default {
             )
             checkedCount > 0
               ? (document.getElementById('email-topbar-actions').style.display =
-                  'block')
+                'block')
               : (document.getElementById('email-topbar-actions').style.display =
-                  'none')
+                'none')
           } else {
             chkbox.checked = false
             chkbox.parentNode.parentNode.parentNode.parentNode.classList.remove(
@@ -437,9 +437,9 @@ export default {
             )
             checkedCount > 0
               ? (document.getElementById('email-topbar-actions').style.display =
-                  'block')
+                'block')
               : (document.getElementById('email-topbar-actions').style.display =
-                  'none')
+                'none')
           }
         })
       })
@@ -628,200 +628,113 @@ export default {
       <div class="email-menu-sidebar" id="menusidebar">
         <div class="p-4 d-flex flex-column h-100">
           <div class="pb-4 border-bottom border-bottom-dashed">
-            <button
-              type="button"
-              class="btn btn-danger w-100"
-              data-bs-toggle="modal"
-              data-bs-target="#composemodal"
-            >
-              <plus-circle-icon
-                class="icon-xs me-1 icon-dual-light"
-              ></plus-circle-icon>
+            <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#composemodal">
+              <plus-circle-icon class="icon-xs me-1 icon-dual-light"></plus-circle-icon>
               Compose
             </button>
           </div>
 
           <div class="mx-n4 px-4 email-menu-sidebar-scroll" data-simplebar>
             <div class="mail-list mt-3">
-              <a href="#" class="active" @click="changemenu('all')"
-                ><em class="ri-mail-fill me-3 align-middle fw-medium"></em>
+              <a href="#" class="active" @click="changemenu('all')"><em
+                  class="ri-mail-fill me-3 align-middle fw-medium"></em>
                 <span class="mail-list-link">All</span>
-                <span class="badge badge-soft-success ms-auto">5</span></a
-              >
-              <a href="#" @click="changemenu('Inbox')"
-                ><em
-                  class="ri-inbox-archive-fill me-3 align-middle fw-medium"
-                ></em>
-                Inbox <span class="badge badge-soft-success ms-auto">5</span></a
-              >
-              <a href="#" @click="changemenu('Sent')"
-                ><em
-                  class="ri-send-plane-2-fill me-3 align-middle fw-medium"
-                ></em>
-                Sent</a
-              >
-              <a href="#" @click="changemenu('Draft')"
-                ><em class="ri-edit-2-fill me-3 align-middle fw-medium"></em
-                >Draft</a
-              >
-              <a href="#" @click="changemenu('Spam')"
-                ><em
-                  class="ri-error-warning-fill me-3 align-middle fw-medium"
-                ></em
-                >Spam</a
-              >
-              <a href="#" @click="changemenu('Trash')"
-                ><em
-                  class="ri-delete-bin-5-fill me-3 align-middle fw-medium"
-                ></em
-                >Trash</a
-              >
-              <a href="#" @click="changemenu('Starred')"
-                ><em class="ri-star-fill me-3 align-middle fw-medium"></em
-                >Starred</a
-              >
-              <a href="#" @click="changemenu('Important')"
-                ><em
-                  class="ri-price-tag-3-fill me-3 align-middle fw-medium"
-                ></em
-                >Important</a
-              >
+                <span class="badge badge-soft-success ms-auto">5</span></a>
+              <a href="#" @click="changemenu('Inbox')"><em
+                  class="ri-inbox-archive-fill me-3 align-middle fw-medium"></em>
+                Inbox <span class="badge badge-soft-success ms-auto">5</span></a>
+              <a href="#" @click="changemenu('Sent')"><em class="ri-send-plane-2-fill me-3 align-middle fw-medium"></em>
+                Sent</a>
+              <a href="#" @click="changemenu('Draft')"><em
+                  class="ri-edit-2-fill me-3 align-middle fw-medium"></em>Draft</a>
+              <a href="#" @click="changemenu('Spam')"><em
+                  class="ri-error-warning-fill me-3 align-middle fw-medium"></em>Spam</a>
+              <a href="#" @click="changemenu('Trash')"><em
+                  class="ri-delete-bin-5-fill me-3 align-middle fw-medium"></em>Trash</a>
+              <a href="#" @click="changemenu('Starred')"><em
+                  class="ri-star-fill me-3 align-middle fw-medium"></em>Starred</a>
+              <a href="#" @click="changemenu('Important')"><em
+                  class="ri-price-tag-3-fill me-3 align-middle fw-medium"></em>Important</a>
             </div>
 
             <div>
               <h5 class="fs-12 text-uppercase text-muted mt-4">Labels</h5>
 
               <div class="mail-list mt-1">
-                <a href="#" @click="changelable('Support')"
-                  ><span
-                    class="ri-checkbox-blank-circle-line me-2 text-info"
-                  ></span>
+                <a href="#" @click="changelable('Support')"><span
+                    class="ri-checkbox-blank-circle-line me-2 text-info"></span>
                   Theme Support
-                  <span class="badge badge-soft-success ms-auto">3</span></a
-                >
-                <a href="#" @click="changelable('Freelance')"
-                  ><span
-                    class="ri-checkbox-blank-circle-line me-2 text-warning"
-                  ></span>
-                  Freelance</a
-                >
-                <a href="#" @click="changelable('Social')"
-                  ><span
-                    class="ri-checkbox-blank-circle-line me-2 text-primary"
-                  ></span>
-                  Social</a
-                >
-                <a href="#" @click="changelable('Friends')"
-                  ><span
-                    class="ri-checkbox-blank-circle-line me-2 text-danger"
-                  ></span>
-                  Friends<span class="badge badge-soft-success ms-auto"
-                    >2</span
-                  ></a
-                >
-                <a href="#" @click="changelable('Family')"
-                  ><span
-                    class="ri-checkbox-blank-circle-line me-2 text-success"
-                  ></span>
-                  Family</a
-                >
+                  <span class="badge badge-soft-success ms-auto">3</span></a>
+                <a href="#" @click="changelable('Freelance')"><span
+                    class="ri-checkbox-blank-circle-line me-2 text-warning"></span>
+                  Freelance</a>
+                <a href="#" @click="changelable('Social')"><span
+                    class="ri-checkbox-blank-circle-line me-2 text-primary"></span>
+                  Social</a>
+                <a href="#" @click="changelable('Friends')"><span
+                    class="ri-checkbox-blank-circle-line me-2 text-danger"></span>
+                  Friends<span class="badge badge-soft-success ms-auto">2</span></a>
+                <a href="#" @click="changelable('Family')"><span
+                    class="ri-checkbox-blank-circle-line me-2 text-success"></span>
+                  Family</a>
               </div>
             </div>
 
             <div class="border-top border-top-dashed pt-3 mt-3">
-              <a
-                href="#"
-                class="btn btn-icon btn-sm btn-soft-info btn-rounded float-end"
-                ><em class="bx bx-plus fs-16"></em
-              ></a>
+              <a href="#" class="btn btn-icon btn-sm btn-soft-info btn-rounded float-end"><em
+                  class="bx bx-plus fs-16"></em></a>
               <h5 class="fs-12 text-uppercase text-muted mb-3">Chat</h5>
 
               <div class="mt-2 vstack gap-3 email-chat-list">
-                <a
-                  href="javascript: void(0);"
-                  class="d-flex align-items-center"
-                >
+                <a href="javascript: void(0);" class="d-flex align-items-center">
                   <div class="flex-shrink-0 me-2 avatar-xs chatlist-user-image">
-                    <img
-                      class="img-fluid rounded-circle"
-                      src="@/assets/images/users/avatar-1.png"
-                      alt=""
-                    />
+                    <img class="img-fluid rounded-circle" src="@/assets/images/users/avatar-1.png" alt="" />
                   </div>
 
                   <div class="flex-grow-1 chat-user-box overflow-hidden">
                     <h5 class="fs-13 text-truncate mb-0 chatlist-user-name">
                       Scott Median
                     </h5>
-                    <small class="text-muted text-truncate mb-0"
-                      >Hello ! are you there?</small
-                    >
+                    <small class="text-muted text-truncate mb-0">Hello ! are you there?</small>
                   </div>
                 </a>
 
-                <a
-                  href="javascript: void(0);"
-                  class="d-flex align-items-center active"
-                >
+                <a href="javascript: void(0);" class="d-flex align-items-center active">
                   <div class="flex-shrink-0 me-2 avatar-xs chatlist-user-image">
-                    <img
-                      class="img-fluid rounded-circle"
-                      src="@/assets/images/users/avatar-1.png"
-                      alt=""
-                    />
+                    <img class="img-fluid rounded-circle" src="@/assets/images/users/avatar-1.png" alt="" />
                   </div>
 
                   <div class="flex-grow-1 chat-user-box overflow-hidden">
                     <h5 class="fs-13 text-truncate mb-0 chatlist-user-name">
                       Julian Rosa
                     </h5>
-                    <small class="text-muted text-truncate mb-0"
-                      >What about our next..</small
-                    >
+                    <small class="text-muted text-truncate mb-0">What about our next..</small>
                   </div>
                 </a>
 
-                <a
-                  href="javascript: void(0);"
-                  class="d-flex align-items-center"
-                >
+                <a href="javascript: void(0);" class="d-flex align-items-center">
                   <div class="flex-shrink-0 me-2 avatar-xs chatlist-user-image">
-                    <img
-                      class="img-fluid rounded-circle"
-                      src="@/assets/images/users/avatar-1.png"
-                      alt=""
-                    />
+                    <img class="img-fluid rounded-circle" src="@/assets/images/users/avatar-1.png" alt="" />
                   </div>
 
                   <div class="flex-grow-1 chat-user-box overflow-hidden">
                     <h5 class="fs-13 text-truncate mb-0 chatlist-user-name">
                       David Medina
                     </h5>
-                    <small class="text-muted text-truncate mb-0"
-                      >Yeah everything is fine</small
-                    >
+                    <small class="text-muted text-truncate mb-0">Yeah everything is fine</small>
                   </div>
                 </a>
 
-                <a
-                  href="javascript: void(0);"
-                  class="d-flex align-items-center"
-                >
+                <a href="javascript: void(0);" class="d-flex align-items-center">
                   <div class="flex-shrink-0 me-2 avatar-xs chatlist-user-image">
-                    <img
-                      class="img-fluid rounded-circle"
-                      src="@/assets/images/users/avatar-1.png"
-                      alt=""
-                    />
+                    <img class="img-fluid rounded-circle" src="@/assets/images/users/avatar-1.png" alt="" />
                   </div>
 
                   <div class="flex-grow-1 chat-user-box overflow-hidden">
                     <h5 class="fs-13 text-truncate mb-0 chatlist-user-name">
                       Jay Baker
                     </h5>
-                    <small class="text-muted text-truncate mb-0"
-                      >Wow that's great</small
-                    >
+                    <small class="text-muted text-truncate mb-0">Wow that's great</small>
                   </div>
                 </a>
               </div>
@@ -831,14 +744,8 @@ export default {
           <div class="mt-auto">
             <h5 class="fs-13">1.75 GB of 10 GB used</h5>
             <div class="progress progress-sm">
-              <div
-                class="progress-bar bg-success"
-                role="progressbar"
-                style="width: 25%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </div>
@@ -850,98 +757,50 @@ export default {
           <div class="border-bottom border-bottom-dashed">
             <div class="row mt-n2 mb-3 mb-sm-0">
               <div class="col col-sm-auto order-1 d-block d-lg-none">
-                <button
-                  type="button"
-                  class="btn btn-soft-success btn-icon btn-sm fs-16 email-menu-btn"
-                >
+                <button type="button" class="btn btn-soft-success btn-icon btn-sm fs-16 email-menu-btn">
                   <em class="ri-menu-2-fill align-bottom"></em>
                 </button>
               </div>
               <div class="col-sm order-3 order-sm-2">
-                <div
-                  class="hstack gap-sm-1 align-items-center flex-wrap email-topbar-link"
-                >
+                <div class="hstack gap-sm-1 align-items-center flex-wrap email-topbar-link">
                   <div class="form-check fs-14 m-0">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkall"
-                    />
+                    <input class="form-check-input" type="checkbox" value="" id="checkall" />
                     <label class="form-check-label" for="flexCheck18"></label>
                   </div>
                   <div id="email-topbar-actions">
-                    <button
-                      type="button"
-                      class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
-                      data-bs-toggle="tooltip"
-                      data-bs-trigger="hover"
-                      data-bs-placement="top"
-                      title="Archive"
-                    >
+                    <button type="button" class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
+                      data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Archive">
                       <em class="ri-inbox-archive-fill align-bottom"></em>
                     </button>
-                    <button
-                      type="button"
-                      class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
-                      data-bs-toggle="tooltip"
-                      data-bs-trigger="hover"
-                      data-bs-placement="top"
-                      title="Report Spam"
-                    >
+                    <button type="button" class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
+                      data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Report Spam">
                       <em class="ri-error-warning-fill align-bottom"></em>
                     </button>
-                    <button
-                      type="button"
-                      class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
-                      data-bs-toggle="modal"
-                      data-bs-target="#removeItemModal"
-                      data-bs-trigger="hover"
-                      data-bs-placement="top"
-                      title="Trash"
-                    >
+                    <button type="button" class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
+                      data-bs-toggle="modal" data-bs-target="#removeItemModal" data-bs-trigger="hover"
+                      data-bs-placement="top" title="Trash">
                       <em class="ri-delete-bin-5-fill align-bottom"></em>
                     </button>
                   </div>
                   <div class="vr align-self-center mx-2"></div>
-                  <button
-                    type="button"
-                    class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
-                    data-bs-toggle="tooltip"
-                    data-bs-trigger="hover"
-                    data-bs-placement="top"
-                    title="Labels"
-                  >
+                  <button type="button" class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
+                    data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Labels">
                     <em class="ri-mail-open-fill align-bottom"></em>
                   </button>
-                  <button
-                    type="button"
-                    class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
-                    data-bs-toggle="tooltip"
-                    data-bs-trigger="hover"
-                    data-bs-placement="top"
-                    title="Labels"
-                  >
+                  <button type="button" class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
+                    data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Labels">
                     <em class="ri-price-tag-3-fill align-bottom"></em>
                   </button>
                 </div>
               </div>
               <div class="col-auto order-2 order-sm-3">
                 <div class="d-flex gap-sm-1 email-topbar-link">
-                  <button
-                    type="button"
-                    class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
-                  >
+                  <button type="button" class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16">
                     <em class="ri-refresh-line align-bottom"></em>
                   </button>
                   <div class="dropdown">
-                    <button
-                      class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
+                    <button class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16" type="button"
+                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <em class="ri-more-2-fill align-bottom"></em>
                     </button>
                     <div class="dropdown-menu dropdown-menu-end">
@@ -958,40 +817,24 @@ export default {
 
             <div class="row align-items-center mt-3">
               <div class="col">
-                <ul
-                  class="nav nav-tabs nav-tabs-custom nav-primary gap-1 text-center border-bottom-0"
-                  role="tablist"
-                  id="mailfilter"
-                >
+                <ul class="nav nav-tabs nav-tabs-custom nav-primary gap-1 text-center border-bottom-0" role="tablist"
+                  id="mailfilter">
                   <li class="nav-item tabtype">
-                    <a
-                      class="nav-link fw-semibold active"
-                      id="primarytab"
-                      href="#"
-                      @click="changetab('primary')"
-                    >
-                      <em
-                        class="ri-inbox-fill align-bottom d-inline-block"
-                      ></em>
+                    <a class="nav-link fw-semibold active" id="primarytab" href="#" @click="changetab('primary')">
+                      <em class="ri-inbox-fill align-bottom d-inline-block"></em>
                       <span class="ms-1 d-none d-sm-inline-block">Primary</span>
                     </a>
                   </li>
                   <li class="nav-item tabtype">
                     <a class="nav-link fw-semibold" href="#">
-                      <em
-                        class="ri-group-fill align-bottom d-inline-block"
-                      ></em>
+                      <em class="ri-group-fill align-bottom d-inline-block"></em>
                       <span class="ms-1 d-none d-sm-inline-block">Social</span>
                     </a>
                   </li>
                   <li class="nav-item tabtype">
                     <a class="nav-link fw-semibold" href="#">
-                      <em
-                        class="ri-price-tag-3-fill align-bottom d-inline-block"
-                      ></em>
-                      <span class="ms-1 d-none d-sm-inline-block"
-                        >Promotions</span
-                      >
+                      <em class="ri-price-tag-3-fill align-bottom d-inline-block"></em>
+                      <span class="ms-1 d-none d-sm-inline-block">Promotions</span>
                     </a>
                   </li>
                 </ul>
@@ -1007,55 +850,28 @@ export default {
               <span class="visually-hidden">Loading...</span>
             </div>
           </div>
-          <div
-            class="message-list-content mx-n4 px-4 message-list-scroll"
-            id="emailsdatas"
-            data-simplebar
-          >
+          <div class="message-list-content mx-n4 px-4 message-list-scroll" id="emailsdatas" data-simplebar>
             <ul class="message-list">
               <div v-if="tabtype == 'primary'">
-                <div
-                  v-for="(data, index) of emailsdata[0].primary"
-                  :key="index"
-                >
-                  <li
-                    :class="{ unread: data.readed == false }"
-                    v-if="
-                      menutab == 'all' ||
-                      data.tabtype == menutab ||
-                      labeltype == 'all' ||
-                      data.labeltype == labeltype
-                    "
-                  >
+                <div v-for="(data, index) of emailsdata[0].primary" :key="index">
+                  <li :class="{ unread: data.readed == false }" v-if="
+                    menutab == 'all' ||
+                    data.tabtype == menutab ||
+                    labeltype == 'all' ||
+                    data.labeltype == labeltype
+                  ">
                     <div>
                       <div class="col-mail col-mail-1">
                         <div class="form-check checkbox-wrapper-mail fs-14">
                           <span id="id" hidden>{{ data.id }}</span>
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="flexCheck20"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="flexCheck20"
-                          ></label>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheck20" />
+                          <label class="form-check-label" for="flexCheck20"></label>
                         </div>
-                        <button
-                          type="button"
-                          class="btn avatar-xs p-0 favourite-btn fs-15 shadow-none"
-                          :class="{ active: data.starred == true }"
-                          @click="toggleFavourite"
-                        >
+                        <button type="button" class="btn avatar-xs p-0 favourite-btn fs-15 shadow-none"
+                          :class="{ active: data.starred == true }" @click="toggleFavourite">
                           <em class="ri-star-fill"></em>
                         </button>
-                        <a
-                          href="javascript: void(0);"
-                          @click="openemail"
-                          class="title-name"
-                          >{{ data.name }}</a
-                        >
+                        <a href="javascript: void(0);" @click="openemail" class="title-name">{{ data.name }}</a>
                       </div>
                       <div class="col-mail col-mail-2" @click="openemail">
                         <a href="javascript: void(0);" class="subject">
@@ -1069,31 +885,19 @@ export default {
                 </div>
               </div>
               <div v-if="tabtype == 'social'">
-                <li
-                  v-for="(data, index) of emailsdata[0].social"
-                  :key="index"
-                  :class="{ unread: data.readed == false }"
-                >
+                <li v-for="(data, index) of emailsdata[0].social" :key="index"
+                  :class="{ unread: data.readed == false }">
                   <div class="col-mail col-mail-1" @click="openemail">
                     <div class="form-check checkbox-wrapper-mail fs-14">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheck20"
-                      />
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheck20" />
                       <label class="form-check-label" for="flexCheck20"></label>
                     </div>
-                    <button
-                      type="button"
-                      class="btn avatar-xs p-0 favourite-btn fs-15 shadow-none"
-                      :class="{ active: data.starred == true }"
-                      @click="toggleFavourite"
-                    >
+                    <button type="button" class="btn avatar-xs p-0 favourite-btn fs-15 shadow-none"
+                      :class="{ active: data.starred == true }" @click="toggleFavourite">
                       <em class="ri-star-fill"></em>
                     </button>
                     <a href="javascript: void(0);" class="title">{{
-                      data.name
+                        data.name
                     }}</a>
                   </div>
                   <div class="col-mail col-mail-2" @click="openemail">
@@ -1106,31 +910,19 @@ export default {
                 </li>
               </div>
               <div v-if="tabtype == 'promotions'">
-                <li
-                  v-for="(data, index) of emailsdata[0].promotions"
-                  :key="index"
-                  :class="{ unread: data.readed == false }"
-                >
+                <li v-for="(data, index) of emailsdata[0].promotions" :key="index"
+                  :class="{ unread: data.readed == false }">
                   <div class="col-mail col-mail-1">
                     <div class="form-check checkbox-wrapper-mail fs-14">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheck20"
-                      />
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheck20" />
                       <label class="form-check-label" for="flexCheck20"></label>
                     </div>
-                    <button
-                      type="button"
-                      class="btn avatar-xs p-0 favourite-btn fs-15 shadow-none"
-                      :class="{ active: data.starred == true }"
-                      @click="toggleFavourite"
-                    >
+                    <button type="button" class="btn avatar-xs p-0 favourite-btn fs-15 shadow-none"
+                      :class="{ active: data.starred == true }" @click="toggleFavourite">
                       <em class="ri-star-fill"></em>
                     </button>
                     <a href="javascript: void(0);" class="title">{{
-                      data.name
+                        data.name
                     }}</a>
                   </div>
                   <div class="col-mail col-mail-2" @click="openemail">
@@ -1143,10 +935,7 @@ export default {
                 </li>
               </div>
               <li class="bg-transparent text-center">
-                <button
-                  type="button"
-                  class="btn btn-soft-info btn-rounded btn-sm px-2"
-                >
+                <button type="button" class="btn btn-soft-info btn-rounded btn-sm px-2">
                   <em class="mdi mdi-spin mdi-loading me-2"></em>Load More
                 </button>
               </li>
@@ -1162,42 +951,26 @@ export default {
             <div class="row">
               <div class="col">
                 <div class="">
-                  <button
-                    type="button"
-                    class="btn btn-soft-danger btn-icon btn-sm fs-16 close-btn-email"
-                  >
+                  <button type="button" class="btn btn-soft-danger btn-icon btn-sm fs-16 close-btn-email">
                     <em class="ri-close-fill align-bottom"></em>
                   </button>
                 </div>
               </div>
               <div class="col-auto">
-                <div
-                  class="hstack gap-sm-1 align-items-center flex-wrap email-topbar-link"
-                >
-                  <button
-                    type="button"
-                    class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16 favourite-btn active"
-                  >
+                <div class="hstack gap-sm-1 align-items-center flex-wrap email-topbar-link">
+                  <button type="button"
+                    class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16 favourite-btn active">
                     <em class="ri-star-fill align-bottom"></em>
                   </button>
-                  <button
-                    class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
-                  >
+                  <button class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16">
                     <em class="ri-printer-fill align-bottom"></em>
                   </button>
-                  <button
-                    class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
-                  >
+                  <button class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16">
                     <em class="ri-delete-bin-5-fill align-bottom"></em>
                   </button>
                   <div class="dropdown">
-                    <button
-                      class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
+                    <button class="btn shadow-none btn-ghost-secondary btn-icon btn-sm fs-16" type="button"
+                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <em class="ri-more-2-fill align-bottom"></em>
                     </button>
                     <div class="dropdown-menu dropdown-menu-end">
@@ -1223,21 +996,12 @@ export default {
             <div class="accordion accordion-flush">
               <div class="accordion-item border-dashed">
                 <div class="accordion-header">
-                  <a
-                    role="button"
-                    class="btn w-100 text-start px-0 bg-transparent shadow-none collapsed"
-                    data-bs-toggle="collapse"
-                    href="#email-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="email-collapseOne"
-                  >
+                  <a role="button" class="btn w-100 text-start px-0 bg-transparent shadow-none collapsed"
+                    data-bs-toggle="collapse" href="#email-collapseOne" aria-expanded="true"
+                    aria-controls="email-collapseOne">
                     <div class="d-flex align-items-center text-muted">
                       <div class="flex-shrink-0 avatar-xs me-3">
-                        <img
-                          src="@/assets/images//users/avatar-1.png"
-                          alt=""
-                          class="img-fluid rounded-circle"
-                        />
+                        <img src="@/assets/images//users/avatar-1.png" alt="" class="img-fluid rounded-circle" />
                       </div>
                       <div class="flex-grow-1 overflow-hidden">
                         <h5 class="fs-14 text-truncate mb-0">Jack Davis</h5>
@@ -1271,21 +1035,13 @@ export default {
 
                       <div class="d-flex gap-3">
                         <div class="border rounded avatar-xl h-auto">
-                          <img
-                            src="@/assets/images/small/img-2.jpg"
-                            alt=""
-                            class="img-fluid rouned-top"
-                          />
+                          <img src="@/assets/images/small/img-2.jpg" alt="" class="img-fluid rouned-top" />
                           <div class="py-2 text-center">
                             <a href="" class="d-block fw-semibold">Download</a>
                           </div>
                         </div>
                         <div class="border rounded avatar-xl h-auto">
-                          <img
-                            src="@/assets/images/small/img-6.jpg"
-                            alt=""
-                            class="img-fluid rouned-top"
-                          />
+                          <img src="@/assets/images/small/img-6.jpg" alt="" class="img-fluid rouned-top" />
                           <div class="py-2 text-center">
                             <a href="" class="d-block fw-semibold">Download</a>
                           </div>
@@ -1299,21 +1055,12 @@ export default {
 
               <div class="accordion-item border-dashed">
                 <div class="accordion-header">
-                  <a
-                    role="button"
-                    class="btn w-100 text-start px-0 bg-transparent shadow-none collapsed"
-                    data-bs-toggle="collapse"
-                    href="#email-collapseTwo"
-                    aria-expanded="true"
-                    aria-controls="email-collapseTwo"
-                  >
+                  <a role="button" class="btn w-100 text-start px-0 bg-transparent shadow-none collapsed"
+                    data-bs-toggle="collapse" href="#email-collapseTwo" aria-expanded="true"
+                    aria-controls="email-collapseTwo">
                     <div class="d-flex align-items-center text-muted">
                       <div class="flex-shrink-0 avatar-xs me-3">
-                        <img
-                          src="@/assets/images//users/avatar-1.png"
-                          alt=""
-                          class="img-fluid rounded-circle"
-                        />
+                        <img src="@/assets/images//users/avatar-1.png" alt="" class="img-fluid rounded-circle" />
                       </div>
                       <div class="flex-grow-1 overflow-hidden">
                         <h5 class="fs-14 text-truncate mb-0">Anna Adame</h5>
@@ -1348,21 +1095,12 @@ export default {
 
               <div class="accordion-item border-dashed">
                 <div class="accordion-header">
-                  <a
-                    role="button"
-                    class="btn w-100 text-start px-0 bg-transparent shadow-none"
-                    data-bs-toggle="collapse"
-                    href="#email-collapseThree"
-                    aria-expanded="true"
-                    aria-controls="email-collapseThree"
-                  >
+                  <a role="button" class="btn w-100 text-start px-0 bg-transparent shadow-none"
+                    data-bs-toggle="collapse" href="#email-collapseThree" aria-expanded="true"
+                    aria-controls="email-collapseThree">
                     <div class="d-flex align-items-center text-muted">
                       <div class="flex-shrink-0 avatar-xs me-3">
-                        <img
-                          src="@/assets/images//users/avatar-1.png"
-                          alt=""
-                          class="img-fluid rounded-circle"
-                        />
+                        <img src="@/assets/images//users/avatar-1.png" alt="" class="img-fluid rounded-circle" />
                       </div>
                       <div class="flex-grow-1 overflow-hidden">
                         <h5 class="fs-14 text-truncate mb-0">Jack Davis</h5>
@@ -1377,10 +1115,7 @@ export default {
                   </a>
                 </div>
 
-                <div
-                  id="email-collapseThree"
-                  class="accordion-collapse collapse show"
-                >
+                <div id="email-collapseThree" class="accordion-collapse collapse show">
                   <div class="accordion-body text-body px-0">
                     <div>
                       <p>Hi,</p>
@@ -1401,53 +1136,27 @@ export default {
           <div class="mt-auto">
             <form class="mt-2">
               <div>
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Reply :</label
-                >
-                <textarea
-                  class="form-control border-bottom-0 rounded-top rounded-0 border"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                  placeholder="Enter message"
-                ></textarea>
+                <label for="exampleFormControlTextarea1" class="form-label">Reply :</label>
+                <textarea class="form-control border-bottom-0 rounded-top rounded-0 border"
+                  id="exampleFormControlTextarea1" rows="3" placeholder="Enter message"></textarea>
                 <div class="bg-light px-2 py-1 rouned-bottom border">
                   <div class="row">
                     <div class="col">
                       <div class="btn-group" role="group">
-                        <button
-                          type="button"
-                          class="btn btn-sm py-0 fs-15 btn-light"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Bold"
-                        >
+                        <button type="button" class="btn btn-sm py-0 fs-15 btn-light" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="Bold">
                           <em class="ri-bold align-bottom"></em>
                         </button>
-                        <button
-                          type="button"
-                          class="btn btn-sm py-0 fs-15 btn-light"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Italic"
-                        >
+                        <button type="button" class="btn btn-sm py-0 fs-15 btn-light" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="Italic">
                           <em class="ri-italic align-bottom"></em>
                         </button>
-                        <button
-                          type="button"
-                          class="btn btn-sm py-0 fs-15 btn-light"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Link"
-                        >
+                        <button type="button" class="btn btn-sm py-0 fs-15 btn-light" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="Link">
                           <em class="ri-link align-bottom"></em>
                         </button>
-                        <button
-                          type="button"
-                          class="btn btn-sm py-0 fs-15 btn-light"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title="Image"
-                        >
+                        <button type="button" class="btn btn-sm py-0 fs-15 btn-light" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="Image">
                           <em class="ri-image-2-line align-bottom"></em>
                         </button>
                       </div>
@@ -1457,22 +1166,15 @@ export default {
                         <button type="button" class="btn btn-sm btn-success">
                           <em class="ri-send-plane-2-fill align-bottom"></em>
                         </button>
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-success dropdown-toggle dropdown-toggle-split"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                        <button type="button" class="btn btn-sm btn-success dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown" aria-expanded="false">
                           <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                           <li>
-                            <a class="dropdown-item" href="#"
-                              ><em
-                                class="ri-timer-line text-muted me-1 align-bottom"
-                              ></em>
-                              Schedule Send</a
-                            >
+                            <a class="dropdown-item" href="#"><em
+                                class="ri-timer-line text-muted me-1 align-bottom"></em>
+                              Schedule Send</a>
                           </li>
                         </ul>
                       </div>
@@ -1486,26 +1188,16 @@ export default {
       </div>
       <!-- end email-detail-content -->
     </div>
-    <div
-      class="email-chat-detail"
-      id="emailchat-detailElem"
-      style="display: none"
-    >
+    <div class="email-chat-detail" id="emailchat-detailElem" style="display: none">
       <div class="card mb-0">
-        <div
-          class="card-header align-items-center d-flex bg-primary text-white-50"
-        >
+        <div class="card-header align-items-center d-flex bg-primary text-white-50">
           <div class="flex-grow-1">
             <h5 class="fs-13 text-white mb-1 profile-username">Julian Rosa</h5>
             <p class="mb-0 fs-12 lh-1">Active</p>
           </div>
           <div class="flex-shrink-0">
             <div class="mt-n3 me-n3">
-              <button
-                type="button"
-                class="btn btn-link text-white fs-16 text-decoration-none"
-                id="emailchat-btn-close"
-              >
+              <button type="button" class="btn btn-link text-white fs-16 text-decoration-none" id="emailchat-btn-close">
                 <em class="ri-close-fill"></em>
               </button>
             </div>
@@ -1515,37 +1207,21 @@ export default {
 
         <div class="card-body p-0">
           <div id="users-chat">
-            <div
-              class="chat-conversation p-3"
-              id="chat-conversation"
-              data-simplebar="init"
-              style="height: 250px"
-            >
+            <div class="chat-conversation p-3" id="chat-conversation" data-simplebar="init" style="height: 250px">
               <div class="simplebar-wrapper" style="margin: -16px">
                 <div class="simplebar-height-auto-observer-wrapper">
                   <div class="simplebar-height-auto-observer"></div>
                 </div>
                 <div class="simplebar-mask">
                   <div class="simplebar-offset" style="right: 0px; bottom: 0px">
-                    <div
-                      class="simplebar-content-wrapper"
-                      tabindex="0"
-                      role="region"
-                      aria-label="scrollable content"
-                      style="height: 100%; overflow: hidden scroll"
-                    >
+                    <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content"
+                      style="height: 100%; overflow: hidden scroll">
                       <div class="simplebar-content" style="padding: 16px">
-                        <ul
-                          class="list-unstyled chat-conversation-list chat-sm"
-                          id="users-conversation"
-                        >
+                        <ul class="list-unstyled chat-conversation-list chat-sm" id="users-conversation">
                           <li class="chat-list left">
                             <div class="conversation-list">
                               <div class="chat-avatar">
-                                <img
-                                  src="assets/images/users/avatar-1.png"
-                                  alt=""
-                                />
+                                <img src="assets/images/users/avatar-1.png" alt="" />
                               </div>
                               <div class="user-chat-content">
                                 <div class="ctext-wrap">
@@ -1554,52 +1230,25 @@ export default {
                                       Good morning 😊
                                     </p>
                                   </div>
-                                  <div
-                                    class="dropdown align-self-start message-box-drop"
-                                  >
-                                    <a
-                                      class="dropdown-toggle"
-                                      href="#"
-                                      role="button"
-                                      data-bs-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
+                                  <div class="dropdown align-self-start message-box-drop">
+                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                      aria-haspopup="true" aria-expanded="false">
                                       <em class="ri-more-2-fill"></em>
                                     </a>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#"
-                                        ><em
-                                          class="ri-reply-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Reply</a
-                                      >
-                                      <a class="dropdown-item" href="#"
-                                        ><em
-                                          class="ri-file-copy-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Copy</a
-                                      >
-                                      <a
-                                        class="dropdown-item delete-item"
-                                        href="#"
-                                        ><em
-                                          class="ri-delete-bin-5-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Delete</a
-                                      >
+                                      <a class="dropdown-item" href="#"><em
+                                          class="ri-reply-line me-2 text-muted align-bottom"></em>Reply</a>
+                                      <a class="dropdown-item" href="#"><em
+                                          class="ri-file-copy-line me-2 text-muted align-bottom"></em>Copy</a>
+                                      <a class="dropdown-item delete-item" href="#"><em
+                                          class="ri-delete-bin-5-line me-2 text-muted align-bottom"></em>Delete</a>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="conversation-name">
-                                  <small class="text-muted time"
-                                    >09:07 am</small
-                                  >
-                                  <span class="text-success check-message-icon"
-                                    ><em
-                                      class="ri-check-double-line align-bottom"
-                                    ></em
-                                  ></span>
+                                  <small class="text-muted time">09:07 am</small>
+                                  <span class="text-success check-message-icon"><em
+                                      class="ri-check-double-line align-bottom"></em></span>
                                 </div>
                               </div>
                             </div>
@@ -1616,52 +1265,25 @@ export default {
                                       next meeting?
                                     </p>
                                   </div>
-                                  <div
-                                    class="dropdown align-self-start message-box-drop"
-                                  >
-                                    <a
-                                      class="dropdown-toggle"
-                                      href="#"
-                                      role="button"
-                                      data-bs-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
+                                  <div class="dropdown align-self-start message-box-drop">
+                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                      aria-haspopup="true" aria-expanded="false">
                                       <em class="ri-more-2-fill"></em>
                                     </a>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#"
-                                        ><em
-                                          class="ri-reply-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Reply</a
-                                      >
-                                      <a class="dropdown-item" href="#"
-                                        ><em
-                                          class="ri-file-copy-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Copy</a
-                                      >
-                                      <a
-                                        class="dropdown-item delete-item"
-                                        href="#"
-                                        ><em
-                                          class="ri-delete-bin-5-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Delete</a
-                                      >
+                                      <a class="dropdown-item" href="#"><em
+                                          class="ri-reply-line me-2 text-muted align-bottom"></em>Reply</a>
+                                      <a class="dropdown-item" href="#"><em
+                                          class="ri-file-copy-line me-2 text-muted align-bottom"></em>Copy</a>
+                                      <a class="dropdown-item delete-item" href="#"><em
+                                          class="ri-delete-bin-5-line me-2 text-muted align-bottom"></em>Delete</a>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="conversation-name">
-                                  <small class="text-muted time"
-                                    >09:08 am</small
-                                  >
-                                  <span class="text-success check-message-icon"
-                                    ><em
-                                      class="ri-check-double-line align-bottom"
-                                    ></em
-                                  ></span>
+                                  <small class="text-muted time">09:08 am</small>
+                                  <span class="text-success check-message-icon"><em
+                                      class="ri-check-double-line align-bottom"></em></span>
                                 </div>
                               </div>
                             </div>
@@ -1671,10 +1293,7 @@ export default {
                           <li class="chat-list left">
                             <div class="conversation-list">
                               <div class="chat-avatar">
-                                <img
-                                  src="assets/images/users/avatar-1.png"
-                                  alt=""
-                                />
+                                <img src="assets/images/users/avatar-1.png" alt="" />
                               </div>
                               <div class="user-chat-content">
                                 <div class="ctext-wrap">
@@ -1684,52 +1303,25 @@ export default {
                                       tomorrow at 10.00 AM
                                     </p>
                                   </div>
-                                  <div
-                                    class="dropdown align-self-start message-box-drop"
-                                  >
-                                    <a
-                                      class="dropdown-toggle"
-                                      href="#"
-                                      role="button"
-                                      data-bs-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
+                                  <div class="dropdown align-self-start message-box-drop">
+                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                      aria-haspopup="true" aria-expanded="false">
                                       <em class="ri-more-2-fill"></em>
                                     </a>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#"
-                                        ><em
-                                          class="ri-reply-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Reply</a
-                                      >
-                                      <a class="dropdown-item" href="#"
-                                        ><em
-                                          class="ri-file-copy-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Copy</a
-                                      >
-                                      <a
-                                        class="dropdown-item delete-item"
-                                        href="#"
-                                        ><em
-                                          class="ri-delete-bin-5-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Delete</a
-                                      >
+                                      <a class="dropdown-item" href="#"><em
+                                          class="ri-reply-line me-2 text-muted align-bottom"></em>Reply</a>
+                                      <a class="dropdown-item" href="#"><em
+                                          class="ri-file-copy-line me-2 text-muted align-bottom"></em>Copy</a>
+                                      <a class="dropdown-item delete-item" href="#"><em
+                                          class="ri-delete-bin-5-line me-2 text-muted align-bottom"></em>Delete</a>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="conversation-name">
-                                  <small class="text-muted time"
-                                    >09:10 am</small
-                                  >
-                                  <span class="text-success check-message-icon"
-                                    ><em
-                                      class="ri-check-double-line align-bottom"
-                                    ></em
-                                  ></span>
+                                  <small class="text-muted time">09:10 am</small>
+                                  <span class="text-success check-message-icon"><em
+                                      class="ri-check-double-line align-bottom"></em></span>
                                 </div>
                               </div>
                             </div>
@@ -1745,52 +1337,25 @@ export default {
                                       Wow that's great
                                     </p>
                                   </div>
-                                  <div
-                                    class="dropdown align-self-start message-box-drop"
-                                  >
-                                    <a
-                                      class="dropdown-toggle"
-                                      href="#"
-                                      role="button"
-                                      data-bs-toggle="dropdown"
-                                      aria-haspopup="true"
-                                      aria-expanded="false"
-                                    >
+                                  <div class="dropdown align-self-start message-box-drop">
+                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                      aria-haspopup="true" aria-expanded="false">
                                       <em class="ri-more-2-fill"></em>
                                     </a>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#"
-                                        ><em
-                                          class="ri-reply-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Reply</a
-                                      >
-                                      <a class="dropdown-item" href="#"
-                                        ><em
-                                          class="ri-file-copy-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Copy</a
-                                      >
-                                      <a
-                                        class="dropdown-item delete-item"
-                                        href="#"
-                                        ><em
-                                          class="ri-delete-bin-5-line me-2 text-muted align-bottom"
-                                        ></em
-                                        >Delete</a
-                                      >
+                                      <a class="dropdown-item" href="#"><em
+                                          class="ri-reply-line me-2 text-muted align-bottom"></em>Reply</a>
+                                      <a class="dropdown-item" href="#"><em
+                                          class="ri-file-copy-line me-2 text-muted align-bottom"></em>Copy</a>
+                                      <a class="dropdown-item delete-item" href="#"><em
+                                          class="ri-delete-bin-5-line me-2 text-muted align-bottom"></em>Delete</a>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="conversation-name">
-                                  <small class="text-muted time"
-                                    >09:12 am</small
-                                  >
-                                  <span class="text-success check-message-icon"
-                                    ><em
-                                      class="ri-check-double-line align-bottom"
-                                    ></em
-                                  ></span>
+                                  <small class="text-muted time">09:12 am</small>
+                                  <span class="text-success check-message-icon"><em
+                                      class="ri-check-double-line align-bottom"></em></span>
                                 </div>
                               </div>
                             </div>
@@ -1801,32 +1366,17 @@ export default {
                     </div>
                   </div>
                 </div>
-                <div
-                  class="simplebar-placeholder"
-                  style="width: auto; height: 479px"
-                ></div>
+                <div class="simplebar-placeholder" style="width: auto; height: 479px"></div>
               </div>
-              <div
-                class="simplebar-track simplebar-horizontal"
-                style="visibility: hidden"
-              >
-                <div
-                  class="simplebar-scrollbar"
-                  style="width: 0px; display: none"
-                ></div>
+              <div class="simplebar-track simplebar-horizontal" style="visibility: hidden">
+                <div class="simplebar-scrollbar" style="width: 0px; display: none"></div>
               </div>
-              <div
-                class="simplebar-track simplebar-vertical"
-                style="visibility: visible"
-              >
-                <div
-                  class="simplebar-scrollbar"
-                  style="
+              <div class="simplebar-track simplebar-vertical" style="visibility: visible">
+                <div class="simplebar-scrollbar" style="
                     height: 130px;
                     display: block;
                     transform: translate3d(0px, 120px, 0px);
-                  "
-                ></div>
+                  "></div>
               </div>
             </div>
           </div>
@@ -1835,11 +1385,7 @@ export default {
             <div class="row g-2 mx-3 mt-2 mb-3">
               <div class="col">
                 <div class="position-relative">
-                  <input
-                    type="text"
-                    class="form-control border-light bg-light"
-                    placeholder="Enter Message..."
-                  />
+                  <input type="text" class="form-control border-light bg-light" placeholder="Enter Message..." />
                 </div>
               </div>
               <!-- end col -->
@@ -1858,63 +1404,34 @@ export default {
     </div>
     <!-- end email wrapper -->
     <!-- Modal -->
-    <div
-      class="modal fade"
-      id="composemodal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="composemodalTitle"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="composemodal" tabindex="-1" role="dialog" aria-labelledby="composemodalTitle"
+      aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header p-3 bg-light">
             <h5 class="modal-title" id="composemodalTitle">New Message</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div>
               <div class="mb-3 position-relative">
-                <Multiselect
-                  v-model="value"
-                  mode="tags"
-                  class="form-control email-compose-input"
-                  :close-on-select="false"
-                  :searchable="true"
-                  :create-option="true"
-                  :options="[
+                <Multiselect v-model="value" mode="tags" class="form-control email-compose-input"
+                  :close-on-select="false" :searchable="true" :create-option="true" :options="[
                     {
                       value: 'support@themesbrand.com',
                       label: 'support@themesbrand.com'
                     },
                     { value: 'photoshop', label: 'themesbrand@gmail.com' }
-                  ]"
-                />
+                  ]" />
                 <div class="position-absolute top-0 end-0">
                   <div class="d-flex">
-                    <button
-                      class="btn btn-link text-reset fw-semibold px-2"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#CcRecipientsCollapse"
-                      aria-expanded="false"
-                      aria-controls="CcRecipientsCollapse"
-                    >
+                    <button class="btn btn-link text-reset fw-semibold px-2" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#CcRecipientsCollapse" aria-expanded="false" aria-controls="CcRecipientsCollapse">
                       Cc
                     </button>
-                    <button
-                      class="btn btn-link text-reset fw-semibold px-2"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#BccRecipientsCollapse"
-                      aria-expanded="false"
-                      aria-controls="BccRecipientsCollapse"
-                    >
+                    <button class="btn btn-link text-reset fw-semibold px-2" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#BccRecipientsCollapse" aria-expanded="false"
+                      aria-controls="BccRecipientsCollapse">
                       Bcc
                     </button>
                   </div>
@@ -1923,27 +1440,15 @@ export default {
               <div class="collapse" id="CcRecipientsCollapse">
                 <div class="mb-3">
                   <label>Cc:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    data-choices
-                    data-choices-limit="15"
-                    data-choices-removeItem
-                    placeholder="Cc recipients"
-                  />
+                  <input type="text" class="form-control" data-choices data-choices-limit="15" data-choices-removeItem
+                    placeholder="Cc recipients" />
                 </div>
               </div>
               <div class="collapse" id="BccRecipientsCollapse">
                 <div class="mb-3">
                   <label>Bcc:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    data-choices
-                    data-choices-limit="15"
-                    data-choices-removeItem
-                    placeholder="Bcc recipients"
-                  />
+                  <input type="text" class="form-control" data-choices data-choices-limit="15" data-choices-removeItem
+                    placeholder="Bcc recipients" />
                 </div>
               </div>
 
@@ -1952,41 +1457,25 @@ export default {
               </div>
               <div class="ck-editor-reverse">
                 <div id="email-editor"></div>
-                <ckeditor
-                  v-model="editorData"
-                  :editor="editor"
-                  id="email-editor"
-                ></ckeditor>
+                <ckeditor v-model="editorData" :editor="editor" id="email-editor"></ckeditor>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn shadow-none btn-ghost-danger"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn shadow-none btn-ghost-danger" data-bs-dismiss="modal">
               Discard
             </button>
 
             <div class="btn-group">
               <button type="button" class="btn btn-success">Send</button>
-              <button
-                type="button"
-                class="btn btn-success dropdown-toggle dropdown-toggle-split"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="visually-hidden">Toggle Dropdown</span>
               </button>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
-                  <a class="dropdown-item" href="#"
-                    ><em
-                      class="ri-timer-line text-muted me-1 align-bottom"
-                    ></em>
-                    Schedule Send</a
-                  >
+                  <a class="dropdown-item" href="#"><em class="ri-timer-line text-muted me-1 align-bottom"></em>
+                    Schedule Send</a>
                 </li>
               </ul>
             </div>
@@ -1994,31 +1483,16 @@ export default {
         </div>
       </div>
     </div>
-    <div
-      id="removeItemModal"
-      class="modal fade zoomIn"
-      tabindex="-1"
-      aria-hidden="true"
-    >
+    <div id="removeItemModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-              id="btn-close"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="btn-close"></button>
           </div>
           <div class="modal-body">
             <div class="mt-2 text-center">
-              <lord-icon
-                src="https://cdn.lordicon.com/gsqxdxog.json"
-                trigger="loop"
-                colors="primary:#f7b84b,secondary:#f06548"
-                style="width: 100px; height: 100px"
-              ></lord-icon>
+              <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop"
+                colors="primary:#f7b84b,secondary:#f06548" style="width: 100px; height: 100px"></lord-icon>
               <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
                 <h4>Are you Sure ?</h4>
                 <p class="text-muted mx-4 mb-0">
@@ -2027,18 +1501,10 @@ export default {
               </div>
             </div>
             <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
-              <button
-                type="button"
-                class="btn w-sm btn-light"
-                data-bs-dismiss="modal"
-              >
+              <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">
                 Close
               </button>
-              <button
-                type="button"
-                class="btn w-sm btn-danger"
-                id="delete-record"
-              >
+              <button type="button" class="btn w-sm btn-danger" id="delete-record">
                 Yes, Delete It!
               </button>
             </div>

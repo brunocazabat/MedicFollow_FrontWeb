@@ -53,11 +53,7 @@ export default {
       <div class="col-sm-6 col-xl-3">
         <!-- Simple card -->
         <div class="card">
-          <img
-            class="card-img-top img-fluid"
-            src="@/assets/images/small/img-1.jpg"
-            alt="Card image cap"
-          />
+          <img class="card-img-top img-fluid" src="@/assets/images/small/img-1.jpg" alt="Card image cap" />
           <div class="card-body">
             <h4 class="card-title mb-2">Web Developer</h4>
             <p class="card-text">
@@ -74,11 +70,7 @@ export default {
       <!-- end col -->
       <div class="col-sm-6 col-xl-3">
         <div class="card">
-          <img
-            class="card-img-top img-fluid"
-            src="@/assets/images/small/img-2.jpg"
-            alt="Card image cap"
-          />
+          <img class="card-img-top img-fluid" src="@/assets/images/small/img-2.jpg" alt="Card image cap" />
           <div class="card-body">
             <h4 class="card-title mb-2">How apps is changing the IT world</h4>
             <p class="card-text mb-0">
@@ -103,11 +95,7 @@ export default {
       <!-- end col -->
       <div class="col-sm-6 col-xl-3">
         <div class="card">
-          <img
-            class="card-img-top img-fluid"
-            src="@/assets/images/small/img-3.jpg"
-            alt="Card image cap"
-          />
+          <img class="card-img-top img-fluid" src="@/assets/images/small/img-3.jpg" alt="Card image cap" />
           <div class="card-body">
             <p class="card-text">
               We quickly learn to fear and thus automatically avoid potentially
@@ -130,11 +118,7 @@ export default {
             <h4 class="card-title mb-2">What planning process needs ?</h4>
             <h6 class="card-subtitle font-14 text-muted">Development</h6>
           </div>
-          <img
-            class="img-fluid"
-            src="@/assets/images/small/img-4.jpg"
-            alt="Card image cap"
-          />
+          <img class="img-fluid" src="@/assets/images/small/img-4.jpg" alt="Card image cap" />
           <div class="card-body">
             <p class="card-text">
               Objectively pursue diverse catalysts for change for interoperable
@@ -160,9 +144,7 @@ export default {
 
     <div class="row">
       <div class="col-12">
-        <div
-          class="justify-content-between d-flex align-items-center mt-3 mb-4"
-        >
+        <div class="justify-content-between d-flex align-items-center mt-3 mb-4">
           <h5 class="mb-0 pb-1 text-decoration-underline">Using Grid Markup</h5>
         </div>
         <div class="row row-cols-xxl-5 row-cols-lg-3 row-cols-1">
@@ -170,11 +152,7 @@ export default {
             <div class="card card-body">
               <div class="d-flex mb-4 align-items-center">
                 <div class="flex-shrink-0">
-                  <img
-                    src="@/assets/images/users/avatar-1.png"
-                    alt
-                    class="avatar-sm rounded-circle"
-                  />
+                  <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
                 </div>
                 <div class="flex-grow-1 ms-2">
                   <h5 class="card-title mb-1">Oliver Phillips</h5>
@@ -183,9 +161,7 @@ export default {
               </div>
               <h6 class="mb-1">$15,548</h6>
               <p class="card-text text-muted">Expense Account</p>
-              <a href="javascript:void(0)" class="btn btn-primary btn-sm"
-                >See Details</a
-              >
+              <a href="javascript:void(0)" class="btn btn-primary btn-sm">See Details</a>
             </div>
           </div>
           <!-- end col -->
@@ -193,11 +169,7 @@ export default {
             <div class="card card-body">
               <div class="d-flex mb-4 align-items-center">
                 <div class="flex-shrink-0">
-                  <img
-                    src="@/assets/images/users/avatar-1.png"
-                    alt
-                    class="avatar-sm rounded-circle"
-                  />
+                  <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
                 </div>
                 <div class="flex-grow-1 ms-2">
                   <h5 class="card-title mb-1">Natasha Carey</h5>
@@ -206,9 +178,7 @@ export default {
               </div>
               <h6 class="mb-1">$8,785</h6>
               <p class="card-text text-muted">Expense Account</p>
-              <a href="javascript:void(0)" class="btn btn-primary btn-sm"
-                >See Details</a
-              >
+              <a href="javascript:void(0)" class="btn btn-primary btn-sm">See Details</a>
             </div>
           </div>
           <!-- end col -->
@@ -216,11 +186,7 @@ export default {
             <div class="card card-body">
               <div class="d-flex mb-4 align-items-center">
                 <div class="flex-shrink-0">
-                  <img
-                    src="@/assets/images/users/avatar-1.png"
-                    alt
-                    class="avatar-sm rounded-circle"
-                  />
+                  <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
                 </div>
                 <div class="flex-grow-1 ms-2">
                   <h5 class="card-title mb-1">Bethany Johnson</h5>
@@ -229,9 +195,7 @@ export default {
               </div>
               <h6 class="mb-1">$1,542</h6>
               <p class="card-text text-muted">Expense Account</p>
-              <a href="javascript:void(0)" class="btn btn-primary btn-sm"
-                >See Details</a
-              >
+              <a href="javascript:void(0)" class="btn btn-primary btn-sm">See Details</a>
             </div>
           </div>
           <!-- end col -->
@@ -239,11 +203,7 @@ export default {
             <div class="card card-body">
               <div class="d-flex mb-4 align-items-center">
                 <div class="flex-shrink-0">
-                  <img
-                    src="@/assets/images/users/avatar-1.png"
-                    alt
-                    class="avatar-sm rounded-circle"
-                  />
+                  <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
                 </div>
                 <div class="flex-grow-1 ms-2">
                   <h5 class="card-title mb-1">Erica Kernan</h5>
@@ -252,9 +212,7 @@ export default {
               </div>
               <h6 class="mb-1">$798</h6>
               <p class="card-text text-muted">Expense Account</p>
-              <a href="javascript:void(0)" class="btn btn-primary btn-sm"
-                >See Details</a
-              >
+              <a href="javascript:void(0)" class="btn btn-primary btn-sm">See Details</a>
             </div>
           </div>
           <!-- end col -->
@@ -262,11 +220,7 @@ export default {
             <div class="card card-body">
               <div class="d-flex mb-4 align-items-center">
                 <div class="flex-shrink-0">
-                  <img
-                    src="@/assets/images/users/avatar-1.png"
-                    alt
-                    class="avatar-sm rounded-circle"
-                  />
+                  <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
                 </div>
                 <div class="flex-grow-1 ms-2">
                   <h5 class="card-title mb-1">Lewis Pratt</h5>
@@ -275,9 +229,7 @@ export default {
               </div>
               <h6 class="mb-1">$2,856</h6>
               <p class="card-text text-muted">Expense Account</p>
-              <a href="javascript:void(0)" class="btn btn-primary btn-sm"
-                >See Details</a
-              >
+              <a href="javascript:void(0)" class="btn btn-primary btn-sm">See Details</a>
             </div>
           </div>
           <!-- end col -->
@@ -290,9 +242,7 @@ export default {
 
     <div class="row">
       <div class="col-12">
-        <div
-          class="justify-content-between d-flex align-items-center mt-3 mb-4"
-        >
+        <div class="justify-content-between d-flex align-items-center mt-3 mb-4">
           <h5 class="mb-0 pb-1 text-decoration-underline">
             Card Text Alignment
           </h5>
@@ -301,9 +251,7 @@ export default {
           <div class="col-xxl-4 col-lg-6">
             <div class="card card-body">
               <div class="avatar-sm mb-3">
-                <div
-                  class="avatar-title bg-soft-success text-success fs-17 rounded"
-                >
+                <div class="avatar-title bg-soft-success text-success fs-17 rounded">
                   <em class="ri-smartphone-line"></em>
                 </div>
               </div>
@@ -312,18 +260,14 @@ export default {
                 Send a link to apply on mobile device. Appropriately communicate
                 one-to-one technology.
               </p>
-              <a href="javascript:void(0);" class="btn btn-success"
-                >Apply Now</a
-              >
+              <a href="javascript:void(0);" class="btn btn-success">Apply Now</a>
             </div>
           </div>
           <!-- end col -->
           <div class="col-xxl-4 col-lg-6">
             <div class="card card-body text-center">
               <div class="avatar-sm mx-auto mb-3">
-                <div
-                  class="avatar-title bg-soft-success text-success fs-17 rounded"
-                >
+                <div class="avatar-title bg-soft-success text-success fs-17 rounded">
                   <em class="ri-add-line"></em>
                 </div>
               </div>
@@ -339,9 +283,7 @@ export default {
           <div class="col-xxl-4 col-lg-6">
             <div class="card card-body text-end">
               <div class="avatar-sm ms-auto mb-3">
-                <div
-                  class="avatar-title bg-soft-success text-success fs-17 rounded"
-                >
+                <div class="avatar-title bg-soft-success text-success fs-17 rounded">
                   <em class="ri-gift-fill"></em>
                 </div>
               </div>
@@ -363,9 +305,7 @@ export default {
 
     <div class="row">
       <div class="col-12">
-        <div
-          class="justify-content-between d-flex align-items-center mt-3 mb-4"
-        >
+        <div class="justify-content-between d-flex align-items-center mt-3 mb-4">
           <h5 class="mb-0 pb-1 text-decoration-underline">
             Card Header and Footer
           </h5>
@@ -374,11 +314,7 @@ export default {
           <div class="col-xxl-4 col-lg-6">
             <div class="card">
               <div class="card-header">
-                <button
-                  type="button"
-                  class="btn-close float-end fs-11"
-                  aria-label="Close"
-                ></button>
+                <button type="button" class="btn-close float-end fs-11" aria-label="Close"></button>
                 <h6 class="card-title mb-0">Hi, Erica Kernan</h6>
               </div>
               <div class="card-body">
@@ -402,11 +338,7 @@ export default {
           <div class="col-xxl-4 col-lg-6">
             <div class="card">
               <div class="card-header">
-                <button
-                  type="button"
-                  class="btn-close float-end fs-11"
-                  aria-label="Close"
-                ></button>
+                <button type="button" class="btn-close float-end fs-11" aria-label="Close"></button>
                 <h6 class="card-title mb-0">
                   Invoice
                   <span class="text-secondary">#45155468</span>
@@ -450,11 +382,7 @@ export default {
                     </blockquote>
                     <figcaption class="blockquote-footer fs-13 text-end mb-0">
                       Creative Agency
-                      <cite
-                        title="Source Title"
-                        class="text-primary fw-semibold"
-                        >Alice Mellor</cite
-                      >
+                      <cite title="Source Title" class="text-primary fw-semibold">Alice Mellor</cite>
                     </figcaption>
                   </figure>
                 </blockquote>
@@ -508,7 +436,7 @@ export default {
               Contrary to popular belief, you don’t have to work endless nights
               and hours to create a
               <a href="javascript:void(0);" class="text-decoration-underline">
-                <b>Fantastic Design</b>
+                <strong>Fantastic Design</strong>
               </a>
               by using complicated 3D elements. Flat design is your friend.
               Remember that. And the great thing about flat design is that it
@@ -543,15 +471,10 @@ export default {
           </div>
           <div class="card-footer">
             <div class="hstack gap-2 justify-content-end">
-              <a
-                href="javascript:void(0)"
-                class="btn btn-link btn-sm link-success"
-              >
+              <a href="javascript:void(0)" class="btn btn-link btn-sm link-success">
                 <em class="ri-close-line align-middle lh-1"></em> Close
               </a>
-              <a href="javasceript:void(0);" class="btn btn-primary btn-sm"
-                >Read More</a
-              >
+              <a href="javasceript:void(0);" class="btn btn-primary btn-sm">Read More</a>
             </div>
           </div>
         </div>
@@ -564,20 +487,12 @@ export default {
       <div class="col-xl-4">
         <div class="card">
           <div class="card-header">
-            <button
-              type="button"
-              class="btn-close float-end fs-11"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close float-end fs-11" aria-label="Close"></button>
             <h6 class="card-title mb-0">Employee Card</h6>
           </div>
           <div class="card-body p-4 text-center">
             <div class="mx-auto avatar-md mb-3">
-              <img
-                src="@/assets/images/users/avatar-1.png"
-                alt
-                class="img-fluid rounded-circle"
-              />
+              <img src="@/assets/images/users/avatar-1.png" alt class="img-fluid rounded-circle" />
             </div>
             <h5 class="card-title mb-1">Gabriel Palmer</h5>
             <p class="text-muted mb-0">Graphic Designer</p>
@@ -585,34 +500,22 @@ export default {
           <div class="card-footer text-center">
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-secondary"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-secondary">
                   <em class="ri-facebook-fill"></em>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-success"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-success">
                   <em class="ri-whatsapp-line"></em>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-primary"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-primary">
                   <em class="ri-linkedin-fill"></em>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-danger"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-danger">
                   <em class="ri-slack-fill"></em>
                 </a>
               </li>
@@ -624,20 +527,12 @@ export default {
       <div class="col-xl-4">
         <div class="card">
           <div class="card-header">
-            <button
-              type="button"
-              class="btn-close float-end fs-11"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close float-end fs-11" aria-label="Close"></button>
             <h6 class="card-title mb-0">Employee Card</h6>
           </div>
           <div class="card-body p-4 text-center">
             <div class="mx-auto avatar-md mb-3">
-              <img
-                src="@/assets/images/users/avatar-1.png"
-                alt
-                class="img-fluid rounded-circle"
-              />
+              <img src="@/assets/images/users/avatar-1.png" alt class="img-fluid rounded-circle" />
             </div>
             <h5 class="card-title mb-1">Amelie Townsend</h5>
             <p class="text-muted mb-0">Project Manager</p>
@@ -645,34 +540,22 @@ export default {
           <div class="card-footer text-center">
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-secondary"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-secondary">
                   <em class="ri-facebook-fill"></em>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-success"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-success">
                   <em class="ri-whatsapp-line"></em>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-primary"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-primary">
                   <em class="ri-linkedin-fill"></em>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-danger"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-danger">
                   <em class="ri-slack-fill"></em>
                 </a>
               </li>
@@ -684,20 +567,12 @@ export default {
       <div class="col-xl-4">
         <div class="card">
           <div class="card-header">
-            <button
-              type="button"
-              class="btn-close float-end fs-11"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close float-end fs-11" aria-label="Close"></button>
             <h6 class="card-title mb-0">Employee Card</h6>
           </div>
           <div class="card-body p-4 text-center">
             <div class="mx-auto avatar-md mb-3">
-              <img
-                src="@/assets/images/users/avatar-1.png"
-                alt
-                class="img-fluid rounded-circle"
-              />
+              <img src="@/assets/images/users/avatar-1.png" alt class="img-fluid rounded-circle" />
             </div>
             <h5 class="card-title mb-1">Jeffrey Montgomery</h5>
             <p class="text-muted mb-0">UI/UX Designer</p>
@@ -705,34 +580,22 @@ export default {
           <div class="card-footer text-center">
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-secondary"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-secondary">
                   <em class="ri-facebook-fill"></em>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-success"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-success">
                   <em class="ri-whatsapp-line"></em>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-primary"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-primary">
                   <em class="ri-linkedin-fill"></em>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a
-                  href="javascript:void(0);"
-                  class="lh-1 align-middle link-danger"
-                >
+                <a href="javascript:void(0);" class="lh-1 align-middle link-danger">
                   <em class="ri-slack-fill"></em>
                 </a>
               </li>
@@ -753,37 +616,21 @@ export default {
                 <h6 class="card-title mb-0">Card with Spinner Loader</h6>
               </div>
               <div class="flex-shrink-0">
-                <ul
-                  class="list-inline card-toolbar-menu d-flex align-items-center mb-0"
-                >
+                <ul class="list-inline card-toolbar-menu d-flex align-items-center mb-0">
                   <li class="list-inline-item">
-                    <a
-                      class="align-middle"
-                      data-toggle="reload"
-                      href="javascript:void(0);"
-                    >
+                    <a class="align-middle" data-toggle="reload" href="javascript:void(0);">
                       <em class="mdi mdi-refresh align-middle"></em>
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a
-                      class="align-middle minimize-card"
-                      data-bs-toggle="collapse"
-                      href="#collapseexample1"
-                      role="button"
-                      aria-expanded="false"
-                      aria-controls="collapseExample2"
-                    >
+                    <a class="align-middle minimize-card" data-bs-toggle="collapse" href="#collapseexample1"
+                      role="button" aria-expanded="false" aria-controls="collapseExample2">
                       <em class="mdi mdi-plus align-middle plus"></em>
                       <em class="mdi mdi-minus align-middle minus"></em>
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <button
-                      type="button"
-                      onclick="delthis('card-none1')"
-                      class="btn-close fs-10 align-middle"
-                    ></button>
+                    <button type="button" onclick="delthis('card-none1')" class="btn-close fs-10 align-middle"></button>
                   </li>
                 </ul>
               </div>
@@ -841,37 +688,21 @@ export default {
                 </h6>
               </div>
               <div class="flex-shrink-0">
-                <ul
-                  class="list-inline card-toolbar-menu d-flex align-items-center mb-0"
-                >
+                <ul class="list-inline card-toolbar-menu d-flex align-items-center mb-0">
                   <li class="list-inline-item">
-                    <a
-                      class="align-middle"
-                      href="javascript:void(0);"
-                      data-toggle="growing-reload"
-                    >
+                    <a class="align-middle" href="javascript:void(0);" data-toggle="growing-reload">
                       <em class="mdi mdi-refresh align-middle"></em>
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a
-                      class="align-middle minimize-card"
-                      data-bs-toggle="collapse"
-                      href="#collapseExample2"
-                      role="button"
-                      aria-expanded="false"
-                      aria-controls="collapseExample2"
-                    >
+                    <a class="align-middle minimize-card" data-bs-toggle="collapse" href="#collapseExample2"
+                      role="button" aria-expanded="false" aria-controls="collapseExample2">
                       <em class="mdi mdi-plus align-middle plus"></em>
                       <em class="mdi mdi-minus align-middle minus"></em>
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <button
-                      type="button"
-                      onclick="delthis('card-none2')"
-                      class="btn-close fs-10 align-middle"
-                    ></button>
+                    <button type="button" onclick="delthis('card-none2')" class="btn-close fs-10 align-middle"></button>
                   </li>
                 </ul>
               </div>
@@ -920,37 +751,21 @@ export default {
                 <h6 class="card-title mb-0">Card with Custom Loader</h6>
               </div>
               <div class="flex-shrink-0">
-                <ul
-                  class="list-inline card-toolbar-menu d-flex align-items-center mb-0"
-                >
+                <ul class="list-inline card-toolbar-menu d-flex align-items-center mb-0">
                   <li class="list-inline-item">
-                    <a
-                      class="align-middle"
-                      href="javascript:void(0);"
-                      data-toggle="customer-loader"
-                    >
+                    <a class="align-middle" href="javascript:void(0);" data-toggle="customer-loader">
                       <em class="mdi mdi-refresh align-middle"></em>
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a
-                      class="align-middle minimize-card"
-                      data-bs-toggle="collapse"
-                      href="#collapseExample3"
-                      role="button"
-                      aria-expanded="false"
-                      aria-controls="collapseExample2"
-                    >
+                    <a class="align-middle minimize-card" data-bs-toggle="collapse" href="#collapseExample3"
+                      role="button" aria-expanded="false" aria-controls="collapseExample2">
                       <em class="mdi mdi-plus align-middle plus"></em>
                       <em class="mdi mdi-minus align-middle minus"></em>
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <button
-                      type="button"
-                      onclick="delthis('card-none3')"
-                      class="btn-close fs-10 align-middle"
-                    ></button>
+                    <button type="button" onclick="delthis('card-none3')" class="btn-close fs-10 align-middle"></button>
                   </li>
                 </ul>
               </div>
@@ -996,9 +811,7 @@ export default {
 
     <div class="row">
       <div class="col-12">
-        <div
-          class="justify-content-between d-flex align-items-center mt-3 mb-4"
-        >
+        <div class="justify-content-between d-flex align-items-center mt-3 mb-4">
           <h5 class="mb-0 text-decoration-underline">
             Card Image Caps & Overlays
           </h5>
@@ -1006,11 +819,7 @@ export default {
         <div class="row">
           <div class="col-xxl-4 col-lg-6">
             <div class="card card-overlay">
-              <img
-                class="card-img img-fluid"
-                src="@/assets/images/small/img-12.jpg"
-                alt="Card image"
-              />
+              <img class="card-img img-fluid" src="@/assets/images/small/img-12.jpg" alt="Card image" />
               <div class="card-img-overlay p-0 d-flex flex-column">
                 <div class="card-header bg-transparent">
                   <h4 class="card-title text-white mb-0">
@@ -1030,9 +839,7 @@ export default {
                 <div class="card-footer bg-transparent text-center">
                   <a href="javascript:void(0);" class="link-light">
                     Read More
-                    <em
-                      class="ri-arrow-right-s-line align-middle ms-1 lh-1"
-                    ></em>
+                    <em class="ri-arrow-right-s-line align-middle ms-1 lh-1"></em>
                   </a>
                 </div>
               </div>
@@ -1041,11 +848,7 @@ export default {
           <!-- end col -->
           <div class="col-xxl-4 col-lg-6">
             <div class="card card-overlay">
-              <img
-                class="card-img img-fluid"
-                src="@/assets/images/small/img-1.jpg"
-                alt="Card image"
-              />
+              <img class="card-img img-fluid" src="@/assets/images/small/img-1.jpg" alt="Card image" />
               <div class="card-img-overlay p-0">
                 <div class="card-header bg-transparent">
                   <h4 class="card-title text-white mb-0">
@@ -1068,11 +871,7 @@ export default {
           <!-- end col -->
           <div class="col-xxl-4 col-lg-6">
             <div class="card card-overlay">
-              <img
-                class="card-img img-fluid"
-                src="@/assets/images/small/img-5.jpg"
-                alt="Card image"
-              />
+              <img class="card-img img-fluid" src="@/assets/images/small/img-5.jpg" alt="Card image" />
               <div class="card-img-overlay p-0" style="top: auto">
                 <div class="card-body">
                   <p class="card-text text-white mb-2">
@@ -1099,11 +898,7 @@ export default {
         <div class="row">
           <div class="col-xxl-4 col-lg-6">
             <div class="card">
-              <img
-                class="card-img-top img-fluid"
-                src="@/assets/images/small/img-6.jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top img-fluid" src="@/assets/images/small/img-6.jpg" alt="Card image cap" />
               <div class="card-body">
                 <h4 class="card-title mb-2">
                   A day in the of a professional fashion designer
@@ -1133,11 +928,7 @@ export default {
                 </p>
                 <p class="card-text">Last updated 3 mins ago</p>
               </div>
-              <img
-                class="card-img-bottom img-fluid"
-                src="@/assets/images/small/img-7.jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-bottom img-fluid" src="@/assets/images/small/img-7.jpg" alt="Card image cap" />
             </div>
           </div>
           <!-- end col -->
@@ -1154,11 +945,7 @@ export default {
                   twee.
                 </p>
               </div>
-              <img
-                class="card-img rounded-0 img-fluid"
-                src="@/assets/images/small/img-8.jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img rounded-0 img-fluid" src="@/assets/images/small/img-8.jpg" alt="Card image cap" />
               <div class="card-footer">
                 <p class="card-text mb-0">Last updated 3 mins ago</p>
               </div>
@@ -1180,11 +967,7 @@ export default {
                   twee.
                 </p>
               </div>
-              <img
-                class="card-img rounded-0 img-fluid"
-                src="@/assets/images/small/img-10.jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img rounded-0 img-fluid" src="@/assets/images/small/img-10.jpg" alt="Card image cap" />
               <div class="card-footer">
                 <p class="card-text mb-0">Last updated 3 mins ago</p>
               </div>
@@ -1194,11 +977,7 @@ export default {
 
           <div class="col-xxl-4 col-lg-6">
             <div class="card">
-              <img
-                class="card-img-top img-fluid"
-                src="@/assets/images/small/img-11.jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top img-fluid" src="@/assets/images/small/img-11.jpg" alt="Card image cap" />
               <div class="card-header">
                 <h4 class="card-title mb-0">
                   A day in the of a professional fashion designer
@@ -1234,11 +1013,7 @@ export default {
                 </p>
                 <p class="card-text mb-0">Last updated 3 mins ago</p>
               </div>
-              <img
-                class="card-img-bottom img-fluid"
-                src="@/assets/images/small/img-11.jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-bottom img-fluid" src="@/assets/images/small/img-11.jpg" alt="Card image cap" />
             </div>
           </div>
           <!-- end col -->
@@ -1250,9 +1025,7 @@ export default {
 
     <div class="row">
       <div class="col-12">
-        <div
-          class="justify-content-between d-flex align-items-center mt-3 mb-4"
-        >
+        <div class="justify-content-between d-flex align-items-center mt-3 mb-4">
           <h5 class="mb-0 pb-1 text-decoration-underline">Horizontal Card</h5>
         </div>
         <div class="row">
@@ -1260,11 +1033,8 @@ export default {
             <div class="card">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    class="rounded-start img-fluid h-100 object-cover"
-                    src="@/assets/images/small/img-12.jpg"
-                    alt="Card image"
-                  />
+                  <img class="rounded-start img-fluid h-100 object-cover" src="@/assets/images/small/img-12.jpg"
+                    alt="Card image" />
                 </div>
                 <div class="col-md-8">
                   <div class="card-header">
@@ -1309,11 +1079,8 @@ export default {
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <img
-                    class="rounded-end img-fluid h-100 object-cover"
-                    src="@/assets/images/small/img-4.jpg"
-                    alt="Card image"
-                  />
+                  <img class="rounded-end img-fluid h-100 object-cover" src="@/assets/images/small/img-4.jpg"
+                    alt="Card image" />
                 </div>
               </div>
             </div>
@@ -1325,11 +1092,8 @@ export default {
             <div class="card">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    class="rounded-start img-fluid h-100 object-cover"
-                    src="@/assets/images/small/img-9.jpg"
-                    alt="Card image"
-                  />
+                  <img class="rounded-start img-fluid h-100 object-cover" src="@/assets/images/small/img-9.jpg"
+                    alt="Card image" />
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -1375,11 +1139,8 @@ export default {
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <img
-                    class="rounded-end img-fluid h-100 object-cover"
-                    src="@/assets/images/small/img-2.jpg"
-                    alt="Card image"
-                  />
+                  <img class="rounded-end img-fluid h-100 object-cover" src="@/assets/images/small/img-2.jpg"
+                    alt="Card image" />
                 </div>
               </div>
             </div>
@@ -1395,9 +1156,7 @@ export default {
 
     <div class="row">
       <div class="col-12">
-        <div
-          class="justify-content-between d-flex align-items-center mt-3 mb-4"
-        >
+        <div class="justify-content-between d-flex align-items-center mt-3 mb-4">
           <h5 class="mb-0 pb-1 text-decoration-underline">
             Card Background Color
           </h5>
@@ -1408,11 +1167,7 @@ export default {
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <div class="flex-shrink-0">
-                    <img
-                      src="@/assets/images/users/avatar-1.png"
-                      alt
-                      class="avatar-sm rounded-circle"
-                    />
+                    <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <p class="card-text">
@@ -1438,11 +1193,7 @@ export default {
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <div class="flex-shrink-0">
-                    <img
-                      src="@/assets/images/users/avatar-1.png"
-                      alt
-                      class="avatar-sm rounded-circle"
-                    />
+                    <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <p class="card-text">
@@ -1468,11 +1219,7 @@ export default {
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <div class="flex-shrink-0">
-                    <img
-                      src="@/assets/images/users/avatar-1.png"
-                      alt
-                      class="avatar-sm rounded-circle"
-                    />
+                    <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <p class="card-text">
@@ -1506,11 +1253,7 @@ export default {
           <div class="card-body">
             <div class="d-flex align-items-center">
               <div class="flex-shrink-0">
-                <img
-                  src="@/assets/images/users/avatar-1.png"
-                  alt
-                  class="avatar-sm rounded-circle"
-                />
+                <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
               </div>
               <div class="flex-grow-1 ms-3">
                 <p class="card-text">
@@ -1536,11 +1279,7 @@ export default {
           <div class="card-body">
             <div class="d-flex align-items-center">
               <div class="flex-shrink-0">
-                <img
-                  src="@/assets/images/users/avatar-1.png"
-                  alt
-                  class="avatar-sm rounded-circle"
-                />
+                <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
               </div>
               <div class="flex-grow-1 ms-3">
                 <p class="card-text">
@@ -1566,11 +1305,7 @@ export default {
           <div class="card-body">
             <div class="d-flex align-items-center">
               <div class="flex-shrink-0">
-                <img
-                  src="@/assets/images/users/avatar-1.png"
-                  alt
-                  class="avatar-sm rounded-circle"
-                />
+                <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
               </div>
               <div class="flex-grow-1 ms-3">
                 <p class="card-text">
@@ -1600,11 +1335,7 @@ export default {
           <div class="card-body">
             <div class="d-flex align-items-center">
               <div class="flex-shrink-0">
-                <img
-                  src="@/assets/images/users/avatar-1.png"
-                  alt
-                  class="avatar-sm rounded-circle"
-                />
+                <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
               </div>
               <div class="flex-grow-1 ms-3">
                 <p class="card-text">
@@ -1630,11 +1361,7 @@ export default {
           <div class="card-body">
             <div class="d-flex align-items-center">
               <div class="flex-shrink-0">
-                <img
-                  src="@/assets/images/users/avatar-1.png"
-                  alt
-                  class="avatar-sm rounded-circle"
-                />
+                <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
               </div>
               <div class="flex-grow-1 ms-3">
                 <p class="card-text">
@@ -1660,9 +1387,7 @@ export default {
 
     <div class="row">
       <div class="col-12">
-        <div
-          class="justify-content-between d-flex align-items-center mt-3 mb-4"
-        >
+        <div class="justify-content-between d-flex align-items-center mt-3 mb-4">
           <h5 class="mb-0 pb-1 text-decoration-underline">Card Border Color</h5>
         </div>
 
@@ -1698,9 +1423,7 @@ export default {
                 <span class="float-end">100%</span>
                 <h6 class="card-title mb-0">
                   Quality Forcast
-                  <span class="badge bg-success align-middle fs-10"
-                    >Excellent</span
-                  >
+                  <span class="badge bg-success align-middle fs-10">Excellent</span>
                 </h6>
               </div>
               <div class="card-body">
@@ -1724,9 +1447,7 @@ export default {
               <div class="card-header">
                 <h6 class="card-title mb-0">
                   Check your E-mails
-                  <span class="badge bg-info align-middle fs-10"
-                    >In Process</span
-                  >
+                  <span class="badge bg-info align-middle fs-10">In Process</span>
                 </h6>
               </div>
               <div class="card-body">
@@ -1873,18 +1594,12 @@ export default {
 
     <div class="row">
       <div class="col-12">
-        <div
-          class="justify-content-between d-flex align-items-center mt-3 mb-4"
-        >
+        <div class="justify-content-between d-flex align-items-center mt-3 mb-4">
           <h5 class="mb-0 pb-1 text-decoration-underline">Card Groups</h5>
         </div>
         <div class="card-group">
           <div class="card mb-4">
-            <img
-              class="card-img-top img-fluid"
-              src="@/assets/images/small/img-4.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top img-fluid" src="@/assets/images/small/img-4.jpg" alt="Card image cap" />
             <div class="card-body">
               <h4 class="card-title">
                 A day in the of a professional fashion designer
@@ -1903,11 +1618,7 @@ export default {
           </div>
           <!-- end card -->
           <div class="card mb-4">
-            <img
-              class="card-img-top img-fluid"
-              src="@/assets/images/small/img-5.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top img-fluid" src="@/assets/images/small/img-5.jpg" alt="Card image cap" />
             <div class="card-body">
               <h4 class="card-title">
                 Manage white space in responsive layouts ?
@@ -1925,11 +1636,7 @@ export default {
           </div>
           <!-- end card -->
           <div class="card mb-4">
-            <img
-              class="card-img-top img-fluid"
-              src="@/assets/images/small/img-6.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top img-fluid" src="@/assets/images/small/img-6.jpg" alt="Card image cap" />
             <div class="card-body">
               <h4 class="card-title">Give your text a good structure?</h4>
               <p class="card-text">
@@ -1963,11 +1670,7 @@ export default {
               A day in the of a professional fashion designer
             </h4>
           </div>
-          <img
-            class="img-fluid"
-            src="@/assets/images/small/img-11.jpg"
-            alt="Card image cap"
-          />
+          <img class="img-fluid" src="@/assets/images/small/img-11.jpg" alt="Card image cap" />
           <div class="card-body">
             <p class="card-text">
               This may be the most commonly encountered tip I received from the
@@ -1986,11 +1689,7 @@ export default {
       <!--end col-->
       <div class="col-xxl col-6">
         <div class="card h-100">
-          <img
-            class="card-img-top img-fluid"
-            src="@/assets/images/small/img-10.jpg"
-            alt="Card image cap"
-          />
+          <img class="card-img-top img-fluid" src="@/assets/images/small/img-10.jpg" alt="Card image cap" />
           <div class="card-body">
             <h4 class="card-title">Give your text a good structure?</h4>
             <p class="card-text">
@@ -2009,11 +1708,7 @@ export default {
       <!--end col-->
       <div class="col-xxl col-6">
         <div class="card h-100">
-          <img
-            class="card-img-top img-fluid"
-            src="@/assets/images/small/img-5.jpg"
-            alt="Card image cap"
-          />
+          <img class="card-img-top img-fluid" src="@/assets/images/small/img-5.jpg" alt="Card image cap" />
           <div class="card-body">
             <h4 class="card-title">
               Manage white space in responsive layouts ?
@@ -2037,19 +1732,13 @@ export default {
 
     <div class="row">
       <div class="col-sm-12">
-        <div
-          class="justify-content-between d-flex align-items-center mt-5 mb-4"
-        >
+        <div class="justify-content-between d-flex align-items-center mt-5 mb-4">
           <h5 class="mb-0 pb-1 text-decoration-underline">Cards Masonry</h5>
         </div>
         <div class="row" data-masonry="{'percentPosition': true }">
           <div class="col-sm-6 col-lg-4">
             <div class="card">
-              <img
-                src="@/assets/images/small/img-3.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="@/assets/images/small/img-3.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title mb-1">
                   Card title that wraps to a new line
@@ -2075,11 +1764,7 @@ export default {
                   twee.
                 </p>
               </div>
-              <img
-                class="card-img rounded-0 img-fluid"
-                src="@/assets/images/small/img-8.jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img rounded-0 img-fluid" src="@/assets/images/small/img-8.jpg" alt="Card image cap" />
               <div class="card-footer">
                 <p class="card-text mb-0">Last updated 3 mins ago</p>
               </div>
@@ -2088,11 +1773,7 @@ export default {
           <!-- end col -->
           <div class="col-sm-6 col-lg-4">
             <div class="card">
-              <img
-                src="@/assets/images/small/img-7.jpg"
-                class="card-img"
-                alt="..."
-              />
+              <img src="@/assets/images/small/img-7.jpg" class="card-img" alt="..." />
             </div>
           </div>
           <!-- end col -->
@@ -2107,9 +1788,7 @@ export default {
                 </blockquote>
                 <figcaption class="blockquote-footer fs-13 text-end mb-0">
                   Creative Agency
-                  <cite title="Source Title" class="text-primary fw-semibold"
-                    >Alice Mellor</cite
-                  >
+                  <cite title="Source Title" class="text-primary fw-semibold">Alice Mellor</cite>
                 </figcaption>
               </figure>
             </div>
@@ -2118,11 +1797,7 @@ export default {
           <div class="col-sm-6 col-lg-4">
             <div class="card">
               <div class="card-header">
-                <button
-                  type="button"
-                  class="btn-close float-end fs-11"
-                  aria-label="Close"
-                ></button>
+                <button type="button" class="btn-close float-end fs-11" aria-label="Close"></button>
                 <h6 class="fs-15 mb-0">Hi, Erica Kernan</h6>
               </div>
               <div class="card-body">
@@ -2150,9 +1825,7 @@ export default {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer posuere erat.
                 </p>
-                <footer
-                  class="blockquote-footer text-white font-size-12 mt-0 mb-0"
-                >
+                <footer class="blockquote-footer text-white font-size-12 mt-0 mb-0">
                   Someone famous in
                   <cite title="Source Title">Source Title</cite>
                 </footer>
@@ -2165,11 +1838,7 @@ export default {
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <div class="flex-shrink-0">
-                    <img
-                      src="@/assets/images/users/avatar-1.png"
-                      alt
-                      class="avatar-sm rounded-circle"
-                    />
+                    <img src="@/assets/images/users/avatar-1.png" alt class="avatar-sm rounded-circle" />
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <p class="card-text">
@@ -2230,31 +1899,21 @@ export default {
 
     <div class="row">
       <div class="col-12">
-        <div
-          class="justify-content-between d-flex align-items-center mt-3 mb-4"
-        >
+        <div class="justify-content-between d-flex align-items-center mt-3 mb-4">
           <h5 class="mb-0 pb-1 text-decoration-underline">Stretched Link</h5>
         </div>
         <!-- end col -->
         <div class="row">
           <div class="col-xl-4">
             <div class="card">
-              <img
-                src="@/assets/images/small/img-3.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="@/assets/images/small/img-3.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Card with stretched link</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a
-                  href="javascript:void(0);"
-                  class="btn btn-primary stretched-link"
-                  >Go somewhere</a
-                >
+                <a href="javascript:void(0);" class="btn btn-primary stretched-link">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -2263,11 +1922,8 @@ export default {
             <div class="card">
               <div class="card-body">
                 <div class="d-flex position-relative">
-                  <img
-                    src="@/assets/images/users/avatar-1.png"
-                    class="flex-shrink-0 me-3 avatar-xl rounded"
-                    alt="..."
-                  />
+                  <img src="@/assets/images/users/avatar-1.png" class="flex-shrink-0 me-3 avatar-xl rounded"
+                    alt="..." />
                   <div>
                     <h5 class="mt-0">Custom component with stretched link</h5>
                     <p>
@@ -2276,9 +1932,7 @@ export default {
                       look like, and we're using it here to give the component a
                       bit of body and size.
                     </p>
-                    <a href="javascript:void(0);" class="stretched-link"
-                      >Go somewhere</a
-                    >
+                    <a href="javascript:void(0);" class="stretched-link">Go somewhere</a>
                   </div>
                 </div>
               </div>
@@ -2287,11 +1941,7 @@ export default {
               <div class="card-body">
                 <div class="row g-0 bg-light position-relative">
                   <div class="col-md-5">
-                    <img
-                      src="@/assets/images/small/img-4.jpg"
-                      class="rounded-start img-fluid"
-                      alt="..."
-                    />
+                    <img src="@/assets/images/small/img-4.jpg" class="rounded-start img-fluid" alt="..." />
                   </div>
                   <div class="col-md-7 p-4">
                     <h5 class="mt-0">Columns with stretched link</h5>
@@ -2301,9 +1951,7 @@ export default {
                       real-world content would look like, and we're using it
                       here to give the component a bit of body and size.
                     </p>
-                    <a href="javascript:void(0);" class="stretched-link"
-                      >Go somewhere</a
-                    >
+                    <a href="javascript:void(0);" class="stretched-link">Go somewhere</a>
                   </div>
                 </div>
               </div>

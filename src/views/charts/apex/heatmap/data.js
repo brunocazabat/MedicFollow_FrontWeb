@@ -1,25 +1,28 @@
 // Heatmap Charts Generatedata
-function getChartColorsArray(colors){
+function getChartColorsArray(colors) {
   colors = JSON.parse(colors);
   return colors.map(function (value) {
     var newValue = value.replace(" ", "");
     if (newValue.indexOf(",") === -1) {
-      var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
-          if (color) {
-          color = color.replace(" ", "");
-          return color;
-          }
-          else return newValue;
+      var color = getComputedStyle(document.documentElement).getPropertyValue(
+        newValue
+      );
+      if (color) {
+        color = color.replace(" ", "");
+        return color;
+      } else return newValue;
+    } else {
+      var val = value.split(",");
+      if (val.length == 2) {
+        var rgbaColor = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue(val[0]);
+        rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
+        return rgbaColor;
       } else {
-          var val = value.split(',');
-          if (val.length == 2) {
-              var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
-              rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
-              return rgbaColor;
-          } else {
-              return newValue;
-          }
+        return newValue;
       }
+    }
   });
 }
 function generateData(count, yrange) {
@@ -274,7 +277,9 @@ const multipleSeriesHeatmapChart = {
     dataLabels: {
       enabled: false,
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-secondary", "--vz-success", "--vz-info", "--vz-warning", "--vz-danger", "--vz-dark", "--vz-primary"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-secondary", "--vz-success", "--vz-info", "--vz-warning", "--vz-danger", "--vz-dark", "--vz-primary"]'
+    ),
     xaxis: {
       type: "category",
       categories: [
@@ -424,7 +429,7 @@ const colorHeatmapChart = {
       style: {
         fontWeight: 500,
       },
-    }
+    },
   },
 };
 

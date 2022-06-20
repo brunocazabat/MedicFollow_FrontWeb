@@ -140,7 +140,7 @@ const boxplotScatterChart = {
     xaxis: {
       type: "datetime",
       tooltip: {
-        formatter: function(val) {
+        formatter: function (val) {
           return new Date(val).getFullYear();
         },
       },

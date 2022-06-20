@@ -468,11 +468,7 @@ export default {
   <Layout>
     <PageHeader :title="title" :items="items" />
     <div class="row">
-      <div
-        class="col-xl-3 col-md-6"
-        v-for="(item, index) of invoiceWidgets"
-        :key="index"
-      >
+      <div class="col-xl-3 col-md-6" v-for="(item, index) of invoiceWidgets" :key="index">
         <!-- card -->
         <div class="card card-animate">
           <div class="card-body">
@@ -530,70 +526,47 @@ export default {
             <div class="d-flex align-items-center">
               <h5 class="card-title mb-0 flex-grow-1">Invoices</h5>
               <div class="flex-shrink-0">
-                <button
-                  class="btn btn-soft-danger me-1"
-                  @click="deleteMultiple"
-                >
+                <button class="btn btn-soft-danger me-1" @click="deleteMultiple">
                   <em class="ri-delete-bin-2-line"></em>
                 </button>
-                <router-link to="/invoices/create" class="btn btn-danger"
-                  ><em class="ri-add-line align-bottom me-1"></em> Create
-                  Invoice</router-link
-                >
+                <router-link to="/invoices/create" class="btn btn-danger"><em
+                    class="ri-add-line align-bottom me-1"></em> Create
+                  Invoice</router-link>
               </div>
             </div>
           </div>
-          <div
-            class="card-body bg-soft-light border border-dashed border-start-0 border-end-0"
-          >
+          <div class="card-body bg-soft-light border border-dashed border-start-0 border-end-0">
             <form>
               <div class="row g-3">
                 <div class="col-xxl-5 col-sm-12">
                   <div class="search-box">
-                    <input
-                      type="text"
-                      class="form-control search bg-light border-light"
-                      placeholder="Search for customer, email, country, status or something..."
-                    />
+                    <input type="text" class="form-control search bg-light border-light"
+                      placeholder="Search for customer, email, country, status or something..." />
                     <em class="ri-search-line search-icon"></em>
                   </div>
                 </div>
                 <!--end col-->
                 <div class="col-xxl-3 col-sm-4">
-                  <flat-pickr
-                    v-model="date"
-                    :config="config"
-                    class="form-control bg-light border-light"
-                    placeholder="Select date"
-                  ></flat-pickr>
+                  <flat-pickr v-model="date" :config="config" class="form-control bg-light border-light"
+                    placeholder="Select date"></flat-pickr>
                 </div>
                 <!--end col-->
                 <div class="col-xxl-3 col-sm-4">
                   <div class="input-light">
-                    <Multiselect
-                      class="form-control"
-                      v-model="value"
-                      :close-on-select="true"
-                      :searchable="true"
-                      :create-option="true"
-                      :options="[
+                    <Multiselect class="form-control" v-model="value" :close-on-select="true" :searchable="true"
+                      :create-option="true" :options="[
                         { value: 'all', label: 'all' },
                         { value: 'Unpaid', label: 'Unpaid' },
                         { value: 'Paid', label: 'Paid' },
                         { value: 'Cancel', label: 'Cancel' },
                         { value: 'Refund', label: 'Refund' }
-                      ]"
-                    />
+                      ]" />
                   </div>
                 </div>
                 <!--end col-->
 
                 <div class="col-xxl-1 col-sm-4">
-                  <button
-                    type="button"
-                    class="btn btn-primary w-100"
-                    onclick="SearchData();"
-                  >
+                  <button type="button" class="btn btn-primary w-100" onclick="SearchData();">
                     <em class="ri-equalizer-fill me-1 align-bottom"></em>
                     Filters
                   </button>
@@ -606,20 +579,12 @@ export default {
           <div class="card-body">
             <div>
               <div class="table-responsive table-card">
-                <table
-                  class="table align-middle table-nowrap"
-                  id="invoiceTable"
-                >
+                <table class="table align-middle table-nowrap" id="invoiceTable">
                   <thead class="text-muted">
                     <tr>
                       <th scope="col" style="width: 50px">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="checkAll"
-                            value="option"
-                          />
+                          <input class="form-check-input" type="checkbox" id="checkAll" value="option" />
                         </div>
                       </th>
                       <th class="sort text-uppercase" data-sort="invoice_id">
@@ -635,10 +600,7 @@ export default {
                         Country
                       </th>
                       <th class="sort text-uppercase" data-sort="date">Date</th>
-                      <th
-                        class="sort text-uppercase"
-                        data-sort="invoice_amount"
-                      >
+                      <th class="sort text-uppercase" data-sort="invoice_amount">
                         Amount
                       </th>
                       <th class="sort text-uppercase" data-sort="status">
@@ -653,35 +615,21 @@ export default {
                     <tr v-for="(item, index) of resultQuery" :key="index">
                       <th scope="row">
                         <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            name="chk_child"
-                            value="option1"
-                          />
+                          <input class="form-check-input" type="checkbox" name="chk_child" value="option1" />
                         </div>
                       </th>
                       <td class="id">
-                        <router-link
-                          to="/invoices/detail"
-                          class="fw-medium link-primary"
-                          >{{ item.invoiceId }}
+                        <router-link to="/invoices/detail" class="fw-medium link-primary">{{ item.invoiceId }}
                         </router-link>
                       </td>
                       <td class="customer_name">
                         <div class="d-flex align-items-center" v-if="item.img">
-                          <img
-                            :src="item.image_src"
-                            alt=""
-                            class="avatar-xs rounded-circle me-2"
-                          />
+                          <img :src="item.image_src" alt="" class="avatar-xs rounded-circle me-2" />
                           {{ item.name }}
                         </div>
                         <div v-if="!item.img" class="d-flex align-items-center">
                           <div class="flex-shrink-0 avatar-xs me-2">
-                            <div
-                              class="avatar-title bg-soft-success text-success rounded-circle fs-13"
-                            >
+                            <div class="avatar-title bg-soft-success text-success rounded-circle fs-13">
                               {{ item.name.charAt(0) }}
                             </div>
                           </div>
@@ -696,66 +644,39 @@ export default {
                       </td>
                       <td class="invoice_amount">${{ item.amount }}</td>
                       <td class="status">
-                        <span
-                          class="badge text-uppercase"
-                          :class="{
-                            'badge-soft-success': item.status == 'Paid',
-                            'badge-soft-warning': item.status == 'Unpaid',
-                            'badge-soft-danger': item.status == 'Cancel',
-                            'badge-soft-primary': item.status == 'Refund'
-                          }"
-                          >{{ item.status }}</span
-                        >
+                        <span class="badge text-uppercase" :class="{
+                          'badge-soft-success': item.status == 'Paid',
+                          'badge-soft-warning': item.status == 'Unpaid',
+                          'badge-soft-danger': item.status == 'Cancel',
+                          'badge-soft-primary': item.status == 'Refund'
+                        }">{{ item.status }}</span>
                       </td>
                       <td>
                         <div class="dropdown">
-                          <button
-                            class="btn btn-soft-secondary btn-sm dropdown"
-                            type="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
+                          <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             <em class="ri-more-fill align-middle"></em>
                           </button>
                           <ul class="dropdown-menu dropdown-menu-end">
                             <li>
-                              <router-link
-                                class="dropdown-item"
-                                :to="'/invoices/detail/' + item._id"
-                              >
-                                <em
-                                  class="ri-eye-fill align-bottom me-2 text-muted"
-                                ></em>
-                                View</router-link
-                              >
+                              <router-link class="dropdown-item" :to="'/invoices/detail/' + item._id">
+                                <em class="ri-eye-fill align-bottom me-2 text-muted"></em>
+                                View
+                              </router-link>
                             </li>
                             <li>
-                              <a class="dropdown-item"
-                                ><em
-                                  class="ri-pencil-fill align-bottom me-2 text-muted"
-                                ></em>
-                                Edit</a
-                              >
+                              <a class="dropdown-item"><em class="ri-pencil-fill align-bottom me-2 text-muted"></em>
+                                Edit</a>
                             </li>
                             <li>
-                              <a
-                                class="dropdown-item"
-                                href="javascript:void(0);"
-                                ><em
-                                  class="ri-download-2-line align-bottom me-2 text-muted"
-                                ></em>
-                                Download</a
-                              >
+                              <a class="dropdown-item" href="javascript:void(0);"><em
+                                  class="ri-download-2-line align-bottom me-2 text-muted"></em>
+                                Download</a>
                             </li>
                             <li class="dropdown-divider"></li>
                             <li>
-                              <a
-                                class="dropdown-item remove-item-btn"
-                                @click="deletedata(item)"
-                              >
-                                <em
-                                  class="ri-delete-bin-fill align-bottom me-2 text-muted"
-                                ></em>
+                              <a class="dropdown-item remove-item-btn" @click="deletedata(item)">
+                                <em class="ri-delete-bin-fill align-bottom me-2 text-muted"></em>
                                 Delete
                               </a>
                             </li>
@@ -765,19 +686,10 @@ export default {
                     </tr>
                   </tbody>
                 </table>
-                <div
-                  class="noresult"
-                  style="display: none"
-                  :class="{ 'd-block': resultQuery.length == 0 }"
-                >
+                <div class="noresult" style="display: none" :class="{ 'd-block': resultQuery.length == 0 }">
                   <div class="text-center">
-                    <lottie
-                      class="avatar-xl"
-                      colors="primary:#121331,secondary:#08a88a"
-                      :options="defaultOptions"
-                      :height="75"
-                      :width="75"
-                    />
+                    <lottie class="avatar-xl" colors="primary:#121331,secondary:#08a88a" :options="defaultOptions"
+                      :height="75" :width="75" />
                     <h5 class="mt-2">Sorry! No Result Found</h5>
                     <p class="text-muted mb-0">
                       We've searched more than 150+ Orders We did not find any
@@ -788,36 +700,21 @@ export default {
               </div>
               <div class="d-flex justify-content-end mt-3">
                 <div class="pagination-wrap hstack gap-2">
-                  <a
-                    class="page-item pagination-prev disabled"
-                    href="#"
-                    v-if="page != 1"
-                    @click="page--"
-                  >
+                  <a class="page-item pagination-prev disabled" href="#" v-if="page != 1" @click="page--">
                     Previous
                   </a>
                   <ul class="pagination listjs-pagination mb-0">
-                    <li
-                      :class="{
-                        active: pageNumber == page,
-                        disabled: pageNumber == '...'
-                      }"
-                      v-for="(pageNumber, index) in pages.slice(
-                        page - 1,
-                        page + 5
-                      )"
-                      :key="index"
-                      @click="page = pageNumber"
-                    >
+                    <li :class="{
+                      active: pageNumber == page,
+                      disabled: pageNumber == '...'
+                    }" v-for="(pageNumber, index) in pages.slice(
+  page - 1,
+  page + 5
+)" :key="index" @click="page = pageNumber">
                       <a class="page" href="#">{{ pageNumber }}</a>
                     </li>
                   </ul>
-                  <a
-                    class="page-item pagination-next"
-                    href="#"
-                    @click="page++"
-                    v-if="page < pages.length"
-                  >
+                  <a class="page-item pagination-next" href="#" @click="page++" v-if="page < pages.length">
                     Next
                   </a>
                 </div>
@@ -825,23 +722,13 @@ export default {
             </div>
 
             <!-- Modal -->
-            <div
-              class="modal fade flip"
-              id="deleteOrder"
-              tabindex="-1"
-              aria-labelledby="deleteOrderLabel"
-              aria-hidden="true"
-            >
+            <div class="modal fade flip" id="deleteOrder" tabindex="-1" aria-labelledby="deleteOrderLabel"
+              aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-body p-5 text-center">
-                    <lottie
-                      class="avatar-xl"
-                      colors="primary:#4b38b3,secondary:#f06548"
-                      :options="defaultOptions1"
-                      :height="90"
-                      :width="90"
-                    />
+                    <lottie class="avatar-xl" colors="primary:#4b38b3,secondary:#f06548" :options="defaultOptions1"
+                      :height="90" :width="90" />
                     <div class="mt-4 text-center">
                       <h4>You are about to delete a order ?</h4>
                       <p class="text-muted fs-15 mb-4">
@@ -849,10 +736,8 @@ export default {
                         from our database.
                       </p>
                       <div class="hstack gap-2 justify-content-center remove">
-                        <button
-                          class="btn btn-link link-success fw-medium text-decoration-none"
-                          data-bs-dismiss="modal"
-                        >
+                        <button class="btn btn-link link-success fw-medium text-decoration-none"
+                          data-bs-dismiss="modal">
                           <em class="ri-close-line me-1 align-middle"></em>
                           Close
                         </button>

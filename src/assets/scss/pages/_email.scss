@@ -154,7 +154,7 @@
         height: 50px;
         line-height: 50px;
         cursor: default;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         clear: both;
 
         a {
@@ -163,7 +163,7 @@
 
         &:hover {
             background: var(--#{$variable-prefix}light);
-            transition-duration: .05s;
+            transition-duration: 0.05s;
         }
 
         .col-mail {
@@ -255,7 +255,6 @@
             background-color: var(--#{$variable-prefix}light);
         }
 
-
         &.unread {
             color: var(--#{$variable-prefix}gray-800);
 
@@ -308,7 +307,6 @@
     }
 }
 
-
 @media (max-width: 575.98px) {
     .message-list li .col-mail-1 {
         width: 180px;
@@ -357,21 +355,20 @@
         height: calc(100vh - #{$header-height} - #{$footer-height} - 54px);
 
         @media (max-width: 991.98px) {
-            height: 100vh
+            height: 100vh;
         }
 
         .email-menu-sidebar-scroll {
             height: calc(100vh - 330px);
 
             @media (max-width: 991.98px) {
-                height: calc(100vh - 150px)
+                height: calc(100vh - 150px);
             }
         }
     }
 
     .message-list-content {
         height: calc(100vh - 289px);
-
     }
 
     .email-detail-content-scroll {

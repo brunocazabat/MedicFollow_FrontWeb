@@ -284,11 +284,7 @@ export default {
           <div class="col-xl-3">
             <div class="card card-h-100">
               <div class="card-body">
-                <button
-                  class="btn btn-primary w-100"
-                  id="btn-new-event"
-                  @click="showModal = true"
-                >
+                <button class="btn btn-primary w-100" id="btn-new-event" @click="showModal = true">
                   <em class="mdi mdi-plus"></em> Create New Event
                 </button>
 
@@ -297,41 +293,17 @@ export default {
                   <p class="text-muted">
                     Drag and drop your event or click in the calendar
                   </p>
-                  <div
-                    class="external-event fc-event bg-soft-success text-success"
-                    data-class="bg-soft-success"
-                  >
-                    <em
-                      class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                    ></em
-                    >New Event Planning
+                  <div class="external-event fc-event bg-soft-success text-success" data-class="bg-soft-success">
+                    <em class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></em>New Event Planning
                   </div>
-                  <div
-                    class="external-event fc-event bg-soft-info text-info"
-                    data-class="bg-soft-info"
-                  >
-                    <em
-                      class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                    ></em
-                    >Meeting
+                  <div class="external-event fc-event bg-soft-info text-info" data-class="bg-soft-info">
+                    <em class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></em>Meeting
                   </div>
-                  <div
-                    class="external-event fc-event bg-soft-warning text-warning"
-                    data-class="bg-soft-warning"
-                  >
-                    <em
-                      class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                    ></em
-                    >Generating Reports
+                  <div class="external-event fc-event bg-soft-warning text-warning" data-class="bg-soft-warning">
+                    <em class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></em>Generating Reports
                   </div>
-                  <div
-                    class="external-event fc-event bg-soft-danger text-danger"
-                    data-class="bg-soft-danger"
-                  >
-                    <em
-                      class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                    ></em
-                    >Create New theme
+                  <div class="external-event fc-event bg-soft-danger text-danger" data-class="bg-soft-danger">
+                    <em class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></em>Create New theme
                   </div>
                 </div>
               </div>
@@ -339,25 +311,15 @@ export default {
             <div>
               <h5 class="mb-1">Upcoming Events</h5>
               <p class="text-muted">Don't miss scheduled events</p>
-              <SimpleBar
-                class="upcoming-events pe-2 me-n1 mb-3"
-                data-simplebar="init"
-                style="height: 400px"
-              >
-                <div
-                  class="card mb-3"
-                  v-for="event in currentEvents"
-                  :key="event.id"
-                >
+              <SimpleBar class="upcoming-events pe-2 me-n1 mb-3" data-simplebar="init" style="height: 400px">
+                <div class="card mb-3" v-for="event in currentEvents" :key="event.id">
                   <div class="card-body">
                     <div class="d-flex mb-3">
                       <div class="flex-grow-1">
-                        <em
-                          :class="`mdi mdi-checkbox-blank-circle me-2 ${event.classNames[0]} `"
-                        ></em
-                        ><span class="fw-medium">{{
-                          this.formatDate(event.start)
-                        }}</span>
+                        <em :class="`mdi mdi-checkbox-blank-circle me-2 ${event.classNames[0]} `"></em><span
+                          class="fw-medium">{{
+                              this.formatDate(event.start)
+                          }}</span>
                       </div>
                       <div class="flex-shrink-0">
                         <small class="badge badge-soft-primary ms-auto"></small>
@@ -375,9 +337,7 @@ export default {
               <div class="card-body bg-soft-info rounded">
                 <div class="d-flex">
                   <div class="flex-shrink-0">
-                    <CalendarIcon
-                      class="text-info icon-dual-info"
-                    ></CalendarIcon>
+                    <CalendarIcon class="text-info icon-dual-info"></CalendarIcon>
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <h6 class="fs-15">Welcome to your Calendar!</h6>
@@ -402,32 +362,17 @@ export default {
         <div style="clear: both"></div>
       </div>
     </div>
-    <b-modal
-      v-model="showModal"
-      title="Add New Event"
-      title-class="text-black font-18"
-      body-class="p-3"
-      hide-footer
-    >
+    <b-modal v-model="showModal" title="Add New Event" title-class="text-black font-18" body-class="p-3" hide-footer>
       <form @submit.prevent="handleSubmit">
         <div class="row">
           <div class="col-12">
             <div class="mb-3">
               <label for="name">Event Name</label>
-              <input
-                id="name"
-                v-model="event.title"
-                type="text"
-                class="form-control"
-                placeholder="Insert Event name"
-                :class="{ 'is-invalid': submitted && v$.event.title.$error }"
-              />
-              <div
-                v-if="submitted && v$.event.title.$error"
-                class="invalid-feedback"
-              >
+              <input id="name" v-model="event.title" type="text" class="form-control" placeholder="Insert Event name"
+                :class="{ 'is-invalid': submitted && v$.event.title.$error }" />
+              <div v-if="submitted && v$.event.title.$error" class="invalid-feedback">
                 <span v-if="v$.event.title.required.$message">{{
-                  v$.event.title.required.$message
+                    v$.event.title.required.$message
                 }}</span>
               </div>
             </div>
@@ -435,27 +380,16 @@ export default {
           <div class="col-12">
             <div class="mb-3">
               <label class="control-label">Category</label>
-              <select
-                v-model="event.category"
-                class="form-control"
-                name="category"
-                :class="{ 'is-invalid': submitted && v$.event.category.errors }"
-              >
-                <option
-                  v-for="option in categories"
-                  :key="option.backgroundColor"
-                  :value="`${option.value}`"
-                >
+              <select v-model="event.category" class="form-control" name="category"
+                :class="{ 'is-invalid': submitted && v$.event.category.errors }">
+                <option v-for="option in categories" :key="option.backgroundColor" :value="`${option.value}`">
                   {{ option.name }}
                 </option>
               </select>
 
-              <div
-                v-if="submitted && v$.event.category.$error"
-                class="invalid-feedback"
-              >
+              <div v-if="submitted && v$.event.category.$error" class="invalid-feedback">
                 <span v-if="v$.event.category.required.$message">{{
-                  v$.event.category.required.$message
+                    v$.event.category.required.$message
                 }}</span>
               </div>
             </div>
@@ -464,48 +398,27 @@ export default {
 
         <div class="text-end pt-5 mt-3">
           <b-button variant="light" @click="hideModal">Close</b-button>
-          <b-button type="submit" variant="success" class="ms-1"
-            >Create event</b-button
-          >
+          <b-button type="submit" variant="success" class="ms-1">Create event</b-button>
         </div>
       </form>
     </b-modal>
 
     <!-- Edit Modal -->
-    <b-modal
-      v-model="eventModal"
-      title="Edit Event"
-      title-class="text-black font-18"
-      hide-footer
-      body-class="p-3"
-    >
+    <b-modal v-model="eventModal" title="Edit Event" title-class="text-black font-18" hide-footer body-class="p-3">
       <form @submit.prevent="editSubmit">
         <div class="row">
           <div class="col-12">
             <div class="mb-3">
               <label for="name">Event Name</label>
-              <input
-                id="name1"
-                v-model="editevent.editTitle"
-                type="text"
-                class="form-control"
-                placeholder="Insert Event name"
-              />
+              <input id="name1" v-model="editevent.editTitle" type="text" class="form-control"
+                placeholder="Insert Event name" />
             </div>
           </div>
           <div class="col-12">
             <div class="mb-3">
               <label class="control-label">Category</label>
-              <select
-                v-model="editevent.editcategory"
-                class="form-control"
-                name="category"
-              >
-                <option
-                  v-for="option in categories"
-                  :key="option.backgroundColor"
-                  :value="`${option.value}`"
-                >
+              <select v-model="editevent.editcategory" class="form-control" name="category">
+                <option v-for="option in categories" :key="option.backgroundColor" :value="`${option.value}`">
                   {{ option.name }}
                 </option>
               </select>
@@ -514,12 +427,8 @@ export default {
         </div>
         <div class="text-end p-3">
           <b-button variant="light" @click="closeModal">Close</b-button>
-          <b-button class="ms-1" variant="danger" @click="confirm"
-            >Delete</b-button
-          >
-          <b-button class="ms-1" variant="success" @click="editSubmit"
-            >Save</b-button
-          >
+          <b-button class="ms-1" variant="danger" @click="confirm">Delete</b-button>
+          <b-button class="ms-1" variant="success" @click="editSubmit">Save</b-button>
         </div>
       </form>
     </b-modal>

@@ -204,34 +204,34 @@ export default {
     },
   },
   methods: {
-    editdata(data){
-        document.getElementById("modal-id").style.display="block";
-        document.getElementById('exampleModalLabel').innerHTML="Edit Ticket"
-        document.getElementById('orderId').value=data.id
-        document.getElementById('tasksTitle').value=data.title
-        document.getElementById('clientName').value=data.client
-        document.getElementById('assignedtoName').value=data.assigned
-        document.getElementById('cdate').value=data.create
-        document.getElementById('ddate').value=data.due
-        document.getElementById('ticketstatus').value=data.status
-        document.getElementById('priority').value=data.priority
+    editdata(data) {
+      document.getElementById("modal-id").style.display = "block";
+      document.getElementById('exampleModalLabel').innerHTML = "Edit Ticket"
+      document.getElementById('orderId').value = data.id
+      document.getElementById('tasksTitle').value = data.title
+      document.getElementById('clientName').value = data.client
+      document.getElementById('assignedtoName').value = data.assigned
+      document.getElementById('cdate').value = data.create
+      document.getElementById('ddate').value = data.due
+      document.getElementById('ticketstatus').value = data.status
+      document.getElementById('priority').value = data.priority
 
-        document.getElementById('edit-btn').style.display='block';
-        document.getElementById('add-btn').style.display='none'
+      document.getElementById('edit-btn').style.display = 'block';
+      document.getElementById('add-btn').style.display = 'none'
     },
-    updateorder(){
-        let result = this.ticketsList.findIndex(o => o.id == document.getElementById('orderId').value)
-        this.ticketsList[result].title = document.getElementById('tasksTitle').value
-        this.ticketsList[result].client = document.getElementById('clientName').value
-        this.ticketsList[result].assigned = document.getElementById('assignedtoName').value
-        this.ticketsList[result].create = document.getElementById('cdate').value
-        this.ticketsList[result].due = document.getElementById('ddate').value
-        this.ticketsList[result].status = document.getElementById('ticketstatus').value
-        this.ticketsList[result].priority = document.getElementById('priority').value
+    updateorder() {
+      let result = this.ticketsList.findIndex(o => o.id == document.getElementById('orderId').value)
+      this.ticketsList[result].title = document.getElementById('tasksTitle').value
+      this.ticketsList[result].client = document.getElementById('clientName').value
+      this.ticketsList[result].assigned = document.getElementById('assignedtoName').value
+      this.ticketsList[result].create = document.getElementById('cdate').value
+      this.ticketsList[result].due = document.getElementById('ddate').value
+      this.ticketsList[result].status = document.getElementById('ticketstatus').value
+      this.ticketsList[result].priority = document.getElementById('priority').value
 
-        document.getElementById('closemodal').click();
+      document.getElementById('closemodal').click();
     },
-    deletedata(event){
+    deletedata(event) {
       Swal.fire({
         title: "Are you sure?",
         text: "You won't be able to revert this!",
@@ -242,10 +242,10 @@ export default {
         confirmButtonText: "Yes, delete it!",
       }).then((result) => {
         if (result.value) {
-        this.ticketsList.splice(this.ticketsList.indexOf(event), 1);
-        Swal.fire("Deleted!", "Your file has been deleted.", "success");
+          this.ticketsList.splice(this.ticketsList.indexOf(event), 1);
+          Swal.fire("Deleted!", "Your file has been deleted.", "success");
         }
-      });      
+      });
     },
     deleteMultiple() {
       let ids_array = [];
@@ -259,21 +259,21 @@ export default {
       });
       if (typeof ids_array !== "undefined" && ids_array.length > 0) {
         if (confirm("Are you sure you want to delete this?")) {
-			var cusList = this.ticketsList;
-			ids_array.forEach(function (id) {
-				cusList = cusList.filter(function (orders) {
-				return orders.id != id;
-				});
-			});
-			this.ticketsList = cusList;
-			document.getElementById("checkAll").checked = false;
-			var itemss = document.getElementsByName("chk_child");
-			itemss.forEach(function (ele) {
-				if (ele.checked == true) {
-					ele.checked = false
-					ele.closest("tr").classList.remove("table-active");
-				}
-			});
+          var cusList = this.ticketsList;
+          ids_array.forEach(function (id) {
+            cusList = cusList.filter(function (orders) {
+              return orders.id != id;
+            });
+          });
+          this.ticketsList = cusList;
+          document.getElementById("checkAll").checked = false;
+          var itemss = document.getElementsByName("chk_child");
+          itemss.forEach(function (ele) {
+            if (ele.checked == true) {
+              ele.checked = false
+              ele.closest("tr").classList.remove("table-active");
+            }
+          });
         } else {
           return false;
         }
@@ -286,8 +286,8 @@ export default {
         });
       }
     },
-    addorder(){
-      var id='#VLZ4'+this.ticketsList.length+1;
+    addorder() {
+      var id = '#VLZ4' + this.ticketsList.length + 1;
       var title = document.getElementById('tasksTitle').value
       var client = document.getElementById('clientName').value
       var assigned = document.getElementById('assignedtoName').value
@@ -296,27 +296,27 @@ export default {
       var status = document.getElementById('ticketstatus').value
       var priority = document.getElementById('priority').value
 
-    var data=  {
-      id : id,
-      title : title,
-      client : client,
-      assigned : assigned,
-      create : create,
-      due : due,
-      status : status,
-      priority : priority
+      var data = {
+        id: id,
+        title: title,
+        client: client,
+        assigned: assigned,
+        create: create,
+        due: due,
+        status: status,
+        priority: priority
       };
       this.ticketsList.push(data)
-    
+
       document.getElementById('closemodal').click();
       document.getElementById("addform").reset();
     },
-    addnew(){
+    addnew() {
       document.getElementById("addform").reset();
-      document.getElementById("modal-id").style.display="none";
-        document.getElementById('exampleModalLabel').innerHTML="Add Ticket";
-        document.getElementById('add-btn').style.display='block';
-        document.getElementById('edit-btn').style.display='none';
+      document.getElementById("modal-id").style.display = "none";
+      document.getElementById('exampleModalLabel').innerHTML = "Add Ticket";
+      document.getElementById('add-btn').style.display = 'block';
+      document.getElementById('edit-btn').style.display = 'none';
     },
     setPages() {
       let numberOfPages = Math.ceil(this.ticketsList.length / this.perPage);
@@ -367,12 +367,7 @@ export default {
               <div>
                 <p class="fw-medium text-muted mb-0">Total Tickets</p>
                 <h2 class="mt-4 ff-secondary fw-semibold">
-                  <count-to
-                    :duration="1000"
-                    :startVal="0"
-                    :endVal="547"
-                  ></count-to
-                  >k
+                  <count-to :duration="1000" :startVal="0" :endVal="547"></count-to>k
                 </h2>
                 <p class="mb-0 text-muted">
                   <span class="badge bg-light text-success mb-0">
@@ -383,9 +378,7 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span
-                    class="avatar-title bg-soft-info text-info rounded-circle fs-4"
-                  >
+                  <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
                     <em class="ri-ticket-2-line"></em>
                   </span>
                 </div>
@@ -404,12 +397,7 @@ export default {
               <div>
                 <p class="fw-medium text-muted mb-0">Pending Tickets</p>
                 <h2 class="mt-4 ff-secondary fw-semibold">
-                  <count-to
-                    :duration="1000"
-                    :startVal="0"
-                    :endVal="124"
-                  ></count-to
-                  >k
+                  <count-to :duration="1000" :startVal="0" :endVal="124"></count-to>k
                 </h2>
                 <p class="mb-0 text-muted">
                   <span class="badge bg-light text-danger mb-0">
@@ -420,9 +408,7 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span
-                    class="avatar-title bg-soft-info text-info rounded-circle fs-4"
-                  >
+                  <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
                     <em class="mdi mdi-timer-sand"></em>
                   </span>
                 </div>
@@ -440,12 +426,7 @@ export default {
               <div>
                 <p class="fw-medium text-muted mb-0">Closed Tickets</p>
                 <h2 class="mt-4 ff-secondary fw-semibold">
-                  <count-to
-                    :duration="1000"
-                    :startVal="0"
-                    :endVal="107"
-                  ></count-to
-                  >K
+                  <count-to :duration="1000" :startVal="0" :endVal="107"></count-to>K
                 </h2>
                 <p class="mb-0 text-muted">
                   <span class="badge bg-light text-danger mb-0">
@@ -456,9 +437,7 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span
-                    class="avatar-title bg-soft-info text-info rounded-circle fs-4"
-                  >
+                  <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
                     <em class="ri-shopping-bag-line"></em>
                   </span>
                 </div>
@@ -476,12 +455,7 @@ export default {
               <div>
                 <p class="fw-medium text-muted mb-0">Deleted Tickets</p>
                 <h2 class="mt-4 ff-secondary fw-semibold">
-                  <count-to
-                    :duration="1000"
-                    :startVal="0"
-                    :endVal="15"
-                  ></count-to
-                  >%
+                  <count-to :duration="1000" :startVal="0" :endVal="15"></count-to>%
                 </h2>
                 <p class="mb-0 text-muted">
                   <span class="badge bg-light text-success mb-0">
@@ -492,9 +466,7 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span
-                    class="avatar-title bg-soft-info text-info rounded-circle fs-4"
-                  >
+                  <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
                     <em class="ri-delete-bin-line"></em>
                   </span>
                 </div>
@@ -517,47 +489,35 @@ export default {
               <div class="flex-shrink-0">
                 <button class="btn btn-soft-danger me-1" @click="deleteMultiple">
                   <em class="ri-delete-bin-2-line"></em>
-                  </button>
-                <button class="btn btn-danger add-btn" data-bs-toggle="modal" data-bs-target="#showModal" @click="addnew">
+                </button>
+                <button class="btn btn-danger add-btn" data-bs-toggle="modal" data-bs-target="#showModal"
+                  @click="addnew">
                   <em class="ri-add-line align-bottom me-1"></em> Create Tickets
                 </button>
               </div>
             </div>
           </div>
-          <div
-            class="card-body border border-dashed border-end-0 border-start-0"
-          >
+          <div class="card-body border border-dashed border-end-0 border-start-0">
             <form>
               <div class="row g-3">
                 <div class="col-xxl-5 col-sm-12">
                   <div class="search-box">
-                    <input
-                      type="text"
-                      class="form-control search bg-light border-light"
-                      placeholder="Search for ticket details or something..."
-                    />
+                    <input type="text" class="form-control search bg-light border-light"
+                      placeholder="Search for ticket details or something..." />
                     <em class="ri-search-line search-icon"></em>
                   </div>
                 </div>
                 <!--end col-->
 
                 <div class="col-xxl-3 col-sm-4">
-                  <flat-pickr
-                    v-model="date"
-                    :config="config"
-                    class="form-control bg-light border-light"
-                    placeholder="Select date"
-                  ></flat-pickr>
+                  <flat-pickr v-model="date" :config="config" class="form-control bg-light border-light"
+                    placeholder="Select date"></flat-pickr>
                 </div>
                 <!--end col-->
 
                 <div class="col-xxl-3 col-sm-4">
                   <div class="input-light">
-                    <Multiselect
-                      v-model="value3"
-                      :close-on-select="true"
-                      :searchable="true"
-                      :create-option="true"
+                    <Multiselect v-model="value3" :close-on-select="true" :searchable="true" :create-option="true"
                       :options="[
                         { value: '', label: 'Status' },
                         { value: 'All', label: 'All' },
@@ -565,17 +525,12 @@ export default {
                         { value: 'Inprogress', label: 'Inprogress' },
                         { value: 'Closed', label: 'Closed' },
                         { value: 'New', label: 'New' },
-                      ]"
-                    />
+                      ]" />
                   </div>
                 </div>
                 <!--end col-->
                 <div class="col-xxl-1 col-sm-4">
-                  <button
-                    type="button"
-                    class="btn btn-primary w-100"
-                    onclick="SearchData();"
-                  >
+                  <button type="button" class="btn btn-primary w-100" onclick="SearchData();">
                     <em class="ri-equalizer-fill me-1 align-bottom"></em>
                     Filters
                   </button>
@@ -588,20 +543,12 @@ export default {
           <!--end card-body-->
           <div class="card-body">
             <div class="table-responsive table-card mb-4">
-              <table
-                class="table align-middle table-nowrap mb-0"
-                id="ticketTable"
-              >
+              <table class="table align-middle table-nowrap mb-0" id="ticketTable">
                 <thead>
                   <tr>
                     <th scope="col" style="width: 40px">
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="checkAll"
-                          value="option"
-                        />
+                        <input class="form-check-input" type="checkbox" id="checkAll" value="option" />
                       </div>
                     </th>
                     <th class="sort" data-sort="id">ID</th>
@@ -619,20 +566,11 @@ export default {
                   <tr v-for="(data, index) of resultQuery" :key="index">
                     <th scope="row">
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          name="chk_child"
-                          value="option1"
-                        />
+                        <input class="form-check-input" type="checkbox" name="chk_child" value="option1" />
                       </div>
                     </th>
                     <td class="id">
-                      <router-link
-                        to="/apps/tickets-details"
-                        class="fw-medium link-primary"
-                        >{{ data.id }}</router-link
-                      >
+                      <router-link to="/apps/tickets-details" class="fw-medium link-primary">{{ data.id }}</router-link>
                     </td>
                     <td class="tasks_name">
                       {{ data.title }}
@@ -642,47 +580,37 @@ export default {
                     <td class="create_date">{{ data.create }}</td>
                     <td class="due_date">{{ data.due }}</td>
                     <td class="status">
-                      <span
-                        class="badge text-uppercase"
-                        :class="{
-                          'badge-soft-warning': data.status == 'Inprogress',
-                          'badge-soft-info': data.status == 'New',
-                          'badge-soft-success': data.status == 'Open',
-                          'badge-soft-danger': data.status == 'Closed',
-                        }"
-                        >{{ data.status }}</span
-                      >
+                      <span class="badge text-uppercase" :class="{
+                        'badge-soft-warning': data.status == 'Inprogress',
+                        'badge-soft-info': data.status == 'New',
+                        'badge-soft-success': data.status == 'Open',
+                        'badge-soft-danger': data.status == 'Closed',
+                      }">{{ data.status }}</span>
                     </td>
                     <td class="priority">
-                      <span
-                        class="badge text-uppercase"
-                        :class="{
-                          'bg-danger': data.priority == 'High',
-                          'bg-success': data.priority == 'Low',
-                          'bg-warning': data.priority == 'Medium',
-                        }"
-                        >{{ data.priority }}</span
-                      >
+                      <span class="badge text-uppercase" :class="{
+                        'bg-danger': data.priority == 'High',
+                        'bg-success': data.priority == 'Low',
+                        'bg-warning': data.priority == 'Medium',
+                      }">{{ data.priority }}</span>
                     </td>
                     <td>
                       <div class="dropdown">
-                        <button
-                          class="btn btn-soft-secondary btn-sm dropdown shadow-none"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                        <button class="btn btn-soft-secondary btn-sm dropdown shadow-none" type="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
                           <em class="ri-more-fill align-middle"></em>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                           <li>
-                            <router-link class="dropdown-item" to="/apps/tickets-details"><em class="ri-eye-fill align-bottom me-2 text-muted"></em>
+                            <router-link class="dropdown-item" to="/apps/tickets-details"><em
+                                class="ri-eye-fill align-bottom me-2 text-muted"></em>
                               View</router-link>
                           </li>
                           <li>
-                            <a class="dropdown-item edit-item-btn" href="#showModal" data-bs-toggle="modal" @click="editdata(data)">
+                            <a class="dropdown-item edit-item-btn" href="#showModal" data-bs-toggle="modal"
+                              @click="editdata(data)">
                               <em class="ri-pencil-fill align-bottom me-2 text-muted"></em> Edit
-                              </a>
+                            </a>
                           </li>
                           <li>
                             <a class="dropdown-item remove-item-btn" @click="deletedata(data)">
@@ -696,19 +624,10 @@ export default {
                   </tr>
                 </tbody>
               </table>
-              <div
-                class="noresult"
-                style="display: none"
-                :class="{ 'd-block': resultQuery.length == 0 }"
-              >
+              <div class="noresult" style="display: none" :class="{ 'd-block': resultQuery.length == 0 }">
                 <div class="text-center">
-                  <lottie
-                    class="avatar-xl"
-                    colors="primary:#121331,secondary:#08a88a"
-                    :options="defaultOptions"
-                    :height="90"
-                    :width="90"
-                  />
+                  <lottie class="avatar-xl" colors="primary:#121331,secondary:#08a88a" :options="defaultOptions"
+                    :height="90" :width="90" />
                   <h5 class="mt-2">Sorry! No Result Found</h5>
                   <p class="text-muted mb-0">
                     We've searched more than 150+ Tickets We did not find any
@@ -719,58 +638,33 @@ export default {
             </div>
             <div class="d-flex justify-content-end mt-3">
               <div class="pagination-wrap hstack gap-2">
-                <a
-                  class="page-item pagination-prev disabled"
-                  href="#"
-                  v-if="page != 1"
-                  @click="page--"
-                >
+                <a class="page-item pagination-prev disabled" href="#" v-if="page != 1" @click="page--">
                   Previous
                 </a>
                 <ul class="pagination listjs-pagination mb-0">
-                  <li
-                    :class="{
-                      active: pageNumber == page,
-                      disabled: pageNumber == '...',
-                    }"
-                    v-for="(pageNumber, index) in pages.slice(
-                      page - 1,
-                      page + 5
-                    )"
-                    :key="index"
-                    @click="page = pageNumber"
-                  >
+                  <li :class="{
+                    active: pageNumber == page,
+                    disabled: pageNumber == '...',
+                  }" v-for="(pageNumber, index) in pages.slice(
+  page - 1,
+  page + 5
+)" :key="index" @click="page = pageNumber">
                     <a class="page" href="#">{{ pageNumber }}</a>
                   </li>
                 </ul>
-                <a
-                  class="page-item pagination-next"
-                  href="#"
-                  @click="page++"
-                  v-if="page < pages.length"
-                >
+                <a class="page-item pagination-next" href="#" @click="page++" v-if="page < pages.length">
                   Next
                 </a>
               </div>
             </div>
 
             <!-- Modal -->
-            <div
-              class="modal fade flip"
-              id="deleteOrder"
-              tabindex="-1"
-              aria-hidden="true"
-            >
+            <div class="modal fade flip" id="deleteOrder" tabindex="-1" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-body p-5 text-center">
-                    <lottie
-                      class="avatar-xl"
-                      colors="primary:#4b38b3,secondary:#f06548"
-                      :options="defaultOptions1"
-                      :height="90"
-                      :width="90"
-                    />
+                    <lottie class="avatar-xl" colors="primary:#4b38b3,secondary:#f06548" :options="defaultOptions1"
+                      :height="90" :width="90" />
                     <div class="mt-4 text-center">
                       <h4>You are about to delete a order ?</h4>
                       <p class="text-muted fs-14 mb-4">
@@ -778,10 +672,8 @@ export default {
                         from our database.
                       </p>
                       <div class="hstack gap-2 justify-content-center remove">
-                        <button
-                          class="btn btn-link link-success fw-medium text-decoration-none"
-                          data-bs-dismiss="modal"
-                        >
+                        <button class="btn btn-link link-success fw-medium text-decoration-none"
+                          data-bs-dismiss="modal">
                           <em class="ri-close-line me-1 align-middle"></em> Close
                         </button>
                         <button class="btn btn-danger" id="delete-record">
@@ -807,7 +699,8 @@ export default {
         <div class="modal-content border-0">
           <div class="modal-header p-3 bg-soft-info">
             <h5 class="modal-title" id="exampleModalLabel"></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+              id="close-modal"></button>
           </div>
           <form id="addform">
             <div class="modal-body">
@@ -820,7 +713,7 @@ export default {
                 </div>
                 <div class="col-lg-12">
                   <div>
-                    <label for="tasksTitle-field" class="form-label" >Title</label>
+                    <label for="tasksTitle-field" class="form-label">Title</label>
                     <input type="text" id="tasksTitle" class="form-control" placeholder="Title" required />
                   </div>
                 </div>
@@ -832,27 +725,21 @@ export default {
                 </div>
                 <div class="col-lg-6">
                   <div>
-                    <label for="assignedtoName-field" class="form-label" >Assigned To</label>
+                    <label for="assignedtoName-field" class="form-label">Assigned To</label>
                     <input type="text" id="assignedtoName" class="form-control" placeholder="Assigned to" required />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <label for="date-field" class="form-label">Create Date</label>
 
-                  <flat-pickr
-                    v-model="date1"
-                    :config="config"
-                    class="form-control bg-light border-light" id="cdate"
-                  ></flat-pickr>
+                  <flat-pickr v-model="date1" :config="config" class="form-control bg-light border-light" id="cdate">
+                  </flat-pickr>
                 </div>
                 <div class="col-lg-6">
                   <label for="duedate-field" class="form-label">Due Date</label>
 
-                  <flat-pickr
-                    v-model="date2"
-                    :config="config"
-                    class="form-control bg-light border-light" id="ddate"
-                  ></flat-pickr>
+                  <flat-pickr v-model="date2" :config="config" class="form-control bg-light border-light" id="ddate">
+                  </flat-pickr>
                 </div>
                 <div class="col-lg-6">
                   <label for="ticket-status" class="form-label">Status</label>

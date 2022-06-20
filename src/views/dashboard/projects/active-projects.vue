@@ -85,9 +85,7 @@ export default {
     <div class="card-header d-flex align-items-center">
       <h4 class="card-title flex-grow-1 mb-0">Active Projects</h4>
       <div class="flex-shrink-0">
-        <a href="javascript:void(0);" class="btn btn-soft-info btn-sm shadow-none"
-          >Export Report</a
-        >
+        <a href="javascript:void(0);" class="btn btn-soft-info btn-sm shadow-none">Export Report</a>
       </div>
     </div>
     <!-- end cardheader -->
@@ -108,33 +106,18 @@ export default {
           <!-- thead -->
 
           <tbody>
-            <tr v-for="(item, index) of activeProjects" :key="index"> 
-              <td class="fw-medium">{{item.projectName}}</td>
+            <tr v-for="(item, index) of activeProjects" :key="index">
+              <td class="fw-medium">{{ item.projectName }}</td>
               <td>
-                <img
-                  :src="item.img"
-                  class="avatar-xxs rounded-circle me-1 shadow"
-                  alt=""
-                />
-                <a href="javascript: void(0);" class="text-reset"
-                  >{{item.projectLead}}</a
-                >
+                <img :src="item.img" class="avatar-xxs rounded-circle me-1 shadow" alt="" />
+                <a href="javascript: void(0);" class="text-reset">{{ item.projectLead }}</a>
               </td>
               <td>
                 <div class="d-flex align-items-center">
-                  <div class="flex-shrink-0 me-1 text-muted fs-13">{{item.percentage}}</div>
-                  <div
-                    class="progress progress-sm flex-grow-1 bg-soft-primary"
-                    style="width: 68%"
-                  >
-                    <div
-                      class="progress-bar bg-primary rounded"
-                      role="progressbar"
-                      style="width: 53%"
-                      aria-valuenow="53"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
+                  <div class="flex-shrink-0 me-1 text-muted fs-13">{{ item.percentage }}</div>
+                  <div class="progress progress-sm flex-grow-1 bg-soft-primary" style="width: 68%">
+                    <div class="progress-bar bg-primary rounded" role="progressbar" style="width: 53%"
+                      aria-valuenow="53" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
               </td>
@@ -142,29 +125,23 @@ export default {
                 <div class="avatar-group flex-nowrap">
                   <div class="avatar-group-item" v-for="(subitem, index) of item.subItem" :key="index">
                     <a href="javascript: void(0);" class="d-inline-block">
-                      <img
-                        :src="subitem.assImg"
-                        alt=""
-                        class="rounded-circle avatar-xxs shadow"
-                      />
+                      <img :src="subitem.assImg" alt="" class="rounded-circle avatar-xxs shadow" />
                     </a>
                   </div>
-                </div>  
+                </div>
               </td>
-              <td><span :class="`badge badge-soft-${item.badgeClass}`">{{item.badge}}</span></td>
-              <td class="text-muted">{{item.dueDate}}</td>
+              <td><span :class="`badge badge-soft-${item.badgeClass}`">{{ item.badge }}</span></td>
+              <td class="text-muted">{{ item.dueDate }}</td>
             </tr>
             <!-- end tr -->
-           
+
           </tbody>
           <!-- end tbody -->
         </table>
         <!-- end table -->
       </div>
 
-      <div
-        class="align-items-center mt-xl-3 mt-4 justify-content-between d-flex"
-      >
+      <div class="align-items-center mt-xl-3 mt-4 justify-content-between d-flex">
         <div class="flex-shrink-0">
           <div class="text-muted">
             Showing <span class="fw-semibold">5</span> of

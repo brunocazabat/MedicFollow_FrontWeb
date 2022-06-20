@@ -1,26 +1,29 @@
 //  Basic Line Charts
 import { series } from "../chart-series";
-function getChartColorsArray(colors){
+function getChartColorsArray(colors) {
   colors = JSON.parse(colors);
   return colors.map(function (value) {
     var newValue = value.replace(" ", "");
     if (newValue.indexOf(",") === -1) {
-      var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
-          if (color) {
-          color = color.replace(" ", "");
-          return color;
-          }
-          else return newValue;
+      var color = getComputedStyle(document.documentElement).getPropertyValue(
+        newValue
+      );
+      if (color) {
+        color = color.replace(" ", "");
+        return color;
+      } else return newValue;
+    } else {
+      var val = value.split(",");
+      if (val.length == 2) {
+        var rgbaColor = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue(val[0]);
+        rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
+        return rgbaColor;
       } else {
-          var val = value.split(',');
-          if (val.length == 2) {
-              var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
-              rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
-              return rgbaColor;
-          } else {
-              return newValue;
-          }
+        return newValue;
       }
+    }
   });
 }
 const basicLineChart = {
@@ -629,7 +632,7 @@ const zoomableChart = {
       showAlways: true,
       labels: {
         show: true,
-        formatter: function(val) {
+        formatter: function (val) {
           return (val / 1000000).toFixed(0);
         },
       },
@@ -646,7 +649,7 @@ const zoomableChart = {
     tooltip: {
       shared: false,
       y: {
-        formatter: function(val) {
+        formatter: function (val) {
           return (val / 1000000).toFixed(0);
         },
       },
@@ -755,7 +758,9 @@ const dashedLineChart = {
         show: false,
       },
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-danger", "--vz-success"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-danger", "--vz-success"]'
+    ),
     dataLabels: {
       enabled: false,
     },
@@ -798,21 +803,21 @@ const dashedLineChart = {
       y: [
         {
           title: {
-            formatter: function(val) {
+            formatter: function (val) {
               return val + " (mins)";
             },
           },
         },
         {
           title: {
-            formatter: function(val) {
+            formatter: function (val) {
               return val + " per session";
             },
           },
         },
         {
           title: {
-            formatter: function(val) {
+            formatter: function (val) {
               return val;
             },
           },
@@ -1294,7 +1299,9 @@ const missingDataChart = {
         fontWeight: 500,
       },
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-danger", "--vz-success"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-danger", "--vz-success"]'
+    ),
   },
 };
 
@@ -1326,7 +1333,6 @@ getDayWiseTimeSeries(new Date("11 Feb 2017 GMT").getTime(), 10, {
   min: 10,
   max: 90,
 });
-
 
 // Realtime Charts
 const realtimeLineChart = {

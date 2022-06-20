@@ -121,15 +121,9 @@ export default {
       <div class="bg-overlay"></div>
 
       <div class="shape">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 1440 120"
-        >
-          <path
-            d="M 0,36 C 144,53.6 432,123.2 720,124 C 1008,124.8 1296,56.8 1440,40L1440 140L0 140z"
-          ></path>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1440 120">
+          <path d="M 0,36 C 144,53.6 432,123.2 720,124 C 1008,124.8 1296,56.8 1440,40L1440 140L0 140z"></path>
         </svg>
       </div>
     </div>
@@ -142,11 +136,7 @@ export default {
             <div class="text-center mt-sm-5 mb-4 text-white-50">
               <div>
                 <router-link to="/" class="d-inline-block auth-logo">
-                  <img
-                    src="@/assets/images/logo-light.png"
-                    alt=""
-                    height="120"
-                  />
+                  <img src="@/assets/images/logo-light.png" alt="" height="120" />
                 </router-link>
               </div>
               <p class="mt-3 fs-15 fw-medium" style="color: white;">
@@ -168,101 +158,45 @@ export default {
                   </p>
                 </div>
                 <div class="p-2 mt-4">
-                  <form
-                    class="needs-validation"
-                    @submit.prevent="tryToRegisterIn"
-                  >
-                    <b-alert
-                      v-model="registerSuccess"
-                      class="mt-3"
-                      variant="success"
-                      dismissible
-                      >Registration successfull.</b-alert
-                    >
+                  <form class="needs-validation" @submit.prevent="tryToRegisterIn">
+                    <b-alert v-model="registerSuccess" class="mt-3" variant="success" dismissible>Registration
+                      successfull.</b-alert>
 
-                    <b-alert
-                      v-model="isRegisterError"
-                      class="mt-3"
-                      variant="danger"
-                      dismissible
-                      >{{ regError }}</b-alert
-                    >
+                    <b-alert v-model="isRegisterError" class="mt-3" variant="danger" dismissible>{{ regError }}
+                    </b-alert>
 
-                    <div
-                      v-if="notification.message"
-                      :class="'alert ' + notification.type"
-                    >
+                    <div v-if="notification.message" :class="'alert ' + notification.type">
                       {{ notification.message }}
                     </div>
                     <div class="mb-3">
-                      <label for="useremail" class="form-label"
-                        >Email <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        v-model="user.email"
-                        id="useremail"
-                        :class="{
-                          'is-invalid': submitted && v$.user.email.$error,
-                        }"
-                        placeholder="Enter email address"
-                        required
-                      />
-                      <div
-                        v-for="(item, index) in v$.user.email.$errors"
-                        :key="index"
-                        class="invalid-feedback"
-                      >
+                      <label for="useremail" class="form-label">Email <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control" v-model="user.email" id="useremail" :class="{
+                        'is-invalid': submitted && v$.user.email.$error,
+                      }" placeholder="Enter email address" required />
+                      <div v-for="(item, index) in v$.user.email.$errors" :key="index" class="invalid-feedback">
                         <span v-if="item.$message">{{ item.$message }}</span>
                       </div>
                     </div>
                     <div class="mb-3">
-                      <label for="username" class="form-label"
-                        >Username <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        v-model="user.username"
-                        :class="{
-                          'is-invalid': submitted && v$.user.username.$error,
-                        }"
-                        id="username"
-                        placeholder="Enter username"
-                        required
-                      />
-                      <div
-                        v-if="submitted && v$.user.username.$error"
-                        class="invalid-feedback"
-                      >
+                      <label for="username" class="form-label">Username <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" v-model="user.username" :class="{
+                        'is-invalid': submitted && v$.user.username.$error,
+                      }" id="username" placeholder="Enter username" required />
+                      <div v-if="submitted && v$.user.username.$error" class="invalid-feedback">
                         <span v-if="v$.user.username.required.$message">{{
-                          v$.user.username.required.$message
+                            v$.user.username.required.$message
                         }}</span>
                       </div>
                     </div>
 
                     <div class="mb-2">
-                      <label for="userpassword" class="form-label"
-                        >Password <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="password"
-                        class="form-control"
-                        v-model="user.password"
-                        :class="{
-                          'is-invalid': submitted && v$.user.password.$error,
-                        }"
-                        id="userpassword"
-                        placeholder="Enter password"
-                        required
-                      />
-                      <div
-                        v-if="submitted && v$.user.password.$error"
-                        class="invalid-feedback"
-                      >
+                      <label for="userpassword" class="form-label">Password <span class="text-danger">*</span></label>
+                      <input type="password" class="form-control" v-model="user.password" :class="{
+                        'is-invalid': submitted && v$.user.password.$error,
+                      }" id="userpassword" placeholder="Enter password" required />
+                      <div v-if="submitted && v$.user.password.$error" class="invalid-feedback">
                         <span v-if="v$.user.password.required.$message">{{
-                          v$.user.password.required.$message
+                            v$.user.password.required.$message
                         }}</span>
                       </div>
                     </div>
@@ -270,15 +204,11 @@ export default {
                     <div class="mb-4">
                       <p class="mb-0 fs-12 text-muted fst-italic">
                         By registering you agree to the MedicFollow
-                        <a
-                          href="#"
-                          class="
+                        <a href="#" class="
                             text-primary text-decoration-underline
                             fst-normal
                             fw-medium
-                          "
-                          >Terms of Use</a
-                        >
+                          ">Terms of Use</a>
                       </p>
                     </div>
 
@@ -296,14 +226,11 @@ export default {
                       </div>
 
                       <div>
-                        <button
-                          type="button"
-                          class="
+                        <button type="button" class="
                             btn btn-danger btn-icon
                             waves-effect waves-light
                             ms-1
-                          "
-                        >
+                          ">
                           <em class="ri-qr-code-fill fs-16"></em>
                         </button>
                       </div>
@@ -318,10 +245,7 @@ export default {
             <div class="mt-4 text-center">
               <p class="mb-0" style="color: white;">
                 Already have an account ?
-                <router-link
-                  to="/login"
-                  class="fw-semibold text-primary text-decoration-underline"
-                >
+                <router-link to="/login" class="fw-semibold text-primary text-decoration-underline">
                   Signin
                 </router-link>
               </p>
@@ -341,7 +265,7 @@ export default {
           <div class="col-lg-12">
             <div class="text-center">
               <p class="mb-0 text-muted">
-                &copy; {{ new Date().getFullYear() }} MedicFollow. 
+                &copy; {{ new Date().getFullYear() }} MedicFollow.
               </p>
             </div>
           </div>

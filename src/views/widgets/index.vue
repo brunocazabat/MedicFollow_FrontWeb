@@ -686,16 +686,9 @@ export default {
             <div class="d-flex align-items-end justify-content-between mt-4">
               <div>
                 <h4 class="fs-22 fw-semibold ff-secondary mb-4">
-                  $<count-to
-                    :startVal="0"
-                    :endVal="559"
-                    :duration="5000"
-                  ></count-to
-                  >k
+                  $<count-to :startVal="0" :endVal="559" :duration="5000"></count-to>k
                 </h4>
-                <a href="" class="text-decoration-underline"
-                  >View net earnings</a
-                >
+                <a href="" class="text-decoration-underline">View net earnings</a>
               </div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-success rounded fs-3 shadow">
@@ -730,16 +723,9 @@ export default {
             <div class="d-flex align-items-end justify-content-between mt-4">
               <div>
                 <h4 class="fs-22 fw-semibold ff-secondary mb-4 text-white">
-                  <count-to
-                    class="counter-value"
-                    :startVal="0"
-                    :endVal="36894"
-                    :duration="5000"
-                  ></count-to>
+                  <count-to class="counter-value" :startVal="0" :endVal="36894" :duration="5000"></count-to>
                 </h4>
-                <a href="" class="text-decoration-underline text-white-50"
-                  >View all orders</a
-                >
+                <a href="" class="text-decoration-underline text-white-50">View all orders</a>
               </div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-light rounded fs-3">
@@ -774,12 +760,7 @@ export default {
             <div class="d-flex align-items-end justify-content-between mt-4">
               <div>
                 <h4 class="fs-22 fw-semibold ff-secondary mb-4">
-                  <count-to
-                    :startVal="0"
-                    :endVal="183"
-                    :duration="5000"
-                  ></count-to
-                  >M
+                  <count-to :startVal="0" :endVal="183" :duration="5000"></count-to>M
                 </h4>
                 <a href="" class="text-decoration-underline">See details</a>
               </div>
@@ -813,12 +794,7 @@ export default {
             <div class="d-flex align-items-end justify-content-between mt-4">
               <div>
                 <h4 class="fs-22 fw-semibold ff-secondary mb-4">
-                  $<count-to
-                    :startVal="0"
-                    :endVal="165"
-                    :duration="5000"
-                  ></count-to
-                  >k
+                  $<count-to :startVal="0" :endVal="165" :duration="5000"></count-to>k
                 </h4>
                 <a href="" class="text-decoration-underline">Withdraw money</a>
               </div>
@@ -846,9 +822,7 @@ export default {
                 <div class="py-4 px-3">
                   <h5 class="text-muted text-uppercase fs-13">
                     Campaign Sent
-                    <em
-                      class="ri-arrow-up-circle-line text-success fs-18 float-end align-middle"
-                    ></em>
+                    <em class="ri-arrow-up-circle-line text-success fs-18 float-end align-middle"></em>
                   </h5>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
@@ -856,11 +830,7 @@ export default {
                     </div>
                     <div class="flex-grow-1 ms-3">
                       <h2 class="mb-0">
-                        <count-to
-                          :startVal="0"
-                          :endVal="197"
-                          :duration="5000"
-                        ></count-to>
+                        <count-to :startVal="0" :endVal="197" :duration="5000"></count-to>
                       </h2>
                     </div>
                   </div>
@@ -871,24 +841,15 @@ export default {
                 <div class="mt-3 mt-md-0 py-4 px-3">
                   <h5 class="text-muted text-uppercase fs-13">
                     Annual Profit
-                    <em
-                      class="ri-arrow-up-circle-line text-success fs-18 float-end align-middle"
-                    ></em>
+                    <em class="ri-arrow-up-circle-line text-success fs-18 float-end align-middle"></em>
                   </h5>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
-                      <em
-                        class="ri-exchange-dollar-line display-6 text-muted"
-                      ></em>
+                      <em class="ri-exchange-dollar-line display-6 text-muted"></em>
                     </div>
                     <div class="flex-grow-1 ms-3">
                       <h2 class="mb-0">
-                        $<count-to
-                          :startVal="0"
-                          :endVal="489"
-                          :duration="5000"
-                        ></count-to
-                        >k
+                        $<count-to :startVal="0" :endVal="489" :duration="5000"></count-to>k
                       </h2>
                     </div>
                   </div>
@@ -899,9 +860,7 @@ export default {
                 <div class="mt-3 mt-md-0 py-4 px-3">
                   <h5 class="text-muted text-uppercase fs-13">
                     Lead Coversation
-                    <em
-                      class="ri-arrow-down-circle-line text-danger fs-18 float-end align-middle"
-                    ></em>
+                    <em class="ri-arrow-down-circle-line text-danger fs-18 float-end align-middle"></em>
                   </h5>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
@@ -909,12 +868,7 @@ export default {
                     </div>
                     <div class="flex-grow-1 ms-3">
                       <h2 class="mb-0">
-                        <count-to
-                          :startVal="0"
-                          :endVal="32"
-                          :duration="5000"
-                        ></count-to
-                        >%
+                        <count-to :startVal="0" :endVal="32" :duration="5000"></count-to>%
                       </h2>
                     </div>
                   </div>
@@ -925,9 +879,7 @@ export default {
                 <div class="mt-3 mt-lg-0 py-4 px-3">
                   <h5 class="text-muted text-uppercase fs-13">
                     Daily Average Income
-                    <em
-                      class="ri-arrow-up-circle-line text-success fs-18 float-end align-middle"
-                    ></em>
+                    <em class="ri-arrow-up-circle-line text-success fs-18 float-end align-middle"></em>
                   </h5>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
@@ -935,12 +887,7 @@ export default {
                     </div>
                     <div class="flex-grow-1 ms-3">
                       <h2 class="mb-0">
-                        $<count-to
-                          :startVal="0"
-                          :endVal="1596"
-                          :duration="5000"
-                        ></count-to
-                        >0
+                        $<count-to :startVal="0" :endVal="1596" :duration="5000"></count-to>0
                       </h2>
                     </div>
                   </div>
@@ -951,9 +898,7 @@ export default {
                 <div class="mt-3 mt-lg-0 py-4 px-3">
                   <h5 class="text-muted text-uppercase fs-13">
                     Annual Deals
-                    <em
-                      class="ri-arrow-down-circle-line text-danger fs-18 float-end align-middle"
-                    ></em>
+                    <em class="ri-arrow-down-circle-line text-danger fs-18 float-end align-middle"></em>
                   </h5>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
@@ -961,11 +906,7 @@ export default {
                     </div>
                     <div class="flex-grow-1 ms-3">
                       <h2 class="mb-0">
-                        <count-to
-                          :startVal="0"
-                          :endVal="2659"
-                          :duration="5000"
-                        ></count-to>
+                        <count-to :startVal="0" :endVal="2659" :duration="5000"></count-to>
                       </h2>
                     </div>
                   </div>
@@ -991,12 +932,7 @@ export default {
               <div>
                 <p class="fw-medium text-muted mb-0">Users</p>
                 <h2 class="mt-4 ff-secondary fw-semibold">
-                  <count-to
-                    :startVal="0"
-                    :endVal="28"
-                    :duration="5000"
-                  ></count-to
-                  >k
+                  <count-to :startVal="0" :endVal="28" :duration="5000"></count-to>k
                 </h2>
                 <p class="mb-0 text-muted">
                   <span class="badge bg-light text-success mb-0">
@@ -1007,9 +943,7 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span
-                    class="avatar-title bg-soft-info rounded-circle fs-2 shadow"
-                  >
+                  <span class="avatar-title bg-soft-info rounded-circle fs-2 shadow">
                     <UsersIcon class="text-info"></UsersIcon>
                   </span>
                 </div>
@@ -1029,12 +963,7 @@ export default {
               <div>
                 <p class="fw-medium text-muted mb-0">Sessions</p>
                 <h2 class="mt-4 ff-secondary fw-semibold">
-                  <count-to
-                    :startVal="0"
-                    :endVal="97"
-                    :duration="5000"
-                  ></count-to
-                  >k
+                  <count-to :startVal="0" :endVal="97" :duration="5000"></count-to>k
                 </h2>
                 <p class="mb-0 text-muted">
                   <span class="badge bg-light text-danger mb-0">
@@ -1045,9 +974,7 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span
-                    class="avatar-title bg-soft-info rounded-circle fs-2 shadow"
-                  >
+                  <span class="avatar-title bg-soft-info rounded-circle fs-2 shadow">
                     <ActivityIcon class="text-info"></ActivityIcon>
                   </span>
                 </div>
@@ -1067,18 +994,8 @@ export default {
               <div>
                 <p class="fw-medium text-white-50 mb-0">Avg. Visit Duration</p>
                 <h2 class="mt-4 ff-secondary fw-semibold text-white">
-                  <count-to
-                    :startVal="0"
-                    :endVal="3"
-                    :duration="5000"
-                  ></count-to
-                  >m
-                  <count-to
-                    :startVal="0"
-                    :endVal="40"
-                    :duration="5000"
-                  ></count-to
-                  >sec
+                  <count-to :startVal="0" :endVal="3" :duration="5000"></count-to>m
+                  <count-to :startVal="0" :endVal="40" :duration="5000"></count-to>sec
                 </h2>
                 <p class="mb-0 text-white-50">
                   <span class="badge badge-soft-light mb-0">
@@ -1089,9 +1006,7 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span
-                    class="avatar-title bg-soft-light rounded-circle fs-2 shadow"
-                  >
+                  <span class="avatar-title bg-soft-light rounded-circle fs-2 shadow">
                     <ClockIcon class="text-white"></ClockIcon>
                   </span>
                 </div>
@@ -1111,12 +1026,7 @@ export default {
               <div>
                 <p class="fw-medium text-muted mb-0">Bounce Rate</p>
                 <h2 class="mt-4 ff-secondary fw-semibold">
-                  <count-to
-                    :startVal="0"
-                    :endVal="33"
-                    :duration="5000"
-                  ></count-to
-                  >%
+                  <count-to :startVal="0" :endVal="33" :duration="5000"></count-to>%
                 </h2>
                 <p class="mb-0 text-muted">
                   <span class="badge bg-light text-success mb-0">
@@ -1127,9 +1037,7 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span
-                    class="avatar-title bg-soft-info rounded-circle fs-2 shadow"
-                  >
+                  <span class="avatar-title bg-soft-info rounded-circle fs-2 shadow">
                     <ExternalLinkIcon class="text-info"></ExternalLinkIcon>
                   </span>
                 </div>
@@ -1150,9 +1058,7 @@ export default {
           <div class="card-body">
             <div class="d-flex align-items-center">
               <div class="avatar-sm flex-shrink-0">
-                <span
-                  class="avatar-title bg-light text-success rounded-2 fs-2 shadow"
-                >
+                <span class="avatar-title bg-light text-success rounded-2 fs-2 shadow">
                   <em class="bx bx-shopping-bag"></em>
                 </span>
               </div>
@@ -1161,19 +1067,13 @@ export default {
                   Total Sales
                 </p>
                 <h4 class="fs-4 mb-3 text-white">
-                  <count-to
-                    :startVal="0"
-                    :endVal="2045"
-                    :duration="5000"
-                  ></count-to>
+                  <count-to :startVal="0" :endVal="2045" :duration="5000"></count-to>
                 </h4>
                 <p class="text-white-50 mb-0">From 1930 last year</p>
               </div>
               <div class="flex-shrink-0 align-self-center">
-                <span class="badge badge-soft-light fs-12"
-                  ><em class="ri-arrow-up-s-line fs-13 align-middle me-1"></em
-                  >6.11 %<span> </span
-                ></span>
+                <span class="badge badge-soft-light fs-12"><em
+                    class="ri-arrow-up-s-line fs-13 align-middle me-1"></em>6.11 %<span> </span></span>
               </div>
             </div>
           </div>
@@ -1187,9 +1087,7 @@ export default {
           <div class="card-body">
             <div class="d-flex align-items-center">
               <div class="avatar-sm flex-shrink-0">
-                <span
-                  class="avatar-title bg-warning text-white rounded-2 fs-2 shadow"
-                >
+                <span class="avatar-title bg-warning text-white rounded-2 fs-2 shadow">
                   <em class="bx bxs-user-account"></em>
                 </span>
               </div>
@@ -1198,19 +1096,13 @@ export default {
                   Number of Users
                 </p>
                 <h4 class="fs-4 mb-3">
-                  <count-to
-                    :startVal="0"
-                    :endVal="7522"
-                    :duration="5000"
-                  ></count-to>
+                  <count-to :startVal="0" :endVal="7522" :duration="5000"></count-to>
                 </h4>
                 <p class="text-muted mb-0">From 9530 last year</p>
               </div>
               <div class="flex-shrink-0 align-self-center">
-                <span class="badge badge-soft-danger fs-12"
-                  ><em class="ri-arrow-down-s-line fs-13 align-middle me-1"></em
-                  >10.35 %<span> </span
-                ></span>
+                <span class="badge badge-soft-danger fs-12"><em
+                    class="ri-arrow-down-s-line fs-13 align-middle me-1"></em>10.35 %<span> </span></span>
               </div>
             </div>
           </div>
@@ -1224,9 +1116,7 @@ export default {
           <div class="card-body">
             <div class="d-flex align-items-center">
               <div class="avatar-sm flex-shrink-0">
-                <span
-                  class="avatar-title bg-danger text-white rounded-2 fs-2 shadow"
-                >
+                <span class="avatar-title bg-danger text-white rounded-2 fs-2 shadow">
                   <em class="bx bxs-badge-dollar"></em>
                 </span>
               </div>
@@ -1235,19 +1125,13 @@ export default {
                   Total Revenue
                 </p>
                 <h4 class="fs-4 mb-3">
-                  $<count-to
-                    :startVal="0"
-                    :endVal="2845"
-                    :duration="5000"
-                  ></count-to>
+                  $<count-to :startVal="0" :endVal="2845" :duration="5000"></count-to>
                 </h4>
                 <p class="text-muted mb-0">From $1,750.04 last year</p>
               </div>
               <div class="flex-shrink-0 align-self-center">
-                <span class="badge badge-soft-success fs-12"
-                  ><em class="ri-arrow-up-s-line fs-13 align-middle me-1"></em
-                  >22.96 %<span> </span
-                ></span>
+                <span class="badge badge-soft-success fs-12"><em
+                    class="ri-arrow-up-s-line fs-13 align-middle me-1"></em>22.96 %<span> </span></span>
               </div>
             </div>
           </div>
@@ -1261,9 +1145,7 @@ export default {
           <div class="card-body">
             <div class="d-flex align-items-center">
               <div class="avatar-sm flex-shrink-0">
-                <span
-                  class="avatar-title bg-info text-white rounded-2 fs-2 shadow"
-                >
+                <span class="avatar-title bg-info text-white rounded-2 fs-2 shadow">
                   <em class="bx bx-store-alt"></em>
                 </span>
               </div>
@@ -1272,20 +1154,13 @@ export default {
                   Number of Stores
                 </p>
                 <h4 class="fs-4 mb-3">
-                  $<count-to
-                    :startVal="0"
-                    :endVal="405"
-                    :duration="5000"
-                  ></count-to
-                  >k
+                  $<count-to :startVal="0" :endVal="405" :duration="5000"></count-to>k
                 </h4>
                 <p class="text-muted mb-0">From 308 last year</p>
               </div>
               <div class="flex-shrink-0 align-self-center">
-                <span class="badge badge-soft-success fs-12"
-                  ><em class="ri-arrow-up-s-line fs-13 align-middle me-1"></em
-                  >16.31 %<span> </span
-                ></span>
+                <span class="badge badge-soft-success fs-12"><em
+                    class="ri-arrow-up-s-line fs-13 align-middle me-1"></em>16.31 %<span> </span></span>
               </div>
             </div>
           </div>
@@ -1307,21 +1182,13 @@ export default {
       <div class="col-xl-4">
         <div class="card">
           <div class="card-body p-0">
-            <div
-              class="alert alert-warning border-0 rounded-top rounded-0 m-0 d-flex align-items-center"
-              role="alert"
-            >
-              <alert-triangle-icon
-                class="text-warning me-2 icon-sm"
-              ></alert-triangle-icon>
+            <div class="alert alert-warning border-0 rounded-top rounded-0 m-0 d-flex align-items-center" role="alert">
+              <alert-triangle-icon class="text-warning me-2 icon-sm"></alert-triangle-icon>
               <div class="flex-grow-1 text-truncate">
-                Your free trial expired in <b>17</b> days.
+                Your free trial expired in <strong>17</strong> days.
               </div>
               <div class="flex-shrink-0">
-                <router-link
-                  to="/pages/profile"
-                  class="text-reset text-decoration-underline"
-                  ><b>Upgrade</b>
+                <router-link to="/pages/profile" class="text-reset text-decoration-underline"><strong>Upgrade</strong>
                 </router-link>
               </div>
             </div>
@@ -1335,19 +1202,13 @@ export default {
                     Plan’ <em class="mdi mdi-arrow-right"></em>
                   </p>
                   <div class="mt-3">
-                    <router-link to="/pages/profile" class="btn btn-success"
-                      >Upgrade Account!</router-link
-                    >
+                    <router-link to="/pages/profile" class="btn btn-success">Upgrade Account!</router-link>
                   </div>
                 </div>
               </div>
               <div class="col-sm-4">
                 <div class="px-3">
-                  <img
-                    src="@/assets/images/user-illustarator-2.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="@/assets/images/user-illustarator-2.png" class="img-fluid" alt="" />
                 </div>
               </div>
             </div>
@@ -1361,17 +1222,13 @@ export default {
           <div class="card-body p-0">
             <div
               class="alert alert-danger rounded-top alert-solid alert-label-icon border-0 rounded-0 m-0 d-flex align-items-center"
-              role="alert"
-            >
+              role="alert">
               <em class="ri-error-warning-line label-icon"></em>
               <div class="flex-grow-1 text-truncate">
-                Your free trial expired in <b>17</b> days.
+                Your free trial expired in <strong>17</strong> days.
               </div>
               <div class="flex-shrink-0">
-                <router-link
-                  to="/pages/profile"
-                  class="text-reset text-decoration-underline"
-                  ><b>Upgrade</b>
+                <router-link to="/pages/profile" class="text-reset text-decoration-underline"><strong>Upgrade</strong>
                 </router-link>
               </div>
             </div>
@@ -1385,19 +1242,13 @@ export default {
                     Plan’ <em class="mdi mdi-arrow-right"></em>
                   </p>
                   <div class="mt-3">
-                    <router-link to="/pages/profile" class="btn btn-info"
-                      >Upgrade Account!</router-link
-                    >
+                    <router-link to="/pages/profile" class="btn btn-info">Upgrade Account!</router-link>
                   </div>
                 </div>
               </div>
               <div class="col-sm-4">
                 <div class="px-3">
-                  <img
-                    src="@/assets/images/user-illustarator-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
+                  <img src="@/assets/images/user-illustarator-1.png" class="img-fluid" alt="" />
                 </div>
               </div>
             </div>
@@ -1409,18 +1260,13 @@ export default {
       <div class="col-xl-4">
         <div class="card">
           <div class="card-body p-0">
-            <div
-              class="alert alert-warning border-0 rounded-top rounded-0 m-0 d-flex align-items-center"
-              role="alert"
-            >
+            <div class="alert alert-warning border-0 rounded-top rounded-0 m-0 d-flex align-items-center" role="alert">
               <div class="flex-grow-1 text-truncate">
-                We will choose a gift for you in <b>5</b> days.
+                We will choose a gift for you in <strong>5</strong> days.
               </div>
               <div class="flex-shrink-0">
-                <router-link
-                  to="/pages/profile"
-                  class="text-reset text-decoration-underline"
-                  ><b>Get Free Gift</b>
+                <router-link to="/pages/profile" class="text-reset text-decoration-underline"><strong>Get Free
+                    Gift</strong>
                 </router-link>
               </div>
             </div>
@@ -1439,9 +1285,7 @@ export default {
                   <em class="mdi mdi-arrow-right"></em>
                 </p>
                 <div class="mt-3">
-                  <router-link to="/pages/profile" class="btn btn-secondary"
-                    >Get a Free Gift</router-link
-                  >
+                  <router-link to="/pages/profile" class="btn btn-secondary">Get a Free Gift</router-link>
                 </div>
               </div>
             </div>
@@ -1462,52 +1306,25 @@ export default {
             <div class="d-flex flex-wrap justify-content-evenly">
               <p class="text-muted mb-0">
                 <em
-                  class="mdi mdi-numeric-1-circle text-success fs-18 align-middle me-2 rounded-circle shadow"
-                ></em
-                >Completed
+                  class="mdi mdi-numeric-1-circle text-success fs-18 align-middle me-2 rounded-circle shadow"></em>Completed
               </p>
               <p class="text-muted mb-0">
-                <em
-                  class="mdi mdi-numeric-3-circle text-info fs-18 align-middle me-2 rounded-circle shadow"
-                ></em
-                >In Progress
+                <em class="mdi mdi-numeric-3-circle text-info fs-18 align-middle me-2 rounded-circle shadow"></em>In
+                Progress
               </p>
               <p class="text-muted mb-0">
-                <em
-                  class="mdi mdi-numeric-2-circle text-primary fs-18 align-middle me-2 rounded-circle shadow"
-                ></em
-                >To Do
+                <em class="mdi mdi-numeric-2-circle text-primary fs-18 align-middle me-2 rounded-circle shadow"></em>To
+                Do
               </p>
             </div>
           </div>
-          <div
-            class="progress animated-progess bg-soft-primary rounded-bottom rounded-0"
-            style="height: 6px"
-          >
-            <div
-              class="progress-bar bg-success rounded-0"
-              role="progressbar"
-              style="width: 30%"
-              aria-valuenow="30"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-            <div
-              class="progress-bar bg-info rounded-0"
-              role="progressbar"
-              style="width: 50%"
-              aria-valuenow="50"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-            <div
-              class="progress-bar rounded-0"
-              role="progressbar"
-              style="width: 20%"
-              aria-valuenow="20"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
+          <div class="progress animated-progess bg-soft-primary rounded-bottom rounded-0" style="height: 6px">
+            <div class="progress-bar bg-success rounded-0" role="progressbar" style="width: 30%" aria-valuenow="30"
+              aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-info rounded-0" role="progressbar" style="width: 50%" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar rounded-0" role="progressbar" style="width: 20%" aria-valuenow="20"
+              aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
       </div>
@@ -1520,52 +1337,25 @@ export default {
             <div class="d-flex flex-wrap justify-content-evenly">
               <p class="text-muted mb-0">
                 <em
-                  class="mdi mdi-numeric-3-circle text-success fs-18 align-middle me-2 rounded-circle shadow"
-                ></em
-                >Completed
+                  class="mdi mdi-numeric-3-circle text-success fs-18 align-middle me-2 rounded-circle shadow"></em>Completed
               </p>
               <p class="text-muted mb-0">
-                <em
-                  class="mdi mdi-numeric-0-circle text-info fs-18 align-middle me-2 rounded-circle shadow"
-                ></em
-                >In Progress
+                <em class="mdi mdi-numeric-0-circle text-info fs-18 align-middle me-2 rounded-circle shadow"></em>In
+                Progress
               </p>
               <p class="text-muted mb-0">
-                <em
-                  class="mdi mdi-numeric-8-circle text-primary fs-18 align-middle me-2 rounded-circle shadow"
-                ></em
-                >To Do
+                <em class="mdi mdi-numeric-8-circle text-primary fs-18 align-middle me-2 rounded-circle shadow"></em>To
+                Do
               </p>
             </div>
           </div>
-          <div
-            class="progress animated-progess bg-soft-primary rounded-bottom rounded-0"
-            style="height: 6px"
-          >
-            <div
-              class="progress-bar bg-success rounded-0"
-              role="progressbar"
-              style="width: 30%"
-              aria-valuenow="30"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-            <div
-              class="progress-bar bg-info rounded-0"
-              role="progressbar"
-              style="width: 0%"
-              aria-valuenow="0"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-            <div
-              class="progress-bar rounded-0"
-              role="progressbar"
-              style="width: 70%"
-              aria-valuenow="70"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
+          <div class="progress animated-progess bg-soft-primary rounded-bottom rounded-0" style="height: 6px">
+            <div class="progress-bar bg-success rounded-0" role="progressbar" style="width: 30%" aria-valuenow="30"
+              aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-info rounded-0" role="progressbar" style="width: 0%" aria-valuenow="0"
+              aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar rounded-0" role="progressbar" style="width: 70%" aria-valuenow="70"
+              aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
       </div>
@@ -1578,52 +1368,25 @@ export default {
             <div class="d-flex flex-wrap justify-content-evenly">
               <p class="text-muted mb-0">
                 <em
-                  class="mdi mdi-numeric-10-circle text-success fs-18 align-middle me-2 rounded-circle shadow"
-                ></em
-                >Completed
+                  class="mdi mdi-numeric-10-circle text-success fs-18 align-middle me-2 rounded-circle shadow"></em>Completed
               </p>
               <p class="text-muted mb-0">
-                <em
-                  class="mdi mdi-numeric-3-circle text-info fs-18 align-middle me-2 rounded-circle shadow"
-                ></em
-                >In Progress
+                <em class="mdi mdi-numeric-3-circle text-info fs-18 align-middle me-2 rounded-circle shadow"></em>In
+                Progress
               </p>
               <p class="text-muted mb-0">
-                <em
-                  class="mdi mdi-numeric-2-circle text-primary fs-18 align-middle me-2 rounded-circle shadow"
-                ></em
-                >To Do
+                <em class="mdi mdi-numeric-2-circle text-primary fs-18 align-middle me-2 rounded-circle shadow"></em>To
+                Do
               </p>
             </div>
           </div>
-          <div
-            class="progress animated-progess bg-soft-primary rounded-bottom rounded-0"
-            style="height: 6px"
-          >
-            <div
-              class="progress-bar bg-success rounded-0"
-              role="progressbar"
-              style="width: 60%"
-              aria-valuenow="60"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-            <div
-              class="progress-bar bg-info rounded-0"
-              role="progressbar"
-              style="width: 25%"
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-            <div
-              class="progress-bar rounded-0"
-              role="progressbar"
-              style="width: 15%"
-              aria-valuenow="15"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
+          <div class="progress animated-progess bg-soft-primary rounded-bottom rounded-0" style="height: 6px">
+            <div class="progress-bar bg-success rounded-0" role="progressbar" style="width: 60%" aria-valuenow="60"
+              aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-info rounded-0" role="progressbar" style="width: 25%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar rounded-0" role="progressbar" style="width: 15%" aria-valuenow="15"
+              aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
       </div>
@@ -1638,16 +1401,9 @@ export default {
             <h4 class="card-title mb-0 flex-grow-1">Upcoming Activities</h4>
             <div class="flex-shrink-0">
               <div class="dropdown card-header-dropdown">
-                <a
-                  class="text-reset dropdown-btn"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="text-muted fs-18"
-                    ><em class="mdi mdi-dots-vertical"></em
-                  ></span>
+                <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <span class="text-muted fs-18"><em class="mdi mdi-dots-vertical"></em></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
                   <a class="dropdown-item" href="#">Edit</a>
@@ -1662,9 +1418,7 @@ export default {
               <li class="list-group-item ps-0">
                 <div class="row align-items-center g-3">
                   <div class="col-auto">
-                    <div
-                      class="avatar-sm p-1 py-2 h-auto bg-light rounded-3 shadow"
-                    >
+                    <div class="avatar-sm p-1 py-2 h-auto bg-light rounded-3 shadow">
                       <div class="text-center">
                         <h5 class="mb-0">25</h5>
                         <div class="text-muted">Tue</div>
@@ -1675,66 +1429,32 @@ export default {
                     <h5 class="text-muted mt-0 mb-1 fs-13">
                       12:00am - 03:30pm
                     </h5>
-                    <a href="#" class="text-reset fs-14 mb-0"
-                      >Meeting for campaign with sales team</a
-                    >
+                    <a href="#" class="text-reset fs-14 mb-0">Meeting for campaign with sales team</a>
                   </div>
                   <div class="col-sm-auto">
                     <div class="avatar-group">
                       <div class="avatar-group-item shadow">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Stine Nielsen"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Stine Nielsen">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item shadow">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Jansh Brown"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Jansh Brown">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item shadow">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Dan Gibson"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Dan Gibson">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item shadow">
                         <a href="javascript: void(0);">
                           <div class="avatar-xxs">
-                            <span
-                              class="avatar-title rounded-circle bg-info text-white"
-                            >
+                            <span class="avatar-title rounded-circle bg-info text-white">
                               5
                             </span>
                           </div>
@@ -1749,9 +1469,7 @@ export default {
               <li class="list-group-item ps-0">
                 <div class="row align-items-center g-3">
                   <div class="col-auto">
-                    <div
-                      class="avatar-sm p-1 py-2 h-auto bg-light rounded-3 shadow"
-                    >
+                    <div class="avatar-sm p-1 py-2 h-auto bg-light rounded-3 shadow">
                       <div class="text-center">
                         <h5 class="mb-0">20</h5>
                         <div class="text-muted">Wed</div>
@@ -1762,82 +1480,38 @@ export default {
                     <h5 class="text-muted mt-0 mb-1 fs-13">
                       02:00pm - 03:45pm
                     </h5>
-                    <a href="#" class="text-reset fs-14 mb-0"
-                      >Adding a new event with attachments</a
-                    >
+                    <a href="#" class="text-reset fs-14 mb-0">Adding a new event with attachments</a>
                   </div>
                   <div class="col-sm-auto">
                     <div class="avatar-group">
                       <div class="avatar-group-item shadow">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Frida Bang"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Frida Bang">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item shadow">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Malou Silva"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Malou Silva">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item shadow">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Simon Schmidt"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Simon Schmidt">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item shadow">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Tosh Jessen"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Tosh Jessen">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item shadow">
                         <a href="javascript: void(0);">
                           <div class="avatar-xxs">
-                            <span
-                              class="avatar-title rounded-circle bg-success text-white"
-                            >
+                            <span class="avatar-title rounded-circle bg-success text-white">
                               3
                             </span>
                           </div>
@@ -1852,9 +1526,7 @@ export default {
               <li class="list-group-item ps-0">
                 <div class="row align-items-center g-3">
                   <div class="col-auto">
-                    <div
-                      class="avatar-sm p-1 py-2 h-auto bg-light rounded-3 shadow"
-                    >
+                    <div class="avatar-sm p-1 py-2 h-auto bg-light rounded-3 shadow">
                       <div class="text-center">
                         <h5 class="mb-0">17</h5>
                         <div class="text-muted">Wed</div>
@@ -1865,66 +1537,32 @@ export default {
                     <h5 class="text-muted mt-0 mb-1 fs-13">
                       04:30pm - 07:15pm
                     </h5>
-                    <a href="#" class="text-reset fs-14 mb-0"
-                      >Create new project Bundling Product</a
-                    >
+                    <a href="#" class="text-reset fs-14 mb-0">Create new project Bundling Product</a>
                   </div>
                   <div class="col-sm-auto">
                     <div class="avatar-group">
                       <div class="avatar-group-item shadow">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Nina Schmidt"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Nina Schmidt">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item shadow">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Stine Nielsen"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Stine Nielsen">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item shadow">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Jansh Brown"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Jansh Brown">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item shadow">
                         <a href="javascript: void(0);">
                           <div class="avatar-xxs">
-                            <span
-                              class="avatar-title rounded-circle bg-primary text-white"
-                            >
+                            <span class="avatar-title rounded-circle bg-primary text-white">
                               4
                             </span>
                           </div>
@@ -1950,66 +1588,32 @@ export default {
                     <h5 class="text-muted mt-0 mb-1 fs-13">
                       10:30am - 01:15pm
                     </h5>
-                    <a href="#" class="text-reset fs-14 mb-0"
-                      >Weekly closed sales won checking with sales team</a
-                    >
+                    <a href="#" class="text-reset fs-14 mb-0">Weekly closed sales won checking with sales team</a>
                   </div>
                   <div class="col-sm-auto">
                     <div class="avatar-group">
                       <div class="avatar-group-item">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Stine Nielsen"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Stine Nielsen">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Jansh Brown"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Jansh Brown">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item">
-                        <a
-                          href="javascript: void(0);"
-                          class="d-inline-block"
-                          data-bs-toggle="tooltip"
-                          data-bs-placement="top"
-                          title=""
-                          data-bs-original-title="Dan Gibson"
-                        >
-                          <img
-                            src="@/assets/images/users/avatar-1.png"
-                            alt=""
-                            class="rounded-circle avatar-xxs"
-                          />
+                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip"
+                          data-bs-placement="top" title="" data-bs-original-title="Dan Gibson">
+                          <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs" />
                         </a>
                       </div>
                       <div class="avatar-group-item">
                         <a href="javascript: void(0);">
                           <div class="avatar-xxs">
-                            <span
-                              class="avatar-title rounded-circle bg-warning text-white"
-                            >
+                            <span class="avatar-title rounded-circle bg-warning text-white">
                               9
                             </span>
                           </div>
@@ -2032,8 +1636,7 @@ export default {
               </div>
               <div class="col-sm-auto">
                 <ul
-                  class="pagination pagination-separated pagination-sm justify-content-center justify-content-sm-start mb-0"
-                >
+                  class="pagination pagination-separated pagination-sm justify-content-center justify-content-sm-start mb-0">
                   <li class="page-item disabled">
                     <a href="#" class="page-link">←</a>
                   </li>
@@ -2066,19 +1669,10 @@ export default {
                 <h4 class="card-title mb-0 flex-grow-1">My Tasks</h4>
                 <div class="flex-shrink-0">
                   <div class="dropdown card-header-dropdown">
-                    <a
-                      class="text-reset dropdown-btn"
-                      href="#"
-                      data-bs-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <span class="text-muted"
-                        ><em
-                          class="ri-settings-4-line align-middle me-1 fs-15"
-                        ></em
-                        >Settings</span
-                      >
+                    <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false">
+                      <span class="text-muted"><em
+                          class="ri-settings-4-line align-middle me-1 fs-15"></em>Settings</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end">
                       <a class="dropdown-item" href="#">Edit</a>
@@ -2090,9 +1684,7 @@ export default {
               <!-- end card header -->
 
               <div class="card-body p-0">
-                <div
-                  class="align-items-center p-3 justify-content-between d-flex"
-                >
+                <div class="align-items-center p-3 justify-content-between d-flex">
                   <div class="flex-shrink-0">
                     <div class="text-muted">
                       <span class="fw-semibold">4</span> of
@@ -2110,19 +1702,12 @@ export default {
                     <li class="list-group-item ps-0">
                       <div class="d-flex align-items-start">
                         <div class="form-check ps-0 flex-sharink-0">
-                          <input
-                            type="checkbox"
-                            class="form-check-input ms-0"
-                            id="task_one"
-                          />
+                          <input type="checkbox" class="form-check-input ms-0" id="task_one" />
                         </div>
                         <div class="flex-grow-1">
-                          <label
-                            class="form-check-label mb-0 ps-2"
-                            for="task_one"
-                            >Review and make sure nothing slips through
-                            cracks</label
-                          >
+                          <label class="form-check-label mb-0 ps-2" for="task_one">Review and make sure nothing slips
+                            through
+                            cracks</label>
                         </div>
                         <div class="flex-shrink-0 ms-2">
                           <p class="text-muted fs-12 mb-0">15 Sep, 2021</p>
@@ -2132,18 +1717,11 @@ export default {
                     <li class="list-group-item ps-0">
                       <div class="d-flex align-items-start">
                         <div class="form-check ps-0 flex-sharink-0">
-                          <input
-                            type="checkbox"
-                            class="form-check-input ms-0"
-                            id="task_two"
-                          />
+                          <input type="checkbox" class="form-check-input ms-0" id="task_two" />
                         </div>
                         <div class="flex-grow-1">
-                          <label
-                            class="form-check-label mb-0 ps-2"
-                            for="task_two"
-                            >Send meeting invites for sales upcampaign</label
-                          >
+                          <label class="form-check-label mb-0 ps-2" for="task_two">Send meeting invites for sales
+                            upcampaign</label>
                         </div>
                         <div class="flex-shrink-0 ms-2">
                           <p class="text-muted fs-12 mb-0">20 Sep, 2021</p>
@@ -2153,19 +1731,12 @@ export default {
                     <li class="list-group-item ps-0">
                       <div class="d-flex align-items-start">
                         <div class="form-check flex-sharink-0 ps-0">
-                          <input
-                            type="checkbox"
-                            class="form-check-input ms-0"
-                            id="task_three"
-                          />
+                          <input type="checkbox" class="form-check-input ms-0" id="task_three" />
                         </div>
                         <div class="flex-grow-1">
-                          <label
-                            class="form-check-label mb-0 ps-2"
-                            for="task_three"
-                            >Weekly closed sales won checking with sales
-                            team</label
-                          >
+                          <label class="form-check-label mb-0 ps-2" for="task_three">Weekly closed sales won checking
+                            with sales
+                            team</label>
                         </div>
                         <div class="flex-shrink-0 ms-2">
                           <p class="text-muted fs-12 mb-0">24 Sep, 2021</p>
@@ -2175,19 +1746,12 @@ export default {
                     <li class="list-group-item ps-0">
                       <div class="d-flex align-items-start">
                         <div class="form-check ps-0 flex-sharink-0">
-                          <input
-                            type="checkbox"
-                            class="form-check-input ms-0"
-                            id="task_four"
-                          />
+                          <input type="checkbox" class="form-check-input ms-0" id="task_four" />
                         </div>
                         <div class="flex-grow-1">
-                          <label
-                            class="form-check-label mb-0 ps-2"
-                            for="task_four"
-                            >Add notes that can be viewed from the individual
-                            view</label
-                          >
+                          <label class="form-check-label mb-0 ps-2" for="task_four">Add notes that can be viewed from
+                            the individual
+                            view</label>
                         </div>
                         <div class="flex-shrink-0 ms-2">
                           <p class="text-muted fs-12 mb-0">27 Sep, 2021</p>
@@ -2197,18 +1761,10 @@ export default {
                     <li class="list-group-item ps-0">
                       <div class="d-flex align-items-start">
                         <div class="form-check ps-0 flex-sharink-0">
-                          <input
-                            type="checkbox"
-                            class="form-check-input ms-0"
-                            id="task_five"
-                          />
+                          <input type="checkbox" class="form-check-input ms-0" id="task_five" />
                         </div>
                         <div class="flex-grow-1">
-                          <label
-                            class="form-check-label mb-0 ps-2"
-                            for="task_five"
-                            >Move stuff to another page</label
-                          >
+                          <label class="form-check-label mb-0 ps-2" for="task_five">Move stuff to another page</label>
                         </div>
                         <div class="flex-shrink-0 ms-2">
                           <p class="text-muted fs-12 mb-0">27 Sep, 2021</p>
@@ -2218,19 +1774,12 @@ export default {
                     <li class="list-group-item ps-0">
                       <div class="d-flex align-items-start">
                         <div class="form-check ps-0 flex-sharink-0">
-                          <input
-                            type="checkbox"
-                            class="form-check-input ms-0"
-                            id="task_six"
-                          />
+                          <input type="checkbox" class="form-check-input ms-0" id="task_six" />
                         </div>
                         <div class="flex-grow-1">
-                          <label
-                            class="form-check-label mb-0 ps-2"
-                            for="task_six"
-                            >Styling wireframe design and documentation for
-                            velzon admin</label
-                          >
+                          <label class="form-check-label mb-0 ps-2" for="task_six">Styling wireframe design and
+                            documentation for
+                            velzon admin</label>
                         </div>
                         <div class="flex-shrink-0 ms-2">
                           <p class="text-muted fs-12 mb-0">27 Sep, 2021</p>
@@ -2241,11 +1790,7 @@ export default {
                   <!-- end ul -->
                 </div>
                 <div class="p-3">
-                  <a
-                    href="javascript:void(0);"
-                    class="text-muted text-decoration-underline"
-                    >Show more...</a
-                  >
+                  <a href="javascript:void(0);" class="text-muted text-decoration-underline">Show more...</a>
                 </div>
               </div>
               <!-- end card body -->
@@ -2255,15 +1800,10 @@ export default {
           <!-- end col -->
           <div class="col-xl-6">
             <div class="card card-height-100">
-              <div
-                class="card-header border-bottom-dashed align-items-center d-flex"
-              >
+              <div class="card-header border-bottom-dashed align-items-center d-flex">
                 <h4 class="card-title mb-0 flex-grow-1">Recent Activity</h4>
                 <div class="flex-shrink-0">
-                  <button
-                    type="button"
-                    class="btn btn-soft-primary btn-sm shadow-none"
-                  >
+                  <button type="button" class="btn btn-soft-primary btn-sm shadow-none">
                     View All Activity
                   </button>
                 </div>
@@ -2274,9 +1814,7 @@ export default {
                   <div class="acitivity-timeline acitivity-main">
                     <div class="acitivity-item d-flex">
                       <div class="flex-shrink-0 avatar-xs acitivity-avatar">
-                        <div
-                          class="avatar-title bg-soft-success text-success rounded-circle shadow"
-                        >
+                        <div class="avatar-title bg-soft-success text-success rounded-circle shadow">
                           <em class="ri-shopping-cart-2-line"></em>
                         </div>
                       </div>
@@ -2290,9 +1828,7 @@ export default {
                     </div>
                     <div class="acitivity-item py-3 d-flex">
                       <div class="flex-shrink-0 avatar-xs acitivity-avatar">
-                        <div
-                          class="avatar-title bg-soft-primary text-primary rounded-circle shadow"
-                        >
+                        <div class="avatar-title bg-soft-primary text-primary rounded-circle shadow">
                           <em class="ri-stack-fill"></em>
                         </div>
                       </div>
@@ -2302,38 +1838,15 @@ export default {
                           <span class="fw-semibold">style collection</span>
                         </h6>
                         <p class="text-muted mb-1">By Nesta Technologies</p>
-                        <div
-                          class="d-inline-flex gap-2 border border-dashed p-2 mb-2 w-75"
-                        >
-                          <router-link
-                            to="/ecommerce/product-details"
-                            class="bg-light rounded p-1"
-                          >
-                            <img
-                              src="@/assets/images/products/img-8.png"
-                              alt=""
-                              class="img-fluid d-block"
-                            />
+                        <div class="d-inline-flex gap-2 border border-dashed p-2 mb-2 w-75">
+                          <router-link to="/ecommerce/product-details" class="bg-light rounded p-1">
+                            <img src="@/assets/images/products/img-8.png" alt="" class="img-fluid d-block" />
                           </router-link>
-                          <router-link
-                            to="/ecommerce/product-details"
-                            class="bg-light rounded p-1"
-                          >
-                            <img
-                              src="@/assets/images/products/img-2.png"
-                              alt=""
-                              class="img-fluid d-block"
-                            />
+                          <router-link to="/ecommerce/product-details" class="bg-light rounded p-1">
+                            <img src="@/assets/images/products/img-2.png" alt="" class="img-fluid d-block" />
                           </router-link>
-                          <router-link
-                            to="/ecommerce/product-details"
-                            class="bg-light rounded p-1"
-                          >
-                            <img
-                              src="@/assets/images/products/img-10.png"
-                              alt=""
-                              class="img-fluid d-block"
-                            />
+                          <router-link to="/ecommerce/product-details" class="bg-light rounded p-1">
+                            <img src="@/assets/images/products/img-10.png" alt="" class="img-fluid d-block" />
                           </router-link>
                         </div>
                         <p class="mb-0 text-muted">
@@ -2343,11 +1856,8 @@ export default {
                     </div>
                     <div class="acitivity-item py-3 d-flex">
                       <div class="flex-shrink-0">
-                        <img
-                          src="@/assets/images/users/avatar-1.png"
-                          alt=""
-                          class="avatar-xs rounded-circle acitivity-avatar shadow"
-                        />
+                        <img src="@/assets/images/users/avatar-1.png" alt=""
+                          class="avatar-xs rounded-circle acitivity-avatar shadow" />
                       </div>
                       <div class="flex-grow-1 ms-3">
                         <h6 class="mb-1">
@@ -2363,9 +1873,7 @@ export default {
                     <div class="acitivity-item py-3 d-flex">
                       <div class="flex-shrink-0">
                         <div class="avatar-xs acitivity-avatar">
-                          <div
-                            class="avatar-title rounded-circle bg-secondary shadow"
-                          >
+                          <div class="avatar-title rounded-circle bg-secondary shadow">
                             <em class="mdi mdi-sale fs-14"></em>
                           </div>
                         </div>
@@ -2373,10 +1881,7 @@ export default {
                       <div class="flex-grow-1 ms-3">
                         <h6 class="mb-1">
                           Today offers by
-                          <router-link
-                            to="/ecommerce/seller-details"
-                            class="link-secondary"
-                            >Digitech Galaxy
+                          <router-link to="/ecommerce/seller-details" class="link-secondary">Digitech Galaxy
                           </router-link>
                         </h6>
                         <p class="text-muted mb-2">
@@ -2389,9 +1894,7 @@ export default {
                     <div class="acitivity-item py-3 d-flex">
                       <div class="flex-shrink-0">
                         <div class="avatar-xs acitivity-avatar">
-                          <div
-                            class="avatar-title rounded-circle bg-soft-danger text-danger shadow"
-                          >
+                          <div class="avatar-title rounded-circle bg-soft-danger text-danger shadow">
                             <em class="ri-bookmark-fill"></em>
                           </div>
                         </div>
@@ -2407,9 +1910,7 @@ export default {
                     <div class="acitivity-item py-3 d-flex">
                       <div class="flex-shrink-0">
                         <div class="avatar-xs acitivity-avatar">
-                          <div
-                            class="avatar-title rounded-circle bg-secondary shadow"
-                          >
+                          <div class="avatar-title rounded-circle bg-secondary shadow">
                             <em class="mdi mdi-sale fs-14"></em>
                           </div>
                         </div>
@@ -2421,11 +1922,7 @@ export default {
                         </h6>
                         <p class="text-muted mb-0">
                           Flash sale by
-                          <a
-                            href="javascript:void(0);"
-                            class="link-secondary fw-medium"
-                            >Zoetic Fashion</a
-                          >
+                          <a href="javascript:void(0);" class="link-secondary fw-medium">Zoetic Fashion</a>
                         </p>
                         <small class="mb-0 text-muted">22 Oct, 2021</small>
                       </div>
@@ -2433,9 +1930,7 @@ export default {
                     <div class="acitivity-item py-3 d-flex">
                       <div class="flex-shrink-0">
                         <div class="avatar-xs acitivity-avatar">
-                          <div
-                            class="avatar-title rounded-circle bg-soft-info text-info shadow"
-                          >
+                          <div class="avatar-title rounded-circle bg-soft-info text-info shadow">
                             <em class="ri-line-chart-line"></em>
                           </div>
                         </div>
@@ -2445,22 +1940,16 @@ export default {
                         <p class="text-muted mb-2">
                           <span class="text-danger">2 days left</span>
                           notification to submit the monthly sales report.
-                          <a
-                            href="javascript:void(0);"
-                            class="link-warning text-decoration-underline"
-                            >Reports Builder</a
-                          >
+                          <a href="javascript:void(0);" class="link-warning text-decoration-underline">Reports
+                            Builder</a>
                         </p>
                         <small class="mb-0 text-muted">15 Oct</small>
                       </div>
                     </div>
                     <div class="acitivity-item d-flex">
                       <div class="flex-shrink-0">
-                        <img
-                          src="@/assets/images/users/avatar-1.png"
-                          alt=""
-                          class="avatar-xs rounded-circle acitivity-avatar shadow"
-                        />
+                        <img src="@/assets/images/users/avatar-1.png" alt=""
+                          class="avatar-xs rounded-circle acitivity-avatar shadow" />
                       </div>
                       <div class="flex-grow-1 ms-3">
                         <h6 class="mb-1">Frank Hook Commented</h6>
@@ -2501,10 +1990,7 @@ export default {
           <div class="card-header align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">Live Users By Country</h4>
             <div class="flex-shrink-0">
-              <button
-                type="button"
-                class="btn btn-soft-primary btn-sm shadow-none"
-              >
+              <button type="button" class="btn btn-soft-primary btn-sm shadow-none">
                 Export Report
               </button>
             </div>
@@ -2513,19 +1999,11 @@ export default {
 
           <!-- card body -->
           <div class="card-body">
-            <div
-              id="users-by-country"
-              data-colors='["--vz-light"]'
-              style="height: 269px"
-            ></div>
+            <div id="users-by-country" data-colors='["--vz-light"]' style="height: 269px"></div>
 
             <div class="table-responsive table-card mt-3">
-              <table
-                class="table table-borderless table-sm table-centered align-middle table-nowrap mb-1"
-              >
-                <thead
-                  class="text-muted border-dashed border border-start-0 border-end-0 bg-soft-light"
-                >
+              <table class="table table-borderless table-sm table-centered align-middle table-nowrap mb-1">
+                <thead class="text-muted border-dashed border border-start-0 border-end-0 bg-soft-light">
                   <tr>
                     <th>Duration (Secs)</th>
                     <th style="width: 30%">Sessions</th>
@@ -2574,28 +2052,16 @@ export default {
           <div class="card-header border-0 align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">Audiences Metrics</h4>
             <div>
-              <button
-                type="button"
-                class="btn btn-soft-secondary btn-sm shadow-none"
-              >
+              <button type="button" class="btn btn-soft-secondary btn-sm shadow-none">
                 ALL
               </button>
-              <button
-                type="button"
-                class="btn btn-soft-secondary btn-sm shadow-none"
-              >
+              <button type="button" class="btn btn-soft-secondary btn-sm shadow-none">
                 1M
               </button>
-              <button
-                type="button"
-                class="btn btn-soft-secondary btn-sm shadow-none"
-              >
+              <button type="button" class="btn btn-soft-secondary btn-sm shadow-none">
                 6M
               </button>
-              <button
-                type="button"
-                class="btn btn-soft-primary btn-sm shadow-none"
-              >
+              <button type="button" class="btn btn-soft-primary btn-sm shadow-none">
                 1Y
               </button>
             </div>
@@ -2604,17 +2070,13 @@ export default {
           <div class="card-header p-0">
             <div
               class="alert alert-warning alert-solid alert-label-icon border-0 rounded-0 m-0 d-flex align-items-center"
-              role="alert"
-            >
+              role="alert">
               <em class="ri-error-warning-line label-icon"></em>
               <div class="flex-grow-1 text-truncate">
-                Your free trial expired in <b>17</b> days.
+                Your free trial expired in <strong>17</strong> days.
               </div>
               <div class="flex-shrink-0">
-                <router-link
-                  to="/pages/profile"
-                  class="text-reset text-decoration-underline"
-                  ><b>Upgrade</b>
+                <router-link to="/pages/profile" class="text-reset text-decoration-underline"><strong>Upgrade</strong>
                 </router-link>
               </div>
             </div>
@@ -2624,16 +2086,9 @@ export default {
               <div class="col-6 col-sm-4">
                 <div class="p-3 border border-dashed border-start-0">
                   <h5 class="mb-1">
-                    <count-to
-                      :startVal="0"
-                      :endVal="854"
-                      :duration="5000"
-                    ></count-to>
-                    <span class="text-success ms-1 fs-12"
-                      >49%<em
-                        class="ri-arrow-right-up-line ms-1 align-middle"
-                      ></em
-                    ></span>
+                    <count-to :startVal="0" :endVal="854" :duration="5000"></count-to>
+                    <span class="text-success ms-1 fs-12">49%<em
+                        class="ri-arrow-right-up-line ms-1 align-middle"></em></span>
                   </h5>
                   <p class="text-muted mb-0">Avg. Session</p>
                 </div>
@@ -2642,38 +2097,19 @@ export default {
               <div class="col-6 col-sm-4">
                 <div class="p-3 border border-dashed border-start-0">
                   <h5 class="mb-1">
-                    <count-to
-                      :startVal="0"
-                      :endVal="1278"
-                      :duration="5000"
-                    ></count-to>
-                    <span class="text-success ms-1 fs-12"
-                      >60%<em
-                        class="ri-arrow-right-up-line ms-1 align-middle"
-                      ></em
-                    ></span>
+                    <count-to :startVal="0" :endVal="1278" :duration="5000"></count-to>
+                    <span class="text-success ms-1 fs-12">60%<em
+                        class="ri-arrow-right-up-line ms-1 align-middle"></em></span>
                   </h5>
                   <p class="text-muted mb-0">Conversion Rate</p>
                 </div>
               </div>
               <!--end col-->
               <div class="col-6 col-sm-4">
-                <div
-                  class="p-3 border border-dashed border-start-0 border-end-0"
-                >
+                <div class="p-3 border border-dashed border-start-0 border-end-0">
                   <h5 class="mb-1">
-                    <count-to
-                      :startVal="0"
-                      :endVal="3"
-                      :duration="5000"
-                    ></count-to
-                    >m
-                    <count-to
-                      :startVal="0"
-                      :endVal="3"
-                      :duration="40"
-                    ></count-to
-                    >sec
+                    <count-to :startVal="0" :endVal="3" :duration="5000"></count-to>m
+                    <count-to :startVal="0" :endVal="3" :duration="40"></count-to>sec
                   </h5>
                   <p class="text-muted mb-0">Avg. Ses. Duration</p>
                 </div>
@@ -2685,13 +2121,8 @@ export default {
 
           <div class="card-body p-0 pb-2">
             <div>
-              <apexchart
-                class="apex-charts"
-                dir="ltr"
-                height="306"
-                :series="audienceChartOptions.series"
-                :options="audienceChartOptions.chartOptions"
-              ></apexchart>
+              <apexchart class="apex-charts" dir="ltr" height="306" :series="audienceChartOptions.series"
+                :options="audienceChartOptions.chartOptions"></apexchart>
             </div>
           </div>
           <!-- end card body -->
@@ -2709,10 +2140,7 @@ export default {
           <div class="card-header align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">Sales by Locations</h4>
             <div class="flex-shrink-0">
-              <button
-                type="button"
-                class="btn btn-soft-primary btn-sm shadow-none"
-              >
+              <button type="button" class="btn btn-soft-primary btn-sm shadow-none">
                 Export Report
               </button>
             </div>
@@ -2721,49 +2149,27 @@ export default {
 
           <!-- card body -->
           <div class="card-body">
-            <div
-              id="sales-by-locations"
-              data-colors='["--vz-light"]'
-              style="height: 269px"
-            ></div>
+            <div id="sales-by-locations" data-colors='["--vz-light"]' style="height: 269px"></div>
 
             <div class="px-2 py-2 mt-1">
               <p class="mb-1">New Maxico <span class="float-end">75%</span></p>
               <div class="progress mt-2 bg-soft-primary" style="height: 6px">
-                <div
-                  class="progress-bar progress-bar-striped bg-primary"
-                  role="progressbar"
-                  style="width: 75%"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="75"
-                ></div>
+                <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 75%"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"></div>
               </div>
 
               <p class="mt-3 mb-1">
                 California <span class="float-end">47%</span>
               </p>
               <div class="progress mt-2 bg-soft-primary" style="height: 6px">
-                <div
-                  class="progress-bar progress-bar-striped bg-primary"
-                  role="progressbar"
-                  style="width: 47%"
-                  aria-valuenow="47"
-                  aria-valuemin="0"
-                  aria-valuemax="47"
-                ></div>
+                <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 47%"
+                  aria-valuenow="47" aria-valuemin="0" aria-valuemax="47"></div>
               </div>
 
               <p class="mt-3 mb-1">Texas <span class="float-end">82%</span></p>
               <div class="progress mt-2 bg-soft-primary" style="height: 6px">
-                <div
-                  class="progress-bar progress-bar-striped bg-primary"
-                  role="progressbar"
-                  style="width: 82%"
-                  aria-valuenow="82"
-                  aria-valuemin="0"
-                  aria-valuemax="82"
-                ></div>
+                <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 82%"
+                  aria-valuenow="82" aria-valuemin="0" aria-valuemax="82"></div>
               </div>
             </div>
           </div>
@@ -2775,22 +2181,13 @@ export default {
 
       <div class="col-xxl-4 col-xl-6">
         <div class="card card-height-100">
-          <div
-            class="card-header border-bottom-dashed align-items-center d-flex"
-          >
+          <div class="card-header border-bottom-dashed align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">My Portfolio</h4>
             <div>
               <div class="dropdown">
-                <button
-                  class="btn btn-soft-primary btn-sm"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="text-uppercase"
-                    >Btc<em class="mdi mdi-chevron-down align-middle ms-1"></em
-                  ></span>
+                <button class="btn btn-soft-primary btn-sm" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <span class="text-uppercase">Btc<em class="mdi mdi-chevron-down align-middle ms-1"></em></span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
                   <a class="dropdown-item" href="#">BTC</a>
@@ -2802,35 +2199,21 @@ export default {
           </div>
           <!-- end cardheader -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              dir="ltr"
-              height="210"
-              :series="portfolioChart.series"
-              :options="portfolioChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" dir="ltr" height="210" :series="portfolioChart.series"
+              :options="portfolioChart.chartOptions"></apexchart>
 
             <ul class="list-group list-group-flush border-dashed mb-0">
               <li class="list-group-item px-0">
                 <div class="d-flex">
                   <div class="flex-shrink-0 avatar-xs">
-                    <span
-                      class="avatar-title bg-light p-1 rounded-circle shadow"
-                    >
-                      <img
-                        src="@/assets/images/svg/crypto-icons/btc.svg"
-                        class="img-fluid"
-                        alt=""
-                      />
+                    <span class="avatar-title bg-light p-1 rounded-circle shadow">
+                      <img src="@/assets/images/svg/crypto-icons/btc.svg" class="img-fluid" alt="" />
                     </span>
                   </div>
                   <div class="flex-grow-1 ms-2">
                     <h6 class="mb-1">Bitcoin</h6>
                     <p class="fs-12 mb-0 text-muted">
-                      <em
-                        class="mdi mdi-circle fs-10 align-middle text-primary me-1"
-                      ></em
-                      >BTC
+                      <em class="mdi mdi-circle fs-10 align-middle text-primary me-1"></em>BTC
                     </p>
                   </div>
                   <div class="flex-shrink-0 text-end">
@@ -2843,23 +2226,14 @@ export default {
               <li class="list-group-item px-0">
                 <div class="d-flex">
                   <div class="flex-shrink-0 avatar-xs">
-                    <span
-                      class="avatar-title bg-light p-1 rounded-circle shadow"
-                    >
-                      <img
-                        src="@/assets/images/svg/crypto-icons/eth.svg"
-                        class="img-fluid"
-                        alt=""
-                      />
+                    <span class="avatar-title bg-light p-1 rounded-circle shadow">
+                      <img src="@/assets/images/svg/crypto-icons/eth.svg" class="img-fluid" alt="" />
                     </span>
                   </div>
                   <div class="flex-grow-1 ms-2">
                     <h6 class="mb-1">Ethereum</h6>
                     <p class="fs-12 mb-0 text-muted">
-                      <em
-                        class="mdi mdi-circle fs-10 align-middle text-info me-1"
-                      ></em
-                      >ETH
+                      <em class="mdi mdi-circle fs-10 align-middle text-info me-1"></em>ETH
                     </p>
                   </div>
                   <div class="flex-shrink-0 text-end">
@@ -2872,23 +2246,14 @@ export default {
               <li class="list-group-item px-0">
                 <div class="d-flex">
                   <div class="flex-shrink-0 avatar-xs">
-                    <span
-                      class="avatar-title bg-light p-1 rounded-circle shadow"
-                    >
-                      <img
-                        src="@/assets/images/svg/crypto-icons/ltc.svg"
-                        class="img-fluid"
-                        alt=""
-                      />
+                    <span class="avatar-title bg-light p-1 rounded-circle shadow">
+                      <img src="@/assets/images/svg/crypto-icons/ltc.svg" class="img-fluid" alt="" />
                     </span>
                   </div>
                   <div class="flex-grow-1 ms-2">
                     <h6 class="mb-1">Litecoin</h6>
                     <p class="fs-12 mb-0 text-muted">
-                      <em
-                        class="mdi mdi-circle fs-10 align-middle text-warning me-1"
-                      ></em
-                      >LTC
+                      <em class="mdi mdi-circle fs-10 align-middle text-warning me-1"></em>LTC
                     </p>
                   </div>
                   <div class="flex-shrink-0 text-end">
@@ -2901,23 +2266,14 @@ export default {
               <li class="list-group-item px-0 pb-0">
                 <div class="d-flex">
                   <div class="flex-shrink-0 avatar-xs">
-                    <span
-                      class="avatar-title bg-light p-1 rounded-circle shadow"
-                    >
-                      <img
-                        src="@/assets/images/svg/crypto-icons/dash.svg"
-                        class="img-fluid"
-                        alt=""
-                      />
+                    <span class="avatar-title bg-light p-1 rounded-circle shadow">
+                      <img src="@/assets/images/svg/crypto-icons/dash.svg" class="img-fluid" alt="" />
                     </span>
                   </div>
                   <div class="flex-grow-1 ms-2">
                     <h6 class="mb-1">Dash</h6>
                     <p class="fs-12 mb-0 text-muted">
-                      <em
-                        class="mdi mdi-circle fs-10 align-middle text-success me-1"
-                      ></em
-                      >DASH
+                      <em class="mdi mdi-circle fs-10 align-middle text-success me-1"></em>DASH
                     </p>
                   </div>
                   <div class="flex-shrink-0 text-end">
@@ -2948,23 +2304,15 @@ export default {
           </div>
 
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              dir="ltr"
-              height="310"
-              :series="topReferralsChart.series"
-              :options="topReferralsChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" dir="ltr" height="310" :series="topReferralsChart.series"
+              :options="topReferralsChart.chartOptions"></apexchart>
 
             <div class="row g-3">
               <div class="col-md-6">
                 <div class="d-flex mb-3">
                   <div class="flex-grow-1">
                     <p class="text-truncate text-muted fs-14 mb-0">
-                      <em
-                        class="mdi mdi-circle align-middle text-primary me-2"
-                      ></em
-                      >www.google.com
+                      <em class="mdi mdi-circle align-middle text-primary me-2"></em>www.google.com
                     </p>
                   </div>
                   <div class="flex-shrink-0">
@@ -2975,10 +2323,7 @@ export default {
                 <div class="d-flex mb-3">
                   <div class="flex-grow-1">
                     <p class="text-truncate text-muted fs-14 mb-0">
-                      <em
-                        class="mdi mdi-circle align-middle text-warning me-2"
-                      ></em
-                      >www.medium.com
+                      <em class="mdi mdi-circle align-middle text-warning me-2"></em>www.medium.com
                     </p>
                   </div>
                   <div class="flex-shrink-0">
@@ -2989,10 +2334,7 @@ export default {
                 <div class="d-flex">
                   <div class="flex-grow-1">
                     <p class="text-truncate text-muted fs-14 mb-0">
-                      <em
-                        class="mdi mdi-circle align-middle text-danger me-2"
-                      ></em
-                      >Other
+                      <em class="mdi mdi-circle align-middle text-danger me-2"></em>Other
                     </p>
                   </div>
                   <div class="flex-shrink-0">
@@ -3005,10 +2347,7 @@ export default {
                 <div class="d-flex mb-3">
                   <div class="flex-grow-1">
                     <p class="text-truncate text-muted fs-14 mb-0">
-                      <em
-                        class="mdi mdi-circle align-middle text-info me-2"
-                      ></em
-                      >www.youtube.com
+                      <em class="mdi mdi-circle align-middle text-info me-2"></em>www.youtube.com
                     </p>
                   </div>
                   <div class="flex-shrink-0">
@@ -3019,10 +2358,7 @@ export default {
                 <div class="d-flex mb-3">
                   <div class="flex-grow-1">
                     <p class="text-truncate text-muted fs-14 mb-0">
-                      <em
-                        class="mdi mdi-circle align-middle text-success me-2"
-                      ></em
-                      >www.meta.com
+                      <em class="mdi mdi-circle align-middle text-success me-2"></em>www.meta.com
                     </p>
                   </div>
                   <div class="flex-shrink-0">
@@ -3034,11 +2370,7 @@ export default {
             </div>
 
             <div class="mt-2 text-center">
-              <a
-                href="javascript:void(0);"
-                class="text-muted text-decoration-underline"
-                >Show All</a
-              >
+              <a href="javascript:void(0);" class="text-muted text-decoration-underline">Show All</a>
             </div>
           </div>
           <!-- end card body -->

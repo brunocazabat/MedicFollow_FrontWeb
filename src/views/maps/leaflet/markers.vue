@@ -51,13 +51,8 @@ export default {
  <template>
   <l-map style="height: 400px; width: 100%" :zoom="zoom" :center="center">
     <l-tile-layer :url="url" :attribution="attribution" />
-    <l-marker
-      v-for="marker in markers"
-      :key="marker.id"
-      :visible="marker.visible"
-      :draggable="marker.draggable"
-      :lat-lng="marker.position"
-    >
+    <l-marker v-for="marker in markers" :key="marker.id" :visible="marker.visible" :draggable="marker.draggable"
+      :lat-lng="marker.position">
       <l-icon :icon-anchor="staticAnchor">
         <img src="@/assets/images/leaflet/marker-icon.png" />
       </l-icon>

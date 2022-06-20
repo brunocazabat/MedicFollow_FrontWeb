@@ -1,25 +1,28 @@
 // Basic Radar Chart
-function getChartColorsArray(colors){
+function getChartColorsArray(colors) {
   colors = JSON.parse(colors);
   return colors.map(function (value) {
     var newValue = value.replace(" ", "");
     if (newValue.indexOf(",") === -1) {
-      var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
-          if (color) {
-          color = color.replace(" ", "");
-          return color;
-          }
-          else return newValue;
+      var color = getComputedStyle(document.documentElement).getPropertyValue(
+        newValue
+      );
+      if (color) {
+        color = color.replace(" ", "");
+        return color;
+      } else return newValue;
+    } else {
+      var val = value.split(",");
+      if (val.length == 2) {
+        var rgbaColor = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue(val[0]);
+        rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
+        return rgbaColor;
       } else {
-          var val = value.split(',');
-          if (val.length == 2) {
-              var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
-              rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
-              return rgbaColor;
-          } else {
-              return newValue;
-          }
+        return newValue;
       }
+    }
   });
 }
 const basicRadarChart = {
@@ -86,7 +89,9 @@ const radarMultiseriesChart = {
     markers: {
       size: 0,
     },
-    colors: getChartColorsArray('["--vz-danger", "--vz-success", "--vz-primary"]'),
+    colors: getChartColorsArray(
+      '["--vz-danger", "--vz-success", "--vz-primary"]'
+    ),
     xaxis: {
       categories: ["2014", "2015", "2016", "2017", "2018", "2019"],
     },
@@ -133,7 +138,7 @@ const polygonRadarChart = {
     },
     tooltip: {
       y: {
-        formatter: function(val) {
+        formatter: function (val) {
           return val;
         },
       },
@@ -152,7 +157,7 @@ const polygonRadarChart = {
     yaxis: {
       tickAmount: 7,
       labels: {
-        formatter: function(val, i) {
+        formatter: function (val, i) {
           if (i % 2 === 0) {
             return val;
           } else {

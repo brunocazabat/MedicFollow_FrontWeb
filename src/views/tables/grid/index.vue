@@ -1,171 +1,171 @@
 <script>
-  import Layout from "../../../layouts/main.vue";
-  import PageHeader from "@/components/page-header";
-  import appConfig from "../../../../app.config";
+import Layout from "../../../layouts/main.vue";
+import PageHeader from "@/components/page-header";
+import appConfig from "../../../../app.config";
 
-  export default {
-    page: {
+export default {
+  page: {
+    title: "Grid Js",
+    meta: [{
+      name: "description",
+      content: appConfig.description
+    }],
+  },
+  data() {
+    return {
       title: "Grid Js",
-      meta: [{
-        name: "description",
-        content: appConfig.description
-      }],
-    },
-    data() {
-      return {
-        title: "Grid Js",
-        items: [{
-            text: "Tables",
-            href: "/",
-          },
-          {
-            text: "Grid Js",
-            active: true,
-          },
-        ],
-        data: [{
-            id: 1,
-            name: "Janathan",
-            email: "jonathan@example.com",
-            position: "Senior Implementation Architect",
-            company: "Koelpin - Goldner",
-            country: "Vanuatu",
-          },
-          {
-            id: 2,
-            name: "Harold",
-            email: "harold@example.com",
-            position: "Forward Creative Coordinator",
-            company: "Feeney, Langworth and Tremblay",
-            country: "Niger",
-          },
-          {
-            id: 3,
-            name: "Shannan",
-            email: "shannon@example.com",
-            position: "Legacy Functionality Associate",
-            company: "Streich Group",
-            country: "Niue",
-          },
-          {
-            id: 4,
-            name: "Robert",
-            email: "robert@example.com",
-            position: "Product Accounts Technician",
-            company: "Ebert, Schamberger and Johnston",
-            country: "Mexico",
-          },
-          {
-            id: 5,
-            name: "Noel",
-            email: "noel@example.com",
-            position: "Customer Data Director",
-            company: "Raynor, Rolfson and Daugherty",
-            country: "Qatar",
-          },
-          {
-            id: 6,
-            name: "Tracl",
-            email: "traci@example.com",
-            position: "Corporate Identity Director",
-            company: "Hauck Inc",
-            country: "Holy See",
-          },
-          {
-            id: 7,
-            name: "Kerry",
-            email: "kerry@example.com",
-            position: "Lead Applications Associate",
-            company: "Metz Inc",
-            country: "Iran",
-          },
-          {
-            id: 8,
-            name: "Patsy",
-            email: "patsy@example.com",
-            position: "Dynamic Assurance Director",
-            company: "Zemlak Group",
-            country: "South Georgia",
-          },
-          {
-            id: 9,
+      items: [{
+        text: "Tables",
+        href: "/",
+      },
+      {
+        text: "Grid Js",
+        active: true,
+      },
+      ],
+      data: [{
+        id: 1,
+        name: "Janathan",
+        email: "jonathan@example.com",
+        position: "Senior Implementation Architect",
+        company: "Koelpin - Goldner",
+        country: "Vanuatu",
+      },
+      {
+        id: 2,
+        name: "Harold",
+        email: "harold@example.com",
+        position: "Forward Creative Coordinator",
+        company: "Feeney, Langworth and Tremblay",
+        country: "Niger",
+      },
+      {
+        id: 3,
+        name: "Shannan",
+        email: "shannon@example.com",
+        position: "Legacy Functionality Associate",
+        company: "Streich Group",
+        country: "Niue",
+      },
+      {
+        id: 4,
+        name: "Robert",
+        email: "robert@example.com",
+        position: "Product Accounts Technician",
+        company: "Ebert, Schamberger and Johnston",
+        country: "Mexico",
+      },
+      {
+        id: 5,
+        name: "Noel",
+        email: "noel@example.com",
+        position: "Customer Data Director",
+        company: "Raynor, Rolfson and Daugherty",
+        country: "Qatar",
+      },
+      {
+        id: 6,
+        name: "Tracl",
+        email: "traci@example.com",
+        position: "Corporate Identity Director",
+        company: "Hauck Inc",
+        country: "Holy See",
+      },
+      {
+        id: 7,
+        name: "Kerry",
+        email: "kerry@example.com",
+        position: "Lead Applications Associate",
+        company: "Metz Inc",
+        country: "Iran",
+      },
+      {
+        id: 8,
+        name: "Patsy",
+        email: "patsy@example.com",
+        position: "Dynamic Assurance Director",
+        company: "Zemlak Group",
+        country: "South Georgia",
+      },
+      {
+        id: 9,
 
-            name: "Cathy",
-            email: "cathy@example.com",
-            position: "Customer Data Director",
-            company: "Hoeger",
-            country: "San Marino",
-          },
-          {
-            id: 10,
-            name: "Tyrone",
-            email: "yrone@example.com",
-            position: "Senior Response Liaison",
-            company: "Howell - Rippin",
-            country: "Germany",
-          },
-        ],
-        page: 1,
-        perPage: 5,
-        pages: [],
-      };
-    },
-    name: "Widgets",
-    components: {
-      Layout,
-      PageHeader,
-    },
-    computed: {
-      displayedPosts() {
-        return this.paginate(this.data);
+        name: "Cathy",
+        email: "cathy@example.com",
+        position: "Customer Data Director",
+        company: "Hoeger",
+        country: "San Marino",
       },
-      resultQuery() {
-        if (this.searchQuery) {
-          const search = this.searchQuery.toLowerCase();
-          return this.displayedPosts.filter((data) => {
-            return (
-              data.id.toLowerCase().includes(search) ||
-              data.name.toLowerCase().includes(search) ||
-              data.email.toLowerCase().includes(search) ||
-              data.position.toLowerCase().includes(search) ||
-              data.company.toLowerCase().includes(search) ||
-              data.country.toLowerCase().includes(search)
-            );
-          });
-        } else {
-          return this.displayedPosts;
-        }
+      {
+        id: 10,
+        name: "Tyrone",
+        email: "yrone@example.com",
+        position: "Senior Response Liaison",
+        company: "Howell - Rippin",
+        country: "Germany",
       },
+      ],
+      page: 1,
+      perPage: 5,
+      pages: [],
+    };
+  },
+  name: "Widgets",
+  components: {
+    Layout,
+    PageHeader,
+  },
+  computed: {
+    displayedPosts() {
+      return this.paginate(this.data);
     },
-    watch: {
-      posts() {
-        this.setPages();
-      },
+    resultQuery() {
+      if (this.searchQuery) {
+        const search = this.searchQuery.toLowerCase();
+        return this.displayedPosts.filter((data) => {
+          return (
+            data.id.toLowerCase().includes(search) ||
+            data.name.toLowerCase().includes(search) ||
+            data.email.toLowerCase().includes(search) ||
+            data.position.toLowerCase().includes(search) ||
+            data.company.toLowerCase().includes(search) ||
+            data.country.toLowerCase().includes(search)
+          );
+        });
+      } else {
+        return this.displayedPosts;
+      }
     },
-    created() {
+  },
+  watch: {
+    posts() {
       this.setPages();
     },
-    filters: {
-      trimWords(value) {
-        return value.split(" ").splice(0, 20).join(" ") + "...";
-      },
+  },
+  created() {
+    this.setPages();
+  },
+  filters: {
+    trimWords(value) {
+      return value.split(" ").splice(0, 20).join(" ") + "...";
     },
-    methods: {
-      setPages() {
-        let numberOfPages = Math.ceil(this.data.length / this.perPage);
-        for (let index = 1; index <= numberOfPages; index++) {
-          this.pages.push(index);
-        }
-      },
-      paginate(data) {
-        let page = this.page;
-        let perPage = this.perPage;
-        let from = page * perPage - perPage;
-        let to = page * perPage;
-        return data.slice(from, to);
-      },
+  },
+  methods: {
+    setPages() {
+      let numberOfPages = Math.ceil(this.data.length / this.perPage);
+      for (let index = 1; index <= numberOfPages; index++) {
+        this.pages.push(index);
+      }
     },
-  };
+    paginate(data) {
+      let page = this.page;
+      let perPage = this.perPage;
+      let from = page * perPage - perPage;
+      let to = page * perPage;
+      return data.slice(from, to);
+    },
+  },
+};
 </script>
 
 <template>
@@ -217,9 +217,9 @@
               </a>
               <ul class="pagination listjs-pagination mb-0">
                 <li :class="{
-                              active: pageNumber == page,
-                              disabled: pageNumber == '...',
-                            }" v-for="(pageNumber, index) in pages.slice(page - 1, page + 5)" :key="index"
+                  active: pageNumber == page,
+                  disabled: pageNumber == '...',
+                }" v-for="(pageNumber, index) in pages.slice(page - 1, page + 5)" :key="index"
                   @click="page = pageNumber">
                   <a class="page" href="#">{{ pageNumber }}</a>
                 </li>

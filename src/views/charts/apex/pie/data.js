@@ -1,25 +1,28 @@
 //  Simple Pie Charts
-function getChartColorsArray(colors){
+function getChartColorsArray(colors) {
   colors = JSON.parse(colors);
   return colors.map(function (value) {
     var newValue = value.replace(" ", "");
     if (newValue.indexOf(",") === -1) {
-      var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
-          if (color) {
-          color = color.replace(" ", "");
-          return color;
-          }
-          else return newValue;
+      var color = getComputedStyle(document.documentElement).getPropertyValue(
+        newValue
+      );
+      if (color) {
+        color = color.replace(" ", "");
+        return color;
+      } else return newValue;
+    } else {
+      var val = value.split(",");
+      if (val.length == 2) {
+        var rgbaColor = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue(val[0]);
+        rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
+        return rgbaColor;
       } else {
-          var val = value.split(',');
-          if (val.length == 2) {
-              var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
-              rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
-              return rgbaColor;
-          } else {
-              return newValue;
-          }
+        return newValue;
       }
+    }
   });
 }
 const simplePieChart = {
@@ -38,7 +41,9 @@ const simplePieChart = {
         enabled: false,
       },
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'
+    ),
   },
 };
 
@@ -59,7 +64,9 @@ const donutChart = {
         enabled: false,
       },
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'
+    ),
   },
 };
 
@@ -77,7 +84,9 @@ const updatingDonutChart = {
     legend: {
       position: "bottom",
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'
+    ),
   },
 };
 
@@ -104,7 +113,7 @@ const gradientDonutChart = {
     },
     legend: {
       position: "bottom",
-      formatter: function(val, opts) {
+      formatter: function (val, opts) {
         return val + " - " + opts.w.globals.series[opts.seriesIndex];
       },
     },
@@ -114,7 +123,9 @@ const gradientDonutChart = {
         fontWeight: 500,
       },
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'
+    ),
   },
 };
 
@@ -189,7 +200,9 @@ const patternDonutChart = {
     legend: {
       position: "bottom",
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]'
+    ),
   },
 };
 
@@ -202,7 +215,9 @@ const imagePieChart = {
       height: 300,
       type: "pie",
     },
-    colors: getChartColorsArray('["--vz-primary", "--vz-success", "--vz-warning", "--vz-info"]'),
+    colors: getChartColorsArray(
+      '["--vz-primary", "--vz-success", "--vz-warning", "--vz-info"]'
+    ),
     fill: {
       type: "image",
       opacity: 0.85,
@@ -211,7 +226,7 @@ const imagePieChart = {
           // require("@/assets/images/auth-bg.jpg"),
           require("@/assets/images/small/img-3.jpg"),
           require("@/assets/images/small/img-5.jpg"),
-          require("@/assets/images/small/img-2.jpg")
+          require("@/assets/images/small/img-2.jpg"),
         ],
         width: 25,
         imagedHeight: 25,
@@ -276,7 +291,7 @@ const monochromePieChart = {
       },
     },
     dataLabels: {
-      formatter: function(val, opts) {
+      formatter: function (val, opts) {
         var name = opts.w.globals.labels[opts.seriesIndex];
         return [name, val.toFixed(1) + "%"];
       },

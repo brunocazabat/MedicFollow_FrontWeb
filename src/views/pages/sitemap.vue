@@ -51,190 +51,120 @@ export default {
                   <li>
                     <ul class="director">
                       <li>
-                        <a href="javascript:void(0);" class="fw-semibold"
-                          ><span>MedicFollow Admin</span></a
-                        >
+                        <a href="javascript:void(0);" class="fw-semibold"><span>MedicFollow Admin</span></a>
                         <ul class="subdirector">
                           <li>
-                            <a href="javascript:void(0);" class="fw-semibold"
-                              ><span>Contact Us</span></a
-                            >
+                            <a href="javascript:void(0);" class="fw-semibold"><span>Contact Us</span></a>
                           </li>
                         </ul>
                         <ul class="departments">
                           <li>
-                            <a href="javascript:void(0);" class="fw-semibold"
-                              ><span>Main Pages</span></a
-                            >
+                            <a href="javascript:void(0);" class="fw-semibold"><span>Main Pages</span></a>
                           </li>
 
                           <li class="department">
-                            <a href="javascript:void(0);" class="fw-semibold"
-                              ><span>Account Management</span></a
-                            >
+                            <a href="javascript:void(0);" class="fw-semibold"><span>Account Management</span></a>
                             <ul>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Sign Up</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Sign Up</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Login</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Login</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Profile Settings</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Profile Settings</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Modify Reservation</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Modify Reservation</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Cancel Reservation</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Cancel Reservation</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Write Reviews</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Write Reviews</span></a>
                               </li>
                             </ul>
                           </li>
                           <li class="department">
-                            <a href="javascript:void(0);" class="fw-semibold"
-                              ><span>About Us</span></a
-                            >
+                            <a href="javascript:void(0);" class="fw-semibold"><span>About Us</span></a>
                             <ul>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Overview</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Overview</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Connect Via Social Media</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Connect Via Social Media</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Careers</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Careers</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Team Members</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Team Members</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Policies</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Policies</span></a>
                               </li>
                             </ul>
                           </li>
                           <li class="department">
-                            <a href="javascript:void(0);" class="fw-semibold"
-                              ><span>Book a Trip</span></a
-                            >
+                            <a href="javascript:void(0);" class="fw-semibold"><span>Book a Trip</span></a>
                             <ul>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Travel Details</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Travel Details</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Reservation Process</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Reservation Process</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Payment Option</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Payment Option</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Comfirmation</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Comfirmation</span></a>
                               </li>
                             </ul>
                           </li>
                           <li class="department">
-                            <a href="javascript:void(0);" class="fw-semibold"
-                              ><span>Destination</span></a
-                            >
+                            <a href="javascript:void(0);" class="fw-semibold"><span>Destination</span></a>
                             <ul>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Architecture</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Architecture</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Art</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Art</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Entertainment</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Entertainment</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>History</span></a
-                                >
+                                <a href="javascript:void(0);"><span>History</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Science</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Science</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Sports</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Sports</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Music</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Music</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Tracking Camp</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Tracking Camp</span></a>
                               </li>
                             </ul>
                           </li>
                           <li class="department">
-                            <a href="javascript:void(0);" class="fw-semibold"
-                              ><span>Travel Tips</span></a
-                            >
+                            <a href="javascript:void(0);" class="fw-semibold"><span>Travel Tips</span></a>
                             <ul>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>General Travel</span></a
-                                >
+                                <a href="javascript:void(0);"><span>General Travel</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Helpth Concerns</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Helpth Concerns</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>Safety Measures</span></a
-                                >
+                                <a href="javascript:void(0);"><span>Safety Measures</span></a>
                               </li>
                               <li>
-                                <a href="javascript:void(0);"
-                                  ><span>FAQ's</span></a
-                                >
+                                <a href="javascript:void(0);"><span>FAQ's</span></a>
                               </li>
                             </ul>
                           </li>
@@ -265,15 +195,11 @@ export default {
             <div class="hori-sitemap">
               <ul class="list-unstyled mb-0">
                 <li class="p-0 parent-title">
-                  <a href="javascript: void(0);" class="fw-semibold fs-14"
-                    >My Account</a
-                  >
+                  <a href="javascript: void(0);" class="fw-semibold fs-14">My Account</a>
                 </li>
                 <ul class="list-unstyled row g-0">
                   <li class="col-sm-3">
-                    <a href="javascript: void(0);" class="fw-semibold sub-title"
-                      >About Us</a
-                    >
+                    <a href="javascript: void(0);" class="fw-semibold sub-title">About Us</a>
                     <ul class="list-unstyled row g-0 second-list">
                       <li class="col-sm-6">
                         <a href="javascript: void(0);">Overview</a>
@@ -284,28 +210,20 @@ export default {
                     </ul>
                   </li>
                   <li class="col-sm-3">
-                    <a href="javascript: void(0);" class="fw-semibold"
-                      >My self-care Plan</a
-                    >
+                    <a href="javascript: void(0);" class="fw-semibold">My self-care Plan</a>
                     <ul class="list-unstyled second-list pt-0">
                       <li>
                         <div>
                           <a href="javascript: void(0);">Basic</a>
                           <a href="javascript: void(0);">Early Physiotherapy</a>
-                          <a href="javascript: void(0);"
-                            >Intermediate Physiotherapy</a
-                          >
-                          <a href="javascript: void(0);"
-                            >Return to Normal Activity</a
-                          >
+                          <a href="javascript: void(0);">Intermediate Physiotherapy</a>
+                          <a href="javascript: void(0);">Return to Normal Activity</a>
                         </div>
                       </li>
                     </ul>
                   </li>
                   <li class="col-sm-3">
-                    <a href="javascript: void(0);" class="fw-semibold sub-title"
-                      >Support Us</a
-                    >
+                    <a href="javascript: void(0);" class="fw-semibold sub-title">Support Us</a>
                     <ul class="list-unstyled row g-0 sub-list">
                       <li class="col-sm-6">
                         <a href="javascript: void(0);">Contact Us</a>
@@ -316,9 +234,7 @@ export default {
                           <li>
                             <div>
                               <a href="javascript: void(0);">Chat With Us</a>
-                              <a href="javascript: void(0);"
-                                >Connect Information</a
-                              >
+                              <a href="javascript: void(0);">Connect Information</a>
                               <a href="javascript: void(0);">FAQ'S</a>
                             </div>
                           </li>
@@ -327,9 +243,7 @@ export default {
                     </ul>
                   </li>
                   <li class="col-sm-3">
-                    <a href="javascript: void(0);" class="fw-semibold"
-                      >Terms & Conditions</a
-                    >
+                    <a href="javascript: void(0);" class="fw-semibold">Terms & Conditions</a>
                   </li>
                 </ul>
               </ul>
@@ -355,106 +269,67 @@ export default {
                 <div class="verti-sitemap">
                   <ul class="list-unstyled mb-0">
                     <li class="p-0 parent-title">
-                      <a href="javascript: void(0);" class="fw-medium fs-14"
-                        >Nancy Martino - Project Director</a
-                      >
+                      <a href="javascript: void(0);" class="fw-medium fs-14">Nancy Martino - Project Director</a>
                     </li>
                     <li>
                       <div class="first-list">
                         <div class="list-wrap">
-                          <a
-                            href="javascript: void(0);"
-                            class="fw-medium text-primary"
-                            >Erica Kernan - Team Leader</a
-                          >
+                          <a href="javascript: void(0);" class="fw-medium text-primary">Erica Kernan - Team Leader</a>
                         </div>
                         <ul class="second-list list-unstyled">
                           <li>
-                            <a href="javascript: void(0);"
-                              >Jason McQuaid - Member</a
-                            >
+                            <a href="javascript: void(0);">Jason McQuaid - Member</a>
                           </li>
                           <li>
-                            <a href="javascript: void(0);"
-                              >Elwood Arter - Member</a
-                            >
+                            <a href="javascript: void(0);">Elwood Arter - Member</a>
                           </li>
                         </ul>
                       </div>
                       <div class="first-list">
                         <div class="list-wrap">
-                          <a
-                            href="javascript: void(0);"
-                            class="fw-medium text-primary"
-                            >Mary Jones - Project Manager</a
-                          >
+                          <a href="javascript: void(0);" class="fw-medium text-primary">Mary Jones - Project Manager</a>
                         </div>
                         <ul class="second-list list-unstyled">
                           <li>
-                            <a href="javascript: void(0);"
-                              >Jordyn Jones - Designer</a
-                            >
+                            <a href="javascript: void(0);">Jordyn Jones - Designer</a>
                           </li>
                           <li>
-                            <a href="javascript: void(0);"
-                              >Ashlee Haney - Developer</a
-                            >
+                            <a href="javascript: void(0);">Ashlee Haney - Developer</a>
                           </li>
                           <li>
-                            <a href="javascript: void(0);"
-                              >Rashad Charles - BackEnd Developer</a
-                            >
+                            <a href="javascript: void(0);">Rashad Charles - BackEnd Developer</a>
                           </li>
                           <li>
-                            <a href="javascript: void(0);"
-                              >Walter Newman - Frontend Developer</a
-                            >
+                            <a href="javascript: void(0);">Walter Newman - Frontend Developer</a>
                           </li>
                           <li>
-                            <a href="javascript: void(0);"
-                              >Adam Moss - Designer</a
-                            >
+                            <a href="javascript: void(0);">Adam Moss - Designer</a>
                           </li>
                         </ul>
                       </div>
                       <div class="first-list">
                         <div class="list-wrap">
-                          <a
-                            href="javascript: void(0);"
-                            class="fw-medium text-primary"
-                            >Tilly Kent - Executive Manager</a
-                          >
+                          <a href="javascript: void(0);" class="fw-medium text-primary">Tilly Kent - Executive
+                            Manager</a>
                         </div>
                         <ul class="second-list list-unstyled">
                           <li>
-                            <a href="javascript: void(0);"
-                              >Tyler Porter - Account Executive</a
-                            >
+                            <a href="javascript: void(0);">Tyler Porter - Account Executive</a>
                           </li>
                           <li>
-                            <a href="javascript: void(0);"
-                              >Alicia Thompson - Sales Executive</a
-                            >
+                            <a href="javascript: void(0);">Alicia Thompson - Sales Executive</a>
                             <ul class="third-list list-unstyled">
                               <li>
-                                <a href="javascript: void(0);"
-                                  >Jack Coates - Member</a
-                                >
+                                <a href="javascript: void(0);">Jack Coates - Member</a>
                               </li>
                               <li>
-                                <a href="javascript: void(0);"
-                                  >Owen Jarvis - Member</a
-                                >
+                                <a href="javascript: void(0);">Owen Jarvis - Member</a>
                               </li>
                               <li>
-                                <a href="javascript: void(0);"
-                                  >Ashlee Haney - Member</a
-                                >
+                                <a href="javascript: void(0);">Ashlee Haney - Member</a>
                               </li>
                               <li>
-                                <a href="javascript: void(0);"
-                                  >Archie Cook - Member</a
-                                >
+                                <a href="javascript: void(0);">Archie Cook - Member</a>
                               </li>
                             </ul>
                           </li>
@@ -462,11 +337,7 @@ export default {
                       </div>
                       <div class="first-list">
                         <div class="list-wrap">
-                          <a
-                            href="javascript: void(0);"
-                            class="fw-medium text-primary"
-                            >Rachel Rose - HR</a
-                          >
+                          <a href="javascript: void(0);" class="fw-medium text-primary">Rachel Rose - HR</a>
                         </div>
                       </div>
                     </li>
@@ -479,19 +350,14 @@ export default {
                 <div class="verti-sitemap">
                   <ul class="list-unstyled mb-0">
                     <li class="p-0 parent-title">
-                      <a href="javascript: void(0);" class="fw-medium fs-14"
-                        >MedicFollow</a
-                      >
+                      <a href="javascript: void(0);" class="fw-medium fs-14">MedicFollow</a>
                     </li>
                     <li>
                       <div class="first-list">
                         <div class="list-wrap">
-                          <a
-                            href="javascript: void(0);"
-                            class="fw-medium text-primary"
-                            ><em class="ri-airplay-line me-1 align-bottom"></em>
-                            Dashboards</a
-                          >
+                          <a href="javascript: void(0);" class="fw-medium text-primary"><em
+                              class="ri-airplay-line me-1 align-bottom"></em>
+                            Dashboards</a>
                         </div>
                         <ul class="second-list list-unstyled">
                           <li>
@@ -504,14 +370,9 @@ export default {
                       </div>
                       <div class="first-list">
                         <div class="list-wrap">
-                          <a
-                            href="javascript: void(0);"
-                            class="fw-medium text-primary"
-                            ><em
-                              class="ri-pencil-ruler-2-line me-1 align-bottom"
-                            ></em>
-                            App Pages</a
-                          >
+                          <a href="javascript: void(0);" class="fw-medium text-primary"><em
+                              class="ri-pencil-ruler-2-line me-1 align-bottom"></em>
+                            App Pages</a>
                         </div>
                         <ul class="second-list list-unstyled">
                           <li><a href="javascript: void(0);">Calender</a></li>
@@ -524,24 +385,16 @@ export default {
                       </div>
                       <div class="first-list">
                         <div class="list-wrap">
-                          <a
-                            href="javascript: void(0);"
-                            class="fw-medium text-primary"
-                            ><em
-                              class="ri-file-list-3-line me-1 align-bottom"
-                            ></em>
-                            Pages</a
-                          >
+                          <a href="javascript: void(0);" class="fw-medium text-primary"><em
+                              class="ri-file-list-3-line me-1 align-bottom"></em>
+                            Pages</a>
                         </div>
                       </div>
                       <div class="first-list">
                         <div class="list-wrap">
-                          <a
-                            href="javascript: void(0);"
-                            class="fw-medium text-primary"
-                            ><em class="ri-stack-line me-1 align-bottom"></em>
-                            Components</a
-                          >
+                          <a href="javascript: void(0);" class="fw-medium text-primary"><em
+                              class="ri-stack-line me-1 align-bottom"></em>
+                            Components</a>
                         </div>
                         <ul class="second-list list-unstyled">
                           <li>

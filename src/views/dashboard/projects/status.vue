@@ -1,64 +1,64 @@
 <script>
-  function getChartColorsArray(colors) {
-    colors = JSON.parse(colors);
-    return colors.map(function (value) {
-      var newValue = value.replace(" ", "");
-      if (newValue.indexOf(",") === -1) {
-        var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
-        if (color) {
-          color = color.replace(" ", "");
-          return color;
-        } else return newValue;
+function getChartColorsArray(colors) {
+  colors = JSON.parse(colors);
+  return colors.map(function (value) {
+    var newValue = value.replace(" ", "");
+    if (newValue.indexOf(",") === -1) {
+      var color = getComputedStyle(document.documentElement).getPropertyValue(newValue);
+      if (color) {
+        color = color.replace(" ", "");
+        return color;
+      } else return newValue;
+    } else {
+      var val = value.split(',');
+      if (val.length == 2) {
+        var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
+        rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
+        return rgbaColor;
       } else {
-        var val = value.split(',');
-        if (val.length == 2) {
-          var rgbaColor = getComputedStyle(document.documentElement).getPropertyValue(val[0]);
-          rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
-          return rgbaColor;
-        } else {
-          return newValue;
-        }
+        return newValue;
       }
-    });
-  }
-  export default {
-    data() {
-      return {
-        series: [125, 42, 58, 89],
-        chartOptions: {
-          labels: ["Completed", "In Progress", "Yet to Start", "Cancelled"],
-          chart: {
-            type: "donut",
-            height: 230,
-          },
-          plotOptions: {
-            pie: {
-              size: 100,
-              offsetX: 0,
-              offsetY: 0,
-              donut: {
-                size: "90%",
-                labels: {
-                  show: false,
-                },
+    }
+  });
+}
+export default {
+  data() {
+    return {
+      series: [125, 42, 58, 89],
+      chartOptions: {
+        labels: ["Completed", "In Progress", "Yet to Start", "Cancelled"],
+        chart: {
+          type: "donut",
+          height: 230,
+        },
+        plotOptions: {
+          pie: {
+            size: 100,
+            offsetX: 0,
+            offsetY: 0,
+            donut: {
+              size: "90%",
+              labels: {
+                show: false,
               },
             },
           },
-          dataLabels: {
-            enabled: false,
-          },
-          legend: {
-            show: false,
-          },
-          stroke: {
-            lineCap: "round",
-            width: 0,
-          },
-          colors: getChartColorsArray('["--vz-success", "--vz-primary", "--vz-warning", "--vz-danger"]'),
         },
-      };
-    },
-  };
+        dataLabels: {
+          enabled: false,
+        },
+        legend: {
+          show: false,
+        },
+        stroke: {
+          lineCap: "round",
+          width: 0,
+        },
+        colors: getChartColorsArray('["--vz-success", "--vz-primary", "--vz-warning", "--vz-danger"]'),
+      },
+    };
+  },
+};
 </script>
 
 <template>

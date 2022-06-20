@@ -55,26 +55,19 @@ export default {
     <div class="row">
       <div class="col-lg-6">
         <div class="card">
-          <div
-            class="
+          <div class="
               card-header
               justify-content-between
               d-flex
               align-items-center
-            "
-          >
+            ">
             <h4 class="card-title">Line & Column Chart</h4>
-            
+
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="mixedLineChart.series"
-              :options="mixedLineChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="mixedLineChart.series"
+              :options="mixedLineChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -82,26 +75,19 @@ export default {
       <!-- end col -->
       <div class="col-lg-6">
         <div class="card">
-          <div
-            class="
+          <div class="
               card-header
               justify-content-between
               d-flex
               align-items-center
-            "
-          >
+            ">
             <h4 class="card-title">Multiple Y-Axis Chart</h4>
-            
+
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="yAxisChart.series"
-              :options="yAxisChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="yAxisChart.series"
+              :options="yAxisChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -113,26 +99,19 @@ export default {
     <div class="row">
       <div class="col-lg-6">
         <div class="card">
-          <div
-            class="
+          <div class="
               card-header
               justify-content-between
               d-flex
               align-items-center
-            "
-          >
+            ">
             <h4 class="card-title">Line & Area Chart</h4>
-            
+
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="lineAreaChart.series"
-              :options="lineAreaChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="lineAreaChart.series"
+              :options="lineAreaChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->
@@ -140,26 +119,19 @@ export default {
       <!-- end col -->
       <div class="col-lg-6">
         <div class="card">
-          <div
-            class="
+          <div class="
               card-header
               justify-content-between
               d-flex
               align-items-center
-            "
-          >
+            ">
             <h4 class="card-title">Line, Column & Area Chart</h4>
-            
+
           </div>
           <!-- end card header -->
           <div class="card-body">
-            <apexchart
-              class="apex-charts"
-              height="350"
-              dir="ltr"
-              :series="lineColumnAreaChart.series"
-              :options="lineColumnAreaChart.chartOptions"
-            ></apexchart>
+            <apexchart class="apex-charts" height="350" dir="ltr" :series="lineColumnAreaChart.series"
+              :options="lineColumnAreaChart.chartOptions"></apexchart>
           </div>
         </div>
         <!--end card-->

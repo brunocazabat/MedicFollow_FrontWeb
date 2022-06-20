@@ -82,9 +82,7 @@ export default {
 
 <template>
   <!-- auth-page wrapper -->
-  <div
-    class="auth-page-wrapper auth-bg-cover py-5 d-flex justify-content-center align-items-center min-vh-100"
-  >
+  <div class="auth-page-wrapper auth-bg-cover py-5 d-flex justify-content-center align-items-center min-vh-100">
     <div class="bg-overlay"></div>
     <!-- auth-page content -->
     <div class="auth-page-content overflow-hidden pt-lg-5">
@@ -99,50 +97,24 @@ export default {
                     <div class="position-relative h-100 d-flex flex-column">
                       <div class="mb-4">
                         <router-link to="/" class="d-block">
-                          <img
-                            src="@/assets/images/logo-light.png"
-                            alt=""
-                            height="18"
-                          />
+                          <img src="@/assets/images/logo-light.png" alt="" height="18" />
                         </router-link>
                       </div>
                       <div class="mt-auto">
                         <div class="mb-3">
-                          <em
-                            class="ri-double-quotes-l display-4 text-success"
-                          ></em>
+                          <em class="ri-double-quotes-l display-4 text-success"></em>
                         </div>
 
-                        <div
-                          id="qoutescarouselIndicators"
-                          class="carousel slide"
-                          data-bs-ride="carousel"
-                        >
+                        <div id="qoutescarouselIndicators" class="carousel slide" data-bs-ride="carousel">
                           <div class="carousel-indicators">
-                            <button
-                              type="button"
-                              data-bs-target="#qoutescarouselIndicators"
-                              data-bs-slide-to="0"
-                              class="active"
-                              aria-current="true"
-                              aria-label="Slide 1"
-                            ></button>
-                            <button
-                              type="button"
-                              data-bs-target="#qoutescarouselIndicators"
-                              data-bs-slide-to="1"
-                              aria-label="Slide 2"
-                            ></button>
-                            <button
-                              type="button"
-                              data-bs-target="#qoutescarouselIndicators"
-                              data-bs-slide-to="2"
-                              aria-label="Slide 3"
-                            ></button>
+                            <button type="button" data-bs-target="#qoutescarouselIndicators" data-bs-slide-to="0"
+                              class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#qoutescarouselIndicators" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#qoutescarouselIndicators" data-bs-slide-to="2"
+                              aria-label="Slide 3"></button>
                           </div>
-                          <div
-                            class="carousel-inner text-center text-white-50 pb-5"
-                          >
+                          <div class="carousel-inner text-center text-white-50 pb-5">
                             <div class="carousel-item active">
                               <p class="fs-15 fst-italic">
                                 " Great! Clean code, clean design, easy for
@@ -181,54 +153,28 @@ export default {
                     <div class="mt-4">
                       <form class="needs-validation" novalidate>
                         <div class="mb-3">
-                          <label for="useremail" class="form-label"
-                            >Email <span class="text-danger">*</span></label
-                          >
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="useremail"
-                            placeholder="Enter email address"
-                            required
-                          />
+                          <label for="useremail" class="form-label">Email <span class="text-danger">*</span></label>
+                          <input type="email" class="form-control" id="useremail" placeholder="Enter email address"
+                            required />
                           <div class="invalid-feedback">Please enter email</div>
                         </div>
                         <div class="mb-3">
-                          <label for="username" class="form-label"
-                            >Username <span class="text-danger">*</span></label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="username"
-                            placeholder="Enter username"
-                            required
-                          />
+                          <label for="username" class="form-label">Username <span class="text-danger">*</span></label>
+                          <input type="text" class="form-control" id="username" placeholder="Enter username" required />
                           <div class="invalid-feedback">
                             Please enter username
                           </div>
                         </div>
 
                         <div class="mb-3">
-                          <label class="form-label" for="password-input"
-                            >Password</label
-                          >
+                          <label class="form-label" for="password-input">Password</label>
                           <div class="position-relative auth-pass-inputgroup">
-                            <input
-                              type="password"
-                              class="form-control pe-5 password-input"
-                              onpaste="return false"
-                              placeholder="Enter password"
-                              id="password-input"
-                              aria-describedby="passwordInput"
-                              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                              required
-                            />
+                            <input type="password" class="form-control pe-5 password-input" onpaste="return false"
+                              placeholder="Enter password" id="password-input" aria-describedby="passwordInput"
+                              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
                             <button
                               class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon"
-                              type="button"
-                              id="password-addon"
-                            >
+                              type="button" id="password-addon">
                               <em class="ri-eye-fill align-middle"></em>
                             </button>
                             <div class="invalid-feedback">
@@ -240,31 +186,25 @@ export default {
                         <div class="mb-4">
                           <p class="mb-0 fs-12 text-muted fst-italic">
                             By registering you agree to the MedicFollow
-                            <a
-                              href="#"
-                              class="text-primary text-decoration-underline fst-normal fw-medium"
-                              >Terms of Use</a
-                            >
+                            <a href="#" class="text-primary text-decoration-underline fst-normal fw-medium">Terms of
+                              Use</a>
                           </p>
                         </div>
-                        <div
-                          id="password-contain"
-                          class="p-3 bg-light mb-2 rounded"
-                        >
+                        <div id="password-contain" class="p-3 bg-light mb-2 rounded">
                           <h5 class="fs-13">Password must contain:</h5>
                           <p id="pass-length" class="invalid fs-12 mb-2">
-                            Minimum <b>8 characters</b>
+                            Minimum <strong>8 characters</strong>
                           </p>
                           <p id="pass-lower" class="invalid fs-12 mb-2">
-                            At <b>lowercase</b> letter (a-z)
+                            At <strong>lowercase</strong> letter (a-z)
                           </p>
                           <p id="pass-upper" class="invalid fs-12 mb-2">
                             At least
-                            <b>uppercase</b>
+                            <strong>uppercase</strong>
                             letter (A-Z)
                           </p>
                           <p id="pass-number" class="invalid fs-12 mb-0">
-                            A least <b>number</b>
+                            A least <strong>number</strong>
                             (0-9)
                           </p>
                         </div>
@@ -282,28 +222,16 @@ export default {
                           </div>
 
                           <div>
-                            <button
-                              type="button"
-                              class="btn btn-primary btn-icon waves-effect waves-light"
-                            >
+                            <button type="button" class="btn btn-primary btn-icon waves-effect waves-light">
                               <em class="ri-facebook-fill fs-16"></em>
                             </button>
-                            <button
-                              type="button"
-                              class="btn btn-danger btn-icon waves-effect waves-light ms-1"
-                            >
+                            <button type="button" class="btn btn-danger btn-icon waves-effect waves-light ms-1">
                               <em class="ri-google-fill fs-16"></em>
                             </button>
-                            <button
-                              type="button"
-                              class="btn btn-dark btn-icon waves-effect waves-light ms-1"
-                            >
+                            <button type="button" class="btn btn-dark btn-icon waves-effect waves-light ms-1">
                               <em class="ri-github-fill fs-16"></em>
                             </button>
-                            <button
-                              type="button"
-                              class="btn btn-info btn-icon waves-effect waves-light ms-1"
-                            >
+                            <button type="button" class="btn btn-info btn-icon waves-effect waves-light ms-1">
                               <em class="ri-twitter-fill fs-16"></em>
                             </button>
                           </div>
@@ -314,10 +242,7 @@ export default {
                     <div class="mt-5 text-center">
                       <p class="mb-0">
                         Already have an account ?
-                        <router-link
-                          to="/auth/signin-cover"
-                          class="fw-semibold text-primary text-decoration-underline"
-                        >
+                        <router-link to="/auth/signin-cover" class="fw-semibold text-primary text-decoration-underline">
                           Signin
                         </router-link>
                       </p>

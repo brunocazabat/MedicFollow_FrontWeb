@@ -92,11 +92,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Line Chart</h4>
-            <vue-echarts
-              :option="option.lineChart"
-              style="height: 300px"
-              ref="chart"
-            />
+            <vue-echarts :option="option.lineChart" style="height: 300px" ref="chart" />
           </div>
         </div>
       </div>
@@ -104,11 +100,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Stacked Line Chart</h4>
-            <vue-echarts
-              :option="option.stackedLineChart"
-              style="height: 300px"
-              ref="chart"
-            />
+            <vue-echarts :option="option.stackedLineChart" style="height: 300px" ref="chart" />
           </div>
         </div>
       </div>
@@ -127,10 +119,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Stacked Area Chart</h4>
-            <vue-echarts
-              :option="option.stackedAreaChart"
-              style="height: 300px"
-            />
+            <vue-echarts :option="option.stackedAreaChart" style="height: 300px" />
           </div>
         </div>
       </div>
@@ -149,10 +138,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Line Y Category</h4>
-            <vue-echarts
-              :option="option.lineYCategoryChart"
-              style="height: 300px"
-            />
+            <vue-echarts :option="option.lineYCategoryChart" style="height: 300px" />
           </div>
         </div>
       </div>
@@ -171,10 +157,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Horizontal Bar</h4>
-            <vue-echarts
-              :option="option.horizontalBarChart"
-              style="height: 300px"
-            />
+            <vue-echarts :option="option.horizontalBarChart" style="height: 300px" />
           </div>
         </div>
       </div>
@@ -184,10 +167,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Stacked Horizontal Bar</h4>
-            <vue-echarts
-              :option="option.stackedHorizontalBarChart"
-              style="height: 300px"
-            />
+            <vue-echarts :option="option.stackedHorizontalBarChart" style="height: 300px" />
           </div>
         </div>
       </div>
@@ -195,10 +175,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Candlestick Chart</h4>
-            <vue-echarts
-              :option="option.candlestickChart"
-              style="height: 300px"
-            />
+            <vue-echarts :option="option.candlestickChart" style="height: 300px" />
           </div>
         </div>
       </div>
@@ -272,10 +249,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Polar Chart</h4>
-            <vue-echarts
-              :option="option.polarChart.polar"
-              style="height: 300px"
-            />
+            <vue-echarts :option="option.polarChart.polar" style="height: 300px" />
           </div>
         </div>
       </div>
@@ -286,11 +260,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Parallel Chart</h4>
-            <vue-echarts
-              :option="option.parallelChart"
-              style="height: 300px"
-              ref="chart"
-            />
+            <vue-echarts :option="option.parallelChart" style="height: 300px" ref="chart" />
           </div>
         </div>
       </div>
@@ -298,11 +268,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Sankey Chart</h4>
-            <vue-echarts
-              :option="option.sankeyChart"
-              style="height: 300px"
-              ref="chart"
-            />
+            <vue-echarts :option="option.sankeyChart" style="height: 300px" ref="chart" />
           </div>
         </div>
       </div>
@@ -313,28 +279,20 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Mix Line-Bar</h4>
-            <vue-echarts
-              :option="option.mixedBarChart"
-              style="height: 300px"
-              ref="chart"
-            />
+            <vue-echarts :option="option.mixedBarChart" style="height: 300px" ref="chart" />
           </div>
         </div>
       </div>
-       <div class="col-lg-6">
+      <div class="col-lg-6">
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Funnel Chart</h4>
-            <vue-echarts
-              :option="option.funnelChart"
-              style="height: 300px"
-              ref="chart"
-            />
+            <vue-echarts :option="option.funnelChart" style="height: 300px" ref="chart" />
           </div>
         </div>
       </div>
     </div>
-        <div class="row">
+    <div class="row">
       <div class="col-lg-6">
         <div class="card">
           <div class="card-body">

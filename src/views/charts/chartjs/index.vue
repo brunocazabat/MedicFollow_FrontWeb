@@ -52,10 +52,7 @@ export default {
           <div class="card-body">
             <h4 class="card-title mb-4">Line Chart</h4>
             <!-- Line Chart -->
-            <vue3-chart-js
-              class="chartjs-chart"
-              v-bind="{ ...line }"
-            ></vue3-chart-js>
+            <vue3-chart-js class="chartjs-chart" v-bind="{ ...line }"></vue3-chart-js>
           </div>
         </div>
       </div>
@@ -63,12 +60,9 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Bar Chart</h4>
-          
+
             <!-- Bar Chart -->
-            <vue3-chart-js
-               class="chartjs-chart"
-              v-bind="{ ...bar }"
-            ></vue3-chart-js>
+            <vue3-chart-js class="chartjs-chart" v-bind="{ ...bar }"></vue3-chart-js>
           </div>
         </div>
       </div>
@@ -79,13 +73,9 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Pie Chart</h4>
-            
+
             <!-- Pie Chart -->
-             <vue3-chart-js
-              :height="140"
-              class="chartjs-chart"
-              v-bind="{ ...pie }"
-            ></vue3-chart-js>
+            <vue3-chart-js :height="140" class="chartjs-chart" v-bind="{ ...pie }"></vue3-chart-js>
           </div>
         </div>
       </div>
@@ -93,13 +83,9 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Donut Chart</h4>
-            
+
             <!-- Donut Chart -->
-            <vue3-chart-js
-              :height="140"
-              class="chartjs-chart"
-              v-bind="{ ...Doughnut }"
-            ></vue3-chart-js>
+            <vue3-chart-js :height="140" class="chartjs-chart" v-bind="{ ...Doughnut }"></vue3-chart-js>
           </div>
         </div>
       </div>
@@ -110,13 +96,9 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Polar area Chart</h4>
-            
+
             <!-- Polar area Chart -->
-            <vue3-chart-js
-              :height="140"
-              class="chartjs-chart"
-              v-bind="{ ...PolarArea }"
-            ></vue3-chart-js>
+            <vue3-chart-js :height="140" class="chartjs-chart" v-bind="{ ...PolarArea }"></vue3-chart-js>
           </div>
         </div>
       </div>
@@ -124,13 +106,9 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Radar Chart</h4>
-            
+
             <!-- Radar Chart -->
-             <vue3-chart-js
-              :height="140"
-              class="chartjs-chart"
-              v-bind="{ ...radar }"
-            ></vue3-chart-js>
+            <vue3-chart-js :height="140" class="chartjs-chart" v-bind="{ ...radar }"></vue3-chart-js>
           </div>
         </div>
       </div>

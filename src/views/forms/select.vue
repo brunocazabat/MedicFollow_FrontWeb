@@ -58,17 +58,9 @@ export default {
           <div class="card-header align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">Default Select</h4>
             <div class="flex-shrink-0">
-              <div
-                class="form-check form-switch form-switch-right form-switch-md"
-              >
-                <label for="FormSelectDefault" class="form-label text-muted"
-                  >Show Code</label
-                >
-                <input
-                  class="form-check-input code-switcher"
-                  type="checkbox"
-                  id="FormSelectDefault"
-                />
+              <div class="form-check form-switch form-switch-right form-switch-md">
+                <label for="FormSelectDefault" class="form-label text-muted">Show Code</label>
+                <input class="form-check-input code-switcher" type="checkbox" id="FormSelectDefault" />
               </div>
             </div>
           </div>
@@ -81,10 +73,7 @@ export default {
             <div class="live-preview">
               <div class="row">
                 <div class="col-lg-6">
-                  <select
-                    class="form-select mb-3"
-                    aria-label="Default select example"
-                  >
+                  <select class="form-select mb-3" aria-label="Default select example">
                     <option selected>Select your Status</option>
                     <option value="1">Declined Payment</option>
                     <option value="2">Delivery Error</option>
@@ -92,10 +81,7 @@ export default {
                   </select>
                 </div>
                 <div class="col-lg-6">
-                  <select
-                    class="form-select rounded-pill mb-3"
-                    aria-label="Default select example"
-                  >
+                  <select class="form-select rounded-pill mb-3" aria-label="Default select example">
                     <option selected>Search for services</option>
                     <option value="1">Information Architecture</option>
                     <option value="2">UI/UX Design</option>
@@ -103,11 +89,7 @@ export default {
                   </select>
                 </div>
                 <div class="col-lg-6">
-                  <select
-                    class="form-select"
-                    aria-label="Disabled select example"
-                    disabled
-                  >
+                  <select class="form-select" aria-label="Disabled select example" disabled>
                     <option selected>Open this select menu (Disabled)</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -152,17 +134,9 @@ export default {
           <div class="card-header align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">Menu Size</h4>
             <div class="flex-shrink-0">
-              <div
-                class="form-check form-switch form-switch-right form-switch-md"
-              >
-                <label for="FormSelectMenuSizing" class="form-label text-muted"
-                  >Show Code</label
-                >
-                <input
-                  class="form-check-input code-switcher"
-                  type="checkbox"
-                  id="FormSelectMenuSizing"
-                />
+              <div class="form-check form-switch form-switch-right form-switch-md">
+                <label for="FormSelectMenuSizing" class="form-label text-muted">Show Code</label>
+                <input class="form-check-input code-switcher" type="checkbox" id="FormSelectMenuSizing" />
               </div>
             </div>
           </div>
@@ -176,11 +150,7 @@ export default {
             <div class="live-preview">
               <div class="row gy-4">
                 <div class="col-lg-6">
-                  <select
-                    class="form-select"
-                    multiple
-                    aria-label="multiple select example"
-                  >
+                  <select class="form-select" multiple aria-label="multiple select example">
                     <option selected>
                       Open this select menu (multiple select option)
                     </option>
@@ -190,11 +160,7 @@ export default {
                   </select>
                 </div>
                 <div class="col-lg-6">
-                  <select
-                    class="form-select"
-                    size="3"
-                    aria-label="size 3 select example"
-                  >
+                  <select class="form-select" size="3" aria-label="size 3 select example">
                     <option selected>
                       Open this select menu (select menu size)
                     </option>
@@ -237,17 +203,9 @@ export default {
           <div class="card-header align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">Select Size</h4>
             <div class="flex-shrink-0">
-              <div
-                class="form-check form-switch form-switch-right form-switch-md"
-              >
-                <label for="FormSelectSizing" class="form-label text-muted"
-                  >Show Code</label
-                >
-                <input
-                  class="form-check-input code-switcher"
-                  type="checkbox"
-                  id="FormSelectSizing"
-                />
+              <div class="form-check form-switch form-switch-right form-switch-md">
+                <label for="FormSelectSizing" class="form-label text-muted">Show Code</label>
+                <input class="form-check-input code-switcher" type="checkbox" id="FormSelectSizing" />
               </div>
             </div>
           </div>
@@ -262,10 +220,7 @@ export default {
             <div class="live-preview">
               <div class="row align-items-center g-3">
                 <div class="col-lg-4">
-                  <select
-                    class="form-select form-select-sm"
-                    aria-label=".form-select-sm example"
-                  >
+                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                     <option selected>Open this select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -273,10 +228,7 @@ export default {
                   </select>
                 </div>
                 <div class="col-lg-4">
-                  <select
-                    class="form-select"
-                    aria-label=".form-select-sm example"
-                  >
+                  <select class="form-select" aria-label=".form-select-sm example">
                     <option selected>Open this select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -284,10 +236,7 @@ export default {
                   </select>
                 </div>
                 <div class="col-lg-4">
-                  <select
-                    class="form-select form-select-lg"
-                    aria-label=".form-select-lg example"
-                  >
+                  <select class="form-select form-select-lg" aria-label=".form-select-lg example">
                     <option selected>Open this select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -297,10 +246,7 @@ export default {
               </div>
             </div>
             <div class="d-none code-view">
-              <pre
-                class="language-markup"
-                style="height: 275px"
-              ><code>&lt;select class=&quot;form-select form-select-sm  mb-3&quot; aria-label=&quot;.form-select-sm example&quot;&gt;
+              <pre class="language-markup" style="height: 275px"><code>&lt;select class=&quot;form-select form-select-sm  mb-3&quot; aria-label=&quot;.form-select-sm example&quot;&gt;
     &lt;option selected&gt;Open this select menu&lt;/option&gt;
     &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
     &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;

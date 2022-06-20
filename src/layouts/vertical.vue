@@ -7,7 +7,7 @@ import NavBar from "@/components/nav-bar";
 import Menu from "@/components/menu.vue";
 import RightBar from "@/components/right-bar";
 import Footer from "@/components/footer";
-localStorage.setItem('hoverd',false);
+localStorage.setItem('hoverd', false);
 
 /**
  * Vertical layout
@@ -29,15 +29,15 @@ export default {
   },
   methods: {
     initActiveMenu() {
-            if (document.documentElement.getAttribute('data-sidebar-size') === 'sm-hover') {
-                localStorage.setItem('hoverd',true)
-                document.documentElement.setAttribute('data-sidebar-size', 'sm-hover-active');
-            } else if (document.documentElement.getAttribute('data-sidebar-size') === 'sm-hover-active') {
-                localStorage.setItem('hoverd',false)
-                document.documentElement.setAttribute('data-sidebar-size', 'sm-hover');
-            } else {
-                document.documentElement.setAttribute('data-sidebar-size', 'sm-hover');
-            }
+      if (document.documentElement.getAttribute('data-sidebar-size') === 'sm-hover') {
+        localStorage.setItem('hoverd', true)
+        document.documentElement.setAttribute('data-sidebar-size', 'sm-hover-active');
+      } else if (document.documentElement.getAttribute('data-sidebar-size') === 'sm-hover-active') {
+        localStorage.setItem('hoverd', false)
+        document.documentElement.setAttribute('data-sidebar-size', 'sm-hover');
+      } else {
+        document.documentElement.setAttribute('data-sidebar-size', 'sm-hover');
+      }
     },
     toggleMenu() {
       document.body.classList.toggle("sidebar-enable");
@@ -66,10 +66,10 @@ export default {
     },
   },
   mounted() {
-    if(localStorage.getItem('hoverd')=='true'){
-       document.documentElement.setAttribute('data-sidebar-size', 'sm-hover-active');
+    if (localStorage.getItem('hoverd') == 'true') {
+      document.documentElement.setAttribute('data-sidebar-size', 'sm-hover-active');
     }
-    document.getElementById('overlay').addEventListener('click',()=>{
+    document.getElementById('overlay').addEventListener('click', () => {
       document.body.classList.remove('vertical-sidebar-enable')
     })
 
@@ -104,7 +104,8 @@ export default {
               <img src="@/assets/images/logo-light.png" alt="" height="17" />
             </span>
           </router-link>
-          <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover" @click="initActiveMenu">
+          <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+            id="vertical-hover" @click="initActiveMenu">
             <em class="ri-record-circle-line"></em>
           </button>
         </div>

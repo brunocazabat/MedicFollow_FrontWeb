@@ -52,7 +52,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Example</h4>
-            <Basic class="leaflet-map"/>
+            <Basic class="leaflet-map" />
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Fixed Bounds</h4>
-            <Boundary class="leaflet-map"/>
+            <Boundary class="leaflet-map" />
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Custom Icon Example</h4>
-            <Icons class="leaflet-map"/>
+            <Icons class="leaflet-map" />
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Geometry Example</h4>
-            <Geometry class="leaflet-map"/>
+            <Geometry class="leaflet-map" />
           </div>
         </div>
       </div>
@@ -88,7 +88,7 @@ export default {
         <div class="card">
           <div class="card-body">
             <h4 class="card-title mb-4">Draggable marker</h4>
-            <Markers class="leaflet-map"/>
+            <Markers class="leaflet-map" />
           </div>
         </div>
       </div>
