@@ -168,7 +168,7 @@
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link menu-link" to="/">
+          <router-link class="nav-link menu-link" to="/pages/profile-setting">
             <em class="ri-account-circle-line"></em>
             <span style="padding: 7px" data-key="t-settings">{{ $t("t-settings") }}</span>
           </router-link>
@@ -183,12 +183,12 @@
           <div class="collapse menu-dropdown" id="sidebarApps">
             <ul class="nav nav-sm flex-column">
               <li class="nav-item">
-                <router-link to="/" class="nav-link" data-key="t-suggest">
+                <router-link to="/form/layouts" class="nav-link" data-key="t-suggest">
                   {{ $t("t-suggest") }}
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/chat" class="nav-link" data-key="t-report">
+                <router-link to="/form/validation" class="nav-link" data-key="t-report">
                   {{ $t("t-report") }}
                 </router-link>
               </li>
