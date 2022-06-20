@@ -167,5 +167,10 @@
     "t-level-3.2": "Stufe 3.2",
     "t-landing": "Landung",
     "t-password-create": "Passwort erstellen",
-    "t-offline-page": "Offline-Seite"
+    "t-offline-page": "Offline-Seite",
+    "t-home": "Zuhause",
+    "t-suggest": "Vorschlag",
+    "t-report": "Fehlerbericht",
+    "t-terms": "Nutzungsbedingungen",
+    "t-others": "Andere"
 }

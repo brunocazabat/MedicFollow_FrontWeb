@@ -26,19 +26,14 @@ export default {
           title: 'Spanish'
         },
         {
-          flag: require('@/assets/images/flags/china.svg'),
-          language: 'ch',
-          title: 'Chinese'
-        },
-        {
           flag: require('@/assets/images/flags/germany.svg'),
           language: 'gr',
           title: 'Deutsche'
         },
         {
-          flag: require('@/assets/images/flags/russia.svg'),
-          language: 'ru',
-          title: 'русский'
+          flag: require('@/assets/images/flags/italy.svg'),
+          language: 'it',
+          title: 'Italian'
         }
       ],
       lan: i18n.locale,
@@ -1223,7 +1218,7 @@ export default {
                 <span class="text-start ms-xl-2">
                   <span
                     class="d-none d-xl-inline-block ms-1 fw-medium user-name-text"
-                    >Anna Adame</span
+                    >Bruno Cazabat</span
                   >
                   <span
                     class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"

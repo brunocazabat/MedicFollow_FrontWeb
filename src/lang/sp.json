@@ -167,5 +167,10 @@
     "t-level-3.2": "Nivel 3.2",
     "t-landing": "Aterrizaje",
     "t-password-create": "Crear contraseña",
-    "t-offline-page": "Página sin conexión"
+    "t-offline-page": "Página sin conexión",
+    "t-home": "Inicio",
+    "t-suggest": "Sugerencia",
+    "t-report": "Informe de error",
+    "t-terms": "Términos de uso",
+    "t-otros": "Otros"
 }

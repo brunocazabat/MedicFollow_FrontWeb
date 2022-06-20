@@ -41,7 +41,6 @@ import worldJson from '../../components/widgets/world.json'
 import Layout from '../../layouts/main.vue'
 import PageHeader from '@/components/page-header'
 import appConfig from '../../../app.config'
-import SessionsCounties from '../dashboard/analytics/sessions-countries.vue'
 
 function generateData(count, yrange) {
   var i = 0
@@ -355,7 +354,6 @@ export default {
     ExternalLinkIcon,
     AlertTriangleIcon,
     CountTo,
-    SessionsCounties
   },
   mounted() {
     let chartuser = document.getElementById('users-by-country')

@@ -167,5 +167,10 @@
     "t-level-3.2": "Livello 3.2",
     "t-landing": "Approdo",
     "t-password-create": "Password Crea",
-    "t-offline-page": "Pagina offline"
+    "t-offline-page": "Pagina offline",
+    "t-home": "Casa",
+    "t-suggest": "Suggerimento",
+    "t-report": "Bug Report",
+    "t-terms": "Termini di utilizzo",
+    "t-altri": "Altri"
 }

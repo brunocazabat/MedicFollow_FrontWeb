@@ -8,7 +8,7 @@
     "t-projects": "Projets",
     "t-apps": "applications",
     "t-calendar": "Calendrier",
-    "t-chat": "Discuter",
+    "t-chat": "Discussion",
     "t-mailbox": "Boites aux lettres",
     "t-products": "Des produits",
     "t-product-Details": "détails du produit",
@@ -167,5 +167,10 @@
     "t-level-3.2": "Niveau 3.2",
     "t-landing": "Un atterrissage",
     "t-password-create": "Créer un mot de passe",
-    "t-offline-page": "Hors ligne"
+    "t-offline-page": "Hors ligne",
+    "t-home": "Accueil",
+    "t-suggest": "Suggestion",
+    "t-report": "Signalement de Bug",
+    "t-terms": "Conditions d'Utilisation",
+    "t-others": "Autres"
 }
