@@ -32,5 +32,4 @@
 *.app
 
 # Others
-*.vscode
 node_modules
