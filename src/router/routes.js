@@ -99,12 +99,6 @@ export default [
     component: () => import("../views/apps/mailbox"),
   },
   {
-    path: "/widgets",
-    name: "widgets",
-    meta: { title: "Widgets", authRequired: mode },
-    component: () => import("../views/widgets/index"),
-  },
-  {
     path: "/form/layouts",
     name: "Form Layouts",
     meta: { title: "Form Layouts", authRequired: mode },
@@ -135,28 +129,10 @@ export default [
     component: () => import("../views/pages/coming-soon"),
   },
   {
-    path: "/pages/timeline",
-    name: "timeline",
-    meta: { title: "Timeline", authRequired: mode },
-    component: () => import("../views/pages/timeline"),
-  },
-  {
-    path: "/pages/faqs",
-    name: "FAQs",
-    meta: { title: "FAQs", authRequired: mode },
-    component: () => import("../views/pages/faqs"),
-  },
-  {
     path: "/pages/search-results",
     name: "search-results",
     meta: { title: "Search Results", authRequired: mode },
     component: () => import("../views/pages/search-results"),
-  },
-  {
-    path: "/pages/sitemap",
-    name: "sitemap",
-    meta: { title: "Sitemap", authRequired: mode },
-    component: () => import("../views/pages/sitemap"),
   },
   {
     path: "/auth/lockscreen-basic",
@@ -177,15 +153,6 @@ export default [
     component: () => import("../views/auth/twostep/basic"),
   },
   {
-    path: "/auth/twostep-cover",
-    name: "twostep-cover",
-    meta: {
-      title: "Two Step Auth",
-      authRequired: mode,
-    },
-    component: () => import("../views/auth/twostep/cover"),
-  },
-  {
     path: "/auth/500",
     name: "500",
     meta: {
@@ -204,12 +171,12 @@ export default [
     component: () => import("../views/auth/errors/404-cover"),
   },
   {
-    path: "/auth/ofline",
-    name: "ofline",
+    path: "/auth/offline",
+    name: "oflfine",
     meta: {
-      title: "Oflone",
+      title: "Offline",
       authRequired: mode,
     },
-    component: () => import("../views/auth/errors/ofline"),
+    component: () => import("../views/auth/errors/offline"),
   },
 ];
