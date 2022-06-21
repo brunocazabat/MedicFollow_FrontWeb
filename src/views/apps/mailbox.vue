@@ -636,24 +636,25 @@ export default {
 
           <div class="mx-n4 px-4 email-menu-sidebar-scroll" data-simplebar>
             <div class="mail-list mt-3">
-              <a href="#" class="active" @click="changemenu('all')"><em
+              <a href="#" class="active" @click.once="changemenu('all')"><em
                   class="ri-mail-fill me-3 align-middle fw-medium"></em>
                 <span class="mail-list-link">All</span>
                 <span class="badge badge-soft-success ms-auto">5</span></a>
-              <a href="#" @click="changemenu('Inbox')"><em
+              <a href="#" @click.once="changemenu('Inbox')"><em
                   class="ri-inbox-archive-fill me-3 align-middle fw-medium"></em>
                 Inbox <span class="badge badge-soft-success ms-auto">5</span></a>
-              <a href="#" @click="changemenu('Sent')"><em class="ri-send-plane-2-fill me-3 align-middle fw-medium"></em>
+              <a href="#" @click.once="changemenu('Sent')"><em
+                  class="ri-send-plane-2-fill me-3 align-middle fw-medium"></em>
                 Sent</a>
-              <a href="#" @click="changemenu('Draft')"><em
+              <a href="#" @click.once="changemenu('Draft')"><em
                   class="ri-edit-2-fill me-3 align-middle fw-medium"></em>Draft</a>
-              <a href="#" @click="changemenu('Spam')"><em
+              <a href="#" @click.once="changemenu('Spam')"><em
                   class="ri-error-warning-fill me-3 align-middle fw-medium"></em>Spam</a>
-              <a href="#" @click="changemenu('Trash')"><em
+              <a href="#" @click.once="changemenu('Trash')"><em
                   class="ri-delete-bin-5-fill me-3 align-middle fw-medium"></em>Trash</a>
-              <a href="#" @click="changemenu('Starred')"><em
+              <a href="#" @click.once="changemenu('Starred')"><em
                   class="ri-star-fill me-3 align-middle fw-medium"></em>Starred</a>
-              <a href="#" @click="changemenu('Important')"><em
+              <a href="#" @click.once="changemenu('Important')"><em
                   class="ri-price-tag-3-fill me-3 align-middle fw-medium"></em>Important</a>
             </div>
 
@@ -661,20 +662,20 @@ export default {
               <h5 class="fs-12 text-uppercase text-muted mt-4">Labels</h5>
 
               <div class="mail-list mt-1">
-                <a href="#" @click="changelable('Support')"><span
+                <a href="#" @click.once="changelable('Support')"><span
                     class="ri-checkbox-blank-circle-line me-2 text-info"></span>
                   Theme Support
                   <span class="badge badge-soft-success ms-auto">3</span></a>
-                <a href="#" @click="changelable('Freelance')"><span
+                <a href="#" @click.once="changelable('Freelance')"><span
                     class="ri-checkbox-blank-circle-line me-2 text-warning"></span>
                   Freelance</a>
-                <a href="#" @click="changelable('Social')"><span
+                <a href="#" @click.once="changelable('Social')"><span
                     class="ri-checkbox-blank-circle-line me-2 text-primary"></span>
                   Social</a>
-                <a href="#" @click="changelable('Friends')"><span
+                <a href="#" @click.once="changelable('Friends')"><span
                     class="ri-checkbox-blank-circle-line me-2 text-danger"></span>
                   Friends<span class="badge badge-soft-success ms-auto">2</span></a>
-                <a href="#" @click="changelable('Family')"><span
+                <a href="#" @click.once="changelable('Family')"><span
                     class="ri-checkbox-blank-circle-line me-2 text-success"></span>
                   Family</a>
               </div>
@@ -820,7 +821,7 @@ export default {
                 <ul class="nav nav-tabs nav-tabs-custom nav-primary gap-1 text-center border-bottom-0" role="tablist"
                   id="mailfilter">
                   <li class="nav-item tabtype">
-                    <a class="nav-link fw-semibold active" id="primarytab" href="#" @click="changetab('primary')">
+                    <a class="nav-link fw-semibold active" id="primarytab" href="#" @click.once="changetab('primary')">
                       <em class="ri-inbox-fill align-bottom d-inline-block"></em>
                       <span class="ms-1 d-none d-sm-inline-block">Primary</span>
                     </a>
@@ -868,12 +869,12 @@ export default {
                           <label class="form-check-label" for="flexCheck20"></label>
                         </div>
                         <button type="button" class="btn avatar-xs p-0 favourite-btn fs-15 shadow-none"
-                          :class="{ active: data.starred == true }" @click="toggleFavourite">
+                          :class="{ active: data.starred == true }" @click.once="toggleFavourite">
                           <em class="ri-star-fill"></em>
                         </button>
-                        <a href="javascript: void(0);" @click="openemail" class="title-name">{{ data.name }}</a>
+                        <a href="javascript: void(0);" @click.once="openemail" class="title-name">{{ data.name }}</a>
                       </div>
-                      <div class="col-mail col-mail-2" @click="openemail">
+                      <div class="col-mail col-mail-2" @click.once="openemail">
                         <a href="javascript: void(0);" class="subject">
                           <span class="subject-title">{{ data.title }}</span> –
                           <span class="teaser">{{ data.description }}</span>
@@ -887,20 +888,20 @@ export default {
               <div v-if="tabtype == 'social'">
                 <li v-for="(data, index) of emailsdata[0].social" :key="index"
                   :class="{ unread: data.readed == false }">
-                  <div class="col-mail col-mail-1" @click="openemail">
+                  <div class="col-mail col-mail-1" @click.once="openemail">
                     <div class="form-check checkbox-wrapper-mail fs-14">
                       <input class="form-check-input" type="checkbox" value="" id="flexCheck20" />
                       <label class="form-check-label" for="flexCheck20"></label>
                     </div>
                     <button type="button" class="btn avatar-xs p-0 favourite-btn fs-15 shadow-none"
-                      :class="{ active: data.starred == true }" @click="toggleFavourite">
+                      :class="{ active: data.starred == true }" @click.once="toggleFavourite">
                       <em class="ri-star-fill"></em>
                     </button>
                     <a href="javascript: void(0);" class="title">{{
-                        data.name
+                    data.name
                     }}</a>
                   </div>
-                  <div class="col-mail col-mail-2" @click="openemail">
+                  <div class="col-mail col-mail-2" @click.once="openemail">
                     <a href="javascript: void(0);" class="subject">
                       <span class="subject-title">{{ data.title }}</span> –
                       <span class="teaser">{{ data.description }}</span>
@@ -918,14 +919,14 @@ export default {
                       <label class="form-check-label" for="flexCheck20"></label>
                     </div>
                     <button type="button" class="btn avatar-xs p-0 favourite-btn fs-15 shadow-none"
-                      :class="{ active: data.starred == true }" @click="toggleFavourite">
+                      :class="{ active: data.starred == true }" @click.once="toggleFavourite">
                       <em class="ri-star-fill"></em>
                     </button>
                     <a href="javascript: void(0);" class="title">{{
-                        data.name
+                    data.name
                     }}</a>
                   </div>
-                  <div class="col-mail col-mail-2" @click="openemail">
+                  <div class="col-mail col-mail-2" @click.once="openemail">
                     <a href="javascript: void(0);" class="subject">
                       <span class="subject-title">{{ data.title }}</span> –
                       <span class="teaser">{{ data.description }}</span>

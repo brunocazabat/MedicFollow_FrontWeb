@@ -389,9 +389,9 @@ export default {
             <div class="dropdown-menu dropdown-menu-end">
               <!-- item-->
               <a href="javascript:void(0);" v-for="(entry, i) in languages" :key="`Lang${i}`" :value="entry"
-                @click="setLanguage(entry.language, entry.title, entry.flag)"
+                @click.once="setLanguage(entry.language, entry.title, entry.flag)"
                 :class="{ active: lan === entry.language }" class="dropdown-item notify-item language py-2"
-                data-lang="en" title="English">
+                data-lang="fr" title="Francais">
                 <img :src="entry.flag" alt="user-image" class="me-2 rounded" height="18" />
                 <span class="align-middle">{{ entry.title }}</span>
               </a>
@@ -403,7 +403,7 @@ export default {
                 btn btn-icon btn-topbar btn-ghost-secondary
                 rounded-circle
                 shadow-none
-              " data-toggle="fullscreen" @click="initFullScreen">
+              " data-toggle="fullscreen" @click.once="initFullScreen">
               <em class="bx bx-fullscreen fs-22"></em>
             </button>
           </div>
@@ -414,7 +414,7 @@ export default {
                 rounded-circle
                 light-dark-mode
                 shadow-none
-              " @click="toggleDarkMode">
+              " @click.once="toggleDarkMode">
               <em class="bx bx-moon fs-22"></em>
             </button>
           </div>

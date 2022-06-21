@@ -211,7 +211,7 @@ export default {
 
           <div class="chat-message-list">
             <SimpleBar class="list-unstyled chat-list chat-user-list">
-              <li class v-for="data of chatData" :key="data.id" @click="chatUsername(data.name, data.image)"
+              <li class v-for="data of chatData" :key="data.id" @click.once="chatUsername(data.name, data.image)"
                 :class="{ active: username == data.name }">
                 <a href="javascript: void(0);">
                   <div class="d-flex align-items-center">

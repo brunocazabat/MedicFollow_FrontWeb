@@ -388,7 +388,7 @@ export default {
                 <div class="flex-shrink-0">
                   <div class="d-flex gap-1 align-items-center">
                     <button type="button" class="btn avatar-xs mt-n1 p-0 favourite-btn shadow-none"
-                      @click="toggleFavourite">
+                      @click.once="toggleFavourite">
                       <span class="avatar-title bg-transparent fs-15">
                         <em class="ri-star-fill"></em>
                       </span>
@@ -503,7 +503,7 @@ export default {
                 <div class="flex-shrink-0">
                   <div class="d-flex gap-1 align-items-center my-n2">
                     <button type="button" class="btn avatar-xs p-0 favourite-btn shadow-none active"
-                      @click="toggleFavourite">
+                      @click.once="toggleFavourite">
                       <span class="avatar-title bg-transparent fs-15">
                         <em class="ri-star-fill"></em>
                       </span>
@@ -600,7 +600,7 @@ export default {
           <div class="card-body">
             <div class="p-3 mt-n3 mx-n3 bg-soft-secondary rounded-top">
               <div class="d-flex gap-1 align-items-center justify-content-end my-n2">
-                <button type="button" class="btn avatar-xs p-0 favourite-btn active" @click="toggleFavourite">
+                <button type="button" class="btn avatar-xs p-0 favourite-btn active" @click.once="toggleFavourite">
                   <span class="avatar-title bg-transparent fs-15">
                     <em class="ri-star-fill"></em>
                   </span>
@@ -633,7 +633,7 @@ export default {
             <div class="py-3">
               <h5 class="fs-14 mb-3">
                 <router-link to="/apps/projects-overview" class="text-dark">{{
-                    item.label
+                item.label
                 }}</router-link>
               </h5>
               <div class="row gy-3">
