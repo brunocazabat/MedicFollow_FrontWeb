@@ -1,5 +1,11 @@
 # Refonte_FrontWeb
 
+Current Stakeholders of the Repository:
+```
+    Bruno Cazabat (bruno.cazabat@epitech.eu)
+    Simon Bernabeu (simon.bernabeu@epitech.eu)
+```
+
 ## Project setup
 ```
 yarn install
