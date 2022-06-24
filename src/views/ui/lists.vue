@@ -198,7 +198,7 @@ export default {
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0">
                                             <img
-                                                src="@/assets/images/users/avatar-1.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt
                                                 class="avatar-xs rounded-circle"
                                             />
@@ -210,7 +210,7 @@ export default {
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0">
                                             <img
-                                                src="@/assets/images/users/avatar-2.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt
                                                 class="avatar-xs rounded-circle"
                                             />
@@ -222,7 +222,7 @@ export default {
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0">
                                             <img
-                                                src="@/assets/images/users/avatar-3.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt
                                                 class="avatar-xs rounded-circle"
                                             />
@@ -234,7 +234,7 @@ export default {
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0">
                                             <img
-                                                src="@/assets/images/users/avatar-3.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt
                                                 class="avatar-xs rounded-circle"
                                             />
@@ -835,7 +835,7 @@ Erica Kernan
                                     <div class="d-flex mb-2 align-items-center">
                                         <div class="flex-shrink-0">
                                             <img
-                                                src="@/assets/images/users/avatar-1.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt
                                                 class="avatar-sm rounded-circle"
                                             />
@@ -857,7 +857,7 @@ Erica Kernan
                                     <div class="d-flex mb-2 align-items-center">
                                         <div class="flex-shrink-0">
                                             <img
-                                                src="@/assets/images/users/avatar-2.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt
                                                 class="avatar-sm rounded-circle"
                                             />
@@ -879,7 +879,7 @@ Erica Kernan
                                     <div class="d-flex mb-2 align-items-center">
                                         <div class="flex-shrink-0">
                                             <img
-                                                src="@/assets/images/users/avatar-3.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt
                                                 class="avatar-sm rounded-circle"
                                             />
@@ -901,7 +901,7 @@ Erica Kernan
                                     <div class="d-flex mb-2 align-items-center">
                                         <div class="flex-shrink-0">
                                             <img
-                                                src="@/assets/images/users/avatar-4.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt
                                                 class="avatar-sm rounded-circle"
                                             />
@@ -1460,7 +1460,7 @@ Wrong UX/UI Solution
                                                 <div class="d-flex">
                                                     <div class="flex-shrink-0">
                                                         <img
-                                                            src="@/assets/images/users/avatar-2.jpg"
+                                                            src="@/assets/images/users/avatar-1.png"
                                                             alt
                                                             class="avatar-xs rounded"
                                                         />
@@ -1504,7 +1504,7 @@ Wrong UX/UI Solution
                                                 <div class="d-flex">
                                                     <div class="flex-shrink-0">
                                                         <img
-                                                            src="@/assets/images/users/avatar-3.jpg"
+                                                            src="@/assets/images/users/avatar-1.png"
                                                             alt
                                                             class="avatar-xs rounded"
                                                         />
@@ -1572,7 +1572,7 @@ Wrong UX/UI Solution
 &lt;div class=&quot;flex-grow-1&quot;&gt;
 &lt;div class=&quot;d-flex&quot;&gt;
     &lt;div class=&quot;flex-shrink-0&quot;&gt;
-        &lt;img src=&quot;assets/images/users/avatar-2.jpg&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded&quot; /&gt;
+        &lt;img src=&quot;assets/images/users/avatar-1.png&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded&quot; /&gt;
     &lt;/div&gt;
     &lt;div class=&quot;flex-shrink-0 ms-2&quot;&gt;
         &lt;h6 class=&quot;fs-14 mb-0&quot;&gt;Emily Slater&lt;/h6&gt;
@@ -1610,7 +1610,7 @@ Wrong UX/UI Solution
 &lt;div class=&quot;flex-grow-1&quot;&gt;
 &lt;div class=&quot;d-flex&quot;&gt;
     &lt;div class=&quot;flex-shrink-0&quot;&gt;
-        &lt;img src=&quot;assets/images/users/avatar-3.jpg&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded&quot; /&gt;
+        &lt;img src=&quot;assets/images/users/avatar-1.png&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded&quot; /&gt;
     &lt;/div&gt;
     &lt;div class=&quot;flex-shrink-0 ms-2&quot;&gt;
         &lt;h6 class=&quot;fs-14 mb-0&quot;&gt;Harvey Wells&lt;/h6&gt;

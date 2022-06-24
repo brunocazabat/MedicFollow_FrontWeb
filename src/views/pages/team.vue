@@ -174,7 +174,7 @@ export default {
                           class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
-                            src="@/assets/images/users/avatar-2.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="img-fluid d-block rounded-circle"
                           />
@@ -418,7 +418,7 @@ export default {
                           class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
-                            src="@/assets/images/users/avatar-3.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="img-fluid d-block rounded-circle"
                           />
@@ -538,7 +538,7 @@ export default {
                           class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
-                            src="@/assets/images/users/avatar-8.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="img-fluid d-block rounded-circle"
                           />
@@ -778,7 +778,7 @@ export default {
                           class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
-                            src="@/assets/images/users/avatar-4.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="img-fluid d-block rounded-circle"
                           />
@@ -1024,7 +1024,7 @@ export default {
                           class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
-                            src="@/assets/images/users/avatar-6.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="img-fluid d-block rounded-circle"
                           />
@@ -1148,7 +1148,7 @@ export default {
                           class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
-                            src="@/assets/images/users/avatar-5.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="img-fluid d-block rounded-circle"
                           />
@@ -1397,7 +1397,7 @@ export default {
                           class="avatar-lg img-thumbnail rounded-circle flex-shrink-0 shadow"
                         >
                           <img
-                            src="@/assets/images/users/avatar-7.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="img-fluid d-block rounded-circle"
                           />
@@ -1762,7 +1762,7 @@ export default {
               </div>
               <div class="p-3 text-center">
                 <img
-                  src="@/assets/images/users/avatar-2.jpg"
+                  src="@/assets/images/users/avatar-1.png"
                   alt=""
                   class="avatar-lg img-thumbnail rounded-circle mx-auto"
                 />

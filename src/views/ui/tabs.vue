@@ -825,7 +825,7 @@ export default {
               <div class="tab-pane active" id="home2" role="tabpanel">
                 <p class="flex-grow-1 mb-0">
                   <img
-                    src="@/assets/images/users/avatar-2.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="avatar-lg rounded float-start me-3"
                   />
@@ -845,7 +845,7 @@ export default {
               <div class="tab-pane" id="profile2" role="tabpanel">
                 <p class="me-3 mb-0">
                   <img
-                    src="@/assets/images/users/avatar-3.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="avatar-lg rounded float-end ms-3"
                   />
@@ -864,7 +864,7 @@ export default {
               <div class="tab-pane" id="messages2" role="tabpanel">
                 <p class="ms-3 mb-0">
                   <img
-                    src="@/assets/images/users/avatar-5.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="avatar-lg rounded float-start me-3"
                   />Trust fund seitan letterpress, keytar raw denim keffiyeh
@@ -1223,7 +1223,7 @@ export default {
                     <div class="d-flex">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-8.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1236,7 +1236,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-7.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1249,7 +1249,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-6.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1265,7 +1265,7 @@ export default {
                     <div class="d-flex mt-3 mt-sm-0">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-5.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1278,7 +1278,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-4.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1291,7 +1291,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-3.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1312,7 +1312,7 @@ export default {
                     <div class="d-flex">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-1.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1325,7 +1325,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-2.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1338,7 +1338,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-3.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1354,7 +1354,7 @@ export default {
                     <div class="d-flex mt-3 mt-sm-0">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-4.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1367,7 +1367,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-5.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1380,7 +1380,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-6.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1401,7 +1401,7 @@ export default {
                     <div class="d-flex">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-7.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1414,7 +1414,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-8.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1427,7 +1427,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-4.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1443,7 +1443,7 @@ export default {
                     <div class="d-flex mt-3 mt-sm-0">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-5.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1456,7 +1456,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-1.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -1469,7 +1469,7 @@ export default {
                     <div class="d-flex mt-3">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-2.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-sm rounded"
                         />
@@ -2919,7 +2919,7 @@ export default {
                 <div class="d-flex mb-3">
                   <div class="flex-shrink-0">
                     <img
-                      src="@/assets/images/users/avatar-2.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                       class="avatar-md rounded"
                     />
@@ -2941,7 +2941,7 @@ export default {
                   </div>
                   <div class="flex-shrink-0">
                     <img
-                      src="@/assets/images/users/avatar-3.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                       class="avatar-md rounded"
                     />
@@ -2952,7 +2952,7 @@ export default {
                 <div class="d-flex mb-3">
                   <div class="flex-shrink-0">
                     <img
-                      src="@/assets/images/users/avatar-4.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                       class="avatar-md rounded"
                     />
@@ -2974,7 +2974,7 @@ export default {
                   </div>
                   <div class="flex-shrink-0">
                     <img
-                      src="@/assets/images/users/avatar-1.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                       class="avatar-md rounded"
                     />
@@ -2985,7 +2985,7 @@ export default {
                 <div class="d-flex mb-3">
                   <div class="flex-shrink-0">
                     <img
-                      src="@/assets/images/users/avatar-4.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                       class="avatar-md rounded"
                     />
@@ -3007,7 +3007,7 @@ export default {
                   </div>
                   <div class="flex-shrink-0">
                     <img
-                      src="@/assets/images/users/avatar-1.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                       class="avatar-md rounded"
                     />

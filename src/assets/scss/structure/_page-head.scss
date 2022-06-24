@@ -1,6 +1,6 @@
-// 
+//
 // _page-head.scss
-// 
+//
 
 .page-title-box {
     padding: 10px $grid-gutter-width;
@@ -17,7 +17,7 @@
 
     h4 {
         font-weight: 700;
-        font-size: 15px!important;
+        font-size: 15px !important;
         text-transform: uppercase;
     }
 }
@@ -38,7 +38,7 @@
 }
 
 [data-layout="vertical"] {
-    &[data-layout-style="detached"]{
+    &[data-layout-style="detached"] {
         .page-title-box {
             padding: 1.2rem 0;
             background-color: transparent !important;
@@ -46,7 +46,7 @@
             border-top: none;
             box-shadow: none;
             margin: 0;
-    
+
             @media (min-width: 1024.1px) {
                 margin: -19px 0 0 0;
             }

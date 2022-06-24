@@ -53,7 +53,7 @@ export default {
         <div class="col-auto">
           <div class="avatar-lg">
             <img
-              src="@/assets/images/users/avatar-1.jpg"
+              src="@/assets/images/users/avatar-1.png"
               alt="user-img"
               class="img-thumbnail rounded-circle"
             />
@@ -366,7 +366,7 @@ export default {
                         <div class="d-flex align-items-center py-3">
                           <div class="avatar-xs flex-shrink-0 me-3">
                             <img
-                              src="@/assets/images/users/avatar-3.jpg"
+                              src="@/assets/images/users/avatar-1.png"
                               alt=""
                               class="img-fluid rounded-circle shadow"
                             />
@@ -391,7 +391,7 @@ export default {
                         <div class="d-flex align-items-center py-3">
                           <div class="avatar-xs flex-shrink-0 me-3">
                             <img
-                              src="@/assets/images/users/avatar-4.jpg"
+                              src="@/assets/images/users/avatar-1.png"
                               alt=""
                               class="img-fluid rounded-circle shadow"
                             />
@@ -416,7 +416,7 @@ export default {
                         <div class="d-flex align-items-center py-3">
                           <div class="avatar-xs flex-shrink-0 me-3">
                             <img
-                              src="@/assets/images/users/avatar-5.jpg"
+                              src="@/assets/images/users/avatar-1.png"
                               alt=""
                               class="img-fluid rounded-circle shadow"
                             />
@@ -676,7 +676,7 @@ export default {
                                         <div class="d-flex">
                                           <div class="flex-shrink-0">
                                             <img
-                                              src="@/assets/images/users/avatar-2.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="avatar-xs rounded-circle shadow"
                                             />
@@ -815,7 +815,7 @@ export default {
                                         <div class="d-flex">
                                           <div class="flex-shrink-0">
                                             <img
-                                              src="@/assets/images/users/avatar-5.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="avatar-xs rounded-circle shadow"
                                             />
@@ -901,7 +901,7 @@ export default {
                                         <div class="d-flex">
                                           <div class="flex-shrink-0">
                                             <img
-                                              src="@/assets/images/users/avatar-7.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="avatar-xs rounded-circle shadow"
                                             />
@@ -942,7 +942,7 @@ export default {
                                             data-bs-original-title="Christi"
                                           >
                                             <img
-                                              src="@/assets/images/users/avatar-4.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="rounded-circle avatar-xs"
                                             />
@@ -957,7 +957,7 @@ export default {
                                             data-bs-original-title="Frank Hook"
                                           >
                                             <img
-                                              src="@/assets/images/users/avatar-3.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="rounded-circle avatar-xs"
                                             />
@@ -1021,7 +1021,7 @@ export default {
                                         <div class="d-flex">
                                           <div class="flex-shrink-0">
                                             <img
-                                              src="@/assets/images/users/avatar-3.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="avatar-xs rounded-circle shadow"
                                             />
@@ -1186,7 +1186,7 @@ export default {
                                         <div class="d-flex">
                                           <div class="flex-shrink-0">
                                             <img
-                                              src="@/assets/images/users/avatar-6.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="avatar-xs rounded-circle shadow"
                                             />
@@ -1226,7 +1226,7 @@ export default {
                                         <div class="d-flex">
                                           <div class="flex-shrink-0">
                                             <img
-                                              src="@/assets/images/users/avatar-5.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="avatar-xs rounded-circle shadow"
                                             />
@@ -1396,7 +1396,7 @@ export default {
                                         <div class="d-flex">
                                           <div class="flex-shrink-0">
                                             <img
-                                              src="@/assets/images/users/avatar-2.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="avatar-xs rounded-circle shadow"
                                             />
@@ -1448,7 +1448,7 @@ export default {
                                         <div class="d-flex">
                                           <div class="flex-shrink-0">
                                             <img
-                                              src="@/assets/images/users/avatar-5.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="avatar-xs rounded-circle shadow"
                                             />
@@ -1534,7 +1534,7 @@ export default {
                                         <div class="d-flex">
                                           <div class="flex-shrink-0">
                                             <img
-                                              src="@/assets/images/users/avatar-7.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="avatar-xs rounded-circle shadow"
                                             />
@@ -1575,7 +1575,7 @@ export default {
                                             data-bs-original-title="Christi"
                                           >
                                             <img
-                                              src="@/assets/images/users/avatar-4.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="rounded-circle avatar-xs"
                                             />
@@ -1590,7 +1590,7 @@ export default {
                                             data-bs-original-title="Frank Hook"
                                           >
                                             <img
-                                              src="@/assets/images/users/avatar-3.jpg"
+                                              src="@/assets/images/users/avatar-1.png"
                                               alt=""
                                               class="rounded-circle avatar-xs"
                                             />
@@ -1702,7 +1702,7 @@ export default {
                                           <div class="avatar-group-item shadow">
                                             <div class="avatar-xs">
                                               <img
-                                                src="@/assets/images/users/avatar-4.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt=""
                                                 class="rounded-circle img-fluid"
                                               />
@@ -1711,7 +1711,7 @@ export default {
                                           <div class="avatar-group-item shadow">
                                             <div class="avatar-xs">
                                               <img
-                                                src="@/assets/images/users/avatar-5.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt=""
                                                 class="rounded-circle img-fluid"
                                               />
@@ -1729,7 +1729,7 @@ export default {
                                           <div class="avatar-group-item shadow">
                                             <div class="avatar-xs">
                                               <img
-                                                src="@/assets/images/users/avatar-2.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt=""
                                                 class="rounded-circle img-fluid"
                                               />
@@ -1790,7 +1790,7 @@ export default {
                                           <div class="avatar-group-item shadow">
                                             <div class="avatar-xs">
                                               <img
-                                                src="@/assets/images/users/avatar-2.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt=""
                                                 class="rounded-circle img-fluid"
                                               />
@@ -1860,7 +1860,7 @@ export default {
                                           <div class="avatar-group-item shadow">
                                             <div class="avatar-xs">
                                               <img
-                                                src="@/assets/images/users/avatar-5.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt=""
                                                 class="rounded-circle img-fluid"
                                               />
@@ -1923,7 +1923,7 @@ export default {
                                           <div class="avatar-group-item shadow">
                                             <div class="avatar-xs">
                                               <img
-                                                src="@/assets/images/users/avatar-4.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt=""
                                                 class="rounded-circle img-fluid"
                                               />
@@ -1932,7 +1932,7 @@ export default {
                                           <div class="avatar-group-item shadow">
                                             <div class="avatar-xs">
                                               <img
-                                                src="@/assets/images/users/avatar-5.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt=""
                                                 class="rounded-circle img-fluid"
                                               />
@@ -1994,7 +1994,7 @@ export default {
                                           <div class="avatar-group-item shadow">
                                             <div class="avatar-xs">
                                               <img
-                                                src="@/assets/images/users/avatar-4.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt=""
                                                 class="rounded-circle img-fluid"
                                               />
@@ -2003,7 +2003,7 @@ export default {
                                           <div class="avatar-group-item shadow">
                                             <div class="avatar-xs">
                                               <img
-                                                src="@/assets/images/users/avatar-5.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 alt=""
                                                 class="rounded-circle img-fluid"
                                               />
@@ -2048,7 +2048,7 @@ export default {
                     <div class="acitivity-item d-flex">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-1.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-xs rounded-circle acitivity-avatar"
                         />
@@ -2097,7 +2097,7 @@ export default {
                             data-bs-original-title="Christi"
                           >
                             <img
-                              src="@/assets/images/users/avatar-4.jpg"
+                              src="@/assets/images/users/avatar-1.png"
                               alt=""
                               class="rounded-circle avatar-xs"
                             />
@@ -2111,7 +2111,7 @@ export default {
                             data-bs-original-title="Frank Hook"
                           >
                             <img
-                              src="@/assets/images/users/avatar-3.jpg"
+                              src="@/assets/images/users/avatar-1.png"
                               alt=""
                               class="rounded-circle avatar-xs"
                             />
@@ -2151,7 +2151,7 @@ export default {
                     <div class="acitivity-item py-3 d-flex">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-2.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-xs rounded-circle acitivity-avatar"
                         />
@@ -2204,7 +2204,7 @@ export default {
                     <div class="acitivity-item py-3 d-flex">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-6.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-xs rounded-circle acitivity-avatar"
                         />
@@ -2245,7 +2245,7 @@ export default {
                     <div class="acitivity-item py-3 d-flex">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-7.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-xs rounded-circle acitivity-avatar"
                         />
@@ -2287,7 +2287,7 @@ export default {
                     <div class="acitivity-item d-flex">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-8.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-xs rounded-circle acitivity-avatar"
                         />
@@ -2357,7 +2357,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-1.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2366,7 +2366,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-3.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2429,7 +2429,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-8.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2438,7 +2438,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-7.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2447,7 +2447,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-6.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2508,7 +2508,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-4.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2526,7 +2526,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-3.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2580,7 +2580,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-7.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2589,7 +2589,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-5.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2641,7 +2641,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-7.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2650,7 +2650,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-6.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2720,7 +2720,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-3.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2729,7 +2729,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-8.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2781,7 +2781,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-6.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2790,7 +2790,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-5.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2799,7 +2799,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-4.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2853,7 +2853,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-1.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2906,7 +2906,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-2.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2915,7 +2915,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-3.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2924,7 +2924,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-4.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -2982,7 +2982,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-7.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -3044,7 +3044,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-7.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -3053,7 +3053,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-6.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -3062,7 +3062,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-5.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />
@@ -3122,7 +3122,7 @@ export default {
                                   <div class="avatar-group-item shadow">
                                     <div class="avatar-xs">
                                       <img
-                                        src="@/assets/images/users/avatar-7.jpg"
+                                        src="@/assets/images/users/avatar-1.png"
                                         alt=""
                                         class="rounded-circle img-fluid"
                                       />

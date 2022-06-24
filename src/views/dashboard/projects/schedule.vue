@@ -24,19 +24,13 @@ export default {
     <!-- end cardheader -->
     <div class="card-body pt-0">
       <div class="upcoming-scheduled">
-        <flat-pickr
-          v-model="date"
-          :config="config"
-       
-        ></flat-pickr>
+        <flat-pickr v-model="date" :config="config"></flat-pickr>
       </div>
 
       <h6 class="text-uppercase fw-semibold mt-4 mb-3 text-muted">Events:</h6>
       <div class="mini-stats-wid d-flex align-items-center mt-3">
         <div class="flex-shrink-0 avatar-sm">
-          <span
-            class="mini-stat-icon avatar-title rounded-circle text-success bg-soft-success fs-4"
-          >
+          <span class="mini-stat-icon avatar-title rounded-circle text-success bg-soft-success fs-4">
             09
           </span>
         </div>
@@ -53,9 +47,7 @@ export default {
       <!-- end -->
       <div class="mini-stats-wid d-flex align-items-center mt-3">
         <div class="flex-shrink-0 avatar-sm">
-          <span
-            class="mini-stat-icon avatar-title rounded-circle text-success bg-soft-success fs-4"
-          >
+          <span class="mini-stat-icon avatar-title rounded-circle text-success bg-soft-success fs-4">
             12
           </span>
         </div>
@@ -72,9 +64,7 @@ export default {
       <!-- end -->
       <div class="mini-stats-wid d-flex align-items-center mt-3">
         <div class="flex-shrink-0 avatar-sm">
-          <span
-            class="mini-stat-icon avatar-title rounded-circle text-success bg-soft-success fs-4"
-          >
+          <span class="mini-stat-icon avatar-title rounded-circle text-success bg-soft-success fs-4">
             25
           </span>
         </div>
@@ -91,9 +81,7 @@ export default {
       <!-- end -->
       <div class="mini-stats-wid d-flex align-items-center mt-3">
         <div class="flex-shrink-0 avatar-sm">
-          <span
-            class="mini-stat-icon avatar-title rounded-circle text-success bg-soft-success fs-4"
-          >
+          <span class="mini-stat-icon avatar-title rounded-circle text-success bg-soft-success fs-4">
             27
           </span>
         </div>
@@ -110,11 +98,7 @@ export default {
       <!-- end -->
 
       <div class="mt-3 text-center">
-        <a
-          href="javascript:void(0);"
-          class="text-muted text-decoration-underline"
-          >View all Events</a
-        >
+        <a href="javascript:void(0);" class="text-muted text-decoration-underline">View all Events</a>
       </div>
     </div>
     <!-- end cardbody -->

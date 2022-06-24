@@ -48,7 +48,7 @@ export default {
         message: ''
       },
       username: 'Steven Franklin',
-      profile: require('@/assets/images/users/avatar-2.jpg')
+      profile: require('@/assets/images/users/avatar-1.png')
     }
   },
   components: {
@@ -442,7 +442,7 @@ export default {
                               :src="
                                 profile
                                   ? profile
-                                  : require('@/assets/images/users/user-dummy-img.jpg')
+                                  : require('@/assets/images/users/avatar-1.png')
                               "
                               class="rounded-circle avatar-xs"
                               alt=""
@@ -585,7 +585,7 @@ export default {
                             :src="
                               profile
                                 ? profile
-                                : require('@/assets/images/users/user-dummy-img.jpg')
+                                : require('@/assets/images/users/avatar-1.png')
                             "
                             alt=""
                           />

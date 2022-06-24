@@ -50,7 +50,7 @@ export default {
                         <div class="content">
                             <div class="d-flex">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-5.jpg" alt="" class="avatar-sm rounded">
+                                    <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-sm rounded">
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <h5 class="fs-15">@Erica245 <small class="text-muted fs-13 fw-normal">- 10 min Ago</small></h5>
@@ -110,10 +110,10 @@ export default {
                             <p class="text-muted">Every team project can have a velzon. Use the velzon to share information with your team to understand and contribute to your project.</p>
                             <div class="avatar-group mb-2">
                                 <a href="javascript: void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="" data-bs-original-title="Christi">
-                                    <img src="@/assets/images/users/avatar-4.jpg" alt="" class="rounded-circle avatar-xs">
+                                    <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xs">
                                 </a>
                                 <a href="javascript: void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="" data-bs-original-title="Frank Hook">
-                                    <img src="@/assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xs">
+                                    <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xs">
                                 </a>
                                 <a href="javascript: void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="" data-bs-original-title=" Ruby">
                                     <div class="avatar-xs">
@@ -202,7 +202,7 @@ export default {
                                 <div class="timeline-box shadow">
                                     <div class="timeline-text">
                                         <div class="d-flex">
-                                            <img src="@/assets/images/users/avatar-7.jpg" alt="" class="avatar-sm rounded" />
+                                            <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-sm rounded" />
                                             <div class="flex-grow-1 ms-3">
                                                 <h5 class="mb-1">Frank hook joined with our company</h5>
                                                 <p class="text-muted mb-0">It makes a statement, it’s impressive graphic design. Increase or decrease the letter spacing depending on the situation and try, try again until it looks right, and each letter has the perfect spot of its own. </p>

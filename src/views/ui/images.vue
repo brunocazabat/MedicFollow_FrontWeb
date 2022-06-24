@@ -95,7 +95,7 @@ export default {
                                         <img
                                             class="rounded-circle avatar-xl shadow"
                                             alt="200x200"
-                                            src="@/assets/images/users/avatar-4.jpg"
+                                            src="@/assets/images/users/avatar-1.png"
                                             data-holder-rendered="true"
                                         />
                                     </div>
@@ -162,7 +162,7 @@ export default {
                                         <img
                                             class="img-thumbnail rounded-circle avatar-xl"
                                             alt="200x200"
-                                            src="@/assets/images/users/avatar-3.jpg"
+                                            src="@/assets/images/users/avatar-1.png"
                                             data-holder-rendered="true"
                                         />
                                     </div>
@@ -221,7 +221,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-2.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded avatar-xxs shadow"
                                                 />
@@ -234,7 +234,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-10.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded avatar-xs shadow"
                                                 />
@@ -247,7 +247,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-3.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded avatar-sm shadow"
                                                 />
@@ -260,7 +260,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-4.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded avatar-md shadow"
                                                 />
@@ -273,7 +273,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-5.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded avatar-lg shadow"
                                                 />
@@ -286,7 +286,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-8.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded avatar-xl shadow"
                                                 />
@@ -306,7 +306,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-2.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded-circle avatar-xxs shadow"
                                                 />
@@ -319,7 +319,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-10.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded-circle avatar-xs shadow"
                                                 />
@@ -332,7 +332,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-3.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded-circle avatar-sm shadow"
                                                 />
@@ -345,7 +345,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-4.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded-circle avatar-md shadow"
                                                 />
@@ -358,7 +358,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-5.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded-circle avatar-lg shadow"
                                                 />
@@ -371,7 +371,7 @@ export default {
                                         <div class="col-xxl-2 col-md-4 col-6">
                                             <div>
                                                 <img
-                                                    src="@/assets/images/users/avatar-8.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded-circle avatar-xl shadow"
                                                 />
@@ -567,14 +567,14 @@ Xl
                                         <div class="avatar-group">
                                             <div class="avatar-group-item shadow">
                                                 <img
-                                                    src="@/assets/images/users/avatar-4.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded-circle avatar-sm"
                                                 />
                                             </div>
                                             <div class="avatar-group-item shadow">
                                                 <img
-                                                    src="@/assets/images/users/avatar-5.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded-circle avatar-sm"
                                                 />
@@ -588,7 +588,7 @@ Xl
                                             </div>
                                             <div class="avatar-group-item shadow">
                                                 <img
-                                                    src="@/assets/images/users/avatar-2.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded-circle avatar-sm"
                                                 />
@@ -614,7 +614,7 @@ Xl
                                                 title="Christi"
                                             >
                                                 <img
-                                                    src="@/assets/images/users/avatar-4.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded-circle avatar-sm"
                                                 />
@@ -627,7 +627,7 @@ Xl
                                                 title="Frank Hook"
                                             >
                                                 <img
-                                                    src="@/assets/images/users/avatar-3.jpg"
+                                                    src="@/assets/images/users/avatar-1.png"
                                                     alt
                                                     class="rounded-circle avatar-sm"
                                                 />

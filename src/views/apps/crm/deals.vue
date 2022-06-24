@@ -112,7 +112,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#leadDiscovered1"
                                 role="button" aria-expanded="false" aria-controls="leadDiscovered1">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-1.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -184,7 +184,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#leadDiscovered2"
                                 role="button" aria-expanded="false" aria-controls="leadDiscovered2">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-2.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -259,7 +259,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#leadDiscovered3"
                                 role="button" aria-expanded="false" aria-controls="leadDiscovered3">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-3.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -331,7 +331,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#leadDiscovered4"
                                 role="button" aria-expanded="false" aria-controls="leadDiscovered4">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-4.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -424,7 +424,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#contactInitiated1"
                                 role="button" aria-expanded="false" aria-controls="contactInitiated1">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-5.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -557,7 +557,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#contactInitiated3"
                                 role="button" aria-expanded="false" aria-controls="contactInitiated3">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-6.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -618,7 +618,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#contactInitiated4"
                                 role="button" aria-expanded="false" aria-controls="contactInitiated4">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-7.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -780,7 +780,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#needsIdentified1"
                                 role="button" aria-expanded="false" aria-controls="needsIdentified1">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-9.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -841,7 +841,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#needsIdentified2"
                                 role="button" aria-expanded="false" aria-controls="needsIdentified2">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-8.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -988,7 +988,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#needsIdentified4"
                                 role="button" aria-expanded="false" aria-controls="needsIdentified4">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-1.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -1063,7 +1063,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#needsIdentified5"
                                 role="button" aria-expanded="false" aria-controls="needsIdentified5">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-2.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -1207,7 +1207,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#needsIdentified7"
                                 role="button" aria-expanded="false" aria-controls="needsIdentified7">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-10.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -1369,7 +1369,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#meetingArranged2"
                                 role="button" aria-expanded="false" aria-controls="meetingArranged2">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-3.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -1531,7 +1531,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#offerAccepted1"
                                 role="button" aria-expanded="false" aria-controls="offerAccepted1">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-10.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -1678,7 +1678,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#offerAccepted3"
                                 role="button" aria-expanded="false" aria-controls="offerAccepted3">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-4.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -1741,7 +1741,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#offerAccepted4"
                                 role="button" aria-expanded="false" aria-controls="offerAccepted4">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-7.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -1891,7 +1891,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#offerAccepted6"
                                 role="button" aria-expanded="false" aria-controls="offerAccepted6">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-6.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">
@@ -2035,7 +2035,7 @@ export default {
                             <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#offerAccepted8"
                                 role="button" aria-expanded="false" aria-controls="offerAccepted8">
                                 <div class="flex-shrink-0">
-                                    <img src="@/assets/images/users/avatar-2.jpg" alt=""
+                                    <img src="@/assets/images/users/avatar-1.png" alt=""
                                         class="avatar-xs rounded-circle shadow" />
                                 </div>
                                 <div class="flex-grow-1 ms-3">

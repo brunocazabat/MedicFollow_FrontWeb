@@ -800,7 +800,7 @@ export default {
           <div class="card-body text-center">
             <div class="position-relative d-inline-block">
               <img
-                src="@/assets/images/users/avatar-10.jpg"
+                src="@/assets/images/users/avatar-1.png"
                 id="image"
                 alt=""
                 class="avatar-lg rounded-circle img-thumbnail"

@@ -64,11 +64,11 @@ export default {
           subItem: [
             {
               id: 1,
-              img: require('@/assets/images/users/avatar-3.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
-              img: require('@/assets/images/users/avatar-1.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             }
           ],
           dueDate: '25 Jan, 2022',
@@ -86,15 +86,15 @@ export default {
           subItem: [
             {
               id: 1,
-              img: require('@/assets/images/users/avatar-10.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
-              img: require('@/assets/images/users/avatar-9.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 3,
-              img: require('@/assets/images/users/avatar-5.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             }
           ],
           dueDate: '20 Dec, 2021',
@@ -112,19 +112,19 @@ export default {
           subItem: [
             {
               id: 1,
-              img: require('@/assets/images/users/avatar-5.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
-              img: require('@/assets/images/users/avatar-6.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 3,
-              img: require('@/assets/images/users/avatar-7.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 4,
-              img: require('@/assets/images/users/avatar-8.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             }
           ],
           dueDate: '23 Oct, 2021',
@@ -142,7 +142,7 @@ export default {
           subItem: [
             {
               id: 1,
-              img: require('@/assets/images/users/avatar-2.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             }
           ],
           dueDate: '05 Oct, 2021',
@@ -160,15 +160,15 @@ export default {
           subItem: [
             {
               id: 1,
-              img: require('@/assets/images/users/avatar-3.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
-              img: require('@/assets/images/users/avatar-10.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 3,
-              img: require('@/assets/images/users/avatar-9.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             }
           ],
           dueDate: '17 Oct, 2021',
@@ -186,11 +186,11 @@ export default {
           subItem: [
             {
               id: 1,
-              img: require('@/assets/images/users/avatar-6.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
-              img: require('@/assets/images/users/avatar-7.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             }
           ],
           dueDate: '04 Dec, 2021',
@@ -208,19 +208,19 @@ export default {
           subItem: [
             {
               id: 1,
-              img: require('@/assets/images/users/avatar-10.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
-              img: require('@/assets/images/users/avatar-9.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 3,
-              img: require('@/assets/images/users/avatar-8.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 4,
-              img: require('@/assets/images/users/avatar-1.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             }
           ],
           dueDate: '11 Oct, 2021',
@@ -238,11 +238,11 @@ export default {
           subItem: [
             {
               id: 1,
-              img: require('@/assets/images/users/avatar-5.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
-              img: require('@/assets/images/users/avatar-4.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             }
           ],
           dueDate: '16 Dec, 2021',
@@ -260,15 +260,15 @@ export default {
           subItem: [
             {
               id: 1,
-              img: require('@/assets/images/users/avatar-6.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
-              img: require('@/assets/images/users/avatar-7.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 3,
-              img: require('@/assets/images/users/avatar-8.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             }
           ],
           dueDate: '29 Dec, 2021',
@@ -286,7 +286,7 @@ export default {
           subItem: [
             {
               id: 1,
-              img: require('@/assets/images/users/avatar-4.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             }
           ],
           dueDate: '13 Oct, 2021',
@@ -304,11 +304,11 @@ export default {
           subItem: [
             {
               id: 1,
-              img: require('@/assets/images/users/avatar-7.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             },
             {
               id: 2,
-              img: require('@/assets/images/users/avatar-8.jpg')
+              img: require('@/assets/images/users/avatar-1.png')
             }
           ],
           dueDate: '02 Jan, 2021',
@@ -541,11 +541,11 @@ export default {
         subItem: [
           {
             id: 1,
-            img: require('@/assets/images/users/avatar-3.jpg')
+            img: require('@/assets/images/users/avatar-1.png')
           },
           {
             id: 2,
-            img: require('@/assets/images/users/avatar-1.jpg')
+            img: require('@/assets/images/users/avatar-1.png')
           }
         ]
       }
@@ -1159,7 +1159,7 @@ export default {
                           >
                             <span class="flex-shrink-0">
                               <img
-                                src="@/assets/images/users/avatar-1.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 alt=""
                                 class="avatar-xxs rounded-circle"
                               />
@@ -1182,7 +1182,7 @@ export default {
                           >
                             <span class="flex-shrink-0">
                               <img
-                                src="@/assets/images/users/avatar-3.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 alt=""
                                 class="avatar-xxs rounded-circle"
                               />
@@ -1205,7 +1205,7 @@ export default {
                           >
                             <span class="flex-shrink-0">
                               <img
-                                src="@/assets/images/users/avatar-6.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 alt=""
                                 class="avatar-xxs rounded-circle"
                               />
@@ -1230,7 +1230,7 @@ export default {
                           >
                             <span class="flex-shrink-0">
                               <img
-                                src="@/assets/images/users/avatar-2.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 alt=""
                                 class="avatar-xxs rounded-circle"
                               />
@@ -1255,7 +1255,7 @@ export default {
                           >
                             <span class="flex-shrink-0">
                               <img
-                                src="@/assets/images/users/avatar-7.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 alt=""
                                 class="avatar-xxs rounded-circle"
                               />
@@ -1280,7 +1280,7 @@ export default {
                           >
                             <span class="flex-shrink-0">
                               <img
-                                src="@/assets/images/users/avatar-5.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 alt=""
                                 class="avatar-xxs rounded-circle"
                               />
@@ -1305,7 +1305,7 @@ export default {
                           >
                             <span class="flex-shrink-0">
                               <img
-                                src="@/assets/images/users/avatar-8.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 alt=""
                                 class="avatar-xxs rounded-circle"
                               />
@@ -1330,7 +1330,7 @@ export default {
                           >
                             <span class="flex-shrink-0">
                               <img
-                                src="@/assets/images/users/avatar-10.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 alt=""
                                 class="avatar-xxs rounded-circle"
                               />

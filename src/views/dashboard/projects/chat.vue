@@ -11,19 +11,19 @@ export default {
           .getElementById(id)
           .querySelector('#chat-conversation .simplebar-content-wrapper')
           ? document
-              .getElementById(id)
-              .querySelector('#chat-conversation .simplebar-content-wrapper')
+            .getElementById(id)
+            .querySelector('#chat-conversation .simplebar-content-wrapper')
           : ''
 
         var offsetHeight = document.getElementsByClassName(
           'chat-conversation-list'
         )[0]
           ? document
-              .getElementById(id)
-              .getElementsByClassName('chat-conversation-list')[0]
-              .scrollHeight -
-            window.innerHeight +
-            600
+            .getElementById(id)
+            .getElementsByClassName('chat-conversation-list')[0]
+            .scrollHeight -
+          window.innerHeight +
+          600
           : 0
 
         if (offsetHeight)
@@ -43,39 +43,20 @@ export default {
       <h4 class="card-title mb-0 flex-grow-1">Chat</h4>
       <div class="flex-shrink-0">
         <div class="dropdown card-header-dropdown">
-          <a
-            class="text-reset dropdown-btn"
-            href="#"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <span class="text-muted"
-              ><em class="ri-settings-4-line align-middle me-1"></em>Setting
-              <em class="mdi mdi-chevron-down ms-1"></em
-            ></span>
+          <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="text-muted"><em class="ri-settings-4-line align-middle me-1"></em>Setting
+              <em class="mdi mdi-chevron-down ms-1"></em></span>
           </a>
           <div class="dropdown-menu dropdown-menu-end">
-            <a class="dropdown-item" href="#"
-              ><em class="ri-user-2-fill align-bottom text-muted me-2"></em>
-              View Profile</a
-            >
-            <a class="dropdown-item" href="#"
-              ><em
-                class="ri-inbox-archive-line align-bottom text-muted me-2"
-              ></em>
-              Archive</a
-            >
-            <a class="dropdown-item" href="#"
-              ><em class="ri-mic-off-line align-bottom text-muted me-2"></em>
-              Muted</a
-            >
-            <a class="dropdown-item" href="#"
-              ><em
-                class="ri-delete-bin-5-line align-bottom text-muted me-2"
-              ></em>
-              Delete</a
-            >
+            <a class="dropdown-item" href="#"><em class="ri-user-2-fill align-bottom text-muted me-2"></em>
+              View Profile</a>
+            <a class="dropdown-item" href="#"><em class="ri-inbox-archive-line align-bottom text-muted me-2"></em>
+              Archive</a>
+            <a class="dropdown-item" href="#"><em class="ri-mic-off-line align-bottom text-muted me-2"></em>
+              Muted</a>
+            <a class="dropdown-item" href="#"><em class="ri-delete-bin-5-line align-bottom text-muted me-2"></em>
+              Delete</a>
           </div>
         </div>
       </div>
@@ -84,20 +65,12 @@ export default {
 
     <div class="card-body p-0">
       <div id="users-chat">
-        <div
-          class="chat-conversation p-3"
-          id="chat-conversation"
-          data-simplebar
-          style="height: 400px"
-        >
-          <ul
-            class="list-unstyled chat-conversation-list chat-sm"
-            id="users-conversation"
-          >
+        <div class="chat-conversation p-3" id="chat-conversation" data-simplebar style="height: 400px">
+          <ul class="list-unstyled chat-conversation-list chat-sm" id="users-conversation">
             <li class="chat-list left">
               <div class="conversation-list">
                 <div class="chat-avatar">
-                  <img src="@/assets/images/users/avatar-2.jpg" alt="" />
+                  <img src="@/assets/images/users/avatar-1.png" alt="" />
                 </div>
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
@@ -105,55 +78,28 @@ export default {
                       <p class="mb-0 ctext-content">Good morning 😊</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
-                      <a
-                        class="dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
+                      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         <em class="ri-more-2-fill"></em>
                       </a>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-reply-line me-2 text-muted align-bottom"
-                          ></em
-                          >Reply</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-share-line me-2 text-muted align-bottom"
-                          ></em
-                          >Forward</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-file-copy-line me-2 text-muted align-bottom"
-                          ></em
-                          >Copy</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-bookmark-line me-2 text-muted align-bottom"
-                          ></em
-                          >Bookmark</a
-                        >
-                        <a class="dropdown-item delete-item" href="#"
-                          ><em
-                            class="ri-delete-bin-5-line me-2 text-muted align-bottom"
-                          ></em
-                          >Delete</a
-                        >
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-reply-line me-2 text-muted align-bottom"></em>Reply</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-share-line me-2 text-muted align-bottom"></em>Forward</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-file-copy-line me-2 text-muted align-bottom"></em>Copy</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-bookmark-line me-2 text-muted align-bottom"></em>Bookmark</a>
+                        <a class="dropdown-item delete-item" href="#"><em
+                            class="ri-delete-bin-5-line me-2 text-muted align-bottom"></em>Delete</a>
                       </div>
                     </div>
                   </div>
                   <div class="conversation-name">
                     <small class="text-muted time">09:07 am</small>
-                    <span class="text-success check-message-icon"
-                      ><em class="ri-check-double-line align-bottom"></em
-                    ></span>
+                    <span class="text-success check-message-icon"><em
+                        class="ri-check-double-line align-bottom"></em></span>
                   </div>
                 </div>
               </div>
@@ -170,55 +116,28 @@ export default {
                       </p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
-                      <a
-                        class="dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
+                      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         <em class="ri-more-2-fill"></em>
                       </a>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-reply-line me-2 text-muted align-bottom"
-                          ></em
-                          >Reply</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-share-line me-2 text-muted align-bottom"
-                          ></em
-                          >Forward</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-file-copy-line me-2 text-muted align-bottom"
-                          ></em
-                          >Copy</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-bookmark-line me-2 text-muted align-bottom"
-                          ></em
-                          >Bookmark</a
-                        >
-                        <a class="dropdown-item delete-item" href="#"
-                          ><em
-                            class="ri-delete-bin-5-line me-2 text-muted align-bottom"
-                          ></em
-                          >Delete</a
-                        >
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-reply-line me-2 text-muted align-bottom"></em>Reply</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-share-line me-2 text-muted align-bottom"></em>Forward</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-file-copy-line me-2 text-muted align-bottom"></em>Copy</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-bookmark-line me-2 text-muted align-bottom"></em>Bookmark</a>
+                        <a class="dropdown-item delete-item" href="#"><em
+                            class="ri-delete-bin-5-line me-2 text-muted align-bottom"></em>Delete</a>
                       </div>
                     </div>
                   </div>
                   <div class="conversation-name">
                     <small class="text-muted time">09:08 am</small>
-                    <span class="text-success check-message-icon"
-                      ><em class="ri-check-double-line align-bottom"></em
-                    ></span>
+                    <span class="text-success check-message-icon"><em
+                        class="ri-check-double-line align-bottom"></em></span>
                   </div>
                 </div>
               </div>
@@ -228,7 +147,7 @@ export default {
             <li class="chat-list left">
               <div class="conversation-list">
                 <div class="chat-avatar">
-                  <img src="@/assets/images/users/avatar-2.jpg" alt="" />
+                  <img src="@/assets/images/users/avatar-1.png" alt="" />
                 </div>
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
@@ -239,47 +158,21 @@ export default {
                       </p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
-                      <a
-                        class="dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
+                      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         <em class="ri-more-2-fill"></em>
                       </a>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-reply-line me-2 text-muted align-bottom"
-                          ></em
-                          >Reply</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-share-line me-2 text-muted align-bottom"
-                          ></em
-                          >Forward</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-file-copy-line me-2 text-muted align-bottom"
-                          ></em
-                          >Copy</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-bookmark-line me-2 text-muted align-bottom"
-                          ></em
-                          >Bookmark</a
-                        >
-                        <a class="dropdown-item delete-item" href="#"
-                          ><em
-                            class="ri-delete-bin-5-line me-2 text-muted align-bottom"
-                          ></em
-                          >Delete</a
-                        >
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-reply-line me-2 text-muted align-bottom"></em>Reply</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-share-line me-2 text-muted align-bottom"></em>Forward</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-file-copy-line me-2 text-muted align-bottom"></em>Copy</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-bookmark-line me-2 text-muted align-bottom"></em>Bookmark</a>
+                        <a class="dropdown-item delete-item" href="#"><em
+                            class="ri-delete-bin-5-line me-2 text-muted align-bottom"></em>Delete</a>
                       </div>
                     </div>
                   </div>
@@ -292,55 +185,28 @@ export default {
                       </p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
-                      <a
-                        class="dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
+                      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         <em class="ri-more-2-fill"></em>
                       </a>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-reply-line me-2 text-muted align-bottom"
-                          ></em
-                          >Reply</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-share-line me-2 text-muted align-bottom"
-                          ></em
-                          >Forward</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-file-copy-line me-2 text-muted align-bottom"
-                          ></em
-                          >Copy</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-bookmark-line me-2 text-muted align-bottom"
-                          ></em
-                          >Bookmark</a
-                        >
-                        <a class="dropdown-item delete-item" href="#"
-                          ><em
-                            class="ri-delete-bin-5-line me-2 text-muted align-bottom"
-                          ></em
-                          >Delete</a
-                        >
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-reply-line me-2 text-muted align-bottom"></em>Reply</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-share-line me-2 text-muted align-bottom"></em>Forward</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-file-copy-line me-2 text-muted align-bottom"></em>Copy</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-bookmark-line me-2 text-muted align-bottom"></em>Bookmark</a>
+                        <a class="dropdown-item delete-item" href="#"><em
+                            class="ri-delete-bin-5-line me-2 text-muted align-bottom"></em>Delete</a>
                       </div>
                     </div>
                   </div>
                   <div class="conversation-name">
                     <small class="text-muted time">09:10 am</small>
-                    <span class="text-success check-message-icon"
-                      ><em class="ri-check-double-line align-bottom"></em
-                    ></span>
+                    <span class="text-success check-message-icon"><em
+                        class="ri-check-double-line align-bottom"></em></span>
                   </div>
                 </div>
               </div>
@@ -355,55 +221,28 @@ export default {
                       <p class="mb-0 ctext-content">Wow that's great</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
-                      <a
-                        class="dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
+                      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         <em class="ri-more-2-fill"></em>
                       </a>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-reply-line me-2 text-muted align-bottom"
-                          ></em
-                          >Reply</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-share-line me-2 text-muted align-bottom"
-                          ></em
-                          >Forward</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-file-copy-line me-2 text-muted align-bottom"
-                          ></em
-                          >Copy</a
-                        >
-                        <a class="dropdown-item" href="#"
-                          ><em
-                            class="ri-bookmark-line me-2 text-muted align-bottom"
-                          ></em
-                          >Bookmark</a
-                        >
-                        <a class="dropdown-item delete-item" href="#"
-                          ><em
-                            class="ri-delete-bin-5-line me-2 text-muted align-bottom"
-                          ></em
-                          >Delete</a
-                        >
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-reply-line me-2 text-muted align-bottom"></em>Reply</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-share-line me-2 text-muted align-bottom"></em>Forward</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-file-copy-line me-2 text-muted align-bottom"></em>Copy</a>
+                        <a class="dropdown-item" href="#"><em
+                            class="ri-bookmark-line me-2 text-muted align-bottom"></em>Bookmark</a>
+                        <a class="dropdown-item delete-item" href="#"><em
+                            class="ri-delete-bin-5-line me-2 text-muted align-bottom"></em>Delete</a>
                       </div>
                     </div>
                   </div>
                   <div class="conversation-name">
                     <small class="text-muted time">09:12 am</small>
-                    <span class="text-success check-message-icon"
-                      ><em class="ri-check-double-line align-bottom"></em
-                    ></span>
+                    <span class="text-success check-message-icon"><em
+                        class="ri-check-double-line align-bottom"></em></span>
                   </div>
                 </div>
               </div>
@@ -413,71 +252,35 @@ export default {
             <li class="chat-list left">
               <div class="conversation-list">
                 <div class="chat-avatar">
-                  <img src="@/assets/images/users/avatar-2.jpg" alt="" />
+                  <img src="@/assets/images/users/avatar-1.png" alt="" />
                 </div>
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="message-img mb-0">
                       <div class="message-img-list">
                         <div>
-                          <a
-                            class="popup-img d-inline-block"
-                            href="@/assets/images/small/img-1.jpg"
-                          >
-                            <img
-                              src="@/assets/images/small/img-1.jpg"
-                              alt=""
-                              class="rounded border"
-                            />
+                          <a class="popup-img d-inline-block" href="@/assets/images/small/img-1.jpg">
+                            <img src="@/assets/images/small/img-1.jpg" alt="" class="rounded border" />
                           </a>
                         </div>
                         <div class="message-img-link">
                           <ul class="list-inline mb-0">
                             <li class="list-inline-item dropdown">
-                              <a
-                                class="dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
+                              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <em class="ri-more-fill"></em>
                               </a>
                               <div class="dropdown-menu">
-                                <a
-                                  class="dropdown-item"
-                                  href="@/assets/images/small/img-1.jpg"
-                                  download=""
-                                  ><em
-                                    class="ri-download-2-line me-2 text-muted align-bottom"
-                                  ></em
-                                  >Download</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><em
-                                    class="ri-reply-line me-2 text-muted align-bottom"
-                                  ></em
-                                  >Reply</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><em
-                                    class="ri-share-line me-2 text-muted align-bottom"
-                                  ></em
-                                  >Forward</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><em
-                                    class="ri-bookmark-line me-2 text-muted align-bottom"
-                                  ></em
-                                  >Bookmark</a
-                                >
-                                <a class="dropdown-item delete-item" href="#"
-                                  ><em
-                                    class="ri-delete-bin-5-line me-2 text-muted align-bottom"
-                                  ></em
-                                  >Delete</a
-                                >
+                                <a class="dropdown-item" href="@/assets/images/small/img-1.jpg" download=""><em
+                                    class="ri-download-2-line me-2 text-muted align-bottom"></em>Download</a>
+                                <a class="dropdown-item" href="#"><em
+                                    class="ri-reply-line me-2 text-muted align-bottom"></em>Reply</a>
+                                <a class="dropdown-item" href="#"><em
+                                    class="ri-share-line me-2 text-muted align-bottom"></em>Forward</a>
+                                <a class="dropdown-item" href="#"><em
+                                    class="ri-bookmark-line me-2 text-muted align-bottom"></em>Bookmark</a>
+                                <a class="dropdown-item delete-item" href="#"><em
+                                    class="ri-delete-bin-5-line me-2 text-muted align-bottom"></em>Delete</a>
                               </div>
                             </li>
                           </ul>
@@ -486,64 +289,28 @@ export default {
 
                       <div class="message-img-list">
                         <div>
-                          <a
-                            class="popup-img d-inline-block"
-                            href="@/assets/images/small/img-2.jpg"
-                          >
-                            <img
-                              src="@/assets/images/small/img-2.jpg"
-                              alt=""
-                              class="rounded border"
-                            />
+                          <a class="popup-img d-inline-block" href="@/assets/images/small/img-2.jpg">
+                            <img src="@/assets/images/small/img-2.jpg" alt="" class="rounded border" />
                           </a>
                         </div>
                         <div class="message-img-link">
                           <ul class="list-inline mb-0">
                             <li class="list-inline-item dropdown">
-                              <a
-                                class="dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
+                              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <em class="ri-more-fill"></em>
                               </a>
                               <div class="dropdown-menu">
-                                <a
-                                  class="dropdown-item"
-                                  href="@/assets/images/small/img-2.jpg"
-                                  download=""
-                                  ><em
-                                    class="ri-download-2-line me-2 text-muted align-bottom"
-                                  ></em
-                                  >Download</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><em
-                                    class="ri-reply-line me-2 text-muted align-bottom"
-                                  ></em
-                                  >Reply</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><em
-                                    class="ri-share-line me-2 text-muted align-bottom"
-                                  ></em
-                                  >Forward</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  ><em
-                                    class="ri-bookmark-line me-2 text-muted align-bottom"
-                                  ></em
-                                  >Bookmark</a
-                                >
-                                <a class="dropdown-item delete-item" href="#"
-                                  ><em
-                                    class="ri-delete-bin-5-line me-2 text-muted align-bottom"
-                                  ></em
-                                  >Delete</a
-                                >
+                                <a class="dropdown-item" href="@/assets/images/small/img-2.jpg" download=""><em
+                                    class="ri-download-2-line me-2 text-muted align-bottom"></em>Download</a>
+                                <a class="dropdown-item" href="#"><em
+                                    class="ri-reply-line me-2 text-muted align-bottom"></em>Reply</a>
+                                <a class="dropdown-item" href="#"><em
+                                    class="ri-share-line me-2 text-muted align-bottom"></em>Forward</a>
+                                <a class="dropdown-item" href="#"><em
+                                    class="ri-bookmark-line me-2 text-muted align-bottom"></em>Bookmark</a>
+                                <a class="dropdown-item delete-item" href="#"><em
+                                    class="ri-delete-bin-5-line me-2 text-muted align-bottom"></em>Delete</a>
                               </div>
                             </li>
                           </ul>
@@ -554,9 +321,8 @@ export default {
 
                   <div class="conversation-name">
                     <small class="text-muted time">09:30 am</small>
-                    <span class="text-success check-message-icon"
-                      ><em class="ri-check-double-line align-bottom"></em
-                    ></span>
+                    <span class="text-success check-message-icon"><em
+                        class="ri-check-double-line align-bottom"></em></span>
                   </div>
                 </div>
               </div>
@@ -569,11 +335,7 @@ export default {
         <div class="row g-2 mx-3 mt-2 mb-3">
           <div class="col">
             <div class="position-relative">
-              <input
-                type="text"
-                class="form-control border-light bg-light"
-                placeholder="Enter Message..."
-              />
+              <input type="text" class="form-control border-light bg-light" placeholder="Enter Message..." />
             </div>
           </div>
           <!-- end col -->

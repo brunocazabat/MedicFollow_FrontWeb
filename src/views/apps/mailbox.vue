@@ -45,7 +45,7 @@ export default {
                 'Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)',
               date: 'Mar 7',
               tabtype: 'Inbox',
-              userImg: 'assets/images/users/avatar-2.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Support'
             },
             {
@@ -59,7 +59,7 @@ export default {
                 "Alright thanks. I'll have to re-book that somehow, i'll get back to you.",
               date: 'Mar 7',
               tabtype: 'Sent',
-              userImg: 'assets/images/users/avatar-3.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Freelance'
             },
             {
@@ -72,7 +72,7 @@ export default {
               description: 'Will you answer him asap?',
               date: 'Mar 5',
               tabtype: 'Trash',
-              userImg: 'assets/images/users/avatar-4.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Social'
             },
             {
@@ -85,7 +85,7 @@ export default {
                 'Eff that place, you might as well stay here with us instead! Sent from my iPhone 4  4 mar 2014 at 5:55 pm',
               date: 'Mar 4',
               tabtype: 'Sent',
-              userImg: 'assets/images/users/avatar-5.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Support'
             },
             {
@@ -98,7 +98,7 @@ export default {
                 'Our top pick for you on Medium this week The Man Who Destroyed America’s Ego',
               date: 'Feb 28',
               tabtype: 'Inbox',
-              userImg: 'assets/images/users/avatar-6.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Support'
             },
             {
@@ -111,7 +111,7 @@ export default {
                 "To create this month's pack, we hosted a party with local musician Jared Mahone here in Columbus, Ohio.",
               date: 'Feb 28',
               tabtype: 'Inbox',
-              userImg: 'assets/images/users/user-dummy-img.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Friends'
             },
             {
@@ -125,7 +125,7 @@ export default {
                 "Yeah i'd like that! Do you remember the video you showed me of your train ride between Colombo and Kandy? The one with the mountain view? I would love to see that one again!",
               date: 'Feb 27',
               tabtype: 'Inbox',
-              userImg: 'assets/images/users/avatar-8.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Freelance'
             },
             {
@@ -139,7 +139,7 @@ export default {
                 "You've been confirmed! Welcome to the ruling class of the inbox. For your records, here is a copy of the information you submitted to us...",
               date: 'Feb 27',
               tabtype: 'Draft',
-              userImg: 'assets/images/users/avatar-9.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Social'
             },
             {
@@ -152,7 +152,7 @@ export default {
                 'Hej Nicklas Sandell! Vi vill bjuda in dig till "First tour 2014", ett rekryteringsevent som erbjuder jobb på 16 semesterorter iSverige.',
               date: 'Feb 27',
               tabtype: 'Starred',
-              userImg: 'assets/images/users/avatar-10.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Support'
             },
             {
@@ -165,7 +165,7 @@ export default {
                 "Today's Friday and we thought maybe you want some music inspiration for the weekend. Here are some trending tracks and playlists we think you should give a listen!",
               date: 'Feb 26',
               tabtype: 'Starred',
-              userImg: 'assets/images/users/user-dummy-img.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Support'
             },
             {
@@ -177,7 +177,7 @@ export default {
               description: "That's great, see you on Thursday!",
               date: 'Feb 25',
               tabtype: 'Inbox',
-              userImg: 'assets/images/users/avatar-4.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Social'
             },
             {
@@ -190,7 +190,7 @@ export default {
                 'You have been assigned a task by Alex@Work on the board Web.',
               date: 'Feb 24',
               tabtype: 'Inbox',
-              userImg: 'assets/images/users/avatar-5.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Friends'
             },
             {
@@ -203,7 +203,7 @@ export default {
                 "Hey, You wanna join me and Fred at the lake tomorrow? It'll be awesome.",
               date: 'Feb 23',
               tabtype: 'Inbox',
-              userImg: 'assets/images/users/user-dummy-img.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Family'
             },
             {
@@ -215,7 +215,7 @@ export default {
               description: "Nah man sorry i don't. Should i get it?",
               date: 'Feb 23',
               tabtype: 'Important',
-              userImg: 'assets/images/users/avatar-8.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Support'
             },
             {
@@ -227,7 +227,7 @@ export default {
               description: "That's just perfect! See you tomorrow.",
               date: 'Feb 21',
               tabtype: 'Starred',
-              userImg: 'assets/images/users/avatar-10.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Freelance'
             },
             {
@@ -240,7 +240,7 @@ export default {
                 'The following items were added to your Stack Exchange global inbox since you last checked it.',
               date: 'Feb 21',
               tabtype: 'Starred',
-              userImg: 'assets/images/users/user-dummy-img.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Freelance'
             },
             {
@@ -253,7 +253,7 @@ export default {
                 'Hey Nicklas Sandell! Thank you for purchasing extra storage space in Google Drive.',
               date: 'Feb 20',
               tabtype: 'Spam',
-              userImg: 'assets/images/users/avatar-6.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Social'
             },
             {
@@ -266,7 +266,7 @@ export default {
                 "Yes ok, great! I'm not stuck in Stockholm anymore, we're making progress.",
               date: 'Feb 19',
               tabtype: 'Draft',
-              userImg: 'assets/images/users/user-dummy-img.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Friends'
             }
           ],
@@ -281,7 +281,7 @@ export default {
                 'Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)',
               date: 'Mar 7',
               tabtype: 'Inbox',
-              userImg: 'assets/images/users/avatar-8.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Social'
             },
             {
@@ -295,7 +295,7 @@ export default {
                 "Alright thanks. I'll have to re-book that somehow, i'll get back to you.",
               date: 'Mar 7',
               tabtype: 'Sent',
-              userImg: 'assets/images/users/avatar-10.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Social'
             },
             {
@@ -308,7 +308,7 @@ export default {
               description: 'Will you answer him asap?',
               date: 'Mar 5',
               tabtype: 'Trash',
-              userImg: 'assets/images/users/avatar-3.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Social'
             }
           ],
@@ -323,7 +323,7 @@ export default {
                 'Hey Nicklas Sandell! Thank you for purchasing extra storage space in Google Drive.',
               date: 'Feb 20',
               tabtype: 'Spam',
-              userImg: 'assets/images/users/user-dummy-img.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Social'
             },
             {
@@ -336,7 +336,7 @@ export default {
                 "Yes ok, great! I'm not stuck in Stockholm anymore, we're making progress.",
               date: 'Feb 19',
               tabtype: 'Draft',
-              userImg: 'assets/images/users/avatar-3.jpg',
+              userImg: 'assets/images/users/avatar-1.png',
               labeltype: 'Social'
             }
           ]
@@ -569,7 +569,7 @@ export default {
             } else {
               item
                 .querySelector('img')
-                .setAttribute('src', '@/assets/images/users/avatar-2.jpg')
+                .setAttribute('src', '@/assets/images/users/avatar-1.png')
             }
           })
       })
@@ -744,7 +744,7 @@ export default {
                   <div class="flex-shrink-0 me-2 avatar-xs chatlist-user-image">
                     <img
                       class="img-fluid rounded-circle"
-                      src="@/assets/images/users/avatar-2.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                     />
                   </div>
@@ -766,7 +766,7 @@ export default {
                   <div class="flex-shrink-0 me-2 avatar-xs chatlist-user-image">
                     <img
                       class="img-fluid rounded-circle"
-                      src="@/assets/images/users/avatar-4.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                     />
                   </div>
@@ -788,7 +788,7 @@ export default {
                   <div class="flex-shrink-0 me-2 avatar-xs chatlist-user-image">
                     <img
                       class="img-fluid rounded-circle"
-                      src="@/assets/images/users/avatar-3.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                     />
                   </div>
@@ -810,7 +810,7 @@ export default {
                   <div class="flex-shrink-0 me-2 avatar-xs chatlist-user-image">
                     <img
                       class="img-fluid rounded-circle"
-                      src="@/assets/images/users/avatar-5.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                     />
                   </div>
@@ -1234,7 +1234,7 @@ export default {
                     <div class="d-flex align-items-center text-muted">
                       <div class="flex-shrink-0 avatar-xs me-3">
                         <img
-                          src="@/assets/images//users/avatar-3.jpg"
+                          src="@/assets/images//users/avatar-1.png"
                           alt=""
                           class="img-fluid rounded-circle"
                         />
@@ -1310,7 +1310,7 @@ export default {
                     <div class="d-flex align-items-center text-muted">
                       <div class="flex-shrink-0 avatar-xs me-3">
                         <img
-                          src="@/assets/images//users/avatar-1.jpg"
+                          src="@/assets/images//users/avatar-1.png"
                           alt=""
                           class="img-fluid rounded-circle"
                         />
@@ -1359,7 +1359,7 @@ export default {
                     <div class="d-flex align-items-center text-muted">
                       <div class="flex-shrink-0 avatar-xs me-3">
                         <img
-                          src="@/assets/images//users/avatar-3.jpg"
+                          src="@/assets/images//users/avatar-1.png"
                           alt=""
                           class="img-fluid rounded-circle"
                         />
@@ -1543,7 +1543,7 @@ export default {
                             <div class="conversation-list">
                               <div class="chat-avatar">
                                 <img
-                                  src="assets/images/users/avatar-4.jpg"
+                                  src="assets/images/users/avatar-1.png"
                                   alt=""
                                 />
                               </div>
@@ -1672,7 +1672,7 @@ export default {
                             <div class="conversation-list">
                               <div class="chat-avatar">
                                 <img
-                                  src="assets/images/users/avatar-4.jpg"
+                                  src="assets/images/users/avatar-1.png"
                                   alt=""
                                 />
                               </div>

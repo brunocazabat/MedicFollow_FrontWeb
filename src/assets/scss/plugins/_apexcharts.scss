@@ -17,7 +17,7 @@
     font-family: $font-family-base !important;
 }
 
-.apexcharts-tooltip{
+.apexcharts-tooltip {
     border: 1px solid $border-color !important;
     background-color: $card-bg !important;
     box-shadow: $box-shadow !important;
@@ -26,13 +26,16 @@
         color: $gray-600 !important;
     }
 
-    .apexcharts-tooltip-title{
-        background-color: rgba(var(--#{$variable-prefix}light-rgb), .75) !important;
+    .apexcharts-tooltip-title {
+        background-color: rgba(
+            var(--#{$variable-prefix}light-rgb),
+            0.75
+        ) !important;
         border-bottom: 1px solid $border-color !important;
     }
 }
 
-.apexcharts-tooltip.apexcharts-theme-dark{
+.apexcharts-tooltip.apexcharts-theme-dark {
     * {
         color: $white !important;
     }
@@ -44,7 +47,7 @@
 
 .apexcharts-gridline {
     pointer-events: none;
-    stroke: rgba(var(--#{$variable-prefix}light-rgb), .75);
+    stroke: rgba(var(--#{$variable-prefix}light-rgb), 0.75);
 }
 
 .apexcharts-legend-text {
@@ -57,7 +60,8 @@
     fill: $white !important;
 }
 
-.apexcharts-title-text, .apexcharts-subtitle-text{
+.apexcharts-title-text,
+.apexcharts-subtitle-text {
     fill: $gray-500;
 }
 
@@ -130,17 +134,19 @@
 
 // radar chart
 
-.apexcharts-radar-series{
-    polygon, line{
+.apexcharts-radar-series {
+    polygon,
+    line {
         stroke: $border-color;
     }
 }
 
-.apexcharts-pie{
-    circle ,line{
+.apexcharts-pie {
+    circle,
+    line {
         stroke: $border-color;
     }
-    text{
+    text {
         fill: var(--#{$variable-prefix}body-color);
     }
 }

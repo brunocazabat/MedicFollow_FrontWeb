@@ -58,7 +58,6 @@
     }
 }
 
-
 // Alert border left example
 
 .alert-border-left {
@@ -76,17 +75,18 @@
 
 //alert additional example
 
-.alert-additional { 
+.alert-additional {
     padding: 0;
 
-    .alert-body{
+    .alert-body {
         padding: $alert-padding-y $alert-padding-x;
     }
     .alert-content {
         padding: $alert-padding-y $alert-padding-x;
         border-bottom-left-radius: $alert-border-radius;
         border-bottom-right-radius: $alert-border-radius;
-        margin: 0 (-$alert-border-width) (-$alert-border-width) (-$alert-border-width);
+        margin: 0 (-$alert-border-width) (-$alert-border-width)
+            (-$alert-border-width);
     }
 }
 
@@ -135,7 +135,6 @@
             border-top-color: $value;
         }
     }
-    
 
     // rounded label
 
@@ -162,13 +161,12 @@
         }
     }
 
-    .alert{
+    .alert {
         &.alert-#{$color} {
-            .btn-close::after{
+            .btn-close::after {
                 color: $value;
             }
         }
-        
     }
 
     //alert additional example
@@ -179,7 +177,7 @@
                 color: set-color-from-background($value);
             }
         }
-    }   
+    }
 }
 .alert-dismissible {
     .btn-close {
@@ -188,13 +186,12 @@
             background: transparent !important;
             content: "\F0156" !important;
             font-size: 18px;
-            line-height:15px;
+            line-height: 15px;
             font-family: "Material Design Icons" !important;
         }
     }
 }
 
-.alert-outline.alert-dark{
+.alert-outline.alert-dark {
     color: var(--#{$variable-prefix}dark);
 }
-   

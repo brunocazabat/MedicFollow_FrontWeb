@@ -1,6 +1,6 @@
-// 
+//
 // _demos.scss
-// 
+//
 
 // Buttons demo
 .button-items {
@@ -52,7 +52,8 @@
         margin-top: 24px;
 
         &:hover {
-            i, svg {
+            i,
+            svg {
                 color: $primary;
                 transform: scale(1.5);
             }
@@ -66,28 +67,34 @@
     .grid-container {
         background-color: $gray-100;
         margin-top: 10px;
-        font-size: .8rem;
+        font-size: 0.8rem;
         font-weight: $font-weight-medium;
         padding: 10px 20px;
     }
 }
 
-[data-layout-mode="dark"]{
-    .colorscheme-cardradio{
-        .form-check-label{
+[data-layout-mode="dark"] {
+    .colorscheme-cardradio {
+        .form-check-label {
             background-color: var(--#{$variable-prefix}dark);
         }
-        .bg-light{
-            background-color: rgba(var(--#{$variable-prefix}light-rgb), 0.1)!important;
+        .bg-light {
+            background-color: rgba(
+                var(--#{$variable-prefix}light-rgb),
+                0.1
+            ) !important;
         }
 
         .bg-soft-light {
-            background-color: rgba(var(--#{$variable-prefix}dark-rgb),.1)!important;
+            background-color: rgba(
+                var(--#{$variable-prefix}dark-rgb),
+                0.1
+            ) !important;
         }
 
-        .dark{
-            .bg-dark{
-                background-color: $card-bg!important;
+        .dark {
+            .bg-dark {
+                background-color: $card-bg !important;
             }
         }
     }

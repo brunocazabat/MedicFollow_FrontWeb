@@ -324,7 +324,7 @@ export default {
                     class="d-flex dropdown-item notify-item py-2"
                   >
                     <img
-                      src="@/assets/images/users/avatar-2.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       class="me-3 rounded-circle avatar-xs"
                       alt="user-pic"
                     />
@@ -339,7 +339,7 @@ export default {
                     class="d-flex dropdown-item notify-item py-2"
                   >
                     <img
-                      src="@/assets/images/users/avatar-3.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       class="me-3 rounded-circle avatar-xs"
                       alt="user-pic"
                     />
@@ -354,7 +354,7 @@ export default {
                     class="d-flex dropdown-item notify-item py-2"
                   >
                     <img
-                      src="@/assets/images/users/avatar-5.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       class="me-3 rounded-circle avatar-xs"
                       alt="user-pic"
                     />
@@ -912,7 +912,7 @@ export default {
                     >
                       <div class="d-flex">
                         <img
-                          src="@/assets/images/users/avatar-2.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           class="me-3 rounded-circle avatar-xs"
                           alt="user-pic"
                         />
@@ -982,7 +982,7 @@ export default {
                     >
                       <div class="d-flex">
                         <img
-                          src="@/assets/images/users/avatar-8.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           class="me-3 rounded-circle avatar-xs"
                           alt="user-pic"
                         />
@@ -1037,7 +1037,7 @@ export default {
                     >
                       <div class="d-flex">
                         <img
-                          src="@/assets/images/users/avatar-3.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           class="me-3 rounded-circle avatar-xs"
                           alt="user-pic"
                         />
@@ -1072,7 +1072,7 @@ export default {
                     >
                       <div class="d-flex">
                         <img
-                          src="@/assets/images/users/avatar-2.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           class="me-3 rounded-circle avatar-xs"
                           alt="user-pic"
                         />
@@ -1108,7 +1108,7 @@ export default {
                     >
                       <div class="d-flex">
                         <img
-                          src="@/assets/images/users/avatar-6.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           class="me-3 rounded-circle avatar-xs"
                           alt="user-pic"
                         />
@@ -1144,7 +1144,7 @@ export default {
                     >
                       <div class="d-flex">
                         <img
-                          src="@/assets/images/users/avatar-8.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           class="me-3 rounded-circle avatar-xs"
                           alt="user-pic"
                         />
@@ -1217,7 +1217,7 @@ export default {
               <span class="d-flex align-items-center">
                 <img
                   class="rounded-circle header-profile-user"
-                  src="@/assets/images/users/avatar-1.jpg"
+                  src="@/assets/images/users/avatar-1.png"
                   alt="Header Avatar"
                 />
                 <span class="text-start ms-xl-2">

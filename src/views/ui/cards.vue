@@ -171,7 +171,7 @@ export default {
               <div class="d-flex mb-4 align-items-center">
                 <div class="flex-shrink-0">
                   <img
-                    src="@/assets/images/users/avatar-1.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt
                     class="avatar-sm rounded-circle"
                   />
@@ -194,7 +194,7 @@ export default {
               <div class="d-flex mb-4 align-items-center">
                 <div class="flex-shrink-0">
                   <img
-                    src="@/assets/images/users/avatar-4.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt
                     class="avatar-sm rounded-circle"
                   />
@@ -217,7 +217,7 @@ export default {
               <div class="d-flex mb-4 align-items-center">
                 <div class="flex-shrink-0">
                   <img
-                    src="@/assets/images/users/avatar-3.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt
                     class="avatar-sm rounded-circle"
                   />
@@ -240,7 +240,7 @@ export default {
               <div class="d-flex mb-4 align-items-center">
                 <div class="flex-shrink-0">
                   <img
-                    src="@/assets/images/users/avatar-5.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt
                     class="avatar-sm rounded-circle"
                   />
@@ -263,7 +263,7 @@ export default {
               <div class="d-flex mb-4 align-items-center">
                 <div class="flex-shrink-0">
                   <img
-                    src="@/assets/images/users/avatar-6.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt
                     class="avatar-sm rounded-circle"
                   />
@@ -574,7 +574,7 @@ export default {
           <div class="card-body p-4 text-center">
             <div class="mx-auto avatar-md mb-3">
               <img
-                src="@/assets/images/users/avatar-8.jpg"
+                src="@/assets/images/users/avatar-1.png"
                 alt
                 class="img-fluid rounded-circle"
               />
@@ -634,7 +634,7 @@ export default {
           <div class="card-body p-4 text-center">
             <div class="mx-auto avatar-md mb-3">
               <img
-                src="@/assets/images/users/avatar-5.jpg"
+                src="@/assets/images/users/avatar-1.png"
                 alt
                 class="img-fluid rounded-circle"
               />
@@ -694,7 +694,7 @@ export default {
           <div class="card-body p-4 text-center">
             <div class="mx-auto avatar-md mb-3">
               <img
-                src="@/assets/images/users/avatar-3.jpg"
+                src="@/assets/images/users/avatar-1.png"
                 alt
                 class="img-fluid rounded-circle"
               />
@@ -1409,7 +1409,7 @@ export default {
                 <div class="d-flex align-items-center">
                   <div class="flex-shrink-0">
                     <img
-                      src="@/assets/images/users/avatar-1.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt
                       class="avatar-sm rounded-circle"
                     />
@@ -1439,7 +1439,7 @@ export default {
                 <div class="d-flex align-items-center">
                   <div class="flex-shrink-0">
                     <img
-                      src="@/assets/images/users/avatar-2.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt
                       class="avatar-sm rounded-circle"
                     />
@@ -1469,7 +1469,7 @@ export default {
                 <div class="d-flex align-items-center">
                   <div class="flex-shrink-0">
                     <img
-                      src="@/assets/images/users/avatar-3.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt
                       class="avatar-sm rounded-circle"
                     />
@@ -1507,7 +1507,7 @@ export default {
             <div class="d-flex align-items-center">
               <div class="flex-shrink-0">
                 <img
-                  src="@/assets/images/users/avatar-4.jpg"
+                  src="@/assets/images/users/avatar-1.png"
                   alt
                   class="avatar-sm rounded-circle"
                 />
@@ -1537,7 +1537,7 @@ export default {
             <div class="d-flex align-items-center">
               <div class="flex-shrink-0">
                 <img
-                  src="@/assets/images/users/avatar-6.jpg"
+                  src="@/assets/images/users/avatar-1.png"
                   alt
                   class="avatar-sm rounded-circle"
                 />
@@ -1567,7 +1567,7 @@ export default {
             <div class="d-flex align-items-center">
               <div class="flex-shrink-0">
                 <img
-                  src="@/assets/images/users/avatar-5.jpg"
+                  src="@/assets/images/users/avatar-1.png"
                   alt
                   class="avatar-sm rounded-circle"
                 />
@@ -1601,7 +1601,7 @@ export default {
             <div class="d-flex align-items-center">
               <div class="flex-shrink-0">
                 <img
-                  src="@/assets/images/users/avatar-7.jpg"
+                  src="@/assets/images/users/avatar-1.png"
                   alt
                   class="avatar-sm rounded-circle"
                 />
@@ -1631,7 +1631,7 @@ export default {
             <div class="d-flex align-items-center">
               <div class="flex-shrink-0">
                 <img
-                  src="@/assets/images/users/avatar-8.jpg"
+                  src="@/assets/images/users/avatar-1.png"
                   alt
                   class="avatar-sm rounded-circle"
                 />
@@ -2166,7 +2166,7 @@ export default {
                 <div class="d-flex align-items-center">
                   <div class="flex-shrink-0">
                     <img
-                      src="@/assets/images/users/avatar-2.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt
                       class="avatar-sm rounded-circle"
                     />
@@ -2264,7 +2264,7 @@ export default {
               <div class="card-body">
                 <div class="d-flex position-relative">
                   <img
-                    src="@/assets/images/users/avatar-3.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     class="flex-shrink-0 me-3 avatar-xl rounded"
                     alt="..."
                   />

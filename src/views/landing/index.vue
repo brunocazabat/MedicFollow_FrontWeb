@@ -1949,7 +1949,7 @@ export default {
               <div class="card-body text-center p-4">
                 <div class="avatar-xl mx-auto mb-4 position-relative">
                   <img
-                    src="@/assets/images/users/avatar-2.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="img-fluid rounded-circle"
                   />
@@ -1979,7 +1979,7 @@ export default {
               <div class="card-body text-center p-4">
                 <div class="avatar-xl mx-auto mb-4 position-relative">
                   <img
-                    src="@/assets/images/users/avatar-10.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="img-fluid rounded-circle"
                   />
@@ -2007,7 +2007,7 @@ export default {
               <div class="card-body text-center p-4">
                 <div class="avatar-xl mx-auto mb-4 position-relative">
                   <img
-                    src="@/assets/images/users/avatar-3.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="img-fluid rounded-circle"
                   />
@@ -2035,7 +2035,7 @@ export default {
               <div class="card-body text-center p-4">
                 <div class="avatar-xl mx-auto mb-4 position-relative">
                   <img
-                    src="@/assets/images/users/avatar-8.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="img-fluid rounded-circle"
                   />
@@ -2068,7 +2068,7 @@ export default {
               <div class="card-body text-center p-4">
                 <div class="avatar-xl mx-auto mb-4 position-relative">
                   <img
-                    src="@/assets/images/users/avatar-5.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="img-fluid rounded-circle"
                   />
@@ -2098,7 +2098,7 @@ export default {
               <div class="card-body text-center p-4">
                 <div class="avatar-xl mx-auto mb-4 position-relative">
                   <img
-                    src="@/assets/images/users/avatar-4.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="img-fluid rounded-circle"
                   />
@@ -2128,7 +2128,7 @@ export default {
               <div class="card-body text-center p-4">
                 <div class="avatar-xl mx-auto mb-4 position-relative">
                   <img
-                    src="@/assets/images/users/avatar-6.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="img-fluid rounded-circle"
                   />
@@ -2157,7 +2157,7 @@ export default {
               <div class="card-body text-center p-4">
                 <div class="avatar-xl mx-auto mb-4 position-relative">
                   <img
-                    src="@/assets/images/users/avatar-7.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     alt=""
                     class="img-fluid rounded-circle"
                   />

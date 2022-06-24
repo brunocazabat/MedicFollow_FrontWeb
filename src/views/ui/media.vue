@@ -83,7 +83,7 @@ export default {
               <div class="d-flex align-items-start text-muted mb-4">
                 <div class="flex-shrink-0 me-3">
                   <img
-                    src="@/assets/images/users/avatar-2.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     class="avatar-sm rounded shadow"
                     alt="..."
                   />
@@ -104,7 +104,7 @@ export default {
                 </div>
                 <div class="flex-shrink-0 ms-3">
                   <img
-                    src="@/assets/images/users/avatar-3.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     class="avatar-sm rounded shadow"
                     alt="..."
                   />
@@ -114,7 +114,7 @@ export default {
               <div class="d-flex align-items-start text-muted">
                 <div class="flex-shrink-0 me-3">
                   <img
-                    src="@/assets/images/users/avatar-2.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     class="avatar-sm rounded shadow"
                     alt="..."
                   />
@@ -199,7 +199,7 @@ This is some content from a media component. You can replace this with any conte
               <div class="d-flex align-items-start text-muted mb-4">
                 <div class="flex-shrink-0 me-3">
                   <img
-                    src="@/assets/images/users/avatar-2.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     class="avatar-sm rounded shadow"
                     alt="..."
                   />
@@ -211,7 +211,7 @@ This is some content from a media component. You can replace this with any conte
                   <div class="d-flex align-items-start text-muted mt-3">
                     <div class="flex-shrink-0 me-3">
                       <img
-                        src="@/assets/images/users/avatar-3.jpg"
+                        src="@/assets/images/users/avatar-1.png"
                         class="avatar-sm rounded shadow"
                         alt="..."
                       />
@@ -228,7 +228,7 @@ This is some content from a media component. You can replace this with any conte
               <div class="d-flex align-items-start text-muted">
                 <div class="flex-shrink-0 me-3">
                   <img
-                    src="@/assets/images/users/avatar-4.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     class="avatar-sm rounded shadow"
                     alt="..."
                   />
@@ -316,7 +316,7 @@ This is some content from a media component. You can replace this with any conte
               <div class="d-flex align-items-start text-muted mb-4">
                 <div class="flex-shrink-0 me-3">
                   <img
-                    src="@/assets/images/users/avatar-2.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     class="avatar-sm rounded shadow shadow"
                     alt="..."
                   />
@@ -342,7 +342,7 @@ This is some content from a media component. You can replace this with any conte
               <div class="d-flex align-items-center text-muted mb-4">
                 <div class="flex-shrink-0 me-3">
                   <img
-                    src="@/assets/images/users/avatar-6.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     class="avatar-sm rounded shadow shadow"
                     alt="..."
                   />
@@ -368,7 +368,7 @@ This is some content from a media component. You can replace this with any conte
               <div class="d-flex align-items-end text-muted">
                 <div class="flex-shrink-0 me-3">
                   <img
-                    src="@/assets/images/users/avatar-8.jpg"
+                    src="@/assets/images/users/avatar-1.png"
                     class="avatar-sm rounded shadow shadow"
                     alt="..."
                   />

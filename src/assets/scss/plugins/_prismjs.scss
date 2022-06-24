@@ -155,8 +155,6 @@ pre[class*="language-"] {
     text-shadow: none;
 }
 
-
-
 // Scrollbar
 
 .language-markup {
@@ -173,17 +171,16 @@ pre[class*="language-"] {
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: rgba(var(--#{$variable-prefix}dark-rgb), .1);
+        background-color: rgba(var(--#{$variable-prefix}dark-rgb), 0.1);
         border-radius: 10px;
-        border: 2px solid var(--#{$variable-prefix}light)
+        border: 2px solid var(--#{$variable-prefix}light);
     }
 
     &::-webkit-scrollbar-track {
         border-radius: 10px;
-        background-color: var(--#{$variable-prefix}light)
+        background-color: var(--#{$variable-prefix}light);
     }
 }
-
 
 // Scroll-top
 

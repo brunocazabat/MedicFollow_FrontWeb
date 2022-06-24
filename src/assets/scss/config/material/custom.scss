@@ -1,6 +1,8 @@
 .flatpickr-calendar {
     background-color: $dropdown-bg !important;
-    box-shadow: 1px 0 0 $border-color, -1px 0 0 $border-color, 0 1px 0 $border-color, 0 -1px 0 $border-color, 0 3px 13px rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 1px 0 0 $border-color, -1px 0 0 $border-color,
+        0 1px 0 $border-color, 0 -1px 0 $border-color,
+        0 3px 13px rgba(0, 0, 0, 0.08) !important;
 
     &.hasTime .flatpickr-time {
         height: 40px;
@@ -26,7 +28,10 @@
 
     &:hover,
     &:focus {
-        background-color: rgba(var(--#{$variable-prefix}light-rgb), 0.7) !important;
+        background-color: rgba(
+            var(--#{$variable-prefix}light-rgb),
+            0.7
+        ) !important;
     }
 
     &.inRange,
@@ -58,7 +63,6 @@
 
     input,
     .flatpickr-am-pm {
-
         &:hover,
         &:focus {
             background: rgba($primary, 0.04) !important;
@@ -67,7 +71,6 @@
 }
 
 .flatpickr-months {
-
     .flatpickr-prev-month,
     .flatpickr-next-month {
         color: rgba($white, 0.9) !important;
@@ -198,7 +201,6 @@
 
 .flatpickr-calendar {
     .flatpickr-current-month {
-
         .flatpickr-monthDropdown-months,
         input.cur-year {
             color: $white !important;
@@ -254,10 +256,9 @@
     }
 }
 
-// switches 
+// switches
 .toggle-container {
     box-shadow: none !important;
-    ;
 }
 
 .toggle-red {
@@ -280,7 +281,7 @@
     --toggle-border-on: var(--vz-warning);
 }
 
-// projects dashboard 
+// projects dashboard
 .upcoming-scheduled {
     .flatpickr-input {
         display: none;
@@ -308,7 +309,6 @@
         }
 
         .flatpickr-weekdays {
-
             background-color: var(--#{$variable-prefix}light) !important;
 
             span {
@@ -336,7 +336,6 @@
 
 //mailbox
 .fc-media-screen {
-
     .fc-h-event,
     .fc-v-event {
         border: none;
@@ -377,7 +376,7 @@
     }
 }
 
-//ecommerce products 
+//ecommerce products
 
 .multiselect {
     min-height: auto !important;
@@ -422,7 +421,7 @@
     }
 }
 
-//range slider 
+//range slider
 .slider-base {
     .slider-tooltip {
         border-color: $success;
@@ -499,7 +498,7 @@
     }
 }
 
-//topbar 
+//topbar
 .topbar-head-dropdown {
     .nav-tabs-custom {
         .nav-item {

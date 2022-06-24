@@ -63,14 +63,11 @@ export default {
       <div class="card-body">
         <div class="d-flex align-items-center">
           <div class="avatar-sm flex-shrink-0">
-            <span
-              class="avatar-title rounded-2 fs-2"
-              :class="{
-                'bg-soft-primary text-primary': item.feaIconClass === 'primary',
-                'bg-soft-warning text-warning': item.feaIconClass === 'warning',
-                'bg-soft-info text-info': item.feaIconClass === 'info'
-              }"
-            >
+            <span class="avatar-title rounded-2 fs-2" :class="{
+              'bg-soft-primary text-primary': item.feaIconClass === 'primary',
+              'bg-soft-warning text-warning': item.feaIconClass === 'warning',
+              'bg-soft-info text-info': item.feaIconClass === 'info'
+            }">
               <template v-if="item.feaIcon == 'briefcase'">
                 <BriefcaseIcon size="24"></BriefcaseIcon>
               </template>
@@ -92,10 +89,8 @@ export default {
               <h4 class="fs-4 flex-grow-1 mb-0">
                 <span class="counter-value">{{ item.counter }}</span>
               </h4>
-              <span :class="`badge badge-soft-${item.badgeClass} fs-12`"
-                ><em :class="`${item.icon} fs-13 align-middle me-1`"></em
-                >{{ item.percentage }}</span
-              >
+              <span :class="`badge badge-soft-${item.badgeClass} fs-12`"><em
+                  :class="`${item.icon} fs-13 align-middle me-1`"></em>{{ item.percentage }}</span>
             </div>
             <p class="text-muted text-truncate mb-0">{{ item.caption }}</p>
           </div>

@@ -43,7 +43,7 @@ export default {
           title: "Profile Page Satructure",
           description: "Profile Page means a web page accessible to the public or to guests.",
           features: ["Admin"],
-          users:[require("@/assets/images/users/avatar-6.jpg"), require("@/assets/images/users/avatar-5.jpg")],
+          users:[require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png")],
           id: "#VL2436",
           watch: "04",
           message: "19",
@@ -53,7 +53,7 @@ export default {
           title: "MedicFollow - Admin Layout Design",
           description: "The dashboard is the front page of the Administration UI.",
           features: ["Layout", "Admin", "Dashboard"],
-          users:[require("@/assets/images/users/avatar-7.jpg"), require("@/assets/images/users/avatar-6.jpg"), require("@/assets/images/users/avatar-1.jpg")],
+          users:[require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png")],
           id: "#VL2436",
           watch: "04",
           message: "19",
@@ -66,7 +66,7 @@ export default {
           title: "Admin Layout Design",
           description: "Landing page template with clean, minimal and modern design.",
           features: ["Design", "Wensite"],
-          users:[require("@/assets/images/users/avatar-10.jpg"), require("@/assets/images/users/avatar-3.jpg")],
+          users:[require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png")],
           id: "#VL2436",
           watch: "13",
           message: "52",
@@ -77,7 +77,7 @@ export default {
           title: "Marketing & Sales",
           description: "Sales and marketing are two business functions within an organization.",
           features: ["Marketing", "Business"],
-          users:[require("@/assets/images/users/avatar-9.jpg"), require("@/assets/images/users/avatar-8.jpg")],
+          users:[require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png")],
           id: "#VL2436",
           watch: "24",
           message: "10",
@@ -90,7 +90,7 @@ export default {
           title: "Brand Logo Design ",
           description: "BrandCrowd's brand logo maker allows you to generate and customize stand-out brand logos in minutes.",
           features: ["Logo","Design", "UI/UX"],
-          users:[require("@/assets/images/users/avatar-10.jpg"), require("@/assets/images/users/avatar-3.jpg")],
+          users:[require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png")],
           id: "#VL2436",
           watch: "24",
           message: "10",
@@ -101,7 +101,7 @@ export default {
           title: "Change Old App Icon",
           description: "Change app icons on Android: How do you change the look of your apps.",
           features: ["Marketing", "Business"],
-          users:[require("@/assets/images/users/avatar-9.jpg"), require("@/assets/images/users/avatar-8.jpg")],
+          users:[require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png")],
           id: "#VL2436",
           watch: "64",
           message: "35",
@@ -114,7 +114,7 @@ export default {
           title: "Product Features Analysis",
           description: "An essential part of strategic planning is running a product feature analysis.",
           features: ["Project","Analysis"],
-          users:[require("@/assets/images/users/avatar-5.jpg"), require("@/assets/images/users/avatar-6.jpg")],
+          users:[require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png")],
           id: "#VL2436",
           watch: "14",
           message: "31",
@@ -125,7 +125,7 @@ export default {
           title: "Create a Graph of Sketch",
           description: "To make a pie chart with equal slices create a perfect circle by selecting an Oval Tool.",
           features: ["Sketch", "Marketing", "Design"],
-          users:[require("@/assets/images/users/avatar-4.jpg"), require("@/assets/images/users/avatar-8.jpg"), require("@/assets/images/users/avatar-2.jpg"), require("@/assets/images/users/avatar-1.jpg")],
+          users:[require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png")],
           id: "#VL2436",
           watch: "64",
           message: "35",
@@ -138,7 +138,7 @@ export default {
           title: "Create a Blog Template UI",
           description: "Landing page template with clean, minimal and modern design.",
           features: ["Design","Website"],
-          users:[require("@/assets/images/users/avatar-8.jpg"), require("@/assets/images/users/avatar-7.jpg"), require("@/assets/images/users/avatar-6.jpg")],
+          users:[require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png")],
           id: "#VL2451",
           watch: "24",
           message: "10",
@@ -151,7 +151,7 @@ export default {
           title: "Banner Design for FB & Twitter",
           image: require("@/assets/images/small/img-4.jpg"),
           features: ["UI/UX","Graphic"],
-          users:[require("@/assets/images/users/avatar-8.jpg"), require("@/assets/images/users/avatar-7.jpg"), require("@/assets/images/users/avatar-6.jpg")],
+          users:[require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png"), require("@/assets/images/users/avatar-1.png")],
           id: "#VL2451",
           watch: "24",
           message: "10",
@@ -200,19 +200,19 @@ export default {
                 <div class="col-auto ms-sm-auto">
                     <div class="avatar-group" id="newMembar">
                         <a href="javascript: void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Nancy">
-                            <img src="@/assets/images/users/avatar-5.jpg" alt="" class="rounded-circle avatar-xs">
+                            <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xs">
                         </a>
                         <a href="javascript: void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Frank">
-                            <img src="@/assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xs">
+                            <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xs">
                         </a>
                         <a href="javascript: void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Tonya">
-                            <img src="@/assets/images/users/avatar-10.jpg" alt="" class="rounded-circle avatar-xs">
+                            <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xs">
                         </a>
                         <a href="javascript: void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Thomas">
-                            <img src="@/assets/images/users/avatar-8.jpg" alt="" class="rounded-circle avatar-xs">
+                            <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xs">
                         </a>
                         <a href="javascript: void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Herbert">
-                            <img src="@/assets/images/users/avatar-2.jpg" alt="" class="rounded-circle avatar-xs">
+                            <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xs">
                         </a>
                         <a href="#addmemberModal" data-bs-toggle="modal" class="avatar-group-item shadow">
                             <div class="avatar-xs">
@@ -883,7 +883,7 @@ export default {
                                                 <input class="form-check-input me-3" type="checkbox" value="" id="anna-adame">
                                                 <label class="form-check-label d-flex align-items-center" for="anna-adame">
                                                     <span class="flex-shrink-0">
-                                                        <img src="@/assets/images/users/avatar-1.jpg" alt="" class="avatar-xxs rounded-circle" />
+                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xxs rounded-circle" />
                                                     </span>
                                                     <span class="flex-grow-1 ms-2">
                                                         Anna Adame
@@ -896,7 +896,7 @@ export default {
                                                 <input class="form-check-input me-3" type="checkbox" value="" id="frank-hook">
                                                 <label class="form-check-label d-flex align-items-center" for="frank-hook">
                                                     <span class="flex-shrink-0">
-                                                        <img src="@/assets/images/users/avatar-3.jpg" alt="" class="avatar-xxs rounded-circle" />
+                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xxs rounded-circle" />
                                                     </span>
                                                     <span class="flex-grow-1 ms-2">
                                                         Frank Hook
@@ -909,7 +909,7 @@ export default {
                                                 <input class="form-check-input me-3" type="checkbox" value="" id="alexis-clarke">
                                                 <label class="form-check-label d-flex align-items-center" for="alexis-clarke">
                                                     <span class="flex-shrink-0">
-                                                        <img src="@/assets/images/users/avatar-6.jpg" alt="" class="avatar-xxs rounded-circle" />
+                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xxs rounded-circle" />
                                                     </span>
                                                     <span class="flex-grow-1 ms-2">
                                                         Alexis Clarke
@@ -922,7 +922,7 @@ export default {
                                                 <input class="form-check-input me-3" type="checkbox" value="" id="herbert-stokes">
                                                 <label class="form-check-label d-flex align-items-center" for="herbert-stokes">
                                                     <span class="flex-shrink-0">
-                                                        <img src="@/assets/images/users/avatar-2.jpg" alt="" class="avatar-xxs rounded-circle" />
+                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xxs rounded-circle" />
                                                     </span>
                                                     <span class="flex-grow-1 ms-2">
                                                         Herbert Stokes
@@ -935,7 +935,7 @@ export default {
                                                 <input class="form-check-input me-3" type="checkbox" value="" id="michael-morris">
                                                 <label class="form-check-label d-flex align-items-center" for="michael-morris">
                                                     <span class="flex-shrink-0">
-                                                        <img src="@/assets/images/users/avatar-7.jpg" alt="" class="avatar-xxs rounded-circle" />
+                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xxs rounded-circle" />
                                                     </span>
                                                     <span class="flex-grow-1 ms-2">
                                                         Michael Morris
@@ -948,7 +948,7 @@ export default {
                                                 <input class="form-check-input me-3" type="checkbox" value="" id="nancy-martino">
                                                 <label class="form-check-label d-flex align-items-center" for="nancy-martino">
                                                     <span class="flex-shrink-0">
-                                                        <img src="@/assets/images/users/avatar-5.jpg" alt="" class="avatar-xxs rounded-circle" />
+                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xxs rounded-circle" />
                                                     </span>
                                                     <span class="flex-grow-1 ms-2">
                                                         Nancy Martino
@@ -961,7 +961,7 @@ export default {
                                                 <input class="form-check-input me-3" type="checkbox" value="" id="thomas-taylor">
                                                 <label class="form-check-label d-flex align-items-center" for="thomas-taylor">
                                                     <span class="flex-shrink-0">
-                                                        <img src="@/assets/images/users/avatar-8.jpg" alt="" class="avatar-xxs rounded-circle" />
+                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xxs rounded-circle" />
                                                     </span>
                                                     <span class="flex-grow-1 ms-2">
                                                         Thomas Taylor
@@ -974,7 +974,7 @@ export default {
                                                 <input class="form-check-input me-3" type="checkbox" value="" id="tonya-noble">
                                                 <label class="form-check-label d-flex align-items-center" for="tonya-noble">
                                                     <span class="flex-shrink-0">
-                                                        <img src="@/assets/images/users/avatar-10.jpg" alt="" class="avatar-xxs rounded-circle" />
+                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xxs rounded-circle" />
                                                     </span>
                                                     <span class="flex-grow-1 ms-2">
                                                         Tonya Noble

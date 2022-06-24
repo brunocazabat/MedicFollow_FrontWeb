@@ -121,7 +121,7 @@ userIdx: {}
                     <div data-simplebar style="height: 300px;" class="px-3 mx-n3">
                         <div class="d-flex mb-4">
                             <div class="flex-shrink-0">
-                                <img src="@/assets/images/users/avatar-8.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                             </div>
                             <div class="flex-grow-1 ms-3">
                                 <h5 class="fs-13">Joseph Parker <small class="text-muted">20 Dec 2021 - 05:47AM</small></h5>
@@ -129,7 +129,7 @@ userIdx: {}
                                 <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                 <div class="d-flex mt-4">
                                     <div class="flex-shrink-0">
-                                        <img src="@/assets/images/users/avatar-10.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                                     </div>
                                     <div class="flex-grow-1 ms-3">
                                         <h5 class="fs-13">Alexis Clarke <small class="text-muted">22 Dec 2021 - 02:32PM</small></h5>
@@ -141,7 +141,7 @@ userIdx: {}
                         </div>
                         <div class="d-flex mb-4">
                             <div class="flex-shrink-0">
-                                <img src="@/assets/images/users/avatar-6.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                             </div>
                             <div class="flex-grow-1 ms-3">
                                 <h5 class="fs-13">Donald Palmer <small class="text-muted">24 Dec 2021 - 05:20PM</small></h5>
@@ -151,7 +151,7 @@ userIdx: {}
                         </div>
                         <div class="d-flex">
                             <div class="flex-shrink-0">
-                                <img src="@/assets/images/users/avatar-10.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                             </div>
                             <div class="flex-grow-1 ms-3">
                                 <h5 class="fs-13">Alexis Clarke <small class="text-muted">26 min ago</small></h5>
@@ -167,7 +167,7 @@ userIdx: {}
                                 <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                 <div class="d-flex mt-4">
                                     <div class="flex-shrink-0">
-                                        <img src="@/assets/images/users/avatar-6.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                                     </div>
                                     <div class="flex-grow-1 ms-3">
                                         <h5 class="fs-13">Donald Palmer <small class="text-muted">8 sec ago</small></h5>
@@ -219,13 +219,13 @@ userIdx: {}
                                     <td>
                                         <div class="avatar-group">
                                             <a href="javascript:void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="hover" data-bs-original-title="Erica Kernan">
-                                                <img src="@/assets/images/users/avatar-4.jpg" alt="" class="rounded-circle avatar-xs" />
+                                                <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xs" />
                                             </a>
                                             <a href="javascript:void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="hover" data-bs-original-title="Alexis Clarke">
-                                                <img src="@/assets/images/users/avatar-10.jpg" alt="" class="rounded-circle avatar-xs" />
+                                                <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xs" />
                                             </a>
                                             <a href="javascript:void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-trigger="hover" data-bs-original-title="James Price"> 
-                                                <img src="@/assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xs" />
+                                                <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xs" />
                                             </a>
                                             <a href="javascript: void(0);" class="avatar-group-item shadow" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" data-bs-original-title="Add Members">
                                                 <div class="avatar-xs">

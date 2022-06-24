@@ -6,13 +6,13 @@ export default {
         {
           id: 1,
           projectName: "Brand Logo Design",
-          img: require("@/assets/images/users/avatar-1.jpg"),
+          img: require("@/assets/images/users/avatar-1.png"),
           projectLead: "Donald Risher",
           percentage: "53%",
           subItem: [
-            { id: 1, assImg: require("@/assets/images/users/avatar-1.jpg") },
-            { id: 2, assImg: require("@/assets/images/users/avatar-2.jpg") },
-            { id: 3, assImg: require("@/assets/images/users/avatar-3.jpg") },
+            { id: 1, assImg: require("@/assets/images/users/avatar-1.png") },
+            { id: 2, assImg: require("@/assets/images/users/avatar-1.png") },
+            { id: 3, assImg: require("@/assets/images/users/avatar-1.png") },
           ],
           badge: "Inprogress",
           badgeClass: "warning",
@@ -21,12 +21,12 @@ export default {
         {
           id: 2,
           projectName: "Redesign - Landing Page",
-          img: require("@/assets/images/users/avatar-2.jpg"),
+          img: require("@/assets/images/users/avatar-1.png"),
           projectLead: "Prezy William",
           percentage: "0%",
           subItem: [
-            { id: 1, assImg: require("@/assets/images/users/avatar-5.jpg") },
-            { id: 2, assImg: require("@/assets/images/users/avatar-6.jpg") },
+            { id: 1, assImg: require("@/assets/images/users/avatar-1.png") },
+            { id: 2, assImg: require("@/assets/images/users/avatar-1.png") },
           ],
           badge: "Pending",
           badgeClass: "danger",
@@ -35,12 +35,12 @@ export default {
         {
           id: 3,
           projectName: "Multipurpose Landing Template",
-          img: require("@/assets/images/users/avatar-3.jpg"),
+          img: require("@/assets/images/users/avatar-1.png"),
           projectLead: "Boonie Hoynas",
           percentage: "100%",
           subItem: [
-            { id: 1, assImg: require("@/assets/images/users/avatar-1.jpg") },
-            { id: 2, assImg: require("@/assets/images/users/avatar-2.jpg") },
+            { id: 1, assImg: require("@/assets/images/users/avatar-1.png") },
+            { id: 2, assImg: require("@/assets/images/users/avatar-1.png") },
           ],
           badge: "Completed",
           badgeClass: "success",
@@ -49,11 +49,11 @@ export default {
         {
           id: 4,
           projectName: "Chat Application",
-          img: require("@/assets/images/users/avatar-5.jpg"),
+          img: require("@/assets/images/users/avatar-1.png"),
           projectLead: "Pauline Moll",
           percentage: "64%",
           subItem: [
-            { id: 1, assImg: require("@/assets/images/users/avatar-2.jpg") },
+            { id: 1, assImg: require("@/assets/images/users/avatar-1.png") },
           ],
           badge: "Progress",
           badgeClass: "warning",
@@ -62,13 +62,13 @@ export default {
         {
           id: 5,
           projectName: "Create Wireframe",
-          img: require("@/assets/images/users/avatar-6.jpg"),
+          img: require("@/assets/images/users/avatar-1.png"),
           projectLead: "James Bangs",
           percentage: "77%",
           subItem: [
-            { id: 1, assImg: require("@/assets/images/users/avatar-1.jpg") },
-            { id: 2, assImg: require("@/assets/images/users/avatar-6.jpg") },
-            { id: 3, assImg: require("@/assets/images/users/avatar-4.jpg") },
+            { id: 1, assImg: require("@/assets/images/users/avatar-1.png") },
+            { id: 2, assImg: require("@/assets/images/users/avatar-1.png") },
+            { id: 3, assImg: require("@/assets/images/users/avatar-1.png") },
           ],
           badge: "Progress",
           badgeClass: "warning",
@@ -85,9 +85,7 @@ export default {
     <div class="card-header d-flex align-items-center">
       <h4 class="card-title flex-grow-1 mb-0">Active Projects</h4>
       <div class="flex-shrink-0">
-        <a href="javascript:void(0);" class="btn btn-soft-info btn-sm shadow-none"
-          >Export Report</a
-        >
+        <a href="javascript:void(0);" class="btn btn-soft-info btn-sm shadow-none">Export Report</a>
       </div>
     </div>
     <!-- end cardheader -->
@@ -108,33 +106,18 @@ export default {
           <!-- thead -->
 
           <tbody>
-            <tr v-for="(item, index) of activeProjects" :key="index"> 
-              <td class="fw-medium">{{item.projectName}}</td>
+            <tr v-for="(item, index) of activeProjects" :key="index">
+              <td class="fw-medium">{{ item.projectName }}</td>
               <td>
-                <img
-                  :src="item.img"
-                  class="avatar-xxs rounded-circle me-1 shadow"
-                  alt=""
-                />
-                <a href="javascript: void(0);" class="text-reset"
-                  >{{item.projectLead}}</a
-                >
+                <img :src="item.img" class="avatar-xxs rounded-circle me-1 shadow" alt="" />
+                <a href="javascript: void(0);" class="text-reset">{{ item.projectLead }}</a>
               </td>
               <td>
                 <div class="d-flex align-items-center">
-                  <div class="flex-shrink-0 me-1 text-muted fs-13">{{item.percentage}}</div>
-                  <div
-                    class="progress progress-sm flex-grow-1 bg-soft-primary"
-                    style="width: 68%"
-                  >
-                    <div
-                      class="progress-bar bg-primary rounded"
-                      role="progressbar"
-                      style="width: 53%"
-                      aria-valuenow="53"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
+                  <div class="flex-shrink-0 me-1 text-muted fs-13">{{ item.percentage }}</div>
+                  <div class="progress progress-sm flex-grow-1 bg-soft-primary" style="width: 68%">
+                    <div class="progress-bar bg-primary rounded" role="progressbar" style="width: 53%"
+                      aria-valuenow="53" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </div>
               </td>
@@ -142,29 +125,23 @@ export default {
                 <div class="avatar-group flex-nowrap">
                   <div class="avatar-group-item" v-for="(subitem, index) of item.subItem" :key="index">
                     <a href="javascript: void(0);" class="d-inline-block">
-                      <img
-                        :src="subitem.assImg"
-                        alt=""
-                        class="rounded-circle avatar-xxs shadow"
-                      />
+                      <img :src="subitem.assImg" alt="" class="rounded-circle avatar-xxs shadow" />
                     </a>
                   </div>
-                </div>  
+                </div>
               </td>
-              <td><span :class="`badge badge-soft-${item.badgeClass}`">{{item.badge}}</span></td>
-              <td class="text-muted">{{item.dueDate}}</td>
+              <td><span :class="`badge badge-soft-${item.badgeClass}`">{{ item.badge }}</span></td>
+              <td class="text-muted">{{ item.dueDate }}</td>
             </tr>
             <!-- end tr -->
-           
+
           </tbody>
           <!-- end tbody -->
         </table>
         <!-- end table -->
       </div>
 
-      <div
-        class="align-items-center mt-xl-3 mt-4 justify-content-between d-flex"
-      >
+      <div class="align-items-center mt-xl-3 mt-4 justify-content-between d-flex">
         <div class="flex-shrink-0">
           <div class="text-muted">
             Showing <span class="fw-semibold">5</span> of

@@ -335,7 +335,7 @@ export default {
                 >
                   <div class="avatar-xs">
                     <img
-                      src="@/assets/images/users/avatar-3.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                       class="rounded-circle img-fluid"
                     />
@@ -365,7 +365,7 @@ export default {
                 >
                   <div class="avatar-xs">
                     <img
-                      src="@/assets/images/users/avatar-4.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                       class="rounded-circle img-fluid"
                     />

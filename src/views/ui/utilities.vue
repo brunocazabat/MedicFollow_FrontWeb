@@ -443,7 +443,7 @@ export default {
                                     <div class="d-flex align-items-start flex-wrap gap-4">
                                         <div class="text-center">
                                             <img
-                                                src="@/assets/images/users/avatar-2.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 class="avatar-md rounded shadow"
                                                 alt="rounded"
                                             />
@@ -453,7 +453,7 @@ export default {
                                         </div>
                                         <div class="text-center">
                                             <img
-                                                src="@/assets/images/users/avatar-2.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 class="avatar-md rounded-top shadow"
                                                 alt="rounded-top"
                                             />
@@ -463,7 +463,7 @@ export default {
                                         </div>
                                         <div class="text-center">
                                             <img
-                                                src="@/assets/images/users/avatar-2.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 class="avatar-md rounded-end shadow"
                                                 alt="rounded-end"
                                             />
@@ -473,7 +473,7 @@ export default {
                                         </div>
                                         <div class="text-center">
                                             <img
-                                                src="@/assets/images/users/avatar-2.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 class="avatar-md rounded-bottom shadow"
                                                 alt="rounded-bottom"
                                             />
@@ -483,7 +483,7 @@ export default {
                                         </div>
                                         <div class="text-center">
                                             <img
-                                                src="@/assets/images/users/avatar-2.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 class="avatar-md rounded-start shadow"
                                                 alt="rounded-start"
                                             />
@@ -493,7 +493,7 @@ export default {
                                         </div>
                                         <div class="text-center">
                                             <img
-                                                src="@/assets/images/users/avatar-2.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 class="avatar-md rounded-circle shadow"
                                                 alt="rounded-circle"
                                             />
@@ -503,7 +503,7 @@ export default {
                                         </div>
                                         <div class="text-center">
                                             <img
-                                                src="@/assets/images/users/avatar-2.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 class="avatar-md rounded-top shadow"
                                                 alt="rounded-top"
                                             />
@@ -528,7 +528,7 @@ export default {
                                     <div class="d-flex align-items-start flex-wrap gap-4">
                                         <div class="text-center">
                                             <img
-                                                src="@/assets/images/users/avatar-1.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 class="avatar-md rounded-0 shadow"
                                                 alt="rounded-0"
                                             />
@@ -538,7 +538,7 @@ export default {
                                         </div>
                                         <div class="text-center">
                                             <img
-                                                src="@/assets/images/users/avatar-1.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 class="avatar-md rounded-1 shadow"
                                                 alt="rounded-1"
                                             />
@@ -548,7 +548,7 @@ export default {
                                         </div>
                                         <div class="text-center">
                                             <img
-                                                src="@/assets/images/users/avatar-1.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 class="avatar-md rounded-2 shadow"
                                                 alt="rounded-2"
                                             />
@@ -558,7 +558,7 @@ export default {
                                         </div>
                                         <div class="text-center">
                                             <img
-                                                src="@/assets/images/users/avatar-1.jpg"
+                                                src="@/assets/images/users/avatar-1.png"
                                                 class="avatar-md rounded-3 shadow"
                                                 alt="rounded-3"
                                             />

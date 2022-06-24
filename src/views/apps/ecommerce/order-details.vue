@@ -430,7 +430,7 @@ export default {
                 <div class="d-flex align-items-center">
                   <div class="flex-shrink-0">
                     <img
-                      src="@/assets/images/users/avatar-3.jpg"
+                      src="@/assets/images/users/avatar-1.png"
                       alt=""
                       class="avatar-sm rounded shadow"
                     />

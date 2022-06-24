@@ -1693,7 +1693,7 @@ export default {
                           data-bs-original-title="Stine Nielsen"
                         >
                           <img
-                            src="@/assets/images/users/avatar-1.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -1709,7 +1709,7 @@ export default {
                           data-bs-original-title="Jansh Brown"
                         >
                           <img
-                            src="@/assets/images/users/avatar-2.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -1725,7 +1725,7 @@ export default {
                           data-bs-original-title="Dan Gibson"
                         >
                           <img
-                            src="@/assets/images/users/avatar-3.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -1780,7 +1780,7 @@ export default {
                           data-bs-original-title="Frida Bang"
                         >
                           <img
-                            src="@/assets/images/users/avatar-4.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -1796,7 +1796,7 @@ export default {
                           data-bs-original-title="Malou Silva"
                         >
                           <img
-                            src="@/assets/images/users/avatar-5.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -1812,7 +1812,7 @@ export default {
                           data-bs-original-title="Simon Schmidt"
                         >
                           <img
-                            src="@/assets/images/users/avatar-6.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -1828,7 +1828,7 @@ export default {
                           data-bs-original-title="Tosh Jessen"
                         >
                           <img
-                            src="@/assets/images/users/avatar-7.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -1883,7 +1883,7 @@ export default {
                           data-bs-original-title="Nina Schmidt"
                         >
                           <img
-                            src="@/assets/images/users/avatar-8.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -1899,7 +1899,7 @@ export default {
                           data-bs-original-title="Stine Nielsen"
                         >
                           <img
-                            src="@/assets/images/users/avatar-1.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -1915,7 +1915,7 @@ export default {
                           data-bs-original-title="Jansh Brown"
                         >
                           <img
-                            src="@/assets/images/users/avatar-2.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -1968,7 +1968,7 @@ export default {
                           data-bs-original-title="Stine Nielsen"
                         >
                           <img
-                            src="@/assets/images/users/avatar-1.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -1984,7 +1984,7 @@ export default {
                           data-bs-original-title="Jansh Brown"
                         >
                           <img
-                            src="@/assets/images/users/avatar-5.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -2000,7 +2000,7 @@ export default {
                           data-bs-original-title="Dan Gibson"
                         >
                           <img
-                            src="@/assets/images/users/avatar-2.jpg"
+                            src="@/assets/images/users/avatar-1.png"
                             alt=""
                             class="rounded-circle avatar-xxs"
                           />
@@ -2346,7 +2346,7 @@ export default {
                     <div class="acitivity-item py-3 d-flex">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-2.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-xs rounded-circle acitivity-avatar shadow"
                         />
@@ -2459,7 +2459,7 @@ export default {
                     <div class="acitivity-item d-flex">
                       <div class="flex-shrink-0">
                         <img
-                          src="@/assets/images/users/avatar-3.jpg"
+                          src="@/assets/images/users/avatar-1.png"
                           alt=""
                           class="avatar-xs rounded-circle acitivity-avatar shadow"
                         />

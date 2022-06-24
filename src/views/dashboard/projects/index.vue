@@ -48,54 +48,54 @@ export default {
 </script>
 
 <template>
-    <Layout>
-        <PageHeader :title="title" :items="items" />
+  <Layout>
+    <PageHeader :title="title" :items="items" />
 
-        <div class="row project-wrapper">
-            <div class="col-xxl-8">
-                <div class="row">
-                    
-                        <Widgets />
-                    
-                    <div class="col-xl-4">
-                        
-                    </div>
-                    <div class="col-xl-4">
-                        
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-12">
-<Project/>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xxl-4">
-                <Schedules />
-            </div>
-        </div>
-
+    <div class="row project-wrapper">
+      <div class="col-xxl-8">
         <div class="row">
-            <div class="col-xl-7">
-<ActiveProjects />
-            </div>
-            <div class="col-xl-5">
-                <Task />
-                </div>
-        </div>
 
+          <Widgets />
+
+          <div class="col-xl-4">
+
+          </div>
+          <div class="col-xl-4">
+
+          </div>
+        </div>
         <div class="row">
-            <div class="col-xxl-4">
-                <Member />
-            </div>  
-            <div class="col-xxl-4 col-lg-6">
-                <Chat />
-            </div>
-            <div class="col-xxl-4 col-lg-6">
-                <Status />
-            </div>
+          <div class="col-xl-12">
+            <Project />
+          </div>
         </div>
+      </div>
 
-    </Layout>
+      <div class="col-xxl-4">
+        <Schedules />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-7">
+        <ActiveProjects />
+      </div>
+      <div class="col-xl-5">
+        <Task />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xxl-4">
+        <Member />
+      </div>
+      <div class="col-xxl-4 col-lg-6">
+        <Chat />
+      </div>
+      <div class="col-xxl-4 col-lg-6">
+        <Status />
+      </div>
+    </div>
+
+  </Layout>
 </template>

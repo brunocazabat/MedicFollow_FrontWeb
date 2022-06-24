@@ -244,7 +244,7 @@ export default {
               <div class="flex-shrink-0 me-2">
                 <img
                   class="avatar-sm rounded"
-                  src="@/assets/images/users/avatar-2.jpg"
+                  src="@/assets/images/users/avatar-1.png"
                   data-hovercard-user-id="634573"
                   alt=""
                 />

@@ -5,7 +5,7 @@ export default {
       teamMembers: [
         {
           id: 1,
-          img: require('@/assets/images/users/avatar-1.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Donald Risher',
           position: 'Product Manager',
           hours: '110',
@@ -15,7 +15,7 @@ export default {
         },
         {
           id: 2,
-          img: require('@/assets/images/users/avatar-2.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Jansh Brown',
           position: 'Lead Developer',
           hours: '83',
@@ -25,7 +25,7 @@ export default {
         },
         {
           id: 3,
-          img: require('@/assets/images/users/avatar-7.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Carroll Adams',
           position: 'Lead Designer',
           hours: '58',
@@ -35,7 +35,7 @@ export default {
         },
         {
           id: 4,
-          img: require('@/assets/images/users/avatar-4.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'William Pinto',
           position: 'UI/UX Designer',
           hours: '96',
@@ -45,7 +45,7 @@ export default {
         },
         {
           id: 5,
-          img: require('@/assets/images/users/avatar-6.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Garry Fournier',
           position: 'Web Designer',
           hours: '76',
@@ -55,7 +55,7 @@ export default {
         },
         {
           id: 6,
-          img: require('@/assets/images/users/avatar-5.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Susan Denton',
           position: 'Lead Designer',
           hours: '123',
@@ -65,7 +65,7 @@ export default {
         },
         {
           id: 7,
-          img: require('@/assets/images/users/avatar-3.jpg'),
+          img: require('@/assets/images/users/avatar-1.png'),
           name: 'Joseph Jackson',
           position: 'React Developer',
           hours: '117',
@@ -114,17 +114,10 @@ export default {
       <h4 class="card-title mb-0 flex-grow-1">Team Members</h4>
       <div class="flex-shrink-0">
         <div class="dropdown card-header-dropdown">
-          <a
-            class="text-reset dropdown-btn"
-            href="#"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <span class="fw-semibold text-uppercase fs-12">Sort by: </span
-            ><span class="text-muted"
-              >Last 30 Days<em class="mdi mdi-chevron-down ms-1"></em
-            ></span>
+          <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="fw-semibold text-uppercase fs-12">Sort by: </span><span class="text-muted">Last 30 Days<em
+                class="mdi mdi-chevron-down ms-1"></em></span>
           </a>
           <div class="dropdown-menu dropdown-menu-end">
             <a class="dropdown-item" href="#">Today</a>
@@ -153,11 +146,7 @@ export default {
           <tbody>
             <tr v-for="(item, index) of teamMembers" :key="index">
               <td class="d-flex">
-                <img
-                  :src="item.img"
-                  alt=""
-                  class="avatar-xs rounded-3 shadow me-2"
-                />
+                <img :src="item.img" alt="" class="avatar-xs rounded-3 shadow me-2" />
                 <div>
                   <h5 class="fs-13 mb-0">{{ item.name }}</h5>
                   <p class="fs-12 mb-0 text-muted">{{ item.position }}</p>
@@ -172,13 +161,8 @@ export default {
                 {{ item.tasks }}
               </td>
               <td style="width: 5%">
-                <apexchart
-                  class="apex-charts"
-                  height="36"
-                  dir="ltr"
-                  :series="item.series"
-                  :options="chartOptions"
-                ></apexchart>
+                <apexchart class="apex-charts" height="36" dir="ltr" :series="item.series" :options="chartOptions">
+                </apexchart>
 
                 <!-- <div
                   id="radialBar_chart_1"

@@ -126,7 +126,7 @@ export default {
                             <li>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="@/assets/images/users/avatar-10.jpg" alt="" class="avatar-xs rounded-circle shadow">
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow">
                                     </div>
                                     <div class="flex-grow-1 ms-2">
                                         <h6 class="mb-1"><router-link to="/pages/profile" class="text-body">Tonya Noble</router-link></h6>
@@ -149,7 +149,7 @@ export default {
                             <li>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="@/assets/images/users/avatar-8.jpg" alt="" class="avatar-xs rounded-circle shadow">
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow">
                                     </div>
                                     <div class="flex-grow-1 ms-2">
                                         <h6 class="mb-1"><router-link to="/pages/profile" class="text-body">Thomas Taylor</router-link></h6>
@@ -172,7 +172,7 @@ export default {
                             <li>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="@/assets/images/users/avatar-2.jpg" alt="" class="avatar-xs rounded-circle shadow">
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow">
                                     </div>
                                     <div class="flex-grow-1 ms-2">
                                         <h6 class="mb-1"><router-link to="/pages/profile" class="text-body">Nancy Martino</router-link></h6>
@@ -378,7 +378,7 @@ export default {
                                 <div data-simplebar style="height: 508px;" class="px-3 mx-n3 mb-2">
                                     <div class="d-flex mb-4">
                                         <div class="flex-shrink-0">
-                                            <img src="@/assets/images/users/avatar-7.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                            <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                                         </div>
                                         <div class="flex-grow-1 ms-3">
                                             <h5 class="fs-13"><router-link to="/pages/profile" class="text-body">Joseph Parker</router-link> <small class="text-muted">20 Dec 2021 - 05:47AM</small></h5>
@@ -386,7 +386,7 @@ export default {
                                             <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                             <div class="d-flex mt-4">
                                                 <div class="flex-shrink-0">
-                                                    <img src="@/assets/images/users/avatar-10.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                                    <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                                                 </div>
                                                 <div class="flex-grow-1 ms-3">
                                                     <h5 class="fs-13"><router-link to="/pages/profile" class="text-body">Tonya Noble</router-link> <small class="text-muted">22 Dec 2021 - 02:32PM</small></h5>
@@ -398,7 +398,7 @@ export default {
                                     </div>
                                     <div class="d-flex mb-4">
                                         <div class="flex-shrink-0">
-                                            <img src="@/assets/images/users/avatar-8.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                            <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                                         </div>
                                         <div class="flex-grow-1 ms-3">
                                             <h5 class="fs-13"><router-link to="/pages/profile" class="text-body">Thomas Taylor</router-link> <small class="text-muted">24 Dec 2021 - 05:20PM</small></h5>
@@ -408,7 +408,7 @@ export default {
                                     </div>
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <img src="@/assets/images/users/avatar-10.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                            <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                                         </div>
                                         <div class="flex-grow-1 ms-3">
                                             <h5 class="fs-13"><router-link to="/pages/profile" class="text-body">Tonya Noble</router-link> <small class="text-muted">26 min ago</small></h5>
@@ -424,7 +424,7 @@ export default {
                                             <a href="javascript: void(0);" class="badge text-muted bg-light"><em class="mdi mdi-reply"></em> Reply</a>
                                             <div class="d-flex mt-4">
                                                 <div class="flex-shrink-0">
-                                                    <img src="@/assets/images/users/avatar-6.jpg" alt="" class="avatar-xs rounded-circle shadow" />
+                                                    <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                                                 </div>
                                                 <div class="flex-grow-1 ms-3">
                                                     <h5 class="fs-13"><router-link to="/pages/profile" class="text-body">Nancy Martino</router-link> <small class="text-muted">8 sec ago</small></h5>
@@ -600,7 +600,7 @@ export default {
                                             <tr>
                                                 <th scope="row">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="@/assets/images/users/avatar-8.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs">
                                                         <div class="flex-grow-1 ms-2">
                                                             <router-link to="/pages/profile" class="fw-medium text-body">Thomas Taylor</router-link>
                                                         </div>
@@ -614,7 +614,7 @@ export default {
                                             <tr>
                                                 <td>
                                                     <div class="d-flex align-items-center">
-                                                        <img src="@/assets/images/users/avatar-10.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs">
                                                         <div class="flex-grow-1 ms-2">
                                                             <router-link to="/pages/profile" class="fw-medium text-body">Tonya Noble</router-link>
                                                         </div>
@@ -628,7 +628,7 @@ export default {
                                             <tr>
                                                 <th scope="row">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="@/assets/images/users/avatar-10.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle avatar-xxs">
                                                         <div class="flex-grow-1 ms-2">
                                                             <router-link to="/pages/profile" class="fw-medium text-body">Tonya Noble</router-link>
                                                         </div>
@@ -670,17 +670,17 @@ export default {
                             <div class="avatar-group justify-content-center">
                                 <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Tonya Noble">
                                     <div class="avatar-xs">
-                                        <img src="@/assets/images/users/avatar-10.jpg" alt="" class="rounded-circle img-fluid">
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle img-fluid">
                                     </div>
                                 </a>
                                 <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Thomas Taylor">
                                     <div class="avatar-xs">
-                                        <img src="@/assets/images/users/avatar-8.jpg" alt="" class="rounded-circle img-fluid">
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle img-fluid">
                                     </div>
                                 </a>
                                 <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Nancy Martino">
                                     <div class="avatar-xs">
-                                        <img src="@/assets/images/users/avatar-2.jpg" alt="" class="rounded-circle img-fluid">
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="rounded-circle img-fluid">
                                     </div>
                                 </a>
                             </div>
@@ -689,7 +689,7 @@ export default {
                             <div class="vstack gap-3">
                                 <div class="d-flex align-items-center">
                                     <div class="avatar-xs flex-shrink-0 me-3">
-                                        <img src="@/assets/images/users/avatar-2.jpg" alt="" class="img-fluid rounded-circle">
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <div class="flex-grow-1">
                                         <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Nancy Martino</a></h5>
@@ -715,7 +715,7 @@ export default {
                                 <!-- end member item -->
                                 <div class="d-flex align-items-center">
                                     <div class="avatar-xs flex-shrink-0 me-3">
-                                        <img src="@/assets/images/users/avatar-3.jpg" alt="" class="img-fluid rounded-circle">
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <div class="flex-grow-1">
                                         <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Frank Hook</a></h5>
@@ -727,7 +727,7 @@ export default {
                                 <!-- end member item -->
                                 <div class="d-flex align-items-center">
                                     <div class="avatar-xs flex-shrink-0 me-3">
-                                        <img src="@/assets/images/users/avatar-4.jpg" alt="" class="img-fluid rounded-circle">
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <div class="flex-grow-1">
                                         <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Jennifer Carter</a></h5>
@@ -753,7 +753,7 @@ export default {
                                 <!-- end member item -->
                                 <div class="d-flex align-items-center">
                                     <div class="avatar-xs flex-shrink-0 me-3">
-                                        <img src="@/assets/images/users/avatar-7.jpg" alt="" class="img-fluid rounded-circle">
+                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="img-fluid rounded-circle">
                                     </div>
                                     <div class="flex-grow-1">
                                         <h5 class="fs-13 mb-0"><a href="javascript:void(0);" class="text-body d-block">Joseph Parker</a></h5>

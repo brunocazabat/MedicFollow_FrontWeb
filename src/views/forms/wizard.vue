@@ -179,7 +179,7 @@ nexttab" data-nexttab="pills-info-desc-tab"><em class="ri-arrow-right-line label
                                                     <div>
                                                         <div class="text-center">
                                                             <div class="profile-user position-relative d-inline-block mx-auto mb-2">
-                                                                <img src="@/assets/images/users/user-dummy-img.jpg" class="rounded-circle avatar-lg img-thumbnail user-profile-image" alt="user-profile-image">
+                                                                <img src="@/assets/images/users/avatar-1.png" class="rounded-circle avatar-lg img-thumbnail user-profile-image" alt="user-profile-image">
                                                                 <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
                                                                     <input id="profile-img-file-input" type="file" class="profile-img-file-input" accept="image/png, image/jpeg">
                                                                     <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">

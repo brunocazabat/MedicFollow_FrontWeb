@@ -2023,7 +2023,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-2.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2097,7 +2097,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-8.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2158,7 +2158,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-3.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2196,7 +2196,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-2.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2235,7 +2235,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-6.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2274,7 +2274,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-8.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2461,7 +2461,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-2.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2535,7 +2535,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-8.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2596,7 +2596,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-3.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2634,7 +2634,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-2.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2673,7 +2673,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-6.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2712,7 +2712,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-8.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2899,7 +2899,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-2.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -2973,7 +2973,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-8.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -3034,7 +3034,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-3.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -3072,7 +3072,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-2.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -3111,7 +3111,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-6.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -3150,7 +3150,7 @@ And this is more example text.
                           >
                             <div class="d-flex">
                               <img
-                                src="@/assets/images/users/avatar-8.jpg"
+                                src="@/assets/images/users/avatar-1.png"
                                 class="me-3 rounded-circle avatar-xs"
                                 alt="user-pic"
                               />
@@ -3257,7 +3257,7 @@ And this is more example text.
 
 &lt;a href=&quot;#!&quot; class=&quot;text-reset notification-item d-block dropdown-item&quot;&gt;
     &lt;div class=&quot;d-flex&quot;&gt;
-        &lt;img src=&quot;assets/images/users/avatar-2.jpg&quot;
+        &lt;img src=&quot;assets/images/users/avatar-1.png&quot;
             class=&quot;me-3 rounded-circle avatar-xs&quot; alt=&quot;user-pic&quot;&gt;
         &lt;div class=&quot;flex-1&quot;&gt;
             &lt;h6 class=&quot;mt-0 mb-1 fs-13 fw-semibold&quot;&gt;Angela Bernier&lt;/h6&gt;
@@ -3295,7 +3295,7 @@ And this is more example text.
 
 &lt;a href=&quot;#!&quot; class=&quot;text-reset notification-item d-block dropdown-item&quot;&gt;
     &lt;div class=&quot;d-flex&quot;&gt;
-        &lt;img src=&quot;assets/images/users/avatar-8.jpg&quot;
+        &lt;img src=&quot;assets/images/users/avatar-1.png&quot;
             class=&quot;me-3 rounded-circle avatar-xs&quot; alt=&quot;user-pic&quot;&gt;
         &lt;div class=&quot;flex-1&quot;&gt;
             &lt;h6 class=&quot;mt-0 mb-1 fs-13 fw-semibold&quot;&gt;Maureen Gibson&lt;/h6&gt;
@@ -3322,7 +3322,7 @@ And this is more example text.
     &lt;div data-simplebar style=&quot;max-height: 300px;&quot; class=&quot;pe-2&quot;&gt;
 &lt;a href=&quot;#!&quot; class=&quot;text-reset notification-item d-block dropdown-item&quot;&gt;
     &lt;div class=&quot;d-flex&quot;&gt;
-        &lt;img src=&quot;assets/images/users/avatar-3.jpg&quot;
+        &lt;img src=&quot;assets/images/users/avatar-1.png&quot;
             class=&quot;me-3 rounded-circle avatar-xs&quot; alt=&quot;user-pic&quot;&gt;
         &lt;div class=&quot;flex-1&quot;&gt;
             &lt;h6 class=&quot;mt-0 mb-1 fs-13 fw-semibold&quot;&gt;James Lemire&lt;/h6&gt;
@@ -3341,7 +3341,7 @@ And this is more example text.
 
 &lt;a href=&quot;#!&quot; class=&quot;text-reset notification-item d-block dropdown-item&quot;&gt;
     &lt;div class=&quot;d-flex&quot;&gt;
-        &lt;img src=&quot;assets/images/users/avatar-2.jpg&quot;
+        &lt;img src=&quot;assets/images/users/avatar-1.png&quot;
             class=&quot;me-3 rounded-circle avatar-xs&quot; alt=&quot;user-pic&quot;&gt;
         &lt;div class=&quot;flex-1&quot;&gt;
             &lt;h6 class=&quot;mt-0 mb-1 fs-13 fw-semibold&quot;&gt;Angela Bernier&lt;/h6&gt;
@@ -3360,7 +3360,7 @@ And this is more example text.
 
 &lt;a href=&quot;#!&quot; class=&quot;text-reset notification-item d-block dropdown-item&quot;&gt;
     &lt;div class=&quot;d-flex&quot;&gt;
-        &lt;img src=&quot;assets/images/users/avatar-6.jpg&quot;
+        &lt;img src=&quot;assets/images/users/avatar-1.png&quot;
             class=&quot;me-3 rounded-circle avatar-xs&quot; alt=&quot;user-pic&quot;&gt;
         &lt;div class=&quot;flex-1&quot;&gt;
             &lt;h6 class=&quot;mt-0 mb-1 fs-13 fw-semibold&quot;&gt;Kenneth Brown&lt;/h6&gt;
@@ -3379,7 +3379,7 @@ And this is more example text.
 
 &lt;a href=&quot;#!&quot; class=&quot;text-reset notification-item d-block dropdown-item&quot;&gt;
     &lt;div class=&quot;d-flex&quot;&gt;
-        &lt;img src=&quot;assets/images/users/avatar-8.jpg&quot;
+        &lt;img src=&quot;assets/images/users/avatar-1.png&quot;
             class=&quot;me-3 rounded-circle avatar-xs&quot; alt=&quot;user-pic&quot;&gt;
         &lt;div class=&quot;flex-1&quot;&gt;
             &lt;h6 class=&quot;mt-0 mb-1 fs-13 fw-semibold&quot;&gt;Maureen Gibson&lt;/h6&gt;

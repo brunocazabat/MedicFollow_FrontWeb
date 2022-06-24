@@ -2686,7 +2686,7 @@ export default {
                                                             <td>
                                                                 <div class="d-flex gap-2 align-items-center">
                                                                     <div class="flex-shrink-0">
-                                                                        <img src="@/assets/images/users/avatar-3.jpg" alt="" class="avatar-xs rounded-circle" />
+                                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle" />
                                                                     </div>
                                                                     <div class="flex-grow-1">
                                                                         Jordan Kennedy
@@ -2709,7 +2709,7 @@ export default {
                                                             <td>
                                                                 <div class="d-flex gap-2 align-items-center">
                                                                     <div class="flex-shrink-0">
-                                                                        <img src="@/assets/images/users/avatar-4.jpg" alt="" class="avatar-xs rounded-circle" />
+                                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle" />
                                                                     </div>
                                                                     <div class="flex-grow-1">
                                                                         Jackson Graham
@@ -2732,7 +2732,7 @@ export default {
                                                             <td>
                                                                 <div class="d-flex gap-2 align-items-center">
                                                                     <div class="flex-shrink-0">
-                                                                        <img src="@/assets/images/users/avatar-5.jpg" alt="" class="avatar-xs rounded-circle" />
+                                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle" />
                                                                     </div>
                                                                     <div class="flex-grow-1">
                                                                         Lauren Trujillo
@@ -2755,7 +2755,7 @@ export default {
                                                             <td>
                                                                 <div class="d-flex gap-2 align-items-center">
                                                                     <div class="flex-shrink-0">
-                                                                        <img src="@/assets/images/users/avatar-6.jpg" alt="" class="avatar-xs rounded-circle" />
+                                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle" />
                                                                     </div>
                                                                     <div class="flex-grow-1">
                                                                         Curtis Weaver
@@ -2778,7 +2778,7 @@ export default {
                                                             <td>
                                                                 <div class="d-flex gap-2 align-items-center">
                                                                     <div class="flex-shrink-0">
-                                                                        <img src="@/assets/images/users/avatar-1.jpg" alt="" class="avatar-xs rounded-circle" />
+                                                                        <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle" />
                                                                     </div>
                                                                     <div class="flex-grow-1">
                                                                         Jason schuller
@@ -2833,7 +2833,7 @@ export default {
                 &lt;td&gt;
                     &lt;div class=&quot;d-flex gap-2 align-items-center&quot;&gt;
                         &lt;div class=&quot;flex-shrink-0&quot;&gt;
-                            &lt;img src=&quot;assets/images/users/avatar-3.jpg&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded-circle&quot; /&gt;
+                            &lt;img src=&quot;assets/images/users/avatar-1.png&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded-circle&quot; /&gt;
                         &lt;/div&gt;
                         &lt;div class=&quot;flex-grow-1&quot;&gt;
                             Jordan Kennedy
@@ -2856,7 +2856,7 @@ export default {
                 &lt;td&gt;
                     &lt;div class=&quot;d-flex gap-2 align-items-center&quot;&gt;
                         &lt;div class=&quot;flex-shrink-0&quot;&gt;
-                            &lt;img src=&quot;assets/images/users/avatar-4.jpg&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded-circle&quot; /&gt;
+                            &lt;img src=&quot;assets/images/users/avatar-1.png&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded-circle&quot; /&gt;
                         &lt;/div&gt;
                         &lt;div class=&quot;flex-grow-1&quot;&gt;
                             Jackson Graham
@@ -2879,7 +2879,7 @@ export default {
                 &lt;td&gt;
                     &lt;div class=&quot;d-flex gap-2 align-items-center&quot;&gt;
                         &lt;div class=&quot;flex-shrink-0&quot;&gt;
-                            &lt;img src=&quot;assets/images/users/avatar-5.jpg&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded-circle&quot; /&gt;
+                            &lt;img src=&quot;assets/images/users/avatar-1.png&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded-circle&quot; /&gt;
                         &lt;/div&gt;
                         &lt;div class=&quot;flex-grow-1&quot;&gt;
                             Lauren Trujillo
@@ -2902,7 +2902,7 @@ export default {
                 &lt;td&gt;
                     &lt;div class=&quot;d-flex gap-2 align-items-center&quot;&gt;
                         &lt;div class=&quot;flex-shrink-0&quot;&gt;
-                            &lt;img src=&quot;assets/images/users/avatar-6.jpg&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded-circle&quot; /&gt;
+                            &lt;img src=&quot;assets/images/users/avatar-1.png&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded-circle&quot; /&gt;
                         &lt;/div&gt;
                         &lt;div class=&quot;flex-grow-1&quot;&gt;
                             Curtis Weaver
@@ -2925,7 +2925,7 @@ export default {
                 &lt;td&gt;
                     &lt;div class=&quot;d-flex gap-2 align-items-center&quot;&gt;
                         &lt;div class=&quot;flex-shrink-0&quot;&gt;
-                            &lt;img src=&quot;assets/images/users/avatar-1.jpg&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded-circle&quot; /&gt;
+                            &lt;img src=&quot;assets/images/users/avatar-1.png&quot; alt=&quot;&quot; class=&quot;avatar-xs rounded-circle&quot; /&gt;
                         &lt;/div&gt;
                         &lt;div class=&quot;flex-grow-1&quot;&gt;
                             Jason schuller

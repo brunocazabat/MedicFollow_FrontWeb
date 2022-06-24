@@ -1,7 +1,6 @@
-// 
+//
 // _fullcalendar.scss
-// 
-
+//
 
 .fc td,
 .fc th {
@@ -17,7 +16,6 @@
         }
 
         @media (max-width: 767.98px) {
-
             .fc-left,
             .fc-right,
             .fc-center {
@@ -28,7 +26,7 @@
                 margin: 10px 0;
             }
 
-            >*>* {
+            > * > * {
                 float: none;
             }
 
@@ -67,7 +65,7 @@
     .fc-daygrid-day {
         &.fc-day-today {
             background-color: rgba($primary, 0.1);
-    
+
             .fc-daygrid-day-number {
                 background-color: $primary;
                 color: $white;
@@ -80,7 +78,7 @@
             background-color: rgba($primary, 0.1);
         }
     }
-    
+
     .fc-timegrid-col {
         &.fc-day-today {
             background-color: rgba($primary, 0.1);
@@ -103,12 +101,12 @@
         width: 100% !important;
     }
 
-    .fc-scrollgrid-section>*{
+    .fc-scrollgrid-section > * {
         border-left: $table-border-width solid $table-border-color;
         border-top: $table-border-width solid $table-border-color;
     }
 
-    .fc-scrollgrid-section-liquid>td{
+    .fc-scrollgrid-section-liquid > td {
         border-top: 0;
     }
 }
@@ -132,7 +130,6 @@
 }
 
 .fc-unthemed {
-
     .fc-content,
     .fc-divider,
     .fc-list-heading td,
@@ -220,7 +217,6 @@
         margin: 6px 0;
     }
 }
-
 
 .fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.bg-dark {
     .fc-content {
@@ -330,7 +326,6 @@
     }
 }
 
-
 .fc-timegrid-slots {
     table {
         tr {
@@ -343,12 +338,10 @@
     border-color: $border-color;
 }
 
-@each $color,
-$value in $theme-colors {
+@each $color, $value in $theme-colors {
     .fc-daygrid-event-harness {
         .fc-daygrid-event {
             &.bg-soft-#{$color} {
-
                 .fc-event-title,
                 .fc-event-main {
                     color: $value !important;
@@ -373,7 +366,7 @@ $value in $theme-colors {
                 color: $value !important;
 
                 .fc-list-event-title {
-                    >a {
+                    > a {
                         color: $value !important;
                     }
                 }
@@ -386,15 +379,16 @@ $value in $theme-colors {
     }
 }
 
-.fc-daygrid-event-harness .fc-daygrid-event.bg-soft-dark{
-    .fc-event-main, .fc-event-title {
-        color:  var(--#{$variable-prefix}dark) !important;
+.fc-daygrid-event-harness .fc-daygrid-event.bg-soft-dark {
+    .fc-event-main,
+    .fc-event-title {
+        color: var(--#{$variable-prefix}dark) !important;
     }
 }
 
-.fc-direction-ltr{
+.fc-direction-ltr {
     direction: ltr;
-    .fc-toolbar>*>:not(:first-child){
+    .fc-toolbar > * > :not(:first-child) {
         margin-left: 0.75em;
     }
 }

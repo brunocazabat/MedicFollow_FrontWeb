@@ -145,7 +145,7 @@ export default {
                                                         <a href="#!" class="text-reset notification-item d-block dropdown-item active">
                                                             <div class="d-flex">
                                                                 <div class="flex-shrink-0 avatar-xs me-3">
-                                                                    <img src="@/assets/images/users/avatar-2.jpg" class="rounded-circle img-fluid shadow" alt="user-pic">
+                                                                    <img src="@/assets/images/users/avatar-1.png" class="rounded-circle img-fluid shadow" alt="user-pic">
                                                                 </div>
                                                                 <div class="flex-grow-1 text-muted">
                                                                     <h6 class="mb-1 fs-14">Angela Bernier</h6>
@@ -181,7 +181,7 @@ export default {
                                                         <a href="#!" class="text-reset notification-item d-block dropdown-item">
                                                             <div class="d-flex">
                                                                 <div class="flex-shrink-0 avatar-xs me-3">
-                                                                    <img src="@/assets/images/users/avatar-8.jpg" class="rounded-circle img-fluid shadow" alt="user-pic">
+                                                                    <img src="@/assets/images/users/avatar-1.png" class="rounded-circle img-fluid shadow" alt="user-pic">
                                                                 </div>
                                                                 <div class="flex-grow-1 text-muted">
                                                                     <h6 class="mb-1 fs-14">Maureen Gibson</h6>
@@ -491,7 +491,7 @@ export default {
                                                     <div data-simplebar data-simplebar-auto-hide="false" data-simplebar-track="warning" style="max-height: 220px;" class="px-3">
                                                         <div class="d-flex align-items-center py-3">
                                                             <div class="avatar-xs flex-shrink-0 me-3">
-                                                                <img src="@/assets/images/users/avatar-3.jpg" alt="" class="img-fluid rounded-circle shadow">
+                                                                <img src="@/assets/images/users/avatar-1.png" alt="" class="img-fluid rounded-circle shadow">
                                                             </div>
                                                             <div class="flex-grow-1">
                                                                 <div>
@@ -506,7 +506,7 @@ export default {
                                                         
                                                         <div class="d-flex align-items-center py-3">
                                                             <div class="avatar-xs flex-shrink-0 me-3">
-                                                                <img src="@/assets/images/users/avatar-4.jpg" alt="" class="img-fluid rounded-circle shadow">
+                                                                <img src="@/assets/images/users/avatar-1.png" alt="" class="img-fluid rounded-circle shadow">
                                                             </div>
                                                             <div class="flex-grow-1">
                                                                 <div>
@@ -521,7 +521,7 @@ export default {
 
                                                         <div class="d-flex align-items-center py-3">
                                                             <div class="avatar-xs flex-shrink-0 me-3">
-                                                                <img src="@/assets/images/users/avatar-5.jpg" alt="" class="img-fluid rounded-circle shadow">
+                                                                <img src="@/assets/images/users/avatar-1.png" alt="" class="img-fluid rounded-circle shadow">
                                                             </div>
                                                             <div class="flex-grow-1">
                                                                 <div>
@@ -535,7 +535,7 @@ export default {
                                                         </div>
                                                         <div class="d-flex align-items-center py-3">
                                                             <div class="avatar-xs flex-shrink-0 me-3">
-                                                                <img src="@/assets/images/users/avatar-3.jpg" alt="" class="img-fluid rounded-circle shadow">
+                                                                <img src="@/assets/images/users/avatar-1.png" alt="" class="img-fluid rounded-circle shadow">
                                                             </div>
                                                             <div class="flex-grow-1">
                                                                 <div>
