@@ -187,12 +187,12 @@ export default {
       i18n.global.locale = locale;
     },
     toggleDarkMode() {
-      if (document.documentElement.getAttribute("data-layout-mode") == "dark") {
-        document.documentElement.setAttribute("data-layout-mode", "light");
+      if (document.documentElement.getAttribute('data-layout-mode') == 'dark') {
+        document.documentElement.setAttribute('data-layout-mode', 'light')
       } else {
-        document.documentElement.setAttribute("data-layout-mode", "dark");
+        document.documentElement.setAttribute('data-layout-mode', 'dark')
       }
-    },
+    }
   },
   computed: {},
 };
@@ -389,7 +389,7 @@ export default {
             <div class="dropdown-menu dropdown-menu-end">
               <!-- item-->
               <a href="javascript:void(0);" v-for="(entry, i) in languages" :key="`Lang${i}`" :value="entry"
-                @click.once="setLanguage(entry.language, entry.title, entry.flag)"
+                @click="setLanguage(entry.language, entry.title, entry.flag)"
                 :class="{ active: lan === entry.language }" class="dropdown-item notify-item language py-2"
                 data-lang="fr" title="Francais">
                 <img :src="entry.flag" alt="user-image" class="me-2 rounded" height="18" />
@@ -403,7 +403,7 @@ export default {
                 btn btn-icon btn-topbar btn-ghost-secondary
                 rounded-circle
                 shadow-none
-              " data-toggle="fullscreen" @click.once="initFullScreen">
+              " data-toggle="fullscreen" @click="initFullScreen">
               <em class="bx bx-fullscreen fs-22"></em>
             </button>
           </div>
@@ -414,7 +414,7 @@ export default {
                 rounded-circle
                 light-dark-mode
                 shadow-none
-              " @click.once="toggleDarkMode">
+              " @click="toggleDarkMode">
               <em class="bx bx-moon fs-22"></em>
             </button>
           </div>
@@ -783,24 +783,11 @@ export default {
             <div class="dropdown-menu dropdown-menu-end">
               <!-- item-->
               <h6 class="dropdown-header">Welcome Bruno!</h6>
-              <router-link class="dropdown-item" to="/pages/profile-setting">
-                <em class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></em>
-                <span class="align-middle">Settings</span>
-              </router-link>
-              <router-link class="dropdown-item" to="/chat"><em class="
-                    mdi mdi-message-text-outline
-                    text-muted
-                    fs-16
-                    align-middle
-                    me-1
-                  "></em>
-                <span class="align-middle">Messages</span>
-              </router-link>
-              <div class="dropdown-divider"></div>
               <router-link class="dropdown-item" to="/auth/lockscreen-basic"><em
                   class="mdi mdi-lock text-muted fs-16 align-middle me-1"></em>
                 <span class="align-middle">Lock screen</span>
               </router-link>
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/logout"><em
                   class="mdi mdi-logout text-muted fs-16 align-middle me-1"></em>
                 <span class="align-middle" data-key="t-logout">Logout</span></a>
