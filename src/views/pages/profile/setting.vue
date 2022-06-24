@@ -46,23 +46,12 @@ export default {
   <Layout>
     <div class="position-relative mx-n4 mt-n4">
       <div class="profile-wid-bg profile-setting-img">
-        <img
-          src="@/assets/images/profile-bg.jpg"
-          class="profile-wid-img"
-          alt=""
-        />
+        <img src="@/assets/images/profile-bg.jpg" class="profile-wid-img" alt="" />
         <div class="overlay-content">
           <div class="text-end p-3">
             <div class="p-0 ms-auto rounded-circle profile-photo-edit">
-              <input
-                id="profile-foreground-img-file-input"
-                type="file"
-                class="profile-foreground-img-file-input"
-              />
-              <label
-                for="profile-foreground-img-file-input"
-                class="profile-photo-edit btn btn-light"
-              >
+              <input id="profile-foreground-img-file-input" type="file" class="profile-foreground-img-file-input" />
+              <label for="profile-foreground-img-file-input" class="profile-photo-edit btn btn-light">
                 <em class="ri-image-edit-line align-bottom me-1"></em> Change
                 Cover
               </label>
@@ -77,27 +66,13 @@ export default {
         <div class="card mt-n5">
           <div class="card-body p-4">
             <div class="text-center">
-              <div
-                class="profile-user position-relative d-inline-block mx-auto mb-4"
-              >
-                <img
-                  src="@/assets/images/users/avatar-1.png"
-                  class="rounded-circle avatar-xl img-thumbnail user-profile-image shadow"
-                  alt="user-profile-image"
-                />
+              <div class="profile-user position-relative d-inline-block mx-auto mb-4">
+                <img src="@/assets/images/users/avatar-1.png"
+                  class="rounded-circle avatar-xl img-thumbnail user-profile-image shadow" alt="user-profile-image" />
                 <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
-                  <input
-                    id="profile-img-file-input"
-                    type="file"
-                    class="profile-img-file-input"
-                  />
-                  <label
-                    for="profile-img-file-input"
-                    class="profile-photo-edit avatar-xs"
-                  >
-                    <span
-                      class="avatar-title rounded-circle bg-light text-body shadow"
-                    >
+                  <input id="profile-img-file-input" type="file" class="profile-img-file-input" />
+                  <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
+                    <span class="avatar-title rounded-circle bg-light text-body shadow">
                       <em class="ri-camera-fill"></em>
                     </span>
                   </label>
@@ -116,24 +91,13 @@ export default {
                 <h5 class="card-title mb-0">Complete Your Profile</h5>
               </div>
               <div class="flex-shrink-0">
-                <a
-                  href="javascript:void(0);"
-                  class="badge bg-light text-primary fs-12"
-                  ><em class="ri-edit-box-line align-bottom me-1"></em> Edit</a
-                >
+                <a href="javascript:void(0);" class="badge bg-light text-primary fs-12"><em
+                    class="ri-edit-box-line align-bottom me-1"></em> Edit</a>
               </div>
             </div>
-            <div
-              class="progress animated-progess custom-progress progress-label"
-            >
-              <div
-                class="progress-bar bg-danger"
-                role="progressbar"
-                style="width: 30%"
-                aria-valuenow="30"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
+            <div class="progress animated-progess custom-progress progress-label">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30"
+                aria-valuemin="0" aria-valuemax="100">
                 <div class="label">30%</div>
               </div>
             </div>
@@ -146,76 +110,42 @@ export default {
                 <h5 class="card-title mb-0">Portfolio</h5>
               </div>
               <div class="flex-shrink-0">
-                <a
-                  href="javascript:void(0);"
-                  class="badge bg-light text-primary fs-12"
-                  ><em class="ri-add-fill align-bottom me-1"></em> Add</a
-                >
+                <a href="javascript:void(0);" class="badge bg-light text-primary fs-12"><em
+                    class="ri-add-fill align-bottom me-1"></em> Add</a>
               </div>
             </div>
             <div class="mb-3 d-flex">
               <div class="avatar-xs d-block flex-shrink-0 me-3">
-                <span
-                  class="avatar-title rounded-circle fs-16 bg-dark text-light shadow"
-                >
+                <span class="avatar-title rounded-circle fs-16 bg-dark text-light shadow">
                   <em class="ri-github-fill"></em>
                 </span>
               </div>
-              <input
-                type="email"
-                class="form-control"
-                id="gitUsername"
-                placeholder="Username"
-                value="@daveadame"
-              />
+              <input type="email" class="form-control" id="gitUsername" placeholder="Username" value="@daveadame" />
             </div>
             <div class="mb-3 d-flex">
               <div class="avatar-xs d-block flex-shrink-0 me-3">
-                <span
-                  class="avatar-title rounded-circle fs-16 bg-primary shadow"
-                >
+                <span class="avatar-title rounded-circle fs-16 bg-primary shadow">
                   <em class="ri-global-fill"></em>
                 </span>
               </div>
-              <input
-                type="text"
-                class="form-control"
-                id="websiteInput"
-                placeholder="www.example.com"
-                value="www.velzon.com"
-              />
+              <input type="text" class="form-control" id="websiteInput" placeholder="www.example.com"
+                value="www.velzon.com" />
             </div>
             <div class="mb-3 d-flex">
               <div class="avatar-xs d-block flex-shrink-0 me-3">
-                <span
-                  class="avatar-title rounded-circle fs-16 bg-success shadow"
-                >
+                <span class="avatar-title rounded-circle fs-16 bg-success shadow">
                   <em class="ri-dribbble-fill"></em>
                 </span>
               </div>
-              <input
-                type="text"
-                class="form-control"
-                id="dribbleName"
-                placeholder="Username"
-                value="@dave_adame"
-              />
+              <input type="text" class="form-control" id="dribbleName" placeholder="Username" value="@dave_adame" />
             </div>
             <div class="d-flex">
               <div class="avatar-xs d-block flex-shrink-0 me-3">
-                <span
-                  class="avatar-title rounded-circle fs-16 bg-danger shadow"
-                >
+                <span class="avatar-title rounded-circle fs-16 bg-danger shadow">
                   <em class="ri-pinterest-fill"></em>
                 </span>
               </div>
-              <input
-                type="text"
-                class="form-control"
-                id="pinterestName"
-                placeholder="Username"
-                value="Advance Dave"
-              />
+              <input type="text" class="form-control" id="pinterestName" placeholder="Username" value="Advance Dave" />
             </div>
           </div>
         </div>
@@ -225,50 +155,27 @@ export default {
       <div class="col-xxl-9">
         <div class="card mt-xxl-n5">
           <div class="card-header">
-            <ul
-              class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0"
-              role="tablist"
-            >
+            <ul class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  data-bs-toggle="tab"
-                  href="#personalDetails"
-                  role="tab"
-                >
+                <a class="nav-link active" data-bs-toggle="tab" href="#personalDetails" role="tab">
                   <em class="fas fa-home"></em>
                   Personal Details
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-toggle="tab"
-                  href="#changePassword"
-                  role="tab"
-                >
+                <a class="nav-link" data-bs-toggle="tab" href="#changePassword" role="tab">
                   <em class="far fa-user"></em>
                   Change Password
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-toggle="tab"
-                  href="#experience"
-                  role="tab"
-                >
+                <a class="nav-link" data-bs-toggle="tab" href="#experience" role="tab">
                   <em class="far fa-envelope"></em>
                   Experience
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-toggle="tab"
-                  href="#privacy"
-                  role="tab"
-                >
+                <a class="nav-link" data-bs-toggle="tab" href="#privacy" role="tab">
                   <em class="far fa-envelope"></em>
                   Privacy Policy
                 </a>
@@ -282,89 +189,49 @@ export default {
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="mb-3">
-                        <label for="firstnameInput" class="form-label"
-                          >First Name</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="firstnameInput"
-                          placeholder="Enter your firstname"
-                          value="Dave"
-                        />
+                        <label for="firstnameInput" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstnameInput" placeholder="Enter your firstname"
+                          value="Dave" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-6">
                       <div class="mb-3">
-                        <label for="lastnameInput" class="form-label"
-                          >Last Name</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="lastnameInput"
-                          placeholder="Enter your lastname"
-                          value="Adame"
-                        />
+                        <label for="lastnameInput" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastnameInput" placeholder="Enter your lastname"
+                          value="Adame" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-6">
                       <div class="mb-3">
-                        <label for="phonenumberInput" class="form-label"
-                          >Phone Number</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="phonenumberInput"
-                          placeholder="Enter your phone number"
-                          value="+(1) 987 6543"
-                        />
+                        <label for="phonenumberInput" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phonenumberInput"
+                          placeholder="Enter your phone number" value="+(1) 987 6543" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-6">
                       <div class="mb-3">
-                        <label for="emailInput" class="form-label"
-                          >Email Address</label
-                        >
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="emailInput"
-                          placeholder="Enter your email"
-                          value="daveadame@velzon.com"
-                        />
+                        <label for="emailInput" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email"
+                          value="daveadame@velzon.com" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-12">
                       <div class="mb-3">
-                        <label for="JoiningdatInput" class="form-label"
-                          >Joining Date</label
-                        >
+                        <label for="JoiningdatInput" class="form-label">Joining Date</label>
 
-                        <flat-pickr
-                          v-model="date"
-                          class="form-control"
-                        ></flat-pickr>
+                        <flat-pickr v-model="date" class="form-control"></flat-pickr>
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-12">
                       <div class="mb-3">
-                        <label for="skillsInput" class="form-label"
-                          >Skills</label
-                        >
-                        <Multiselect
-                          v-model="value"
-                          mode="tags"
-                          :close-on-select="false"
-                          :searchable="true"
-                          :create-option="true"
-                          :options="[
+                        <label for="skillsInput" class="form-label">Skills</label>
+                        <Multiselect v-model="value" mode="tags" :close-on-select="false" :searchable="true"
+                          :create-option="true" :options="[
                             { value: 'illustrator', label: 'Illustrator' },
                             { value: 'photoshop', label: 'Photoshop' },
                             { value: 'css', label: 'CSS' },
@@ -372,101 +239,55 @@ export default {
                             { value: 'javascript', label: 'Javascript' },
                             { value: 'python', label: 'Python' },
                             { value: 'php', label: 'PHP' }
-                          ]"
-                        />
+                          ]" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-6">
                       <div class="mb-3">
-                        <label for="designationInput" class="form-label"
-                          >Designation</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="designationInput"
-                          placeholder="Designation"
-                          value="Lead Designer / Developer"
-                        />
+                        <label for="designationInput" class="form-label">Designation</label>
+                        <input type="text" class="form-control" id="designationInput" placeholder="Designation"
+                          value="Lead Designer / Developer" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-6">
                       <div class="mb-3">
-                        <label for="websiteInput1" class="form-label"
-                          >Website</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="websiteInput1"
-                          placeholder="www.example.com"
-                          value="www.velzon.com"
-                        />
+                        <label for="websiteInput1" class="form-label">Website</label>
+                        <input type="text" class="form-control" id="websiteInput1" placeholder="www.example.com"
+                          value="www.velzon.com" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-4">
                       <div class="mb-3">
                         <label for="cityInput" class="form-label">City</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="cityInput"
-                          placeholder="City"
-                          value="California"
-                        />
+                        <input type="text" class="form-control" id="cityInput" placeholder="City" value="California" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-4">
                       <div class="mb-3">
-                        <label for="countryInput" class="form-label"
-                          >Country</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="countryInput"
-                          placeholder="Country"
-                          value="United States"
-                        />
+                        <label for="countryInput" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="countryInput" placeholder="Country"
+                          value="United States" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-4">
                       <div class="mb-3">
-                        <label for="zipcodeInput" class="form-label"
-                          >Zip Code</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          minlength="5"
-                          maxlength="6"
-                          id="zipcodeInput"
-                          placeholder="Enter zipcode"
-                          value="90011"
-                        />
+                        <label for="zipcodeInput" class="form-label">Zip Code</label>
+                        <input type="text" class="form-control" minlength="5" maxlength="6" id="zipcodeInput"
+                          placeholder="Enter zipcode" value="90011" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-12">
                       <div class="mb-3 pb-2">
-                        <label
-                          for="exampleFormControlTextarea"
-                          class="form-label"
-                          >Description</label
-                        >
-                        <textarea
-                          class="form-control"
-                          id="exampleFormControlTextarea"
-                          placeholder="Enter your description"
-                          rows="3"
-                        >
-Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is European languages are members of the same family.</textarea
-                        >
+                        <label for="exampleFormControlTextarea" class="form-label">Description</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea"
+                          placeholder="Enter your description" rows="3">
+Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is European languages are members of the same family.</textarea>
                       </div>
                     </div>
                     <!--end col-->
@@ -491,53 +312,32 @@ Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occide
                   <div class="row g-2">
                     <div class="col-lg-4">
                       <div>
-                        <label for="oldpasswordInput" class="form-label"
-                          >Old Password*</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="oldpasswordInput"
-                          placeholder="Enter current password"
-                        />
+                        <label for="oldpasswordInput" class="form-label">Old Password*</label>
+                        <input type="password" class="form-control" id="oldpasswordInput"
+                          placeholder="Enter current password" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-4">
                       <div>
-                        <label for="newpasswordInput" class="form-label"
-                          >New Password*</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="newpasswordInput"
-                          placeholder="Enter new password"
-                        />
+                        <label for="newpasswordInput" class="form-label">New Password*</label>
+                        <input type="password" class="form-control" id="newpasswordInput"
+                          placeholder="Enter new password" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-4">
                       <div>
-                        <label for="confirmpasswordInput" class="form-label"
-                          >Confirm Password*</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="confirmpasswordInput"
-                          placeholder="Confirm password"
-                        />
+                        <label for="confirmpasswordInput" class="form-label">Confirm Password*</label>
+                        <input type="password" class="form-control" id="confirmpasswordInput"
+                          placeholder="Confirm password" />
                       </div>
                     </div>
                     <!--end col-->
                     <div class="col-lg-12">
                       <div class="mb-3">
-                        <a
-                          href="javascript:void(0);"
-                          class="link-primary text-decoration-underline"
-                          >Forgot Password ?</a
-                        >
+                        <a href="javascript:void(0);" class="link-primary text-decoration-underline">Forgot Password
+                          ?</a>
                       </div>
                     </div>
                     <!--end col-->
@@ -554,17 +354,13 @@ Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occide
                 </form>
                 <div class="mt-4 mb-3 border-bottom pb-2">
                   <div class="float-end">
-                    <a href="javascript:void(0);" class="link-primary"
-                      >All Logout</a
-                    >
+                    <a href="javascript:void(0);" class="link-primary">All Logout</a>
                   </div>
                   <h5 class="card-title">Login History</h5>
                 </div>
                 <div class="d-flex align-items-center mb-3">
                   <div class="flex-shrink-0 avatar-sm">
-                    <div
-                      class="avatar-title bg-light text-primary rounded-3 fs-18 shadow"
-                    >
+                    <div class="avatar-title bg-light text-primary rounded-3 fs-18 shadow">
                       <em class="ri-smartphone-line"></em>
                     </div>
                   </div>
@@ -580,9 +376,7 @@ Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occide
                 </div>
                 <div class="d-flex align-items-center mb-3">
                   <div class="flex-shrink-0 avatar-sm">
-                    <div
-                      class="avatar-title bg-light text-primary rounded-3 fs-18 shadow"
-                    >
+                    <div class="avatar-title bg-light text-primary rounded-3 fs-18 shadow">
                       <em class="ri-tablet-line"></em>
                     </div>
                   </div>
@@ -598,9 +392,7 @@ Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occide
                 </div>
                 <div class="d-flex align-items-center mb-3">
                   <div class="flex-shrink-0 avatar-sm">
-                    <div
-                      class="avatar-title bg-light text-primary rounded-3 fs-18 shadow"
-                    >
+                    <div class="avatar-title bg-light text-primary rounded-3 fs-18 shadow">
                       <em class="ri-smartphone-line"></em>
                     </div>
                   </div>
@@ -616,9 +408,7 @@ Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occide
                 </div>
                 <div class="d-flex align-items-center">
                   <div class="flex-shrink-0 avatar-sm">
-                    <div
-                      class="avatar-title bg-light text-primary rounded-3 fs-18 shadow"
-                    >
+                    <div class="avatar-title bg-light text-primary rounded-3 fs-18 shadow">
                       <em class="ri-macbook-line"></em>
                     </div>
                   </div>
@@ -641,48 +431,27 @@ Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occide
                       <div class="row">
                         <div class="col-lg-12">
                           <div class="mb-3">
-                            <label for="jobTitle" class="form-label"
-                              >Job Title</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="jobTitle"
-                              placeholder="Job title"
-                              value="Lead Designer / Developer"
-                            />
+                            <label for="jobTitle" class="form-label">Job Title</label>
+                            <input type="text" class="form-control" id="jobTitle" placeholder="Job title"
+                              value="Lead Designer / Developer" />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="companyName" class="form-label"
-                              >Company Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="companyName"
-                              placeholder="Company name"
-                              value="MedicFollow"
-                            />
+                            <label for="companyName" class="form-label">Company Name</label>
+                            <input type="text" class="form-control" id="companyName" placeholder="Company name"
+                              value="MedicFollow" />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="experienceYear" class="form-label"
-                              >Experience Years</label
-                            >
+                            <label for="experienceYear" class="form-label">Experience Years</label>
                             <div class="row">
                               <div class="col-lg-5">
-                                <Multiselect
-                                  class="form-control"
-                                  v-model="value2"
-                                  :close-on-select="true"
-                                  :searchable="true"
-                                  :create-option="true"
-                                  :options="[
+                                <Multiselect class="form-control" v-model="value2" :close-on-select="true"
+                                  :searchable="true" :create-option="true" :options="[
                                     { value: '', label: 'Select years' },
                                     { value: 'Choice 1', label: '2001' },
                                     { value: 'Choice 2', label: '2002' },
@@ -706,20 +475,14 @@ Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occide
                                     { value: 'Choice 20', label: '2020' },
                                     { value: 'Choice 21', label: '2021' },
                                     { value: 'Choice 22', label: '2022' }
-                                  ]"
-                                />
+                                  ]" />
                               </div>
                               <!--end col-->
                               <div class="col-auto align-self-center">to</div>
                               <!--end col-->
                               <div class="col-lg-5">
-                                <Multiselect
-                                  class="form-control"
-                                  v-model="value1"
-                                  :close-on-select="true"
-                                  :searchable="true"
-                                  :create-option="true"
-                                  :options="[
+                                <Multiselect class="form-control" v-model="value1" :close-on-select="true"
+                                  :searchable="true" :create-option="true" :options="[
                                     { value: '', label: 'Select years' },
                                     { value: 'Choice 1', label: '2001' },
                                     { value: 'Choice 2', label: '2002' },
@@ -743,8 +506,7 @@ Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occide
                                     { value: 'Choice 20', label: '2020' },
                                     { value: 'Choice 21', label: '2021' },
                                     { value: 'Choice 22', label: '2022' }
-                                  ]"
-                                />
+                                  ]" />
                               </div>
                               <!--end col-->
                             </div>
@@ -754,24 +516,14 @@ Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occide
                         <!--end col-->
                         <div class="col-lg-12">
                           <div class="mb-3">
-                            <label for="jobDescription" class="form-label"
-                              >Job Description</label
-                            >
-                            <textarea
-                              class="form-control"
-                              id="jobDescription"
-                              rows="3"
-                              placeholder="Enter description"
-                            >
-You always want to make sure that your fonts work well together and try to limit the number of fonts you use to three or less. Experiment and play around with the fonts that you already have in the software you're working with reputable font websites. </textarea
-                            >
+                            <label for="jobDescription" class="form-label">Job Description</label>
+                            <textarea class="form-control" id="jobDescription" rows="3" placeholder="Enter description">
+You always want to make sure that your fonts work well together and try to limit the number of fonts you use to three or less. Experiment and play around with the fonts that you already have in the software you're working with reputable font websites. </textarea>
                           </div>
                         </div>
                         <!--end col-->
                         <div class="hstack gap-2 justify-content-end">
-                          <a class="btn btn-success" href="javascript:void(0);"
-                            >Delete</a
-                          >
+                          <a class="btn btn-success" href="javascript:void(0);">Delete</a>
                         </div>
                       </div>
                       <!--end row-->
@@ -783,9 +535,7 @@ You always want to make sure that your fonts work well together and try to limit
                       <button type="button" class="btn btn-success">
                         Update
                       </button>
-                      <a href="javascript:void(0);" class="btn btn-primary"
-                        >Add New</a
-                      >
+                      <a href="javascript:void(0);" class="btn btn-primary">Add New</a>
                     </div>
                   </div>
                   <!--end col-->
@@ -808,11 +558,7 @@ You always want to make sure that your fonts work well together and try to limit
                       </p>
                     </div>
                     <div class="flex-shrink-0 ms-sm-3">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-primary"
-                        >Enable Two-facor Authentication</a
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-primary">Enable Two-facor Authentication</a>
                     </div>
                   </div>
                   <div class="d-flex flex-column flex-sm-row mb-4 mb-sm-0 mt-2">
@@ -825,11 +571,7 @@ You always want to make sure that your fonts work well together and try to limit
                       </p>
                     </div>
                     <div class="flex-shrink-0 ms-sm-3">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-primary"
-                        >Set up secondary method</a
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-primary">Set up secondary method</a>
                     </div>
                   </div>
                   <div class="d-flex flex-column flex-sm-row mb-4 mb-sm-0 mt-2">
@@ -843,11 +585,7 @@ You always want to make sure that your fonts work well together and try to limit
                       </p>
                     </div>
                     <div class="flex-shrink-0 ms-sm-3">
-                      <a
-                        href="javascript:void(0);"
-                        class="btn btn-sm btn-primary"
-                        >Generate backup codes</a
-                      >
+                      <a href="javascript:void(0);" class="btn btn-sm btn-primary">Generate backup codes</a>
                     </div>
                   </div>
                 </div>
@@ -858,33 +596,20 @@ You always want to make sure that your fonts work well together and try to limit
                   <ul class="list-unstyled mb-0">
                     <li class="d-flex">
                       <div class="flex-grow-1">
-                        <label
-                          for="directMessage"
-                          class="form-check-label fs-14"
-                          >Direct messages</label
-                        >
+                        <label for="directMessage" class="form-check-label fs-14">Direct messages</label>
                         <p class="text-muted">
                           Messages from people you follow
                         </p>
                       </div>
                       <div class="flex-shrink-0">
                         <div class="form-check form-switch">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            role="switch"
-                            id="directMessage"
-                            checked
-                          />
+                          <input class="form-check-input" type="checkbox" role="switch" id="directMessage" checked />
                         </div>
                       </div>
                     </li>
                     <li class="d-flex mt-2">
                       <div class="flex-grow-1">
-                        <label
-                          class="form-check-label fs-14"
-                          for="desktopNotification"
-                        >
+                        <label class="form-check-label fs-14" for="desktopNotification">
                           Show desktop notifications
                         </label>
                         <p class="text-muted">
@@ -895,22 +620,14 @@ You always want to make sure that your fonts work well together and try to limit
                       </div>
                       <div class="flex-shrink-0">
                         <div class="form-check form-switch">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            role="switch"
-                            id="desktopNotification"
-                            checked
-                          />
+                          <input class="form-check-input" type="checkbox" role="switch" id="desktopNotification"
+                            checked />
                         </div>
                       </div>
                     </li>
                     <li class="d-flex mt-2">
                       <div class="flex-grow-1">
-                        <label
-                          class="form-check-label fs-14"
-                          for="emailNotification"
-                        >
+                        <label class="form-check-label fs-14" for="emailNotification">
                           Show email notifications
                         </label>
                         <p class="text-muted">
@@ -921,21 +638,13 @@ You always want to make sure that your fonts work well together and try to limit
                       </div>
                       <div class="flex-shrink-0">
                         <div class="form-check form-switch">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            role="switch"
-                            id="emailNotification"
-                          />
+                          <input class="form-check-input" type="checkbox" role="switch" id="emailNotification" />
                         </div>
                       </div>
                     </li>
                     <li class="d-flex mt-2">
                       <div class="flex-grow-1">
-                        <label
-                          class="form-check-label fs-14"
-                          for="chatNotification"
-                        >
+                        <label class="form-check-label fs-14" for="chatNotification">
                           Show chat notifications
                         </label>
                         <p class="text-muted">
@@ -946,21 +655,13 @@ You always want to make sure that your fonts work well together and try to limit
                       </div>
                       <div class="flex-shrink-0">
                         <div class="form-check form-switch">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            role="switch"
-                            id="chatNotification"
-                          />
+                          <input class="form-check-input" type="checkbox" role="switch" id="chatNotification" />
                         </div>
                       </div>
                     </li>
                     <li class="d-flex mt-2">
                       <div class="flex-grow-1">
-                        <label
-                          class="form-check-label fs-14"
-                          for="purchaesNotification"
-                        >
+                        <label class="form-check-label fs-14" for="purchaesNotification">
                           Show purchase notifications
                         </label>
                         <p class="text-muted">
@@ -970,12 +671,7 @@ You always want to make sure that your fonts work well together and try to limit
                       </div>
                       <div class="flex-shrink-0">
                         <div class="form-check form-switch">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            role="switch"
-                            id="purchaesNotification"
-                          />
+                          <input class="form-check-input" type="checkbox" role="switch" id="purchaesNotification" />
                         </div>
                       </div>
                     </li>
@@ -991,22 +687,12 @@ You always want to make sure that your fonts work well together and try to limit
                     Account. Follow the instructions to delete your account :
                   </p>
                   <div>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="passwordInput"
-                      placeholder="Enter your password"
-                      value="make@321654987"
-                      style="max-width: 265px"
-                    />
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Enter your password"
+                      value="make@321654987" style="max-width: 265px" />
                   </div>
                   <div class="hstack gap-2 mt-3">
-                    <a href="javascript:void(0);" class="btn btn-soft-danger"
-                      >Close & Delete This Account</a
-                    >
-                    <a href="javascript:void(0);" class="btn btn-light"
-                      >Cancel</a
-                    >
+                    <a href="javascript:void(0);" class="btn btn-soft-danger">Close & Delete This Account</a>
+                    <a href="javascript:void(0);" class="btn btn-light">Cancel</a>
                   </div>
                 </div>
               </div>

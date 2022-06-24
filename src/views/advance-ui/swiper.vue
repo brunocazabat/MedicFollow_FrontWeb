@@ -87,22 +87,16 @@ export default {
               <code>navigation-swiper</code> class to set a swiper with
               navigation and pagination.
             </p>
-            <swiper
-              class="navigation-swiper rounded"
-              :loop="true"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-              }"
-              :navigation="{
-                nextEl: '.swiper-button-next bg-white shadow',
-                prevEl: '.swiper-button-prev bg-white shadow',
-              }"
-              :pagination="{
-                clickable: true,
-                el: '.swiper-pagination',
-              }"
-            >
+            <swiper class="navigation-swiper rounded" :loop="true" :autoplay="{
+              delay: 2500,
+              disableOnInteraction: false,
+            }" :navigation="{
+  nextEl: '.swiper-button-next bg-white shadow',
+  prevEl: '.swiper-button-prev bg-white shadow',
+}" :pagination="{
+  clickable: true,
+  el: '.swiper-pagination',
+}">
               <swiper-slide>
                 <img src="@/assets/images/small/img-4.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -139,19 +133,14 @@ export default {
 
             <!-- Swiper -->
 
-            <swiper
-              class="pagination-dynamic-swiper rounded"
-              :loop="true"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-              }"
-              :pagination="{
-                clickable: true,
-                el: '.swiper-pagination',
-                dynamicBullets: true,
-              }"
-            >
+            <swiper class="pagination-dynamic-swiper rounded" :loop="true" :autoplay="{
+              delay: 2500,
+              disableOnInteraction: false,
+            }" :pagination="{
+  clickable: true,
+  el: '.swiper-pagination',
+  dynamicBullets: true,
+}">
               <swiper-slide>
                 <img src="@/assets/images/small/img-7.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -184,23 +173,17 @@ export default {
 
             <!-- Swiper -->
 
-            <swiper
-              class="pagination-fraction-swiper"
-              :loop="true"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-              }"
-              :pagination="{
-                clickable: true,
-                el: '.swiper-pagination',
-                type: 'fraction',
-              }"
-              :navigation="{
-                nextEl: '.swiper-button-next bg-white shadow',
-                prevEl: '.swiper-button-prev bg-white shadow',
-              }"
-            >
+            <swiper class="pagination-fraction-swiper" :loop="true" :autoplay="{
+              delay: 2500,
+              disableOnInteraction: false,
+            }" :pagination="{
+  clickable: true,
+  el: '.swiper-pagination',
+  type: 'fraction',
+}" :navigation="{
+  nextEl: '.swiper-button-next bg-white shadow',
+  prevEl: '.swiper-button-prev bg-white shadow',
+}">
               <swiper-slide>
                 <img src="@/assets/images/small/img-10.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -234,21 +217,16 @@ export default {
             </p>
 
             <!-- Swiper -->
-            <swiper
-              class="pagination-custom-swiper rounded"
-              :loop="true"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-              }"
-              :pagination="{
-                clickable: true,
-                el: '.swiper-pagination',
-                renderBullet: function (index, className) {
-                  return '<span class=' + className + '>' + (index + 1) + '</span>';
-                },
-              }"
-            >
+            <swiper class="pagination-custom-swiper rounded" :loop="true" :autoplay="{
+              delay: 2500,
+              disableOnInteraction: false,
+            }" :pagination="{
+  clickable: true,
+  el: '.swiper-pagination',
+  renderBullet: function (index, className) {
+    return '<span class=' + className + '>' + (index + 1) + '</span>';
+  },
+}">
               <swiper-slide>
                 <img src="@/assets/images/small/img-2.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -280,23 +258,17 @@ export default {
             </p>
 
             <!-- Swiper -->
-            <swiper
-              class="pagination-progress-swiper rounded"
-              :loop="true"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-              }"
-              :pagination="{
-                clickable: true,
-                el: '.swiper-pagination',
-                type: 'fraction',
-              }"
-              :navigation="{
-                nextEl: '.swiper-button-next bg-white shadow',
-                prevEl: '.swiper-button-prev bg-white shadow',
-              }"
-            >
+            <swiper class="pagination-progress-swiper rounded" :loop="true" :autoplay="{
+              delay: 2500,
+              disableOnInteraction: false,
+            }" :pagination="{
+  clickable: true,
+  el: '.swiper-pagination',
+  type: 'fraction',
+}" :navigation="{
+  nextEl: '.swiper-button-next bg-white shadow',
+  prevEl: '.swiper-button-prev bg-white shadow',
+}">
               <swiper-slide>
                 <img src="@/assets/images/small/img-5.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -330,22 +302,16 @@ export default {
             </p>
 
             <!-- Swiper -->
-            <swiper
-              class="pagination-scrollbar-swiper rounded"
-              :loop="true"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-              }"
-              :scrollbar="{
-                el: '.swiper-scrollbar',
-                hide: true,
-              }"
-              :navigation="{
-                nextEl: '.swiper-button-next bg-white shadow',
-                prevEl: '.swiper-button-prev bg-white shadow',
-              }"
-            >
+            <swiper class="pagination-scrollbar-swiper rounded" :loop="true" :autoplay="{
+              delay: 2500,
+              disableOnInteraction: false,
+            }" :scrollbar="{
+  el: '.swiper-scrollbar',
+  hide: true,
+}" :navigation="{
+  nextEl: '.swiper-button-next bg-white shadow',
+  prevEl: '.swiper-button-prev bg-white shadow',
+}">
               <swiper-slide>
                 <img src="@/assets/images/small/img-8.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -379,20 +345,13 @@ export default {
             </p>
 
             <!-- Swiper -->
-            <swiper
-              class="vertical-swiper rounded"
-              :loop="true"
-              :direction="'vertical'"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-              }"
-              :pagination="{
-                el: '.swiper-pagination',
-                clickable: true,
-              }"
-              style="height: 324px"
-            >
+            <swiper class="vertical-swiper rounded" :loop="true" :direction="'vertical'" :autoplay="{
+              delay: 2500,
+              disableOnInteraction: false,
+            }" :pagination="{
+  el: '.swiper-pagination',
+  clickable: true,
+}" style="height: 324px">
               <swiper-slide>
                 <img src="@/assets/images/small/img-11.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -425,21 +384,14 @@ export default {
             </p>
 
             <!-- Swiper -->
-            <swiper
-              class="mousewheel-control-swiper rounded"
-              :loop="true"
-              :direction="'vertical'"
-              :mousewheel="true"
+            <swiper class="mousewheel-control-swiper rounded" :loop="true" :direction="'vertical'" :mousewheel="true"
               :autoplay="{
                 delay: 2500,
                 disableOnInteraction: false,
-              }"
-              :pagination="{
-                el: '.swiper-pagination',
-                clickable: true,
-              }"
-              style="height: 324px"
-            >
+              }" :pagination="{
+  el: '.swiper-pagination',
+  clickable: true,
+}" style="height: 324px">
               <swiper-slide>
                 <img src="@/assets/images/small/img-3.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -472,19 +424,13 @@ export default {
             </p>
 
             <!-- Swiper -->
-            <swiper
-              class="effect-fade-swiper rounded"
-              :loop="true"
-              :effect="'fade'"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-              }"
-              :pagination="{
-                el: '.swiper-pagination',
-                clickable: true,
-              }"
-            >
+            <swiper class="effect-fade-swiper rounded" :loop="true" :effect="'fade'" :autoplay="{
+              delay: 2500,
+              disableOnInteraction: false,
+            }" :pagination="{
+  el: '.swiper-pagination',
+  clickable: true,
+}">
               <swiper-slide>
                 <img src="@/assets/images/small/img-6.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -516,29 +462,22 @@ export default {
             </p>
 
             <!-- Swiper -->
-            <swiper
-              class="effect-creative-swiper rounded"
-              :loop="true"
-              :effect="'creative'"
-              :creativeEffect="{
-                prev: {
-                  shadow: true,
-                  translate: [0, 0, -400],
-                },
-                next: {
-                  translate: ['100%', 0, 0],
-                },
-              }"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-              }"
-              :pagination="{
-                el: '.swiper-pagination',
-                clickable: true,
-                dynamicBullets: true,
-              }"
-            >
+            <swiper class="effect-creative-swiper rounded" :loop="true" :effect="'creative'" :creativeEffect="{
+              prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+              },
+              next: {
+                translate: ['100%', 0, 0],
+              },
+            }" :autoplay="{
+  delay: 2500,
+  disableOnInteraction: false,
+}" :pagination="{
+  el: '.swiper-pagination',
+  clickable: true,
+  dynamicBullets: true,
+}">
               <swiper-slide>
                 <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -570,20 +509,13 @@ export default {
             </p>
 
             <!-- Swiper -->
-            <swiper
-              class="effect-flip-swiper rounded"
-              :loop="true"
-              :effect="'flip'"
-              :grabCursor="true"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-              }"
-              :pagination="{
-                el: '.swiper-pagination',
-                clickable: true,
-              }"
-            >
+            <swiper class="effect-flip-swiper rounded" :loop="true" :effect="'flip'" :grabCursor="true" :autoplay="{
+              delay: 2500,
+              disableOnInteraction: false,
+            }" :pagination="{
+  el: '.swiper-pagination',
+  clickable: true,
+}">
               <swiper-slide>
                 <img src="@/assets/images/small/img-12.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -615,30 +547,21 @@ export default {
             </p>
 
             <!-- Swiper -->
-            <swiper
-              class="effect-coverflow-swiper rounded pb-5"
-              :loop="true"
-              :effect="'coverflow'"
-              :grabCursor="true"
-              :centeredSlides="true"
-              :slidesPerView="4"
-              :coverflowEffect="{
+            <swiper class="effect-coverflow-swiper rounded pb-5" :loop="true" :effect="'coverflow'" :grabCursor="true"
+              :centeredSlides="true" :slidesPerView="4" :coverflowEffect="{
                 rotate: 50,
                 stretch: 0,
                 depth: 100,
                 modifier: 1,
                 slideShadows: true,
-              }"
-              :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-              }"
-              :pagination="{
-                el: '.swiper-pagination',
-                clickable: true,
-                dynamicBullets: true,
-              }"
-            >
+              }" :autoplay="{
+  delay: 2500,
+  disableOnInteraction: false,
+}" :pagination="{
+  el: '.swiper-pagination',
+  clickable: true,
+  dynamicBullets: true,
+}">
               <swiper-slide>
                 <img src="@/assets/images/small/img-4.jpg" alt class="img-fluid" />
               </swiper-slide>
@@ -680,39 +603,29 @@ export default {
             </p>
 
             <!-- Swiper -->
-            <swiper
-              class="swiper responsive-swiper rounded gallery-light pb-4"
-              :loop="true"
-              :slidesPerView="1"
-              :spaceBetween="10"
-              :pagination="{
+            <swiper class="swiper responsive-swiper rounded gallery-light pb-4" :loop="true" :slidesPerView="1"
+              :spaceBetween="10" :pagination="{
                 el: '.swiper-pagination',
                 clickable: true,
-              }"
-              :breakpoints="{
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 40,
-                },
-                1200: {
-                  slidesPerView: 4,
-                  spaceBetween: 50,
-                },
-              }"
-            >
+              }" :breakpoints="{
+  640: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+  },
+  768: {
+    slidesPerView: 3,
+    spaceBetween: 40,
+  },
+  1200: {
+    slidesPerView: 4,
+    spaceBetween: 50,
+  },
+}">
               <swiper-slide>
                 <div class="gallery-box card">
                   <div class="gallery-container">
                     <a class="image-popup" href="assets/images/small/img-1.jpg" title>
-                      <img
-                        class="gallery-img img-fluid mx-auto"
-                        src="@/assets/images/small/img-1.jpg"
-                        alt
-                      />
+                      <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-1.jpg" alt />
                       <div class="gallery-overlay">
                         <h5 class="overlay-caption">Glasses and laptop from above</h5>
                       </div>
@@ -726,17 +639,13 @@ export default {
                       </div>
                       <div class="flex-shrink-0">
                         <div class="d-flex gap-3">
-                          <button
-                            type="button"
-                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
-                          >
+                          <button type="button"
+                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0">
                             <em class="ri-thumb-up-fill text-muted align-bottom me-1"></em>
                             2.2K
                           </button>
-                          <button
-                            type="button"
-                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
-                          >
+                          <button type="button"
+                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0">
                             <em class="ri-question-answer-fill text-muted align-bottom me-1"></em>
                             1.3K
                           </button>
@@ -750,11 +659,7 @@ export default {
                 <div class="gallery-box card">
                   <div class="gallery-container">
                     <a class="image-popup" href="assets/images/small/img-2.jpg" title>
-                      <img
-                        class="gallery-img img-fluid mx-auto"
-                        src="@/assets/images/small/img-2.jpg"
-                        alt
-                      />
+                      <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-2.jpg" alt />
                       <div class="gallery-overlay">
                         <h5 class="overlay-caption">Working at a coffee shop</h5>
                       </div>
@@ -768,17 +673,13 @@ export default {
                       </div>
                       <div class="flex-shrink-0">
                         <div class="d-flex gap-3">
-                          <button
-                            type="button"
-                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
-                          >
+                          <button type="button"
+                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0">
                             <em class="ri-thumb-up-fill text-muted align-bottom me-1"></em>
                             3.2K
                           </button>
-                          <button
-                            type="button"
-                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
-                          >
+                          <button type="button"
+                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0">
                             <em class="ri-question-answer-fill text-muted align-bottom me-1"></em>
                             1.1K
                           </button>
@@ -792,11 +693,7 @@ export default {
                 <div class="gallery-box card mb-0">
                   <div class="gallery-container">
                     <a class="image-popup" href="assets/images/small/img-10.jpg" title>
-                      <img
-                        class="gallery-img img-fluid mx-auto"
-                        src="@/assets/images/small/img-10.jpg"
-                        alt
-                      />
+                      <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-10.jpg" alt />
                       <div class="gallery-overlay">
                         <h5 class="overlay-caption">Fun day at the Hill Station</h5>
                       </div>
@@ -810,17 +707,13 @@ export default {
                       </div>
                       <div class="flex-shrink-0">
                         <div class="d-flex gap-3">
-                          <button
-                            type="button"
-                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
-                          >
+                          <button type="button"
+                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0">
                             <em class="ri-thumb-up-fill text-muted align-bottom me-1"></em>
                             632
                           </button>
-                          <button
-                            type="button"
-                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
-                          >
+                          <button type="button"
+                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0">
                             <em class="ri-question-answer-fill text-muted align-bottom me-1"></em>
                             95
                           </button>
@@ -834,11 +727,7 @@ export default {
                 <div class="gallery-box card">
                   <div class="gallery-container">
                     <a class="image-popup" href="assets/images/small/img-4.jpg" title>
-                      <img
-                        class="gallery-img img-fluid mx-auto"
-                        src="@/assets/images/small/img-4.jpg"
-                        alt
-                      />
+                      <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-4.jpg" alt />
                       <div class="gallery-overlay">
                         <h5 class="overlay-caption">Drawing a sketch</h5>
                       </div>
@@ -852,17 +741,13 @@ export default {
                       </div>
                       <div class="flex-shrink-0">
                         <div class="d-flex gap-3">
-                          <button
-                            type="button"
-                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
-                          >
+                          <button type="button"
+                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0">
                             <em class="ri-thumb-up-fill text-muted align-bottom me-1"></em>
                             825
                           </button>
-                          <button
-                            type="button"
-                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
-                          >
+                          <button type="button"
+                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0">
                             <em class="ri-question-answer-fill text-muted align-bottom me-1"></em>
                             101
                           </button>
@@ -876,11 +761,7 @@ export default {
                 <div class="gallery-box card">
                   <div class="gallery-container">
                     <a class="image-popup" href="assets/images/small/img-6.jpg" title>
-                      <img
-                        class="gallery-img img-fluid mx-auto"
-                        src="@/assets/images/small/img-6.jpg"
-                        alt
-                      />
+                      <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-6.jpg" alt />
                       <div class="gallery-overlay">
                         <h5 class="overlay-caption">Project discussion with team</h5>
                       </div>
@@ -894,17 +775,13 @@ export default {
                       </div>
                       <div class="flex-shrink-0">
                         <div class="d-flex gap-3">
-                          <button
-                            type="button"
-                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
-                          >
+                          <button type="button"
+                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0">
                             <em class="ri-thumb-up-fill text-muted align-bottom me-1"></em>
                             3.4K
                           </button>
-                          <button
-                            type="button"
-                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0"
-                          >
+                          <button type="button"
+                            class="btn btn-sm fs-12 btn-link text-body text-decoration-none shadow-none px-0">
                             <em class="ri-question-answer-fill text-muted align-bottom me-1"></em>
                             1.3k
                           </button>
