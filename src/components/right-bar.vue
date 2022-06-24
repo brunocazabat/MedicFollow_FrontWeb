@@ -6,6 +6,8 @@ import { layoutMethods, layoutComputed } from "@/state/helpers";
  * Right sidebar component
  */
 export default {
+  components: {
+  },
   data() {
     return {
       config: {
@@ -290,5 +292,13 @@ export default {
 
 <template>
   <div>
+    <div class="customizer-setting d-none d-md-block">
+      <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas"
+        data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas" id="mdi-cog">
+        <router-link to="/pages/profile-setting">
+          <em class="mdi mdi-spin mdi-cog-outline fs-22" style="color: white;"></em>
+        </router-link>
+      </div>
+    </div>
   </div>
 </template>
