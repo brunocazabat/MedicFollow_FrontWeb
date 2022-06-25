@@ -172,5 +172,18 @@
   "t-suggest": "Vorschlag",
   "t-report": "Fehlerbericht",
   "t-terms": "Nutzungsbedingungen",
-  "t-others": "Andere"
+  "t-others": "Andere",
+  "t-upcomingsch": "Kommende Termine",
+  "t-event": "Veranstaltung",
+  "t-lstchat": "Letzter Chat",
+  "t-reply": "Antwort",
+  "t-seeconv": "Siehe in Konversation",
+  "t-sampleconv1": "Wann ist mein nächster Termin?",
+  "t-sampleconv2": "Ihr nächster Termin ist für den 7. Juli 2022 geplant.",
+  "t-sampleconv3": "Kann ich meine Oma im Krankenhaus besuchen?",
+  "t-sampleconv4": "Ein Besuch ist jetzt für Sie und Frau Golem am Samstag, den 2. Juli geplant.",
+  "t-sampleconv5": "Können wir über MedicFollow Policies sprechen?",
+  "t-sampleconv6": "Sicher! Sie können unsere Richtlinien in der CGU Sektion einsehen !",
+  "t-viewmsg": "Alle Nachrichten anzeigen",
+  "t-viewcal": "Alle Ereignisse anzeigen"
 }
