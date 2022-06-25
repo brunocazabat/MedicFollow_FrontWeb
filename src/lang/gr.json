@@ -185,5 +185,13 @@
   "t-sampleconv5": "Können wir über MedicFollow Policies sprechen?",
   "t-sampleconv6": "Sicher! Sie können unsere Richtlinien in der CGU Sektion einsehen !",
   "t-viewmsg": "Alle Nachrichten anzeigen",
-  "t-viewcal": "Alle Ereignisse anzeigen"
+  "t-viewcal": "Alle Ereignisse anzeigen",
+  "t-curtime": "Aktuelle Zeit",
+  "t-nextappoint": "Nächster Termin",
+  "t-lastinfo": "Letzte Patienteninformationen",
+  "t-covidwarn": "Covid-Warnung",
+  "t-situation": "Nichts zu signalisieren.",
+  "t-care": "Treffen Sie Ihre Vorsichtsmaßnahmen",
+  "t-footer": "Design & Entwicklung von MedicFollow",
+  "t-appointtype": "Terminart"
 }
