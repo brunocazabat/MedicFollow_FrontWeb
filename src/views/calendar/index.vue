@@ -16,7 +16,6 @@ import { required, helpers } from '@vuelidate/validators'
 import useVuelidate from '@vuelidate/core'
 
 import Layout from '../../layouts/main.vue'
-import PageHeader from '@/components/page-header'
 import appConfig from '../../../app.config'
 
 import { INITIAL_EVENTS, categories } from './utils'
@@ -104,7 +103,6 @@ export default {
   },
   components: {
     Layout,
-    PageHeader,
     FullCalendar,
     SimpleBar,
     CalendarIcon
@@ -276,8 +274,6 @@ export default {
 
 <template>
   <Layout>
-    <PageHeader :title="title" :items="items" />
-
     <div class="row">
       <div class="col-12">
         <div class="row">
@@ -318,7 +314,7 @@ export default {
                       <div class="flex-grow-1">
                         <em :class="`mdi mdi-checkbox-blank-circle me-2 ${event.classNames[0]} `"></em><span
                           class="fw-medium">{{
-                          this.formatDate(event.start)
+                              this.formatDate(event.start)
                           }}</span>
                       </div>
                       <div class="flex-shrink-0">
@@ -372,7 +368,7 @@ export default {
                 :class="{ 'is-invalid': submitted && v$.event.title.$error }" />
               <div v-if="submitted && v$.event.title.$error" class="invalid-feedback">
                 <span v-if="v$.event.title.required.$message">{{
-                v$.event.title.required.$message
+                    v$.event.title.required.$message
                 }}</span>
               </div>
             </div>
@@ -389,7 +385,7 @@ export default {
 
               <div v-if="submitted && v$.event.category.$error" class="invalid-feedback">
                 <span v-if="v$.event.category.required.$message">{{
-                v$.event.category.required.$message
+                    v$.event.category.required.$message
                 }}</span>
               </div>
             </div>
