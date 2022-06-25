@@ -59,7 +59,7 @@ export default [
       title: "Dashboard",
       authRequired: mode,
     },
-    component: () => import("../views/dashboard/projects/index"),
+    component: () => import("../views/dashboard/index"),
   },
   {
     path: "/logout",

@@ -172,5 +172,18 @@
   "t-suggest": "Suggestion",
   "t-report": "Signalement de Bug",
   "t-terms": "Conditions d'Utilisation",
-  "t-others": "Autres"
+  "t-others": "Autres",
+  "t-upcomingsch": "Horaires à venir",
+  "t-event": "Evénement",
+  "t-lstchat": "Dernière conversation",
+  "t-reply": "Répondre",
+  "t-seeconv": "Voir en conversation",
+  "t-sampleconv1": "Quand est mon prochain rendez-vous ?",
+  "t-sampleconv2": "Votre prochain rendez-vous est prévu le 7 juillet 2022.",
+  "t-sampleconv3": "Puis-je venir voir ma grand-mère à l'hôpital ?",
+  "t-sampleconv4": "Une visite est désormais prévue pour vous et Mme Golem le samedi 2 juillet.",
+  "t-sampleconv5": "Pouvons-nous discuter des politiques MedicFollow ?",
+  "t-sampleconv6": "Bien sûr ! Vous pouvez accéder à nos politiques dans la section CGU !",
+  "t-viewmsg": "Afficher tous les messages",
+  "t-viewcal": "Afficher tous les événements"
 }

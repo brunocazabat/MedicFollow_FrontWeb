@@ -172,5 +172,18 @@
   "t-suggest": "Suggestion",
   "t-report": "Bug Report",
   "t-terms": "Terms of use",
-  "t-others": "Others"
+  "t-others": "Others",
+  "t-upcomingsch": "Upcoming Schedules",
+  "t-event": "Event",
+  "t-lstchat": "Last Chat",
+  "t-reply": "Reply",
+  "t-seeconv": "See in conversation",
+  "t-sampleconv1": "When is my next appointment ?",
+  "t-sampleconv2": "Your next appointment is planned on the 7 of July, 2022.",
+  "t-sampleconv3": "Can I come and see my grandma in the hospital ?",
+  "t-sampleconv4": "A visit is now planned for you and Ms. Golem on the Saturday 2 of July.",
+  "t-sampleconv5": "Can we discuss about MedicFollow Policies ?",
+  "t-sampleconv6": "Sure ! You can access our policies in the CGU section !",
+  "t-viewmsg": "View all Messages",
+  "t-viewcal": "View all Events"
 }

@@ -1,16 +1,11 @@
 <script>
-import Layout from "../../../layouts/main.vue";
+import Layout from "../../layouts/main.vue";
 import PageHeader from "@/components/page-header";
-import appConfig from "../../../../app.config";
+import appConfig from "../../../app.config";
 
 import Widgets from "./widget.vue";
 import Schedules from "./schedule.vue";
-import Project from "./projects.vue";
-import Task from "./tasks.vue";
-import Member from "./members.vue";
 import Chat from "./chat.vue";
-import Status from "./status.vue";
-import ActiveProjects from "./active-projects.vue";
 
 export default {
   page: {
@@ -22,11 +17,10 @@ export default {
       title: "Projects",
       items: [
         {
-          text: "Dashboards",
-          href: "/",
+          text: "Connected as",
         },
         {
-          text: "Projects",
+          text: "Dev",
           active: true,
         },
       ],
@@ -37,12 +31,7 @@ export default {
     PageHeader,
     Widgets,
     Schedules,
-    Project,
-    Task,
-    Member,
-    Chat,
-    ActiveProjects,
-    Status
+    Chat
   },
 }
 </script>
@@ -58,15 +47,14 @@ export default {
           <Widgets />
 
           <div class="col-xl-4">
-
           </div>
-          <div class="col-xl-4">
 
+          <div class="col-xl-4">
           </div>
         </div>
         <div class="row">
           <div class="col-xl-12">
-            <Project />
+            <Chat />
           </div>
         </div>
       </div>
@@ -75,27 +63,5 @@ export default {
         <Schedules />
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-xl-7">
-        <ActiveProjects />
-      </div>
-      <div class="col-xl-5">
-        <Task />
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xxl-4">
-        <Member />
-      </div>
-      <div class="col-xxl-4 col-lg-6">
-        <Chat />
-      </div>
-      <div class="col-xxl-4 col-lg-6">
-        <Status />
-      </div>
-    </div>
-
   </Layout>
 </template>
