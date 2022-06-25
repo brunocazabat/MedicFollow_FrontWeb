@@ -1,6 +1,5 @@
 <script>
 import "flatpickr/dist/flatpickr.css";
-import Multiselect from "@vueform/multiselect";
 import "@vueform/multiselect/themes/default.css";
 
 import Layout from "../../layouts/main.vue";
@@ -44,8 +43,7 @@ export default {
   },
   components: {
     Layout,
-    PageHeader,
-    Multiselect
+    PageHeader
   },
   mounted() {
     const checkbox = document.getElementsByClassName("code-switcher");
@@ -97,21 +95,40 @@ export default {
                 </div>
 
                 <!-- Feedback category multiselect -->
-                <div class="col-md-4">
-                  <label for="inputState" class="form-label">Category</label>
 
-                  <Multiselect v-model="value2" :close-on-select="true" :searchable="true" :create-option="true"
-                    :options="[
-                      { value: 'login', label: 'Login Page' },
-                      { value: 'dashboard', label: 'Home Page' },
-                      { value: 'calendar', label: 'Calendar Page' },
-                      { value: 'chat', label: 'Chat Page' },
-                      { value: 'settings', label: 'Settings Page' },
-                      { value: 'feedback', label: 'Feedback Page' },
-                      { value: 'bug', label: 'Bug Report Page' },
-                      { value: 'locked', label: 'Locked Page' },
-                      { value: 'tou', label: 'Terms Of Use Page' },
-                    ]" required="true" />
+                <!-- <div class="col-xxl-3 col-md-6">
+                  <label for="categoryDataList" class="form-label">Category</label>
+                  <input class="form-control" list="datalistOptions" id="categoryDataList"
+                    placeholder="Select a category...">
+                  <datalist id="datalistOptions">
+                    <option value="Login Page" />
+                    <option value="Home Page" />
+                    <option value="Calendar Page" />
+                    <option value="Chat Page" />
+                    <option value="Settings Page" />
+                    <option value="Feedback Page" />
+                    <option value="Bug Report Page" />
+                    <option value="Locked Login Page" />
+                    <option value="Terms of Use" />
+                  </datalist>
+                </div> -->
+
+                <div class="col-md-4">
+
+                  <div class="col-auto">
+                    <label for="chooseCategorSelect" class="form-label">Category</label>
+                    <select class="form-select" id="chooseCategorSelect" required>
+                      <option selected value="login">Login Page</option>
+                      <option value="dashboard">Home Page</option>
+                      <option value="calendar">Calendar Page</option>
+                      <option value="chat">Chat Page</option>
+                      <option value="settings">Settings Page</option>
+                      <option value="feedback">Feedback Page</option>
+                      <option value="bug">Bug Report Page</option>
+                      <option value="locked">Locked Login Page</option>
+                      <option value="tou">Terms of Use</option>
+                    </select>
+                  </div>
                 </div>
 
                 <!-- Anonymous text -->
