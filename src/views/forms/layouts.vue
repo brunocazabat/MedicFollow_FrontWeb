@@ -75,173 +75,9 @@ export default {
   <Layout>
     <PageHeader :title="title" :items="items" />
     <div class="row">
-      <div class="col-xxl-6">
-        <div class="card">
-          <div class="card-header align-items-center d-flex">
-            <h4 class="card-title mb-0 flex-grow-1">Form Grid</h4>
-            <div class="flex-shrink-0">
-              <div class="form-check form-switch form-switch-right form-switch-md">
-                <label for="form-grid-showcode" class="form-label text-muted">Show Code</label>
-                <input class="form-check-input code-switcher" type="checkbox" id="form-grid-showcode" />
-              </div>
-            </div>
-          </div>
-          <!-- end card header -->
 
-          <div class="card-body">
-            <p class="text-muted">
-              More complex forms can be built using our grid classes. Use these
-              for form layouts that require multiple columns, varied widths, and
-              additional alignment options.
-              <span class="fw-medium">Requires the <code>$enable-grid-classes</code> Sass variable to
-                be enabled</span>
-              (on by default).
-            </p>
-            <div class="live-preview">
-              <form action="javascript:void(0);">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="firstNameinput" class="form-label">First Name</label>
-                      <input type="text" class="form-control" placeholder="Enter your firstname" id="firstNameinput" />
-                    </div>
-                  </div>
-                  <!--end col-->
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="lastNameinput" class="form-label">Last Name</label>
-                      <input type="text" class="form-control" placeholder="Enter your lastname" id="lastNameinput" />
-                    </div>
-                  </div>
-                  <!--end col-->
-                  <div class="col-md-12">
-                    <div class="mb-3">
-                      <label for="compnayNameinput" class="form-label">Company Name</label>
-                      <input type="text" class="form-control" placeholder="Enter company name" id="compnayNameinput" />
-                    </div>
-                  </div>
-                  <!--end col-->
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="phonenumberInput" class="form-label">Phone Number</label>
-                      <input type="tel" class="form-control" placeholder="+(245) 451 45123" id="phonenumberInput" />
-                    </div>
-                  </div>
-                  <!--end col-->
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="emailidInput" class="form-label">Email Address</label>
-                      <input type="email" class="form-control" placeholder="example@gamil.com" id="emailidInput" />
-                    </div>
-                  </div>
-                  <!--end col-->
-                  <div class="col-md-12">
-                    <div class="mb-3">
-                      <label for="address1ControlTextarea" class="form-label">Address</label>
-                      <input type="text" class="form-control" placeholder="Address 1" id="address1ControlTextarea" />
-                    </div>
-                  </div>
-                  <!--end col-->
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="citynameInput" class="form-label">City</label>
-                      <input type="email" class="form-control" placeholder="Enter your city" id="citynameInput" />
-                    </div>
-                  </div>
-                  <!--end col-->
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="ForminputState" class="form-label">State</label>
 
-                      <Multiselect v-model="value" :close-on-select="true" :searchable="true" :create-option="true"
-                        :options="[
-                          { value: 'choose', label: 'Choose...' },
-                          { value: '...', label: '...' },
-                        ]" />
-                    </div>
-                  </div>
-                  <!--end col-->
-                  <div class="col-lg-12">
-                    <div class="text-end">
-                      <button type="submit" class="btn btn-primary">
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                  <!--end col-->
-                </div>
-                <!--end row-->
-              </form>
-            </div>
-            <div class="d-none code-view">
-              <pre class="language-markup" style="height: 375px">
-<code>&lt;form action=&quot;javascript:void(0);&quot;&gt;
-&lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;col-6&quot;&gt;
-&lt;div class=&quot;mb-3&quot;&gt;
-&lt;label for=&quot;firstNameinput&quot; class=&quot;form-label&quot;&gt;First Name&lt;/label&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your firstname&quot; id=&quot;firstNameinput&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;!--end col--&gt;
-&lt;div class=&quot;col-6&quot;&gt;
-&lt;div class=&quot;mb-3&quot;&gt;
-&lt;label for=&quot;lastNameinput&quot; class=&quot;form-label&quot;&gt;Last Name&lt;/label&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your lastname&quot; id=&quot;lastNameinput&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;!--end col--&gt;
-&lt;div class=&quot;col-12&quot;&gt;
-&lt;div class=&quot;mb-3&quot;&gt;
-&lt;label for=&quot;compnayNameinput&quot; class=&quot;form-label&quot;&gt;Company Name&lt;/label&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Enter company name&quot; id=&quot;compnayNameinput&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;!--end col--&gt;
-&lt;div class=&quot;col-6&quot;&gt;
-&lt;div class=&quot;mb-3&quot;&gt;
-&lt;label for=&quot;phonenumberInput&quot; class=&quot;form-label&quot;&gt;Phone Number&lt;/label&gt;
-&lt;input type=&quot;tel&quot; class=&quot;form-control&quot; placeholder=&quot;+(245) 451 45123&quot; id=&quot;phonenumberInput&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;!--end col--&gt;
-&lt;div class=&quot;col-6&quot;&gt;
-&lt;div class=&quot;mb-3&quot;&gt;
-&lt;label for=&quot;emailidInput&quot; class=&quot;form-label&quot;&gt;Email Address&lt;/label&gt;
-&lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;example@gamil.com&quot; id=&quot;emailidInput&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;!--end col--&gt;
-&lt;div class=&quot;col-12&quot;&gt;
-&lt;div class=&quot;mb-3&quot;&gt;
-&lt;label for=&quot;address1ControlTextarea&quot; class=&quot;form-label&quot;&gt;Address&lt;/label&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Address 1&quot; id=&quot;address1ControlTextarea&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;!--end col--&gt;
-&lt;div class=&quot;col-6&quot;&gt;
-&lt;div class=&quot;mb-3&quot;&gt;
-&lt;label for=&quot;citynameInput&quot; class=&quot;form-label&quot;&gt;City&lt;/label&gt;
-&lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your city&quot; id=&quot;citynameInput&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;!--end col--&gt;
-&lt;div class=&quot;col-6&quot;&gt;
-&lt;div class=&quot;mb-3&quot;&gt;
-&lt;label for=&quot;ForminputState&quot; class=&quot;form-label&quot;&gt;State&lt;/label&gt;
-&lt;select id=&quot;ForminputState&quot; class=&quot;form-select&quot;&gt;
-&lt;option selected&gt;Choose...&lt;/option&gt;
-&lt;option&gt;...&lt;/option&gt;
-&lt;/select&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;!--end col--&gt;
-&lt;div class=&quot;col-lg-12&quot;&gt;
-&lt;div class=&quot;text-end&quot;&gt;
-&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;!--end col--&gt;
-&lt;/div&gt;&lt;!--end row--&gt;
-&lt;/form&gt;</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end col -->
-
-      <div class="col-xxl-6">
+      <div class="col">
         <div class="card">
           <div class="card-header align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">Gutters</h4>
@@ -266,6 +102,11 @@ export default {
             </p>
             <div class="live-preview">
               <form action="javascript:void(0);" class="row g-3">
+                <div class="mb-3">
+                  <label for="VertimeassageInput" class="form-label">Message</label>
+                  <textarea class="form-control" id="VertimeassageInput" rows="3"
+                    placeholder="Enter your message"></textarea>
+                </div>
                 <div class="col-md-12">
                   <label for="fullnameInput" class="form-label">Name</label>
                   <input type="text" class="form-control" id="fullnameInput" placeholder="Enter your name" />
