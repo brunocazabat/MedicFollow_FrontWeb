@@ -36,7 +36,7 @@ export default {
         </div>
         <div class="flex-grow-1 ms-3">
           <h6 class="mb-1">Test Event 1</h6>
-          <p class="text-muted mb-0">Type de rdv</p>
+          <p class="text-muted mb-0" data-key="t-appointtype">{{ $t("t-appointtype") }}</p>
         </div>
         <div class="flex-shrink-0">
           <p class="text-muted mb-0">
@@ -53,7 +53,7 @@ export default {
         </div>
         <div class="flex-grow-1 ms-3">
           <h6 class="mb-1">Test Event 2</h6>
-          <p class="text-muted mb-0">Type de rdv</p>
+          <p class="text-muted mb-0" data-key="t-appointtype">{{ $t("t-appointtype") }}</p>
         </div>
         <div class="flex-shrink-0">
           <p class="text-muted mb-0">
@@ -70,7 +70,7 @@ export default {
         </div>
         <div class="flex-grow-1 ms-3">
           <h6 class="mb-1">Test Event 3</h6>
-          <p class="text-muted mb-0">Type de rdv</p>
+          <p class="text-muted mb-0" data-key="t-appointtype">{{ $t("t-appointtype") }}</p>
         </div>
         <div class="flex-shrink-0">
           <p class="text-muted mb-0">
@@ -87,7 +87,7 @@ export default {
         </div>
         <div class="flex-grow-1 ms-3">
           <h6 class="mb-1">Test Event 4</h6>
-          <p class="text-muted mb-0">Type de rdv</p>
+          <p class="text-muted mb-0" data-key="t-appointtype">{{ $t("t-appointtype") }}</p>
         </div>
         <div class="flex-shrink-0">
           <p class="text-muted mb-0">

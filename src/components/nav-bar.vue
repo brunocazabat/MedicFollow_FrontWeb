@@ -383,7 +383,7 @@ export default {
                 rounded-circle
                 shadow-none
               " data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img id="header-lang-img" src="@/assets/images/flags/us.svg" alt="Header Language" height="20"
+              <img id="header-lang-img" src="@/assets/images/flags/french.svg" alt="Header Language" height="20"
                 class="rounded" />
             </button>
             <div class="dropdown-menu dropdown-menu-end">
