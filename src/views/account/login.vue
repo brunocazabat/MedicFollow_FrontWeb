@@ -43,6 +43,7 @@ export default {
     },
     password: {
       required: helpers.withMessage("Password is required", required),
+
     },
   },
   computed: {
@@ -189,7 +190,7 @@ export default {
                         <input v-else type="password" v-model="password" class="form-control pe-5" :class="{
                           'is-invalid': submitted && v$.password.$error,
                         }" placeholder="Enter password" id="password-input" />
-                        <button @click.once="toggleShow" class="
+                        <button @click="toggleShow" class="
                             btn btn-link
                             position-absolute
                             end-0
@@ -213,7 +214,7 @@ export default {
 
                     <div class="mt-4">
                       <!------------------- MODIFY METHOD TO CALL IF NO BACKEND (ForceLogIn) OR IF BACKEND (tryToLogIn) ------------------->
-                      <button @click.once="DevLogMethod" class="btn btn-success w-100" type="submit">
+                      <button @click="DevLogMethod" class="btn btn-success w-100" type="submit">
                         Sign In
                       </button>
                     </div>

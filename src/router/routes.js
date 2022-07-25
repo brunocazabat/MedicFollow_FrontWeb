@@ -4,7 +4,6 @@ var mode = DevMode();
 
 function DevMode() {
   var id;
-  console.log(process.env.VUE_APP_DEFAULT_AUTH);
   if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
     id = false;
   } else {
