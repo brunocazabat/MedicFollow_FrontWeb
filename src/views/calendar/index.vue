@@ -280,7 +280,7 @@ export default {
           <div class="col-xl-3">
             <div class="card card-h-100">
               <div class="card-body">
-                <button class="btn btn-primary w-100" id="btn-new-event" @click.once="showModal = true">
+                <button class="btn btn-primary w-100" id="btn-new-event" @click="showModal = true">
                   <em class="mdi mdi-plus"></em> Create New Event
                 </button>
 
@@ -393,7 +393,7 @@ export default {
         </div>
 
         <div class="text-end pt-5 mt-3">
-          <b-button variant="light" @click.once="hideModal">Close</b-button>
+          <b-button variant="light" @click="hideModal">Close</b-button>
           <b-button type="submit" variant="success" class="ms-1">Create event</b-button>
         </div>
       </form>
@@ -422,9 +422,9 @@ export default {
           </div>
         </div>
         <div class="text-end p-3">
-          <b-button variant="light" @click.once="closeModal">Close</b-button>
-          <b-button class="ms-1" variant="danger" @click.once="confirm">Delete</b-button>
-          <b-button class="ms-1" variant="success" @click.once="editSubmit">Save</b-button>
+          <b-button variant="light" @click="closeModal">Close</b-button>
+          <b-button class="ms-1" variant="danger" @click="confirm">Delete</b-button>
+          <b-button class="ms-1" variant="success" @click="editSubmit">Save</b-button>
         </div>
       </form>
     </b-modal>
