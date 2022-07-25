@@ -186,7 +186,7 @@ export default {}
             <div class="mt-4 text-center">
               <p class="mb-0">
                 Not you ? return
-                <router-link to="/auth/signin-basic" class="fw-semibold text-primary text-decoration-underline">
+                <router-link to="/login" class="fw-semibold text-primary text-decoration-underline">
                   Signin
                 </router-link>
               </p>
