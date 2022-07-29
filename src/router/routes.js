@@ -4,7 +4,6 @@ var mode = DevMode();
 
 function DevMode() {
   var id;
-  console.log(process.env.VUE_APP_DEFAULT_AUTH);
   if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
     id = false;
   } else {
@@ -99,43 +98,43 @@ export default [
     component: () => import("../views/apps/mailbox"),
   },
   {
-    path: "/form/layouts",
-    name: "Form Layouts",
-    meta: { title: "Form Layouts", authRequired: mode },
-    component: () => import("../views/forms/layouts"),
+    path: "/suggestions",
+    name: "suggestions",
+    meta: { title: "Suggestions", authRequired: mode },
+    component: () => import("../views/forms/suggest"),
   },
   {
-    path: "/form/validation",
-    name: "Form Validation",
-    meta: { title: "Form Validation", authRequired: mode },
-    component: () => import("../views/forms/validation"),
+    path: "/bug-report",
+    name: "bugreport",
+    meta: { title: "Bug Report", authRequired: mode },
+    component: () => import("../views/forms/bugreport"),
   },
   {
-    path: "/pages/profile-setting",
+    path: "/settings",
     name: "profile-setting",
-    meta: { title: "Setting", authRequired: mode },
+    meta: { title: "Settings", authRequired: mode },
     component: () => import("../views/pages/profile/setting"),
   },
   {
-    path: "/pages/maintenance",
+    path: "/maintenance",
     name: "maintenance",
     meta: { title: "Maintanance", authRequired: mode },
     component: () => import("../views/pages/maintenance"),
   },
   {
-    path: "/pages/coming-soon",
+    path: "/coming-soon",
     name: "coming-soon",
     meta: { title: "Comming Soon", authRequired: mode },
     component: () => import("../views/pages/coming-soon"),
   },
   {
-    path: "/pages/search-results",
+    path: "/search-results",
     name: "search-results",
     meta: { title: "Search Results", authRequired: mode },
     component: () => import("../views/pages/search-results"),
   },
   {
-    path: "/auth/lockscreen-basic",
+    path: "/lockscreen",
     name: "lock-screen-basic",
     meta: {
       title: "Lock Screen",
@@ -144,7 +143,7 @@ export default [
     component: () => import("../views/auth/lockscreen/basic"),
   },
   {
-    path: "/auth/twostep-basic",
+    path: "/twostep",
     name: "twostep-basic",
     meta: {
       title: "Two Step Auth",
@@ -153,7 +152,7 @@ export default [
     component: () => import("../views/auth/twostep/basic"),
   },
   {
-    path: "/auth/500",
+    path: "/500",
     name: "500",
     meta: {
       title: "Error 500",
@@ -162,7 +161,7 @@ export default [
     component: () => import("../views/auth/errors/500"),
   },
   {
-    path: "/auth/404-cover",
+    path: "/404",
     name: "404-cover",
     meta: {
       title: "Error 404",
@@ -171,7 +170,7 @@ export default [
     component: () => import("../views/auth/errors/404-cover"),
   },
   {
-    path: "/auth/offline",
+    path: "/offline",
     name: "oflfine",
     meta: {
       title: "Offline",

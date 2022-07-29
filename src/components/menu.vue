@@ -168,7 +168,7 @@ export default {
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link menu-link" to="/pages/profile-setting">
+          <router-link class="nav-link menu-link" to="/settings">
             <em class="mdi mdi-cog-outline"></em>
             <span style="padding: 7px" data-key="t-settings">{{ $t("t-settings") }}</span>
           </router-link>
@@ -183,12 +183,12 @@ export default {
           <div class="collapse menu-dropdown" id="sidebarApps">
             <ul class="nav nav-sm flex-column">
               <li class="nav-item">
-                <router-link to="/form/layouts" class="nav-link" data-key="t-suggest">
+                <router-link to="/suggestions" class="nav-link" data-key="t-suggest">
                   {{ $t("t-suggest") }}
                 </router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/form/validation" class="nav-link" data-key="t-report">
+                <router-link to="/bug-report" class="nav-link" data-key="t-report">
                   {{ $t("t-report") }}
                 </router-link>
               </li>
@@ -199,10 +199,11 @@ export default {
           <span data-key="t-others">{{ $t("t-others") }}</span>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link menu-link" to="/">
+          <a href="https://medicfollow.fr/fr/usage.html" target="_blank" class="nav-link menu-link"
+            rel="noreferrer noopener">
             <em class="ri-pages-line"></em>
             <span style="padding: 7px" data-key="t-terms">{{ $t("t-terms") }}</span>
-          </router-link>
+          </a>
         </li>
       </ul>
     </template>

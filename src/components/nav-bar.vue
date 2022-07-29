@@ -783,7 +783,7 @@ export default {
             <div class="dropdown-menu dropdown-menu-end">
               <!-- item-->
               <h6 class="dropdown-header">Welcome Bruno!</h6>
-              <router-link class="dropdown-item" to="/auth/lockscreen-basic"><em
+              <router-link class="dropdown-item" to="/lockscreen"><em
                   class="mdi mdi-lock text-muted fs-16 align-middle me-1"></em>
                 <span class="align-middle">Lock screen</span>
               </router-link>
