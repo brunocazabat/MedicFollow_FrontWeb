@@ -8,7 +8,7 @@ import appConfig from "../../../app.config";
 
 export default {
   page: {
-    title: "Validation",
+    title: "Bug Report",
     meta: [{ name: "description", content: appConfig.description }],
   },
   setup() {
@@ -33,14 +33,14 @@ export default {
   },
   data() {
     return {
-      title: "Forms Validation",
+      title: "Bug Report",
       items: [
         {
           text: "Forms",
           href: "/",
         },
         {
-          text: "Forms Validation",
+          text: "Bug Report",
           active: true,
         },
       ],
