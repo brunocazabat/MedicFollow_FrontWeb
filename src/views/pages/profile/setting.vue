@@ -337,20 +337,7 @@ export default {
                     Application Notifications:
                   </h5>
                   <ul class="list-unstyled mb-0">
-                    <li class="d-flex">
-                      <div class="flex-grow-1">
-                        <label for="directMessage" class="form-check-label fs-14">Direct messages</label>
-                        <p class="text-muted">
-                          Messages from people you follow
-                        </p>
-                      </div>
-                      <div class="flex-shrink-0">
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" type="checkbox" role="switch" id="directMessage" checked />
-                        </div>
-                      </div>
-                    </li>
-                    <li class="d-flex mt-2">
+                    <li class="d-flex mt-0">
                       <div class="flex-grow-1">
                         <label class="form-check-label fs-14" for="desktopNotification">
                           Show desktop notifications
