@@ -171,7 +171,7 @@ export default [
   },
   {
     path: "/offline",
-    name: "oflfine",
+    name: "offline",
     meta: {
       title: "Offline",
       authRequired: mode,
