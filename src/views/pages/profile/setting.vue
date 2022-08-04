@@ -110,7 +110,7 @@ export default {
                       <div class="mb-3">
                         <label for="firstnameInput" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="firstnameInput" placeholder="Enter your firstname"
-                          value="Anna" />
+                          value="Anna" required />
                       </div>
                     </div>
                     <!--end col-->
@@ -118,7 +118,7 @@ export default {
                       <div class="mb-3">
                         <label for="lastnameInput" class="form-label">Last Name</label>
                         <input type="text" class="form-control" id="lastnameInput" placeholder="Enter your lastname"
-                          value="Adame" />
+                          value="Adame" required />
                       </div>
                     </div>
                     <!--end col-->
@@ -126,7 +126,7 @@ export default {
                       <div class="mb-3">
                         <label for="phonenumberInput" class="form-label">Phone Number</label>
                         <input type="text" class="form-control" id="phonenumberInput"
-                          placeholder="Enter your phone number" value="+(1) 987 6543" />
+                          placeholder="Enter your phone number" value="+(1) 987 6543" required />
                       </div>
                     </div>
                     <!--end col-->
@@ -134,7 +134,7 @@ export default {
                       <div class="mb-3">
                         <label for="emailInput" class="form-label">Email Address</label>
                         <input type="email" class="form-control" id="emailInput" placeholder="Enter your email"
-                          value="daveadame@velzon.com" />
+                          value="daveadame@velzon.com" required />
                       </div>
                     </div>
                     <!--end col-->
@@ -149,8 +149,8 @@ export default {
                     <div class="col-lg-4">
                       <div class="mb-3">
                         <label for="countryInput" class="form-label">Country</label>
-                        <input type="text" class="form-control" id="countryInput" placeholder="Country"
-                          value="France" />
+                        <input type="text" class="form-control" id="countryInput" placeholder="Country" value="France"
+                          required />
                       </div>
                     </div>
                     <!--end col-->
@@ -165,7 +165,7 @@ export default {
                     <div class="col-lg-12">
                       <div class="hstack gap-2 justify-content-end">
                         <button type="submit" class="btn btn-primary">
-                          Updates
+                          Update
                         </button>
                         <button type="button" class="btn btn-soft-success">
                           Cancel
@@ -187,7 +187,7 @@ export default {
                       <div>
                         <label for="oldpasswordInput" class="form-label">Old Password*</label>
                         <input type="password" class="form-control" id="oldpasswordInput"
-                          placeholder="Enter current password" />
+                          placeholder="Enter current password" required />
                       </div>
                     </div>
                     <!--end col-->
@@ -195,7 +195,7 @@ export default {
                       <div>
                         <label for="newpasswordInput" class="form-label">New Password*</label>
                         <input type="password" class="form-control" id="newpasswordInput"
-                          placeholder="Enter new password" />
+                          placeholder="Enter new password" required />
                       </div>
                     </div>
                     <!--end col-->
@@ -203,7 +203,7 @@ export default {
                       <div>
                         <label for="confirmpasswordInput" class="form-label">Confirm Password*</label>
                         <input type="password" class="form-control" id="confirmpasswordInput"
-                          placeholder="Confirm password" />
+                          placeholder="Confirm password" required />
                       </div>
                     </div>
                     <!--end col-->
@@ -300,7 +300,7 @@ export default {
               <!-- PRIVACY SETTINGS -->
               <!--end tab-pane-->
               <div class="tab-pane" id="privacy" role="tabpanel">
-                <div class="mb-4 pb-2">
+                <!-- <div class="mb-4 pb-2">
                   <h5 class="card-title text-decoration-underline mb-3">
                     Security:
                   </h5>
@@ -331,7 +331,7 @@ export default {
                       <a href="javascript:void(0);" class="btn btn-sm btn-primary">Generate backup codes</a>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <div class="mb-3">
                   <h5 class="card-title text-decoration-underline mb-3">
                     Application Notifications:
@@ -399,6 +399,16 @@ export default {
                       </div>
                     </li>
                   </ul>
+                  <div class="col-lg-12">
+                    <div class="hstack gap-2 justify-content-end">
+                      <button type="submit" class="btn btn-primary">
+                        Update
+                      </button>
+                      <button type="button" class="btn btn-soft-success">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <div>
                   <h5 class="card-title text-decoration-underline mb-3">
