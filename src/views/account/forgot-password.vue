@@ -147,7 +147,7 @@ export default {
             <!-- end card -->
 
             <div class="mt-4 text-center">
-              <p class="mb-0" style="color: white;">
+              <p class="mb-0" style="color: black;">
                 Wait, I remember my password...
                 <router-link to="/login" class="fw-semibold text-primary text-decoration-underline">
                   Click here
