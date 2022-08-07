@@ -6,13 +6,7 @@ import appConfig from "../../app.config";
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  // Use the HTML5 history API (i.e. normal-looking routes)
-  // instead of routes with hashes (e.g. example.com/#/about).
-  // This may require some server configuration in production:
-  // https://router.vuejs.org/en/essentials/history-mode.html#example-server-configurations
   mode: "history",
-  // Simulate native-like scroll behavior when navigating to a new
-  // route and using back/forward buttons.
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
@@ -43,12 +37,6 @@ router.beforeEach(async (routeTo, routeFrom, next) => {
 });
 
 router.beforeResolve(async (routeTo, routeFrom, next) => {
-  // Create a `beforeResolve` hook, which fires whenever
-  // `beforeRouteEnter` and `beforeRouteUpdate` would. This
-  // allows us to ensure data is fetched even when params change,
-  // but the resolved route does not. We put it in `meta` to
-  // indicate that it's a hook we created, rather than part of
-  // Vue Router (yet?).
   try {
     // For each matched route...
     for (const route of routeTo.matched) {
