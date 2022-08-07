@@ -295,10 +295,32 @@ export default {
     <div class="customizer-setting d-none d-md-block">
       <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas"
         data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas" id="mdi-cog">
-        <router-link to="/pages/profile-setting">
-          <em class="mdi mdi-spin mdi-cog-outline fs-22" style="color: white;"></em>
+        <router-link to="/settings">
+          <em class="mdi mdi-cog-outline fs-22" style="color: white;"></em>
         </router-link>
       </div>
+      <vue-cookie-accept-decline :debug="false" :disableDecline="false" :showPostponeButton="false"
+        @clicked-accept="cookieClickedAccept" @clicked-decline="cookieClickedDecline"
+        @clicked-postpone="cookieClickedPostpone" @removed-cookie="cookieRemovedCookie" @status="cookieStatus"
+        elementId="myPanel1" position="bottom" ref="myPanel1" transitionName="slideFromBottom" type="floating">
+        <!-- Optional -->
+        <template #postponeContent>&times;</template>
+
+        <!-- Optional -->
+        <template #message data-key="t-cookies-content">
+          {{ $t("t-cookies-content") }}
+          <a href="https://www.medicfollow.fr/fr/usage.html" target="_blank" rel="noreferrer noopener"
+            data-key="t-cookies-infos">{{
+                $t("t-cookies-infos")
+            }}</a>
+        </template>
+
+        <!-- Optional -->
+        <template #declineContent data-key="t-cookies-decline">{{ $t("t-cookies-decline") }}</template>
+
+        <!-- Optional -->
+        <template #acceptContent data-key="t-cookies-accept">{{ $t("t-cookies-accept") }}</template>
+      </vue-cookie-accept-decline>
     </div>
   </div>
 </template>

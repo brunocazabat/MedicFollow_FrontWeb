@@ -193,5 +193,9 @@
   "t-situation": "Nichts zu signalisieren.",
   "t-care": "Treffen Sie Ihre Vorsichtsmaßnahmen",
   "t-footer": "Design & Entwicklung von MedicFollow",
-  "t-appointtype": "Terminart"
+  "t-appointtype": "Terminart",
+  "t-cookies-accept": "Akzeptieren",
+  "t-cookies-decline": "Ablehnen",
+  "t-cookies-infos": "Mehr über Cookies lesen",
+  "t-cookies-content": "Wir verwenden unsere eigenen Cookies und Cookies von Drittanbietern, um Inhalte zu personalisieren und den Webverkehr zu analysieren."
 }

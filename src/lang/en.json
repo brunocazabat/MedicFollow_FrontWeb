@@ -193,5 +193,9 @@
   "t-situation": "Nothing to signal.",
   "t-care": "Take your precautions",
   "t-footer": "Design & Develop by MedicFollow",
-  "t-appointtype": "Appointement Type"
+  "t-appointtype": "Appointement Type",
+  "t-cookies-accept": "Accept",
+  "t-cookies-decline": "Decline",
+  "t-cookies-infos": "Read more about cookies",
+  "t-cookies-content": "We use our own and third-party cookies to personalize content and to analyze web traffic."
 }

@@ -14,6 +14,9 @@ import Maska from "maska";
 import VueFeather from "vue-feather";
 import Particles from "particles.vue3";
 
+import VueCookieAcceptDecline from "vue-cookie-accept-decline";
+import "vue-cookie-accept-decline/dist/vue-cookie-accept-decline.css";
+
 import "@/assets/scss/config/material/app.scss";
 import "@vueform/slider/themes/default.css";
 
@@ -28,6 +31,7 @@ createApp(App)
   .use(VueApexCharts)
   .use(BootstrapVue3)
   .component(VueFeather.type, VueFeather)
+  .component("vue-cookie-accept-decline", VueCookieAcceptDecline)
   .use(Maska)
   .use(Particles)
   .use(i18n)

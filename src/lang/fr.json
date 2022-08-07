@@ -193,5 +193,9 @@
   "t-situation": "Rien à signaler.",
   "t-care": "Prenez vos précautions",
   "t-footer": "Conception et développement par MedicFollow",
-  "t-appointtype": "Type de rendez-vous"
+  "t-appointtype": "Type de rendez-vous",
+  "t-cookies-accept": "Accepter",
+  "t-cookies-decline": "Refuser",
+  "t-cookies-infos": "En savoir plus sur les cookies",
+  "t-cookies-content": "Nous utilisons nos propres cookies et ceux de tiers pour personnaliser le contenu et analyser le trafic Web."
 }
