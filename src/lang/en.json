@@ -193,5 +193,6 @@
   "t-situation": "Nothing to signal.",
   "t-care": "Take your precautions",
   "t-footer": "Design & Develop by MedicFollow",
-  "t-appointtype": "Appointement Type"
+  "t-appointtype": "Appointement Type",
+  "t-medicalinformation": "Medical Information"
 }

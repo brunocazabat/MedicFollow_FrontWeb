@@ -193,5 +193,6 @@
   "t-situation": "Rien à signaler.",
   "t-care": "Prenez vos précautions",
   "t-footer": "Conception et développement par MedicFollow",
-  "t-appointtype": "Type de rendez-vous"
+  "t-appointtype": "Type de rendez-vous",
+  "t-medicalinformation": "Informations Médicales"
 }

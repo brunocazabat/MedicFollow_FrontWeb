@@ -80,6 +80,12 @@ export default [
     component: () => import("../views/auth/logout/basic"),
   },
   {
+    path: "/medical-information",
+    name: "medical-information",
+    meta: { title: "medical-information", authRequired: mode },
+    component: () => import("../views/medical-information/index"),
+  },
+  {
     path: "/calendar",
     name: "calendar",
     meta: { title: "Calendar", authRequired: mode },

@@ -193,5 +193,6 @@
   "t-situation": "Nada que señalar.",
   "t-care": "Toma tus precauciones",
   "t-footer": "Diseño y desarrollo por MedicFollow",
-  "t-appointtype": "Tipo de cita"
+  "t-appointtype": "Tipo de cita",
+  "t-medicalinformation": "Información médica"
 }

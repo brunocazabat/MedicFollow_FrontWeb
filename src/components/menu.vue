@@ -156,6 +156,12 @@ export default {
           </router-link>
         </li>
         <li class="nav-item">
+          <router-link class="nav-link menu-link" to="/medical-information">
+            <em class="ri-layout-grid-line"></em>
+            <span style="padding: 7px" data-key="t-medicalinformation">{{ $t("t-medicalinformation") }}</span>
+          </router-link>
+        </li>
+        <li class="nav-item">
           <router-link class="nav-link menu-link" to="/calendar">
             <em class="ri-layout-grid-line"></em>
             <span style="padding: 7px" data-key="t-calendar">{{ $t("t-calendar") }}</span>

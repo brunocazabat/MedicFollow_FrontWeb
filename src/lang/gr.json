@@ -193,5 +193,6 @@
   "t-situation": "Nichts zu signalisieren.",
   "t-care": "Treffen Sie Ihre Vorsichtsmaßnahmen",
   "t-footer": "Design & Entwicklung von MedicFollow",
-  "t-appointtype": "Terminart"
+  "t-appointtype": "Terminart",
+  "t-medicalinformation": "Medizinische Information"
 }
