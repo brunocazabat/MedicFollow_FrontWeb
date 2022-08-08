@@ -3,12 +3,9 @@ import { mapState } from "vuex";
 import { required, email, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import appConfig from "../../../app.config";
+import axios from "axios";
 
-import {
-  authMethods,
-  authFackMethods,
-  notificationMethods,
-} from "@/state/helpers";
+import { authMethods, notificationMethods } from "@/state/helpers";
 
 export default {
   setup() {
@@ -25,10 +22,10 @@ export default {
   },
   data() {
     return {
-      email: "patient_test@test.com",
-      emailValid: "patient_test@test.com",
-      password: "Password13!",
-      passwordValid: "Password13!",
+      loginInput: {
+        email: "",
+        password: "",
+      },
       submitted: false,
       authError: null,
       tryingToLogIn: false,
@@ -37,13 +34,14 @@ export default {
     };
   },
   validations: {
-    email: {
-      required: helpers.withMessage("Email is required", required),
-      email: helpers.withMessage("Please enter valid email", email),
-    },
-    password: {
-      required: helpers.withMessage("Password is required", required),
-
+    loginInput: {
+      email: {
+        required: helpers.withMessage("Email is required", required),
+        email: helpers.withMessage("Please enter valid email", email),
+      },
+      password: {
+        required: helpers.withMessage("Password is required", required),
+      },
     },
   },
   computed: {
@@ -52,63 +50,54 @@ export default {
       return this.$store ? this.$store.state.notification : null;
     },
   },
+  mounted: function () {
+    if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
+      this.loginInput.password = "Password13!";
+      this.loginInput.email = "patient_test@test.com";
+    } else {
+      this.loginInput.password = "";
+      this.loginInput.email = "";
+    }
+  },
   methods: {
     ...authMethods,
-    ...authFackMethods,
     ...notificationMethods,
-    // Try to log the user in with the username
-    // and password they provided.
-    tryToLogIn() {
+    LogIn() {
       this.submitted = true;
-      // stop here if form is invalid
       this.v$.$touch();
-      if (
-        !this.v$.$invalid &&
-        this.email === this.emailValid &&
-        this.password === this.passwordValid
-      ) {
-        //        this.tryingToLogIn = true;
-        // Reset the authError if it existed.
+      if (!this.v$.$invalid) {
         this.authError = null;
-        return (
-          this.login(this.email, this.password)
-            // eslint-disable-next-line no-unused-vars
-            .then((_token) => {
-              this.ForceLogIn()
-            })
-            .catch((error) => {
+        return axios
+          .put("http://www.medicfollow.fr:8081/v1/users/", this.loginInput)
+          .then((response) => {
+            this.loginInput.password = "";
+            this.loginInput.email = "";
+
+            if (response.status === 200) {
+              this.isAuthError = false;
+              this.submitted = false;
               this.tryingToLogIn = false;
-              this.authError = error ? error : "";
-              this.isAuthError = true;
-            })
-        );
-      } else {
-        this.submitted = true;
-        // stop here if form is invalid
-        this.v$.$touch();
-        if (!this.v$.$invalid)
-          this.$router.push(
-            this.$route.query.redirectFrom || {
-              name: "default",
+              localStorage.setItem("uuid", response.data.userUuid);
+              localStorage.setItem("token", response.data.token);
+              this.$router.push(
+                this.$route.query.redirectFrom || {
+                  name: "default",
+                }
+              );
             }
-          );
-      }
-    },
-    ForceLogIn() {
-      //Use this function only in case you want to access home page without logging to backend
-      this.tryingToLogIn = false;
-      this.isAuthError = false;
-      this.$router.push(
-        this.$route.query.redirectFrom || {
-          name: "default",
-        }
-      );
-    },
-    DevLogMethod() {
-      if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
-        this.ForceLogIn();
-      } else {
-        this.tryToLogIn();
+          })
+          .catch((error) => {
+            this.loginInput.password = "";
+            this.loginInput.email = "";
+            this.isAuthError = true;
+            if (error.response.status === 462) {
+              this.authError = "Invalid username or password";
+            } else if (error.response.status === 463) {
+              this.authError = "User disabled";
+            } else {
+              this.authError = "An unknown error occurred";
+            }
+          });
       }
     },
     toggleShow() {
@@ -169,11 +158,11 @@ export default {
                   <form @submit.prevent="DevLogMethod">
                     <div class="mb-3">
                       <label for="email" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter email" v-model="email"
-                        :class="{
-                          'is-invalid': submitted && v$.email.$error,
+                      <input type="email" class="form-control" id="email" placeholder="Enter email"
+                        v-model="loginInput.email" :class="{
+                          'is-invalid': submitted && v$.loginInput.email.$error,
                         }" />
-                      <div v-for="(item, index) in v$.email.$errors" :key="index" class="invalid-feedback">
+                      <div v-for="(item, index) in v$.loginInput.email.$errors" :key="index" class="invalid-feedback">
                         <span v-if="item.$message">{{ item.$message }}</span>
                       </div>
                     </div>
@@ -184,24 +173,23 @@ export default {
                       </div>
                       <label class="form-label" for="password-input">Password</label>
                       <div class="position-relative auth-pass-inputgroup mb-3">
-                        <input v-if="showPassword" type="text" v-model="password" class="form-control pe-5" :class="{
-                          'is-invalid': submitted && v$.password.$error,
+                        <input v-if="showPassword" type="text" v-model="loginInput.password" class="form-control pe-5"
+                          :class="{
+                            'is-invalid':
+                              submitted && v$.loginInput.password.$error,
+                          }" placeholder="Enter password" id="password-input" />
+                        <input v-else type="password" v-model="loginInput.password" class="form-control pe-5" :class="{
+                          'is-invalid':
+                            submitted && v$.loginInput.password.$error,
                         }" placeholder="Enter password" id="password-input" />
-                        <input v-else type="password" v-model="password" class="form-control pe-5" :class="{
-                          'is-invalid': submitted && v$.password.$error,
-                        }" placeholder="Enter password" id="password-input" />
-                        <button @click="toggleShow" class="
-                            btn btn-link
-                            position-absolute
-                            end-0
-                            top-0
-                            text-decoration-none text-muted
-                          " type="button" id="password-addon">
+                        <button @click="toggleShow"
+                          class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
+                          type="button" id="password-addon">
                           <em class="ri-eye-fill align-middle"></em>
                         </button>
-                        <div v-if="submitted && v$.password.$error" class="invalid-feedback">
-                          <span v-if="v$.password.required.$message">{{
-                              v$.password.required.$message
+                        <div v-if="submitted && v$.loginInput.password.$error" class="invalid-feedback">
+                          <span v-if="v$.loginInput.password.required.$message">{{
+                              v$.loginInput.password.required.$message
                           }}</span>
                         </div>
                       </div>
@@ -214,7 +202,7 @@ export default {
 
                     <div class="mt-4">
                       <!------------------- MODIFY METHOD TO CALL IF NO BACKEND (ForceLogIn) OR IF BACKEND (tryToLogIn) ------------------->
-                      <button @click="DevLogMethod" class="btn btn-success w-100" type="submit">
+                      <button @click="LogIn" class="btn btn-success w-100" type="submit">
                         Sign In
                       </button>
                     </div>
@@ -224,11 +212,7 @@ export default {
                         <h5 class="fs-13 mb-4 title">Sign In with</h5>
                       </div>
                       <div>
-                        <button type="button" class="
-                            btn btn-danger btn-icon
-                            waves-effect waves-light
-                            ms-1
-                          ">
+                        <button type="button" class="btn btn-danger btn-icon waves-effect waves-light ms-1">
                           <em class="ri-qr-code-fill fs-16"></em>
                         </button>
                       </div>
