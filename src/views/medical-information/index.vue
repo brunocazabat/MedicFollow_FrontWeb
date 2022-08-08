@@ -3,6 +3,9 @@ import Layout from "../../layouts/main.vue";
 import PageHeader from "@/components/page-header";
 import appConfig from "../../../app.config";
 
+import Widgets from "./widgets.vue";
+import CheckupText from "./checkup-text.vue"
+
 export default {
   page: {
     title: "Medical Information",
@@ -24,7 +27,9 @@ export default {
   },
   components: {
     Layout,
-    PageHeader
+    PageHeader,
+    Widgets,
+    CheckupText
   },
 }
 </script>
@@ -39,17 +44,12 @@ export default {
       <div class="col-xxl-8">
         <div class="row">
 
-          <!-- Widgets -->
+          <Widgets />
 
-          <div class="col-xl-4">
-          </div>
-
-          <div class="col-xl-4">
-          </div>
         </div>
         <div class="row">
           <div class="col-xl-12">
-            <!-- Chat -->
+            <CheckupText />
           </div>
         </div>
       </div>
