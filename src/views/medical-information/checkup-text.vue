@@ -69,7 +69,7 @@ export default {
                     <div class="flex-shrink-0 me-3">
                       <div class="avatar-sm">
                         <div class="avatar-title bg-light text-secondary rounded fs-24 shadow shadow">
-                          <em class="ri-folder-zip-line"></em>
+                          <em class="ri-file-line"></em>
                         </div>
                       </div>
                     </div>
@@ -94,7 +94,7 @@ export default {
                     <div class="flex-shrink-0 me-3">
                       <div class="avatar-sm">
                         <div class="avatar-title bg-light text-secondary rounded fs-24 shadow shadow">
-                          <em class="ri-file-ppt-2-line"></em>
+                          <em class="ri-file-line"></em>
                         </div>
                       </div>
                     </div>
