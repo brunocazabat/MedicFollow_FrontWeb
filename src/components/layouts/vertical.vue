@@ -3,10 +3,10 @@ import router from "@/router";
 import { SimpleBar } from "simplebar-vue3";
 import { layoutComputed } from "@/state/helpers";
 
-import NavBar from "@/components/nav-bar";
-import Menu from "@/components/menu.vue";
-import RightBar from "@/components/right-bar";
-import Footer from "@/components/footer";
+import NavBar from "@/components/frames/nav-bar";
+import Menu from "@/components/frames/menu.vue";
+import RightBar from "@/components/frames/right-bar";
+import Footer from "@/components/frames/footer";
 localStorage.setItem('hoverd', false);
 
 /**

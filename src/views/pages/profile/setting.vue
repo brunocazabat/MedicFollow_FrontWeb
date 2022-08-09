@@ -2,7 +2,7 @@
 import '@vueform/multiselect/themes/default.css'
 import 'flatpickr/dist/flatpickr.css'
 
-import Layout from '../../../layouts/main.vue'
+import Layout from '../../../components/layouts/main.vue'
 import appConfig from '../../../../app.config'
 
 export default {

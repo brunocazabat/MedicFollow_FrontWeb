@@ -6,8 +6,8 @@ import "@vueform/multiselect/themes/default.css";
 
 import DropZone from "@/components/widgets/dropZone";
 
-import Layout from "../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
+import Layout from "../../components/layouts/main.vue";
+import PageHeader from "@/components/frames/page-header";
 import appConfig from "../../../app.config";
 
 export default {

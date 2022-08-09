@@ -1,7 +1,7 @@
 <script>
 import { SimpleBar } from "simplebar-vue3";
 
-import i18n from "../i18n";
+import i18n from "../../i18n";
 
 /**
  * Nav-bar Component

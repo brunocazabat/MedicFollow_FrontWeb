@@ -1,9 +1,9 @@
 <script>
 import { ref, watch } from "vue";
 import useVuelidate from "@vuelidate/core";
-import Layout from "../../layouts/main.vue";
+import Layout from "../../components/layouts/main.vue";
 import DropZone from "@/components/widgets/dropZone";
-import PageHeader from "@/components/page-header";
+import PageHeader from "@/components/frames/page-header";
 import appConfig from "../../../app.config";
 
 export default {

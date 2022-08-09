@@ -6,7 +6,7 @@ import '@vueform/multiselect/themes/default.css'
 import CKEditor from '@ckeditor/ckeditor5-vue'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
-import Layout from '../../layouts/main.vue'
+import Layout from '../../components/layouts/main.vue'
 import appConfig from '../../../app.config'
 
 export default {
@@ -898,7 +898,7 @@ export default {
                       <em class="ri-star-fill"></em>
                     </button>
                     <a href="javascript: void(0);" class="title">{{
-                    data.name
+                        data.name
                     }}</a>
                   </div>
                   <div class="col-mail col-mail-2" @click.once="openemail">
@@ -923,7 +923,7 @@ export default {
                       <em class="ri-star-fill"></em>
                     </button>
                     <a href="javascript: void(0);" class="title">{{
-                    data.name
+                        data.name
                     }}</a>
                   </div>
                   <div class="col-mail col-mail-2" @click.once="openemail">

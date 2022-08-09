@@ -3,8 +3,8 @@ import { MoreHorizontalIcon } from '@zhuowenli/vue-feather-icons'
 import Multiselect from '@vueform/multiselect'
 import '@vueform/multiselect/themes/default.css'
 
-import Layout from '../../../layouts/main.vue'
-import PageHeader from '@/components/page-header'
+import Layout from '../../../components/layouts/main.vue'
+import PageHeader from '@/components/frames/page-header'
 import appConfig from '../../../../app.config'
 
 export default {
@@ -633,7 +633,7 @@ export default {
             <div class="py-3">
               <h5 class="fs-14 mb-3">
                 <router-link to="/apps/projects-overview" class="text-dark">{{
-                item.label
+                    item.label
                 }}</router-link>
               </h5>
               <div class="row gy-3">
