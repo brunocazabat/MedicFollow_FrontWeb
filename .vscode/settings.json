@@ -1,5 +1,5 @@
 {
-  "i18n-ally.localesPaths": ["src/lang"],
+  "i18n-ally.localesPaths": ["src/assets/lang"],
   "editor.formatOnSave": true,
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
