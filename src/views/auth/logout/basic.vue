@@ -1,5 +1,5 @@
 <script>
-import animationData from '@/components/widgets/hzomhqxz.json'
+import animationData from '@/assets/anim/animation1.json'
 import Lottie from '@/components/widgets/lottie.vue'
 
 export default {

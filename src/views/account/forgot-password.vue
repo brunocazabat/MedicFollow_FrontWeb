@@ -6,7 +6,7 @@ import { required, email, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import Lottie from "@/components/widgets/lottie.vue";
 
-import animationData from "@/components/widgets/rhvddzym.json";
+import animationData from "@/assets/anim/animation2.json";
 export default {
   components: { lottie: Lottie },
   setup() {
