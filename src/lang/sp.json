@@ -194,5 +194,13 @@
   "t-care": "Toma tus precauciones",
   "t-footer": "Diseño y desarrollo por MedicFollow",
   "t-appointtype": "Tipo de cita",
-  "t-medicalinformation": "Información médica"
+  "t-medicalinformation": "Información médica",
+  "t-lastcheckup": "Última visita médica",
+  "t-summary": "Resumen",
+  "t-visitdate": "Fecha de visita",
+  "t-visittime": "Tiempo de visita",
+  "t-status": "Estado",
+  "t-ressources": "Recursos",
+  "t-rename": "Rebautizar",
+  "t-delete": "Borrar"
 }

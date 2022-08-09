@@ -16,10 +16,10 @@ export default {
       title: "Medical Information",
       items: [
         {
-          text: "Connected as",
+          text: "Medical Information",
         },
         {
-          text: "Dev",
+          text: "Latest",
           active: true,
         },
       ],

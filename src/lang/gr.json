@@ -194,5 +194,13 @@
   "t-care": "Treffen Sie Ihre Vorsichtsmaßnahmen",
   "t-footer": "Design & Entwicklung von MedicFollow",
   "t-appointtype": "Terminart",
-  "t-medicalinformation": "Medizinische Information"
+  "t-medicalinformation": "Medizinische Information",
+  "t-lastcheckup": "Letzter Arztbesuch",
+  "t-summary": "Zusammenfassung",
+  "t-visitdate": "Besuchsdatum",
+  "t-visittime": "Besuchszeit",
+  "t-status": "Status",
+  "t-ressources": "Ressourcen",
+  "t-rename": "Umbenennen",
+  "t-delete": "Löschen"
 }

@@ -195,5 +195,12 @@
   "t-footer": "Conception et développement par MedicFollow",
   "t-appointtype": "Type de rendez-vous",
   "t-medicalinformation": "Informations Médicales",
-  "t-lastcheckup": "Latest Medical Visit"
+  "t-lastcheckup": "Dernière visite médicale",
+  "t-summary": "Résumé",
+  "t-visitdate": "Date de visite",
+  "t-visittime": "Heure de la visite",
+  "t-status": "Statut",
+  "t-ressources": "Ressources",
+  "t-rename": "Renommer",
+  "t-delete": "Supprimer"
 }
