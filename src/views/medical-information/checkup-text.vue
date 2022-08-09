@@ -10,8 +10,8 @@ export default {
       lastCheckupText: " ",
       checkupDate: " ",
       fillerText: ref([
-        { id: 0, text: "We decided to do a new scanner on the left knee.", visitDate: "7 August, 2022", visitHour: "15:32", status: "To be approved", fileName: "Knee_Scan_Approval.pdf", fileSize: "1.2MB" },
-        { id: 1, text: "The patient has pain in the left knee. The patient also has some fever. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam ut venenatis tellus. Viverra mauris in aliquam sem fringilla ut morbi tincidunt. In egestas erat imperdiet sed euismod. Tempus quam pellentesque nec nam aliquam sem et. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Sodales neque sodales ut etiam sit amet nisl purus in. Duis at tellus at urna condimentum. Ornare aenean euismod elementum nisi quis. Fermentum et sollicitudin ac orci phasellus. Integer malesuada nunc vel risus. Gravida neque convallis a cras semper auctor neque. Suspendisse potenti nullam ac tortor vitae purus faucibus. Eu consequat ac felis donec et odio pellentesque diam. Urna molestie at elementum eu facilisis. Nunc aliquet bibendum enim facilisis gravida. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Nibh cras pulvinar mattis nunc sed blandit.", visitDate: "7 August, 2022", visitHour: "10:17", status: "Approved", fileName: "Fever_Report.pdf", fileSize: "0.3MB" }
+        { id: 0, text: "We decided to do a new scanner on the left knee.", visitDate: "7 August, 2022", visitHour: "15:32", boolStatus: 1, status: "To be approved", fileName: "Knee_Scan_Approval.pdf", fileSize: "1.2MB" },
+        { id: 1, text: "The patient has pain in the left knee. The patient also has some fever. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam ut venenatis tellus. Viverra mauris in aliquam sem fringilla ut morbi tincidunt. In egestas erat imperdiet sed euismod. Tempus quam pellentesque nec nam aliquam sem et. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Sodales neque sodales ut etiam sit amet nisl purus in. Duis at tellus at urna condimentum. Ornare aenean euismod elementum nisi quis. Fermentum et sollicitudin ac orci phasellus. Integer malesuada nunc vel risus. Gravida neque convallis a cras semper auctor neque. Suspendisse potenti nullam ac tortor vitae purus faucibus. Eu consequat ac felis donec et odio pellentesque diam. Urna molestie at elementum eu facilisis. Nunc aliquet bibendum enim facilisis gravida. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Nibh cras pulvinar mattis nunc sed blandit.", visitDate: "7 August, 2022", visitHour: "10:17", boolStatus: 0, status: "Approved", fileName: "Fever_Report.pdf", fileSize: "0.3MB" }
       ])
     };
   },
@@ -54,9 +54,13 @@ export default {
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div>
+            <div v-if="checkupText.boolStatus === 1">
               <p class="mb-2 text-uppercase fw-medium" data-key="t-status">{{ $t("t-status") }}:</p>
               <div class="badge bg-warning fs-12">{{ checkupText.status }}</div>
+            </div>
+            <div v-else>
+              <p class="mb-2 text-uppercase fw-medium" data-key="t-status">{{ $t("t-status") }}:</p>
+              <div class="badge bg-success fs-12">{{ checkupText.status }}</div>
             </div>
           </div>
 
