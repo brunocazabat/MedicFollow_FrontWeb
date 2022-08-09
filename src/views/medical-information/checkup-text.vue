@@ -82,20 +82,6 @@ export default {
                       <div class="d-flex gap-1">
                         <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none shadow-none"><em
                             class="ri-download-2-line"></em></button>
-                        <div class="dropdown">
-                          <button class="btn btn-icon text-muted btn-sm fs-18 shadow-none dropdown shadow-none"
-                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <em class="ri-more-fill"></em>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" data-key="t-rename"><em
-                                  class="ri-pencil-fill align-bottom me-2 text-muted"></em> {{ $t("t-rename") }}</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#" data-key="t-delete"><em
-                                  class="ri-delete-bin-fill align-bottom me-2 text-muted"></em> {{ $t("t-delete") }}</a>
-                            </li>
-                          </ul>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -121,20 +107,6 @@ export default {
                       <div class="d-flex gap-1">
                         <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none shadow-none"><em
                             class="ri-download-2-line"></em></button>
-                        <div class="dropdown">
-                          <button class="btn btn-icon text-muted btn-sm fs-18 shadow-none dropdown shadow-none"
-                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <em class="ri-more-fill"></em>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" data-key="t-rename"><em
-                                  class="ri-pencil-fill align-bottom me-2 text-muted"></em> {{ $t("t-rename") }}</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#" data-key="t-delete"><em
-                                  class="ri-delete-bin-fill align-bottom me-2 text-muted"></em> {{ $t("t-delete") }}</a>
-                            </li>
-                          </ul>
-                        </div>
                       </div>
                     </div>
                   </div>
