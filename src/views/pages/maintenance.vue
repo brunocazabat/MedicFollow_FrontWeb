@@ -153,7 +153,7 @@ export default {};
               <div class="row justify-content-center mb-5">
                 <div class="col-xl-4 col-lg-8">
                   <div>
-                    <img src="@/assets/images/maintenance.png" alt="" class="img-fluid" />
+                    <img src="@/assets/images/errors/maintenance.png" alt="" class="img-fluid" />
                   </div>
                 </div>
               </div>

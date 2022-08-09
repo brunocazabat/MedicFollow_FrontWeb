@@ -387,7 +387,7 @@ export default {
                           <div class="swiper-slide">
                             <div class="d-flex align-items-center border border-dashed rounded p-2">
                               <div class="flex-shrink-0">
-                                <img src="@/assets/images/small/img-12.jpg" alt="" width="65" class="rounded" />
+                                <img src="@/assets/images/small/img-9.jpg" alt="" width="65" class="rounded" />
                               </div>
                               <div class="flex-grow-1 ms-2">
                                 <a href="javascript:void(0);" class="stretched-link fw-medium">Bootstrap</a>
@@ -399,7 +399,7 @@ export default {
                           <div class="swiper-slide">
                             <div class="d-flex align-items-center border border-dashed rounded p-2">
                               <div class="flex-shrink-0">
-                                <img src="@/assets/images/small/img-11.jpg" alt="" width="65" class="rounded" />
+                                <img src="@/assets/images/small/img-9.jpg" alt="" width="65" class="rounded" />
                               </div>
                               <div class="flex-grow-1 ms-2">
                                 <a href="javascript:void(0);" class="stretched-link fw-medium">Website</a>
@@ -411,7 +411,7 @@ export default {
                           <div class="swiper-slide">
                             <div class="d-flex align-items-center border border-dashed rounded p-2">
                               <div class="flex-shrink-0">
-                                <img src="@/assets/images/small/img-10.jpg" alt="" width="65" class="rounded" />
+                                <img src="@/assets/images/small/img-9.jpg" alt="" width="65" class="rounded" />
                               </div>
                               <div class="flex-grow-1 ms-2">
                                 <a href="javascript:void(0);" class="stretched-link fw-medium">Responsive</a>
@@ -831,8 +831,8 @@ export default {
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                       <div class="gallery-box card">
                         <div class="gallery-container">
-                          <a class="image-popup" href="assets/images/small/img-10.jpg" title="">
-                            <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-10.jpg" alt="" />
+                          <a class="image-popup" href="assets/images/small/img-9.jpg" title="">
+                            <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-9.jpg" alt="" />
                             <div class="gallery-overlay">
                               <h5 class="overlay-caption">
                                 Fun day at the Hill Station
@@ -868,8 +868,8 @@ export default {
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                       <div class="gallery-box card">
                         <div class="gallery-container">
-                          <a class="image-popup" href="assets/images/small/img-11.jpg" title="">
-                            <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-11.jpg" alt="" />
+                          <a class="image-popup" href="assets/images/small/img-9.jpg" title="">
+                            <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-9.jpg" alt="" />
                             <div class="gallery-overlay">
                               <h5 class="overlay-caption">
                                 Cycling in the countryside
@@ -905,8 +905,8 @@ export default {
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                       <div class="gallery-box card">
                         <div class="gallery-container">
-                          <a class="image-popup" href="assets/images/small/img-12.jpg" title="">
-                            <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-12.jpg" alt="" />
+                          <a class="image-popup" href="assets/images/small/img-9.jpg" title="">
+                            <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-9.jpg" alt="" />
                             <div class="gallery-overlay">
                               <h5 class="overlay-caption">
                                 A mix of friends and strangers heading off to

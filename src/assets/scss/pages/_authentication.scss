@@ -31,7 +31,7 @@
 }
 
 .auth-one-bg {
-    background-image: url("~@/assets/images/auth-one-bg.jpg");
+    background-image: url("~@/assets/images/covers/auth-one-bg.jpg");
     background-position: center;
     background-size: cover;
 
@@ -101,7 +101,7 @@
     background: linear-gradient(-45deg, $primary 50%, $success);
 
     > .bg-overlay {
-        background-image: url("~@/assets/images/cover-pattern.png");
+        background-image: url("~@/assets/images/covers/cover-pattern.png");
         background-position: center;
         background-size: cover;
         opacity: 1;
