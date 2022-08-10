@@ -4,7 +4,7 @@ import PageHeader from "@/components/page-header";
 import appConfig from "../../../app.config";
 
 import Widgets from "./widgets.vue";
-import CheckupText from "./checkup-text.vue"
+import CheckupText from "./checkup-text.vue";
 
 export default {
   page: {

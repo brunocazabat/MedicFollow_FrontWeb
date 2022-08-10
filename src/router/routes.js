@@ -80,6 +80,12 @@ export default [
     component: () => import("../views/auth/logout/basic"),
   },
   {
+    path: "/staff-input",
+    name: "staff-input",
+    meta: { title: "staff-input", authRequired: mode },
+    component: () => import("../views/staff-input/index"),
+  },
+  {
     path: "/medical-information",
     name: "medical-information",
     meta: { title: "medical-information", authRequired: mode },
