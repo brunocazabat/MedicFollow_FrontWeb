@@ -36,7 +36,7 @@ export default {
   validations: {
     loginInput: {
       email: {
-        required: helpers.withMessage("AN Email is required", required),
+        required: helpers.withMessage("An Email is required", required),
         email: helpers.withMessage("Please enter a valid email", email),
       },
       password: {
@@ -357,6 +357,7 @@ export default {
                           @click="toggleShow"
                           class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
                           type="button"
+                          style="box-shadow: none !important"
                           id="password-addon"
                         >
                           <em class="ri-eye-fill align-middle"></em>

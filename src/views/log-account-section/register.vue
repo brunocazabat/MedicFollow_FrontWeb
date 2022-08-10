@@ -2,6 +2,7 @@
 import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import { mapState } from "vuex";
+import Popper from "vue3-popper";
 
 import {
   authMethods,
@@ -24,7 +25,9 @@ export default {
       },
     ],
   },
-  components: {},
+  components: {
+    Popper,
+  },
   data() {
     return {
       user: {
@@ -38,6 +41,7 @@ export default {
       isRegisterError: false,
       registerSuccess: false,
       showPassword: false,
+      hover: false,
     };
   },
   validations: {
@@ -69,6 +73,12 @@ export default {
     },
     toggleShow() {
       this.showPassword = !this.showPassword;
+    },
+    mouseover: function () {
+      this.hover = true;
+    },
+    mouseleave: function () {
+      this.hover = false;
     },
   },
 };
@@ -329,10 +339,32 @@ export default {
 
                     <!-- Password Input row -->
                     <div class="mb-3">
-                      <div class="float-end">
-                        <router-link to="/forgot-password" class="text-muted"
-                          >Must contain:
-                        </router-link>
+                      <div
+                        class="float-end"
+                        v-on:mouseover="mouseover"
+                        v-on:mouseleave="mouseleave"
+                      >
+                        <Popper placement="top" :show="hover">
+                          <p class="text-muted">Password information</p>
+                          <template #content>
+                            <div>
+                              <p class="invalid fs-12 mb-2">
+                                - Minimum <strong>8 characters</strong>
+                              </p>
+                              <p class="invalid fs-12 mb-2">
+                                - At least 6 <strong>lowercase</strong> letter
+                                (a-z).
+                              </p>
+                              <p class="invalid fs-12 mb-2">
+                                At least 1 <strong>uppercase</strong> letter
+                                (A-Z).
+                              </p>
+                              <p class="invalid fs-12 mb-2">
+                                A least 1 <strong>number</strong> (0-9).
+                              </p>
+                            </div>
+                          </template>
+                        </Popper>
                       </div>
                       <label class="form-label" for="password-input"
                         >Password <span class="text-danger">*</span></label
@@ -366,6 +398,7 @@ export default {
                           @click="toggleShow"
                           class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
                           type="button"
+                          style="box-shadow: none !important"
                           id="password-addon"
                         >
                           <em class="ri-eye-fill align-middle"></em>
@@ -391,24 +424,6 @@ export default {
                           rel="noreferrer noopener"
                           >Terms of use
                         </a>
-                      </p>
-                    </div>
-                    <div
-                      id="password-contain"
-                      class="p-3 bg-light mb-2 rounded"
-                    >
-                      <h5 class="fs-13">Password must contain:</h5>
-                      <p id="pass-length" class="invalid fs-12 mb-2">
-                        Minimum <strong>8 characters</strong>
-                      </p>
-                      <p id="pass-lower" class="invalid fs-12 mb-2">
-                        At <strong>lowercase</strong> letter (a-z)
-                      </p>
-                      <p id="pass-upper" class="invalid fs-12 mb-2">
-                        At least <strong>uppercase</strong> letter (A-Z)
-                      </p>
-                      <p id="pass-number" class="invalid fs-12 mb-0">
-                        A least <strong>number</strong> (0-9)
                       </p>
                     </div>
 
@@ -461,3 +476,16 @@ export default {
   </div>
   <!-- end auth-page-wrapper -->
 </template>
+
+<style>
+:root {
+  --popper-theme-background-color: #333333;
+  --popper-theme-background-color-hover: #333333;
+  --popper-theme-text-color: #ffffff;
+  --popper-theme-border-width: 0px;
+  --popper-theme-border-style: solid;
+  --popper-theme-border-radius: 6px;
+  --popper-theme-padding: 16px;
+  --popper-theme-box-shadow: 0 6px 30px -6px rgba(0, 0, 0, 0.25);
+}
+</style>
