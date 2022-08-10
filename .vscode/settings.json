@@ -2,21 +2,27 @@
   "i18n-ally.localesPaths": ["src/assets/lang"],
   "editor.formatOnSave": true,
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    "files.insertFinalNewline": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
+    "files.insertFinalNewline": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
+    "files.insertFinalNewline": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "files.insertFinalNewline": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[scss]": {
+    "files.insertFinalNewline": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
+    "files.insertFinalNewline": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "i18n-ally.keystyle": "nested"
