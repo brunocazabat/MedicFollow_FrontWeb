@@ -1,7 +1,7 @@
 <script>
-import router from "@/router";
+import router from "@/components/router";
 import { SimpleBar } from "simplebar-vue3";
-import { layoutComputed } from "@/state/helpers";
+import { layoutComputed } from "@/components/state/helpers";
 
 import NavBar from "@/components/frames/nav-bar";
 import Menu from "@/components/frames/menu.vue";

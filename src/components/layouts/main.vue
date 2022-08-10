@@ -1,5 +1,5 @@
 <script>
-import { layoutComputed } from "@/state/helpers";
+import { layoutComputed } from "@/components/state/helpers";
 
 import Vertical from "./vertical";
 

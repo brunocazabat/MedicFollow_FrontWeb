@@ -1,7 +1,7 @@
 <script>
 import {
   layoutComputed
-} from "@/state/helpers";
+} from "@/components/state/helpers";
 
 export default {
   data() {

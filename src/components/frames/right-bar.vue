@@ -1,6 +1,6 @@
 <script>
 localStorage.setItem("rightbar_isopen", true);
-import { layoutMethods, layoutComputed } from "@/state/helpers";
+import { layoutMethods, layoutComputed } from "@/components/state/helpers";
 
 /**
  * Right sidebar component
