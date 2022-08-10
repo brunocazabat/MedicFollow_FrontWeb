@@ -163,7 +163,7 @@ export default [
       title: "Error 500",
       authRequired: mode,
     },
-    component: () => import("../../views/auth/errors/500"),
+    component: () => import("../../views/errors-section/500"),
   },
   {
     path: "/404",
@@ -172,7 +172,7 @@ export default [
       title: "Error 404",
       authRequired: mode,
     },
-    component: () => import("../../views/auth/errors/404-cover"),
+    component: () => import("../../views/errors-section/404-cover"),
   },
   {
     path: "/offline",
@@ -181,6 +181,6 @@ export default [
       title: "Offline",
       authRequired: mode,
     },
-    component: () => import("../../views/auth/errors/offline"),
+    component: () => import("../../views/errors-section/offline"),
   },
 ];
