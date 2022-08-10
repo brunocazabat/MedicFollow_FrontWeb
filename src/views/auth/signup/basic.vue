@@ -292,28 +292,6 @@ export default {
                       </button>
                     </div>
 
-                    <div class="mt-4 text-center">
-                      <div class="signin-other-title">
-                        <h5 class="fs-13 mb-4 title text-muted">
-                          Create account with
-                        </h5>
-                      </div>
-
-                      <div>
-                        <button type="button" class="btn btn-primary btn-icon waves-effect waves-light">
-                          <em class="ri-facebook-fill fs-16"></em>
-                        </button>
-                        <button type="button" class="btn btn-danger btn-icon waves-effect waves-light ms-1">
-                          <em class="ri-google-fill fs-16"></em>
-                        </button>
-                        <button type="button" class="btn btn-dark btn-icon waves-effect waves-light ms-1">
-                          <em class="ri-github-fill fs-16"></em>
-                        </button>
-                        <button type="button" class="btn btn-info btn-icon waves-effect waves-light ms-1">
-                          <em class="ri-twitter-fill fs-16"></em>
-                        </button>
-                      </div>
-                    </div>
                   </form>
                 </div>
               </div>

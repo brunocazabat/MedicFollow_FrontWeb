@@ -1,5 +1,5 @@
 <script>
-import { authMethods } from "@/state/helpers";
+import { authMethods } from "@/components/state/helpers";
 import appConfig from "../../../app.config";
 
 import { required, email, helpers } from "@vuelidate/validators";
@@ -82,9 +82,15 @@ export default {
       <div class="bg-overlay"></div>
 
       <div class="shape">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 1440 120">
-          <path d="M 0,36 C 144,53.6 432,123.2 720,124 C 1008,124.8 1296,56.8 1440,40L1440 140L0 140z"></path>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1440 120"
+        >
+          <path
+            d="M 0,36 C 144,53.6 432,123.2 720,124 C 1008,124.8 1296,56.8 1440,40L1440 140L0 140z"
+          ></path>
         </svg>
       </div>
     </div>
@@ -97,10 +103,14 @@ export default {
             <div class="text-center mt-sm-5 mb-4 text-white-50">
               <div>
                 <router-link to="/" class="d-inline-block auth-logo">
-                  <img src="@/assets/images/logo/logo-long.png" alt="" height="120" />
+                  <img
+                    src="@/assets/images/logo/logo-long.png"
+                    alt=""
+                    height="120"
+                  />
                 </router-link>
               </div>
-              <p class="mt-3 fs-15 fw-medium" style="color: white;">
+              <p class="mt-3 fs-15 fw-medium" style="color: white">
                 Votre outil de communication avec vos proches
               </p>
             </div>
@@ -116,19 +126,39 @@ export default {
                   <h5 class="text-primary">Forgot Password?</h5>
                   <p class="text-muted">Reset password with MedicFollow</p>
 
-                  <lottie class="avatar-xl" colors="primary:#45CB85,secondary:#4b38b3" :options="defaultOptions"
-                    :height="120" :width="120" />
-
+                  <lottie
+                    class="avatar-xl"
+                    colors="primary:#45CB85,secondary:#4b38b3"
+                    :options="defaultOptions"
+                    :height="120"
+                    :width="120"
+                  />
                 </div>
 
                 <div class="p-2">
-                  <b-alert v-model="isResetError" class="mb-4" variant="danger" dismissible>{{ error }}</b-alert>
+                  <b-alert
+                    v-model="isResetError"
+                    class="mb-4"
+                    variant="danger"
+                    dismissible
+                    >{{ error }}</b-alert
+                  >
                   <form @submit.prevent="tryToReset">
                     <div class="mb-4">
                       <label class="form-label">Email</label>
-                      <input type="email" v-model="email" class="form-control" id="email"
-                        :class="{ 'is-invalid': submitted && v$.email.$errors }" placeholder="Enter Email" />
-                      <div v-for="(item, index) in v$.email.$errors" :key="index" class="invalid-feedback">
+                      <input
+                        type="email"
+                        v-model="email"
+                        class="form-control"
+                        id="email"
+                        :class="{ 'is-invalid': submitted && v$.email.$errors }"
+                        placeholder="Enter Email"
+                      />
+                      <div
+                        v-for="(item, index) in v$.email.$errors"
+                        :key="index"
+                        class="invalid-feedback"
+                      >
                         <span v-if="item.$message">{{ item.$message }}</span>
                       </div>
                     </div>
@@ -147,9 +177,12 @@ export default {
             <!-- end card -->
 
             <div class="mt-4 text-center">
-              <p class="mb-0" style="color: black;">
+              <p class="mb-0" style="color: black">
                 Wait, I remember my password...
-                <router-link to="/login" class="fw-semibold text-primary text-decoration-underline">
+                <router-link
+                  to="/login"
+                  class="fw-semibold text-primary text-decoration-underline"
+                >
                   Click here
                 </router-link>
               </p>
