@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import axios from "axios";
 import routes from "./routes";
-import appConfig from "../../app.config";
+import appConfig from "../../../app.config";
 
 const router = createRouter({
   history: createWebHistory(),

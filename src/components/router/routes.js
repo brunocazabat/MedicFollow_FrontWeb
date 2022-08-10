@@ -1,4 +1,4 @@
-import store from "@/state/store";
+import store from "@/components/state/store";
 
 var mode = DevMode();
 
@@ -24,10 +24,22 @@ function beforeResolve(_routeTo, _routeFrom, next) {
 }
 
 export default [
+  // test routes START
+  {
+    path: "/test",
+    name: "test",
+    component: () => import("../../views/auth/signup/basic.vue"),
+    meta: {
+      title: "Test",
+      beforeResolve,
+    },
+  },
+  // test routes END
+  // log-account-section routes START
   {
     path: "/login",
     name: "login",
-    component: () => import("../views/account/login.vue"),
+    component: () => import("../../views/log-account-section/login.vue"),
     meta: {
       title: "Login",
       beforeResolve,
@@ -36,7 +48,7 @@ export default [
   {
     path: "/register",
     name: "Register",
-    component: () => import("../views/account/register.vue"),
+    component: () => import("../../views/log-account-section/register.vue"),
     meta: {
       title: "Register",
       beforeResolve,
@@ -45,93 +57,21 @@ export default [
   {
     path: "/forgot-password",
     name: "Forgot password",
-    component: () => import("../views/account/forgot-password.vue"),
+    component: () =>
+      import("../../views/log-account-section/forgot-password.vue"),
     meta: {
       title: "Forgot Password",
       beforeResolve,
     },
   },
   {
-    path: "/",
-    name: "default",
-    meta: {
-      title: "Dashboard",
-      authRequired: mode,
-    },
-    component: () => import("../views/dashboard/index"),
-  },
-  {
     path: "/logout",
-    name: "logout",
+    name: "Logout",
+    component: () => import("../../views/log-account-section/logout.vue"),
     meta: {
       title: "Logout",
-      authRequired: mode,
-      Resolve(_routeTo, routeFrom, next) {
-        store.dispatch("authfack/logout");
-        const authRequiredOnPreviousRoute = routeFrom.matched.some((route) =>
-          route.push("/login")
-        );
-        // Navigate back to previous page, or home as a fallback
-        next(
-          authRequiredOnPreviousRoute ? { name: "default" } : { ...routeFrom }
-        );
-      },
+      beforeResolve,
     },
-    component: () => import("../views/auth/logout/basic"),
-  },
-  {
-    path: "/calendar",
-    name: "calendar",
-    meta: { title: "Calendar", authRequired: mode },
-    component: () => import("../views/calendar/index"),
-  },
-  {
-    path: "/chat",
-    name: "chat",
-    meta: { title: "Chat", authRequired: mode },
-    component: () => import("../views/apps/chat"),
-  },
-  {
-    path: "/mailbox",
-    name: "mailbox",
-    meta: { title: "Mailbox", authRequired: mode },
-    component: () => import("../views/apps/mailbox"),
-  },
-  {
-    path: "/suggestions",
-    name: "suggestions",
-    meta: { title: "Suggestions", authRequired: mode },
-    component: () => import("../views/forms/suggest"),
-  },
-  {
-    path: "/bug-report",
-    name: "bugreport",
-    meta: { title: "Bug Report", authRequired: mode },
-    component: () => import("../views/forms/bugreport"),
-  },
-  {
-    path: "/settings",
-    name: "profile-setting",
-    meta: { title: "Settings", authRequired: mode },
-    component: () => import("../views/pages/profile/setting"),
-  },
-  {
-    path: "/maintenance",
-    name: "maintenance",
-    meta: { title: "Maintanance", authRequired: mode },
-    component: () => import("../views/pages/maintenance"),
-  },
-  {
-    path: "/coming-soon",
-    name: "coming-soon",
-    meta: { title: "Comming Soon", authRequired: mode },
-    component: () => import("../views/pages/coming-soon"),
-  },
-  {
-    path: "/search-results",
-    name: "search-results",
-    meta: { title: "Search Results", authRequired: mode },
-    component: () => import("../views/pages/search-results"),
   },
   {
     path: "/lockscreen",
@@ -140,7 +80,72 @@ export default [
       title: "Lock Screen",
       authRequired: mode,
     },
-    component: () => import("../views/auth/lockscreen/basic"),
+    component: () => import("../../views/log-account-section/lockscreen.vue"),
+  },
+  // log-account-section routes END
+  //  routes START
+  {
+    path: "/",
+    name: "default",
+    meta: {
+      title: "Dashboard",
+      authRequired: mode,
+    },
+    component: () => import("../../views/dashboard/index"),
+  },
+  {
+    path: "/calendar",
+    name: "calendar",
+    meta: { title: "Calendar", authRequired: mode },
+    component: () => import("../../views/calendar/index"),
+  },
+  {
+    path: "/chat",
+    name: "chat",
+    meta: { title: "Chat", authRequired: mode },
+    component: () => import("../../views/apps/chat"),
+  },
+  {
+    path: "/mailbox",
+    name: "mailbox",
+    meta: { title: "Mailbox", authRequired: mode },
+    component: () => import("../../views/apps/mailbox"),
+  },
+  {
+    path: "/suggestions",
+    name: "suggestions",
+    meta: { title: "Suggestions", authRequired: mode },
+    component: () => import("../../views/forms-section/suggest"),
+  },
+  {
+    path: "/bug-report",
+    name: "bugreport",
+    meta: { title: "Bug Report", authRequired: mode },
+    component: () => import("../../views/forms-section/bugreport"),
+  },
+  {
+    path: "/settings",
+    name: "profile-setting",
+    meta: { title: "Settings", authRequired: mode },
+    component: () => import("../../views/pages/profile/setting"),
+  },
+  {
+    path: "/maintenance",
+    name: "maintenance",
+    meta: { title: "Maintanance", authRequired: mode },
+    component: () => import("../../views/pages/maintenance"),
+  },
+  {
+    path: "/coming-soon",
+    name: "coming-soon",
+    meta: { title: "Comming Soon", authRequired: mode },
+    component: () => import("../../views/pages/coming-soon"),
+  },
+  {
+    path: "/search-results",
+    name: "search-results",
+    meta: { title: "Search Results", authRequired: mode },
+    component: () => import("../../views/pages/search-results"),
   },
   {
     path: "/twostep",
@@ -149,7 +154,7 @@ export default [
       title: "Two Step Auth",
       authRequired: mode,
     },
-    component: () => import("../views/auth/twostep/basic"),
+    component: () => import("../../views/auth/twostep/basic"),
   },
   {
     path: "/500",
@@ -158,7 +163,7 @@ export default [
       title: "Error 500",
       authRequired: mode,
     },
-    component: () => import("../views/auth/errors/500"),
+    component: () => import("../../views/auth/errors/500"),
   },
   {
     path: "/404",
@@ -167,7 +172,7 @@ export default [
       title: "Error 404",
       authRequired: mode,
     },
-    component: () => import("../views/auth/errors/404-cover"),
+    component: () => import("../../views/auth/errors/404-cover"),
   },
   {
     path: "/offline",
@@ -176,6 +181,6 @@ export default [
       title: "Offline",
       authRequired: mode,
     },
-    component: () => import("../views/auth/errors/offline"),
+    component: () => import("../../views/auth/errors/offline"),
   },
 ];
