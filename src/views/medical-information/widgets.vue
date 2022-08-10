@@ -1,14 +1,8 @@
 <script>
-import {
-  ClockIcon,
-  CalendarIcon
-} from '@zhuowenli/vue-feather-icons'
 import dayjs from 'dayjs'
 
 export default {
   components: {
-    ClockIcon,
-    CalendarIcon
   },
   data: function () {
     return {
@@ -30,52 +24,95 @@ export default {
 </script>
 
 <template>
-  <div class="col-xl-3">
-    <div class="card card-animate">
-      <div class="card-body">
-        <div class="d-flex align-items-center">
-          <div class="avatar-sm flex-shrink-0">
-            <span class="avatar-title rounded-2 fs-2 bg-soft-primary text-primary">
-              <ClockIcon size="24"></ClockIcon>
-            </span>
-          </div>
-          <div class="flex-grow-1 overflow-hidden ms-3">
-            <p class="text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-lastcheckup">{{
-                $t("t-lastcheckup")
-            }}:</p>
-            <div class="d-flex align-items-center mb-3">
-              <h4 class="fs-4 flex-grow-1 mb-0">
-                <span class="counter-value">{{ localTime }}</span>
-              </h4>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-xxl-6">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img class="rounded-start img-fluid h-100 object-cover" src="@/assets/images/doctor-with-patient.jpg"
+                  alt="Card image" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-header">
+                  <h5 class="card-title text-uppercase mb-1" data-key="t-lastcheckup">{{
+                      $t("t-lastcheckup")
+                  }}:
+                  </h5>
+                </div>
+
+                <div class="card-body">
+                  <h4 class="fs-4 flex-grow-1 mb-4">
+                    <span class="counter-value">{{ localTime }}</span>
+                  </h4>
+
+                  <p class="card-text mb-0">
+                    <small class="text-muted mb-2">{{ localDate }}</small>
+                  </p>
+                </div>
+
+                <div class="card-footer">
+                  <a href="javascript:void(0);" class="link-dark mb-2">
+                    Read Summary
+                    <em class="ri-arrow-right-s-line align-middle lh-1"></em>
+                  </a>
+                </div>
+              </div>
             </div>
-            <p class="text-muted text-truncate mb-0">{{ localDate }}</p>
           </div>
+          <!-- end card -->
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-xl-3">
-    <div class="card card-animate">
-      <div class="card-body">
-        <div class="d-flex align-items-center">
-          <div class="avatar-sm flex-shrink-0">
-            <span class="avatar-title rounded-2 fs-2 bg-soft-info text-info">
-              <CalendarIcon size="24"></CalendarIcon>
-            </span>
-          </div>
-          <div class="flex-grow-1 overflow-hidden ms-3">
-            <p class="text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-nextappoint">{{
-                $t("t-nextappoint")
-            }}:</p>
-            <div class="d-flex align-items-center mb-3">
-              <h4 class="fs-4 flex-grow-1 mb-0">
-                <span class="counter-value">Test Event 1</span>
-              </h4>
+        <!-- end col -->
+
+
+        <div class="col-xxl-6">
+          <div class="card">
+            <div class="row g-0">
+
+              <div class="col-md-8">
+                <div class="card-header">
+                  <h5 class="card-title text-uppercase mb-1" data-key="t-nextappoint">{{
+                      $t("t-nextappoint")
+                  }}:
+                  </h5>
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-4 flex-grow-1 mb-4">
+                    <span class="counter-value">Appointement with Dr.BERNABEU</span>
+                  </h4>
+
+                  <p class="card-text mb-0">
+                    <small class="text-muted mb-2">{{ localDate }}</small>
+                  </p>
+                </div>
+
+                <div class="card-footer">
+                  <a href="javascript:void(0);" class="link-dark mb-2">
+                    Access Calendar
+                    <em class="ri-arrow-right-s-line align-middle lh-1"></em>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img class="rounded-end img-fluid h-100 object-cover" src="@/assets/images/appointement-stethoscope.jpg"
+                  alt="Card image" />
+              </div>
             </div>
-            <p class="text-muted text-truncate mb-0">09-07-2022</p>
           </div>
+          <!-- end card -->
         </div>
+        <!-- end col -->
+
+
       </div>
+      <!-- end row -->
     </div>
+    <!-- end col -->
   </div>
+  <!-- end row -->
+
+
+
 </template>
