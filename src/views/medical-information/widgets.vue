@@ -104,14 +104,111 @@ export default {
           <!-- end card -->
         </div>
         <!-- end col -->
-
-
       </div>
       <!-- end row -->
     </div>
     <!-- end col -->
   </div>
   <!-- end row -->
+
+
+  <!-- RECENT MEDICAL VISITS -->
+  <div class="col-xl-8">
+    <div class="card">
+      <div class="card-header align-items-center d-flex">
+        <h4 class="card-title mb-0 flex-grow-1">Recent Medical Visits</h4>
+        <div class="flex-shrink-0">
+          <button type="button" class="btn btn-soft-info btn-sm shadow-none">
+            <em class="ri-file-list-3-line align-middle"></em>
+            Generate Report
+          </button>
+        </div>
+      </div>
+      <!-- end card header -->
+
+      <div class="card-body">
+        <div class="table-responsive table-card">
+          <table class="table table-borderless table-centered align-middle table-nowrap mb-0"
+            aria-label="Medical Visits Table">
+            <thead class="text-muted table-light">
+              <tr>
+                <th scope="col">Visit ID</th>
+                <th scope="col">Staff Name</th>
+                <th scope="col">Staff Position</th>
+                <th scope="col">Time</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <router-link to="/ecommerce/order-details" class="fw-medium link-primary">#VZ2112
+                  </router-link>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0 me-2">
+                      <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
+                    </div>
+                    <div class="flex-grow-1">Alex Smith</div>
+                  </div>
+                </td>
+                <td>Nurse</td>
+                <td>{{ localTime }}</td>
+                <td>
+                  <span class="badge badge-soft-warning">Pending Approval</span>
+                </td>
+              </tr>
+              <!-- end tr -->
+              <tr>
+                <td>
+                  <router-link to="/ecommerce/order-details" class="fw-medium link-primary">#VZ2111
+                  </router-link>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0 me-2">
+                      <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
+                    </div>
+                    <div class="flex-grow-1">Jansh Brown</div>
+                  </div>
+                </td>
+                <td>Rheumatologist</td>
+                <td>15:32</td>
+                <td>
+                  <span class="badge badge-soft-success">Approved</span>
+                </td>
+              </tr>
+              <!-- end tr -->
+              <tr>
+                <td>
+                  <router-link to="/ecommerce/order-details" class="fw-medium link-primary">#VZ2109
+                  </router-link>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0 me-2">
+                      <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
+                    </div>
+                    <div class="flex-grow-1">Ayaan Bowen</div>
+                  </div>
+                </td>
+                <td>Rheumatologist Intern</td>
+                <td>10:17</td>
+                <td>
+                  <span class="badge badge-soft-success">Approved</span>
+                </td>
+              </tr>
+              <!-- end tr -->
+            </tbody>
+            <!-- end tbody -->
+          </table>
+          <!-- end table -->
+        </div>
+      </div>
+    </div>
+    <!-- .card-->
+  </div>
 
 
 
