@@ -14,8 +14,8 @@ export default {
   },
   validations: {
     email: {
-      required: helpers.withMessage("Email is required", required),
-      email: helpers.withMessage("Please enter valid email", email),
+      required: helpers.withMessage("An Email is required", required),
+      email: helpers.withMessage("Please enter a valid email", email),
     },
   },
   page: {
