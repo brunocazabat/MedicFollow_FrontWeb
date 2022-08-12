@@ -339,14 +339,37 @@ export default {
 
                     <!-- Password Input row -->
                     <div class="mb-3">
-                      <label class="form-label" for="password-input"
-                        >Password <span class="text-danger">*</span></label
-                      >
                       <div
-                        class="position-relative auth-pass-inputgroup mb-3"
+                        class="float-end"
                         v-on:mouseover="mouseover"
                         v-on:mouseleave="mouseleave"
                       >
+                        <Popper placement="top" :show="hover">
+                          <p class="text-muted">Password information</p>
+                          <template #content>
+                            <div>
+                              <p class="invalid fs-12 mb-2">
+                                - Minimum <strong>12 characters</strong>
+                              </p>
+                              <p class="invalid fs-12 mb-2">
+                                - At least 8 <strong>lowercase</strong> letter
+                                (a-z).
+                              </p>
+                              <p class="invalid fs-12 mb-2">
+                                - At least 2 <strong>uppercase</strong> letter
+                                (A-Z).
+                              </p>
+                              <p class="invalid fs-12 mb-2">
+                                - A least 2 <strong>number</strong> (0-9).
+                              </p>
+                            </div>
+                          </template>
+                        </Popper>
+                      </div>
+                      <label class="form-label" for="password-input"
+                        >Password <span class="text-danger">*</span></label
+                      >
+                      <div class="position-relative auth-pass-inputgroup mb-3">
                         <input
                           v-if="showPassword"
                           type="text"
@@ -388,26 +411,6 @@ export default {
                             v$.user.password.required.$message
                           }}</span>
                         </div>
-                        <Popper placement="left" :show="hover">
-                          <template #content>
-                            <div>
-                              <p class="invalid fs-12 mb-2">
-                                - Minimum <strong>12 characters</strong>
-                              </p>
-                              <p class="invalid fs-12 mb-2">
-                                - At least 8 <strong>lowercase</strong> letters
-                                (a-z).
-                              </p>
-                              <p class="invalid fs-12 mb-2">
-                                - At least 2 <strong>uppercase</strong> letters
-                                (A-Z).
-                              </p>
-                              <p class="invalid fs-12 mb-2">
-                                - A least 2 <strong>numbers</strong> (0-9).
-                              </p>
-                            </div>
-                          </template>
-                        </Popper>
                       </div>
                     </div>
 
