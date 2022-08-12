@@ -270,7 +270,7 @@ export default {
         <!-- end row -->
 
         <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-6 col-xl-5">
+          <div class="col-md-8 col-lg- col-xl-7">
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center">
@@ -414,6 +414,13 @@ export default {
                   </form>
                 </div>
               </div>
+              <!-- end card body -->
+            </div>
+            <!-- end card -->
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-1">
+            <div class="card mt-4">
+              <div class="card-body p-4"></div>
               <!-- end card body -->
             </div>
             <!-- end card -->
