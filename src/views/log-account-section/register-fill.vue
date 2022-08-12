@@ -1,18 +1,23 @@
 <script>
-import { mapState } from "vuex";
-import { required, email, helpers } from "@vuelidate/validators";
+import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
-import appConfig from "../../../app.config";
-import axios from "axios";
+import { mapState } from "vuex";
+import Popper from "vue3-popper";
 
-import { authMethods, notificationMethods } from "@/components/state/helpers";
+import {
+  authMethods,
+  authFackMethods,
+  notificationMethods,
+} from "@/components/state/helpers";
+
+import appConfig from "../../../app.config";
 
 export default {
   setup() {
     return { v$: useVuelidate() };
   },
   page: {
-    title: "Login",
+    title: "Register",
     meta: [
       {
         name: "description",
@@ -20,24 +25,32 @@ export default {
       },
     ],
   },
+  components: {
+    Popper,
+  },
   data() {
     return {
-      loginInput: {
-        email: "",
+      user: {
+        famillyname: "",
+        name: "",
         password: "",
       },
       submitted: false,
-      authError: null,
-      tryingToLogIn: false,
-      isAuthError: false,
+      regError: null,
+      tryingToRegister: false,
+      isRegisterError: false,
+      registerSuccess: false,
       showPassword: false,
+      hover: false,
     };
   },
   validations: {
-    loginInput: {
-      email: {
-        required: helpers.withMessage("An Email is required", required),
-        email: helpers.withMessage("Please enter a valid email", email),
+    user: {
+      familly_name: {
+        required: helpers.withMessage("The familly name is required", required),
+      },
+      name: {
+        required: helpers.withMessage("The name is required", required),
       },
       password: {
         required: helpers.withMessage("A Password is required", required),
@@ -50,58 +63,22 @@ export default {
       return this.$store ? this.$store.state.notification : null;
     },
   },
-  mounted: function () {
-    if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
-      this.loginInput.password = "Password13!";
-      this.loginInput.email = "patient_test@test.com";
-    } else {
-      this.loginInput.password = "";
-      this.loginInput.email = "";
-    }
-  },
   methods: {
     ...authMethods,
+    ...authFackMethods,
     ...notificationMethods,
-    LogIn() {
+    tryToRegisterIn() {
       this.submitted = true;
       this.v$.$touch();
-      if (!this.v$.$invalid) {
-        this.authError = null;
-        return axios
-          .put("http://www.medicfollow.fr:8081/v1/users/", this.loginInput)
-          .then((response) => {
-            this.loginInput.password = "";
-            this.loginInput.email = "";
-
-            if (response.status === 200) {
-              this.isAuthError = false;
-              this.submitted = false;
-              this.tryingToLogIn = false;
-              localStorage.setItem("uuid", response.data.userUuid);
-              localStorage.setItem("token", response.data.token);
-              this.$router.push(
-                this.$route.query.redirectFrom || {
-                  name: "default",
-                }
-              );
-            }
-          })
-          .catch((error) => {
-            this.loginInput.password = "";
-            this.loginInput.email = "";
-            this.isAuthError = true;
-            if (error.response.status === 462) {
-              this.authError = "Invalid username or password";
-            } else if (error.response.status === 463) {
-              this.authError = "User disabled";
-            } else {
-              this.authError = "An unknown error occurred";
-            }
-          });
-      }
     },
     toggleShow() {
       this.showPassword = !this.showPassword;
+    },
+    mouseover: function () {
+      this.hover = true;
+    },
+    mouseleave: function () {
+      this.hover = false;
     },
   },
 };
@@ -274,54 +251,120 @@ export default {
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center">
-                  <p class="text-muted">Sign in to continue to MedicFollow.</p>
+                  <p class="text-muted">
+                    Complete your profile to get started with Medicfollow.
+                  </p>
                 </div>
                 <div class="p-2 mt-4">
-                  <b-alert
-                    v-model="isAuthError"
-                    variant="danger"
-                    class="mt-3"
-                    dismissible
-                    >{{ authError }}</b-alert
+                  <form
+                    class="needs-validation"
+                    @submit.prevent="tryToRegisterIn"
                   >
+                    <b-alert
+                      v-model="registerSuccess"
+                      class="mt-3"
+                      variant="success"
+                      dismissible
+                      >Registration successfull.</b-alert
+                    >
 
-                  <div
-                    v-if="notification.message"
-                    :class="'alert ' + notification.type"
-                  >
-                    {{ notification.message }}
-                  </div>
+                    <b-alert
+                      v-model="isRegisterError"
+                      class="mt-3"
+                      variant="danger"
+                      dismissible
+                      >{{ regError }}
+                    </b-alert>
 
-                  <form @submit.prevent="DevLogMethod">
+                    <div
+                      v-if="notification.message"
+                      :class="'alert ' + notification.type"
+                    >
+                      {{ notification.message }}
+                    </div>
+
+                    <!-- Familly Name Input row -->
                     <div class="mb-3">
-                      <label for="email" class="form-label"
-                        >Email <span class="text-danger">*</span></label
+                      <label for="famillyname" class="form-label"
+                        >Familly name <span class="text-danger">*</span></label
                       >
                       <input
-                        type="email"
+                        type="text"
                         class="form-control"
-                        id="email"
-                        placeholder="Enter email"
-                        v-model="loginInput.email"
+                        v-model="user.famillyname"
                         onpaste="return false"
                         :class="{
-                          'is-invalid': submitted && v$.loginInput.email.$error,
+                          'is-invalid': submitted && v$.user.famillyname.$error,
                         }"
+                        id="famillyname"
+                        placeholder="Enter familly name"
+                        required
                       />
                       <div
-                        v-for="(item, index) in v$.loginInput.email.$errors"
-                        :key="index"
+                        v-if="submitted && v$.user.famillyname.$error"
                         class="invalid-feedback"
                       >
-                        <span v-if="item.$message">{{ item.$message }}</span>
+                        <span v-if="v$.user.famillyname.required.$message">{{
+                          v$.user.famillyname.required.$message
+                        }}</span>
                       </div>
                     </div>
 
+                    <!-- Name Input row -->
                     <div class="mb-3">
-                      <div class="float-end">
-                        <router-link to="/forgot-password" class="text-muted"
-                          >Forgot password ?
-                        </router-link>
+                      <label for="name" class="form-label"
+                        >Name <span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        v-model="user.name"
+                        onpaste="return false"
+                        :class="{
+                          'is-invalid': submitted && v$.user.name.$error,
+                        }"
+                        id="name"
+                        placeholder="Enter name"
+                        required
+                      />
+                      <div
+                        v-if="submitted && v$.user.name.$error"
+                        class="invalid-feedback"
+                      >
+                        <span v-if="v$.user.name.required.$message">{{
+                          v$.user.name.required.$message
+                        }}</span>
+                      </div>
+                    </div>
+
+                    <!-- Password Input row -->
+                    <div class="mb-3">
+                      <div
+                        class="float-end"
+                        v-on:mouseover="mouseover"
+                        v-on:mouseleave="mouseleave"
+                      >
+                        <Popper placement="top" :show="hover">
+                          <p class="text-muted">Password information</p>
+                          <template #content>
+                            <div>
+                              <p class="invalid fs-12 mb-2">
+                                - Minimum <strong>12 characters</strong>
+                              </p>
+                              <p class="invalid fs-12 mb-2">
+                                - At least 8 <strong>lowercase</strong> letter
+                                (a-z).
+                              </p>
+                              <p class="invalid fs-12 mb-2">
+                                - At least 2 <strong>uppercase</strong> letter
+                                (A-Z).
+                              </p>
+                              <p class="invalid fs-12 mb-2">
+                                - A least 2 <strong>number</strong> (0-9).
+                              </p>
+                            </div>
+                          </template>
+                        </Popper>
                       </div>
                       <label class="form-label" for="password-input"
                         >Password <span class="text-danger">*</span></label
@@ -330,12 +373,11 @@ export default {
                         <input
                           v-if="showPassword"
                           type="text"
-                          v-model="loginInput.password"
+                          v-model="user.password"
                           onpaste="return false"
                           class="form-control pe-5"
                           :class="{
-                            'is-invalid':
-                              submitted && v$.loginInput.password.$error,
+                            'is-invalid': submitted && v$.user.password.$error,
                           }"
                           placeholder="Enter password"
                           id="password-input"
@@ -343,12 +385,11 @@ export default {
                         <input
                           v-else
                           type="password"
-                          v-model="loginInput.password"
+                          v-model="user.password"
                           onpaste="return false"
                           class="form-control pe-5"
                           :class="{
-                            'is-invalid':
-                              submitted && v$.loginInput.password.$error,
+                            'is-invalid': submitted && v$.user.password.$error,
                           }"
                           placeholder="Enter password"
                           id="password-input"
@@ -363,50 +404,50 @@ export default {
                           <em class="ri-eye-fill align-middle"></em>
                         </button>
                         <div
-                          v-if="submitted && v$.loginInput.password.$error"
+                          v-if="submitted && v$.user.password.$error"
                           class="invalid-feedback"
                         >
-                          <span
-                            v-if="v$.loginInput.password.required.$message"
-                            >{{
-                              v$.loginInput.password.required.$message
-                            }}</span
-                          >
+                          <span v-if="v$.user.password.required.$message">{{
+                            v$.user.password.required.$message
+                          }}</span>
                         </div>
                       </div>
                     </div>
 
-                    <div class="mt-4">
-                      <!------------------- MODIFY METHOD TO CALL IF NO BACKEND (ForceLogIn) OR IF BACKEND (tryToLogIn) ------------------->
-                      <button
-                        @click="LogIn"
-                        class="btn btn-success w-100"
-                        type="submit"
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="auth-remember-check"
+                        required
+                      />
+                      <label class="form-check-label" for="auth-remember-check"
+                        ><p class="mb-0 fs-12 text-muted fst-italic">
+                          By registering you agree to the MedicFollow
+                          <a
+                            href="https://medicfollow.fr/fr/usage.html"
+                            target="_blank"
+                            class="text-primary text-decoration-underline fst-normal fw-medium"
+                            rel="noreferrer noopener"
+                            >Terms of use
+                          </a>
+                        </p></label
                       >
-                        Sign In
-                      </button>
                     </div>
 
-                    <div class="mt-4 text-center">
-                      <div class="signin-other-title">
-                        <h5 class="fs-13 mb-4 title">Sign In with</h5>
-                      </div>
-                      <div>
-                        <button
-                          type="button"
-                          class="btn btn-danger btn-icon waves-effect waves-light ms-1"
-                        >
-                          <em class="ri-qr-code-fill fs-16"></em>
-                        </button>
-                      </div>
+                    <div class="mt-4">
+                      <button class="btn btn-success w-100" type="submit">
+                        Sign Up
+                      </button>
                       <div class="mt-4 text-center">
                         <p class="mb-0 text-muted" style="color: black">
-                          Don't have an account ?
+                          Already have an account ?
                           <router-link
-                            to="/register-mail"
+                            to="/login"
                             class="fw-semibold text-primary text-decoration-underline"
                           >
-                            Signup
+                            Signin
                           </router-link>
                         </p>
                       </div>
@@ -444,3 +485,16 @@ export default {
   </div>
   <!-- end auth-page-wrapper -->
 </template>
+
+<style>
+:root {
+  --popper-theme-background-color: #333333;
+  --popper-theme-background-color-hover: #333333;
+  --popper-theme-text-color: #ffffff;
+  --popper-theme-border-width: 0px;
+  --popper-theme-border-style: solid;
+  --popper-theme-border-radius: 6px;
+  --popper-theme-padding: 16px;
+  --popper-theme-box-shadow: 0 6px 30px -6px rgba(0, 0, 0, 0.25);
+}
+</style>

@@ -5,8 +5,8 @@ import appConfig from "../../../app.config";
 import { required, email, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import Lottie from "@/components/widgets/lottie.vue";
-
 import animationData from "@/assets/anim/animation2.json";
+
 export default {
   components: { lottie: Lottie },
   setup() {
@@ -93,6 +93,125 @@ export default {
           ></path>
         </svg>
       </div>
+      <Particles
+        id="tsparticles"
+        :options="{
+          particles: {
+            number: {
+              value: 90,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: '#ffffff',
+            },
+            shape: {
+              type: 'circle',
+              stroke: {
+                width: 0,
+                color: '#000000',
+              },
+              polygon: {
+                nb_sides: 5,
+              },
+              image: {
+                src: 'img/github.svg',
+                width: 100,
+                height: 100,
+              },
+            },
+            opacity: {
+              value: 0.8,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0,
+                sync: false,
+              },
+            },
+            size: {
+              value: 4,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 4,
+                size_min: 0.2,
+                sync: false,
+              },
+            },
+            line_linked: {
+              enable: false,
+              distance: 150,
+              color: '#ffffff',
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 2,
+              direction: 'none',
+              random: false,
+              straight: false,
+              out_mode: 'out',
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200,
+              },
+            },
+          },
+          interactivity: {
+            detect_on: 'canvas',
+            events: {
+              onhover: {
+                enable: true,
+                mode: 'bubble',
+              },
+              onclick: {
+                enable: true,
+                mode: 'repulse',
+              },
+              resize: true,
+            },
+            modes: {
+              grab: {
+                distance: 400,
+                line_linked: {
+                  opacity: 1,
+                },
+              },
+              bubble: {
+                distance: 400,
+                size: 4,
+                duration: 2,
+                opacity: 0.8,
+                speed: 3,
+              },
+              repulse: {
+                distance: 200,
+              },
+              push: {
+                particles_nb: 4,
+              },
+              remove: {
+                particles_nb: 2,
+              },
+            },
+          },
+          retina_detect: true,
+          config_demo: {
+            hide_card: false,
+            background_color: '#b61924',
+            background_image: '',
+            background_position: '50% 50%',
+            background_repeat: 'no-repeat',
+            background_size: 'cover',
+          },
+        }"
+      />
     </div>
 
     <!-- auth page content -->
@@ -123,9 +242,10 @@ export default {
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center mt-2">
-                  <h5 class="text-primary">Forgot Password?</h5>
-                  <p class="text-muted">Reset password with MedicFollow</p>
-
+                  <p class="text-muted">
+                    We will send an email to your address to reset your
+                    password.
+                  </p>
                   <lottie
                     class="avatar-xl"
                     colors="primary:#45CB85,secondary:#4b38b3"
@@ -145,7 +265,9 @@ export default {
                   >
                   <form @submit.prevent="tryToReset">
                     <div class="mb-4">
-                      <label class="form-label">Email</label>
+                      <label class="form-label"
+                        >Email <span class="text-danger">*</span></label
+                      >
                       <input
                         type="email"
                         v-model="email"
@@ -168,6 +290,17 @@ export default {
                         Send Reset Link
                       </button>
                     </div>
+                    <div class="mt-4 text-center">
+                      <p class="mb-0 text-muted" style="color: black">
+                        Wait, I remember my password.
+                        <router-link
+                          to="/login"
+                          class="fw-semibold text-primary text-decoration-underline"
+                        >
+                          Signin
+                        </router-link>
+                      </p>
+                    </div>
                   </form>
                   <!-- end form -->
                 </div>
@@ -175,18 +308,6 @@ export default {
               <!-- end card body -->
             </div>
             <!-- end card -->
-
-            <div class="mt-4 text-center">
-              <p class="mb-0" style="color: black">
-                Wait, I remember my password...
-                <router-link
-                  to="/login"
-                  class="fw-semibold text-primary text-decoration-underline"
-                >
-                  Click here
-                </router-link>
-              </p>
-            </div>
           </div>
         </div>
         <!-- end row -->
@@ -202,7 +323,8 @@ export default {
           <div class="col-lg-12">
             <div class="text-center">
               <p class="mb-0 text-muted">
-                &copy; {{ new Date().getFullYear() }} MedicFollow.
+                &copy; {{ new Date().getFullYear() }} MedicFollow. Crafted with
+                <em class="mdi mdi-heart text-danger"></em> by MedicFollow
               </p>
             </div>
           </div>

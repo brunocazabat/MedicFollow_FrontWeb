@@ -1,18 +1,24 @@
 <script>
-import { mapState } from "vuex";
 import { required, email, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
-import appConfig from "../../../app.config";
-import axios from "axios";
+import { mapState } from "vuex";
+import Lottie from "@/components/widgets/lottie.vue";
+import animationData from "@/assets/anim/animation2.json";
 
-import { authMethods, notificationMethods } from "@/components/state/helpers";
+import {
+  authMethods,
+  authFackMethods,
+  notificationMethods,
+} from "@/components/state/helpers";
+
+import appConfig from "../../../app.config";
 
 export default {
   setup() {
     return { v$: useVuelidate() };
   },
   page: {
-    title: "Login",
+    title: "Register",
     meta: [
       {
         name: "description",
@@ -20,27 +26,25 @@ export default {
       },
     ],
   },
+  components: { lottie: Lottie },
   data() {
     return {
-      loginInput: {
+      user: {
         email: "",
-        password: "",
       },
       submitted: false,
-      authError: null,
-      tryingToLogIn: false,
-      isAuthError: false,
-      showPassword: false,
+      regError: null,
+      tryingToRegister: false,
+      isRegisterError: false,
+      registerSuccess: false,
+      defaultOptions: { animationData: animationData },
     };
   },
   validations: {
-    loginInput: {
+    user: {
       email: {
         required: helpers.withMessage("An Email is required", required),
         email: helpers.withMessage("Please enter a valid email", email),
-      },
-      password: {
-        required: helpers.withMessage("A Password is required", required),
       },
     },
   },
@@ -50,58 +54,13 @@ export default {
       return this.$store ? this.$store.state.notification : null;
     },
   },
-  mounted: function () {
-    if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
-      this.loginInput.password = "Password13!";
-      this.loginInput.email = "patient_test@test.com";
-    } else {
-      this.loginInput.password = "";
-      this.loginInput.email = "";
-    }
-  },
   methods: {
     ...authMethods,
+    ...authFackMethods,
     ...notificationMethods,
-    LogIn() {
+    tryToRegisterIn() {
       this.submitted = true;
       this.v$.$touch();
-      if (!this.v$.$invalid) {
-        this.authError = null;
-        return axios
-          .put("http://www.medicfollow.fr:8081/v1/users/", this.loginInput)
-          .then((response) => {
-            this.loginInput.password = "";
-            this.loginInput.email = "";
-
-            if (response.status === 200) {
-              this.isAuthError = false;
-              this.submitted = false;
-              this.tryingToLogIn = false;
-              localStorage.setItem("uuid", response.data.userUuid);
-              localStorage.setItem("token", response.data.token);
-              this.$router.push(
-                this.$route.query.redirectFrom || {
-                  name: "default",
-                }
-              );
-            }
-          })
-          .catch((error) => {
-            this.loginInput.password = "";
-            this.loginInput.email = "";
-            this.isAuthError = true;
-            if (error.response.status === 462) {
-              this.authError = "Invalid username or password";
-            } else if (error.response.status === 463) {
-              this.authError = "User disabled";
-            } else {
-              this.authError = "An unknown error occurred";
-            }
-          });
-      }
-    },
-    toggleShow() {
-      this.showPassword = !this.showPassword;
     },
   },
 };
@@ -274,25 +233,47 @@ export default {
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center">
-                  <p class="text-muted">Sign in to continue to MedicFollow.</p>
+                  <p class="text-muted">
+                    Enter your email to get started with the Medicfollow
+                    registration.
+                  </p>
+                  <lottie
+                    class="avatar-xl"
+                    colors="primary:#45CB85,secondary:#4b38b3"
+                    :options="defaultOptions"
+                    :height="120"
+                    :width="120"
+                  />
                 </div>
                 <div class="p-2 mt-4">
-                  <b-alert
-                    v-model="isAuthError"
-                    variant="danger"
-                    class="mt-3"
-                    dismissible
-                    >{{ authError }}</b-alert
+                  <form
+                    class="needs-validation"
+                    @submit.prevent="tryToRegisterIn"
                   >
+                    <b-alert
+                      v-model="registerSuccess"
+                      class="mt-3"
+                      variant="success"
+                      dismissible
+                      >Email successfully sent.</b-alert
+                    >
 
-                  <div
-                    v-if="notification.message"
-                    :class="'alert ' + notification.type"
-                  >
-                    {{ notification.message }}
-                  </div>
+                    <b-alert
+                      v-model="isRegisterError"
+                      class="mt-3"
+                      variant="danger"
+                      dismissible
+                      >{{ regError }}
+                    </b-alert>
 
-                  <form @submit.prevent="DevLogMethod">
+                    <div
+                      v-if="notification.message"
+                      :class="'alert ' + notification.type"
+                    >
+                      {{ notification.message }}
+                    </div>
+
+                    <!-- Email Input row -->
                     <div class="mb-3">
                       <label for="email" class="form-label"
                         >Email <span class="text-danger">*</span></label
@@ -302,14 +283,14 @@ export default {
                         class="form-control"
                         id="email"
                         placeholder="Enter email"
-                        v-model="loginInput.email"
+                        v-model="user.email"
                         onpaste="return false"
                         :class="{
-                          'is-invalid': submitted && v$.loginInput.email.$error,
+                          'is-invalid': submitted && v$.user.email.$error,
                         }"
                       />
                       <div
-                        v-for="(item, index) in v$.loginInput.email.$errors"
+                        v-for="(item, index) in v$.user.email.$errors"
                         :key="index"
                         class="invalid-feedback"
                       >
@@ -317,96 +298,40 @@ export default {
                       </div>
                     </div>
 
-                    <div class="mb-3">
-                      <div class="float-end">
-                        <router-link to="/forgot-password" class="text-muted"
-                          >Forgot password ?
-                        </router-link>
-                      </div>
-                      <label class="form-label" for="password-input"
-                        >Password <span class="text-danger">*</span></label
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="auth-remember-check"
+                        required
+                      />
+                      <label class="form-check-label" for="auth-remember-check"
+                        ><p class="mb-0 fs-12 text-muted fst-italic">
+                          By registering you agree to the MedicFollow
+                          <a
+                            href="https://medicfollow.fr/fr/usage.html"
+                            target="_blank"
+                            class="text-primary text-decoration-underline fst-normal fw-medium"
+                            rel="noreferrer noopener"
+                            >Terms of use
+                          </a>
+                        </p></label
                       >
-                      <div class="position-relative auth-pass-inputgroup mb-3">
-                        <input
-                          v-if="showPassword"
-                          type="text"
-                          v-model="loginInput.password"
-                          onpaste="return false"
-                          class="form-control pe-5"
-                          :class="{
-                            'is-invalid':
-                              submitted && v$.loginInput.password.$error,
-                          }"
-                          placeholder="Enter password"
-                          id="password-input"
-                        />
-                        <input
-                          v-else
-                          type="password"
-                          v-model="loginInput.password"
-                          onpaste="return false"
-                          class="form-control pe-5"
-                          :class="{
-                            'is-invalid':
-                              submitted && v$.loginInput.password.$error,
-                          }"
-                          placeholder="Enter password"
-                          id="password-input"
-                        />
-                        <button
-                          @click="toggleShow"
-                          class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
-                          type="button"
-                          style="box-shadow: none !important"
-                          id="password-addon"
-                        >
-                          <em class="ri-eye-fill align-middle"></em>
-                        </button>
-                        <div
-                          v-if="submitted && v$.loginInput.password.$error"
-                          class="invalid-feedback"
-                        >
-                          <span
-                            v-if="v$.loginInput.password.required.$message"
-                            >{{
-                              v$.loginInput.password.required.$message
-                            }}</span
-                          >
-                        </div>
-                      </div>
                     </div>
 
                     <div class="mt-4">
-                      <!------------------- MODIFY METHOD TO CALL IF NO BACKEND (ForceLogIn) OR IF BACKEND (tryToLogIn) ------------------->
-                      <button
-                        @click="LogIn"
-                        class="btn btn-success w-100"
-                        type="submit"
-                      >
-                        Sign In
+                      <button class="btn btn-success w-100" type="submit">
+                        Start registration process
                       </button>
-                    </div>
-
-                    <div class="mt-4 text-center">
-                      <div class="signin-other-title">
-                        <h5 class="fs-13 mb-4 title">Sign In with</h5>
-                      </div>
-                      <div>
-                        <button
-                          type="button"
-                          class="btn btn-danger btn-icon waves-effect waves-light ms-1"
-                        >
-                          <em class="ri-qr-code-fill fs-16"></em>
-                        </button>
-                      </div>
                       <div class="mt-4 text-center">
                         <p class="mb-0 text-muted" style="color: black">
-                          Don't have an account ?
+                          Already have an account ?
                           <router-link
-                            to="/register-mail"
+                            to="/login"
                             class="fw-semibold text-primary text-decoration-underline"
                           >
-                            Signup
+                            Signin
                           </router-link>
                         </p>
                       </div>
