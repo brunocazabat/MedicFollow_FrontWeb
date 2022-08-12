@@ -344,12 +344,12 @@ export default {
                         v-on:mouseover="mouseover"
                         v-on:mouseleave="mouseleave"
                       >
-                        <Popper placement="top" :show="hover">
-                          <p class="text-muted">Password information</p>
+                        <Popper placement="right" :show="hover">
+                          <p class="text-danger">Password requierements</p>
                           <template #content>
                             <div>
                               <p class="invalid fs-12 mb-2">
-                                - Minimum <strong>12 characters</strong>
+                                Minimum <strong>12 characters :</strong>
                               </p>
                               <p class="invalid fs-12 mb-2">
                                 - At least 8 <strong>lowercase</strong> letter
