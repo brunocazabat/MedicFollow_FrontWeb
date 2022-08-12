@@ -46,11 +46,22 @@ export default [
     },
   },
   {
-    path: "/register",
-    name: "Register",
-    component: () => import("../../views/log-account-section/register.vue"),
+    path: "/register-mail",
+    name: "Register Mail",
+    component: () =>
+      import("../../views/log-account-section/register-mail.vue"),
     meta: {
-      title: "Register",
+      title: "Enter your email",
+      beforeResolve,
+    },
+  },
+  {
+    path: "/register-fill",
+    name: "Register Fill",
+    component: () =>
+      import("../../views/log-account-section/register-fill.vue"),
+    meta: {
+      title: "Register your account",
       beforeResolve,
     },
   },
