@@ -197,5 +197,15 @@
   "t-cookies-accept": "Accetta",
   "t-cookies-decline": "Rifiuta",
   "t-cookies-infos": "Leggi di più sui cookie",
-  "t-cookies-content": "Utilizziamo cookie propri e di terze parti per personalizzare i contenuti e analizzare il traffico web."
+  "t-cookies-content": "Utilizziamo cookie propri e di terze parti per personalizzare i contenuti e analizzare il traffico web.",
+  "t-yourtool": "Il tuo strumento di comunicazione con i tuoi cari",
+  "t-mobadd": "Scopri l'applicazione ufficiale MedicFollow e rimani connesso.",
+  "t-signcont": "Accedi per continuare a MedicFollow.",
+  "t-forgpass": "Password dimenticata?",
+  "t-email": "E-mail",
+  "t-password": "Password",
+  "t-signinw": "Accedi con",
+  "t-prosign": "Sei un professionista?",
+  "t-entermail": "Inserisci e-mail",
+  "t-enterpassw": "Inserisci password"
 }
