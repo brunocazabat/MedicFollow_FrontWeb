@@ -56,6 +56,33 @@
     }
 }
 
+.sign-one-bg {
+    background-image: url("~@/assets/images/covers/banner-sign.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.5rem;
+
+    .bg-overlay {
+        background: linear-gradient(to right, darken($primary, 10%), $primary);
+        opacity: 0.8;
+    }
+
+    .shape {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
+
+        > svg {
+            width: 100%;
+            height: auto;
+            fill: var(--#{$variable-prefix}body-bg);
+        }
+    }
+}
+
 // auth-pass-inputgroup
 
 .auth-pass-inputgroup {
