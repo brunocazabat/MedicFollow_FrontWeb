@@ -28,7 +28,7 @@ export default [
   {
     path: "/test",
     name: "test",
-    component: () => import("../../views/auth/signup/basic.vue"),
+    component: () => import("../../views/auth/twostep/basic.vue"),
     meta: {
       title: "Test",
       beforeResolve,
@@ -56,6 +56,16 @@ export default [
     },
   },
   {
+    path: "/register-mail-success",
+    name: "Mail Success",
+    component: () =>
+      import("../../views/log-account-section/register-mail-success.vue"),
+    meta: {
+      title: "Success",
+      beforeResolve,
+    },
+  },
+  {
     path: "/register-fill",
     name: "Register Fill",
     component: () =>
@@ -66,12 +76,32 @@ export default [
     },
   },
   {
+    path: "/register-fill-success",
+    name: "Fill Success",
+    component: () =>
+      import("../../views/log-account-section/register-fill-success.vue"),
+    meta: {
+      title: "Success",
+      beforeResolve,
+    },
+  },
+  {
     path: "/forgot-password",
     name: "Forgot password",
     component: () =>
       import("../../views/log-account-section/forgot-password.vue"),
     meta: {
       title: "Forgot Password",
+      beforeResolve,
+    },
+  },
+  {
+    path: "/forgot-password-success",
+    name: "Forgot password success",
+    component: () =>
+      import("../../views/log-account-section/forgot-password-success.vue"),
+    meta: {
+      title: "Success",
       beforeResolve,
     },
   },
