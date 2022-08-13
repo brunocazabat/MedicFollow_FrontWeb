@@ -185,13 +185,13 @@ export default {
   prevEl: '.swiper-button-prev bg-white shadow',
 }">
               <swiper-slide>
-                <img src="@/assets/images/small/img-10.jpg" alt class="img-fluid" />
+                <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
               <swiper-slide>
-                <img src="@/assets/images/small/img-11.jpg" alt class="img-fluid" />
+                <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
               <swiper-slide>
-                <img src="@/assets/images/small/img-12.jpg" alt class="img-fluid" />
+                <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
@@ -319,7 +319,7 @@ export default {
                 <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
               <swiper-slide>
-                <img src="@/assets/images/small/img-10.jpg" alt class="img-fluid" />
+                <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
@@ -353,10 +353,10 @@ export default {
   clickable: true,
 }" style="height: 324px">
               <swiper-slide>
-                <img src="@/assets/images/small/img-11.jpg" alt class="img-fluid" />
+                <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
               <swiper-slide>
-                <img src="@/assets/images/small/img-12.jpg" alt class="img-fluid" />
+                <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
               <swiper-slide>
                 <img src="@/assets/images/small/img-1.jpg" alt class="img-fluid" />
@@ -482,10 +482,10 @@ export default {
                 <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
               <swiper-slide>
-                <img src="@/assets/images/small/img-10.jpg" alt class="img-fluid" />
+                <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
               <swiper-slide>
-                <img src="@/assets/images/small/img-11.jpg" alt class="img-fluid" />
+                <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
               <div class="swiper-pagination"></div>
             </swiper>
@@ -517,7 +517,7 @@ export default {
   clickable: true,
 }">
               <swiper-slide>
-                <img src="@/assets/images/small/img-12.jpg" alt class="img-fluid" />
+                <img src="@/assets/images/small/img-9.jpg" alt class="img-fluid" />
               </swiper-slide>
               <swiper-slide>
                 <img src="@/assets/images/small/img-1.jpg" alt class="img-fluid" />
@@ -692,8 +692,8 @@ export default {
               <swiper-slide>
                 <div class="gallery-box card mb-0">
                   <div class="gallery-container">
-                    <a class="image-popup" href="assets/images/small/img-10.jpg" title>
-                      <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-10.jpg" alt />
+                    <a class="image-popup" href="assets/images/small/img-9.jpg" title>
+                      <img class="gallery-img img-fluid mx-auto" src="@/assets/images/small/img-9.jpg" alt />
                       <div class="gallery-overlay">
                         <h5 class="overlay-caption">Fun day at the Hill Station</h5>
                       </div>
