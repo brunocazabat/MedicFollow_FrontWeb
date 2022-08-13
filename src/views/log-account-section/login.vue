@@ -4,6 +4,7 @@ import { required, email, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import appConfig from "../../../app.config";
 import axios from "axios";
+import translatemodule from "./translate-module.vue";
 
 import { authMethods, notificationMethods } from "@/components/state/helpers";
 
@@ -20,6 +21,7 @@ export default {
       },
     ],
   },
+  components: { translatemodule },
   data() {
     return {
       loginInput: {
@@ -114,136 +116,127 @@ export default {
       <div class="bg-overlay"></div>
 
       <div class="shape">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 1440 120"
-        >
-          <path
-            d="M 0,36 C 144,53.6 432,123.2 720,124 C 1008,124.8 1296,56.8 1440,40L1440 140L0 140z"
-          ></path>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1440 120">
+          <path d="M 0,36 C 144,53.6 432,123.2 720,124 C 1008,124.8 1296,56.8 1440,40L1440 140L0 140z"></path>
         </svg>
       </div>
-      <Particles
-        id="tsparticles"
-        :options="{
-          particles: {
-            number: {
-              value: 90,
-              density: {
-                enable: true,
-                value_area: 800,
-              },
-            },
-            color: {
-              value: '#ffffff',
-            },
-            shape: {
-              type: 'circle',
-              stroke: {
-                width: 0,
-                color: '#000000',
-              },
-              polygon: {
-                nb_sides: 5,
-              },
-              image: {
-                src: 'img/github.svg',
-                width: 100,
-                height: 100,
-              },
-            },
-            opacity: {
-              value: 0.8,
-              random: true,
-              anim: {
-                enable: true,
-                speed: 1,
-                opacity_min: 0,
-                sync: false,
-              },
-            },
-            size: {
-              value: 4,
-              random: true,
-              anim: {
-                enable: false,
-                speed: 4,
-                size_min: 0.2,
-                sync: false,
-              },
-            },
-            line_linked: {
-              enable: false,
-              distance: 150,
-              color: '#ffffff',
-              opacity: 0.4,
-              width: 1,
-            },
-            move: {
+      <Particles id="tsparticles" :options="{
+        particles: {
+          number: {
+            value: 90,
+            density: {
               enable: true,
-              speed: 2,
-              direction: 'none',
-              random: false,
-              straight: false,
-              out_mode: 'out',
-              attract: {
-                enable: false,
-                rotateX: 600,
-                rotateY: 1200,
-              },
+              value_area: 800,
             },
           },
-          interactivity: {
-            detect_on: 'canvas',
-            events: {
-              onhover: {
-                enable: true,
-                mode: 'bubble',
-              },
-              onclick: {
-                enable: true,
-                mode: 'repulse',
-              },
-              resize: true,
+          color: {
+            value: '#ffffff',
+          },
+          shape: {
+            type: 'circle',
+            stroke: {
+              width: 0,
+              color: '#000000',
             },
-            modes: {
-              grab: {
-                distance: 400,
-                line_linked: {
-                  opacity: 1,
-                },
-              },
-              bubble: {
-                distance: 400,
-                size: 4,
-                duration: 2,
-                opacity: 0.8,
-                speed: 3,
-              },
-              repulse: {
-                distance: 200,
-              },
-              push: {
-                particles_nb: 4,
-              },
-              remove: {
-                particles_nb: 2,
-              },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: 'img/github.svg',
+              width: 100,
+              height: 100,
             },
           },
-          retina_detect: true,
-          config_demo: {
-            hide_card: false,
-            background_color: '#b61924',
-            background_image: '',
-            background_position: '50% 50%',
-            background_repeat: 'no-repeat',
-            background_size: 'cover',
+          opacity: {
+            value: 0.8,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 1,
+              opacity_min: 0,
+              sync: false,
+            },
           },
-        }"
-      />
+          size: {
+            value: 4,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 4,
+              size_min: 0.2,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: false,
+            distance: 150,
+            color: '#ffffff',
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: 'none',
+            random: false,
+            straight: false,
+            out_mode: 'out',
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: 'canvas',
+          events: {
+            onhover: {
+              enable: true,
+              mode: 'bubble',
+            },
+            onclick: {
+              enable: true,
+              mode: 'repulse',
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 4,
+              duration: 2,
+              opacity: 0.8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+        config_demo: {
+          hide_card: false,
+          background_color: '#b61924',
+          background_image: '',
+          background_position: '50% 50%',
+          background_repeat: 'no-repeat',
+          background_size: 'cover',
+        },
+      }" />
     </div>
 
     <!-- auth page content -->
@@ -254,159 +247,118 @@ export default {
             <div class="text-center mt-sm-5 mb-4 text-white-50">
               <div>
                 <router-link to="/" class="d-inline-block auth-logo">
-                  <img
-                    src="@/assets/images/logo/logo-long.png"
-                    alt=""
-                    height="120"
-                  />
+                  <img src="@/assets/images/logo/logo-long.png" alt="" height="120" />
                 </router-link>
               </div>
-              <p class="mt-3 fs-15 fw-medium" style="color: white">
-                Votre outil de communication avec vos proches
+              <p class="mt-3 fs-15 fw-medium" style="color: white" data-key="t-yourtool">{{ $t("t-yourtool") }}
               </p>
             </div>
           </div>
         </div>
         <!-- end row -->
 
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-lg- col-xl-7">
+        <div class="row justify-content-center g-0">
+          <div class="card col-md-8 col-lg-6 col-xl-3 mt-4" style="border-radius: 0.50rem">
+            <div class="sign-one-bg h-100">
+              <div class="position-relative h-100 d-flex flex-column">
+                <div class="mt-auto">
+                  <div class="carousel slide">
+                    <div class="carousel-inner text-center text-white pb-6">
+                      <div class="carousel-item active">
+                        <p class="fs-15 fw-bold" data-key="t-mobadd">{{ $t("t-mobadd") }}
+                          <a href="https://medicfollow.fr/fr/solutions.html" target="_blank"
+                            class="text-primary text-decoration-underline fst-normal fw-medium text-white"
+                            rel="noreferrer noopener">Android & IOS
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end carousel -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-6">
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center">
-                  <p class="text-muted">Sign in to continue to MedicFollow.</p>
+                  <p class="text-muted" data-key="t-signcont">{{ $t("t-signcont") }}</p>
                 </div>
                 <div class="p-2 mt-4">
-                  <b-alert
-                    v-model="isAuthError"
-                    variant="danger"
-                    class="mt-3"
-                    dismissible
-                    >{{ authError }}</b-alert
-                  >
+                  <b-alert v-model="isAuthError" variant="danger" class="mt-3" dismissible>{{ authError }}</b-alert>
 
-                  <div
-                    v-if="notification.message"
-                    :class="'alert ' + notification.type"
-                  >
+                  <div v-if="notification.message" :class="'alert ' + notification.type">
                     {{ notification.message }}
                   </div>
 
                   <form @submit.prevent="DevLogMethod">
                     <div class="mb-3">
-                      <label for="email" class="form-label"
-                        >Email <span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Enter email"
-                        v-model="loginInput.email"
-                        onpaste="return false"
-                        :class="{
+                      <label for="email" class="form-label" data-key="t-email">{{ $t("t-email") }} <span
+                          class="text-danger">*</span></label>
+                      <input type="email" class="form-control" id="email" data-key="t-entermail"
+                        v-bind:placeholder="$t('t-entermail')" v-model="loginInput.email" onpaste="return false" :class="{
                           'is-invalid': submitted && v$.loginInput.email.$error,
-                        }"
-                      />
-                      <div
-                        v-for="(item, index) in v$.loginInput.email.$errors"
-                        :key="index"
-                        class="invalid-feedback"
-                      >
+                        }" />
+                      <div v-for="(item, index) in v$.loginInput.email.$errors" :key="index" class="invalid-feedback">
                         <span v-if="item.$message">{{ item.$message }}</span>
                       </div>
                     </div>
 
                     <div class="mb-3">
                       <div class="float-end">
-                        <router-link to="/forgot-password" class="text-muted"
-                          >Forgot password ?
+                        <router-link to="/forgot-password" class="text-muted" data-key="t-forgpass">{{ $t("t-forgpass")
+                        }}
                         </router-link>
                       </div>
-                      <label class="form-label" for="password-input"
-                        >Password <span class="text-danger">*</span></label
-                      >
+                      <label class="form-label" for="password-input" data-key="t-password">{{ $t("t-password") }} <span
+                          class="text-danger">*</span></label>
                       <div class="position-relative auth-pass-inputgroup mb-3">
-                        <input
-                          v-if="showPassword"
-                          type="text"
-                          v-model="loginInput.password"
-                          onpaste="return false"
-                          class="form-control pe-5"
-                          :class="{
+                        <input v-if="showPassword" type="text" v-model="loginInput.password" onpaste="return false"
+                          class="form-control pe-5" :class="{
                             'is-invalid':
                               submitted && v$.loginInput.password.$error,
-                          }"
-                          placeholder="Enter password"
-                          id="password-input"
-                        />
-                        <input
-                          v-else
-                          type="password"
-                          v-model="loginInput.password"
-                          onpaste="return false"
-                          class="form-control pe-5"
-                          :class="{
+                          }" data-key="t-enterpassw" v-bind:placeholder="$t('t-enterpassw')" id="password-input" />
+                        <input v-else type="password" v-model="loginInput.password" onpaste="return false"
+                          class="form-control pe-5" :class="{
                             'is-invalid':
                               submitted && v$.loginInput.password.$error,
-                          }"
-                          placeholder="Enter password"
-                          id="password-input"
-                        />
-                        <button
-                          @click="toggleShow"
+                          }" data-key="t-enterpassw" v-bind:placeholder="$t('t-enterpassw')" id="password-input" />
+                        <button @click="toggleShow"
                           class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
-                          type="button"
-                          style="box-shadow: none !important"
-                          id="password-addon"
-                        >
+                          type="button" style="box-shadow: none !important" id="password-addon">
                           <em class="ri-eye-fill align-middle"></em>
                         </button>
-                        <div
-                          v-if="submitted && v$.loginInput.password.$error"
-                          class="invalid-feedback"
-                        >
-                          <span
-                            v-if="v$.loginInput.password.required.$message"
-                            >{{
+                        <div v-if="submitted && v$.loginInput.password.$error" class="invalid-feedback">
+                          <span v-if="v$.loginInput.password.required.$message">{{
                               v$.loginInput.password.required.$message
-                            }}</span
-                          >
+                          }}</span>
                         </div>
                       </div>
                     </div>
 
                     <div class="mt-4">
                       <!------------------- MODIFY METHOD TO CALL IF NO BACKEND (ForceLogIn) OR IF BACKEND (tryToLogIn) ------------------->
-                      <button
-                        @click="LogIn"
-                        class="btn btn-success w-100"
-                        type="submit"
-                      >
-                        Sign In
+                      <button @click="LogIn" class="btn btn-success w-100" type="submit" data-key="t-signin">{{
+                          $t("t-signin")
+                      }}
                       </button>
                     </div>
 
                     <div class="mt-4 text-center">
                       <div class="signin-other-title">
-                        <h5 class="fs-13 mb-4 title">Sign In with</h5>
+                        <h5 class="fs-13 mb-4 title" data-key="t-signinw">{{ $t("t-signinw") }}</h5>
                       </div>
                       <div>
-                        <button
-                          type="button"
-                          class="btn btn-danger btn-icon waves-effect waves-light ms-1"
-                        >
+                        <button type="button" class="btn btn-danger btn-icon waves-effect waves-light ms-1">
                           <em class="ri-qr-code-fill fs-16"></em>
                         </button>
                       </div>
                       <div class="mt-4 text-center">
-                        <p class="mb-0 text-muted" style="color: black">
-                          Don't have an account ?
-                          <router-link
-                            to="/register-mail"
-                            class="fw-semibold text-primary text-decoration-underline"
-                          >
-                            Signup
+                        <p class="mb-0 text-muted" style="color: black" data-key="t-prosign">{{ $t("t-prosign") }}
+
+                          <router-link to="/register-mail" class="fw-semibold text-primary text-decoration-underline"
+                            data-key="t-signup">{{ $t("t-signup") }}
                           </router-link>
                         </p>
                       </div>
@@ -418,13 +370,7 @@ export default {
             </div>
             <!-- end card -->
           </div>
-          <div class="col-md-8 col-lg-6 col-xl-1">
-            <div class="card mt-4">
-              <div class="card-body p-4"></div>
-              <!-- end card body -->
-            </div>
-            <!-- end card -->
-          </div>
+          <translatemodule />
         </div>
         <!-- end row -->
       </div>
