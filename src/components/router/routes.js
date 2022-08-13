@@ -28,7 +28,7 @@ export default [
   {
     path: "/test",
     name: "test",
-    component: () => import("../../views/auth/twostep/basic.vue"),
+    component: () => import("../../views/dashboard/index.vue"),
     meta: {
       title: "Test",
       beforeResolve,
@@ -174,28 +174,19 @@ export default [
     path: "/maintenance",
     name: "maintenance",
     meta: { title: "Maintanance", authRequired: mode },
-    component: () => import("../../views/pages/maintenance"),
+    component: () => import("../../views/errors-section/maintenance"),
   },
   {
     path: "/coming-soon",
     name: "coming-soon",
     meta: { title: "Comming Soon", authRequired: mode },
-    component: () => import("../../views/pages/coming-soon"),
+    component: () => import("../../views/errors-section/coming-soon"),
   },
   {
     path: "/search-results",
     name: "search-results",
     meta: { title: "Search Results", authRequired: mode },
     component: () => import("../../views/pages/search-results"),
-  },
-  {
-    path: "/twostep",
-    name: "twostep-basic",
-    meta: {
-      title: "Two Step Auth",
-      authRequired: mode,
-    },
-    component: () => import("../../views/auth/twostep/basic"),
   },
   {
     path: "/500",
