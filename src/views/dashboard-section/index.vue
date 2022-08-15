@@ -3,9 +3,9 @@ import Layout from "../../components/layouts/main.vue";
 import PageHeader from "../../components/frames/page-header";
 import appConfig from "../../../app.config";
 
-import Widgets from "./widget.vue";
-import Schedules from "./schedule.vue";
-import Chat from "./chat.vue";
+import Widgets from "../dashboard-components-section/widget.vue";
+import Schedules from "../dashboard-components-section/schedule.vue";
+import Chat from "../dashboard-components-section/chat.vue";
 
 export default {
   page: {
