@@ -6,7 +6,6 @@ import { ref, watch } from "vue";
 import useVuelidate from "@vuelidate/core";
 
 import Lottie from "@/components/widgets/lottie.vue";
-import { FilePlusIcon } from '@zhuowenli/vue-feather-icons';
 import DropZone from "@/components/widgets/dropZone";
 
 export default {
@@ -78,7 +77,6 @@ export default {
     Layout,
     PageHeader,
     lottie: Lottie,
-    FilePlusIcon,
     DropZone,
   }, mounted() {
     const checkbox = document.getElementsByClassName("code-switcher");
@@ -126,7 +124,7 @@ export default {
                       data-bs-target="#pills-bill-address" type="button" role="tab" aria-controls="pills-bill-address"
                       aria-selected="false">
                       <em
-                        class="ri-truck-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"></em>
+                        class="ri-message-3-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"></em>
                       Summary of the Visit
                     </button>
                   </li>
@@ -134,8 +132,8 @@ export default {
                     <button class="nav-link fs-15 p-3" id="pills-payment-tab" data-bs-toggle="pill"
                       data-bs-target="#pills-payment" type="button" role="tab" aria-controls="pills-payment"
                       aria-selected="false">
-                      <file-plus-icon size="2x"
-                        class="fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2" />
+                      <em
+                        class="ri-file-add-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"></em>
                       Document Upload
                     </button>
                   </li>

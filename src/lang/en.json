@@ -211,5 +211,6 @@
   "t-staffname": "Staff name",
   "t-staffpos": "Staff position",
   "t-date": "Date",
-  "t-time": "Time"
+  "t-time": "Time",
+  "t-patientvisited": "Select the visited patient"
 }

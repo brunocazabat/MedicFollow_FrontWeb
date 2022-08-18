@@ -211,5 +211,6 @@
   "t-staffname": "Personal Name",
   "t-staffpos": "Personalstelle",
   "t-date": "Datum",
-  "t-time": "Zeit"
+  "t-time": "Zeit",
+  "t-patientvisited": "Wählen Sie den besuchten Patienten aus"
 }
