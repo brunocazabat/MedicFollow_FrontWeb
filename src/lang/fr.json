@@ -212,5 +212,21 @@
   "t-staffpos": "Position du personnel",
   "t-date": "Date",
   "t-time": "Heure",
-  "t-patientvisited": "Sélectionnez le patient visité"
+  "t-patientvisited": "Sélectionnez le patient visité",
+  "t-patientsearchtxt": "Veuillez rechercher le patient en utilisant la boîte de recherche ci-dessous. Vous pouvez également saisir directement son nom.",
+  "t-searchpatient": "Rechercher le patient...",
+  "t-firstname": "Prénom",
+  "t-lastname": "Nom de famille",
+  "t-roomnbr": "Numéro de la chambre",
+  "t-optional": "Optionnel",
+  "t-proceedsum": "Procéder au résumé de la visite",
+  "t-visitsum": "Résumé de la visite médical.",
+  "t-fillinfobelow": "Veuillez remplir toutes les informations ci-dessous.",
+  "t-isvisitapproved": "Votre visite médicale a-t-elle été approuvée?",
+  "t-yes": "OUI",
+  "t-no": "NON",
+  "t-visitapproved": "Le résumé de la visite médicale a été approuvé.",
+  "t-visitnotapproved": "Le résumé de la visite médicale est en attente d'approbation.",
+  "t-backtopatient": "Retour à la recherche de patients",
+  "t-gotodocupload": "Continuer vers le la mise en ligne de documents"
 }

@@ -152,9 +152,9 @@ export default {
                 <div class="tab-pane fade show active" id="pills-bill-info" role="tabpanel"
                   aria-labelledby="pills-bill-info-tab">
                   <div>
-                    <h5 class="mb-1">Select the visted patient</h5>
-                    <p class="text-muted mb-4">
-                      Please search the patient using the search box below. You can also input his name directly.
+                    <h5 class="mb-1" data-key="t-patientvisited">{{ $t("t-patientvisited") }}.</h5>
+                    <p class="text-muted mb-4" data-key="t-patientsearchtxt">
+                      {{ $t("t-patientsearchtxt") }}
                     </p>
                   </div>
 
@@ -176,7 +176,9 @@ export default {
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="mb-3">
-                          <label for="billinginfo-firstName" class="form-label">First Name</label>
+                          <label for="billinginfo-firstName" class="form-label" data-key="t-firstname">{{
+                              $t("t-firstname")
+                          }}</label>
                           <input type="text" class="form-control" id="billinginfo-firstName"
                             placeholder="Enter first name" value="" />
                         </div>
@@ -184,7 +186,8 @@ export default {
 
                       <div class="col-sm-6">
                         <div class="mb-3">
-                          <label for="billinginfo-lastName" class="form-label">Last Name</label>
+                          <label for="billinginfo-lastName" class="form-label" data-key="t-lastname">{{ $t("t-lastname")
+                          }}</label>
                           <input type="text" class="form-control" id="billinginfo-lastName"
                             placeholder="Enter last name" value="" />
                         </div>
@@ -194,8 +197,8 @@ export default {
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="mb-3">
-                          <label for="billinginfo-email" class="form-label">Room Number
-                            <span class="text-muted">(Optional)</span></label>
+                          <label for="billinginfo-email" class="form-label" data-key="t-roomnbr">{{ $t("t-roomnbr") }}
+                            <span class="text-muted" data-key="t-optional">({{ $t("t-optional") }})</span></label>
                           <input type="email" class="form-control" id="billinginfo-email" placeholder="Enter email" />
                         </div>
                       </div>
@@ -204,9 +207,9 @@ export default {
 
                     <div class="d-flex align-items-start gap-3 mt-3">
                       <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
-                        data-nexttab="pills-bill-address-tab">
-                        <em class="ri-truck-line label-icon align-middle fs-16 ms-2"></em>Proceed to the summary of the
-                        visit
+                        data-nexttab="pills-bill-address-tab" data-key="t-proceedsum">
+                        <em class="ri-message-3-line label-icon align-middle fs-16 ms-2"></em>{{ $t("t-proceedsum")
+                        }}
                       </button>
                     </div>
                   </div>
@@ -216,9 +219,9 @@ export default {
                 <div class="tab-pane fade" id="pills-bill-address" role="tabpanel"
                   aria-labelledby="pills-bill-address-tab">
                   <div>
-                    <h5 class="mb-1">Summary of the medical visit</h5>
-                    <p class="text-muted mb-4">
-                      Please fill all information below
+                    <h5 class="mb-1" data-key="t-visitsum">{{ $t("t-visitsum") }}</h5>
+                    <p class="text-muted mb-4" data-key="t-fillinfobelow">
+                      {{ $t("t-fillinfobelow") }}
                     </p>
                   </div>
 
@@ -234,7 +237,7 @@ export default {
                     </div>
 
                     <div class="mt-4">
-                      <h5 class="fs-14 mb-3">Was your medical visit approved?</h5>
+                      <h5 class="fs-14 mb-3" data-key="t-isvisitapproved">{{ $t("t-isvisitapproved") }}</h5>
 
                       <div class="row g-4">
                         <div class="col-lg-6">
@@ -242,9 +245,10 @@ export default {
                             <input id="shippingMethod01" name="shippingMethod" type="radio" class="form-check-input"
                               checked />
                             <label class="form-check-label" for="shippingMethod01">
-                              <span class="fs-14 mb-1 text-wrap d-block">YES</span>
-                              <span class="text-muted fw-normal text-wrap d-block">The summary of the medical visit got
-                                approved.</span>
+                              <span class="fs-14 mb-1 text-wrap d-block" data-key="t-yes">{{ $t("t-yes") }}</span>
+                              <span class="text-muted fw-normal text-wrap d-block" data-key="t-visitapproved">{{
+                                  $t("t-visitapproved")
+                              }}</span>
                             </label>
                           </div>
                         </div>
@@ -252,9 +256,10 @@ export default {
                           <div class="form-check card-radio">
                             <input id="shippingMethod02" name="shippingMethod" type="radio" class="form-check-input" />
                             <label class="form-check-label" for="shippingMethod02">
-                              <span class="fs-14 mb-1 text-wrap d-block">NO</span>
-                              <span class="text-muted fw-normal text-wrap d-block">The summary of the medical visit is
-                                awaiting for approval.</span>
+                              <span class="fs-14 mb-1 text-wrap d-block" data-key="t-no">{{ $t("t-no") }}</span>
+                              <span class="text-muted fw-normal text-wrap d-block" data-key="t-visitnotapproved">{{
+                                  $t("t-visitnotapproved")
+                              }}</span>
                             </label>
                           </div>
                         </div>
@@ -263,13 +268,13 @@ export default {
                   </div>
 
                   <div class="d-flex align-items-start gap-3 mt-4">
-                    <button type="button" class="btn btn-light btn-label previestab"
-                      data-previous="pills-bill-info-tab">
-                      <em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em>Back to Search Patient
+                    <button type="button" class="btn btn-light btn-label previestab" data-previous="pills-bill-info-tab"
+                      data-key="t-backtopatient">
+                      <em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em>{{ $t("t-backtopatient") }}
                     </button>
                     <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
-                      data-nexttab="pills-payment-tab">
-                      <em class="ri-bank-card-line label-icon align-middle fs-16 ms-2"></em>Continue to Document Upload
+                      data-nexttab="pills-payment-tab" data-key="t-gotodocupload">
+                      <em class="ri-file-add-line label-icon align-middle fs-16 ms-2"></em>{{ $t("t-gotodocupload") }}
                     </button>
                   </div>
                 </div>

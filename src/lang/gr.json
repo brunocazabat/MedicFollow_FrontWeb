@@ -212,5 +212,21 @@
   "t-staffpos": "Personalstelle",
   "t-date": "Datum",
   "t-time": "Zeit",
-  "t-patientvisited": "Wählen Sie den besuchten Patienten aus"
+  "t-patientvisited": "Wählen Sie den besuchten Patienten aus",
+  "t-patientsearchtxt": "Bitte suchen Sie den Patienten über das Suchfeld unten. Sie können seinen Namen auch direkt eingeben.",
+  "t-searchpatient": "Patienten suchen...",
+  "t-firstname": "Vorname",
+  "t-lastname": "Nachname",
+  "t-roomnbr": "Zimmernummer",
+  "t-optional": "Optional",
+  "t-proceedsum": "Fahren Sie mit der Zusammenfassung des Besuchs fort",
+  "t-visitsum": "Zusammenfassung des Arztbesuchs.",
+  "t-fillinfobelow": "Bitte füllen Sie unten alle Informationen aus.",
+  "t-isvisitapproved": "Wurde Ihr Arztbesuch genehmigt?",
+  "t-yes": "JA",
+  "t-no": "NEIN",
+  "t-visitapproved": "Die Zusammenfassung des Arztbesuchs wurde genehmigt.",
+  "t-visitnotapproved": "Die Zusammenfassung des Arztbesuchs wartet auf die Genehmigung.",
+  "t-backtopatient": "Zurück zur Patientensuche",
+  "t-gotodocupload": "Weiter zum Dokumenten-Upload"
 }

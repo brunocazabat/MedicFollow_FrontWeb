@@ -212,5 +212,21 @@
   "t-staffpos": "Staff position",
   "t-date": "Date",
   "t-time": "Time",
-  "t-patientvisited": "Select the visited patient"
+  "t-patientvisited": "Select the visited patient",
+  "t-patientsearchtxt": "Please search the patient using the search box below. You can also input his name directly.",
+  "t-searchpatient": "Search patient...",
+  "t-firstname": "First Name",
+  "t-lastname": "Last Name",
+  "t-roomnbr": "Room Number",
+  "t-optional": "Optional",
+  "t-proceedsum": "Proceed to the summary of the visit",
+  "t-visitsum": "Summary of the medical visit.",
+  "t-fillinfobelow": "Please fill all information below.",
+  "t-isvisitapproved": "Was your medical visit approved?",
+  "t-yes": "YES",
+  "t-no": "NO",
+  "t-visitapproved": "The summary of the medical visit got approved.",
+  "t-visitnotapproved": "The summary of the medical visit is awaiting for approval.",
+  "t-backtopatient": "Back to Search Patient",
+  "t-gotodocupload": "Continue to Document Upload"
 }
