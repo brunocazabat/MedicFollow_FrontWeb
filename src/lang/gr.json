@@ -187,7 +187,7 @@
   "t-viewmsg": "Alle Nachrichten anzeigen",
   "t-viewcal": "Alle Ereignisse anzeigen",
   "t-curtime": "Aktuelle Zeit",
-  "t-nextappoint": "Nächster Termin",
+  "t-nextappoint": "Nächste Veranstaltung",
   "t-lastinfo": "Letzte Patienteninformationen",
   "t-covidwarn": "Covid-Warnung",
   "t-situation": "Nichts zu signalisieren.",
@@ -202,5 +202,14 @@
   "t-status": "Status",
   "t-ressources": "Ressourcen",
   "t-rename": "Umbenennen",
-  "t-delete": "Löschen"
+  "t-delete": "Löschen",
+  "t-readsmy": "Zusammenfassung lesen",
+  "t-accesscal": "Kalender zugreifen",
+  "t-recentvisits": "Kürzliche Arztbesuche",
+  "t-generatereport": "Bericht generieren",
+  "t-visitid": "Besuchs-ID",
+  "t-staffname": "Personal Name",
+  "t-staffpos": "Personalstelle",
+  "t-date": "Datum",
+  "t-time": "Zeit"
 }

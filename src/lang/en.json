@@ -187,7 +187,7 @@
   "t-viewmsg": "View all Messages",
   "t-viewcal": "View all Events",
   "t-curtime": "Current Time",
-  "t-nextappoint": "Next Appointment",
+  "t-nextappoint": "Next Event",
   "t-lastinfo": "Patient Last Infos",
   "t-covidwarn": "Covid Warning",
   "t-situation": "Nothing to signal.",
@@ -202,5 +202,14 @@
   "t-status": "Status",
   "t-ressources": "Resources",
   "t-rename": "Rename",
-  "t-delete": "Delete"
+  "t-delete": "Delete",
+  "t-readsmy": "Read summary",
+  "t-accesscal": "Access calendar",
+  "t-recentvisits": "Recent Medical Visits",
+  "t-generatereport": "Generate Report",
+  "t-visitid": "Visit ID",
+  "t-staffname": "Staff name",
+  "t-staffpos": "Staff position",
+  "t-date": "Date",
+  "t-time": "Time"
 }

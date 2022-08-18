@@ -54,8 +54,8 @@ export default {
                 </div>
 
                 <div class="card-footer">
-                  <a href="javascript:void(0);" class="link-dark mb-2">
-                    Read Summary
+                  <a href="javascript:void(0);" class="link-dark mb-2" data-key="t-readsmy">
+                    {{ $t("t-readsmy") }}
                     <em class="ri-arrow-right-s-line align-middle lh-1"></em>
                   </a>
                 </div>
@@ -89,8 +89,8 @@ export default {
                 </div>
 
                 <div class="card-footer">
-                  <a href="javascript:void(0);" class="link-dark mb-2">
-                    Access Calendar
+                  <a href="javascript:void(0);" class="link-dark mb-2" data-key="t-accesscal">
+                    {{ $t("t-accesscal") }}
                     <em class="ri-arrow-right-s-line align-middle lh-1"></em>
                   </a>
                 </div>
@@ -116,11 +116,11 @@ export default {
   <div class="col-xl-8">
     <div class="card">
       <div class="card-header align-items-center d-flex">
-        <h4 class="card-title mb-0 flex-grow-1">Recent Medical Visits</h4>
+        <h4 class="card-title mb-0 flex-grow-1" data-key="t-recentvisits">{{ $t("t-recentvisits") }}</h4>
         <div class="flex-shrink-0">
-          <button type="button" class="btn btn-soft-info btn-sm shadow-none">
+          <button type="button" class="btn btn-soft-info btn-sm shadow-none" data-key="t-generatereport">
             <em class="ri-file-list-3-line align-middle"></em>
-            Generate Report
+            {{ $t("t-generatereport") }}
           </button>
         </div>
       </div>
@@ -132,11 +132,12 @@ export default {
             aria-label="Medical Visits Table">
             <thead class="text-muted table-light">
               <tr>
-                <th scope="col">Visit ID</th>
-                <th scope="col">Staff Name</th>
-                <th scope="col">Staff Position</th>
-                <th scope="col">Time</th>
-                <th scope="col">Status</th>
+                <th scope="col" data-key="t-visitid">{{ $t("t-visitid") }}</th>
+                <th scope="col" data-key="t-staffname">{{ $t("t-staffname") }}</th>
+                <th scope="col" data-key="t-staffpos">{{ $t("t-staffpos") }}</th>
+                <th scope="col" data-key="t-date">{{ $t("t-date") }}</th>
+                <th scope="col" data-key="t-time">{{ $t("t-time") }}</th>
+                <th scope="col" data-key="t-status">{{ $t("t-status") }}</th>
               </tr>
             </thead>
             <tbody>
@@ -154,6 +155,7 @@ export default {
                   </div>
                 </td>
                 <td>Nurse</td>
+                <td>07/08/2022</td>
                 <td>{{ localTime }}</td>
                 <td>
                   <span class="badge badge-soft-warning">Pending Approval</span>
@@ -174,6 +176,7 @@ export default {
                   </div>
                 </td>
                 <td>Rheumatologist</td>
+                <td>07/08/2022</td>
                 <td>15:32</td>
                 <td>
                   <span class="badge badge-soft-success">Approved</span>
@@ -194,6 +197,7 @@ export default {
                   </div>
                 </td>
                 <td>Rheumatologist Intern</td>
+                <td>07/08/2022</td>
                 <td>10:17</td>
                 <td>
                   <span class="badge badge-soft-success">Approved</span>
