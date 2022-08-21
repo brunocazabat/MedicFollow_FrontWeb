@@ -47,7 +47,7 @@ export default [
   },
   {
     path: "/register-mail",
-    name: "Register Mail",
+    name: "register-mail",
     component: () =>
       import("../../views/log-account-section/register-mail.vue"),
     meta: {
@@ -57,7 +57,7 @@ export default [
   },
   {
     path: "/register-mail-success",
-    name: "Mail Success",
+    name: "mail-success",
     component: () =>
       import("../../views/log-account-section/register-mail-success.vue"),
     meta: {
@@ -67,7 +67,7 @@ export default [
   },
   {
     path: "/register-fill",
-    name: "Register Fill",
+    name: "register-fill",
     component: () =>
       import("../../views/log-account-section/register-fill.vue"),
     meta: {
@@ -77,7 +77,7 @@ export default [
   },
   {
     path: "/register-fill-success",
-    name: "Fill Success",
+    name: "fill-success",
     component: () =>
       import("../../views/log-account-section/register-fill-success.vue"),
     meta: {
@@ -87,7 +87,7 @@ export default [
   },
   {
     path: "/forgot-password",
-    name: "Forgot password",
+    name: "forgot-password",
     component: () =>
       import("../../views/log-account-section/forgot-password.vue"),
     meta: {
@@ -97,7 +97,7 @@ export default [
   },
   {
     path: "/forgot-password-success",
-    name: "Forgot password success",
+    name: "forgot-password-success",
     component: () =>
       import("../../views/log-account-section/forgot-password-success.vue"),
     meta: {
