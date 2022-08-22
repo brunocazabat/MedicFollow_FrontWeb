@@ -48,7 +48,7 @@ export default {
         </li>
         <li>
           <router-link to="/forgot-password-success">
-            /fgt-pwd-success
+            /fgt-p-success
           </router-link>
         </li>
       </ul>
