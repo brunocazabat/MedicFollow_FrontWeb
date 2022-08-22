@@ -1,6 +1,6 @@
 <script>
 import i18n from "../../../i18n";
-import adminmodule from "./admin-panel-log.vue";
+import adminmodule from "./admin-panel-log-module.vue";
 
 /**
  * translate-module Component
