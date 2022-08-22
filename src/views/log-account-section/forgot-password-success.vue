@@ -2,9 +2,10 @@
 import translatemodule from "./components/translate-module.vue";
 import logoheadermodule from "./components/logo-header-module.vue";
 import particlesmodule from "./components/particles-module.vue";
+import footerlogmodule from "./footer-log-module.vue";
 
 export default {
-  components: { translatemodule, logoheadermodule, particlesmodule },
+  components: { translatemodule, logoheadermodule, particlesmodule, footerlogmodule },
 };
 </script>
 
