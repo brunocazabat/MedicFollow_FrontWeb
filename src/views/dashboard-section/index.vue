@@ -43,14 +43,7 @@ export default {
     <div class="row project-wrapper">
       <div class="col-xxl-8">
         <div class="row">
-
           <Widgets />
-
-          <div class="col-xl-4">
-          </div>
-
-          <div class="col-xl-4">
-          </div>
         </div>
         <div class="row">
           <div class="col-xl-12">
