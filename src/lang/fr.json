@@ -228,5 +228,13 @@
   "t-visitapproved": "Le résumé de la visite médicale a été approuvé.",
   "t-visitnotapproved": "Le résumé de la visite médicale est en attente d'approbation.",
   "t-backtopatient": "Retour à la recherche de patients",
-  "t-gotodocupload": "Continuer vers le la mise en ligne de documents"
+  "t-gotodocupload": "Continuer vers le la mise en ligne de documents",
+  "t-docupload": "Mise en ligne de documents",
+  "t-uploaddoctxt": "Si vous en avez, veuillez mettre en ligne les documents importants ici. L'utilisateur sera capable de les visionner ainsi que les télécharger.",
+  "t-uploadhere": "Vous pouvez mettre en ligne les fichier en appuyant sur le bouton Upload ou en les glissant depuis votre ordinateur dans la zone de mise en ligne.",
+  "t-backtosum": "Retour au résumé de la visite",
+  "t-sendsum": "Envoyer le résumé de la visite médicale",
+  "t-sumsent": "Votre résumé de la visite médical a été envoyé. Vous pouvez trouver l'ID de la visite médicale plus bas.",
+  "t-sumerror": "Si vous avez envoyé ce résumé par accident ou si vous avez envoyé des informations erronées, veuillez nous contacter le plus rapidement possible afin que nous puissions supprimer le résumé!",
+  "t-medvisitid": "ID de la visite médicale"
 }

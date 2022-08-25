@@ -282,17 +282,16 @@ export default {
 
                 <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
                   <div>
-                    <h5 class="mb-1">Document Upload</h5>
-                    <p class="text-muted mb-4">
-                      If you have any, please upload important documents here. The user will be able to download and see
-                      the documents.
+                    <h5 class="mb-1" data-key="t-docupload">{{ $t("t-docupload") }}</h5>
+                    <p class="text-muted mb-4" data-key="t-uploaddoctxt">
+                      {{ $t("t-uploaddoctxt") }}
                     </p>
                   </div>
 
                   <!-- File Upload Dropzone -->
                   <div class="card-body">
-                    <p class="text-muted">
-                      You can upload the files by clicking on "Upload" or by dragging the file into the upload zone.
+                    <p class="text-muted" data-key="t-uploadhere">
+                      {{ $t("t-uploadhere") }}
                     </p>
 
                     <DropZone @drop.prevent="drop" @change="selectedFile" />
@@ -325,13 +324,12 @@ export default {
 
                   <div class="d-flex align-items-start gap-3 mt-4">
                     <button type="button" class="btn btn-light btn-label previestab"
-                      data-previous="pills-bill-address-tab">
-                      <em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em>Back to Visit Summary
+                      data-previous="pills-bill-address-tab" data-key="t-backtosum">
+                      <em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em>{{ $t("t-backtosum") }}
                     </button>
                     <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
-                      data-nexttab="pills-finish-tab">
-                      <em class="ri-shopping-basket-line label-icon align-middle fs-16 ms-2"></em>Send the summary of
-                      the medical visit
+                      data-nexttab="pills-finish-tab" data-key="t-sendsum">
+                      <em class="ri-shopping-basket-line label-icon align-middle fs-16 ms-2"></em>{{ $t("t-sendsum") }}
                     </button>
                   </div>
                 </div>
@@ -343,10 +341,9 @@ export default {
                       <lottie colors="primary:#0ab39c,secondary:#405189" :options="defaultOptions" :height="120"
                         :width="120" />
                     </div>
-                    <h5>Your medical visit summary has been sent. You can find the medical visit ID below.</h5>
-                    <p class="text-muted">
-                      If you sent this summary by accident or if you sent wrong information, please contact us as
-                      quickly as possible so we can delete the summary!
+                    <h5 data-key="t-sumsent">{{ $t("t-sumsent") }}</h5>
+                    <p class="text-muted" data-key="t-sumerror">
+                      {{ $t("t-sumerror") }}
                     </p>
 
                     <h3 class="fw-semibold">

@@ -228,5 +228,13 @@
   "t-visitapproved": "Die Zusammenfassung des Arztbesuchs wurde genehmigt.",
   "t-visitnotapproved": "Die Zusammenfassung des Arztbesuchs wartet auf die Genehmigung.",
   "t-backtopatient": "Zurück zur Patientensuche",
-  "t-gotodocupload": "Weiter zum Dokumenten-Upload"
+  "t-gotodocupload": "Weiter zum Dokumenten-Upload",
+  "t-docupload": "Dokumente hochladen",
+  "t-uploaddoctxt": "Wenn Sie welche haben, laden Sie bitte wichtige Dokumente hier hoch. Der Benutzer kann die Dokumente herunterladen und anzeigen.",
+  "t-uploadhere": "Sie können die Dateien hochladen, indem Sie auf Upload klicken oder die Datei in die Upload-Zone ziehen.",
+  "t-backtosum": "Zurück zur Zusammenfassung des Arztbesuchs",
+  "t-sendsum": "Senden Sie die Zusammenfassung des Arztbesuchs",
+  "t-sumsent": "Die Zusammenfassung Ihres Arztbesuchs wurde gesendet. Die Arztbesuchs-ID finden Sie unten.",
+  "t-sumerror": "Wenn Sie diese Zusammenfassung versehentlich gesendet haben oder wenn Sie falsche Informationen gesendet haben, kontaktieren Sie uns bitte so schnell wie möglich, damit wir die Zusammenfassung löschen können!",
+  "t-medvisitid": "Arztbesuchs-ID"
 }

@@ -228,5 +228,13 @@
   "t-visitapproved": "Se aprobó el resumen de la visita médica.",
   "t-visitnotapproved": "El resumen de la visita médica está pendiente de aprobación.",
   "t-backtopatient": "Volver a Buscar Paciente",
-  "t-gotodocupload": "Continuar con la carga de documentos"
+  "t-gotodocupload": "Continuar con la carga de documentos",
+  "t-docupload": "Carga de documentos",
+  "t-uploaddoctxt": "Si tiene alguno, cargue los documentos importantes aquí. El usuario podrá descargar y ver los documentos.",
+  "t-uploadhere": "Puede cargar los archivos haciendo clic en Upload o arrastrando el archivo a la zona de carga.",
+  "t-backtosum": "Volver al resumen de la gira",
+  "t-sendsum": "Enviar el resumen de la visita médica",
+  "t-sumsent": "Su resumen de visita médica ha sido enviado. Puede encontrar la identificación de la visita médica a continuación.",
+  "t-sumerror": "Si envió este resumen por accidente o si envió información incorrecta, comuníquese con nosotros lo antes posible para que podamos eliminar el resumen.",
+  "t-medvisitid": "ID de visita médica"
 }

@@ -228,5 +228,13 @@
   "t-visitapproved": "Approvato il riassunto della visita medica.",
   "t-visitnotapproved": "Il riassunto della visita medica è in attesa di approvazione.",
   "t-backtopatient": "Torna a Cerca paziente",
-  "t-gotodocupload": "Continua su Caricamento documenti"
+  "t-gotodocupload": "Continua su Caricamento documenti",
+  "t-docupload": "Caricamento documenti",
+  "t-uploaddoctxt": "Se ne hai, carica qui i documenti importanti. L'utente potrà scaricare e visualizzare i documenti.",
+  "t-uploadhere": "Puoi caricare i file facendo clic su Upload o trascinando il file nell'area di caricamento.",
+  "t-backtosum": "Torna al riepilogo del tour",
+  "t-sendsum": "Inviare il riepilogo della visita medica",
+  "t-sumsent": "Il riepilogo della tua visita medica è stato inviato. Puoi trovare l'ID della visita medica di seguito.",
+  "t-sumerror": "Se hai inviato questo riepilogo per sbaglio o se hai inviato informazioni errate, ti preghiamo di contattarci il prima possibile in modo che possiamo eliminare il riepilogo!",
+  "t-medvisitid": "ID visita medica"
 }

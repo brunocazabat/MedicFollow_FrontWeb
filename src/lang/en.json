@@ -228,5 +228,13 @@
   "t-visitapproved": "The summary of the medical visit got approved.",
   "t-visitnotapproved": "The summary of the medical visit is awaiting for approval.",
   "t-backtopatient": "Back to Search Patient",
-  "t-gotodocupload": "Continue to Document Upload"
+  "t-gotodocupload": "Continue to Document Upload",
+  "t-docupload": "Documents Upload",
+  "t-uploaddoctxt": "If you have any, please upload important documents here. The user will be able to download and see the documents.",
+  "t-uploadhere": "You can upload the files by clicking on Upload or by dragging the file into the upload zone.",
+  "t-backtosum": "Back to Visit Summary",
+  "t-sendsum": "Send the summary of the medical visit",
+  "t-sumsent": "Your medical visit summary has been sent. You can find the medical visit ID below.",
+  "t-sumerror": "If you sent this summary by accident or if you sent wrong information, please contact us as quickly as possible so we can delete the summary!",
+  "t-medvisitid": "Medical Visit ID"
 }
