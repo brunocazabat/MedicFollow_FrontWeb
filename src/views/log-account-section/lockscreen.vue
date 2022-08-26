@@ -25,33 +25,32 @@ export default {
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center mt-2">
-                  <h4 class="text-primary">LOCK SCREEN</h4>
-                  <p class="text-muted">
-                    Enter your password to unlock your MedicFollow session.
+                  <h4 class="text-primary" data-key="t-lockscreen">{{ $t("t-lockscreen") }}</h4>
+                  <p class="text-muted" data-key="t-unlockscreen">{{ $t("t-unlockscreen") }}
                   </p>
                 </div>
                 <div class="user-thumb text-center">
                   <img src="@/assets/images/users/avatar-1.png" class="rounded-circle img-thumbnail avatar-lg shadow"
                     alt="thumbnail" />
-                  <h5 class="font-size-15 mt-3">Load Instance Name</h5>
+                  <h5 class="font-size-15 mt-3" data-key="t-name">{{ $t("t-name") }}</h5>
                 </div>
                 <div class="p-2 mt-4">
                   <form>
                     <div class="mb-3">
-                      <label class="form-label" for="userpassword">Password</label>
-                      <input type="password" class="form-control" id="userpassword" placeholder="Enter password"
-                        required />
+                      <label class="form-label" for="userpassword" data-key="t-password">{{ $t("t-password") }} <span
+                          class="text-danger">*</span></label>
+                      <input type="password" class="form-control" id="userpassword" data-key="t-enterpassw"
+                        v-bind:placeholder="$t('t-enterpassw')" required />
                     </div>
                     <div class="mb-2 mt-4">
-                      <button class="btn btn-success w-100" type="submit">
-                        Unlock
+                      <button class="btn btn-success w-100" type="submit" data-key="t-unlock">{{ $t("t-unlock") }}
                       </button>
                     </div>
                     <div class="mt-4 text-center">
-                      <p class="mb-0 text-muted" style="color: black">
-                        Not you ? Unlog me and get me back to the
-                        <router-link to="/login" class="fw-semibold text-primary text-decoration-underline">
-                          Login Page
+                      <p class="mb-0 text-muted" style="color: black" data-key="t-notyou">{{ $t("t-notyou") }}
+
+                        <router-link to="/login" class="fw-semibold text-primary text-decoration-underline"
+                          data-key="t-loginpage">{{ $t("t-loginpage") }}
                         </router-link>
                       </p>
                     </div>
