@@ -36,12 +36,12 @@ export default {
                   </div>
                 </div>
                 <div class="mt-4 pt-2">
-                  <h4>Well done !</h4>
+                  <h4>You've been successfully registered to MedicFollow.</h4>
                   <p class="text-muted mx-4">
-                    Aww yeah, you successfully read this important message.
+                    Your security come first. Be careful with your MedicFollow credentials.
                   </p>
                   <div class="mt-4">
-                    <router-link to="/auth/signin-basic" class="btn btn-success w-100">Back to Dashboard
+                    <router-link to="/auth/signin-basic" class="btn btn-success w-100">Back to the Login Page
                     </router-link>
                   </div>
                 </div>

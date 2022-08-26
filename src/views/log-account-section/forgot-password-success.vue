@@ -36,12 +36,12 @@ export default {
                   </div>
                 </div>
                 <div class="mt-4 pt-2">
-                  <h4>Well done !</h4>
+                  <h4>A reset mail has been sent to the specified address.</h4>
                   <p class="text-muted mx-4">
-                    Aww yeah, you successfully read this important message.
+                    Read carefully the mail and follow the instructions to get back your access.
                   </p>
                   <div class="mt-4">
-                    <router-link to="/auth/signin-basic" class="btn btn-success w-100">Back to Dashboard
+                    <router-link to="/login" class="btn btn-success w-100">Back to the Login Page
                     </router-link>
                   </div>
                 </div>

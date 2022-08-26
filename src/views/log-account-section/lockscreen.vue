@@ -25,15 +25,15 @@ export default {
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center mt-2">
-                  <h5 class="text-primary">Lock Screen</h5>
+                  <h4 class="text-primary">LOCK SCREEN</h4>
                   <p class="text-muted">
-                    Enter your password to unlock the screen!
+                    Enter your password to unlock your MedicFollow session.
                   </p>
                 </div>
                 <div class="user-thumb text-center">
                   <img src="@/assets/images/users/avatar-1.png" class="rounded-circle img-thumbnail avatar-lg shadow"
                     alt="thumbnail" />
-                  <h5 class="font-size-15 mt-3">Anna Adame</h5>
+                  <h5 class="font-size-15 mt-3">Load Instance Name</h5>
                 </div>
                 <div class="p-2 mt-4">
                   <form>
@@ -49,9 +49,9 @@ export default {
                     </div>
                     <div class="mt-4 text-center">
                       <p class="mb-0 text-muted" style="color: black">
-                        Not you ? return
+                        Not you ? Unlog me and get me back to the
                         <router-link to="/login" class="fw-semibold text-primary text-decoration-underline">
-                          Signin
+                          Login Page
                         </router-link>
                       </p>
                     </div>
