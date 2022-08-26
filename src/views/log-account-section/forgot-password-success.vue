@@ -36,12 +36,13 @@ export default {
                   </div>
                 </div>
                 <div class="mt-4 pt-2">
-                  <h4>A reset mail has been sent to the specified address.</h4>
-                  <p class="text-muted mx-4">
-                    Read carefully the mail and follow the instructions to get back your access.
+                  <h4 data-key="t-resetintro">{{ $t("t-resetintro") }}</h4>
+                  <p class="text-muted mx-4" data-key="t-readinfo">{{ $t("t-readinfo") }}
                   </p>
                   <div class="mt-4">
-                    <router-link to="/login" class="btn btn-success w-100">Back to the Login Page
+                    <router-link to="/login" class="btn btn-success w-100" data-key="t-returnlogin">{{
+                        $t("t-returnlogin")
+                    }}
                     </router-link>
                   </div>
                 </div>

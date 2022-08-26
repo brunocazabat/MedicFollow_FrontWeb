@@ -51,28 +51,8 @@ export default {
 
       if (this.v$.$invalid) {
         return;
-      } else {
-        if (process.env.VUE_APP_DEFAULT_AUTH === "firebase") {
-          this.tryingToReset = true;
-          // Reset the authError if it existed.
-          this.error = null;
-          return (
-            this.resetPassword({
-              email: this.email,
-            })
-              // eslint-disable-next-line no-unused-vars
-              .then((token) => {
-                this.tryingToReset = false;
-                this.isResetError = false;
-              })
-              .catch((error) => {
-                this.tryingToReset = false;
-                this.error = error ? error : "";
-                this.isResetError = true;
-              })
-          );
-        }
       }
+
     },
   },
 };
@@ -94,9 +74,7 @@ export default {
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center mt-2">
-                  <p class="text-muted">
-                    We will send an email to your address to reset your
-                    password.
+                  <p class="text-muted" data-key="t-willreset">{{ $t("t-willreset") }}
                   </p>
                   <lottie class="avatar-xl" colors="primary:#45CB85,secondary:#4b38b3" :options="defaultOptions"
                     :height="120" :width="120" />
@@ -106,24 +84,24 @@ export default {
                   <b-alert v-model="isResetError" class="mb-4" variant="danger" dismissible>{{ error }}</b-alert>
                   <form @submit.prevent="tryToReset">
                     <div class="mb-4">
-                      <label class="form-label">Email <span class="text-danger">*</span></label>
+                      <label for="email" class="form-label" data-key="t-email">{{ $t("t-email") }} <span
+                          class="text-danger">*</span></label>
                       <input type="email" v-model="email" class="form-control" id="email"
-                        :class="{ 'is-invalid': submitted && v$.email.$errors }" placeholder="Enter Email" />
+                        :class="{ 'is-invalid': submitted && v$.email.$errors }" data-key="t-entermail"
+                        v-bind:placeholder="$t('t-entermail')" />
                       <div v-for="(item, index) in v$.email.$errors" :key="index" class="invalid-feedback">
                         <span v-if="item.$message">{{ item.$message }}</span>
                       </div>
                     </div>
 
                     <div class="text-center mt-4">
-                      <button class="btn btn-success w-100" type="submit">
-                        Send Reset Link
+                      <button class="btn btn-success w-100" type="submit" data-key="t-resetlink">{{ $t("t-resetlink") }}
                       </button>
                     </div>
                     <div class="mt-4 text-center">
-                      <p class="mb-0 text-muted" style="color: black">
-                        Wait, I remember my password.
-                        <router-link to="/login" class="fw-semibold text-primary text-decoration-underline">
-                          Signin
+                      <p class="mb-0 text-muted" style="color: black" data-key="t-remempass">{{ $t("t-remempass") }}
+                        <router-link to="/login" class="fw-semibold text-primary text-decoration-underline"
+                          data-key="t-signin">{{ $t("t-signin") }}
                         </router-link>
                       </p>
                     </div>
