@@ -88,25 +88,21 @@ export default {
         <div class="navbar-brand-box">
           <router-link to="/" class="logo logo-dark">
             <span class="logo-sm">
-              <img src="@/assets/images/logo/logo-short.png" alt="" height="22" />
+              <img src="@/assets/images/logo/logo-short.png" alt="" height="25" />
             </span>
             <span class="logo-lg">
-              <img src="@/assets/images/logo/logo-long.png" alt="" height="45" />
+              <img src="@/assets/images/logo/logo-long.png" alt="" height="30" />
             </span>
           </router-link>
 
           <router-link to="/" class="logo logo-light">
             <span class="logo-sm">
-              <img src="@/assets/images/logo/logo-short.png" alt="" height="22" />
+              <img src="@/assets/images/logo/logo-short.png" alt="" height="25" />
             </span>
             <span class="logo-lg">
-              <img src="@/assets/images/logo/logo-long.png" alt="" height="45" />
+              <img src="@/assets/images/logo/logo-long.png" alt="" height="30" />
             </span>
           </router-link>
-          <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
-            id="vertical-hover" @click.once="initActiveMenu">
-            <em class="ri-record-circle-line"></em>
-          </button>
         </div>
 
         <SimpleBar id="scrollbar" class="h-100" ref="scrollbar">
