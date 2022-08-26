@@ -3,11 +3,12 @@ import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import { mapState } from "vuex";
 import Popper from "vue3-popper";
+import { authMethods, authFackMethods, notificationMethods } from "@/components/state/helpers";
+import appConfig from "../../../app.config";
 import translatemodule from "./components/translate-module.vue";
 import logoheadermodule from "./components/logo-header-module.vue";
 import particlesmodule from "./components/particles-module.vue";
-import { authMethods, authFackMethods, notificationMethods } from "@/components/state/helpers";
-import appConfig from "../../../app.config";
+import footerlogmodule from "./components/footer-log-module.vue";
 
 export default {
   setup() {
@@ -22,7 +23,7 @@ export default {
       },
     ],
   },
-  components: { Popper, translatemodule, logoheadermodule, particlesmodule },
+  components: { Popper, translatemodule, logoheadermodule, particlesmodule, footerlogmodule },
   data() {
     return {
       user: {
@@ -229,20 +230,7 @@ export default {
     <!-- end auth page content -->
 
     <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="text-center">
-              <p class="mb-0 text-muted">
-                &copy; {{ new Date().getFullYear() }} MedicFollow. Crafted with
-                <em class="mdi mdi-heart text-danger"></em> by MedicFollow
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <footerlogmodule />
     <!-- end Footer -->
   </div>
   <!-- end auth-page-wrapper -->

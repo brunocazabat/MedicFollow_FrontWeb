@@ -8,6 +8,7 @@ import translatemodule from "./components/translate-module.vue";
 import { authMethods, notificationMethods } from "@/components/state/helpers";
 import logoheadermodule from "./components/logo-header-module.vue";
 import particlesmodule from "./components/particles-module.vue";
+import footerlogmodule from "./components/footer-log-module.vue";
 
 export default {
   setup() {
@@ -22,7 +23,7 @@ export default {
       },
     ],
   },
-  components: { translatemodule, logoheadermodule, particlesmodule },
+  components: { translatemodule, logoheadermodule, particlesmodule, footerlogmodule },
   data() {
     return {
       loginInput: {
@@ -243,20 +244,7 @@ export default {
     <!-- end auth page content -->
 
     <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="text-center">
-              <p class="mb-0 text-muted">
-                &copy; {{ new Date().getFullYear() }} MedicFollow. Crafted with
-                <em class="mdi mdi-heart text-danger"></em> by MedicFollow
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <footerlogmodule />
     <!-- end Footer -->
   </div>
   <!-- end auth-page-wrapper -->
