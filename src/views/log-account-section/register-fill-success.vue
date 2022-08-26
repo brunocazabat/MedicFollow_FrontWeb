@@ -36,12 +36,13 @@ export default {
                   </div>
                 </div>
                 <div class="mt-4 pt-2">
-                  <h4>You've been successfully registered to MedicFollow.</h4>
-                  <p class="text-muted mx-4">
-                    Your security come first. Be careful with your MedicFollow credentials.
+                  <h4 data-key="t-registerprocsuccess">{{ $t("t-registerprocsuccess") }}</h4>
+                  <p class="text-muted mx-4" data-key="t-securityreg">{{ $t("t-securityreg") }}
                   </p>
                   <div class="mt-4">
-                    <router-link to="/auth/signin-basic" class="btn btn-success w-100">Back to the Login Page
+                    <router-link to="/login" class="btn btn-success w-100" data-key="t-returnlogin">{{
+                        $t("t-returnlogin")
+                    }}
                     </router-link>
                   </div>
                 </div>

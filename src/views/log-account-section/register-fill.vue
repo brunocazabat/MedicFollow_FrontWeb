@@ -32,10 +32,6 @@ export default {
         password: "",
       },
       submitted: false,
-      regError: null,
-      tryingToRegister: false,
-      isRegisterError: false,
-      registerSuccess: false,
       showPassword: false,
       hover: false,
     };
@@ -63,7 +59,7 @@ export default {
     ...authMethods,
     ...authFackMethods,
     ...notificationMethods,
-    tryToRegisterIn() {
+    RegisterInInfos() {
       this.submitted = true;
       this.v$.$touch();
       this.$router.push("/register-fill-success");
@@ -97,29 +93,23 @@ export default {
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center">
-                  <p class="text-muted">
-                    Complete your profile to get started with Medicfollow.
+                  <p class="text-muted" data-key="t-completeprof">{{ $t("t-completeprof") }}
                   </p>
                 </div>
                 <div class="p-2 mt-4">
-                  <form class="needs-validation" @submit.prevent="tryToRegisterIn">
-                    <b-alert v-model="registerSuccess" class="mt-3" variant="success" dismissible>Registration
-                      successfull.</b-alert>
-
-                    <b-alert v-model="isRegisterError" class="mt-3" variant="danger" dismissible>{{ regError }}
-                    </b-alert>
-
+                  <form class="needs-validation" @submit.prevent="RegisterInInfos">
                     <div v-if="notification.message" :class="'alert ' + notification.type">
                       {{ notification.message }}
                     </div>
 
                     <!-- Familly Name Input row -->
                     <div class="mb-3">
-                      <label for="famillyname" class="form-label">Familly name <span
+                      <label for="famillyname" class="form-label" data-key="t-famname">{{ $t("t-famname") }} <span
                           class="text-danger">*</span></label>
                       <input type="text" class="form-control" v-model="user.famillyname" onpaste="return false" :class="{
                         'is-invalid': submitted && v$.user.famillyname.$error,
-                      }" id="famillyname" placeholder="Enter familly name" required />
+                      }" id="famillyname" v-bind:placeholder="$t('t-enterfamname')" data-key="t-enterfamname"
+                        required />
                       <div v-if="submitted && v$.user.famillyname.$error" class="invalid-feedback">
                         <span v-if="v$.user.famillyname.required.$message">{{
                             v$.user.famillyname.required.$message
@@ -129,10 +119,11 @@ export default {
 
                     <!-- Name Input row -->
                     <div class="mb-3">
-                      <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                      <label for="name" class="form-label" data-key="t-name">{{ $t("t-name") }} <span
+                          class="text-danger">*</span></label>
                       <input type="text" class="form-control" v-model="user.name" onpaste="return false" :class="{
                         'is-invalid': submitted && v$.user.name.$error,
-                      }" id="name" placeholder="Enter name" required />
+                      }" id="name" v-bind:placeholder="$t('t-entername')" data-key="t-entername" required />
                       <div v-if="submitted && v$.user.name.$error" class="invalid-feedback">
                         <span v-if="v$.user.name.required.$message">{{
                             v$.user.name.required.$message
@@ -144,37 +135,36 @@ export default {
                     <div class="mb-3">
                       <div class="float-end" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
                         <Popper placement="right" :show="hover">
-                          <p class="text-danger">Password requierements</p>
+                          <p class="text-danger" data-key="t-passreq">{{ $t("t-passreq") }}</p>
                           <template #content>
                             <div>
-                              <p class="invalid fs-12 mb-2">
-                                Minimum <strong>12 characters :</strong>
+                              <p class="invalid fs-12 mb-2" data-key="t-12char">{{ $t("t-12char") }}
+
                               </p>
-                              <p class="invalid fs-12 mb-2">
-                                - At least 8 <strong>lowercase</strong> letter
-                                (a-z).
+                              <p class="invalid fs-12 mb-2" data-key="t-8lowchar">{{ $t("t-8lowchar") }}
+
                               </p>
-                              <p class="invalid fs-12 mb-2">
-                                - At least 2 <strong>uppercase</strong> letter
-                                (A-Z).
+                              <p class="invalid fs-12 mb-2" data-key="t-2upchar">{{ $t("t-2upchar") }}
+
                               </p>
-                              <p class="invalid fs-12 mb-2">
-                                - A least 2 <strong>number</strong> (0-9).
+                              <p class="invalid fs-12 mb-2" data-key="t-2number">{{ $t("t-2number") }}
+
                               </p>
                             </div>
                           </template>
                         </Popper>
                       </div>
-                      <label class="form-label" for="password-input">Password <span class="text-danger">*</span></label>
+                      <label class="form-label" for="password-input" data-key="t-password">{{ $t("t-password")
+                      }} <span class="text-danger">*</span></label>
                       <div class="position-relative auth-pass-inputgroup mb-3">
                         <input v-if="showPassword" type="text" v-model="user.password" onpaste="return false"
                           class="form-control pe-5" :class="{
                             'is-invalid': submitted && v$.user.password.$error,
-                          }" placeholder="Enter password" id="password-input" />
+                          }" v-bind:placeholder="$t('t-enterpassw')" data-key="t-enterpassw" id="password-input" />
                         <input v-else type="password" v-model="user.password" onpaste="return false"
                           class="form-control pe-5" :class="{
                             'is-invalid': submitted && v$.user.password.$error,
-                          }" placeholder="Enter password" id="password-input" />
+                          }" v-bind:placeholder="$t('t-enterpassw')" data-key="t-enterpassw" id="password-input" />
                         <button @click="toggleShow"
                           class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
                           type="button" style="box-shadow: none !important" id="password-addon">
@@ -191,25 +181,27 @@ export default {
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="auth-remember-check" required />
                       <label class="form-check-label" for="auth-remember-check">
-                        <p class="mb-0 fs-12 text-muted fst-italic">
-                          By registering you agree to the MedicFollow
+                        <p class="mb-0 fs-12 text-muted fst-italic" data-key="t-agreeterm">{{ $t("t-agreeterm") }}
                           <a href="https://medicfollow.fr/fr/usage.html" target="_blank"
                             class="text-primary text-decoration-underline fst-normal fw-medium"
-                            rel="noreferrer noopener">Terms of use
+                            rel="noreferrer noopener" data-key="t-terms">{{ $t("t-terms") }}
                           </a>
                         </p>
                       </label>
                     </div>
 
                     <div class="mt-4">
-                      <button @click="tryToRegisterIn" class="btn btn-success w-100" type="submit">
-                        Sign Up
+                      <button @click="RegisterInInfos" class="btn btn-success w-100" type="submit"
+                        data-key="t-signup">{{
+                            $t("t-signup")
+                        }}
                       </button>
                       <div class="mt-4 text-center">
-                        <p class="mb-0 text-muted" style="color: black">
-                          Already have an account ?
-                          <router-link to="/login" class="fw-semibold text-primary text-decoration-underline">
-                            Signin
+                        <p class="mb-0 text-muted" style="color: black" data-key="t-alrdyaccount">{{
+                            $t("t-alrdyaccount")
+                        }}
+                          <router-link to="/login" class="fw-semibold text-primary text-decoration-underline"
+                            data-key="t-signin">{{ $t("t-signin") }}
                           </router-link>
                         </p>
                       </div>
