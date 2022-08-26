@@ -37,19 +37,43 @@ export default {
           title: "Italian",
         },
       ],
-      lan: i18n.locale,
+      lan: null,
       text: null,
       flag: null,
       value: null,
-      myVar: 1,
     };
   },
+  mounted: function () {
+    this.start()
+  },
   methods: {
+    start() {
+      console.log("oui");
+      switch (localStorage.getItem("language")) {
+        case "en":
+          this.lan = "en";
+          break;
+        case "fr":
+          this.lan = "fr";
+          break;
+        case "sp":
+          this.lan = "sp";
+          break;
+        case "gr":
+          this.lan = "gr";
+          break;
+        case "it":
+          this.lan = "it";
+          break;
+      }
+      document.getElementById("header-lang-img").setAttribute("src", this.languages.find(x => x.language === this.lan).flag);
+    },
     setLanguage(locale, country, flag) {
       this.lan = locale;
       this.text = country;
       this.flag = flag;
       document.getElementById("header-lang-img").setAttribute("src", flag);
+      localStorage.setItem("language", locale);
       i18n.global.locale = locale;
     },
   },
