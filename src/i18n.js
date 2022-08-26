@@ -7,6 +7,11 @@ import { createI18n } from "vue-i18n";
  * See: https://github.com/intlify/vue-i18n-loader#rocket-i18n-resource-pre-compilation
  */
 function loadLocaleMessages() {
+  localStorage.setItem("language", process.env.VUE_APP_I18N_LOCALE);
+  localStorage.setItem(
+    "fallbacklanguage",
+    process.env.VUE_APP_I18N_FALLBACK_LOCALE
+  );
   const locales = require.context(
     "./assets/lang",
     true,
@@ -47,8 +52,8 @@ const dateTimeFormats = {
 };
 
 export default createI18n({
-  locale: process.env.VUE_APP_I18N_LOCALE || "fr",
-  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "fr",
+  locale: process.env.VUE_APP_I18N_LOCALE,
+  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE,
   messages: loadLocaleMessages(),
   dateTimeFormats,
 });
