@@ -5,10 +5,10 @@ import { required, email, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import Lottie from "@/components/widgets/lottie.vue";
 import animationData from "@/assets/anim/animation2.json";
-import translatemodule from "./components/translate-module.vue";
-import logoheadermodule from "./components/logo-header-module.vue";
-import particlesmodule from "./components/particles-module.vue";
-import footerlogmodule from "./components/footer-log-module.vue";
+import translatemodule from "../../components/login-components/translate-module.vue";
+import logoheadermodule from "../../components/login-components/logo-header-module.vue";
+import particlesmodule from "../../components/login-components/particles-module.vue";
+import footerlogmodule from "../../components/login-components/footer-log-module.vue";
 
 export default {
   components: { lottie: Lottie, translatemodule, logoheadermodule, particlesmodule, footerlogmodule },
