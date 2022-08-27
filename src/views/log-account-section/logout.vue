@@ -4,7 +4,7 @@ import Lottie from "@/components/widgets/lottie.vue";
 import translatemodule from "../../components/login-components/translate-module.vue";
 import logoheadermodule from "../../components/login-components/logo-header-module.vue";
 import particlesmodule from "../../components/login-components/particles-module.vue";
-import footerlogmodule from "../../components/login-components/footer-log-module.vue";
+import footermodule from "../../components/login-components/footer-module.vue";
 
 export default {
   data() {
@@ -14,7 +14,7 @@ export default {
       },
     };
   },
-  components: { lottie: Lottie, translatemodule, logoheadermodule, particlesmodule, footerlogmodule },
+  components: { lottie: Lottie, translatemodule, logoheadermodule, particlesmodule, footermodule },
 };
 </script>
 
@@ -60,7 +60,7 @@ export default {
     <!-- end auth page content -->
 
     <!-- footer -->
-    <footerlogmodule />
+    <footermodule />
     <!-- end Footer -->
   </div>
   <!-- end auth-page-wrapper -->
