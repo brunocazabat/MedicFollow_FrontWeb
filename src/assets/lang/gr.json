@@ -1,5 +1,5 @@
 {
-  "T-FOOTER-BIS": "von MedicFollow.",
+  "t-footer-bis": "von MedicFollow.",
   "t-12char": "Mindestens 12 Zeichen :",
   "t-2number": "- Mindestens 2 Zahlen (0-9).",
   "t-2upchar": "- Mindestens 2 Großbuchstaben (A-Z).",
@@ -36,9 +36,7 @@
   "t-logout": "Ausloggen",
   "t-logoutsuccess": "Sie wurden von Ihrem Konto abgemeldet.",
   "t-lstchat": "Letzter Chat",
-  "t-mailbox": "Briefkasten",
   "t-mobadd": "Entdecken Sie die offizielle MedicFollow-Anwendung und bleiben Sie in Verbindung.",
-  "t-modals": "Modale",
   "t-name": "Name",
   "t-nextappoint": "Nächster Termin",
   "t-notifications": "Benachrichtigungen",
