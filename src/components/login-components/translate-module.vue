@@ -1,5 +1,5 @@
 <script>
-import i18n from "../../../i18n";
+import i18n from "../../i18n.js";
 import adminmodule from "./admin-panel-log-module.vue";
 
 /**
@@ -28,7 +28,7 @@ export default {
         },
         {
           flag: require("@/assets/images/flags/germany.svg"),
-          language: "gr",
+          language: "de",
           title: "Deutsche",
         },
         {
@@ -59,8 +59,8 @@ export default {
         case "sp":
           this.lan = "sp";
           break;
-        case "gr":
-          this.lan = "gr";
+        case "de":
+          this.lan = "de";
           break;
         case "it":
           this.lan = "it";
