@@ -157,7 +157,7 @@ export default {
                     {{ notification.message }}
                   </div>
 
-                  <form @submit.prevent="LogIn">
+                  <form class="needs-validation" @submit.prevent="LogIn">
                     <div class="mb-3">
                       <label for="email" class="form-label" data-key="t-email">{{ $t("t-email") }} <span
                           class="text-danger">*</span></label>
