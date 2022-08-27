@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "footerlogmodule",
+  name: "footermodule",
 };
 </script>
 
