@@ -85,5 +85,8 @@
   "t-viewcal": "Ver todos los eventos",
   "t-viewmsg": "Ver todos los mensajes",
   "t-willreset": "Le enviaremos un correo electrónico a su dirección para restablecer su contraseña.",
-  "t-yourtool": "Tu herramienta de comunicación con tus seres queridos"
+  "t-yourtool": "Tu herramienta de comunicación con tus seres queridos",
+  "t-menu": "Menu",
+  "t-contacts": "Contact",
+  "t-event": "Event"
 }

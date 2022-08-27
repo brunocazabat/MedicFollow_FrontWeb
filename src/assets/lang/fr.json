@@ -85,5 +85,8 @@
   "t-viewcal": "Afficher tous les événements",
   "t-viewmsg": "Afficher tous les messages",
   "t-willreset": "Nous enverrons un e-mail à votre adresse pour réinitialiser votre mot de passe.",
-  "t-yourtool": "Votre outil de communication avec vos proches"
+  "t-yourtool": "Votre outil de communication avec vos proches",
+  "t-menu": "Menu",
+  "t-contacts": "Contact",
+  "t-event": "Événement"
 }
