@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <footer class="footer">
+  <footer class="footer" style="background: inherit !important">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
