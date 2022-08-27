@@ -1,9 +1,9 @@
 import store from "@/components/state/store";
 
-var mode = DevMode();
+let mode = DevMode();
 
 function DevMode() {
-  var id;
+  let id;
   if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
     id = false;
   } else {
@@ -111,7 +111,7 @@ export default [
     component: () => import("../../views/log-account-section/logout.vue"),
     meta: {
       title: "Logout",
-      beforeResolve,
+      authRequired: mode,
     },
   },
   {
