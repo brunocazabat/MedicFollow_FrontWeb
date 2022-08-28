@@ -1,9 +1,8 @@
 <script>
-import { mapState } from "vuex";
+import { mapState, mapActions } from "vuex";
 import { required, email, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import appConfig from "../../../app.config";
-import axios from "axios";
 import { authMethods, notificationMethods } from "@/components/state/helpers";
 import translatemodule from "../../components/login-components/translate-module.vue";
 import logoheadermodule from "../../components/login-components/logo-header-module.vue";
@@ -32,9 +31,9 @@ export default {
       },
       submitted: false,
       authError: null,
-      tryingToLogIn: false,
       isAuthError: false,
       showPassword: false,
+      val: null,
     };
   },
   validations: {
@@ -64,44 +63,38 @@ export default {
     }
   },
   methods: {
+    ...mapActions({
+      LogIn: "auth/LogIn",
+    }),
     ...authMethods,
     ...notificationMethods,
-    LogIn() {
+    Log() {
       this.submitted = true;
       this.v$.$touch();
       if (!this.v$.$invalid) {
         this.authError = null;
-        return axios
-          .put("http://www.medicfollow.fr:8081/v1/users/", this.loginInput)
-          .then((response) => {
-            this.loginInput.password = "";
-            this.loginInput.email = "";
-
-            if (response.status === 200) {
+        this.LogIn(this.loginInput).then(res => {
+          switch (res) {
+            case 200:
               this.isAuthError = false;
+              this.authError = null;
               this.submitted = false;
-              this.tryingToLogIn = false;
-              localStorage.setItem("uuid", response.data.userUuid);
-              localStorage.setItem("token", response.data.token);
               this.$router.push(
                 this.$route.query.redirectFrom || {
                   name: "default",
                 }
               );
-            }
-          })
-          .catch((error) => {
-            this.loginInput.password = "";
-            this.loginInput.email = "";
-            this.isAuthError = true;
-            if (error.response.status === 462) {
+              break;
+            case 462:
               this.authError = "Invalid username or password";
-            } else if (error.response.status === 463) {
+              break;
+            case 463:
               this.authError = "User disabled";
-            } else {
+              break;
+            default:
               this.authError = "An unknown error occurred";
-            }
-          });
+          }
+        });
       }
     },
     toggleShow() {
@@ -157,7 +150,7 @@ export default {
                     {{ notification.message }}
                   </div>
 
-                  <form class="needs-validation" @submit.prevent="LogIn">
+                  <form class="needs-validation" @submit.prevent="Log">
                     <div class="mb-3">
                       <label for="email" class="form-label" data-key="t-email">{{ $t("t-email") }} <span
                           class="text-danger">*</span></label>
@@ -204,7 +197,7 @@ export default {
 
                     <div class="mt-4">
                       <!------------------- MODIFY METHOD TO CALL IF NO BACKEND (ForceLogIn) OR IF BACKEND (tryToLogIn) ------------------->
-                      <button @click="LogIn" class="btn btn-success w-100" type="submit" data-key="t-signin">{{
+                      <button @click="Log" class="btn btn-success w-100" type="submit" data-key="t-signin">{{
                           $t("t-signin")
                       }}
                       </button>
