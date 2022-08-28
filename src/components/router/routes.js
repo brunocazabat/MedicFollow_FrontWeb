@@ -31,7 +31,6 @@ export default [
     component: () => import("../../views/dashboard-section/index.vue"),
     meta: {
       title: "Test",
-      beforeResolve,
     },
   },
   // test routes END
