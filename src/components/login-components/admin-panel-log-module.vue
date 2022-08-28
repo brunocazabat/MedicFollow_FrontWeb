@@ -4,12 +4,7 @@ export default {
 
   methods: {
     setadmin() {
-      if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
-        console.log(process.env.VUE_APP_DEFAULT_AUTH)
-        return true;
-      } else {
-        return false;
-      }
+      return process.env.VUE_APP_DEFAULT_AUTH === "DEV";
     },
   }
 };
