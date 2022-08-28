@@ -1,6 +1,8 @@
 <script>
+import { mapActions } from "vuex";
 import animationData from "@/assets/anim/animation1.json";
 import Lottie from "@/components/widgets/lottie.vue";
+import appConfig from "../../../app.config";
 import translatemodule from "../../components/login-components/translate-module.vue";
 import logoheadermodule from "../../components/login-components/logo-header-module.vue";
 import particlesmodule from "../../components/login-components/particles-module.vue";
@@ -14,7 +16,24 @@ export default {
       },
     };
   },
+  page: {
+    title: "Logout",
+    meta: [
+      {
+        name: "description",
+        content: appConfig.description,
+      },
+    ],
+  },
   components: { lottie: Lottie, translatemodule, logoheadermodule, particlesmodule, footermodule },
+  methods: {
+    ...mapActions({
+      LogOut: "auth/LogOut",
+    }),
+  },
+  mounted: function () {
+    this.LogOut();
+  },
 };
 </script>
 
