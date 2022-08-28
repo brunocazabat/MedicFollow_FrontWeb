@@ -1,5 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
-import axios from "axios";
+import store from "@/components/state/store";
 import routes from "./routes";
 import appConfig from "../../../app.config";
 
@@ -20,20 +20,19 @@ const router = createRouter({
 router.beforeEach(async (routeTo, routeFrom, next) => {
   const authRequired = routeTo.matched.some((route) => route.meta.authRequired);
 
-  if (!authRequired) return next();
-
-  axios.defaults.headers.common["authorization"] =
-    "Bearer " + localStorage.getItem("jwt"); // for all requests
-  await axios
-    .get("https://api-node.themesbrand.website/profile")
-    .then((data) => {
-      localStorage.setItem("userdata", JSON.stringify(data.data.user));
-      localStorage.setItem("userid", data.data.user._id);
+  if (authRequired) {
+    // If the user is not authenticated...
+    if (!store.getters["auth/loggedIn"]) {
+      console.log(store.getters["auth/token"]);
+      // Redirect to the login page
+      next({ name: "login" });
+    } else {
+      // Proceed to the route
       next();
-    })
-    .catch(() => {
-      next({ name: "login", query: { redirectFrom: routeTo.fullPath } });
-    });
+    }
+  } else {
+    return next();
+  }
 });
 
 router.beforeResolve(async (routeTo, routeFrom, next) => {
