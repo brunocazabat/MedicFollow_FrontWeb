@@ -20,6 +20,9 @@ import "vue-cookie-accept-decline/dist/vue-cookie-accept-decline.css";
 import "@/assets/scss/config/material/app.scss";
 import "@vueform/slider/themes/default.css";
 
+import axios from "axios";
+axios.defaults.baseURL = "http://www.medicfollow.fr:8081/v1";
+
 AOS.init({
   easing: "ease-out-back",
   duration: 1000,
