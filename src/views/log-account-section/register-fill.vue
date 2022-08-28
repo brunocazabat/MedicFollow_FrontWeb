@@ -3,7 +3,7 @@ import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import { mapState } from "vuex";
 import Popper from "vue3-popper";
-import { authMethods, authFackMethods, notificationMethods } from "@/components/state/helpers";
+import { authMethods, notificationMethods } from "@/components/state/helpers";
 import appConfig from "../../../app.config";
 import translatemodule from "../../components/login-components/translate-module.vue";
 import logoheadermodule from "../../components/login-components/logo-header-module.vue";
@@ -57,7 +57,6 @@ export default {
   },
   methods: {
     ...authMethods,
-    ...authFackMethods,
     ...notificationMethods,
     RegisterInInfos() {
       this.submitted = true;

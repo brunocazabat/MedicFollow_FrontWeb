@@ -4,7 +4,7 @@ import useVuelidate from "@vuelidate/core";
 import { mapState } from "vuex";
 import Lottie from "@/components/widgets/lottie.vue";
 import animationData from "@/assets/anim/animation2.json";
-import { authMethods, authFackMethods, notificationMethods } from "@/components/state/helpers";
+import { authMethods, notificationMethods } from "@/components/state/helpers";
 import appConfig from "../../../app.config";
 import translatemodule from "../../components/login-components/translate-module.vue";
 import logoheadermodule from "../../components/login-components/logo-header-module.vue";
@@ -54,12 +54,13 @@ export default {
   },
   methods: {
     ...authMethods,
-    ...authFackMethods,
     ...notificationMethods,
     RegisterInEmail() {
       this.submitted = true;
       this.v$.$touch();
-      this.$router.push("/register-mail-success");
+      if (!this.v$.$invalid) {
+        this.$router.push("/register-mail-success");
+      }
     },
   },
 };
