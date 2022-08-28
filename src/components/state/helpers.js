@@ -38,21 +38,8 @@ export const layoutMethods = mapActions("layout", [
   "changeSidebarColor",
 ]);
 
-export const authFackMethods = mapActions("authfack", [
-  "login",
-  "registeruser",
-  "logout",
-]);
-
 export const notificationMethods = mapActions("notification", [
   "success",
   "error",
   "clear",
 ]);
-
-export const todoComputed = {
-  ...mapState("todo", {
-    todos: (state) => state.todos,
-  }),
-};
-export const todoMethods = mapActions("todo", ["fetchTodos"]);
