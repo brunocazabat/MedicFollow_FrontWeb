@@ -65,7 +65,6 @@ export default {
   },
   methods: {
     start() {
-      console.log("oui");
       switch (localStorage.getItem("language")) {
         case "en":
           this.lan = "en";
