@@ -468,7 +468,6 @@ export default {
       }
       this.labeltype = 'changelable'
       this.menutab = menu
-      console.log('dsf', menu)
     },
     changelable(lable) {
       document.getElementById('primarytab').click()
