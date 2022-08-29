@@ -103,7 +103,7 @@ export default {
 <template>
   <Layout>
     <PageHeader :title="title" :items="items" />
-    <div class="row">
+    <div class="row project-wrapper">
       <div class="col-xl-12">
         <div class="card">
           <div class="card-body checkout-tab">
@@ -320,8 +320,6 @@ export default {
                     <!-- end dropzon-preview -->
                   </div>
 
-
-
                   <div class="d-flex align-items-start gap-3 mt-4">
                     <button type="button" class="btn btn-light btn-label previestab"
                       data-previous="pills-bill-address-tab" data-key="t-backtosum">
@@ -329,7 +327,7 @@ export default {
                     </button>
                     <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
                       data-nexttab="pills-finish-tab" data-key="t-sendsum">
-                      <em class="ri-shopping-basket-line label-icon align-middle fs-16 ms-2"></em>{{ $t("t-sendsum") }}
+                      <em class="ri-checkbox-circle-line label-icon align-middle fs-16 ms-2"></em>{{ $t("t-sendsum") }}
                     </button>
                   </div>
                 </div>
@@ -346,8 +344,8 @@ export default {
                       {{ $t("t-sumerror") }}
                     </p>
 
-                    <h3 class="fw-semibold">
-                      Medical Visit ID:
+                    <h3 class="fw-semibold" data-key="t-medvisitid">
+                      {{ $t("t-medvisitid") }}:
                       <router-link to="/ecommerce/order-details" class="text-decoration-underline">VZ2451</router-link>
                     </h3>
                   </div>
