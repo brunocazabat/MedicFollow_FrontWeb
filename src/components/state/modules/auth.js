@@ -89,6 +89,6 @@ export const actions = {
 // Private helpers
 // ===
 
-function saveState(key, state) {
-  window.sessionStorage.setItem(key, JSON.stringify(state));
+function saveState(key, value) {
+  window.sessionStorage.setItem(key, JSON.stringify(value));
 }
