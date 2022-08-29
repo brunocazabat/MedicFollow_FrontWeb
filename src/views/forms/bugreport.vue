@@ -3,7 +3,6 @@ import Slider from "@vueform/slider";
 import { ref, watch } from "vue";
 import useVuelidate from "@vuelidate/core";
 import Layout from "../../layouts/main.vue";
-import DropZone from "@/components/widgets/dropZone";
 import PageHeader from "@/components/page-header";
 import appConfig from "../../../app.config";
 
@@ -57,7 +56,6 @@ export default {
     Slider,
     Layout,
     PageHeader,
-    DropZone,
   },
   methods: {
     /**
@@ -153,7 +151,6 @@ export default {
                         <label for="emailfloatingInput">Email</label>
                       </div>
                     </div>
-
                   </div>
 
                   <!-- COUNTRY -->
@@ -264,9 +261,11 @@ export default {
 
                   <!-- FILE UPLOAD -->
                   <div class="p-3 mb-3">
-                    <h3 class="font-size-14 mb-2 mt-0">Do you want to upload a file?</h3>
-                    <p class="text-muted mb-4">You can, for example, send us a screenshot.</p>
-                    <input class="form-control" type="file" id="formFileMultiple">
+                    <div class="col-md-4">
+                      <h3 class="font-size-14 mb-2 mt-0">Do you want to upload a file?</h3>
+                      <p class="text-muted mb-4">You can, for example, send us a screenshot.</p>
+                      <input class="form-control" type="file" id="formFileMultiple">
+                    </div>
                   </div>
 
                   <hr>
@@ -311,9 +310,22 @@ export default {
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
                       <h3 class="font-size-14 mb-3 mt-0">What is your issue?</h3>
-                      <input type="text" class="form-control" id="bugIssueTitle" placeholder="Write here..." required />
+                      <input type="text" class="form-control" id="bugIssueTitle" placeholder="Write the issue here..."
+                        required />
                       <div class="invalid-feedback">
                         Please input your issue here.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PAGE OF THE ISSUE -->
+                  <div class="p-3 mb-0">
+                    <div class="col-md-6">
+                      <label for="bugSteps" class="form-label">On what page did you encounter the issue</label>
+                      <input type="text" class="form-control" rows="3" id="bugSteps"
+                        placeholder="Write the page here..." required />
+                      <div class="invalid-feedback">
+                        Please input the title of the page where you encountered the issue in this textarea.
                       </div>
                     </div>
                   </div>
@@ -322,8 +334,8 @@ export default {
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
                       <label for="bugSteps" class="form-label">Steps to reproduce the issue</label>
-                      <textarea type="text" class="form-control" rows="3" id="bugSteps" placeholder="Write here..."
-                        required></textarea>
+                      <textarea type="text" class="form-control" rows="3" id="bugSteps"
+                        placeholder="Write the steps here..." required></textarea>
                       <div class="invalid-feedback">
                         Please input the steps to reproduce the issue in this textarea.
                       </div>
@@ -334,7 +346,8 @@ export default {
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
                       <label for="bugExpected" class="form-label">Expected result</label>
-                      <input type="text" class="form-control" id="bugExpected" placeholder="Write here..." required />
+                      <input type="text" class="form-control" id="bugExpected"
+                        placeholder="Write the expected result here..." required />
                       <div class="invalid-feedback">
                         Please input the expected result here.
                       </div>
@@ -342,118 +355,89 @@ export default {
                   </div>
 
                   <!-- RESULT OBTAINED -->
-                  <div class="p-3 mb-0">
+                  <div class="p-3 mb-3">
                     <div class="col-md-6">
                       <label for="bugExpected" class="form-label">Result obtained</label>
-                      <input type="text" class="form-control" id="bugExpected" placeholder="Write here..." required />
+                      <input type="text" class="form-control" id="bugExpected"
+                        placeholder="Write the obtained result here..." required />
                       <div class="invalid-feedback">
                         Please input the obtained result here.
                       </div>
                     </div>
                   </div>
 
+                  <hr>
+
+                  <!-- SUBTITLE -->
+                  <div class="p-3 mb-0">
+                    <div class="col-md-6">
+                      <h3 class="font-size-14 mb-3 mt-0">Other information</h3>
+                    </div>
+                  </div>
+
                   <!-- WHICH BROWSER ARE YOU USING -->
+                  <div class="mb-0 p-3">
+                    <div class="col-md-4">
+                      <label for="chooseGenderSelect" class="form-label">Select your internet browser</label>
+                      <select class="form-select" id="chooseGenderSelect" required>
+                        <option selected>Select browser...</option>
+                        <option value="chrome">Google Chrome</option>
+                        <option value="firefox">Mozilla Firefox</option>
+                        <option value="m-edge">Microsoft Edge</option>
+                        <option value="ie">Internet Explorer</option>
+                        <option value="safari">Safari</option>
+                        <option value="opera">Opera</option>
+                        <option value="other-browser">Other</option>
+                      </select>
+                      <div class="invalid-feedback">Please choose an internet browser.</div>
+                    </div>
+                  </div>
 
                   <!-- WHICH DEVICE ARE YOU USING -->
-
-                  <!-- POSSIBLE ADRESS EMAIL -->
-
-                  <!-- BUG REPORT TEXT ZONE -->
-                  <div class="mb-6">
-                    <label for="VertimeassageInput" class="form-label">Message</label>
-                    <textarea class="form-control" id="VertimeassageInput" rows="3"
-                      placeholder="Enter your bug report here" required></textarea>
-                    <div class="invalid-feedback">
-                      Please enter your bug report message in the textarea.
+                  <div class="mb-0 p-3">
+                    <div class="col-md-4">
+                      <label for="chooseGenderSelect" class="form-label">Select your device</label>
+                      <select class="form-select" id="chooseGenderSelect" required>
+                        <option selected>Select device...</option>
+                        <option value="pc">PC</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="smartphone">Smartphone</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="other">Other device</option>
+                      </select>
+                      <div class="invalid-feedback">Please select a device.</div>
                     </div>
                   </div>
+
+                  <!-- EMAIL -->
+                  <!-- CHECK HOW TO MAKE SMALLER BOX -->
+                  <div class="mb-0 p-3 md-4">
+                    <div class="col-md-4">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="bugEmailInput" placeholder="Enter your email" />
+                        <label for="bugEmailInput">Email</label>
+                      </div>
+                      <p class="text-muted">Email is not mandatory but it could be useful to contact you in case we are
+                        having trouble with your issue.</p>
+                    </div>
+                  </div>
+
+                  <hr>
 
                   <!-- FILE UPLOAD -->
-                  <div class="card-body">
-                    <p class="text-muted">
-                      You can upload files to help us understand your bug report better.
-                    </p>
-
-                    <DropZone @drop.prevent="drop" @change="selectedFile" />
-                    <ul class="list-unstyled mb-0" id="dropzone-preview">
-                      <div class="border rounded" v-for="(file, index) of files" :key="index">
-                        <div class="d-flex p-2">
-                          <div class="flex-grow-1">
-                            <div class="pt-1">
-                              <h5 class="fs-14 mb-1" data-dz-name="">
-                                {{ file.name }}
-                              </h5>
-                              <p class="fs-13 text-muted mb-0" data-dz-size="">
-                                <strong>{{ file.size / 1024 }}</strong> KB
-                              </p>
-                              <strong class="error text-danger" data-dz-errormessage=""></strong>
-                            </div>
-                          </div>
-                          <div class="flex-shrink-0 ms-3">
-                            <button data-dz-remove="" class="btn btn-sm btn-danger" @click="deleteRecord">
-                              Delete
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
-
-                  <!-- CATEGORY LIST -->
-                  <div class="col-md-2">
-                    <div class="col-auto">
-                      <label for="chooseCategorySelect" class="form-label">Category</label>
-                      <select class="form-select" id="chooseCategorySelect" required>
-                        <option selected value="login">Login Page</option>
-                        <option value="dashboard">Home Page</option>
-                        <option value="calendar">Calendar Page</option>
-                        <option value="chat">Chat Page</option>
-                        <option value="settings">Settings Page</option>
-                        <option value="feedback">Feedback Page</option>
-                        <option value="bug">Bug Report Page</option>
-                        <option value="locked">Locked Login Page</option>
-                        <option value="tou">Terms of Use</option>
-                      </select>
-                      <div class="invalid-feedback">Choose a category</div>
+                  <div class="p-3 mb-3">
+                    <div class="col-md-4">
+                      <h3 class="font-size-14 mb-2 mt-0">Do you want to upload a file?</h3>
+                      <p class="text-muted mb-4">You can, for example, send us a screenshot.</p>
+                      <input class="form-control" type="file" id="formFileMultiple">
                     </div>
                   </div>
 
-                  <!-- ANONYMOUS PART -->
-                  <div class="card-body row">
-                    <label for="fullnamefloatingInput" class="form-label text-muted">
-                      Leave this part of this form <span class="fw-medium">unfilled</span> if you want to send this
-                      report
-                      anonymously, you could also fill only the information you wish to.
-                    </label>
+                  <hr>
 
-                    <!-- Full name box -->
-                    <div class="col-lg-4">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="fullnamefloatingInput"
-                          placeholder="Enter your full name" />
-                        <label for="fullnamefloatingInput">Full Name</label>
-                      </div>
-                    </div>
-                    <!-- Email box -->
-                    <div class="col-lg-4">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="emailfloatingInput"
-                          placeholder="Enter your email" />
-                        <label for="emailfloatingInput">Email</label>
-                      </div>
-                    </div>
-                    <!-- Country box -->
-                    <div class="col-lg-4">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="countryfloatingInput"
-                          placeholder="Enter your country" />
-                        <label for="countryfloatingInput">Country</label>
-                      </div>
-                    </div>
-                  </div>
 
                   <!-- Agree on ToU text -->
-                  <div class="card-body">
+                  <div class="p-3 card-body mb-0">
                     <p class="text-muted">
                       By sending us a bug report, you are agreeing on using our <span class="fw-medium">Terms of
                         Use</span>.
@@ -472,7 +456,7 @@ export default {
 
 
                   <!-- Submit button -->
-                  <div class="col-12">
+                  <div class="p-3 col-12">
                     <div class="text-muted">
                       <button type="submit" class="btn btn-primary">
                         Submit
