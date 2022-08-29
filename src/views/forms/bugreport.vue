@@ -138,6 +138,11 @@ export default {
               <form action="javascript:void(0);">
                 <div class="row">
 
+                  <div class="p-3 mb-0">
+                    <h3 class="font-size-14 mb-2 mt-0">First, let us know you better</h3>
+                    <p class="text-muted mb-2">This allows us to have a better understanding of the feedback.</p>
+                  </div>
+
                   <!-- EMAIL -->
                   <!-- CHECK HOW TO MAKE SMALLER BOX -->
                   <div class="mb-0 p-3 md-4">
@@ -243,10 +248,11 @@ export default {
                   <hr>
 
 
-
                   <!-- HOW CAN WE IMPROVE OUR SERVICE -->
                   <div class="p-3 mb-3">
-                    <h3 class="font-size-14 mb-3 mt-0">How can we improve our service?</h3>
+                    <h3 class="font-size-14 mb-2 mt-0">How can we improve our service?</h3>
+                    <p class="text-muted mb-4">Please be as precise as possible, this is our main way to understand your
+                      feedback.</p>
                     <textarea class="form-control" id="VertimeassageInput" rows="3" placeholder="Write here..."
                       required></textarea>
                     <div class="invalid-feedback">
@@ -256,10 +262,10 @@ export default {
 
                   <hr>
 
-
                   <!-- FILE UPLOAD -->
                   <div class="p-3 mb-3">
-                    <h3 class="font-size-14 mb-3 mt-0">Do you want to upload a file?</h3>
+                    <h3 class="font-size-14 mb-2 mt-0">Do you want to upload a file?</h3>
+                    <p class="text-muted mb-4">You can, for example, send us a screenshot.</p>
                     <input class="form-control" type="file" id="formFileMultiple">
                   </div>
 
@@ -302,12 +308,49 @@ export default {
                 <div class="row">
 
                   <!-- ISSUE TITLE -->
+                  <div class="p-3 mb-0">
+                    <div class="col-md-6">
+                      <h3 class="font-size-14 mb-3 mt-0">What is your issue?</h3>
+                      <input type="text" class="form-control" id="bugIssueTitle" placeholder="Write here..." required />
+                      <div class="invalid-feedback">
+                        Please input your issue here.
+                      </div>
+                    </div>
+                  </div>
 
                   <!-- ISSUE STEPS TO REPRODUCE -->
+                  <div class="p-3 mb-0">
+                    <div class="col-md-6">
+                      <label for="bugSteps" class="form-label">Steps to reproduce the issue</label>
+                      <textarea type="text" class="form-control" rows="3" id="bugSteps" placeholder="Write here..."
+                        required></textarea>
+                      <div class="invalid-feedback">
+                        Please input the steps to reproduce the issue in this textarea.
+                      </div>
+                    </div>
+                  </div>
 
                   <!-- EXPECTED RESULT -->
+                  <div class="p-3 mb-0">
+                    <div class="col-md-6">
+                      <label for="bugExpected" class="form-label">Expected result</label>
+                      <input type="text" class="form-control" id="bugExpected" placeholder="Write here..." required />
+                      <div class="invalid-feedback">
+                        Please input the expected result here.
+                      </div>
+                    </div>
+                  </div>
 
                   <!-- RESULT OBTAINED -->
+                  <div class="p-3 mb-0">
+                    <div class="col-md-6">
+                      <label for="bugExpected" class="form-label">Result obtained</label>
+                      <input type="text" class="form-control" id="bugExpected" placeholder="Write here..." required />
+                      <div class="invalid-feedback">
+                        Please input the obtained result here.
+                      </div>
+                    </div>
+                  </div>
 
                   <!-- WHICH BROWSER ARE YOU USING -->
 
