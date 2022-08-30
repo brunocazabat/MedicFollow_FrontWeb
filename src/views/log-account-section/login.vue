@@ -1,13 +1,14 @@
 <script>
-import { mapState, mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 import { required, email, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import appConfig from "@/../app.config";
-import { authMethods, notificationMethods } from "@/components/state/helpers";
+import { notificationMethods } from "@/components/state/helpers";
 import translatemodule from "@/components/login-components/translate-module.vue";
 import logoheadermodule from "@/components/login-components/logo-header-module.vue";
 import particlesmodule from "@/components/login-components/particles-module.vue";
 import footermodule from "@/components/login-components/footer-module.vue";
+import recaptcha from "@/components/widgets/recaptchav2.vue";
 
 export default {
   setup() {
@@ -22,7 +23,7 @@ export default {
       },
     ],
   },
-  components: { translatemodule, logoheadermodule, particlesmodule, footermodule },
+  components: { translatemodule, logoheadermodule, particlesmodule, footermodule, recaptcha },
   data() {
     return {
       loginInput: {
@@ -33,7 +34,6 @@ export default {
       authError: null,
       isAuthError: false,
       showPassword: false,
-      val: null,
     };
   },
   validations: {
@@ -48,7 +48,6 @@ export default {
     },
   },
   computed: {
-    ...mapState("authfack", ["status"]),
     notification() {
       return this.$store ? this.$store.state.notification : null;
     },
@@ -66,12 +65,14 @@ export default {
     ...mapActions({
       LogIn: "auth/LogIn",
     }),
-    ...authMethods,
+    ...mapGetters({
+      isRecaptchaEnabled: "security/isRecaptchaEnabled",
+    }),
     ...notificationMethods,
     Log() {
       this.submitted = true;
       this.v$.$touch();
-      if (!this.v$.$invalid) {
+      if (!this.v$.$invalid && this.isRecaptchaEnabled()) {
         this.authError = null;
         this.LogIn(this.loginInput).then(res => {
           switch (res) {
@@ -86,15 +87,28 @@ export default {
               );
               break;
             case 462:
+              this.isAuthError = true;
               this.authError = "Invalid username or password";
               break;
             case 463:
+              this.isAuthError = true;
               this.authError = "User disabled";
               break;
             default:
+              this.isAuthError = true;
               this.authError = "An unknown error occurred";
+              this.$router.push(
+                this.$route.query.redirectFrom || {
+                  name: "500",
+                }
+              );
           }
         });
+      } else {
+        console.log("captcha invalid");
+        this.isAuthError = true;
+        this.submitted = false;
+        this.authError = "Please complete the captcha and all fields.";
       }
     },
     toggleShow() {
@@ -194,7 +208,7 @@ export default {
                         </div>
                       </div>
                     </div>
-
+                    <recaptcha />
                     <div class="mt-4">
                       <!------------------- MODIFY METHOD TO CALL IF NO BACKEND (ForceLogIn) OR IF BACKEND (tryToLogIn) ------------------->
                       <button @click="Log" class="btn btn-success w-100" type="submit" data-key="t-signin">{{
