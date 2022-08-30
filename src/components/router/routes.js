@@ -155,6 +155,18 @@ export default [
     component: () => import("@/views/forms-section/bugreport.vue"),
   },
   {
+    path: "/medical-information",
+    name: "medical-information",
+    meta: { title: "Staff Input", authRequired: mode },
+    component: () => import("@/views/medical-information/index.vue"),
+  },
+  {
+    path: "/staff-input",
+    name: "staff-input",
+    meta: { title: "Medical Information", authRequired: mode },
+    component: () => import("@/views/staff-input/index.vue"),
+  },
+  {
     path: "/settings",
     name: "profile-setting",
     meta: { title: "Settings", authRequired: mode },
