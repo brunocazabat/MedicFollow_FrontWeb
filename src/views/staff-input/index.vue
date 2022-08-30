@@ -108,7 +108,7 @@ export default {
               <div class="step-arrow-nav mt-n3 mx-n3 mb-3">
                 <ul class="nav nav-pills nav-justified custom-nav" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link fs-15 p-3 active" id="pills-bill-info-tab" data-bs-toggle="pill"
+                    <button class="nav-link fs-15 p-3 active" id="select-visited-patient-tab" data-bs-toggle="pill"
                       data-bs-target="#pills-bill-info" type="button" role="tab" aria-controls="pills-bill-info"
                       aria-selected="true">
                       <em
@@ -117,7 +117,7 @@ export default {
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link fs-15 p-3" id="pills-bill-address-tab" data-bs-toggle="pill"
+                    <button class="nav-link fs-15 p-3" id="medical-visit-summary-tab" data-bs-toggle="pill"
                       data-bs-target="#pills-bill-address" type="button" role="tab" aria-controls="pills-bill-address"
                       aria-selected="false">
                       <em
@@ -126,7 +126,7 @@ export default {
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link fs-15 p-3" id="pills-payment-tab" data-bs-toggle="pill"
+                    <button class="nav-link fs-15 p-3" id="doc-upload-tab" data-bs-toggle="pill"
                       data-bs-target="#pills-payment" type="button" role="tab" aria-controls="pills-payment"
                       aria-selected="false">
                       <em
@@ -135,7 +135,7 @@ export default {
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link fs-15 p-3" id="pills-finish-tab" data-bs-toggle="pill"
+                    <button class="nav-link fs-15 p-3" id="summary-finish-tab" data-bs-toggle="pill"
                       data-bs-target="#pills-finish" type="button" role="tab" aria-controls="pills-finish"
                       aria-selected="false">
                       <em
@@ -204,7 +204,7 @@ export default {
 
                     <div class="d-flex align-items-start gap-3 mt-3">
                       <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
-                        data-nexttab="pills-bill-address-tab" data-key="t-proceedsum">
+                        data-nexttab="medical-visit-summary-tab" data-key="t-proceedsum">
                         <em class="ri-message-3-line label-icon align-middle fs-16 ms-2"></em>{{ $t("t-proceedsum")
                         }}
                       </button>
@@ -265,12 +265,12 @@ export default {
                   </div>
 
                   <div class="d-flex align-items-start gap-3 mt-4">
-                    <button type="button" class="btn btn-light btn-label previestab" data-previous="pills-bill-info-tab"
+                    <button type="button" class="btn btn-light btn-label previestab" data-previous="patient-visited-tab"
                       data-key="t-backtopatient">
                       <em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em>{{ $t("t-backtopatient") }}
                     </button>
                     <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
-                      data-nexttab="pills-payment-tab" data-key="t-gotodocupload">
+                      data-nexttab="doc-upload-tab" data-key="t-gotodocupload">
                       <em class="ri-file-add-line label-icon align-middle fs-16 ms-2"></em>{{ $t("t-gotodocupload") }}
                     </button>
                   </div>
@@ -319,11 +319,11 @@ export default {
 
                   <div class="d-flex align-items-start gap-3 mt-4">
                     <button type="button" class="btn btn-light btn-label previestab"
-                      data-previous="pills-bill-address-tab" data-key="t-backtosum">
+                      data-previous="medical-visit-summary-tab" data-key="t-backtosum">
                       <em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em>{{ $t("t-backtosum") }}
                     </button>
                     <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
-                      data-nexttab="pills-finish-tab" data-key="t-sendsum">
+                      data-nexttab="summary-finish-tab" data-key="t-sendsum">
                       <em class="ri-checkbox-circle-line label-icon align-middle fs-16 ms-2"></em>{{ $t("t-sendsum") }}
                     </button>
                   </div>

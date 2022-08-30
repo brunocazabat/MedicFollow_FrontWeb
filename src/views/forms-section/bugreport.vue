@@ -91,15 +91,15 @@ export default {
         <div class="card-header mb-0">
           <ul class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" data-bs-toggle="tab" href="#feedback" role="tab">
+              <a class="nav-link active" data-bs-toggle="tab" href="#feedback" role="tab" data-key="t-suggestform">
                 <em class="fas fa-home"></em>
-                User Feedback Form
+                {{ $t("t-suggestform") }}
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#bugReport" role="tab">
+              <a class="nav-link" data-bs-toggle="tab" href="#bugReport" role="tab" data-key="t-bugform">
                 <em class="far fa-user"></em>
-                Bug and issue Report
+                {{ $t("t-bugform") }}
               </a>
             </li>
           </ul>
@@ -112,8 +112,8 @@ export default {
                 <div class="row">
 
                   <div class="p-3 mb-0">
-                    <h3 class="font-size-14 mb-2 mt-0">First, let us know you better</h3>
-                    <p class="text-muted mb-2">This allows us to have a better understanding of the feedback.</p>
+                    <h3 class="font-size-14 mb-2 mt-0" data-key="t-letusknowyou">{{ $t("t-letusknowyou") }}</h3>
+                    <p class="text-muted mb-2" data-key="t-bttrunderstandingtxt">{{ $t("t-bttrunderstandingtxt") }}</p>
                   </div>
 
                   <!-- EMAIL -->
@@ -123,7 +123,7 @@ export default {
                       <div class="form-floating">
                         <input type="text" class="form-control" id="feedbackEmailInput" placeholder="Enter your email"
                           required />
-                        <label for="feedbackEmailInput">Email</label>
+                        <label for="feedbackEmailInput" data-key="t-email">{{ $t("t-email") }}</label>
                       </div>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ export default {
                       <div class="form-floating">
                         <input type="text" class="form-control" id="feedbackCountryInput"
                           placeholder="Enter your country" required />
-                        <label for="feedbackCountryInput">Country</label>
+                        <label for="feedbackCountryInput" data-key="t-country">{{ $t("t-country") }}</label>
                       </div>
                     </div>
                   </div>
@@ -143,22 +143,23 @@ export default {
                   <!-- GENDER LIST -->
                   <div class="mb-0 p-3">
                     <div class="col-md-4">
-                      <label for="chooseGenderSelect" class="form-label">Gender</label>
+                      <label for="chooseGenderSelect" class="form-label" data-key="t-gender">{{ $t("t-gender")
+                      }}</label>
                       <select class="form-select" id="chooseGenderSelect" required>
-                        <option selected>Select gender...</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                        <option value="no-pref">Prefer not to say</option>
+                        <option data-key="t-selectgender" selected>{{ $t("t-selectgender") }}</option>
+                        <option data-key="t-male" value="male">{{ $t("t-male") }}</option>
+                        <option data-key="t-female" value="female">{{ $t("t-female") }}</option>
+                        <option data-key="t-other" value="other">{{ $t("t-other") }}</option>
+                        <option data-key="t-prefernotsay" value="no-pref">{{ $t("t-prefernotsay") }}</option>
                       </select>
-                      <div class="invalid-feedback">Please choose a gender</div>
                     </div>
                   </div>
 
                   <!-- BIRTH DATE SELECTION -->
                   <div class="mb-3 p-3">
                     <div class="col-md-4">
-                      <label for="feedbackDateInput" class="form-label">Date of birth</label>
+                      <label for="feedbackDateInput" class="form-label" data-key="t-birthdate">{{ $t("t-birthdate")
+                      }}</label>
                       <input type="date" class="form-control" id="feedbackDateInput" required>
                     </div>
                   </div>
@@ -168,46 +169,57 @@ export default {
                   <!-- SATISFACTION SELECTION -->
                   <div class="col-md-6 mb-3">
                     <div class="p-3">
-                      <h3 class="font-size-14 mb-2 mt-0">Are you satisfied about our service?</h3>
-                      <p class="text-muted mb-5">0 means unsatisfied, 100 means very satisfied</p>
+                      <h3 class="font-size-14 mb-2 mt-0" data-key="t-areusatisfied">{{ $t("t-areusatisfied") }}</h3>
+                      <p class="text-muted mb-5" data-key="t-satisfactioneval">{{ $t("t-satisfactioneval") }}</p>
 
                       <div class="mb-3">
-                        <label for="sliderDashboard" class="form-label mb-4">Dashboard Information</label>
+                        <label for="sliderDashboard" class="form-label mb-4" data-key="t-dashboardslider">{{
+                            $t("t-dashboardslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderDashboard" v-model="sliderDashVal" />
                         </div>
                       </div>
 
                       <div class="mb-3">
-                        <label for="sliderMedSum" class="form-label mb-4">Content of the medical visit summary</label>
+                        <label for="sliderMedSum" class="form-label mb-4" data-key="t-visitsumslider">{{
+                            $t("t-visitsumslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderMedSum" v-model="sliderMedSumVal" />
                         </div>
                       </div>
 
                       <div class="mb-3">
-                        <label for="sliderCal" class="form-label mb-4">Calendar usage</label>
+                        <label for="sliderCal" class="form-label mb-4" data-key="t-calslider">{{ $t("t-calslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderCal" v-model="sliderCalVal" />
                         </div>
                       </div>
 
                       <div class="mb-3">
-                        <label for="sliderSettings" class="form-label mb-4">Settings options diversity</label>
+                        <label for="sliderSettings" class="form-label mb-4" data-key="t-settingsslider">{{
+                            $t("t-settingsslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderSettings" v-model="sliderSettingsVal" />
                         </div>
                       </div>
 
                       <div class="mb-3">
-                        <label for="sliderWaiting" class="form-label mb-4">Waiting time</label>
+                        <label for="sliderWaiting" class="form-label mb-4" data-key="t-waitingslider">{{
+                            $t("t-waitingslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderWaiting" v-model="sliderWaitingVal" />
                         </div>
                       </div>
 
                       <div class="mb-0">
-                        <label for="sliderDesign" class="form-label mb-4">Design of the website</label>
+                        <label for="sliderDesign" class="form-label mb-4" data-key="t-designslider">{{
+                            $t("t-designslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderDesign" v-model="sliderDesignVal" />
                         </div>
@@ -223,15 +235,10 @@ export default {
                   <!-- HOW CAN WE IMPROVE OUR SERVICE -->
                   <div class="p-3 mb-3">
                     <div class="col-md-6">
-                      <h3 class="font-size-14 mb-2 mt-0">How can we improve our service?</h3>
-                      <p class="text-muted mb-4">Please be as precise as possible, this is our main way to understand
-                        your
-                        feedback.</p>
+                      <h3 class="font-size-14 mb-2 mt-0" data-key="t-howcanweimprove">{{ $t("t-howcanweimprove") }}</h3>
+                      <p class="text-muted mb-4" data-key="t-feedbackinfomsg">{{ $t("t-feedbackinfomsg") }}</p>
                       <textarea class="form-control" id="feedbackImproveInput" rows="3" placeholder="Write here..."
                         required></textarea>
-                      <div class="invalid-feedback">
-                        Please input your feedback in the textarea.
-                      </div>
                     </div>
                   </div>
 
@@ -240,8 +247,10 @@ export default {
                   <!-- FILE UPLOAD -->
                   <div class="p-3 mb-3">
                     <div class="col-md-4">
-                      <h3 class="font-size-14 mb-2 mt-0">Do you want to upload a file?</h3>
-                      <p class="text-muted mb-4">You can, for example, send us a screenshot.</p>
+                      <h3 class="font-size-14 mb-2 mt-0" data-key="t-questionuploaddoc">
+                        {{ $t("t-questionuploaddoc") }}
+                      </h3>
+                      <p class="text-muted mb-4">You can, for instance, send us an image or a pdf file.</p>
                       <input class="form-control" type="file" id="feedbackFileUpload">
                     </div>
                   </div>
