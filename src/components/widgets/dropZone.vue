@@ -1,4 +1,3 @@
-
 <template>
   <div @dragenter.prevent="toggleActive" @dragleave.prevent="toggleActive" @dragover.prevent
     @drop.prevent="toggleActive" :class="{ 'active-dropzone': active }" class="dropzone position-relative">

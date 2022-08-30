@@ -1,22 +1,28 @@
 {
-  "i18n-ally.localesPaths": ["src/lang"],
+  "i18n-ally.localesPaths": ["src/assets/lang"],
   "editor.formatOnSave": true,
   "[vue]": {
+    "files.insertFinalNewline": false,
     "editor.defaultFormatter": "Vue.volar"
   },
   "[html]": {
+    "files.insertFinalNewline": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
+    "files.insertFinalNewline": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "files.insertFinalNewline": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[scss]": {
+    "files.insertFinalNewline": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
+    "files.insertFinalNewline": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "i18n-ally.keystyle": "nested"
