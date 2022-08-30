@@ -119,6 +119,45 @@ $border-style-mixing: double, dashed, groove, outset, ridge, dotted, inset;
     background: url("~@/assets/images/covers/modal-bg.png") $modal-content-bg;
 }
 
+.forms-background-pattern {
+    background: url("~@/assets/images/covers/chat-bg-pattern.png");
+    transition: all 0.4s;
+    position: relative;
+    background-color: var(--#{$variable-prefix}body-bg);
+
+    @media (max-width: 991.98px) {
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 100%;
+        height: calc(100% - 3px);
+        visibility: hidden;
+        transform: translateX(100%);
+        z-index: 99;
+        padding-top: 70px;
+
+        &.user-chat-show {
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+
+    .chat-content {
+        position: relative;
+    }
+
+    &.user-chat-show {
+        .chat-welcome-section {
+            display: none;
+        }
+        .chat-content {
+            @media (min-width: 992px) {
+                display: flex !important;
+            }
+        }
+    }
+}
+
 // Fixed minimum width
 .w-xs {
     min-width: 80px;

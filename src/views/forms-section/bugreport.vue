@@ -105,7 +105,7 @@ export default {
           </ul>
         </div>
 
-        <div class="card-body p-6">
+        <div class="card-body p-6 forms-background-pattern">
           <div class="tab-content">
             <div class="tab-pane active" id="feedback" role="tabpanel">
               <form action="javascript:void(0);">
