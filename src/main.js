@@ -23,6 +23,8 @@ import "@vueform/slider/themes/default.css";
 import axios from "axios";
 axios.defaults.baseURL = "http://www.medicfollow.fr:8081/v1";
 
+import VueRecaptcha from "vue3-recaptcha-v2";
+
 AOS.init({
   easing: "ease-out-back",
   duration: 1000,
@@ -39,4 +41,5 @@ createApp(App)
   .use(Particles)
   .use(i18n)
   .use(vClickOutside)
+  .use(VueRecaptcha, { siteKey: "6LdU_b0hAAAAAEOY4OZqGD3QfVjuXelZI-DeQhWU" }) // site key is required V2
   .mount("#app");

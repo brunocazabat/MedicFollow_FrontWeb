@@ -13,14 +13,6 @@ export default {
 <template>
   <div class="col-md-8 col-lg-6 col-xl-2" v-if="setadmin()">
     <div class="card mt-4 p-4">
-      TEST
-      <ul>
-        <li>
-          <router-link to="/test">
-            /test
-          </router-link>
-        </li>
-      </ul>
       LOG IN OUT
       <ul>
         <li>
@@ -78,6 +70,34 @@ export default {
         <li>
           <router-link to="/lockscreen">
             /lockscreen
+          </router-link>
+        </li>
+      </ul>
+      ERRORSCREEN
+      <ul>
+        <li>
+          <router-link to="/404">
+            /404
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/500">
+            /500
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/coming-soon">
+            /coming-soon
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/maintenance">
+            /maintenance
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/offline">
+            /offline
           </router-link>
         </li>
       </ul>

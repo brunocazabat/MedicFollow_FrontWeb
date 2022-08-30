@@ -27,6 +27,8 @@ export const authMethods = mapActions("auth", [
   "resetPassword",
 ]);
 
+export const securityMethods = mapActions("security", ["setCaptchaValid"]);
+
 export const layoutMethods = mapActions("layout", [
   "changeLayoutType",
   "changeLayoutWidth",
