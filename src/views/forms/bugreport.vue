@@ -124,7 +124,7 @@ export default {
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" href="#bugReport" role="tab">
                 <em class="far fa-user"></em>
-                Bug Report
+                Bug and issue Report
               </a>
             </li>
           </ul>
@@ -146,9 +146,9 @@ export default {
                   <div class="mb-0 p-3 md-4">
                     <div class="col-md-4">
                       <div class="form-floating">
-                        <input type="text" class="form-control" id="emailfloatingInput"
-                          placeholder="Enter your email" />
-                        <label for="emailfloatingInput">Email</label>
+                        <input type="text" class="form-control" id="feedbackEmailInput" placeholder="Enter your email"
+                          required />
+                        <label for="feedbackEmailInput">Email</label>
                       </div>
                     </div>
                   </div>
@@ -158,9 +158,9 @@ export default {
                   <div class="mb-0 p-3 md-4">
                     <div class="col-md-4">
                       <div class="form-floating">
-                        <input type="text" class="form-control" id="countryfloatingInput"
-                          placeholder="Enter your country" />
-                        <label for="countryfloatingInput">Country</label>
+                        <input type="text" class="form-control" id="feedbackCountryInput"
+                          placeholder="Enter your country" required />
+                        <label for="feedbackCountryInput">Country</label>
                       </div>
                     </div>
                   </div>
@@ -183,8 +183,8 @@ export default {
                   <!-- BIRTH DATE SELECTION -->
                   <div class="mb-3 p-3">
                     <div class="col-md-4">
-                      <label for="exampleInputdate" class="form-label">Date of birth</label>
-                      <input type="date" class="form-control" id="exampleInputdate" required>
+                      <label for="feedbackDateInput" class="form-label">Date of birth</label>
+                      <input type="date" class="form-control" id="feedbackDateInput" required>
                     </div>
                   </div>
 
@@ -250,7 +250,7 @@ export default {
                     <h3 class="font-size-14 mb-2 mt-0">How can we improve our service?</h3>
                     <p class="text-muted mb-4">Please be as precise as possible, this is our main way to understand your
                       feedback.</p>
-                    <textarea class="form-control" id="VertimeassageInput" rows="3" placeholder="Write here..."
+                    <textarea class="form-control" id="feedbackImproveInput" rows="3" placeholder="Write here..."
                       required></textarea>
                     <div class="invalid-feedback">
                       Please input your feedback in the textarea.
@@ -264,7 +264,7 @@ export default {
                     <div class="col-md-4">
                       <h3 class="font-size-14 mb-2 mt-0">Do you want to upload a file?</h3>
                       <p class="text-muted mb-4">You can, for example, send us a screenshot.</p>
-                      <input class="form-control" type="file" id="formFileMultiple">
+                      <input class="form-control" type="file" id="feedbackFileUpload">
                     </div>
                   </div>
 
@@ -279,8 +279,8 @@ export default {
                     <!-- Agree on ToU check box -->
                     <div class="col-12">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck" required />
-                        <label class="form-check-label" for="gridCheck">
+                        <input class="form-check-input" type="checkbox" id="feedbackGridCheck" required />
+                        <label class="form-check-label" for="feedbackGridCheck">
                           I have read and accepted the Terms of Use
                         </label>
                       </div>
@@ -310,7 +310,7 @@ export default {
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
                       <h3 class="font-size-14 mb-3 mt-0">What is your issue?</h3>
-                      <input type="text" class="form-control" id="bugIssueTitle" placeholder="Write the issue here..."
+                      <input type="text" class="form-control" id="bugIssueInput" placeholder="Write the issue here..."
                         required />
                       <div class="invalid-feedback">
                         Please input your issue here.
@@ -321,8 +321,8 @@ export default {
                   <!-- PAGE OF THE ISSUE -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <label for="bugSteps" class="form-label">On what page did you encounter the issue</label>
-                      <input type="text" class="form-control" rows="3" id="bugSteps"
+                      <label for="bugPageInput" class="form-label">On what page did you encounter the issue</label>
+                      <input type="text" class="form-control" rows="3" id="bugPageInput"
                         placeholder="Write the page here..." required />
                       <div class="invalid-feedback">
                         Please input the title of the page where you encountered the issue in this textarea.
@@ -333,8 +333,8 @@ export default {
                   <!-- ISSUE STEPS TO REPRODUCE -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <label for="bugSteps" class="form-label">Steps to reproduce the issue</label>
-                      <textarea type="text" class="form-control" rows="3" id="bugSteps"
+                      <label for="bugStepsInput" class="form-label">Steps to reproduce the issue</label>
+                      <textarea type="text" class="form-control" rows="3" id="bugStepsInput"
                         placeholder="Write the steps here..." required></textarea>
                       <div class="invalid-feedback">
                         Please input the steps to reproduce the issue in this textarea.
@@ -345,8 +345,8 @@ export default {
                   <!-- EXPECTED RESULT -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <label for="bugExpected" class="form-label">Expected result</label>
-                      <input type="text" class="form-control" id="bugExpected"
+                      <label for="bugExpectedInput" class="form-label">Expected result</label>
+                      <input type="text" class="form-control" id="bugExpectedInput"
                         placeholder="Write the expected result here..." required />
                       <div class="invalid-feedback">
                         Please input the expected result here.
@@ -357,8 +357,8 @@ export default {
                   <!-- RESULT OBTAINED -->
                   <div class="p-3 mb-3">
                     <div class="col-md-6">
-                      <label for="bugExpected" class="form-label">Result obtained</label>
-                      <input type="text" class="form-control" id="bugExpected"
+                      <label for="bugExpectedInput" class="form-label">Result obtained</label>
+                      <input type="text" class="form-control" id="bugExpectedInput"
                         placeholder="Write the obtained result here..." required />
                       <div class="invalid-feedback">
                         Please input the obtained result here.
@@ -378,8 +378,8 @@ export default {
                   <!-- WHICH BROWSER ARE YOU USING -->
                   <div class="mb-0 p-3">
                     <div class="col-md-4">
-                      <label for="chooseGenderSelect" class="form-label">Select your internet browser</label>
-                      <select class="form-select" id="chooseGenderSelect" required>
+                      <label for="chooseBrowserSelect" class="form-label">Select your internet browser</label>
+                      <select class="form-select" id="chooseBrowserSelect" required>
                         <option selected>Select browser...</option>
                         <option value="chrome">Google Chrome</option>
                         <option value="firefox">Mozilla Firefox</option>
@@ -396,8 +396,8 @@ export default {
                   <!-- WHICH DEVICE ARE YOU USING -->
                   <div class="mb-0 p-3">
                     <div class="col-md-4">
-                      <label for="chooseGenderSelect" class="form-label">Select your device</label>
-                      <select class="form-select" id="chooseGenderSelect" required>
+                      <label for="chooseDeviceSelect" class="form-label">Select your device</label>
+                      <select class="form-select" id="chooseDeviceSelect" required>
                         <option selected>Select device...</option>
                         <option value="pc">PC</option>
                         <option value="laptop">Laptop</option>
@@ -429,7 +429,7 @@ export default {
                     <div class="col-md-4">
                       <h3 class="font-size-14 mb-2 mt-0">Do you want to upload a file?</h3>
                       <p class="text-muted mb-4">You can, for example, send us a screenshot.</p>
-                      <input class="form-control" type="file" id="formFileMultiple">
+                      <input class="form-control" type="file" id="bugFileUpload">
                     </div>
                   </div>
 
@@ -445,8 +445,8 @@ export default {
                     <!-- Agree on ToU check box -->
                     <div class="col-12">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck" required />
-                        <label class="form-check-label" for="gridCheck">
+                        <input class="form-check-input" type="checkbox" id="bugGridCheck" required />
+                        <label class="form-check-label" for="bugGridCheck">
                           I have read and accepted the Terms of Use
                         </label>
                       </div>
