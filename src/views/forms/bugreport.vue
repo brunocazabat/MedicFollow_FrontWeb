@@ -247,13 +247,16 @@ export default {
 
                   <!-- HOW CAN WE IMPROVE OUR SERVICE -->
                   <div class="p-3 mb-3">
-                    <h3 class="font-size-14 mb-2 mt-0">How can we improve our service?</h3>
-                    <p class="text-muted mb-4">Please be as precise as possible, this is our main way to understand your
-                      feedback.</p>
-                    <textarea class="form-control" id="feedbackImproveInput" rows="3" placeholder="Write here..."
-                      required></textarea>
-                    <div class="invalid-feedback">
-                      Please input your feedback in the textarea.
+                    <div class="col-md-6">
+                      <h3 class="font-size-14 mb-2 mt-0">How can we improve our service?</h3>
+                      <p class="text-muted mb-4">Please be as precise as possible, this is our main way to understand
+                        your
+                        feedback.</p>
+                      <textarea class="form-control" id="feedbackImproveInput" rows="3" placeholder="Write here..."
+                        required></textarea>
+                      <div class="invalid-feedback">
+                        Please input your feedback in the textarea.
+                      </div>
                     </div>
                   </div>
 
@@ -302,6 +305,8 @@ export default {
               </form>
             </div>
 
+            <!-- !!!!!!!!!!!!!!!!!!!!!!!!! BUG REPORT FORM !!!!!!!!!!!!!!!!!!!!!!!!! -->
+
             <div class="tab-pane" id="bugReport" role="tabpanel">
               <form action="javascript:void(0);">
                 <div class="row">
@@ -309,7 +314,8 @@ export default {
                   <!-- ISSUE TITLE -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <h3 class="font-size-14 mb-3 mt-0">What is your issue?</h3>
+                      <h3 class="font-size-14 mb-0 mt-0">What is your issue?</h3>
+                      <p class="text-muted mb-3">Write it as a title, for instance: I cannot login to Medic'Follow.</p>
                       <input type="text" class="form-control" id="bugIssueInput" placeholder="Write the issue here..."
                         required />
                       <div class="invalid-feedback">
