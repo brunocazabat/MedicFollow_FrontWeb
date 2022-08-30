@@ -25,6 +25,7 @@ function beforeResolve(_routeTo, _routeFrom, next) {
 
 export default [
   // test routes START
+  /*
   {
     path: "/test",
     name: "test",
@@ -33,6 +34,7 @@ export default [
       title: "Test",
     },
   },
+  */
   // test routes END
   // log-account-section routes START
   {
@@ -172,16 +174,17 @@ export default [
     meta: { title: "Settings", authRequired: mode },
     component: () => import("@/views/settings-section/setting.vue"),
   },
+  // ROUTES ERROR START
   {
     path: "/maintenance",
     name: "maintenance",
-    meta: { title: "Maintanance", authRequired: mode },
+    meta: { title: "Maintanance" },
     component: () => import("@/views/errors-section/maintenance.vue"),
   },
   {
     path: "/coming-soon",
     name: "coming-soon",
-    meta: { title: "Comming Soon", authRequired: mode },
+    meta: { title: "Comming Soon" },
     component: () => import("@/views/errors-section/coming-soon.vue"),
   },
   {
@@ -189,26 +192,24 @@ export default [
     name: "500",
     meta: {
       title: "Error 500",
-      authRequired: mode,
     },
     component: () => import("@/views/errors-section/500.vue"),
   },
   {
     path: "/404",
-    name: "404-cover",
+    name: "404",
     meta: {
       title: "Error 404",
-      authRequired: mode,
     },
-    component: () => import("@/views/errors-section/404-cover.vue"),
+    component: () => import("@/views/errors-section/404.vue"),
   },
   {
     path: "/offline",
     name: "offline",
     meta: {
       title: "Offline",
-      authRequired: mode,
     },
     component: () => import("@/views/errors-section/offline.vue"),
   },
+  // ROUTES ERROR END
 ];
