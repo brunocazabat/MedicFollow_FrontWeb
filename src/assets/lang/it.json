@@ -154,5 +154,8 @@
   "t-designslider": "Progettazione del sito web",
   "t-howcanweimprove": "Come possiamo migliorare il nostro servizio?",
   "t-feedbackinfomsg": "Per favore sii il più preciso possibile, questo è il nostro modo principale per capire il tuo feedback.",
-  "t-questionuploaddoc": "Vuoi caricare un file?"
+  "t-questionuploaddoc": "Vuoi caricare un file?",
+  "t-uploadexample": "Puoi, ad esempio, inviarci un'immagine o un file pdf.",
+  "t-havereadtou": "Ho letto e accettato le Condizioni d'uso",
+  "t-submit": "Invia"
 }

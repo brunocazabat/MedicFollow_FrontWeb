@@ -28,7 +28,7 @@
   "t-file-uploads": "File Uploads",
   "t-firststep": "The first step is done and ...",
   "t-footer": "MedicFollow. Crafted with",
-  "t-forgpass": "Forgot password ?",
+  "t-forgpass": "Forgot password?",
   "t-home": "Home",
   "t-lastinfo": "Patient Last Infos",
   "t-lockscreen": "LOCK SCREEN",
@@ -154,5 +154,8 @@
   "t-designslider": "Design of the website",
   "t-howcanweimprove": "How can we improve our service?",
   "t-feedbackinfomsg": "Please be as precise as possible, this is our main way to understand your feedback.",
-  "t-questionuploaddoc": "Do you want to upload a file?"
+  "t-questionuploaddoc": "Do you want to upload a file?",
+  "t-uploadexample": "You can, for instance, send us an image or a pdf file.",
+  "t-havereadtou": "I have read and accepted the Terms of Use",
+  "t-submit": "Submit"
 }
