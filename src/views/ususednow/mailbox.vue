@@ -6,8 +6,8 @@ import '@vueform/multiselect/themes/default.css'
 import CKEditor from '@ckeditor/ckeditor5-vue'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
-import Layout from '../../components/layouts/main.vue'
-import appConfig from '../../../app.config'
+import Layout from '@/components/layouts/main.vue'
+import appConfig from '@/../app.config'
 
 export default {
   page: {
@@ -863,7 +863,7 @@ export default {
                     <div>
                       <div class="col-mail col-mail-1">
                         <div class="form-check checkbox-wrapper-mail fs-14">
-                          <span id="id" hidden>{{ data.id }}</span>
+                          <span id="id" hidden>{{  data.id  }}</span>
                           <input class="form-check-input" type="checkbox" value="" id="flexCheck20" />
                           <label class="form-check-label" for="flexCheck20"></label>
                         </div>
@@ -871,14 +871,14 @@ export default {
                           :class="{ active: data.starred == true }" @click.once="toggleFavourite">
                           <em class="ri-star-fill"></em>
                         </button>
-                        <a href="javascript: void(0);" @click.once="openemail" class="title-name">{{ data.name }}</a>
+                        <a href="javascript: void(0);" @click.once="openemail" class="title-name">{{  data.name  }}</a>
                       </div>
                       <div class="col-mail col-mail-2" @click.once="openemail">
                         <a href="javascript: void(0);" class="subject">
-                          <span class="subject-title">{{ data.title }}</span> –
-                          <span class="teaser">{{ data.description }}</span>
+                          <span class="subject-title">{{  data.title  }}</span> –
+                          <span class="teaser">{{  data.description  }}</span>
                         </a>
-                        <div class="date">{{ data.date }}</div>
+                        <div class="date">{{  data.date  }}</div>
                       </div>
                     </div>
                   </li>
@@ -897,15 +897,15 @@ export default {
                       <em class="ri-star-fill"></em>
                     </button>
                     <a href="javascript: void(0);" class="title">{{
-                        data.name
-                    }}</a>
+                       data.name 
+                      }}</a>
                   </div>
                   <div class="col-mail col-mail-2" @click.once="openemail">
                     <a href="javascript: void(0);" class="subject">
-                      <span class="subject-title">{{ data.title }}</span> –
-                      <span class="teaser">{{ data.description }}</span>
+                      <span class="subject-title">{{  data.title  }}</span> –
+                      <span class="teaser">{{  data.description  }}</span>
                     </a>
-                    <div class="date">{{ data.date }}</div>
+                    <div class="date">{{  data.date  }}</div>
                   </div>
                 </li>
               </div>
@@ -922,15 +922,15 @@ export default {
                       <em class="ri-star-fill"></em>
                     </button>
                     <a href="javascript: void(0);" class="title">{{
-                        data.name
-                    }}</a>
+                       data.name 
+                      }}</a>
                   </div>
                   <div class="col-mail col-mail-2" @click.once="openemail">
                     <a href="javascript: void(0);" class="subject">
-                      <span class="subject-title">{{ data.title }}</span> –
-                      <span class="teaser">{{ data.description }}</span>
+                      <span class="subject-title">{{  data.title  }}</span> –
+                      <span class="teaser">{{  data.description  }}</span>
                     </a>
-                    <div class="date">{{ data.date }}</div>
+                    <div class="date">{{  data.date  }}</div>
                   </div>
                 </li>
               </div>

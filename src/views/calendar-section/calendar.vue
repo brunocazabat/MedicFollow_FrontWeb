@@ -15,8 +15,8 @@ import FullCalendar from '@fullcalendar/vue3'
 import { required, helpers } from '@vuelidate/validators'
 import useVuelidate from '@vuelidate/core'
 
-import Layout from '../../components/layouts/main.vue'
-import appConfig from '../../../app.config'
+import Layout from '@/components/layouts/main.vue'
+import appConfig from '@/../app.config'
 
 import { INITIAL_EVENTS, categories } from './utils'
 
@@ -314,16 +314,16 @@ export default {
                       <div class="flex-grow-1">
                         <em :class="`mdi mdi-checkbox-blank-circle me-2 ${event.classNames[0]} `"></em><span
                           class="fw-medium">{{
-                              this.formatDate(event.start)
+                           this.formatDate(event.start) 
                           }}</span>
                       </div>
                       <div class="flex-shrink-0">
                         <small class="badge badge-soft-primary ms-auto"></small>
                       </div>
                     </div>
-                    <h6 class="card-title fs-16">{{ event.title }}</h6>
+                    <h6 class="card-title fs-16">{{  event.title  }}</h6>
                     <p class="text-muted text-truncate-two-lines mb-0">
-                      {{ event.description }}
+                      {{  event.description  }}
                     </p>
                   </div>
                 </div>
@@ -368,8 +368,8 @@ export default {
                 :class="{ 'is-invalid': submitted && v$.event.title.$error }" />
               <div v-if="submitted && v$.event.title.$error" class="invalid-feedback">
                 <span v-if="v$.event.title.required.$message">{{
-                    v$.event.title.required.$message
-                }}</span>
+                   v$.event.title.required.$message 
+                  }}</span>
               </div>
             </div>
           </div>
@@ -379,14 +379,14 @@ export default {
               <select v-model="event.category" class="form-control" name="category"
                 :class="{ 'is-invalid': submitted && v$.event.category.errors }">
                 <option v-for="option in categories" :key="option.backgroundColor" :value="`${option.value}`">
-                  {{ option.name }}
+                  {{  option.name  }}
                 </option>
               </select>
 
               <div v-if="submitted && v$.event.category.$error" class="invalid-feedback">
                 <span v-if="v$.event.category.required.$message">{{
-                    v$.event.category.required.$message
-                }}</span>
+                   v$.event.category.required.$message 
+                  }}</span>
               </div>
             </div>
           </div>
@@ -415,7 +415,7 @@ export default {
               <label class="control-label">Category</label>
               <select v-model="editevent.editcategory" class="form-control" name="category">
                 <option v-for="option in categories" :key="option.backgroundColor" :value="`${option.value}`">
-                  {{ option.name }}
+                  {{  option.name  }}
                 </option>
               </select>
             </div>

@@ -1,10 +1,10 @@
 <script>
 import { ref, watch } from "vue";
 import useVuelidate from "@vuelidate/core";
-import Layout from "../../components/layouts/main.vue";
+import Layout from "@/components/layouts/main.vue";
 import DropZone from "@/components/widgets/dropZone";
 import PageHeader from "@/components/frames/page-header";
-import appConfig from "../../../app.config";
+import appConfig from "@/../app.config";
 
 export default {
   page: {
@@ -115,10 +115,10 @@ export default {
                         <div class="flex-grow-1">
                           <div class="pt-1">
                             <h5 class="fs-14 mb-1" data-dz-name="">
-                              {{ file.name }}
+                              {{  file.name  }}
                             </h5>
                             <p class="fs-13 text-muted mb-0" data-dz-size="">
-                              <strong>{{ file.size / 1024 }}</strong> KB
+                              <strong>{{  file.size / 1024  }}</strong> KB
                             </p>
                             <strong class="error text-danger" data-dz-errormessage=""></strong>
                           </div>

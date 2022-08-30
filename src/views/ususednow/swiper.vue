@@ -5,9 +5,9 @@ import "swiper/swiper-bundle.css";
 
 SwiperCore.use([Thumbs, Pagination, Navigation]);
 
-import Layout from "../../components/layouts/main.vue";
+import Layout from "@/components/layouts/main.vue";
 import PageHeader from "@/components/frames/page-header";
-import appConfig from "../../../app.config";
+import appConfig from "@/../app.config";
 
 export default {
   page: {

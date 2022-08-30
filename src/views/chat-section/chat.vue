@@ -8,8 +8,8 @@ import {
 import { required, helpers } from '@vuelidate/validators'
 import useVuelidate from '@vuelidate/core'
 
-import Layout from '../../components/layouts/main.vue'
-import appConfig from '../../../app.config'
+import Layout from '@/components/layouts/main.vue'
+import appConfig from '@/../app.config'
 
 import { chatData, chatMessagesData } from './data'
 
@@ -221,20 +221,20 @@ export default {
                       </div>
                       <div class="avatar-xxs" v-if="!data.image">
                         <div class="avatar-title rounded-circle bg-danger userprofile">
-                          {{ data.name.charAt(0) }}
+                          {{  data.name.charAt(0)  }}
                         </div>
                       </div>
                     </div>
                     <div class="flex-grow-1 overflow-hidden">
                       <p class="text-truncate mb-1">
-                        {{ data.name }}
+                        {{  data.name  }}
                       </p>
                     </div>
 
                     <div class="flex-shrink-0">
                       <span class="badge badge-soft-dark rounded p-1">{{
-                          data.time
-                      }}</span>
+                         data.time 
+                        }}</span>
                     </div>
                   </div>
                 </a>
@@ -379,7 +379,7 @@ export default {
                           <div class="flex-grow-1 overflow-hidden">
                             <h5 class="text-truncate mb-0 fs-16">
                               <a class="text-reset username" data-bs-toggle="offcanvas" href="#userProfileCanvasExample"
-                                aria-controls="userProfileCanvasExample">{{ username }}</a>
+                                aria-controls="userProfileCanvasExample">{{  username  }}</a>
                             </h5>
                             <p class="text-truncate text-muted fs-14 mb-0 userStatus">
                               <small>Online</small>
@@ -464,7 +464,7 @@ export default {
                           <div class="ctext-wrap">
                             <div class="ctext-wrap-content">
                               <p class="mb-0 ctext-content">
-                                {{ data.message }}
+                                {{  data.message  }}
                               </p>
                             </div>
                             <div class="dropdown align-self-start message-box-drop">
@@ -487,8 +487,8 @@ export default {
                             </div>
                             <div class="conversation-name">
                               <small class="text-muted time">{{
-                                  data.time
-                              }}</small>
+                                 data.time 
+                                }}</small>
                               <span class="text-success check-message-icon"><em
                                   class="ri-check-double-line align-bottom"></em></span>
                             </div>
@@ -531,8 +531,8 @@ export default {
                         }" />
                       <div v-if="submitted && v$.form.message.$error" class="invalid-feedback">
                         <span v-if="v$.form.message.required.$message">{{
-                            v$.form.message.required.$message
-                        }}</span>
+                           v$.form.message.required.$message 
+                          }}</span>
                       </div>
                     </div>
                     <div class="col-auto">
