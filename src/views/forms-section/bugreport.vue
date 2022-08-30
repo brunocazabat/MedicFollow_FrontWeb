@@ -1,35 +1,12 @@
 <script>
 import Slider from "@vueform/slider";
-import { ref, watch } from "vue";
-import useVuelidate from "@vuelidate/core";
-import Layout from "../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../app.config";
+import Layout from "@/components/layouts/main.vue";
+import appConfig from "@/../app.config";
 
 export default {
   page: {
     title: "Bug Report",
     meta: [{ name: "description", content: appConfig.description }],
-  },
-  setup() {
-    let files = ref([]);
-    let dropzoneFile = ref("");
-    const drop = (e) => {
-      dropzoneFile.value = e.dataTransfer.files[0];
-      files.value.push(dropzoneFile.value);
-    };
-    const selectedFile = () => {
-      dropzoneFile.value = document.querySelector(".dropzoneFile").files[0];
-      files.value.push(dropzoneFile.value);
-    };
-    watch(
-      () => [...files.value],
-      (currentValue) => {
-        return currentValue;
-      }
-    );
-
-    return { dropzoneFile, files, drop, selectedFile, v$: useVuelidate() };
   },
   data() {
     return {
@@ -55,7 +32,6 @@ export default {
   components: {
     Slider,
     Layout,
-    PageHeader,
   },
   methods: {
     /**
@@ -100,12 +76,11 @@ export default {
 
 <template>
   <Layout>
-    <PageHeader :title="title" :items="items" />
 
     <!-- Background Cover -->
     <div class="position-relative mx-n4 mt-n4">
       <div class="profile-wid-bg profile-setting-img">
-        <img src="@/assets/images/auth-one-bg.jpg" class="profile-wid-img" alt="" />
+        <img src="@/assets/images/covers/auth-one-bg.jpg" class="profile-wid-img" alt="" />
       </div>
     </div>
 
