@@ -1,10 +1,10 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import router from "./router";
+import router from "./components/router";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import i18n from "./i18n";
-import store from "./state/store";
+import store from "./components/state/store";
 
 import BootstrapVue3 from "bootstrap-vue-3";
 import vClickOutside from "click-outside-vue3";
@@ -14,8 +14,14 @@ import Maska from "maska";
 import VueFeather from "vue-feather";
 import Particles from "particles.vue3";
 
+import VueCookieAcceptDecline from "vue-cookie-accept-decline";
+import "vue-cookie-accept-decline/dist/vue-cookie-accept-decline.css";
+
 import "@/assets/scss/config/material/app.scss";
 import "@vueform/slider/themes/default.css";
+
+import axios from "axios";
+axios.defaults.baseURL = "http://www.medicfollow.fr:8081/v1";
 
 AOS.init({
   easing: "ease-out-back",
@@ -28,6 +34,7 @@ createApp(App)
   .use(VueApexCharts)
   .use(BootstrapVue3)
   .component(VueFeather.type, VueFeather)
+  .component("vue-cookie-accept-decline", VueCookieAcceptDecline)
   .use(Maska)
   .use(Particles)
   .use(i18n)
