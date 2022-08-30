@@ -1,7 +1,6 @@
 <script>
-import Layout from "../../layouts/main.vue";
-import PageHeader from "@/components/page-header";
-import appConfig from "../../../app.config";
+import Layout from "@/components/layouts/main.vue";
+import appConfig from "@/../app.config";
 
 import Widgets from "./widgets.vue";
 import CheckupText from "./checkup-text.vue";
@@ -27,7 +26,6 @@ export default {
   },
   components: {
     Layout,
-    PageHeader,
     Widgets,
     CheckupText
   },
@@ -38,7 +36,6 @@ export default {
 
 <template>
   <Layout>
-    <PageHeader :title="title" :items="items" />
 
     <div class="row project-wrapper">
       <div class="col-xxl-8">

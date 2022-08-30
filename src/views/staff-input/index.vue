@@ -1,7 +1,6 @@
 <script>
-import Layout from "../../layouts/main.vue";
-import appConfig from "../../../app.config";
-import PageHeader from "@/components/page-header";
+import Layout from "@/components/layouts/main.vue";
+import appConfig from "@/../app.config";
 import { ref, watch } from "vue";
 import useVuelidate from "@vuelidate/core";
 
@@ -75,7 +74,6 @@ export default {
   },
   components: {
     Layout,
-    PageHeader,
     lottie: Lottie,
     DropZone,
   }, mounted() {
@@ -102,7 +100,6 @@ export default {
 
 <template>
   <Layout>
-    <PageHeader :title="title" :items="items" />
     <div class="row project-wrapper">
       <div class="col-xl-12">
         <div class="card">
