@@ -1,7 +1,7 @@
 <script>
-import Layout from "../../components/layouts/main.vue";
-import PageHeader from "../../components/frames/page-header";
-import appConfig from "../../../app.config";
+import Layout from "@/components/layouts/main.vue";
+import PageHeader from "@/components/frames/page-header";
+import appConfig from "@/../app.config";
 
 import Widgets from "../dashboard-components-section/widget.vue";
 import Schedules from "../dashboard-components-section/schedule.vue";

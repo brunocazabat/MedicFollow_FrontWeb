@@ -46,14 +46,14 @@ export default {
             </span>
           </div>
           <div class="flex-grow-1 overflow-hidden ms-3">
-            <p class="text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-curtime">{{ $t("t-curtime")
-            }}:</p>
+            <p class="text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-curtime">{{  $t("t-curtime") 
+              }}:</p>
             <div class="d-flex align-items-center mb-3">
               <h4 class="fs-4 flex-grow-1 mb-0">
-                <span class="counter-value">{{ localTime }}</span>
+                <span class="counter-value">{{  localTime  }}</span>
               </h4>
             </div>
-            <p class="text-muted text-truncate mb-0">{{ localDate }}</p>
+            <p class="text-muted text-truncate mb-0">{{  localDate  }}</p>
           </div>
         </div>
       </div>
@@ -70,8 +70,8 @@ export default {
           </div>
           <div class="flex-grow-1 overflow-hidden ms-3">
             <p class="text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-nextappoint">{{
-                $t("t-nextappoint")
-            }}:</p>
+               $t("t-nextappoint") 
+              }}:</p>
             <div class="d-flex align-items-center mb-3">
               <h4 class="fs-4 flex-grow-1 mb-0">
                 <span class="counter-value">Test Event 1</span>
@@ -94,8 +94,8 @@ export default {
           </div>
           <div class="flex-grow-1 overflow-hidden ms-3">
             <p class="text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-lastinfo">{{
-                $t("t-lastinfo")
-            }}:
+               $t("t-lastinfo") 
+              }}:
             </p>
             <div class="d-flex align-items-center mb-3">
               <h4 class="fs-4 flex-grow-1 mb-0">
@@ -103,8 +103,8 @@ export default {
               </h4>
             </div>
             <p class="text-muted text-truncate mb-0" data-key="t-situation">{{
-                $t("t-situation")
-            }}</p>
+               $t("t-situation") 
+              }}</p>
           </div>
         </div>
       </div>
@@ -121,8 +121,8 @@ export default {
           </div>
           <div class="flex-grow-1 overflow-hidden ms-3">
             <p class="text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-covidwarn">{{
-                $t("t-covidwarn")
-            }}:
+               $t("t-covidwarn") 
+              }}:
             </p>
             <div class="d-flex align-items-center mb-3">
               <h4 class="fs-4 flex-grow-1 mb-0">
@@ -130,8 +130,8 @@ export default {
               </h4>
             </div>
             <p class="text-muted text-truncate mb-0" data-key="t-care">{{
-                $t("t-care")
-            }}</p>
+               $t("t-care") 
+              }}</p>
           </div>
         </div>
       </div>

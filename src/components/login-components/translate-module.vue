@@ -1,5 +1,5 @@
 <script>
-import i18n from "../../i18n.js";
+import i18n from "@/i18n.js";
 import adminmodule from "./admin-panel-log-module.vue";
 
 /**
@@ -93,7 +93,7 @@ export default {
           @click="setLanguage(entry.language, entry.title, entry.flag)" :class="{ active: lan === entry.language }"
           class="dropdown-item notify-item language py-2" data-lang="fr" title="Francais">
           <img :src="entry.flag" alt="user-image" class="me-2 rounded" height="18" />
-          <span class="align-middle">{{ entry.title }}</span>
+          <span class="align-middle">{{  entry.title  }}</span>
         </a>
       </div>
     </div>

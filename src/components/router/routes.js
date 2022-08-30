@@ -28,7 +28,7 @@ export default [
   {
     path: "/test",
     name: "test",
-    component: () => import("../../views/dashboard-section/index.vue"),
+    component: () => import("@/views/dashboard-section/index.vue"),
     meta: {
       title: "Test",
     },
@@ -38,7 +38,7 @@ export default [
   {
     path: "/login",
     name: "login",
-    component: () => import("../../views/log-account-section/login.vue"),
+    component: () => import("@/views/log-account-section/login.vue"),
     meta: {
       title: "Login",
       beforeResolve,
@@ -47,8 +47,7 @@ export default [
   {
     path: "/register-mail",
     name: "register-mail",
-    component: () =>
-      import("../../views/log-account-section/register-mail.vue"),
+    component: () => import("@/views/log-account-section/register-mail.vue"),
     meta: {
       title: "Enter your email",
       beforeResolve,
@@ -58,7 +57,7 @@ export default [
     path: "/register-mail-success",
     name: "mail-success",
     component: () =>
-      import("../../views/log-account-section/register-mail-success.vue"),
+      import("@/views/log-account-section/register-mail-success.vue"),
     meta: {
       title: "Success",
       beforeResolve,
@@ -67,8 +66,7 @@ export default [
   {
     path: "/register-fill",
     name: "register-fill",
-    component: () =>
-      import("../../views/log-account-section/register-fill.vue"),
+    component: () => import("@/views/log-account-section/register-fill.vue"),
     meta: {
       title: "Register your account",
       beforeResolve,
@@ -78,7 +76,7 @@ export default [
     path: "/register-fill-success",
     name: "fill-success",
     component: () =>
-      import("../../views/log-account-section/register-fill-success.vue"),
+      import("@/views/log-account-section/register-fill-success.vue"),
     meta: {
       title: "Success",
       beforeResolve,
@@ -87,8 +85,7 @@ export default [
   {
     path: "/forgot-password",
     name: "forgot-password",
-    component: () =>
-      import("../../views/log-account-section/forgot-password.vue"),
+    component: () => import("@/views/log-account-section/forgot-password.vue"),
     meta: {
       title: "Forgot Password",
       beforeResolve,
@@ -98,7 +95,7 @@ export default [
     path: "/forgot-password-success",
     name: "forgot-password-success",
     component: () =>
-      import("../../views/log-account-section/forgot-password-success.vue"),
+      import("@/views/log-account-section/forgot-password-success.vue"),
     meta: {
       title: "Success",
       beforeResolve,
@@ -107,7 +104,7 @@ export default [
   {
     path: "/logout",
     name: "Logout",
-    component: () => import("../../views/log-account-section/logout.vue"),
+    component: () => import("@/views/log-account-section/logout.vue"),
     meta: {
       title: "Logout",
       authRequired: mode,
@@ -120,7 +117,7 @@ export default [
       title: "Lock Screen",
       authRequired: mode,
     },
-    component: () => import("../../views/log-account-section/lockscreen.vue"),
+    component: () => import("@/views/log-account-section/lockscreen.vue"),
   },
   // log-account-section routes END
   //  routes START
@@ -131,49 +128,49 @@ export default [
       title: "Dashboard",
       authRequired: mode,
     },
-    component: () => import("../../views/dashboard-section/index.vue"),
+    component: () => import("@/views/dashboard-section/index.vue"),
   },
   {
     path: "/calendar",
     name: "calendar",
     meta: { title: "Calendar", authRequired: mode },
-    component: () => import("../../views/calendar-section/calendar.vue"),
+    component: () => import("@/views/calendar-section/calendar.vue"),
   },
   {
     path: "/chat",
     name: "chat",
     meta: { title: "Chat", authRequired: mode },
-    component: () => import("../../views/chat-section/chat.vue"),
+    component: () => import("@/views/chat-section/chat.vue"),
   },
   {
     path: "/suggestions",
     name: "suggestions",
     meta: { title: "Suggestions", authRequired: mode },
-    component: () => import("../../views/forms-section/suggest.vue"),
+    component: () => import("@/views/forms-section/suggest.vue"),
   },
   {
     path: "/bug-report",
     name: "bugreport",
     meta: { title: "Bug Report", authRequired: mode },
-    component: () => import("../../views/forms-section/bugreport.vue"),
+    component: () => import("@/views/forms-section/bugreport.vue"),
   },
   {
     path: "/settings",
     name: "profile-setting",
     meta: { title: "Settings", authRequired: mode },
-    component: () => import("../../views/settings-section/setting.vue"),
+    component: () => import("@/views/settings-section/setting.vue"),
   },
   {
     path: "/maintenance",
     name: "maintenance",
     meta: { title: "Maintanance", authRequired: mode },
-    component: () => import("../../views/errors-section/maintenance.vue"),
+    component: () => import("@/views/errors-section/maintenance.vue"),
   },
   {
     path: "/coming-soon",
     name: "coming-soon",
     meta: { title: "Comming Soon", authRequired: mode },
-    component: () => import("../../views/errors-section/coming-soon.vue"),
+    component: () => import("@/views/errors-section/coming-soon.vue"),
   },
   {
     path: "/500",
@@ -182,7 +179,7 @@ export default [
       title: "Error 500",
       authRequired: mode,
     },
-    component: () => import("../../views/errors-section/500.vue"),
+    component: () => import("@/views/errors-section/500.vue"),
   },
   {
     path: "/404",
@@ -191,7 +188,7 @@ export default [
       title: "Error 404",
       authRequired: mode,
     },
-    component: () => import("../../views/errors-section/404-cover.vue"),
+    component: () => import("@/views/errors-section/404-cover.vue"),
   },
   {
     path: "/offline",
@@ -200,6 +197,6 @@ export default [
       title: "Offline",
       authRequired: mode,
     },
-    component: () => import("../../views/errors-section/offline.vue"),
+    component: () => import("@/views/errors-section/offline.vue"),
   },
 ];
