@@ -189,15 +189,15 @@ export default [
   },
   {
     path: "/500",
-    name: "500",
+    name: "500-error",
     meta: {
       title: "Error 500",
     },
     component: () => import("@/views/errors-section/500.vue"),
   },
   {
-    path: "/404",
-    name: "404",
+    path: "/:pathMatch(.*)*",
+    name: "404-error",
     meta: {
       title: "Error 404",
     },
