@@ -95,11 +95,6 @@ export default {
             /maintenance
           </router-link>
         </li>
-        <li>
-          <router-link to="/offline">
-            /offline
-          </router-link>
-        </li>
       </ul>
     </div>
   </div>
