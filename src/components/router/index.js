@@ -22,7 +22,7 @@ router.beforeEach(async (routeTo, routeFrom, next) => {
 
   if (authRequired) {
     // If the user is not authenticated...
-    if (!store.getters["auth/loggedIn"]) {
+    if (!store.getters["auth/isloggedIn"]) {
       // Redirect to the login page
       next({ name: "login" });
     } else {
