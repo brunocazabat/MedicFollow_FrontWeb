@@ -52,15 +52,6 @@ export default {
       return this.$store ? this.$store.state.notification : null;
     },
   },
-  mounted: function () {
-    if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
-      this.loginInput.password = "Password13!";
-      this.loginInput.email = "patient_test@test.com";
-    } else {
-      this.loginInput.password = "";
-      this.loginInput.email = "";
-    }
-  },
   methods: {
     ...mapActions({
       LogIn: "auth/LogIn",
@@ -137,7 +128,7 @@ export default {
                   <div class="carousel slide">
                     <div class="carousel-inner text-center text-white pb-6">
                       <div class="carousel-item active">
-                        <p class="fs-15 fw-bold" data-key="t-mobadd">{{  $t("t-mobadd")  }}
+                        <p class="fs-15 fw-bold" data-key="t-mobadd">{{ $t("t-mobadd") }}
                           <a href="https://medicfollow.fr/fr/solutions.html" target="_blank"
                             class="text-primary text-decoration-underline fst-normal fw-medium text-white"
                             rel="noreferrer noopener">Android & IOS
@@ -155,35 +146,35 @@ export default {
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center">
-                  <p class="text-muted" data-key="t-signcont">{{  $t("t-signcont")  }}</p>
+                  <p class="text-muted" data-key="t-signcont">{{ $t("t-signcont") }}</p>
                 </div>
                 <div class="p-2 mt-4">
-                  <b-alert v-model="isAuthError" variant="danger" class="mt-3" dismissible>{{  authError  }}</b-alert>
+                  <b-alert v-model="isAuthError" variant="danger" class="mt-3" dismissible>{{ authError }}</b-alert>
 
                   <div v-if="notification.message" :class="'alert ' + notification.type">
-                    {{  notification.message  }}
+                    {{ notification.message }}
                   </div>
 
                   <form class="needs-validation" @submit.prevent="Log">
                     <div class="mb-3">
-                      <label for="email" class="form-label" data-key="t-email">{{  $t("t-email")  }} <span
+                      <label for="email" class="form-label" data-key="t-email">{{ $t("t-email") }} <span
                           class="text-danger">*</span></label>
                       <input type="email" class="form-control" id="email" data-key="t-entermail"
                         v-bind:placeholder="$t('t-entermail')" v-model="loginInput.email" onpaste="return false" :class="{
                           'is-invalid': submitted && v$.loginInput.email.$error,
                         }" />
                       <div v-for="(item, index) in v$.loginInput.email.$errors" :key="index" class="invalid-feedback">
-                        <span v-if="item.$message">{{  item.$message  }}</span>
+                        <span v-if="item.$message">{{ item.$message }}</span>
                       </div>
                     </div>
 
                     <div class="mb-3">
                       <div class="float-end">
-                        <router-link to="/forgot-password" class="text-muted" data-key="t-forgpass">{{  $t("t-forgpass") 
-                          }}
+                        <router-link to="/forgot-password" class="text-muted" data-key="t-forgpass">{{ $t("t-forgpass")
+                        }}
                         </router-link>
                       </div>
-                      <label class="form-label" for="password-input" data-key="t-password">{{  $t("t-password")  }} <span
+                      <label class="form-label" for="password-input" data-key="t-password">{{ $t("t-password") }} <span
                           class="text-danger">*</span></label>
                       <div class="position-relative auth-pass-inputgroup mb-3">
                         <input v-if="showPassword" type="text" v-model="loginInput.password" onpaste="return false"
@@ -203,8 +194,8 @@ export default {
                         </button>
                         <div v-if="submitted && v$.loginInput.password.$error" class="invalid-feedback">
                           <span v-if="v$.loginInput.password.required.$message">{{
-                             v$.loginInput.password.required.$message 
-                            }}</span>
+                          v$.loginInput.password.required.$message
+                          }}</span>
                         </div>
                       </div>
                     </div>
@@ -212,14 +203,14 @@ export default {
                     <div class="mt-4">
                       <!------------------- MODIFY METHOD TO CALL IF NO BACKEND (ForceLogIn) OR IF BACKEND (tryToLogIn) ------------------->
                       <button @click="Log" class="btn btn-success w-100" type="submit" data-key="t-signin">{{
-                         $t("t-signin") 
-                        }}
+                      $t("t-signin")
+                      }}
                       </button>
                     </div>
 
                     <div class="mt-4 text-center">
                       <div class="signin-other-title">
-                        <h5 class="fs-13 mb-4 title" data-key="t-signinw">{{  $t("t-signinw")  }}</h5>
+                        <h5 class="fs-13 mb-4 title" data-key="t-signinw">{{ $t("t-signinw") }}</h5>
                       </div>
                       <div>
                         <button type="button" class="btn btn-danger btn-icon waves-effect waves-light ms-1">
@@ -227,10 +218,10 @@ export default {
                         </button>
                       </div>
                       <div class="mt-4 text-center">
-                        <p class="mb-0 text-muted" style="color: black" data-key="t-prosign">{{  $t("t-prosign")  }}
+                        <p class="mb-0 text-muted" style="color: black" data-key="t-prosign">{{ $t("t-prosign") }}
 
                           <router-link to="/register-mail" class="fw-semibold text-primary text-decoration-underline"
-                            data-key="t-signup">{{  $t("t-signup")  }}
+                            data-key="t-signup">{{ $t("t-signup") }}
                           </router-link>
                         </p>
                       </div>
