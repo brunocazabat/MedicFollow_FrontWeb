@@ -196,20 +196,20 @@ export default [
     component: () => import("@/views/errors-section/500.vue"),
   },
   {
-    path: "/:pathMatch(.*)*",
-    name: "404-error",
-    meta: {
-      title: "Error 404",
-    },
-    component: () => import("@/views/errors-section/404.vue"),
-  },
-  {
     path: "/offline",
     name: "offline",
     meta: {
       title: "Offline",
     },
     component: () => import("@/views/errors-section/offline.vue"),
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "404-error",
+    meta: {
+      title: "Error 404",
+    },
+    component: () => import("@/views/errors-section/404.vue"),
   },
   // ROUTES ERROR END
 ];
