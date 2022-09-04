@@ -1,20 +1,10 @@
 import store from "@/components/state/store";
 
-let mode = DevMode();
+let mode = localStorage.getItem("mode");
 
-function DevMode() {
-  let id;
-  if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
-    id = false;
-  } else {
-    id = true;
-  }
-  return id;
-}
-
-function beforeResolve(_routeTo, _routeFrom, next) {
+function onceLoggedIn(_routeTo, _routeFrom, next) {
   // If the user is already logged in
-  if (store.getters["auth/loggedIn"]) {
+  if (store.getters["auth/isloggedIn"]) {
     // Redirect to the home page instead
     next({ name: "default" });
   } else {
@@ -43,7 +33,7 @@ export default [
     component: () => import("@/views/log-account-section/login.vue"),
     meta: {
       title: "Login",
-      beforeResolve,
+      onceLoggedIn,
     },
   },
   {
@@ -52,7 +42,7 @@ export default [
     component: () => import("@/views/log-account-section/register-mail.vue"),
     meta: {
       title: "Enter your email",
-      beforeResolve,
+      onceLoggedIn,
     },
   },
   {
@@ -62,7 +52,7 @@ export default [
       import("@/views/log-account-section/register-mail-success.vue"),
     meta: {
       title: "Success",
-      beforeResolve,
+      onceLoggedIn,
     },
   },
   {
@@ -71,7 +61,7 @@ export default [
     component: () => import("@/views/log-account-section/register-fill.vue"),
     meta: {
       title: "Register your account",
-      beforeResolve,
+      onceLoggedIn,
     },
   },
   {
@@ -81,7 +71,7 @@ export default [
       import("@/views/log-account-section/register-fill-success.vue"),
     meta: {
       title: "Success",
-      beforeResolve,
+      onceLoggedIn,
     },
   },
   {
@@ -90,7 +80,7 @@ export default [
     component: () => import("@/views/log-account-section/forgot-password.vue"),
     meta: {
       title: "Forgot Password",
-      beforeResolve,
+      onceLoggedIn,
     },
   },
   {
@@ -100,7 +90,7 @@ export default [
       import("@/views/log-account-section/forgot-password-success.vue"),
     meta: {
       title: "Success",
-      beforeResolve,
+      onceLoggedIn,
     },
   },
   {
