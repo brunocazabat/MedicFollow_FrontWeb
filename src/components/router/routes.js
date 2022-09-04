@@ -196,14 +196,6 @@ export default [
     component: () => import("@/views/errors-section/500.vue"),
   },
   {
-    path: "/offline",
-    name: "offline",
-    meta: {
-      title: "Offline",
-    },
-    component: () => import("@/views/errors-section/offline.vue"),
-  },
-  {
     path: "/:pathMatch(.*)*",
     name: "404-error",
     meta: {
