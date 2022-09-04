@@ -296,7 +296,7 @@ export default {
       <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas"
         data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas" id="mdi-cog">
         <router-link to="/settings">
-          <em class="mdi mdi-cog-outline fs-22" style="color: white;"></em>
+          <em class="mdi mdi-cog-outline fs-22 text-white"></em>
         </router-link>
       </div>
     </div>
@@ -310,7 +310,7 @@ export default {
         {{ $t("t-cookies-content") }}
         <a href="https://www.medicfollow.fr/fr/usage.html" target="_blank" rel="noreferrer noopener"
           data-key="t-cookies-infos">{{
-              $t("t-cookies-infos")
+          $t("t-cookies-infos")
           }}</a>
       </template>
 
