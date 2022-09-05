@@ -43,10 +43,15 @@ export const mutations = {
 
 export const getters = {
   isloggedIn(state) {
-    return state.token && state.uuid && state.email;
+    return !!(state.token && state.uuid && state.email);
   },
-  isLocked(state) {
-    return state.lock;
+  isLocked() {
+    if (sessionStorage.getItem("currentUserLOCK") === "locked") {
+      return true;
+    }
+    if (sessionStorage.getItem("currentUserLOCK") === "unlocked") {
+      return false;
+    }
   },
   userget(state) {
     return {
@@ -54,6 +59,12 @@ export const getters = {
       uuid: state.uuid,
       email: state.email,
     };
+  },
+  emailget(state) {
+    return state.email;
+  },
+  nameget(state) {
+    return state.firstname + " " + state.lastname;
   },
 };
 
@@ -68,6 +79,7 @@ export const actions = {
         dispatch("setFirstName", response.data.user.firstname);
         dispatch("setLastName", response.data.user.lastname);
         dispatch("setRole", response.data.user.userType.ut_name);
+        dispatch("setLock", "unlocked");
       }
       return response.status;
     } catch (error) {
@@ -99,6 +111,10 @@ export const actions = {
     commit("SET_ROLE", role);
   },
 
+  async setLock({ commit }, lock) {
+    commit("SET_LOCK", lock);
+  },
+
   LogOut({ commit }) {
     commit("SET_TOKEN", null);
     commit("SET_UUID", null);
@@ -106,13 +122,14 @@ export const actions = {
     commit("SET_FIRSTNAME", null);
     commit("SET_LASTNAME", null);
     commit("SET_ROLE", null);
-    commit("SET_LOCK", false);
+    commit("SET_LOCK", "unlocked");
     window.sessionStorage.removeItem("currentUserTOKEN");
     window.sessionStorage.removeItem("currentUserUUID");
     window.sessionStorage.removeItem("currentUserEMAIL");
     window.sessionStorage.removeItem("currentUserFIRSTNAME");
     window.sessionStorage.removeItem("currentUserLASTNAME");
     window.sessionStorage.removeItem("currentUserROLE");
+    window.sessionStorage.removeItem("currentUserLOCK");
   },
 };
 
@@ -121,5 +138,5 @@ export const actions = {
 // ===
 
 function saveState(key, value) {
-  window.sessionStorage.setItem(key, JSON.stringify(value));
+  window.sessionStorage.setItem(key, value);
 }
