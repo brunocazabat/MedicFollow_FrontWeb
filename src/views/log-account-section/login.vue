@@ -52,9 +52,14 @@ export default {
       return this.$store ? this.$store.state.notification : null;
     },
   },
+  mounted() {
+    this.setLock("unlocked");
+  },
   methods: {
     ...mapActions({
       LogIn: "auth/LogIn",
+      setCaptchaValid: "security/setCaptchaValid",
+      setLock: "auth/setLock",
     }),
     ...mapGetters({
       isRecaptchaEnabled: "security/isRecaptchaEnabled",
@@ -71,6 +76,7 @@ export default {
               this.isAuthError = false;
               this.authError = null;
               this.submitted = false;
+              this.setCaptchaValid(false);
               this.$router.push(
                 this.$route.query.redirectFrom || {
                   name: "default",
@@ -88,17 +94,11 @@ export default {
             default:
               this.isAuthError = true;
               this.authError = "An unknown error occurred";
-              this.$router.push(
-                this.$route.query.redirectFrom || {
-                  name: "500",
-                }
-              );
           }
         });
       } else {
-        console.log("captcha invalid");
-        this.isAuthError = true;
         this.submitted = false;
+        this.isAuthError = true;
         this.authError = "Please complete the captcha and all fields.";
       }
     },
@@ -194,16 +194,15 @@ export default {
                         </button>
                         <div v-if="submitted && v$.loginInput.password.$error" class="invalid-feedback">
                           <span v-if="v$.loginInput.password.required.$message">{{
-                          v$.loginInput.password.required.$message
+                              v$.loginInput.password.required.$message
                           }}</span>
                         </div>
                       </div>
                     </div>
                     <recaptcha />
                     <div class="mt-4">
-                      <!------------------- MODIFY METHOD TO CALL IF NO BACKEND (ForceLogIn) OR IF BACKEND (tryToLogIn) ------------------->
                       <button @click="Log" class="btn btn-success w-100" type="submit" data-key="t-signin">{{
-                      $t("t-signin")
+                          $t("t-signin")
                       }}
                       </button>
                     </div>
