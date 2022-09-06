@@ -536,7 +536,7 @@ export default {
 
                 <!-- item-->
                 <a class="dropdown-item">
-                  <router-link to="/lockscreen" class="text-muted" data-key="t-suggest"><em
+                  <router-link to="/" class="text-muted" data-key="t-suggest"><em
                       class="ri-lifebuoy-line align-middle fs-18 text-muted me-2"></em>
                     {{ $t('t-suggest') }}
                   </router-link>
@@ -552,8 +552,8 @@ export default {
 
                 <!-- item-->
                 <div class="dropdown-header mt-2">
-                  <h6 class="text-overflow text-muted mb-2 text-uppercase">
-                    Members
+                  <h6 class="text-overflow text-muted mb-2">
+                    Organisation/Proches/Medecin
                   </h6>
                 </div>
 
@@ -563,8 +563,8 @@ export default {
                     <img src="@/assets/images/users/avatar-1.png" class="me-3 rounded-circle avatar-xs"
                       alt="user-pic" />
                     <div class="flex-1">
-                      <h6 class="m-0">Angela Bernier</h6>
-                      <span class="fs-11 mb-0 text-muted">Manager</span>
+                      <h6 class="m-0">Simon Bernabeu</h6>
+                      <span class="fs-11 mb-0 text-muted">Docteur</span>
                     </div>
                   </a>
                 </div>
