@@ -22,6 +22,7 @@ export const layoutComputed = {
 
 export const authMethods = mapActions("auth", [
   "LogIn",
+  "GetMe",
   "Unlock",
   "logOut",
   "register",
