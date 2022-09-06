@@ -53,17 +53,16 @@ export const getters = {
       return false;
     }
   },
-  userget(state) {
-    return {
-      token: state.token,
-      uuid: state.uuid,
-      email: state.email,
-    };
-  },
   emailget(state) {
     return state.email;
   },
-  nameget(state) {
+  firstnameget(state) {
+    return state.firstname;
+  },
+  lastnameget(state) {
+    return state.lastname;
+  },
+  fullnameget(state) {
     return state.firstname + " " + state.lastname;
   },
 };
