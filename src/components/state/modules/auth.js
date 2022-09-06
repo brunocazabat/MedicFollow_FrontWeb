@@ -2,6 +2,7 @@ import axios from "axios";
 
 export const state = {
   token: sessionStorage.getItem("currentUserTOKEN"),
+  headers: sessionStorage.getItem("currentUserHEADERS"),
   email: sessionStorage.getItem("currentUserEMAIL"),
   uuid: sessionStorage.getItem("currentUserUUID"),
   firstname: sessionStorage.getItem("currentUserFIRSTNAME"),
@@ -39,6 +40,13 @@ export const mutations = {
     state.lock = lock;
     saveState("currentUserLOCK", lock);
   },
+  SET_HEADERS(state, token) {
+    state.headers = {
+      "Content-Type": "application/json",
+      Token: "Bearer " + token,
+    };
+    saveState("currentUserHEADERS", state.headers);
+  },
 };
 
 export const getters = {
@@ -71,19 +79,31 @@ export const actions = {
   async LogIn({ dispatch }, credentials) {
     try {
       let response = await axios.put("users", credentials);
+
       if (response.status === 200) {
         dispatch("setToken", response.data.token);
         dispatch("setEmail", response.data.user.email);
         dispatch("setUuid", response.data.user.uuid);
-        dispatch("setFirstName", response.data.user.firstname);
-        dispatch("setLastName", response.data.user.lastname);
-        dispatch("setRole", response.data.user.userType.ut_name);
+        dispatch("setHeaders", response.data.token);
         dispatch("setLock", "unlocked");
       }
       return response.status;
     } catch (error) {
       return error.response.status;
     }
+  },
+
+  async GetMe({ dispatch }) {
+    setTimeout(1000);
+    console.log(state.headers);
+    let response = await axios.get("users/me", { headers: state.headers });
+    console.log(response);
+    if (response.status === 200) {
+      dispatch("setFirstName", response.data.firstname);
+      dispatch("setLastName", response.data.lastname);
+      dispatch("setRole", response.data.userType.ut_name);
+    }
+    return response.status;
   },
 
   async setToken({ commit }, token) {
@@ -114,6 +134,10 @@ export const actions = {
     commit("SET_LOCK", lock);
   },
 
+  async setHeaders({ commit }, token) {
+    commit("SET_HEADERS", token);
+  },
+
   LogOut({ commit }) {
     commit("SET_TOKEN", null);
     commit("SET_UUID", null);
@@ -121,6 +145,7 @@ export const actions = {
     commit("SET_FIRSTNAME", null);
     commit("SET_LASTNAME", null);
     commit("SET_ROLE", null);
+    commit("SET_HEADER", null);
     commit("SET_LOCK", "unlocked");
     window.sessionStorage.removeItem("currentUserTOKEN");
     window.sessionStorage.removeItem("currentUserUUID");
@@ -129,6 +154,7 @@ export const actions = {
     window.sessionStorage.removeItem("currentUserLASTNAME");
     window.sessionStorage.removeItem("currentUserROLE");
     window.sessionStorage.removeItem("currentUserLOCK");
+    window.sessionStorage.removeItem("currentUserHEADERS");
   },
 };
 
