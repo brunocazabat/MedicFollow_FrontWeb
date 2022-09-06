@@ -1,5 +1,3 @@
-//let mode = localStorage.getItem("routes_mode");
-
 export default [
   // test routes START
   /*
@@ -9,7 +7,7 @@ export default [
     component: () => import("@/views/dashboard-section/index.vue"),
     meta: {
       title: "Test",
-      authRequired: mode,
+      authRequired: true,
     },
   },
   */

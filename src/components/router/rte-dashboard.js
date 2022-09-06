@@ -1,7 +1,5 @@
 import store from "@/components/state/store";
 
-let mode = localStorage.getItem("routes_mode");
-
 function onceLoggedIn(_routeTo, _routeFrom, next) {
   if (store.getters["auth/isLocked"]) {
     // Redirect to the lockscreen page instead
@@ -19,7 +17,7 @@ export default [
     name: "default",
     meta: {
       title: "Dashboard",
-      authRequired: mode,
+      authRequired: true,
       onceLoggedIn,
     },
     component: () => import("@/views/dashboard-section/index.vue"),
@@ -29,7 +27,7 @@ export default [
     name: "calendar",
     meta: {
       title: "Calendar",
-      authRequired: mode,
+      authRequired: true,
       onceLoggedIn,
     },
     component: () => import("@/views/calendar-section/calendar.vue"),
@@ -39,7 +37,7 @@ export default [
     name: "chat",
     meta: {
       title: "Chat",
-      authRequired: mode,
+      authRequired: true,
       onceLoggedIn,
     },
     component: () => import("@/views/chat-section/chat.vue"),
@@ -49,7 +47,7 @@ export default [
     name: "suggestions",
     meta: {
       title: "Suggestions",
-      authRequired: mode,
+      authRequired: true,
       onceLoggedIn,
     },
     component: () => import("@/views/forms-section/suggest.vue"),
@@ -59,7 +57,7 @@ export default [
     name: "bugreport",
     meta: {
       title: "Bug Report",
-      authRequired: mode,
+      authRequired: true,
       onceLoggedIn,
     },
     component: () => import("@/views/forms-section/bugreport.vue"),
@@ -69,7 +67,7 @@ export default [
     name: "medical-information",
     meta: {
       title: "Staff Input",
-      authRequired: mode,
+      authRequired: true,
       onceLoggedIn,
     },
     component: () => import("@/views/medical-information/index.vue"),
@@ -79,7 +77,7 @@ export default [
     name: "staff-input",
     meta: {
       title: "Medical Information",
-      authRequired: mode,
+      authRequired: true,
       onceLoggedIn,
     },
     component: () => import("@/views/staff-input/index.vue"),
@@ -89,7 +87,7 @@ export default [
     name: "profile-setting",
     meta: {
       title: "Settings",
-      authRequired: mode,
+      authRequired: true,
       onceLoggedIn,
     },
     component: () => import("@/views/settings-section/setting.vue"),

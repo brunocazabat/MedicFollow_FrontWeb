@@ -1,7 +1,5 @@
 import store from "@/components/state/store";
 
-let mode = localStorage.getItem("routes_mode");
-
 function onceLoggedIn(_routeTo, _routeFrom, next) {
   // If the user is already logged in
   if (store.getters["auth/isloggedIn"] && !store.getters["auth/isLocked"]) {
@@ -24,7 +22,7 @@ export default [
     component: () => import("@/views/log-account-section/logout.vue"),
     meta: {
       title: "Logout",
-      authRequired: mode,
+      authRequired: true,
     },
   },
   // log-account-section routes START
