@@ -30,7 +30,7 @@
         )};
 
     // Topbar - (Default Light)
-    --#{$variable-prefix}header-bg: #{$white};
+    --#{$variable-prefix}header-bg: #{$primary};
     --#{$variable-prefix}header-item-color: #e9ecef;
     // Topbar - Dark
     --#{$variable-prefix}header-bg-dark: #1c1c36;
@@ -41,7 +41,7 @@
     // Topbar Search
     --#{$variable-prefix}topbar-search-bg: #f3f3f9;
     // Topbar User
-    --#{$variable-prefix}topbar-user-bg: #f3f3f9;
+    --#{$variable-prefix}topbar-user-bg: #{lighten($primary, 15%)};
     --#{$variable-prefix}topbar-user-bg-dark: #2a2a50;
 
     //footer
