@@ -520,11 +520,12 @@ export default {
                 </div>
                 <div class="dropdown-item bg-transparent text-wrap">
                   <button type="button" class="btn btn-soft-secondary btn-sm btn-rounded" data-toggle="fullscreen"
-                    style="margin-right: 10px;" @click="initFullScreen">
-                    Fullscreen <em class="bx bx-fullscreen ms-1"></em>
+                    style="margin-right: 10px;" @click="initFullScreen" data-key="t-fullscreen">
+                    {{ $t("t-fullscreen") }} <em class="bx bx-fullscreen ms-1"></em>
                   </button>
-                  <button type="button" class="btn btn-soft-secondary btn-sm btn-rounded" @click="toggleDarkMode">
-                    Thème Sombre<em class="bx bx-moon ms-1"></em>
+                  <button type="button" class="btn btn-soft-secondary btn-sm btn-rounded" @click="toggleDarkMode"
+                    data-key="t-darkmode">
+                    {{ $t("t-darkmode") }}<em class="bx bx-moon ms-1"></em>
                   </button>
                 </div>
                 <!-- item-->
@@ -572,7 +573,7 @@ export default {
 
               <div class="text-center pt-3 pb-1">
                 <router-link to="/lockscreen" class="btn btn-primary btn-sm" data-key="t-lockscreen">{{
-                    $t('t-lockscreen')
+                $t('t-lockscreen')
                 }}
                   <em class="mdi mdi-lock ms-1"></em>
                 </router-link>
