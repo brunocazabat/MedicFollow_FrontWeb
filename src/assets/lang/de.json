@@ -31,7 +31,7 @@
   "t-forgpass": "Passwort vergessen?",
   "t-home": "Zuhause",
   "t-lastinfo": "Letzte Patienteninformationen",
-  "t-lockscreen": "BILDSCHIRM SPERREN",
+  "t-lockscreen": "Bildschirm Sperren",
   "t-loginpage": "Anmeldeseite",
   "t-logout": "Ausloggen",
   "t-logoutsuccess": "Sie wurden von Ihrem Konto abgemeldet.",
@@ -88,5 +88,9 @@
   "t-yourtool": " Ihr Kommunikationstool mit Ihren Lieben",
   "t-menu": "Speisekarte",
   "t-contacts": "Kontakt",
-  "t-event": "Vorfall"
+  "t-event": "Vorfall",
+  "t-welcome": "Herzlich willkommen",
+  "t-medicalinformation": "Medizinische Informationen",
+  "t-displ": "Anzeigeoptionen",
+  "t-settingsopt": "Profiloptionen"
 }

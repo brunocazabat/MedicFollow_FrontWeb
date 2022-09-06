@@ -31,7 +31,7 @@
   "t-forgpass": "Mot de passe oublié ?",
   "t-home": "Accueil",
   "t-lastinfo": "Dernières informations du patient",
-  "t-lockscreen": "ÉCRAN DE VERROUILLAGE",
+  "t-lockscreen": "Écran De Verrouillage",
   "t-loginpage": "Page de connexion",
   "t-logout": "Se déconnecter",
   "t-logoutsuccess": "Vous êtes déconnecté de votre compte.",
@@ -88,5 +88,9 @@
   "t-yourtool": "Votre outil de communication avec vos proches",
   "t-menu": "Menu",
   "t-contacts": "Contact",
-  "t-event": "Événement"
+  "t-event": "Événement",
+  "t-welcome": "Bienvenue",
+  "t-medicalinformation": "Informations médicales",
+  "t-displ": "Option d'affichage",
+  "t-settingsopt": "Options de profil"
 }

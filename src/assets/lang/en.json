@@ -31,7 +31,7 @@
   "t-forgpass": "Forgot password ?",
   "t-home": "Home",
   "t-lastinfo": "Patient Last Infos",
-  "t-lockscreen": "LOCK SCREEN",
+  "t-lockscreen": "Lockscreen",
   "t-loginpage": "Login Page",
   "t-logout": "Logout",
   "t-logoutsuccess": "You are Logged Out of your account.",
@@ -88,5 +88,9 @@
   "t-yourtool": "Your communication tool with your loved ones",
   "t-menu": "Menu",
   "t-contacts": "Contact",
-  "t-event": "Event"
+  "t-event": "Event",
+  "t-welcome": "Welcome",
+  "t-displ": "Display Options",
+  "t-settingsopt": "Profile Options",
+  "t-medicalinformation": "Medical Informations"
 }

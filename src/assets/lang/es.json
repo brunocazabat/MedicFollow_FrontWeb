@@ -31,7 +31,7 @@
   "t-forgpass": "¿Olvidaste la contraseña?",
   "t-home": "Inicio",
   "t-lastinfo": "Información de la última paciente",
-  "t-lockscreen": "PANTALLA DE BLOQUEO",
+  "t-lockscreen": "Pantalla De Bloqueo",
   "t-loginpage": "Página de inicio de sesión",
   "t-logout": "Cerrar sesión",
   "t-logoutsuccess": "Se desconectó de su cuenta.",
@@ -88,5 +88,9 @@
   "t-yourtool": "Tu herramienta de comunicación con tus seres queridos",
   "t-menu": "Menu",
   "t-contacts": "Contact",
-  "t-event": "Event"
+  "t-event": "Event",
+  "t-welcome": "Bienvenidos",
+  "t-medicalinformation": "Informaciones médicas",
+  "t-displ": "Opciones de pantalla",
+  "t-settingsopt": "Opciones de perfil"
 }
