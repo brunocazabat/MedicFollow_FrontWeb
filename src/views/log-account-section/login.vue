@@ -58,6 +58,7 @@ export default {
   methods: {
     ...mapActions({
       LogIn: "auth/LogIn",
+      GetMe: "auth/GetMe",
       setCaptchaValid: "security/setCaptchaValid",
       setLock: "auth/setLock",
     }),
@@ -77,11 +78,6 @@ export default {
               this.authError = null;
               this.submitted = false;
               this.setCaptchaValid(false);
-              this.$router.push(
-                this.$route.query.redirectFrom || {
-                  name: "default",
-                }
-              );
               break;
             case 462:
               this.isAuthError = true;
@@ -94,7 +90,31 @@ export default {
             default:
               this.isAuthError = true;
               this.authError = "An unknown error occurred";
+              break;
           }
+        }).then(() => {
+          this.GetMe().then(res => {
+            switch (res) {
+              case 200:
+                this.$router.push(
+                  this.$route.query.redirectFrom || {
+                    name: "default",
+                  }
+                );
+                break;
+              case 462:
+                this.isAuthError = true;
+                this.authError = "Invalid Token, please login again";
+                break;
+              case 463:
+                this.isAuthError = true;
+                this.authError = "User disabled";
+                break;
+              default:
+                this.isAuthError = true;
+                this.authError = "An unknown error occurred";
+            }
+          });
         });
       } else {
         this.submitted = false;
