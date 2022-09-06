@@ -1,6 +1,6 @@
 import store from "@/components/state/store";
 
-let mode = localStorage.getItem("mode");
+let mode = localStorage.getItem("routes_mode");
 
 function onceLoggedIn(_routeTo, _routeFrom, next) {
   if (store.getters["auth/isLocked"]) {

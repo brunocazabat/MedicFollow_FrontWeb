@@ -12,11 +12,10 @@ function loadLocaleVariables() {
     "fallbacklanguage",
     process.env.VUE_APP_I18N_FALLBACK_LOCALE
   );
-  if (process.env.VUE_APP_DEFAULT_AUTH === "DEV") {
-    localStorage.setItem("mode", false);
-  } else {
-    localStorage.setItem("mode", true);
-  }
+  localStorage.setItem(
+    "routes_mode",
+    process.env.VUE_APP_DEFAULT_PROTECTED_ROUTES
+  );
 }
 
 function loadLocaleMessages() {

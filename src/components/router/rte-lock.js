@@ -1,4 +1,4 @@
-let mode = localStorage.getItem("mode");
+let mode = localStorage.getItem("routes_mode");
 
 export default [
   {
