@@ -92,5 +92,7 @@
   "t-welcome": "Herzlich willkommen",
   "t-medicalinformation": "Medizinische Informationen",
   "t-displ": "Anzeigeoptionen",
-  "t-settingsopt": "Profiloptionen"
+  "t-settingsopt": "Profiloptionen",
+  "t-darkmode": "Dunkles Thema",
+  "t-fullscreen": "Ganzer Bildschirm"
 }

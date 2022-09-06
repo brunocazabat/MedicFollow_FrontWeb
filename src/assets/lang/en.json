@@ -92,5 +92,7 @@
   "t-welcome": "Welcome",
   "t-displ": "Display Options",
   "t-settingsopt": "Profile Options",
-  "t-medicalinformation": "Medical Informations"
+  "t-medicalinformation": "Medical Informations",
+  "t-fullscreen": "Full Screen",
+  "t-darkmode": "Dark Theme"
 }
