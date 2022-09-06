@@ -46,8 +46,8 @@ export default {
   },
   mounted() {
     this.setLock("locked");
-    if (this.nameget()) {
-      this.name = this.nameget();
+    if (this.fullnameget()) {
+      this.name = this.fullnameget();
     }
     if (this.emailget()) {
       this.loginInput.email = this.emailget();
@@ -67,7 +67,7 @@ export default {
     ...mapGetters({
       isRecaptchaEnabled: "security/isRecaptchaEnabled",
       emailget: "auth/emailget",
-      nameget: "auth/nameget",
+      fullnameget: "auth/fullnameget",
     }),
     ...notificationMethods,
     Unlock() {
