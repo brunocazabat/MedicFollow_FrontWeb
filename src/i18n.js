@@ -3,7 +3,7 @@ import { createI18n } from "vue-i18n";
 function loadlanguage() {
   if (localStorage.getItem("language") === null)
     localStorage.setItem("language", process.env.VUE_APP_I18N_LOCALE);
-  return process.env.VUE_APP_I18N_LOCALE;
+  return localStorage.getItem("language");
 }
 
 function secondlanguage() {
@@ -12,7 +12,7 @@ function secondlanguage() {
       "secondlanguage",
       process.env.VUE_APP_I18N_FALLBACK_LOCALE
     );
-  return process.env.VUE_APP_I18N_FALLBACK_LOCALE;
+  return localStorage.getItem("secondlanguage");
 }
 
 function loadLocaleMessages() {
