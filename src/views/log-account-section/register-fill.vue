@@ -41,7 +41,7 @@ export default {
   },
   validations: {
     user: {
-      familly_name: {
+      famillyname: {
         required: helpers.withMessage("The familly name is required", required),
       },
       name: {
