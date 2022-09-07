@@ -169,13 +169,13 @@ export default {
         </li>
         <li class="nav-item">
           <router-link class="nav-link menu-link" to="/chat">
-            <em class="ri-pencil-ruler-2-line"></em>
+            <em class="ri-pencil-line"></em>
             <span style="padding: 7px" data-key="t-chat">{{ $t("t-chat") }}</span>
           </router-link>
         </li>
         <li class="nav-item">
           <router-link class="nav-link menu-link" to="/settings">
-            <em class="mdi mdi-cog-outline"></em>
+            <em class="ri-user-settings-line"></em>
             <span style="padding: 7px" data-key="t-settings">{{ $t("t-settings") }}</span>
           </router-link>
         </li>
@@ -183,7 +183,7 @@ export default {
         <li class="nav-item">
           <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button"
             aria-expanded="false" aria-controls="sidebarApps">
-            <em class="ri-apps-2-line"></em>
+            <em class="ri-lifebuoy-line"></em>
             <span style="padding: 7px" data-key="t-contacts"> {{ $t("t-contacts") }}</span>
           </a>
           <div class="collapse menu-dropdown" id="sidebarApps">

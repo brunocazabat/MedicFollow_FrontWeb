@@ -31,7 +31,7 @@
   "t-forgpass": "Forgot password?",
   "t-home": "Home",
   "t-lastinfo": "Patient Last Infos",
-  "t-lockscreen": "LOCK SCREEN",
+  "t-lockscreen": "Lockscreen",
   "t-loginpage": "Login Page",
   "t-logout": "Logout",
   "t-logoutsuccess": "You are Logged Out of your account.",
@@ -157,5 +157,10 @@
   "t-questionuploaddoc": "Do you want to upload a file?",
   "t-uploadexample": "You can, for instance, send us an image or a pdf file.",
   "t-havereadtou": "I have read and accepted the Terms of Use",
-  "t-submit": "Submit"
+  "t-submit": "Submit",
+  "t-welcome": "Welcome",
+  "t-displ": "Display Options",
+  "t-settingsopt": "Profile Options",
+  "t-fullscreen": "Full Screen",
+  "t-darkmode": "Dark Theme"
 }

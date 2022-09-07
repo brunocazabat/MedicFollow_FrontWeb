@@ -31,7 +31,7 @@
   "t-forgpass": "Mot de passe oublié ?",
   "t-home": "Accueil",
   "t-lastinfo": "Dernières informations du patient",
-  "t-lockscreen": "ÉCRAN DE VERROUILLAGE",
+  "t-lockscreen": "Écran De Verrouillage",
   "t-loginpage": "Page de connexion",
   "t-logout": "Se déconnecter",
   "t-logoutsuccess": "Vous êtes déconnecté de votre compte.",
@@ -157,5 +157,10 @@
   "t-questionuploaddoc": "Voulez-vous mettre en ligne un fichier?",
   "t-uploadexample": "Vous pouvez, par exemple, nous envoyer une image ou un fichier pdf.",
   "t-havereadtou": "J'ai lu et j'accepte les conditions d'utilisation",
-  "t-submit": "Envoyer"
+  "t-submit": "Envoyer",
+  "t-welcome": "Bienvenue",
+  "t-displ": "Option d'affichage",
+  "t-settingsopt": "Options de profil",
+  "t-darkmode": "Thème sombre",
+  "t-fullscreen": "Plein écran"
 }

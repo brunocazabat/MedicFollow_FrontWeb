@@ -1,14 +1,30 @@
 <script>
-export default {}
+  import logoheadermodule from "@/components/login-components/logo-header-module.vue";
+  import particlesmodule from "@/components/login-components/particles-module.vue";
+  import footermodule from "@/components/login-components/footer-module.vue";
+  import translatemodule from "@/components/login-components/translate-module.vue";
+
+export default {
+  name: "Offline",
+  components: { logoheadermodule, particlesmodule, footermodule, translatemodule },
+  data() {
+    return {};
+  },
+  computed: {},
+  methods: {},
+};
 </script>
 
 <template>
-  <!-- auth-page wrapper -->
-  <div class="auth-page-wrapper auth-bg-cover py-5 d-flex justify-content-center align-items-center min-vh-100">
-    <div class="bg-overlay"></div>
-    <!-- auth-page content -->
-    <div class="auth-page-content overflow-hidden pt-lg-5">
+  <div class="auth-page-wrapper pt-5">
+    <!-- auth page bg -->
+    <particlesmodule />
+
+    <!-- auth page content -->
+    <div class="auth-page-content">
       <div class="container">
+        <logoheadermodule />
+        <!-- end row -->
         <div class="row justify-content-center">
           <div class="col-xl-5">
             <div class="card overflow-hidden">
@@ -30,12 +46,16 @@ export default {}
             <!-- end card -->
           </div>
           <!-- end col -->
+          <translatemodule />
         </div>
         <!-- end row -->
       </div>
       <!-- end container -->
     </div>
     <!-- end auth page content -->
+    <!-- footer -->
+    <footermodule />
+    <!-- end Footer -->
   </div>
   <!-- end auth-page-wrapper -->
 </template>

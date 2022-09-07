@@ -1,12 +1,30 @@
 import { createWebHistory, createRouter } from "vue-router";
 import store from "@/components/state/store";
-import routes from "./routes";
+
+// TEST
+import rtetest from "./rte-test.js";
+// UNIVERSAL ROUTES
+import rteerrors from "./rte-errors.js";
+import rtelogin from "./rte-login.js";
+import rtelock from "./rte-lock.js";
+// USER SPECIFIED DASHBOARD
+import rtedashboard from "./rte-dashboard.js";
+
 import appConfig from "@/../app.config";
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
   mode: "history",
+  // TEST
+  routes: [
+    ...rtetest,
+    // UNIVERSAL ROUTES
+    ...rteerrors,
+    ...rtelogin,
+    ...rtelock,
+    // USER SPECIFIED DASHBOARD
+    ...rtedashboard,
+  ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
@@ -19,10 +37,9 @@ const router = createRouter({
 // Before each route evaluates...
 router.beforeEach(async (routeTo, routeFrom, next) => {
   const authRequired = routeTo.matched.some((route) => route.meta.authRequired);
-
   if (authRequired) {
     // If the user is not authenticated...
-    if (!store.getters["auth/loggedIn"]) {
+    if (!store.getters["auth/isloggedIn"]) {
       // Redirect to the login page
       next({ name: "login" });
     } else {
@@ -41,8 +58,8 @@ router.beforeResolve(async (routeTo, routeFrom, next) => {
       await new Promise((resolve, reject) => {
         // If a `beforeResolve` hook is defined, call it with
         // the same arguments as the `beforeEnter` hook.
-        if (route.meta && route.meta.beforeResolve) {
-          route.meta.beforeResolve(routeTo, routeFrom, (...args) => {
+        if (route.meta && route.meta.onceLoggedIn) {
+          route.meta.onceLoggedIn(routeTo, routeFrom, (...args) => {
             // If the user chose to redirect...
             if (args.length) {
               // If redirecting to the same route we're coming from...

@@ -8,22 +8,10 @@ import { layoutMethods, layoutComputed } from "@/components/state/helpers";
 export default {
   components: {
   },
-  data() {
-    return {
-      config: {
-        handler: this.handleRightBarClick,
-        middleware: this.middleware,
-        events: ["click"],
-      },
-    };
-  },
   methods: {
     ...layoutMethods,
     hide() {
       this.$parent.toggleRightSidebar();
-    },
-    handleRightBarClick() {
-      this.$parent.hideRightSidebar();
     },
     middleware(event) {
       if (event.target.classList)
@@ -33,7 +21,6 @@ export default {
   mounted() {
     let rightbar_isopen = localStorage.getItem('rightbar_isopen')
     if (rightbar_isopen == 'true') {
-      document.getElementById('mdi-cog').click()
       localStorage.setItem("rightbar_isopen", false);
     }
   },
@@ -292,18 +279,8 @@ export default {
 
 <template>
   <div>
-    <div class="customizer-setting d-none d-md-block">
-      <div class="btn-info btn-rounded shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas"
-        data-bs-target="#theme-settings-offcanvas" aria-controls="theme-settings-offcanvas" id="mdi-cog">
-        <router-link to="/settings">
-          <em class="mdi mdi-cog-outline fs-22" style="color: white;"></em>
-        </router-link>
-      </div>
-    </div>
-    <vue-cookie-accept-decline :debug="false" :disableDecline="false" :showPostponeButton="false"
-      @clicked-accept="cookieClickedAccept" @clicked-decline="cookieClickedDecline"
-      @clicked-postpone="cookieClickedPostpone" @removed-cookie="cookieRemovedCookie" @status="cookieStatus"
-      elementId="myPanel1" position="bottom" ref="myPanel1" transitionName="slideFromBottom" type="floating">
+    <vue-cookie-accept-decline :debug="false" :disableDecline="false" :showPostponeButton="false" elementId="myPanel1"
+      position="bottom" ref="myPanel1" transitionName="slideFromBottom" type="floating">
 
       <!-- Optional -->
       <template #message data-key="t-cookies-content">

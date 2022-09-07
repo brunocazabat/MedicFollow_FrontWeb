@@ -31,7 +31,7 @@
   "t-forgpass": "Passwort vergessen?",
   "t-home": "Zuhause",
   "t-lastinfo": "Letzte Patienteninformationen",
-  "t-lockscreen": "BILDSCHIRM SPERREN",
+  "t-lockscreen": "Bildschirm Sperren",
   "t-loginpage": "Anmeldeseite",
   "t-logout": "Ausloggen",
   "t-logoutsuccess": "Sie wurden von Ihrem Konto abgemeldet.",
@@ -157,5 +157,10 @@
   "t-questionuploaddoc": "Möchten Sie eine Datei hochladen?",
   "t-uploadexample": "Sie können uns beispielsweise ein Bild oder eine pdf-Datei zusenden.",
   "t-havereadtou": "Ich habe die Nutzungsbedingungen gelesen und akzeptiert",
-  "t-submit": "Einreichen"
+  "t-submit": "Einreichen",
+  "t-welcome": "Herzlich willkommen",
+  "t-displ": "Anzeigeoptionen",
+  "t-settingsopt": "Profiloptionen",
+  "t-darkmode": "Dunkles Thema",
+  "t-fullscreen": "Ganzer Bildschirm"
 }

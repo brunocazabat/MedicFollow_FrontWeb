@@ -31,7 +31,7 @@
   "t-forgpass": "Password dimenticata?",
   "t-home": "Casa",
   "t-lastinfo": "Ultime informazioni paziente",
-  "t-lockscreen": "BLOCCO SCHERMO",
+  "t-lockscreen": "Blocco Schermo",
   "t-loginpage": "Pagina di accesso",
   "t-logout": "Disconnettersi",
   "t-logoutsuccess": "Sei disconnesso dal tuo account.",
@@ -157,5 +157,10 @@
   "t-questionuploaddoc": "Vuoi caricare un file?",
   "t-uploadexample": "Puoi, ad esempio, inviarci un'immagine o un file pdf.",
   "t-havereadtou": "Ho letto e accettato le Condizioni d'uso",
-  "t-submit": "Invia"
+  "t-submit": "Invia",
+  "t-welcome": "Benvenuto",
+  "t-displ": "Opzioni di visualizzazione",
+  "t-settingsopt": "Opzioni del profilo",
+  "t-darkmode": "Tema scuro",
+  "t-fullscreen": "A schermo intero"
 }

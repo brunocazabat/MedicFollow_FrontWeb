@@ -4,7 +4,7 @@ export const authComputed = {
   ...mapState("auth", {
     currentUser: (state) => state.currentUser,
   }),
-  ...mapGetters("auth", ["loggedIn"]),
+  ...mapGetters("auth", ["isloggedIn"]),
 };
 
 export const layoutComputed = {
@@ -21,7 +21,9 @@ export const layoutComputed = {
 };
 
 export const authMethods = mapActions("auth", [
-  "logIn",
+  "LogIn",
+  "GetMe",
+  "Unlock",
   "logOut",
   "register",
   "resetPassword",
