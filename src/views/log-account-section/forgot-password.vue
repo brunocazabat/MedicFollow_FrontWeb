@@ -37,7 +37,6 @@ export default {
       email: "",
       submitted: false,
       ResetError: null,
-      tryingToReset: false,
       isResetError: false,
       defaultOptions: { animationData: animationData },
     };
