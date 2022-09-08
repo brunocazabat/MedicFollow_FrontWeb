@@ -31,7 +31,7 @@ export default {
   },
   components: {
     Slider,
-    Layout,
+    Layout
   },
   methods: {
     /**
@@ -93,13 +93,19 @@ export default {
             <li class="nav-item">
               <a class="nav-link active" data-bs-toggle="tab" href="#feedback" role="tab" data-key="t-suggestform">
                 <em class="fas fa-home"></em>
-                {{  $t("t-suggestform")  }}
+                {{ $t("t-suggestform") }}
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="tab" href="#bugReport" role="tab" data-key="t-bugform">
                 <em class="far fa-user"></em>
-                {{  $t("t-bugform")  }}
+                {{ $t("t-bugform") }}
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#contactUs" role="tab" data-key="t-contactus">
+                <em class="far fa-user"></em>
+                {{ $t("t-contactus") }}
               </a>
             </li>
           </ul>
@@ -112,8 +118,8 @@ export default {
                 <div class="row">
 
                   <div class="p-3 mb-0">
-                    <h3 class="font-size-14 mb-2 mt-0" data-key="t-letusknowyou">{{  $t("t-letusknowyou")  }}</h3>
-                    <p class="text-muted mb-2" data-key="t-bttrunderstandingtxt">{{  $t("t-bttrunderstandingtxt")  }}</p>
+                    <h3 class="font-size-14 mb-2 mt-0" data-key="t-letusknowyou">{{ $t("t-letusknowyou") }}</h3>
+                    <p class="text-muted mb-2" data-key="t-bttrunderstandingtxt">{{ $t("t-bttrunderstandingtxt") }}</p>
                   </div>
 
                   <!-- EMAIL -->
@@ -123,7 +129,7 @@ export default {
                       <div class="form-floating">
                         <input type="text" class="form-control" id="feedbackEmailInput" placeholder="Enter your email"
                           required />
-                        <label for="feedbackEmailInput" data-key="t-email">{{  $t("t-email")  }}</label>
+                        <label for="feedbackEmailInput" data-key="t-email">{{ $t("t-email") }}</label>
                       </div>
                     </div>
                   </div>
@@ -135,7 +141,7 @@ export default {
                       <div class="form-floating">
                         <input type="text" class="form-control" id="feedbackCountryInput"
                           placeholder="Enter your country" required />
-                        <label for="feedbackCountryInput" data-key="t-country">{{  $t("t-country")  }}</label>
+                        <label for="feedbackCountryInput" data-key="t-country">{{ $t("t-country") }}</label>
                       </div>
                     </div>
                   </div>
@@ -143,14 +149,14 @@ export default {
                   <!-- GENDER LIST -->
                   <div class="mb-0 p-3">
                     <div class="col-md-4">
-                      <label for="chooseGenderSelect" class="form-label" data-key="t-gender">{{  $t("t-gender") 
-                        }}</label>
+                      <label for="chooseGenderSelect" class="form-label" data-key="t-gender">{{ $t("t-gender")
+                      }}</label>
                       <select class="form-select" id="chooseGenderSelect" required>
-                        <option data-key="t-selectgender" selected>{{  $t("t-selectgender")  }}</option>
-                        <option data-key="t-male" value="male">{{  $t("t-male")  }}</option>
-                        <option data-key="t-female" value="female">{{  $t("t-female")  }}</option>
-                        <option data-key="t-other" value="other">{{  $t("t-other")  }}</option>
-                        <option data-key="t-prefernotsay" value="no-pref">{{  $t("t-prefernotsay")  }}</option>
+                        <option data-key="t-selectgender" selected>{{ $t("t-selectgender") }}</option>
+                        <option data-key="t-male" value="male">{{ $t("t-male") }}</option>
+                        <option data-key="t-female" value="female">{{ $t("t-female") }}</option>
+                        <option data-key="t-other" value="other">{{ $t("t-other") }}</option>
+                        <option data-key="t-prefernotsay" value="no-pref">{{ $t("t-prefernotsay") }}</option>
                       </select>
                     </div>
                   </div>
@@ -158,8 +164,8 @@ export default {
                   <!-- BIRTH DATE SELECTION -->
                   <div class="mb-3 p-3">
                     <div class="col-md-4">
-                      <label for="feedbackDateInput" class="form-label" data-key="t-birthdate">{{  $t("t-birthdate") 
-                        }}</label>
+                      <label for="feedbackDateInput" class="form-label" data-key="t-birthdate">{{ $t("t-birthdate")
+                      }}</label>
                       <input type="date" class="form-control" id="feedbackDateInput" required>
                     </div>
                   </div>
@@ -169,13 +175,13 @@ export default {
                   <!-- SATISFACTION SELECTION -->
                   <div class="col-md-6 mb-3">
                     <div class="p-3">
-                      <h3 class="font-size-14 mb-2 mt-0" data-key="t-areusatisfied">{{  $t("t-areusatisfied")  }}</h3>
-                      <p class="text-muted mb-5" data-key="t-satisfactioneval">{{  $t("t-satisfactioneval")  }}</p>
+                      <h3 class="font-size-14 mb-2 mt-0" data-key="t-areusatisfied">{{ $t("t-areusatisfied") }}</h3>
+                      <p class="text-muted mb-5" data-key="t-satisfactioneval">{{ $t("t-satisfactioneval") }}</p>
 
                       <div class="mb-3">
                         <label for="sliderDashboard" class="form-label mb-4" data-key="t-dashboardslider">{{
-                           $t("t-dashboardslider") 
-                          }}</label>
+                        $t("t-dashboardslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderDashboard" v-model="sliderDashVal" />
                         </div>
@@ -183,16 +189,16 @@ export default {
 
                       <div class="mb-3">
                         <label for="sliderMedSum" class="form-label mb-4" data-key="t-visitsumslider">{{
-                           $t("t-visitsumslider") 
-                          }}</label>
+                        $t("t-visitsumslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderMedSum" v-model="sliderMedSumVal" />
                         </div>
                       </div>
 
                       <div class="mb-3">
-                        <label for="sliderCal" class="form-label mb-4" data-key="t-calslider">{{  $t("t-calslider") 
-                          }}</label>
+                        <label for="sliderCal" class="form-label mb-4" data-key="t-calslider">{{ $t("t-calslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderCal" v-model="sliderCalVal" />
                         </div>
@@ -200,8 +206,8 @@ export default {
 
                       <div class="mb-3">
                         <label for="sliderSettings" class="form-label mb-4" data-key="t-settingsslider">{{
-                           $t("t-settingsslider") 
-                          }}</label>
+                        $t("t-settingsslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderSettings" v-model="sliderSettingsVal" />
                         </div>
@@ -209,8 +215,8 @@ export default {
 
                       <div class="mb-3">
                         <label for="sliderWaiting" class="form-label mb-4" data-key="t-waitingslider">{{
-                           $t("t-waitingslider") 
-                          }}</label>
+                        $t("t-waitingslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderWaiting" v-model="sliderWaitingVal" />
                         </div>
@@ -218,8 +224,8 @@ export default {
 
                       <div class="mb-0">
                         <label for="sliderDesign" class="form-label mb-4" data-key="t-designslider">{{
-                           $t("t-designslider") 
-                          }}</label>
+                        $t("t-designslider")
+                        }}</label>
                         <div class="p-3">
                           <Slider id="sliderDesign" v-model="sliderDesignVal" />
                         </div>
@@ -235,8 +241,8 @@ export default {
                   <!-- HOW CAN WE IMPROVE OUR SERVICE -->
                   <div class="p-3 mb-3">
                     <div class="col-md-6">
-                      <h3 class="font-size-14 mb-2 mt-0" data-key="t-howcanweimprove">{{  $t("t-howcanweimprove")  }}</h3>
-                      <p class="text-muted mb-4" data-key="t-feedbackinfomsg">{{  $t("t-feedbackinfomsg")  }}</p>
+                      <h3 class="font-size-14 mb-2 mt-0" data-key="t-howcanweimprove">{{ $t("t-howcanweimprove") }}</h3>
+                      <p class="text-muted mb-4" data-key="t-feedbackinfomsg">{{ $t("t-feedbackinfomsg") }}</p>
                       <textarea class="form-control" id="feedbackImproveInput" rows="3" placeholder="Write here..."
                         required></textarea>
                     </div>
@@ -248,9 +254,9 @@ export default {
                   <div class="p-3 mb-3">
                     <div class="col-md-4">
                       <h3 class="font-size-14 mb-2 mt-0" data-key="t-questionuploaddoc">
-                        {{  $t("t-questionuploaddoc")  }}
+                        {{ $t("t-questionuploaddoc") }}
                       </h3>
-                      <p class="text-muted mb-4" data-key="t-uploadexample">{{  $t("t-uploadexample")  }}</p>
+                      <p class="text-muted mb-4" data-key="t-uploadexample">{{ $t("t-uploadexample") }}</p>
                       <input class="form-control" type="file" id="feedbackFileUpload">
                     </div>
                   </div>
@@ -268,7 +274,7 @@ export default {
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="feedbackGridCheck" required />
                         <label class="form-check-label" for="feedbackGridCheck" data-key="t-havereadtou">
-                          {{  $t("t-havereadtou")  }}
+                          {{ $t("t-havereadtou") }}
                         </label>
                       </div>
                     </div>
@@ -279,7 +285,7 @@ export default {
                   <div class="p-3 col-12">
                     <div class="text-muted">
                       <button type="submit" class="btn btn-primary" data-key="t-submit">
-                        {{  $t("t-submit")  }}
+                        {{ $t("t-submit") }}
                       </button>
                     </div>
                   </div>
@@ -297,7 +303,7 @@ export default {
                   <!-- ISSUE TITLE -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <h3 class="font-size-14 mb-0 mt-0" data-key="t-whatwasissue">{{  $t("t-whatwasissue")  }}</h3>
+                      <h3 class="font-size-14 mb-0 mt-0" data-key="t-whatwasissue">{{ $t("t-whatwasissue") }}</h3>
                       <p class="text-muted mb-3">Write it as a title, for instance: I cannot login to Medic'Follow.</p>
                       <input type="text" class="form-control" id="bugIssueInput" placeholder="Write the issue here..."
                         required />
@@ -310,8 +316,8 @@ export default {
                   <!-- PAGE OF THE ISSUE -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <label for="bugPageInput" class="form-label" data-key="t-pageofissue">{{  $t("t-pageofissue") 
-                        }}</label>
+                      <label for="bugPageInput" class="form-label" data-key="t-pageofissue">{{ $t("t-pageofissue")
+                      }}</label>
                       <input type="text" class="form-control" rows="3" id="bugPageInput"
                         placeholder="Write the page here..." required />
                       <div class="invalid-feedback">
@@ -324,7 +330,7 @@ export default {
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
                       <label for="bugStepsInput" class="form-label" data-key="t-stepsreproduce">{{
-                         $t("t-stepsreproduce")  }}</label>
+                      $t("t-stepsreproduce") }}</label>
                       <textarea type="text" class="form-control" rows="3" id="bugStepsInput"
                         placeholder="Write the steps here..." required></textarea>
                       <div class="invalid-feedback">
@@ -337,7 +343,7 @@ export default {
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
                       <label for="bugExpectedInput" class="form-label" data-key="t-expectedresult">{{
-                         $t("t-expectedresult")  }}</label>
+                      $t("t-expectedresult") }}</label>
                       <input type="text" class="form-control" id="bugExpectedInput"
                         placeholder="Write the expected result here..." required />
                       <div class="invalid-feedback">
@@ -349,8 +355,8 @@ export default {
                   <!-- RESULT OBTAINED -->
                   <div class="p-3 mb-3">
                     <div class="col-md-6">
-                      <label for="bugExpectedInput" class="form-label" data-key="t-resultgot">{{  $t("t-resultgot") 
-                        }}</label>
+                      <label for="bugExpectedInput" class="form-label" data-key="t-resultgot">{{ $t("t-resultgot")
+                      }}</label>
                       <input type="text" class="form-control" id="bugExpectedInput"
                         placeholder="Write the obtained result here..." required />
                       <div class="invalid-feedback">
@@ -364,7 +370,7 @@ export default {
                   <!-- SUBTITLE -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <h3 class="font-size-14 mb-3 mt-0" data-key="t-otherresults">{{  $t("t-otherresults")  }}</h3>
+                      <h3 class="font-size-14 mb-3 mt-0" data-key="t-otherresults">{{ $t("t-otherresults") }}</h3>
                     </div>
                   </div>
 
@@ -372,7 +378,7 @@ export default {
                   <div class="mb-0 p-3">
                     <div class="col-md-4">
                       <label for="chooseBrowserSelect" class="form-label" data-key="t-selectbrowser">{{
-                         $t("t-selectbrowser")  }}</label>
+                      $t("t-selectbrowser") }}</label>
                       <select class="form-select" id="chooseBrowserSelect" required>
                         <option selected>Select browser...</option>
                         <option value="chrome">Google Chrome</option>
@@ -391,7 +397,7 @@ export default {
                   <div class="mb-0 p-3">
                     <div class="col-md-4">
                       <label for="chooseDeviceSelect" class="form-label" data-key="t-selectdevice">{{
-                         $t("t-selectdevice")  }}</label>
+                      $t("t-selectdevice") }}</label>
                       <select class="form-select" id="chooseDeviceSelect" required>
                         <option selected>Select device...</option>
                         <option value="pc">PC</option>
@@ -412,7 +418,7 @@ export default {
                         <input type="text" class="form-control" id="bugEmailInput" placeholder="Enter your email" />
                         <label for="bugEmailInput">Email</label>
                       </div>
-                      <p class="text-muted" data-key="t-emailwarning">{{  $t("t-emailwarning")  }}</p>
+                      <p class="text-muted" data-key="t-emailwarning">{{ $t("t-emailwarning") }}</p>
                     </div>
                   </div>
 
@@ -421,9 +427,11 @@ export default {
                   <!-- FILE UPLOAD -->
                   <div class="p-3 mb-3">
                     <div class="col-md-4">
-                      <h3 class="font-size-14 mb-2 mt-0" data-key="t-uploadquestion">{{  $t("t-uploadquestion")  }}</h3>
+                      <h3 class="font-size-14 mb-2 mt-0" data-key="t-questionuploaddoc">
+                        {{ $t("t-questionuploaddoc") }}
+                      </h3>
                       <p class="text-muted mb-4" data-key="t-uploadquestionexample">
-                        {{  $t("t-uploadquestionexample")  }}
+                        {{ $t("t-uploadquestionexample") }}
                       </p>
                       <input class="form-control" type="file" id="bugFileUpload">
                     </div>
@@ -443,7 +451,7 @@ export default {
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="bugGridCheck" required />
                         <label class="form-check-label" for="bugGridCheck" data-key="t-readandacceptedtou">
-                          {{  $t("t-readandacceptedtou")  }}
+                          {{ $t("t-readandacceptedtou") }}
                         </label>
                       </div>
                       <div class="invalid-feedback">You have to check this box</div>
@@ -455,12 +463,14 @@ export default {
                   <div class="p-3 col-12">
                     <div class="text-muted">
                       <button type="submit" class="btn btn-primary" data-key="t-submit">
-                        {{  $t("t-submit")  }}
+                        {{ $t("t-submit") }}
                       </button>
                     </div>
                   </div>
 
                 </div>
+
+
               </form>
             </div>
           </div>

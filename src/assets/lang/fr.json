@@ -174,5 +174,6 @@
   "t-selectdevice": "Sélectionnez votre appareil",
   "t-stepsreproduce": "Étapes pour reproduire le problème",
   "t-uploadquestion": "Voulez-vous télécharger un fichier ?",
-  "t-uploadquestionexample": "Vous pouvez, par exemple, nous envoyer une capture d'écran."
+  "t-uploadquestionexample": "Vous pouvez, par exemple, nous envoyer une capture d'écran.",
+  "t-contactus": "Contactez-nous"
 }
