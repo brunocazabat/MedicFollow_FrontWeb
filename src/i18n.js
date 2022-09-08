@@ -1,15 +1,21 @@
 import { createI18n } from "vue-i18n";
 
-function loadLocaleVariables() {
-  localStorage.setItem("language", process.env.VUE_APP_I18N_LOCALE);
-  localStorage.setItem(
-    "fallbacklanguage",
-    process.env.VUE_APP_I18N_FALLBACK_LOCALE
-  );
+function loadlanguage() {
+  if (localStorage.getItem("language") === null)
+    localStorage.setItem("language", process.env.VUE_APP_I18N_LOCALE);
+  return localStorage.getItem("language");
+}
+
+function secondlanguage() {
+  if (localStorage.getItem("secondlanguage") === null)
+    localStorage.setItem(
+      "secondlanguage",
+      process.env.VUE_APP_I18N_FALLBACK_LOCALE
+    );
+  return localStorage.getItem("secondlanguage");
 }
 
 function loadLocaleMessages() {
-  loadLocaleVariables();
   const locales = require.context(
     "./assets/lang",
     true,
@@ -50,8 +56,8 @@ const dateTimeFormats = {
 };
 
 export default createI18n({
-  locale: process.env.VUE_APP_I18N_LOCALE,
-  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE,
+  locale: loadlanguage(),
+  fallbackLocale: secondlanguage(),
   messages: loadLocaleMessages(),
   dateTimeFormats,
 });
