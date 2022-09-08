@@ -162,5 +162,6 @@
   "t-displ": "Display Options",
   "t-settingsopt": "Profile Options",
   "t-fullscreen": "Full Screen",
-  "t-darkmode": "Dark Theme"
+  "t-darkmode": "Dark Theme",
+  "t-whatwasissue": "What is your issue?"
 }

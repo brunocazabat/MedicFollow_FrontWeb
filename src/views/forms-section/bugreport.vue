@@ -279,7 +279,7 @@ export default {
                   <div class="p-3 col-12">
                     <div class="text-muted">
                       <button type="submit" class="btn btn-primary" data-key="t-submit">
-                        {{ $t("t-submit") }}
+                        {{  $t("t-submit")  }}
                       </button>
                     </div>
                   </div>
@@ -297,7 +297,7 @@ export default {
                   <!-- ISSUE TITLE -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <h3 class="font-size-14 mb-0 mt-0">What is your issue?</h3>
+                      <h3 class="font-size-14 mb-0 mt-0" data-key="t-whatwasissue">{{ $t("t-whatwasissue") }}</h3>
                       <p class="text-muted mb-3">Write it as a title, for instance: I cannot login to Medic'Follow.</p>
                       <input type="text" class="form-control" id="bugIssueInput" placeholder="Write the issue here..."
                         required />
