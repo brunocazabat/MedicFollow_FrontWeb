@@ -162,5 +162,17 @@
   "t-displ": "Opciones de pantalla",
   "t-settingsopt": "Opciones de perfil",
   "t-darkmode": "Tema oscuro",
-  "t-fullscreen": "Pantalla completa"
+  "t-fullscreen": "Pantalla completa",
+  "t-whatwasissue": "Cual es tu problema?",
+  "t-emailwarning": "El correo electrónico no es obligatorio, pero podría ser útil contactarlo en caso de que tengamos problemas con su problema.",
+  "t-expectedresult": "Resultado Esperado",
+  "t-otherresults": "Otra información",
+  "t-pageofissue": "En que pagina encontraste el problema",
+  "t-readandacceptedtou": "He leído y aceptado los términos de uso.",
+  "t-resultgot": "Resultado obtenido",
+  "t-selectbrowser": "Seleccione su navegador de Internet",
+  "t-selectdevice": "Seleccione su dispositivo",
+  "t-stepsreproduce": "Pasos para reproducir el problema",
+  "t-uploadquestion": "¿Quieres subir un archivo?",
+  "t-uploadquestionexample": "Puede, por ejemplo, enviarnos una captura de pantalla."
 }

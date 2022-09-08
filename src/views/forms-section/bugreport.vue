@@ -297,7 +297,7 @@ export default {
                   <!-- ISSUE TITLE -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <h3 class="font-size-14 mb-0 mt-0" data-key="t-whatwasissue">{{ $t("t-whatwasissue") }}</h3>
+                      <h3 class="font-size-14 mb-0 mt-0" data-key="t-whatwasissue">{{  $t("t-whatwasissue")  }}</h3>
                       <p class="text-muted mb-3">Write it as a title, for instance: I cannot login to Medic'Follow.</p>
                       <input type="text" class="form-control" id="bugIssueInput" placeholder="Write the issue here..."
                         required />
@@ -310,7 +310,8 @@ export default {
                   <!-- PAGE OF THE ISSUE -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <label for="bugPageInput" class="form-label">On what page did you encounter the issue</label>
+                      <label for="bugPageInput" class="form-label" data-key="t-pageofissue">{{  $t("t-pageofissue") 
+                        }}</label>
                       <input type="text" class="form-control" rows="3" id="bugPageInput"
                         placeholder="Write the page here..." required />
                       <div class="invalid-feedback">
@@ -322,7 +323,8 @@ export default {
                   <!-- ISSUE STEPS TO REPRODUCE -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <label for="bugStepsInput" class="form-label">Steps to reproduce the issue</label>
+                      <label for="bugStepsInput" class="form-label" data-key="t-stepsreproduce">{{
+                         $t("t-stepsreproduce")  }}</label>
                       <textarea type="text" class="form-control" rows="3" id="bugStepsInput"
                         placeholder="Write the steps here..." required></textarea>
                       <div class="invalid-feedback">
@@ -334,7 +336,8 @@ export default {
                   <!-- EXPECTED RESULT -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <label for="bugExpectedInput" class="form-label">Expected result</label>
+                      <label for="bugExpectedInput" class="form-label" data-key="t-expectedresult">{{
+                         $t("t-expectedresult")  }}</label>
                       <input type="text" class="form-control" id="bugExpectedInput"
                         placeholder="Write the expected result here..." required />
                       <div class="invalid-feedback">
@@ -346,7 +349,8 @@ export default {
                   <!-- RESULT OBTAINED -->
                   <div class="p-3 mb-3">
                     <div class="col-md-6">
-                      <label for="bugExpectedInput" class="form-label">Result obtained</label>
+                      <label for="bugExpectedInput" class="form-label" data-key="t-resultgot">{{  $t("t-resultgot") 
+                        }}</label>
                       <input type="text" class="form-control" id="bugExpectedInput"
                         placeholder="Write the obtained result here..." required />
                       <div class="invalid-feedback">
@@ -360,14 +364,15 @@ export default {
                   <!-- SUBTITLE -->
                   <div class="p-3 mb-0">
                     <div class="col-md-6">
-                      <h3 class="font-size-14 mb-3 mt-0">Other information</h3>
+                      <h3 class="font-size-14 mb-3 mt-0" data-key="t-otherresults">{{  $t("t-otherresults")  }}</h3>
                     </div>
                   </div>
 
                   <!-- WHICH BROWSER ARE YOU USING -->
                   <div class="mb-0 p-3">
                     <div class="col-md-4">
-                      <label for="chooseBrowserSelect" class="form-label">Select your internet browser</label>
+                      <label for="chooseBrowserSelect" class="form-label" data-key="t-selectbrowser">{{
+                         $t("t-selectbrowser")  }}</label>
                       <select class="form-select" id="chooseBrowserSelect" required>
                         <option selected>Select browser...</option>
                         <option value="chrome">Google Chrome</option>
@@ -385,7 +390,8 @@ export default {
                   <!-- WHICH DEVICE ARE YOU USING -->
                   <div class="mb-0 p-3">
                     <div class="col-md-4">
-                      <label for="chooseDeviceSelect" class="form-label">Select your device</label>
+                      <label for="chooseDeviceSelect" class="form-label" data-key="t-selectdevice">{{
+                         $t("t-selectdevice")  }}</label>
                       <select class="form-select" id="chooseDeviceSelect" required>
                         <option selected>Select device...</option>
                         <option value="pc">PC</option>
@@ -406,8 +412,7 @@ export default {
                         <input type="text" class="form-control" id="bugEmailInput" placeholder="Enter your email" />
                         <label for="bugEmailInput">Email</label>
                       </div>
-                      <p class="text-muted">Email is not mandatory but it could be useful to contact you in case we are
-                        having trouble with your issue.</p>
+                      <p class="text-muted" data-key="t-emailwarning">{{  $t("t-emailwarning")  }}</p>
                     </div>
                   </div>
 
@@ -416,8 +421,10 @@ export default {
                   <!-- FILE UPLOAD -->
                   <div class="p-3 mb-3">
                     <div class="col-md-4">
-                      <h3 class="font-size-14 mb-2 mt-0">Do you want to upload a file?</h3>
-                      <p class="text-muted mb-4">You can, for example, send us a screenshot.</p>
+                      <h3 class="font-size-14 mb-2 mt-0" data-key="t-uploadquestion">{{  $t("t-uploadquestion")  }}</h3>
+                      <p class="text-muted mb-4" data-key="t-uploadquestionexample">
+                        {{  $t("t-uploadquestionexample")  }}
+                      </p>
                       <input class="form-control" type="file" id="bugFileUpload">
                     </div>
                   </div>
@@ -435,8 +442,8 @@ export default {
                     <div class="col-12">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="bugGridCheck" required />
-                        <label class="form-check-label" for="bugGridCheck">
-                          I have read and accepted the Terms of Use
+                        <label class="form-check-label" for="bugGridCheck" data-key="t-readandacceptedtou">
+                          {{  $t("t-readandacceptedtou")  }}
                         </label>
                       </div>
                       <div class="invalid-feedback">You have to check this box</div>
@@ -447,8 +454,8 @@ export default {
                   <!-- Submit button -->
                   <div class="p-3 col-12">
                     <div class="text-muted">
-                      <button type="submit" class="btn btn-primary">
-                        Submit
+                      <button type="submit" class="btn btn-primary" data-key="t-submit">
+                        {{  $t("t-submit")  }}
                       </button>
                     </div>
                   </div>

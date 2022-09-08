@@ -163,5 +163,16 @@
   "t-settingsopt": "Profiloptionen",
   "t-darkmode": "Dunkles Thema",
   "t-fullscreen": "Ganzer Bildschirm",
-  "t-whatwasissue": "Was ist dein Problem?"
+  "t-whatwasissue": "Was ist dein Problem?",
+  "t-emailwarning": "E-Mail ist nicht obligatorisch, aber es könnte hilfreich sein, Sie zu kontaktieren, falls wir Probleme mit Ihrem Problem haben.",
+  "t-expectedresult": "Erwartetes Ergebnis",
+  "t-otherresults": "Andere Informationen",
+  "t-pageofissue": "Auf welcher Seite ist Ihnen das Problem begegnet",
+  "t-readandacceptedtou": "Ich habe die Nutzungsbedingungen gelesen und akzeptiert.",
+  "t-resultgot": "Ergebnis erhalten",
+  "t-selectbrowser": "Wählen Sie Ihren Internetbrowser aus",
+  "t-selectdevice": "Wählen sie ihren Gerätetyp",
+  "t-stepsreproduce": "Schritte zum Reproduzieren des Problems",
+  "t-uploadquestion": "Möchten Sie eine Datei hochladen?",
+  "t-uploadquestionexample": "Sie können uns zum Beispiel einen Screenshot schicken."
 }

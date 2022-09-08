@@ -163,5 +163,16 @@
   "t-settingsopt": "Profile Options",
   "t-fullscreen": "Full Screen",
   "t-darkmode": "Dark Theme",
-  "t-whatwasissue": "What is your issue?"
+  "t-whatwasissue": "What is your issue?",
+  "t-pageofissue": "On what page did you encounter the issue",
+  "t-stepsreproduce": "Steps to reproduce the issue",
+  "t-expectedresult": "Expected result",
+  "t-resultgot": "Result obtained",
+  "t-otherresults": "Other information",
+  "t-selectbrowser": "Select your internet browser",
+  "t-selectdevice": "Select your device",
+  "t-emailwarning": "Email is not mandatory but it could be useful to contact you in case we are having trouble with your issue.",
+  "t-uploadquestion": "Do you want to upload a file?",
+  "t-uploadquestionexample": "You can, for example, send us a screenshot.",
+  "t-readandacceptedtou": "I have read and accepted the Terms of Use."
 }

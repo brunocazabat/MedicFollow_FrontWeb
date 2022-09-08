@@ -163,5 +163,16 @@
   "t-settingsopt": "Opzioni del profilo",
   "t-darkmode": "Tema scuro",
   "t-fullscreen": "A schermo intero",
-  "t-whatwasissue": "Qual è il tuo problema?"
+  "t-whatwasissue": "Qual è il tuo problema?",
+  "t-emailwarning": "L'e-mail non è obbligatoria ma potrebbe essere utile contattarti in caso di problemi con il tuo problema.",
+  "t-expectedresult": "Risultato atteso",
+  "t-otherresults": "Altre informazioni",
+  "t-pageofissue": "In quale pagina hai riscontrato il problema",
+  "t-readandacceptedtou": "Ho letto e accettato le Condizioni d'uso.",
+  "t-resultgot": "Risultato ottenuto",
+  "t-selectbrowser": "Seleziona il tuo browser Internet",
+  "t-selectdevice": "Seleziona il tuo dispositivo",
+  "t-stepsreproduce": "Passaggi per riprodurre il problema",
+  "t-uploadquestion": "Vuoi caricare un file?",
+  "t-uploadquestionexample": "Puoi, ad esempio, inviarci uno screenshot."
 }
