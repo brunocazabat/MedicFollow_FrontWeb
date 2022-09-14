@@ -174,5 +174,6 @@
   "t-emailwarning": "Email is not mandatory but it could be useful to contact you in case we are having trouble with your issue.",
   "t-uploadquestionexample": "You can, for example, send us a screenshot.",
   "t-readandacceptedtou": "I have read and accepted the Terms of Use.",
-  "t-contactus": "Contact us"
+  "t-contactus": "Contact us",
+  "t-uploadquestion": "Would you like to upload a file?"
 }

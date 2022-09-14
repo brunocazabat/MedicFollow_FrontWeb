@@ -36,12 +36,10 @@ export default {
       <h6 class="mb-3 fw-semibold text-uppercase" data-key="t-summary">{{ $t("t-summary") }}</h6>
       <ul class="ps-4 vstack gap-2">
         <li>{{ checkupText.text }}</li>
-
       </ul>
 
       <div class="pt-3 border-top border-top-dashed mt-4">
         <div class="row">
-
           <div class="col-lg-3 col-sm-6">
             <div>
               <p class="mb-2 text-uppercase fw-medium" data-key="t-visitdate">{{ $t("t-visitdate") }}:</p>

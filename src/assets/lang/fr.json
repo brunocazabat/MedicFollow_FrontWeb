@@ -173,7 +173,7 @@
   "t-selectbrowser": "Sélectionnez votre navigateur internet",
   "t-selectdevice": "Sélectionnez votre appareil",
   "t-stepsreproduce": "Étapes pour reproduire le problème",
-  "t-uploadquestion": "Voulez-vous télécharger un fichier ?",
+  "t-uploadquestion": "Voulez-vous mettre en ligne un fichier?",
   "t-uploadquestionexample": "Vous pouvez, par exemple, nous envoyer une capture d'écran.",
   "t-contactus": "Contactez-nous"
 }
