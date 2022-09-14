@@ -2,6 +2,8 @@
 import Slider from "@vueform/slider";
 import Layout from "@/components/layouts/main.vue";
 import appConfig from "@/../app.config";
+import recaptcha from "@/components/widgets/recaptchav2.vue";
+import footermodule from "@/components/login-components/footer-module.vue";
 
 export default {
   page: {
@@ -31,7 +33,9 @@ export default {
   },
   components: {
     Slider,
-    Layout
+    Layout,
+    recaptcha,
+    footermodule
   },
   methods: {
     /**
@@ -280,6 +284,7 @@ export default {
                     </div>
                   </div>
 
+                  <recaptcha />
 
                   <!-- Submit button -->
                   <div class="p-3 col-12">
@@ -458,6 +463,8 @@ export default {
                     </div>
                   </div>
 
+                  <recaptcha />
+
 
                   <!-- Submit button -->
                   <div class="p-3 col-12">
@@ -476,7 +483,7 @@ export default {
           </div>
         </div>
       </div>
+      <footermodule />
     </div>
-
   </Layout>
 </template>
