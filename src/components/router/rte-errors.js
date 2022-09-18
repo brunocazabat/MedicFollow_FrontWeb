@@ -20,7 +20,7 @@ export default [
       title: "Maintenance",
       onceLoggedIn,
     },
-    component: () => import("@/views/errors-section/maintenance.vue"),
+    component: () => import("@/views/UNIVERSAL/errors-section/maintenance.vue"),
   },
   {
     path: "/coming-soon",
@@ -29,7 +29,7 @@ export default [
       title: "Comming Soon",
       onceLoggedIn,
     },
-    component: () => import("@/views/errors-section/coming-soon.vue"),
+    component: () => import("@/views/UNIVERSAL/errors-section/coming-soon.vue"),
   },
   {
     path: "/500",
@@ -38,7 +38,7 @@ export default [
       title: "Error 500",
       onceLoggedIn,
     },
-    component: () => import("@/views/errors-section/500.vue"),
+    component: () => import("@/views/UNIVERSAL/errors-section/500.vue"),
   },
   {
     path: "/:pathMatch(.*)*",
@@ -47,7 +47,7 @@ export default [
       title: "Error 404",
       onceLoggedIn,
     },
-    component: () => import("@/views/errors-section/404.vue"),
+    component: () => import("@/views/UNIVERSAL/errors-section/404.vue"),
   },
   // ROUTES ERROR END
 ];

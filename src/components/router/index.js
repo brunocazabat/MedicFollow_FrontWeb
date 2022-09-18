@@ -1,14 +1,11 @@
 import { createWebHistory, createRouter } from "vue-router";
 import store from "@/components/state/store";
 
+import appConfig from "@/../app.config";
 // UNIVERSAL ROUTES
 import rteerrors from "./rte-errors.js";
 import rtelogin from "./rte-login.js";
 import rtelock from "./rte-lock.js";
-// USER SPECIFIED DASHBOARD
-import rtedashboard from "./rte-dashboard.js";
-
-import appConfig from "@/../app.config";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -19,8 +16,6 @@ const router = createRouter({
     ...rteerrors,
     ...rtelogin,
     ...rtelock,
-    // USER SPECIFIED DASHBOARD
-    ...rtedashboard,
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
