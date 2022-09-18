@@ -175,5 +175,6 @@
   "t-uploadquestionexample": "You can, for example, send us a screenshot.",
   "t-readandacceptedtou": "I have read and accepted the Terms of Use.",
   "t-contactus": "Contact us",
-  "t-uploadquestion": "Would you like to upload a file?"
+  "t-uploadquestion": "Would you like to upload a file?",
+  "t-loading": "We are loading your content, please wait."
 }

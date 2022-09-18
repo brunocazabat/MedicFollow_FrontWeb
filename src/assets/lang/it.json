@@ -175,5 +175,6 @@
   "t-stepsreproduce": "Passaggi per riprodurre il problema",
   "t-uploadquestion": "Vuoi caricare un file?",
   "t-uploadquestionexample": "Puoi, ad esempio, inviarci uno screenshot.",
-  "t-contactus": "Contattaci"
+  "t-contactus": "Contattaci",
+  "t-loading": "Stiamo caricando i tuoi contenuti, attendi."
 }
