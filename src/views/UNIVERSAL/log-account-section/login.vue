@@ -9,6 +9,9 @@ import logoheadermodule from "@/components/login-components/logo-header-module.v
 import particlesmodule from "@/components/login-components/particles-module.vue";
 import footermodule from "@/components/login-components/footer-module.vue";
 import recaptcha from "@/components/widgets/recaptchav2.vue";
+import rtedashboard from "@/components/router/rte-dashboard.js";
+import router from "@/components/router";
+
 
 export default {
   setup() {
@@ -66,6 +69,13 @@ export default {
       isRecaptchaEnabled: "security/isRecaptchaEnabled",
     }),
     ...notificationMethods,
+    addDashboardRoutes() {
+      rtedashboard.forEach((route) => {
+        router.addRoute(route);
+      });
+      console.log("added dashboard routes");
+      this.$router.push({ path: "/loading" });
+    },
     Log() {
       this.submitted = true;
       this.v$.$touch();
@@ -96,11 +106,7 @@ export default {
           this.GetMe().then(res => {
             switch (res) {
               case 200:
-                this.$router.push(
-                  this.$route.query.redirectFrom || {
-                    name: "default",
-                  }
-                );
+                this.addDashboardRoutes();
                 break;
               case 462:
                 this.isAuthError = true;
@@ -114,7 +120,7 @@ export default {
                 this.isAuthError = true;
                 this.authError = "An unknown error occurred";
             }
-          });
+          })
         });
       } else {
         this.submitted = false;
@@ -214,7 +220,7 @@ export default {
                         </button>
                         <div v-if="submitted && v$.loginInput.password.$error" class="invalid-feedback">
                           <span v-if="v$.loginInput.password.required.$message">{{
-                              v$.loginInput.password.required.$message
+                          v$.loginInput.password.required.$message
                           }}</span>
                         </div>
                       </div>
@@ -222,7 +228,7 @@ export default {
                     <recaptcha />
                     <div class="mt-4">
                       <button @click="Log" class="btn btn-success w-100" type="submit" data-key="t-signin">{{
-                          $t("t-signin")
+                      $t("t-signin")
                       }}
                       </button>
                     </div>

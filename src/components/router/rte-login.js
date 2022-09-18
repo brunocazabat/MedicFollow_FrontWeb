@@ -2,14 +2,15 @@ import store from "@/components/state/store";
 
 function onceLoggedIn(_routeTo, _routeFrom, next) {
   // If the user is already logged in
-  if (!store.getters["auth/isloggedIn"] && !store.getters["auth/isLocked"]) {
+  if (store.getters["auth/isloggedIn"] && !store.getters["auth/isLocked"]) {
     // Redirect to the home page instead
-    next({ path: "/" });
+    next({ path: "/dashboard" });
   } else if (
     store.getters["auth/isloggedIn"] &&
     store.getters["auth/isLocked"]
   ) {
     // Redirect to the lockscreen page instead
+    console.log("wtf");
     next({ name: "lockscreen" });
   } else {
     // Continue to the login page
@@ -35,6 +36,16 @@ export default [
     component: () => import("@/views/UNIVERSAL/log-account-section/login.vue"),
     meta: {
       title: "Login",
+      onceLoggedIn,
+    },
+  },
+  {
+    path: "/loading",
+    name: "loading",
+    component: () =>
+      import("@/views/UNIVERSAL/log-account-section/loading-screen.vue"),
+    meta: {
+      title: "Loading...",
       onceLoggedIn,
     },
   },

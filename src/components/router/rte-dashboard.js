@@ -1,5 +1,4 @@
 import store from "@/components/state/store";
-import router from "@/components/router";
 
 function onceLoggedIn(_routeTo, _routeFrom, next) {
   if (store.getters["auth/isLocked"]) {
@@ -11,11 +10,8 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
   }
 }
 
-function addDashboardRoutes() {
-  router.addRoute(routes);
-}
-
 function defineUserType() {
+  /*
   switch (store.getters["auth/userType"]) {
     case "admin":
       return "admin";
@@ -35,13 +31,15 @@ function defineUserType() {
       console.log("User type not defined: " + store.getters["auth/userType"]);
       return null;
   }
+  */
+  return "admin";
 }
 
-const routes = [
+export default [
   // dashboard routes START
   {
     path: "/dashboard",
-    name: "dashboard " + defineUserType(),
+    name: "dashboard ",
     meta: {
       title: "Dashboard",
       authRequired: true,
