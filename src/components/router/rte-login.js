@@ -27,7 +27,7 @@ export default [
   },
   // log-account-section routes START
   {
-    path: "/login",
+    path: "/",
     name: "login",
     component: () => import("@/views/UNIVERSAL/log-account-section/login.vue"),
     meta: {

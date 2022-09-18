@@ -10,6 +10,7 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
   }
 }
 
+/*
 function defineUserType() {
   switch (store.getters["auth/userType"]) {
     case "admin":
@@ -30,12 +31,13 @@ function defineUserType() {
       console.log("User type not defined: " + store.getters["auth/userType"]);
   }
 }
+*/
 
 export default [
   // dashboard routes START
   {
-    path: "/",
-    name: "default",
+    path: "/dashboard",
+    name: "dashboard",
     meta: {
       title: "Dashboard",
       authRequired: true,
