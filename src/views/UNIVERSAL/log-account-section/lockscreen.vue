@@ -84,7 +84,7 @@ export default {
               this.setCaptchaValid(false);
               this.$router.push(
                 this.$route.query.redirectFrom || {
-                  path: "/dashboard",
+                  name: "default",
                 }
               );
               break;
@@ -168,7 +168,7 @@ export default {
                         </button>
                         <div v-if="submitted && v$.loginInput.password.$error" class="invalid-feedback">
                           <span v-if="v$.loginInput.password.required.$message">{{
-                          v$.loginInput.password.required.$message
+                              v$.loginInput.password.required.$message
                           }}</span>
                         </div>
                       </div>
@@ -176,7 +176,7 @@ export default {
                     <recaptcha />
                     <div class="mb-2 mt-4">
                       <button @click="Unlock" class="btn btn-success w-100" type="submit" data-key="t-unlock">{{
-                      $t("t-unlock")
+                          $t("t-unlock")
                       }}
                       </button>
                     </div>
