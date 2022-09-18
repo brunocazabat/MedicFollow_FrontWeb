@@ -10,6 +10,27 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
   }
 }
 
+function defineUserType() {
+  switch (store.getters["auth/userType"]) {
+    case "admin":
+      return "admin";
+    case "organisation":
+      return "organisation";
+    case "doctor":
+      return "doctor";
+    case "medical":
+      return "medical";
+    case "patient":
+      return "patient";
+    case "confiance":
+      return "confiance";
+    case "proches":
+      return "proches";
+    default:
+      console.log("User type not defined: " + store.getters["auth/userType"]);
+  }
+}
+
 export default [
   // dashboard routes START
   {

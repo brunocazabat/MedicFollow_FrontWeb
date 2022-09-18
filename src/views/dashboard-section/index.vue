@@ -1,9 +1,9 @@
 <script>
 import Layout from "@/components/layouts/main.vue";
 import appConfig from "@/../app.config";
-import Widgets from "../dashboard-components-section/widget.vue";
-import Schedules from "../dashboard-components-section/schedule.vue";
-import Chat from "../dashboard-components-section/chat.vue";
+import Widgets from "@/components/dashboard-components/widget.vue";
+import Schedules from "@/components/dashboard-components/schedule.vue";
+import Chat from "@/components/dashboard-components/chat.vue";
 
 export default {
   page: {

@@ -1,8 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import store from "@/components/state/store";
 
-// TEST
-import rtetest from "./rte-test.js";
 // UNIVERSAL ROUTES
 import rteerrors from "./rte-errors.js";
 import rtelogin from "./rte-login.js";
@@ -17,7 +15,6 @@ const router = createRouter({
   mode: "history",
   // TEST
   routes: [
-    ...rtetest,
     // UNIVERSAL ROUTES
     ...rteerrors,
     ...rtelogin,

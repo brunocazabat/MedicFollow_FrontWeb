@@ -61,6 +61,9 @@ export const getters = {
       return false;
     }
   },
+  userType(state) {
+    return state.role;
+  },
   emailget(state) {
     return state.email;
   },
