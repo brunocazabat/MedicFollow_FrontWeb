@@ -1,5 +1,4 @@
 import store from "@/components/state/store";
-import router from "@/components/router";
 
 function onceLoggedIn(_routeTo, _routeFrom, next) {
   if (store.getters["auth/isLocked"]) {
@@ -9,10 +8,6 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
     // Continue to the login page
     next();
   }
-}
-
-function addDashboardRoutes() {
-  router.addRoute(routes);
 }
 
 function defineUserType() {
@@ -33,26 +28,20 @@ function defineUserType() {
       return "proches";
     default:
       console.log("User type not defined: " + store.getters["auth/userType"]);
-      return null;
   }
 }
 
-const routes = [
+export default [
   // dashboard routes START
   {
-    path: "/dashboard",
-    name: "dashboard " + defineUserType(),
+    path: "/",
+    name: "default",
     meta: {
       title: "Dashboard",
       authRequired: true,
       onceLoggedIn,
     },
-    component: () =>
-      import(
-        "@/views/users-specific/" +
-          defineUserType() +
-          "/dashboard-section/index.vue"
-      ),
+    component: () => import("@/views/dashboard-section/index.vue"),
   },
   {
     path: "/calendar",
@@ -62,12 +51,7 @@ const routes = [
       authRequired: true,
       onceLoggedIn,
     },
-    component: () =>
-      import(
-        "@/views/users-specific/" +
-          defineUserType() +
-          "/calendar-section/calendar.vue"
-      ),
+    component: () => import("@/views/calendar-section/calendar.vue"),
   },
   {
     path: "/chat",
@@ -77,10 +61,7 @@ const routes = [
       authRequired: true,
       onceLoggedIn,
     },
-    component: () =>
-      import(
-        "@/views/users-specific/" + defineUserType() + "/chat-section/chat.vue"
-      ),
+    component: () => import("@/views/chat-section/chat.vue"),
   },
   {
     path: "/suggestions",
@@ -90,12 +71,7 @@ const routes = [
       authRequired: true,
       onceLoggedIn,
     },
-    component: () =>
-      import(
-        "@/views/users-specific/" +
-          defineUserType() +
-          "/forms-section/suggest.vue"
-      ),
+    component: () => import("@/views/forms-section/suggest.vue"),
   },
   {
     path: "/bug-report",
@@ -105,12 +81,7 @@ const routes = [
       authRequired: true,
       onceLoggedIn,
     },
-    component: () =>
-      import(
-        "@/views/users-specific/" +
-          defineUserType() +
-          "/forms-section/bugreport.vue"
-      ),
+    component: () => import("@/views/forms-section/bugreport.vue"),
   },
   {
     path: "/medical-information",
@@ -120,12 +91,7 @@ const routes = [
       authRequired: true,
       onceLoggedIn,
     },
-    component: () =>
-      import(
-        "@/views/users-specific/" +
-          defineUserType() +
-          "/medical-information/index.vue"
-      ),
+    component: () => import("@/views/medical-information/index.vue"),
   },
   {
     path: "/staff-input",
@@ -135,10 +101,7 @@ const routes = [
       authRequired: true,
       onceLoggedIn,
     },
-    component: () =>
-      import(
-        "@/views/users-specific/" + defineUserType() + "/staff-input/index.vue"
-      ),
+    component: () => import("@/views/staff-input/index.vue"),
   },
   {
     path: "/settings",
@@ -148,11 +111,6 @@ const routes = [
       authRequired: true,
       onceLoggedIn,
     },
-    component: () =>
-      import(
-        "@/views/users-specific/" +
-          defineUserType() +
-          "/settings-section/setting.vue"
-      ),
+    component: () => import("@/views/settings-section/setting.vue"),
   },
 ];

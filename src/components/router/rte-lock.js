@@ -6,7 +6,6 @@ export default [
       title: "Lock Screen",
       authRequired: true,
     },
-    component: () =>
-      import("@/views/UNIVERSAL/log-account-section/lockscreen.vue"),
+    component: () => import("@/views/log-account-section/lockscreen.vue"),
   },
 ];
