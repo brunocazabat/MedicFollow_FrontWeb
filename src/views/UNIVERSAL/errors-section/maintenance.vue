@@ -1,8 +1,8 @@
 <script>
-  import logoheadermodule from "@/components/login-components/logo-header-module.vue";
-  import particlesmodule from "@/components/login-components/particles-module.vue";
-  import footermodule from "@/components/login-components/footer-module.vue";
-  import translatemodule from "@/components/login-components/translate-module.vue";
+import logoheadermodule from "@/components/login-components/logo-header-module.vue";
+import particlesmodule from "@/components/login-components/particles-module.vue";
+import footermodule from "@/components/login-components/footer-module.vue";
+import translatemodule from "@/components/login-components/translate-module.vue";
 
 export default {
   name: "Maintenance",
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <div class="auth-page-wrapper pt-5">
+  <div class="auth-page-wrapper">
     <!-- auth page bg -->
     <particlesmodule />
 
