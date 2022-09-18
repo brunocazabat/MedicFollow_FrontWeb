@@ -84,7 +84,7 @@ export default {
 </script>
 
 <template>
-  <div class="auth-page-wrapper pt-5">
+  <div class="auth-page-wrapper">
     <!-- auth page bg -->
     <particlesmodule />
 

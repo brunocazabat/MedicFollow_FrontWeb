@@ -58,7 +58,6 @@ export default {
   methods: {
     ...mapActions({
       LogIn: "auth/LogIn",
-      GetMe: "auth/GetMe",
       setCaptchaValid: "security/setCaptchaValid",
       setLock: "auth/setLock",
     }),
@@ -93,28 +92,11 @@ export default {
               break;
           }
         }).then(() => {
-          this.GetMe().then(res => {
-            switch (res) {
-              case 200:
-                this.$router.push(
-                  this.$route.query.redirectFrom || {
-                    name: "default",
-                  }
-                );
-                break;
-              case 462:
-                this.isAuthError = true;
-                this.authError = "Invalid Token, please login again";
-                break;
-              case 463:
-                this.isAuthError = true;
-                this.authError = "User disabled";
-                break;
-              default:
-                this.isAuthError = true;
-                this.authError = "An unknown error occurred";
+          this.$router.push(
+            this.$route.query.redirectFrom || {
+              path: "/loading",
             }
-          });
+          );
         });
       } else {
         this.submitted = false;
@@ -130,7 +112,7 @@ export default {
 </script>
 
 <template>
-  <div class="auth-page-wrapper pt-5">
+  <div class="auth-page-wrapper">
     <!-- auth page bg -->
     <particlesmodule />
 
@@ -214,7 +196,7 @@ export default {
                         </button>
                         <div v-if="submitted && v$.loginInput.password.$error" class="invalid-feedback">
                           <span v-if="v$.loginInput.password.required.$message">{{
-                              v$.loginInput.password.required.$message
+                          v$.loginInput.password.required.$message
                           }}</span>
                         </div>
                       </div>
@@ -222,7 +204,7 @@ export default {
                     <recaptcha />
                     <div class="mt-4">
                       <button @click="Log" class="btn btn-success w-100" type="submit" data-key="t-signin">{{
-                          $t("t-signin")
+                      $t("t-signin")
                       }}
                       </button>
                     </div>

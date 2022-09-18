@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <div class="auth-page-wrapper pt-5">
+  <div class="auth-page-wrapper">
     <!-- auth page bg -->
     <particlesmodule />
 
@@ -36,13 +36,13 @@ export default {
                   </div>
                 </div>
                 <div class="mt-4 pt-2">
-                  <h4 data-key="t-registerprocsuccess">{{  $t("t-registerprocsuccess")  }}</h4>
-                  <p class="text-muted mx-4" data-key="t-securityreg">{{  $t("t-securityreg")  }}
+                  <h4 data-key="t-registerprocsuccess">{{ $t("t-registerprocsuccess") }}</h4>
+                  <p class="text-muted mx-4" data-key="t-securityreg">{{ $t("t-securityreg") }}
                   </p>
                   <div class="mt-4">
                     <router-link to="/login" class="btn btn-success w-100" data-key="t-returnlogin">{{
-                       $t("t-returnlogin") 
-                      }}
+                    $t("t-returnlogin")
+                    }}
                     </router-link>
                   </div>
                 </div>

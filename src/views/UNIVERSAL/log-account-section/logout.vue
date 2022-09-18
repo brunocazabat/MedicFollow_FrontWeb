@@ -38,7 +38,7 @@ export default {
 </script>
 
 <template>
-  <div class="auth-page-wrapper pt-5">
+  <div class="auth-page-wrapper">
     <!-- auth page bg -->
     <particlesmodule />
 
@@ -55,12 +55,12 @@ export default {
                 <lottie colors="primary:#4b38b3,secondary:#08a88a" :options="defaultOptions" :height="180"
                   :width="180" />
                 <div class="mt-4 pt-2">
-                  <h5 data-key="t-logoutsuccess">{{  $t("t-logoutsuccess")  }}</h5>
-                  <p class="text-muted" data-key="t-thanksp1">{{  $t("t-thanksp1")  }}
+                  <h5 data-key="t-logoutsuccess">{{ $t("t-logoutsuccess") }}</h5>
+                  <p class="text-muted" data-key="t-thanksp1">{{ $t("t-thanksp1") }}
                     <span class="fw-semibold">MedicFollow</span>
                   </p>
                   <div class="mt-4">
-                    <router-link to="/login" class="btn btn-success w-100" data-key="t-signin">{{  $t("t-signin")  }}
+                    <router-link to="/login" class="btn btn-success w-100" data-key="t-signin">{{ $t("t-signin") }}
                     </router-link>
                   </div>
                 </div>
