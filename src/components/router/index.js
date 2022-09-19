@@ -5,6 +5,8 @@ import store from "@/components/state/store";
 import rteerrors from "./rte-errors.js";
 import rtelogin from "./rte-login.js";
 import rtelock from "./rte-lock.js";
+// USER-SPECIFIC ROUTES
+import rteadmin from "./user-specific/rte-admin.js";
 
 import appConfig from "@/../app.config";
 
@@ -17,6 +19,8 @@ const router = createRouter({
     ...rteerrors,
     ...rtelogin,
     ...rtelock,
+    // DASHBOARD ROUTES
+    ...rteadmin,
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
@@ -34,7 +38,7 @@ router.beforeEach(async (routeTo, routeFrom, next) => {
     // If the user is not authenticated...
     if (!store.getters["auth/isloggedIn"]) {
       // Redirect to the login page
-      next({ name: "login" });
+      next({ path: "/login" });
     } else {
       // Proceed to the route
       next();
@@ -44,7 +48,18 @@ router.beforeEach(async (routeTo, routeFrom, next) => {
   }
 });
 
+function rootguard(routeTo, next) {
+  if (routeTo.path === "/") {
+    if (!store.getters["auth/isloggedIn"]) {
+      next({ path: "/login" });
+    } else {
+      next({ path: "/" + store.getters["auth/userType"] + "/dashboard" });
+    }
+  }
+}
+
 router.beforeResolve(async (routeTo, routeFrom, next) => {
+  rootguard(routeTo, next);
   try {
     // For each matched route...
     for (const route of routeTo.matched) {
