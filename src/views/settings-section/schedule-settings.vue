@@ -21,6 +21,16 @@ export default {
           active: true,
         },
       ],
+      showWeek: false,
+      showSchedule: false,
+      showMonday: false,
+      showTuesday: false,
+      showWednesday: false,
+      showThursday: false,
+      showFriday: false,
+      showSaturday: false,
+      showSunday: false,
+      picked: 'NO',
     };
   },
   components: {
@@ -46,13 +56,13 @@ export default {
 
         <!-- Yes -->
         <div class="form-check col-lg-2">
-          <input class="form-check-input" type="checkbox" id="yesGridCheck" />
+          <input class="form-check-input" type="radio" id="yesGridCheck" value="YES" v-model="picked" />
           <label class="form-check-label" for="yesGridCheck">YES</label>
         </div>
 
         <!-- No -->
         <div class="form-check col-lg-2">
-          <input class="form-check-input" type="checkbox" id="noGridCheck" />
+          <input class="form-check-input" type="radio" id="noGridCheck" value="NO" v-model="picked" />
           <label class="form-check-label" for="noGridCheck">NO</label>
         </div>
       </div>
@@ -60,7 +70,7 @@ export default {
 
 
     <!-- DAYS OF THE WEEK CHECKBOXES -->
-    <div id="daysOfWeekDiv" class="p-3 card-body">
+    <div id="daysOfWeekDiv" class="p-3 card-body" v-if="picked === 'YES'">
       <p class="font-size-medium">
         Which days do you accept meetings?
       </p>
@@ -69,43 +79,44 @@ export default {
 
         <!-- Monday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="mondayGridCheck" />
+          <input class="form-check-input" type="checkbox" id="mondayGridCheck" v-model="showMonday" />
           <label class="form-check-label" for="mondayGridCheck">MONDAY</label>
+          <!-- <p>debug: {{showMonday}}</p> -->
         </div>
 
         <!-- Tuesday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="tuesdayGridCheck" />
+          <input class="form-check-input" type="checkbox" id="tuesdayGridCheck" v-model="showTuesday" />
           <label class="form-check-label" for="tuesdayGridCheck">TUESDAY</label>
         </div>
 
         <!-- Wednesday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="wednesdayGridCheck" />
+          <input class="form-check-input" type="checkbox" id="wednesdayGridCheck" v-model="showWednesday" />
           <label class="form-check-label" for="wednesdayGridCheck">WEDNESDAY</label>
         </div>
 
         <!-- Thursday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="thursdayGridCheck" />
+          <input class="form-check-input" type="checkbox" id="thursdayGridCheck" v-model="showThursday" />
           <label class="form-check-label" for="thursdayGridCheck">THURSDAY</label>
         </div>
 
         <!-- Friday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="fridayGridCheck" />
+          <input class="form-check-input" type="checkbox" id="fridayGridCheck" v-model="showFriday" />
           <label class="form-check-label" for="fridayGridCheck">FRIDAY</label>
         </div>
 
         <!-- Saturday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="saturdayGridCheck" />
+          <input class="form-check-input" type="checkbox" id="saturdayGridCheck" v-model="showSaturday" />
           <label class="form-check-label" for="saturdayGridCheck">SATURDAY</label>
         </div>
 
         <!-- Sunday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="sundayGridCheck" />
+          <input class="form-check-input" type="checkbox" id="sundayGridCheck" v-model="showSunday" />
           <label class="form-check-label" for="sundayGridCheck">SUNDAY</label>
         </div>
       </div>
@@ -113,8 +124,8 @@ export default {
 
 
     <!-- SCHEDULE PICKER -->
-    <div id="schedulePickerDiv" class="row p-2">
-      <div class="p-2">
+    <div id="schedulePickerDiv" class="row p-2" v-if="picked === 'YES'">
+      <div class="p-2" v-if="showMonday">
         <label for="mondayDiv" class="form-label mb-4"><strong>Monday Schedule</strong></label>
         <div id="mondayDiv" class="row">
           <p class="mb-0">Choose the first schedule</p>
@@ -361,7 +372,7 @@ export default {
         </div>
       </div>
 
-      <div class="p-2">
+      <div class="p-2" v-if="showTuesday">
         <label for="tuesdayDiv" class="form-label">Tuesday Schedule</label>
         <div id="tuesdayDiv" class="col-lg-1">
           <select id="tuesdaySchedule" class="form-select">
@@ -372,7 +383,7 @@ export default {
         </div>
       </div>
 
-      <div class="p-2">
+      <div class="p-2" v-if="showWednesday">
         <label for="wednesdaySchedule" class="form-label">Wednesday Schedule</label>
         <div id="wednesdayDiv" class="col-lg-1">
           <select id="wednesdaySchedule" class="form-select">
@@ -383,7 +394,7 @@ export default {
         </div>
       </div>
 
-      <div class="p-2">
+      <div class="p-2" v-if="showThursday">
         <label for="thursdayDiv" class="form-label">Thursday Schedule</label>
         <div id="thursdayDiv" class="col-lg-1">
           <select id="thursdaySchedule" class="form-select">
@@ -394,7 +405,7 @@ export default {
         </div>
       </div>
 
-      <div class="p-2">
+      <div class="p-2" v-if="showFriday">
         <label for="fridayDiv" class="form-label">Friday Schedule</label>
         <div id="fridayDiv" class="col-lg-1">
           <select id="fridaySchedule" class="form-select">
@@ -405,7 +416,7 @@ export default {
         </div>
       </div>
 
-      <div class="p-2">
+      <div class="p-2" v-if="showSaturday">
         <label for="saturdayDiv" class="form-label">Saturday Schedule</label>
         <div id="saturdayDiv" class="col-lg-1">
           <select id="saturdaySchedule" class="form-select">
@@ -416,7 +427,7 @@ export default {
         </div>
       </div>
 
-      <div class="p-2">
+      <div class="p-2" v-if="showSunday">
         <label for="sundayDiv" class="form-label">Sunday Schedule</label>
         <div id="sundayDiv" class="col-lg-1">
           <select id="sundaySchedule" class="form-select">
@@ -427,7 +438,6 @@ export default {
         </div>
       </div>
     </div>
-
 
     <footermodule />
   </Layout>
