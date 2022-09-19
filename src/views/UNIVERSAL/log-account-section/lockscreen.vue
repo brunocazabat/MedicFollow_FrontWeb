@@ -84,7 +84,7 @@ export default {
               this.setCaptchaValid(false);
               this.$router.push(
                 this.$route.query.redirectFrom || {
-                  name: "default",
+                  path: "/dashboard",
                 }
               );
               break;
