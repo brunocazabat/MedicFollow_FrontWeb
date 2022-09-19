@@ -1,5 +1,5 @@
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 import appConfig from "@/../app.config";
 import Lottie from "@/components/widgets/lottie.vue";
 import animationData from "@/assets/anim/animation3.json";
@@ -7,7 +7,6 @@ import translatemodule from "@/components/login-components/translate-module.vue"
 import logoheadermodule from "@/components/login-components/logo-header-module.vue";
 import particlesmodule from "@/components/login-components/particles-module.vue";
 import footermodule from "@/components/login-components/footer-module.vue";
-import rtedashboard from "@/components/router/rte-dashboard.js";
 
 export default {
   components: { lottie: Lottie, translatemodule, logoheadermodule, particlesmodule, footermodule },
@@ -31,38 +30,43 @@ export default {
   methods: {
     ...mapActions({
       GetMe: "auth/GetMe",
+      LogOut: "auth/LogOut",
     }),
-    loadroutes() {
-      rtedashboard.forEach((route) => {
-        this.$router.addRoute(route);
-      });
-    },
+    ...mapGetters({
+      userType: "auth/userType",
+    }),
     Loading() {
-      console.log("hello");
       this.GetMe().then(res => {
         switch (res) {
           case 200:
-            this.loadroutes();
-            setTimeout(() => {
-              this.$router.push(
-                this.$route.query.redirectFrom || {
-                  path: "/dashboard",
-                }
-              );
-            }, 1000);
+            setTimeout(3000);
             break;
           case 462:
             this.isAuthError = true;
             this.authError = "Invalid Token, please login again";
+            this.LogOut();
+            this.$router.back();
             break;
           case 463:
             this.isAuthError = true;
             this.authError = "User disabled";
+            this.LogOut();
+            this.$router.back();
             break;
           default:
             this.isAuthError = true;
             this.authError = "An unknown error occurred";
+            this.LogOut();
+            this.$router.back();
         }
+      }).then(() => {
+        setTimeout(() => {
+          this.$router.push(
+            this.$route.query.redirectFrom || {
+              path: "/" + this.userType() + "/dashboard",
+            }
+          );
+        }, 1000);
       });
     },
   },
