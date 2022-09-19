@@ -23,15 +23,6 @@ export default [
     component: () => import("@/views/UNIVERSAL/errors-section/maintenance.vue"),
   },
   {
-    path: "/coming-soon",
-    name: "coming-soon",
-    meta: {
-      title: "Comming Soon",
-      onceLoggedIn,
-    },
-    component: () => import("@/views/UNIVERSAL/errors-section/coming-soon.vue"),
-  },
-  {
     path: "/500",
     name: "500-error",
     meta: {
