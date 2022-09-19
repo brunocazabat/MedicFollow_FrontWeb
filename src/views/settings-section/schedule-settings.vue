@@ -34,7 +34,25 @@ export default {
   
 <template>
   <Layout>
-    <h1 class="p-1">SCHEDULE SETTINGS</h1>
+    <h1 class="p-1 text-primary"><strong>SCHEDULE SETTINGS</strong></h1>
+
+    <!-- Meetings TRUE/FALSE -->
+    <div class="p-3 card-body">
+      <p class="font-size-medium">
+        Do you accept meetings?
+      </p>
+      <!-- Agree on ToU check box -->
+      <div class="col-6 row p-3">
+        <div class="form-check col-lg-2">
+          <input class="form-check-input" type="checkbox" id="yesGridCheck" required />
+          <label class="form-check-label" for="yesGridCheck">YES</label>
+        </div>
+        <div class="form-check col-lg-2">
+          <input class="form-check-input" type="checkbox" id="noGridCheck" required />
+          <label class="form-check-label" for="noGridCheck">NO</label>
+        </div>
+      </div>
+    </div>
 
     <div class="row p-2">
       <div class="p-2">
