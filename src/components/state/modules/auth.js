@@ -98,13 +98,11 @@ export const actions = {
 
   async GetMe({ dispatch }) {
     setTimeout(1000);
-    console.log(state.headers);
     let response = await axios.get("users/me", { headers: state.headers });
-    console.log(response);
     if (response.status === 200) {
       dispatch("setFirstName", response.data.firstname);
       dispatch("setLastName", response.data.lastname);
-      dispatch("setRole", response.data.userType.ut_name);
+      dispatch("setRole", /*response.data.UserType.ut_name*/ "admin");
     }
     return response.status;
   },
