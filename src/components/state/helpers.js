@@ -1,11 +1,4 @@
-import { mapState, mapGetters, mapActions } from "vuex";
-
-export const authComputed = {
-  ...mapState("auth", {
-    currentUser: (state) => state.currentUser,
-  }),
-  ...mapGetters("auth", ["isloggedIn"]),
-};
+import { mapState, mapActions } from "vuex";
 
 export const layoutComputed = {
   ...mapState("layout", {
@@ -20,14 +13,7 @@ export const layoutComputed = {
   }),
 };
 
-export const authMethods = mapActions("auth", [
-  "LogIn",
-  "GetMe",
-  "Unlock",
-  "logOut",
-  "register",
-  "resetPassword",
-]);
+export const authMethods = mapActions("auth", ["LogIn"]);
 
 export const securityMethods = mapActions("security", ["setCaptchaValid"]);
 
