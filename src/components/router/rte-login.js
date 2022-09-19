@@ -4,7 +4,7 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
   // If the user is already logged in
   if (store.getters["auth/isloggedIn"] && !store.getters["auth/isLocked"]) {
     // Redirect to the home page instead
-    next({ name: "default" });
+    next({ path: "/" });
   } else if (store.getters["auth/isLocked"]) {
     // Redirect to the lockscreen page instead
     next({ name: "lockscreen" });
@@ -27,7 +27,7 @@ export default [
   },
   // log-account-section routes START
   {
-    path: "/",
+    path: "/login",
     name: "login",
     component: () => import("@/views/UNIVERSAL/log-account-section/login.vue"),
     meta: {
