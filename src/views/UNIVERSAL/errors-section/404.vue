@@ -34,8 +34,7 @@ export default {
                 <p class="mb-4 text-white">The page you are looking for is not
                   available!
                 </p>
-                <router-link to="/" class="btn btn-success"><em class="mdi mdi-home me-1"></em>Back to home
-                </router-link>
+                <a @click="$router.go(-1)" class="btn btn-success"><em class="mdi mdi-home me-1"></em>Back to home</a>
               </div>
             </div>
           </div><!-- end col -->

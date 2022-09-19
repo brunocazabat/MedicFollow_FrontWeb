@@ -40,8 +40,7 @@ export default {
                   Site is Under Maintenance
                 </h1>
                 <div class="mt-4 pt-2">
-                  <router-link to="/" class="btn btn-success"><em class="mdi mdi-home me-1"></em> Back to Home
-                  </router-link>
+                  <a @click="$router.go(-1)" class="btn btn-success"><em class="mdi mdi-home me-1"></em>Back to home</a>
                 </div>
               </div>
 

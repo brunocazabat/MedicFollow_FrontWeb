@@ -35,7 +35,7 @@ export default {
               <h4>Internal Server Error!</h4>
               <p class="text-white w-75 mx-auto">Server Error 500. We're not exactly sure what happened, but our servers
                 say something is wrong.</p>
-              <router-link to="/" class="btn btn-success"><em class="mdi mdi-home me-1"></em>Back to home</router-link>
+              <a @click="$router.go(-1)" class="btn btn-success"><em class="mdi mdi-home me-1"></em>Back to home</a>
             </div>
           </div><!-- end col-->
           <translatemodule />
