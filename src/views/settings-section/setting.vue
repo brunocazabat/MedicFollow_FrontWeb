@@ -120,7 +120,7 @@ export default {
                           <div class="mb-3">
                             <label for="firstnameInput" class="form-label">First Name</label>
                             <input type="text" class="form-control" id="firstnameInput"
-                              placeholder="Enter your firstname" value="Anna" readonly />
+                              placeholder="Enter your firstname" value="Anna" disabled />
                           </div>
                         </div>
 
@@ -128,7 +128,7 @@ export default {
                           <div class="mb-3">
                             <label for="lastnameInput" class="form-label">Last Name</label>
                             <input type="text" class="form-control" id="lastnameInput" placeholder="Enter your lastname"
-                              value="Adame" readonly />
+                              value="Adame" disabled />
                           </div>
                         </div>
 
