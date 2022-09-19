@@ -92,4 +92,14 @@ export default [
     },
     component: () => import("@/views/settings-section/setting.vue"),
   },
+  {
+    path: "/schedule-settings",
+    name: "schedule-setting",
+    meta: {
+      title: "Schedule Settings",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () => import("@/views/settings-section/schedule-settings.vue"),
+  },
 ];
