@@ -36,17 +36,21 @@ export default {
   <Layout>
     <h1 class="p-1 text-primary"><strong>SCHEDULE SETTINGS</strong></h1>
 
-    <!-- Meetings TRUE/FALSE -->
-    <div class="p-3 card-body">
+    <!-- TRUE/FALSE NEW MEETING -->
+    <div id="yesnoDiv" class="p-3 card-body">
       <p class="font-size-medium">
         Do you accept meetings?
       </p>
-      <!-- Agree on ToU check box -->
+      <!-- Padding -->
       <div class="col-6 row p-3">
+
+        <!-- Yes -->
         <div class="form-check col-lg-2">
           <input class="form-check-input" type="checkbox" id="yesGridCheck" />
           <label class="form-check-label" for="yesGridCheck">YES</label>
         </div>
+
+        <!-- No -->
         <div class="form-check col-lg-2">
           <input class="form-check-input" type="checkbox" id="noGridCheck" />
           <label class="form-check-label" for="noGridCheck">NO</label>
@@ -56,44 +60,60 @@ export default {
 
 
     <!-- DAYS OF THE WEEK CHECKBOXES -->
-    <div class="p-3 card-body">
+    <div id="daysOfWeekDiv" class="p-3 card-body">
       <p class="font-size-medium">
         Which days do you accept meetings?
       </p>
-      <!-- Agree on ToU check box -->
+      <!-- Padding -->
       <div class="col-12 row p-3">
+
+        <!-- Monday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="yesGridCheck" />
-          <label class="form-check-label" for="yesGridCheck">MONDAY</label>
+          <input class="form-check-input" type="checkbox" id="mondayGridCheck" />
+          <label class="form-check-label" for="mondayGridCheck">MONDAY</label>
         </div>
+
+        <!-- Tuesday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="noGridCheck" />
-          <label class="form-check-label" for="noGridCheck">TUESDAY</label>
+          <input class="form-check-input" type="checkbox" id="tuesdayGridCheck" />
+          <label class="form-check-label" for="tuesdayGridCheck">TUESDAY</label>
         </div>
+
+        <!-- Wednesday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="noGridCheck" />
-          <label class="form-check-label" for="noGridCheck">WEDNESDAY</label>
+          <input class="form-check-input" type="checkbox" id="wednesdayGridCheck" />
+          <label class="form-check-label" for="wednesdayGridCheck">WEDNESDAY</label>
         </div>
+
+        <!-- Thursday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="noGridCheck" />
-          <label class="form-check-label" for="noGridCheck">THURSDAY</label>
+          <input class="form-check-input" type="checkbox" id="thursdayGridCheck" />
+          <label class="form-check-label" for="thursdayGridCheck">THURSDAY</label>
         </div>
+
+        <!-- Friday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="noGridCheck" />
-          <label class="form-check-label" for="noGridCheck">FRIDAY</label>
+          <input class="form-check-input" type="checkbox" id="fridayGridCheck" />
+          <label class="form-check-label" for="fridayGridCheck">FRIDAY</label>
         </div>
+
+        <!-- Saturday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="noGridCheck" />
-          <label class="form-check-label" for="noGridCheck">SATURDAY</label>
+          <input class="form-check-input" type="checkbox" id="saturdayGridCheck" />
+          <label class="form-check-label" for="saturdayGridCheck">SATURDAY</label>
         </div>
+
+        <!-- Sunday -->
         <div class="form-check col-lg-1">
-          <input class="form-check-input" type="checkbox" id="noGridCheck" />
-          <label class="form-check-label" for="noGridCheck">SUNDAY</label>
+          <input class="form-check-input" type="checkbox" id="sundayGridCheck" />
+          <label class="form-check-label" for="sundayGridCheck">SUNDAY</label>
         </div>
       </div>
     </div>
 
-    <div class="row p-2">
+
+    <!-- SCHEDULE PICKER -->
+    <div id="schedulePickerDiv" class="row p-2">
       <div class="p-2">
         <label for="mondayDiv" class="form-label mb-4"><strong>Monday Schedule</strong></label>
         <div id="mondayDiv" class="row">
