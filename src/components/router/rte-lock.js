@@ -1,3 +1,19 @@
+import store from "@/components/state/store";
+
+function onceLoggedIn(_routeTo, _routeFrom, next) {
+  // If the user is already logged in
+  if (_routeTo.path === "/loading" && store.getters["auth/userType"]) {
+    // Redirect to the home page instead
+    next({ path: "/" });
+  } else if (store.getters["auth/isLocked"]) {
+    // Redirect to the lockscreen page instead
+    next({ name: "lockscreen" });
+  } else {
+    // Continue to the login page
+    next();
+  }
+}
+
 export default [
   {
     path: "/lockscreen",
@@ -15,6 +31,7 @@ export default [
     meta: {
       title: "Loading...",
       authRequired: true,
+      onceLoggedIn,
     },
     component: () =>
       import("@/views/UNIVERSAL/log-account-section/loading-screen.vue"),
