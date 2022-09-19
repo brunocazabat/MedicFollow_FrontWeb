@@ -77,7 +77,7 @@ export default {
         <label for="chooseGenderSelect" class="form-label" data-key="t-gender">{{ $t("t-gender")
         }}</label>
         <select class="form-select" id="chooseGenderSelect" required>
-          <option data-key="t-selectgender" selected>{{ $t("t-selectgender") }}</option>
+          <option data-key="t-selectgender" disabled>{{ $t("t-selectgender") }}</option>
           <option data-key="t-male" value="male">{{ $t("t-male") }}</option>
           <option data-key="t-female" value="female">{{ $t("t-female") }}</option>
           <option data-key="t-other" value="other">{{ $t("t-other") }}</option>
