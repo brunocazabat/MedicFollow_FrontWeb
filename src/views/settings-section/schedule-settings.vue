@@ -44,12 +44,51 @@ export default {
       <!-- Agree on ToU check box -->
       <div class="col-6 row p-3">
         <div class="form-check col-lg-2">
-          <input class="form-check-input" type="checkbox" id="yesGridCheck" required />
+          <input class="form-check-input" type="checkbox" id="yesGridCheck" />
           <label class="form-check-label" for="yesGridCheck">YES</label>
         </div>
         <div class="form-check col-lg-2">
-          <input class="form-check-input" type="checkbox" id="noGridCheck" required />
+          <input class="form-check-input" type="checkbox" id="noGridCheck" />
           <label class="form-check-label" for="noGridCheck">NO</label>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- DAYS OF THE WEEK CHECKBOXES -->
+    <div class="p-3 card-body">
+      <p class="font-size-medium">
+        Which days do you accept meetings?
+      </p>
+      <!-- Agree on ToU check box -->
+      <div class="col-12 row p-3">
+        <div class="form-check col-lg-1">
+          <input class="form-check-input" type="checkbox" id="yesGridCheck" />
+          <label class="form-check-label" for="yesGridCheck">MONDAY</label>
+        </div>
+        <div class="form-check col-lg-1">
+          <input class="form-check-input" type="checkbox" id="noGridCheck" />
+          <label class="form-check-label" for="noGridCheck">TUESDAY</label>
+        </div>
+        <div class="form-check col-lg-1">
+          <input class="form-check-input" type="checkbox" id="noGridCheck" />
+          <label class="form-check-label" for="noGridCheck">WEDNESDAY</label>
+        </div>
+        <div class="form-check col-lg-1">
+          <input class="form-check-input" type="checkbox" id="noGridCheck" />
+          <label class="form-check-label" for="noGridCheck">THURSDAY</label>
+        </div>
+        <div class="form-check col-lg-1">
+          <input class="form-check-input" type="checkbox" id="noGridCheck" />
+          <label class="form-check-label" for="noGridCheck">FRIDAY</label>
+        </div>
+        <div class="form-check col-lg-1">
+          <input class="form-check-input" type="checkbox" id="noGridCheck" />
+          <label class="form-check-label" for="noGridCheck">SATURDAY</label>
+        </div>
+        <div class="form-check col-lg-1">
+          <input class="form-check-input" type="checkbox" id="noGridCheck" />
+          <label class="form-check-label" for="noGridCheck">SUNDAY</label>
         </div>
       </div>
     </div>
