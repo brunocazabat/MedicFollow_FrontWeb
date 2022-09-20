@@ -1,10 +1,8 @@
 <script>
 import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
-import { mapActions, mapGetters } from "vuex";
 import Popper from "vue3-popper";
-import { authMethods, notificationMethods } from "@/components/state/helpers";
-import appConfig from "@/../app.config";
+import { SecurityActions, SecurityGetters, notificationMethods } from "@/components/state/helpers";
 import translatemodule from "@/components/login-components/translate-module.vue";
 import logoheadermodule from "@/components/login-components/logo-header-module.vue";
 import particlesmodule from "@/components/login-components/particles-module.vue";
@@ -14,15 +12,6 @@ import recaptcha from "@/components/widgets/recaptchav2.vue";
 export default {
   setup() {
     return { v$: useVuelidate() };
-  },
-  page: {
-    title: "Register",
-    meta: [
-      {
-        name: "description",
-        content: appConfig.description,
-      },
-    ],
   },
   components: { Popper, translatemodule, logoheadermodule, particlesmodule, footermodule, recaptcha },
   data() {
@@ -58,14 +47,9 @@ export default {
     },
   },
   methods: {
-    ...authMethods,
+    ...SecurityActions,
+    ...SecurityGetters,
     ...notificationMethods,
-    ...mapActions({
-      setCaptchaValid: "security/setCaptchaValid",
-    }),
-    ...mapGetters({
-      isRecaptchaEnabled: "security/isRecaptchaEnabled",
-    }),
     RegisterInInfos() {
       this.submitted = true;
       this.v$.$touch();

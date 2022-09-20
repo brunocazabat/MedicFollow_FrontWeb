@@ -1,9 +1,7 @@
 <script>
-import { mapActions, mapGetters } from "vuex";
 import { required, email, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
-import appConfig from "@/../app.config";
-import { notificationMethods } from "@/components/state/helpers";
+import { AuthActions, SecurityActions, SecurityGetters, notificationMethods } from "@/components/state/helpers";
 import translatemodule from "@/components/login-components/translate-module.vue";
 import logoheadermodule from "@/components/login-components/logo-header-module.vue";
 import particlesmodule from "@/components/login-components/particles-module.vue";
@@ -13,15 +11,6 @@ import recaptcha from "@/components/widgets/recaptchav2.vue";
 export default {
   setup() {
     return { v$: useVuelidate() };
-  },
-  page: {
-    title: "Login",
-    meta: [
-      {
-        name: "description",
-        content: appConfig.description,
-      },
-    ],
   },
   components: { translatemodule, logoheadermodule, particlesmodule, footermodule, recaptcha },
   data() {
@@ -56,27 +45,24 @@ export default {
     this.setLock("unlocked");
   },
   methods: {
-    ...mapActions({
-      LogIn: "auth/LogIn",
-      setCaptchaValid: "security/setCaptchaValid",
-      setLock: "auth/setLock",
-    }),
-    ...mapGetters({
-      isRecaptchaEnabled: "security/isRecaptchaEnabled",
-    }),
     ...notificationMethods,
+    ...AuthActions,
+    ...SecurityActions,
+    ...SecurityGetters,
     Log() {
       this.submitted = true;
       this.v$.$touch();
-      if (!this.v$.$invalid && this.isRecaptchaEnabled()) {
+      if (!this.v$.$invalid && this.getisRecaptchaEnabled()) {
         this.authError = null;
-        this.LogIn(this.loginInput).then(res => {
+        this.setLogIn(this.loginInput).then(res => {
           switch (res) {
             case 200:
               this.isAuthError = false;
               this.authError = null;
               this.submitted = false;
+
               this.setCaptchaValid(false);
+
               break;
             case 462:
               this.isAuthError = true;
@@ -92,6 +78,7 @@ export default {
               break;
           }
         }).then(() => {
+          console.log("Login Success");
           this.$router.push(
             this.$route.query.redirectFrom || {
               path: "/loading",
