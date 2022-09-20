@@ -2,10 +2,13 @@ import store from "@/components/state/store";
 
 function onceLoggedIn(_routeTo, _routeFrom, next) {
   // If the user is already logged in
-  if (store.getters["auth/isloggedIn"] && !store.getters["auth/isLocked"]) {
+  if (
+    store.getters["auth/getisloggedIn"] &&
+    !store.getters["security/getisLocked"]
+  ) {
     // Redirect to the home page instead
     next({ path: "/" });
-  } else if (store.getters["auth/isLocked"]) {
+  } else if (store.getters["security/getisLocked"]) {
     // Redirect to the lockscreen page instead
     next({ name: "lockscreen" });
   } else {
