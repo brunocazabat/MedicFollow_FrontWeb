@@ -1,15 +1,10 @@
 <script>
 import Layout from "@/components/layouts/main.vue";
-import appConfig from "@/../app.config";
 
 import Widgets from "./widgets.vue";
 import CheckupText from "./checkup-text.vue";
 
 export default {
-  page: {
-    title: "Medical Information",
-    meta: [{ name: "description", content: appConfig.description }],
-  },
   data() {
     return {
       title: "Medical Information",

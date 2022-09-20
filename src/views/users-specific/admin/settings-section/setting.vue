@@ -3,20 +3,10 @@ import '@vueform/multiselect/themes/default.css'
 import 'flatpickr/dist/flatpickr.css'
 
 import Layout from '@/components/layouts/main.vue'
-import appConfig from '@/../app.config'
 
 import particlesmodule from "@/components/login-components/particles-module.vue";
 
 export default {
-  page: {
-    title: 'Setting',
-    meta: [
-      {
-        name: 'description',
-        content: appConfig.description
-      }
-    ]
-  },
   data() {
     return {
       title: 'Setting',

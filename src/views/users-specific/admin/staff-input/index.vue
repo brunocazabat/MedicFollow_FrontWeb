@@ -1,6 +1,5 @@
 <script>
 import Layout from "@/components/layouts/main.vue";
-import appConfig from "@/../app.config";
 import { ref, watch } from "vue";
 import useVuelidate from "@vuelidate/core";
 
@@ -12,15 +11,6 @@ export default {
     deleteRecord(ele) {
       ele.target.parentElement.parentElement.remove();
     },
-  },
-  page: {
-    title: "Staff Input",
-    meta: [
-      {
-        name: "description",
-        content: appConfig.description,
-      },
-    ],
   },
   setup() {
     let files = ref([]);
@@ -174,7 +164,7 @@ export default {
                       <div class="col-sm-6">
                         <div class="mb-3">
                           <label for="billinginfo-firstName" class="form-label" data-key="t-firstname">{{
-                              $t("t-firstname")
+                          $t("t-firstname")
                           }}</label>
                           <input type="text" class="form-control" id="billinginfo-firstName"
                             placeholder="Enter first name" value="" />
@@ -244,7 +234,7 @@ export default {
                             <label class="form-check-label" for="shippingMethod01">
                               <span class="fs-14 mb-1 text-wrap d-block" data-key="t-yes">{{ $t("t-yes") }}</span>
                               <span class="text-muted fw-normal text-wrap d-block" data-key="t-visitapproved">{{
-                                  $t("t-visitapproved")
+                              $t("t-visitapproved")
                               }}</span>
                             </label>
                           </div>
@@ -255,7 +245,7 @@ export default {
                             <label class="form-check-label" for="shippingMethod02">
                               <span class="fs-14 mb-1 text-wrap d-block" data-key="t-no">{{ $t("t-no") }}</span>
                               <span class="text-muted fw-normal text-wrap d-block" data-key="t-visitnotapproved">{{
-                                  $t("t-visitnotapproved")
+                              $t("t-visitnotapproved")
                               }}</span>
                             </label>
                           </div>
