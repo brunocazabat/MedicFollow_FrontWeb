@@ -1,6 +1,5 @@
 <script>
 import Layout from "@/components/layouts/main.vue";
-import appConfig from "@/../app.config";
 import footermodule from "@/components/login-components/footer-module.vue";
 
 import FeedbackModule from "./feedbackModules.vue"
@@ -8,10 +7,6 @@ import BugReportModule from "./bugReportModules.vue"
 import ContactUsModule from "./contactUsModule.vue"
 
 export default {
-  page: {
-    title: "Contact",
-    meta: [{ name: "description", content: appConfig.description }],
-  },
   data() {
     return {
       title: "Contact",

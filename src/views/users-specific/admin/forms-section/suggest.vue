@@ -8,17 +8,12 @@ import DropZone from "@/components/widgets/dropZone";
 
 import Layout from "@/components/layouts/main.vue";
 import PageHeader from "@/components/frames/page-header";
-import appConfig from "@/../app.config";
 
 export default {
   methods: {
     deleteRecord(ele) {
       ele.target.parentElement.parentElement.remove();
     },
-  },
-  page: {
-    title: "Feedback",
-    meta: [{ name: "description", content: appConfig.description }],
   },
   setup() {
     let files = ref([]);
@@ -139,10 +134,10 @@ export default {
                         <div class="flex-grow-1">
                           <div class="pt-1">
                             <h5 class="fs-14 mb-1" data-dz-name="">
-                              {{  file.name  }}
+                              {{ file.name }}
                             </h5>
                             <p class="fs-13 text-muted mb-0" data-dz-size="">
-                              <strong>{{  file.size / 1024  }}</strong> KB
+                              <strong>{{ file.size / 1024 }}</strong> KB
                             </p>
                             <strong class="error text-danger" data-dz-errormessage=""></strong>
                           </div>
