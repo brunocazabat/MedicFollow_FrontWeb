@@ -1,7 +1,5 @@
 <script>
-import { mapActions, mapGetters } from "vuex";
-import { authMethods } from "@/components/state/helpers";
-import appConfig from "@/../app.config";
+import { SecurityActions, SecurityGetters } from "@/components/state/helpers";
 import { required, email, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import Lottie from "@/components/widgets/lottie.vue";
@@ -23,15 +21,6 @@ export default {
       email: helpers.withMessage("Please enter a valid email", email),
     },
   },
-  page: {
-    title: "Forgot Password",
-    meta: [
-      {
-        name: "description",
-        content: appConfig.description,
-      },
-    ],
-  },
   data() {
     return {
       email: "",
@@ -42,17 +31,11 @@ export default {
     };
   },
   methods: {
-    ...mapActions({
-      setCaptchaValid: "security/setCaptchaValid",
-    }),
-    ...mapGetters({
-      isRecaptchaEnabled: "security/isRecaptchaEnabled",
-    }),
-    ...authMethods,
+    ...SecurityActions,
+    ...SecurityGetters,
     tryToReset() {
       this.submitted = true;
       this.v$.$touch();
-
       if (!this.v$.$invalid && this.isRecaptchaEnabled()) {
         this.isResetError = false;
         this.ResetError = null;

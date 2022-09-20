@@ -1,27 +1,17 @@
 <script>
-import { mapActions, mapGetters } from "vuex";
 import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
-import appConfig from "@/../app.config";
-import { notificationMethods } from "@/components/state/helpers";
 import translatemodule from "@/components/login-components/translate-module.vue";
 import logoheadermodule from "@/components/login-components/logo-header-module.vue";
 import particlesmodule from "@/components/login-components/particles-module.vue";
 import footermodule from "@/components/login-components/footer-module.vue";
 import recaptcha from "@/components/widgets/recaptchav2.vue";
 
+import { notificationMethods, AuthActions, AuthGetters, SecurityActions, SecurityGetters } from "@/components/state/helpers";
+
 export default {
   setup() {
     return { v$: useVuelidate() };
-  },
-  page: {
-    title: "Lock Screen",
-    meta: [
-      {
-        name: "description",
-        content: appConfig.description,
-      },
-    ],
   },
   components: { translatemodule, logoheadermodule, particlesmodule, footermodule, recaptcha },
   data() {
@@ -46,10 +36,10 @@ export default {
   },
   mounted() {
     this.setLock("locked");
-    if (this.fullnameget()) {
-      this.name = this.fullnameget();
+    if (this.getfullname()) {
+      this.name = this.getfullname();
     }
-    if (this.emailget()) {
+    if (this.email()) {
       this.loginInput.email = this.emailget();
     }
   },
@@ -59,23 +49,17 @@ export default {
     },
   },
   methods: {
-    ...mapActions({
-      LogIn: "auth/LogIn",
-      setCaptchaValid: "security/setCaptchaValid",
-      setLock: "auth/setLock",
-    }),
-    ...mapGetters({
-      isRecaptchaEnabled: "security/isRecaptchaEnabled",
-      emailget: "auth/emailget",
-      fullnameget: "auth/fullnameget",
-    }),
     ...notificationMethods,
+    ...AuthActions,
+    ...AuthGetters,
+    ...SecurityActions,
+    ...SecurityGetters,
     Unlock() {
       this.submitted = true;
       this.v$.$touch();
-      if (!this.v$.$invalid && this.isRecaptchaEnabled()) {
+      if (!this.v$.$invalid && this.getisRecaptchaEnabled()) {
         this.authError = null;
-        this.LogIn(this.loginInput).then(res => {
+        this.setLogIn(this.loginInput).then(res => {
           switch (res) {
             case 200:
               this.isAuthError = false;

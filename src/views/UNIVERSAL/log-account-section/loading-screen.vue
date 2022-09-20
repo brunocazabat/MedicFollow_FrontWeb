@@ -1,6 +1,5 @@
 <script>
-import { mapActions, mapGetters } from "vuex";
-import appConfig from "@/../app.config";
+import { AuthActions, AuthGetters } from "@/components/state/helpers";
 import Lottie from "@/components/widgets/lottie.vue";
 import animationData from "@/assets/anim/animation3.json";
 import translatemodule from "@/components/login-components/translate-module.vue";
@@ -10,15 +9,6 @@ import footermodule from "@/components/login-components/footer-module.vue";
 
 export default {
   components: { lottie: Lottie, translatemodule, logoheadermodule, particlesmodule, footermodule },
-  page: {
-    title: "Loading Screen",
-    meta: [
-      {
-        name: "description",
-        content: appConfig.description,
-      },
-    ],
-  },
   data() {
     return {
       defaultOptions: { animationData: animationData },
@@ -28,15 +18,10 @@ export default {
     this.Loading();
   },
   methods: {
-    ...mapActions({
-      GetMe: "auth/GetMe",
-      LogOut: "auth/LogOut",
-    }),
-    ...mapGetters({
-      userType: "auth/userType",
-    }),
+    ...AuthActions,
+    ...AuthGetters,
     Loading() {
-      this.GetMe().then(res => {
+      this.setGetMe().then(res => {
         switch (res) {
           case 200:
             setTimeout(3000);
@@ -44,26 +29,26 @@ export default {
           case 462:
             this.isAuthError = true;
             this.authError = "Invalid Token, please login again";
-            this.LogOut();
+            this.setLogOut();
             this.$router.back();
             break;
           case 463:
             this.isAuthError = true;
             this.authError = "User disabled";
-            this.LogOut();
+            this.setLogOut();
             this.$router.back();
             break;
           default:
             this.isAuthError = true;
             this.authError = "An unknown error occurred";
-            this.LogOut();
+            this.setLogOut();
             this.$router.back();
         }
       }).then(() => {
         setTimeout(() => {
           this.$router.push(
             this.$route.query.redirectFrom || {
-              path: "/" + this.userType() + "/dashboard",
+              path: "/" + this.getuserType() + "/dashboard",
             }
           );
         }, 1000);
