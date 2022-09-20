@@ -36,7 +36,7 @@ router.beforeEach(async (routeTo, routeFrom, next) => {
   const authRequired = routeTo.matched.some((route) => route.meta.authRequired);
   if (authRequired) {
     // If the user is not authenticated...
-    if (!store.getters["auth/isloggedIn"]) {
+    if (!store.getters["auth/getisloggedIn"]) {
       // Redirect to the login page
       next({ path: "/login" });
     } else {
@@ -50,10 +50,10 @@ router.beforeEach(async (routeTo, routeFrom, next) => {
 
 function rootguard(routeTo, next) {
   if (routeTo.path === "/") {
-    if (!store.getters["auth/isloggedIn"]) {
+    if (!store.getters["auth/getisloggedIn"]) {
       next({ path: "/login" });
     } else {
-      next({ path: "/" + store.getters["auth/userType"] + "/dashboard" });
+      next({ path: "/" + store.getters["auth/getuserType"] + "/dashboard" });
     }
   }
 }
