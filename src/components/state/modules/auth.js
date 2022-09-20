@@ -8,7 +8,6 @@ export const state = {
   firstname: sessionStorage.getItem("currentUserFIRSTNAME"),
   lastname: sessionStorage.getItem("currentUserLASTNAME"),
   role: sessionStorage.getItem("currentUserROLE"),
-  lock: sessionStorage.getItem("currentUserLOCK"),
 };
 
 export const mutations = {
@@ -36,10 +35,6 @@ export const mutations = {
     state.role = role;
     saveState("currentUserROLE", role);
   },
-  SET_LOCK(state, lock) {
-    state.lock = lock;
-    saveState("currentUserLOCK", lock);
-  },
   SET_HEADERS(state, token) {
     state.headers = {
       "Content-Type": "application/json",
@@ -50,36 +45,28 @@ export const mutations = {
 };
 
 export const getters = {
-  isloggedIn(state) {
+  getisloggedIn(state) {
     return !!(state.token && state.uuid && state.email);
   },
-  isLocked() {
-    if (sessionStorage.getItem("currentUserLOCK") === "locked") {
-      return true;
-    }
-    if (sessionStorage.getItem("currentUserLOCK") === "unlocked") {
-      return false;
-    }
-  },
-  userType(state) {
+  getuserType(state) {
     return state.role;
   },
-  emailget(state) {
+  getemail(state) {
     return state.email;
   },
-  firstnameget(state) {
+  getfirstname(state) {
     return state.firstname;
   },
-  lastnameget(state) {
+  getlastname(state) {
     return state.lastname;
   },
-  fullnameget(state) {
+  getfullname(state) {
     return state.firstname + " " + state.lastname;
   },
 };
 
 export const actions = {
-  async LogIn({ dispatch }, credentials) {
+  async setLogIn({ dispatch }, credentials) {
     try {
       let response = await axios.put("users", credentials);
 
@@ -88,7 +75,6 @@ export const actions = {
         dispatch("setEmail", response.data.user.email);
         dispatch("setUuid", response.data.user.uuid);
         dispatch("setHeaders", response.data.token);
-        dispatch("setLock", "unlocked");
       }
       return response.status;
     } catch (error) {
@@ -96,7 +82,7 @@ export const actions = {
     }
   },
 
-  async LogOut({ commit }) {
+  async setLogOut({ commit }) {
     commit("SET_TOKEN", null);
     commit("SET_UUID", null);
     commit("SET_EMAIL", null);
@@ -104,26 +90,29 @@ export const actions = {
     commit("SET_LASTNAME", null);
     commit("SET_ROLE", null);
     commit("SET_HEADER", null);
-    commit("SET_LOCK", "unlocked");
     window.sessionStorage.removeItem("currentUserTOKEN");
     window.sessionStorage.removeItem("currentUserUUID");
     window.sessionStorage.removeItem("currentUserEMAIL");
     window.sessionStorage.removeItem("currentUserFIRSTNAME");
     window.sessionStorage.removeItem("currentUserLASTNAME");
     window.sessionStorage.removeItem("currentUserROLE");
-    window.sessionStorage.removeItem("currentUserLOCK");
     window.sessionStorage.removeItem("currentUserHEADERS");
+    window.sessionStorage.removeItem("currentUserLOCK");
   },
 
-  async GetMe({ dispatch }) {
+  async setGetMe({ dispatch }) {
     setTimeout(1000);
-    let response = await axios.get("users/me", { headers: state.headers });
-    if (response.status === 200) {
-      dispatch("setFirstName", response.data.firstname);
-      dispatch("setLastName", response.data.lastname);
-      dispatch("setRole", /*response.data.UserType.ut_name*/ "admin");
+    try {
+      let response = await axios.get("users/me", { headers: state.headers });
+      if (response.status === 200) {
+        dispatch("setFirstName", response.data.firstname);
+        dispatch("setLastName", response.data.lastname);
+        dispatch("setRole", /*response.data.UserType.ut_name*/ "admin");
+      }
+      return response.status;
+    } catch (error) {
+      return error.response.status;
     }
-    return response.status;
   },
 
   async setToken({ commit }, token) {
@@ -148,10 +137,6 @@ export const actions = {
 
   async setRole({ commit }, role) {
     commit("SET_ROLE", role);
-  },
-
-  async setLock({ commit }, lock) {
-    commit("SET_LOCK", lock);
   },
 
   async setHeaders({ commit }, token) {

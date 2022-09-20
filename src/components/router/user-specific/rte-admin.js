@@ -3,12 +3,12 @@ import store from "@/components/state/store";
 function onceLoggedIn(_routeTo, _routeFrom, next) {
   if (
     _routeTo.path === "/" &&
-    store.getters["auth/isloggedIn"] &&
-    !store.getters["auth/isLocked"] &&
-    store.getters["auth/userType"] === "admin"
+    store.getters["auth/getisloggedIn"] &&
+    !store.getters["security/getisLocked"] &&
+    store.getters["auth/getuserType"] === "admin"
   ) {
     next({ path: "/admin/dashboard" });
-  } else if (store.getters["auth/isLocked"]) {
+  } else if (store.getters["security/getisLocked"]) {
     // Redirect to the lockscreen page instead
     next({ path: "/lockscreen" });
   } else {

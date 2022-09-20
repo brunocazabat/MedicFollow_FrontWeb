@@ -1,4 +1,4 @@
-import { mapState, mapActions } from "vuex";
+import { mapState, mapActions, mapGetters } from "vuex";
 
 // BALLEC
 export const layoutMethods = mapActions("layout", [
@@ -32,18 +32,27 @@ export const layoutComputed = {
 };
 // BALLEC
 
-export const AuthActions = mapActions("auth", ["LogIn", "LogOut", "GetMe"]);
-
-export const SecurityActions = mapActions("security", ["setCaptchaValid"]);
-
-export const AuthGetters = mapActions("auth", [
-  "isloggedIn",
-  "isLocked",
-  "userType",
-  "emailget",
-  "firstnameget",
-  "lastnameget",
-  "fullnameget",
+export const AuthActions = mapActions("auth", [
+  "setLogIn",
+  "setLogOut",
+  "setGetMe",
 ]);
 
-export const SecurityGetters = mapActions("security", ["isRecaptchaEnabled"]);
+export const SecurityActions = mapActions("security", [
+  "setCaptchaValid",
+  "setLock",
+]);
+
+export const AuthGetters = mapGetters("auth", [
+  "getisloggedIn",
+  "getuserType",
+  "getemail",
+  "getfirstname",
+  "getlastname",
+  "getfullname",
+]);
+
+export const SecurityGetters = mapGetters("security", [
+  "getisRecaptchaEnabled",
+  "getisLocked",
+]);
