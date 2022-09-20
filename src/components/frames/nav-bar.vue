@@ -1,6 +1,6 @@
 <script>
 import { SimpleBar } from "simplebar-vue3";
-import { mapGetters } from "vuex";
+import { AuthGetters } from "@/components/state/helpers";
 import i18n from "@/i18n.js";
 
 /**
@@ -52,14 +52,14 @@ export default {
     SimpleBar,
   },
   mounted() {
-    if (this.fullnameget()) {
-      this.user.fullname = this.fullnameget();
+    if (this.getfullname()) {
+      this.user.fullname = this.getfullname();
     }
-    if (this.firstnameget()) {
-      this.user.firstname = this.firstnameget();
+    if (this.getfirstname()) {
+      this.user.firstname = this.getfirstname();
     }
-    if (this.emailget()) {
-      this.user.email = this.emailget();
+    if (this.getemail()) {
+      this.user.email = this.getemail();
     }
 
     this.start()
@@ -78,11 +78,7 @@ export default {
         .addEventListener("click", this.toggleHamburgerMenu);
   },
   methods: {
-    ...mapGetters({
-      emailget: "auth/emailget",
-      fullnameget: "auth/fullnameget",
-      firstnameget: "auth/firstnameget",
-    }),
+    ...AuthGetters,
     start() {
       switch (localStorage.getItem("language")) {
         case "en":
