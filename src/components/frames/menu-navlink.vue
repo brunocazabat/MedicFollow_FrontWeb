@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     activatemenu(type) {
-      return store.getters["auth/userType"] == type;
+      return store.getters["auth/getuserType"] == type;
     },
   },
 };
