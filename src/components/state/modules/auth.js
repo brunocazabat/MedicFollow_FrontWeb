@@ -96,6 +96,25 @@ export const actions = {
     }
   },
 
+  async LogOut({ commit }) {
+    commit("SET_TOKEN", null);
+    commit("SET_UUID", null);
+    commit("SET_EMAIL", null);
+    commit("SET_FIRSTNAME", null);
+    commit("SET_LASTNAME", null);
+    commit("SET_ROLE", null);
+    commit("SET_HEADER", null);
+    commit("SET_LOCK", "unlocked");
+    window.sessionStorage.removeItem("currentUserTOKEN");
+    window.sessionStorage.removeItem("currentUserUUID");
+    window.sessionStorage.removeItem("currentUserEMAIL");
+    window.sessionStorage.removeItem("currentUserFIRSTNAME");
+    window.sessionStorage.removeItem("currentUserLASTNAME");
+    window.sessionStorage.removeItem("currentUserROLE");
+    window.sessionStorage.removeItem("currentUserLOCK");
+    window.sessionStorage.removeItem("currentUserHEADERS");
+  },
+
   async GetMe({ dispatch }) {
     setTimeout(1000);
     let response = await axios.get("users/me", { headers: state.headers });
@@ -137,25 +156,6 @@ export const actions = {
 
   async setHeaders({ commit }, token) {
     commit("SET_HEADERS", token);
-  },
-
-  LogOut({ commit }) {
-    commit("SET_TOKEN", null);
-    commit("SET_UUID", null);
-    commit("SET_EMAIL", null);
-    commit("SET_FIRSTNAME", null);
-    commit("SET_LASTNAME", null);
-    commit("SET_ROLE", null);
-    commit("SET_HEADER", null);
-    commit("SET_LOCK", "unlocked");
-    window.sessionStorage.removeItem("currentUserTOKEN");
-    window.sessionStorage.removeItem("currentUserUUID");
-    window.sessionStorage.removeItem("currentUserEMAIL");
-    window.sessionStorage.removeItem("currentUserFIRSTNAME");
-    window.sessionStorage.removeItem("currentUserLASTNAME");
-    window.sessionStorage.removeItem("currentUserROLE");
-    window.sessionStorage.removeItem("currentUserLOCK");
-    window.sessionStorage.removeItem("currentUserHEADERS");
   },
 };
 
