@@ -1,22 +1,6 @@
 import { mapState, mapActions } from "vuex";
 
-export const layoutComputed = {
-  ...mapState("layout", {
-    layoutType: (state) => state.layoutType,
-    sidebarSize: (state) => state.sidebarSize,
-    layoutWidth: (state) => state.layoutWidth,
-    topbar: (state) => state.topbar,
-    mode: (state) => state.mode,
-    position: (state) => state.position,
-    sidebarView: (state) => state.sidebarView,
-    sidebarColor: (state) => state.sidebarColor,
-  }),
-};
-
-export const authMethods = mapActions("auth", ["LogIn"]);
-
-export const securityMethods = mapActions("security", ["setCaptchaValid"]);
-
+// BALLEC
 export const layoutMethods = mapActions("layout", [
   "changeLayoutType",
   "changeLayoutWidth",
@@ -33,3 +17,33 @@ export const notificationMethods = mapActions("notification", [
   "error",
   "clear",
 ]);
+
+export const layoutComputed = {
+  ...mapState("layout", {
+    layoutType: (state) => state.layoutType,
+    sidebarSize: (state) => state.sidebarSize,
+    layoutWidth: (state) => state.layoutWidth,
+    topbar: (state) => state.topbar,
+    mode: (state) => state.mode,
+    position: (state) => state.position,
+    sidebarView: (state) => state.sidebarView,
+    sidebarColor: (state) => state.sidebarColor,
+  }),
+};
+// BALLEC
+
+export const AuthActions = mapActions("auth", ["LogIn", "LogOut", "GetMe"]);
+
+export const SecurityActions = mapActions("security", ["setCaptchaValid"]);
+
+export const AuthGetters = mapActions("auth", [
+  "isloggedIn",
+  "isLocked",
+  "userType",
+  "emailget",
+  "firstnameget",
+  "lastnameget",
+  "fullnameget",
+]);
+
+export const SecurityGetters = mapActions("security", ["isRecaptchaEnabled"]);
