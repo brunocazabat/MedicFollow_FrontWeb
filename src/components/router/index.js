@@ -5,8 +5,17 @@ import store from "@/components/state/store";
 import rteerrors from "./rte-errors.js";
 import rtelogin from "./rte-login.js";
 import rtelock from "./rte-lock.js";
-// USER-SPECIFIC ROUTES
+// USER-SPECIFIC ROUTES ADMIN
 import rteadmin from "./user-specific/rte-admin.js";
+// USER-SPECIFIC ROUTES MEDIC
+import rteorganisation from "./user-specific/rte-organisation.js";
+import rtemedecin from "./user-specific/rte-medecin.js";
+import rtemedical from "./user-specific/rte-medical.js";
+
+// USER-SPECIFIC ROUTES FAMILLY
+import rtepatient from "./user-specific/rte-patient.js";
+import rteconfiance from "./user-specific/rte-confiance.js";
+import rteproche from "./user-specific/rte-proche.js";
 
 import appConfig from "@/../app.config";
 
@@ -19,8 +28,16 @@ const router = createRouter({
     ...rteerrors,
     ...rtelogin,
     ...rtelock,
-    // DASHBOARD ROUTES
+    // ROUTES ADMIN
     ...rteadmin,
+    // ROUTES MEDIC
+    ...rteorganisation,
+    ...rtemedecin,
+    ...rtemedical,
+    // ROUTES FAMILLY
+    ...rtepatient,
+    ...rteconfiance,
+    ...rteproche,
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
