@@ -40,36 +40,20 @@ export default {
       </router-link>
     </li>
     <!-- end Dashboard Menu -->
-    <li class="nav-item">
-      <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false"
-        aria-controls="sidebarApps">
-        <em class="ri-lifebuoy-line"></em>
-        <span style="padding: 7px" data-key="t-contacts"> {{ $t("t-contacts") }}</span>
-      </a>
-      <div class="collapse menu-dropdown" id="sidebarApps">
-        <ul class="nav nav-sm flex-column">
-          <li class="nav-item">
-            <router-link to="/patient/suggestions" class="nav-link" data-key="t-suggest">
-              {{ $t("t-suggest") }}
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/patient/bug-report" class="nav-link" data-key="t-report">
-              {{ $t("t-report") }}
-            </router-link>
-          </li>
-        </ul>
-      </div>
-    </li>
     <li class="menu-title">
-      <span data-key="t-others">{{ $t("t-others") }}</span>
+      <span data-key="t-contacts"> {{ $t("t-contacts") }}</span>
     </li>
     <li class="nav-item">
-      <a href="https://medicfollow.fr/fr/usage.html" target="_blank" class="nav-link menu-link"
-        rel="noreferrer noopener">
-        <em class="ri-pages-line"></em>
-        <span style="padding: 7px" data-key="t-terms">{{ $t("t-terms") }}</span>
-      </a>
+      <router-link to="/patient/suggestions" class="nav-link">
+        <em class="ri-star-half-s-line"></em>
+        <span style="padding: 7px" data-key="t-suggest">{{ $t("t-suggest") }}</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
+      <router-link to="/patient/bug-report" class="nav-link">
+        <em class="ri-bug-fill"></em>
+        <span style="padding: 7px" data-key="t-report">{{ $t("t-report") }}</span>
+      </router-link>
     </li>
   </ul>
 </template>
