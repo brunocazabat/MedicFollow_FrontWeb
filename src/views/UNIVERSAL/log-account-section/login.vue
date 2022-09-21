@@ -60,9 +60,7 @@ export default {
               this.isAuthError = false;
               this.authError = null;
               this.submitted = false;
-
               this.setCaptchaValid(false);
-
               break;
             case 462:
               this.isAuthError = true;
@@ -78,7 +76,6 @@ export default {
               break;
           }
         }).then(() => {
-          console.log("Login Success");
           this.$router.push(
             this.$route.query.redirectFrom || {
               path: "/loading",
