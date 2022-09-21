@@ -36,6 +36,7 @@ export const AuthActions = mapActions("auth", [
   "setLogIn",
   "setLogOut",
   "setGetMe",
+  "setUI",
 ]);
 
 export const SecurityActions = mapActions("security", [
@@ -46,6 +47,7 @@ export const SecurityActions = mapActions("security", [
 export const AuthGetters = mapGetters("auth", [
   "getisloggedIn",
   "getuserType",
+  "getuserUI",
   "getemail",
   "getfirstname",
   "getlastname",
