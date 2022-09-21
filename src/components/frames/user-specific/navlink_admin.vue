@@ -1,75 +1,80 @@
 <script>
 export default {
   name: 'NavLinkAdmin',
+  data() {
+    return {
+      selected: '',
+      userTypes: [
+        { id: 1, name: 'organisation' },
+        { id: 2, name: 'medecin' },
+        { id: 3, name: 'medical' },
+        { id: 4, name: 'patient' },
+        { id: 5, name: 'confiance' },
+        { id: 6, name: 'proche' },
+      ]
+    }
+  },
 }
 </script>
 
 <template>
   <ul class="navbar-nav h-100" id="navbar-nav">
+    <li class="nav-item nav-link">
+      <select class="form-control" v-model="selected">
+        <option v-for="userType in userTypes" v-bind:value="{ id: userType.id, text: userType.name  }"
+          :key="userType.id">{{
+          userType.name }}
+        </option>
+      </select>
+    </li>
     <li class="menu-title">
       <span data-key="t-menu"> {{ $t("t-menu") }}</span>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link menu-link" to="/">
+      <router-link class="nav-link menu-link" :to="'/'+selected.text+'/dashboard'">
         <em class="ri-home-8-line"></em>
         <span style="padding: 7px" data-key="t-home">{{ $t("t-home") }}</span>
       </router-link>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link menu-link" to="/admin/medical-information">
+      <router-link class="nav-link menu-link" :to="'/'+selected.text+'/medical-information'">
         <em class="ri-information-line"></em>
         <span style="padding: 7px" data-key="t-medicalinformation">{{ $t("t-medicalinformation") }}</span>
       </router-link>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link menu-link" to="/admin/calendar">
+      <router-link class="nav-link menu-link" :to="'/'+selected.text+'/calendar'">
         <em class="ri-layout-grid-line"></em>
         <span style="padding: 7px" data-key="t-calendar">{{ $t("t-calendar") }}</span>
       </router-link>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link menu-link" to="/admin/chat">
+      <router-link class="nav-link menu-link" :to="'/'+selected.text+'/chat'">
         <em class="ri-pencil-line"></em>
         <span style="padding: 7px" data-key="t-chat">{{ $t("t-chat") }}</span>
       </router-link>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link menu-link" to="/admin/settings">
+      <router-link class="nav-link menu-link" :to="'/'+selected.text+'/settings'">
         <em class="ri-user-settings-line"></em>
         <span style="padding: 7px" data-key="t-settings">{{ $t("t-settings") }}</span>
       </router-link>
     </li>
     <!-- end Dashboard Menu -->
-    <li class="nav-item">
-      <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false"
-        aria-controls="sidebarApps">
-        <em class="ri-lifebuoy-line"></em>
-        <span style="padding: 7px" data-key="t-contacts"> {{ $t("t-contacts") }}</span>
-      </a>
-      <div class="collapse menu-dropdown" id="sidebarApps">
-        <ul class="nav nav-sm flex-column">
-          <li class="nav-item">
-            <router-link to="/admin/suggestions" class="nav-link" data-key="t-suggest">
-              {{ $t("t-suggest") }}
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/admin/bug-report" class="nav-link" data-key="t-report">
-              {{ $t("t-report") }}
-            </router-link>
-          </li>
-        </ul>
-      </div>
-    </li>
     <li class="menu-title">
-      <span data-key="t-others">{{ $t("t-others") }}</span>
+      <span data-key="t-contacts"> {{ $t("t-contacts") }}</span>
     </li>
     <li class="nav-item">
-      <a href="https://medicfollow.fr/fr/usage.html" target="_blank" class="nav-link menu-link"
-        rel="noreferrer noopener">
-        <em class="ri-pages-line"></em>
-        <span style="padding: 7px" data-key="t-terms">{{ $t("t-terms") }}</span>
-      </a>
+      <router-link :to="'/'+selected.text+'/suggestions'" class="nav-link">
+        <em class="ri-star-half-s-line"></em>
+        <span style="padding: 7px" data-key="t-suggest">{{ $t("t-suggest") }}</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
+      <router-link :to="'/'+selected.text+'/bug-report'" class="nav-link">
+        <em class="ri-bug-fill"></em>
+        <span style="padding: 7px" data-key="t-report">{{ $t("t-report") }}</span>
+      </router-link>
     </li>
   </ul>
 </template>
