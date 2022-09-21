@@ -6,6 +6,7 @@ import { layoutComputed } from "@/components/state/helpers";
 import NavBar from "@/components/frames/nav-bar";
 import Menu from "@/components/frames/menu.vue";
 import RightBar from "@/components/frames/right-bar";
+import PageHeader from "@/components/frames/page-header.vue";
 import footermodule from "@/components/login-components/footer-module.vue";
 localStorage.setItem('hoverd', false);
 
@@ -13,7 +14,7 @@ localStorage.setItem('hoverd', false);
  * Vertical layout
  */
 export default {
-  components: { NavBar, RightBar, footermodule, SimpleBar, Menu },
+  components: { NavBar, RightBar, footermodule, SimpleBar, Menu, PageHeader },
   data() {
     return {
       isMenuCondensed: false,
@@ -126,7 +127,9 @@ export default {
       <!-- ============================================================== -->
 
       <div class="main-content">
+
         <div class="page-content">
+          <PageHeader />
           <!-- Start Content-->
           <div class="container-fluid">
             <slot />
