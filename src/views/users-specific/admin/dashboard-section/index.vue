@@ -17,18 +17,18 @@ export default {
 <template>
   <Layout>
     <div class="row project-wrapper">
-      <div class="col-xxl-3">
-        <div class="row">
+      <div class="row">
+        <div class="col-xxl-12">
           <Widgets />
         </div>
       </div>
-      <div class="col-xxl-4">
-        <div class="row">
+      <div class="row">
+        <div class="col-xxl-6">
           <Chat />
         </div>
-      </div>
-      <div class="col-xxl-5">
-        <Schedules />
+        <div class="col-xxl-6">
+          <Schedules />
+        </div>
       </div>
     </div>
   </Layout>
