@@ -38,9 +38,9 @@ export default {
 </script>
 
 <template>
-  <div class="card card-height-100">
+  <div class="card">
     <div class="card-header align-items-center d-flex">
-      <h4 class="card-title mb-0 flex-grow-1" data-key="t-lstchat">{{  $t("t-lstchat")  }}</h4>
+      <h4 class="card-title mb-0 flex-grow-1" data-key="t-lstchat">{{ $t("t-lstchat") }}</h4>
       <div class="flex-shrink-0">
         <div class="dropdown card-header-dropdown">
           <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -65,7 +65,7 @@ export default {
 
     <div class="card-body p-0">
       <div id="users-chat">
-        <div class="chat-conversation p-3" id="chat-conversation" data-simplebar style="height: 412px">
+        <div class="chat-conversation p-3" id="chat-conversation" data-simplebar style="height: 563px">
           <ul class="list-unstyled chat-conversation-list chat-sm" id="users-conversation">
             <li class="chat-list left">
               <div class="conversation-list">
@@ -75,7 +75,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="mb-0 ctext-content" data-key="t-sampleconv1">{{  $t("t-sampleconv1")  }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv1">{{ $t("t-sampleconv1") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -84,7 +84,7 @@ export default {
                       </a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="#"><em class="ri-reply-line me-2 text-muted align-bottom"
-                            data-key="t-seeconv"></em>{{  $t("t-seeconv")  }}</a>
+                            data-key="t-seeconv"></em>{{ $t("t-seeconv") }}</a>
                       </div>
                     </div>
                   </div>
@@ -106,7 +106,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="mb-0 ctext-content" data-key="t-sampleconv2">{{  $t("t-sampleconv2")  }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv2">{{ $t("t-sampleconv2") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -115,7 +115,7 @@ export default {
                       </a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="#"><em class="ri-reply-line me-2 text-muted align-bottom"
-                            data-key="t-seeconv"></em>{{  $t("t-seeconv")  }}</a>
+                            data-key="t-seeconv"></em>{{ $t("t-seeconv") }}</a>
                       </div>
                     </div>
                   </div>
@@ -137,7 +137,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="mb-0 ctext-content" data-key="t-sampleconv3">{{  $t("t-sampleconv3")  }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv3">{{ $t("t-sampleconv3") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -146,7 +146,7 @@ export default {
                       </a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="#"><em class="ri-reply-line me-2 text-muted align-bottom"
-                            data-key="t-seeconv"></em>{{  $t("t-seeconv")  }}</a>
+                            data-key="t-seeconv"></em>{{ $t("t-seeconv") }}</a>
                       </div>
                     </div>
                   </div>
@@ -168,7 +168,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="mb-0 ctext-content" data-key="t-sampleconv4">{{  $t("t-sampleconv4")  }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv4">{{ $t("t-sampleconv4") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -177,7 +177,7 @@ export default {
                       </a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="#"><em class="ri-reply-line me-2 text-muted align-bottom"
-                            data-key="t-seeconv"></em>{{  $t("t-seeconv")  }}</a>
+                            data-key="t-seeconv"></em>{{ $t("t-seeconv") }}</a>
                       </div>
                     </div>
                   </div>
@@ -199,7 +199,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="mb-0 ctext-content" data-key="t-sampleconv5">{{  $t("t-sampleconv5")  }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv5">{{ $t("t-sampleconv5") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -208,7 +208,7 @@ export default {
                       </a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="#"><em class="ri-reply-line me-2 text-muted align-bottom"
-                            data-key="t-seeconv"></em>{{  $t("t-seeconv")  }}</a>
+                            data-key="t-seeconv"></em>{{ $t("t-seeconv") }}</a>
                       </div>
                     </div>
                   </div>
@@ -230,7 +230,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="mb-0 ctext-content" data-key="t-sampleconv6">{{  $t("t-sampleconv6")  }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv6">{{ $t("t-sampleconv6") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -239,7 +239,7 @@ export default {
                       </a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="#"><em class="ri-reply-line me-2 text-muted align-bottom"
-                            data-key="t-seeconv"></em>{{  $t("t-seeconv")  }}</a>
+                            data-key="t-seeconv"></em>{{ $t("t-seeconv") }}</a>
                       </div>
                     </div>
                   </div>
@@ -258,7 +258,7 @@ export default {
       <div class="border-top border-top-dashed">
         <div class="mt-3 text-center" style="margin-bottom: 16px;">
           <router-link to="/chat">
-            <a class="text-muted text-decoration-underline" data-key="t-viewmsg">{{  $t("t-viewmsg")  }}</a>
+            <a class="text-muted text-decoration-underline" data-key="t-viewmsg">{{ $t("t-viewmsg") }}</a>
           </router-link>
         </div>
         <!-- end row -->
