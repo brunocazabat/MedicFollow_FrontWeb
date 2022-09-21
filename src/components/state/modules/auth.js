@@ -8,6 +8,7 @@ export const state = {
   firstname: sessionStorage.getItem("currentUserFIRSTNAME"),
   lastname: sessionStorage.getItem("currentUserLASTNAME"),
   role: sessionStorage.getItem("currentUserROLE"),
+  ui: sessionStorage.getItem("currentUserUI"),
 };
 
 export const mutations = {
@@ -35,6 +36,10 @@ export const mutations = {
     state.role = role;
     saveState("currentUserROLE", role);
   },
+  SET_UI(state, ui) {
+    state.ui = ui;
+    saveState("currentUserUI", ui);
+  },
   SET_HEADERS(state, token) {
     state.headers = {
       "Content-Type": "application/json",
@@ -50,6 +55,9 @@ export const getters = {
   },
   getuserType(state) {
     return state.role;
+  },
+  getuserUI(state) {
+    return state.ui;
   },
   getemail(state) {
     return state.email;
@@ -89,6 +97,7 @@ export const actions = {
     commit("SET_FIRSTNAME", null);
     commit("SET_LASTNAME", null);
     commit("SET_ROLE", null);
+    commit("SET_UI", null);
     commit("SET_HEADER", null);
     window.sessionStorage.removeItem("currentUserTOKEN");
     window.sessionStorage.removeItem("currentUserUUID");
@@ -108,6 +117,7 @@ export const actions = {
         dispatch("setFirstName", response.data.firstname);
         dispatch("setLastName", response.data.lastname);
         dispatch("setRole", /*response.data.UserType.ut_name*/ "admin");
+        dispatch("setUI", /*response.data.UserType.ut_name*/ "admin");
       }
       return response.status;
     } catch (error) {
@@ -137,6 +147,10 @@ export const actions = {
 
   async setRole({ commit }, role) {
     commit("SET_ROLE", role);
+  },
+
+  async setUI({ commit }, ui) {
+    commit("SET_UI", ui);
   },
 
   async setHeaders({ commit }, token) {
