@@ -19,6 +19,9 @@ export default {
 
 <template>
   <ul class="navbar-nav h-100" id="navbar-nav">
+    <li class="menu-title">
+      <span>MENU SELECTOR ADMIN</span>
+    </li>
     <li class="nav-item nav-link">
       <select class="form-control" v-model="selected">
         <option v-for="userType in userTypes" v-bind:value="{ id: userType.id, text: userType.name  }"
