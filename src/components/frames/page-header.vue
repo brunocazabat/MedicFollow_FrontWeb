@@ -32,9 +32,9 @@ export default {
   <!-- start page title -->
   <div class="row" v-if="activateheader()">
     <div class="col-12">
-      <div class="page-title-box align-items-center justify-content-between">
+      <div class="page-title-box align-items-center">
         <div class="row">
-          <div class="col-2 align-content-center text-center align-items-center">
+          <div class="col-2" style="display: flex; justify-content: center; text-align: center; align-items: center;">
             <h4 class="mb-sm-0">UI SELECTOR ADMIN</h4>
           </div>
           <div class="col-1">

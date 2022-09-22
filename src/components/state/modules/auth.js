@@ -98,7 +98,7 @@ export const actions = {
     commit("SET_LASTNAME", null);
     commit("SET_ROLE", null);
     commit("SET_UI", null);
-    commit("SET_HEADER", null);
+    commit("SET_HEADERS", null);
     window.sessionStorage.removeItem("currentUserTOKEN");
     window.sessionStorage.removeItem("currentUserUUID");
     window.sessionStorage.removeItem("currentUserEMAIL");

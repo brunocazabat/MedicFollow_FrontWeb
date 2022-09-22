@@ -22,7 +22,7 @@ export default [
   // dashboard routes START
   {
     path: "/organisation/dashboard",
-    name: "dashboard",
+    name: "organisationdashboard",
     meta: {
       title: "Dashboard",
       authRequired: true,
@@ -33,7 +33,7 @@ export default [
   },
   {
     path: "/organisation/calendar",
-    name: "calendar",
+    name: "organisationcalendar",
     meta: {
       title: "Calendar",
       authRequired: true,
@@ -46,7 +46,7 @@ export default [
   },
   {
     path: "/organisation/chat",
-    name: "chat",
+    name: "organisationchat",
     meta: {
       title: "Chat",
       authRequired: true,
@@ -57,7 +57,7 @@ export default [
   },
   {
     path: "/organisation/suggestions",
-    name: "suggestions",
+    name: "organisationsuggestions",
     meta: {
       title: "Suggestions",
       authRequired: true,
@@ -68,7 +68,7 @@ export default [
   },
   {
     path: "/organisation/bug-report",
-    name: "bugreport",
+    name: "organisationbugreport",
     meta: {
       title: "Bug Report",
       authRequired: true,
@@ -79,7 +79,7 @@ export default [
   },
   {
     path: "/organisation/medical-information",
-    name: "medical-information",
+    name: "organisationmedical-information",
     meta: {
       title: "Staff Input",
       authRequired: true,
@@ -92,7 +92,7 @@ export default [
   },
   {
     path: "/organisation/staff-input",
-    name: "staff-input",
+    name: "organisationstaff-input",
     meta: {
       title: "Medical Information",
       authRequired: true,
@@ -103,7 +103,7 @@ export default [
   },
   {
     path: "/organisation/settings",
-    name: "profile-setting",
+    name: "organisationprofile-setting",
     meta: {
       title: "Settings",
       authRequired: true,

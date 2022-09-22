@@ -1,6 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 import store from "@/components/state/store";
 
+// SITE VITRINE ROUTES
+import rtevitrine from "./rte-vitrine.js";
 // UNIVERSAL ROUTES
 import rteerrors from "./rte-errors.js";
 import rtelogin from "./rte-login.js";
@@ -11,7 +13,6 @@ import rteadmin from "./user-specific/rte-admin.js";
 import rteorganisation from "./user-specific/rte-organisation.js";
 import rtemedecin from "./user-specific/rte-medecin.js";
 import rtemedical from "./user-specific/rte-medical.js";
-
 // USER-SPECIFIC ROUTES FAMILLY
 import rtepatient from "./user-specific/rte-patient.js";
 import rteconfiance from "./user-specific/rte-confiance.js";
@@ -24,6 +25,8 @@ const router = createRouter({
   mode: "history",
   // TEST
   routes: [
+    // SITE VITRINE ROUTES
+    ...rtevitrine,
     // UNIVERSAL ROUTES
     ...rteerrors,
     ...rtelogin,
@@ -67,10 +70,10 @@ router.beforeEach(async (routeTo, routeFrom, next) => {
 
 function rootguard(routeTo, next) {
   if (routeTo.path === "/") {
-    if (!store.getters["auth/getisloggedIn"]) {
-      next({ path: "/login" });
-    } else {
+    if (store.getters["auth/getisloggedIn"]) {
       next({ path: "/" + store.getters["auth/getuserType"] + "/dashboard" });
+    } else {
+      next();
     }
   }
 }
