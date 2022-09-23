@@ -25,5 +25,6 @@
     "files.insertFinalNewline": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "i18n-ally.keystyle": "nested"
+  "i18n-ally.keystyle": "nested",
+  "liveServer.settings.port": 5501
 }
