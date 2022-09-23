@@ -2,21 +2,21 @@ import { createWebHistory, createRouter } from "vue-router";
 import store from "@/components/state/store";
 
 // SITE VITRINE ROUTES
-import rtevitrine from "./rte-vitrine.js";
+import rtevitrine from "./rte-vitrine.min.js";
 // UNIVERSAL ROUTES
-import rteerrors from "./rte-errors.js";
-import rtelogin from "./rte-login.js";
-import rtelock from "./rte-lock.js";
+import rteerrors from "./rte-errors.min.js";
+import rtelogin from "./rte-login.min.js";
+import rtelock from "./rte-lock.min.js";
 // USER-SPECIFIC ROUTES ADMIN
-import rteadmin from "./user-specific/rte-admin.js";
+import rteadmin from "./user-specific/rte-admin.min.js";
 // USER-SPECIFIC ROUTES MEDIC
-import rteorganisation from "./user-specific/rte-organisation.js";
-import rtemedecin from "./user-specific/rte-medecin.js";
-import rtemedical from "./user-specific/rte-medical.js";
+import rteorganisation from "./user-specific/rte-organisation.min.js";
+import rtemedecin from "./user-specific/rte-medecin.min.js";
+import rtemedical from "./user-specific/rte-medical.min.js";
 // USER-SPECIFIC ROUTES FAMILLY
-import rtepatient from "./user-specific/rte-patient.js";
-import rteconfiance from "./user-specific/rte-confiance.js";
-import rteproche from "./user-specific/rte-proche.js";
+import rtepatient from "./user-specific/rte-patient.min.js";
+import rteconfiance from "./user-specific/rte-confiance.min.js";
+import rteproche from "./user-specific/rte-proche.min.js";
 
 import appConfig from "@/../app.config";
 
