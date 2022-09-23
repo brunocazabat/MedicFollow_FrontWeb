@@ -5,7 +5,7 @@ import footermodule from "@/components/login-components/footer-module.vue";
 import translatemodule from "@/components/login-components/translate-module.vue";
 
 export default {
-  name: "Page500",
+  name: "Page403",
   components: { logoheadermodule, particlesmodule, footermodule, translatemodule },
 };
 </script>
@@ -21,18 +21,16 @@ export default {
         <logoheadermodule />
         <!-- end row -->
         <div class="row justify-content-center">
-          <div class="col-xl-9 col-lg-8 text-center">
-            <div class="error-500 position-relative">
-              <img src="@/assets/images/errors/error500.png" alt="" class="img-fluid error-500-img error-img" />
-              <h1 class="title text-white">500</h1>
+          <div class="col-xl-8 col-lg-8">
+            <div class="text-center">
+              <img src="@/assets/images/errors/error400-cover.png" alt="error img" class="img-fluid">
+              <div class="mt-3">
+                <h3 class="text-uppercase text-white">403 - Forbidden Access 😭</h3>
+                <p class="mb-4 text-white">The page you are looking for can't be accessed.</p>
+                <a @click="$router.go(-1)" class="btn btn-success"><em class="mdi mdi-home me-1"></em>Back to home</a>
+              </div>
             </div>
-            <div>
-              <h4>Internal Server Error!</h4>
-              <p class="text-white w-75 mx-auto">Server Error 500. We're not exactly sure what happened, but our servers
-                say something is wrong.</p>
-              <a @click="$router.go(-1)" class="btn btn-success"><em class="mdi mdi-home me-1"></em>Back to home</a>
-            </div>
-          </div><!-- end col-->
+          </div><!-- end col -->
           <translatemodule />
         </div>
         <!-- end row -->
