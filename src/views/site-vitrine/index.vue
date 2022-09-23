@@ -1,594 +1,687 @@
 <script>
+import SwiperCore, { Thumbs, Navigation, Pagination } from 'swiper'
+import 'swiper/swiper-bundle.css'
+import { CountTo } from 'vue3-count-to'
+SwiperCore.use([Thumbs, Navigation, Pagination])
+
+import navbar from "./components/navbar.vue";
+import intro from "./components/intro.vue";
+import project from "./components/project.vue";
+import history from "./components/history.vue";
+import solutions from './components/solutions.vue';
+
+import team from "./components/team.vue";
+import contact from "./components/contact.vue";
+import footervit from "./components/footer.vue";
+import signupnow from "./components/signupnow.vue";
+
+
 export default {
-  name: "SiteVitrine",
+  name: 'SiteVitrine',
+  data() {
+    return {
+      title: 'Starter',
+      items: [
+        {
+          text: 'Pages',
+          href: '/'
+        },
+        {
+          text: 'Starter',
+          active: true
+        }
+      ]
+    }
+  },
+  components: {
+    CountTo,
+    navbar,
+    intro,
+    project,
+    history,
+    solutions,
+    team,
+    contact,
+    footervit,
+    signupnow,
+  },
+  methods: {
+    monthly() {
+      const highlightedItems = document.querySelectorAll('.month')
+      highlightedItems.forEach(function (userItem) {
+        userItem.style.display = 'block'
+      })
+      const highlightedItems2 = document.querySelectorAll('.annual')
+      highlightedItems2.forEach(function (userItem) {
+        userItem.style.display = 'none'
+      })
+    },
+    anually() {
+      const highlightedItems = document.querySelectorAll('.month')
+      highlightedItems.forEach(function (userItem) {
+        userItem.style.display = 'none'
+      })
+      const highlightedItems2 = document.querySelectorAll('.annual')
+      highlightedItems2.forEach(function (userItem) {
+        userItem.style.display = 'block'
+      })
+    },
+  },
   mounted() {
-    const scripts = [
-      "/js-site-vitrine/jquery-3.5.1.min",
-      "/js-site-vitrine/glowCookies_FR",
-      "/js-site-vitrine/bootstrap.min",
-      "/js-site-vitrine/plugin",
-      "/js-site-vitrine/main",
-      "/js-site-vitrine/custom-swiper",
-      "/js-site-vitrine/custom-nav",
-    ];
-    scripts.forEach(script => {
-      let tag = document.head.querySelector(`[src="${script}"`);
-      if (!tag) {
-        tag = document.createElement("script");
-        tag.setAttribute("src", script);
-        tag.setAttribute("type", 'text/javascript');
-        document.head.appendChild(tag);
+    this.monthly()
+    document.getElementById('plan-switch').addEventListener('change', () => {
+      if (document.getElementById('plan-switch').checked == true) {
+        this.anually()
+      } else if (document.getElementById('plan-switch').checked == false) {
+        this.monthly()
       }
-    });
+    })
+    document.querySelector('.currentyear').innerHTML =
+      new Date().getFullYear() + ' © MedicFollow - MedicFollow'
   }
-};
+}
 </script>
-
+  
 <template>
-  <!-- header starts -->
-  <div class="home-3">
-    <header class="main_header_area">
-      <div class="topbar-wrap bg-dblue">
-        <div class="container">
-          <div class="top-info d-flex justify-content-between align-items-center">
-            <ul class="t-address">
-              <li class="pr-2"><i class="far fa-clock"></i>Disponible 24H/24, 7J/7</li>
-              <li class="pr-2"><i class="fas fa-phone-alt"></i> Contactez-nous sur la page <a
-                  href="fr/contact.html">"Contact"</a></li>
-              <li class="pr-2"><i class="far fa-envelope"></i> contact@medicfollow.fr</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <div class="layout-wrapper landing">
+    <!-- NAVBAR -->
+    <navbar />
+    <!-- END NAVBAR -->
 
-      <!-- Navigation Bar -->
-      <div class="header_menu">
-        <nav class="navbar navbar-default">
-          <div class="container">
-            <div class="navbar-flex d-flex align-items-center justify-content-between w-100">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <a class="navbar-brand text-center" href="/">
-                  <img src="/images/logo.png" alt="image" class="rounded-corners-10" />
-                </a>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="navbar-collapse1" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav" id="responsive-menu">
-                  <li class="dropdown submenu active">
-                    <a href="/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                      aria-expanded="false">MedicFollow <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu" style="background: white; border-radius: 5%;">
-                      <li><a href="#project" class="nav-link smoothScroll">Notre projet</a>
-                      </li>
-                      <li><a href="#activity" class="nav-link smoothScroll">Nos
-                          activités</a></li>
-                      <li><a href="#team" class="nav-link smoothScroll">Notre équipe</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="fr/solutions.html">Nos solutions</a></li>
-                  <li><a href="fr/contact.html">Contactez-nous / FAQ</a></li>
-                  <li>
-                    <a role="button" href="en/">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512">
-                        <mask>
-                          <circle cx="256" cy="256" r="256" fill="#fff" />
-                        </mask>
-                        <g mask="url(#b)">
-                          <path fill="#eee" d="M167 0h178l25.9 252.3L345 512H167l-29.8-253.4z" />
-                          <path fill="#0052b4" d="M0 0h167v512H0z" />
-                          <path fill="#d80027" d="M345 0h167v512H345z" />
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="header-btn">
-                <a target="_blank" rel="noopener noreferrer" href="http://medicfollow.fr:8000/login/" class="btn">Espace
-                  particuliers</a>
-              </div>
-              <div class="header-btn">
-                <a href="fr/coming.html" class="btn">Espace professionnels</a>
-              </div>
-              <!-- /.navbar-collapse -->
-              <div id="slicknav-mobile"></div>
-            </div>
-          </div>
-          <!-- /.container-fluid -->
-        </nav>
-      </div>
-      <!-- Navigation Bar Ends -->
-    </header>
-    <!-- header ends -->
-
-    <!-- banner starts -->
-    <section class="banner">
-      <div class="container">
-        <div class="banner-content">
-          <div class="row flex-row-reverse align-items-end">
-            <div class="col-lg-6 col-md-12 col-sm-12 text-end">
-              <div class="banner-ct-wrap">
-                <div class="banner-head">
-                  <h4 class="cl-green">MEDICFOLLOW</h4>
-                  <h1>Votre outil de communication avec vos proches</h1>
-                </div>
-                <div class="banner-detail pb-2">
-                  <p>Restez en contact aisément avec vos proches hospitalisés, 7J/7, 24H/24.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
-              <div class="banner-image-3">
-                <img src="/images/banner/Home_banner.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="svg-image svg-img-rotate position-absolute start-0 bottom-0 w-100">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-          <path class="elementor-shape-fill" opacity="0.33"
-            d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
-          </path>
-          <path class="elementor-shape-fill" opacity="0.66"
-            d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
-          </path>
-          <path class="elementor-shape-fill" id="project"
-            d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
-          </path>
-        </svg>
-      </div>
+    <!-- INTRO -->
+    <section class="section pb-0 hero-section" id="hero">
+      <intro />
     </section>
-    <!-- banner ends -->
+    <!-- END INTRO -->
 
-    <!-- Notre projet start -->
-    <section class="aboutus aboutus-3">
+    <!-- PROJECT -->
+    <section class="section" id="services">
+      <project />
+    </section>
+    <!-- END PROJECT -->
+
+    <!-- HISTORY -->
+    <section class="section bg-light py-5" id="features">
+      <history />
+    </section>
+    <!-- END HISTORY -->
+
+    <!-- SIGNUPNOW -->
+    <section class="py-5 bg-primary position-relative">
+      <signupnow />
+    </section>
+    <!-- END SIGNUPNOW -->
+
+    <!-- SOLUTIONS -->
+    <section class="section">
+      <solutions />
+    </section>
+    <!-- END SOLUTIONS -->
+
+    <!-- start plan -->
+    <section class="section bg-light" id="plans">
+      <div class="bg-overlay bg-overlay-pattern"></div>
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 col-md-12">
-            <div class="about-img position-relative">
-              <video width=100% max-height=100% controls>
-                <source src="/images/bruh.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-12 p-lg-4">
-            <div class="sc-title-one mb-3">
-              <h3 class="cl-green text-center">NOTRE PROJET</h3>
-              <h2 class="mb-3 text-center">" Optimiser et rendre plus rapide la communication entre le corps médical en
-                charge du patient et la famille grace à MedicFollow. "</h2>
-            </div>
-            <div class="about-detail">
-              <p class="text-center">
-                A l'aide d'une suite d'outils adapté aux particuliers et aux professionnels du corp médical.
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-5">
+              <h3 class="mb-3 fw-semibold">
+                Pourquoi nous choisir ?
+              </h3>
+              <p class="text-muted mb-4">
+                Tarification simplifiée. Pas de frais cachés. Fonctionnalités avancées pour votre organisation médicale.
               </p>
-              <ul class="d-flex flex-wrap">
-                <li class="w-50"><i class="fas fa-angle-double-right cl-green"></i>Sécurisé et fiable
-                </li>
-                <li class="w-50"><i class="fas fa-angle-double-right cl-green"></i>Plus de visibilité</li>
-                <li class="w-50"><i class="fas fa-angle-double-right cl-green"></i>Une meilleure communication
-                </li>
-                <li class="w-50"><i class="fas fa-angle-double-right cl-green"></i>Gain de temps</li>
-                <li class="w-50 border-lg-0"><i class="fas fa-angle-double-right cl-green"></i>Tranquilité assurée des
-                  proches
-                </li>
-                <li class="w-50 border-lg-0"><i class="fas fa-angle-double-right cl-green"></i>Et bien plus.
-                </li>
-              </ul>
             </div>
           </div>
+          <!-- end col -->
         </div>
-        <div class="w-process mt-3">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="pcs-list p-4 border border-light-c bg-white">
-                <i class="far fa-file-alt"></i>
-                <h4>Rapports Médicaux</h4>
-                <p class="cl-grey">Retrouvez tous les documents de votre proche dans un espace unique et sécurisé.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="pcs-list p-4 border border-light-c bg-white">
-                <i class="fas fa-laptop-medical"></i>
-                <h4>Prochaines échéances</h4>
-                <p class="cl-grey">Restez informés des prochains rendez-vous de votre proche, où que vous soyez.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="pcs-list p-4 border border-light-c bg-white">
-                <i class="fas fa-star-of-life"></i>
-                <h4>Mise à jours fréquentes</h4>
-                <p class="cl-grey">Tout changement de situation de votre proche vous serra communiquer par une
-                  notification.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="pcs-list p-4 border border-light-c bg-white">
-                <i class="fas fa-user-md"></i>
-                <h4>Vous avez une question ?</h4>
-                <p class="cl-grey" id="activity">Prenez contact via une messagerie pour poser vos questions vis-à-vis de
-                  vos proches.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row align-items-center h_iframe text-center" style="margin-top: 80px;">
-          <h2 style="margin-bottom: 50px;">Notre histoire</h2>
-          <iframe src="fr/timeline.html" frameborder="0" scrolling="no"
-            style="overflow:hidden;height: 3200px;width:100%" height="3200px" width="100%">></iframe>
-        </div>
-      </div>
-    </section>
-    <!-- Notre projet ends -->
+        <!-- end row -->
 
-    <!-- Nos activités start -->
-    <section class="service bg-sfgrey-2">
-      <div class="container">
-        <div class="sc-title-two text-center">
-          <h3 class="cl-green">NOS ACTIVITÉS</h3>
-          <h2 style="margin-bottom: 100px;">
-            Nos dernières avancées et nos nouvelles fonctionnalités
-          </h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-lg-12 col-md-6 mb-4">
-                <div class="service-aa p-3 d-flex align-items-center border border-light-c bg-white">
-                  <i class="fas fa-tooth cl-green text-center fs-1 w-25"></i>
-                  <div class="sv-detail pl-4">
-                    <h4>Conseils de santé</h4>
-                    <p class="cl-grey">Obtenez des conseils en fonction de votre situation</p>
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="card plan-box mb-0">
+              <div class="card-body p-4 m-2">
+                <div class="d-flex align-items-center">
+                  <div class="flex-grow-1">
+                    <h5 class="mb-1 fw-semibold">Plan Basique</h5>
+                    <p class="text-muted mb-0">Pour les organisation médicales</p>
+                  </div>
+                  <div class="avatar-sm">
+                    <div class="avatar-title bg-light rounded-circle text-primary">
+                      <em class="ri-book-mark-line fs-20"></em>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-12 col-md-6 mb-4">
-                <div class="service-aa p-3 d-flex align-items-center border border-light-c bg-white">
-                  <i class="fas fa-heartbeat cl-green text-center fs-1 w-25"></i>
-                  <div class="sv-detail pl-4">
-                    <h4>Suivi des documents</h4>
-                    <p class="cl-grey">Un historique de vos documents, disponible en permanence</p>
-                  </div>
+                <div class="py-4 text-center">
+                  <h1>
+                    <sup><small>€</small></sup><span class="ff-secondary fw-bold">19</span>
+                    <span class="fs-13 text-muted">/Month</span>
+                  </h1>
                 </div>
-              </div>
-              <div class="col-lg-12 col-md-6 mb-4">
-                <div class="service-aa p-3 d-flex align-items-center border border-light-c bg-white">
-                  <i class="fas fa-eye cl-green text-center fs-1 w-25"></i>
-                  <div class="sv-detail pl-4">
-                    <h4>Sécurisation des données</h4>
-                    <p class="cl-grey">Cryptage de vos données = sécurité assurée</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-lg-12 col-md-6">
-                <div class="service-list text-center p-4 bx-shadow mb-3">
-                  <div class="sv-icon mb-3">
-                    <i class="fas fa-brain"></i>
-                  </div>
-                  <div class="sv-title">
-                    <h3>Rappels des rendez-vous</h3>
-                  </div>
-                  <p class="cl-grey">
-                    Ne perdez jamais le fil avec notre fonctionnalité "Agenda"
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-6">
-                <div class="service-list text-center p-4 bx-shadow">
-                  <div class="sv-icon mb-3">
-                    <i class="fas fa-pills"></i>
-                  </div>
-                  <div class="sv-title">
-                    <h3>Rappels de médicaments</h3>
-                  </div>
-                  <p class="cl-grey">
-                    Système de notification de rappels pour vos vaccins & médicaments
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-lg-12 col-md-6 mb-4">
-                <div class="service-aa p-3 d-flex align-items-center border border-light-c bg-white">
-                  <i class="fas fa-syringe cl-green text-center fs-1 w-25"></i>
-                  <div class="sv-detail pl-4">
-                    <h4>Ergonomie simplifiée</h4>
-                    <p class="cl-grey">Une utilisation simple et rapide, pour les particuliers et professionnels
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-6 mb-4">
-                <div class="service-aa p-3 d-flex align-items-center border border-light-c bg-white">
-                  <i class="fas fa-flask cl-green text-center fs-1 w-25"></i>
-                  <div class="sv-detail pl-4">
-                    <h4>Multi-plateforme</h4>
-                    <p class="cl-grey">Disponible sur mobile et web, tout le temps</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-6 mb-4">
-                <div class="service-aa p-3 d-flex align-items-center border border-light-c bg-white">
-                  <i class="fas fa-stethoscope cl-green text-center fs-1 w-25"></i>
-                  <div class="sv-detail pl-4">
-                    <h4>Équipes à l'écoute</h4>
-                    <p class="cl-grey">Une discussion est disponible avec nos équipes médicales</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Nos acivités end -->
 
-    <!-- Blog start -->
-    <section class="blog-main bg-sfgrey-2">
-      <div class="container">
-        <div class="sc-title-two text-center">
-          <h2 style="margin-bottom: 100px;">Nos dernières actualitées</h2>
-        </div>
-        <div class="blog-wrap">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="article-list bg-white">
-                <div class="at-thumbnail">
-                  <img src="/images/blog/hopital_perpignan.jpg" alt="" />
-                  <span class="blog-tag">Social</span>
-                </div>
-                <div class="article-content">
-                  <img src="/images/logo.png" class="article-avatar" />
-                  <div class="artl-detail">
-                    <h4>Approbation de MedicFollow à L'hopital de Perpignan</h4>
-                    <p>des tests seront menés dans les prochaines semaines pour voir les bénéfices de l'utilisation de
-                      MedicFollow dans la section "Réanimation" COVID</p>
-                  </div>
-                </div>
-                <div class="article-footer">
-                  <ul>
-                    <li class="cl-lgrey2 pr-2">Fevrier 12, 2022</li>
-                    <li class="cl-lgrey2">MAJ par Bruno C.</li>
+                <div>
+                  <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1">Upto <b>3</b> Projects</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1">Upto <b>299</b> Customers</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1">Scalable Bandwidth</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1"><b>5</b> FTP Login</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1"><b>24/7</b> Support</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1"><b>Unlimited</b> Storage</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1">Domain</div>
+                      </div>
+                    </li>
                   </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="article-list bg-white">
-                <div class="at-thumbnail">
-                  <img src="/images/blog/drapeau-europeen.jpg" alt="" />
-                  <span class="blog-tag">Juridique</span>
-                </div>
-                <div class="article-content">
-                  <img src="/images/logo.png" class="article-avatar" />
-                  <div class="artl-detail">
-                    <h4>Mise à jour des Conditions d'Utilisation</h4>
-                    <p>Nos conditions ont été modifiées, n'hésites pas à nous faire des retours !</p>
+                  <div class="mt-4">
+                    <a href="javascript:void(0);" class="btn btn-soft-success w-100">Get Started</a>
                   </div>
-                </div>
-                <div class="article-footer">
-                  <ul>
-                    <li class="cl-lgrey2 pr-2">Fevrier 7, 2022</li>
-                    <li class="cl-lgrey2">MAJ par Bruno C.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="article-list bg-white">
-                <div class="at-thumbnail">
-                  <img src="/images/blog/hopital_metz.jpg" alt="" />
-                  <span class="blog-tag">Social</span>
-                </div>
-                <div class="article-content">
-                  <img src="/images/logo.png" class="article-avatar" />
-                  <div class="artl-detail">
-                    <h4>Approbation de MedicFollow à L'hopital de Metz</h4>
-                    <p>des tests seront menés dans les prochaines semaines pour voir les bénéfices de l'utilisation de
-                      MedicFollow dans la section "Réanimation" COVID</p>
-                  </div>
-                </div>
-                <div class="article-footer">
-                  <ul>
-                    <li class="cl-lgrey2 pr-2">Fevrier 1, 2022</li>
-                    <li class="cl-lgrey2" id="team">MAJ par Bruno C.</li>
-                  </ul>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- Blog end -->
+          <!--end col-->
+          <div class="col-lg-6">
+            <div class="card plan-box mb-0">
+              <div class="card-body p-4 m-2">
+                <div class="d-flex align-items-center">
+                  <div class="flex-grow-1">
+                    <h5 class="mb-1 fw-semibold">Plan Basique</h5>
+                    <p class="text-muted mb-0">Pour les médecins membre</p>
+                  </div>
+                  <div class="avatar-sm">
+                    <div class="avatar-title bg-light rounded-circle text-primary">
+                      <em class="ri-stack-fill fs-20"></em>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-4 text-center">
+                  <h1>
+                    <sup><small>€</small></sup><span class="ff-secondary fw-bold">39</span>
+                    <span class="fs-13 text-muted">/Month</span>
+                  </h1>
+                </div>
 
-    <!-- Notre équipe start -->
-    <section class="team">
+                <div>
+                  <ul class="list-unstyled text-muted vstack gap-3 ff-secondary">
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1"><b>Unlimited</b> Projects</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1">
+                          <b>Unlimited</b> Customers
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1">Scalable Bandwidth</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1">
+                          <b>Unlimited</b> FTP Login
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1"><b>24/7</b> Support</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1"><b>Unlimited</b> Storage</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 text-success me-1">
+                          <em class="ri-checkbox-circle-fill fs-15 align-middle"></em>
+                        </div>
+                        <div class="flex-grow-1">Domain</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="mt-4">
+                    <a href="javascript:void(0);" class="btn btn-soft-success w-100">Get Started</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end plan -->
+
+    <!-- start faqs -->
+    <section class="section">
       <div class="container">
-        <div class="sc-title-two text-center">
-          <h4 class="cl-green">NOTRE ÉQUIPE</h4>
-          <h2>de développeurs qualifiée</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="team-wrap position-relative mb-10 text-center">
-              <div class="team-img position-relative rounded-2 overflow-hidden before-x">
-                <img src="/images/team/user-1.jpg" alt="" />
-              </div>
-              <div class="team-name-ab bx-shadow pt-4 pb-2">
-                <h4>Bruno Cazabat</h4>
-                <p class="cl-green">Président-Directeur Général</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-wrap position-relative mb-10 text-center">
-              <div class="team-img position-relative rounded-2 overflow-hidden before-x">
-                <img src="/images/team/user-2.jpg" alt="" />
-              </div>
-              <div class="team-name-ab bx-shadow pt-4 pb-2">
-                <h4>Simon Bernabeu</h4>
-                <p class="cl-green">Fondateur</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-wrap position-relative mb-10 text-center">
-              <div class="team-img position-relative rounded-2 overflow-hidden before-x">
-                <img src="/images/team/user-3.jpg" alt="" />
-              </div>
-              <div class="team-name-ab bx-shadow pt-4 pb-2">
-                <h4>Maxime Barbier</h4>
-                <p class="cl-green">Développeur Front-End</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-wrap position-relative mb-10 text-center">
-              <div class="team-img position-relative rounded-2 overflow-hidden before-x">
-                <img src="/images/team/user-4.jpg" alt="" />
-              </div>
-              <div class="team-name-ab bx-shadow pt-4 pb-2">
-                <h4>Samuel Parayre</h4>
-                <p class="cl-green">Développeur Back-End & Responsable Juridique</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="team-wrap position-relative mb-10 text-center">
-              <div class="team-img position-relative rounded-2 overflow-hidden before-x">
-                <img src="/images/team/user-5.jpg" alt="" />
-              </div>
-              <div class="team-name-ab bx-shadow pt-4 pb-2">
-                <h4>Damien Vachier</h4>
-                <p class="cl-green">Développeur Back-End & Responsable Cloud</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-wrap position-relative mb-10 text-center">
-              <div class="team-img position-relative rounded-2 overflow-hidden before-x">
-                <img src="/images/team/user-6.jpg" alt="" />
-              </div>
-              <div class="team-name-ab bx-shadow pt-4 pb-2">
-                <h4>Guillaume Corbet</h4>
-                <p class="cl-green">Développeur Back-End</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-wrap position-relative mb-10 text-center">
-              <div class="team-img position-relative rounded-2 overflow-hidden before-x">
-                <img src="/images/team/user-7.jpg" alt="" />
-              </div>
-              <div class="team-name-ab bx-shadow pt-4 pb-2">
-                <h4>Malo Moreau</h4>
-                <p class="cl-green">Développeur Mobile</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-wrap position-relative mb-10 text-center">
-              <div class="team-img position-relative rounded-2 overflow-hidden before-x">
-                <img src="/images/team/user-8.jpg" alt="" />
-              </div>
-              <div class="team-name-ab bx-shadow pt-4 pb-2">
-                <h4>Alex Limongi</h4>
-                <p class="cl-green">Développeur Mobile</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Notre équipe end -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-5">
+              <h3 class="mb-3 fw-semibold">Frequently Asked Questions</h3>
+              <p class="text-muted mb-4 ff-secondary">
+                If you can not find answer to your question in our FAQ, you can
+                always contact us or email us. We will answer you shortly!
+              </p>
 
-    <!-- Footer starts -->
-    <footer class="footer bg-ftblue">
-      <div class="footer-wrap">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="f-maincontent bg-white border-start bw-3 bc-green">
-                <img src="/images/logo.png" class="rounded-corners-10" alt="" />
-                <p class="mt-3 mb-3">
-                  Restez en contact aisément avec vos proches hospitalisés, 7J/7, 24H/24.
-                </p>
+              <div class="">
+                <button type="button" class="btn btn-primary btn-label rounded-pill">
+                  <em class="ri-mail-line label-icon align-middle rounded-pill fs-16 me-2"></em>
+                  Email Us
+                </button>
+                <button type="button" class="btn btn-info btn-label rounded-pill">
+                  <em class="ri-twitter-line label-icon align-middle rounded-pill fs-16 me-2"></em>
+                  Send Us Tweet
+                </button>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 ps-lg-4">
-              <div class="ft-lists">
-                <h3 class="cl-white">Liens Utiles</h3>
-                <ul class="d-flex flex-column">
-                  <li><a href="#project" class="smoothScroll">Notre projet</a></li>
-                  <li><a href="#activity" class="smoothScroll">Nos activités</a></li>
-                  <li><a href="#team" class="smoothScroll">Notre équipe</a></li>
-                  <li><a href="/fr/solutions.html">Nos solutions</a></li>
-                  <li><a href="/fr/contact.html">Contactez-nous / FAQ</a></li>
-                  <li><a href="/fr/usage.html">Conditions d'Utilisation</a></li>
-                </ul>
+          </div>
+        </div>
+        <!-- end row -->
+
+        <div class="row g-lg-5 g-4">
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center mb-2">
+              <div class="flex-shrink-0 me-1">
+                <em class="ri-question-line fs-24 align-middle text-success me-1"></em>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-0 fw-semibold">General Questions</h5>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="ft-lists">
-                <h3 class="cl-white">Newsletter</h3>
-                <p class="cl-white">
-                  Votre adresse de messagerie est uniquement utilisée pour vous envoyer notre lettre d'information ainsi
-                  que des informations concernant les activités de MedicFollow. Vous pouvez à tout moment utiliser le
-                  lien de désabonnement intégré dans la newsletter.
-                </p>
-                <form>
-                  <div class="form-group">
-                    <input type="email" class="form-control mt-3 p-3" id="exampleFormControlInput1"
-                      placeholder="Votre Email" />
-                    <button class="btn w-100 mt-1">Je m'abonne</button>
+            <div class="accordion custom-accordionwithicon custom-accordion-border accordion-border-box"
+              id="genques-accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="genques-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#genques-collapseOne" aria-expanded="true" aria-controls="genques-collapseOne">
+                    What is the purpose of using themes ?
+                  </button>
+                </h2>
+                <div id="genques-collapseOne" class="accordion-collapse collapse show"
+                  aria-labelledby="genques-headingOne" data-bs-parent="#genques-accordion">
+                  <div class="accordion-body ff-secondary">
+                    A theme is a set of colors, fonts, effects, and more that
+                    can be applied to your entire presentation to give it a
+                    consistent, professional look. You've already been using a
+                    theme, even if you didn't know it: the default Office theme,
+                    which consists.
                   </div>
-                </form>
+                </div>
               </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="genques-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#genques-collapseTwo" aria-expanded="false" aria-controls="genques-collapseTwo">
+                    Can a theme have more than one theme?
+                  </button>
+                </h2>
+                <div id="genques-collapseTwo" class="accordion-collapse collapse" aria-labelledby="genques-headingTwo"
+                  data-bs-parent="#genques-accordion">
+                  <div class="accordion-body ff-secondary">
+                    A story can have as many themes as the reader can identify
+                    based on recurring patterns and parallels within the story
+                    itself. In looking at ways to separate themes into a
+                    hierarchy, we might find it useful to follow the example of
+                    a single book.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="genques-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#genques-collapseThree" aria-expanded="false" aria-controls="genques-collapseThree">
+                    What are theme features?
+                  </button>
+                </h2>
+                <div id="genques-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="genques-headingThree" data-bs-parent="#genques-accordion">
+                  <div class="accordion-body ff-secondary">
+                    Theme features is a set of specific functionality that may
+                    be enabled by theme authors. Themes must register each
+                    individual Theme Feature that the author wishes to support.
+                    Theme support functions should be called in the theme's
+                    functions.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="genques-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#genques-collapseFour" aria-expanded="false" aria-controls="genques-collapseFour">
+                    What is simple theme?
+                  </button>
+                </h2>
+                <div id="genques-collapseFour" class="accordion-collapse collapse" aria-labelledby="genques-headingFour"
+                  data-bs-parent="#genques-accordion">
+                  <div class="accordion-body ff-secondary">
+                    Simple is a free WordPress theme, by Themify, built exactly
+                    what it is named for: simplicity. Immediately upgrade the
+                    quality of your WordPress site with the simple theme To use
+                    the built-in Chrome theme editor.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end accordion-->
+          </div>
+          <!-- end col -->
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center mb-2">
+              <div class="flex-shrink-0 me-1">
+                <em class="ri-shield-keyhole-line fs-24 align-middle text-success me-1"></em>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-0 fw-semibold">Privacy &amp; Security</h5>
+              </div>
+            </div>
+
+            <div class="accordion custom-accordionwithicon custom-accordion-border accordion-border-box"
+              id="privacy-accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="privacy-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#privacy-collapseOne" aria-expanded="false" aria-controls="privacy-collapseOne">
+                    Does Word have night mode?
+                  </button>
+                </h2>
+                <div id="privacy-collapseOne" class="accordion-collapse collapse" aria-labelledby="privacy-headingOne"
+                  data-bs-parent="#privacy-accordion">
+                  <div class="accordion-body ff-secondary">
+                    You can run Microsoft Word in dark mode, which uses a dark
+                    color palette to help reduce eye strain in low light
+                    settings. You can choose to make the document white or black
+                    using the Switch Modes button in the ribbon's View tab.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="privacy-headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#privacy-collapseTwo" aria-expanded="true" aria-controls="privacy-collapseTwo">
+                    Is theme an opinion?
+                  </button>
+                </h2>
+                <div id="privacy-collapseTwo" class="accordion-collapse collapse show"
+                  aria-labelledby="privacy-headingTwo" data-bs-parent="#privacy-accordion">
+                  <div class="accordion-body ff-secondary">
+                    A theme is an opinion the author expresses on the subject,
+                    for instance, the author's dissatisfaction with the narrow
+                    confines of French bourgeois marriage during that period
+                    theme is an idea that a writer repeats.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="privacy-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#privacy-collapseThree" aria-expanded="false" aria-controls="privacy-collapseThree">
+                    How do you develop a theme?
+                  </button>
+                </h2>
+                <div id="privacy-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="privacy-headingThree" data-bs-parent="#privacy-accordion">
+                  <div class="accordion-body ff-secondary">
+                    A short story, novella, or novel presents a narrative to its
+                    reader. Perhaps that narrative involves mystery, terror,
+                    romance, comedy, or all of the above. These works of fiction
+                    may also contain memorable characters, vivid world-building,
+                    literary devices.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="privacy-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#privacy-collapseFour" aria-expanded="false" aria-controls="privacy-collapseFour">
+                    Do stories need themes?
+                  </button>
+                </h2>
+                <div id="privacy-collapseFour" class="accordion-collapse collapse" aria-labelledby="privacy-headingFour"
+                  data-bs-parent="#privacy-accordion">
+                  <div class="accordion-body ff-secondary">
+                    A story can have as many themes as the reader can identify
+                    based on recurring patterns and parallels within the story
+                    itself. In looking at ways to separate themes into a
+                    hierarchy, we might find it useful to follow the example of
+                    a single book.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end accordion-->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end faqs -->
+
+    <!-- start counter -->
+    <section class="py-5 position-relative bg-light">
+      <div class="container">
+        <div class="row text-center gy-4">
+          <div class="col-lg-3 col-6">
+            <div>
+              <h2 class="mb-2">
+                <count-to :startVal="0" :endVal="100" :duration="5000">0</count-to>+
+              </h2>
+              <div class="text-muted">Projects Completed</div>
+            </div>
+          </div>
+          <!-- end col -->
+
+          <div class="col-lg-3 col-6">
+            <div>
+              <h2 class="mb-2">
+                <count-to :startVal="0" :endVal="24" :duration="5000">0</count-to>
+              </h2>
+              <div class="text-muted">Win Awards</div>
+            </div>
+          </div>
+          <!-- end col -->
+
+          <div class="col-lg-3 col-6">
+            <div>
+              <h2 class="mb-2">
+                <count-to :startVal="0" :endVal="20" :duration="5000">0</count-to>k
+              </h2>
+              <div class="text-muted">Satisfied Clients</div>
+            </div>
+          </div>
+          <!-- end col -->
+          <div class="col-lg-3 col-6">
+            <div>
+              <h2 class="mb-2">
+                <count-to :startVal="0" :endVal="50" :duration="5000">0</count-to>
+              </h2>
+              <div class="text-muted">Employees</div>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end counter -->
+
+    <!-- start Work Process -->
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-5">
+              <h3 class="mb-3 fw-semibold">Our Work Process</h3>
+              <p class="text-muted mb-4 ff-secondary">
+                In an ideal world this website wouldn’t exist, a client would
+                acknowledge the importance of having web copy before the Proin
+                vitae ipsum vel ex finibus semper design starts.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="copyright-main p-3 bg-footer-blue">
-        <div class="container">
-          <div class="copyright-text d-flex justify-content-between">
-            <p class="cl-white m-0">© 2022 MedicFollow. Tous les droits sont réservés</p>
-            <p class="cl-white">Réalisé par MedicFollow</p>
+        <!-- end row -->
+
+        <div class="row text-center">
+          <div class="col-lg-4">
+            <div class="process-card mt-4">
+              <div class="process-arrow-img d-none d-lg-block">
+                <img src="@/assets/images/users/avatar-1.png" alt="" class="img-fluid" />
+              </div>
+              <div class="avatar-sm icon-effect mx-auto mb-4">
+                <div class="avatar-title bg-transparent text-success rounded-circle h1">
+                  <em class="ri-quill-pen-line"></em>
+                </div>
+              </div>
+
+              <h5>Tell us what you need</h5>
+              <p class="text-muted ff-secondary">
+                The profession and the employer and your desire to make your
+                mark.
+              </p>
+            </div>
           </div>
+          <!-- end col -->
+          <div class="col-lg-4">
+            <div class="process-card mt-4">
+              <div class="process-arrow-img d-none d-lg-block">
+                <img src="@/assets/images/users/avatar-1.png" alt="" class="img-fluid" />
+              </div>
+              <div class="avatar-sm icon-effect mx-auto mb-4">
+                <div class="avatar-title bg-transparent text-success rounded-circle h1">
+                  <em class="ri-user-follow-line"></em>
+                </div>
+              </div>
+
+              <h5>Get free quotes</h5>
+              <p class="text-muted ff-secondary">
+                The most important aspect of beauty was, therefore, an inherent
+                part.
+              </p>
+            </div>
+          </div>
+          <!-- end col -->
+          <div class="col-lg-4">
+            <div class="process-card mt-4">
+              <div class="avatar-sm icon-effect mx-auto mb-4">
+                <div class="avatar-title bg-transparent text-success rounded-circle h1">
+                  <em class="ri-book-mark-line"></em>
+                </div>
+              </div>
+
+              <h5>Deliver high quality product</h5>
+              <p class="text-muted ff-secondary">
+                We quickly learn to fear and thus automatically avoid
+                potentially.
+              </p>
+            </div>
+          </div>
+          <!-- end col -->
         </div>
+        <!-- end row -->
       </div>
+      <!-- end container -->
+    </section>
+    <!-- end Work Process -->
+
+    <!-- TEAM -->
+    <section class="section bg-light" id="team">
+      <team />
+    </section>
+    <!-- END TEAM -->
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <contact />
+    </section>
+    <!-- END CONTACT -->
+
+    <!-- SIGNUPNOW -->
+    <section class="py-5 bg-primary position-relative">
+      <signupnow />
+    </section>
+    <!-- END SIGNUPNOW -->
+
+    <!-- FOOTER -->
+    <footer class="custom-footer bg-dark py-5 position-relative">
+      <footervit />
     </footer>
-    <!-- Footer ends -->
-
-    <!-- Back to top start -->
-    <div id="back-to-top">
-      <a href="#"></a>
-    </div>
-    <!-- Back to top ends -->
+    <!-- END FOOTER -->
   </div>
 </template>
-
-<style scoped>
-@import "./css-site-vitrine/css/style.css";
-@import "./css-site-vitrine/css/bootstrap.min.css";
-@import "./css-site-vitrine/css/plugin.css";
-@import "./css-site-vitrine/css/glowCookies.css";
-
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css");
-</style>
