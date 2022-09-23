@@ -152,7 +152,7 @@ export default {
           <em class="icon ri-arrow-left-circle-line"></em>
           <div class="date">MAI 2022</div>
           <div class="content">
-            <h5>À venir: MedicFollow "Bêta" prêt au déploiement en milieu médical</h5>
+            <h5>MedicFollow "Bêta" prêt au déploiement en milieu médical</h5>
             <p class="text-muted" style="text-align: justify;">
               Nos constantes améliorations en terme de sécurité et en richesses de fonctionnalités nous permettent dès
               maintenant de fournir une suite de logiciels adaptés au public pour des fins de tests.
@@ -164,9 +164,9 @@ export default {
           <em class="icon ri-arrow-right-circle-line"></em>
           <div class="date">Q2 2022</div>
           <div class="content">
-            <h5>À venir: Sprint "Consolidation" de MedicFollow</h5>
+            <h5>Sprint "Consolidation" de MedicFollow</h5>
             <p class="text-muted" style="text-align: justify;">
-              La solution MedicFollow commencera à prendre forme. Nous aurons recruté des bêtas testeurs pour recueillir
+              La solution MedicFollow commence à prendre forme. Nous avons recruté des bêtas testeurs pour recueillir
               les premières impressions et valider notre parcours utilisateur.
             </p>
           </div>
@@ -175,10 +175,10 @@ export default {
           <em class="icon ri-arrow-left-circle-line"></em>
           <div class="date">Q3 2022</div>
           <div class="content">
-            <h5>À venir: Sprint "Lancement & Métriques" de MedicFollow</h5>
+            <h5>Sprint "Lancement & Métriques" de MedicFollow</h5>
             <p class="text-muted" style="text-align: justify;">
-              Les retours de nos bêtas testeurs nous aurons permis d'identifier des axes d'amélioration. Nous
-              travaillerons à l'amélioration de la solution.
+              Les retours de nos bêtas testeurs nous ont permis d'identifier des axes d'amélioration. Nous
+              travaillons à l'amélioration de la solution en écoutant nos testeurs.
             </p>
             <!--end row-->
           </div>
@@ -187,7 +187,7 @@ export default {
           <em class="icon ri-arrow-right-circle-line"></em>
           <div class="date">JAN 2023</div>
           <div class="content">
-            <h5>À venir: Présentation aux Epitech Expériences de MedicFollow</h5>
+            <h5>Présentation aux Epitech Expériences de MedicFollow</h5>
             <p class="text-muted" style="text-align: justify;">
               Présentation du projet à "l'Epitech Expérience" devant un jury de professionnels et d'étudiants.
             </p>

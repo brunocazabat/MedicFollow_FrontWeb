@@ -23,13 +23,13 @@ export default [
     component: () => import("@/views/UNIVERSAL/errors-section/maintenance.vue"),
   },
   {
-    path: "/500",
-    name: "500-error",
+    path: "/403",
+    name: "403-error",
     meta: {
-      title: "Error 500",
+      title: "Error 403",
       onceLoggedIn,
     },
-    component: () => import("@/views/UNIVERSAL/errors-section/500.vue"),
+    component: () => import("@/views/UNIVERSAL/errors-section/403.vue"),
   },
   {
     path: "/:pathMatch(.*)*",
