@@ -23,7 +23,7 @@ export default {
         <div class="row justify-content-center">
           <div class="col-xl-8 col-lg-8">
             <div class="text-center">
-              <img src="@/assets/images/errors/error400-cover.png" alt="error img" class="img-fluid">
+              <img src="@/assets/images/errors/offline.gif" alt="error img" class="img-fluid">
               <div class="mt-3">
                 <h3 class="text-uppercase text-white">403 - Forbidden Access 😭</h3>
                 <p class="mb-4 text-white">The page you are looking for can't be accessed.</p>
