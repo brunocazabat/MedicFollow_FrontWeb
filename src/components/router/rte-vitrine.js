@@ -22,7 +22,7 @@ export default [
     path: "/",
     name: "home",
     meta: {
-      title: "MedicFollow",
+      title: "Vitrine",
       authRequired: false,
     },
     component: () => import("@/views/site-vitrine/index.vue"),
