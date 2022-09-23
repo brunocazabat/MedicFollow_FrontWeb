@@ -13,7 +13,7 @@ export default {
   <nav class="navbar navbar-expand-lg navbar-landing fixed-top is-sticky" id="navbar">
     <div class="container">
       <router-link to="/" class="navbar-brand">
-        <img src="@/assets/images/logo/logo-long.png" class="card-logo card-logo-dark" alt="logo" height="30" />
+        <img src="@/assets/images/logo/logo-long.png" class="card-logo card-logo-dark" alt="logo" height="40" />
       </router-link>
       <button class="navbar-toggler py-0 fs-20 text-body" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -31,9 +31,9 @@ export default {
               <div class="dropdown-menu dropdown-menu-end">
                 <a class="dropdown-item nav-link smoothScroll" href="#project">
                   Notre projet</a>
-                <a class="dropdown-item nav-link smoothScroll" href="#activity">
-                  Nos
-                  activités</a>
+                <a class="dropdown-item nav-link smoothScroll" href="#history">
+                  Notre
+                  histoire</a>
                 <a class="dropdown-item nav-link smoothScroll" href="#team">
                   Notre équipe</a>
               </div>

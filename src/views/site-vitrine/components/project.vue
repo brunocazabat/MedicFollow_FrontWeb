@@ -9,9 +9,7 @@ export default {
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="text-center mb-5">
-          <h1 class="mb-3 ff-secondary fw-semibold lh-base">
-            NOTRE PROJET
-          </h1>
+          <h1 class="mb-3 ff-secondary fw-semibold lh-base text-uppercase text-success text-center">NOTRE PROJET</h1>
           <h3 class="mb-3 text-muted">
             " Optimiser et rendre plus rapide la communication entre le corps médical en charge du patient et la
             famille grace à MedicFollow. "

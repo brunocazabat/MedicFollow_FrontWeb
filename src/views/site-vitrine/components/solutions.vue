@@ -7,9 +7,10 @@ export default {
 <template>
   <div class="container">
     <div class="row align-items-center gy-4">
+      <h1 class="mb-3 ff-secondary fw-semibold lh-base text-uppercase text-success text-center">NOS SOLUTIONS</h1>
       <div class="col-lg-6 order-2 order-lg-1">
         <div class="text-muted">
-          <h5 class="fs-18 text-uppercase text-success">Le client Mobile</h5>
+          <h3 class="fs-28 text-uppercase text-success mb-4">Le client Mobile</h3>
           <h4 class="mb-5">Disponible pour les particuliers.</h4>
           <div class="row">
             <div class="col-sm-6">
@@ -111,7 +112,7 @@ export default {
       </div>
       <div class="col-lg-6">
         <div class="text-muted ps-lg-5">
-          <h5 class="fs-18 text-uppercase text-success">Le client Web</h5>
+          <h3 class="fs-28 text-uppercase text-success mb-4">Le client Web</h3>
           <h4 class="mb-5">Disponible dès maintenant, pour les particuliers et les professionnels.</h4>
           <div class="row">
             <div class="col-sm-6">
