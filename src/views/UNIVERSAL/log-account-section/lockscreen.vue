@@ -39,8 +39,8 @@ export default {
     if (this.getfullname()) {
       this.name = this.getfullname();
     }
-    if (this.email()) {
-      this.loginInput.email = this.emailget();
+    if (this.getemail()) {
+      this.loginInput.email = this.getemail();
     }
   },
   computed: {
@@ -66,9 +66,10 @@ export default {
               this.authError = null;
               this.submitted = false;
               this.setCaptchaValid(false);
+              this.setLock("unlocked");
               this.$router.push(
                 this.$route.query.redirectFrom || {
-                  path: "/dashboard",
+                  path: "/" + this.getuserType() + "/dashboard",
                 }
               );
               break;
