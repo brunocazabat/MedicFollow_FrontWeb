@@ -9,12 +9,10 @@ export default {
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="text-center mb-5">
+          <h1 class="mb-3 ff-secondary fw-semibold lh-base text-uppercase text-success text-center">notre équipe</h1>
           <h3 class="mb-3 fw-semibold">
-            NOTRE <span class="text-danger">ÉQUIPE</span>
+            de développeurs qualifiés
           </h3>
-          <p class="text-muted mb-4 ff-secondary">
-            de développeurs qualifiée
-          </p>
         </div>
       </div>
     </div>
