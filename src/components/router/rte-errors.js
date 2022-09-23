@@ -32,7 +32,7 @@ export default [
     component: () => import("@/views/UNIVERSAL/errors-section/500.vue"),
   },
   {
-    path: "/404",
+    path: "/err404",
     name: "404-err",
     meta: {
       title: "Error 404",
