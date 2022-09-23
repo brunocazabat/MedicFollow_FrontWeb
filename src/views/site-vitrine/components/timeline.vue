@@ -1,405 +1,199 @@
 <script>
+import SwiperCore, { Thumbs } from "swiper";
+import "swiper/swiper-bundle.css";
+SwiperCore.use([Thumbs]);
 export default {
-  name: 'timeline',
-}
+  name: "timeline2",
+  data() {
+    return {
+      title: "Timeline",
+      items: [
+        {
+          text: "Pages",
+          href: "/",
+        },
+        {
+          text: "Timeline",
+          active: true,
+        },
+      ],
+    };
+  },
+};
 </script>
   
 <template>
-  <div class="timeline">
-    <div class="container left">
-      <div class="date">SEPT 2020</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M52.51 440.6l171.5-142.9V214.3L52.51 71.41C31.88 54.28 0 68.66 0 96.03v319.9C0 443.3 31.88 457.7 52.51 440.6zM308.5 440.6l192-159.1c15.25-12.87 15.25-36.37 0-49.24l-192-159.1c-20.63-17.12-52.51-2.749-52.51 24.62v319.9C256 443.3 287.9 457.7 308.5 440.6z" />
-      </svg>
-      <div class="content">
-        <h2>Fondation de MedicFollow</h2>
-        <p>
-          Le projet MedicFollow a été fondé lors de la Piscine MoonShot 2020 à Epitech Marseille.
-        </p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="date">OCT 2020</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M459.5 71.41l-171.5 142.9v83.45l171.5 142.9C480.1 457.7 512 443.3 512 415.1V96.03C512 68.66 480.1 54.28 459.5 71.41zM203.5 71.41L11.44 231.4c-15.25 12.87-15.25 36.37 0 49.24l192 159.1c20.63 17.12 52.51 2.749 52.51-24.62v-319.9C255.1 68.66 224.1 54.28 203.5 71.41z" />
-      </svg>
-      <div class="content">
-        <h2>Présentation de MedicFollow à "L’Accélérateur M"</h2>
-        <p>
-          MedicFollow, ayant été élu le meilleur projet EIP à Epitech Marseille, a été désigné pour être présenté à
-          "L’Accélérateur M", une association spécialisée dans l’aide et le soutien aux jeunes entreprises du
-          territoire.
-        </p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="date">DEC 2020</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M52.51 440.6l171.5-142.9V214.3L52.51 71.41C31.88 54.28 0 68.66 0 96.03v319.9C0 443.3 31.88 457.7 52.51 440.6zM308.5 440.6l192-159.1c15.25-12.87 15.25-36.37 0-49.24l-192-159.1c-20.63-17.12-52.51-2.749-52.51 24.62v319.9C256 443.3 287.9 457.7 308.5 440.6z" />
-      </svg>
-      <div class="content">
-        <h2>Détermination des objectifs pour la bêta fermée</h2>
-        <p>
-          Le premier sprint "BRAINSTORMING" à permis à MedicFollow de développer de nouvelles ambitions et de nouveaux
-          objectifs pour le futur du développement.
-        </p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="date">JANV 2021</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M459.5 71.41l-171.5 142.9v83.45l171.5 142.9C480.1 457.7 512 443.3 512 415.1V96.03C512 68.66 480.1 54.28 459.5 71.41zM203.5 71.41L11.44 231.4c-15.25 12.87-15.25 36.37 0 49.24l192 159.1c20.63 17.12 52.51 2.749 52.51-24.62v-319.9C255.1 68.66 224.1 54.28 203.5 71.41z" />
-      </svg>
-      <div class="content">
-        <h2>Sondage de MedicFollow en milieu hospitalier/médical</h2>
-        <p>
-          Recueil d'avis de la part de professionnels du milieu médical concernant la nécessité d'un outil pour
-          faciliter la communication entre les proches et le personnel s'occupant du/des malade(s).
-        </p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="date">MARS 2021</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M52.51 440.6l171.5-142.9V214.3L52.51 71.41C31.88 54.28 0 68.66 0 96.03v319.9C0 443.3 31.88 457.7 52.51 440.6zM308.5 440.6l192-159.1c15.25-12.87 15.25-36.37 0-49.24l-192-159.1c-20.63-17.12-52.51-2.749-52.51 24.62v319.9C256 443.3 287.9 457.7 308.5 440.6z" />
-      </svg>
-      <div class="content">
-        <h2>Début de la Bêta fermée ; création de la plateforme "Web" pour les particuliers</h2>
-        <p>
-          La première étape du développement de la Bêta fermée fut la création de la plateforme "web", accessible aux
-          particuliers depuis n'importe quel navigateur internet.
-        </p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="date">AVRI 2021</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M459.5 71.41l-171.5 142.9v83.45l171.5 142.9C480.1 457.7 512 443.3 512 415.1V96.03C512 68.66 480.1 54.28 459.5 71.41zM203.5 71.41L11.44 231.4c-15.25 12.87-15.25 36.37 0 49.24l192 159.1c20.63 17.12 52.51 2.749 52.51-24.62v-319.9C255.1 68.66 224.1 54.28 203.5 71.41z" />
-      </svg>
-      <div class="content">
-        <h2>Création de la plateforme "Mobile" ; Création des services "Back-End"</h2>
-        <p>
-          Après la plateforme "web", notre deuxième objectif était de proposer les solutions de MedicFollow pour les
-          particuliers sur "Mobile" également. Les services en arrière-plan pour l'exécution correcte des
-          fonctionnalités de MedicFollow ont commencé à être
-          développés.
-        </p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="date">JUIL 2021</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M52.51 440.6l171.5-142.9V214.3L52.51 71.41C31.88 54.28 0 68.66 0 96.03v319.9C0 443.3 31.88 457.7 52.51 440.6zM308.5 440.6l192-159.1c15.25-12.87 15.25-36.37 0-49.24l-192-159.1c-20.63-17.12-52.51-2.749-52.51 24.62v319.9C256 443.3 287.9 457.7 308.5 440.6z" />
-      </svg>
-      <div class="content">
-        <h2>Ajout d'une solution pour les professionnels à la plateforme "Web"</h2>
-        <p>
-          L'objectif principal étant de faire gagner du temps à notre personnel médical, notre plateforme "web" à reçu
-          une mise à jour de contenu afin de permettre aux professionnels d'utiliser nos services avec plus d'aisance
-          que les particuliers.
-        </p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="date">SEPT 2021</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M459.5 71.41l-171.5 142.9v83.45l171.5 142.9C480.1 457.7 512 443.3 512 415.1V96.03C512 68.66 480.1 54.28 459.5 71.41zM203.5 71.41L11.44 231.4c-15.25 12.87-15.25 36.37 0 49.24l192 159.1c20.63 17.12 52.51 2.749 52.51-24.62v-319.9C255.1 68.66 224.1 54.28 203.5 71.41z" />
-      </svg>
-      <div class="content">
-        <h2>Ajout de la fonctionnalité "Discussion" aux deux plateformes de MedicFollow</h2>
-        <p>
-          L'atout principal pour faciliter la communication entre le personnel médical et les proches : mise en place du
-          service de discussion.
-        </p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="date">OCT 2021</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M52.51 440.6l171.5-142.9V214.3L52.51 71.41C31.88 54.28 0 68.66 0 96.03v319.9C0 443.3 31.88 457.7 52.51 440.6zM308.5 440.6l192-159.1c15.25-12.87 15.25-36.37 0-49.24l-192-159.1c-20.63-17.12-52.51-2.749-52.51 24.62v319.9C256 443.3 287.9 457.7 308.5 440.6z" />
-      </svg>
-      <div class="content">
-        <h2>Ajout de la fonctionnalité "Agenda" aux deux plateformes de MedicFollow</h2>
-        <p>
-          L'atout secondaire pour apporter une facilitée au quotidien de nos utilisateurs : mise en place du service de
-          calendrier et de rappels intelligents.
-        </p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="date">DEC 2021</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M459.5 71.41l-171.5 142.9v83.45l171.5 142.9C480.1 457.7 512 443.3 512 415.1V96.03C512 68.66 480.1 54.28 459.5 71.41zM203.5 71.41L11.44 231.4c-15.25 12.87-15.25 36.37 0 49.24l192 159.1c20.63 17.12 52.51 2.749 52.51-24.62v-319.9C255.1 68.66 224.1 54.28 203.5 71.41z" />
-      </svg>
-      <div class="content">
-        <h2>Version "Plan-Bêta" de MedicFollow en cours de développement</h2>
-        <p>
-          Après de nouveaux retours de la part du personnel médical suite à nos premiers tests de MedicFollow bêta, nous
-          continuons d'améliorer nos fonctionnalités.
-        </p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="date">MAI 2022</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M52.51 440.6l171.5-142.9V214.3L52.51 71.41C31.88 54.28 0 68.66 0 96.03v319.9C0 443.3 31.88 457.7 52.51 440.6zM308.5 440.6l192-159.1c15.25-12.87 15.25-36.37 0-49.24l-192-159.1c-20.63-17.12-52.51-2.749-52.51 24.62v319.9C256 443.3 287.9 457.7 308.5 440.6z" />
-      </svg>
-      <div class="content">
-        <h2>À venir: MedicFollow "Bêta" prêt au déploiement en milieu médical</h2>
-        <p>
-          Nos constantes améliorations en terme de sécurité et en richesses de fonctionnalités nous permettent dès
-          maintenant de fournir une suite de logiciels adaptés au public pour des fins de tests.
-        </p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="date">Q2 2022</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M459.5 71.41l-171.5 142.9v83.45l171.5 142.9C480.1 457.7 512 443.3 512 415.1V96.03C512 68.66 480.1 54.28 459.5 71.41zM203.5 71.41L11.44 231.4c-15.25 12.87-15.25 36.37 0 49.24l192 159.1c20.63 17.12 52.51 2.749 52.51-24.62v-319.9C255.1 68.66 224.1 54.28 203.5 71.41z" />
-      </svg>
-      <div class="content">
-        <h2>À venir: Sprint "Consolidation" de MedicFollow</h2>
-        <p>
-          La solution MedicFollow commencera à prendre forme. Nous aurons recruté des bêtas testeurs pour recueillir les
-          premières impressions et valider notre parcours utilisateur.
-        </p>
-      </div>
-    </div>
-    <div class="container left">
-      <div class="date">Q3 2022</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M52.51 440.6l171.5-142.9V214.3L52.51 71.41C31.88 54.28 0 68.66 0 96.03v319.9C0 443.3 31.88 457.7 52.51 440.6zM308.5 440.6l192-159.1c15.25-12.87 15.25-36.37 0-49.24l-192-159.1c-20.63-17.12-52.51-2.749-52.51 24.62v319.9C256 443.3 287.9 457.7 308.5 440.6z" />
-      </svg>
-      <div class="content">
-        <h2>À venir: Sprint "Lancement & Métriques" de MedicFollow</h2>
-        <p>
-          Les retours de nos bêtas testeurs nous aurons permis d'identifier des axes d'amélioration. Nous travaillerons
-          à l'amélioration de la solution.
-        </p>
-      </div>
-    </div>
-    <div class="container right">
-      <div class="date">JAN 2023</div>
-      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M459.5 71.41l-171.5 142.9v83.45l171.5 142.9C480.1 457.7 512 443.3 512 415.1V96.03C512 68.66 480.1 54.28 459.5 71.41zM203.5 71.41L11.44 231.4c-15.25 12.87-15.25 36.37 0 49.24l192 159.1c20.63 17.12 52.51 2.749 52.51-24.62v-319.9C255.1 68.66 224.1 54.28 203.5 71.41z" />
-      </svg>
-      <div class="content">
-        <h2>À venir: Présentation aux Epitech Expériences de MedicFollow</h2>
-        <p>
-          Présentation du projet à "l'Epitech Expérience" devant un jury de professionnels et d'étudiants.
-        </p>
+  <div class="row">
+    <div>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <em class="icon ri-arrow-left-circle-line"></em>
+          <div class="date">SEPT 2020</div>
+          <div class="content">
+            <div class="d-flex">
+              <div class="flex-grow-1 ms-3">
+                <h5 class="fs-15">Fondation de MedicFollow</h5>
+                <p class="text-muted" style="text-align: justify;">
+                  Le projet MedicFollow a été fondé lors de la Piscine MoonShot 2020 à Epitech Marseille.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <em class="icon ri-arrow-right-circle-line"></em>
+          <div class="date">OCT 2020</div>
+          <div class="content">
+            <h5>MedicFollow à "L’Accélérateur M"</h5>
+            <p class="text-muted" style="text-align: justify;">
+              MedicFollow, ayant été élu le meilleur projet EIP à Epitech Marseille, a été désigné
+              pour être présenté à
+              "L’Accélérateur M", une association spécialisée dans l’aide et le soutien aux jeunes entreprises du
+              territoire.</p>
+            <!--end row-->
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <em class="icon ri-arrow-left-circle-line"></em>
+          <div class="date">DEC 2020</div>
+          <div class="content">
+            <h5>Détermination des objectifs pour la bêta fermée</h5>
+            <p class="text-muted" style="text-align: justify;">
+              Le premier sprint "BRAINSTORMING" à permis à MedicFollow de développer de nouvelles ambitions et de
+              nouveaux objectifs pour le futur du développement.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <em class="icon ri-arrow-right-circle-line"></em>
+          <div class="date">JANV 2021</div>
+          <div class="content">
+            <h5>Sondage de MedicFollow en milieu médical</h5>
+            <p class="text-muted" style="text-align: justify;">
+              Recueil d'avis de la part de professionnels du milieu médical concernant la nécessité d'un outil pour
+              faciliter la communication entre les proches et le personnel s'occupant du/des malade(s).
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <em class="icon ri-arrow-left-circle-line"></em>
+          <div class="date">MARS 2021</div>
+          <div class="content">
+            <h5>Début de la Bêta fermée<br />Création de la plateforme "Web" pour les particuliers</h5>
+            <p class="text-muted" style="text-align: justify;">
+              La première étape du développement de la Bêta fermée fut la création de la plateforme
+              "web", accessible aux particuliers depuis n'importe quel navigateur internet.
+            </p>
+            <!--end row-->
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <em class="icon ri-arrow-right-circle-line"></em>
+          <div class="date">AVRI 2021</div>
+          <div class="content">
+            <h5>Création de la plateforme "Mobile"<br />Création des services "Back-End"</h5>
+            <p class="text-muted" style="text-align: justify;">
+              Après la plateforme "web", notre deuxième objectif était de proposer les solutions de MedicFollow pour les
+              particuliers sur "Mobile" également. Les services en arrière-plan pour l'exécution correcte des
+              fonctionnalités de MedicFollow ont commencé à être
+              développés.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <em class="icon ri-arrow-left-circle-line"></em>
+          <div class="date">JUIL 2021</div>
+          <div class="content">
+            <h5>Ajout d'une solution pour les professionnels à la plateforme "Web"</h5>
+            <p class="text-muted" style="text-align: justify;">
+              L'objectif principal étant de faire gagner du temps à notre personnel médical, notre plateforme "web" à
+              reçu
+              une mise à jour de contenu afin de permettre aux professionnels d'utiliser nos services avec plus
+              d'aisance que les particuliers.
+            </p>
+            <!--end row-->
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <em class="icon ri-arrow-right-circle-line"></em>
+          <div class="date">SEPT 2021</div>
+          <div class="content">
+            <h5>Ajout de la fonctionnalité "Discussion" aux deux plateformes de MedicFollow</h5>
+            <p class="text-muted" style="text-align: justify;">
+              L'atout principal pour faciliter la communication entre le personnel médical et les proches : mise en
+              place du service de discussion.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <em class="icon ri-arrow-left-circle-line"></em>
+          <div class="date">OCT 2021</div>
+          <div class="content">
+            <h5>Ajout de la fonctionnalité "Agenda" aux deux plateformes de MedicFollow</h5>
+            <p class="text-muted" style="text-align: justify;">
+              L'atout secondaire pour apporter une facilitée au quotidien de nos utilisateurs : mise en place du service
+              de calendrier et de rappels intelligents.
+            </p>
+            <!--end row-->
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <em class="icon ri-arrow-right-circle-line"></em>
+          <div class="date">DEC 2021</div>
+          <div class="content">
+            <h5>Version "Plan-Bêta" de MedicFollow en cours de développement</h5>
+            <p class="text-muted" style="text-align: justify;">
+              Après de nouveaux retours de la part du personnel médical suite à nos premiers tests de MedicFollow bêta,
+              nous continuons d'améliorer nos fonctionnalités.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <em class="icon ri-arrow-left-circle-line"></em>
+          <div class="date">MAI 2022</div>
+          <div class="content">
+            <h5>À venir: MedicFollow "Bêta" prêt au déploiement en milieu médical</h5>
+            <p class="text-muted" style="text-align: justify;">
+              Nos constantes améliorations en terme de sécurité et en richesses de fonctionnalités nous permettent dès
+              maintenant de fournir une suite de logiciels adaptés au public pour des fins de tests.
+            </p>
+            <!--end row-->
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <em class="icon ri-arrow-right-circle-line"></em>
+          <div class="date">Q2 2022</div>
+          <div class="content">
+            <h5>À venir: Sprint "Consolidation" de MedicFollow</h5>
+            <p class="text-muted" style="text-align: justify;">
+              La solution MedicFollow commencera à prendre forme. Nous aurons recruté des bêtas testeurs pour recueillir
+              les premières impressions et valider notre parcours utilisateur.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <em class="icon ri-arrow-left-circle-line"></em>
+          <div class="date">Q3 2022</div>
+          <div class="content">
+            <h5>À venir: Sprint "Lancement & Métriques" de MedicFollow</h5>
+            <p class="text-muted" style="text-align: justify;">
+              Les retours de nos bêtas testeurs nous aurons permis d'identifier des axes d'amélioration. Nous
+              travaillerons à l'amélioration de la solution.
+            </p>
+            <!--end row-->
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <em class="icon ri-arrow-right-circle-line"></em>
+          <div class="date">JAN 2023</div>
+          <div class="content">
+            <h5>À venir: Présentation aux Epitech Expériences de MedicFollow</h5>
+            <p class="text-muted" style="text-align: justify;">
+              Présentation du projet à "l'Epitech Expérience" devant un jury de professionnels et d'étudiants.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
-
-<style scoped>
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
-}
-
-.timeline {
-  position: relative;
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 15px 0;
-}
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background: #006E51;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -1px;
-}
-
-.container {
-  padding: 15px 30px;
-  position: relative;
-  background: inherit;
-  width: 50%;
-}
-
-.container.left {
-  left: 0;
-}
-
-.container.right {
-  left: 50%;
-}
-
-.container::after {
-  content: '';
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: calc(50% - 8px);
-  right: -8px;
-  background: #ffffff;
-  border: 2px solid #006E51;
-  border-radius: 16px;
-  z-index: 1;
-}
-
-.container.right::after {
-  left: -8px;
-}
-
-.container::before {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 2px;
-  top: calc(50% - 1px);
-  right: 8px;
-  background: #006E51;
-  z-index: 1;
-}
-
-.container.right::before {
-  left: 8px;
-}
-
-.container .date {
-  position: absolute;
-  display: inline-block;
-  top: calc(50% - 8px);
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: #006E51;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  z-index: 1;
-}
-
-.container.left .date {
-  right: -100px;
-}
-
-.container.right .date {
-  left: -100px;
-}
-
-.container .icon {
-  position: absolute;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  padding: 9px 0;
-  top: calc(50% - 20px);
-  background: #1DAC90;
-  border: 2px solid #006E51;
-  border-radius: 40px;
-  text-align: center;
-  font-size: 18px;
-  color: #006E51;
-  z-index: 1;
-}
-
-.container.left .icon {
-  right: 56px;
-}
-
-.container.right .icon {
-  left: 56px;
-}
-
-.container .content {
-  padding: 30px 90px 30px 30px;
-  background: #fbfbfb;
-  position: relative;
-  border-radius: 0 500px 500px 0;
-  box-shadow: 5px 5px 5px 5px #1DAC90;
-}
-
-.container.right .content {
-  padding: 30px 30px 30px 90px;
-  border-radius: 500px 0 0 500px;
-}
-
-.container .content h2 {
-  margin: 0 0 10px 0;
-  font-size: 18px;
-  font-weight: normal;
-  color: #006E51;
-}
-
-.container .content p {
-  margin: 0;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-@media (max-width: 767.98px) {
-  .timeline::after {
-    left: 90px;
-  }
-
-  .container {
-    width: 100%;
-    padding-left: 120px;
-    padding-right: 30px;
-  }
-
-  .container.right {
-    left: 0%;
-  }
-
-  .container.left::after,
-  .container.right::after {
-    left: 82px;
-  }
-
-  .container.left::before,
-  .container.right::before {
-    left: 100px;
-    border-color: transparent #006E51 transparent transparent;
-  }
-
-  .container.left .date,
-  .container.right .date {
-    right: auto;
-    left: 15px;
-  }
-
-  .container.left .icon,
-  .container.right .icon {
-    right: auto;
-    left: 146px;
-  }
-
-  .container.left .content,
-  .container.right .content {
-    padding: 30px 30px 30px 90px;
-    border-radius: 500px 0 0 500px;
-  }
-}
-</style>
