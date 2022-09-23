@@ -11,7 +11,7 @@ export default {
       <div class="col-lg-8 col-sm-10">
         <div class="text-center mt-lg-5 pt-5">
           <h1 class="display-6 fw-semibold mb-3 lh-base">
-            <span class="text-success">MedicFollow</span>
+            <span class="text-success">MEDICFOLLOW</span>
             <p>La première plateforme qui facilite la communication autour du patient</p>
           </h1>
           <p class="lead text-muted lh-base">

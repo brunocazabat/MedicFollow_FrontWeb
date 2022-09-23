@@ -9,10 +9,8 @@ export default {
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="text-center mb-5">
-          <h3 class="mb-3 fw-semibold">MedicFollow - Contact</h3>
-          <p class="text-muted mb-4 ff-secondary">
-            Comment pouvons-nous vous aider ?
-          </p>
+          <h1 class="mb-3 ff-secondary fw-semibold lh-base text-uppercase text-success text-center">Contact</h1>
+          <h4 class="mb-3 fw-semibold">Comment pouvons-nous vous aider ?</h4>
         </div>
       </div>
     </div>

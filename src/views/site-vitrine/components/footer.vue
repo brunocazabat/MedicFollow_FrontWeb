@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container" style="color: white">
     <div class="row">
       <div class="col-lg-4 mt-4">
         <div>
@@ -25,36 +25,36 @@ export default {
       <div class="col-lg-7 ms-lg-auto">
         <div class="row">
           <div class="col-sm-4 mt-4 ms-lg-auto">
-            <h5 class="text-white mb-0">Liens Utiles</h5>
+            <h4 class="text-white mb-0">Liens Utiles</h4>
             <div class="text-muted mt-3">
               <ul class="list-unstyled ff-secondary footer-list">
                 <li>
-                  <router-link to="/#project">Notre projet</router-link>
+                  <a class="text-white" href="#project">Notre projet</a>
                 </li>
                 <li>
-                  <router-link to="/#activity">Nos activités</router-link>
+                  <a class="text-white" href="#history">Notre histoire</a>
                 </li>
                 <li>
-                  <router-link to="/#team">Notre équipe</router-link>
+                  <a class="text-white" href="#team">Notre équipe</a>
                 </li>
                 <li>
-                  <router-link to="/#solution">Nos solutions</router-link>
+                  <a class="text-white" href="#solutions">Nos solutions</a>
                 </li>
                 <li>
-                  <router-link to="/#contact">Contactez-nous / FAQ</router-link>
+                  <a class="text-white" href="#contact">Contactez-nous / FAQ</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-sm-4 mt-4 ms-lg-auto">
-            <h5 class="text-white mb-0">MedicFollow</h5>
+            <h4 class="text-white mb-0">MedicFollow</h4>
             <div class="text-muted mt-3">
               <ul class="list-unstyled ff-secondary footer-list">
                 <li>
-                  <router-link to="/register-mail">Sign Up !</router-link>
+                  <router-link to="/register-mail" class="text-white">Sign Up</router-link>
                 </li>
                 <li>
-                  <router-link to="/usage">Conditions d'Utilisation</router-link>
+                  <router-link to="/usage" class="text-white">Conditions d'Utilisation</router-link>
                 </li>
               </ul>
             </div>
@@ -75,14 +75,14 @@ export default {
             <li class="list-inline-item">
               <a href="javascript: void(0);" class="avatar-xs d-block">
                 <div class="avatar-title rounded-circle">
-                  <em class="ri-linkedin-fill"></em>
+                  <em class="ri-linkedin-fill text-white"></em>
                 </div>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="javascript: void(0);" class="avatar-xs d-block">
                 <div class="avatar-title rounded-circle">
-                  <em class="ri-google-fill"></em>
+                  <em class="ri-google-fill text-white"></em>
                 </div>
               </a>
             </li>
