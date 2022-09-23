@@ -1,6 +1,8 @@
 <script>
+import { SimpleBar } from "simplebar-vue3";
 export default {
   name: "notification",
+  components: { SimpleBar },
 }
 </script>
 
