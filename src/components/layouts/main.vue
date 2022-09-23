@@ -110,11 +110,10 @@ export default {
           <SimpleBar id="scrollbar" class="h-100" ref="scrollbar">
             <Menu></Menu>
             <div class="text-center navbar-nav" style="position: absolute; bottom: 1px;">
-              <a href="https://medicfollow.fr/fr/usage.html" target="_blank" rel="noreferrer noopener"
-                class="nav-link menu-link">
+              <router-link to="/usage" class="nav-link menu-link">
                 <em class="ri-pages-line"></em>
                 <span style="padding: 7px" data-key="t-terms">{{ $t("t-terms") }}</span>
-              </a>
+              </router-link>
             </div>
           </SimpleBar>
         </div>
