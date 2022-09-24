@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./components/router/index.min.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import i18n from "./i18n.min.js";
+import i18n from "./i18n.js";
 import store from "./components/state/store";
 
 import BootstrapVue3 from "bootstrap-vue-3";
