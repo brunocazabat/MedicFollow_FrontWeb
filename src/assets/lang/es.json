@@ -182,5 +182,8 @@
   "t-notexisting": "¡La página que buscas no existe!",
   "t-forbiddenpage": "No se puede acceder a la página que está buscando.",
   "t-forbidden": "Acceso prohibido",
-  "t-maintainance": "El sitio está en mantenimiento."
+  "t-maintainance": "El sitio está en mantenimiento.",
+  "t-seereports": "Ver todos los informes/sugerencias",
+  "t-managepatients": "Administrar pacientes",
+  "t-managedoctor": "Administrar médicos"
 }

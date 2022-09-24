@@ -182,5 +182,8 @@
   "t-notexisting": "Die gesuchte Seite existiert nicht !",
   "t-forbiddenpage": "Auf die gesuchte Seite kann nicht zugegriffen werden.",
   "t-forbidden": "Verbotener Zugriff",
-  "t-maintainance": "Website wird gewartet."
+  "t-maintainance": "Website wird gewartet.",
+  "t-seereports": "Alle Berichte/Vorschläge anzeigen",
+  "t-managepatients": "Patienten verwalten",
+  "t-managedoctor": "Ärzte verwalten"
 }

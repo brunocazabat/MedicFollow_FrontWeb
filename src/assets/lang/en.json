@@ -182,5 +182,8 @@
   "t-notexisting": "The page you are looking for is not existing !",
   "t-forbidden": "Forbidden Access",
   "t-forbiddenpage": "The page you are looking for can't be accessed.",
-  "t-maintainance": "Site is under maintenance."
+  "t-maintainance": "Site is under maintenance.",
+  "t-managedoctor": "Manage Doctors",
+  "t-managepatients": "Manage Patients",
+  "t-seereports": "See all reports/suggestions"
 }
