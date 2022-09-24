@@ -10,7 +10,6 @@
   "t-calendar": "Kalender",
   "t-care": "Treffen Sie Ihre Vorsichtsmaßnahmen",
   "t-chat": "Plaudern",
-  "t-coming-soon": "Kommt bald",
   "t-completeprof": "Vervollständigen Sie Ihr Profil, um mit Medicfollow zu beginnen.",
   "t-cookies-accept": "Akzeptieren",
   "t-cookies-content": "Wir verwenden unsere eigenen Cookies und Cookies von Drittanbietern, um Inhalte zu personalisieren und den Webverkehr zu analysieren.",
@@ -41,7 +40,6 @@
   "t-nextappoint": "Nächster Termin",
   "t-notifications": "Benachrichtigungen",
   "t-notyou": "Du nicht? Melde mich ab und bring mich zurück zum",
-  "t-offline-page": "Offline-Seite",
   "t-others": "Andere",
   "t-passreq": "Passwortanforderungen",
   "t-password": "Passwort",
@@ -176,5 +174,13 @@
   "t-uploadquestion": "Möchten Sie eine Datei hochladen?",
   "t-uploadquestionexample": "Sie können uns zum Beispiel einen Screenshot schicken.",
   "t-contactus": "Kontaktiere uns",
-  "t-loading": "Ihre Inhalte werden geladen, bitte warten Sie."
+  "t-loading": "Ihre Inhalte werden geladen, bitte warten Sie.",
+  "t-serverr": "Interner Serverfehler !",
+  "t-wrong": "Wir sind uns nicht ganz sicher, was passiert ist, aber unsere Server sagen, dass etwas nicht stimmt.",
+  "t-returnhome": "Zurück zur Startseite",
+  "t-notfound": "Entschuldigung, Seite nicht gefunden",
+  "t-notexisting": "Die gesuchte Seite existiert nicht !",
+  "t-forbiddenpage": "Auf die gesuchte Seite kann nicht zugegriffen werden.",
+  "t-forbidden": "Verbotener Zugriff",
+  "t-maintainance": "Website wird gewartet."
 }

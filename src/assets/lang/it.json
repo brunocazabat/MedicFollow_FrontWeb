@@ -10,7 +10,6 @@
   "t-calendar": "Calendario",
   "t-care": "Prendi le tue precauzioni",
   "t-chat": "Chiacchierata",
-  "t-coming-soon": "Prossimamente",
   "t-completeprof": "Completa il tuo profilo per iniziare con Medicfolow.",
   "t-cookies-accept": "Accetta",
   "t-cookies-content": "Utilizziamo cookie propri e di terze parti per personalizzare i contenuti e analizzare il traffico web.",
@@ -41,7 +40,6 @@
   "t-nextappoint": "Prossimo appuntamento",
   "t-notifications": "Notifiche",
   "t-notyou": "Non tu ? Scollegami e riportami al",
-  "t-offline-page": "Pagina offline",
   "t-others": "altri",
   "t-passreq": "Requisiti password",
   "t-password": "Password",
@@ -176,5 +174,13 @@
   "t-uploadquestion": "Vuoi caricare un file?",
   "t-uploadquestionexample": "Puoi, ad esempio, inviarci uno screenshot.",
   "t-contactus": "Contattaci",
-  "t-loading": "Stiamo caricando i tuoi contenuti, attendi."
+  "t-loading": "Stiamo caricando i tuoi contenuti, attendi.",
+  "t-serverr": "Errore interno del server !",
+  "t-wrong": "Non siamo esattamente sicuri di cosa sia successo, ma i nostri server dicono che qualcosa non va.",
+  "t-returnhome": "Torna alla home page",
+  "t-notfound": "Siamo spiacenti, pagina non trovata",
+  "t-notexisting": "La pagina che stai cercando non esiste!",
+  "t-forbiddenpage": "Impossibile accedere alla pagina che stai cercando.",
+  "t-forbidden": "Accesso proibito",
+  "t-maintainance": "Il sito è in manutenzione."
 }
