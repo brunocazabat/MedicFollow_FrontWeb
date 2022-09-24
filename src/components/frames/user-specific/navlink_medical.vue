@@ -22,7 +22,7 @@ export default {
       </router-link>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link menu-link" to="/medical/managepatients">
+      <router-link class="nav-link menu-link" to="/medical/manage-patients">
         <em class="ri-folder-user-line"></em>
         <span style="padding: 7px" data-key="t-managepatients">{{ $t("t-managepatients") }}</span>
       </router-link>

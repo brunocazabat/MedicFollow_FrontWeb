@@ -19,7 +19,7 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
 }
 
 export default [
-  // dashboard routes START
+  // HOME
   {
     path: "/organisation/dashboard",
     name: "organisation-dashboard",
@@ -31,6 +31,35 @@ export default [
     component: () =>
       import("@/views/users-specific/organisation/dashboard-section/index.vue"),
   },
+  // MANAGE DOCTORS
+  {
+    path: "/organisation/manage-doctors",
+    name: "organisation-manage-doctors",
+    meta: {
+      title: "Manage Doctors",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import(
+        "@/views/users-specific/organisation/managedoctors-section/managedoctors.vue"
+      ),
+  },
+  // SETTINGS
+  {
+    path: "/organisation/settings",
+    name: "organisation-profile-setting",
+    meta: {
+      title: "Settings",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import(
+        "@/views/users-specific/organisation/settings-section/setting.vue"
+      ),
+  },
+  // SUGGESTIONS
   {
     path: "/organisation/suggestions",
     name: "organisation-suggestions",
@@ -52,18 +81,5 @@ export default [
     },
     component: () =>
       import("@/views/users-specific/organisation/forms-section/bugreport.vue"),
-  },
-  {
-    path: "/organisation/settings",
-    name: "organisation-profile-setting",
-    meta: {
-      title: "Settings",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import(
-        "@/views/users-specific/organisation/settings-section/setting.vue"
-      ),
   },
 ];

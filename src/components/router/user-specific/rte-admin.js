@@ -18,7 +18,7 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
 }
 
 export default [
-  // dashboard routes START
+  // HOME
   {
     path: "/admin/dashboard",
     name: "admin-dashboard",
@@ -30,6 +30,35 @@ export default [
     component: () =>
       import("@/views/users-specific/admin/dashboard-section/index.vue"),
   },
+  // MANAGE ORGANIZATIONS
+  {
+    path: "/admin/manage-orgas",
+    name: "admin-manageorganizations",
+    meta: {
+      title: "Manage Organizations",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import(
+        "@/views/users-specific/admin/manageorgas-section/manageorgas.vue"
+      ),
+  },
+  // SEE REPORTS
+  {
+    path: "/admin/see-reports",
+    name: "admin-seereportsuggest",
+    meta: {
+      title: "See Report&Suggest",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import(
+        "@/views/users-specific/admin/seereportssuggest-section/seereportsuggest.vue"
+      ),
+  },
+  // SETTINGS
   {
     path: "/admin/settings",
     name: "admin-profile-setting",

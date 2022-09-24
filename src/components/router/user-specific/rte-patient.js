@@ -19,7 +19,7 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
 }
 
 export default [
-  // dashboard routes START
+  // HOME
   {
     path: "/patient/dashboard",
     name: "patient-dashboard",
@@ -31,6 +31,7 @@ export default [
     component: () =>
       import("@/views/users-specific/patient/dashboard-section/index.vue"),
   },
+  // CALENDAR
   {
     path: "/patient/calendar",
     name: "patient-calendar",
@@ -42,6 +43,7 @@ export default [
     component: () =>
       import("@/views/users-specific/patient/calendar-section/calendar.vue"),
   },
+  // CHAT
   {
     path: "/patient/chat",
     name: "patient-chat",
@@ -53,6 +55,19 @@ export default [
     component: () =>
       import("@/views/users-specific/patient/chat-section/chat.vue"),
   },
+  // SETTINGS
+  {
+    path: "/patient/settings",
+    name: "patient-profile-setting",
+    meta: {
+      title: "Settings",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import("@/views/users-specific/patient/settings-section/setting.vue"),
+  },
+  // SUGGESTIONS
   {
     path: "/patient/suggestions",
     name: "patient-suggestions",
@@ -74,16 +89,5 @@ export default [
     },
     component: () =>
       import("@/views/users-specific/patient/forms-section/bugreport.vue"),
-  },
-  {
-    path: "/patient/settings",
-    name: "patient-profile-setting",
-    meta: {
-      title: "Settings",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/patient/settings-section/setting.vue"),
   },
 ];

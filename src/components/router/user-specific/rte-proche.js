@@ -19,7 +19,7 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
 }
 
 export default [
-  // dashboard routes START
+  // HOME
   {
     path: "/proche/dashboard",
     name: "proche-dashboard",
@@ -31,6 +31,7 @@ export default [
     component: () =>
       import("@/views/users-specific/proche/dashboard-section/index.vue"),
   },
+  // CALENDAR
   {
     path: "/proche/calendar",
     name: "proche-calendar",
@@ -42,6 +43,19 @@ export default [
     component: () =>
       import("@/views/users-specific/proche/calendar-section/calendar.vue"),
   },
+  // SETTINGS
+  {
+    path: "/proche/settings",
+    name: "proche-profile-setting",
+    meta: {
+      title: "Settings",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import("@/views/users-specific/proche/settings-section/setting.vue"),
+  },
+  // SUGGESTIONS
   {
     path: "/proche/suggestions",
     name: "proche-suggestions",
@@ -63,16 +77,5 @@ export default [
     },
     component: () =>
       import("@/views/users-specific/proche/forms-section/bugreport.vue"),
-  },
-  {
-    path: "/proche/settings",
-    name: "proche-profile-setting",
-    meta: {
-      title: "Settings",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/proche/settings-section/setting.vue"),
   },
 ];

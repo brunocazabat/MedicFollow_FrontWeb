@@ -19,7 +19,7 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
 }
 
 export default [
-  // dashboard routes START
+  // HOME
   {
     path: "/medecin/dashboard",
     name: "medecin-dashboard",
@@ -31,50 +31,7 @@ export default [
     component: () =>
       import("@/views/users-specific/medecin/dashboard-section/index.vue"),
   },
-  {
-    path: "/medecin/calendar",
-    name: "medecin-calendar",
-    meta: {
-      title: "Calendar",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/medecin/calendar-section/calendar.vue"),
-  },
-  {
-    path: "/medecin/chat",
-    name: "medecin-chat",
-    meta: {
-      title: "Chat",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/medecin/chat-section/chat.vue"),
-  },
-  {
-    path: "/medecin/suggestions",
-    name: "medecin-suggestions",
-    meta: {
-      title: "Suggestions",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/medecin/forms-section/suggest.vue"),
-  },
-  {
-    path: "/medecin/bug-report",
-    name: "medecin-bugreport",
-    meta: {
-      title: "Bug Report",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/medecin/forms-section/bugreport.vue"),
-  },
+  // MEDICAL INFO
   {
     path: "/medecin/medical-information",
     name: "medecin-medical-information",
@@ -97,6 +54,45 @@ export default [
     component: () =>
       import("@/views/users-specific/medecin/staff-input/index.vue"),
   },
+  // MANAGE PATIENTS
+  {
+    path: "/medecin/manage-patients",
+    name: "medecin-manage-patients",
+    meta: {
+      title: "Manage Patients",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import(
+        "@/views/users-specific/medecin/managepatients-section/managepatients.vue"
+      ),
+  },
+  // CALENDAR
+  {
+    path: "/medecin/calendar",
+    name: "medecin-calendar",
+    meta: {
+      title: "Calendar",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import("@/views/users-specific/medecin/calendar-section/calendar.vue"),
+  },
+  // CHAT
+  {
+    path: "/medecin/chat",
+    name: "medecin-chat",
+    meta: {
+      title: "Chat",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import("@/views/users-specific/medecin/chat-section/chat.vue"),
+  },
+  // SETTINGS
   {
     path: "/medecin/settings",
     name: "medecin-profile-setting",
@@ -107,5 +103,28 @@ export default [
     },
     component: () =>
       import("@/views/users-specific/medecin/settings-section/setting.vue"),
+  },
+  // SUGGESTIONS
+  {
+    path: "/medecin/suggestions",
+    name: "medecin-suggestions",
+    meta: {
+      title: "Suggestions",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import("@/views/users-specific/medecin/forms-section/suggest.vue"),
+  },
+  {
+    path: "/medecin/bug-report",
+    name: "medecin-bugreport",
+    meta: {
+      title: "Bug Report",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import("@/views/users-specific/medecin/forms-section/bugreport.vue"),
   },
 ];

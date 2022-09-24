@@ -16,8 +16,14 @@ export default {
       </router-link>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link menu-link" to="/admin/seereports">
-        <em class="ri-user-settings-line"></em>
+      <router-link class="nav-link menu-link" to="/admin/manage-orgas">
+        <em class="ri-folder-user-line"></em>
+        <span style="padding: 7px" data-key="t-manageorgas">{{ $t("t-manageorgas") }}</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
+      <router-link class="nav-link menu-link" to="/admin/see-reports">
+        <em class="ri-folder-info-line"></em>
         <span style="padding: 7px" data-key="t-seereports">{{ $t("t-seereports") }}</span>
       </router-link>
     </li>

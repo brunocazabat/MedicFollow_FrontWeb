@@ -19,7 +19,7 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
 }
 
 export default [
-  // dashboard routes START
+  // HOME
   {
     path: "/confiance/dashboard",
     name: "confiance-dashboard",
@@ -31,6 +31,7 @@ export default [
     component: () =>
       import("@/views/users-specific/confiance/dashboard-section/index.vue"),
   },
+  // CALENDAR
   {
     path: "/confiance/calendar",
     name: "confiance-calendar",
@@ -42,6 +43,7 @@ export default [
     component: () =>
       import("@/views/users-specific/confiance/calendar-section/calendar.vue"),
   },
+  // CHAT
   {
     path: "/confiance/chat",
     name: "confiance-chat",
@@ -53,6 +55,19 @@ export default [
     component: () =>
       import("@/views/users-specific/confiance/chat-section/chat.vue"),
   },
+  // SETTINGS
+  {
+    path: "/confiance/settings",
+    name: "confiance-profile-setting",
+    meta: {
+      title: "Settings",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import("@/views/users-specific/confiance/settings-section/setting.vue"),
+  },
+  // SUGGESTIONS
   {
     path: "/confiance/suggestions",
     name: "confiance-suggestions",
@@ -74,16 +89,5 @@ export default [
     },
     component: () =>
       import("@/views/users-specific/confiance/forms-section/bugreport.vue"),
-  },
-  {
-    path: "/confiance/settings",
-    name: "confiance-profile-setting",
-    meta: {
-      title: "Settings",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/confiance/settings-section/setting.vue"),
   },
 ];

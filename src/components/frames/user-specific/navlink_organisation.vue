@@ -16,7 +16,7 @@ export default {
       </router-link>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link menu-link" to="/organisation/managedoctors">
+      <router-link class="nav-link menu-link" to="/organisation/manage-doctors">
         <em class="ri-folder-user-line"></em>
         <span style="padding: 7px" data-key="t-managedoctor">{{ $t("t-managedoctor") }}</span>
       </router-link>
