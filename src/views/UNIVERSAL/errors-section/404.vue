@@ -25,9 +25,10 @@ export default {
             <div class="text-center">
               <img src="@/assets/images/errors/error400-cover.png" alt="error img" class="img-fluid">
               <div class="mt-3">
-                <h3 class="text-uppercase text-white">404 - Sorry, Page not Found 😭</h3>
-                <p class="mb-4 text-white">The page you are looking for is not existing !</p>
-                <a @click="$router.go(-1)" class="btn btn-success"><em class="mdi mdi-home me-1"></em>Back to home</a>
+                <h3 class="text-uppercase text-white" data-key="t-notfound">404 - {{ $t("t-notfound") }} 😭</h3>
+                <p class="mb-4 text-white" data-key="t-notexisting">{{ $t("t-notexisting") }}</p>
+                <router-link to="/" class="btn btn-success" data-key="t-returnhome"><em class="mdi mdi-home me-1"></em>
+                  {{$t("t-returnhome") }}</router-link>
               </div>
             </div>
           </div><!-- end col -->
