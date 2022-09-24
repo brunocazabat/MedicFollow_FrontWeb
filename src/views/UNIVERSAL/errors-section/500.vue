@@ -27,10 +27,10 @@ export default {
               <h1 class="title text-white">500</h1>
             </div>
             <div>
-              <h4>Internal Server Error!</h4>
-              <p class="text-white w-75 mx-auto">Server Error 500. We're not exactly sure what happened, but our servers
-                say something is wrong.</p>
-              <a @click="$router.go(-1)" class="btn btn-success"><em class="mdi mdi-home me-1"></em>Back to home</a>
+              <h4 class="text-white" data-key="t-serverr">500 - {{ $t("t-serverr") }} 😭</h4>
+              <p class="text-white w-75 mx-auto" data-key="t-wrong">{{ $t("t-wrong") }}</p>
+              <router-link to="/" class="btn btn-success" data-key="t-returnhome"><em class="mdi mdi-home me-1"></em> {{
+              $t("t-returnhome") }}</router-link>
             </div>
           </div><!-- end col-->
           <translatemodule />
