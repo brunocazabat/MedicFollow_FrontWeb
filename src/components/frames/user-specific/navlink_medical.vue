@@ -10,7 +10,7 @@ export default {
       <span data-key="t-menu"> {{ $t("t-menu") }}</span>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link menu-link" to="/">
+      <router-link class="nav-link menu-link" to="/medical/dashboard">
         <em class="ri-home-8-line"></em>
         <span style="padding: 7px" data-key="t-home">{{ $t("t-home") }}</span>
       </router-link>
@@ -19,6 +19,12 @@ export default {
       <router-link class="nav-link menu-link" to="/medical/medical-information">
         <em class="ri-information-line"></em>
         <span style="padding: 7px" data-key="t-medicalinformation">{{ $t("t-medicalinformation") }}</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
+      <router-link class="nav-link menu-link" to="/medical/managepatients">
+        <em class="ri-folder-user-line"></em>
+        <span style="padding: 7px" data-key="t-managepatients">{{ $t("t-managepatients") }}</span>
       </router-link>
     </li>
     <li class="nav-item">
