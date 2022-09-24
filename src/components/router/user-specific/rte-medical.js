@@ -22,7 +22,7 @@ export default [
   // dashboard routes START
   {
     path: "/medical/dashboard",
-    name: "dashboard",
+    name: "medical-dashboard",
     meta: {
       title: "Dashboard",
       authRequired: true,
@@ -33,7 +33,7 @@ export default [
   },
   {
     path: "/medical/calendar",
-    name: "calendar",
+    name: "medical-calendar",
     meta: {
       title: "Calendar",
       authRequired: true,
@@ -44,7 +44,7 @@ export default [
   },
   {
     path: "/medical/chat",
-    name: "chat",
+    name: "medical-chat",
     meta: {
       title: "Chat",
       authRequired: true,
@@ -55,7 +55,7 @@ export default [
   },
   {
     path: "/medical/suggestions",
-    name: "suggestions",
+    name: "medical-suggestions",
     meta: {
       title: "Suggestions",
       authRequired: true,
@@ -66,7 +66,7 @@ export default [
   },
   {
     path: "/medical/bug-report",
-    name: "bugreport",
+    name: "medical-bugreport",
     meta: {
       title: "Bug Report",
       authRequired: true,
@@ -77,7 +77,7 @@ export default [
   },
   {
     path: "/medical/medical-information",
-    name: "medical-information",
+    name: "medical-medical-information",
     meta: {
       title: "Staff Input",
       authRequired: true,
@@ -88,7 +88,7 @@ export default [
   },
   {
     path: "/medical/staff-input",
-    name: "staff-input",
+    name: "medical-staff-input",
     meta: {
       title: "Medical Information",
       authRequired: true,
@@ -99,7 +99,7 @@ export default [
   },
   {
     path: "/medical/settings",
-    name: "profile-setting",
+    name: "medical-profile-setting",
     meta: {
       title: "Settings",
       authRequired: true,

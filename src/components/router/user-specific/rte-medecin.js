@@ -22,7 +22,7 @@ export default [
   // dashboard routes START
   {
     path: "/medecin/dashboard",
-    name: "dashboard",
+    name: "medecin-dashboard",
     meta: {
       title: "Dashboard",
       authRequired: true,
@@ -33,7 +33,7 @@ export default [
   },
   {
     path: "/medecin/calendar",
-    name: "calendar",
+    name: "medecin-calendar",
     meta: {
       title: "Calendar",
       authRequired: true,
@@ -44,7 +44,7 @@ export default [
   },
   {
     path: "/medecin/chat",
-    name: "chat",
+    name: "medecin-chat",
     meta: {
       title: "Chat",
       authRequired: true,
@@ -55,7 +55,7 @@ export default [
   },
   {
     path: "/medecin/suggestions",
-    name: "suggestions",
+    name: "medecin-suggestions",
     meta: {
       title: "Suggestions",
       authRequired: true,
@@ -66,7 +66,7 @@ export default [
   },
   {
     path: "/medecin/bug-report",
-    name: "bugreport",
+    name: "medecin-bugreport",
     meta: {
       title: "Bug Report",
       authRequired: true,
@@ -77,7 +77,7 @@ export default [
   },
   {
     path: "/medecin/medical-information",
-    name: "medical-information",
+    name: "medecin-medical-information",
     meta: {
       title: "Staff Input",
       authRequired: true,
@@ -88,7 +88,7 @@ export default [
   },
   {
     path: "/medecin/staff-input",
-    name: "staff-input",
+    name: "medecin-staff-input",
     meta: {
       title: "Medical Information",
       authRequired: true,
@@ -99,7 +99,7 @@ export default [
   },
   {
     path: "/medecin/settings",
-    name: "profile-setting",
+    name: "medecin-profile-setting",
     meta: {
       title: "Settings",
       authRequired: true,

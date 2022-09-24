@@ -22,7 +22,7 @@ export default [
   // dashboard routes START
   {
     path: "/proche/dashboard",
-    name: "dashboard",
+    name: "proche-dashboard",
     meta: {
       title: "Dashboard",
       authRequired: true,
@@ -33,7 +33,7 @@ export default [
   },
   {
     path: "/proche/calendar",
-    name: "calendar",
+    name: "proche-calendar",
     meta: {
       title: "Calendar",
       authRequired: true,
@@ -43,19 +43,8 @@ export default [
       import("@/views/users-specific/proche/calendar-section/calendar.vue"),
   },
   {
-    path: "/proche/chat",
-    name: "chat",
-    meta: {
-      title: "Chat",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/proche/chat-section/chat.vue"),
-  },
-  {
     path: "/proche/suggestions",
-    name: "suggestions",
+    name: "proche-suggestions",
     meta: {
       title: "Suggestions",
       authRequired: true,
@@ -66,7 +55,7 @@ export default [
   },
   {
     path: "/proche/bug-report",
-    name: "bugreport",
+    name: "proche-bugreport",
     meta: {
       title: "Bug Report",
       authRequired: true,
@@ -76,30 +65,8 @@ export default [
       import("@/views/users-specific/proche/forms-section/bugreport.vue"),
   },
   {
-    path: "/proche/medical-information",
-    name: "medical-information",
-    meta: {
-      title: "Staff Input",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/proche/medical-information/index.vue"),
-  },
-  {
-    path: "/proche/staff-input",
-    name: "staff-input",
-    meta: {
-      title: "Medical Information",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/proche/staff-input/index.vue"),
-  },
-  {
     path: "/proche/settings",
-    name: "profile-setting",
+    name: "proche-profile-setting",
     meta: {
       title: "Settings",
       authRequired: true,

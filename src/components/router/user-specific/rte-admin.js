@@ -21,7 +21,7 @@ export default [
   // dashboard routes START
   {
     path: "/admin/dashboard",
-    name: "admindashboard",
+    name: "admin-dashboard",
     meta: {
       title: "Dashboard",
       authRequired: true,
@@ -32,7 +32,7 @@ export default [
   },
   {
     path: "/admin/settings",
-    name: "adminprofile-setting",
+    name: "admin-profile-setting",
     meta: {
       title: "Settings",
       authRequired: true,

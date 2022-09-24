@@ -22,7 +22,7 @@ export default [
   // dashboard routes START
   {
     path: "/confiance/dashboard",
-    name: "dashboard",
+    name: "confiance-dashboard",
     meta: {
       title: "Dashboard",
       authRequired: true,
@@ -33,7 +33,7 @@ export default [
   },
   {
     path: "/confiance/calendar",
-    name: "calendar",
+    name: "confiance-calendar",
     meta: {
       title: "Calendar",
       authRequired: true,
@@ -44,7 +44,7 @@ export default [
   },
   {
     path: "/confiance/chat",
-    name: "chat",
+    name: "confiance-chat",
     meta: {
       title: "Chat",
       authRequired: true,
@@ -55,7 +55,7 @@ export default [
   },
   {
     path: "/confiance/suggestions",
-    name: "suggestions",
+    name: "confiance-suggestions",
     meta: {
       title: "Suggestions",
       authRequired: true,
@@ -66,7 +66,7 @@ export default [
   },
   {
     path: "/confiance/bug-report",
-    name: "bugreport",
+    name: "confiance-bugreport",
     meta: {
       title: "Bug Report",
       authRequired: true,
@@ -76,30 +76,8 @@ export default [
       import("@/views/users-specific/confiance/forms-section/bugreport.vue"),
   },
   {
-    path: "/confiance/medical-information",
-    name: "medical-information",
-    meta: {
-      title: "Staff Input",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/confiance/medical-information/index.vue"),
-  },
-  {
-    path: "/confiance/staff-input",
-    name: "staff-input",
-    meta: {
-      title: "Medical Information",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/confiance/staff-input/index.vue"),
-  },
-  {
     path: "/confiance/settings",
-    name: "profile-setting",
+    name: "confiance-profile-setting",
     meta: {
       title: "Settings",
       authRequired: true,

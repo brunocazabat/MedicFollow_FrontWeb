@@ -22,7 +22,7 @@ export default [
   // dashboard routes START
   {
     path: "/organisation/dashboard",
-    name: "organisationdashboard",
+    name: "organisation-dashboard",
     meta: {
       title: "Dashboard",
       authRequired: true,
@@ -32,32 +32,8 @@ export default [
       import("@/views/users-specific/organisation/dashboard-section/index.vue"),
   },
   {
-    path: "/organisation/calendar",
-    name: "organisationcalendar",
-    meta: {
-      title: "Calendar",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import(
-        "@/views/users-specific/organisation/calendar-section/calendar.vue"
-      ),
-  },
-  {
-    path: "/organisation/chat",
-    name: "organisationchat",
-    meta: {
-      title: "Chat",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/organisation/chat-section/chat.vue"),
-  },
-  {
     path: "/organisation/suggestions",
-    name: "organisationsuggestions",
+    name: "organisation-suggestions",
     meta: {
       title: "Suggestions",
       authRequired: true,
@@ -68,7 +44,7 @@ export default [
   },
   {
     path: "/organisation/bug-report",
-    name: "organisationbugreport",
+    name: "organisation-bugreport",
     meta: {
       title: "Bug Report",
       authRequired: true,
@@ -78,32 +54,8 @@ export default [
       import("@/views/users-specific/organisation/forms-section/bugreport.vue"),
   },
   {
-    path: "/organisation/medical-information",
-    name: "organisationmedical-information",
-    meta: {
-      title: "Staff Input",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import(
-        "@/views/users-specific/organisation/medical-information/index.vue"
-      ),
-  },
-  {
-    path: "/organisation/staff-input",
-    name: "organisationstaff-input",
-    meta: {
-      title: "Medical Information",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/organisation/staff-input/index.vue"),
-  },
-  {
     path: "/organisation/settings",
-    name: "organisationprofile-setting",
+    name: "organisation-profile-setting",
     meta: {
       title: "Settings",
       authRequired: true,

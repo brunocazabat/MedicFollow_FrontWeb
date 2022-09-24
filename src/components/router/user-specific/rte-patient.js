@@ -22,7 +22,7 @@ export default [
   // dashboard routes START
   {
     path: "/patient/dashboard",
-    name: "dashboard",
+    name: "patient-dashboard",
     meta: {
       title: "Dashboard",
       authRequired: true,
@@ -33,7 +33,7 @@ export default [
   },
   {
     path: "/patient/calendar",
-    name: "calendar",
+    name: "patient-calendar",
     meta: {
       title: "Calendar",
       authRequired: true,
@@ -44,7 +44,7 @@ export default [
   },
   {
     path: "/patient/chat",
-    name: "chat",
+    name: "patient-chat",
     meta: {
       title: "Chat",
       authRequired: true,
@@ -55,7 +55,7 @@ export default [
   },
   {
     path: "/patient/suggestions",
-    name: "suggestions",
+    name: "patient-suggestions",
     meta: {
       title: "Suggestions",
       authRequired: true,
@@ -66,7 +66,7 @@ export default [
   },
   {
     path: "/patient/bug-report",
-    name: "bugreport",
+    name: "patient-bugreport",
     meta: {
       title: "Bug Report",
       authRequired: true,
@@ -76,30 +76,8 @@ export default [
       import("@/views/users-specific/patient/forms-section/bugreport.vue"),
   },
   {
-    path: "/patient/medical-information",
-    name: "medical-information",
-    meta: {
-      title: "Staff Input",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/patient/medical-information/index.vue"),
-  },
-  {
-    path: "/patient/staff-input",
-    name: "staff-input",
-    meta: {
-      title: "Medical Information",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/patient/staff-input/index.vue"),
-  },
-  {
     path: "/patient/settings",
-    name: "profile-setting",
+    name: "patient-profile-setting",
     meta: {
       title: "Settings",
       authRequired: true,
