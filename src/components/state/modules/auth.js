@@ -90,15 +90,15 @@ export const actions = {
     }
   },
 
-  async setLogOut({ commit }) {
-    commit("SET_TOKEN", null);
-    commit("SET_UUID", null);
-    commit("SET_EMAIL", null);
-    commit("SET_FIRSTNAME", null);
-    commit("SET_LASTNAME", null);
-    commit("SET_ROLE", null);
-    commit("SET_UI", null);
-    commit("SET_HEADERS", null);
+  async setLogOut({ dispatch }) {
+    dispatch("setToken", null);
+    dispatch("setUuid", null);
+    dispatch("setEmail", null);
+    dispatch("setFirstName", null);
+    dispatch("setLastName", null);
+    dispatch("setRole", null);
+    dispatch("setUI", null);
+    dispatch("setHeaders", null);
     window.sessionStorage.removeItem("currentUserTOKEN");
     window.sessionStorage.removeItem("currentUserUUID");
     window.sessionStorage.removeItem("currentUserEMAIL");
