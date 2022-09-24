@@ -1,8 +1,4 @@
 <script>
-import SwiperCore, { Thumbs, Navigation, Pagination } from 'swiper'
-import 'swiper/swiper-bundle.css'
-SwiperCore.use([Thumbs, Navigation, Pagination])
-
 // IMPORT SECTIONS VITRINE
 // NAVBAR
 import navbar from "./components/navbar.vue";
