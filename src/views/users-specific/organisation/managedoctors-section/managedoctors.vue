@@ -12,6 +12,14 @@ export default {
   <Layout>
     <div>
       managedoctors
+      <br />
+      - Liste des docteurs
+      <br />
+      - Gros bouton pour ajouter un docteur
+      <br />
+      - Gros bouton pour modifier un docteur après avoir cliqué sur un docteur
+      <br />
+      - Gros bouton pour supprimer un docteur après avoir cliqué sur un docteur
     </div>
   </Layout>
 </template>
