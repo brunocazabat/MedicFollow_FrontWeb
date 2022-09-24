@@ -1,35 +1,25 @@
 <script>
 import Layout from "@/components/layouts/main.vue";
-import Widgets from "@/components/dashboard-components/widget.vue";
-import Schedules from "@/components/dashboard-components/schedule.vue";
-import Chat from "@/components/dashboard-components/chat.vue";
 
 export default {
   components: {
     Layout,
-    Widgets,
-    Schedules,
-    Chat
   },
 }
 </script>
 
 <template>
   <Layout>
-    <div class="row project-wrapper">
-      <div class="row">
-        <div class="col-xxl-12">
-          <Widgets />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xxl-6">
-          <Chat />
-        </div>
-        <div class="col-xxl-6">
-          <Schedules />
-        </div>
-      </div>
+    <div>
+      Medecin Dashboard Section
+      <br />
+      - Gros bouton pour ajouter un patient
+      <br />
+      - Gros bouton pour ajouter un résumé à un patient après une visite
+      <br />
+      - Gros bouton pour ajouter un rendez-vous
+      <br />
+      - Gros bouton pour rediriger vers la page de gestion des patients
     </div>
   </Layout>
 </template>
