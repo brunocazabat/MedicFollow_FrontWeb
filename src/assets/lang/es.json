@@ -185,5 +185,6 @@
   "t-maintainance": "El sitio está en mantenimiento.",
   "t-seereports": "Ver todos los informes/sugerencias",
   "t-managepatients": "Administrar pacientes",
-  "t-managedoctor": "Administrar médicos"
+  "t-managedoctor": "Administrar médicos",
+  "t-manageorgas": "Administrar organizaciones"
 }

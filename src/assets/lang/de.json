@@ -185,5 +185,6 @@
   "t-maintainance": "Website wird gewartet.",
   "t-seereports": "Alle Berichte/Vorschläge anzeigen",
   "t-managepatients": "Patienten verwalten",
-  "t-managedoctor": "Ärzte verwalten"
+  "t-managedoctor": "Ärzte verwalten",
+  "t-manageorgas": "Organisationen verwalten"
 }
