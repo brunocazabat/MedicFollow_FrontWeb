@@ -2703,10 +2703,10 @@
   resolved "https://registry.yarnpkg.com/@vue/web-component-wrapper/-/web-component-wrapper-1.3.0.tgz#b6b40a7625429d2bd7c2281ddba601ed05dc7f1a"
   integrity sha512-Iu8Tbg3f+emIIMmI2ycSI8QcEuAUgPTgHwesDU1eKMLE4YC/c/sFbGc70QgMq31ijRftV0R7vCm9co6rldCeOA==
 
-"@vueform/multiselect@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.npmjs.org/@vueform/multiselect/-/multiselect-2.3.1.tgz"
-  integrity sha512-JyOfVOanRZHDWzdgrbO05KvSu4WOH4aPPa2sajMxu4C4QjZp2NeezW6Bdt588IuFfVn34n0s0w8w/bxtuH4KRQ==
+"@vueform/multiselect@^2.5.3":
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/@vueform/multiselect/-/multiselect-2.5.3.tgz#ad091efcd974396551eaa529b541c3334ef8d574"
+  integrity sha512-s26g/4Fsv5LUaNODtskpvJygV6LGp3b08jFMyxIPYy0Di0VUXza+bN6DmNZmzrZAwp02l4sGAFynlayODwDauA==
 
 "@vueform/slider@^2.0.8":
   version "2.0.8"
