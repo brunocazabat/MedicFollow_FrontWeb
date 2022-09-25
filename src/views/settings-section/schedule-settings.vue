@@ -3,9 +3,12 @@ import Layout from "@/components/layouts/main.vue";
 import appConfig from "@/../app.config";
 import footermodule from "@/components/login-components/footer-module.vue";
 
+import ScheduleModule from "./scheduleModule.vue";
+import { createElement } from "preact";
+
 export default {
   page: {
-    title: "Contact",
+    title: "Schedule",
     meta: [{ name: "description", content: appConfig.description }],
   },
   data() {
@@ -31,20 +34,104 @@ export default {
       showSaturday: false,
       showSunday: false,
       picked: 'NO',
+      message: "oskour",
+      mondayNbr: 1,
+      tuesdayNbr: 1,
+      wednsedayNbr: 1,
+      thursdayNbr: 1,
+      fridayNbr: 1,
+      saturdayNbr: 1,
+      sundayNbr: 1,
     };
   },
   components: {
     Layout,
     footermodule,
+    ScheduleModule,
   },
-  methods: {},
+  methods: {
+    addScheduleNbr(dayOfTheWeek) {
+      if (dayOfTheWeek === "monday") {
+        this.mondayNbr += 1
+      } else if (dayOfTheWeek === "tuesday") {
+        this.tuesdayNbr += 1
+      } else if (dayOfTheWeek === "wednesday") {
+        this.wednesdayNbr += 1
+      } else if (dayOfTheWeek === "thursday") {
+        this.thursdayNbr += 1
+      } else if (dayOfTheWeek === "friday") {
+        this.fridayNbr += 1
+      } else if (dayOfTheWeek === "saturday") {
+        this.saturdayNbr += 1
+      } else if (dayOfTheWeek === "sunday") {
+        this.sundayNbr += 1
+      }
+    },
+    removeScheduleNbr(dayOfTheWeek) {
+      if (dayOfTheWeek === "monday") {
+        this.mondayNbr -= 1
+      } else if (dayOfTheWeek === "tuesday") {
+        this.tuesdayNbr -= 1
+      } else if (dayOfTheWeek === "wednesday") {
+        this.wednesdayNbr -= 1
+      } else if (dayOfTheWeek === "thursday") {
+        this.thursdayNbr -= 1
+      } else if (dayOfTheWeek === "friday") {
+        this.fridayNbr -= 1
+      } else if (dayOfTheWeek === "saturday") {
+        this.saturdayNbr -= 1
+      } else if (dayOfTheWeek === "sunday") {
+        this.sundayNbr -= 1
+      }
+    },
+    addNewSchedule() {
+      createElement(
+        // {String | Object | Function}
+        // An HTML tag name, component options, or function
+        // returning one of these. Required.
+        'div',
+
+        // {Object}
+        // A data object corresponding to the attributes
+        // you would use in a template. Optional.
+        {
+          // (see details in the next section below)
+        },
+
+        // {String | Array}
+        // Children VNodes, built using `createElement()`,
+        // or using strings to get 'text VNodes'. Optional.
+        [
+          'Some text comes first.',
+          createElement('h1', 'A headline'),
+
+        ]
+      )
+    }
+  },
+  render: function (createElement) {
+    return createElement('h1', "A headline")
+  }
 };
 
 </script>
+
   
 <template>
   <Layout>
     <h1 class="p-1 text-primary"><strong>SCHEDULE SETTINGS</strong></h1>
+
+    <!-- <h1>
+      <a name="hello-world" href="#hello-world">
+        Hello world!
+      </a>
+    </h1>
+
+    <anchored-heading :level="1">Hello world!</anchored-heading>
+
+    <p>{{message}}</p>
+    <button v-on:click="addNewSchedule()" class="btn btn-primary">Add a new schedule</button> -->
+
 
     <!-- TRUE/FALSE NEW MEETING -->
     <div id="yesnoDiv" class="p-3 card-body">
@@ -81,7 +168,6 @@ export default {
         <div class="form-check col-lg-1">
           <input class="form-check-input" type="checkbox" id="mondayGridCheck" v-model="showMonday" />
           <label class="form-check-label" for="mondayGridCheck">MONDAY</label>
-          <!-- <p>debug: {{showMonday}}</p> -->
         </div>
 
         <!-- Tuesday -->
@@ -126,250 +212,29 @@ export default {
     <!-- SCHEDULE PICKER -->
     <div id="schedulePickerDiv" class="row p-2" v-if="picked === 'YES'">
       <div class="p-2" v-if="showMonday">
+
+
         <label for="mondayDiv" class="form-label mb-4"><strong>Monday Schedule</strong></label>
-        <div id="mondayDiv" class="row">
-          <p class="mb-0">Choose the first schedule</p>
-          <div class="col-lg-1 p-3">
-            <select id="mondaySchedule1" class="form-select">
-              <option value="00">00:00</option>
-              <option value="01">01:00</option>
-              <option value="02">02:00</option>
-              <option value="03">03:00</option>
-              <option value="04">04:00</option>
-              <option value="05">05:00</option>
-              <option value="06" selected>06:00</option>
-              <option value="07">07:00</option>
-              <option value="08">08:00</option>
-              <option value="09">09:00</option>
-              <option value="10">10:00</option>
-              <option value="11">11:00</option>
-              <option value="12">12:00</option>
-              <option value="13">13:00</option>
-              <option value="14">14:00</option>
-              <option value="15">15:00</option>
-              <option value="16">16:00</option>
-              <option value="17">17:00</option>
-              <option value="18">18:00</option>
-              <option value="19">19:00</option>
-              <option value="20">20:00</option>
-              <option value="21">21:00</option>
-              <option value="22">22:00</option>
-              <option value="23">23:00</option>
-            </select>
-          </div>
 
-          <div class="col-lg-1 p-3">
-            <select id="mondaySchedule2" class="form-select">
-              <option value="00">00:00</option>
-              <option value="01">01:00</option>
-              <option value="02">02:00</option>
-              <option value="03">03:00</option>
-              <option value="04">04:00</option>
-              <option value="05">05:00</option>
-              <option value="06">06:00</option>
-              <option value="07">07:00</option>
-              <option value="08" selected>08:00</option>
-              <option value="09">09:00</option>
-              <option value="10">10:00</option>
-              <option value="11">11:00</option>
-              <option value="12">12:00</option>
-              <option value="13">13:00</option>
-              <option value="14">14:00</option>
-              <option value="15">15:00</option>
-              <option value="16">16:00</option>
-              <option value="17">17:00</option>
-              <option value="18">18:00</option>
-              <option value="19">19:00</option>
-              <option value="20">20:00</option>
-              <option value="21">21:00</option>
-              <option value="22">22:00</option>
-              <option value="23">23:00</option>
-            </select>
-          </div>
-        </div>
 
-        <div class="row">
-          <p class="mb-0">Choose the second schedule</p>
-          <div class="col-lg-1 p-3">
-            <select id="mondaySchedule3" class="form-select">
-              <option value="00">00:00</option>
-              <option value="01">01:00</option>
-              <option value="02">02:00</option>
-              <option value="03">03:00</option>
-              <option value="04">04:00</option>
-              <option value="05">05:00</option>
-              <option value="06">06:00</option>
-              <option value="07">07:00</option>
-              <option value="08">08:00</option>
-              <option value="09">09:00</option>
-              <option value="10" selected>10:00</option>
-              <option value="11">11:00</option>
-              <option value="12">12:00</option>
-              <option value="13">13:00</option>
-              <option value="14">14:00</option>
-              <option value="15">15:00</option>
-              <option value="16">16:00</option>
-              <option value="17">17:00</option>
-              <option value="18">18:00</option>
-              <option value="19">19:00</option>
-              <option value="20">20:00</option>
-              <option value="21">21:00</option>
-              <option value="22">22:00</option>
-              <option value="23">23:00</option>
-            </select>
-          </div>
+        <button class="btn btn-secondary" v-on:click="addScheduleNbr('monday')">Add</button>
+        <button class="btn btn-secondary" v-on:click="removeScheduleNbr('monday')">Remove</button>
 
-          <div class="col-lg-1 p-3">
-            <select id="mondaySchedule4" class="form-select">
-              <option value="00">00:00</option>
-              <option value="01">01:00</option>
-              <option value="02">02:00</option>
-              <option value="03">03:00</option>
-              <option value="04">04:00</option>
-              <option value="05">05:00</option>
-              <option value="06">06:00</option>
-              <option value="07">07:00</option>
-              <option value="08">08:00</option>
-              <option value="09">09:00</option>
-              <option value="10">10:00</option>
-              <option value="11">11:00</option>
-              <option value="12" selected>12:00</option>
-              <option value="13">13:00</option>
-              <option value="14">14:00</option>
-              <option value="15">15:00</option>
-              <option value="16">16:00</option>
-              <option value="17">17:00</option>
-              <option value="18">18:00</option>
-              <option value="19">19:00</option>
-              <option value="20">20:00</option>
-              <option value="21">21:00</option>
-              <option value="22">22:00</option>
-              <option value="23">23:00</option>
-            </select>
-          </div>
-        </div>
 
-        <div class="row">
-          <p class="mb-0">Choose the third schedule</p>
-          <div class="col-lg-1 p-3">
-            <select id="mondaySchedule4" class="form-select">
-              <option value="00">00:00</option>
-              <option value="01">01:00</option>
-              <option value="02">02:00</option>
-              <option value="03">03:00</option>
-              <option value="04">04:00</option>
-              <option value="05">05:00</option>
-              <option value="06">06:00</option>
-              <option value="07">07:00</option>
-              <option value="08">08:00</option>
-              <option value="09">09:00</option>
-              <option value="10">10:00</option>
-              <option value="11">11:00</option>
-              <option value="12">12:00</option>
-              <option value="13">13:00</option>
-              <option value="14" selected>14:00</option>
-              <option value="15">15:00</option>
-              <option value="16">16:00</option>
-              <option value="17">17:00</option>
-              <option value="18">18:00</option>
-              <option value="19">19:00</option>
-              <option value="20">20:00</option>
-              <option value="21">21:00</option>
-              <option value="22">22:00</option>
-              <option value="23">23:00</option>
-            </select>
-          </div>
+        <ScheduleModule title="Choose the first schedule" />
 
-          <div class="col-lg-1 p-3">
-            <select id="mondaySchedule5" class="form-select">
-              <option value="00">00:00</option>
-              <option value="01">01:00</option>
-              <option value="02">02:00</option>
-              <option value="03">03:00</option>
-              <option value="04">04:00</option>
-              <option value="05">05:00</option>
-              <option value="06">06:00</option>
-              <option value="07">07:00</option>
-              <option value="08">08:00</option>
-              <option value="09">09:00</option>
-              <option value="10">10:00</option>
-              <option value="11">11:00</option>
-              <option value="12">12:00</option>
-              <option value="13">13:00</option>
-              <option value="14">14:00</option>
-              <option value="15">15:00</option>
-              <option value="16" selected>16:00</option>
-              <option value="17">17:00</option>
-              <option value="18">18:00</option>
-              <option value="19">19:00</option>
-              <option value="20">20:00</option>
-              <option value="21">21:00</option>
-              <option value="22">22:00</option>
-              <option value="23">23:00</option>
-            </select>
-          </div>
-        </div>
+        <ScheduleModule v-if="this.mondayNbr > 1" title="Choose the second schedule" />
 
-        <div class="row">
-          <p class="mb-0">Choose the fourth schedule</p>
-          <div class="col-lg-1 p-3">
-            <select id="mondaySchedule6" class="form-select">
-              <option value="00">00:00</option>
-              <option value="01">01:00</option>
-              <option value="02">02:00</option>
-              <option value="03">03:00</option>
-              <option value="04">04:00</option>
-              <option value="05">05:00</option>
-              <option value="06">06:00</option>
-              <option value="07">07:00</option>
-              <option value="08">08:00</option>
-              <option value="09">09:00</option>
-              <option value="10">10:00</option>
-              <option value="11">11:00</option>
-              <option value="12">12:00</option>
-              <option value="13">13:00</option>
-              <option value="14">14:00</option>
-              <option value="15">15:00</option>
-              <option value="16">16:00</option>
-              <option value="17">17:00</option>
-              <option value="18" selected>18:00</option>
-              <option value="19">19:00</option>
-              <option value="20">20:00</option>
-              <option value="21">21:00</option>
-              <option value="22">22:00</option>
-              <option value="23">23:00</option>
-            </select>
-          </div>
 
-          <div class="col-lg-1 p-3">
-            <select id="mondaySchedule7" class="form-select">
-              <option value="00">00:00</option>
-              <option value="01">01:00</option>
-              <option value="02">02:00</option>
-              <option value="03">03:00</option>
-              <option value="04">04:00</option>
-              <option value="05">05:00</option>
-              <option value="06">06:00</option>
-              <option value="07">07:00</option>
-              <option value="08">08:00</option>
-              <option value="09">09:00</option>
-              <option value="10">10:00</option>
-              <option value="11">11:00</option>
-              <option value="12">12:00</option>
-              <option value="13">13:00</option>
-              <option value="14">14:00</option>
-              <option value="15">15:00</option>
-              <option value="16">16:00</option>
-              <option value="17">17:00</option>
-              <option value="18">18:00</option>
-              <option value="19">19:00</option>
-              <option value="20" selected>20:00</option>
-              <option value="21">21:00</option>
-              <option value="22">22:00</option>
-              <option value="23">23:00</option>
-            </select>
-          </div>
-        </div>
+        <ScheduleModule v-if="this.mondayNbr > 2" title="Choose the third schedule" />
+
+
+        <ScheduleModule v-if="this.mondayNbr > 3" title="Choose the fourth schedule" />
+
+
+        <ScheduleModule v-if="this.mondayNbr > 4" title="Choose the fifth schedule" />
+
+
       </div>
 
       <div class="p-2" v-if="showTuesday">
