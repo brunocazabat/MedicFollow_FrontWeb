@@ -1,24 +1,6 @@
 <script>
-import SwiperCore, { Thumbs } from "swiper";
-import "swiper/swiper-bundle.css";
-SwiperCore.use([Thumbs]);
 export default {
-  name: "timeline2",
-  data() {
-    return {
-      title: "Timeline",
-      items: [
-        {
-          text: "Pages",
-          href: "/",
-        },
-        {
-          text: "Timeline",
-          active: true,
-        },
-      ],
-    };
-  },
+  name: "timeline",
 };
 </script>
   
