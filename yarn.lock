@@ -1776,10 +1776,10 @@
     "@intlify/core-base" "9.2.0-beta.30"
     "@intlify/shared" "9.2.0-beta.30"
 
-"@j-t-mcc/vue3-chartjs@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/@j-t-mcc/vue3-chartjs/-/vue3-chartjs-1.2.0.tgz"
-  integrity sha512-YFf5XpIXt+qPqW0S/RetEV/Dic7DvPoz+2BMrswDvXe4n0q83aanf6Lo0ae5wvwBwBzDXRQ2FSs8x9oecxQkeA==
+"@j-t-mcc/vue3-chartjs@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@j-t-mcc/vue3-chartjs/-/vue3-chartjs-1.3.0.tgz#508ff3fd31d317f4de56b379e0b1c31b26224a09"
+  integrity sha512-0x6TJZlF+aDQENqzcBMS8pobzhzbJ1GTJJqouNh5Acfx1Dv/dn7ODY+NGDNjh7YdNxb8ZUxR7jCbdrtT/fE98g==
 
 "@jridgewell/gen-mapping@^0.3.0":
   version "0.3.2"
