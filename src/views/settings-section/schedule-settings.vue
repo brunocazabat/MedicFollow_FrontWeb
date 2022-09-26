@@ -225,12 +225,9 @@ export default {
 
         <ScheduleModule v-if="this.mondayNbr > 1" title="Choose the second schedule" />
 
-
         <ScheduleModule v-if="this.mondayNbr > 2" title="Choose the third schedule" />
 
-
         <ScheduleModule v-if="this.mondayNbr > 3" title="Choose the fourth schedule" />
-
 
         <ScheduleModule v-if="this.mondayNbr > 4" title="Choose the fifth schedule" />
 
