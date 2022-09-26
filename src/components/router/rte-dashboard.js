@@ -102,14 +102,4 @@ export default [
     },
     component: () => import("@/views/settings-section/schedule-settings.vue"),
   },
-  {
-    path: "/testing",
-    name: "testing",
-    meta: {
-      title: "testing",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () => import("@/views/settings-section/testing-file.vue"),
-  },
 ];
