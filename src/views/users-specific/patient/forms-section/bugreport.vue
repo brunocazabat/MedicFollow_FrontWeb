@@ -7,21 +7,6 @@ import BugReportModule from "./bugReportModules.vue"
 import ContactUsModule from "./contactUsModule.vue"
 
 export default {
-  data() {
-    return {
-      title: "Contact",
-      items: [
-        {
-          text: "Forms",
-          href: "/",
-        },
-        {
-          text: "Contact",
-          active: true,
-        },
-      ],
-    };
-  },
   components: {
     Layout,
     footermodule,
@@ -29,7 +14,6 @@ export default {
     BugReportModule,
     ContactUsModule,
   },
-  methods: {},
 };
 </script>
 

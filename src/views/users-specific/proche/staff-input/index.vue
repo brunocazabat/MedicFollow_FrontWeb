@@ -34,17 +34,6 @@ export default {
   },
   data() {
     return {
-      title: "Medical Visit Summary",
-      items: [
-        {
-          text: "Staff Input",
-          href: "/",
-        },
-        {
-          text: "Medical Visit Summary",
-          active: true,
-        },
-      ],
       value: null,
       value1: null,
       value5: null,

@@ -9,17 +9,7 @@ import particlesmodule from "@/components/login-components/particles-module.vue"
 export default {
   data() {
     return {
-      title: 'Setting',
-      items: [
-        {
-          text: 'MedicFollow',
-          href: '/'
-        },
-        {
-          text: 'Setting',
-          active: true
-        }
-      ],
+
       value: ['javascript'],
       date: null
     }

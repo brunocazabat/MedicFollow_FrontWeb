@@ -37,17 +37,6 @@ export default {
   },
   data() {
     return {
-      title: "Feedback",
-      items: [
-        {
-          text: "Forms",
-          href: "/",
-        },
-        {
-          text: "Feedback",
-          active: true,
-        },
-      ],
       value: null,
       value1: null,
       value5: null,
