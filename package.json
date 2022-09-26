@@ -52,7 +52,7 @@
     "npm-check": "^6.0.1",
     "particles.vue3": "^2.3.2",
     "prismjs": "^1.29.0",
-    "sass-loader": "^10.3.1",
+    "sass-loader": "^13.0.2",
     "simplebar": "^5.3.8",
     "simplebar-vue3": "^0.2.0",
     "sweetalert2": "^11.4.33",
@@ -87,7 +87,7 @@
     "@vue/cli-plugin-eslint": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
     "@vue/compiler-sfc": "^3.2.39",
-    "eslint": "^7.32.0",
+    "eslint": "^8.24.0",
     "eslint-plugin-vue": "^9.5.1"
   },
   "eslintConfig": {
