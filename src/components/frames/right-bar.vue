@@ -1,5 +1,4 @@
 <script>
-localStorage.setItem("rightbar_isopen", true);
 import { layoutMethods, layoutComputed } from "@/components/state/helpers";
 
 /**
@@ -18,12 +17,6 @@ export default {
         return !event.target.classList.contains("toggle-right");
     },
   },
-  mounted() {
-    let rightbar_isopen = localStorage.getItem('rightbar_isopen')
-    if (rightbar_isopen == 'true') {
-      localStorage.setItem("rightbar_isopen", false);
-    }
-  },
   computed: {
     ...layoutComputed,
     layoutType: {
@@ -31,7 +24,6 @@ export default {
         return this.$store ? this.$store.state.layout.layoutType : {} || {};
       },
       set(layout) {
-        localStorage.setItem("rightbar_isopen", true);
         this.changeLayoutType({
           layoutType: layout,
         });
@@ -282,20 +274,17 @@ export default {
     <vue-cookie-accept-decline :debug="false" :disableDecline="false" :showPostponeButton="false" elementId="myPanel1"
       position="bottom" ref="myPanel1" transitionName="slideFromBottom" type="floating">
 
-      <!-- Optional -->
-      <template #message data-key="t-cookies-content">
+      <template data-key="t-cookies-content">
         {{ $t("t-cookies-content") }}
         <a href="https://www.medicfollow.fr/fr/usage.html" target="_blank" rel="noreferrer noopener"
           data-key="t-cookies-infos">{{
-              $t("t-cookies-infos")
+          $t("t-cookies-infos")
           }}</a>
       </template>
 
-      <!-- Optional -->
-      <template #declineContent data-key="t-cookies-decline">{{ $t("t-cookies-decline") }}</template>
+      <template data-key="t-cookies-decline">{{ $t("t-cookies-decline") }}</template>
 
-      <!-- Optional -->
-      <template #acceptContent data-key="t-cookies-accept">{{ $t("t-cookies-accept") }}</template>
+      <template data-key="t-cookies-accept">{{ $t("t-cookies-accept") }}</template>
     </vue-cookie-accept-decline>
   </div>
 </template>

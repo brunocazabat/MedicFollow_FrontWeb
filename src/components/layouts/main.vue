@@ -4,7 +4,7 @@ import { SimpleBar } from "simplebar-vue3";
 import { layoutComputed } from "@/components/state/helpers";
 
 import NavBar from "@/components/frames/nav-bar";
-import Menu from "@/components/frames/menu.vue";
+import MenuMedicFollow from "@/components/frames/menu.vue";
 import RightBar from "@/components/frames/right-bar";
 import PageHeader from "@/components/frames/page-header.vue";
 import footermodule from "@/components/login-components/footer-module.vue";
@@ -14,7 +14,7 @@ localStorage.setItem('hoverd', false);
  * Vertical layout
  */
 export default {
-  components: { NavBar, RightBar, footermodule, SimpleBar, Menu, PageHeader },
+  components: { NavBar, RightBar, footermodule, SimpleBar, MenuMedicFollow, PageHeader },
   data() {
     return {
       isMenuCondensed: false,
@@ -108,7 +108,7 @@ export default {
           </div>
 
           <SimpleBar id="scrollbar" class="h-100" ref="scrollbar">
-            <Menu></Menu>
+            <MenuMedicFollow></MenuMedicFollow>
             <div class="text-center navbar-nav" style="position: absolute; bottom: 1px;">
               <router-link to="/usage" class="nav-link menu-link">
                 <em class="ri-pages-line"></em>
