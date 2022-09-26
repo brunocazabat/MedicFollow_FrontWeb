@@ -51,36 +51,36 @@ export default {
   },
   methods: {
     addScheduleNbr(dayOfTheWeek) {
-      if (dayOfTheWeek === "monday") {
+      if (dayOfTheWeek === "monday" && this.mondayNbr !== 5) {
         this.mondayNbr += 1
-      } else if (dayOfTheWeek === "tuesday") {
+      } else if (dayOfTheWeek === "tuesday" && this.tuesdayNbr !== 5) {
         this.tuesdayNbr += 1
-      } else if (dayOfTheWeek === "wednesday") {
+      } else if (dayOfTheWeek === "wednesday" && this.wednsedayNbr !== 5) {
         this.wednesdayNbr += 1
-      } else if (dayOfTheWeek === "thursday") {
+      } else if (dayOfTheWeek === "thursday" && this.thursdayNbr !== 5) {
         this.thursdayNbr += 1
-      } else if (dayOfTheWeek === "friday") {
+      } else if (dayOfTheWeek === "friday" && this.fridayNbr !== 5) {
         this.fridayNbr += 1
-      } else if (dayOfTheWeek === "saturday") {
+      } else if (dayOfTheWeek === "saturday" && this.saturdayNbr !== 5) {
         this.saturdayNbr += 1
-      } else if (dayOfTheWeek === "sunday") {
+      } else if (dayOfTheWeek === "sunday" && this.sundayNbr !== 5) {
         this.sundayNbr += 1
       }
     },
     removeScheduleNbr(dayOfTheWeek) {
-      if (dayOfTheWeek === "monday") {
+      if (dayOfTheWeek === "monday" && this.mondayNbr !== 1) {
         this.mondayNbr -= 1
-      } else if (dayOfTheWeek === "tuesday") {
+      } else if (dayOfTheWeek === "tuesday" && this.tuesdayNbr !== 1) {
         this.tuesdayNbr -= 1
-      } else if (dayOfTheWeek === "wednesday") {
+      } else if (dayOfTheWeek === "wednesday" && this.wednsedayNbr !== 1) {
         this.wednesdayNbr -= 1
-      } else if (dayOfTheWeek === "thursday") {
+      } else if (dayOfTheWeek === "thursday" && this.thursdayNbr !== 1) {
         this.thursdayNbr -= 1
-      } else if (dayOfTheWeek === "friday") {
+      } else if (dayOfTheWeek === "friday" && this.fridayNbr !== 1) {
         this.fridayNbr -= 1
-      } else if (dayOfTheWeek === "saturday") {
+      } else if (dayOfTheWeek === "saturday" && this.saturdayNbr !== 1) {
         this.saturdayNbr -= 1
-      } else if (dayOfTheWeek === "sunday") {
+      } else if (dayOfTheWeek === "sunday" && this.sundayNbr !== 1) {
         this.sundayNbr -= 1
       }
     },
@@ -213,13 +213,10 @@ export default {
     <div id="schedulePickerDiv" class="row p-2" v-if="picked === 'YES'">
       <div class="p-2" v-if="showMonday">
 
-
         <label for="mondayDiv" class="form-label mb-4"><strong>Monday Schedule</strong></label>
-
 
         <button class="btn btn-secondary" v-on:click="addScheduleNbr('monday')">Add</button>
         <button class="btn btn-secondary" v-on:click="removeScheduleNbr('monday')">Remove</button>
-
 
         <ScheduleModule title="Choose the first schedule" />
 
@@ -230,7 +227,6 @@ export default {
         <ScheduleModule v-if="this.mondayNbr > 3" title="Choose the fourth schedule" />
 
         <ScheduleModule v-if="this.mondayNbr > 4" title="Choose the fifth schedule" />
-
 
       </div>
 
