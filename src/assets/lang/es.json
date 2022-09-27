@@ -186,5 +186,6 @@
   "t-seereports": "Ver todos los informes/sugerencias",
   "t-managepatients": "Administrar pacientes",
   "t-managedoctor": "Administrar médicos",
-  "t-manageorgas": "Administrar organizaciones"
+  "t-manageorgas": "Administrar organizaciones",
+  "t-staffinput": "Entrada de información"
 }
