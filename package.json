@@ -21,7 +21,7 @@
     "@popperjs/core": "^2.11.2",
     "@simonwep/pickr": "^1.8.2",
     "@vue-leaflet/vue-leaflet": "^0.6.1",
-    "@vueform/multiselect": "^2.5.3",
+    "@vueform/multiselect": "^2.5.5",
     "@vueform/slider": "^2.0.8",
     "@vueform/toggle": "^2.1.2",
     "@vuelidate/core": "^2.0.0",
