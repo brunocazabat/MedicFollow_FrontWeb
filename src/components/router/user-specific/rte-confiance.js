@@ -31,6 +31,18 @@ export default [
     component: () =>
       import("@/views/users-specific/confiance/dashboard-section/index.vue"),
   },
+  // MEDICAL INFO
+  {
+    path: "/confiance/medical-information",
+    name: "confiance-medical-information",
+    meta: {
+      title: "Medical Information",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import("@/views/users-specific/confiance/medical-information/index.vue"),
+  },
   // CALENDAR
   {
     path: "/confiance/calendar",

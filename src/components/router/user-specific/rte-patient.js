@@ -31,6 +31,18 @@ export default [
     component: () =>
       import("@/views/users-specific/patient/dashboard-section/index.vue"),
   },
+  // MEDICAL INFO
+  {
+    path: "/patient/medical-information",
+    name: "patient-medical-information",
+    meta: {
+      title: "Medical Information",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import("@/views/users-specific/patient/medical-information/index.vue"),
+  },
   // CALENDAR
   {
     path: "/patient/calendar",
