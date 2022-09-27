@@ -22,6 +22,12 @@ export default {
       </router-link>
     </li>
     <li class="nav-item">
+      <router-link class="nav-link menu-link" to="/medecin/staff-input">
+        <em class="ri-input-method-line"></em>
+        <span style="padding: 7px" data-key="t-staffinput">{{ $t("t-staffinput") }}</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
       <router-link class="nav-link menu-link" to="/medecin/manage-patients">
         <em class="ri-folder-user-line"></em>
         <span style="padding: 7px" data-key="t-managepatients">{{ $t("t-managepatients") }}</span>
@@ -35,7 +41,7 @@ export default {
     </li>
     <li class="nav-item">
       <router-link class="nav-link menu-link" to="/medecin/chat">
-        <em class="ri-pencil-line"></em>
+        <em class="ri-question-answer-line"></em>
         <span style="padding: 7px" data-key="t-chat">{{ $t("t-chat") }}</span>
       </router-link>
     </li>

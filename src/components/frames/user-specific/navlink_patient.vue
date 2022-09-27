@@ -16,6 +16,12 @@ export default {
       </router-link>
     </li>
     <li class="nav-item">
+      <router-link class="nav-link menu-link" to="/patient/medical-information">
+        <em class="ri-information-line"></em>
+        <span style="padding: 7px" data-key="t-medicalinformation">{{ $t("t-medicalinformation") }}</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
       <router-link class="nav-link menu-link" to="/patient/calendar">
         <em class="ri-layout-grid-line"></em>
         <span style="padding: 7px" data-key="t-calendar">{{ $t("t-calendar") }}</span>
@@ -23,7 +29,7 @@ export default {
     </li>
     <li class="nav-item">
       <router-link class="nav-link menu-link" to="/patient/chat">
-        <em class="ri-pencil-line"></em>
+        <em class="ri-question-answer-line"></em>
         <span style="padding: 7px" data-key="t-chat">{{ $t("t-chat") }}</span>
       </router-link>
     </li>
