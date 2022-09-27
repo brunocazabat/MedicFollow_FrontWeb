@@ -36,7 +36,7 @@ export default [
     path: "/medical/medical-information",
     name: "medical-medical-information",
     meta: {
-      title: "Staff Input",
+      title: "Medical Information",
       authRequired: true,
       onceLoggedIn,
     },
@@ -47,7 +47,7 @@ export default [
     path: "/medical/staff-input",
     name: "medical-staff-input",
     meta: {
-      title: "Medical Information",
+      title: "Staff Input",
       authRequired: true,
       onceLoggedIn,
     },
