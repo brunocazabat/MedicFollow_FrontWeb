@@ -9,7 +9,6 @@ import particlesmodule from "@/components/login-components/particles-module.vue"
 export default {
   data() {
     return {
-
       value: ['javascript'],
       date: null
     }

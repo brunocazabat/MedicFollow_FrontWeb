@@ -5,20 +5,7 @@ import Widgets from "./widgets.vue";
 import CheckupText from "./checkup-text.vue";
 
 export default {
-  data() {
-    return {
-      title: "Medical Information",
-      items: [
-        {
-          text: "Medical Information",
-        },
-        {
-          text: "Latest",
-          active: true,
-        },
-      ],
-    }
-  },
+  data() { },
   components: {
     Layout,
     Widgets,
