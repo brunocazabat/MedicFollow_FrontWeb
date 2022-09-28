@@ -127,4 +127,18 @@ export default [
     component: () =>
       import("@/views/users-specific/medecin/forms-section/bugreport.vue"),
   },
+  // SCHEDULE SETTING
+  {
+    path: "/medecin/schedule-settings",
+    name: "medecin-schedulesettings",
+    meta: {
+      title: "Schedule Settings",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import(
+        "@/views/users-specific/medecin/settings-section/schedule-settings.vue"
+      ),
+  },
 ];
