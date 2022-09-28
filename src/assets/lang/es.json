@@ -188,5 +188,10 @@
   "t-managedoctor": "Administrar médicos",
   "t-manageorgas": "Administrar organizaciones",
   "t-staffinput": "Entrada de información",
-  "t-schedulesettings": "Ajustes de programación"
+  "t-schedulesettings": "Ajustes de programación",
+  "t-emailanswerdelay": "Solemos tardar unos días en responder a los correos electrónicos.",
+  "t-onlyanswersms": "¡Solo responderemos a SMS!",
+  "t-ouremail": "Nuestra dirección de correo electrónico",
+  "t-ourphonenbr": "Nuestro número de teléfono",
+  "t-sendusmessage": "Mandanos un mensaje"
 }

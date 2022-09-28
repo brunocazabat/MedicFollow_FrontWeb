@@ -188,5 +188,10 @@
   "t-seereports": "See all reports/suggestions",
   "t-manageorgas": "Manage organizations",
   "t-staffinput": "Information input",
-  "t-schedulesettings": "Schedule settings"
+  "t-schedulesettings": "Schedule settings",
+  "t-ouremail": "Our Email address",
+  "t-emailanswerdelay": "We usually take few days to answer emails",
+  "t-ourphonenbr": "Our Phone number",
+  "t-onlyanswersms": "We will only answer to SMS!",
+  "t-sendusmessage": "Send us a message"
 }

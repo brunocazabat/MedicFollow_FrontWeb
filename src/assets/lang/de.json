@@ -188,5 +188,10 @@
   "t-managedoctor": "Ärzte verwalten",
   "t-manageorgas": "Organisationen verwalten",
   "t-staffinput": "Informationseingabe",
-  "t-schedulesettings": "Zeitplaneinstellungen"
+  "t-schedulesettings": "Zeitplaneinstellungen",
+  "t-emailanswerdelay": "Wir brauchen normalerweise einige Tage, um E-Mails zu beantworten",
+  "t-onlyanswersms": "Wir antworten nur auf SMS!",
+  "t-ouremail": "Unsere E-Mail-Adresse",
+  "t-ourphonenbr": "Unsere Telefonnummer",
+  "t-sendusmessage": "Schick uns eine Nachricht"
 }
