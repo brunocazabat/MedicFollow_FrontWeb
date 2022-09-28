@@ -193,5 +193,12 @@
   "t-onlyanswersms": "Wir antworten nur auf SMS!",
   "t-ouremail": "Unsere E-Mail-Adresse",
   "t-ourphonenbr": "Unsere Telefonnummer",
-  "t-sendusmessage": "Schick uns eine Nachricht"
+  "t-sendusmessage": "Schick uns eine Nachricht",
+  "t-dateofbirth": "Geburtsdatum",
+  "t-medicinfofor": "Eingabe medizinischer Informationen für",
+  "t-next": "NÄCHSTE",
+  "t-socialsecuritynbr": "Sozialversicherungsnummer",
+  "t-writedownlastinfo": "Hier können Sie die neuesten Informationen über den Patienten aufschreiben und die von der Familie gesendeten Nachrichten beantworten",
+  "t-selectpatient": "Wählen Sie einen Patienten aus",
+  "t-selectpatientinfotext": "Hier können Sie einen Patienten auswählen, den Sie besucht haben, um dann die neuesten medizinischen Informationen einzugeben. \nDie Eingabe des letzten Vor- und Nachnamens ist nicht obligatorisch, wohl aber die Sozialversicherungsnummer und das Geburtsdatum"
 }

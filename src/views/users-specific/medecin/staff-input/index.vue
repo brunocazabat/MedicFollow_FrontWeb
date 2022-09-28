@@ -73,10 +73,8 @@ export default {
           <div class="card-body">
 
             <!-- Title + muted text -->
-            <h2 class="text-primary">Select a patient</h2>
-            <p class="text-muted">Here you can select a patient you visited to then input the latest medical
-              information. The last first and last name inputs are not mandatory but the social security number and the
-              date of birth are.</p>
+            <h2 class="text-primary" data-key="t-selectpatient">{{$t("t-selectpatient")}}</h2>
+            <p class="text-muted" data-key="t-selectpatientinfotext">{{$t("t-selectpatientinfotext")}}.</p>
 
             <!-- Input fields -->
             <div class="p-3 row">
@@ -103,22 +101,24 @@ export default {
 
               <!-- Social Security Number -->
               <div class="col-sm-5">
-                <label for="patientSocialSecurityNumber" class="form-label" data-key="">Social Security Number</label>
+                <label for="patientSocialSecurityNumber" class="form-label"
+                  data-key="t-socialsecuritynbr">{{$t("t-socialsecuritynbr")}}</label>
                 <input type="text" class="form-control" id="patientSocialSecurityNumber"
                   placeholder="Enter the social security number..." v-model="patientMandatory.socialSecurityNumber" />
               </div>
 
               <!-- Date of Birth / CHANGE FOR ACTUAL DATE PICKER -->
               <div class="col-sm-5 mb-5">
-                <label for="patientDoB" class="form-label" data-key="">Date of Birth</label>
+                <label for="patientDoB" class="form-label" data-key="t-dateofbirth">{{$t("t-dateofbirth")}}</label>
                 <input type="date" class="form-control" id="patientDoB" placeholder="Enter the date of birth..."
                   v-model="patientMandatory.dateOfBirth" />
               </div>
 
               <!-- Next Button -->
               <div class="p-3">
-                <button class="btn btn-primary" :disabled="isSubmitButtonDisabled" v-on:click="nextDisplay()">
-                  NEXT</button>
+                <button class="btn btn-primary" :disabled="isSubmitButtonDisabled" v-on:click="nextDisplay()"
+                  data-key="t-next">{{$t("t-next")}}
+                </button>
               </div>
             </div>
           </div>
@@ -131,10 +131,9 @@ export default {
       <div class="p-2 col-xl-6">
         <div class="card">
           <div class="card-body">
-            <h2 class="text-primary">Medical Information Input for <strong>{{patientFirstName}}
+            <h2 class="text-primary" data-key="t-medicinfofor">{{$t("t-medicinfofor")}} <strong>{{patientFirstName}}
                 {{patientLastName}}</strong></h2>
-            <p class="text-muted">Here you can write down the latest information about the patient as well as answer the
-              messages sent by the family.</p>
+            <p class="text-muted" data-key="t-writedownlastinfo">{{$t("t-writedownlastinfo")}}.</p>
 
             <div class="p-3">
               <textarea class="form-control" id="VertimeassageInput" rows="3"
