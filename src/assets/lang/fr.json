@@ -187,5 +187,6 @@
   "t-managepatients": "Gérer les patients",
   "t-managedoctor": "Gérer les médecins",
   "t-manageorgas": "Gérer les organisations",
-  "t-staffinput": "Saisie d'informations"
+  "t-staffinput": "Saisie d'informations",
+  "t-schedulesettings": "Paramètres de planification"
 }

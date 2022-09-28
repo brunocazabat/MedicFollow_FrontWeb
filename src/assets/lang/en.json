@@ -187,5 +187,6 @@
   "t-managepatients": "Manage Patients",
   "t-seereports": "See all reports/suggestions",
   "t-manageorgas": "Manage organizations",
-  "t-staffinput": "Information input"
+  "t-staffinput": "Information input",
+  "t-schedulesettings": "Schedule settings"
 }

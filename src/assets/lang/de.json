@@ -187,5 +187,6 @@
   "t-managepatients": "Patienten verwalten",
   "t-managedoctor": "Ärzte verwalten",
   "t-manageorgas": "Organisationen verwalten",
-  "t-staffinput": "Informationseingabe"
+  "t-staffinput": "Informationseingabe",
+  "t-schedulesettings": "Zeitplaneinstellungen"
 }
