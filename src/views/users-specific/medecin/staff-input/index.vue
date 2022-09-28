@@ -6,22 +6,20 @@ import useSubmitButtonState from "./useSubmitButtonState"
 
 export default {
   setup() {
-    const patientName = reactive({
-      firstName: "",
-      lastName: "",
-    });
     const patientMandatory = reactive({
       dateOfBirth: "",
       socialSecurityNumber: "",
     });
 
     const { isSubmitButtonDisabled } = useSubmitButtonState(patientMandatory);
-    return { patientMandatory, patientName, isSubmitButtonDisabled };
+    return { patientMandatory, isSubmitButtonDisabled };
   },
   data() {
     return {
       value: ['javascript'],
       displayMode: 0,
+      patientFirstName: "",
+      patientLastName: "",
     };
   },
   components: {
@@ -41,7 +39,7 @@ export default {
   <Layout>
 
     <!-- First Input Page -->
-    <div class="row project-wrapper" v-if="displayMode === 0">
+    <div class="row" v-if="displayMode === 0">
       <div class="p-2 col-xl-12">
         <div class="card">
           <div class="card-body">
@@ -60,7 +58,7 @@ export default {
                 $t("t-firstname")
                 }}</label>
                 <input type="text" class="form-control" id="patientFirstName" placeholder="Enter first name..."
-                  v-model="patientName.firstName" />
+                  v-model="patientFirstName" />
               </div>
 
               <!-- Last name -->
@@ -68,7 +66,7 @@ export default {
                 <label for="patientLastName" class="form-label" data-key="t-lastname">{{ $t("t-lastname")
                 }}</label>
                 <input type="text" class="form-control" id="patientLastName" placeholder="Enter last name..."
-                  v-model="patientName.lastName" />
+                  v-model="patientLastName" />
               </div>
             </div>
 
@@ -85,13 +83,13 @@ export default {
               <!-- Date of Birth / CHANGE FOR ACTUAL DATE PICKER -->
               <div class="col-sm-5 mb-5">
                 <label for="patientDoB" class="form-label" data-key="">Date of Birth</label>
-                <input type="text" class="form-control" id="patientDoB" placeholder="Enter the date of birth..."
+                <input type="date" class="form-control" id="patientDoB" placeholder="Enter the date of birth..."
                   v-model="patientMandatory.dateOfBirth" />
               </div>
 
               <!-- Next Button -->
               <div class="p-3">
-                <button class="btn btn-primary col-sm-1" :disabled="isSubmitButtonDisabled" v-on:click="nextDisplay()">
+                <button class="btn btn-primary" :disabled="isSubmitButtonDisabled" v-on:click="nextDisplay()">
                   NEXT</button>
               </div>
             </div>
@@ -100,18 +98,18 @@ export default {
       </div>
     </div>
 
-    <div class="row project-wrapper" v-if="displayMode === 1">
+    <div class="row" v-if="displayMode === 1">
       <div class="p-2 col-xl-5">
         <div class="card">
           <div class="card-body">
-            <h2 class="text-primary">Medical Information Input for <strong>{{patient.firstName}}
-                {{patient.lastName}}</strong></h2>
+            <h2 class="text-primary">Medical Information Input for <strong>{{patientFirstName}}
+                {{patientLastName}}</strong></h2>
             <p class="text-muted">Here you can write down the latest information about the patient as well as answer the
               messages sent by the family.</p>
 
             <div class="p-3">
-              <textarea class="form-control" id="VertimeassageInput" rows="3" placeholder="Enter the summary here..."
-                required></textarea>
+              <textarea class="form-control" id="VertimeassageInput" rows="3"
+                placeholder="Enter the summary here..."></textarea>
               <div class="invalid-feedback">
                 Please enter a message in the textarea.
               </div>
