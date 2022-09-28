@@ -16,6 +16,12 @@ export default {
       </router-link>
     </li>
     <li class="nav-item">
+      <router-link class="nav-link menu-link" to="/medecin/schedule-settings">
+        <em class="ri-time-line"></em>
+        <span style="padding: 7px" data-key="">Schedule Settings</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
       <router-link class="nav-link menu-link" to="/medecin/medical-information">
         <em class="ri-information-line"></em>
         <span style="padding: 7px" data-key="t-medicalinformation">{{ $t("t-medicalinformation") }}</span>
