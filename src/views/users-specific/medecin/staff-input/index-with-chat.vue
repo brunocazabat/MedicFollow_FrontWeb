@@ -26,7 +26,7 @@ export default {
     return {
       chatData: chatData,
       chatMessagesData: chatMessagesData,
-      testaas: false,
+      submitted: false,
       form: {
         message: ''
       },
@@ -51,6 +51,75 @@ export default {
     nextDisplay() {
       this.displayMode += 1;
     },
+
+    scrollToBottom(id) {
+      setTimeout(function () {
+        let simpleBar = document
+          .getElementById(id)
+          .querySelector('#chat-conversation .simplebar-content-wrapper')
+          ? document
+            .getElementById(id)
+            .querySelector('#chat-conversation .simplebar-content-wrapper')
+          : ''
+
+        let offsetHeight = document.getElementsByClassName(
+          'chat-conversation-list'
+        )[0]
+          ? document
+            .getElementById(id)
+            .getElementsByClassName('chat-conversation-list')[0]
+            .scrollHeight -
+          window.innerHeight +
+          600
+          : 0
+
+        if (offsetHeight)
+          simpleBar.scrollTo({
+            top: offsetHeight,
+            behavior: 'smooth'
+          })
+      }, 300)
+    },
+    chatUsername(name, image) {
+      this.username = name
+      this.profile = image
+      this.usermessage = 'Hello'
+      this.chatMessagesData = []
+      const currentDate = new Date()
+
+      this.chatMessagesData.push({
+        name: this.username,
+        message: this.usermessage,
+        time: currentDate.getHours() + ':' + currentDate.getMinutes()
+      })
+    },
+
+    /**
+     * Char form Submit
+     */
+    formSubmit() {
+      this.submitted = true
+
+      // stop here if form is invalid
+      this.useVuelidate().$touch()
+
+      if (this.v$.$invalid) {
+        return
+      } else {
+        const message = this.form.message
+        const currentDate = new Date()
+        this.chatMessagesData.push({
+          align: 'right',
+          name: 'Henry Wells',
+          message,
+          time: currentDate.getHours() + ':' + currentDate.getMinutes()
+        })
+        let currentChatId = 'users-chat'
+        this.scrollToBottom(currentChatId)
+      }
+      this.submitted = false
+      this.form = {}
+    }
   },
   validations: {
     form: {
@@ -59,10 +128,37 @@ export default {
       }
     }
   },
+  mounted() {
+    let currentChatId = 'users-chat'
+    this.scrollToBottom(currentChatId)
+    document.getElementById('copyClipBoard').style.display = 'none'
+    let userChatElement = document.querySelectorAll('.user-chat')
+    document.querySelectorAll('.chat-user-list li a').forEach(function (item) {
+      item.addEventListener('click', function () {
+        userChatElement.forEach(function (elm) {
+          elm.classList.add('user-chat-show')
+        })
+
+        // chat user list link active
+        let chatUserList = document.querySelector('.chat-user-list li.active')
+        if (chatUserList) chatUserList.classList.remove('active')
+        this.parentNode.classList.add('active')
+      })
+    })
+
+    // user-chat-remove
+    document.querySelectorAll('.user-chat-remove').forEach(function (item) {
+      item.addEventListener('click', function () {
+        userChatElement.forEach(function (elm) {
+          elm.classList.remove('user-chat-show')
+        })
+      })
+    })
+  }
 };
 
 </script>
-  
+
 <template>
   <Layout>
 
@@ -77,6 +173,8 @@ export default {
             <p class="text-muted">Here you can select a patient you visited to then input the latest medical
               information. The last first and last name inputs are not mandatory but the social security number and the
               date of birth are.</p>
+
+            <h2 class="text-secondary">Debug: {{isSubmitButtonDisabled}}</h2>
 
             <!-- Input fields -->
             <div class="p-3 row">
@@ -151,7 +249,6 @@ export default {
       <div class="p-2 col-xl-6">
         <div class="card">
           <div class="body-card">
-
 
             <!-- Start User chat -->
             <div class="user-chat w-100 overflow-hidden">
@@ -268,7 +365,7 @@ export default {
                                 <div class="ctext-wrap">
                                   <div class="ctext-wrap-content">
                                     <p class="mb-0 ctext-content">
-                                      Bonjour
+                                      {{ data.message }}
                                     </p>
                                   </div>
                                   <div class="dropdown align-self-start message-box-drop">
@@ -290,7 +387,9 @@ export default {
                                     </div>
                                   </div>
                                   <div class="conversation-name">
-                                    <small class="text-muted time">10:00</small>
+                                    <small class="text-muted time">{{
+                                    data.time
+                                    }}</small>
                                     <span class="text-success check-message-icon"><em
                                         class="ri-check-double-line align-bottom"></em></span>
                                   </div>
@@ -302,12 +401,16 @@ export default {
 
                         <!-- end chat-conversation-list -->
                       </div>
+                      <div class="alert alert-warning alert-dismissible copyclipboard-alert px-4 fade show"
+                        id="copyClipBoard" role="alert">
+                        Message copied
+                      </div>
                     </div>
 
                     <!-- end chat-conversation -->
 
                     <div class="chat-input-section p-3 p-lg-4">
-                      <form>
+                      <form @submit.prevent="formSubmit">
                         <div class="row g-0 align-items-center">
                           <div class="col-auto">
                             <div class="chat-input-links me-2">
@@ -327,8 +430,13 @@ export default {
                             <input type="text" v-model="form.message"
                               class="form-control chat-input bg-light border-light" placeholder="Enter Message..."
                               :class="{
-                                'is-invalid': testaas && v$.form.message.$error
+                                'is-invalid': submitted && v$.form.message.$error
                               }" />
+                            <div v-if="submitted && v$.form.message.$error" class="invalid-feedback">
+                              <span v-if="v$.form.message.required.$message">{{
+                              v$.form.message.required.$message
+                              }}</span>
+                            </div>
                           </div>
                           <div class="col-auto">
                             <div class="chat-input-links ms-2">
@@ -364,8 +472,8 @@ export default {
                 </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </div>
@@ -373,4 +481,3 @@ export default {
     <footermodule />
   </Layout>
 </template>
-  
