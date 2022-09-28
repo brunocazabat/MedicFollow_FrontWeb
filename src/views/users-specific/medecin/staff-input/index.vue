@@ -77,7 +77,7 @@ export default {
               <div class="col-sm-5">
                 <label for="patientSocialSecurityNumber" class="form-label" data-key="">Social Security Number</label>
                 <input type="text" class="form-control" id="patientSocialSecurityNumber"
-                  placeholder="Enter the social security number...." v-model="patientMandatory.socialSecurityNumber" />
+                  placeholder="Enter the social security number..." v-model="patientMandatory.socialSecurityNumber" />
               </div>
 
               <!-- Date of Birth / CHANGE FOR ACTUAL DATE PICKER -->
