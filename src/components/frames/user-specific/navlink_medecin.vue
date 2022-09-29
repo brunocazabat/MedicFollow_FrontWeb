@@ -18,7 +18,7 @@ export default {
     <li class="nav-item">
       <router-link class="nav-link menu-link" to="/medecin/schedule-settings">
         <em class="ri-time-line"></em>
-        <span style="padding: 7px" data-key="">Schedule Settings</span>
+        <span style="padding: 7px" data-key="t-schedulesettings">{{ $t("t-schedulesettings") }}</span>
       </router-link>
     </li>
     <li class="nav-item">
