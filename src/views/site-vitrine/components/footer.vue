@@ -15,7 +15,7 @@ export default {
             </router-link>
           </div>
           <div class="mt-4 fs-18">
-            <p class="ff-secondary">
+            <p class="forceserif ff-secondary">
               Restez en contact aisément avec vos proches hospitalisés, 7J/7, 24H/24.
             </p>
           </div>
@@ -66,7 +66,7 @@ export default {
     <div class="row text-center text-sm-start align-items-center mt-5">
       <div class="col-sm-6">
         <div>
-          <p class="copy-rights mb-0 currentyear"></p>
+          <p class="forceserif copy-rights mb-0 currentyear"></p>
         </div>
       </div>
       <div class="col-sm-6">

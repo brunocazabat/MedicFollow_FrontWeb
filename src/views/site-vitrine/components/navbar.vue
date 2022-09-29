@@ -47,10 +47,11 @@ export default {
           </li>
         </ul>
         <div>
-          <router-link to="/login" class="btn btn-primary fw-medium text-decoration-none" style="margin-right:5px">
+          <router-link to="/login" class="forceserif btn btn-primary fw-medium text-decoration-none"
+            style="margin-right:5px">
             Sign in
           </router-link>
-          <router-link to="/register-mail" class="btn btn-primary" style="margin:5px">Sign Up
+          <router-link to="/register-mail" class="forceserif btn btn-primary" style="margin:5px">Sign Up
           </router-link>
         </div>
         <lang />

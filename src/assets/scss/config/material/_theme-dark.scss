@@ -72,8 +72,8 @@
     // Topbar Search
     --#{$variable-prefix}topbar-search-bg: #{darken($gray-200, 3%)};
     // Topbar User
-    --#{$variable-prefix}topbar-user-bg: #{lighten($gray-300, 2%)};
-    --#{$variable-prefix}topbar-user-bg-dark: #{lighten($gray-300, 2%)};
+    --#{$variable-prefix}topbar-user-bg: #{lighten($gray-300, 1%)};
+    --#{$variable-prefix}topbar-user-bg-dark: #{lighten($gray-300, 1%)};
 
     //footer
     --#{$variable-prefix}footer-bg: #{lighten($gray-200, 1%)};

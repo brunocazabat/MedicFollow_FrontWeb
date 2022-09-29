@@ -26,7 +26,7 @@ export default {
         <div class="row align-items-center gy-4">
           <div class="review-detail fst-italic">
             <h3 style="margin-top: 30px; margin-bottom: 10px;">1. Informations</h3>
-            <p>
+            <p class="forceserif">
               VEUILLEZ LIRE ATTENTIVEMENT LES PRÉSENTES CONDITIONS D'UTILISATION. CE CONTRAT VOUS ENGAGE.
               Bienvenue dans les services gérés par MedicFollow , Inc. (appelé avec ses affiliés « MedicFollow » ou «
               nous »), qui comprennent le site internet disponible à l'adresse <a target="_blank"
@@ -50,13 +50,13 @@ export default {
               d'utilisation modifiées, vous acceptez les conditions.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">2. Mentions légales</h3>
-            <p>
+            <p class="forceserif">
               L'édition du site MedicFollow est assurée par la Société MedicFollow.
               Le Directeur de la publication du site est Maxime Barbier et le Directeur de la publication de
               l'application mobile est Bruno Cazabat.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">3. Définitions</h3>
-            <p>
+            <p class="forceserif">
               La présente clause a pour objet de définir les différents termes essentiels du contrat.
               Utilisateur : désigne toute personne le site ou l'un des services proposés par le site.
               Contenu utilisateur : les données transmises par l'Utilisateur au sein du site.
@@ -66,7 +66,7 @@ export default {
               services réservés aux membres du site. Le mot de passe est confidentiel.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">4. Accès aux services</h3>
-            <p>
+            <p class="forceserif">
               Le site permet seulement aux Utilisateur de s'identifier.
               Pour accéder à tous les services proposés il faut être Membre, l'Utilisateur doit donc s'identifier.
               Tous les frais supportés par l'Utilisateur pour accéder au service (matériel informatique, logiciels,
@@ -89,7 +89,7 @@ export default {
               à tout autre moment sont vraies, exactes, à jour et complètes à votre connaissance.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">5. Rappel du droit de la propriété intellectuelle</h3>
-            <p>
+            <p class="forceserif">
               Les marques, logos, signes et tout autre contenu du site font l'objet d'une protection par le Code de la
               propriété intellectuelle et plus particulièrement par le droit d'auteur.
               L'Utilisateur sollicite l'autorisation préalable du site pour toute reproduction, publication, copie des
@@ -102,7 +102,7 @@ export default {
               ou à la modification du contenu Utilisateur.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">6. Politique des données personnelles</h3>
-            <p>
+            <p class="forceserif">
               Les informations demandées à l'inscription au site sont nécessaires et obligatoires pour la création du
               compte de l'Utilisateur. En pourra être utilisée par le site pour l'administration, la gestion et
               l'animation du service.
@@ -116,7 +116,7 @@ export default {
               L'utilisateur exerce ce droit via son espace personnel.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">7. Avis de confidentialité</h3>
-            <p>
+            <p class="forceserif">
               MedicFollow considère que votre vie privée est importante.
               Veuillez consulter notre Avis de confidentialité pour obtenir des informations sur la manière dont nous
               recueillons, utilisons et divulguons vos informations personnelles et nos Choix de confidentialité pour
@@ -124,7 +124,7 @@ export default {
               utilisez les Services MedicFollow.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">8. Responsabilité et force majeure</h3>
-            <p>
+            <p class="forceserif">
               Les sources des informations diffusées sur le site sont réputées fiables. Toutefois, le site se réserve la
               faculté d'une non-garantie de la fiabilité des sources. Les informations données sur le site le sont à
               titre purement informatif. Ainsi, l'Utilisateur assume seul l'entière responsabilité de l'utilisation des
@@ -142,30 +142,30 @@ export default {
               insurmontable d'un tiers.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">9. Liens hypertextes</h3>
-            <p>
+            <p class="forceserif">
               De nombreux liens hypertextes sortants sont présents sur le site, cependant les pages web où mènent ces
               liens n'engagent en rien la responsabilité de MedicFollow qui n'a pas le contrôle de ces liens.
               L'Utilisateur s'interdit donc d'engager la responsabilité du site concernant le contenu et les ressources
               relatives à ces liens hypertextes sortants.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">10. Évolution du contrat</h3>
-            <p>
+            <p class="forceserif">
               Le site se réserve à tout moment le droit de modifier les clauses stipulées dans le présent contrat.
               Si vous continuez d'utiliser les services MedicFollow après la date d'entrée en vigueur des Conditions
               d'utilisation modifiées, vous acceptez les conditions.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">11. Durée</h3>
-            <p>
+            <p class="forceserif">
               La durée du présent contrat est indéterminée. Le contrat produit ses effets à l'égard de l'Utilisateur à
               compter de l'utilisation du service.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">12. Droit applicable et juridiction</h3>
-            <p>
+            <p class="forceserif">
               La législation française s'applique au présent contrat. En cas d'absence de résolution amiable d'un litige
               né entre les parties, seuls les tribunaux N/A sont compétents.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">13. Droit à la portabilité des données</h3>
-            <p>
+            <p class="forceserif">
               Le droit à la portabilité vous offre la possibilité de récupérer une partie de vos données dans un format
               lisible par une machine. Libre à vous de stocker ailleurs ces données portables ou les transmettre
               facilement d’un système à un autre, en vue d’une réutilisation à d’autres fins.
@@ -173,7 +173,7 @@ export default {
                 href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3#Article20">ici</a>.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">14. Droit à l'oubli</h3>
-            <p>
+            <p class="forceserif">
               Le droit à l'oubli est le droit de faire supprimer des recherches sur Internet et d'autres répertoires,
               sous certaines conditions, les informations privées négatives concernant une personne. Ce concept est en
               vigueur au sein l'Union Européenne depuis 2006.
@@ -181,7 +181,7 @@ export default {
                 href="https://www.cnil.fr/fr/le-droit-leffacement-supprimer-vos-donnees-en-ligne">ici</a>.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">15. Droit à notification</h3>
-            <p>
+            <p class="forceserif">
               Le règlement général sur la protection des données (RGPD) impose aux responsables de traitement de
               documenter, en interne, les violations de données personnelles et de notifier les violations présentant un
               risque pour les droits et libertés des personnes à la CNIL et, dans certains cas, lorsque le risque est
@@ -190,14 +190,14 @@ export default {
                 href="https://www.cnil.fr/fr/notifier-une-violation-de-donnees-personnelles">ici</a>.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">16. Droit à réparation du dommage matériel ou moral</h3>
-            <p>
+            <p class="forceserif">
               Toute personne ayant subi un dommage matériel ou moral du fait d'une violation du présent règlement a le
               droit d'obtenir du responsable du traitement ou du sous-traitant réparation du préjudice subi.
               Pour plus d'informations, vous pouvez consulter ce lien <a target="_blank" rel="noopener noreferrer"
                 href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre8">ici</a>.
             </p>
             <h3 style="margin-top: 30px; margin-bottom: 10px;">17. Publication par l'Utilisateur</h3>
-            <p>
+            <p class="forceserif">
               Le site permet aux membres de communiquer par messages.
               Dans ses messages, le membre s'engage à respecter les règles de la Netiquette et les règles de droit en
               vigueur.

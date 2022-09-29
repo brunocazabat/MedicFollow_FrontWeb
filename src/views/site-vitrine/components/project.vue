@@ -128,7 +128,7 @@ export default {
           </div>
           <div class="flex-grow-1">
             <h5 class="fs-18">Rapports Médicaux sécurisés</h5>
-            <p class="text-muted my-3 ff-secondary">
+            <p class="forceserif text-muted my-3 ff-secondary">
               Retrouvez tous les documents de votre proche dans un espace unique et sécurisé.
             </p>
           </div>
@@ -146,7 +146,7 @@ export default {
           </div>
           <div class="flex-grow-1">
             <h5 class="fs-18">Prochaines échéances</h5>
-            <p class="text-muted my-3 ff-secondary">
+            <p class="forceserif text-muted my-3 ff-secondary">
               Restez informés des prochains rendez-vous de votre proche, où que vous soyez.
             </p>
           </div>
@@ -164,7 +164,7 @@ export default {
           </div>
           <div class="flex-grow-1">
             <h5 class="fs-18">Mise à jours fréquentes</h5>
-            <p class="text-muted my-3 ff-secondary">
+            <p class="forceserif text-muted my-3 ff-secondary">
               Tout changement de situation de votre proche vous serra communiquer par une notification.
             </p>
           </div>
@@ -182,7 +182,7 @@ export default {
           </div>
           <div class="flex-grow-1">
             <h5 class="fs-18">Vous avez une question ?</h5>
-            <p class="text-muted my-3 ff-secondary">
+            <p class="forceserif text-muted my-3 ff-secondary">
               Prenez contact via une messagerie pour poser vos questions vis-à-vis de vos proches.
             </p>
           </div>

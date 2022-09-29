@@ -14,7 +14,7 @@ export default {
             <span class="text-success">MEDICFOLLOW</span>
             <p>La première plateforme qui facilite la communication autour du patient</p>
           </h1>
-          <p class="lead text-muted lh-base">
+          <p class="forceserif lead text-muted lh-base">
             Restez en contact aisément avec vos proches hospitalisés, 7J/7, 24H/24.
           </p>
 

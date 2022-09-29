@@ -116,12 +116,12 @@ export default {
     <anchored-heading :level="1">Hello world!</anchored-heading>
 
     <p>{{message}}</p>
-    <button v-on:click="addNewSchedule()" class="btn btn-primary">Add a new schedule</button> -->
+    <button v-on:click="addNewSchedule()" class="btn forceserif btn-primary">Add a new schedule</button> -->
 
 
     <!-- TRUE/FALSE NEW MEETING -->
     <div id="yesnoDiv" class="p-3 card-body">
-      <p class="font-size-medium">
+      <p class="forceserif font-size-medium">
         Do you accept meetings?
       </p>
       <!-- Padding -->
@@ -144,7 +144,7 @@ export default {
 
     <!-- DAYS OF THE WEEK CHECKBOXES -->
     <div id="daysOfWeekDiv" class="p-3 card-body" v-if="picked === 'YES'">
-      <p class="font-size-medium">
+      <p class="forceserif font-size-medium">
         Which days do you accept meetings?
       </p>
       <!-- Padding -->
@@ -201,8 +201,8 @@ export default {
 
         <label for="mondayDiv" class="form-label mb-4"><strong>Monday Schedule</strong></label>
 
-        <button class="btn btn-secondary" v-on:click="addScheduleNbr('monday')">Add</button>
-        <button class="btn btn-secondary" v-on:click="removeScheduleNbr('monday')">Remove</button>
+        <button class="btn forceserif btn-secondary" v-on:click="addScheduleNbr('monday')">Add</button>
+        <button class="btn forceserif btn-secondary" v-on:click="removeScheduleNbr('monday')">Remove</button>
 
         <ScheduleModule title="Choose the first schedule" />
 
@@ -217,7 +217,7 @@ export default {
       </div>
 
       <div class="p-2" v-if="showTuesday">
-        <label for="tuesdayDiv" class="form-label">Tuesday Schedule</label>
+        <label for="tuesdayDiv" class="forceserif form-label">Tuesday Schedule</label>
         <div id="tuesdayDiv" class="col-lg-1">
           <select id="tuesdaySchedule" class="form-select">
             <option value="06">6:00</option>
@@ -228,7 +228,7 @@ export default {
       </div>
 
       <div class="p-2" v-if="showWednesday">
-        <label for="wednesdaySchedule" class="form-label">Wednesday Schedule</label>
+        <label for="wednesdaySchedule" class="forceserif form-label">Wednesday Schedule</label>
         <div id="wednesdayDiv" class="col-lg-1">
           <select id="wednesdaySchedule" class="form-select">
             <option value="06">6:00</option>
@@ -239,7 +239,7 @@ export default {
       </div>
 
       <div class="p-2" v-if="showThursday">
-        <label for="thursdayDiv" class="form-label">Thursday Schedule</label>
+        <label for="thursdayDiv" class="forceserif form-label">Thursday Schedule</label>
         <div id="thursdayDiv" class="col-lg-1">
           <select id="thursdaySchedule" class="form-select">
             <option value="06">6:00</option>
@@ -250,7 +250,7 @@ export default {
       </div>
 
       <div class="p-2" v-if="showFriday">
-        <label for="fridayDiv" class="form-label">Friday Schedule</label>
+        <label for="fridayDiv" class="forceserif form-label">Friday Schedule</label>
         <div id="fridayDiv" class="col-lg-1">
           <select id="fridaySchedule" class="form-select">
             <option value="06">6:00</option>
@@ -261,7 +261,7 @@ export default {
       </div>
 
       <div class="p-2" v-if="showSaturday">
-        <label for="saturdayDiv" class="form-label">Saturday Schedule</label>
+        <label for="saturdayDiv" class="forceserif form-label">Saturday Schedule</label>
         <div id="saturdayDiv" class="col-lg-1">
           <select id="saturdaySchedule" class="form-select">
             <option value="06">6:00</option>
@@ -272,7 +272,7 @@ export default {
       </div>
 
       <div class="p-2" v-if="showSunday">
-        <label for="sundayDiv" class="form-label">Sunday Schedule</label>
+        <label for="sundayDiv" class="forceserif form-label">Sunday Schedule</label>
         <div id="sundayDiv" class="col-lg-1">
           <select id="sundaySchedule" class="form-select">
             <option value="06">6:00</option>

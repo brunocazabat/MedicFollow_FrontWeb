@@ -26,7 +26,7 @@ export default {
               </span>
             </div>
             <div class="flex-grow-1 overflow-hidden ms-3">
-              <p class="text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-nextappoint">{{
+              <p class="forceserif text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-nextappoint">{{
               $t("t-nextappoint")
               }}:</p>
               <div class="d-flex align-items-center mb-3">
@@ -34,7 +34,7 @@ export default {
                   <span class="counter-value">Test Event 1</span>
                 </h4>
               </div>
-              <p class="text-muted text-truncate mb-0">09-07-2022</p>
+              <p class="forceserif text-muted text-truncate mb-0">09-07-2022</p>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default {
               </span>
             </div>
             <div class="flex-grow-1 overflow-hidden ms-3">
-              <p class="text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-lastinfo">{{
+              <p class="forceserif text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-lastinfo">{{
               $t("t-lastinfo")
               }}:
               </p>
@@ -59,7 +59,7 @@ export default {
                   <span class="counter-value">Ms. Golem</span>
                 </h4>
               </div>
-              <p class="text-muted text-truncate mb-0" data-key="t-situation">{{
+              <p class="forceserif text-muted text-truncate mb-0" data-key="t-situation">{{
               $t("t-situation")
               }}</p>
             </div>
@@ -77,7 +77,7 @@ export default {
               </span>
             </div>
             <div class="flex-grow-1 overflow-hidden ms-3">
-              <p class="text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-covidwarn">{{
+              <p class="forceserif text-uppercase fw-medium text-muted text-truncate mb-3" data-key="t-covidwarn">{{
               $t("t-covidwarn")
               }}:
               </p>
@@ -86,7 +86,7 @@ export default {
                   <span class="counter-value">Test</span>
                 </h4>
               </div>
-              <p class="text-muted text-truncate mb-0" data-key="t-care">{{
+              <p class="forceserif text-muted text-truncate mb-0" data-key="t-care">{{
               $t("t-care")
               }}</p>
             </div>

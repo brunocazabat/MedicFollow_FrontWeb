@@ -29,7 +29,7 @@ export default {
             <div class="d-flex align-items-center">
               <div class="flex-grow-1">
                 <h5 class="mb-1 fw-semibold">Plan Basique</h5>
-                <p class="text-muted mb-0">Pour les organisation médicales</p>
+                <p class="forceserif text-muted mb-0">Pour les organisation médicales</p>
               </div>
               <div class="avatar-sm">
                 <div class="avatar-title bg-light rounded-circle text-primary">
@@ -89,7 +89,7 @@ export default {
 
               </ul>
               <div class="mt-4">
-                <a href="javascript:void(0);" class="btn btn-soft-success w-100">Commencer</a>
+                <a href="javascript:void(0);" class="btn forceserif btn-soft-success w-100">Commencer</a>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default {
             <div class="d-flex align-items-center">
               <div class="flex-grow-1">
                 <h5 class="mb-1 fw-semibold">Plan Basique</h5>
-                <p class="text-muted mb-0">Pour les médecins membre</p>
+                <p class="forceserif text-muted mb-0">Pour les médecins membre</p>
               </div>
               <div class="avatar-sm">
                 <div class="avatar-title bg-light rounded-circle text-primary">
@@ -162,7 +162,7 @@ export default {
 
               </ul>
               <div class="mt-4">
-                <a href="javascript:void(0);" class="btn btn-soft-success w-100">Commencer</a>
+                <a href="javascript:void(0);" class="btn forceserif btn-soft-success w-100">Commencer</a>
               </div>
             </div>
           </div>

@@ -72,7 +72,7 @@ export default {
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center mt-2">
-                  <p class="text-muted" data-key="t-willreset">{{ $t("t-willreset") }}
+                  <p class="forceserif text-muted" data-key="t-willreset">{{ $t("t-willreset") }}
                   </p>
                   <lottie class="avatar-xl" colors="primary:#45CB85,secondary:#4b38b3" :options="defaultOptions"
                     :height="120" :width="120" />
@@ -82,9 +82,9 @@ export default {
                   <b-alert v-model="isResetError" class="mb-4" variant="danger" dismissible>{{ ResetError }}</b-alert>
                   <form @submit.prevent="tryToReset">
                     <div class="mb-4">
-                      <label for="email" class="form-label" data-key="t-email">{{ $t("t-email") }} <span
+                      <label for="email" class="forceserif form-label" data-key="t-email">{{ $t("t-email") }} <span
                           class="text-danger">*</span></label>
-                      <input type="email" v-model="email" class="form-control" id="email"
+                      <input type="email" v-model="email" class="forceserif form-control" id="email"
                         :class="{ 'is-invalid': submitted && v$.email.$errors }" data-key="t-entermail"
                         v-bind:placeholder="$t('t-entermail')" />
                       <div v-for="(item, index) in v$.email.$errors" :key="index" class="invalid-feedback">
@@ -94,12 +94,14 @@ export default {
 
                     <recaptcha />
                     <div class="text-center mt-4">
-                      <button @click="tryToReset" class="btn btn-success w-100" type="submit" data-key="t-resetlink">{{
-                      $t("t-resetlink") }}
+                      <button @click="tryToReset" class="btn forceserif btn-success w-100" type="submit"
+                        data-key="t-resetlink">{{
+                        $t("t-resetlink") }}
                       </button>
                     </div>
                     <div class="mt-4 text-center">
-                      <p class="mb-0 text-muted" style="color: black" data-key="t-remempass">{{ $t("t-remempass") }}
+                      <p class="forceserif mb-0 text-muted" style="color: black" data-key="t-remempass">{{
+                      $t("t-remempass") }}
                         <router-link to="/login" class="fw-semibold text-primary text-decoration-underline"
                           data-key="t-signin">{{ $t("t-signin") }}
                         </router-link>
