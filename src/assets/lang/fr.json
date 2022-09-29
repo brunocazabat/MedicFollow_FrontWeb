@@ -187,5 +187,18 @@
   "t-managepatients": "Gérer les patients",
   "t-managedoctor": "Gérer les médecins",
   "t-manageorgas": "Gérer les organisations",
-  "t-staffinput": "Saisie d'informations"
+  "t-staffinput": "Saisie d'informations",
+  "t-schedulesettings": "Paramètres de planification",
+  "t-emailanswerdelay": "Nous prenons généralement quelques jours pour répondre aux e-mails",
+  "t-onlyanswersms": "Nous ne répondrons qu'aux SMS !",
+  "t-ouremail": "Notre adresse e-mail",
+  "t-ourphonenbr": "Notre numéro de téléphone",
+  "t-sendusmessage": "Envoie-nous un message",
+  "t-dateofbirth": "Date de naissance",
+  "t-medicinfofor": "Saisie d'informations médicales pour",
+  "t-next": "SUIVANT",
+  "t-socialsecuritynbr": "Numéro de sécurité sociale",
+  "t-writedownlastinfo": "Ici, vous pouvez noter les dernières informations sur le patient ainsi que répondre aux messages envoyés par la famille",
+  "t-selectpatient": "Sélectionnez un patient",
+  "t-selectpatientinfotext": "Ici, vous pouvez sélectionner un patient que vous avez visité pour ensuite saisir les dernières informations médicales. \nLes saisies du prénom et du nom ne sont pas obligatoires mais le numéro de sécurité sociale et la date de naissance le sont"
 }

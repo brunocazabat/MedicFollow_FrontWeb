@@ -187,5 +187,18 @@
   "t-managepatients": "Manage Patients",
   "t-seereports": "See all reports/suggestions",
   "t-manageorgas": "Manage organizations",
-  "t-staffinput": "Information input"
+  "t-staffinput": "Information input",
+  "t-schedulesettings": "Schedule settings",
+  "t-ouremail": "Our Email address",
+  "t-emailanswerdelay": "We usually take few days to answer emails",
+  "t-ourphonenbr": "Our Phone number",
+  "t-onlyanswersms": "We will only answer to SMS!",
+  "t-sendusmessage": "Send us a message",
+  "t-socialsecuritynbr": "Social Security Number",
+  "t-dateofbirth": "Date of Birth",
+  "t-next": "NEXT",
+  "t-medicinfofor": "Medical Information Input for",
+  "t-writedownlastinfo": "Here you can write down the latest information about the patient as well as answer the messages sent by the family",
+  "t-selectpatient": "Select a patient",
+  "t-selectpatientinfotext": "Here you can select a patient you visited to then input the latest medical information. The first and last name inputs are not mandatory but the social security number and the date of birth are"
 }
