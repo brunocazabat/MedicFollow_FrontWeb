@@ -1,10 +1,11 @@
 {
   "name": "medicfollow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --port 3000",
-    "build": "vue-cli-service build --port 3000",
+    "serveoffline": "vue-cli-service serve --port 3000 --offline",
+    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
