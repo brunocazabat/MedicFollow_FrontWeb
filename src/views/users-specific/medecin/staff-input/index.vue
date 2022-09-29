@@ -34,7 +34,7 @@ export default {
       profile: require('@/assets/images/users/avatar-1.png'),
 
       value: ['javascript'],
-      displayMode: 0,
+      displayMode: 1,
       patientFirstName: "",
       patientLastName: "",
 
@@ -73,14 +73,14 @@ export default {
           <div class="card-body">
 
             <!-- Title + muted text -->
-            <h2 class="text-primary" data-key="t-selectpatient">{{$t("t-selectpatient")}}</h2>
+            <h1 class="text-primary " data-key="t-selectpatient">{{$t("t-selectpatient")}}</h1>
             <p class="text-muted" data-key="t-selectpatientinfotext">{{$t("t-selectpatientinfotext")}}.</p>
 
             <!-- Input fields -->
             <div class="p-3 row">
               <!-- First name -->
               <div class="col-sm-5">
-                <label for="patientFirstName" class="form-label" data-key="t-firstname">{{
+                <label for="patientFirstName" class="form-label font-size-large" data-key="t-firstname">{{
                 $t("t-firstname")
                 }}</label>
                 <input type="text" class="form-control" id="patientFirstName" placeholder="Enter first name..."
@@ -89,7 +89,8 @@ export default {
 
               <!-- Last name -->
               <div class="col-sm-5">
-                <label for="patientLastName" class="form-label" data-key="t-lastname">{{ $t("t-lastname")
+                <label for="patientLastName" class="form-label font-size-large" data-key="t-lastname">{{
+                $t("t-lastname")
                 }}</label>
                 <input type="text" class="form-control" id="patientLastName" placeholder="Enter last name..."
                   v-model="patientLastName" />
@@ -101,7 +102,7 @@ export default {
 
               <!-- Social Security Number -->
               <div class="col-sm-5">
-                <label for="patientSocialSecurityNumber" class="form-label"
+                <label for="patientSocialSecurityNumber" class="form-label font-size-large"
                   data-key="t-socialsecuritynbr">{{$t("t-socialsecuritynbr")}}</label>
                 <input type="text" class="form-control" id="patientSocialSecurityNumber"
                   placeholder="Enter the social security number..." v-model="patientMandatory.socialSecurityNumber" />
@@ -109,7 +110,8 @@ export default {
 
               <!-- Date of Birth / CHANGE FOR ACTUAL DATE PICKER -->
               <div class="col-sm-5 mb-5">
-                <label for="patientDoB" class="form-label" data-key="t-dateofbirth">{{$t("t-dateofbirth")}}</label>
+                <label for="patientDoB" class="form-label font-size-large"
+                  data-key="t-dateofbirth">{{$t("t-dateofbirth")}}</label>
                 <input type="date" class="form-control" id="patientDoB" placeholder="Enter the date of birth..."
                   v-model="patientMandatory.dateOfBirth" />
               </div>
@@ -126,20 +128,72 @@ export default {
       </div>
     </div>
 
+
+    <!-- INPUT MEDICAL INFORMATION -->
     <div class="row" v-if="displayMode === 1">
 
       <div class="p-2 col-xl-6">
         <div class="card">
           <div class="card-body">
-            <h2 class="text-primary" data-key="t-medicinfofor">{{$t("t-medicinfofor")}} <strong>{{patientFirstName}}
-                {{patientLastName}}</strong></h2>
+            <h1 class="text-primary" data-key="t-medicinfofor">{{$t("t-medicinfofor")}} <strong>{{patientFirstName}}
+                {{patientLastName}}</strong></h1>
             <p class="text-muted" data-key="t-writedownlastinfo">{{$t("t-writedownlastinfo")}}.</p>
 
+            <!-- INPUT LATEST INFO -->
             <div class="p-3">
-              <textarea class="form-control" id="VertimeassageInput" rows="3"
+              <label for="patientInputGenerakInfo" class="form-label font-size-large"
+                data-key="t-inputgeneralinfopatient">{{$t("t-inputgeneralinfopatient")}}</label>
+              <textarea class="form-control" id="patientInputGenerakInfo" rows="3"
                 placeholder="Enter the summary here..."></textarea>
               <div class="invalid-feedback">
                 Please enter a message in the textarea.
+              </div>
+            </div>
+
+            <hr>
+            <p class="text-muted" data-key="t-notmandatoryfields">{{$t("t-notmandatoryfields")}}</p>
+
+            <!-- HEARTBEAT -->
+            <div class="p-3">
+              <label for="patientInputGenerakInfo" class="form-label font-size-large"
+                data-key="t-heartbeat">{{$t("t-heartbeat")}}</label>
+              <input class="form-control" id="patientInputGenerakInfo" placeholder="Enter the heartbeat here...">
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+
+            <!-- PULSE -->
+            <div class="p-3 mb-3">
+              <label for="patientInputGenerakInfo" class="form-label font-size-large"
+                data-key="t-pulse">{{$t("t-pulse")}}</label>
+              <input class="form-control" id="patientInputGenerakInfo" placeholder="Enter the pulse here...">
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+
+            <!-- OXYGEN SATURATION -->
+            <div class="p-3">
+              <label for="patientInputGenerakInfo" class="form-label font-size-large"
+                data-key="t-oxygensaturation">{{$t("t-oxygensaturation")}}</label>
+              <input class="form-control" id="patientInputGenerakInfo"
+                placeholder="Enter the oxygen saturation here...">
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+
+            <hr>
+
+            <!-- FILE UPLOAD -->
+            <div class="p-3">
+              <div class="col-md-12">
+                <label class="font-size-large mb-0 mt-0" data-key="t-questionuploaddoc">
+                  {{ $t("t-questionuploaddoc") }}
+                </label>
+                <p class="text-muted mb-3" data-key="t-uploadexample">{{ $t("t-uploadexample") }}</p>
+                <input class="form-control" type="file" id="feedbackFileUpload" accept=".pdf, ,jpg, .jpeg, .png">
               </div>
             </div>
 
@@ -367,6 +421,7 @@ export default {
 
         </div>
       </div>
+
     </div>
 
     <footermodule />
