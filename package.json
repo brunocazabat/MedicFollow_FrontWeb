@@ -1,10 +1,11 @@
 {
   "name": "medicfollow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --port 3000",
-    "build": "vue-cli-service build --port 3000",
+    "serveoffline": "vue-cli-service serve --port 3000 --offline",
+    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -21,7 +22,7 @@
     "@popperjs/core": "^2.11.2",
     "@simonwep/pickr": "^1.8.2",
     "@vue-leaflet/vue-leaflet": "^0.6.1",
-    "@vueform/multiselect": "^2.5.5",
+    "@vueform/multiselect": "^2.5.6",
     "@vueform/slider": "^2.1.5",
     "@vueform/toggle": "^2.1.2",
     "@vuelidate/core": "^2.0.0",
@@ -31,7 +32,7 @@
     "apexcharts": "^3.35.5",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.1",
-    "bootstrap-vue-3": "^0.3.5",
+    "bootstrap-vue-3": "^0.3.7",
     "chart.js": "^3.7.0",
     "click-outside-vue3": "^4.0.1",
     "core-js": "^3.25.2",
@@ -55,7 +56,7 @@
     "sass-loader": "^13.0.2",
     "simplebar": "^5.3.8",
     "simplebar-vue3": "^0.2.0",
-    "sweetalert2": "^11.4.34",
+    "sweetalert2": "^11.4.35",
     "swiper": "^8.4.2",
     "vue": "3.2.40",
     "vue-cookie-accept-decline": "^6.0.3",

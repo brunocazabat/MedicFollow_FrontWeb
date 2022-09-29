@@ -81,6 +81,10 @@ export default {
               this.isAuthError = true;
               this.authError = "User disabled";
               break;
+            case 0:
+              this.isAuthError = true;
+              this.authError = "No internet connection";
+              break;
             default:
               this.isAuthError = true;
               this.authError = "An unknown error occurred";
