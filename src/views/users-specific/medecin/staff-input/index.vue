@@ -34,7 +34,7 @@ export default {
       profile: require('@/assets/images/users/avatar-1.png'),
 
       value: ['javascript'],
-      displayMode: 1,
+      displayMode: 0,
       patientFirstName: "",
       patientLastName: "",
 
@@ -421,6 +421,15 @@ export default {
 
         </div>
       </div>
+
+      <!-- <div class="row align-items-center">
+        <div class="col-sm-2">
+          <button>coucou</button>
+        </div>
+        <div class="col-sm-2">
+          <button>hello</button>
+        </div>
+      </div> -->
 
     </div>
 

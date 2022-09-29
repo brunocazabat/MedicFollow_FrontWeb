@@ -203,5 +203,8 @@
   "t-selectpatientinfotext": "Qui puoi selezionare un paziente che hai visitato per poi inserire le ultime informazioni mediche. \nL'inserimento del cognome e del cognome non è obbligatorio, ma lo sono il codice fiscale e la data di nascita",
   "t-inputgeneralinfopatient": "Ultime informazioni",
   "t-heartbeat": "Battito cardiaco (numero o valutazione)",
-  "t-pulse": "Polso"
+  "t-pulse": "Polso",
+  "t-chooseameeting": "Scegli un incontro online",
+  "t-notmandatoryfields": "Questi campi non sono obbligatori.",
+  "t-oxygensaturation": "Saturazione di ossigeno"
 }

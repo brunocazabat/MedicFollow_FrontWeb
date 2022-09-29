@@ -205,5 +205,7 @@
   "t-heartbeat": "Heartbeat (either number or evaluation)",
   "t-pulse": "Pulse",
   "t-oxygensaturation": "Oxygen saturation",
-  "t-notmandatoryfields": "Those fields are not mandatory."
+  "t-notmandatoryfields": "Those fields are not mandatory.",
+  "t-chooseameeting": "Choose a meeting online",
+  "t-plsfillmeetinginfo": "Please, fill the information below."
 }

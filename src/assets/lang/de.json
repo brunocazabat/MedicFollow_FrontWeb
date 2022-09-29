@@ -203,5 +203,8 @@
   "t-selectpatientinfotext": "Hier können Sie einen Patienten auswählen, den Sie besucht haben, um dann die neuesten medizinischen Informationen einzugeben. \nDie Eingabe des letzten Vor- und Nachnamens ist nicht obligatorisch, wohl aber die Sozialversicherungsnummer und das Geburtsdatum",
   "t-inputgeneralinfopatient": "Neueste Informationen",
   "t-heartbeat": "Heartbeat (entweder Zahl oder Bewertung)",
-  "t-pulse": "Impuls"
+  "t-pulse": "Impuls",
+  "t-chooseameeting": "Wählen Sie ein Online-Meeting aus",
+  "t-notmandatoryfields": "Diese Felder sind keine Pflichtfelder.",
+  "t-oxygensaturation": "Sauerstoffsättigung"
 }

@@ -203,5 +203,8 @@
   "t-selectpatientinfotext": "Aquí puede seleccionar un paciente que visitó para luego ingresar la información médica más reciente. \nLos datos de nombre y apellido no son obligatorios, pero el número de seguro social y la fecha de nacimiento sí lo son.",
   "t-inputgeneralinfopatient": "La información más reciente",
   "t-heartbeat": "Latido del corazón (ya sea número o evaluación)",
-  "t-pulse": "Legumbres"
+  "t-pulse": "Legumbres",
+  "t-chooseameeting": "Elija una reunión en línea",
+  "t-notmandatoryfields": "Esos campos no son obligatorios.",
+  "t-oxygensaturation": "Saturación de oxígeno"
 }
