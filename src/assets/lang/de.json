@@ -206,5 +206,7 @@
   "t-pulse": "Impuls",
   "t-chooseameeting": "Wählen Sie ein Online-Meeting aus",
   "t-notmandatoryfields": "Diese Felder sind keine Pflichtfelder.",
-  "t-oxygensaturation": "Sauerstoffsättigung"
+  "t-oxygensaturation": "Sauerstoffsättigung",
+  "t-plsfillmeetinginfo": "Bitte füllen Sie die unten stehenden Informationen aus.",
+  "t-previousstep": "Vorheriger Schritt"
 }

@@ -206,5 +206,7 @@
   "t-pulse": "Polso",
   "t-chooseameeting": "Scegli un incontro online",
   "t-notmandatoryfields": "Questi campi non sono obbligatori.",
-  "t-oxygensaturation": "Saturazione di ossigeno"
+  "t-oxygensaturation": "Saturazione di ossigeno",
+  "t-plsfillmeetinginfo": "Si prega di compilare le informazioni di seguito.",
+  "t-previousstep": "Passo precedente"
 }

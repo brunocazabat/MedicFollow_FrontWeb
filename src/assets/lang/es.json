@@ -206,5 +206,7 @@
   "t-pulse": "Legumbres",
   "t-chooseameeting": "Elija una reunión en línea",
   "t-notmandatoryfields": "Esos campos no son obligatorios.",
-  "t-oxygensaturation": "Saturación de oxígeno"
+  "t-oxygensaturation": "Saturación de oxígeno",
+  "t-plsfillmeetinginfo": "Por favor, complete la información a continuación.",
+  "t-previousstep": "Paso anterior"
 }

@@ -207,5 +207,7 @@
   "t-oxygensaturation": "Oxygen saturation",
   "t-notmandatoryfields": "Those fields are not mandatory.",
   "t-chooseameeting": "Choose a meeting online",
-  "t-plsfillmeetinginfo": "Please, fill the information below."
+  "t-plsfillmeetinginfo": "Please, fill the information below.",
+  "t-previousstep": "Previous step",
+  "t-choosemeetingdate": "Choose the consutation date"
 }

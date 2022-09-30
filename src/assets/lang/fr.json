@@ -206,5 +206,8 @@
   "t-pulse": "Poul",
   "t-chooseameeting": "Choisissez une réunion en ligne",
   "t-notmandatoryfields": "Ces champs ne sont pas obligatoires.",
-  "t-oxygensaturation": "Saturation d'oxygène"
+  "t-oxygensaturation": "Saturation d'oxygène",
+  "t-plsfillmeetinginfo": "Veuillez remplir les informations ci-dessous.",
+  "t-previousstep": "Étape précédente",
+  "t-choosemeetingdate": "Choisissez la date de consultation"
 }
