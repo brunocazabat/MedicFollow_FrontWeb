@@ -5,9 +5,10 @@ import footermodule from "@/components/login-components/footer-module.vue";
 export default {
   data() {
     return {
-      viewID: 0,
-      pickedDoctor: '',
-      test: 0,
+      viewID: 1,
+      pickedDoctor: 'doc2',
+      visitedDoctor: '',
+      viewEnd: false,
     }
 
   },
@@ -18,9 +19,15 @@ export default {
   methods: {
     nextView() {
       this.viewID += 1;
+      if (this.viewID === 3) {
+        this.viewEnd = true;
+      }
     },
     prevView() {
       this.viewID -= 1;
+      if (this.viewID) {
+        this.viewEnd = false;
+      }
     }
   }
 }
@@ -43,17 +50,19 @@ export default {
 
           <!-- CHOOSE DOCTOR DIV -->
           <div v-if="viewID === 0">
-
+            <!-- BUTTON TO CLICK TO SHOW DR. -->
             <div class="basic-card-border col-sm-12 dl-card">
               <a class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
                 href="#meetingChooseDoctor" data-bs-toggle="collapse" role="button" aria-expanded="false"
                 aria-controls="meetingDateCollapse">
-                <span>{{$t("t-selectdoctormeeting")}}... <em class="ri-arrow-down-line lh-1 center-items"></em></span>
+                <span>{{$t("t-selectdoctormeeting")}}... <strong><em
+                      class="ri-arrow-down-line lh-1 center-items"></em></strong></span>
               </a>
 
               <hr class="mf-divider">
-              <div class="collapse col-sm-12 basic-padding left-margin" id="meetingChooseDoctor">
 
+              <!-- RADIO BOX DR. SELECTION -->
+              <div class="collapse col-sm-12 basic-padding left-margin" id="meetingChooseDoctor">
                 <div class="form-check">
                   <input class="form-check-input" type="radio" id="doc1GridCheck" value="Doc1" v-model="pickedDoctor" />
                   <label class="form-check-label font-size-medium" for="doc1GridCheck">Dr. BARBIER Maxime</label>
@@ -73,23 +82,8 @@ export default {
                   <input class="form-check-input" type="radio" id="doc4GridCheck" value="Doc4" v-model="pickedDoctor" />
                   <label class="form-check-label font-size-medium" for="doc4GridCheck">Dr. CORBET Guillaume</label>
                 </div>
-
               </div>
-
             </div>
-
-
-
-            <!-- <div class="p-3 col-lg-6">
-              <select class="form-select" id="chooseDoctor" required>
-                <option selected data-key="t-selectdoctormeeting">{{$t("t-selectdoctormeeting")}}...</option>
-                <option value="doc1">Dr. CAZABAT Bruno</option>
-                <option value="doc2">Dr. BERNABEU Bruno</option>
-                <option value="doc3">Dr. BARBIER Bruno</option>
-                <option value="doc4">Dr. CORBET Guillaume</option>
-              </select>
-            </div> -->
-
           </div>
 
           <!-- CONSULTING DOCTOR QUESTION -->
@@ -102,7 +96,28 @@ export default {
             </div>
 
             <div class="p-3">
-              <p class="font-size-medium">Yes / No (take from previous medical input form)</p>
+              <div class="row g-4">
+                <div class="col-lg-6">
+                  <div class="form-check card-radio">
+                    <input id="doctorConsulted" name="doctorConsulted" type="radio" class="form-check-input" value="YES"
+                      v-model="visitedDoctor" />
+                    <label class="form-check-label" for="doctorConsulted">
+                      <span class="fs-20 text-wrap d-block fw-semibold">{{$t("t-yes")}}</span>
+                      <span class="text-muted fw-normal text-wrap d-block">{{$t("t-ihaveconsulteddr")}}</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-check card-radio">
+                    <input id="doctorNeverConsulted" name="doctorNeverConsulted" type="radio" class="form-check-input"
+                      value="NO" v-model="visitedDoctor" />
+                    <label class="form-check-label" for="doctorNeverConsulted">
+                      <span class="fs-20 text-wrap d-block fw-semibold">{{$t("t-no")}}</span>
+                      <span class="text-muted fw-normal text-wrap d-block">{{$t("t-firsttimeconsulting")}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -117,37 +132,57 @@ export default {
               <a class="btn nav-link menu-link col-sm-12 font-size-medium mb-2 two-percent-height"
                 href="#meetingDateCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false"
                 aria-controls="meetingDateCollapse">
-                <span>Friday, September 30 <em class="ri-arrow-down-line lh-1 center-items"></em></span>
+                <span>Vendredi, 30 Octobre 2022 <strong><em
+                      class="ri-arrow-down-line lh-1 center-items"></em></strong></span>
               </a>
               <div class="collapse col-sm-12 btn-padding" id="meetingDateCollapse">
 
                 <button class="btn btn-primary mb-2 col-sm-2">9:00</button>
+                <button class="btn btn-primary mb-2 col-sm-2">10:00</button>
+                <button class="btn btn-primary mb-2 col-sm-2">10:30</button>
+                <button class="btn btn-primary mb-2 col-sm-2">11:00</button>
+                <button class="btn btn-primary mb-2 col-sm-2">12:00</button>
+                <button class="btn btn-primary mb-2 col-sm-2">13:00</button>
+                <button class="btn btn-primary mb-2 col-sm-2">14:00</button>
                 <button class="btn btn-primary mb-2 col-sm-2">15:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">15:30</button>
+                <button class="btn btn-primary mb-2 col-sm-2">16:00</button>
                 <button class="btn btn-primary mb-2 col-sm-2">17:00</button>
                 <button class="btn btn-primary mb-2 col-sm-2">18:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">19:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">16:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">16:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">16:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">16:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">16:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">16:00</button>
 
               </div>
             </div>
+          </div>
+
+          <div class="p-3" v-if="viewID === 3">
+            <p class="form-label font-size-large" data-key="t-choosemeetingdate">
+              <strong>Votre demande de rendez-vous a bien été prise en compte pour le Vendredi 30 Octobre,
+                15:00!</strong>
+            </p>
+            <p class="text-muted">Vous pouvez retourner sur la page d'accueil en appuyant sur "Continuer". Si vous avez
+              commis une erreur, veuillez nous contacter au plus vite ou apuuyer sur "Annuler"</p>
           </div>
         </div>
 
       </div>
 
-      <div class="p-3 mb-3 row space-in-between">
-        <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"
-          :disabled="viewID === 0"><em class="ri-arrow-left-line center-items"></em>
-          {{$t("t-previousstep")}}</button>
-        <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()"
-          :disabled="viewID === 2 || pickedDoctor === ''">{{$t("t-nextstep")}} <em
-            class="ri-arrow-right-line center-items"></em></button>
+      <div class="p-3 mb-3 row">
+        <div class="space-in-between" v-if="viewEnd === false">
+          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"
+            :disabled="viewID === 0"><strong><em class="ri-arrow-left-line center-items"></em></strong>
+            {{$t("t-previousstep")}}</button>
+          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()"
+            :disabled="viewID === 3 || pickedDoctor === ''">{{$t("t-nextstep")}} <strong><em
+                class="ri-arrow-right-line center-items"></em></strong></button>
+        </div>
+
+        <div class="space-in-between" v-else>
+          <button class="lh-1 btn btn-primary mf-btn-error font-size-medium col-lg-3"
+            v-on:click="prevView()"><strong><em class="ri-arrow-left-line center-items"></em></strong>
+            {{$t("t-cancel")}}</button>
+          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()">{{$t("t-continue")}}
+            <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
+        </div>
+
       </div>
 
 

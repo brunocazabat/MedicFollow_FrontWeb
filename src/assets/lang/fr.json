@@ -251,5 +251,9 @@
   "t-deleteacc": "Comment résilier mon compte MedicFollow ?",
   "t-howcontact": "Comment contacter le service client ?",
   "t-notanswered": "Votre question n'est pas dans cette FAQ ?",
-  "t-selectdoctormeeting": "Sélectionnez un médecin pour votre rendez-vous"
+  "t-selectdoctormeeting": "Sélectionnez un médecin pour votre rendez-vous",
+  "t-firsttimeconsulting": "C'est la première fois que je consulte ce médecin.",
+  "t-ihaveconsulteddr": "J'ai déjà consulté ce médecin.",
+  "t-cancel": "Annuler",
+  "t-continue": "Continuer"
 }

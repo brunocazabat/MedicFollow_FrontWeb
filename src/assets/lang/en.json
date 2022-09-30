@@ -251,5 +251,9 @@
   "t-install": " How to download or uninstall MedicFollow.",
   "t-deleteacc": "How do I terminate my MedicFollow account?",
   "t-howcontact": "How do I contact Customer Service?",
-  "t-notanswered": "Your question is not in this FAQ?"
+  "t-notanswered": "Your question is not in this FAQ?",
+  "t-ihaveconsulteddr": "I have already consulted this doctor.",
+  "t-firsttimeconsulting": "It is the first time I am consulting this doctor.",
+  "t-continue": "Continue",
+  "t-cancel": "Cancel"
 }
