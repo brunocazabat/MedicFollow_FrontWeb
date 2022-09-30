@@ -564,6 +564,26 @@
     margin: 0 0.25rem;
 }
 
+.basic-padding > div {
+    margin: 1rem 0rem;
+}
+
+.basic-card-border {
+    border: 1px solid #dae0e7;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px #01358612, 0 4px 11px #01358614;
+    cursor: pointer;
+}
+
+.mf-divider {
+    background-color: #dae0e7;
+    border: 0;
+    flex-shrink: 0;
+    height: 1px;
+    margin: -1px 0 0;
+    position: relative;
+}
+
 * {
     font-family: "Inter", sans-serif !important;
 }
