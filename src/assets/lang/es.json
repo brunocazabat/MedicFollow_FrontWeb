@@ -247,5 +247,14 @@
   "t-install": "Cómo descargar o desinstalar MedicFollow.",
   "t-deleteacc": "¿Cómo cancelo mi cuenta de MedicFollow?",
   "t-howcontact": "¿Cómo me comunico con el Servicio de Atención al Cliente?",
-  "t-notanswered": "¿Tu pregunta no está en estas preguntas frecuentes?"
+  "t-notanswered": "¿Tu pregunta no está en estas preguntas frecuentes?",
+  "t-cancel": "Cancelar",
+  "t-choosemeetingdate": "Elige la fecha de consulta",
+  "t-continue": "Continuar",
+  "t-firsttimeconsulting": "Es la primera vez que consulto a este médico.",
+  "t-haveyoumetdoctor": "¿Alguna vez has consultado a este médico?",
+  "t-ihaveconsulteddr": "Ya he consultado a este médico.",
+  "t-nextstep": "Próximo paso",
+  "t-selectdoctormeeting": "Seleccione un médico para su reunión",
+  "t-takemeetingwithdoctor": "Reunión con un médico"
 }

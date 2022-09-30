@@ -22,6 +22,12 @@ export default {
       </router-link>
     </li>
     <li class="nav-item">
+      <router-link class="nav-link menu-link" to="/confiance/online-meeting">
+        <em class="ri-nurse-line"></em>
+        <span style="padding: 7px">{{ $t("t-takemeetingwithdoctor") }}</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
       <router-link class="nav-link menu-link" to="/confiance/calendar">
         <em class="ri-layout-grid-line"></em>
         <span style="padding: 7px" data-key="t-calendar">{{ $t("t-calendar") }}</span>

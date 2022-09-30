@@ -5,9 +5,10 @@ import footermodule from "@/components/login-components/footer-module.vue";
 export default {
   data() {
     return {
-      viewID: 1,
-      pickedDoctor: 'doc2',
+      viewID: 0,
+      pickedDoctor: '',
       visitedDoctor: '',
+      pickedHour: '',
       viewEnd: false,
     }
 
@@ -128,28 +129,39 @@ export default {
                 <strong>{{$t("t-choosemeetingdate")}}</strong>
               </p>
             </div>
-            <div class="p-3">
-              <a class="btn nav-link menu-link col-sm-12 font-size-medium mb-2 two-percent-height"
+
+            <div class="basic-card-border col-sm-12 dl-card mb-2">
+              <a class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
                 href="#meetingDateCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false"
                 aria-controls="meetingDateCollapse">
                 <span>Vendredi, 30 Octobre 2022 <strong><em
                       class="ri-arrow-down-line lh-1 center-items"></em></strong></span>
               </a>
-              <div class="collapse col-sm-12 btn-padding" id="meetingDateCollapse">
 
-                <button class="btn btn-primary mb-2 col-sm-2">9:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">10:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">10:30</button>
-                <button class="btn btn-primary mb-2 col-sm-2">11:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">12:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">13:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">14:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">15:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">16:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">17:00</button>
-                <button class="btn btn-primary mb-2 col-sm-2">18:00</button>
+              <hr class="mf-divider">
 
+              <div class="collapse col-sm-12 basic-padding left-margin" id="meetingDateCollapse">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="hour1GridCheck" value="Hour1" v-model="pickedHour" />
+                  <label class="form-check-label font-size-medium" for="hour1GridCheck">9:00</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="hour2GridCheck" value="Hour2" v-model="pickedHour" />
+                  <label class="form-check-label font-size-medium" for="hour2GridCheck">10:00</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="hour3GridCheck" value="Hour3" v-model="pickedHour" />
+                  <label class="form-check-label font-size-medium" for="hour3GridCheck">15:00</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="hour4GridCheck" value="Hour4" v-model="pickedHour" />
+                  <label class="form-check-label font-size-medium" for="hour4GridCheck">17:00</label>
+                </div>
               </div>
+
             </div>
           </div>
 
@@ -171,16 +183,16 @@ export default {
             :disabled="viewID === 0"><strong><em class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
           <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()"
-            :disabled="viewID === 3 || pickedDoctor === ''">{{$t("t-nextstep")}} <strong><em
-                class="ri-arrow-right-line center-items"></em></strong></button>
+            :disabled="viewID === 3 || (pickedDoctor === '' && viewID === 0) || (visitedDoctor === '' && viewID === 1) || (pickedHour === '' && viewID === 2)">{{$t("t-nextstep")}}
+            <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
         </div>
 
         <div class="space-in-between" v-else>
           <button class="lh-1 btn btn-primary mf-btn-error font-size-medium col-lg-3"
             v-on:click="prevView()"><strong><em class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-cancel")}}</button>
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()">{{$t("t-continue")}}
-            <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
+          <a class="lh-1 btn btn-primary font-size-medium col-lg-3" href="/">{{$t("t-continue")}}
+            <strong><em class="ri-arrow-right-line center-items"></em></strong></a>
         </div>
 
       </div>

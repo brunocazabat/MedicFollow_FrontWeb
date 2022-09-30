@@ -255,5 +255,6 @@
   "t-ihaveconsulteddr": "I have already consulted this doctor.",
   "t-firsttimeconsulting": "It is the first time I am consulting this doctor.",
   "t-continue": "Continue",
-  "t-cancel": "Cancel"
+  "t-cancel": "Cancel",
+  "t-takemeetingwithdoctor": "Meeting with a Doctor"
 }
