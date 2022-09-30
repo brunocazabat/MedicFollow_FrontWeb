@@ -120,7 +120,7 @@ export default {
     <!-- END FAQ -->
 
     <!-- FOOTER -->
-    <footer class="custom-footer bg-primary py-5 position-relative">
+    <footer class="custom-footer py-5 position-relative">
       <footervit />
     </footer>
     <!-- END FOOTER -->
