@@ -24,7 +24,7 @@ export default {
             <div class="avatar-xl mx-auto mb-4 position-relative">
               <img src="../images/team/user-1.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
-                class="btn forceserif btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
                   <em class="ri-mail-fill align-bottom"></em>
                 </div>
@@ -34,7 +34,7 @@ export default {
             <h5 class="mb-1" style="margin-top: 40px">
               <a href="pages-profile.html" class="text-body">Bruno Cazabat</a>
             </h5>
-            <p class="forceserif text-muted mb-0 ff-secondary">Président-Directeur Général</p>
+            <p class="text-muted mb-0 ff-secondary">Président-Directeur Général</p>
           </div>
         </div>
         <!-- end card -->
@@ -46,7 +46,7 @@ export default {
             <div class="avatar-xl mx-auto mb-4 position-relative">
               <img src="../images/team/user-2.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
-                class="btn forceserif btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
                   <em class="ri-mail-fill align-bottom"></em>
                 </div>
@@ -56,7 +56,7 @@ export default {
             <h5 class="mb-1" style="margin-top: 40px">
               <a href="pages-profile.html" class="text-body">Simon Bernabeu</a>
             </h5>
-            <p class="forceserif text-muted mb-0 ff-secondary">Fondateur</p>
+            <p class="text-muted mb-0 ff-secondary">Fondateur</p>
           </div>
         </div>
         <!-- end card -->
@@ -68,7 +68,7 @@ export default {
             <div class="avatar-xl mx-auto mb-4 position-relative">
               <img src="../images/team/user-3.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
-                class="btn forceserif btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
                   <em class="ri-mail-fill align-bottom"></em>
                 </div>
@@ -78,7 +78,7 @@ export default {
             <h5 class="mb-1" style="margin-top: 40px">
               <a href="pages-profile.html" class="text-body">Maxime Barbier</a>
             </h5>
-            <p class="forceserif text-muted mb-0 ff-secondary">Développeur Front-End</p>
+            <p class="text-muted mb-0 ff-secondary">Développeur Front-End</p>
           </div>
         </div>
         <!-- end card -->
@@ -90,7 +90,7 @@ export default {
             <div class="avatar-xl mx-auto mb-4 position-relative">
               <img src="../images/team/user-4.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
-                class="btn forceserif btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
                   <em class="ri-mail-fill align-bottom"></em>
                 </div>
@@ -100,7 +100,7 @@ export default {
             <h5 class="mb-1" style="margin-top: 40px">
               <a href="pages-profile.html" class="text-body">Samuel Parayre</a>
             </h5>
-            <p class="forceserif text-muted mb-0 ff-secondary">Développeur Mobile</p>
+            <p class="text-muted mb-0 ff-secondary">Développeur Mobile</p>
           </div>
         </div>
         <!-- end card -->
@@ -115,7 +115,7 @@ export default {
             <div class="avatar-xl mx-auto mb-4 position-relative">
               <img src="../images/team/user-5.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
-                class="btn forceserif btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
                   <em class="ri-mail-fill align-bottom"></em>
                 </div>
@@ -125,7 +125,7 @@ export default {
             <h5 class="mb-1" style="margin-top: 40px">
               <a href="pages-profile.html" class="text-body">Damien Vachier</a>
             </h5>
-            <p class="forceserif text-muted mb-0 ff-secondary">Responsable Dev-ops</p>
+            <p class="text-muted mb-0 ff-secondary">Responsable Dev-ops</p>
           </div>
         </div>
         <!-- end card -->
@@ -137,7 +137,7 @@ export default {
             <div class="avatar-xl mx-auto mb-4 position-relative">
               <img src="../images/team/user-6.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
-                class="btn forceserif btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
                   <em class="ri-mail-fill align-bottom"></em>
                 </div>
@@ -147,7 +147,7 @@ export default {
             <h5 class="mb-1" style="margin-top: 40px">
               <a href="pages-profile.html" class="text-body">Guillaume Corbet</a>
             </h5>
-            <p class="forceserif text-muted mb-0 ff-secondary">Développeur Back-End</p>
+            <p class="text-muted mb-0 ff-secondary">Développeur Back-End</p>
           </div>
         </div>
         <!-- end card -->
@@ -159,7 +159,7 @@ export default {
             <div class="avatar-xl mx-auto mb-4 position-relative">
               <img src="../images/team/user-7.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
-                class="btn forceserif btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
                   <em class="ri-mail-fill align-bottom"></em>
                 </div>
@@ -169,7 +169,7 @@ export default {
             <h5 class="mb-1" style="margin-top: 40px">
               <a href="pages-profile.html" class="text-body">Malo Moreau</a>
             </h5>
-            <p class="forceserif text-muted mb-0 ff-secondary">Développeur Back-End</p>
+            <p class="text-muted mb-0 ff-secondary">Développeur Back-End</p>
           </div>
         </div>
         <!-- end card -->
@@ -182,7 +182,7 @@ export default {
             <div class="avatar-xl mx-auto mb-4 position-relative">
               <img src="../images/team/user-8.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
-                class="btn forceserif btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
+                class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
                   <em class="ri-mail-fill align-bottom"></em>
                 </div>
@@ -192,7 +192,7 @@ export default {
             <h5 class="mb-1" style="margin-top: 40px">
               <a href="pages-profile.html" class="text-body">Alex Limongi</a>
             </h5>
-            <p class="forceserif text-muted mb-0 ff-secondary">Responsable Juridique</p>
+            <p class="text-muted mb-0 ff-secondary">Responsable Juridique</p>
           </div>
         </div>
         <!-- end card -->

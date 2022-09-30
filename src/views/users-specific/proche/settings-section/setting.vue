@@ -98,17 +98,17 @@ export default {
                         <!-- READONLY NAMES -->
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="firstnameInput" class="forceserif form-label">First Name</label>
-                            <input type="text" class="forceserif form-control" id="firstnameInput"
+                            <label for="firstnameInput" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstnameInput"
                               placeholder="Enter your firstname" value="Anna" disabled />
                           </div>
                         </div>
 
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="lastnameInput" class="forceserif form-label">Last Name</label>
-                            <input type="text" class="forceserif form-control" id="lastnameInput"
-                              placeholder="Enter your lastname" value="Adame" disabled />
+                            <label for="lastnameInput" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastnameInput" placeholder="Enter your lastname"
+                              value="Adame" disabled />
                           </div>
                         </div>
 
@@ -116,50 +116,50 @@ export default {
                         <!--end col-->
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="phonenumberInput" class="forceserif form-label">Phone Number</label>
-                            <input type="text" class="forceserif form-control" id="phonenumberInput"
+                            <label for="phonenumberInput" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="phonenumberInput"
                               placeholder="Enter your phone number" value="+(1) 987 6543" required />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="emailInput" class="forceserif form-label">Email Address</label>
-                            <input type="email" class="forceserif form-control" id="emailInput"
-                              placeholder="Enter your email" value="daveadame@velzon.com" required />
+                            <label for="emailInput" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Enter your email"
+                              value="daveadame@velzon.com" required />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-4">
                           <div class="mb-3">
-                            <label for="cityInput" class="forceserif form-label">City</label>
-                            <input type="text" class="forceserif form-control" id="cityInput" placeholder="City"
+                            <label for="cityInput" class="form-label">City</label>
+                            <input type="text" class="form-control" id="cityInput" placeholder="City"
                               value="Saint-Georges-Nigremont" />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-4">
                           <div class="mb-3">
-                            <label for="countryInput" class="forceserif form-label">Country</label>
-                            <input type="text" class="forceserif form-control" id="countryInput" placeholder="Country"
+                            <label for="countryInput" class="form-label">Country</label>
+                            <input type="text" class="form-control" id="countryInput" placeholder="Country"
                               value="France" required />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-4">
                           <div class="mb-3">
-                            <label for="zipcodeInput" class="forceserif form-label">Zip Code</label>
-                            <input type="text" class="forceserif form-control" minlength="5" maxlength="6"
-                              id="zipcodeInput" placeholder="Enter zipcode" value="23500" />
+                            <label for="zipcodeInput" class="form-label">Zip Code</label>
+                            <input type="text" class="form-control" minlength="5" maxlength="6" id="zipcodeInput"
+                              placeholder="Enter zipcode" value="23500" />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-12">
                           <div class="hstack gap-2 justify-content-end">
-                            <button type="submit" class="btn forceserif btn-primary">
+                            <button type="submit" class="btn btn-primary">
                               Update
                             </button>
-                            <button type="button" class="btn forceserif btn-soft-success">
+                            <button type="button" class="btn btn-soft-success">
                               Cancel
                             </button>
                           </div>
@@ -177,24 +177,24 @@ export default {
                       <div class="mb-3">
                         <div class="col-lg-6 mb-3">
                           <div>
-                            <label for="oldpasswordInput" class="forceserif form-label">Old Password*</label>
-                            <input type="password" class="forceserif form-control" id="oldpasswordInput"
+                            <label for="oldpasswordInput" class="form-label">Old Password*</label>
+                            <input type="password" class="form-control" id="oldpasswordInput"
                               placeholder="Enter current password" required />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-6 mb-3">
                           <div>
-                            <label for="newpasswordInput" class="forceserif form-label">New Password*</label>
-                            <input type="password" class="forceserif form-control" id="newpasswordInput"
+                            <label for="newpasswordInput" class="form-label">New Password*</label>
+                            <input type="password" class="form-control" id="newpasswordInput"
                               placeholder="Enter new password" required />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-6 mb-3">
                           <div>
-                            <label for="confirmpasswordInput" class="forceserif form-label">Confirm Password*</label>
-                            <input type="password" class="forceserif form-control" id="confirmpasswordInput"
+                            <label for="confirmpasswordInput" class="form-label">Confirm Password*</label>
+                            <input type="password" class="form-control" id="confirmpasswordInput"
                               placeholder="Confirm password" required />
                           </div>
                         </div>
@@ -208,7 +208,7 @@ export default {
                         <!--end col-->
                         <div class="col-lg-12">
                           <div class="mb-3">
-                            <button type="submit" class="btn forceserif btn-success">
+                            <button type="submit" class="btn btn-success">
                               Change Password
                             </button>
                           </div>
@@ -229,7 +229,7 @@ export default {
                   <div class="d-flex flex-column flex-sm-row mb-4 mb-sm-0">
                     <div class="flex-grow-1">
                       <h6 class="fs-14 mb-1">Two-factor Authentication</h6>
-                      <p class="forceserif text-muted">
+                      <p class="text-muted">
                         Two-factor authentication is an enhanced security
                         meansur. Once enabled, you'll be required to give two
                         types of identification when you log into Google
@@ -237,20 +237,20 @@ export default {
                       </p>
                     </div>
                     <div class="flex-shrink-0 ms-sm-3">
-                      <a href="javascript:void(0);" class="btn forceserif btn-sm btn-primary">Enable Two-facor Authentication</a>
+                      <a href="javascript:void(0);" class="btn btn-sm btn-primary">Enable Two-facor Authentication</a>
                     </div>
                   </div>
                   <div class="d-flex flex-column flex-sm-row mb-4 mb-sm-0 mt-2">
                     <div class="flex-grow-1">
                       <h6 class="fs-14 mb-1">Backup Codes</h6>
-                      <p class="forceserif text-muted mb-sm-0">
+                      <p class="text-muted mb-sm-0">
                         A backup code is automatically generated for you when
                         you turn on two-factor authentication through your iOS
                         or Android app.
                       </p>
                     </div>
                     <div class="flex-shrink-0 ms-sm-3">
-                      <a href="javascript:void(0);" class="btn forceserif btn-sm btn-primary">Generate backup codes</a>
+                      <a href="javascript:void(0);" class="btn btn-sm btn-primary">Generate backup codes</a>
                     </div>
                   </div>
                 </div> -->
@@ -264,7 +264,7 @@ export default {
                             <label class="form-check-label fs-14" for="desktopNotification">
                               Show desktop notifications
                             </label>
-                            <p class="forceserif text-muted">
+                            <p class="text-muted">
                               Get the Medic'Follow notifications on the web browser you are using.
                             </p>
                           </div>
@@ -280,7 +280,7 @@ export default {
                             <label class="form-check-label fs-14" for="emailNotification">
                               Show mobile notifications
                             </label>
-                            <p class="forceserif text-muted">
+                            <p class="text-muted">
                               Get the notifications on the mobile application Medic'Follow.
                             </p>
                           </div>
@@ -295,7 +295,7 @@ export default {
                             <label class="form-check-label fs-14" for="emailNotification">
                               Show email notifications
                             </label>
-                            <p class="forceserif text-muted">
+                            <p class="text-muted">
                               Get the Medic'Follow notifications by email.
                             </p>
                           </div>
@@ -310,7 +310,7 @@ export default {
                             <label class="form-check-label fs-14" for="chatNotification">
                               Show chat notifications
                             </label>
-                            <p class="forceserif text-muted">
+                            <p class="text-muted">
                               Receive a notification every time a new message is sent to you.
                             </p>
                           </div>
@@ -323,10 +323,10 @@ export default {
                       </ul>
                       <div class="col-lg-12">
                         <div class="hstack gap-2 justify-content-end">
-                          <button type="submit" class="btn forceserif btn-primary">
+                          <button type="submit" class="btn btn-primary">
                             Update
                           </button>
-                          <button type="button" class="btn forceserif btn-soft-success">
+                          <button type="button" class="btn btn-soft-success">
                             Cancel
                           </button>
                         </div>
@@ -336,18 +336,18 @@ export default {
                       <h5 class="card-title text-decoration-underline mb-3">
                         Delete This Account:
                       </h5>
-                      <p class="forceserif text-muted">
+                      <p class="text-muted">
                         To delete your account, please enter your current password and click on the "Close & Delete This
                         Account":
                       </p>
                       <div>
-                        <input type="password" class="forceserif form-control" id="passwordInput"
-                          placeholder="Enter your password" value="make@321654987" style="max-width: 265px" />
+                        <input type="password" class="form-control" id="passwordInput" placeholder="Enter your password"
+                          value="make@321654987" style="max-width: 265px" />
                       </div>
                       <div class="hstack gap-2 mt-3">
-                        <a href="javascript:void(0);" class="btn forceserif btn-soft-danger">Close & Delete This
+                        <a href="javascript:void(0);" class="btn btn-soft-danger">Close & Delete This
                           Account</a>
-                        <a href="javascript:void(0);" class="btn forceserif btn-light">Cancel</a>
+                        <a href="javascript:void(0);" class="btn btn-light">Cancel</a>
                       </div>
                     </div>
                   </div>

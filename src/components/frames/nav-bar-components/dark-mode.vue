@@ -14,8 +14,7 @@ export default {
 </script>
 
 <template>
-  <button type="button" class="btn forceserif btn-soft-secondary btn-sm btn-rounded" @click="toggleDarkMode"
-    data-key="t-darkmode">
+  <button type="button" class="btn btn-soft-secondary btn-sm btn-rounded" @click="toggleDarkMode" data-key="t-darkmode">
     {{ $t("t-darkmode") }}<em class="bx bx-moon ms-1"></em>
   </button>
 </template>

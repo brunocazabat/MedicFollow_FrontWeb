@@ -26,9 +26,8 @@ export default {
               <img src="@/assets/images/errors/error400-cover.png" alt="error img" class="img-fluid">
               <div class="mt-3">
                 <h3 class="text-uppercase text-white" data-key="t-notfound">404 - {{ $t("t-notfound") }} 😭</h3>
-                <p class="forceserif mb-4 text-white" data-key="t-notexisting">{{ $t("t-notexisting") }}</p>
-                <router-link to="/" class="btn forceserif btn-success" data-key="t-returnhome"><em
-                    class="mdi mdi-home me-1"></em>
+                <p class="mb-4 text-white" data-key="t-notexisting">{{ $t("t-notexisting") }}</p>
+                <router-link to="/" class="btn btn-success" data-key="t-returnhome"><em class="mdi mdi-home me-1"></em>
                   {{$t("t-returnhome") }}</router-link>
               </div>
             </div>

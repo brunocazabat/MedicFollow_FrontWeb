@@ -118,7 +118,7 @@ export default {
                   <div class="carousel slide">
                     <div class="carousel-inner text-center text-white pb-6">
                       <div class="carousel-item active">
-                        <p class="forceserif fs-15 fw-bold" data-key="t-mobadd">{{ $t("t-mobadd") }}
+                        <p class="fs-15 fw-bold" data-key="t-mobadd">{{ $t("t-mobadd") }}
                           <a href="https://medicfollow.fr/fr/solutions.html" target="_blank"
                             class="text-primary text-decoration-underline fst-normal fw-medium text-white"
                             rel="noreferrer noopener">Android & IOS
@@ -136,7 +136,7 @@ export default {
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center">
-                  <p class="forceserif text-muted" data-key="t-signcont">{{ $t("t-signcont") }}</p>
+                  <p class="text-muted" data-key="t-signcont">{{ $t("t-signcont") }}</p>
                 </div>
                 <div class="p-2 mt-4">
                   <b-alert v-model="isAuthError" variant="danger" class="mt-3" dismissible>{{ authError }}</b-alert>
@@ -147,9 +147,9 @@ export default {
 
                   <form class="needs-validation" @submit.prevent="Log">
                     <div class="mb-3">
-                      <label for="email" class="forceserif form-label" data-key="t-email">{{ $t("t-email") }} <span
+                      <label for="email" class="form-label" data-key="t-email">{{ $t("t-email") }} <span
                           class="text-danger">*</span></label>
-                      <input type="email" class="forceserif form-control" id="email" data-key="t-entermail"
+                      <input type="email" class="form-control" id="email" data-key="t-entermail"
                         v-bind:placeholder="$t('t-entermail')" v-model="loginInput.email" onpaste="return false" :class="{
                           'is-invalid': submitted && v$.loginInput.email.$error,
                         }" />
@@ -160,12 +160,12 @@ export default {
 
                     <div class="mb-3">
                       <div class="float-end">
-                        <router-link to="/forgot-password" class="forceserif text-muted" data-key="t-forgpass">{{
+                        <router-link to="/forgot-password" class="text-muted" data-key="t-forgpass">{{
                         $t("t-forgpass")
                         }}
                         </router-link>
                       </div>
-                      <label class="forceserif form-label" for="password-input" data-key="t-password">{{
+                      <label class="form-label" for="password-input" data-key="t-password">{{
                       $t("t-password") }} <span class="text-danger">*</span></label>
                       <div class="position-relative auth-pass-inputgroup mb-3">
                         <input v-if="showPassword" type="text" v-model="loginInput.password" onpaste="return false"
@@ -179,7 +179,7 @@ export default {
                               submitted && v$.loginInput.password.$error,
                           }" data-key="t-enterpassw" v-bind:placeholder="$t('t-enterpassw')" id="password-input" />
                         <button @click="toggleShow"
-                          class="btn forceserif btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
+                          class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
                           type="button" style="box-shadow: none !important" id="password-addon">
                           <em class="ri-eye-fill align-middle"></em>
                         </button>
@@ -192,7 +192,7 @@ export default {
                     </div>
                     <recaptcha />
                     <div class="mt-4">
-                      <button @click="Log" class="btn forceserif btn-success w-100" type="submit" data-key="t-signin">{{
+                      <button @click="Log" class="btn btn-success w-100" type="submit" data-key="t-signin">{{
                       $t("t-signin")
                       }}
                       </button>
@@ -203,12 +203,12 @@ export default {
                         <h5 class="fs-13 mb-4 title" data-key="t-signinw">{{ $t("t-signinw") }}</h5>
                       </div>
                       <div>
-                        <button type="button" class="btn forceserif btn-danger btn-icon waves-effect waves-light ms-1">
+                        <button type="button" class="btn btn-danger btn-icon waves-effect waves-light ms-1">
                           <em class="ri-qr-code-fill fs-16"></em>
                         </button>
                       </div>
                       <div class="mt-4 text-center">
-                        <p class="forceserif mb-0 text-muted" style="color: black" data-key="t-prosign">{{
+                        <p class="mb-0 text-muted" style="color: black" data-key="t-prosign">{{
                         $t("t-prosign") }}
 
                           <router-link to="/register-mail" class="fw-semibold text-primary text-decoration-underline"

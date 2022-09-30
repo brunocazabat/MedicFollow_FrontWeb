@@ -75,7 +75,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="forceserif mb-0 ctext-content" data-key="t-sampleconv1">{{ $t("t-sampleconv1") }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv1">{{ $t("t-sampleconv1") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -106,7 +106,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="forceserif mb-0 ctext-content" data-key="t-sampleconv2">{{ $t("t-sampleconv2") }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv2">{{ $t("t-sampleconv2") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -137,7 +137,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="forceserif mb-0 ctext-content" data-key="t-sampleconv3">{{ $t("t-sampleconv3") }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv3">{{ $t("t-sampleconv3") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -168,7 +168,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="forceserif mb-0 ctext-content" data-key="t-sampleconv4">{{ $t("t-sampleconv4") }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv4">{{ $t("t-sampleconv4") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -199,7 +199,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="forceserif mb-0 ctext-content" data-key="t-sampleconv5">{{ $t("t-sampleconv5") }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv5">{{ $t("t-sampleconv5") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -230,7 +230,7 @@ export default {
                 <div class="user-chat-content">
                   <div class="ctext-wrap">
                     <div class="ctext-wrap-content">
-                      <p class="forceserif mb-0 ctext-content" data-key="t-sampleconv6">{{ $t("t-sampleconv6") }}</p>
+                      <p class="mb-0 ctext-content" data-key="t-sampleconv6">{{ $t("t-sampleconv6") }}</p>
                     </div>
                     <div class="dropdown align-self-start message-box-drop">
                       <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"

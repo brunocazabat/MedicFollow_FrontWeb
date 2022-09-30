@@ -25,7 +25,7 @@ export default {
                   </div>
                   <div class="flex-grow-1">
                     <h5 class="fs-14 mb-3">Compatible IOS & Android</h5>
-                    <p class="forceserif ff-secondary">
+                    <p class="ff-secondary">
                       Retrouvez MedicFollow ainsi que ses mises à jour sur les téléphones embarquant des systèmes
                       IOS
                       et Android.
@@ -42,7 +42,7 @@ export default {
                   </div>
                   <div class="flex-grow-1">
                     <h5 class="fs-14 mb-3">Données cryptées en local et accès avec l'empreinte digitale*</h5>
-                    <p class="forceserif ff-secondary">
+                    <p class="ff-secondary">
                       Emportez toutes vos données avec vous sans la moindre crainte en cas de perte de votre
                       téléphone. (* Si votre téléphone est compatible avec le système de reconnaissance
                       biométrique).
@@ -63,7 +63,7 @@ export default {
                   </div>
                   <div class="flex-grow-1">
                     <h5 class="fs-14 mb-3">Système de notification intelligent</h5>
-                    <p class="forceserif ff-secondary">
+                    <p class="ff-secondary">
                       Restez au courant des derniers événements ou documents disponibles grâce aux notifications
                       push.
                     </p>
@@ -79,7 +79,7 @@ export default {
                   </div>
                   <div class="flex-grow-1">
                     <h5 class="fs-14 mb-3">Exportation de votre agenda médical avec les autres services</h5>
-                    <p class="forceserif ff-secondary">
+                    <p class="ff-secondary">
                       Vous utilisez Google Agenda ou Microsoft Outlook ? Liez vos comptes afin d'être sûr de ne rien
                       manquer.
                     </p>
@@ -90,7 +90,7 @@ export default {
           </div>
           <div class="mt-4">
             <a href="https://play.google.com/store/apps/details?id=org.telegram.messenger&gl=FR"
-              class="btn forceserif btn-primary">Lien vers le téléchargement de l'application mobile
+              class="btn btn-primary">Lien vers le téléchargement de l'application mobile
               <em class="ri-arrow-right-line align-middle ms-1"></em></a>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default {
                   </div>
                   <div class="flex-grow-1">
                     <h5 class="fs-14 mb-3">Compatible avec tous les navigateurs internet</h5>
-                    <p class="forceserif ff-secondary">
+                    <p class="ff-secondary">
                       Le client web de MedicFollow est compatible avec tous les navigateurs disponibles.
                     </p>
                   </div>
@@ -142,7 +142,7 @@ export default {
                   </div>
                   <div class="flex-grow-1">
                     <h5 class="fs-14 mb-3">Interface intuitive et professionnelle</h5>
-                    <p class="forceserif ff-secondary">
+                    <p class="ff-secondary">
                       Un gain de temps considérable au quotidien pour les professionnels, une utilisation simple
                       pour les particuliers.
                     </p>
@@ -162,7 +162,7 @@ export default {
                   </div>
                   <div class="flex-grow-1">
                     <h5 class="fs-14 mb-3">Pas de mise à jour à faire de votre côté</h5>
-                    <p class="forceserif ff-secondary">
+                    <p class="ff-secondary">
                       Un simple redémarrage vous permettra de bénéficier de nos mises à jour, vous serez notifié à
                       l'arrivée de nouvelles fonctionnalités.
                     </p>
@@ -178,7 +178,7 @@ export default {
                   </div>
                   <div class="flex-grow-1">
                     <h5 class="fs-14 mb-3">Utilisable, peu importe la plate-forme</h5>
-                    <p class="forceserif ff-secondary">
+                    <p class="ff-secondary">
                       Un navigateur et une connexion internet vous suffiront pour profiter des services de
                       MedicFollow.
                     </p>
@@ -188,7 +188,7 @@ export default {
             </div>
           </div>
           <div class="mt-4">
-            <router-link to="/login" class="btn forceserif btn-primary">Lien vers le client web
+            <router-link to="/login" class="btn btn-primary">Lien vers le client web
               <em class="ri-arrow-right-line align-middle ms-1"></em>
             </router-link>
           </div>

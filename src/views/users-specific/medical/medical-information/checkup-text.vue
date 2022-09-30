@@ -42,23 +42,23 @@ export default {
         <div class="row">
           <div class="col-lg-3 col-sm-6">
             <div>
-              <p class="forceserif mb-2 text-uppercase fw-medium" data-key="t-visitdate">{{ $t("t-visitdate") }}:</p>
+              <p class="mb-2 text-uppercase fw-medium" data-key="t-visitdate">{{ $t("t-visitdate") }}:</p>
               <h5 class="fs-15 mb-0">{{ checkupText.visitDate }}</h5>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div>
-              <p class="forceserif mb-2 text-uppercase fw-medium" data-key="t-visittime">{{ $t("t-visittime") }}:</p>
+              <p class="mb-2 text-uppercase fw-medium" data-key="t-visittime">{{ $t("t-visittime") }}:</p>
               <h5 class="fs-15 mb-0">{{ checkupText.visitHour }}</h5>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div v-if="checkupText.boolStatus === 1">
-              <p class="forceserif mb-2 text-uppercase fw-medium" data-key="t-status">{{ $t("t-status") }}:</p>
+              <p class="mb-2 text-uppercase fw-medium" data-key="t-status">{{ $t("t-status") }}:</p>
               <div class="badge bg-warning fs-12">{{ checkupText.status }}</div>
             </div>
             <div v-else>
-              <p class="forceserif mb-2 text-uppercase fw-medium" data-key="t-status">{{ $t("t-status") }}:</p>
+              <p class="mb-2 text-uppercase fw-medium" data-key="t-status">{{ $t("t-status") }}:</p>
               <div class="badge bg-success fs-12">{{ checkupText.status }}</div>
             </div>
           </div>
@@ -83,8 +83,7 @@ export default {
                     </div>
                     <div class="flex-shrink-0 ms-2">
                       <div class="d-flex gap-1">
-                        <button type="button"
-                          class="btn forceserif btn-icon text-muted btn-sm fs-18 shadow-none shadow-none"><em
+                        <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none shadow-none"><em
                             class="ri-download-2-line"></em></button>
                       </div>
                     </div>
@@ -109,8 +108,7 @@ export default {
                     </div>
                     <div class="flex-shrink-0 ms-2">
                       <div class="d-flex gap-1">
-                        <button type="button"
-                          class="btn forceserif btn-icon text-muted btn-sm fs-18 shadow-none shadow-none"><em
+                        <button type="button" class="btn btn-icon text-muted btn-sm fs-18 shadow-none shadow-none"><em
                             class="ri-download-2-line"></em></button>
                       </div>
                     </div>

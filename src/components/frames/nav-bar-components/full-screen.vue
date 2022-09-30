@@ -35,7 +35,7 @@ export default {
 </script>
 
 <template>
-  <button type="button" class="btn forceserif btn-soft-secondary btn-sm btn-rounded" data-toggle="fullscreen"
+  <button type="button" class="btn btn-soft-secondary btn-sm btn-rounded" data-toggle="fullscreen"
     style="margin-right: 10px;" @click="initFullScreen" data-key="t-fullscreen">
     {{ $t("t-fullscreen") }} <em class="bx bx-fullscreen ms-1"></em>
   </button>

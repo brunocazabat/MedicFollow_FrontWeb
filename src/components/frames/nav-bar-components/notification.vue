@@ -8,7 +8,7 @@ export default {
 
 <template>
   <div class="dropdown topbar-head-dropdown ms-1 header-item">
-    <button type="button" class="btn forceserif btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none"
+    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none"
       id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <em class="bx bx-bell fs-22"></em>
       <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">
@@ -65,7 +65,7 @@ export default {
                       <span class="text-secondary"> oui</span>
                     </h6>
                   </a>
-                  <p class="forceserif mb-0 fs-11 fw-medium text-uppercase text-muted">
+                  <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
                     <span><em class="mdi mdi-clock-outline"></em> oui
                     </span>
                   </p>
@@ -86,7 +86,7 @@ export default {
                       <span class="text-secondary"> oui</span>
                     </h6>
                   </a>
-                  <p class="forceserif mb-0 fs-11 fw-medium text-uppercase text-muted">
+                  <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
                     <span><em class="mdi mdi-clock-outline"></em> oui
                     </span>
                   </p>
@@ -107,7 +107,7 @@ export default {
                       <span class="text-secondary"> oui</span>
                     </h6>
                   </a>
-                  <p class="forceserif mb-0 fs-11 fw-medium text-uppercase text-muted">
+                  <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
                     <span><em class="mdi mdi-clock-outline"></em> oui
                     </span>
                   </p>
@@ -128,7 +128,7 @@ export default {
                       <span class="text-secondary"> oui</span>
                     </h6>
                   </a>
-                  <p class="forceserif mb-0 fs-11 fw-medium text-uppercase text-muted">
+                  <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
                     <span><em class="mdi mdi-clock-outline"></em> oui
                     </span>
                   </p>
@@ -140,7 +140,7 @@ export default {
             </div>
 
             <div class="my-3 text-center">
-              <button type="button" class="btn forceserif btn-soft-success">
+              <button type="button" class="btn btn-soft-success">
                 View All Notifications
                 <em class="ri-arrow-right-line align-middle"></em>
               </button>
@@ -160,9 +160,9 @@ export default {
                     </h6>
                   </a>
                   <div class="fs-13 text-muted">
-                    <p class="forceserif mb-1">Oui.</p>
+                    <p class="mb-1">Oui.</p>
                   </div>
-                  <p class="forceserif mb-0 fs-11 fw-medium text-uppercase text-muted">
+                  <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
                     <span><em class="mdi mdi-clock-outline"></em> oui</span>
                   </p>
                 </div>
@@ -182,9 +182,9 @@ export default {
                     </h6>
                   </a>
                   <div class="fs-13 text-muted">
-                    <p class="forceserif mb-1">Oui.</p>
+                    <p class="mb-1">Oui.</p>
                   </div>
-                  <p class="forceserif mb-0 fs-11 fw-medium text-uppercase text-muted">
+                  <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
                     <span><em class="mdi mdi-clock-outline"></em> oui</span>
                   </p>
                 </div>
@@ -204,9 +204,9 @@ export default {
                     </h6>
                   </a>
                   <div class="fs-13 text-muted">
-                    <p class="forceserif mb-1">Oui.</p>
+                    <p class="mb-1">Oui.</p>
                   </div>
-                  <p class="forceserif mb-0 fs-11 fw-medium text-uppercase text-muted">
+                  <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
                     <span><em class="mdi mdi-clock-outline"></em> oui</span>
                   </p>
                 </div>
@@ -226,9 +226,9 @@ export default {
                     </h6>
                   </a>
                   <div class="fs-13 text-muted">
-                    <p class="forceserif mb-1">Oui.</p>
+                    <p class="mb-1">Oui.</p>
                   </div>
-                  <p class="forceserif mb-0 fs-11 fw-medium text-uppercase text-muted">
+                  <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
                     <span><em class="mdi mdi-clock-outline"></em> oui</span>
                   </p>
                 </div>
@@ -239,7 +239,7 @@ export default {
             </div>
 
             <div class="my-3 text-center">
-              <button type="button" class="btn forceserif btn-soft-success">
+              <button type="button" class="btn btn-soft-success">
                 View All Messages
                 <em class="ri-arrow-right-line align-middle"></em>
               </button>

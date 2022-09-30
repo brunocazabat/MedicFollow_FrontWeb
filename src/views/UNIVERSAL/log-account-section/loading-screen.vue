@@ -80,7 +80,7 @@ export default {
                 <div class="text-center mt-2">
                   <lottie class="avatar-xl" colors="primary:#45CB85,secondary:#4b38b3" :options="defaultOptions"
                     :height="200" :width="200" />
-                  <p class="forceserif text-muted" data-key="t-loading">{{ $t("t-loading") }}
+                  <p class="text-muted" data-key="t-loading">{{ $t("t-loading") }}
                   </p>
                 </div>
               </div>

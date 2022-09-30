@@ -13,7 +13,7 @@ export default {
             <img src="@/assets/images/logo/logo-long.png" alt="" height="120" />
           </router-link>
         </div>
-        <p class="forceserif mt-3 fs-15 fw-medium text-white" data-key="t-yourtool">{{ $t("t-yourtool") }}
+        <p class="mt-3 fs-15 fw-medium text-white" data-key="t-yourtool">{{ $t("t-yourtool") }}
         </p>
       </div>
     </div>

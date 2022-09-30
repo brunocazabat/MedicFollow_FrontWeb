@@ -45,11 +45,11 @@ export default {
                   :width="180" />
                 <div class="mt-4 pt-2">
                   <h5 data-key="t-logoutsuccess">{{ $t("t-logoutsuccess") }}</h5>
-                  <p class="forceserif text-muted" data-key="t-thanksp1">{{ $t("t-thanksp1") }}
+                  <p class="text-muted" data-key="t-thanksp1">{{ $t("t-thanksp1") }}
                     <span class="fw-semibold">MedicFollow</span>
                   </p>
                   <div class="mt-4">
-                    <router-link to="/login" class="btn forceserif btn-success w-100" data-key="t-signin">{{
+                    <router-link to="/login" class="btn btn-success w-100" data-key="t-signin">{{
                     $t("t-signin") }}
                     </router-link>
                   </div>

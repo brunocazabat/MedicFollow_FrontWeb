@@ -20,7 +20,7 @@ export default {
         <h1 class="mb-5 ff-secondary fw-semibold lh-base text-uppercase text-success text-center">NOTRE HISTOIRE</h1>
         <div class="text-muted">
           <h2 class="mb-3">Des débuts prometteurs:</h2>
-          <p class="forceserif mb-4 ff-secondary fs-16">
+          <p class="mb-4 ff-secondary fs-16">
             MedicFollow, ayant été élu le meilleur projet EIP à Epitech Marseille, a été désigné pour être présenté
             à "L’Accélérateur M", une association spécialisée dans l’aide et le soutien aux jeunes entreprises du
             territoire.

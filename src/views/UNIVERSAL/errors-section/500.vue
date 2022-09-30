@@ -28,10 +28,9 @@ export default {
             </div>
             <div>
               <h4 class="text-white" data-key="t-serverr">500 - {{ $t("t-serverr") }} 😭</h4>
-              <p class="forceserif text-white w-75 mx-auto" data-key="t-wrong">{{ $t("t-wrong") }}</p>
-              <router-link to="/" class="btn forceserif btn-success" data-key="t-returnhome"><em
-                  class="mdi mdi-home me-1"></em> {{
-                  $t("t-returnhome") }}</router-link>
+              <p class="text-white w-75 mx-auto" data-key="t-wrong">{{ $t("t-wrong") }}</p>
+              <router-link to="/" class="btn btn-success" data-key="t-returnhome"><em class="mdi mdi-home me-1"></em> {{
+              $t("t-returnhome") }}</router-link>
             </div>
           </div><!-- end col-->
           <translatemodule />

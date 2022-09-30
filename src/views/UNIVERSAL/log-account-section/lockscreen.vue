@@ -120,7 +120,7 @@ export default {
               <div class="card-body p-4">
                 <div class="text-center mt-2">
                   <h4 class="text-primary" data-key="t-lockscreen">{{ $t("t-lockscreen") }}</h4>
-                  <p class="forceserif text-muted" data-key="t-unlockscreen">{{ $t("t-unlockscreen") }}
+                  <p class="text-muted" data-key="t-unlockscreen">{{ $t("t-unlockscreen") }}
                   </p>
                 </div>
                 <div class="user-thumb text-center">
@@ -137,7 +137,7 @@ export default {
 
                   <form class="needs-validation" @submit.prevent="Unlock">
                     <div class="mb-3">
-                      <label class="forceserif form-label" for="password-input" data-key="t-password">{{
+                      <label class="form-label" for="password-input" data-key="t-password">{{
                       $t("t-password") }} <span class="text-danger">*</span></label>
                       <div class="position-relative auth-pass-inputgroup mb-3">
                         <input v-if="showPassword" type="text" v-model="loginInput.password" onpaste="return false"
@@ -151,7 +151,7 @@ export default {
                               submitted && v$.loginInput.password.$error,
                           }" data-key="t-enterpassw" v-bind:placeholder="$t('t-enterpassw')" id="password-input" />
                         <button @click="toggleShow"
-                          class="btn forceserif btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
+                          class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
                           type="button" style="box-shadow: none !important" id="password-addon">
                           <em class="ri-eye-fill align-middle"></em>
                         </button>
@@ -164,14 +164,13 @@ export default {
                     </div>
                     <recaptcha />
                     <div class="mb-2 mt-4">
-                      <button @click="Unlock" class="btn forceserif btn-success w-100" type="submit"
-                        data-key="t-unlock">{{
-                        $t("t-unlock")
-                        }}
+                      <button @click="Unlock" class="btn btn-success w-100" type="submit" data-key="t-unlock">{{
+                      $t("t-unlock")
+                      }}
                       </button>
                     </div>
                     <div class="mt-4 text-center">
-                      <p class="forceserif mb-0 text-muted" style="color: black" data-key="t-notyou">{{ $t("t-notyou")
+                      <p class="mb-0 text-muted" style="color: black" data-key="t-notyou">{{ $t("t-notyou")
                       }}
 
                         <router-link to="/logout" class="fw-semibold text-primary text-decoration-underline"

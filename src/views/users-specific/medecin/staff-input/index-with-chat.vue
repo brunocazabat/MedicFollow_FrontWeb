@@ -170,7 +170,7 @@ export default {
 
             <!-- Title + muted text -->
             <h2 class="text-primary">Select a patient</h2>
-            <p class="forceserif text-muted">Here you can select a patient you visited to then input the latest medical
+            <p class="text-muted">Here you can select a patient you visited to then input the latest medical
               information. The last first and last name inputs are not mandatory but the social security number and the
               date of birth are.</p>
 
@@ -180,18 +180,18 @@ export default {
             <div class="p-3 row">
               <!-- First name -->
               <div class="col-sm-5">
-                <label for="patientFirstName" class="forceserif form-label" data-key="t-firstname">{{
+                <label for="patientFirstName" class="form-label" data-key="t-firstname">{{
                 $t("t-firstname")
                 }}</label>
-                <input type="text" class="forceserif form-control" id="patientFirstName"
-                  placeholder="Enter first name..." v-model="patientFirstName" />
+                <input type="text" class="form-control" id="patientFirstName" placeholder="Enter first name..."
+                  v-model="patientFirstName" />
               </div>
 
               <!-- Last name -->
               <div class="col-sm-5">
-                <label for="patientLastName" class="forceserif form-label" data-key="t-lastname">{{ $t("t-lastname")
+                <label for="patientLastName" class="form-label" data-key="t-lastname">{{ $t("t-lastname")
                 }}</label>
-                <input type="text" class="forceserif form-control" id="patientLastName" placeholder="Enter last name..."
+                <input type="text" class="form-control" id="patientLastName" placeholder="Enter last name..."
                   v-model="patientLastName" />
               </div>
             </div>
@@ -201,23 +201,22 @@ export default {
 
               <!-- Social Security Number -->
               <div class="col-sm-5">
-                <label for="patientSocialSecurityNumber" class="forceserif form-label" data-key="">Social Security
+                <label for="patientSocialSecurityNumber" class="form-label" data-key="">Social Security
                   Number</label>
-                <input type="text" class="forceserif form-control" id="patientSocialSecurityNumber"
+                <input type="text" class="form-control" id="patientSocialSecurityNumber"
                   placeholder="Enter the social security number..." v-model="patientMandatory.socialSecurityNumber" />
               </div>
 
               <!-- Date of Birth / CHANGE FOR ACTUAL DATE PICKER -->
               <div class="col-sm-5 mb-5">
-                <label for="patientDoB" class="forceserif form-label" data-key="">Date of Birth</label>
-                <input type="date" class="forceserif form-control" id="patientDoB"
-                  placeholder="Enter the date of birth..." v-model="patientMandatory.dateOfBirth" />
+                <label for="patientDoB" class="form-label" data-key="">Date of Birth</label>
+                <input type="date" class="form-control" id="patientDoB" placeholder="Enter the date of birth..."
+                  v-model="patientMandatory.dateOfBirth" />
               </div>
 
               <!-- Next Button -->
               <div class="p-3">
-                <button class="btn forceserif btn-primary" :disabled="isSubmitButtonDisabled"
-                  v-on:click="nextDisplay()">
+                <button class="btn btn-primary" :disabled="isSubmitButtonDisabled" v-on:click="nextDisplay()">
                   NEXT</button>
               </div>
             </div>
@@ -233,12 +232,12 @@ export default {
           <div class="card-body">
             <h2 class="text-primary">Medical Information Input for <strong>{{patientFirstName}}
                 {{patientLastName}}</strong></h2>
-            <p class="forceserif text-muted">Here you can write down the latest information about the patient as well as
+            <p class="text-muted">Here you can write down the latest information about the patient as well as
               answer the
               messages sent by the family.</p>
 
             <div class="p-3">
-              <textarea class="forceserif form-control" id="VertimeassageInput" rows="3"
+              <textarea class="form-control" id="VertimeassageInput" rows="3"
                 placeholder="Enter the summary here..."></textarea>
               <div class="invalid-feedback">
                 Please enter a message in the textarea.
@@ -285,7 +284,7 @@ export default {
                                       href="#userProfileCanvasExample" aria-controls="userProfileCanvasExample">{{
                                       username }}</a>
                                   </h5>
-                                  <p class="forceserif text-truncate text-muted fs-14 mb-0 userStatus">
+                                  <p class="text-truncate text-muted fs-14 mb-0 userStatus">
                                     <small>Online</small>
                                   </p>
                                 </div>
@@ -297,7 +296,7 @@ export default {
                           <ul class="list-inline user-chat-nav text-end mb-0">
                             <li class="list-inline-item m-0">
                               <div class="dropdown">
-                                <button class="btn forceserif btn-ghost-secondary btn-icon shadow-none" type="button"
+                                <button class="btn btn-ghost-secondary btn-icon shadow-none" type="button"
                                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   <search-icon class="icon-sm"></search-icon>
                                 </button>
@@ -314,7 +313,7 @@ export default {
                             </li>
 
                             <li class="list-inline-item d-none d-lg-inline-block m-0">
-                              <button type="button" class="btn forceserif btn-ghost-secondary btn-icon shadow-none"
+                              <button type="button" class="btn btn-ghost-secondary btn-icon shadow-none"
                                 data-bs-toggle="offcanvas" data-bs-target="#userProfileCanvasExample"
                                 aria-controls="userProfileCanvasExample">
                                 <info-icon class="icon-sm"></info-icon>
@@ -323,7 +322,7 @@ export default {
 
                             <li class="list-inline-item m-0">
                               <div class="dropdown">
-                                <button class="btn forceserif btn-ghost-secondary btn-icon shadow-none" type="button"
+                                <button class="btn btn-ghost-secondary btn-icon shadow-none" type="button"
                                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   <more-vertical-icon class="icon-sm"></more-vertical-icon>
                                 </button>
@@ -367,7 +366,7 @@ export default {
                               <div class="user-chat-content">
                                 <div class="ctext-wrap">
                                   <div class="ctext-wrap-content">
-                                    <p class="forceserif mb-0 ctext-content">
+                                    <p class="mb-0 ctext-content">
                                       {{ data.message }}
                                     </p>
                                   </div>
@@ -418,7 +417,7 @@ export default {
                           <div class="col-auto">
                             <div class="chat-input-links me-2">
                               <div class="links-list-item">
-                                <button type="button" class="btn forceserif btn-link text-decoration-none emoji-btn"
+                                <button type="button" class="btn btn-link text-decoration-none emoji-btn"
                                   id="emoji-btn">
                                   <em class="bx bx-smile align-middle"></em>
                                 </button>
@@ -444,8 +443,7 @@ export default {
                           <div class="col-auto">
                             <div class="chat-input-links ms-2">
                               <div class="links-list-item">
-                                <button type="submit"
-                                  class="btn forceserif btn-primary chat-send waves-effect waves-light shadow">
+                                <button type="submit" class="btn btn-primary chat-send waves-effect waves-light shadow">
                                   <em class="ri-send-plane-2-fill align-bottom"></em>
                                 </button>
                               </div>
@@ -461,11 +459,10 @@ export default {
                           <div class="replymessage-block mb-0 d-flex align-items-start">
                             <div class="flex-grow-1">
                               <h5 class="conversation-name"></h5>
-                              <p class="forceserif mb-0"></p>
+                              <p class="mb-0"></p>
                             </div>
                             <div class="flex-shrink-0">
-                              <button type="button" id="close_toggle"
-                                class="btn forceserif btn-sm btn-link mt-n2 me-n3 fs-18">
+                              <button type="button" id="close_toggle" class="btn btn-sm btn-link mt-n2 me-n3 fs-18">
                                 <em class="bx bx-x align-middle"></em>
                               </button>
                             </div>
