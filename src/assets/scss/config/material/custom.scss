@@ -568,6 +568,10 @@
     margin: 1rem 0rem;
 }
 
+.left-margin > div {
+    margin-left: 1rem;
+}
+
 .basic-card-border {
     border: 1px solid #dae0e7;
     box-sizing: border-box;
@@ -576,8 +580,7 @@
 }
 
 .mf-divider {
-    background-color: #dae0e7;
-    border: 0;
+    background-color: #2b466033;
     flex-shrink: 0;
     height: 1px;
     margin: -1px 0 0;

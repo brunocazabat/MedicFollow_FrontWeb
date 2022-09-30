@@ -51,8 +51,8 @@ export default {
                 <span>{{$t("t-selectdoctormeeting")}}... <em class="ri-arrow-down-line lh-1 center-items"></em></span>
               </a>
 
-              <div class="collapse col-sm-12 basic-padding" id="meetingChooseDoctor">
-                <hr class="mf-divider">
+              <hr class="mf-divider">
+              <div class="collapse col-sm-12 basic-padding left-margin" id="meetingChooseDoctor">
 
                 <div class="form-check">
                   <input class="form-check-input" type="radio" id="doc1GridCheck" value="Doc1" v-model="pickedDoctor" />
