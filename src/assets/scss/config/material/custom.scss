@@ -537,11 +537,31 @@
     vertical-align: middle;
 }
 
+.item-at-end {
+    display: flex;
+    justify-content: right;
+}
+
+.space-in-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.meeting-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .two-percent-height {
     display: inline-block;
     height: 5vh;
+    line-height: 5vh;
     text-align: center;
     vertical-align: middle;
+}
+
+.btn-padding > button {
+    margin: 0 0.25rem;
 }
 
 * {

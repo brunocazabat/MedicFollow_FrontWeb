@@ -21,9 +21,7 @@ export default {
       this.viewID -= 1;
     }
   }
-
 }
-
 </script>
 
 
@@ -31,7 +29,7 @@ export default {
 <template>
   <Layout>
 
-    <div class="project-wrapper">
+    <div class="project-wrapper meeting-form">
 
 
       <div class="p-2">
@@ -42,13 +40,8 @@ export default {
       <div class="p-3 card">
         <div class="body-card">
 
-
+          <!-- CHOOSE DOCTOR DIV -->
           <div v-if="viewID === 0">
-            <div class="p-3 mb-3 row">
-              <button class="lh-1 btn font-size-medium col-lg-3" v-on:click="nextView()"
-                data-key="t-nextstep">{{$t("t-nextstep")}}<em class="ri-arrow-right-line"></em></button>
-            </div>
-
             <div class="p-3 col-lg-3">
               <select class="form-select" id="chooseDoctor" required>
                 <option selected data-key="t-selectdoctormeeting">{{$t("t-selectdoctormeeting")}}...</option>
@@ -60,14 +53,8 @@ export default {
             </div>
           </div>
 
+          <!-- CONSULTING DOCTOR QUESTION -->
           <div v-if="viewID === 1">
-            <div class="p-3 mb-3 row">
-              <button class="lh-1 btn font-size-medium col-lg-3" v-on:click="prevView()" data-key="t-previousstep"><em
-                  class="ri-arrow-left-line"></em>
-                {{$t("t-previousstep")}}</button>
-              <button class="lh-1 btn font-size-medium col-lg-3" v-on:click="nextView()"
-                data-key="t-nextstep">{{$t("t-nextstep")}} (debug) <em class="ri-arrow-right-line"></em></button>
-            </div>
 
             <div class="p-3">
               <p class="form-label font-size-large" data-key="t-haveyoumetdoctor">
@@ -80,27 +67,20 @@ export default {
             </div>
           </div>
 
-
-
-
+          <!-- CHOOSE DATE AND TIME -->
           <div v-if="viewID === 2">
-            <div class="p-3 mb-3">
-              <button class="lh-1 btn font-size-medium" v-on:click="prevView()" data-key="t-previousstep"><em
-                  class="ri-arrow-left-line"></em>
-                {{$t("t-previousstep")}}</button>
-            </div>
             <div class="p-3">
               <p class="form-label font-size-large" data-key="t-choosemeetingdate">
                 <strong>{{$t("t-choosemeetingdate")}}</strong>
               </p>
             </div>
             <div class="p-3">
-              <a class="btn nav-link menu-link col-sm-4 font-size-medium mb-2 two-percent-height"
+              <a class="btn nav-link menu-link col-sm-12 font-size-medium mb-2 two-percent-height"
                 href="#meetingDateCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false"
                 aria-controls="meetingDateCollapse">
-                <span>Friday, September 30 <em class="ri-arrow-down-line lh-1"></em></span>
+                <span>Friday, September 30 <em class="ri-arrow-down-line lh-1 center-items"></em></span>
               </a>
-              <div class="collapse col-sm-4" id="meetingDateCollapse">
+              <div class="collapse col-sm-12 btn-padding" id="meetingDateCollapse">
 
                 <button class="btn btn-primary mb-2 col-sm-2">9:00</button>
                 <button class="btn btn-primary mb-2 col-sm-2">15:00</button>
@@ -120,6 +100,14 @@ export default {
           </div>
         </div>
 
+      </div>
+
+      <div class="p-3 mb-3 row space-in-between">
+        <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"
+          :disabled="viewID === 0"><em class="ri-arrow-left-line center-items"></em>
+          {{$t("t-previousstep")}}</button>
+        <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()"
+          :disabled="viewID === 2">{{$t("t-nextstep")}} <em class="ri-arrow-right-line center-items"></em></button>
       </div>
 
 

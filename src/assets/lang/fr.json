@@ -250,5 +250,6 @@
   "t-install": "Comment télécharger ou désinstaller MedicFollow.",
   "t-deleteacc": "Comment résilier mon compte MedicFollow ?",
   "t-howcontact": "Comment contacter le service client ?",
-  "t-notanswered": "Votre question n'est pas dans cette FAQ ?"
+  "t-notanswered": "Votre question n'est pas dans cette FAQ ?",
+  "t-selectdoctormeeting": "Sélectionnez un médecin pour votre rendez-vous"
 }
