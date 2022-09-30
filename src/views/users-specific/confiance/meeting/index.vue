@@ -25,7 +25,7 @@ export default {
 
       <div class="p-2">
         <h2 class="text-primary" data-key="t-chooseameeting">{{$t("t-chooseameeting")}}</h2>
-        <p class="text-muted" data-key="t-plsfillmeetinginfo">{{$t("t-plsfillmeetinginfo")}}</p>
+        <p class="text-muted forceserif" data-key="t-plsfillmeetinginfo">{{$t("t-plsfillmeetinginfo")}}</p>
       </div>
 
 

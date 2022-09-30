@@ -89,7 +89,8 @@ export default {
 
               <!-- Last name -->
               <div class="col-sm-5">
-                <label for="patientLastName" class="forceserif form-label font-size-large" data-key="t-lastname">{{ $t("t-lastname")
+                <label for="patientLastName" class="forceserif form-label font-size-large" data-key="t-lastname">{{
+                $t("t-lastname")
                 }}</label>
                 <input type="text" class="forceserif form-control" id="patientLastName" placeholder="Enter last name..."
                   v-model="patientLastName" />
@@ -148,13 +149,14 @@ export default {
             </div>
 
             <hr>
-            <p class="text-muted" data-key="t-notmandatoryfields">{{$t("t-notmandatoryfields")}}</p>
+            <p class="forceserif text-muted" data-key="t-notmandatoryfields">{{$t("t-notmandatoryfields")}}</p>
 
             <!-- HEARTBEAT -->
             <div class="p-3">
-              <label for="patientInputGenerakInfo" class="form-label font-size-large"
+              <label for="patientInputGenerakInfo" class="forceserif form-label font-size-large"
                 data-key="t-heartbeat">{{$t("t-heartbeat")}}</label>
-              <input class="form-control" id="patientInputGenerakInfo" placeholder="Enter the heartbeat here...">
+              <input class="forceserif form-control" id="patientInputGenerakInfo"
+                placeholder="Enter the heartbeat here...">
               <div class="invalid-feedback">
                 Please enter a message in the textarea.
               </div>
@@ -162,9 +164,9 @@ export default {
 
             <!-- PULSE -->
             <div class="p-3 mb-3">
-              <label for="patientInputGenerakInfo" class="form-label font-size-large"
+              <label for="patientInputGenerakInfo" class="forceserif form-label font-size-large"
                 data-key="t-pulse">{{$t("t-pulse")}}</label>
-              <input class="form-control" id="patientInputGenerakInfo" placeholder="Enter the pulse here...">
+              <input class="forceserif form-control" id="patientInputGenerakInfo" placeholder="Enter the pulse here...">
               <div class="invalid-feedback">
                 Please enter a message in the textarea.
               </div>
@@ -172,9 +174,9 @@ export default {
 
             <!-- OXYGEN SATURATION -->
             <div class="p-3">
-              <label for="patientInputGenerakInfo" class="form-label font-size-large"
+              <label for="patientInputGenerakInfo" class="forceserif form-label font-size-large"
                 data-key="t-oxygensaturation">{{$t("t-oxygensaturation")}}</label>
-              <input class="form-control" id="patientInputGenerakInfo"
+              <input class="forceserif form-control" id="patientInputGenerakInfo"
                 placeholder="Enter the oxygen saturation here...">
               <div class="invalid-feedback">
                 Please enter a message in the textarea.
@@ -186,11 +188,12 @@ export default {
             <!-- FILE UPLOAD -->
             <div class="p-3">
               <div class="col-md-12">
-                <label class="font-size-large mb-0 mt-0" data-key="t-questionuploaddoc">
+                <label class="forceserif font-size-large mb-0 mt-0" data-key="t-questionuploaddoc">
                   {{ $t("t-questionuploaddoc") }}
                 </label>
-                <p class="text-muted mb-3" data-key="t-uploadexample">{{ $t("t-uploadexample") }}</p>
-                <input class="form-control" type="file" id="feedbackFileUpload" accept=".pdf, ,jpg, .jpeg, .png">
+                <p class="forceserif text-muted mb-3" data-key="t-uploadexample">{{ $t("t-uploadexample") }}</p>
+                <input class="forceserif form-control" type="file" id="feedbackFileUpload"
+                  accept=".pdf, ,jpg, .jpeg, .png">
               </div>
             </div>
 
