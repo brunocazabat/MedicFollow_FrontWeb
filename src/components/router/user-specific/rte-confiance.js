@@ -102,4 +102,15 @@ export default [
     component: () =>
       import("@/views/users-specific/confiance/forms-section/bugreport.vue"),
   },
+  {
+    path: "/confiance/online-meeting",
+    name: "confiance-onlinemeeting",
+    meta: {
+      title: "Bug Report",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import("@/views/users-specific/confiance/meeting/index.vue"),
+  },
 ];
