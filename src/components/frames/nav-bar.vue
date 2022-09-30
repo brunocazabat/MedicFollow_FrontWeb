@@ -128,8 +128,8 @@ export default {
           <lang />
           <div class="dropdown ms-sm-3 header-item topbar-user">
             <!-- PROFILE -->
-            <button type="button" class="btn forceserif shadow-none" id="page-header-user-dropdown"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="btn shadow-none" id="page-header-user-dropdown" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               <span class="d-flex align-items-center">
                 <img class="rounded-circle header-profile-user" src="@/assets/images/users/avatar-1.png"
                   alt="Header Avatar" />
@@ -200,13 +200,12 @@ export default {
               </SimpleBar>
 
               <div class="text-center pt-3 pb-1">
-                <router-link to="/lockscreen" class="btn forceserif btn-primary btn-sm" data-key="t-lockscreen">{{
+                <router-link to="/lockscreen" class="btn btn-primary btn-sm" data-key="t-lockscreen">{{
                 $t('t-lockscreen')
                 }}
                   <em class="mdi mdi-lock ms-1"></em>
                 </router-link>
-                <router-link to="/logout" class="btn forceserif btn-primary btn-sm" data-key="t-logout"
-                  style="margin-left: 15px;">
+                <router-link to="/logout" class="btn btn-primary btn-sm" data-key="t-logout" style="margin-left: 15px;">
                   {{ $t('t-logout') }}<em class="mdi mdi-logout ms-1"></em>
                 </router-link>
               </div>

@@ -264,13 +264,13 @@ export default {
           <div class="col-xl-3">
             <div class="card card-h-100">
               <div class="card-body">
-                <button class="btn forceserif btn-primary w-100" id="btn-new-event" @click="showModal = true">
+                <button class="btn btn-primary w-100" id="btn-new-event" @click="showModal = true">
                   <em class="mdi mdi-plus"></em> Create New Event
                 </button>
 
                 <div id="external-events">
                   <br />
-                  <p class="forceserif text-muted">
+                  <p class="text-muted">
                     Drag and drop your event or click in the calendar
                   </p>
                   <div class="external-event fc-event bg-soft-success text-success" data-class="bg-soft-success">
@@ -290,7 +290,7 @@ export default {
             </div>
             <div>
               <h5 class="mb-1">Upcoming Events</h5>
-              <p class="forceserif text-muted">Don't miss scheduled events</p>
+              <p class="text-muted">Don't miss scheduled events</p>
               <SimpleBar class="upcoming-events pe-2 me-n1 mb-3" data-simplebar="init" style="height: 400px">
                 <div class="card mb-3" v-for="event in currentEvents" :key="event.id">
                   <div class="card-body">
@@ -306,7 +306,7 @@ export default {
                       </div>
                     </div>
                     <h6 class="card-title fs-16">{{ event.title }}</h6>
-                    <p class="forceserif text-muted text-truncate-two-lines mb-0">
+                    <p class="text-muted text-truncate-two-lines mb-0">
                       {{ event.description }}
                     </p>
                   </div>
@@ -321,7 +321,7 @@ export default {
                   </div>
                   <div class="flex-grow-1 ms-3">
                     <h6 class="fs-15">Welcome to your Calendar!</h6>
-                    <p class="forceserif text-muted mb-0">
+                    <p class="text-muted mb-0">
                       Event that applications book will appear here. Click on an
                       event to see the details and manage applicants event.
                     </p>
@@ -348,8 +348,8 @@ export default {
           <div class="col-12">
             <div class="mb-3">
               <label for="name">Event Name</label>
-              <input id="name" v-model="event.title" type="text" class="forceserif form-control"
-                placeholder="Insert Event name" :class="{ 'is-invalid': submitted && v$.event.title.$error }" />
+              <input id="name" v-model="event.title" type="text" class="form-control" placeholder="Insert Event name"
+                :class="{ 'is-invalid': submitted && v$.event.title.$error }" />
               <div v-if="submitted && v$.event.title.$error" class="invalid-feedback">
                 <span v-if="v$.event.title.required.$message">{{
                 v$.event.title.required.$message
@@ -360,7 +360,7 @@ export default {
           <div class="col-12">
             <div class="mb-3">
               <label class="control-label">Category</label>
-              <select v-model="event.category" class="forceserif form-control" name="category"
+              <select v-model="event.category" class="form-control" name="category"
                 :class="{ 'is-invalid': submitted && v$.event.category.errors }">
                 <option v-for="option in categories" :key="option.backgroundColor" :value="`${option.value}`">
                   {{ option.name }}
@@ -390,14 +390,14 @@ export default {
           <div class="col-12">
             <div class="mb-3">
               <label for="name">Event Name</label>
-              <input id="name1" v-model="editevent.editTitle" type="text" class="forceserif form-control"
+              <input id="name1" v-model="editevent.editTitle" type="text" class="form-control"
                 placeholder="Insert Event name" />
             </div>
           </div>
           <div class="col-12">
             <div class="mb-3">
               <label class="control-label">Category</label>
-              <select v-model="editevent.editcategory" class="forceserif form-control" name="category">
+              <select v-model="editevent.editcategory" class="form-control" name="category">
                 <option v-for="option in categories" :key="option.backgroundColor" :value="`${option.value}`">
                   {{ option.name }}
                 </option>

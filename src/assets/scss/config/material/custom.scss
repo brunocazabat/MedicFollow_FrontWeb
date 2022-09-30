@@ -504,7 +504,7 @@
         .nav-item {
             .nav-link {
                 &.active:after {
-                    opacity: 0;
+                    opacity: 0.8;
                 }
             }
         }
@@ -533,6 +533,6 @@
     font-size: xx-large;
 }
 
-.forceserif {
-    font-family: "Inter", sans-serif;
+* {
+    font-family: "Inter", sans-serif !important;
 }

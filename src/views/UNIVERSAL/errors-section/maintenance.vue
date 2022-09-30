@@ -40,7 +40,7 @@ export default {
                   {{$t("t-maintainance") }}
                 </h1>
                 <div class="mt-4 pt-2">
-                  <router-link to="/" class="btn forceserif btn-success" data-key="t-returnhome">
+                  <router-link to="/" class="btn btn-success" data-key="t-returnhome">
                     <em class="mdi mdi-home me-1"></em>
                     {{$t("t-returnhome") }}
                   </router-link>

@@ -83,7 +83,7 @@ export default {
             <div class="card mt-4">
               <div class="card-body p-4">
                 <div class="text-center">
-                  <p class="forceserif text-muted" data-key="t-regmailintro">{{ $t("t-regmailintro") }}
+                  <p class="text-muted" data-key="t-regmailintro">{{ $t("t-regmailintro") }}
                   </p>
                   <lottie class="avatar-xl" colors="primary:#45CB85,secondary:#4b38b3" :options="defaultOptions"
                     :height="120" :width="120" />
@@ -99,9 +99,9 @@ export default {
 
                     <!-- Email Input row -->
                     <div class="mb-3">
-                      <label for="email" class="forceserif form-label" data-key="t-email">{{ $t("t-email") }} <span
+                      <label for="email" class="form-label" data-key="t-email">{{ $t("t-email") }} <span
                           class="text-danger">*</span></label>
-                      <input type="email" class="forceserif form-control" id="email" data-key="t-entermail"
+                      <input type="email" class="form-control" id="email" data-key="t-entermail"
                         v-bind:placeholder="$t('t-entermail')" v-model="user.email" onpaste="return false" :class="{
                           'is-invalid': submitted && v$.user.email.$error,
                         }" />
@@ -113,7 +113,7 @@ export default {
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="auth-terms-check" required />
                       <label class="form-check-label" for="auth-terms-check">
-                        <p class="forceserif mb-0 fs-12 text-muted fst-italic" data-key="t-agreeterm">{{
+                        <p class="mb-0 fs-12 text-muted fst-italic" data-key="t-agreeterm">{{
                         $t("t-agreeterm") }}
                           <a href="https://medicfollow.fr/fr/usage.html" target="_blank"
                             class="text-primary text-decoration-underline fst-normal fw-medium"
@@ -124,7 +124,7 @@ export default {
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="auth-certify-check" required />
                       <label class="form-check-label" for="auth-certify-check">
-                        <p class="forceserif mb-0 fs-12 text-muted fst-italic" data-key="t-procert">{{ $t("t-procert")
+                        <p class="mb-0 fs-12 text-muted fst-italic" data-key="t-procert">{{ $t("t-procert")
                         }}
                         </p>
                       </label>
@@ -132,11 +132,11 @@ export default {
 
                     <recaptcha />
                     <div class="mt-4">
-                      <button @click="RegisterInEmail" class="btn forceserif btn-success w-100" type="submit"
+                      <button @click="RegisterInEmail" class="btn btn-success w-100" type="submit"
                         data-key="t-startreg">{{ $t("t-startreg") }}
                       </button>
                       <div class="mt-4 text-center">
-                        <p class="forceserif mb-0 text-muted" style="color: black" data-key="t-alrdyaccount">{{
+                        <p class="mb-0 text-muted" style="color: black" data-key="t-alrdyaccount">{{
                         $t("t-alrdyaccount")
                         }}
                           <router-link to="/login" class="fw-semibold text-primary text-decoration-underline"

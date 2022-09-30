@@ -46,7 +46,7 @@ export default {
 
     <div class="p-3 mb-0">
       <h3 class="font-size-14 mb-2 mt-0" data-key="t-letusknowyou">{{ $t("t-letusknowyou") }}</h3>
-      <p class="forceserif text-muted mb-2" data-key="t-bttrunderstandingtxt">{{ $t("t-bttrunderstandingtxt") }}</p>
+      <p class="text-muted mb-2" data-key="t-bttrunderstandingtxt">{{ $t("t-bttrunderstandingtxt") }}</p>
     </div>
 
     <!-- EMAIL -->
@@ -54,8 +54,7 @@ export default {
     <div class="mb-0 p-3 md-4">
       <div class="col-md-4">
         <div class="form-floating">
-          <input type="text" class="forceserif form-control" id="feedbackEmailInput" placeholder="Enter your email"
-            required />
+          <input type="text" class="form-control" id="feedbackEmailInput" placeholder="Enter your email" required />
           <label for="feedbackEmailInput" data-key="t-email">{{ $t("t-email") }}</label>
         </div>
       </div>
@@ -66,8 +65,7 @@ export default {
     <div class="mb-0 p-3 md-4">
       <div class="col-md-4">
         <div class="form-floating">
-          <input type="text" class="forceserif form-control" id="feedbackCountryInput" placeholder="Enter your country"
-            required />
+          <input type="text" class="form-control" id="feedbackCountryInput" placeholder="Enter your country" required />
           <label for="feedbackCountryInput" data-key="t-country">{{ $t("t-country") }}</label>
         </div>
       </div>
@@ -76,7 +74,7 @@ export default {
     <!-- GENDER LIST -->
     <div class="mb-0 p-3">
       <div class="col-md-4">
-        <label for="chooseGenderSelect" class="forceserif form-label" data-key="t-gender">{{ $t("t-gender")
+        <label for="chooseGenderSelect" class="form-label" data-key="t-gender">{{ $t("t-gender")
         }}</label>
         <select class="form-select" id="chooseGenderSelect" required>
           <option data-key="t-selectgender" selected>{{ $t("t-selectgender") }}</option>
@@ -91,9 +89,9 @@ export default {
     <!-- BIRTH DATE SELECTION -->
     <div class="mb-3 p-3">
       <div class="col-md-4">
-        <label for="feedbackDateInput" class="forceserif form-label" data-key="t-birthdate">{{ $t("t-birthdate")
+        <label for="feedbackDateInput" class="form-label" data-key="t-birthdate">{{ $t("t-birthdate")
         }}</label>
-        <input type="date" class="forceserif form-control" id="feedbackDateInput" required>
+        <input type="date" class="form-control" id="feedbackDateInput" required>
       </div>
     </div>
 
@@ -103,7 +101,7 @@ export default {
     <div class="col-md-6 mb-3">
       <div class="p-3">
         <h3 class="font-size-14 mb-2 mt-0" data-key="t-areusatisfied">{{ $t("t-areusatisfied") }}</h3>
-        <p class="forceserif text-muted mb-5" data-key="t-satisfactioneval">{{ $t("t-satisfactioneval") }}</p>
+        <p class="text-muted mb-5" data-key="t-satisfactioneval">{{ $t("t-satisfactioneval") }}</p>
 
         <div class="mb-3">
           <label for="sliderDashboard" class="form-label mb-4" data-key="t-dashboardslider">{{
@@ -169,8 +167,8 @@ export default {
     <div class="p-3 mb-3">
       <div class="col-md-6">
         <h3 class="font-size-14 mb-2 mt-0" data-key="t-howcanweimprove">{{ $t("t-howcanweimprove") }}</h3>
-        <p class="forceserif text-muted mb-4" data-key="t-feedbackinfomsg">{{ $t("t-feedbackinfomsg") }}</p>
-        <textarea class="forceserif form-control" id="feedbackImproveInput" rows="3" placeholder="Write here..."
+        <p class="text-muted mb-4" data-key="t-feedbackinfomsg">{{ $t("t-feedbackinfomsg") }}</p>
+        <textarea class="form-control" id="feedbackImproveInput" rows="3" placeholder="Write here..."
           required></textarea>
       </div>
     </div>
@@ -183,8 +181,8 @@ export default {
         <h3 class="font-size-14 mb-2 mt-0" data-key="t-questionuploaddoc">
           {{ $t("t-questionuploaddoc") }}
         </h3>
-        <p class="forceserif text-muted mb-4" data-key="t-uploadexample">{{ $t("t-uploadexample") }}</p>
-        <input class="forceserif form-control" type="file" id="feedbackFileUpload">
+        <p class="text-muted mb-4" data-key="t-uploadexample">{{ $t("t-uploadexample") }}</p>
+        <input class="form-control" type="file" id="feedbackFileUpload">
       </div>
     </div>
 
@@ -192,7 +190,7 @@ export default {
 
     <!-- Agree on ToU text -->
     <div class="p-3 mb-3 card-body">
-      <p class="forceserif text-muted">
+      <p class="text-muted">
         By sending us a feedback, you are agreeing on using our <span class="fw-medium">Terms of
           Use</span>.
       </p>
@@ -212,7 +210,7 @@ export default {
     <!-- Submit button -->
     <div class="p-3 col-12">
       <div class="text-muted">
-        <button type="submit" class="btn forceserif btn-primary" data-key="t-submit">
+        <button type="submit" class="btn btn-primary" data-key="t-submit">
           {{ $t("t-submit") }}
         </button>
       </div>
