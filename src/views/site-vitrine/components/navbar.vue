@@ -29,29 +29,27 @@ export default {
                 aria-expanded="false">MedicFollow <i class="fas fa-chevron-down"></i>
               </a>
               <div class="dropdown-menu dropdown-menu-end">
-                <a class="dropdown-item nav-link smoothScroll" href="#project">
-                  Notre projet</a>
-                <a class="dropdown-item nav-link smoothScroll" href="#history">
-                  Notre
-                  histoire</a>
-                <a class="dropdown-item nav-link smoothScroll" href="#team">
-                  Notre équipe</a>
+                <a class="dropdown-item nav-link smoothScroll" href="#project" data-key="t-ourproject">{{
+                $t("t-ourproject") }}</a>
+                <a class="dropdown-item nav-link smoothScroll" href="#history" data-key="t-ourhistory">{{
+                $t("t-ourhistory") }}</a>
+                <a class="dropdown-item nav-link smoothScroll" href="#team" data-key="t-ourteam">{{ $t("t-ourteam")
+                }}</a>
               </div>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#solutions">Nos solutions</a>
+            <a class="nav-link" href="#solutions" data-key="t-oursolution">{{ $t("t-oursolution") }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contactez-nous / FAQ</a>
+            <a class="nav-link" href="#contact" data-key="t-ourcontact">{{ $t("t-ourcontact") }}</a>
           </li>
         </ul>
         <div>
-          <router-link to="/login" class="btn btn-primary fw-medium text-decoration-none" style="margin-right:5px">
-            Sign in
-          </router-link>
-          <router-link to="/register-mail" class="btn btn-primary" style="margin:5px">Sign Up
-          </router-link>
+          <router-link to="/login" class="btn btn-primary fw-medium text-decoration-none" style="margin-right:5px"
+            data-key="t-signin">{{ $t("t-signin") }}</router-link>
+          <router-link to="/register-mail" class="btn btn-primary" style="margin:5px" data-key="t-signup">{{
+          $t("t-signup") }}</router-link>
         </div>
         <lang />
       </div>

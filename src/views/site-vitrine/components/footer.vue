@@ -15,8 +15,7 @@ export default {
             </router-link>
           </div>
           <div class="mt-4 fs-18">
-            <p class="ff-secondary">
-              Restez en contact aisément avec vos proches hospitalisés, 7J/7, 24H/24.
+            <p class="ff-secondary" data-key="t-slogan">{{ $t("t-slogan") }}
             </p>
           </div>
         </div>
@@ -25,23 +24,23 @@ export default {
       <div class="col-lg-7 ms-lg-auto">
         <div class="row">
           <div class="col-sm-4 mt-4 ms-lg-auto">
-            <h4 class="text-white mb-0">Liens Utiles</h4>
+            <h4 class="text-white mb-0" data-key="t-usefulllinks">{{ $t("t-usefulllinks") }}</h4>
             <div class="text-muted mt-3">
               <ul class="list-unstyled ff-secondary footer-list">
                 <li>
-                  <a class="text-white" href="#project">Notre projet</a>
+                  <a class="text-white" href="#project" data-key="t-ourproject">{{ $t("t-ourproject") }}</a>
                 </li>
                 <li>
-                  <a class="text-white" href="#history">Notre histoire</a>
+                  <a class="text-white" href="#history" data-key="t-ourhistory">{{ $t("t-ourhistory") }}</a>
                 </li>
                 <li>
-                  <a class="text-white" href="#team">Notre équipe</a>
+                  <a class="text-white" href="#team" data-key="t-ourteam">{{ $t("t-ourteam") }}</a>
                 </li>
                 <li>
-                  <a class="text-white" href="#solutions">Nos solutions</a>
+                  <a class="text-white" href="#solutions" data-key="t-oursolution">{{ $t("t-oursolution") }}</a>
                 </li>
                 <li>
-                  <a class="text-white" href="#contact">Contactez-nous / FAQ</a>
+                  <a class="text-white" href="#contact" data-key="t-ourcontact">{{ $t("t-ourcontact") }}</a>
                 </li>
               </ul>
             </div>
@@ -51,10 +50,11 @@ export default {
             <div class="text-muted mt-3">
               <ul class="list-unstyled ff-secondary footer-list">
                 <li>
-                  <router-link to="/register-mail" class="text-white">Sign Up</router-link>
+                  <router-link to="/register-mail" class="text-white" data-key="t-signup">{{ $t("t-signup") }}
+                  </router-link>
                 </li>
                 <li>
-                  <router-link to="/usage" class="text-white">Conditions d'Utilisation</router-link>
+                  <router-link to="/usage" class="text-white" data-key="t-terms">{{ $t("t-terms") }}</router-link>
                 </li>
               </ul>
             </div>
