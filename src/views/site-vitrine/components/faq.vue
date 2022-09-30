@@ -91,13 +91,13 @@ export default {
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="genques-headingFour">
+            <h2 class="accordion-header" id="genques-headingFive">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#genques-collapseFour" aria-expanded="false" aria-controls="genques-collapseFour">
+                data-bs-target="#genques-collapseFive" aria-expanded="false" aria-controls="genques-collapseFive">
                 Quelles sont les langues prises en charge par MedicFollow ?
               </button>
             </h2>
-            <div id="genques-collapseFour" class="accordion-collapse collapse" aria-labelledby="genques-headingFour"
+            <div id="genques-collapseFive" class="accordion-collapse collapse" aria-labelledby="genques-headingFive"
               data-bs-parent="#genques-accordion">
               <div class="accordion-body ff-secondary">
                 Les clients mobile & web de Medicfollow gèrent les langues suivantes: Français, Anglais, Espagnol,
@@ -106,13 +106,13 @@ export default {
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="genques-headingFour">
+            <h2 class="accordion-header" id="genques-headingSix">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#genques-collapseFour" aria-expanded="false" aria-controls="genques-collapseFour">
+                data-bs-target="#genques-collapseSix" aria-expanded="false" aria-controls="genques-collapseSix">
                 Résoudre des problèmes liés au compte.
               </button>
             </h2>
-            <div id="genques-collapseFour" class="accordion-collapse collapse" aria-labelledby="genques-headingFour"
+            <div id="genques-collapseSix" class="accordion-collapse collapse" aria-labelledby="genques-headingSix"
               data-bs-parent="#genques-accordion">
               <div class="accordion-body ff-secondary">
                 Pour résoudre votre problème, prenez contact dans le formulaire ci-dessus et fournissez un maximum
@@ -201,13 +201,13 @@ export default {
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="privacy-headingFour">
+            <h2 class="accordion-header" id="privacy-headingFive">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#privacy-collapseFour" aria-expanded="false" aria-controls="privacy-collapseFour">
+                data-bs-target="#privacy-collapseFive" aria-expanded="false" aria-controls="privacy-collapseFive">
                 Comment contacter le Service client ?
               </button>
             </h2>
-            <div id="privacy-collapseFour" class="accordion-collapse collapse" aria-labelledby="privacy-headingFour"
+            <div id="privacy-collapseFive" class="accordion-collapse collapse" aria-labelledby="privacy-headingFive"
               data-bs-parent="#privacy-accordion">
               <div class="accordion-body ff-secondary">
                 Le numéro de téléphone indiqué en haut de cette page vous permettra de contacter
@@ -217,13 +217,13 @@ export default {
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="privacy-headingFour">
+            <h2 class="accordion-header" id="privacy-headingSix">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#privacy-collapseFour" aria-expanded="false" aria-controls="privacy-collapseFour">
+                data-bs-target="#privacy-collapseSix" aria-expanded="false" aria-controls="privacy-collapseSix">
                 Votre question n'est pas dans cette FAQ ?
               </button>
             </h2>
-            <div id="privacy-collapseFour" class="accordion-collapse collapse" aria-labelledby="privacy-headingFour"
+            <div id="privacy-collapseSix" class="accordion-collapse collapse" aria-labelledby="privacy-headingSix"
               data-bs-parent="#privacy-accordion">
               <div class="accordion-body ff-secondary">
                 Dans ce cas, il vous suffit de nous contacter via le formulaire de contact. Nos
