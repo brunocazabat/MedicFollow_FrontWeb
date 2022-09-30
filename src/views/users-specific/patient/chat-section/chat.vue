@@ -169,7 +169,7 @@ export default {
             <div class="flex-shrink-0">
               <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title="Add Contact">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-soft-success btn-sm shadow-none">
+                <button type="button" class="btn forceserif btn-soft-success btn-sm shadow-none">
                   <em class="ri-add-line align-bottom"></em>
                 </button>
               </div>
@@ -192,7 +192,7 @@ export default {
             <div class="flex-shrink-0">
               <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title="New Message">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-soft-success btn-sm shadow-none">
+                <button type="button" class="btn forceserif btn-soft-success btn-sm shadow-none">
                   <em class="ri-add-line align-bottom"></em>
                 </button>
               </div>
@@ -216,7 +216,7 @@ export default {
                       </div>
                     </div>
                     <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-1">
+                      <p class="forceserif text-truncate mb-1">
                         {{ data.name }}
                       </p>
                     </div>
@@ -239,7 +239,7 @@ export default {
             <div class="flex-shrink-0">
               <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title="Create group">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-soft-success btn-sm shadow-none">
+                <button type="button" class="btn forceserif btn-soft-success btn-sm shadow-none">
                   <em class="ri-add-line align-bottom"></em>
                 </button>
               </div>
@@ -259,7 +259,7 @@ export default {
                       </div>
                     </div>
                     <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Landing Design</p>
+                      <p class="forceserif text-truncate mb-0">Landing Design</p>
                     </div>
                     <div class="flex-shrink-0">
                       <span class="badge badge-soft-dark rounded p-1">7</span>
@@ -278,7 +278,7 @@ export default {
                       </div>
                     </div>
                     <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">General</p>
+                      <p class="forceserif text-truncate mb-0">General</p>
                     </div>
                   </div>
                 </a>
@@ -294,7 +294,7 @@ export default {
                       </div>
                     </div>
                     <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Project Tasks</p>
+                      <p class="forceserif text-truncate mb-0">Project Tasks</p>
                     </div>
                     <div class="flex-shrink-0">
                       <span class="badge badge-soft-dark rounded p-1">3</span>
@@ -314,7 +314,7 @@ export default {
                       </div>
                     </div>
                     <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Meeting</p>
+                      <p class="forceserif text-truncate mb-0">Meeting</p>
                     </div>
                   </div>
                 </a>
@@ -330,7 +330,7 @@ export default {
                       </div>
                     </div>
                     <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Reporting</p>
+                      <p class="forceserif text-truncate mb-0">Reporting</p>
                     </div>
                   </div>
                 </a>
@@ -371,7 +371,7 @@ export default {
                               <a class="text-reset username" data-bs-toggle="offcanvas" href="#userProfileCanvasExample"
                                 aria-controls="userProfileCanvasExample">{{ username }}</a>
                             </h5>
-                            <p class="text-truncate text-muted fs-14 mb-0 userStatus">
+                            <p class="forceserif text-truncate text-muted fs-14 mb-0 userStatus">
                               <small>Online</small>
                             </p>
                           </div>
@@ -383,7 +383,7 @@ export default {
                     <ul class="list-inline user-chat-nav text-end mb-0">
                       <li class="list-inline-item m-0">
                         <div class="dropdown">
-                          <button class="btn btn-ghost-secondary btn-icon shadow-none" type="button"
+                          <button class="btn forceserif btn-ghost-secondary btn-icon shadow-none" type="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <search-icon class="icon-sm"></search-icon>
                           </button>
@@ -400,7 +400,7 @@ export default {
                       </li>
 
                       <li class="list-inline-item d-none d-lg-inline-block m-0">
-                        <button type="button" class="btn btn-ghost-secondary btn-icon shadow-none"
+                        <button type="button" class="btn forceserif btn-ghost-secondary btn-icon shadow-none"
                           data-bs-toggle="offcanvas" data-bs-target="#userProfileCanvasExample"
                           aria-controls="userProfileCanvasExample">
                           <info-icon class="icon-sm"></info-icon>
@@ -409,7 +409,7 @@ export default {
 
                       <li class="list-inline-item m-0">
                         <div class="dropdown">
-                          <button class="btn btn-ghost-secondary btn-icon shadow-none" type="button"
+                          <button class="btn forceserif btn-ghost-secondary btn-icon shadow-none" type="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <more-vertical-icon class="icon-sm"></more-vertical-icon>
                           </button>
@@ -453,7 +453,7 @@ export default {
                         <div class="user-chat-content">
                           <div class="ctext-wrap">
                             <div class="ctext-wrap-content">
-                              <p class="mb-0 ctext-content">
+                              <p class="forceserif mb-0 ctext-content">
                                 {{ data.message }}
                               </p>
                             </div>
@@ -504,7 +504,8 @@ export default {
                     <div class="col-auto">
                       <div class="chat-input-links me-2">
                         <div class="links-list-item">
-                          <button type="button" class="btn btn-link text-decoration-none emoji-btn" id="emoji-btn">
+                          <button type="button" class="btn forceserif btn-link text-decoration-none emoji-btn"
+                            id="emoji-btn">
                             <em class="bx bx-smile align-middle"></em>
                           </button>
                         </div>
@@ -528,7 +529,8 @@ export default {
                     <div class="col-auto">
                       <div class="chat-input-links ms-2">
                         <div class="links-list-item">
-                          <button type="submit" class="btn btn-primary chat-send waves-effect waves-light shadow">
+                          <button type="submit"
+                            class="btn forceserif btn-primary chat-send waves-effect waves-light shadow">
                             <em class="ri-send-plane-2-fill align-bottom"></em>
                           </button>
                         </div>
@@ -544,10 +546,11 @@ export default {
                     <div class="replymessage-block mb-0 d-flex align-items-start">
                       <div class="flex-grow-1">
                         <h5 class="conversation-name"></h5>
-                        <p class="mb-0"></p>
+                        <p class="forceserif mb-0"></p>
                       </div>
                       <div class="flex-shrink-0">
-                        <button type="button" id="close_toggle" class="btn btn-sm btn-link mt-n2 me-n3 fs-18">
+                        <button type="button" id="close_toggle"
+                          class="btn forceserif btn-sm btn-link mt-n2 me-n3 fs-18">
                           <em class="bx bx-x align-middle"></em>
                         </button>
                       </div>

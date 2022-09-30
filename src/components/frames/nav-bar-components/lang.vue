@@ -75,7 +75,7 @@ export default {
 
 <template>
   <div class="dropdown ms-1 topbar-head-dropdown header-item">
-    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none"
+    <button type="button" class="btn forceserif btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none"
       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <img id="header-lang-img" src="@/assets/images/flags/french.svg" alt="Header Language" height="20"
         class="rounded" />

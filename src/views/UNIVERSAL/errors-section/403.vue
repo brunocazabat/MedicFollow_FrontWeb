@@ -26,8 +26,9 @@ export default {
               <img src="@/assets/images/errors/offline.gif" alt="error img" class="img-fluid">
               <div class="mt-3">
                 <h3 class="text-uppercase text-white" data-key="t-forbidden">403 - {{ $t("t-forbidden") }} 😭</h3>
-                <p class="mb-4 text-white" data-key="t-forbiddenpage">{{ $t("t-forbiddenpage") }}</p>
-                <router-link to="/" class="btn btn-success" data-key="t-returnhome"><em class="mdi mdi-home me-1"></em>
+                <p class="forceserif mb-4 text-white" data-key="t-forbiddenpage">{{ $t("t-forbiddenpage") }}</p>
+                <router-link to="/" class="btn forceserif btn-success" data-key="t-returnhome"><em
+                    class="mdi mdi-home me-1"></em>
                   {{$t("t-returnhome") }}</router-link>
               </div>
             </div>

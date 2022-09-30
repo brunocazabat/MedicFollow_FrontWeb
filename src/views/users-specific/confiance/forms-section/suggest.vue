@@ -102,9 +102,9 @@ export default {
 
                 <!-- Feedback message box -->
                 <div class="mb-6">
-                  <label for="VertimeassageInput" class="form-label">Message</label>
-                  <textarea class="form-control" id="VertimeassageInput" rows="3" placeholder="Enter your feedback here"
-                    required></textarea>
+                  <label for="VertimeassageInput" class="forceserif form-label">Message</label>
+                  <textarea class="forceserif form-control" id="VertimeassageInput" rows="3"
+                    placeholder="Enter your feedback here" required></textarea>
                   <div class="invalid-feedback">
                     Please enter a message in the textarea.
                   </div>
@@ -112,7 +112,7 @@ export default {
 
                 <!-- File Upload Dropzone -->
                 <div class="card-body">
-                  <p class="text-muted">
+                  <p class="forceserif text-muted">
                     You can upload files to help us understand your Feeback better.
                   </p>
 
@@ -125,14 +125,14 @@ export default {
                             <h5 class="fs-14 mb-1" data-dz-name="">
                               {{ file.name }}
                             </h5>
-                            <p class="fs-13 text-muted mb-0" data-dz-size="">
+                            <p class="forceserif fs-13 text-muted mb-0" data-dz-size="">
                               <strong>{{ file.size / 1024 }}</strong> KB
                             </p>
                             <strong class="error text-danger" data-dz-errormessage=""></strong>
                           </div>
                         </div>
                         <div class="flex-shrink-0 ms-3">
-                          <button data-dz-remove="" class="btn btn-sm btn-danger" @click="deleteRecord">
+                          <button data-dz-remove="" class="btn forceserif btn-sm btn-danger" @click="deleteRecord">
                             Delete
                           </button>
                         </div>
@@ -145,8 +145,8 @@ export default {
                 <!-- Feedback category multiselect -->
 
                 <!-- <div class="col-xxl-3 col-md-6">
-                  <label for="categoryDataList" class="form-label">Category</label>
-                  <input class="form-control" list="datalistOptions" id="categoryDataList"
+                  <label for="categoryDataList" class="forceserif form-label">Category</label>
+                  <input class="forceserif form-control" list="datalistOptions" id="categoryDataList"
                     placeholder="Select a category...">
                   <datalist id="datalistOptions">
                     <option value="Login Page" />
@@ -164,7 +164,7 @@ export default {
                 <div class="col-md-4">
 
                   <div class="col-auto">
-                    <label for="chooseCategorySelect" class="form-label">Category</label>
+                    <label for="chooseCategorySelect" class="forceserif form-label">Category</label>
                     <select class="form-select" id="chooseCategorySelect" required>
                       <option selected value="login">Login Page</option>
                       <option value="dashboard">Home Page</option>
@@ -181,7 +181,7 @@ export default {
                 </div>
 
                 <!-- Anonymous text -->
-                <p class="text-muted">
+                <p class="forceserif text-muted">
                   Leave this part of this form <span class="fw-medium">unfilled</span> if you want to send this report
                   anonymously, you could also fill only the information you wish to.
                 </p>
@@ -189,7 +189,7 @@ export default {
                 <!-- Full name box -->
                 <div class="col-lg-4">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="fullnamefloatingInput"
+                    <input type="text" class="forceserif form-control" id="fullnamefloatingInput"
                       placeholder="Enter your full name" />
                     <label for="fullnamefloatingInput">Full Name</label>
                   </div>
@@ -197,21 +197,22 @@ export default {
                 <!-- Email box -->
                 <div class="col-lg-4">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="emailfloatingInput" placeholder="Enter your email" />
+                    <input type="text" class="forceserif form-control" id="emailfloatingInput"
+                      placeholder="Enter your email" />
                     <label for="emailfloatingInput">Email</label>
                   </div>
                 </div>
                 <!-- Country box -->
                 <div class="col-lg-4">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="countryfloatingInput"
+                    <input type="text" class="forceserif form-control" id="countryfloatingInput"
                       placeholder="Enter your country" />
                     <label for="countryfloatingInput">Country</label>
                   </div>
                 </div>
 
                 <!-- Agree on ToU text -->
-                <p class="text-muted">
+                <p class="forceserif text-muted">
                   By sending us a Feedback, you are agreeing on using our <span class="fw-medium">Terms of Use</span>.
                 </p>
                 <!-- Agree on ToU check box -->
@@ -228,7 +229,7 @@ export default {
                 <!-- Submit button -->
                 <div class="col-12">
                   <div class="text-muted">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn forceserif btn-primary">
                       Submit
                     </button>
                   </div>

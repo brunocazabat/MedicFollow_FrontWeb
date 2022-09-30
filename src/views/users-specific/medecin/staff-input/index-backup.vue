@@ -140,7 +140,7 @@ export default {
                   aria-labelledby="pills-bill-info-tab">
                   <div>
                     <h5 class="mb-1" data-key="t-patientvisited">{{ $t("t-patientvisited") }}.</h5>
-                    <p class="text-muted mb-4" data-key="t-patientsearchtxt">
+                    <p class="forceserif text-muted mb-4" data-key="t-patientsearchtxt">
                       {{ $t("t-patientsearchtxt") }}
                     </p>
                   </div>
@@ -152,7 +152,7 @@ export default {
                       <div class="d-flex justify-content col-sm-6">
                         <div class="search-box col-sm-12">
                           <div class="md-3">
-                            <input type="text" class="form-control" placeholder="Search Patient..." />
+                            <input type="text" class="forceserif form-control" placeholder="Search Patient..." />
                             <em class="ri-search-line search-icon"></em>
                           </div>
                         </div>
@@ -163,19 +163,20 @@ export default {
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="mb-3">
-                          <label for="billinginfo-firstName" class="form-label" data-key="t-firstname">{{
+                          <label for="billinginfo-firstName" class="forceserif form-label" data-key="t-firstname">{{
                           $t("t-firstname")
                           }}</label>
-                          <input type="text" class="form-control" id="billinginfo-firstName"
+                          <input type="text" class="forceserif form-control" id="billinginfo-firstName"
                             placeholder="Enter first name" value="" />
                         </div>
                       </div>
 
                       <div class="col-sm-6">
                         <div class="mb-3">
-                          <label for="billinginfo-lastName" class="form-label" data-key="t-lastname">{{ $t("t-lastname")
+                          <label for="billinginfo-lastName" class="forceserif form-label" data-key="t-lastname">{{
+                          $t("t-lastname")
                           }}</label>
-                          <input type="text" class="form-control" id="billinginfo-lastName"
+                          <input type="text" class="forceserif form-control" id="billinginfo-lastName"
                             placeholder="Enter last name" value="" />
                         </div>
                       </div>
@@ -184,16 +185,18 @@ export default {
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="mb-3">
-                          <label for="billinginfo-email" class="form-label" data-key="t-roomnbr">{{ $t("t-roomnbr") }}
+                          <label for="billinginfo-email" class="forceserif form-label" data-key="t-roomnbr">{{
+                          $t("t-roomnbr") }}
                             <span class="text-muted" data-key="t-optional">({{ $t("t-optional") }})</span></label>
-                          <input type="email" class="form-control" id="billinginfo-email" placeholder="Enter email" />
+                          <input type="email" class="forceserif form-control" id="billinginfo-email"
+                            placeholder="Enter email" />
                         </div>
                       </div>
                     </div>
 
 
                     <div class="d-flex align-items-start gap-3 mt-3">
-                      <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
+                      <button type="button" class="btn forceserif btn-primary btn-label right ms-auto nexttab"
                         data-nexttab="medical-visit-summary-tab" data-key="t-proceedsum">
                         <em class="ri-message-3-line label-icon align-middle fs-16 ms-2"></em>{{ $t("t-proceedsum")
                         }}
@@ -207,7 +210,7 @@ export default {
                   aria-labelledby="pills-bill-address-tab">
                   <div>
                     <h5 class="mb-1" data-key="t-visitsum">{{ $t("t-visitsum") }}</h5>
-                    <p class="text-muted mb-4" data-key="t-fillinfobelow">
+                    <p class="forceserif text-muted mb-4" data-key="t-fillinfobelow">
                       {{ $t("t-fillinfobelow") }}
                     </p>
                   </div>
@@ -215,7 +218,7 @@ export default {
                   <div class="mt-4">
                     <div class="d-flex align-items-center mb-2">
                       <div class="col-sm-12 mb-6">
-                        <textarea class="form-control" id="VertimeassageInput" rows="3"
+                        <textarea class="forceserif form-control" id="VertimeassageInput" rows="3"
                           placeholder="Enter the summary here..." required></textarea>
                         <div class="invalid-feedback">
                           Please enter a message in the textarea.
@@ -255,11 +258,11 @@ export default {
                   </div>
 
                   <div class="d-flex align-items-start gap-3 mt-4">
-                    <button type="button" class="btn btn-light btn-label previestab" data-previous="patient-visited-tab"
-                      data-key="t-backtopatient">
+                    <button type="button" class="btn forceserif btn-light btn-label previestab"
+                      data-previous="patient-visited-tab" data-key="t-backtopatient">
                       <em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em>{{ $t("t-backtopatient") }}
                     </button>
-                    <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
+                    <button type="button" class="btn forceserif btn-primary btn-label right ms-auto nexttab"
                       data-nexttab="doc-upload-tab" data-key="t-gotodocupload">
                       <em class="ri-file-add-line label-icon align-middle fs-16 ms-2"></em>{{ $t("t-gotodocupload") }}
                     </button>
@@ -270,14 +273,14 @@ export default {
                 <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
                   <div>
                     <h5 class="mb-1" data-key="t-docupload">{{ $t("t-docupload") }}</h5>
-                    <p class="text-muted mb-4" data-key="t-uploaddoctxt">
+                    <p class="forceserif text-muted mb-4" data-key="t-uploaddoctxt">
                       {{ $t("t-uploaddoctxt") }}
                     </p>
                   </div>
 
                   <!-- File Upload Dropzone -->
                   <div class="card-body">
-                    <p class="text-muted" data-key="t-uploadhere">
+                    <p class="forceserif text-muted" data-key="t-uploadhere">
                       {{ $t("t-uploadhere") }}
                     </p>
 
@@ -290,14 +293,14 @@ export default {
                               <h5 class="fs-14 mb-1" data-dz-name="">
                                 {{ file.name }}
                               </h5>
-                              <p class="fs-13 text-muted mb-0" data-dz-size="">
+                              <p class="forceserif fs-13 text-muted mb-0" data-dz-size="">
                                 <strong>{{ file.size / 1024 }}</strong> KB
                               </p>
                               <strong class="error text-danger" data-dz-errormessage=""></strong>
                             </div>
                           </div>
                           <div class="flex-shrink-0 ms-3">
-                            <button data-dz-remove="" class="btn btn-sm btn-danger" @click="deleteRecord">
+                            <button data-dz-remove="" class="btn forceserif btn-sm btn-danger" @click="deleteRecord">
                               Delete
                             </button>
                           </div>
@@ -308,11 +311,11 @@ export default {
                   </div>
 
                   <div class="d-flex align-items-start gap-3 mt-4">
-                    <button type="button" class="btn btn-light btn-label previestab"
+                    <button type="button" class="btn forceserif btn-light btn-label previestab"
                       data-previous="medical-visit-summary-tab" data-key="t-backtosum">
                       <em class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></em>{{ $t("t-backtosum") }}
                     </button>
-                    <button type="button" class="btn btn-primary btn-label right ms-auto nexttab"
+                    <button type="button" class="btn forceserif btn-primary btn-label right ms-auto nexttab"
                       data-nexttab="summary-finish-tab" data-key="t-sendsum">
                       <em class="ri-checkbox-circle-line label-icon align-middle fs-16 ms-2"></em>{{ $t("t-sendsum") }}
                     </button>
@@ -327,7 +330,7 @@ export default {
                         :width="120" />
                     </div>
                     <h5 data-key="t-sumsent">{{ $t("t-sumsent") }}</h5>
-                    <p class="text-muted" data-key="t-sumerror">
+                    <p class="forceserif text-muted" data-key="t-sumerror">
                       {{ $t("t-sumerror") }}
                     </p>
 

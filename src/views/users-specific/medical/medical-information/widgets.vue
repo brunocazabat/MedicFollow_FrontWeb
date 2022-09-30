@@ -38,7 +38,7 @@ export default {
               <div class="col-md-8">
                 <div class="card-header">
                   <h5 class="card-title text-uppercase mb-1" data-key="t-lastcheckup">{{
-                      $t("t-lastcheckup")
+                  $t("t-lastcheckup")
                   }}:
                   </h5>
                 </div>
@@ -48,7 +48,7 @@ export default {
                     <span class="counter-value">{{ localTime }}</span>
                   </h4>
 
-                  <p class="card-text mb-0">
+                  <p class="forceserif card-text mb-0">
                     <small class="text-muted mb-2">{{ localDate }}</small>
                   </p>
                 </div>
@@ -74,7 +74,7 @@ export default {
               <div class="col-md-8">
                 <div class="card-header">
                   <h5 class="card-title text-uppercase mb-1" data-key="t-nextappoint">{{
-                      $t("t-nextappoint")
+                  $t("t-nextappoint")
                   }}:
                   </h5>
                 </div>
@@ -83,7 +83,7 @@ export default {
                     <span class="counter-value">Appointement with Dr.BERNABEU</span>
                   </h4>
 
-                  <p class="card-text mb-0">
+                  <p class="forceserif card-text mb-0">
                     <small class="text-muted mb-2">{{ localDate }}</small>
                   </p>
                 </div>
@@ -118,7 +118,7 @@ export default {
       <div class="card-header align-items-center d-flex">
         <h4 class="card-title mb-0 flex-grow-1" data-key="t-recentvisits">{{ $t("t-recentvisits") }}</h4>
         <div class="flex-shrink-0">
-          <button type="button" class="btn btn-soft-info btn-sm shadow-none" data-key="t-generatereport">
+          <button type="button" class="btn forceserif btn-soft-info btn-sm shadow-none" data-key="t-generatereport">
             <em class="ri-file-list-3-line align-middle"></em>
             {{ $t("t-generatereport") }}
           </button>

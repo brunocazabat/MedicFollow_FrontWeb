@@ -38,7 +38,7 @@ export default {
             <h4 class="mb-sm-0">UI SELECTOR ADMIN</h4>
           </div>
           <div class="col-1">
-            <select class="form-control" v-model="selected" @change="modifyUIType()">
+            <select class="forceserif form-control" v-model="selected" @change="modifyUIType()">
               <option v-for="userType in userTypes" v-bind:value="{ id: userType.id, text: userType.name  }"
                 :key="userType.id">{{
                 userType.name }}

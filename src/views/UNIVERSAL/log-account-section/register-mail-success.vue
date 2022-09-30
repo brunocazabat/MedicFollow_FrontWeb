@@ -37,10 +37,10 @@ export default {
                 </div>
                 <div class="mt-4 pt-2">
                   <h4 data-key="t-firststep">{{ $t("t-firststep") }}</h4>
-                  <p class="text-muted mx-4" data-key="t-secondstep">{{ $t("t-secondstep") }}
+                  <p class="forceserif text-muted mx-4" data-key="t-secondstep">{{ $t("t-secondstep") }}
                   </p>
                   <div class="mt-4">
-                    <router-link to="/login" class="btn btn-success w-100" data-key="t-returnlogin">{{
+                    <router-link to="/login" class="btn forceserif btn-success w-100" data-key="t-returnlogin">{{
                     $t("t-returnlogin")
                     }}
                     </router-link>

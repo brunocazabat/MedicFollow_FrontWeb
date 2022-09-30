@@ -18,7 +18,7 @@ export default {
       <!-- end col -->
       <div class="col-sm-auto">
         <div>
-          <router-link to="/register-mail" class="btn btn-light" style="margin:5px">Sign Up
+          <router-link to="/register-mail" class="btn forceserif btn-light" style="margin:5px">Sign Up
           </router-link>
         </div>
       </div>

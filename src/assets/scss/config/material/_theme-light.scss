@@ -41,7 +41,7 @@
     // Topbar Search
     --#{$variable-prefix}topbar-search-bg: #f3f3f9;
     // Topbar User
-    --#{$variable-prefix}topbar-user-bg: #{lighten($primary, 15%)};
+    --#{$variable-prefix}topbar-user-bg: #{lighten($primary, 5%)};
     --#{$variable-prefix}topbar-user-bg-dark: #2a2a50;
 
     //footer
