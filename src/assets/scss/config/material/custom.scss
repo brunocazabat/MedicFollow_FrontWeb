@@ -533,6 +533,17 @@
     font-size: xx-large;
 }
 
+.center-items {
+    vertical-align: middle;
+}
+
+.two-percent-height {
+    display: inline-block;
+    height: 5vh;
+    text-align: center;
+    vertical-align: middle;
+}
+
 * {
     font-family: "Inter", sans-serif !important;
 }

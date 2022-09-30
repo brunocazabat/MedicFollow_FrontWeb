@@ -209,5 +209,7 @@
   "t-oxygensaturation": "Saturation d'oxygène",
   "t-plsfillmeetinginfo": "Veuillez remplir les informations ci-dessous.",
   "t-previousstep": "Étape précédente",
-  "t-choosemeetingdate": "Choisissez la date de consultation"
+  "t-choosemeetingdate": "Choisissez la date de consultation",
+  "t-haveyoumetdoctor": "Avez-vous déjà consulté ce médecin ?",
+  "t-nextstep": "Étape suivante"
 }

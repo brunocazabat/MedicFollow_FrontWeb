@@ -209,5 +209,8 @@
   "t-chooseameeting": "Choose a meeting online",
   "t-plsfillmeetinginfo": "Please, fill the information below.",
   "t-previousstep": "Previous step",
-  "t-choosemeetingdate": "Choose the consutation date"
+  "t-choosemeetingdate": "Choose the consutation date",
+  "t-nextstep": "Next step",
+  "t-haveyoumetdoctor": "Have you ever consulted this doctor?",
+  "t-selectdoctormeeting": "Select a doctor for your meeting"
 }
