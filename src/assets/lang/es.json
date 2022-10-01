@@ -198,7 +198,7 @@
   "t-medicinfofor": "Entrada de información médica para",
   "t-next": "SIGUIENTE",
   "t-socialsecuritynbr": "Número de seguro social",
-  "t-writedownlastinfo": "Aquí puede anotar la información más reciente sobre el paciente, así como responder los mensajes enviados por la familia.",
+  "t-writedownlastinfo": "Aquí puede anotar la información más reciente sobre el paciente.\n\nTambién puedes contestar los mensajes enviados por la familia.",
   "t-selectpatient": "Seleccione un paciente",
   "t-selectpatientinfotext": "Aquí puede seleccionar un paciente que visitó para luego ingresar la información médica más reciente. \nLos datos de nombre y apellido no son obligatorios, pero el número de seguro social y la fecha de nacimiento sí lo son.",
   "t-inputgeneralinfopatient": "La información más reciente",

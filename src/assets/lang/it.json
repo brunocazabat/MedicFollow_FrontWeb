@@ -198,7 +198,7 @@
   "t-medicinfofor": "Input di informazioni mediche per",
   "t-next": "PROSSIMO",
   "t-socialsecuritynbr": "Numero di Social Security",
-  "t-writedownlastinfo": "Qui puoi annotare le ultime informazioni sul paziente e rispondere ai messaggi inviati dalla famiglia",
+  "t-writedownlastinfo": "Qui puoi annotare le ultime informazioni sul paziente.\n\nPuoi anche rispondere ai messaggi inviati dalla famiglia",
   "t-selectpatient": "Seleziona un paziente",
   "t-selectpatientinfotext": "Qui puoi selezionare un paziente che hai visitato per poi inserire le ultime informazioni mediche. \nL'inserimento del cognome e del cognome non è obbligatorio, ma lo sono il codice fiscale e la data di nascita",
   "t-inputgeneralinfopatient": "Ultime informazioni",

@@ -198,7 +198,7 @@
   "t-medicinfofor": "Saisie d'informations médicales pour",
   "t-next": "SUIVANT",
   "t-socialsecuritynbr": "Numéro de sécurité sociale",
-  "t-writedownlastinfo": "Ici, vous pouvez noter les dernières informations sur le patient ainsi que répondre aux messages envoyés par la famille",
+  "t-writedownlastinfo": "Ici, vous pouvez écrire les dernières informations sur le patient.\n\nVous pouvez aussi répondre aux messages envoyés par la famille",
   "t-selectpatient": "Sélectionnez un patient",
   "t-selectpatientinfotext": "Ici, vous pouvez sélectionner un patient que vous avez visité pour ensuite saisir les dernières informations médicales. \nLes saisies du prénom et du nom ne sont pas obligatoires mais le numéro de sécurité sociale et la date de naissance le sont",
   "t-inputgeneralinfopatient": "Dernière information",

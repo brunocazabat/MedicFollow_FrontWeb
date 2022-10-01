@@ -198,7 +198,7 @@
   "t-dateofbirth": "Date of Birth",
   "t-next": "NEXT",
   "t-medicinfofor": "Medical Information Input for",
-  "t-writedownlastinfo": "Here you can write down the latest information about the patient as well as answer the messages sent by the family",
+  "t-writedownlastinfo": "Here you can write down the latest information about the patient.\nYou can as well as answer the messages sent by the family",
   "t-selectpatient": "Select a patient",
   "t-selectpatientinfotext": "Here you can select a patient you visited to then input the latest medical information. The first and last name inputs are not mandatory but the social security number and the date of birth are",
   "t-inputgeneralinfopatient": "Latest information",
