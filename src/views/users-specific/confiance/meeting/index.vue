@@ -52,7 +52,7 @@ export default {
           <!-- CHOOSE DOCTOR DIV -->
           <div v-if="viewID === 0">
             <!-- BUTTON TO CLICK TO SHOW DR. -->
-            <div class="basic-card-border col-sm-12 dl-card">
+            <div class="basic-card-border col-sm-12">
               <a class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
                 href="#meetingChooseDoctor" data-bs-toggle="collapse" role="button" aria-expanded="false"
                 aria-controls="meetingDateCollapse">
@@ -130,7 +130,7 @@ export default {
               </p>
             </div>
 
-            <div class="basic-card-border col-sm-12 dl-card mb-2">
+            <div class="basic-card-border col-sm-12 mb-2">
               <a class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
                 href="#meetingDateCollapse" data-bs-toggle="collapse" role="button" aria-expanded="false"
                 aria-controls="meetingDateCollapse">
