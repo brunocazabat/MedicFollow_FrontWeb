@@ -39,7 +39,7 @@ export default {
 <template>
   <Layout>
 
-    <div class="project-wrapper meeting-form">
+    <div class="project-wrapper mf-form-width">
 
       <div class="p-2">
         <h2 class="text-primary" data-key="t-chooseameeting">{{$t("t-chooseameeting")}}</h2>
