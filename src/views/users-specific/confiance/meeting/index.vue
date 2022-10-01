@@ -46,8 +46,8 @@ export default {
         <p class="text-muted" data-key="t-plsfillmeetinginfo">{{$t("t-plsfillmeetinginfo")}}</p>
       </div>
 
-      <div class="p-3 card">
-        <div class="body-card">
+      <div class="card">
+        <div class="card-body">
 
           <!-- CHOOSE DOCTOR DIV -->
           <div v-if="viewID === 0">
