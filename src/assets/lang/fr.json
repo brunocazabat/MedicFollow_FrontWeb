@@ -202,10 +202,10 @@
   "t-selectpatient": "Sélectionnez un patient",
   "t-selectpatientinfotext": "Ici, vous pouvez sélectionner un patient que vous avez visité pour ensuite saisir les dernières informations médicales. \nLes saisies du prénom et du nom ne sont pas obligatoires mais le numéro de sécurité sociale et la date de naissance le sont",
   "t-inputgeneralinfopatient": "Dernière information",
-  "t-heartbeat": "Rythme cardiaque (nombre ou évaluation)",
+  "t-heartbeat": "Rytme cardiaque",
   "t-pulse": "Poul",
   "t-chooseameeting": "Choisissez une réunion en ligne",
-  "t-notmandatoryfields": "Ces champs ne sont pas obligatoires.",
+  "t-notmandatoryfields": "Champs non obligatoires",
   "t-oxygensaturation": "Saturation d'oxygène",
   "t-plsfillmeetinginfo": "Veuillez remplir les informations ci-dessous.",
   "t-previousstep": "Étape précédente",
@@ -256,5 +256,6 @@
   "t-ihaveconsulteddr": "J'ai déjà consulté ce médecin.",
   "t-cancel": "Annuler",
   "t-continue": "Continuer",
-  "t-takemeetingwithdoctor": "Rencontre avec un médecin"
+  "t-takemeetingwithdoctor": "Rencontre avec un médecin",
+  "t-observationsheets": "Fiches d'observation"
 }

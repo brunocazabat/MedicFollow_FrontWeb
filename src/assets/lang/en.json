@@ -202,10 +202,10 @@
   "t-selectpatient": "Select a patient",
   "t-selectpatientinfotext": "Here you can select a patient you visited to then input the latest medical information. The first and last name inputs are not mandatory but the social security number and the date of birth are",
   "t-inputgeneralinfopatient": "Latest information",
-  "t-heartbeat": "Heartbeat (either number or evaluation)",
+  "t-heartbeat": "Heartbeat",
   "t-pulse": "Pulse",
   "t-oxygensaturation": "Oxygen saturation",
-  "t-notmandatoryfields": "Those fields are not mandatory.",
+  "t-notmandatoryfields": "Non mandatory fields",
   "t-chooseameeting": "Choose a meeting online",
   "t-plsfillmeetinginfo": "Please, fill the information below.",
   "t-previousstep": "Previous step",
@@ -256,5 +256,6 @@
   "t-firsttimeconsulting": "It is the first time I am consulting this doctor.",
   "t-continue": "Continue",
   "t-cancel": "Cancel",
-  "t-takemeetingwithdoctor": "Meeting with a Doctor"
+  "t-takemeetingwithdoctor": "Meeting with a Doctor",
+  "t-observationsheets": "Observation sheets"
 }
