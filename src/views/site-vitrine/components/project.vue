@@ -9,13 +9,10 @@ export default {
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="text-center mb-5">
-          <h1 class="mb-3 ff-secondary fw-semibold lh-base text-uppercase text-success text-center">NOTRE PROJET</h1>
-          <h3 class="mb-3 text-muted">
-            " Optimiser et rendre plus rapide la communication entre le corps médical en charge du patient et la
-            famille grace à MedicFollow. "
-          </h3>
-          <h5 class="mb-5 text-muted">
-            A l'aide d'une suite d'outils adapté aux particuliers et aux professionnels du corp médical.
+          <h1 class="mb-3 ff-secondary fw-semibold lh-base text-uppercase text-success text-center"
+            data-key="t-ourproject">{{ $t("t-ourproject") }}</h1>
+          <h3 class="mb-3 text-muted" data-key="t-goalMF">" {{ $t("t-goalMF") }} "</h3>
+          <h5 class="mb-5 text-muted" data-key="t-helpedwith">{{ $t("t-helpedwith") }}
           </h5>
         </div>
       </div>
@@ -35,7 +32,7 @@ export default {
             </div>
           </div>
           <div class="flex-grow-1">
-            <h5 class="fs-18">Sécurisé et fiable</h5>
+            <h5 class="fs-18" data-key="t-securityfiabl">{{ $t("t-securityfiabl") }}</h5>
           </div>
         </div>
       </div>
@@ -50,7 +47,7 @@ export default {
             </div>
           </div>
           <div class="flex-grow-1">
-            <h5 class="fs-18">Plus de visibilité</h5>
+            <h5 class="fs-18" data-key="t-morevisibility">{{ $t("t-morevisibility") }}</h5>
           </div>
         </div>
       </div>
@@ -65,7 +62,7 @@ export default {
             </div>
           </div>
           <div class="flex-grow-1">
-            <h5 class="fs-18">Meilleure communication</h5>
+            <h5 class="fs-18" data-key="t-morecomm">{{ $t("t-morecomm") }}</h5>
           </div>
         </div>
       </div>
@@ -80,7 +77,7 @@ export default {
             </div>
           </div>
           <div class="flex-grow-1">
-            <h5 class="fs-18">Gain de temps</h5>
+            <h5 class="fs-18" data-key="t-moretime">{{ $t("t-moretime") }}</h5>
           </div>
         </div>
       </div>
@@ -95,7 +92,7 @@ export default {
             </div>
           </div>
           <div class="flex-grow-1">
-            <h5 class="fs-18">Tranquillité assurée</h5>
+            <h5 class="fs-18" data-key="t-tranquil">{{ $t("t-tranquil") }}</h5>
           </div>
         </div>
       </div>
@@ -110,7 +107,7 @@ export default {
             </div>
           </div>
           <div class="flex-grow-1">
-            <h5 class="fs-18">Et bien plus</h5>
+            <h5 class="fs-18" data-key="t-muchmore">{{ $t("t-muchmore") }}</h5>
           </div>
         </div>
       </div>
@@ -127,9 +124,8 @@ export default {
             </div>
           </div>
           <div class="flex-grow-1">
-            <h5 class="fs-18">Rapports Médicaux sécurisés</h5>
-            <p class="text-muted my-3 ff-secondary">
-              Retrouvez tous les documents de votre proche dans un espace unique et sécurisé.
+            <h5 class="fs-18" data-key="t-rappmedic">{{ $t("t-rappmedic") }}</h5>
+            <p class="text-muted my-3 ff-secondary" data-key="t-finddoc">{{ $t("t-finddoc") }}
             </p>
           </div>
         </div>
@@ -145,9 +141,8 @@ export default {
             </div>
           </div>
           <div class="flex-grow-1">
-            <h5 class="fs-18">Prochaines échéances</h5>
-            <p class="text-muted my-3 ff-secondary">
-              Restez informés des prochains rendez-vous de votre proche, où que vous soyez.
+            <h5 class="fs-18" data-key="t-nextechean">{{ $t("t-nextechean") }}</h5>
+            <p class="text-muted my-3 ff-secondary" data-key="t-stayuptodate">{{ $t("t-stayuptodate") }}
             </p>
           </div>
         </div>
@@ -163,9 +158,8 @@ export default {
             </div>
           </div>
           <div class="flex-grow-1">
-            <h5 class="fs-18">Mise à jours fréquentes</h5>
-            <p class="text-muted my-3 ff-secondary">
-              Tout changement de situation de votre proche vous serra communiquer par une notification.
+            <h5 class="fs-18" data-key="t-updatefreq">{{ $t("t-updatefreq") }}</h5>
+            <p class="text-muted my-3 ff-secondary" data-key="t-anychange">{{ $t("t-anychange") }}
             </p>
           </div>
         </div>
@@ -181,9 +175,8 @@ export default {
             </div>
           </div>
           <div class="flex-grow-1">
-            <h5 class="fs-18">Vous avez une question ?</h5>
-            <p class="text-muted my-3 ff-secondary">
-              Prenez contact via une messagerie pour poser vos questions vis-à-vis de vos proches.
+            <h5 class="fs-18" data-key="t-havequestion">{{ $t("t-havequestion") }}</h5>
+            <p class="text-muted my-3 ff-secondary" data-key="t-takecontact">{{ $t("t-takecontact") }}
             </p>
           </div>
         </div>
