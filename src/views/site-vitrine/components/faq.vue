@@ -39,9 +39,7 @@ export default {
             </h2>
             <div id="genques-collapseOne" class="accordion-collapse collapse" aria-labelledby="genques-headingOne"
               data-bs-parent="#genques-accordion">
-              <div class="accordion-body ff-secondary">
-                La FAQ (Frequently Asked Questions), également nommée « Foire Aux Questions », est une liste de réponses
-                aux questions les plus fréquemment posées.
+              <div class="accordion-body ff-secondary" data-key="t-whatfaqtext">{{ $t("t-whatfaqtext") }}
               </div>
             </div>
           </div>
@@ -54,9 +52,7 @@ export default {
             </h2>
             <div id="genques-collapseTwo" class="accordion-collapse collapse" aria-labelledby="genques-headingTwo"
               data-bs-parent="#genques-accordion">
-              <div class="accordion-body ff-secondary">
-                Medicfollow, c'est une plateforme en cours de développement, qui sera disponible sur mobile et web dans
-                le but de faciliter la communication entre le personnel médical et les familles des patients.
+              <div class="accordion-body ff-secondary" data-key="t-whatmftext">{{ $t("t-whatmftext") }}
               </div>
             </div>
           </div>
@@ -69,8 +65,7 @@ export default {
             </h2>
             <div id="genques-collapseThree" class="accordion-collapse collapse" aria-labelledby="genques-headingThree"
               data-bs-parent="#genques-accordion">
-              <div class="accordion-body ff-secondary">
-                Medicfollow sera disponible en France uniquement pour l'instant. Prochainement en Europe.
+              <div class="accordion-body ff-secondary" data-key="t-wheremftext">{{ $t("t-wheremftext") }}
               </div>
             </div>
           </div>
@@ -83,9 +78,7 @@ export default {
             </h2>
             <div id="genques-collapseFour" class="accordion-collapse collapse" aria-labelledby="genques-headingFour"
               data-bs-parent="#genques-accordion">
-              <div class="accordion-body ff-secondary">
-                Medicfollow est gratuit à l'utilisation pour les particuliers. Pour les professionnels de santé et les
-                organisations médicales, il y aura un abonnement mensuel.
+              <div class="accordion-body ff-secondary" data-key="t-costmftext">{{ $t("t-costmftext") }}
               </div>
             </div>
           </div>
@@ -98,9 +91,7 @@ export default {
             </h2>
             <div id="genques-collapseFive" class="accordion-collapse collapse" aria-labelledby="genques-headingFive"
               data-bs-parent="#genques-accordion">
-              <div class="accordion-body ff-secondary">
-                Les clients mobile & web de Medicfollow gèrent les langues suivantes: Français, Anglais, Espagnol,
-                Allemand et Italien.
+              <div class="accordion-body ff-secondary" data-key="t-langmftext">{{ $t("t-langmftext") }}
               </div>
             </div>
           </div>
@@ -113,9 +104,7 @@ export default {
             </h2>
             <div id="genques-collapseSix" class="accordion-collapse collapse" aria-labelledby="genques-headingSix"
               data-bs-parent="#genques-accordion">
-              <div class="accordion-body ff-secondary">
-                Pour résoudre votre problème, prenez contact dans le formulaire ci-dessus et fournissez un maximum
-                d'informations.
+              <div class="accordion-body ff-secondary" data-key="t-probmftext">{{ $t("t-probmftext") }}
               </div>
             </div>
           </div>
@@ -144,10 +133,7 @@ export default {
             </h2>
             <div id="privacy-collapseOne" class="accordion-collapse collapse" aria-labelledby="privacy-headingOne"
               data-bs-parent="#privacy-accordion">
-              <div class="accordion-body ff-secondary">
-                Votre sécurité sur MedicFollow nous tient à cœur. C'est pourquoi nous avons créé le Centre de sécurité,
-                dans lequel vous trouverez des ressources, des outils et des conseils utiles ayant trait à différents
-                sujets.
+              <div class="accordion-body ff-secondary" data-key="t-secucentertext">{{ $t("t-secucentertext") }}
               </div>
             </div>
           </div>
@@ -160,11 +146,7 @@ export default {
             </h2>
             <div id="privacy-collapseTwo" class="accordion-collapse collapse" aria-labelledby="privacy-headingTwo"
               data-bs-parent="#privacy-accordion">
-              <div class="accordion-body ff-secondary">
-                Vous pouvez gérer et consulter vos paramètres et commandes de confidentialité depuis la page "Vos
-                données dans MedicFollow". Elle inclut un récapitulatif des données relatives à votre contenu et votre
-                activité, des paramètres de gestion de ces données
-                et des informations sur l'utilisation qui en est faite pour améliorer MedicFollow.
+              <div class="accordion-body ff-secondary" data-key="t-yourdatatext">{{ $t("t-yourdatatext") }}
               </div>
             </div>
           </div>
@@ -177,9 +159,7 @@ export default {
             </h2>
             <div id="privacy-collapseThree" class="accordion-collapse collapse" aria-labelledby="privacy-headingThree"
               data-bs-parent="#privacy-accordion">
-              <div class="accordion-body ff-secondary">
-                MedicFollow est disponible à l'installation sur le PlayStore et l'AppleStore. La désinstallation
-                s'exécute dans les paramètres de votre téléphone.
+              <div class="accordion-body ff-secondary" data-key="t-installtext">{{ $t("t-installtext") }}
               </div>
             </div>
           </div>
@@ -192,10 +172,7 @@ export default {
             </h2>
             <div id="privacy-collapseFour" class="accordion-collapse collapse" aria-labelledby="privacy-headingFour"
               data-bs-parent="#privacy-accordion">
-              <div class="accordion-body ff-secondary">
-                La suppression d'un compte MedicFollow professionnel est disponible après contact avec notre
-                support. Pour les comptes particuliers, la suppression est automatique après 6 mois d'inactivité ou
-                après la demande dans les paramètres utilisateurs.
+              <div class="accordion-body ff-secondary" data-key="t-deleteacctext">{{ $t("t-deleteacctext") }}
               </div>
             </div>
           </div>
@@ -208,10 +185,7 @@ export default {
             </h2>
             <div id="privacy-collapseFive" class="accordion-collapse collapse" aria-labelledby="privacy-headingFive"
               data-bs-parent="#privacy-accordion">
-              <div class="accordion-body ff-secondary">
-                Le numéro de téléphone indiqué en haut de cette page vous permettra de contacter
-                le service client, si ce dernier n'est pas joignable, vous pouvez toujours nous
-                contacter via le formulaire ci-dessus.
+              <div class="accordion-body ff-secondary" data-key="t-howcontacttext">{{ $t("t-howcontacttext") }}
               </div>
             </div>
           </div>
@@ -224,9 +198,7 @@ export default {
             </h2>
             <div id="privacy-collapseSix" class="accordion-collapse collapse" aria-labelledby="privacy-headingSix"
               data-bs-parent="#privacy-accordion">
-              <div class="accordion-body ff-secondary">
-                Dans ce cas, il vous suffit de nous contacter via le formulaire de contact. Nos
-                conseillers répondront à vos questions dans les plus brefs délais.
+              <div class="accordion-body ff-secondary" data-key="t-notansweredtext">{{ $t("t-notansweredtext") }}
               </div>
             </div>
           </div>
