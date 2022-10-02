@@ -552,6 +552,11 @@
     margin: 0 auto;
 }
 
+.dashboard-form {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .two-percent-height {
     display: inline-block;
     height: 5vh;
@@ -598,4 +603,12 @@
 
 * {
     font-family: "Inter", sans-serif !important;
+}
+
+.padd25around {
+    padding: 15px;
+}
+
+.dashboardcard {
+    height: 16em;
 }
