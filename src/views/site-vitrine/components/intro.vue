@@ -11,11 +11,10 @@ export default {
       <div class="col-lg-8 col-sm-10">
         <div class="text-center mt-lg-5 pt-5">
           <h1 class="display-6 fw-semibold mb-3 lh-base">
-            <span class="text-success">MEDICFOLLOW</span>
-            <p>La première plateforme qui facilite la communication autour du patient</p>
+            <span class="text-success text-uppercase">Medicfollow</span>
+            <p data-key="t-firstplatform">{{ $t("t-firstplatform") }}</p>
           </h1>
-          <p class="lead text-muted lh-base">
-            Restez en contact aisément avec vos proches hospitalisés, 7J/7, 24H/24.
+          <p class="lead text-muted lh-base" data-key="t-slogan">{{ $t("t-slogan") }}
           </p>
 
           <div class="d-flex gap-2 justify-content-center mt-4">
