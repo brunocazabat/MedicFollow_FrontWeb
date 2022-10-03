@@ -257,5 +257,7 @@
   "t-nextstep": "Passo successivo",
   "t-selectdoctormeeting": "Seleziona un medico per il tuo incontro",
   "t-takemeetingwithdoctor": "Incontro con un dottore",
-  "t-observationsheets": "Schede di osservazione"
+  "t-observationsheets": "Schede di osservazione",
+  "t-agreeingontou": "Inviandoci un feedback, accetti di utilizzare i nostri Termini di utilizzo.",
+  "t-chatwithfamily": "Chatta con persona di fiducia"
 }

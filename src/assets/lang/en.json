@@ -257,5 +257,7 @@
   "t-continue": "Continue",
   "t-cancel": "Cancel",
   "t-takemeetingwithdoctor": "Meeting with a Doctor",
-  "t-observationsheets": "Observation sheets"
+  "t-observationsheets": "Observation sheets",
+  "t-chatwithfamily": "Chat with trusted person",
+  "t-agreeingontou": "By sending us a feedback, you are agreeing on using our Terms of Use."
 }
