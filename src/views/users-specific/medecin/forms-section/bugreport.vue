@@ -33,69 +33,73 @@ export default {
       </div>
     </div>
 
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!! FORM NAVIGATION !!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <div class="col-xxl-12">
-      <div class="card mt-xxl-n5">
-        <div class="card-header mb-0">
-          <ul class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-bs-toggle="tab" href="#feedback" role="tab" data-key="t-suggestform">
-                <em class="fas fa-home"></em>
-                {{ $t("t-suggestform") }}
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#bugReport" role="tab" data-key="t-bugform">
-                <em class="far fa-user"></em>
-                {{ $t("t-bugform") }}
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#contactUs" role="tab" data-key="t-contactus">
-                <em class="far fa-user"></em>
-                {{ $t("t-contactus") }}
-              </a>
-            </li>
-          </ul>
-        </div>
 
-        <!-- !!!!!!!!!!!!!!!!!!!!!!!!! FEEDBACK/SUGGESTION REPORT FORM !!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <div class="project-wrapper mf-form-width">
 
-        <div class="card-body p-6 forms-background-pattern">
-          <div class="tab-content">
-            <div class="tab-pane active" id="feedback" role="tabpanel">
-              <form action="javascript:void(0);">
+      <!-- !!!!!!!!!!!!!!!!!!!!!!!!! FORM NAVIGATION !!!!!!!!!!!!!!!!!!!!!!!!! -->
+      <div class="col-xxl-12">
+        <div class="card mt-xxl-n5">
+          <div class="card-header mb-0">
+            <ul class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#feedback" role="tab" data-key="t-suggestform">
+                  <em class="fas fa-home"></em>
+                  {{ $t("t-suggestform") }}
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#bugReport" role="tab" data-key="t-bugform">
+                  <em class="far fa-user"></em>
+                  {{ $t("t-bugform") }}
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#contactUs" role="tab" data-key="t-contactus">
+                  <em class="far fa-user"></em>
+                  {{ $t("t-contactus") }}
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                <FeedbackModule />
+          <!-- !!!!!!!!!!!!!!!!!!!!!!!!! FEEDBACK/SUGGESTION REPORT FORM !!!!!!!!!!!!!!!!!!!!!!!!! -->
 
-              </form>
+          <div class="card-body p-6 forms-background-pattern">
+            <div class="tab-content">
+              <div class="tab-pane active" id="feedback" role="tabpanel">
+                <form action="javascript:void(0);">
+
+                  <FeedbackModule />
+
+                </form>
+              </div>
+
+              <!-- !!!!!!!!!!!!!!!!!!!!!!!!! BUG REPORT FORM !!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+              <div class="tab-pane" id="bugReport" role="tabpanel">
+                <form action="javascript:void(0);">
+
+                  <BugReportModule />
+
+                </form>
+              </div>
+
+
+              <!-- !!!!!!!!!!!!!!!!!!!!!!!!! CONTACT US TAB !!!!!!!!!!!!!!!!!!!!!!!!! -->
+              <div class="tab-pane" id="contactUs" role="tabpanel">
+                <form action="javascript:void(0);">
+
+                  <ContactUsModule />
+
+                </form>
+              </div>
+
+
             </div>
-
-            <!-- !!!!!!!!!!!!!!!!!!!!!!!!! BUG REPORT FORM !!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-            <div class="tab-pane" id="bugReport" role="tabpanel">
-              <form action="javascript:void(0);">
-
-                <BugReportModule />
-
-              </form>
-            </div>
-
-
-            <!-- !!!!!!!!!!!!!!!!!!!!!!!!! CONTACT US TAB !!!!!!!!!!!!!!!!!!!!!!!!! -->
-            <div class="tab-pane" id="contactUs" role="tabpanel">
-              <form action="javascript:void(0);">
-
-                <ContactUsModule />
-
-              </form>
-            </div>
-
-
           </div>
         </div>
       </div>
-      <footermodule />
     </div>
+    <footermodule />
   </Layout>
 </template>
