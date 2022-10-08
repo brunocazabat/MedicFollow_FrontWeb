@@ -10,169 +10,114 @@ export default {
       <div class="timeline">
         <div class="timeline-item left">
           <em class="icon ri-arrow-left-circle-line"></em>
-          <div class="date">SEPT 2020</div>
+          <div class="date text-uppercase" data-key="t-SEPT">{{ $t("t-SEPT") }} 2020</div>
           <div class="content">
-            <div class="d-flex">
-              <div class="flex-grow-1 ms-3">
-                <h5 class="fs-15">Fondation de MedicFollow</h5>
-                <p class="text-muted" style="text-align: justify;">
-                  Le projet MedicFollow a été fondé lors de la Piscine MoonShot 2020 à Epitech Marseille.
-                </p>
-              </div>
-            </div>
+            <h5 data-key="t-sept2020">{{ $t("t-sept2020") }}</h5>
+            <p class="text-muted text-justify" data-key="t-sept2020text">{{ $t("t-sept2020text") }}</p>
           </div>
         </div>
         <div class="timeline-item right">
           <em class="icon ri-arrow-right-circle-line"></em>
-          <div class="date">OCT 2020</div>
+          <div class="date text-uppercase" data-key="t-OCT">{{ $t("t-OCT") }} 2020</div>
           <div class="content">
-            <h5>MedicFollow à "L’Accélérateur M"</h5>
-            <p class="text-muted" style="text-align: justify;">
-              MedicFollow, ayant été élu le meilleur projet EIP à Epitech Marseille, a été désigné
-              pour être présenté à
-              "L’Accélérateur M", une association spécialisée dans l’aide et le soutien aux jeunes entreprises du
-              territoire.</p>
-            <!--end row-->
+            <h5 data-key="t-oct2020">{{ $t("t-oct2020") }}</h5>
+            <p class="text-muted text-justify" data-key="t-oct2020text">{{ $t("t-oct2020text") }}</p>
           </div>
         </div>
         <div class="timeline-item left">
           <em class="icon ri-arrow-left-circle-line"></em>
-          <div class="date">DEC 2020</div>
+          <div class="date text-uppercase" data-key="t-DEC">{{ $t("t-DEC") }} 2020</div>
           <div class="content">
-            <h5>Détermination des objectifs pour la bêta fermée</h5>
-            <p class="text-muted" style="text-align: justify;">
-              Le premier sprint "BRAINSTORMING" à permis à MedicFollow de développer de nouvelles ambitions et de
-              nouveaux objectifs pour le futur du développement.
-            </p>
+            <h5 data-key="t-dec2020">{{ $t("t-dec2020") }}</h5>
+            <p class="text-muted text-justify" data-key="t-dec2020text">{{ $t("t-dec2020text") }}</p>
           </div>
         </div>
         <div class="timeline-item right">
           <em class="icon ri-arrow-right-circle-line"></em>
-          <div class="date">JANV 2021</div>
+          <div class="date text-uppercase" data-key="t-JAN">{{ $t("t-JAN") }} 2021</div>
           <div class="content">
-            <h5>Sondage de MedicFollow en milieu médical</h5>
-            <p class="text-muted" style="text-align: justify;">
-              Recueil d'avis de la part de professionnels du milieu médical concernant la nécessité d'un outil pour
-              faciliter la communication entre les proches et le personnel s'occupant du/des malade(s).
-            </p>
+            <h5 data-key="t-jan2021">{{ $t("t-jan2021") }}</h5>
+            <p class="text-muted text-justify" data-key="t-jan2021text">{{ $t("t-jan2021text") }}</p>
           </div>
         </div>
         <div class="timeline-item left">
           <em class="icon ri-arrow-left-circle-line"></em>
-          <div class="date">MARS 2021</div>
+          <div class="date text-uppercase" data-key="t-MARS">{{ $t("t-MARS") }} 2021</div>
           <div class="content">
-            <h5>Début de la Bêta fermée<br />Création de la plateforme "Web" pour les particuliers</h5>
-            <p class="text-muted" style="text-align: justify;">
-              La première étape du développement de la Bêta fermée fut la création de la plateforme
-              "web", accessible aux particuliers depuis n'importe quel navigateur internet.
-            </p>
-            <!--end row-->
+            <h5 data-key="t-mars2021 t-mars2021bis">{{ $t("t-mars2021") }}<br />{{ $t("t-mars2021bis") }}</h5>
+            <p class="text-muted text-justify" data-key="t-mars2021text">{{ $t("t-mars2021text") }}</p>
           </div>
         </div>
         <div class="timeline-item right">
           <em class="icon ri-arrow-right-circle-line"></em>
-          <div class="date">AVRI 2021</div>
+          <div class="date text-uppercase" data-key="t-AVRI">{{ $t("t-AVRI") }} 2021</div>
           <div class="content">
-            <h5>Création de la plateforme "Mobile"<br />Création des services "Back-End"</h5>
-            <p class="text-muted" style="text-align: justify;">
-              Après la plateforme "web", notre deuxième objectif était de proposer les solutions de MedicFollow pour les
-              particuliers sur "Mobile" également. Les services en arrière-plan pour l'exécution correcte des
-              fonctionnalités de MedicFollow ont commencé à être
-              développés.
-            </p>
+            <h5 data-key="t-avri2021 t-avri2021bis">{{ $t("t-avri2021") }}<br />{{ $t("t-avri2021bis") }}</h5>
+            <p class="text-muted text-justify" data-key="t-avri2021text">{{ $t("t-avri2021text") }}</p>
           </div>
         </div>
         <div class="timeline-item left">
           <em class="icon ri-arrow-left-circle-line"></em>
-          <div class="date">JUIL 2021</div>
+          <div class="date text-uppercase" data-key="t-JUIL">{{ $t("t-JUIL") }} 2021</div>
           <div class="content">
-            <h5>Ajout d'une solution pour les professionnels à la plateforme "Web"</h5>
-            <p class="text-muted" style="text-align: justify;">
-              L'objectif principal étant de faire gagner du temps à notre personnel médical, notre plateforme "web" à
-              reçu
-              une mise à jour de contenu afin de permettre aux professionnels d'utiliser nos services avec plus
-              d'aisance que les particuliers.
-            </p>
-            <!--end row-->
+            <h5 data-key="t-juil2021">{{ $t("t-juil2021") }}</h5>
+            <p class="text-muted text-justify" data-key="t-juil2021text">{{ $t("t-juil2021text") }}</p>
           </div>
         </div>
         <div class="timeline-item right">
           <em class="icon ri-arrow-right-circle-line"></em>
-          <div class="date">SEPT 2021</div>
+          <div class="date text-uppercase" data-key="t-SEPT">{{ $t("t-SEPT") }} 2021</div>
           <div class="content">
-            <h5>Ajout de la fonctionnalité "Discussion" aux deux plateformes de MedicFollow</h5>
-            <p class="text-muted" style="text-align: justify;">
-              L'atout principal pour faciliter la communication entre le personnel médical et les proches : mise en
-              place du service de discussion.
-            </p>
+            <h5 data-key="t-sept2021">{{ $t("t-sept2021") }}</h5>
+            <p class="text-muted text-justify" data-key="t-sept2021text">{{ $t("t-sept2021text") }}</p>
           </div>
         </div>
         <div class="timeline-item left">
           <em class="icon ri-arrow-left-circle-line"></em>
-          <div class="date">OCT 2021</div>
+          <div class="date text-uppercase" data-key="t-OCT">{{ $t("t-OCT") }} 2021</div>
           <div class="content">
-            <h5>Ajout de la fonctionnalité "Agenda" aux deux plateformes de MedicFollow</h5>
-            <p class="text-muted" style="text-align: justify;">
-              L'atout secondaire pour apporter une facilitée au quotidien de nos utilisateurs : mise en place du service
-              de calendrier et de rappels intelligents.
-            </p>
-            <!--end row-->
+            <h5 data-key="t-oct2021">{{ $t("t-oct2021") }}</h5>
+            <p class="text-muted text-justify" data-key="t-oct2021text">{{ $t("t-oct2021text") }}</p>
           </div>
         </div>
         <div class="timeline-item right">
           <em class="icon ri-arrow-right-circle-line"></em>
-          <div class="date">DEC 2021</div>
+          <div class="date text-uppercase" data-key="t-DEC">{{ $t("t-DEC") }} 2021</div>
           <div class="content">
-            <h5>Version "Plan-Bêta" de MedicFollow en cours de développement</h5>
-            <p class="text-muted" style="text-align: justify;">
-              Après de nouveaux retours de la part du personnel médical suite à nos premiers tests de MedicFollow bêta,
-              nous continuons d'améliorer nos fonctionnalités.
-            </p>
+            <h5 data-key="t-dec2021">{{ $t("t-dec2021") }}</h5>
+            <p class="text-muted text-justify" data-key="t-dec2021text">{{ $t("t-dec2021text") }}</p>
           </div>
         </div>
         <div class="timeline-item left">
           <em class="icon ri-arrow-left-circle-line"></em>
-          <div class="date">MAI 2022</div>
+          <div class="date text-uppercase" data-key="t-MAI">{{ $t("t-MAI") }} 2022</div>
           <div class="content">
-            <h5>MedicFollow "Bêta" prêt au déploiement en milieu médical</h5>
-            <p class="text-muted" style="text-align: justify;">
-              Nos constantes améliorations en terme de sécurité et en richesses de fonctionnalités nous permettent dès
-              maintenant de fournir une suite de logiciels adaptés au public pour des fins de tests.
-            </p>
-            <!--end row-->
+            <h5 data-key="t-mai2022">{{ $t("t-mai2022") }}</h5>
+            <p class="text-muted text-justify" data-key="t-mai2022text">{{ $t("t-mai2022text") }}</p>
           </div>
         </div>
         <div class="timeline-item right">
           <em class="icon ri-arrow-right-circle-line"></em>
-          <div class="date">Q2 2022</div>
+          <div class="date text-uppercase">Q2 2022</div>
           <div class="content">
-            <h5>Sprint "Consolidation" de MedicFollow</h5>
-            <p class="text-muted" style="text-align: justify;">
-              La solution MedicFollow commence à prendre forme. Nous avons recruté des bêtas testeurs pour recueillir
-              les premières impressions et valider notre parcours utilisateur.
-            </p>
+            <h5 data-key="t-q22022">{{ $t("t-q22022") }}</h5>
+            <p class="text-muted text-justify" data-key="t-q22022text">{{ $t("t-q22022text") }}</p>
           </div>
         </div>
         <div class="timeline-item left">
           <em class="icon ri-arrow-left-circle-line"></em>
-          <div class="date">Q3 2022</div>
+          <div class="date text-uppercase">Q3 2022</div>
           <div class="content">
-            <h5>Sprint "Lancement & Métriques" de MedicFollow</h5>
-            <p class="text-muted" style="text-align: justify;">
-              Les retours de nos bêtas testeurs nous ont permis d'identifier des axes d'amélioration. Nous
-              travaillons à l'amélioration de la solution en écoutant nos testeurs.
-            </p>
-            <!--end row-->
+            <h5 data-key="t-q32022">{{ $t("t-q32022") }}</h5>
+            <p class="text-muted text-justify" data-key="t-q32022text">{{ $t("t-q32022text") }}</p>
           </div>
         </div>
         <div class="timeline-item right">
           <em class="icon ri-arrow-right-circle-line"></em>
-          <div class="date">JAN 2023</div>
+          <div class="date text-uppercase" data-key="t-JAN">{{ $t("t-JAN") }} 2023</div>
           <div class="content">
-            <h5>Présentation aux Epitech Expériences de MedicFollow</h5>
-            <p class="text-muted" style="text-align: justify;">
-              Présentation du projet à "l'Epitech Expérience" devant un jury de professionnels et d'étudiants.
-            </p>
+            <h5 data-key="t-jan2023">{{ $t("t-jan2023") }}</h5>
+            <p class="text-muted text-justify" data-key="t-jan2023text">{{ $t("t-jan2023text") }}</p>
           </div>
         </div>
       </div>
