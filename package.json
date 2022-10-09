@@ -30,7 +30,7 @@
     "@zhuowenli/vue-feather-icons": "^5.0.2",
     "aos": "^2.3.4",
     "apexcharts": "^3.35.5",
-    "axios": "^0.27.2",
+    "axios": "^1.1.2",
     "bootstrap": "^5.2.2",
     "bootstrap-vue-3": "^0.3.11",
     "chart.js": "^3.7.0",
