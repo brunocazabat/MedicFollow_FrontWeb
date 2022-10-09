@@ -35,7 +35,7 @@
     "bootstrap-vue-3": "^0.3.11",
     "chart.js": "^3.7.0",
     "click-outside-vue3": "^4.0.1",
-    "core-js": "^3.25.2",
+    "core-js": "^3.25.5",
     "dayjs": "^1.11.5",
     "depcheck": "^1.4.3",
     "dotenv-webpack": "^8.0.1",
