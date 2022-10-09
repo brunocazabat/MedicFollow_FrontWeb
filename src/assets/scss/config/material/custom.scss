@@ -594,7 +594,10 @@
 
 .mf-btn-error {
     background-color: rgb(209, 17, 17) !important;
-    border: 0px !important;
+    border: rgb(209, 17, 17) !important;
+    :hover {
+        background-color: rgb(138, 13, 13) !important;
+    }
 }
 
 .mf-scrollable {
@@ -615,4 +618,9 @@
 
 .text-justify {
     text-align: justify;
+}
+
+.mf-schedule-days > div {
+    display: flex;
+    width: fit-content;
 }
