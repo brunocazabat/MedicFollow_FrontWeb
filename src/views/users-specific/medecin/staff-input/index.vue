@@ -34,7 +34,7 @@ export default {
       profile: require('@/assets/images/users/avatar-1.png'),
 
       value: ['javascript'],
-      viewID: 1,
+      viewID: 0,
       viewEnd: false,
       patientFirstName: "",
       patientLastName: "",

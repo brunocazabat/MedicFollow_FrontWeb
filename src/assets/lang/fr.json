@@ -116,8 +116,8 @@
   "t-visitsum": "Résumé de la visite médical.",
   "t-fillinfobelow": "Veuillez remplir toutes les informations ci-dessous.",
   "t-isvisitapproved": "Votre visite médicale a-t-elle été approuvée?",
-  "t-yes": "OUI",
-  "t-no": "NON",
+  "t-yes": "Oui",
+  "t-no": "Non",
   "t-visitapproved": "Le résumé de la visite médicale a été approuvé.",
   "t-visitnotapproved": "Le résumé de la visite médicale est en attente d'approbation.",
   "t-backtopatient": "Retour à la recherche de patients",
@@ -373,5 +373,7 @@
   "t-q32022text": "Les retours de nos beta testeurs nous ont permis d'identifier des axes d'amélioration, nous travaillons à l'amélioration de la solution en écoutant nos testeurs.",
   "t-jan2023": "Présentation à Epitech MedicFollow Experiences",
   "t-jan2023text": "Présentation du projet à \"Epitech Experience\" devant un jury de professionnels et d'étudiants.",
-  "t-sept2020text": "Le projet MedicFollow a été fondé lors du Pool MoonShot 2020 à Epitech Marseille."
+  "t-sept2020text": "Le projet MedicFollow a été fondé lors du Pool MoonShot 2020 à Epitech Marseille.",
+  "t-scheduleinfotext": "Sur cette page, vous pouvez configurer votre calendrier de réunion générale, vous avez également une page pour configurer des jours spécifiques",
+  "t-doyouacceptmeetings": "Acceptez-vous les rendez-vous ?"
 }
