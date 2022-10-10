@@ -72,7 +72,7 @@
     "vue3-echarts": "^1.0.4",
     "vue3-google-map": "^0.15.0",
     "vue3-popper": "^1.5.0",
-    "vue3-quill": "^0.2.6",
+    "vue3-quill": "^0.3.0",
     "vue3-recaptcha-v2": "^1.0.1",
     "vuejs-title": "^1.0.16",
     "vuelidate": "^0.7.7",
