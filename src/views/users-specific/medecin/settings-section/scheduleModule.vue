@@ -15,7 +15,6 @@ export default {
 <template>
 
   <div id="mondayDiv" class="row">
-    <!-- <p class="mb-0">{{title}}</p> -->
     <div class="col-lg-4 p-3">
       <select id="mondaySchedule1" class="form-select">
         <option value="00">00:00</option>

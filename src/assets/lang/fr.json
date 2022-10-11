@@ -375,5 +375,12 @@
   "t-jan2023text": "Présentation du projet à \"Epitech Experience\" devant un jury de professionnels et d'étudiants.",
   "t-sept2020text": "Le projet MedicFollow a été fondé lors du Pool MoonShot 2020 à Epitech Marseille.",
   "t-scheduleinfotext": "Sur cette page, vous pouvez configurer votre calendrier de réunion générale, vous avez également une page pour configurer des jours spécifiques",
-  "t-doyouacceptmeetings": "Acceptez-vous les rendez-vous ?"
+  "t-doyouacceptmeetings": "Acceptez-vous les rendez-vous ?",
+  "t-friday": "Vendredi",
+  "t-monday": "Lundi",
+  "t-saturday": "Samedi",
+  "t-sunday": "Dimanche",
+  "t-thursday": "Jeudi",
+  "t-tuesday": "Mardi",
+  "t-wednesday": "Mercredi"
 }

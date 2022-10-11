@@ -375,5 +375,12 @@
   "t-q32022text": "The feedback from our beta testers has allowed us to identify areas for improvement, we are working to improve the solution by listening to our testers.",
   "t-jan2023text": "Presentation of the project at the \"Epitech Experience\" in front of a jury of professionals and students.",
   "t-scheduleinfotext": "On this page you can setup your general meeting schedule, you also have a page to setup specific days",
-  "t-doyouacceptmeetings": "Do you accept meetings?"
+  "t-doyouacceptmeetings": "Do you accept meetings?",
+  "t-monday": "Monday",
+  "t-tuesday": "Tuesday",
+  "t-wednesday": "Wednesday",
+  "t-thursday": "Thursday",
+  "t-friday": "Friday",
+  "t-saturday": "Saturday",
+  "t-sunday": "Sunday"
 }

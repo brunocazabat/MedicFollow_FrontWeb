@@ -3,6 +3,7 @@ import Layout from "@/components/layouts/main.vue";
 import footermodule from "@/components/login-components/footer-module.vue";
 
 import ScheduleModule from "./scheduleModule.vue";
+import DaysCheckModule from "./daysOfTheWeekCheck.vue";
 import { createElement } from "preact";
 
 export default {
@@ -10,9 +11,35 @@ export default {
     return {
       value: ['javascript'],
 
+      daysOfWeek: {
+        monday: "Monday",
+        tuesday: "Tuesday",
+        wednesday: "Wednesday",
+        thursday: "Thursday",
+        friday: "Friday",
+        saturday: "Saturday",
+        sunday: "Sunday",
+      },
+
+      compDays: {
+        days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        showValue: [true, false, false, false, false, false, false],
+      },
+
+      showDay: {
+        Monday: true,
+        Tuesday: false,
+        Wednesday: false,
+        Thursday: false,
+        Friday: false,
+        Saturday: false,
+        Sunday: false,
+      },
+
+      testVal: false,
       showWeek: false,
       showSchedule: false,
-      showMonday: false,
+      showMonday: true,
       showTuesday: false,
       showWednesday: false,
       showThursday: false,
@@ -23,7 +50,7 @@ export default {
       message: "oskour",
       mondayNbr: 1,
       tuesdayNbr: 1,
-      wednsedayNbr: 1,
+      wednesdayNbr: 1,
       thursdayNbr: 1,
       fridayNbr: 1,
       saturdayNbr: 1,
@@ -34,14 +61,17 @@ export default {
     Layout,
     footermodule,
     ScheduleModule,
+    DaysCheckModule,
   },
   methods: {
+
+
     addScheduleNbr(dayOfTheWeek) {
       if (dayOfTheWeek === "monday" && this.mondayNbr !== 5) {
         this.mondayNbr += 1
       } else if (dayOfTheWeek === "tuesday" && this.tuesdayNbr !== 5) {
         this.tuesdayNbr += 1
-      } else if (dayOfTheWeek === "wednesday" && this.wednsedayNbr !== 5) {
+      } else if (dayOfTheWeek === "wednesday" && this.wednesdayNbr !== 5) {
         this.wednesdayNbr += 1
       } else if (dayOfTheWeek === "thursday" && this.thursdayNbr !== 5) {
         this.thursdayNbr += 1
@@ -58,7 +88,7 @@ export default {
         this.mondayNbr -= 1
       } else if (dayOfTheWeek === "tuesday" && this.tuesdayNbr !== 1) {
         this.tuesdayNbr -= 1
-      } else if (dayOfTheWeek === "wednesday" && this.wednsedayNbr !== 1) {
+      } else if (dayOfTheWeek === "wednesday" && this.wednesdayNbr !== 1) {
         this.wednesdayNbr -= 1
       } else if (dayOfTheWeek === "thursday" && this.thursdayNbr !== 1) {
         this.thursdayNbr -= 1
@@ -113,20 +143,6 @@ export default {
       <div class="card">
         <div class="card-body">
 
-
-
-          <!-- <h1>
-      <a name="hello-world" href="#hello-world">
-        Hello world!
-      </a>
-    </h1>
-
-    <anchored-heading :level="1">Hello world!</anchored-heading>
-
-    <p>{{message}}</p>
-    <button v-on:click="addNewSchedule()" class="btn btn-primary">Add a new schedule</button> -->
-
-
           <!-- TRUE/FALSE NEW MEETING -->
           <div id="yesnoDiv" class="p-3 card-body">
             <p class="font-size-medium">
@@ -158,47 +174,14 @@ export default {
             <!-- Padding -->
             <div class="row p-3 mf-schedule-days">
 
-              <!-- Monday -->
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="mondayGridCheck" v-model="showMonday" />
-                <label class="form-check-label" for="mondayGridCheck">MONDAY</label>
+              <div v-for="(value, key) in compDays.days" :key="key">
+                <DaysCheckModule :day="value" v-model="testVal" />
+
+                <p>Key: {{key}}, value: {{compDays.showValue.at(key)}}, testVal: {{testVal}}</p>
+                <!-- newValue => searchText = newValue -->
               </div>
 
-              <!-- Tuesday -->
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="tuesdayGridCheck" v-model="showTuesday" />
-                <label class="form-check-label" for="tuesdayGridCheck">TUESDAY</label>
-              </div>
 
-              <!-- Wednesday -->
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="wednesdayGridCheck" v-model="showWednesday" />
-                <label class="form-check-label" for="wednesdayGridCheck">WEDNESDAY</label>
-              </div>
-
-              <!-- Thursday -->
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="thursdayGridCheck" v-model="showThursday" />
-                <label class="form-check-label" for="thursdayGridCheck">THURSDAY</label>
-              </div>
-
-              <!-- Friday -->
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="fridayGridCheck" v-model="showFriday" />
-                <label class="form-check-label" for="fridayGridCheck">FRIDAY</label>
-              </div>
-
-              <!-- Saturday -->
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="saturdayGridCheck" v-model="showSaturday" />
-                <label class="form-check-label" for="saturdayGridCheck">SATURDAY</label>
-              </div>
-
-              <!-- Sunday -->
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="sundayGridCheck" v-model="showSunday" />
-                <label class="form-check-label" for="sundayGridCheck">SUNDAY</label>
-              </div>
             </div>
           </div>
 
@@ -207,29 +190,39 @@ export default {
           <div id="schedulePickerDiv" class="row p-2">
 
             <!-- MONDAY SCHEUDLE -->
-            <div class="p-3" v-if="showMonday">
-              <label for="mondayDiv" class="form-label mb-2 font-size-medium"><strong>Monday Schedule</strong></label>
-              <div class="btn-padding mb-4">
+            <div class="p-3" v-if="compDays.showValue.at(0)">
+              <label for="mondayDiv" class="form-label mb-3 font-size-medium"><strong>Monday Schedule</strong></label>
+
+              <!-- Schedules -->
+              <div v-for="index in mondayNbr" :key="index">
+                <ScheduleModule title="Test Schedule" />
+              </div>
+
+              <!-- Add and Remove button -->
+              <div class="btn-padding">
                 <button class="lh-1 btn btn-primary font-size-medium col-lg-2"
                   v-on:click="addScheduleNbr('monday')">Add</button>
                 <button class="lh-1 btn btn-primary mf-btn-error font-size-medium col-lg-2"
                   v-on:click="removeScheduleNbr('monday')">Remove</button>
               </div>
-
-
-              <div v-for="index in mondayNbr" :key="index">
-                <ScheduleModule title="Test Schedule" />
-              </div>
             </div>
 
             <!-- TUESDAY SCHEDULE -->
             <div class="p-3" v-if="showTuesday">
-              <label for="tuesdayDiv" class="form-label mb-4 font-size-medium"><strong>Tuesday Schedule</strong></label>
-              <button class="btn btn-secondary" v-on:click="addScheduleNbr('tuesday')">Add</button>
-              <button class="btn btn-secondary" v-on:click="removeScheduleNbr('tuesday')">Remove</button>
+              <label for="tuesdayDiv" class="form-label mb-4 font-size-medium"><strong>Tuesday
+                  Schedule</strong></label>
 
+              <!-- Schedules -->
               <div v-for="index in tuesdayNbr" :key="index">
                 <ScheduleModule title="Test Schedule" />
+              </div>
+
+              <!-- Add and Remove button -->
+              <div class="btn-padding">
+                <button class="lh-1 btn btn-primary font-size-medium col-lg-2"
+                  v-on:click="addScheduleNbr('tuesday')">Add</button>
+                <button class="lh-1 btn btn-primary mf-btn-error font-size-medium col-lg-2"
+                  v-on:click="removeScheduleNbr('tuesday')">Remove</button>
               </div>
             </div>
 
@@ -237,11 +230,18 @@ export default {
             <div class="p-3" v-if="showWednesday">
               <label for="wednesdayDiv" class="form-label mb-4 font-size-medium"><strong>Wednesday
                   Schedule</strong></label>
-              <button class="btn btn-secondary" v-on:click="addScheduleNbr('wednesday')">Add</button>
-              <button class="btn btn-secondary" v-on:click="removeScheduleNbr('wednesday')">Remove</button>
 
+              <!-- Schedules -->
               <div v-for="index in wednesdayNbr" :key="index">
                 <ScheduleModule title="Test Schedule" />
+              </div>
+
+              <!-- Add and Remove button -->
+              <div class="btn-padding">
+                <button class="lh-1 btn btn-primary font-size-medium col-lg-2"
+                  v-on:click="addScheduleNbr('wednesday')">Add</button>
+                <button class="lh-1 btn btn-primary mf-btn-error font-size-medium col-lg-2"
+                  v-on:click="removeScheduleNbr('wednesday')">Remove</button>
               </div>
             </div>
 
@@ -249,22 +249,35 @@ export default {
             <div class="p-3" v-if="showThursday">
               <label for="thursdayDiv" class="form-label mb-4 font-size-medium"><strong>Thursday
                   Schedule</strong></label>
-              <button class="btn btn-secondary" v-on:click="addScheduleNbr('thursday')">Add</button>
-              <button class="btn btn-secondary" v-on:click="removeScheduleNbr('thursday')">Remove</button>
 
+              <!-- Schedules -->
               <div v-for="index in thursdayNbr" :key="index">
                 <ScheduleModule title="Test Schedule" />
+              </div>
+
+              <!-- Add and Remove button -->
+              <div class="btn-padding">
+                <button class="lh-1 btn btn-primary font-size-medium col-lg-2"
+                  v-on:click="addScheduleNbr('thursday')">Add</button>
+                <button class="lh-1 btn btn-primary mf-btn-error font-size-medium col-lg-2"
+                  v-on:click="removeScheduleNbr('thursday')">Remove</button>
               </div>
             </div>
 
             <!-- FRIDAY SCHEDULE -->
             <div class="p-3" v-if="showFriday">
               <label for="fridayDiv" class="form-label mb-4 font-size-medium"><strong>Friday Schedule</strong></label>
-              <button class="btn btn-secondary" v-on:click="addScheduleNbr('friday')">Add</button>
-              <button class="btn btn-secondary" v-on:click="removeScheduleNbr('friday')">Remove</button>
 
               <div v-for="index in fridayNbr" :key="index">
                 <ScheduleModule title="Test Schedule" />
+              </div>
+
+              <!-- Add and Remove button -->
+              <div class="btn-padding">
+                <button class="lh-1 btn btn-primary font-size-medium col-lg-2"
+                  v-on:click="addScheduleNbr('friday')">Add</button>
+                <button class="lh-1 btn btn-primary mf-btn-error font-size-medium col-lg-2"
+                  v-on:click="removeScheduleNbr('friday')">Remove</button>
               </div>
             </div>
 
@@ -272,22 +285,37 @@ export default {
             <div class="p-3" v-if="showSaturday">
               <label for="saturdayDiv" class="form-label mb-4 font-size-medium"><strong>Saturday
                   Schedule</strong></label>
-              <button class="btn btn-secondary" v-on:click="addScheduleNbr('saturday')">Add</button>
-              <button class="btn btn-secondary" v-on:click="removeScheduleNbr('saturday')">Remove</button>
 
+              <!-- Schedules -->
               <div v-for="index in saturdayNbr" :key="index">
                 <ScheduleModule title="Test Schedule" />
+              </div>
+
+              <!-- Add and Remove button -->
+              <div class="btn-padding">
+                <button class="lh-1 btn btn-primary font-size-medium col-lg-2"
+                  v-on:click="addScheduleNbr('saturday')">Add</button>
+                <button class="lh-1 btn btn-primary mf-btn-error font-size-medium col-lg-2"
+                  v-on:click="removeScheduleNbr('saturday')">Remove</button>
               </div>
             </div>
 
             <!-- SUNDAY SCHEDULE -->
             <div class="p-3" v-if="showSunday">
               <label for="sundayDiv" class="form-label mb-4 font-size-medium"><strong>Sunday Schedule</strong></label>
-              <button class="btn btn-secondary" v-on:click="addScheduleNbr('sunday')">Add</button>
-              <button class="btn btn-secondary" v-on:click="removeScheduleNbr('sunday')">Remove</button>
 
+
+              <!-- Schedules -->
               <div v-for="index in sundayNbr" :key="index">
                 <ScheduleModule title="Test Schedule" />
+              </div>
+
+              <!-- Add and Remove button -->
+              <div class="btn-padding">
+                <button class="lh-1 btn btn-primary font-size-medium col-lg-2"
+                  v-on:click="addScheduleNbr('sunday')">Add</button>
+                <button class="lh-1 btn btn-primary mf-btn-error font-size-medium col-lg-2"
+                  v-on:click="removeScheduleNbr('sunday')">Remove</button>
               </div>
             </div>
 
