@@ -42,7 +42,7 @@
     "dropzone": "^6.0.0-beta.2",
     "echarts": "^5.4.0",
     "feather-icons": "^4.29.0",
-    "firebase": "^9.11.0",
+    "firebase": "^9.12.0",
     "highlight.js": "^11.6.0",
     "jquery": "^3.6.1",
     "leaflet": "^1.9.2",
