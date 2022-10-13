@@ -383,5 +383,10 @@
   "t-friday": "Friday",
   "t-saturday": "Saturday",
   "t-sunday": "Sunday",
-  "t-appointmentwith": "Appointement with"
+  "t-appointmentwith": "Appointement with",
+  "t-with": "With",
+  "t-at": "at",
+  "t-nurse": "Nurse",
+  "t-rheumatologist": "Rheumatologist",
+  "t-rheumatologistintern": "Rheumatologist Intern"
 }

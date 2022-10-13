@@ -1,6 +1,9 @@
 <script>
+// General imports
 import Layout from "@/components/layouts/main.vue";
+import FooterModule from "@/components/login-components/footer-module.vue";
 
+// Specific Components imports
 import Widgets from "./widgets.vue";
 import CheckupText from "./checkup-text.vue";
 
@@ -22,7 +25,8 @@ export default {
   components: {
     Layout,
     Widgets,
-    CheckupText
+    CheckupText,
+    FooterModule
   },
 }
 </script>
@@ -32,26 +36,21 @@ export default {
 <template>
   <Layout>
 
-    <div class="row project-wrapper">
-      <div class="col-xxl-8">
-        <div class="row">
-
-          <Widgets />
-
-        </div>
-        <div class="row">
-          <div class="col-xl-12">
-            <CheckupText />
-          </div>
-        </div>
+    <div class="row project-wrapper mf-form-width">
+      <!-- Widgets -->
+      <div class="row">
+        <Widgets />
+      </div>
+      <!-- Checkup Texts -->
+      <div class="row">
+        <CheckupText />
       </div>
 
-      <div class="col-xxl-4">
+      <div>
         <!-- Calendar -->
       </div>
     </div>
+    <FooterModule />
   </Layout>
-
-
 </template>
 

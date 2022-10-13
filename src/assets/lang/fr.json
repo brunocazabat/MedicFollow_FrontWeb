@@ -383,5 +383,10 @@
   "t-thursday": "Jeudi",
   "t-tuesday": "Mardi",
   "t-wednesday": "Mercredi",
-  "t-appointmentwith": "Rendez-vous avec"
+  "t-appointmentwith": "Rendez-vous avec",
+  "t-with": "Avec",
+  "t-at": "à",
+  "t-nurse": "Infirmière",
+  "t-rheumatologist": "Rhumatologue",
+  "t-rheumatologistintern": "Interne en rhumatologie"
 }

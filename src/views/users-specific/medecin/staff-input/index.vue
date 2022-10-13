@@ -159,8 +159,6 @@ export default {
                 </div>
 
                 <hr>
-                <!-- 
-                <p class="text-muted">{{$t("t-notmandatoryfields")}}</p> -->
 
                 <div class="basic-card-border mb-2">
                   <a class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
@@ -442,12 +440,6 @@ export default {
                   </div>
                 </div>
               </div>
-
-
-
-
-
-
 
             </div>
           </div>
