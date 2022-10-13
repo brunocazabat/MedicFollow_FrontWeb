@@ -10,53 +10,23 @@ export default {
   methods: {
     updateCheck() {
       this.localShow = !this.localShow;
+      this.$emit("update:modelValue", this.localShow)
     }
   }
 };
 </script>
 
 <template>
-
-  <p>showDay: {{showDay}}</p>
-  <!-- Monday -->
-  <div v-if="day === 'Monday'" class="form-check" @click="$emit('update:modelValue', updateCheck())">
-    <input class="form-check-input" type="checkbox" id="mondayGridCheck" :value="localShow" />
-    <label class="form-check-label text-uppercase" for="mondayGridCheck">{{$t("t-monday")}}</label>
-  </div>
-
-  <!-- Tuesday -->
-  <div v-if="day === 'Tuesday'" class="form-check">
-    <input class="form-check-input" type="checkbox" id="tuesdayGridCheck" :value="modelLocal" />
-    <label class="form-check-label text-uppercase" for="tuesdayGridCheck">{{$t("t-tuesday")}}</label>
-  </div>
-
-  <!-- Wednesday -->
-  <div v-if="day === 'Wednesday'" class="form-check">
-    <input class="form-check-input" type="checkbox" id="wednesdayGridCheck" v-model="showWednesday" />
-    <label class="form-check-label text-uppercase" for="wednesdayGridCheck">{{$t("t-wednesday")}}</label>
-  </div>
-
-  <!-- Thursday -->
-  <div v-if="day === 'Thursday'" class="form-check">
-    <input class="form-check-input" type="checkbox" id="thursdayGridCheck" v-model="showThursday" />
-    <label class="form-check-label text-uppercase" for="thursdayGridCheck">{{$t("t-thursday")}}</label>
-  </div>
-
-  <!-- Friday -->
-  <div v-if="day === 'Friday'" class="form-check">
-    <input class="form-check-input" type="checkbox" id="fridayGridCheck" v-model="showFriday" />
-    <label class="form-check-label text-uppercase" for="fridayGridCheck">{{$t("t-friday")}}</label>
-  </div>
-
-  <!-- Saturday -->
-  <div v-if="day === 'Saturday'" class="form-check">
-    <input class="form-check-input" type="checkbox" id="saturdayGridCheck" v-model="showSaturday" />
-    <label class="form-check-label text-uppercase" for="saturdayGridCheck">{{$t("t-saturday")}}</label>
-  </div>
-
-  <!-- Sunday -->
-  <div v-if="day === 'Sunday'" class="form-check">
-    <input class="form-check-input" type="checkbox" id="sundayGridCheck" v-model="showSunday" />
-    <label class="form-check-label text-uppercase" for="sundayGridCheck">{{$t("t-sunday")}}</label>
+  <!-- Day Grid Check -->
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="dayGridCheck" v-model="localShow" @click="updateCheck" />
+    <p v-if="day === 'Monday'" class="text-uppercase">{{$t("t-monday")}}</p>
+    <p v-else-if="day === 'Tuesday'" class="text-uppercase">{{$t("t-tuesday")}}</p>
+    <p v-else-if="day === 'Wednesday'" class="text-uppercase">{{$t("t-wednesday")}}</p>
+    <p v-else-if="day === 'Thursday'" class="text-uppercase">{{$t("t-thursday")}}</p>
+    <p v-else-if="day === 'Friday'" class="text-uppercase">{{$t("t-friday")}}</p>
+    <p v-else-if="day === 'Saturday'" class="text-uppercase">{{$t("t-saturday")}}</p>
+    <p v-else-if="day === 'Sunday'" class="text-uppercase">{{$t("t-sunday")}}</p>
+    <p v-else class="text-uppercase">Label for the gridcheck"</p>
   </div>
 </template>

@@ -36,8 +36,6 @@ export default {
         Sunday: false,
       },
 
-      testVal: false,
-      showWeek: false,
       showSchedule: false,
       showMonday: true,
       showTuesday: false,
@@ -64,22 +62,20 @@ export default {
     DaysCheckModule,
   },
   methods: {
-
-
     addScheduleNbr(dayOfTheWeek) {
-      if (dayOfTheWeek === "monday" && this.mondayNbr !== 5) {
+      if (dayOfTheWeek === "monday") {
         this.mondayNbr += 1
-      } else if (dayOfTheWeek === "tuesday" && this.tuesdayNbr !== 5) {
+      } else if (dayOfTheWeek === "tuesday") {
         this.tuesdayNbr += 1
-      } else if (dayOfTheWeek === "wednesday" && this.wednesdayNbr !== 5) {
+      } else if (dayOfTheWeek === "wednesday") {
         this.wednesdayNbr += 1
-      } else if (dayOfTheWeek === "thursday" && this.thursdayNbr !== 5) {
+      } else if (dayOfTheWeek === "thursday") {
         this.thursdayNbr += 1
-      } else if (dayOfTheWeek === "friday" && this.fridayNbr !== 5) {
+      } else if (dayOfTheWeek === "friday") {
         this.fridayNbr += 1
-      } else if (dayOfTheWeek === "saturday" && this.saturdayNbr !== 5) {
+      } else if (dayOfTheWeek === "saturday") {
         this.saturdayNbr += 1
-      } else if (dayOfTheWeek === "sunday" && this.sundayNbr !== 5) {
+      } else if (dayOfTheWeek === "sunday") {
         this.sundayNbr += 1
       }
     },
@@ -175,10 +171,7 @@ export default {
             <div class="row p-3 mf-schedule-days">
 
               <div v-for="(value, key) in compDays.days" :key="key">
-                <DaysCheckModule :day="value" v-model="testVal" />
-
-                <p>Key: {{key}}, value: {{compDays.showValue.at(key)}}, testVal: {{testVal}}</p>
-                <!-- newValue => searchText = newValue -->
+                <DaysCheckModule :day="value" v-model="compDays.showValue[key]" />
               </div>
 
 
