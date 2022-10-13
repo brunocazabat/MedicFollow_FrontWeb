@@ -45,7 +45,6 @@ export default {
       showSaturday: false,
       showSunday: false,
       picked: 'NO',
-      message: "oskour",
       mondayNbr: 1,
       tuesdayNbr: 1,
       wednesdayNbr: 1,
@@ -184,7 +183,7 @@ export default {
 
             <!-- MONDAY SCHEUDLE -->
             <div class="p-3" v-if="compDays.showValue.at(0)">
-              <label for="mondayDiv" class="form-label mb-3 font-size-medium"><strong>Monday Schedule</strong></label>
+              <label for="mondayDiv" class="form-label mb-2 font-size-medium"><strong>Monday Schedule</strong></label>
 
               <!-- Schedules -->
               <div v-for="index in mondayNbr" :key="index">
@@ -201,8 +200,8 @@ export default {
             </div>
 
             <!-- TUESDAY SCHEDULE -->
-            <div class="p-3" v-if="showTuesday">
-              <label for="tuesdayDiv" class="form-label mb-4 font-size-medium"><strong>Tuesday
+            <div class="p-3" v-if="compDays.showValue.at(1)">
+              <label for="tuesdayDiv" class="form-label mb-2 font-size-medium"><strong>Tuesday
                   Schedule</strong></label>
 
               <!-- Schedules -->
@@ -220,8 +219,8 @@ export default {
             </div>
 
             <!-- WEDNESDAY SCHEDULE -->
-            <div class="p-3" v-if="showWednesday">
-              <label for="wednesdayDiv" class="form-label mb-4 font-size-medium"><strong>Wednesday
+            <div class="p-3" v-if="compDays.showValue.at(2)">
+              <label for="wednesdayDiv" class="form-label mb-2 font-size-medium"><strong>Wednesday
                   Schedule</strong></label>
 
               <!-- Schedules -->
@@ -239,8 +238,8 @@ export default {
             </div>
 
             <!-- THURSDAY SCHEDULE -->
-            <div class="p-3" v-if="showThursday">
-              <label for="thursdayDiv" class="form-label mb-4 font-size-medium"><strong>Thursday
+            <div class="p-3" v-if="compDays.showValue.at(3)">
+              <label for="thursdayDiv" class="form-label mb-2 font-size-medium"><strong>Thursday
                   Schedule</strong></label>
 
               <!-- Schedules -->
@@ -258,8 +257,8 @@ export default {
             </div>
 
             <!-- FRIDAY SCHEDULE -->
-            <div class="p-3" v-if="showFriday">
-              <label for="fridayDiv" class="form-label mb-4 font-size-medium"><strong>Friday Schedule</strong></label>
+            <div class="p-3" v-if="compDays.showValue.at(4)">
+              <label for="fridayDiv" class="form-label mb-2 font-size-medium"><strong>Friday Schedule</strong></label>
 
               <div v-for="index in fridayNbr" :key="index">
                 <ScheduleModule title="Test Schedule" />
@@ -275,8 +274,8 @@ export default {
             </div>
 
             <!-- SATURDAY SCHEDULE -->
-            <div class="p-3" v-if="showSaturday">
-              <label for="saturdayDiv" class="form-label mb-4 font-size-medium"><strong>Saturday
+            <div class="p-3" v-if="compDays.showValue.at(5)">
+              <label for="saturdayDiv" class="form-label mb-2 font-size-medium"><strong>Saturday
                   Schedule</strong></label>
 
               <!-- Schedules -->
@@ -294,8 +293,8 @@ export default {
             </div>
 
             <!-- SUNDAY SCHEDULE -->
-            <div class="p-3" v-if="showSunday">
-              <label for="sundayDiv" class="form-label mb-4 font-size-medium"><strong>Sunday Schedule</strong></label>
+            <div class="p-3" v-if="compDays.showValue.at(6)">
+              <label for="sundayDiv" class="form-label mb-2 font-size-medium"><strong>Sunday Schedule</strong></label>
 
 
               <!-- Schedules -->
