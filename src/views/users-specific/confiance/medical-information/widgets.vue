@@ -80,9 +80,8 @@ export default {
                 </div>
                 <div class="card-body">
                   <h4 class="fs-4 flex-grow-1 mb-4">
-                    <span class="counter-value">Appointement with Dr.BERNABEU</span>
+                    <span class="counter-value">{{$t("t-appointmentwith")}}: <strong>Karine PETIT</strong></span>
                   </h4>
-
                   <p class="card-text mb-0">
                     <small class="text-muted mb-2">{{ localDate }}</small>
                   </p>

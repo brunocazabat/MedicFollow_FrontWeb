@@ -373,5 +373,15 @@
   "t-q32022text": "Das Feedback unserer Betatester hat es uns ermöglicht, Verbesserungsbereiche zu identifizieren. Wir arbeiten daran, die Lösung zu verbessern, indem wir unseren Testern zuhören.",
   "t-jan2023": "Präsentation bei Epitech MedicFollow Experiences",
   "t-jan2023text": "Präsentation des Projekts auf der „Epitech Experience“ vor einer Jury aus Fachleuten und Studenten.",
-  "t-sept2020text": "Das MedicFollow-Projekt wurde während des MoonShot 2020 Pools bei Epitech Marseille gegründet."
+  "t-sept2020text": "Das MedicFollow-Projekt wurde während des MoonShot 2020 Pools bei Epitech Marseille gegründet.",
+  "t-appointmentwith": "Termin mit",
+  "t-doyouacceptmeetings": "Akzeptieren Sie Besprechungen?",
+  "t-friday": "Freitag",
+  "t-monday": "Montag",
+  "t-saturday": "Samstag",
+  "t-scheduleinfotext": "Auf dieser Seite können Sie Ihren allgemeinen Meeting-Zeitplan einrichten, Sie haben auch eine Seite zum Einrichten bestimmter Tage",
+  "t-sunday": "Sonntag",
+  "t-thursday": "Donnerstag",
+  "t-tuesday": "Dienstag",
+  "t-wednesday": "Mittwoch"
 }
