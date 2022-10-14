@@ -201,34 +201,36 @@ export default {
 
           <div class="chat-message-list">
             <SimpleBar class="list-unstyled chat-list chat-user-list">
-              <li class v-for="data of chatData" :key="data.id" @click.once="chatUsername(data.name, data.image)"
-                :class="{ active: username == data.name }">
-                <a href="javascript: void(0);">
-                  <div class="d-flex align-items-center">
-                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                      <div class="avatar-xxs" v-if="data.image">
-                        <img :src="`${data.image}`" class="rounded-circle img-fluid userprofile" alt />
-                      </div>
-                      <div class="avatar-xxs" v-if="!data.image">
-                        <div class="avatar-title rounded-circle bg-danger userprofile">
-                          {{ data.name.charAt(0) }}
+              <ul>
+                <li class v-for="data of chatData" :key="data.id" @click.once="chatUsername(data.name, data.image)"
+                  :class="{ active: username == data.name }">
+                  <a href="javascript: void(0);">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
+                        <div class="avatar-xxs" v-if="data.image">
+                          <img :src="`${data.image}`" class="rounded-circle img-fluid userprofile" alt />
+                        </div>
+                        <div class="avatar-xxs" v-if="!data.image">
+                          <div class="avatar-title rounded-circle bg-danger userprofile">
+                            {{ data.name.charAt(0) }}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-1">
-                        {{ data.name }}
-                      </p>
-                    </div>
+                      <div class="flex-grow-1 overflow-hidden">
+                        <p class="text-truncate mb-1">
+                          {{ data.name }}
+                        </p>
+                      </div>
 
-                    <div class="flex-shrink-0">
-                      <span class="badge badge-soft-dark rounded p-1">{{
-                      data.time
-                      }}</span>
+                      <div class="flex-shrink-0">
+                        <span class="badge badge-soft-dark rounded p-1">{{
+                        data.time
+                        }}</span>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
+                  </a>
+                </li>
+              </ul>
             </SimpleBar>
           </div>
 

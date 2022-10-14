@@ -2,12 +2,12 @@
 export default {
   mounted() {
     // chat
-    var currentChatId = 'users-chat'
+    let currentChatId = 'users-chat'
     scrollToBottom(currentChatId)
     // // Scroll to Bottom
     function scrollToBottom(id) {
       setTimeout(function () {
-        var simpleBar = document
+        let simpleBar = document
           .getElementById(id)
           .querySelector('#chat-conversation .simplebar-content-wrapper')
           ? document
@@ -15,7 +15,7 @@ export default {
             .querySelector('#chat-conversation .simplebar-content-wrapper')
           : ''
 
-        var offsetHeight = document.getElementsByClassName(
+        let offsetHeight = document.getElementsByClassName(
           'chat-conversation-list'
         )[0]
           ? document
