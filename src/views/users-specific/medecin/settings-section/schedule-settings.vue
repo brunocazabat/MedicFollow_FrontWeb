@@ -1,57 +1,26 @@
 <script>
+// General components imports
 import Layout from "@/components/layouts/main.vue";
 import footermodule from "@/components/login-components/footer-module.vue";
 
+// Specific Components imports
 import ScheduleModule from "./scheduleModule.vue";
 import DaysCheckModule from "./daysOfTheWeekCheck.vue";
-import { createElement } from "preact";
 
 export default {
   data() {
     return {
       value: ['javascript'],
 
-      daysOfWeek: {
-        monday: "Monday",
-        tuesday: "Tuesday",
-        wednesday: "Wednesday",
-        thursday: "Thursday",
-        friday: "Friday",
-        saturday: "Saturday",
-        sunday: "Sunday",
-      },
-
-      compDays: {
+      // Days value array
+      daysArray: {
         days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         showValue: [true, false, false, false, false, false, false],
+        dayValue: [1, 1, 1, 1, 1, 1, 1],
       },
 
-      showDay: {
-        Monday: true,
-        Tuesday: false,
-        Wednesday: false,
-        Thursday: false,
-        Friday: false,
-        Saturday: false,
-        Sunday: false,
-      },
-
-      showSchedule: false,
-      showMonday: true,
-      showTuesday: false,
-      showWednesday: false,
-      showThursday: false,
-      showFriday: false,
-      showSaturday: false,
-      showSunday: false,
+      // Radio Box Var
       picked: 'NO',
-      mondayNbr: 1,
-      tuesdayNbr: 1,
-      wednesdayNbr: 1,
-      thursdayNbr: 1,
-      fridayNbr: 1,
-      saturdayNbr: 1,
-      sundayNbr: 1,
     };
   },
   components: {
@@ -61,68 +30,43 @@ export default {
     DaysCheckModule,
   },
   methods: {
+    // Adds a new schedule to display
     addScheduleNbr(dayOfTheWeek) {
       if (dayOfTheWeek === "monday") {
-        this.mondayNbr += 1
+        this.daysArray.dayValue[0] += 1
       } else if (dayOfTheWeek === "tuesday") {
-        this.tuesdayNbr += 1
+        this.daysArray.dayValue[1] += 1
       } else if (dayOfTheWeek === "wednesday") {
-        this.wednesdayNbr += 1
+        this.daysArray.dayValue[2] += 1
       } else if (dayOfTheWeek === "thursday") {
-        this.thursdayNbr += 1
+        this.daysArray.dayValue[3] += 1
       } else if (dayOfTheWeek === "friday") {
-        this.fridayNbr += 1
+        this.daysArray.dayValue[4] += 1
       } else if (dayOfTheWeek === "saturday") {
-        this.saturdayNbr += 1
+        this.daysArray.dayValue[5] += 1
       } else if (dayOfTheWeek === "sunday") {
-        this.sundayNbr += 1
+        this.daysArray.dayValue[6] += 1
       }
     },
+    // Removes a schedule to display, cannot display 0 schedule
     removeScheduleNbr(dayOfTheWeek) {
-      if (dayOfTheWeek === "monday" && this.mondayNbr !== 1) {
-        this.mondayNbr -= 1
-      } else if (dayOfTheWeek === "tuesday" && this.tuesdayNbr !== 1) {
-        this.tuesdayNbr -= 1
-      } else if (dayOfTheWeek === "wednesday" && this.wednesdayNbr !== 1) {
-        this.wednesdayNbr -= 1
-      } else if (dayOfTheWeek === "thursday" && this.thursdayNbr !== 1) {
-        this.thursdayNbr -= 1
-      } else if (dayOfTheWeek === "friday" && this.fridayNbr !== 1) {
-        this.fridayNbr -= 1
-      } else if (dayOfTheWeek === "saturday" && this.saturdayNbr !== 1) {
-        this.saturdayNbr -= 1
-      } else if (dayOfTheWeek === "sunday" && this.sundayNbr !== 1) {
-        this.sundayNbr -= 1
+      if (dayOfTheWeek === "monday" && this.daysArray.dayValue[0] !== 1) {
+        this.daysArray.dayValue[0] -= 1
+      } else if (dayOfTheWeek === "tuesday" && this.daysArray.dayValue[1] !== 1) {
+        this.daysArray.dayValue[1] -= 1
+      } else if (dayOfTheWeek === "wednesday" && this.daysArray.dayValue[2] !== 1) {
+        this.daysArray.dayValue[2] -= 1
+      } else if (dayOfTheWeek === "thursday" && this.daysArray.dayValue[3] !== 1) {
+        this.daysArray.dayValue[3] -= 1
+      } else if (dayOfTheWeek === "friday" && this.daysArray.dayValue[4] !== 1) {
+        this.daysArray.dayValue[4] -= 1
+      } else if (dayOfTheWeek === "saturday" && this.daysArray.dayValue[5] !== 1) {
+        this.daysArray.dayValue[5] -= 1
+      } else if (dayOfTheWeek === "sunday" && this.daysArray.dayValue[6] !== 1) {
+        this.daysArray.dayValue[6] -= 1
       }
     },
-    addNewSchedule() {
-      createElement(
-        // {String | Object | Function}
-        // An HTML tag name, component options, or function
-        // returning one of these. Required.
-        'div',
-
-        // {Object}
-        // A data object corresponding to the attributes
-        // you would use in a template. Optional.
-        {
-          // (see details in the next section below)
-        },
-
-        // {String | Array}
-        // Children VNodes, built using `createElement()`,
-        // or using strings to get 'text VNodes'. Optional.
-        [
-          'Some text comes first.',
-          createElement('h1', 'A headline'),
-
-        ]
-      )
-    }
   },
-  render: function (createElement) {
-    return createElement('h1', "A headline")
-  }
 };
 
 </script>
@@ -169,8 +113,8 @@ export default {
             <!-- Padding -->
             <div class="row p-3 mf-schedule-days">
 
-              <div v-for="(value, key) in compDays.days" :key="key">
-                <DaysCheckModule :day="value" v-model="compDays.showValue[key]" />
+              <div v-for="(value, key) in daysArray.days" :key="key">
+                <DaysCheckModule :day="value" v-model="daysArray.showValue[key]" />
               </div>
 
 
@@ -182,11 +126,11 @@ export default {
           <div id="schedulePickerDiv" class="row p-2">
 
             <!-- MONDAY SCHEUDLE -->
-            <div class="p-3" v-if="compDays.showValue.at(0)">
+            <div class="p-3" v-if="daysArray.showValue.at(0)">
               <label for="mondayDiv" class="form-label mb-2 font-size-medium"><strong>Monday Schedule</strong></label>
 
               <!-- Schedules -->
-              <div v-for="index in mondayNbr" :key="index">
+              <div v-for="index in daysArray.dayValue.at(0)" :key="index">
                 <ScheduleModule title="Test Schedule" />
               </div>
 
@@ -200,12 +144,12 @@ export default {
             </div>
 
             <!-- TUESDAY SCHEDULE -->
-            <div class="p-3" v-if="compDays.showValue.at(1)">
+            <div class="p-3" v-if="daysArray.showValue.at(1)">
               <label for="tuesdayDiv" class="form-label mb-2 font-size-medium"><strong>Tuesday
                   Schedule</strong></label>
 
               <!-- Schedules -->
-              <div v-for="index in tuesdayNbr" :key="index">
+              <div v-for="index in daysArray.dayValue.at(1)" :key="index">
                 <ScheduleModule title="Test Schedule" />
               </div>
 
@@ -219,12 +163,12 @@ export default {
             </div>
 
             <!-- WEDNESDAY SCHEDULE -->
-            <div class="p-3" v-if="compDays.showValue.at(2)">
+            <div class="p-3" v-if="daysArray.showValue.at(2)">
               <label for="wednesdayDiv" class="form-label mb-2 font-size-medium"><strong>Wednesday
                   Schedule</strong></label>
 
               <!-- Schedules -->
-              <div v-for="index in wednesdayNbr" :key="index">
+              <div v-for="index in daysArray.dayValue.at(2)" :key="index">
                 <ScheduleModule title="Test Schedule" />
               </div>
 
@@ -238,12 +182,12 @@ export default {
             </div>
 
             <!-- THURSDAY SCHEDULE -->
-            <div class="p-3" v-if="compDays.showValue.at(3)">
+            <div class="p-3" v-if="daysArray.showValue.at(3)">
               <label for="thursdayDiv" class="form-label mb-2 font-size-medium"><strong>Thursday
                   Schedule</strong></label>
 
               <!-- Schedules -->
-              <div v-for="index in thursdayNbr" :key="index">
+              <div v-for="index in daysArray.dayValue.at(3)" :key="index">
                 <ScheduleModule title="Test Schedule" />
               </div>
 
@@ -257,10 +201,10 @@ export default {
             </div>
 
             <!-- FRIDAY SCHEDULE -->
-            <div class="p-3" v-if="compDays.showValue.at(4)">
+            <div class="p-3" v-if="daysArray.showValue.at(4)">
               <label for="fridayDiv" class="form-label mb-2 font-size-medium"><strong>Friday Schedule</strong></label>
 
-              <div v-for="index in fridayNbr" :key="index">
+              <div v-for="index in daysArray.dayValue.at(4)" :key="index">
                 <ScheduleModule title="Test Schedule" />
               </div>
 
@@ -274,12 +218,12 @@ export default {
             </div>
 
             <!-- SATURDAY SCHEDULE -->
-            <div class="p-3" v-if="compDays.showValue.at(5)">
+            <div class="p-3" v-if="daysArray.showValue.at(5)">
               <label for="saturdayDiv" class="form-label mb-2 font-size-medium"><strong>Saturday
                   Schedule</strong></label>
 
               <!-- Schedules -->
-              <div v-for="index in saturdayNbr" :key="index">
+              <div v-for="index in daysArray.dayValue.at(5)" :key="index">
                 <ScheduleModule title="Test Schedule" />
               </div>
 
@@ -293,12 +237,12 @@ export default {
             </div>
 
             <!-- SUNDAY SCHEDULE -->
-            <div class="p-3" v-if="compDays.showValue.at(6)">
+            <div class="p-3" v-if="daysArray.showValue.at(6)">
               <label for="sundayDiv" class="form-label mb-2 font-size-medium"><strong>Sunday Schedule</strong></label>
 
 
               <!-- Schedules -->
-              <div v-for="index in sundayNbr" :key="index">
+              <div v-for="index in daysArray.dayValue.at(6)" :key="index">
                 <ScheduleModule title="Test Schedule" />
               </div>
 
