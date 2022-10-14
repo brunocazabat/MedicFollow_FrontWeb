@@ -60,7 +60,7 @@ export default {
      */
     scrollToBottom(id) {
       setTimeout(function () {
-        var simpleBar = document
+        let simpleBar = document
           .getElementById(id)
           .querySelector('#chat-conversation .simplebar-content-wrapper')
           ? document
@@ -68,7 +68,7 @@ export default {
             .querySelector('#chat-conversation .simplebar-content-wrapper')
           : ''
 
-        var offsetHeight = document.getElementsByClassName(
+        let offsetHeight = document.getElementsByClassName(
           'chat-conversation-list'
         )[0]
           ? document
@@ -120,7 +120,7 @@ export default {
           message,
           time: currentDate.getHours() + ':' + currentDate.getMinutes()
         })
-        var currentChatId = 'users-chat'
+        let currentChatId = 'users-chat'
         this.scrollToBottom(currentChatId)
       }
       this.submitted = false
@@ -128,10 +128,10 @@ export default {
     }
   },
   mounted() {
-    var currentChatId = 'users-chat'
+    let currentChatId = 'users-chat'
     this.scrollToBottom(currentChatId)
     document.getElementById('copyClipBoard').style.display = 'none'
-    var userChatElement = document.querySelectorAll('.user-chat')
+    let userChatElement = document.querySelectorAll('.user-chat')
     document.querySelectorAll('.chat-user-list li a').forEach(function (item) {
       item.addEventListener('click', function () {
         userChatElement.forEach(function (elm) {
@@ -139,7 +139,7 @@ export default {
         })
 
         // chat user list link active
-        var chatUserList = document.querySelector('.chat-user-list li.active')
+        let chatUserList = document.querySelector('.chat-user-list li.active')
         if (chatUserList) chatUserList.classList.remove('active')
         this.parentNode.classList.add('active')
       })
