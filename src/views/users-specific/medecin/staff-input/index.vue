@@ -6,6 +6,7 @@ import useSubmitButtonState from "./useSubmitButtonState"
 import useVuelidate from '@vuelidate/core'
 import FieldModule from './fieldModule.vue'
 import Chat from "@/components/staff-input-components/chat.vue";
+import Calendar from "@/components/staff-input-components/calendar.vue"
 
 export default {
   setup() {
@@ -23,7 +24,7 @@ export default {
 
       // Views Var
       viewID: 1,
-      viewEnd: false,
+      viewEnd: true,
 
       // Patient Vars
       patientFirstName: "Marie",
@@ -47,6 +48,7 @@ export default {
     FooterModule,
     FieldModule,
     Chat,
+    Calendar,
   },
   methods: {
     nextView() {
@@ -92,7 +94,7 @@ export default {
             <div class="row mb-3">
               <!-- First name -->
               <div class="col-sm-6">
-                <label for="patientFirstName" class="form-label" data-key="t-firstname">{{
+                <label for="patientFirstName" class="form-label">{{
                 $t("t-firstname")
                 }}</label>
                 <input type="text" class="form-control" id="patientFirstName" placeholder="Enter first name..."
@@ -101,7 +103,7 @@ export default {
 
               <!-- Last name -->
               <div class="col-sm-6">
-                <label for="patientLastName" class="form-label" data-key="t-lastname">{{ $t("t-lastname")
+                <label for="patientLastName" class="form-label">{{ $t("t-lastname")
                 }}</label>
                 <input type="text" class="form-control" id="patientLastName" placeholder="Enter last name..."
                   v-model="patientLastName" />
@@ -113,15 +115,14 @@ export default {
 
               <!-- Social Security Number -->
               <div class="col-sm-6">
-                <label for="patientSocialSecurityNumber" class="form-label"
-                  data-key="t-socialsecuritynbr">{{$t("t-socialsecuritynbr")}}</label>
+                <label for="patientSocialSecurityNumber" class="form-label">{{$t("t-socialsecuritynbr")}}</label>
                 <input type="text" class="form-control" id="patientSocialSecurityNumber"
                   placeholder="Enter the social security number..." v-model="patientMandatory.socialSecurityNumber" />
               </div>
 
               <!-- Date of Birth / CHANGE FOR ACTUAL DATE PICKER -->
               <div class="col-sm-6">
-                <label for="patientDoB" class="form-label" data-key="t-dateofbirth">{{$t("t-dateofbirth")}}</label>
+                <label for="patientDoB" class="form-label">{{$t("t-dateofbirth")}}</label>
                 <input type="date" class="form-control" id="patientDoB" placeholder="Enter the date of birth..."
                   v-model="patientMandatory.dateOfBirth" />
               </div>
@@ -145,7 +146,7 @@ export default {
                     {{$t("t-observationsheets")}}
                   </label>
                   <textarea class="form-control" id="patientObserveCardInput" rows="3"
-                    placeholder="Enter the summary here..."></textarea>
+                    placeholder="Veuillez saisir le résumé..."></textarea>
                   <div class="invalid-feedback">
                     Please enter a message in the textarea.
                   </div>
@@ -175,13 +176,15 @@ export default {
                 <!-- FILE UPLOAD -->
                 <div class="mb-3">
                   <div class="col-md-12">
-                    <label class="font-size-large mb-0 mt-0" data-key="t-questionuploaddoc">
+                    <label class="font-size-large mb-0 mt-0">
                       {{ $t("t-questionuploaddoc") }}
                     </label>
-                    <p class="text-muted mb-3" data-key="t-uploadexample">{{ $t("t-uploadexample") }}</p>
+                    <p class="text-muted mb-3">{{ $t("t-uploadexample") }}</p>
                     <input class="form-control" type="file" id="feedbackFileUpload" accept=".pdf, ,jpg, .jpeg, .png">
                   </div>
                 </div>
+
+
               </div>
 
               <!-- CHAT -->
@@ -189,6 +192,9 @@ export default {
                 <Chat />
               </div>
 
+              <div class="mb-3">
+                <Calendar />
+              </div>
             </div>
           </div>
         </div>
@@ -199,12 +205,20 @@ export default {
 
       <!-- Next and Prev Button -->
       <div class="p-3 mb-3 row">
-        <div class="space-in-between">
+        <div class="space-in-between" v-if="viewEnd === false">
           <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"
             :disabled="viewID === 0"><strong><em class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
           <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()">{{$t("t-nextstep")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
+        </div>
+
+        <div class="space-in-between" v-else>
+          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"><strong><em
+                class="ri-arrow-left-line center-items"></em></strong>
+            {{$t("t-previousstep")}}</button>
+          <a class="lh-1 btn btn-primary font-size-medium col-lg-3" href="/">{{$t("t-continue")}}
+            <strong><em class="ri-arrow-right-line center-items"></em></strong></a>
         </div>
       </div>
 

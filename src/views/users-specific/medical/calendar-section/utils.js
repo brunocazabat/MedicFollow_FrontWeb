@@ -1,9 +1,8 @@
 let eventGuid = 0;
-// let todayStr = new Date().toISOString().replace(/T.*$/, '') // YYYY-MM-DD of today
-var date = new Date();
-var d = date.getDate();
-var m = date.getMonth();
-var y = date.getFullYear();
+let date = new Date();
+let d = date.getDate();
+let m = date.getMonth();
+let y = date.getFullYear();
 export const INITIAL_EVENTS = [
   {
     id: 153,

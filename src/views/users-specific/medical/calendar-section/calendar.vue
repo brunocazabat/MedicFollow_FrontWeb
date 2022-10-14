@@ -116,7 +116,7 @@ export default {
   },
   methods: {
     formatDate(date) {
-      var monthNames = [
+      let monthNames = [
         'January',
         'February',
         'March',
@@ -130,7 +130,7 @@ export default {
         'November',
         'December'
       ]
-      var d = new Date(date),
+      let d = new Date(date),
         month = '' + monthNames[d.getMonth()],
         day = '' + d.getDate(),
         year = d.getFullYear()
