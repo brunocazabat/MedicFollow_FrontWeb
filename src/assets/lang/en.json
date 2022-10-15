@@ -396,5 +396,9 @@
   "t-addmedicalinfo": "Add medical information",
   "t-setupmeetingschedule": "Setup meeting schedule",
   "t-setup": "Setup",
-  "t-manage": "Manage"
+  "t-manage": "Manage",
+  "t-lastvisitdone": "Latest medical visit done",
+  "t-patientmedicinfo": "Medical information for",
+  "t-medicinfodesc": "Here you can check the medical information of the patient.",
+  "t-addareport": "Add a medical report"
 }

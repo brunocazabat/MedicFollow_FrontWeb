@@ -25,7 +25,7 @@ export default {
 
 <template>
 
-  <div class="row">
+  <div>
     <div class="col-12">
       <div class="row">
         <div class="col-xxl-6">
@@ -45,11 +45,11 @@ export default {
 
                 <div class="card-body">
                   <h4 class="fs-4 flex-grow-1 mb-4">
-                    <span class="counter-value">{{ localTime }}</span>
+                    <span class="counter-value">19/10/2022</span>
                   </h4>
 
                   <p class="card-text mb-0">
-                    <small class="text-muted mb-2">{{ localDate }}</small>
+                    <small class="text-muted mb-2">17:00</small>
                   </p>
                 </div>
 
@@ -80,11 +80,10 @@ export default {
                 </div>
                 <div class="card-body">
                   <h4 class="fs-4 flex-grow-1 mb-4">
-                    <span class="counter-value">{{$t("t-appointmentwith")}}: <strong>Karine PETIT</strong></span>
+                    <span class="counter-value">{{$t("t-with")}} <strong>DUPONT François</strong></span>
                   </h4>
-
                   <p class="card-text mb-0">
-                    <small class="text-muted mb-2">{{ localDate }}</small>
+                    <small class="text-muted mb-2">31/10/2022 {{$t("t-at")}} 17:00</small>
                   </p>
                 </div>
 
@@ -113,7 +112,7 @@ export default {
 
 
   <!-- RECENT MEDICAL VISITS -->
-  <div class="col-xl-8">
+  <div class="col-xl-12">
     <div class="card">
       <div class="card-header align-items-center d-flex">
         <h4 class="card-title mb-0 flex-grow-1" data-key="t-recentvisits">{{ $t("t-recentvisits") }}</h4>
@@ -137,55 +136,50 @@ export default {
                 <th scope="col" data-key="t-staffpos">{{ $t("t-staffpos") }}</th>
                 <th scope="col" data-key="t-date">{{ $t("t-date") }}</th>
                 <th scope="col" data-key="t-time">{{ $t("t-time") }}</th>
-                <th scope="col" data-key="t-status">{{ $t("t-status") }}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
-                  <router-link to="/ecommerce/order-details" class="fw-medium link-primary">#VZ2112
+                  <router-link to="/VZ2112" class="fw-medium link-primary">#VZ2112
                   </router-link>
                 </td>
                 <td>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0 me-2">
-                      <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
+                      <img src="@/assets/images/users/karine-petit.jpg" alt=""
+                        class="avatar-xs rounded-circle shadow" />
                     </div>
-                    <div class="flex-grow-1">Alex Smith</div>
+                    <div class="flex-grow-1">Karine PETIT</div>
                   </div>
                 </td>
-                <td>Nurse</td>
-                <td>07/08/2022</td>
-                <td>{{ localTime }}</td>
-                <td>
-                  <span class="badge badge-soft-warning">Pending Approval</span>
-                </td>
+                <td>{{$t("t-nurse")}}</td>
+                <td>19/10/2022</td>
+                <td>17:00</td>
               </tr>
               <!-- end tr -->
               <tr>
                 <td>
-                  <router-link to="/ecommerce/order-details" class="fw-medium link-primary">#VZ2111
+                  <router-link to="/VZ2111" class="fw-medium link-primary">#VZ2111
                   </router-link>
                 </td>
                 <td>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0 me-2">
-                      <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
+                      <img src="@/assets/images/users/alexandre-martin.png" alt=""
+                        class="avatar-xs rounded-circle shadow" />
                     </div>
-                    <div class="flex-grow-1">Jansh Brown</div>
+                    <div class="flex-grow-1">Alexandre MARTIN</div>
                   </div>
                 </td>
-                <td>Rheumatologist</td>
-                <td>07/08/2022</td>
+                <td>{{$t("t-rheumatologist")}}</td>
+                <td>18/10/2022</td>
                 <td>15:32</td>
-                <td>
-                  <span class="badge badge-soft-success">Approved</span>
-                </td>
               </tr>
               <!-- end tr -->
               <tr>
                 <td>
-                  <router-link to="/ecommerce/order-details" class="fw-medium link-primary">#VZ2109
+                  <router-link to="/VZ2110" class="fw-medium link-primary">#VZ2110
                   </router-link>
                 </td>
                 <td>
@@ -193,15 +187,12 @@ export default {
                     <div class="flex-shrink-0 me-2">
                       <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                     </div>
-                    <div class="flex-grow-1">Ayaan Bowen</div>
+                    <div class="flex-grow-1">Victoire DUBOIS</div>
                   </div>
                 </td>
-                <td>Rheumatologist Intern</td>
-                <td>07/08/2022</td>
+                <td>{{$t("t-rheumatologistintern")}}</td>
+                <td>15/10/2022</td>
                 <td>10:17</td>
-                <td>
-                  <span class="badge badge-soft-success">Approved</span>
-                </td>
               </tr>
               <!-- end tr -->
             </tbody>

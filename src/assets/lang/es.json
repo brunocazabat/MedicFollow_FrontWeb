@@ -396,5 +396,9 @@
   "t-addpatient": "Agregar un paciente",
   "t-manage": "Administrar",
   "t-setup": "Configuración",
-  "t-setupmeetingschedule": "Configurar el horario de la reunión"
+  "t-setupmeetingschedule": "Configurar el horario de la reunión",
+  "t-addareport": "Añadir un informe médico",
+  "t-lastvisitdone": "Última visita médica realizada",
+  "t-medicinfodesc": "Aquí puede consultar la información médica del paciente.",
+  "t-patientmedicinfo": "Información médica para"
 }

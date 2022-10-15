@@ -2,7 +2,7 @@
 import Layout from "@/components/layouts/main.vue";
 import FooterModule from "@/components/login-components/footer-module.vue";
 import { reactive } from "vue";
-import useSubmitButtonState from "./useSubmitButtonState"
+import useSubmitButtonState from "@/components/staff-input-components/useSubmitButtonState"
 import useVuelidate from '@vuelidate/core'
 import FieldModule from './fieldModule.vue'
 import Chat from "@/components/staff-input-components/chat.vue";
@@ -23,12 +23,12 @@ export default {
       value: ['javascript'],
 
       // Views Var
-      viewID: 1,
-      viewEnd: true,
+      viewID: 0,
+      viewEnd: false,
 
       // Patient Vars
-      patientFirstName: "Marie",
-      patientLastName: "DUPONT",
+      patientFirstName: "",
+      patientLastName: "",
 
       // Fields Var
       inputFields: [
@@ -59,7 +59,7 @@ export default {
     },
     prevView() {
       this.viewID -= 1;
-      if (this.viewID) {
+      if (this.viewID !== 1) {
         this.viewEnd = false;
       }
     }
@@ -209,7 +209,8 @@ export default {
           <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"
             :disabled="viewID === 0"><strong><em class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()">{{$t("t-nextstep")}}
+          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()"
+            :disabled="isSubmitButtonDisabled">{{$t("t-nextstep")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
         </div>
 

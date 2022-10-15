@@ -396,5 +396,9 @@
   "t-addpatient": "Fügen Sie einen Patienten hinzu",
   "t-manage": "Verwalten",
   "t-setup": "Konfiguration",
-  "t-setupmeetingschedule": "Besprechungsplan einrichten"
+  "t-setupmeetingschedule": "Besprechungsplan einrichten",
+  "t-addareport": "Fügen Sie einen medizinischen Bericht hinzu",
+  "t-lastvisitdone": "Letzter Arztbesuch gemacht",
+  "t-medicinfodesc": "Hier können Sie die medizinischen Daten des Patienten überprüfen.",
+  "t-patientmedicinfo": "Medizinische Informationen für"
 }
