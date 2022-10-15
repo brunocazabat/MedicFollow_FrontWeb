@@ -383,5 +383,12 @@
   "t-sunday": "Sonntag",
   "t-thursday": "Donnerstag",
   "t-tuesday": "Dienstag",
-  "t-wednesday": "Mittwoch"
+  "t-wednesday": "Mittwoch",
+  "t-at": "bei",
+  "t-directmessages": "Direktnachrichten",
+  "t-nurse": "Krankenschwester",
+  "t-offline": "Offline",
+  "t-rheumatologist": "Rheumatologe",
+  "t-rheumatologistintern": "Rheumatologe Intern",
+  "t-with": "Mit"
 }

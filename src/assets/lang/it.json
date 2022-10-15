@@ -383,5 +383,12 @@
   "t-sunday": "Domenica",
   "t-thursday": "Giovedì",
   "t-tuesday": "Martedì",
-  "t-wednesday": "Mercoledì"
+  "t-wednesday": "Mercoledì",
+  "t-at": "a",
+  "t-directmessages": "Messaggi diretti",
+  "t-nurse": "Infermiera",
+  "t-offline": "disconnesso",
+  "t-rheumatologist": "Reumatologo",
+  "t-rheumatologistintern": "Stagista reumatologo",
+  "t-with": "Insieme a"
 }
