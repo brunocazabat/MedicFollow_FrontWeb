@@ -3,8 +3,8 @@ import store from "@/components/state/store";
 
 import NavLinkAdmin from "@/components/frames/user-specific/navlink_admin.vue";
 import NavLinkOrganisation from "@/components/frames/user-specific/navlink_organisation.vue";
-import NavLinkMedecin from "@/components/frames/user-specific/navlink_medecin.vue";
-import NavLinkMedical from "@/components/frames/user-specific/navlink_medical.vue";
+import NavLinkDocteur from "@/components/frames/user-specific/navlink_docteur.vue";
+import NavLinkPersonnel from "@/components/frames/user-specific/navlink_personnel.vue";
 import NavLinkPatient from "@/components/frames/user-specific/navlink_patient.vue";
 import NavLinkConfiance from "@/components/frames/user-specific/navlink_confiance.vue";
 import NavLinkProche from "@/components/frames/user-specific/navlink_proche.vue";
@@ -15,8 +15,8 @@ export default {
   components: {
     NavLinkAdmin,
     NavLinkOrganisation,
-    NavLinkMedecin,
-    NavLinkMedical,
+    NavLinkDocteur,
+    NavLinkPersonnel,
     NavLinkPatient,
     NavLinkConfiance,
     NavLinkProche,
@@ -36,11 +36,11 @@ export default {
   <div class="container-fluid" v-if="activatemenu('organisation')">
     <NavLinkOrganisation />
   </div>
-  <div class="container-fluid" v-if="activatemenu('medecin')">
-    <NavLinkMedecin />
+  <div class="container-fluid" v-if="activatemenu('docteur')">
+    <NavLinkDocteur />
   </div>
-  <div class="container-fluid" v-if="activatemenu('medical')">
-    <NavLinkMedical />
+  <div class="container-fluid" v-if="activatemenu('personnel')">
+    <NavLinkPersonnel />
   </div>
   <div class="container-fluid" v-if="activatemenu('patient')">
     <NavLinkPatient />
