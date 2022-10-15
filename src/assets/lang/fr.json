@@ -390,5 +390,11 @@
   "t-rheumatologist": "Rhumatologue",
   "t-rheumatologistintern": "Interne en rhumatologie",
   "t-directmessages": "Messages directs",
-  "t-offline": "Hors ligne"
+  "t-offline": "Hors ligne",
+  "t-add": "Ajouter",
+  "t-addmedicalinfo": "Ajouter des informations médicales",
+  "t-addpatient": "Ajouter un patient",
+  "t-manage": "Gérer",
+  "t-setup": "Configurer",
+  "t-setupmeetingschedule": "Configurer le calendrier des réunions"
 }

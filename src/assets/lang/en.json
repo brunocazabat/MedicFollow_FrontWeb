@@ -390,5 +390,11 @@
   "t-rheumatologist": "Rheumatologist",
   "t-rheumatologistintern": "Rheumatologist Intern",
   "t-directmessages": "Direct Messages",
-  "t-offline": "Offline"
+  "t-offline": "Offline",
+  "t-addpatient": "Add a patient",
+  "t-add": "Add",
+  "t-addmedicalinfo": "Add medical information",
+  "t-setupmeetingschedule": "Setup meeting schedule",
+  "t-setup": "Setup",
+  "t-manage": "Manage"
 }

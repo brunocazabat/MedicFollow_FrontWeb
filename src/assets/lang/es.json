@@ -390,5 +390,11 @@
   "t-offline": "Desconectado",
   "t-rheumatologist": "reumatólogo",
   "t-rheumatologistintern": "Reumatólogo en prácticas",
-  "t-with": "Con"
+  "t-with": "Con",
+  "t-add": "Agregar",
+  "t-addmedicalinfo": "Agregar información médica",
+  "t-addpatient": "Agregar un paciente",
+  "t-manage": "Administrar",
+  "t-setup": "Configuración",
+  "t-setupmeetingschedule": "Configurar el horario de la reunión"
 }

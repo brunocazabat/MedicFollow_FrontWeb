@@ -390,5 +390,11 @@
   "t-offline": "disconnesso",
   "t-rheumatologist": "Reumatologo",
   "t-rheumatologistintern": "Stagista reumatologo",
-  "t-with": "Insieme a"
+  "t-with": "Insieme a",
+  "t-add": "Aggiungere",
+  "t-addmedicalinfo": "Aggiungi informazioni mediche",
+  "t-addpatient": "Aggiungi un paziente",
+  "t-manage": "Gestire",
+  "t-setup": "Impostare",
+  "t-setupmeetingschedule": "Imposta il programma della riunione"
 }

@@ -390,5 +390,11 @@
   "t-offline": "Offline",
   "t-rheumatologist": "Rheumatologe",
   "t-rheumatologistintern": "Rheumatologe Intern",
-  "t-with": "Mit"
+  "t-with": "Mit",
+  "t-add": "Hinzufügen",
+  "t-addmedicalinfo": "Fügen Sie medizinische Informationen hinzu",
+  "t-addpatient": "Fügen Sie einen Patienten hinzu",
+  "t-manage": "Verwalten",
+  "t-setup": "Konfiguration",
+  "t-setupmeetingschedule": "Besprechungsplan einrichten"
 }

@@ -1,25 +1,41 @@
 <script>
 import Layout from "@/components/layouts/main.vue";
+import FooterModule from "@/components/login-components/footer-module.vue";
+
+import AddPatientModule from "./addPatient.vue";
+import AddMedicalInformationModule from "./addMedicalInformation.vue"
+import SetupMeetingScheduleModule from "./setupMeeting.vue"
+import ManagePatientsModule from "./managePatients.vue"
 
 export default {
   components: {
     Layout,
+    FooterModule,
+    AddPatientModule,
+    AddMedicalInformationModule,
+    SetupMeetingScheduleModule,
+    ManagePatientsModule,
   },
 }
 </script>
 
 <template>
   <Layout>
-    <div>
-      Medecin Dashboard Section
-      <br />
-      - Gros bouton pour ajouter un patient
-      <br />
-      - Gros bouton pour ajouter un résumé à un patient après une visite
-      <br />
-      - Gros bouton pour ajouter un rendez-vous
-      <br />
-      - Gros bouton pour rediriger vers la page de gestion des patients
+    <div class="row project-wrapper dashboard-form">
+      <div class="col-xxl-6">
+        <AddMedicalInformationModule />
+      </div>
+      <div class="col-xxl-6">
+        <SetupMeetingScheduleModule />
+      </div>
+      <div class="col-xxl-6">
+        <AddPatientModule />
+      </div>
+      <div class="col-xxl-6">
+        <ManagePatientsModule />
+      </div>
+
     </div>
+    <FooterModule />
   </Layout>
 </template>
