@@ -2,6 +2,7 @@
 import addOrgaVue from "./add-orga.vue";
 import modifOrgaVue from "./modif-orga.vue";
 import reportSuggestVue from "./reportsuggest.vue";
+import tableAdminVue from "./table-admin.vue";
 
 import Layout from "@/components/layouts/main.vue";
 
@@ -11,6 +12,7 @@ export default {
     addOrgaVue,
     modifOrgaVue,
     reportSuggestVue,
+    tableAdminVue,
   },
 }
 </script>
@@ -22,6 +24,9 @@ export default {
         <addOrgaVue />
         <modifOrgaVue />
         <reportSuggestVue />
+      </div>
+      <div class="col-xxl-9">
+        <tableAdminVue />
       </div>
     </div>
   </Layout>
