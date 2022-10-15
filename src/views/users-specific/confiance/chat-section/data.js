@@ -2,7 +2,7 @@ const chatData = [
   {
     id: 1,
     // TODO: change pfp for Karine
-    image: require("@/assets/images/users/avatar-1.png"),
+    image: require("@/assets/images/users/karine-petit.jpg"),
     name: "PETIT Karine",
     message: "Hey! there I'm available",
     time: "",
@@ -11,7 +11,7 @@ const chatData = [
   {
     id: 2,
     // TODO: change pfp for Alexandre
-    image: require("@/assets/images/users/avatar-1.png"),
+    image: require("@/assets/images/users/alexandre-martin.png"),
     name: "MARTIN Alexandre",
     message: "I've finished it! See you so",
     time: "5",

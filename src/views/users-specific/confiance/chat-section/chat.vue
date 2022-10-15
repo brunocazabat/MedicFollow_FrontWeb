@@ -39,7 +39,7 @@ export default {
       },
       // TODO: change pfp of Karine
       username: 'PETIT Karine',
-      profile: require('@/assets/images/users/avatar-1.png')
+      profile: require('@/assets/images/users/karine-petit.jpg')
     }
   },
   components: {
@@ -258,7 +258,7 @@ export default {
                             <img :src="
                               profile
                                 ? profile
-                                : require('@/assets/images/users/avatar-1.png')
+                                : require('@/assets/images/users/karine-petit.jpg')
                             " class="rounded-circle avatar-xs" alt="" />
                             <span class="user-status"></span>
                           </div>
