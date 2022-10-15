@@ -388,5 +388,7 @@
   "t-at": "à",
   "t-nurse": "Infirmière",
   "t-rheumatologist": "Rhumatologue",
-  "t-rheumatologistintern": "Interne en rhumatologie"
+  "t-rheumatologistintern": "Interne en rhumatologie",
+  "t-directmessages": "Messages directs",
+  "t-offline": "Hors ligne"
 }

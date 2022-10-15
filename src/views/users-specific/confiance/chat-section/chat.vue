@@ -37,7 +37,8 @@ export default {
       form: {
         message: ''
       },
-      username: 'Steven Franklin',
+      // TODO: change pfp of Karine
+      username: 'PETIT Karine',
       profile: require('@/assets/images/users/avatar-1.png')
     }
   },
@@ -89,7 +90,7 @@ export default {
     chatUsername(name, image) {
       this.username = name
       this.profile = image
-      this.usermessage = 'Hello'
+      this.usermessage = 'Bonjour'
       this.chatMessagesData = []
       const currentDate = new Date()
 
@@ -186,7 +187,7 @@ export default {
           <div class="d-flex align-items-center px-4 mb-2">
             <div class="flex-grow-1">
               <h4 class="mb-0 fs-11 text-muted text-uppercase">
-                Direct Messages
+                {{$t("t-directmessages")}}
               </h4>
             </div>
             <div class="flex-shrink-0">
@@ -202,8 +203,8 @@ export default {
           <div class="chat-message-list">
             <SimpleBar class="list-unstyled chat-list chat-user-list">
               <ul>
-                <li class v-for="data of chatData" :key="data.id" @click.once="chatUsername(data.name, data.image)"
-                  :class="{ active: username == data.name }">
+                <li class="mb-3" v-for="data of chatData" :key="data.id"
+                  @click.once="chatUsername(data.name, data.image)" :class="{ active: username == data.name }">
                   <a href="javascript: void(0);">
                     <div class="d-flex align-items-center">
                       <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
@@ -233,113 +234,6 @@ export default {
               </ul>
             </SimpleBar>
           </div>
-
-          <div class="d-flex align-items-center px-4 mt-4 pt-2 mb-2">
-            <div class="flex-grow-1">
-              <h4 class="mb-0 fs-11 text-muted text-uppercase">Channels</h4>
-            </div>
-            <div class="flex-shrink-0">
-              <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title="Create group">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-soft-success btn-sm shadow-none">
-                  <em class="ri-add-line align-bottom"></em>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="chat-message-list">
-            <ul class="list-unstyled chat-list chat-user-list mb-0" id="channelList">
-              <li>
-                <a href="javascript: void(0);" class="unread-msg-user">
-                  <div class="d-flex align-items-center">
-                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                      <div class="avatar-xxs">
-                        <div class="avatar-title bg-light rounded-circle text-body">
-                          #
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Landing Design</p>
-                    </div>
-                    <div class="flex-shrink-0">
-                      <span class="badge badge-soft-dark rounded p-1">7</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript: void(0);">
-                  <div class="d-flex align-items-center">
-                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                      <div class="avatar-xxs">
-                        <div class="avatar-title bg-light rounded-circle text-body">
-                          #
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">General</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript: void(0);" class="unread-msg-user">
-                  <div class="d-flex align-items-center">
-                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                      <div class="avatar-xxs">
-                        <div class="avatar-title bg-light rounded-circle text-body">
-                          #
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Project Tasks</p>
-                    </div>
-                    <div class="flex-shrink-0">
-                      <span class="badge badge-soft-dark rounded p-1">3</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="javascript: void(0);">
-                  <div class="d-flex align-items-center">
-                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                      <div class="avatar-xxs">
-                        <div class="avatar-title bg-light rounded-circle text-dark">
-                          #
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Meeting</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript: void(0);">
-                  <div class="d-flex align-items-center">
-                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                      <div class="avatar-xxs">
-                        <div class="avatar-title bg-light rounded-circle text-dark">
-                          #
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Reporting</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- End chat-message-list -->
         </div>
       </div>
       <!-- end chat leftsidebar -->
@@ -374,7 +268,7 @@ export default {
                                 aria-controls="userProfileCanvasExample">{{ username }}</a>
                             </h5>
                             <p class="text-truncate text-muted fs-14 mb-0 userStatus">
-                              <small>Online</small>
+                              <small>{{$t("t-offline")}}</small>
                             </p>
                           </div>
                         </div>

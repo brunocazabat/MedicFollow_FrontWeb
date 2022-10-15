@@ -1,87 +1,56 @@
 const chatData = [
   {
     id: 1,
+    // TODO: change pfp for Karine
     image: require("@/assets/images/users/avatar-1.png"),
-    name: "Steven Franklin",
+    name: "PETIT Karine",
     message: "Hey! there I'm available",
     time: "",
     color: "secondary",
   },
   {
     id: 2,
+    // TODO: change pfp for Alexandre
     image: require("@/assets/images/users/avatar-1.png"),
-    name: "Adam Miller",
+    name: "MARTIN Alexandre",
     message: "I've finished it! See you so",
     time: "5",
     color: "success",
   },
   {
     id: 3,
-    name: "Keith Gonzales",
+    // TODO: change pfp for Victoire
+    name: "DUBOIS Victoire",
     message: "This theme is awesome!",
     time: "2",
-    color: "success",
-  },
-  {
-    id: 4,
-    image: require("@/assets/images/users/avatar-1.png"),
-    name: "Jose Vickery",
-    message: "Nice to meet you",
-    time: "",
-    color: "warning",
-  },
-  {
-    id: 5,
-    name: "Mitchel Givens",
-    message: "Hey! there I'm available",
-    time: "",
-    color: "secondary",
-  },
-  {
-    id: 6,
-    image: require("@/assets/images/users/avatar-1.png"),
-    name: "Stephen Hadley",
-    message: "I've finished it! See you so",
-    time: "7",
-    color: "success",
-  },
-  {
-    id: 7,
-    image: require("@/assets/images/users/avatar-1.png"),
-    name: "Leord Joseph",
-    message: "This theme is awesome!",
-    time: "",
     color: "success",
   },
 ];
 
 const chatMessagesData = [
   {
-    name: "Steven Franklin",
-    message: "Hello!",
-    time: "10:00",
+    align: "right",
+    name: "DUPONT François",
+    message: "Bonjour, Marie est bien arrivée?",
+    time: "9:58",
   },
   {
-    align: "right",
-    name: "Henry Wells",
-    message: "Hi, How are you? What about our next meeting?",
+    align: "left",
+    name: "PETIT Karine",
+    message: "Bonjour, oui nous prenons soin d'elle.",
     time: "10:02",
   },
   {
-    name: "Steven Franklin",
-    message: "Yeah everything is fine",
-    time: "10:06",
-  },
-  {
-    name: "Steven Franklin",
-    message: "& Next meeting tomorrow 10.00AM",
-    time: "10:06",
-  },
-  {
     align: "right",
-    name: "Henry Wells",
-    message: "Wow that's great",
-    time: "10:07",
+    name: "François DUPONT",
+    message: "Avez-vous reçu ma demande de RDV?",
+    time: "10:40",
+  },
+  {
+    align: "left",
+    name: "Karine PETIT",
+    message: "Je viens de l'accepter, à Vendredi 15h.",
+    time: "18:26",
   },
 ];
 

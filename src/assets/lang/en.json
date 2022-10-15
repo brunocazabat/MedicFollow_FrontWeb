@@ -388,5 +388,7 @@
   "t-at": "at",
   "t-nurse": "Nurse",
   "t-rheumatologist": "Rheumatologist",
-  "t-rheumatologistintern": "Rheumatologist Intern"
+  "t-rheumatologistintern": "Rheumatologist Intern",
+  "t-directmessages": "Direct Messages",
+  "t-offline": "Offline"
 }
