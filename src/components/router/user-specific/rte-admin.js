@@ -11,9 +11,11 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
   } else if (store.getters["security/getisLocked"]) {
     // Redirect to the lockscreen page instead
     next({ path: "/lockscreen" });
-  } else {
+  } else if (store.getters["auth/getuserType"] === "admin") {
     // Continue to the login page
     next();
+  } else {
+    next({ path: "/" });
   }
 }
 

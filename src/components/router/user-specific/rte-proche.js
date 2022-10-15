@@ -5,16 +5,20 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
     _routeTo.path === "/" &&
     store.getters["auth/getisloggedIn"] &&
     !store.getters["security/getisLocked"] &&
-    (store.getters["auth/getuserType"] === "proche" ||
-      store.getters["auth/getuserType"] === "admin")
+    store.getters["auth/getuserType"] === "proche"
   ) {
     next({ path: "/proche/dashboard" });
   } else if (store.getters["security/getisLocked"]) {
     // Redirect to the lockscreen page instead
     next({ path: "/lockscreen" });
-  } else {
+  } else if (
+    store.getters["auth/getuserType"] === "proche" ||
+    store.getters["auth/getuserType"] === "admin"
+  ) {
     // Continue to the login page
     next();
+  } else {
+    next({ path: "/" });
   }
 }
 
