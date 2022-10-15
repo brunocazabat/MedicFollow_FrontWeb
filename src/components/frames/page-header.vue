@@ -9,8 +9,8 @@ export default {
       userTypes: [
         { id: 1, name: 'admin' },
         { id: 2, name: 'organisation' },
-        { id: 3, name: 'medecin' },
-        { id: 4, name: 'medical' },
+        { id: 3, name: 'docteur' },
+        { id: 4, name: 'personnel' },
         { id: 5, name: 'patient' },
         { id: 6, name: 'confiance' },
         { id: 7, name: 'proche' },
