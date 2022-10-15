@@ -65,17 +65,6 @@ export default [
   },
   // SUGGESTIONS
   {
-    path: "/organisation/suggestions",
-    name: "organisation-suggestions",
-    meta: {
-      title: "Suggestions",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/organisation/forms-section/suggest.vue"),
-  },
-  {
     path: "/organisation/bug-report",
     name: "organisation-bugreport",
     meta: {

@@ -85,17 +85,6 @@ export default [
   },
   // SUGGESTIONS
   {
-    path: "/confiance/suggestions",
-    name: "confiance-suggestions",
-    meta: {
-      title: "Suggestions",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/confiance/forms-section/suggest.vue"),
-  },
-  {
     path: "/confiance/bug-report",
     name: "confiance-bugreport",
     meta: {

@@ -61,17 +61,6 @@ export default [
   },
   // SUGGESTIONS
   {
-    path: "/proche/suggestions",
-    name: "proche-suggestions",
-    meta: {
-      title: "Suggestions",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/proche/forms-section/suggest.vue"),
-  },
-  {
     path: "/proche/bug-report",
     name: "proche-bugreport",
     meta: {

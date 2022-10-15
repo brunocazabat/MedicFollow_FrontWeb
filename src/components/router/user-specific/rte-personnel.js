@@ -110,17 +110,6 @@ export default [
   },
   // SUGGESTIONS
   {
-    path: "/personnel/suggestions",
-    name: "personnel-suggestions",
-    meta: {
-      title: "Suggestions",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/personnel/forms-section/suggest.vue"),
-  },
-  {
     path: "/personnel/bug-report",
     name: "personnel-bugreport",
     meta: {
