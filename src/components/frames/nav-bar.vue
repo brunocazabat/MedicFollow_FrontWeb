@@ -18,6 +18,7 @@ export default {
         fullname: null,
         firstname: null,
         email: null,
+        role: null,
       },
       ],
     };
@@ -42,6 +43,9 @@ export default {
     if (this.getemail()) {
       this.user.email = this.getemail();
     }
+    if (this.getuserType()) {
+      this.user.role = this.getuserType();
+    }
 
     document.addEventListener("scroll", function () {
       var pageTopbar = document.getElementById("page-topbar");
@@ -65,6 +69,9 @@ export default {
         time.localTime = new dayjs().format('HH:mm:ss');
         time.localDate = new dayjs().format('DD-MM-YYYY');
       }, 100);
+    },
+    notadmin() {
+      return this.user.role !== "admin";
     },
 
     toggleHamburgerMenu() {
@@ -159,16 +166,16 @@ export default {
                 </div>
 
                 <!-- item-->
-                <a class="dropdown-item">
-                  <router-link to="/" class="text-muted" data-key="t-suggest"><em
-                      class="ri-lifebuoy-line align-middle fs-18 text-muted me-2"></em>
-                    {{ $t('t-suggest') }}
+                <a v-if="notadmin()" class="dropdown-item">
+                  <router-link :to="'/'+ this.user.role + '/bug-report'" class="text-muted"
+                    data-key="t-report t-suggest"><em class="ri-lifebuoy-line align-middle fs-18 text-muted me-2"></em>
+                    {{ $t("t-report") }} & {{ $t("t-suggest") }}
                   </router-link>
                 </a>
 
                 <!-- item-->
                 <a class="dropdown-item">
-                  <router-link to="/settings" class="text-muted" data-key="t-settings"><em
+                  <router-link :to="'/'+ this.user.role + '/settings'" class="text-muted" data-key="t-settings"><em
                       class="ri-user-settings-line align-middle fs-18 text-muted me-2"></em>
                     {{ $t('t-settings') }}
                   </router-link>
