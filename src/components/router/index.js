@@ -11,8 +11,8 @@ import rtelock from "./rte-lock.min.js";
 import rteadmin from "./user-specific/rte-admin.min.js";
 // USER-SPECIFIC ROUTES MEDIC
 import rteorganisation from "./user-specific/rte-organisation.min.js";
-import rtemedecin from "./user-specific/rte-medecin.min.js";
-import rtemedical from "./user-specific/rte-medical.min.js";
+import rtedocteur from "./user-specific/rte-docteur.min.js";
+import rtepersonnel from "./user-specific/rte-personnel.min.js";
 // USER-SPECIFIC ROUTES FAMILLY
 import rtepatient from "./user-specific/rte-patient.min.js";
 import rteconfiance from "./user-specific/rte-confiance.min.js";
@@ -35,8 +35,8 @@ const router = createRouter({
     ...rteadmin,
     // ROUTES MEDIC
     ...rteorganisation,
-    ...rtemedecin,
-    ...rtemedical,
+    ...rtedocteur,
+    ...rtepersonnel,
     // ROUTES FAMILLY
     ...rtepatient,
     ...rteconfiance,
