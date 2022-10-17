@@ -33,7 +33,6 @@ export default {
   },
   mounted() {
     this.showLocaleTime();
-
     if (this.getfullname()) {
       this.user.fullname = this.getfullname();
     }
