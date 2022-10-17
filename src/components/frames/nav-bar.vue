@@ -72,6 +72,9 @@ export default {
     notadmin() {
       return this.user.role !== "admin";
     },
+    role() {
+      return this.user.role;
+    },
 
     toggleHamburgerMenu() {
       let windowSize = document.documentElement.clientWidth;
@@ -132,8 +135,18 @@ export default {
             <button type="button" class="btn shadow-none" id="page-header-user-dropdown" data-bs-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               <span class="d-flex align-items-center">
-                <img class="rounded-circle header-profile-user" src="@/assets/images/users/avatar-1.png"
-                  alt="Header Avatar" />
+                <img v-if="role() == 'admin'" class="rounded-circle header-profile-user"
+                  src="@/assets/images/users/dummy-user.jpg" alt="Header Avatar" />
+                <img v-if="role() == 'organisation'" class="rounded-circle header-profile-user"
+                  src="@/assets/images/users/multi-user.jpg" alt="Header Avatar" />
+                <img v-if="role() == 'docteur' || role() == 'personnel'" class="rounded-circle header-profile-user"
+                  src="@/assets/images/users/avatar-8.jpg" alt="Header Avatar" />
+                <img v-if="role() == 'patient'" class="rounded-circle header-profile-user"
+                  src="@/assets/images/users/avatar-10.jpg" alt="Header Avatar" />
+                <img v-if="role() == 'confiance'" class="rounded-circle header-profile-user"
+                  src="@/assets/images/users/avatar-7.jpg" alt="Header Avatar" />
+                <img v-if="role() == 'proche'" class="rounded-circle header-profile-user"
+                  src="@/assets/images/users/avatar-9.jpg" alt="Header Avatar" />
                 <span class="text-start ms-xl-2">
                   <span class="d-none d-xl-block ms-1 fw-medium user-name-text">{{ this.user.fullname }}</span>
                   <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">{{ this.user.email }}</span>
@@ -182,21 +195,110 @@ export default {
 
                 <!-- item-->
                 <div class="dropdown-header mt-2">
-                  <h6 class="text-overflow text-muted mb-2">
-                    Organisation/Proches/Medecin
+                  <h6 v-if="role() == 'admin'" class="text-overflow text-muted mb-2">
+                    Autres Membres de l'administration:
+                  </h6>
+                  <h6 v-if="role() == 'docteur' || role() == 'personnel'" class="text-overflow text-muted mb-2">
+                    Autres Docteurs et Personnels médicaux:
+                  </h6>
+                  <h6 v-if="role() == 'patient' || role() == 'confiance' || role() == 'proche'"
+                    class="text-overflow text-muted mb-2">
+                    Votre famille et vos proches:
                   </h6>
                 </div>
 
                 <div class="notification-list">
                   <!-- item -->
-                  <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
-                    <img src="@/assets/images/users/avatar-1.png" class="me-3 rounded-circle avatar-xs"
-                      alt="user-pic" />
-                    <div class="flex-1">
-                      <h6 class="m-0">Simon Bernabeu</h6>
-                      <span class="fs-11 mb-0 text-muted">Docteur</span>
-                    </div>
-                  </a>
+                  <div v-if="role() == 'admin'">
+                    <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
+                      <img src="@/assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs"
+                        alt="user-pic" />
+                      <div class="flex-1">
+                        <h6 class="m-0">Simon Bernabeu</h6>
+                        <span class="fs-11 mb-0 text-muted">Administrateur</span>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
+                      <img src="@/assets/images/users/avatar-8.jpg" class="me-3 rounded-circle avatar-xs"
+                        alt="user-pic" />
+                      <div class="flex-1">
+                        <h6 class="m-0">Maxime Barbier</h6>
+                        <span class="fs-11 mb-0 text-muted">Administrateur</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div v-if="role() == 'docteur' || role() == 'personnel'">
+                    <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
+                      <img src="@/assets/images/users/avatar-4.jpg" class="me-3 rounded-circle avatar-xs"
+                        alt="user-pic" />
+                      <div class="flex-1">
+                        <h6 class="m-0">Noelle Paré</h6>
+                        <span class="fs-11 mb-0 text-muted">Docteur</span>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
+                      <img src="@/assets/images/users/avatar-6.jpg" class="me-3 rounded-circle avatar-xs"
+                        alt="user-pic" />
+                      <div class="flex-1">
+                        <h6 class="m-0">Fantina Veronneau</h6>
+                        <span class="fs-11 mb-0 text-muted">Infirmière</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div v-if="role() == 'patient'">
+                    <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
+                      <img src="@/assets/images/users/avatar-7.jpg" class="me-3 rounded-circle avatar-xs"
+                        alt="user-pic" />
+                      <div class="flex-1">
+                        <h6 class="m-0">Francois Dupont</h6>
+                        <span class="fs-11 mb-0 text-muted">Confiance</span>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
+                      <img src="@/assets/images/users/avatar-9.jpg" class="me-3 rounded-circle avatar-xs"
+                        alt="user-pic" />
+                      <div class="flex-1">
+                        <h6 class="m-0">Gauthier Dupont</h6>
+                        <span class="fs-11 mb-0 text-muted">Proche</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div v-if="role() == 'confiance'">
+                    <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
+                      <img src="@/assets/images/users/avatar-10.jpg" class="me-3 rounded-circle avatar-xs"
+                        alt="user-pic" />
+                      <div class="flex-1">
+                        <h6 class="m-0">Marie Dupont</h6>
+                        <span class="fs-11 mb-0 text-muted">Patient</span>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
+                      <img src="@/assets/images/users/avatar-9.jpg" class="me-3 rounded-circle avatar-xs"
+                        alt="user-pic" />
+                      <div class="flex-1">
+                        <h6 class="m-0">Gauthier Dupont</h6>
+                        <span class="fs-11 mb-0 text-muted">Proche</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div v-if="role() == 'proche'">
+                    <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
+                      <img src="@/assets/images/users/avatar-10.jpg" class="me-3 rounded-circle avatar-xs"
+                        alt="user-pic" />
+                      <div class="flex-1">
+                        <h6 class="m-0">Marie Dupont</h6>
+                        <span class="fs-11 mb-0 text-muted">Patient</span>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
+                      <img src="@/assets/images/users/avatar-7.jpg" class="me-3 rounded-circle avatar-xs"
+                        alt="user-pic" />
+                      <div class="flex-1">
+                        <h6 class="m-0">Francois Dupont</h6>
+                        <span class="fs-11 mb-0 text-muted">Confiance</span>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </SimpleBar>
 
