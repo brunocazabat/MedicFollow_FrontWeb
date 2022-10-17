@@ -35,17 +35,6 @@ export default {
   },
   data() {
     return {
-      title: 'Calendar',
-      items: [
-        {
-          text: 'Apps',
-          href: '/'
-        },
-        {
-          text: 'Calendar',
-          active: true
-        }
-      ],
       calendarOptions: {
         timeZone: 'local',
         droppable: true,

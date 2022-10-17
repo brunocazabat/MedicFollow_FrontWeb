@@ -7,7 +7,10 @@ export const state = {
   uuid: sessionStorage.getItem("currentUserUUID"),
   firstname: sessionStorage.getItem("currentUserFIRSTNAME"),
   lastname: sessionStorage.getItem("currentUserLASTNAME"),
-  role: sessionStorage.getItem("currentUserROLE"),
+  multirole: sessionStorage.getItem("currentUserMULTIROLE"),
+  role1: sessionStorage.getItem("currentUserROLE1"),
+  role2: sessionStorage.getItem("currentUserROLE2"),
+  role3: sessionStorage.getItem("currentUserROLE3"),
   ui: sessionStorage.getItem("currentUserUI"),
 };
 
@@ -32,9 +35,21 @@ export const mutations = {
     state.lastname = lastname;
     saveState("currentUserLASTNAME", lastname);
   },
-  SET_ROLE(state, role) {
-    state.role = role;
-    saveState("currentUserROLE", role);
+  SET_MULTIROLE(state, multirole) {
+    state.role = multirole;
+    saveState("currentUserMULTIROLE", multirole);
+  },
+  SET_ROLE1(state, role) {
+    state.role1 = role;
+    saveState("currentUserROLE1", role);
+  },
+  SET_ROLE2(state, role) {
+    state.role2 = role;
+    saveState("currentUserROLE2", role);
+  },
+  SET_ROLE3(state, role) {
+    state.role3 = role;
+    saveState("currentUserROLE3", role);
   },
   SET_UI(state, ui) {
     state.ui = ui;
@@ -54,7 +69,7 @@ export const getters = {
     return !!(state.token && state.uuid && state.email);
   },
   getuserType(state) {
-    return state.role;
+    return state.role1;
   },
   getuserUI(state) {
     return state.ui;
@@ -91,22 +106,8 @@ export const actions = {
   },
 
   async setLogOut({ dispatch }) {
-    dispatch("setToken", null);
-    dispatch("setUuid", null);
-    dispatch("setEmail", null);
-    dispatch("setFirstName", null);
-    dispatch("setLastName", null);
-    dispatch("setRole", null);
-    dispatch("setUI", null);
-    dispatch("setHeaders", null);
-    window.sessionStorage.removeItem("currentUserTOKEN");
-    window.sessionStorage.removeItem("currentUserUUID");
-    window.sessionStorage.removeItem("currentUserEMAIL");
-    window.sessionStorage.removeItem("currentUserFIRSTNAME");
-    window.sessionStorage.removeItem("currentUserLASTNAME");
-    window.sessionStorage.removeItem("currentUserROLE");
-    window.sessionStorage.removeItem("currentUserHEADERS");
-    window.sessionStorage.removeItem("currentUserLOCK");
+    dispatch("setClearAll");
+    window.sessionStorage.clear();
   },
 
   async setGetMe({ dispatch }) {
@@ -114,15 +115,41 @@ export const actions = {
     try {
       let response = await axios.get("users/me", { headers: state.headers });
       if (response.status === 200) {
+        console.log(response.data.subType);
         dispatch("setFirstName", response.data.firstname);
         dispatch("setLastName", response.data.lastname);
-        dispatch("setRole", /*response.data.UserType.ut_name*/ "admin");
-        dispatch("setUI", /*response.data.UserType.ut_name*/ "admin");
+        if (response.data.UserType.ut_name == "admin") {
+          dispatch("setMultiRole", false);
+          dispatch("setRole1", response.data.UserType.ut_name);
+          dispatch("setUI", response.data.UserType.ut_name);
+        } else {
+          if (response.data.subType.length == 1) {
+            dispatch("setMultiRole", false);
+            dispatch("setRole1", response.data.subType[0].type);
+            dispatch("setUI", response.data.subType[0].type);
+          } else {
+            dispatch("setMultiRole", true);
+          }
+        }
       }
       return response.status;
     } catch (error) {
       return error.response.status;
     }
+  },
+
+  async setClearAll({ commit }) {
+    commit("SET_TOKEN", null);
+    commit("SET_UUID", null);
+    commit("SET_EMAIL", null);
+    commit("SET_FIRSTNAME", null);
+    commit("SET_LASTNAME", null);
+    commit("SET_MULTIROLE", null);
+    commit("SET_ROLE1", null);
+    commit("SET_ROLE2", null);
+    commit("SET_ROLE3", null);
+    commit("SET_UI", null);
+    commit("SET_HEADERS", null);
   },
 
   async setToken({ commit }, token) {
@@ -145,8 +172,20 @@ export const actions = {
     commit("SET_LASTNAME", lastname);
   },
 
-  async setRole({ commit }, role) {
-    commit("SET_ROLE", role);
+  async setMultiRole({ commit }, multirole) {
+    commit("SET_MULTIROLE", multirole);
+  },
+
+  async setRole1({ commit }, role) {
+    commit("SET_ROLE1", role);
+  },
+
+  async setRole2({ commit }, role) {
+    commit("SET_ROLE2", role);
+  },
+
+  async setRole3({ commit }, role) {
+    commit("SET_ROLE3", role);
   },
 
   async setUI({ commit }, ui) {

@@ -5,16 +5,20 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
     _routeTo.path === "/" &&
     store.getters["auth/getisloggedIn"] &&
     !store.getters["security/getisLocked"] &&
-    (store.getters["auth/getuserType"] === "organisation" ||
-      store.getters["auth/getuserType"] === "admin")
+    store.getters["auth/getuserType"] === "organisation"
   ) {
     next({ path: "/organisation/dashboard" });
   } else if (store.getters["security/getisLocked"]) {
     // Redirect to the lockscreen page instead
     next({ path: "/lockscreen" });
-  } else {
+  } else if (
+    store.getters["auth/getuserType"] === "organisation" ||
+    store.getters["auth/getuserType"] === "admin"
+  ) {
     // Continue to the login page
     next();
+  } else {
+    next({ path: "/" });
   }
 }
 
@@ -60,17 +64,6 @@ export default [
       ),
   },
   // SUGGESTIONS
-  {
-    path: "/organisation/suggestions",
-    name: "organisation-suggestions",
-    meta: {
-      title: "Suggestions",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/organisation/forms-section/suggest.vue"),
-  },
   {
     path: "/organisation/bug-report",
     name: "organisation-bugreport",

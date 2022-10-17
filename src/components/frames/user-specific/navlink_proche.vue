@@ -32,15 +32,9 @@ export default {
       <span data-key="t-contacts"> {{ $t("t-contacts") }}</span>
     </li>
     <li class="nav-item">
-      <router-link to="/proche/suggestions" class="nav-link">
-        <em class="ri-star-half-s-line"></em>
-        <span style="padding: 7px" data-key="t-suggest">{{ $t("t-suggest") }}</span>
-      </router-link>
-    </li>
-    <li class="nav-item">
       <router-link to="/proche/bug-report" class="nav-link">
         <em class="ri-bug-fill"></em>
-        <span style="padding: 7px" data-key="t-report">{{ $t("t-report") }}</span>
+        <span style="padding: 7px" data-key="t-report t-suggest">{{ $t("t-report") }} & {{ $t("t-suggest") }}</span>
       </router-link>
     </li>
   </ul>

@@ -14,7 +14,7 @@ export default {
         <div class="card-footer border-0">
           <div class="row">
             <div class="text-center">
-              <button class="btn btn-primary text-uppercase padd25around">Modifier une Organisation</button>
+              <button class="btn btn-primary text-uppercase padd25around">Modifier</button>
             </div>
           </div>
         </div>

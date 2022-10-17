@@ -5,16 +5,20 @@ function onceLoggedIn(_routeTo, _routeFrom, next) {
     _routeTo.path === "/" &&
     store.getters["auth/getisloggedIn"] &&
     !store.getters["security/getisLocked"] &&
-    (store.getters["auth/getuserType"] === "proche" ||
-      store.getters["auth/getuserType"] === "admin")
+    store.getters["auth/getuserType"] === "proche"
   ) {
     next({ path: "/proche/dashboard" });
   } else if (store.getters["security/getisLocked"]) {
     // Redirect to the lockscreen page instead
     next({ path: "/lockscreen" });
-  } else {
+  } else if (
+    store.getters["auth/getuserType"] === "proche" ||
+    store.getters["auth/getuserType"] === "admin"
+  ) {
     // Continue to the login page
     next();
+  } else {
+    next({ path: "/" });
   }
 }
 
@@ -56,17 +60,6 @@ export default [
       import("@/views/users-specific/proche/settings-section/setting.vue"),
   },
   // SUGGESTIONS
-  {
-    path: "/proche/suggestions",
-    name: "proche-suggestions",
-    meta: {
-      title: "Suggestions",
-      authRequired: true,
-      onceLoggedIn,
-    },
-    component: () =>
-      import("@/views/users-specific/proche/forms-section/suggest.vue"),
-  },
   {
     path: "/proche/bug-report",
     name: "proche-bugreport",

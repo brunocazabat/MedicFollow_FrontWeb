@@ -80,7 +80,7 @@ export default {
 
 <template>
   <div>
-    <div id="layout-wrapper">
+    <div id="layout-wrapper" class="overflow-hidden">
       <NavBar />
       <div>
         <!-- ========== Left Sidebar Start ========== -->
