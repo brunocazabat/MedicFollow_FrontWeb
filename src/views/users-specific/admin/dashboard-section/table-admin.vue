@@ -1,8 +1,8 @@
 <script>
 import { CountTo } from "vue3-count-to";
-import TableAdminBug from "./table-admin-bug.vue";
-import TableAdminSug from "./table-admin-sug.vue";
-import TableAdminOrg from "./table-admin-org.vue";
+import TableAdminBug from "./table-admin-components/table-admin-bug.vue";
+import TableAdminSug from "./table-admin-components/table-admin-sug.vue";
+import TableAdminOrg from "./table-admin-components/table-admin-org.vue";
 
 export default {
   components: {
@@ -41,19 +41,19 @@ export default {
 <template>
   <div class="row">
     <div class="col-xxl-3 col-sm-6">
-      <div class="card card-animate">
+      <div class="card">
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Bugs Reports Ouverts</p>
-              <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="18"></count-to> à traiter.
+              <p class="fw-medium text-muted mb-0" data-key="t-openbugrep">{{ $t('t-openbugrep') }}</p>
+              <h2 class="mt-4 ff-secondary fw-semibold" data-key="t-totreat">
+                <count-to :duration="1000" :startVal="0" :endVal="18"></count-to> {{ $t('t-totreat') }}
               </h2>
             </div>
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-ticket-2-line"></em>
+                  <em class="ri-delete-bin-line"></em>
                 </span>
               </div>
             </div>
@@ -65,36 +65,13 @@ export default {
     </div>
     <!--end col-->
     <div class="col-xxl-3 col-sm-6">
-      <div class="card card-animate">
+      <div class="card">
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Signalements Ouverts</p>
-              <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="40"></count-to> à traiter.
-              </h2>
-            </div>
-            <div>
-              <div class="avatar-sm flex-shrink-0">
-                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="mdi mdi-timer-sand"></em>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end card body -->
-      </div>
-    </div>
-    <!--end col-->
-    <div class="col-xxl-3 col-sm-6">
-      <div class="card card-animate">
-        <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="fw-medium text-muted mb-0">Organisations Enregistrées</p>
-              <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="5"></count-to>
+              <p class="fw-medium text-muted mb-0" data-key="t-opensuggest">{{ $t('t-opensuggest') }}</p>
+              <h2 class="mt-4 ff-secondary fw-semibold" data-key="t-totreat">
+                <count-to :duration="1000" :startVal="0" :endVal="40"></count-to> {{ $t('t-totreat') }}
               </h2>
             </div>
             <div>
@@ -111,19 +88,42 @@ export default {
     </div>
     <!--end col-->
     <div class="col-xxl-3 col-sm-6">
-      <div class="card card-animate">
+      <div class="card">
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Action à réaliser</p>
+              <p class="fw-medium text-muted mb-0" data-key="t-registorga">{{ $t('t-registorga') }}</p>
               <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="58"></count-to> restantes.
+                <count-to :duration="1000" :startVal="0" :endVal="5"></count-to>
               </h2>
             </div>
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-delete-bin-line"></em>
+                  <em class="ri-ticket-2-line"></em>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end card body -->
+      </div>
+    </div>
+    <!--end col-->
+    <div class="col-xxl-3 col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="fw-medium text-muted mb-0" data-key="t-todo">{{ $t('t-todo') }}</p>
+              <h2 class="mt-4 ff-secondary fw-semibold" data-key="t-remain">
+                <count-to :duration="1000" :startVal="0" :endVal="58"></count-to> {{ $t('t-remain') }}
+              </h2>
+            </div>
+            <div>
+              <div class="avatar-sm flex-shrink-0">
+                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                  <em class="mdi mdi-timer-sand"></em>
                 </span>
               </div>
             </div>
@@ -144,20 +144,20 @@ export default {
             <ul class="nav nav-pills nav-justified custom-nav" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link fs-15 p-3 active" id="pills-bill-info-tab" data-bs-toggle="pill" type="button"
-                  role="tab" @click="makevisible('buglist')">
-                  Aperçu Bug Reports
+                  role="tab" @click="makevisible('buglist')" data-key="t-lookbugrep">
+                  {{ $t('t-lookbugrep') }}
                 </button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link fs-15 p-3" id="pills-payment-tab" data-bs-toggle="pill" type="button" role="tab"
-                  @click="makevisible('suggestlist')">
-                  Aperçu Suggestions
+                  @click="makevisible('suggestlist')" data-key="t-looksugglist">
+                  {{ $t('t-looksugglist') }}
                 </button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link fs-15 p-3" id="pills-finish-tab" data-bs-toggle="pill" type="button" role="tab"
-                  @click="makevisible('orgalist')">
-                  Aperçu Organisations
+                  @click="makevisible('orgalist')" data-key="t-lookorgalist">
+                  {{ $t('t-lookorgalist') }}
                 </button>
               </li>
             </ul>
