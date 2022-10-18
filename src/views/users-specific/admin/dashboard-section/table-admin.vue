@@ -1,8 +1,8 @@
 <script>
 import { CountTo } from "vue3-count-to";
-import TableAdminBug from "./table-admin-components/table-admin-bug.vue";
-import TableAdminSug from "./table-admin-components/table-admin-sug.vue";
-import TableAdminOrg from "./table-admin-components/table-admin-org.vue";
+import TableAdminBug from "./components/table-admin-bug.vue";
+import TableAdminSug from "./components/table-admin-sug.vue";
+import TableAdminOrg from "./components/table-admin-org.vue";
 
 export default {
   components: {
@@ -53,7 +53,7 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-delete-bin-line"></em>
+                  <em class="mdi mdi-bug-check"></em>
                 </span>
               </div>
             </div>
@@ -77,7 +77,7 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-shopping-bag-line"></em>
+                  <em class="mdi mdi-format-quote-open"></em>
                 </span>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-ticket-2-line"></em>
+                  <em class="mdi mdi-account-check-outline"></em>
                 </span>
               </div>
             </div>
@@ -123,7 +123,7 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="mdi mdi-timer-sand"></em>
+                  <em class="mdi mdi-timer"></em>
                 </span>
               </div>
             </div>
