@@ -400,5 +400,13 @@
   "t-lastvisitdone": "Latest medical visit done",
   "t-patientmedicinfo": "Medical information for",
   "t-medicinfodesc": "Here you can check the medical information of the patient.",
-  "t-addareport": "Add a medical report"
+  "t-addareport": "Add a medical report",
+  "t-otherfamilly": " Your family and loved ones:",
+  "t-othermedic": "Other Doctors and Medical Personnel:",
+  "t-otheradmin": "Other Members of the administration:",
+  "t-admin": "Administrator",
+  "t-doctor": "Doctor",
+  "t-trusted": "Entrusted Person",
+  "t-closefam": "Close to family",
+  "t-patient": "Medical Patient"
 }

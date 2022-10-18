@@ -195,15 +195,16 @@ export default {
 
                 <!-- item-->
                 <div class="dropdown-header mt-2">
-                  <h6 v-if="role() == 'admin'" class="text-overflow text-muted mb-2">
-                    Autres Membres de l'administration:
+                  <h6 v-if="role() == 'admin'" class="text-overflow text-muted mb-2" data-key="t-otheradmin">
+                    {{ $t('t-otheradmin') }}
                   </h6>
-                  <h6 v-if="role() == 'docteur' || role() == 'personnel'" class="text-overflow text-muted mb-2">
-                    Autres Docteurs et Personnels médicaux:
+                  <h6 v-if="role() == 'docteur' || role() == 'personnel'" class="text-overflow text-muted mb-2"
+                    data-key="t-othermedic">
+                    {{ $t('t-othermedic') }}
                   </h6>
                   <h6 v-if="role() == 'patient' || role() == 'confiance' || role() == 'proche'"
-                    class="text-overflow text-muted mb-2">
-                    Votre famille et vos proches:
+                    class="text-overflow text-muted mb-2" data-key="t-otherfamilly">
+                    {{ $t('t-otherfamilly') }}
                   </h6>
                 </div>
 
@@ -215,7 +216,7 @@ export default {
                         alt="user-pic" />
                       <div class="flex-1">
                         <h6 class="m-0">Simon Bernabeu</h6>
-                        <span class="fs-11 mb-0 text-muted">Administrateur</span>
+                        <span class="fs-11 mb-0 text-muted" data-key="t-admin">{{ $t('t-admin') }}</span>
                       </div>
                     </a>
                     <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
@@ -223,7 +224,7 @@ export default {
                         alt="user-pic" />
                       <div class="flex-1">
                         <h6 class="m-0">Maxime Barbier</h6>
-                        <span class="fs-11 mb-0 text-muted">Administrateur</span>
+                        <span class="fs-11 mb-0 text-muted" data-key="t-admin">{{ $t('t-admin') }}</span>
                       </div>
                     </a>
                   </div>
@@ -233,7 +234,7 @@ export default {
                         alt="user-pic" />
                       <div class="flex-1">
                         <h6 class="m-0">Noelle Paré</h6>
-                        <span class="fs-11 mb-0 text-muted">Docteur</span>
+                        <span class="fs-11 mb-0 text-muted" data-key="t-doctor">{{ $t('t-doctor') }}</span>
                       </div>
                     </a>
                     <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
@@ -241,7 +242,7 @@ export default {
                         alt="user-pic" />
                       <div class="flex-1">
                         <h6 class="m-0">Fantina Veronneau</h6>
-                        <span class="fs-11 mb-0 text-muted">Infirmière</span>
+                        <span class="fs-11 mb-0 text-muted" data-key="t-nurse">{{ $t('t-nurse') }}</span>
                       </div>
                     </a>
                   </div>
@@ -251,7 +252,7 @@ export default {
                         alt="user-pic" />
                       <div class="flex-1">
                         <h6 class="m-0">Francois Dupont</h6>
-                        <span class="fs-11 mb-0 text-muted">Confiance</span>
+                        <span class="fs-11 mb-0 text-muted" data-key="t-trusted">{{ $t('t-trusted') }}</span>
                       </div>
                     </a>
                     <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
@@ -259,7 +260,7 @@ export default {
                         alt="user-pic" />
                       <div class="flex-1">
                         <h6 class="m-0">Gauthier Dupont</h6>
-                        <span class="fs-11 mb-0 text-muted">Proche</span>
+                        <span class="fs-11 mb-0 text-muted" data-key="t-closefam">{{ $t('t-closefam') }}</span>
                       </div>
                     </a>
                   </div>
@@ -269,7 +270,7 @@ export default {
                         alt="user-pic" />
                       <div class="flex-1">
                         <h6 class="m-0">Marie Dupont</h6>
-                        <span class="fs-11 mb-0 text-muted">Patient</span>
+                        <span class="fs-11 mb-0 text-muted" data-key="t-patient">{{ $t('t-patient') }}</span>
                       </div>
                     </a>
                     <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
@@ -277,7 +278,7 @@ export default {
                         alt="user-pic" />
                       <div class="flex-1">
                         <h6 class="m-0">Gauthier Dupont</h6>
-                        <span class="fs-11 mb-0 text-muted">Proche</span>
+                        <span class="fs-11 mb-0 text-muted" data-key="t-closefam">{{ $t('t-closefam') }}</span>
                       </div>
                     </a>
                   </div>
@@ -287,7 +288,7 @@ export default {
                         alt="user-pic" />
                       <div class="flex-1">
                         <h6 class="m-0">Marie Dupont</h6>
-                        <span class="fs-11 mb-0 text-muted">Patient</span>
+                        <span class="fs-11 mb-0 text-muted" data-key="t-patient">{{ $t('t-patient') }}</span>
                       </div>
                     </a>
                     <a href="javascript:void(0);" class="d-flex dropdown-item notify-item py-2">
@@ -295,7 +296,7 @@ export default {
                         alt="user-pic" />
                       <div class="flex-1">
                         <h6 class="m-0">Francois Dupont</h6>
-                        <span class="fs-11 mb-0 text-muted">Confiance</span>
+                        <span class="fs-11 mb-0 text-muted" data-key="t-trusted">{{ $t('t-trusted') }}</span>
                       </div>
                     </a>
                   </div>

@@ -1,8 +1,6 @@
 <script>
 import { CountTo } from "vue3-count-to";
 
-import Swal from "sweetalert2";
-
 export default {
   data() {
     return {
@@ -16,7 +14,7 @@ export default {
       date2: null,
       searchQuery: null,
       page: 1,
-      perPage: 9,
+      perPage: 7,
       pages: [],
       ticketsList: [
         {
@@ -161,127 +159,6 @@ export default {
     },
   },
   methods: {
-    editdata(data) {
-      document.getElementById("modal-id").style.display = "block";
-      document.getElementById("exampleModalLabel").innerHTML = "Edit Ticket";
-      document.getElementById("orderId").value = data.id;
-      document.getElementById("tasksTitle").value = data.title;
-      document.getElementById("clientName").value = data.usertype;
-      document.getElementById("assignedtoName").value = data.assigned;
-      document.getElementById("cdate").value = data.create;
-      document.getElementById("ddate").value = data.due;
-      document.getElementById("ticketstatus").value = data.status;
-      document.getElementById("priority").value = data.priority;
-
-      document.getElementById("edit-btn").style.display = "block";
-      document.getElementById("add-btn").style.display = "none";
-    },
-    updateorder() {
-      let result = this.ticketsList.findIndex(
-        (o) => o.id == document.getElementById("orderId").value
-      );
-      this.ticketsList[result].title =
-        document.getElementById("tasksTitle").value;
-      this.ticketsList[result].client =
-        document.getElementById("clientName").value;
-      this.ticketsList[result].assigned =
-        document.getElementById("assignedtoName").value;
-      this.ticketsList[result].create = document.getElementById("cdate").value;
-      this.ticketsList[result].due = document.getElementById("ddate").value;
-      this.ticketsList[result].status =
-        document.getElementById("ticketstatus").value;
-      this.ticketsList[result].priority =
-        document.getElementById("priority").value;
-
-      document.getElementById("closemodal").click();
-    },
-    deletedata(event) {
-      Swal.fire({
-        title: "Are you sure?",
-        text: "You won't be able to revert this!",
-        icon: "warning",
-        showCancelButton: true,
-        cancelButtonColor: "#f46a6a",
-        confirmButtonColor: "#34c38f",
-        confirmButtonText: "Yes, delete it!",
-      }).then((result) => {
-        if (result.value) {
-          this.ticketsList.splice(this.ticketsList.indexOf(event), 1);
-          Swal.fire("Deleted!", "Your file has been deleted.", "success");
-        }
-      });
-    },
-    deleteMultiple() {
-      let ids_array = [];
-      let items = document.getElementsByName("chk_child");
-      items.forEach(function (ele) {
-        if (ele.checked) {
-          let trNode = ele.parentNode.parentNode.parentNode;
-          let id = trNode.querySelector(".id a").innerHTML;
-          ids_array.push(id);
-        }
-      });
-      if (typeof ids_array !== "undefined" && ids_array.length > 0) {
-        if (confirm("Are you sure you want to delete this?")) {
-          let cusList = this.ticketsList;
-          ids_array.forEach(function (id) {
-            cusList = cusList.filter(function (orders) {
-              return orders.id != id;
-            });
-          });
-          this.ticketsList = cusList;
-          document.getElementById("checkAll").checked = false;
-          let itemss = document.getElementsByName("chk_child");
-          itemss.forEach(function (ele) {
-            if (ele.checked) {
-              ele.checked = false;
-              ele.closest("tr").classList.remove("table-active");
-            }
-          });
-        } else {
-          return false;
-        }
-      } else {
-        Swal.fire({
-          title: "Please select at least one checkbox",
-          confirmButtonClass: "btn btn-info",
-          buttonsStyling: false,
-          showCloseButton: true,
-        });
-      }
-    },
-    addorder() {
-      let id = "#MDC" + this.ticketsList.length + 1;
-      let title = document.getElementById("tasksTitle").value;
-      let client = document.getElementById("clientName").value;
-      let assigned = document.getElementById("assignedtoName").value;
-      let create = document.getElementById("cdate").value;
-      let due = document.getElementById("ddate").value;
-      let status = document.getElementById("ticketstatus").value;
-      let priority = document.getElementById("priority").value;
-
-      let data = {
-        id: id,
-        title: title,
-        client: client,
-        assigned: assigned,
-        create: create,
-        due: due,
-        status: status,
-        priority: priority,
-      };
-      this.ticketsList.push(data);
-
-      document.getElementById("closemodal").click();
-      document.getElementById("addform").reset();
-    },
-    addnew() {
-      document.getElementById("addform").reset();
-      document.getElementById("modal-id").style.display = "none";
-      document.getElementById("exampleModalLabel").innerHTML = "Add Ticket";
-      document.getElementById("add-btn").style.display = "block";
-      document.getElementById("edit-btn").style.display = "none";
-    },
     setPages() {
       let numberOfPages = Math.ceil(this.ticketsList.length / this.perPage);
       for (let index = 1; index <= numberOfPages; index++) {
@@ -506,33 +383,6 @@ export default {
               </a>
             </div>
           </div>
-
-          <!-- Modal -->
-          <div class="modal fade flip" id="deleteOrder" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-body p-5 text-center">
-                  <div class="mt-4 text-center">
-                    <h4>You are about to delete a order ?</h4>
-                    <p class="text-muted fs-14 mb-4">
-                      Deleting your order will remove all of your information
-                      from our database.
-                    </p>
-                    <div class="hstack gap-2 justify-content-center remove">
-                      <button class="btn btn-link link-success fw-medium text-decoration-none" data-bs-dismiss="modal">
-                        <em class="ri-close-line me-1 align-middle"></em>
-                        Close
-                      </button>
-                      <button class="btn btn-danger" id="delete-record">
-                        Yes, Delete It
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--end modal -->
         </div>
         <!--end card-body-->
       </div>

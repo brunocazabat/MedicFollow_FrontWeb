@@ -400,5 +400,13 @@
   "t-addareport": "Fügen Sie einen medizinischen Bericht hinzu",
   "t-lastvisitdone": "Letzter Arztbesuch gemacht",
   "t-medicinfodesc": "Hier können Sie die medizinischen Daten des Patienten überprüfen.",
-  "t-patientmedicinfo": "Medizinische Informationen für"
+  "t-patientmedicinfo": "Medizinische Informationen für",
+  "t-otheradmin": "Weitere Mitglieder der Verwaltung:",
+  "t-othermedic": "Andere Ärzte und medizinisches Personal:",
+  "t-otherfamilly": "Ihre Familie und Ihre Lieben:",
+  "t-admin": "Administrator",
+  "t-doctor": "Arzt",
+  "t-trusted": "Beauftragte Person",
+  "t-closefam": "Nah an der Familie",
+  "t-patient": "Medizinischer Patient"
 }
