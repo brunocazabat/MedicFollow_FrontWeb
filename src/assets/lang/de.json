@@ -408,5 +408,19 @@
   "t-doctor": "Arzt",
   "t-trusted": "Beauftragte Person",
   "t-closefam": "Nah an der Familie",
-  "t-patient": "Medizinischer Patient"
+  "t-patient": "Medizinischer Patient",
+  "t-addorga": "Fügen Sie eine Organisation hinzu",
+  "t-modorga": "Ändern Sie eine Organisation",
+  "t-modify": "Ändern",
+  "t-reportsshort": "Berichte",
+  "t-openbugrep": "Fehlerberichte geöffnet",
+  "t-totreat": "lösen.",
+  "t-opensuggest": "Geöffnete Vorschläge.",
+  "t-registorga": "Registrierte Organisationen.",
+  "t-todo": "Zu ergreifende Maßnahmen.",
+  "t-remain": "verblieben.",
+  "t-lookbugrep": "Übersicht aller Fehlerberichte",
+  "t-looksugglist": "Alle Vorschläge im Überblick",
+  "t-lookorgalist": "Übersicht aller Organisationen",
+  "t-openreports": "Berichte öffnen"
 }

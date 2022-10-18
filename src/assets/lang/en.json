@@ -408,5 +408,19 @@
   "t-doctor": "Doctor",
   "t-trusted": "Entrusted Person",
   "t-closefam": "Close to family",
-  "t-patient": "Medical Patient"
+  "t-patient": "Medical Patient",
+  "t-addorga": "Add an Organization",
+  "t-modify": "Modify",
+  "t-modorga": "Modify an Organisation",
+  "t-reportsshort": "Reports",
+  "t-openbugrep": "Opened Bug Reports",
+  "t-totreat": "to solve.",
+  "t-openreports": "Open Reports",
+  "t-opensuggest": "Opened Suggestions.",
+  "t-registorga": "Registered Organizations.",
+  "t-todo": "Actions to take.",
+  "t-remain": "remaining.",
+  "t-lookbugrep": "Overview all Bug Reports",
+  "t-looksugglist": "Overview all Suggestions",
+  "t-lookorgalist": "Overview all Organizations"
 }

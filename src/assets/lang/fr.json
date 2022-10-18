@@ -408,5 +408,19 @@
   "t-doctor": "Docteur",
   "t-trusted": "Personne de confiance",
   "t-closefam": "Proche de la famille",
-  "t-patient": "Patient médical"
+  "t-patient": "Patient médical",
+  "t-addorga": "Ajouter une organisation",
+  "t-modorga": "Modifier une organisation",
+  "t-modify": "Modifier",
+  "t-reportsshort": "Rapports",
+  "t-openbugrep": "Rapports de bogues ouverts",
+  "t-totreat": "à résoudre.",
+  "t-opensuggest": "Suggestions ouvertes.",
+  "t-registorga": "Organisations enregistrées.",
+  "t-todo": "Actions à mener.",
+  "t-remain": "restant.",
+  "t-lookbugrep": "Vue d'ensemble de tous les rapports de bogues",
+  "t-looksugglist": "Vue d'ensemble de toutes les suggestions",
+  "t-lookorgalist": "Aperçu de toutes les organisations",
+  "t-openreports": "Ouvrir les rapports"
 }
