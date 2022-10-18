@@ -1,7 +1,7 @@
 <script>
-import addOrgaVue from "./add-orga.vue";
-import modifOrgaVue from "./modif-orga.vue";
-import reportSuggestVue from "./reportsuggest.vue";
+import addOrgaVue from "./side-admin-widgets/add-orga.vue";
+import modifOrgaVue from "./side-admin-widgets/modif-orga.vue";
+import reportSuggestVue from "./side-admin-widgets/reportsuggest.vue";
 import tableAdminVue from "./table-admin.vue";
 
 import Layout from "@/components/layouts/main.vue";
