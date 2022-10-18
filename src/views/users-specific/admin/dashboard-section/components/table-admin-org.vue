@@ -42,7 +42,7 @@ export default {
           title: "O- Hopital Josiane Adeline",
           usertype: "90",
           create: "09 Oct, 2021",
-          status: "Working",
+          status: "Waiting",
         },
         {
           id: "#MDFO- 06",
@@ -56,7 +56,7 @@ export default {
           title: "O- Hopital René Prune",
           usertype: "45",
           create: "05 Oct, 2021",
-          status: "Working",
+          status: "Waiting",
         },
         {
           id: "#MDFO- 08",
@@ -101,7 +101,6 @@ export default {
             data.title.toLowerCase().includes(search) ||
             data.usertype.toLowerCase().includes(search) ||
             data.create.toLowerCase().includes(search) ||
-            data.due.toLowerCase().includes(search) ||
             data.status.toLowerCase().includes(search)
           );
         });
@@ -163,7 +162,7 @@ export default {
             <td class="create_date">{{ data.create }}</td>
             <td class="status">
               <span class="badge text-uppercase" :class="{
-                'badge-soft-warning': data.status == 'Inprogress',
+                'badge-soft-warning': data.status == 'Waiting',
                 'badge-soft-info': data.status == 'New',
                 'badge-soft-success': data.status == 'Working',
                 'badge-soft-danger': data.status == 'Closed' || data.status == 'Suspended',
