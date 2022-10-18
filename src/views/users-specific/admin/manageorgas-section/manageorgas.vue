@@ -417,14 +417,14 @@ export default {
         <div class="card" id="orgasList">
           <div class="card-header border-0">
             <div class="d-flex align-items-center">
-              <h5 class="card-title mb-0 flex-grow-1">Tickets</h5>
+              <h5 class="card-title mb-0 flex-grow-1">Gérer les organisations</h5>
               <div class="flex-shrink-0">
                 <button class="btn btn-soft-danger me-1" @click="deleteMultiple">
                   <em class="ri-delete-bin-2-line"></em>
                 </button>
                 <button class="btn btn-danger add-btn" data-bs-toggle="modal" data-bs-target="#showModal"
                   @click="addnew">
-                  <em class="ri-add-line align-bottom me-1"></em> Create Tickets
+                  <em class="ri-add-line align-bottom me-1"></em> Create Organization
                 </button>
               </div>
             </div>
@@ -435,7 +435,7 @@ export default {
                 <div class="col-xxl-5 col-sm-12">
                   <div class="search-box">
                     <input type="text" class="form-control search bg-light border-light"
-                      placeholder="Search for ticket details or something..." />
+                      placeholder="Search for organization details or something..." />
                     <em class="ri-search-line search-icon"></em>
                   </div>
                 </div>
