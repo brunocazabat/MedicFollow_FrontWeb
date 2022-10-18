@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     activateheader() {
-      return store.getters["auth/getuserType"] == "admin" && this.$route.name == "admin-dashboard";
+      return store.getters["auth/getuserType"] == "admin" && this.$route.path.includes("/dashboard");
     },
     modifyUIType() {
       store.dispatch("auth/setUI", this.selected.text);
