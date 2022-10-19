@@ -1,10 +1,7 @@
 <script>
 import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
-import translatemodule from "@/components/login-components/translate-module.vue";
-import logoheadermodule from "@/components/login-components/logo-header-module.vue";
-import particlesmodule from "@/components/login-components/particles-module.vue";
-import footermodule from "@/components/login-components/footer-module.vue";
+import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/login-components";
 import recaptcha from "@/components/widgets/recaptchav2.vue";
 
 import { notificationMethods, AuthActions, AuthGetters, SecurityActions, SecurityGetters } from "@/components/state/helpers";
@@ -105,15 +102,10 @@ export default {
 
 <template>
   <div class="auth-page-wrapper">
-    <!-- auth page bg -->
     <particlesmodule />
-
-    <!-- auth page content -->
     <div class="auth-page-content">
       <div class="container">
         <logoheadermodule />
-        <!-- end row -->
-
         <div class="row justify-content-center">
           <div class="col-md-8 col-lg-6 col-xl-6">
             <div class="card mt-4">
@@ -130,11 +122,9 @@ export default {
                 </div>
                 <div class="p-2 mt-4">
                   <b-alert v-model="isAuthError" variant="danger" class="mt-3" dismissible>{{ authError }}</b-alert>
-
                   <div v-if="notification.message" :class="'alert ' + notification.type">
                     {{ notification.message }}
                   </div>
-
                   <form class="needs-validation" @submit.prevent="Unlock">
                     <div class="mb-3">
                       <label class="form-label" for="password-input" data-key="t-password">{{
@@ -170,33 +160,21 @@ export default {
                       </button>
                     </div>
                     <div class="mt-4 text-center">
-                      <p class="mb-0 text-muted" style="color: black" data-key="t-notyou">{{ $t("t-notyou")
-                      }}
-
+                      <p class="mb-0 text-muted" style="color: black" data-key="t-notyou">{{ $t("t-notyou") }}
                         <router-link to="/logout" class="fw-semibold text-primary text-decoration-underline"
                           data-key="t-loginpage">{{ $t("t-loginpage") }}
                         </router-link>
                       </p>
                     </div>
                   </form>
-                  <!-- end form -->
                 </div>
               </div>
-              <!-- end card body -->
             </div>
-            <!-- end card -->
           </div>
           <translatemodule />
         </div>
-        <!-- end row -->
       </div>
-      <!-- end container -->
     </div>
-    <!-- end auth page content -->
-
-    <!-- footer -->
     <footermodule />
-    <!-- end Footer -->
   </div>
-  <!-- end auth-page-wrapper -->
 </template>

@@ -1,25 +1,18 @@
 <script>
-import logoheadermodule from "@/components/login-components/logo-header-module.vue";
-import particlesmodule from "@/components/login-components/particles-module.vue";
-import footermodule from "@/components/login-components/footer-module.vue";
-import translatemodule from "@/components/login-components/translate-module.vue";
+import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/login-components";
 
 export default {
   name: "Page500",
-  components: { logoheadermodule, particlesmodule, footermodule, translatemodule },
+  components: { translatemodule, logoheadermodule, particlesmodule, footermodule },
 };
 </script>
 
 <template>
   <div class="auth-page-wrapper">
-    <!-- auth page bg -->
     <particlesmodule />
-
-    <!-- auth page content -->
     <div class="auth-page-content">
       <div class="container">
         <logoheadermodule />
-        <!-- end row -->
         <div class="row justify-content-center">
           <div class="col-xl-9 col-lg-8 text-center">
             <div class="error-500 position-relative">
@@ -32,17 +25,11 @@ export default {
               <router-link to="/" class="btn btn-success" data-key="t-returnhome"><em class="mdi mdi-home me-1"></em> {{
               $t("t-returnhome") }}</router-link>
             </div>
-          </div><!-- end col-->
+          </div>
           <translatemodule />
         </div>
-        <!-- end row -->
       </div>
-      <!-- end container -->
     </div>
-    <!-- end auth-page content -->
-    <!-- footer -->
     <footermodule />
-    <!-- end Footer -->
   </div>
-  <!-- end auth-page-wrapper -->
 </template>

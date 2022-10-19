@@ -2,10 +2,7 @@
 import { AuthActions, AuthGetters } from "@/components/state/helpers";
 import Lottie from "@/components/widgets/lottie.vue";
 import animationData from "@/assets/anim/animation3.json";
-import translatemodule from "@/components/login-components/translate-module.vue";
-import logoheadermodule from "@/components/login-components/logo-header-module.vue";
-import particlesmodule from "@/components/login-components/particles-module.vue";
-import footermodule from "@/components/login-components/footer-module.vue";
+import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/login-components";
 
 export default {
   components: { lottie: Lottie, translatemodule, logoheadermodule, particlesmodule, footermodule },
@@ -64,15 +61,10 @@ export default {
 
 <template>
   <div class="auth-page-wrapper">
-    <!-- auth page bg -->
     <particlesmodule />
-
-    <!-- auth page content -->
     <div class="auth-page-content">
       <div class="container">
         <logoheadermodule />
-        <!-- end row -->
-
         <div class="row justify-content-center">
           <div class="col-md-3 col-lg-3 col-xl-3">
             <div class="card mt-4">
@@ -84,21 +76,12 @@ export default {
                   </p>
                 </div>
               </div>
-              <!-- end card body -->
             </div>
-            <!-- end card -->
           </div>
           <translatemodule />
         </div>
-        <!-- end row -->
       </div>
-      <!-- end container -->
     </div>
-    <!-- end auth page content -->
-
-    <!-- footer -->
     <footermodule />
-    <!-- end Footer -->
   </div>
-  <!-- end auth-page-wrapper -->
 </template>

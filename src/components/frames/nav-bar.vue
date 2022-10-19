@@ -4,10 +4,7 @@ import { AuthGetters } from "@/components/state/helpers";
 import dayjs from 'dayjs'
 import { ClockIcon } from '@zhuowenli/vue-feather-icons'
 
-import notification from "./nav-bar-components/notification.vue";
-import lang from "./nav-bar-components/lang.vue";
-import fullscreen from "./nav-bar-components/full-screen.vue";
-import darkmode from "./nav-bar-components/dark-mode.vue";
+import { notification, lang, fullscreen, darkmode } from "@/components/frames/nav-bar-components"
 
 export default {
   data() {

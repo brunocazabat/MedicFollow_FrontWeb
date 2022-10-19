@@ -1,30 +1,18 @@
 <script>
-import logoheadermodule from "@/components/login-components/logo-header-module.vue";
-import particlesmodule from "@/components/login-components/particles-module.vue";
-import footermodule from "@/components/login-components/footer-module.vue";
-import translatemodule from "@/components/login-components/translate-module.vue";
+import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/login-components";
 
 export default {
   name: "Maintenance",
-  components: { logoheadermodule, particlesmodule, footermodule, translatemodule },
-  data() {
-    return {};
-  },
-  computed: {},
-  methods: {},
+  components: { translatemodule, logoheadermodule, particlesmodule, footermodule },
 };
 </script>
 
 <template>
   <div class="auth-page-wrapper">
-    <!-- auth page bg -->
     <particlesmodule />
-
-    <!-- auth page content -->
     <div class="auth-page-content">
       <div class="container">
         <logoheadermodule />
-        <!-- end row -->
         <div class="row">
           <div class="col-xl-9 col-lg-8">
             <div class="text-center mt-sm-5 pt-4">
@@ -51,14 +39,8 @@ export default {
           </div>
           <translatemodule />
         </div>
-        <!-- end row -->
       </div>
-      <!-- end container -->
     </div>
-    <!-- end auth page content -->
-    <!-- footer -->
     <footermodule />
-    <!-- end Footer -->
   </div>
-  <!-- end auth-page-wrapper -->
 </template>

@@ -2,10 +2,7 @@
 import { AuthActions, SecurityActions } from "@/components/state/helpers";
 import animationData from "@/assets/anim/animation1.json";
 import Lottie from "@/components/widgets/lottie.vue";
-import translatemodule from "@/components/login-components/translate-module.vue";
-import logoheadermodule from "@/components/login-components/logo-header-module.vue";
-import particlesmodule from "@/components/login-components/particles-module.vue";
-import footermodule from "@/components/login-components/footer-module.vue";
+import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/login-components";
 
 export default {
   data() {
@@ -28,15 +25,10 @@ export default {
 
 <template>
   <div class="auth-page-wrapper">
-    <!-- auth page bg -->
     <particlesmodule />
-
-    <!-- auth page content -->
     <div class="auth-page-content">
       <div class="container">
         <logoheadermodule />
-        <!-- end row -->
-
         <div class="row justify-content-center">
           <div class="col-md-8 col-lg-6 col-xl-6">
             <div class="card mt-4">
@@ -49,28 +41,17 @@ export default {
                     <span class="fw-semibold">MedicFollow</span>
                   </p>
                   <div class="mt-4">
-                    <router-link to="/login" class="btn btn-success w-100" data-key="t-signin">{{
-                    $t("t-signin") }}
+                    <router-link to="/login" class="btn btn-success w-100" data-key="t-signin">{{ $t("t-signin") }}
                     </router-link>
                   </div>
                 </div>
               </div>
-              <!-- end card body -->
             </div>
-            <!-- end card -->
           </div>
           <translatemodule />
-          <!-- end col -->
         </div>
-        <!-- end row -->
       </div>
-      <!-- end container -->
     </div>
-    <!-- end auth page content -->
-
-    <!-- footer -->
     <footermodule />
-    <!-- end Footer -->
   </div>
-  <!-- end auth-page-wrapper -->
 </template>

@@ -3,16 +3,10 @@ import router from "@/components/router";
 import { SimpleBar } from "simplebar-vue3";
 import { layoutComputed } from "@/components/state/helpers";
 
-import NavBar from "@/components/frames/nav-bar";
-import MenuMedicFollow from "@/components/frames/menu.vue";
-import RightBar from "@/components/frames/right-bar";
-import PageHeader from "@/components/frames/page-header.vue";
+import { NavBar, MenuMedicFollow, RightBar, PageHeader } from "@/components/frames";
 import footermodule from "@/components/login-components/footer-module.vue";
-localStorage.setItem('hoverd', false);
 
-/**
- * Vertical layout
- */
+localStorage.setItem('hoverd', false);
 export default {
   components: { NavBar, RightBar, footermodule, SimpleBar, MenuMedicFollow, PageHeader },
   data() {

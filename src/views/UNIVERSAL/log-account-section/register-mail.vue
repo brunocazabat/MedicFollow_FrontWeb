@@ -4,10 +4,7 @@ import useVuelidate from "@vuelidate/core";
 import Lottie from "@/components/widgets/lottie.vue";
 import animationData from "@/assets/anim/animation2.json";
 import { SecurityActions, SecurityGetters, notificationMethods } from "@/components/state/helpers";
-import translatemodule from "@/components/login-components/translate-module.vue";
-import logoheadermodule from "@/components/login-components/logo-header-module.vue";
-import particlesmodule from "@/components/login-components/particles-module.vue";
-import footermodule from "@/components/login-components/footer-module.vue";
+import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/login-components";
 import recaptcha from "@/components/widgets/recaptchav2.vue";
 
 export default {
@@ -46,7 +43,6 @@ export default {
     RegisterInEmail() {
       this.submitted = true;
       this.v$.$touch();
-
       if (!this.v$.$invalid && this.isRecaptchaEnabled()) {
         this.isRegisterError = false;
         this.regError = null;
@@ -69,15 +65,10 @@ export default {
 
 <template>
   <div class="auth-page-wrapper">
-    <!-- auth page bg -->
     <particlesmodule />
-
-    <!-- auth page content -->
     <div class="auth-page-content">
       <div class="container">
         <logoheadermodule />
-        <!-- end row -->
-
         <div class="row justify-content-center">
           <div class="col-md-8 col-lg-6 col-xl-6">
             <div class="card mt-4">
@@ -92,12 +83,9 @@ export default {
                   <form class="needs-validation" @submit.prevent="RegisterInEmail">
                     <b-alert v-model="isRegisterError" class="mt-3" variant="danger" dismissible>{{ regError }}
                     </b-alert>
-
                     <div v-if="notification.message" :class="'alert ' + notification.type">
                       {{ notification.message }}
                     </div>
-
-                    <!-- Email Input row -->
                     <div class="mb-3">
                       <label for="email" class="form-label" data-key="t-email">{{ $t("t-email") }} <span
                           class="text-danger">*</span></label>
@@ -109,7 +97,6 @@ export default {
                         <span v-if="item.$message">{{ item.$message }}</span>
                       </div>
                     </div>
-
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="auth-terms-check" required />
                       <label class="form-check-label" for="auth-terms-check">
@@ -129,16 +116,14 @@ export default {
                         </p>
                       </label>
                     </div>
-
                     <recaptcha />
                     <div class="mt-4">
                       <button @click="RegisterInEmail" class="btn btn-success w-100" type="submit"
                         data-key="t-startreg">{{ $t("t-startreg") }}
                       </button>
                       <div class="mt-4 text-center">
-                        <p class="mb-0 text-muted" style="color: black" data-key="t-alrdyaccount">{{
-                        $t("t-alrdyaccount")
-                        }}
+                        <p class="mb-0 text-muted" style="color: black" data-key="t-alrdyaccount">
+                          {{ $t("t-alrdyaccount") }}
                           <router-link to="/login" class="fw-semibold text-primary text-decoration-underline"
                             data-key="t-signin">{{ $t("t-signin") }}
                           </router-link>
@@ -148,21 +133,12 @@ export default {
                   </form>
                 </div>
               </div>
-              <!-- end card body -->
             </div>
-            <!-- end card -->
           </div>
           <translatemodule />
         </div>
-        <!-- end row -->
       </div>
-      <!-- end container -->
     </div>
-    <!-- end auth page content -->
-
-    <!-- footer -->
     <footermodule />
-    <!-- end Footer -->
   </div>
-  <!-- end auth-page-wrapper -->
 </template>

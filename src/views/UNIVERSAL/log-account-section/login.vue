@@ -2,10 +2,7 @@
 import { required, email, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import { AuthActions, SecurityActions, SecurityGetters, notificationMethods } from "@/components/state/helpers";
-import translatemodule from "@/components/login-components/translate-module.vue";
-import logoheadermodule from "@/components/login-components/logo-header-module.vue";
-import particlesmodule from "@/components/login-components/particles-module.vue";
-import footermodule from "@/components/login-components/footer-module.vue";
+import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/login-components";
 import recaptcha from "@/components/widgets/recaptchav2.vue";
 
 export default {
@@ -101,15 +98,10 @@ export default {
 
 <template>
   <div class="auth-page-wrapper">
-    <!-- auth page bg -->
     <particlesmodule />
-
-    <!-- auth page content -->
     <div class="auth-page-content">
       <div class="container">
         <logoheadermodule />
-        <!-- end row -->
-
         <div class="row justify-content-center g-0">
           <div class="card col-md-8 col-lg-6 col-xl-3 mt-4" style="border-radius: 0.50rem">
             <div class="sign-one-bg h-100">
@@ -127,7 +119,6 @@ export default {
                       </div>
                     </div>
                   </div>
-                  <!-- end carousel -->
                 </div>
               </div>
             </div>
@@ -140,11 +131,9 @@ export default {
                 </div>
                 <div class="p-2 mt-4">
                   <b-alert v-model="isAuthError" variant="danger" class="mt-3" dismissible>{{ authError }}</b-alert>
-
                   <div v-if="notification.message" :class="'alert ' + notification.type">
                     {{ notification.message }}
                   </div>
-
                   <form class="needs-validation" @submit.prevent="Log">
                     <div class="mb-3">
                       <label for="email" class="form-label" data-key="t-email">{{ $t("t-email") }} <span
@@ -157,7 +146,6 @@ export default {
                         <span v-if="item.$message">{{ item.$message }}</span>
                       </div>
                     </div>
-
                     <div class="mb-3">
                       <div class="float-end">
                         <router-link to="/forgot-password" class="text-muted" data-key="t-forgpass">{{
@@ -197,7 +185,6 @@ export default {
                       }}
                       </button>
                     </div>
-
                     <div class="mt-4 text-center">
                       <div class="signin-other-title">
                         <h5 class="fs-13 mb-4 title" data-key="t-signinw">{{ $t("t-signinw") }}</h5>
@@ -208,9 +195,7 @@ export default {
                         </button>
                       </div>
                       <div class="mt-4 text-center">
-                        <p class="mb-0 text-muted" style="color: black" data-key="t-prosign">{{
-                        $t("t-prosign") }}
-
+                        <p class="mb-0 text-muted" style="color: black" data-key="t-prosign">{{ $t("t-prosign") }}
                           <router-link to="/register-mail" class="fw-semibold text-primary text-decoration-underline"
                             data-key="t-signup">{{ $t("t-signup") }}
                           </router-link>
@@ -220,21 +205,12 @@ export default {
                   </form>
                 </div>
               </div>
-              <!-- end card body -->
             </div>
-            <!-- end card -->
           </div>
           <translatemodule />
         </div>
-        <!-- end row -->
       </div>
-      <!-- end container -->
     </div>
-    <!-- end auth page content -->
-
-    <!-- footer -->
     <footermodule />
-    <!-- end Footer -->
   </div>
-  <!-- end auth-page-wrapper -->
 </template>

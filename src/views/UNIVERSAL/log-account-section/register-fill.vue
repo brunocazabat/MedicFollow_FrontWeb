@@ -3,10 +3,7 @@ import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import Popper from "vue3-popper";
 import { SecurityActions, SecurityGetters, notificationMethods } from "@/components/state/helpers";
-import translatemodule from "@/components/login-components/translate-module.vue";
-import logoheadermodule from "@/components/login-components/logo-header-module.vue";
-import particlesmodule from "@/components/login-components/particles-module.vue";
-import footermodule from "@/components/login-components/footer-module.vue";
+import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/login-components";
 import recaptcha from "@/components/widgets/recaptchav2.vue";
 
 export default {
@@ -53,7 +50,6 @@ export default {
     RegisterInInfos() {
       this.submitted = true;
       this.v$.$touch();
-
       if (!this.v$.$invalid && this.isRecaptchaEnabled()) {
         this.isFillError = false;
         this.FillError = null;
@@ -85,15 +81,10 @@ export default {
 
 <template>
   <div class="auth-page-wrapper">
-    <!-- auth page bg -->
     <particlesmodule />
-
-    <!-- auth page content -->
     <div class="auth-page-content">
       <div class="container">
         <logoheadermodule />
-        <!-- end row -->
-
         <div class="row justify-content-center">
           <div class="col-md-8 col-lg-6 col-xl-6">
             <div class="card mt-4">
@@ -108,8 +99,6 @@ export default {
                     <div v-if="notification.message" :class="'alert ' + notification.type">
                       {{ notification.message }}
                     </div>
-
-                    <!-- Familly Name Input row -->
                     <div class="mb-3">
                       <label for="famillyname" class="form-label" data-key="t-famname">{{ $t("t-famname") }}
                         <span class="text-danger">*</span></label>
@@ -123,8 +112,6 @@ export default {
                         }}</span>
                       </div>
                     </div>
-
-                    <!-- Name Input row -->
                     <div class="mb-3">
                       <label for="name" class="form-label" data-key="t-name">{{ $t("t-name") }} <span
                           class="text-danger">*</span></label>
@@ -137,8 +124,6 @@ export default {
                         }}</span>
                       </div>
                     </div>
-
-                    <!-- Password Input row -->
                     <div class="mb-3">
                       <div class="float-end" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
                         <Popper placement="right" :show="hover">
@@ -146,16 +131,12 @@ export default {
                           <template #content>
                             <div>
                               <p class="invalid fs-12 mb-2" data-key="t-12char">{{ $t("t-12char") }}
-
                               </p>
                               <p class="invalid fs-12 mb-2" data-key="t-8lowchar">{{ $t("t-8lowchar") }}
-
                               </p>
                               <p class="invalid fs-12 mb-2" data-key="t-2upchar">{{ $t("t-2upchar") }}
-
                               </p>
                               <p class="invalid fs-12 mb-2" data-key="t-2number">{{ $t("t-2number") }}
-
                               </p>
                             </div>
                           </template>
@@ -185,7 +166,6 @@ export default {
                         </div>
                       </div>
                     </div>
-
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="auth-remember-check" required />
                       <label class="form-check-label" for="auth-remember-check">
@@ -198,7 +178,6 @@ export default {
                         </p>
                       </label>
                     </div>
-
                     <recaptcha />
                     <div class="mt-4">
                       <button @click="RegisterInInfos" class="btn btn-success w-100" type="submit"
@@ -219,26 +198,17 @@ export default {
                   </form>
                 </div>
               </div>
-              <!-- end card body -->
             </div>
-            <!-- end card -->
           </div>
           <translatemodule />
         </div>
-        <!-- end row -->
       </div>
-      <!-- end container -->
     </div>
-    <!-- end auth page content -->
-
-    <!-- footer -->
     <footermodule />
-    <!-- end Footer -->
   </div>
-  <!-- end auth-page-wrapper -->
 </template>
 
-<style>
+<style scoped>
 :root {
   --popper-theme-background-color: #333333;
   --popper-theme-background-color-hover: #333333;
