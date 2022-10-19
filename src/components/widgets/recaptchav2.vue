@@ -50,7 +50,7 @@ export default {
       @verify="callbackVerify()" @expired="callbackExpired()" @fail="callbackFail()" />
   </div>
   <div v-else>
-    <button @click="fakeCaptcha()" class="btn forceserif">Recaptcha oui oui</button>
+    <button @click="fakeCaptcha()" class="btn forceserif">Recaptcha</button>
   </div>
 </template>
 

@@ -4,6 +4,7 @@ export const state = {
   token: sessionStorage.getItem("currentUserTOKEN"),
   headers: sessionStorage.getItem("currentUserHEADERS"),
   email: sessionStorage.getItem("currentUserEMAIL"),
+  phone: sessionStorage.getItem("currentUserPHONE"),
   uuid: sessionStorage.getItem("currentUserUUID"),
   firstname: sessionStorage.getItem("currentUserFIRSTNAME"),
   lastname: sessionStorage.getItem("currentUserLASTNAME"),
@@ -26,6 +27,10 @@ export const mutations = {
   SET_EMAIL(state, email) {
     state.email = email;
     saveState("currentUserEMAIL", email);
+  },
+  SET_PHONE(state, phone) {
+    state.phone = phone;
+    saveState("currentUserPHONE", phone);
   },
   SET_FIRSTNAME(state, firstname) {
     state.firstname = firstname;
@@ -77,6 +82,9 @@ export const getters = {
   getemail(state) {
     return state.email;
   },
+  getphone(state) {
+    return state.phone;
+  },
   getfirstname(state) {
     return state.firstname;
   },
@@ -85,6 +93,9 @@ export const getters = {
   },
   getfullname(state) {
     return state.firstname + " " + state.lastname;
+  },
+  getheader(state) {
+    return state.header;
   },
 };
 
@@ -115,7 +126,7 @@ export const actions = {
     try {
       let response = await axios.get("users/me", { headers: state.headers });
       if (response.status === 200) {
-        console.log(response.data.subType);
+        console.log(response.data);
         dispatch("setFirstName", response.data.firstname);
         dispatch("setLastName", response.data.lastname);
         if (response.data.UserType.ut_name == "admin") {
@@ -162,6 +173,10 @@ export const actions = {
 
   async setEmail({ commit }, email) {
     commit("SET_EMAIL", email);
+  },
+
+  async setPhone({ commit }, phone) {
+    commit("SET_PHONE", phone);
   },
 
   async setFirstName({ commit }, firstname) {

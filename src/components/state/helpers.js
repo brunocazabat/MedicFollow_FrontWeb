@@ -49,9 +49,11 @@ export const AuthGetters = mapGetters("auth", [
   "getuserType",
   "getuserUI",
   "getemail",
+  "getphone",
   "getfirstname",
   "getlastname",
   "getfullname",
+  "getheader",
 ]);
 
 export const SecurityGetters = mapGetters("security", [

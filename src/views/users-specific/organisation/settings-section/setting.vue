@@ -1,6 +1,7 @@
 <script>
 import '@vueform/multiselect/themes/default.css'
 import 'flatpickr/dist/flatpickr.css'
+import { AuthGetters } from "@/components/state/helpers";
 
 import Layout from '@/components/layouts/main.vue'
 
@@ -9,32 +10,53 @@ import particlesmodule from "@/components/login-components/particles-module.vue"
 export default {
   data() {
     return {
-
       value: ['javascript'],
-      date: null
+      user: [{
+        fullname: null,
+        firstname: null,
+        lastname: null,
+        email: null,
+        phone: null,
+        role: null,
+      },
+      ],
+    }
+  },
+  mounted() {
+    if (this.getfullname()) {
+      this.user.fullname = this.getfullname();
+    }
+    if (this.getfirstname()) {
+      this.user.firstname = this.getfirstname();
+    }
+    if (this.getlastname()) {
+      this.user.lastname = this.getlastname();
+    }
+    if (this.getemail()) {
+      this.user.email = this.getemail();
+    }
+    if (this.getuserType()) {
+      this.user.role = this.getuserType();
+    }
+    if (this.getphone()) {
+      this.user.phone = this.getphone();
     }
   },
   components: {
     Layout,
     particlesmodule
-  }
+  },
+  methods: {
+    ...AuthGetters,
+  },
 }
 </script>
 
 <template>
   <Layout>
-
-    <!-- Background Cover -->
-    <!-- <div class="position-relative mx-n4 mt-n4">
-      <div class="profile-wid-bg profile-setting-img">
-        <img src="@/assets/images/covers/auth-one-bg.jpg" class="profile-wid-img" alt="" />
-      </div>
-    </div> -->
-
     <div class="auth-page-wrapper pt-5 mb-5">
       <particlesmodule />
       <div class="container p-3">
-
         <!-- Profile picture settings -->
         <div class="row ">
           <div class="col-xxl-3 ">
@@ -42,7 +64,7 @@ export default {
               <div class="card-body p-4">
                 <div class="text-center">
                   <div class="profile-user position-relative d-inline-block mx-auto mb-4">
-                    <img src="@/assets/images/users/avatar-1.png"
+                    <img src="@/assets/images/users/dummy-user.jpg"
                       class="rounded-circle avatar-xl img-thumbnail user-profile-image shadow"
                       alt="user-profile-image" />
                     <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
@@ -54,7 +76,7 @@ export default {
                       </label>
                     </div>
                   </div>
-                  <h5 class="fs-16 mb-1">Anna Adame</h5>
+                  <h5 class="fs-16 mb-1">{{ this.user.fullname }}</h5>
                 </div>
               </div>
             </div>
@@ -99,8 +121,8 @@ export default {
                         <div class="col-lg-6">
                           <div class="mb-3">
                             <label for="firstnameInput" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstnameInput"
-                              placeholder="Enter your firstname" value="Anna" disabled />
+                            <input type="text" class="form-control" id="firstnameInput" placeholder=""
+                              :value="this.user.firstname" disabled />
                           </div>
                         </div>
 
@@ -108,7 +130,7 @@ export default {
                           <div class="mb-3">
                             <label for="lastnameInput" class="form-label">Last Name</label>
                             <input type="text" class="form-control" id="lastnameInput" placeholder="Enter your lastname"
-                              value="Adame" disabled />
+                              :value="this.user.lastname" disabled />
                           </div>
                         </div>
 
@@ -118,7 +140,7 @@ export default {
                           <div class="mb-3">
                             <label for="phonenumberInput" class="form-label">Phone Number</label>
                             <input type="text" class="form-control" id="phonenumberInput"
-                              placeholder="Enter your phone number" value="+(1) 987 6543" required />
+                              placeholder="Enter your phone number" :value="this.user.phone" disabled />
                           </div>
                         </div>
                         <!--end col-->
@@ -126,15 +148,15 @@ export default {
                           <div class="mb-3">
                             <label for="emailInput" class="form-label">Email Address</label>
                             <input type="email" class="form-control" id="emailInput" placeholder="Enter your email"
-                              value="daveadame@velzon.com" required />
+                              :value="this.user.email" disabled />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-4">
                           <div class="mb-3">
                             <label for="cityInput" class="form-label">City</label>
-                            <input type="text" class="form-control" id="cityInput" placeholder="City"
-                              value="Saint-Georges-Nigremont" />
+                            <input type="text" class="form-control" id="cityInput" placeholder="City" value="TBD"
+                              disabled />
                           </div>
                         </div>
                         <!--end col-->
@@ -142,7 +164,7 @@ export default {
                           <div class="mb-3">
                             <label for="countryInput" class="form-label">Country</label>
                             <input type="text" class="form-control" id="countryInput" placeholder="Country"
-                              value="France" required />
+                              value="France" disabled />
                           </div>
                         </div>
                         <!--end col-->
@@ -150,7 +172,7 @@ export default {
                           <div class="mb-3">
                             <label for="zipcodeInput" class="form-label">Zip Code</label>
                             <input type="text" class="form-control" minlength="5" maxlength="6" id="zipcodeInput"
-                              placeholder="Enter zipcode" value="23500" />
+                              placeholder="Enter zipcode" value="TBD" disabled />
                           </div>
                         </div>
                         <!--end col-->
@@ -362,8 +384,5 @@ export default {
 
       </div>
     </div>
-
-
-
   </Layout>
 </template>
