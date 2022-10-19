@@ -209,10 +209,8 @@ export default {
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="custom-footer bg-primary py-5 position-relative">
       <footervit />
     </footer>
-    <!-- END FOOTER -->
   </div>
 </template>

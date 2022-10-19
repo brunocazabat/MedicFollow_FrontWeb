@@ -348,7 +348,7 @@ export default {
         </div>
         <!-- end card -->
       </div>
-      <!-- end col -->
+
     </div>
 
   </Layout>

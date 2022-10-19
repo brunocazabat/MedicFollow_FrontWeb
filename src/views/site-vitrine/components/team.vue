@@ -39,7 +39,7 @@ export default {
         </div>
         <!-- end card -->
       </div>
-      <!-- end col -->
+
       <div class="col-lg-3 col-sm-6">
         <div class="card">
           <div class="card-body text-center p-4">
@@ -61,7 +61,7 @@ export default {
         </div>
         <!-- end card -->
       </div>
-      <!-- end col -->
+
       <div class="col-lg-3 col-sm-6">
         <div class="card">
           <div class="card-body text-center p-4">
@@ -83,7 +83,7 @@ export default {
         </div>
         <!-- end card -->
       </div>
-      <!-- end col -->
+
       <div class="col-lg-3 col-sm-6">
         <div class="card">
           <div class="card-body text-center p-4">
@@ -105,7 +105,7 @@ export default {
         </div>
         <!-- end card -->
       </div>
-      <!-- end col -->
+
     </div>
     <!-- end row -->
     <div class="row">
@@ -130,7 +130,7 @@ export default {
         </div>
         <!-- end card -->
       </div>
-      <!-- end col -->
+
       <div class="col-lg-3 col-sm-6">
         <div class="card">
           <div class="card-body text-center p-4">
@@ -152,7 +152,7 @@ export default {
         </div>
         <!-- end card -->
       </div>
-      <!-- end col -->
+
       <div class="col-lg-3 col-sm-6">
         <div class="card">
           <div class="card-body text-center p-4">
@@ -174,7 +174,7 @@ export default {
         </div>
         <!-- end card -->
       </div>
-      <!-- end col -->
+
 
       <div class="col-lg-3 col-sm-6">
         <div class="card">
@@ -197,7 +197,7 @@ export default {
         </div>
         <!-- end card -->
       </div>
-      <!-- end col -->
+
     </div>
   </div>
 </template>

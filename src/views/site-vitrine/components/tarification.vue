@@ -17,7 +17,7 @@ export default {
           </h4>
         </div>
       </div>
-      <!-- end col -->
+
     </div>
     <!-- end row -->
 

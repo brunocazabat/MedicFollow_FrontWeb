@@ -64,7 +64,7 @@ export default {
           </div>
           <!-- end card -->
         </div>
-        <!-- end col -->
+
 
 
         <div class="col-xxl-6">
@@ -103,11 +103,11 @@ export default {
           </div>
           <!-- end card -->
         </div>
-        <!-- end col -->
+
       </div>
       <!-- end row -->
     </div>
-    <!-- end col -->
+
   </div>
   <!-- end row -->
 

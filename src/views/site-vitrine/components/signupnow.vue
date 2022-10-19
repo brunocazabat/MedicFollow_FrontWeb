@@ -14,7 +14,7 @@ export default {
           </h4>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-sm-auto">
         <div>
           <router-link to="/register-mail" class="btn btn-light" style="margin:5px" data-key="t-signup">{{
@@ -22,7 +22,7 @@ export default {
           </router-link>
         </div>
       </div>
-      <!-- end col -->
+
     </div>
     <!-- end row -->
   </div>

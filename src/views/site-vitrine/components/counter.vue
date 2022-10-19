@@ -20,7 +20,7 @@ export default {
           <div class="text-muted" data-key="t-betatesters">{{ $t("t-betatesters") }}</div>
         </div>
       </div>
-      <!-- end col -->
+
 
       <div class="col-lg-3 col-6">
         <div>
@@ -30,7 +30,7 @@ export default {
           <div class="text-muted" data-key="t-positivfeedb">{{ $t("t-positivfeedb") }}</div>
         </div>
       </div>
-      <!-- end col -->
+
 
       <div class="col-lg-3 col-6">
         <div>
@@ -40,7 +40,7 @@ export default {
           <div class="text-muted" data-key="t-funcapp">{{ $t("t-funcapp") }}</div>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-lg-3 col-6">
         <div>
           <h2 class="mb-2">
@@ -49,7 +49,7 @@ export default {
           <div class="text-muted" data-key="t-employ">{{ $t("t-employ") }}</div>
         </div>
       </div>
-      <!-- end col -->
+
     </div>
     <!-- end row -->
   </div>

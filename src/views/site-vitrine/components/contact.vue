@@ -40,7 +40,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-lg-8">
         <div>
           <form>

@@ -261,7 +261,6 @@ export default {
             <a class="text-muted text-decoration-underline" data-key="t-viewmsg">{{ $t("t-viewmsg") }}</a>
           </router-link>
         </div>
-        <!-- end row -->
       </div>
     </div>
     <!-- end cardbody -->

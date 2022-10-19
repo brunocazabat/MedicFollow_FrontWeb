@@ -26,7 +26,7 @@ export default {
           </p>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="row align-items-center text-center" style="margin-top: 80px;">
         <timeline />
       </div>

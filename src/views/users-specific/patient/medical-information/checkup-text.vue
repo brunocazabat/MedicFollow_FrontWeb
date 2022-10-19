@@ -90,7 +90,7 @@ export default {
                   </div>
                 </div>
               </div>
-              <!-- end col -->
+
               <div class="col-xxl-4 col-lg-6">
                 <div class="border rounded border-dashed p-2">
                   <div class="d-flex align-items-center">
@@ -115,7 +115,7 @@ export default {
                   </div>
                 </div>
               </div>
-              <!-- end col -->
+
             </div>
             <!-- end row -->
           </div>

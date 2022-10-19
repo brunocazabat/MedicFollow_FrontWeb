@@ -111,7 +111,7 @@ export default {
         </div>
         <!--end accordion-->
       </div>
-      <!-- end col -->
+
       <div class="col-lg-6">
         <div class="d-flex align-items-center mb-2">
           <div class="flex-shrink-0 me-1">
@@ -205,7 +205,7 @@ export default {
         </div>
         <!--end accordion-->
       </div>
-      <!-- end col -->
+
     </div>
     <!-- end row -->
   </div>

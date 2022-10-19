@@ -238,7 +238,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
     </div>
     <!--end row-->
 

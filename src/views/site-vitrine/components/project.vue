@@ -16,12 +16,12 @@ export default {
           </h5>
         </div>
       </div>
-      <!-- end col -->
+
     </div>
     <!-- end row -->
 
     <div class="row g-3">
-      <!-- end col -->
+
       <div class="col-lg-4">
         <div class="d-flex p-3">
           <div class="flex-shrink-0">
@@ -36,7 +36,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-lg-4">
         <div class="d-flex p-3">
           <div class="flex-shrink-0">
@@ -51,7 +51,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-lg-4">
         <div class="d-flex p-3">
           <div class="flex-shrink-0">
@@ -66,7 +66,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-lg-4">
         <div class="d-flex p-3">
           <div class="flex-shrink-0">
@@ -81,7 +81,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-lg-4">
         <div class="d-flex p-3">
           <div class="flex-shrink-0">
@@ -96,7 +96,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-lg-4">
         <div class="d-flex p-3">
           <div class="flex-shrink-0">
@@ -111,7 +111,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
 
 
       <div class="col-lg-3">
@@ -130,7 +130,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-lg-3">
         <div class="d-flex p-3">
           <div class="flex-shrink-0 me-3">
@@ -147,7 +147,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-lg-3">
         <div class="d-flex p-3">
           <div class="flex-shrink-0 me-3">
@@ -164,7 +164,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-lg-3">
         <div class="d-flex p-3">
           <div class="flex-shrink-0 me-3">

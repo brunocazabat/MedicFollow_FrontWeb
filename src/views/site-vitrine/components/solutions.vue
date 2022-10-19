@@ -86,7 +86,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
       <div class="col-lg-6 col-sm-7 col-10 ms-auto order-1 order-lg-2">
         <div>
           <img src="../images/banner/Banner_solution_1.jpg" alt="" class="img-fluid" />
@@ -180,7 +180,7 @@ export default {
           </div>
         </div>
       </div>
-      <!-- end col -->
+
     </div>
     <!-- end row -->
   </div>
