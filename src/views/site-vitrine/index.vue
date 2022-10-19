@@ -1,42 +1,21 @@
 <script>
 // IMPORT SECTIONS VITRINE
-// NAVBAR
-import navbar from "./components/navbar.vue";
-// SECTIONS
-import intro from "./components/intro.vue";
-import project from "./components/project.vue";
-import history from "./components/history.vue";
-import solutions from './components/solutions.vue';
-import tarification from './components/tarification.vue';
-import team from "./components/team.vue";
-// CONTACT
-import faq from './components/faq.vue';
-import contact from "./components/contact.vue";
-// FOOTER
-import footervit from "./components/footer.vue";
-// TOOLS
-import signupnow from "./components/signupnow.vue";
-import counter from "./components/counter.vue";
+import { navbar, intro, project, history, solutions, tarification, team, faq, contact, footervit, signupnow, counter } from "./components";
 
 
 export default {
   name: 'SiteVitrine',
   components: {
-    // NAVBAR
     navbar,
-    // SECTIONS
     intro,
     project,
     history,
     solutions,
     tarification,
     team,
-    // CONTACT
     faq,
     contact,
-    // FOOTER
     footervit,
-    // TOOLS
     signupnow,
     counter
   },
@@ -119,10 +98,8 @@ export default {
     </section>
     <!-- END FAQ -->
 
-    <!-- FOOTER -->
     <footer class="custom-footer py-5 position-relative">
       <footervit />
     </footer>
-    <!-- END FOOTER -->
   </div>
 </template>
