@@ -129,6 +129,11 @@ export const actions = {
         console.log(response.data);
         dispatch("setFirstName", response.data.firstname);
         dispatch("setLastName", response.data.lastname);
+        if (response.data.phone) {
+          dispatch("setPhone", response.data.phone);
+        } else {
+          dispatch("setPhone", "TBD");
+        }
         if (response.data.UserType.ut_name == "admin") {
           dispatch("setMultiRole", false);
           dispatch("setRole1", response.data.UserType.ut_name);
@@ -153,6 +158,7 @@ export const actions = {
     commit("SET_TOKEN", null);
     commit("SET_UUID", null);
     commit("SET_EMAIL", null);
+    commit("SET_PHONE", null);
     commit("SET_FIRSTNAME", null);
     commit("SET_LASTNAME", null);
     commit("SET_MULTIROLE", null);
