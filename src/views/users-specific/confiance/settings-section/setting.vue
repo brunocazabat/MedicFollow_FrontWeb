@@ -64,7 +64,7 @@ export default {
               <div class="card-body p-4">
                 <div class="text-center">
                   <div class="profile-user position-relative d-inline-block mx-auto mb-4">
-                    <img src="@/assets/images/users/dummy-user.jpg"
+                    <img src="@/assets/images/users/avatar-7.jpg"
                       class="rounded-circle avatar-xl img-thumbnail user-profile-image shadow"
                       alt="user-profile-image" />
                     <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
