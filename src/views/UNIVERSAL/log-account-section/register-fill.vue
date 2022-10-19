@@ -2,9 +2,9 @@
 import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 import Popper from "vue3-popper";
-import { SecurityActions, SecurityGetters, notificationMethods } from "@/components/state/helpers";
-import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/login-components";
-import recaptcha from "@/components/widgets/recaptchav2.vue";
+import { SecurityActions, SecurityGetters, notificationMethods } from "@/components/back-related/state/helpers";
+import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/view-related/login-components";
+import recaptcha from "@/components/view-related/widgets/recaptchav2.vue";
 
 export default {
   setup() {

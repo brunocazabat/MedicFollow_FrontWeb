@@ -1,8 +1,8 @@
 <script>
-import { AuthActions, AuthGetters } from "@/components/state/helpers";
-import Lottie from "@/components/widgets/lottie.vue";
+import { AuthActions, AuthGetters } from "@/components/back-related/state/helpers";
+import Lottie from "@/components/view-related/widgets/lottie.vue";
 import animationData from "@/assets/anim/animation3.json";
-import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/login-components";
+import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/view-related/login-components";
 
 export default {
   components: { lottie: Lottie, translatemodule, logoheadermodule, particlesmodule, footermodule },

@@ -1,6 +1,6 @@
 <script>
 import Slider from "@vueform/slider";
-import recaptcha from "@/components/widgets/recaptchav2.vue";
+import recaptcha from "@/components/view-related/widgets/recaptchav2.vue";
 
 export default {
   data() {

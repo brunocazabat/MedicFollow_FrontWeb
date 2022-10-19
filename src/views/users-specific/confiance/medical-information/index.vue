@@ -1,7 +1,7 @@
 <script>
 // General imports
-import Layout from "@/components/layouts/main.vue";
-import FooterModule from "@/components/login-components/footer-module.vue";
+import Layout from "@/components/view-related/layout/main.vue";
+import FooterModule from "@/components/view-related/login-components/footer-module.vue";
 
 // Specific Components imports
 import Widgets from "./widgets.vue";

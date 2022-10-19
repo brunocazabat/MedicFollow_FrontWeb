@@ -1,12 +1,12 @@
 <script>
-import Layout from "@/components/layouts/main.vue";
-import FooterModule from "@/components/login-components/footer-module.vue";
+import Layout from "@/components/view-related/layout/main.vue";
+import FooterModule from "@/components/view-related/login-components/footer-module.vue";
 import { reactive } from "vue";
-import useSubmitButtonState from "@/components/staff-input-components/useSubmitButtonState"
+import useSubmitButtonState from "@/components/view-related/staff-input-components/useSubmitButtonState"
 import useVuelidate from '@vuelidate/core'
 import FieldModule from './fieldModule.vue'
-import Chat from "@/components/staff-input-components/chat.vue";
-import Calendar from "@/components/staff-input-components/calendar.vue"
+import Chat from "@/components/view-related/staff-input-components/chat.vue";
+import Calendar from "@/components/view-related/staff-input-components/calendar.vue"
 
 export default {
   setup() {

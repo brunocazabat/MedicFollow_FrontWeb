@@ -1,13 +1,13 @@
 <script>
-import Layout from "@/components/layouts/main.vue";
-import FooterModule from "@/components/login-components/footer-module.vue";
+import Layout from "@/components/view-related/layout/main.vue";
+import FooterModule from "@/components/view-related/login-components/footer-module.vue";
 
 import { reactive } from "vue";
 import useVuelidate from '@vuelidate/core'
 
 import Widgets from "./widgets.vue";
 import CheckupText from "./checkup-text.vue";
-import useSubmitButtonState from "@/components/staff-input-components/useSubmitButtonState"
+import useSubmitButtonState from "@/components/view-related/staff-input-components/useSubmitButtonState"
 
 
 export default {

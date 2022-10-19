@@ -1,10 +1,10 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import router from "./components/router/index.min.js";
+import router from "@/components/back-related/router/index.min.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import i18n from "./i18n.js";
-import store from "./components/state/store";
+import store from "@/components/back-related/state/store";
 
 import BootstrapVue3 from "bootstrap-vue-3";
 import vClickOutside from "click-outside-vue3";

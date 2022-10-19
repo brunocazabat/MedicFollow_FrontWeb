@@ -1,5 +1,5 @@
 <script>
-import Layout from "@/components/layouts/main.vue";
+import Layout from "@/components/view-related/layout/main.vue";
 import TableAdminBug from "./components/bug-report-table.vue";
 import TableAdminSug from "./components/suggestions-table.vue";
 

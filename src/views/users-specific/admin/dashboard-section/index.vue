@@ -4,7 +4,7 @@ import modifOrgaVue from "./side-admin-widgets/modif-orga.vue";
 import reportSuggestVue from "./side-admin-widgets/reportsuggest.vue";
 import tableAdminVue from "./table-admin.vue";
 
-import Layout from "@/components/layouts/main.vue";
+import Layout from "@/components/view-related/layout/main.vue";
 
 export default {
   components: {

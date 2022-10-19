@@ -5,7 +5,7 @@ import "@vueform/multiselect/themes/default.css";
 import flatPickr from "vue-flatpickr-component";
 import "flatpickr/dist/flatpickr.css";
 
-import Layout from "@/components/layouts/main.vue";
+import Layout from "@/components/view-related/layout/main.vue";
 import Swal from "sweetalert2";
 
 export default {

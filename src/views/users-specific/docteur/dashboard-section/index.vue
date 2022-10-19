@@ -1,6 +1,6 @@
 <script>
-import Layout from "@/components/layouts/main.vue";
-import FooterModule from "@/components/login-components/footer-module.vue";
+import Layout from "@/components/view-related/layout/main.vue";
+import FooterModule from "@/components/view-related/login-components/footer-module.vue";
 
 import AddPatientModule from "./addPatient.vue";
 import AddMedicalInformationModule from "./addMedicalInformation.vue"

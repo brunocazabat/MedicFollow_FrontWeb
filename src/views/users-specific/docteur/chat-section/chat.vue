@@ -8,7 +8,7 @@ import {
 import { required, helpers } from '@vuelidate/validators'
 import useVuelidate from '@vuelidate/core'
 
-import Layout from '@/components/layouts/main.vue'
+import Layout from '@/components/view-related/layout/main.vue'
 
 import { chatData, chatMessagesData } from './data'
 

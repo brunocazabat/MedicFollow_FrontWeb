@@ -1,5 +1,5 @@
 <script>
-import lang from "@/components/frames/nav-bar-components/lang.vue";
+import lang from "@/components/view-related/layout/layout-components/nav-bar-components/lang.vue";
 
 export default {
   name: 'navbar',

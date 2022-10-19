@@ -1,6 +1,6 @@
 <script>
-import Layout from "@/components/layouts/main.vue";
-import { Widgets, Schedules, Chat } from "@/components/dashboard-components";
+import Layout from "@/components/view-related/layout/main.vue";
+import { Widgets, Schedules, Chat } from "@/components/view-related/dashboard-components";
 
 export default {
   components: {

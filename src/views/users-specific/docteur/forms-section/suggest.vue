@@ -4,9 +4,9 @@ import useVuelidate from "@vuelidate/core";
 import "flatpickr/dist/flatpickr.css";
 import "@vueform/multiselect/themes/default.css";
 
-import DropZone from "@/components/widgets/dropZone";
+import DropZone from "@/components/view-related/widgets/dropZone";
 
-import Layout from "@/components/layouts/main.vue";
+import Layout from "@/components/view-related/layout/main.vue";
 import PageHeader from "@/components/frames/page-header";
 
 export default {

@@ -1,0 +1,3 @@
+import rtevitrine from "./rte-vitrine.min.js";
+
+export { rtevitrine };

@@ -1,5 +1,5 @@
 <script>
-import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/login-components";
+import { translatemodule, logoheadermodule, particlesmodule, footermodule } from "@/components/view-related/login-components";
 
 export default {
   name: "Maintenance",

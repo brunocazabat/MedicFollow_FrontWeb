@@ -1,10 +1,10 @@
 <script>
-import Layout from "@/components/layouts/main.vue";
+import Layout from "@/components/view-related/layout/main.vue";
 import { ref, watch } from "vue";
 import useVuelidate from "@vuelidate/core";
 
-import Lottie from "@/components/widgets/lottie.vue";
-import DropZone from "@/components/widgets/dropZone";
+import Lottie from "@/components/view-related/widgets/lottie.vue";
+import DropZone from "@/components/view-related/widgets/dropZone";
 
 export default {
   methods: {

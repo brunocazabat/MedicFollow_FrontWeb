@@ -1,11 +1,11 @@
 <script>
 import '@vueform/multiselect/themes/default.css'
 import 'flatpickr/dist/flatpickr.css'
-import { AuthGetters } from "@/components/state/helpers";
+import { AuthGetters } from "@/components/back-related/state/helpers";
 
-import Layout from '@/components/layouts/main.vue'
+import Layout from '@/components/view-related/layout/main.vue'
 
-import particlesmodule from "@/components/login-components/particles-module.vue";
+import { particlesmodule } from "@/components/view-related/login-components";
 
 export default {
   data() {

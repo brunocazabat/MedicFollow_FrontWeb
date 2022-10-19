@@ -1,6 +1,6 @@
 <script>
-import Layout from "@/components/layouts/main.vue";
-import footermodule from "@/components/login-components/footer-module.vue";
+import Layout from "@/components/view-related/layout/main.vue";
+import footermodule from "@/components/view-related/login-components/footer-module.vue";
 
 import FeedbackModule from "./feedbackModules.vue"
 import BugReportModule from "./bugReportModules.vue"

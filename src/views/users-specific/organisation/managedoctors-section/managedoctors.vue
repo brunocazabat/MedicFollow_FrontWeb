@@ -1,5 +1,5 @@
 <script>
-import Layout from '@/components/layouts/main.vue';
+import Layout from '@/components/view-related/layout/main.vue';
 export default {
   name: 'managedoctors',
   components: {

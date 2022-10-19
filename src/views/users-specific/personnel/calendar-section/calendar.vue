@@ -15,7 +15,7 @@ import FullCalendar from '@fullcalendar/vue3'
 import { required, helpers } from '@vuelidate/validators'
 import useVuelidate from '@vuelidate/core'
 
-import Layout from '@/components/layouts/main.vue'
+import Layout from '@/components/view-related/layout/main.vue'
 
 import { INITIAL_EVENTS, categories } from './utils'
 
