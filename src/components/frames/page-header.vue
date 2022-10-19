@@ -3,26 +3,12 @@ import store from "@/components/state/store";
 
 export default {
   name: 'PageHeader',
-  data() {
-    return {
-      selected: '',
-      userTypes: [
-        { id: 1, name: 'admin' },
-        { id: 2, name: 'organisation' },
-        { id: 3, name: 'docteur' },
-        { id: 4, name: 'personnel' },
-        { id: 5, name: 'patient' },
-        { id: 6, name: 'confiance' },
-        { id: 7, name: 'proche' },
-      ]
-    }
-  },
   methods: {
     activateheader() {
       return store.getters["auth/getuserType"] == "admin" && this.$route.path.includes("/dashboard");
     },
-    modifyUIType() {
-      store.dispatch("auth/setUI", this.selected.text);
+    modifyUIType(value) {
+      store.dispatch("auth/setUI", value);
     }
   },
 };
@@ -34,52 +20,44 @@ export default {
     <div class="col-12">
       <div class="page-title-box align-items-center">
         <div class="row">
-          <div class="col-2" style="display: flex; justify-content: center; text-align: center; align-items: center;">
-            <h4 class="mb-sm-0">MENU SELECTOR ADMIN</h4>
-          </div>
-          <div class="col-1">
-            <select class="form-control" v-model="selected" @change="modifyUIType()">
-              <option v-for="userType in userTypes" v-bind:value="{ id: userType.id, text: userType.name  }"
-                :key="userType.id">{{
-                userType.name }}
-              </option>
-            </select>
-          </div>
-          <div class="col-2" style="display: flex; justify-content: center; text-align: center; align-items: center;">
+          <div class="col-3" style="display: flex; justify-content: center; text-align: center; align-items: center;">
             <h4 class="mb-sm-0">DASHBOARD SELECTOR ADMIN</h4>
           </div>
           <div class="col-1">
-            <RouterLink to="/admin/dashboard" class="btn btn-primary text-uppercase">
+            <RouterLink to="/admin/dashboard" class="btn btn-primary text-uppercase" @click="modifyUIType('admin')">
               Admin Dashboard
             </RouterLink>
           </div>
           <div class="col-1">
-            <RouterLink to="/organisation/dashboard" class="btn btn-primary text-uppercase">
+            <RouterLink to="/organisation/dashboard" class="btn btn-primary text-uppercase"
+              @click="modifyUIType('organisation')">
               Organisation Dashboard
             </RouterLink>
           </div>
           <div class="col-1">
-            <RouterLink to="/docteur/dashboard" class="btn btn-primary text-uppercase">
+            <RouterLink to="/docteur/dashboard" class="btn btn-primary text-uppercase" @click="modifyUIType('docteur')">
               Docteur Dashboard
             </RouterLink>
           </div>
           <div class="col-1">
-            <RouterLink to="/personnel/dashboard" class="btn btn-primary text-uppercase">
+            <RouterLink to="/personnel/dashboard" class="btn btn-primary text-uppercase"
+              @click="modifyUIType('personnel')">
               Personnel Dashboard
             </RouterLink>
           </div>
           <div class="col-1">
-            <RouterLink to="/patient/dashboard" class="btn btn-primary text-uppercase">
+            <RouterLink to="/patient/dashboard" class="btn btn-primary text-uppercase" @click="modifyUIType('patient')">
               Patient Dashboard
             </RouterLink>
           </div>
           <div class="col-1">
-            <RouterLink to="/confiance/dashboard" class="btn btn-primary text-uppercase">
+            <RouterLink to="/confiance/dashboard" class="btn btn-primary text-uppercase"
+              @click="modifyUIType('confiance')">
               Confiance Dashboard
             </RouterLink>
           </div>
           <div class="col-1">
-            <RouterLink to="/proche/dashboard" class="btn btn-primary text-uppercase">
+            <RouterLink to="/proche/dashboard" class="btn btn-primary text-uppercase" @click="modifyUIType('proche')">
               Proche Dashboard
             </RouterLink>
           </div>
