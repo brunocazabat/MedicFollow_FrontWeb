@@ -57,17 +57,15 @@ export default {
     </div>
 
     <div class="row">
-      <div class="col-lg-12">
-        <div class="card" id="buglist">
-          <TableAdminBug />
-        </div>
-        <!--end card-->
-        <div class="card" id="suggestlist">
-          <TableAdminSug />
-        </div>
-        <!--end card-->
+      <div id="buglist">
+        <TableAdminBug />
       </div>
-      <!--end col-->
+      <!--end card-->
+      <div id="suggestlist">
+        <TableAdminSug />
+      </div>
+      <!--end card-->
     </div>
+    <!--end col-->
   </Layout>
 </template>

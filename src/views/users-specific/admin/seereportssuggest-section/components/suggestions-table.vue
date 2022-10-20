@@ -478,12 +478,12 @@ export default {
                       <input class="form-check-input" type="checkbox" id="checkAll" value="option" />
                     </div>
                   </th>
-                  <th class="sort" id="" data-sort="id">ID</th>
-                  <th class="sort" id="" data-sort="tasks_name">Titre</th>
-                  <th class="sort" id="" data-sort="user_type">Type d'Utilisateur</th>
-                  <th class="sort" id="" data-sort="create_date">Crée le</th>
-                  <th class="sort" id="" data-sort="status">Status</th>
-                  <th class="sort" id="" data-sort="action">Actions</th>
+                  <th class="sort" id="" data-sort="id">ID:</th>
+                  <th class="sort" id="" data-sort="tasks_name">Titre:</th>
+                  <th class="sort" id="" data-sort="user_type">Type d'Utilisateur:</th>
+                  <th class="sort" id="" data-sort="create_date">Crée le:</th>
+                  <th class="sort" id="" data-sort="status">Status:</th>
+                  <th class="sort" id="" data-sort="action">Actions:</th>
                 </tr>
               </thead>
               <tbody class="list form-check-all">
