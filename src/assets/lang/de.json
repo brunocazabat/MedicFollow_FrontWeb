@@ -432,5 +432,6 @@
   "t-numbpersonnals": "Anzahl der Mitarbeiter",
   "t-personnals": "Personen",
   "t-numbpatients": "Anzahl der Patienten",
-  "t-patients": "Patienten"
+  "t-patients": "Patienten",
+  "t-medicselectinfo": "Hier können Sie einen Patienten aus der Tabelle auswählen, um seine medizinischen Informationen zu überprüfen"
 }
