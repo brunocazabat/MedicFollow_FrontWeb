@@ -179,19 +179,19 @@ export default {
 
       <div class="p-3 mb-3 row">
         <div class="space-in-between" v-if="viewEnd === false">
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"
             :disabled="viewID === 0"><strong><em class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()"
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="nextView()"
             :disabled="viewID === 3 || (pickedDoctor === '' && viewID === 0) || (visitedDoctor === '' && viewID === 1) || (pickedHour === '' && viewID === 2)">{{$t("t-nextstep")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
         </div>
 
         <div class="space-in-between" v-else>
-          <button class="lh-1 btn btn-primary mf-btn-error font-size-medium col-lg-3"
+          <button class="lh-1 btn btn-primary mf-btn-error font-size-medium col-sm-4"
             v-on:click="prevView()"><strong><em class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-cancel")}}</button>
-          <a class="lh-1 btn btn-primary font-size-medium col-lg-3" href="/">{{$t("t-continue")}}
+          <a class="lh-1 btn btn-primary font-size-medium col-sm-4" href="/">{{$t("t-continue")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></a>
         </div>
 

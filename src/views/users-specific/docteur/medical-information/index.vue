@@ -56,9 +56,6 @@ export default {
     constructURL() {
       this.reportURL = "staff-input?fn=" + this.patientFirstName + "&ln=" + this.patientLastName;
       this.$router.push(this.reportURL);
-      // const patientSingularURL = `patient/${this.patientID}`;
-      // const patientURL = `patient/26 + barbara + name`;
-      // this.reportURL = `${patientURL}-medical-information-3`;
     }
   },
 }
@@ -132,19 +129,19 @@ export default {
 
       <div class="p-3 mb-3 row">
         <div class="space-in-between" v-if="viewEnd === false">
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"
             :disabled="viewID === 0"><strong><em class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()"
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="nextView()"
             :disabled="isSubmitButtonDisabled">{{$t("t-nextstep")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
         </div>
 
         <div class="space-in-between" v-else>
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"><strong><em
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"><strong><em
                 class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
-          <a class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="constructURL">{{$t("t-addareport")}}
+          <a class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="constructURL">{{$t("t-addareport")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></a>
         </div>
 
