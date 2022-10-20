@@ -24,102 +24,91 @@ export default {
       DoctorList: [
         {
           id: "#MDFD- 01",
-          title: "D- Résumé patient non complet !",
+          title: "D- Odette Mathys",
           usertype: "Docteur",
-          assigned: "Admin",
+          servicetype: "Dermato",
           create: "08 Dec, 2021",
-          status: "Open",
-          priority: "High",
+          status: "Working",
         },
         {
           id: "#MDFD- 02",
-          title: "D- Bouton de suppression non fonctionnel !",
-          usertype: "Patient",
-          assigned: "Admin",
+          title: "D- Franck Apolline",
+          usertype: "Docteur",
+          servicetype: "Dermato",
           create: "24 Oct, 2021",
-          status: "Inprogress",
-          priority: "Low",
+          status: "InVacation",
         },
         {
           id: "#MDFD- 03",
-          title: "D- bouton de modification non fonctionnel !",
-          usertype: "Proche",
-          assigned: "Admin",
+          title: "D- Vivien Marcelin",
+          usertype: "Docteur",
+          servicetype: "Gastro",
           create: "17 Oct, 2021",
           status: "New",
-          priority: "Medium",
         },
         {
           id: "#MDFD- 04",
-          title: "D- Entrée de données invisible !",
+          title: "D- Gilles Jacquette",
           usertype: "Docteur",
-          assigned: "Admin",
+          servicetype: "Gastro",
           create: "03 Oct, 2021",
-          status: "Open",
-          priority: "High",
+          status: "Working",
         },
         {
           id: "#MDFD- 05",
-          title: "D- Connexion impossible !",
-          usertype: "Organisation",
-          assigned: "Admin",
+          title: "D- Éric Cynthia",
+          usertype: "Docteur",
+          servicetype: "Dermato",
           create: "09 Oct, 2021",
-          status: "Closed",
-          priority: "Medium",
+          status: "Suspended",
         },
         {
           id: "#MDFD- 06",
-          title: "D- Changement de mot de passe impossible !",
-          usertype: "Confiance",
-          assigned: "Admin",
+          title: "D- Aurélien Jessica",
+          usertype: "Docteur",
+          servicetype: "Gastro",
           create: "27 Oct, 2021",
-          status: "Open",
-          priority: "High",
+          status: "Working",
         },
         {
           id: "#MDFD- 07",
-          title: "D- Demande de réinitialisation de mot de passe impossible !",
-          usertype: "Organisation",
-          assigned: "Admin",
+          title: "D- Marie-Laure Clotilde",
+          usertype: "Docteur",
+          servicetype: "Gastro",
           create: "05 Oct, 2021",
           status: "New",
-          priority: "Low",
         },
         {
           id: "#MDFD- 08",
-          title: "D- Bug Report 8",
+          title: "D- Noémie Anne-Marie",
           usertype: "Docteur",
-          assigned: "Admin",
+          servicetype: "Gastro",
           create: "09 Dec, 2021",
-          status: "Open",
-          priority: "Medium",
+          status: "Working",
         },
         {
           id: "#MDFD- 09",
-          title: "D- Bug Report 9",
-          usertype: "Patient",
-          assigned: "Admin",
+          title: "D- Gaétane Roxanne",
+          usertype: "Docteur",
+          servicetype: "Gastro",
           create: "24 Dec, 2021",
-          status: "Open",
-          priority: "High",
+          status: "Working",
         },
         {
           id: "#MDFD- 10",
-          title: "D- Bug Report 10",
-          usertype: "Proche",
-          assigned: "Admin",
+          title: "D- Marcel Anouk",
+          usertype: "Docteur",
+          servicetype: "Gastro",
           create: "04 Oct, 2021",
           status: "New",
-          priority: "Low",
         },
         {
           id: "#MDFD- 11",
-          title: "D- Bug Report 11",
-          usertype: "Proche",
-          assigned: "Admin",
+          title: "D- Vérène Lilian",
+          usertype: "Docteur",
+          servicetype: "Gastro",
           create: "21 Dec, 2021",
-          status: "Open",
-          priority: "Medium",
+          status: "Working",
         },
       ],
     };
@@ -140,10 +129,8 @@ export default {
           return (
             data.title.toLowerCase().includes(search) ||
             data.usertype.toLowerCase().includes(search) ||
-            data.assigned.toLowerCase().includes(search) ||
             data.create.toLowerCase().includes(search) ||
-            data.status.toLowerCase().includes(search) ||
-            data.priority.toLowerCase().includes(search)
+            data.status.toLowerCase().includes(search)
           );
         });
       } else {
@@ -171,10 +158,8 @@ export default {
       document.getElementById("orderId").value = data.id;
       document.getElementById("tasksTitle").value = data.title;
       document.getElementById("clientName").value = data.usertype;
-      document.getElementById("assignedtoName").value = data.assigned;
       document.getElementById("cdate").value = data.create;
       document.getElementById("ticketstatus").value = data.status;
-      document.getElementById("priority").value = data.priority;
 
       document.getElementById("edit-btn").style.display = "block";
       document.getElementById("add-btn").style.display = "none";
@@ -187,13 +172,9 @@ export default {
         document.getElementById("tasksTitle").value;
       this.DoctorList[result].client =
         document.getElementById("clientName").value;
-      this.DoctorList[result].assigned =
-        document.getElementById("assignedtoName").value;
       this.DoctorList[result].create = document.getElementById("cdate").value;
       this.DoctorList[result].status =
         document.getElementById("ticketstatus").value;
-      this.DoctorList[result].priority =
-        document.getElementById("priority").value;
 
       document.getElementById("closemodal").click();
     },
@@ -256,19 +237,15 @@ export default {
       let id = "#MDC" + this.DoctorList.length + 1;
       let title = document.getElementById("tasksTitle").value;
       let client = document.getElementById("clientName").value;
-      let assigned = document.getElementById("assignedtoName").value;
       let create = document.getElementById("cdate").value;
       let status = document.getElementById("ticketstatus").value;
-      let priority = document.getElementById("priority").value;
 
       let data = {
         id: id,
         title: title,
         client: client,
-        assigned: assigned,
         create: create,
         status: status,
-        priority: priority,
       };
       this.DoctorList.push(data);
 
@@ -327,13 +304,13 @@ export default {
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Total Tickets</p>
+              <p class="fw-medium text-muted mb-0">Total of Doctors:</p>
               <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="547"></count-to>k
+                <count-to :duration="1000" :startVal="0" :endVal="55"></count-to>
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-success mb-0">
-                  <em class="ri-arrow-up-line align-middle"></em> 17.32 %
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
                 </span>
                 vs. previous month
               </p>
@@ -341,7 +318,7 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-ticket-2-line"></em>
+                  <em class="mdi mdi-account"></em>
                 </span>
               </div>
             </div>
@@ -357,71 +334,13 @@ export default {
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Pending Tickets</p>
+              <p class="fw-medium text-muted mb-0">Total Working Doctors:</p>
               <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="124"></count-to>k
-              </h2>
-              <p class="mb-0 text-muted">
-                <span class="badge bg-light text-danger mb-0">
-                  <em class="ri-arrow-down-line align-middle"></em> 0.96 %
-                </span>
-                vs. previous month
-              </p>
-            </div>
-            <div>
-              <div class="avatar-sm flex-shrink-0">
-                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="mdi mdi-timer-sand"></em>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end card body -->
-      </div>
-    </div>
-    <!--end col-->
-    <div class="col-xxl-3 col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="fw-medium text-muted mb-0">Closed Tickets</p>
-              <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="107"></count-to>K
-              </h2>
-              <p class="mb-0 text-muted">
-                <span class="badge bg-light text-danger mb-0">
-                  <em class="ri-arrow-down-line align-middle"></em> 3.87 %
-                </span>
-                vs. previous month
-              </p>
-            </div>
-            <div>
-              <div class="avatar-sm flex-shrink-0">
-                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-shopping-bag-line"></em>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end card body -->
-      </div>
-    </div>
-    <!--end col-->
-    <div class="col-xxl-3 col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="fw-medium text-muted mb-0">Deleted Tickets</p>
-              <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="15"></count-to>%
+                <count-to :duration="1000" :startVal="0" :endVal="30"></count-to>
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-success mb-0">
-                  <em class="ri-arrow-up-line align-middle"></em> 1.09 %
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
                 </span>
                 vs. previous month
               </p>
@@ -429,7 +348,65 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-delete-bin-line"></em>
+                  <em class="mdi mdi-account-check"></em>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end card body -->
+      </div>
+    </div>
+    <!--end col-->
+    <div class="col-xxl-3 col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="fw-medium text-muted mb-0">Total In Vacation Doctors:</p>
+              <h2 class="mt-4 ff-secondary fw-semibold">
+                <count-to :duration="1000" :startVal="0" :endVal="20"></count-to>
+              </h2>
+              <p class="mb-0 text-muted">
+                <span class="badge bg-light text-success mb-0">
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
+                </span>
+                vs. previous month
+              </p>
+            </div>
+            <div>
+              <div class="avatar-sm flex-shrink-0">
+                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                  <em class="mdi mdi-account-arrow-right"></em>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end card body -->
+      </div>
+    </div>
+    <!--end col-->
+    <div class="col-xxl-3 col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="fw-medium text-muted mb-0">Total Suspended Doctors:</p>
+              <h2 class="mt-4 ff-secondary fw-semibold">
+                <count-to :duration="1000" :startVal="0" :endVal="5"></count-to>
+              </h2>
+              <p class="mb-0 text-muted">
+                <span class="badge bg-light text-success mb-0">
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
+                </span>
+                vs. previous month
+              </p>
+            </div>
+            <div>
+              <div class="avatar-sm flex-shrink-0">
+                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                  <em class="mdi mdi-account-clock"></em>
                 </span>
               </div>
             </div>
@@ -447,7 +424,7 @@ export default {
       <div class="card" id="DoctorList">
         <div class="card-header border-0">
           <div class="d-flex align-items-center">
-            <h5 class="card-title mb-0 flex-grow-1">Bug Reports</h5>
+            <h5 class="card-title mb-0 flex-grow-1">Docteurs</h5>
             <div class="flex-shrink-0">
               <button class="btn btn-soft-danger me-1" @click="deleteMultiple">
                 <em class="ri-delete-bin-2-line"></em>
@@ -482,9 +459,9 @@ export default {
                     :options="[
                       { value: '', label: 'Status' },
                       { value: 'All', label: 'All' },
-                      { value: 'Open', label: 'Open' },
-                      { value: 'Inprogress', label: 'Inprogress' },
-                      { value: 'Closed', label: 'Closed' },
+                      { value: 'Working', label: 'Working' },
+                      { value: 'InVacation', label: 'InVacation' },
+                      { value: 'Suspended', label: 'Suspended' },
                       { value: 'New', label: 'New' },
                     ]" />
                 </div>
@@ -513,14 +490,12 @@ export default {
                       <input class="form-check-input" type="checkbox" id="checkAll" value="option" />
                     </div>
                   </th>
-                  <th class="sort" id="" data-sort="id">ID</th>
-                  <th class="sort" id="" data-sort="tasks_name">Titre</th>
-                  <th class="sort" id="" data-sort="user_type">Type d'Utilisateur</th>
-                  <th class="sort" id="" data-sort="assignedto">Assigné à</th>
-                  <th class="sort" id="" data-sort="create_date">Crée le</th>
-                  <th class="sort" id="" data-sort="status">Status</th>
-                  <th class="sort" id="" data-sort="priority">Priorité</th>
-                  <th class="sort" id="" data-sort="action">Actions</th>
+                  <th class="sort" id="" data-sort="id">ID:</th>
+                  <th class="sort" id="" data-sort="tasks_name">Nom du Docteur:</th>
+                  <th class="sort" id="" data-sort="user_type">Type d'Utilisateurs:</th>
+                  <th class="sort" id="" data-sort="service_type">Service:</th>
+                  <th class="sort" id="" data-sort="create_date">Crée le:</th>
+                  <th class="sort" id="" data-sort="status">Status:</th>
                 </tr>
               </thead>
               <tbody class="list form-check-all">
@@ -537,22 +512,15 @@ export default {
                     {{ data.title }}
                   </td>
                   <td class="user_type">{{ data.usertype }}</td>
-                  <td class="assignedto">{{ data.assigned }}</td>
+                  <td class="user_type">{{ data.servicetype }}</td>
                   <td class="create_date">{{ data.create }}</td>
                   <td class="status">
                     <span class="badge text-uppercase" :class="{
-                      'badge-soft-warning': data.status == 'Inprogress',
+                      'badge-soft-warning': data.status == 'Waiting' || data.status == 'InVacation',
                       'badge-soft-info': data.status == 'New',
-                      'badge-soft-success': data.status == 'Open',
-                      'badge-soft-danger': data.status == 'Closed',
+                      'badge-soft-success': data.status == 'Working',
+                      'badge-soft-danger': data.status == 'Suspended' || data.status == 'Suspended',
                     }">{{ data.status }}</span>
-                  </td>
-                  <td class="priority">
-                    <span class="badge text-uppercase" :class="{
-                      'bg-danger': data.priority == 'High',
-                      'bg-success': data.priority == 'Low',
-                      'bg-warning': data.priority == 'Medium',
-                    }">{{ data.priority }}</span>
                   </td>
                   <td>
                     <div class="dropdown">
@@ -675,12 +643,6 @@ export default {
                 </div>
               </div>
               <div class="col-lg-6">
-                <div>
-                  <label for="assignedtoName-field" class="form-label">Assigned To</label>
-                  <input type="text" id="assignedtoName" class="form-control" placeholder="Assigned to" required />
-                </div>
-              </div>
-              <div class="col-lg-6">
                 <label for="date-field" class="form-label">Create Date</label>
 
                 <flat-pickr v-model="date1" :config="config" class="form-control bg-light border-light" id="cdate">
@@ -691,18 +653,9 @@ export default {
                 <select class="form-control" data-plugin="choices" name="ticket-status" id="ticketstatus">
                   <option value="">Status</option>
                   <option value="New">New</option>
-                  <option value="Inprogress">Inprogress</option>
-                  <option value="Closed">Closed</option>
-                  <option value="Open">Open</option>
-                </select>
-              </div>
-              <div class="col-lg-6">
-                <label for="priority-field" class="form-label">Priority</label>
-                <select class="form-control" data-plugin="choices" name="priority-field" id="priority">
-                  <option value="">Priority</option>
-                  <option value="High">High</option>
-                  <option value="Medium">Medium</option>
-                  <option value="Low">Low</option>
+                  <option value="InVacation">InVacation</option>
+                  <option value="Suspended">Suspended</option>
+                  <option value="Working">Working</option>
                 </select>
               </div>
             </div>

@@ -26,6 +26,7 @@ export default {
           id: "#MDFP- 01",
           title: "P- Manu Lambert",
           usertype: "Infirmière",
+          servicetype: "Dermato",
           create: "08 Dec, 2021",
           status: "Working",
         },
@@ -33,34 +34,39 @@ export default {
           id: "#MDFP- 02",
           title: "P- Laura Hubert",
           usertype: "Infirmière",
+          servicetype: "Dermato",
           create: "24 Oct, 2021",
-          status: "New",
+          status: "Suspended",
         },
         {
           id: "#MDFP- 03",
           title: "P- Loup Louka",
           usertype: "Infirmière",
+          servicetype: "Gastro",
           create: "17 Oct, 2021",
-          status: "Rejected",
+          status: "InVacation",
         },
         {
           id: "#MDFP- 04",
           title: "P- Vivianne Giselle",
           usertype: "Infirmière",
+          servicetype: "Gastro",
           create: "03 Oct, 2021",
-          status: "Open",
+          status: "Working",
         },
         {
           id: "#MDFP- 05",
           title: "P- Charlotte Yvette",
           usertype: "Infirmière",
+          servicetype: "Dermato",
           create: "09 Oct, 2021",
-          status: "Accepted",
+          status: "Working",
         },
         {
           id: "#MDFP- 06",
           title: "P- Irène Florette",
           usertype: "Infirmière",
+          servicetype: "Gastro",
           create: "27 Oct, 2021",
           status: "Working",
         },
@@ -68,6 +74,7 @@ export default {
           id: "#MDFP- 07",
           title: "P- Bastien Bénédicte",
           usertype: "Infirmière",
+          servicetype: "Dermato",
           create: "05 Oct, 2021",
           status: "New",
         },
@@ -75,6 +82,7 @@ export default {
           id: "#MDFP- 08",
           title: "P- Romane Daphnée",
           usertype: "Infirmière",
+          servicetype: "Gastro",
           create: "09 Dec, 2021",
           status: "Working",
         },
@@ -82,6 +90,7 @@ export default {
           id: "#MDFP- 09",
           title: "P- Thomas Charlène",
           usertype: "Infirmière",
+          servicetype: "Dermato",
           create: "24 Dec, 2021",
           status: "Working",
         },
@@ -89,6 +98,7 @@ export default {
           id: "#MDFP- 10",
           title: "P- Roselle Rose",
           usertype: "Infirmière",
+          servicetype: "Gastro",
           create: "04 Oct, 2021",
           status: "New",
         },
@@ -96,6 +106,7 @@ export default {
           id: "#MDFP- 11",
           title: "P- Charlotte Normand",
           usertype: "Infirmière",
+          servicetype: "Dermato",
           create: "21 Dec, 2021",
           status: "Working",
         },
@@ -293,13 +304,13 @@ export default {
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Total Tickets</p>
+              <p class="fw-medium text-muted mb-0">Total of Personnels:</p>
               <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="547"></count-to>k
+                <count-to :duration="1000" :startVal="0" :endVal="90"></count-to>
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-success mb-0">
-                  <em class="ri-arrow-up-line align-middle"></em> 17.32 %
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
                 </span>
                 vs. previous month
               </p>
@@ -307,7 +318,7 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-ticket-2-line"></em>
+                  <em class="mdi mdi-account"></em>
                 </span>
               </div>
             </div>
@@ -323,71 +334,13 @@ export default {
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Pending Tickets</p>
+              <p class="fw-medium text-muted mb-0">Total Working Personnels:</p>
               <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="124"></count-to>k
-              </h2>
-              <p class="mb-0 text-muted">
-                <span class="badge bg-light text-danger mb-0">
-                  <em class="ri-arrow-down-line align-middle"></em> 0.96 %
-                </span>
-                vs. previous month
-              </p>
-            </div>
-            <div>
-              <div class="avatar-sm flex-shrink-0">
-                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="mdi mdi-timer-sand"></em>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end card body -->
-      </div>
-    </div>
-    <!--end col-->
-    <div class="col-xxl-3 col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="fw-medium text-muted mb-0">Closed Tickets</p>
-              <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="107"></count-to>K
-              </h2>
-              <p class="mb-0 text-muted">
-                <span class="badge bg-light text-danger mb-0">
-                  <em class="ri-arrow-down-line align-middle"></em> 3.87 %
-                </span>
-                vs. previous month
-              </p>
-            </div>
-            <div>
-              <div class="avatar-sm flex-shrink-0">
-                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-shopping-bag-line"></em>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end card body -->
-      </div>
-    </div>
-    <!--end col-->
-    <div class="col-xxl-3 col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="fw-medium text-muted mb-0">Deleted Tickets</p>
-              <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="15"></count-to>%
+                <count-to :duration="1000" :startVal="0" :endVal="70"></count-to>
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-success mb-0">
-                  <em class="ri-arrow-up-line align-middle"></em> 1.09 %
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
                 </span>
                 vs. previous month
               </p>
@@ -395,7 +348,65 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-delete-bin-line"></em>
+                  <em class="mdi mdi-account-check"></em>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end card body -->
+      </div>
+    </div>
+    <!--end col-->
+    <div class="col-xxl-3 col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="fw-medium text-muted mb-0">Total In Vacation Personnels:</p>
+              <h2 class="mt-4 ff-secondary fw-semibold">
+                <count-to :duration="1000" :startVal="0" :endVal="15"></count-to>
+              </h2>
+              <p class="mb-0 text-muted">
+                <span class="badge bg-light text-success mb-0">
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
+                </span>
+                vs. previous month
+              </p>
+            </div>
+            <div>
+              <div class="avatar-sm flex-shrink-0">
+                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                  <em class="mdi mdi-account-arrow-right"></em>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end card body -->
+      </div>
+    </div>
+    <!--end col-->
+    <div class="col-xxl-3 col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="fw-medium text-muted mb-0">Total Suspended Personnels:</p>
+              <h2 class="mt-4 ff-secondary fw-semibold">
+                <count-to :duration="1000" :startVal="0" :endVal="5"></count-to>
+              </h2>
+              <p class="mb-0 text-muted">
+                <span class="badge bg-light text-success mb-0">
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
+                </span>
+                vs. previous month
+              </p>
+            </div>
+            <div>
+              <div class="avatar-sm flex-shrink-0">
+                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                  <em class="mdi mdi-account-clock"></em>
                 </span>
               </div>
             </div>
@@ -413,7 +424,7 @@ export default {
       <div class="card" id="personnelList">
         <div class="card-header border-0">
           <div class="d-flex align-items-center">
-            <h5 class="card-title mb-0 flex-grow-1">Suggestions</h5>
+            <h5 class="card-title mb-0 flex-grow-1">Personnels</h5>
             <div class="flex-shrink-0">
               <button class="btn btn-soft-danger me-1" @click="deleteMultiple">
                 <em class="ri-delete-bin-2-line"></em>
@@ -448,12 +459,12 @@ export default {
                     :options="[
                       { value: '', label: 'Status' },
                       { value: 'All', label: 'All' },
-                      { value: 'Open', label: 'Open' },
                       { value: 'Working', label: 'Working' },
-                      { value: 'Closed', label: 'Closed' },
+                      { value: 'Working', label: 'Working' },
+                      { value: 'Suspended', label: 'Suspended' },
                       { value: 'New', label: 'New' },
-                      { value: 'Accepted', label: 'Accepted' },
-                      { value: 'Rejected', label: 'Rejected' },
+                      { value: 'Working', label: 'Working' },
+                      { value: 'InVacation', label: 'InVacation' },
                     ]" />
                 </div>
               </div>
@@ -481,13 +492,12 @@ export default {
                       <input class="form-check-input" type="checkbox" id="checkAll" value="option" />
                     </div>
                   </th>
-                  <th class="sort" id="" data-sort="id">ID</th>
-                  <th class="sort" id="" data-sort="tasks_name">Titre</th>
-                  <th class="sort" id="" data-sort="user_type">Type d'Utilisateur</th>
-                  <th class="sort" id="" data-sort="user_type">Service</th>
-                  <th class="sort" id="" data-sort="create_date">Crée le</th>
-                  <th class="sort" id="" data-sort="status">Status</th>
-                  <th class="sort" id="" data-sort="action">Actions</th>
+                  <th class="sort" id="" data-sort="id">ID:</th>
+                  <th class="sort" id="" data-sort="tasks_name">Nom du Docteur/Personnel:</th>
+                  <th class="sort" id="" data-sort="user_type">Type d'Utilisateurs:</th>
+                  <th class="sort" id="" data-sort="service_type">Service:</th>
+                  <th class="sort" id="" data-sort="create_date">Crée le:</th>
+                  <th class="sort" id="" data-sort="status">Status:</th>
                 </tr>
               </thead>
               <tbody class="list form-check-all">
@@ -504,13 +514,14 @@ export default {
                     {{ data.title }}
                   </td>
                   <td class="user_type">{{ data.usertype }}</td>
+                  <td class="user_type">{{ data.servicetype }}</td>
                   <td class="create_date">{{ data.create }}</td>
                   <td class="status">
                     <span class="badge text-uppercase" :class="{
-                      'badge-soft-warning': data.status == 'Working',
+                      'badge-soft-warning': data.status == 'Waiting' || data.status == 'InVacation',
                       'badge-soft-info': data.status == 'New',
-                      'badge-soft-success': data.status == 'Open',
-                      'badge-soft-danger': data.status == 'Accepted' || data.status == 'Rejected',
+                      'badge-soft-success': data.status == 'Working',
+                      'badge-soft-danger': data.status == 'Suspended' || data.status == 'Suspended',
                     }">{{ data.status }}</span>
                   </td>
                   <td>
@@ -644,10 +655,10 @@ export default {
                   <option value="">Status</option>
                   <option value="New">New</option>
                   <option value="Working">Working</option>
-                  <option value="Closed">Closed</option>
-                  <option value="Open">Open</option>
-                  <option value="Accepted">Accepted</option>
-                  <option value="Rejected">Rejected</option>
+                  <option value="Suspended">Suspended</option>
+                  <option value="Working">Working</option>
+                  <option value="Working">Working</option>
+                  <option value="InVacation">InVacation</option>
                 </select>
               </div>
             </div>
