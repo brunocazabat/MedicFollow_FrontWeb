@@ -22,7 +22,7 @@ export default {
         <div class="card">
           <div class="card-body text-center p-4">
             <div class="avatar-xl mx-auto mb-4 position-relative">
-              <img src="../images/team/user-1.jpg" alt="" class="img-fluid rounded-circle" />
+              <img src="@/assets/images-sitevitrine/team/user-1.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
@@ -44,7 +44,7 @@ export default {
         <div class="card">
           <div class="card-body text-center p-4">
             <div class="avatar-xl mx-auto mb-4 position-relative">
-              <img src="../images/team/user-2.jpg" alt="" class="img-fluid rounded-circle" />
+              <img src="@/assets/images-sitevitrine/team/user-2.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
@@ -66,7 +66,7 @@ export default {
         <div class="card">
           <div class="card-body text-center p-4">
             <div class="avatar-xl mx-auto mb-4 position-relative">
-              <img src="../images/team/user-3.jpg" alt="" class="img-fluid rounded-circle" />
+              <img src="@/assets/images-sitevitrine/team/user-3.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
@@ -88,7 +88,7 @@ export default {
         <div class="card">
           <div class="card-body text-center p-4">
             <div class="avatar-xl mx-auto mb-4 position-relative">
-              <img src="../images/team/user-4.jpg" alt="" class="img-fluid rounded-circle" />
+              <img src="@/assets/images-sitevitrine/team/user-4.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
@@ -113,7 +113,7 @@ export default {
         <div class="card">
           <div class="card-body text-center p-4">
             <div class="avatar-xl mx-auto mb-4 position-relative">
-              <img src="../images/team/user-5.jpg" alt="" class="img-fluid rounded-circle" />
+              <img src="@/assets/images-sitevitrine/team/user-5.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
@@ -135,7 +135,7 @@ export default {
         <div class="card">
           <div class="card-body text-center p-4">
             <div class="avatar-xl mx-auto mb-4 position-relative">
-              <img src="../images/team/user-6.jpg" alt="" class="img-fluid rounded-circle" />
+              <img src="@/assets/images-sitevitrine/team/user-6.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
@@ -157,7 +157,7 @@ export default {
         <div class="card">
           <div class="card-body text-center p-4">
             <div class="avatar-xl mx-auto mb-4 position-relative">
-              <img src="../images/team/user-7.jpg" alt="" class="img-fluid rounded-circle" />
+              <img src="@/assets/images-sitevitrine/team/user-7.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
@@ -180,7 +180,7 @@ export default {
         <div class="card">
           <div class="card-body text-center p-4">
             <div class="avatar-xl mx-auto mb-4 position-relative">
-              <img src="../images/team/user-8.jpg" alt="" class="img-fluid rounded-circle" />
+              <img src="@/assets/images-sitevitrine/team/user-8.jpg" alt="" class="img-fluid rounded-circle" />
               <a href="mailto:contact@medicfollow.fr"
                 class="btn btn-success btn-sm position-absolute bottom-0 end-0 rounded-circle avatar-xs">
                 <div class="avatar-title bg-transparent">
