@@ -10,7 +10,6 @@ import Swal from "sweetalert2";
 export default {
   data() {
     return {
-      title: "Tickets List",
       config: {
         enableTime: false,
         dateFormat: "d M, Y",
@@ -290,17 +289,17 @@ export default {
 <template>
   <div class="row">
     <div class="col-xxl-3 col-sm-6">
-      <div class="card card-animate">
+      <div class="card">
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Total Tickets</p>
+              <p class="fw-medium text-muted mb-0">Nombre total Suggestions.</p>
               <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="547"></count-to>k
+                <count-to :duration="1000" :startVal="0" :endVal="100"></count-to> au total.
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-success mb-0">
-                  <em class="ri-arrow-up-line align-middle"></em> 17.32 %
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
                 </span>
                 vs. previous month
               </p>
@@ -308,7 +307,7 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-ticket-2-line"></em>
+                  <em class="mdi mdi-message"></em>
                 </span>
               </div>
             </div>
@@ -320,75 +319,17 @@ export default {
     </div>
     <!--end col-->
     <div class="col-xxl-3 col-sm-6">
-      <div class="card card-animate">
+      <div class="card">
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Pending Tickets</p>
+              <p class="fw-medium text-muted mb-0">Nombre Suggestions ouverts.</p>
               <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="124"></count-to>k
-              </h2>
-              <p class="mb-0 text-muted">
-                <span class="badge bg-light text-danger mb-0">
-                  <em class="ri-arrow-down-line align-middle"></em> 0.96 %
-                </span>
-                vs. previous month
-              </p>
-            </div>
-            <div>
-              <div class="avatar-sm flex-shrink-0">
-                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="mdi mdi-timer-sand"></em>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end card body -->
-      </div>
-    </div>
-    <!--end col-->
-    <div class="col-xxl-3 col-sm-6">
-      <div class="card card-animate">
-        <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="fw-medium text-muted mb-0">Closed Tickets</p>
-              <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="107"></count-to>K
-              </h2>
-              <p class="mb-0 text-muted">
-                <span class="badge bg-light text-danger mb-0">
-                  <em class="ri-arrow-down-line align-middle"></em> 3.87 %
-                </span>
-                vs. previous month
-              </p>
-            </div>
-            <div>
-              <div class="avatar-sm flex-shrink-0">
-                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-shopping-bag-line"></em>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end card body -->
-      </div>
-    </div>
-    <!--end col-->
-    <div class="col-xxl-3 col-sm-6">
-      <div class="card card-animate">
-        <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <div>
-              <p class="fw-medium text-muted mb-0">Deleted Tickets</p>
-              <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="15"></count-to>%
+                <count-to :duration="1000" :startVal="0" :endVal="20"></count-to> ouverts.
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-success mb-0">
-                  <em class="ri-arrow-up-line align-middle"></em> 1.09 %
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
                 </span>
                 vs. previous month
               </p>
@@ -396,7 +337,65 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="ri-delete-bin-line"></em>
+                  <em class="mdi mdi-message-alert"></em>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end card body -->
+      </div>
+    </div>
+    <!--end col-->
+    <div class="col-xxl-3 col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="fw-medium text-muted mb-0">Nombre Suggestions en progrès.</p>
+              <h2 class="mt-4 ff-secondary fw-semibold">
+                <count-to :duration="1000" :startVal="0" :endVal="40"></count-to> en progrès.
+              </h2>
+              <p class="mb-0 text-muted">
+                <span class="badge bg-light text-success mb-0">
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
+                </span>
+                vs. previous month
+              </p>
+            </div>
+            <div>
+              <div class="avatar-sm flex-shrink-0">
+                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                  <em class="mdi mdi-message-bookmark"></em>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end card body -->
+      </div>
+    </div>
+    <!--end col-->
+    <div class="col-xxl-3 col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div>
+              <p class="fw-medium text-muted mb-0">Nombre total Résolus.</p>
+              <h2 class="mt-4 ff-secondary fw-semibold">
+                <count-to :duration="1000" :startVal="0" :endVal="40"></count-to> résolus.
+              </h2>
+              <p class="mb-0 text-muted">
+                <span class="badge bg-light text-success mb-0">
+                  <em class="ri-arrow-up-line align-middle"></em> TBD %
+                </span>
+                vs. previous month
+              </p>
+            </div>
+            <div>
+              <div class="avatar-sm flex-shrink-0">
+                <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                  <em class="mdi mdi-message-off"></em>
                 </span>
               </div>
             </div>

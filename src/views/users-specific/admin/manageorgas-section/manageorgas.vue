@@ -11,7 +11,6 @@ import Swal from "sweetalert2";
 export default {
   data() {
     return {
-      title: "Tickets List",
       config: {
         enableTime: false,
         dateFormat: "d M, Y",
@@ -293,7 +292,7 @@ export default {
   <Layout>
     <div class="row">
       <div class="col-xxl-3 col-sm-6">
-        <div class="card card-animate">
+        <div class="card">
           <div class="card-body">
             <div class="d-flex justify-content-between">
               <div>
@@ -323,7 +322,7 @@ export default {
       </div>
       <!--end col-->
       <div class="col-xxl-3 col-sm-6">
-        <div class="card card-animate">
+        <div class="card">
           <div class="card-body">
             <div class="d-flex justify-content-between">
               <div>
@@ -352,7 +351,7 @@ export default {
       </div>
       <!--end col-->
       <div class="col-xxl-3 col-sm-6">
-        <div class="card card-animate">
+        <div class="card">
           <div class="card-body">
             <div class="d-flex justify-content-between">
               <div>
@@ -381,7 +380,7 @@ export default {
       </div>
       <!--end col-->
       <div class="col-xxl-3 col-sm-6">
-        <div class="card card-animate">
+        <div class="card">
           <div class="card-body">
             <div class="d-flex justify-content-between">
               <div>

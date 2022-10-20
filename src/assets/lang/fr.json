@@ -432,5 +432,7 @@
   "t-numbpersonnals": "Nombre de personnes",
   "t-personnals": "Personnels",
   "t-numbpatients": "Nombre de patients",
-  "t-patients": "Patients"
+  "t-patients": "Patients",
+  "t-lookdoctors": "Aperçu de tous les médecins",
+  "t-lookpersonnels": "Aperçu de tous les personnels"
 }

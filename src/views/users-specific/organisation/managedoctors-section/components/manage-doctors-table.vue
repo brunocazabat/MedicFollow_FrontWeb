@@ -21,10 +21,10 @@ export default {
       page: 1,
       perPage: 9,
       pages: [],
-      bugsList: [
+      DoctorList: [
         {
-          id: "#MDFBR- 01",
-          title: "BR- Résumé patient non complet !",
+          id: "#MDFD- 01",
+          title: "D- Résumé patient non complet !",
           usertype: "Docteur",
           assigned: "Admin",
           create: "08 Dec, 2021",
@@ -32,8 +32,8 @@ export default {
           priority: "High",
         },
         {
-          id: "#MDFBR- 02",
-          title: "BR- Bouton de suppression non fonctionnel !",
+          id: "#MDFD- 02",
+          title: "D- Bouton de suppression non fonctionnel !",
           usertype: "Patient",
           assigned: "Admin",
           create: "24 Oct, 2021",
@@ -41,8 +41,8 @@ export default {
           priority: "Low",
         },
         {
-          id: "#MDFBR- 03",
-          title: "BR- bouton de modification non fonctionnel !",
+          id: "#MDFD- 03",
+          title: "D- bouton de modification non fonctionnel !",
           usertype: "Proche",
           assigned: "Admin",
           create: "17 Oct, 2021",
@@ -50,8 +50,8 @@ export default {
           priority: "Medium",
         },
         {
-          id: "#MDFBR- 04",
-          title: "BR- Entrée de données invisible !",
+          id: "#MDFD- 04",
+          title: "D- Entrée de données invisible !",
           usertype: "Docteur",
           assigned: "Admin",
           create: "03 Oct, 2021",
@@ -59,8 +59,8 @@ export default {
           priority: "High",
         },
         {
-          id: "#MDFBR- 05",
-          title: "BR- Connexion impossible !",
+          id: "#MDFD- 05",
+          title: "D- Connexion impossible !",
           usertype: "Organisation",
           assigned: "Admin",
           create: "09 Oct, 2021",
@@ -68,8 +68,8 @@ export default {
           priority: "Medium",
         },
         {
-          id: "#MDFBR- 06",
-          title: "BR- Changement de mot de passe impossible !",
+          id: "#MDFD- 06",
+          title: "D- Changement de mot de passe impossible !",
           usertype: "Confiance",
           assigned: "Admin",
           create: "27 Oct, 2021",
@@ -77,8 +77,8 @@ export default {
           priority: "High",
         },
         {
-          id: "#MDFBR- 07",
-          title: "BR- Demande de réinitialisation de mot de passe impossible !",
+          id: "#MDFD- 07",
+          title: "D- Demande de réinitialisation de mot de passe impossible !",
           usertype: "Organisation",
           assigned: "Admin",
           create: "05 Oct, 2021",
@@ -86,8 +86,8 @@ export default {
           priority: "Low",
         },
         {
-          id: "#MDFBR- 08",
-          title: "BR- Bug Report 8",
+          id: "#MDFD- 08",
+          title: "D- Bug Report 8",
           usertype: "Docteur",
           assigned: "Admin",
           create: "09 Dec, 2021",
@@ -95,8 +95,8 @@ export default {
           priority: "Medium",
         },
         {
-          id: "#MDFBR- 09",
-          title: "BR- Bug Report 9",
+          id: "#MDFD- 09",
+          title: "D- Bug Report 9",
           usertype: "Patient",
           assigned: "Admin",
           create: "24 Dec, 2021",
@@ -104,8 +104,8 @@ export default {
           priority: "High",
         },
         {
-          id: "#MDFBR- 10",
-          title: "BR- Bug Report 10",
+          id: "#MDFD- 10",
+          title: "D- Bug Report 10",
           usertype: "Proche",
           assigned: "Admin",
           create: "04 Oct, 2021",
@@ -113,8 +113,8 @@ export default {
           priority: "Low",
         },
         {
-          id: "#MDFBR- 11",
-          title: "BR- Bug Report 11",
+          id: "#MDFD- 11",
+          title: "D- Bug Report 11",
           usertype: "Proche",
           assigned: "Admin",
           create: "21 Dec, 2021",
@@ -131,7 +131,7 @@ export default {
   },
   computed: {
     displayedPosts() {
-      return this.paginate(this.bugsList);
+      return this.paginate(this.DoctorList);
     },
     resultQuery() {
       if (this.searchQuery) {
@@ -180,19 +180,19 @@ export default {
       document.getElementById("add-btn").style.display = "none";
     },
     updateorder() {
-      let result = this.bugsList.findIndex(
+      let result = this.DoctorList.findIndex(
         (o) => o.id == document.getElementById("orderId").value
       );
-      this.bugsList[result].title =
+      this.DoctorList[result].title =
         document.getElementById("tasksTitle").value;
-      this.bugsList[result].client =
+      this.DoctorList[result].client =
         document.getElementById("clientName").value;
-      this.bugsList[result].assigned =
+      this.DoctorList[result].assigned =
         document.getElementById("assignedtoName").value;
-      this.bugsList[result].create = document.getElementById("cdate").value;
-      this.bugsList[result].status =
+      this.DoctorList[result].create = document.getElementById("cdate").value;
+      this.DoctorList[result].status =
         document.getElementById("ticketstatus").value;
-      this.bugsList[result].priority =
+      this.DoctorList[result].priority =
         document.getElementById("priority").value;
 
       document.getElementById("closemodal").click();
@@ -208,7 +208,7 @@ export default {
         confirmButtonText: "Yes, delete it!",
       }).then((result) => {
         if (result.value) {
-          this.bugsList.splice(this.bugsList.indexOf(event), 1);
+          this.DoctorList.splice(this.DoctorList.indexOf(event), 1);
           Swal.fire("Deleted!", "Your file has been deleted.", "success");
         }
       });
@@ -225,13 +225,13 @@ export default {
       });
       if (typeof ids_array !== "undefined" && ids_array.length > 0) {
         if (confirm("Are you sure you want to delete this?")) {
-          let cusList = this.bugsList;
+          let cusList = this.DoctorList;
           ids_array.forEach(function (id) {
             cusList = cusList.filter(function (orders) {
               return orders.id != id;
             });
           });
-          this.bugsList = cusList;
+          this.DoctorList = cusList;
           document.getElementById("checkAll").checked = false;
           let itemss = document.getElementsByName("chk_child");
           itemss.forEach(function (ele) {
@@ -253,7 +253,7 @@ export default {
       }
     },
     addorder() {
-      let id = "#MDC" + this.bugsList.length + 1;
+      let id = "#MDC" + this.DoctorList.length + 1;
       let title = document.getElementById("tasksTitle").value;
       let client = document.getElementById("clientName").value;
       let assigned = document.getElementById("assignedtoName").value;
@@ -270,7 +270,7 @@ export default {
         status: status,
         priority: priority,
       };
-      this.bugsList.push(data);
+      this.DoctorList.push(data);
 
       document.getElementById("closemodal").click();
       document.getElementById("addform").reset();
@@ -283,17 +283,17 @@ export default {
       document.getElementById("edit-btn").style.display = "none";
     },
     setPages() {
-      let numberOfPages = Math.ceil(this.bugsList.length / this.perPage);
+      let numberOfPages = Math.ceil(this.DoctorList.length / this.perPage);
       for (let index = 1; index <= numberOfPages; index++) {
         this.pages.push(index);
       }
     },
-    paginate(bugsList) {
+    paginate(DoctorList) {
       let page = this.page;
       let perPage = this.perPage;
       let from = page * perPage - perPage;
       let to = page * perPage;
-      return bugsList.slice(from, to);
+      return DoctorList.slice(from, to);
     },
   },
   mounted() {
@@ -327,13 +327,13 @@ export default {
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Nombre total Bug Reports.</p>
+              <p class="fw-medium text-muted mb-0">Total Tickets</p>
               <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="150"></count-to> au total.
+                <count-to :duration="1000" :startVal="0" :endVal="547"></count-to>k
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-success mb-0">
-                  <em class="ri-arrow-up-line align-middle"></em> TBD %
+                  <em class="ri-arrow-up-line align-middle"></em> 17.32 %
                 </span>
                 vs. previous month
               </p>
@@ -341,7 +341,7 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="mdi mdi-message"></em>
+                  <em class="ri-ticket-2-line"></em>
                 </span>
               </div>
             </div>
@@ -357,13 +357,13 @@ export default {
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Nombre Bug Reports ouverts.</p>
+              <p class="fw-medium text-muted mb-0">Pending Tickets</p>
               <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="50"></count-to> ouverts.
+                <count-to :duration="1000" :startVal="0" :endVal="124"></count-to>k
               </h2>
               <p class="mb-0 text-muted">
-                <span class="badge bg-light text-success mb-0">
-                  <em class="ri-arrow-up-line align-middle"></em> TBD %
+                <span class="badge bg-light text-danger mb-0">
+                  <em class="ri-arrow-down-line align-middle"></em> 0.96 %
                 </span>
                 vs. previous month
               </p>
@@ -371,7 +371,7 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="mdi mdi-message-alert"></em>
+                  <em class="mdi mdi-timer-sand"></em>
                 </span>
               </div>
             </div>
@@ -386,13 +386,13 @@ export default {
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Nombre Bug Reports en progrès.</p>
+              <p class="fw-medium text-muted mb-0">Closed Tickets</p>
               <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="70"></count-to> en progrès.
+                <count-to :duration="1000" :startVal="0" :endVal="107"></count-to>K
               </h2>
               <p class="mb-0 text-muted">
-                <span class="badge bg-light text-success mb-0">
-                  <em class="ri-arrow-up-line align-middle"></em> TBD %
+                <span class="badge bg-light text-danger mb-0">
+                  <em class="ri-arrow-down-line align-middle"></em> 3.87 %
                 </span>
                 vs. previous month
               </p>
@@ -400,7 +400,7 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="mdi mdi-message-bookmark"></em>
+                  <em class="ri-shopping-bag-line"></em>
                 </span>
               </div>
             </div>
@@ -415,13 +415,13 @@ export default {
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div>
-              <p class="fw-medium text-muted mb-0">Nombre total Résolus.</p>
+              <p class="fw-medium text-muted mb-0">Deleted Tickets</p>
               <h2 class="mt-4 ff-secondary fw-semibold">
-                <count-to :duration="1000" :startVal="0" :endVal="30"></count-to> résolus.
+                <count-to :duration="1000" :startVal="0" :endVal="15"></count-to>%
               </h2>
               <p class="mb-0 text-muted">
                 <span class="badge bg-light text-success mb-0">
-                  <em class="ri-arrow-up-line align-middle"></em> TBD %
+                  <em class="ri-arrow-up-line align-middle"></em> 1.09 %
                 </span>
                 vs. previous month
               </p>
@@ -429,7 +429,7 @@ export default {
             <div>
               <div class="avatar-sm flex-shrink-0">
                 <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
-                  <em class="mdi mdi-message-off"></em>
+                  <em class="ri-delete-bin-line"></em>
                 </span>
               </div>
             </div>
@@ -444,7 +444,7 @@ export default {
 
   <div class="row">
     <div class="col-lg-12">
-      <div class="card" id="bugsList">
+      <div class="card" id="DoctorList">
         <div class="card-header border-0">
           <div class="d-flex align-items-center">
             <h5 class="card-title mb-0 flex-grow-1">Bug Reports</h5>
