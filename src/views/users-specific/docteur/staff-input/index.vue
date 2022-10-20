@@ -96,6 +96,10 @@ export default {
       }
     }
   },
+  mounted() {
+    window.scrollTo(0, 0);
+    this.checkPatientInfo();
+  }
 };
 
 </script>
@@ -104,21 +108,11 @@ export default {
   <Layout>
 
     <div class="project-wrapper mf-form-width">
-      {{ checkPatientInfo() }}
-      <!-- Title + muted text -->
-      <div v-if="viewID === 0">
-        <h2 class="text-primary text-uppercase">{{$t("t-selectpatient")}}</h2>
-        <p class="text-muted">{{$t("t-selectpatientinfotext")}}.</p>
-      </div>
-
-      <div v-if="viewID === 1">
-        <h2 class="text-primary text-uppercase">{{$t("t-medicinfofor")}} <strong>{{patientFirstName}}
-            {{patientLastName}}</strong></h2>
-        <p class="text-muted">{{$t("t-writedownlastinfo")}}.</p>
-      </div>
-
       <!-- First Input Page -->
       <div v-if="viewID === 0">
+        <!-- Title + paragraph -->
+        <h2 class="text-primary text-uppercase">{{$t("t-selectpatient")}}</h2>
+        <p class="text-muted">{{$t("t-selectpatientinfotext")}}.</p>
         <div class="card">
           <div class="card-body">
 
@@ -166,7 +160,10 @@ export default {
 
       <!-- INPUT MEDICAL INFORMATION -->
       <div class="row" v-if="viewID === 1">
-
+        <!-- Title + paragraph -->
+        <h2 class="text-primary text-uppercase">{{$t("t-medicinfofor")}} <strong>{{patientLastName}}
+            {{patientFirstName}}</strong></h2>
+        <p class="text-muted">{{$t("t-writedownlastinfo")}}.</p>
         <div class="p-2">
           <div class="card">
             <div class="card-body row">

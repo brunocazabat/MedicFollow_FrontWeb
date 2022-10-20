@@ -102,8 +102,8 @@ export default {
                         <th class="sort" id="" data-sort="tasks_name">Prénom:</th>
                         <th class="sort" id="" data-sort="user_type">No. Sécurité Sociale:</th>
                         <th class="sort" id="" data-sort="assignedto">Date de naissance:</th>
-                        <th class="sort" id="" data-sort="create_date">Crée le:</th>
-                        <th>Action:</th>
+                        <th class="sort" id="" data-sort="create_date">Créé le:</th>
+                        <th>Actions:</th>
                     </tr>
                 </thead>
                 <tbody class="list form-check-all">
@@ -125,8 +125,8 @@ export default {
                 <div class="text-center">
                     <h5 class="mt-2">Sorry! No Result Found</h5>
                     <p class="text-muted mb-0">
-                        We've searched more than 150+ Patiens We did not find any
-                        Patients for you search.
+                        We've searched for more than 150+ patients and we did not find any
+                        patients for your search.
                     </p>
                 </div>
             </div>

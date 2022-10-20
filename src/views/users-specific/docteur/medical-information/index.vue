@@ -12,6 +12,20 @@ import PatientTableModule from "./patientTable.vue";
 
 
 export default {
+  props: {
+    patientID: {
+      type: Number,
+      required: false
+    },
+    patientFName: {
+      type: String,
+      required: false
+    },
+    patientLName: {
+      type: String,
+      required: false
+    }
+  },
   setup() {
     const patientMandatory = reactive({
       dateOfBirth: "",
@@ -68,8 +82,20 @@ export default {
       this.patientMandatory.dateOfBirth = patient.dateOfBirth;
       this.viewID = 1;
       this.viewEnd = true;
+    },
+    checkPropsInfo() {
+      if (this.patientFName !== undefined && this.patientLName !== undefined) {
+        this.patientFirstName = this.patientFName;
+        this.patientLastName = this.patientLName;
+        this.viewID = 1;
+        this.viewEnd = true;
+      }
     }
   },
+  mounted() {
+    window.scrollTo(0, 0);
+    this.checkPropsInfo();
+  }
 }
 </script>
 
@@ -132,8 +158,8 @@ export default {
       </div>
 
       <div v-else-if="viewID === 1">
-        <h2 class="text-primary text-uppercase">{{$t("t-patientmedicinfo")}} <strong>{{patientFirstName}}
-            {{patientLastName}}</strong></h2>
+        <h2 class="text-primary text-uppercase">{{$t("t-patientmedicinfo")}} <strong>{{patientLastName}}
+            {{patientFirstName}}</strong></h2>
         <p class="text-muted">{{$t("t-medicinfodesc")}}</p>
 
         <Widgets />
