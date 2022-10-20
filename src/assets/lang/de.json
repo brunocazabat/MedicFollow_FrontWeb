@@ -435,5 +435,8 @@
   "t-patients": "Patienten",
   "t-lookdoctors": "Übersicht aller Ärzte",
   "t-lookpersonnels": "Alle Personalien im Überblick",
-  "t-medicselectinfo": "Hier können Sie einen Patienten aus der Tabelle auswählen, um seine medizinischen Informationen zu überprüfen"
+  "t-medicselectinfo": "Hier können Sie einen Patienten aus der Tabelle auswählen, um seine medizinischen Informationen zu überprüfen",
+  "t-total": "in Summe.",
+  "t-accesssettings": "Greifen Sie auf alle Einstellungen zu",
+  "t-accessdiscuss": "Greifen Sie auf alle Diskussionen zu"
 }

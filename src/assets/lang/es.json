@@ -435,5 +435,8 @@
   "t-numbpatients": "Número de pacientes",
   "t-patients": "Pacientes",
   "t-lookdoctors": "Resumen de todos los médicos",
-  "t-lookpersonnels": "Resumen de todo el personal"
+  "t-lookpersonnels": "Resumen de todo el personal",
+  "t-total": "en total.",
+  "t-accesssettings": "Accede a todos los ajustes",
+  "t-accessdiscuss": "Accede a todas las discusiones"
 }
