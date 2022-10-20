@@ -8,6 +8,7 @@ import useVuelidate from '@vuelidate/core'
 import Widgets from "./widgets.vue";
 import CheckupText from "./checkup-text.vue";
 import useSubmitButtonState from "@/components/view-related/staff-input-components/useSubmitButtonState"
+import PatientTableModule from "./patientTable.vue";
 
 
 export default {
@@ -29,14 +30,17 @@ export default {
 
       patientFirstName: "",
       patientLastName: "",
+
+      reportURL: "",
     }
 
   },
   components: {
     Layout,
+    FooterModule,
     Widgets,
     CheckupText,
-    FooterModule
+    PatientTableModule
   },
   methods: {
     nextView() {
@@ -50,6 +54,20 @@ export default {
       if (this.viewID === 0) {
         this.viewEnd = false;
       }
+    },
+    constructURL() {
+      this.reportURL = "staff-input?fn=" + this.patientFirstName + "&ln=" + this.patientLastName;
+      this.$router.push(this.reportURL);
+    },
+    handlePatientInfo(patient) {
+      console.log("handling patient info from patientTable");
+      console.log(patient);
+      this.patientFirstName = patient.fName;
+      this.patientLastName = patient.lName;
+      this.patientMandatory.socialSecurityNumber = patient.socialSecnbr;
+      this.patientMandatory.dateOfBirth = patient.dateOfBirth;
+      this.viewID = 1;
+      this.viewEnd = true;
     }
   },
 }
@@ -65,8 +83,11 @@ export default {
 
         <!-- Title and Text muted -->
         <h2 class="text-primary text-uppercase">{{$t("t-selectpatient")}}</h2>
-        <p class="text-muted">{{$t("t-selectpatientinfotext")}}.</p>
+        <p class="text-muted">{{$t("t-medicselectinfo")}}.</p>
 
+        <PatientTableModule @patient-info="handlePatientInfo" />
+
+        <p class="text-muted">Si vous ne trouvez pas le patient, vous pouvez entrer ses informations ci-dessous.</p>
         <div class="card">
           <div class="card-body">
             <div class="row mb-3">
@@ -123,22 +144,21 @@ export default {
 
       <div class="p-3 mb-3 row">
         <div class="space-in-between" v-if="viewEnd === false">
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"
             :disabled="viewID === 0"><strong><em class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()"
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="nextView()"
             :disabled="isSubmitButtonDisabled">{{$t("t-nextstep")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
         </div>
 
         <div class="space-in-between" v-else>
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"><strong><em
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"><strong><em
                 class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
-          <a class="lh-1 btn btn-primary font-size-medium col-lg-3" href="/">{{$t("t-addareport")}}
+          <a class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="constructURL">{{$t("t-addareport")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></a>
         </div>
-
       </div>
     </div>
 

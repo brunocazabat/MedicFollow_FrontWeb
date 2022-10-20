@@ -423,6 +423,7 @@
   "t-lookbugrep": "Overview all Bug Reports",
   "t-looksugglist": "Overview all Suggestions",
   "t-lookorgalist": "Overview all Organizations",
+  "t-medicselectinfo": "Here you can select a patient from the table to check their medical information",
   "t-adddocpers": "Add a Doctor/Personnal",
   "t-moddocpers": "Modify a Doctor/Personnal",
   "t-modifmyorga": "Modify Settings of my Organization",

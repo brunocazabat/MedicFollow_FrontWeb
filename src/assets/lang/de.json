@@ -434,5 +434,6 @@
   "t-numbpatients": "Anzahl der Patienten",
   "t-patients": "Patienten",
   "t-lookdoctors": "Übersicht aller Ärzte",
-  "t-lookpersonnels": "Alle Personalien im Überblick"
+  "t-lookpersonnels": "Alle Personalien im Überblick",
+  "t-medicselectinfo": "Hier können Sie einen Patienten aus der Tabelle auswählen, um seine medizinischen Informationen zu überprüfen"
 }

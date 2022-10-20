@@ -9,6 +9,20 @@ import Chat from "@/components/view-related/staff-input-components/chat.vue";
 import Calendar from "@/components/view-related/staff-input-components/calendar.vue"
 
 export default {
+  props: {
+    patientID: {
+      type: Number,
+      required: false
+    },
+    patientFName: {
+      type: String,
+      required: false
+    },
+    patientLName: {
+      type: String,
+      required: false
+    }
+  },
   setup() {
     const patientMandatory = reactive({
       dateOfBirth: "",
@@ -50,7 +64,25 @@ export default {
     Chat,
     Calendar,
   },
+  onMounted() {
+    console.log("name: " + this.patientFName);
+    if (this.patientFName.length > 0) {
+      this.patientFirstName = this.patientFName;
+      this.patientLastName = this.patientLName;
+      this.viewID = 1;
+      this.viewEnd = true;
+    }
+  },
   methods: {
+    checkPatientInfo() {
+      if (this.patientFName && this.patientLName) {
+        this.patientFirstName = this.patientFName;
+        this.patientLastName = this.patientLName;
+        this.viewID = 1;
+        this.viewEnd = true;
+        window.scrollTo(0, 0);
+      }
+    },
     nextView() {
       this.viewID += 1;
       if (this.viewID === 1) {
@@ -72,7 +104,7 @@ export default {
   <Layout>
 
     <div class="project-wrapper mf-form-width">
-
+      {{ checkPatientInfo() }}
       <!-- Title + muted text -->
       <div v-if="viewID === 0">
         <h2 class="text-primary text-uppercase">{{$t("t-selectpatient")}}</h2>
@@ -192,7 +224,7 @@ export default {
                 <Chat />
               </div>
 
-              <div class="mb-3">
+              <div>
                 <Calendar />
               </div>
             </div>
@@ -206,19 +238,19 @@ export default {
       <!-- Next and Prev Button -->
       <div class="p-3 mb-3 row">
         <div class="space-in-between" v-if="viewEnd === false">
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"
             :disabled="viewID === 0"><strong><em class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="nextView()"
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="nextView()"
             :disabled="isSubmitButtonDisabled">{{$t("t-nextstep")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
         </div>
 
         <div class="space-in-between" v-else>
-          <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"><strong><em
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"><strong><em
                 class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
-          <a class="lh-1 btn btn-primary font-size-medium col-lg-3" href="/">{{$t("t-continue")}}
+          <a class="lh-1 btn btn-primary font-size-medium col-sm-4" href="/">{{$t("t-continue")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></a>
         </div>
       </div>
