@@ -224,7 +224,7 @@ export default {
                 <Chat />
               </div>
 
-              <div class="mb-3">
+              <div>
                 <Calendar />
               </div>
             </div>

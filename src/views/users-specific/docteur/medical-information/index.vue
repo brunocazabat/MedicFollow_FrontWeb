@@ -14,7 +14,7 @@ export default {
   setup() {
     const patientMandatory = reactive({
       dateOfBirth: "",
-      socialSecurityNumber: "",
+      socialSecurityNumber: "123456789",
     });
 
     const { isSubmitButtonDisabled } = useSubmitButtonState(patientMandatory);
@@ -24,8 +24,8 @@ export default {
     return {
       value: ['javascript'],
 
-      viewID: 1,
-      viewEnd: true,
+      viewID: 0,
+      viewEnd: false,
 
       patientFirstName: "Marie",
       patientLastName: "Dupont",
