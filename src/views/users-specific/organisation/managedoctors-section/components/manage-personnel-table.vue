@@ -24,80 +24,80 @@ export default {
       personnelList: [
         {
           id: "#MDFP- 01",
-          title: "P- Changement de la couleur du bouton !",
-          usertype: "Docteur",
+          title: "P- Manu Lambert",
+          usertype: "Infirmière",
           create: "08 Dec, 2021",
-          status: "Opened",
+          status: "Working",
         },
         {
           id: "#MDFP- 02",
-          title: "P- Changement du format de la page !",
-          usertype: "Patient",
+          title: "P- Laura Hubert",
+          usertype: "Infirmière",
           create: "24 Oct, 2021",
           status: "New",
         },
         {
           id: "#MDFP- 03",
-          title: "P- Modification de la page de connexion !",
-          usertype: "Proche",
+          title: "P- Loup Louka",
+          usertype: "Infirmière",
           create: "17 Oct, 2021",
           status: "Rejected",
         },
         {
           id: "#MDFP- 04",
-          title: "P- Adaptation de la page d'accueil !",
-          usertype: "Docteur",
+          title: "P- Vivianne Giselle",
+          usertype: "Infirmière",
           create: "03 Oct, 2021",
           status: "Open",
         },
         {
           id: "#MDFP- 05",
-          title: "P- Changement des traductions !",
-          usertype: "Organisation",
+          title: "P- Charlotte Yvette",
+          usertype: "Infirmière",
           create: "09 Oct, 2021",
           status: "Accepted",
         },
         {
           id: "#MDFP- 06",
-          title: "P- Adaptation du thème sombre !",
-          usertype: "Confiance",
+          title: "P- Irène Florette",
+          usertype: "Infirmière",
           create: "27 Oct, 2021",
-          status: "Opened",
+          status: "Working",
         },
         {
           id: "#MDFP- 07",
-          title: "P- Correction d'une faute d'orthographe !",
-          usertype: "Organisation",
+          title: "P- Bastien Bénédicte",
+          usertype: "Infirmière",
           create: "05 Oct, 2021",
           status: "New",
         },
         {
           id: "#MDFP- 08",
-          title: "P- Suggestion 8",
-          usertype: "Docteur",
+          title: "P- Romane Daphnée",
+          usertype: "Infirmière",
           create: "09 Dec, 2021",
-          status: "Opened",
+          status: "Working",
         },
         {
           id: "#MDFP- 09",
-          title: "P- Suggestion 9",
-          usertype: "Patient",
+          title: "P- Thomas Charlène",
+          usertype: "Infirmière",
           create: "24 Dec, 2021",
-          status: "Opened",
+          status: "Working",
         },
         {
           id: "#MDFP- 10",
-          title: "P- Suggestion 10",
-          usertype: "Proche",
+          title: "P- Roselle Rose",
+          usertype: "Infirmière",
           create: "04 Oct, 2021",
           status: "New",
         },
         {
           id: "#MDFP- 11",
-          title: "P- Suggestion 11",
-          usertype: "Proche",
+          title: "P- Charlotte Normand",
+          usertype: "Infirmière",
           create: "21 Dec, 2021",
-          status: "Opened",
+          status: "Working",
         },
       ],
     };
@@ -418,6 +418,9 @@ export default {
               <button class="btn btn-soft-danger me-1" @click="deleteMultiple">
                 <em class="ri-delete-bin-2-line"></em>
               </button>
+              <button class="btn btn-danger add-btn" data-bs-toggle="modal" data-bs-target="#showModal" @click="addnew">
+                <em class="ri-add-line align-bottom me-1"></em> Create Personnel
+              </button>
             </div>
           </div>
         </div>
@@ -446,7 +449,7 @@ export default {
                       { value: '', label: 'Status' },
                       { value: 'All', label: 'All' },
                       { value: 'Open', label: 'Open' },
-                      { value: 'Opened', label: 'Opened' },
+                      { value: 'Working', label: 'Working' },
                       { value: 'Closed', label: 'Closed' },
                       { value: 'New', label: 'New' },
                       { value: 'Accepted', label: 'Accepted' },
@@ -481,6 +484,7 @@ export default {
                   <th class="sort" id="" data-sort="id">ID</th>
                   <th class="sort" id="" data-sort="tasks_name">Titre</th>
                   <th class="sort" id="" data-sort="user_type">Type d'Utilisateur</th>
+                  <th class="sort" id="" data-sort="user_type">Service</th>
                   <th class="sort" id="" data-sort="create_date">Crée le</th>
                   <th class="sort" id="" data-sort="status">Status</th>
                   <th class="sort" id="" data-sort="action">Actions</th>
@@ -503,7 +507,7 @@ export default {
                   <td class="create_date">{{ data.create }}</td>
                   <td class="status">
                     <span class="badge text-uppercase" :class="{
-                      'badge-soft-warning': data.status == 'Opened',
+                      'badge-soft-warning': data.status == 'Working',
                       'badge-soft-info': data.status == 'New',
                       'badge-soft-success': data.status == 'Open',
                       'badge-soft-danger': data.status == 'Accepted' || data.status == 'Rejected',
@@ -639,7 +643,7 @@ export default {
                 <select class="form-control" data-plugin="choices" name="ticket-status" id="ticketstatus">
                   <option value="">Status</option>
                   <option value="New">New</option>
-                  <option value="Opened">Opened</option>
+                  <option value="Working">Working</option>
                   <option value="Closed">Closed</option>
                   <option value="Open">Open</option>
                   <option value="Accepted">Accepted</option>

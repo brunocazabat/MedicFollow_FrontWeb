@@ -38,6 +38,11 @@ export default [
   // MEDICAL INFO
   {
     path: "/docteur/medical-information",
+    props: (route) => ({
+      patientID: route.query.q,
+      patientFName: route.query.fn,
+      patientLName: route.query.ln,
+    }),
     name: "docteur-medical-information",
     meta: {
       title: "Medical Information",

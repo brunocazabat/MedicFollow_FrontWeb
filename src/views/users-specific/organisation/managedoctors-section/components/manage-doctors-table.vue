@@ -452,6 +452,9 @@ export default {
               <button class="btn btn-soft-danger me-1" @click="deleteMultiple">
                 <em class="ri-delete-bin-2-line"></em>
               </button>
+              <button class="btn btn-danger add-btn" data-bs-toggle="modal" data-bs-target="#showModal" @click="addnew">
+                <em class="ri-add-line align-bottom me-1"></em> Create Doctor
+              </button>
             </div>
           </div>
         </div>
