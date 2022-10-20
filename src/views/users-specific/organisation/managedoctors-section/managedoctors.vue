@@ -57,17 +57,15 @@ export default {
     </div>
 
     <div class="row">
-      <div class="col-lg-12">
-        <div class="card" id="doctorlist">
-          <TableManageDoctors />
-        </div>
-        <!--end card-->
-        <div class="card" id="personnellist">
-          <TableManagePersonnels />
-        </div>
-        <!--end card-->
+      <div id="doctorlist">
+        <TableManageDoctors />
       </div>
-      <!--end col-->
+      <!--end card-->
+      <div id="personnellist">
+        <TableManagePersonnels />
+      </div>
+      <!--end card-->
     </div>
+    <!--end col-->
   </Layout>
 </template>
