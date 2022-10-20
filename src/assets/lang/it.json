@@ -422,5 +422,15 @@
   "t-lookbugrep": "Panoramica di tutte le segnalazioni di bug",
   "t-looksugglist": "Panoramica di tutti i suggerimenti",
   "t-lookorgalist": "Panoramica di tutte le organizzazioni",
-  "t-openreports": "Apri rapporti"
+  "t-openreports": "Apri rapporti",
+  "t-adddocpers": "Aggiungi un medico/personale",
+  "t-moddocpers": "Modifica un medico/personale",
+  "t-modifmyorga": "Modifica le impostazioni della mia organizzazione",
+  "t-modifymyorga": "Modifica impostazioni",
+  "t-numbdoctors": "Numero di medici",
+  "t-doctors": "Medici",
+  "t-numbpersonnals": "Numero di persone",
+  "t-personnals": "Personale",
+  "t-numbpatients": "Numero di pazienti",
+  "t-patients": "Pazienti"
 }

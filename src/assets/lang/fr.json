@@ -422,5 +422,15 @@
   "t-lookbugrep": "Vue d'ensemble de tous les rapports de bogues",
   "t-looksugglist": "Vue d'ensemble de toutes les suggestions",
   "t-lookorgalist": "Aperçu de toutes les organisations",
-  "t-openreports": "Ouvrir les rapports"
+  "t-openreports": "Ouvrir les rapports",
+  "t-adddocpers": "Ajouter un médecin/personnel",
+  "t-moddocpers": "Modifier un médecin/personnel",
+  "t-modifmyorga": "Modifier les paramètres de mon organisation",
+  "t-modifymyorga": "Modifier les paramètres",
+  "t-numbdoctors": "Nombre de médecins",
+  "t-doctors": "Médecins",
+  "t-numbpersonnals": "Nombre de personnes",
+  "t-personnals": "Personnels",
+  "t-numbpatients": "Nombre de patients",
+  "t-patients": "Patients"
 }
