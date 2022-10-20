@@ -20,7 +20,7 @@ export default {
     <div class="card-footer border-0">
       <div class="row">
         <div class="text-center">
-          <RouterLink to="/organisation/manage-doctors" class="btn btn-primary text-uppercase padd25around"
+          <RouterLink to="/organisation/manage-doctors" class="btn btn-primary text-uppercase padd5around"
             data-key="t-add">
             {{ $t('t-add') }}
           </RouterLink>
