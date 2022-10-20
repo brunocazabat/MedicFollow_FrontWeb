@@ -12,17 +12,17 @@ export default {
           <em class="ri-folder-info-line"></em>
         </h1>
         <h4 class="d-none d-xl-block ms-1 mb-2 ff-secondary fw-semibold user-name-text text-muted"
-          data-key="t-reportsshort t-suggest">
-          {{ $t('t-reportsshort') }} & {{ $t('t-suggest') }}
+          data-key="t-modifmyorga">
+          {{ $t('t-modifmyorga') }}
         </h4>
       </div>
     </div>
     <div class="card-footer border-0">
       <div class="row">
         <div class="text-center">
-          <RouterLink to="/admin/see-reports" class="btn btn-primary text-uppercase padd25around"
-            data-key="t-seereports">
-            {{ $t('t-seereports') }}
+          <RouterLink to="/organisation/settings" class="btn btn-primary text-uppercase padd25around"
+            data-key="t-modifymyorga">
+            {{ $t('t-modifymyorga') }}
           </RouterLink>
         </div>
       </div>

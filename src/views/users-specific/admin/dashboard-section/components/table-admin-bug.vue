@@ -162,7 +162,7 @@ export default {
 
 <template>
   <div class="card-body">
-    <div class="table-responsive table-card mb-4">
+    <div class="table-responsive table-card mb-0">
       <table class="table align-middle table-nowrap mb-0">
         <caption></caption>
         <thead>

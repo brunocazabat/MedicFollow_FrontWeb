@@ -423,5 +423,15 @@
   "t-lookbugrep": "Overview all Bug Reports",
   "t-looksugglist": "Overview all Suggestions",
   "t-lookorgalist": "Overview all Organizations",
-  "t-medicselectinfo": "Here you can select a patient from the table to check their medical information"
+  "t-medicselectinfo": "Here you can select a patient from the table to check their medical information",
+  "t-adddocpers": "Add a Doctor/Personnal",
+  "t-moddocpers": "Modify a Doctor/Personnal",
+  "t-modifmyorga": "Modify Settings of my Organization",
+  "t-modifymyorga": "Modify Settings",
+  "t-numbdoctors": "Number of Doctors",
+  "t-doctors": "Doctors",
+  "t-numbpersonnals": "Number of Personnals",
+  "t-personnals": "Personnals",
+  "t-numbpatients": "Number of Patients",
+  "t-patients": "Patients"
 }

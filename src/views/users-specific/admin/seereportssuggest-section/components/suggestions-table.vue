@@ -469,7 +469,7 @@ export default {
         </div>
         <!--end card-body-->
         <div class="card-body">
-          <div class="table-responsive table-card mb-4">
+          <div class="table-responsive table-card mb-0">
             <table class="table align-middle table-nowrap mb-0" id="ticketTable">
               <caption></caption>
               <thead>

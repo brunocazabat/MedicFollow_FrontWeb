@@ -31,7 +31,7 @@ export default {
           <div class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner shadow-lg p-2 bg-white rounded">
               <div class="carousel-item active" data-bs-interval="2000">
-                <img src="../images/banner/Home_banner.png" class="d-block w-100" alt="..." />
+                <img src="@/assets/images-sitevitrine/banner/Home_banner.png" class="d-block w-100" alt="..." />
               </div>
             </div>
           </div>

@@ -89,7 +89,7 @@ export default {
 
       <div class="col-lg-6 col-sm-7 col-10 ms-auto order-1 order-lg-2">
         <div>
-          <img src="../images/banner/Banner_solution_1.jpg" alt="" class="img-fluid" />
+          <img src="@/assets/images-sitevitrine/banner/Banner_solution_1.jpg" alt="" class="img-fluid" />
         </div>
       </div>
     </div>
@@ -98,7 +98,7 @@ export default {
     <div class="row align-items-center mt-5 pt-lg-5 gy-4">
       <div class="col-lg-6 col-sm-7 col-10 mx-auto">
         <div>
-          <img src="../images/banner/Banner_solution_2.jpg" alt="" class="img-fluid" />
+          <img src="@/assets/images-sitevitrine/banner/Banner_solution_2.jpg" alt="" class="img-fluid" />
         </div>
       </div>
       <div class="col-lg-6">

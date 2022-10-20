@@ -3,95 +3,106 @@ export default {
   name: "TableAdminBug",
   data() {
     return {
-      title: "Sugs List",
+      title: "Orgs List",
       searchQuery: null,
       page: 1,
-      perPage: 7,
+      perPage: 9,
       pages: [],
-      sugsList: [
+      orgsList: [
         {
-          id: "#MDFS- 01",
-          title: "S- Changement de la couleur du bouton !",
+          id: "#MDFDP- 01",
+          title: "D- Rodolph Brice",
           usertype: "Docteur",
+          servicetype: "Dermato",
           create: "08 Dec, 2021",
-          status: "Opened",
+          status: "InVacation",
         },
         {
-          id: "#MDFS- 02",
-          title: "S- Changement du format de la page !",
-          usertype: "Patient",
+          id: "#MDFDP- 02",
+          title: "P- Francis Valériane",
+          usertype: "(Personnel) Infirmière",
+          servicetype: "Dermato",
           create: "24 Oct, 2021",
           status: "New",
         },
         {
-          id: "#MDFS- 03",
-          title: "S- Modification de la page de connexion !",
-          usertype: "Proche",
+          id: "#MDFDP- 03",
+          title: "D- Grégoire Grégory",
+          usertype: "Docteur",
+          servicetype: "Gastro",
           create: "17 Oct, 2021",
-          status: "Rejected",
+          status: "Working",
         },
         {
-          id: "#MDFS- 04",
-          title: "S- Adaptation de la page d'accueil !",
-          usertype: "Docteur",
+          id: "#MDFDP- 04",
+          title: "P- Barnabé Ambre",
+          usertype: "(Personnel) Infirmière",
+          servicetype: "Gastro",
           create: "03 Oct, 2021",
-          status: "Open",
+          status: "Suspended",
         },
         {
-          id: "#MDFS- 05",
-          title: "S- Changement des traductions !",
-          usertype: "Organisation",
+          id: "#MDFDP- 05",
+          title: "P- Séraphine Jade",
+          usertype: "(Personnel) Infirmière",
+          servicetype: "Dermato",
           create: "09 Oct, 2021",
-          status: "Accepted",
+          status: "Waiting",
         },
         {
-          id: "#MDFS- 06",
-          title: "S- Adaptation du thème sombre !",
-          usertype: "Confiance",
-          create: "27 Oct, 2021",
-          status: "Opened",
-        },
-        {
-          id: "#MDFS- 07",
-          title: "S- Correction d'une faute d'orthographe !",
-          usertype: "Organisation",
-          create: "05 Oct, 2021",
-          status: "New",
-        },
-        {
-          id: "#MDFS- 08",
-          title: "S- Suggestion 8",
+          id: "#MDFDP- 06",
+          title: "D- Thibaud Serge",
           usertype: "Docteur",
+          servicetype: "Gastro",
+          create: "27 Oct, 2021",
+          status: "InVacation",
+        },
+        {
+          id: "#MDFDP- 07",
+          title: "D- Marie-Thérèse Cécilia",
+          usertype: "Docteur",
+          servicetype: "Allergo",
+          create: "05 Oct, 2021",
+          status: "Waiting",
+        },
+        {
+          id: "#MDFDP- 08",
+          title: "D- Prune Monique",
+          usertype: "Docteur",
+          servicetype: "Allergo",
           create: "09 Dec, 2021",
-          status: "Opened",
+          status: "Working",
         },
         {
-          id: "#MDFS- 09",
-          title: "S- Suggestion 9",
-          usertype: "Patient",
+          id: "#MDFDP- 09",
+          title: "P- Rosalie Sixtine",
+          usertype: "(Personnel) Infirmière",
+          servicetype: "Allergo",
           create: "24 Dec, 2021",
-          status: "Opened",
+          status: "Working",
         },
         {
-          id: "#MDFS- 10",
-          title: "S- Suggestion 10",
-          usertype: "Proche",
+          id: "#MDFDP- 10",
+          title: "P- Émilienne Marise",
+          usertype: "(Personnel) Infirmière",
+          servicetype: "Général",
           create: "04 Oct, 2021",
           status: "New",
         },
         {
-          id: "#MDFS- 11",
-          title: "S- Suggestion 11",
-          usertype: "Proche",
+          id: "#MDFDP- 11",
+          title: "D- Valériane Clair",
+          usertype: "Docteur",
+          servicetype: "Général",
           create: "21 Dec, 2021",
-          status: "Opened",
+          status: "Working",
         },
       ],
     };
   },
   computed: {
     displayedPosts() {
-      return this.paginate(this.sugsList);
+      return this.paginate(this.orgsList);
     },
     resultQuery() {
       if (this.searchQuery) {
@@ -100,11 +111,8 @@ export default {
           return (
             data.title.toLowerCase().includes(search) ||
             data.usertype.toLowerCase().includes(search) ||
-            data.assigned.toLowerCase().includes(search) ||
             data.create.toLowerCase().includes(search) ||
-            data.due.toLowerCase().includes(search) ||
-            data.status.toLowerCase().includes(search) ||
-            data.priority.toLowerCase().includes(search)
+            data.status.toLowerCase().includes(search)
           );
         });
       } else {
@@ -122,21 +130,22 @@ export default {
   },
   methods: {
     setPages() {
-      let numberOfPages = Math.ceil(this.sugsList.length / this.perPage);
+      let numberOfPages = Math.ceil(this.orgsList.length / this.perPage);
       for (let index = 1; index <= numberOfPages; index++) {
         this.pages.push(index);
       }
     },
-    paginate(sugsList) {
+    paginate(orgsList) {
       let page = this.page;
       let perPage = this.perPage;
       let from = page * perPage - perPage;
       let to = page * perPage;
-      return sugsList.slice(from, to);
+      return orgsList.slice(from, to);
     },
   },
 };
 </script>
+
 
 <template>
   <div class="card-body">
@@ -146,8 +155,9 @@ export default {
         <thead>
           <tr>
             <th class="sort" id="" data-sort="id">ID:</th>
-            <th class="sort" id="" data-sort="tasks_name">Intitulé de la Suggestion:</th>
-            <th class="sort" id="" data-sort="user_type">Générer par:</th>
+            <th class="sort" id="" data-sort="tasks_name">Nom du Docteur/Personnel:</th>
+            <th class="sort" id="" data-sort="user_type">Type d'Utilisateurs:</th>
+            <th class="sort" id="" data-sort="service_type">Service:</th>
             <th class="sort" id="" data-sort="create_date">Crée le:</th>
             <th class="sort" id="" data-sort="status">Status:</th>
           </tr>
@@ -155,19 +165,20 @@ export default {
         <tbody class="list form-check-all">
           <tr v-for="(data, index) of resultQuery" :key="index">
             <td class="id">
-              <router-link to="/admin/see-reports" class="fw-medium link-primary">{{ data.id }}</router-link>
+              <router-link to="/admin/manage-orgas" class="fw-medium link-primary">{{ data.id }}</router-link>
             </td>
             <td class="tasks_name">
               {{ data.title }}
             </td>
             <td class="user_type">{{ data.usertype }}</td>
+            <td class="user_type">{{ data.servicetype }}</td>
             <td class="create_date">{{ data.create }}</td>
             <td class="status">
               <span class="badge text-uppercase" :class="{
-                'badge-soft-warning': data.status == 'Opened',
+                'badge-soft-warning': data.status == 'Waiting' || data.status == 'InVacation',
                 'badge-soft-info': data.status == 'New',
-                'badge-soft-success': data.status == 'Open',
-                'badge-soft-danger': data.status == 'Accepted' || data.status == 'Rejected',
+                'badge-soft-success': data.status == 'Working',
+                'badge-soft-danger': data.status == 'Closed' || data.status == 'Suspended',
               }">{{ data.status }}</span>
             </td>
           </tr>
