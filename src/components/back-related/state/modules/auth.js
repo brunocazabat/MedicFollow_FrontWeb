@@ -97,6 +97,9 @@ export const getters = {
   getheader(state) {
     return state.header;
   },
+  getuuid(state) {
+    return state.uuid;
+  },
 };
 
 export const actions = {
