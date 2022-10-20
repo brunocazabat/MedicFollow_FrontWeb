@@ -422,5 +422,6 @@
   "t-lookbugrep": "Panoramica di tutte le segnalazioni di bug",
   "t-looksugglist": "Panoramica di tutti i suggerimenti",
   "t-lookorgalist": "Panoramica di tutte le organizzazioni",
-  "t-openreports": "Apri rapporti"
+  "t-openreports": "Apri rapporti",
+  "t-medicselectinfo": "Qui puoi selezionare un paziente dalla tabella per controllare le sue informazioni mediche"
 }

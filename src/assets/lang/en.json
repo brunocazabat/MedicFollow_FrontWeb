@@ -422,5 +422,6 @@
   "t-remain": "remaining.",
   "t-lookbugrep": "Overview all Bug Reports",
   "t-looksugglist": "Overview all Suggestions",
-  "t-lookorgalist": "Overview all Organizations"
+  "t-lookorgalist": "Overview all Organizations",
+  "t-medicselectinfo": "Here you can select a patient from the table to check their medical information"
 }

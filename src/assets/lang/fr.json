@@ -422,5 +422,6 @@
   "t-lookbugrep": "Vue d'ensemble de tous les rapports de bogues",
   "t-looksugglist": "Vue d'ensemble de toutes les suggestions",
   "t-lookorgalist": "Aperçu de toutes les organisations",
-  "t-openreports": "Ouvrir les rapports"
+  "t-openreports": "Ouvrir les rapports",
+  "t-medicselectinfo": "Ici, vous pouvez sélectionner un patient dans le tableau pour vérifier ses informations médicales"
 }

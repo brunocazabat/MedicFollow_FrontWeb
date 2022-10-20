@@ -8,13 +8,14 @@ import useVuelidate from '@vuelidate/core'
 import Widgets from "./widgets.vue";
 import CheckupText from "./checkup-text.vue";
 import useSubmitButtonState from "@/components/view-related/staff-input-components/useSubmitButtonState"
+import PatientTableModule from "./patientTable.vue";
 
 
 export default {
   setup() {
     const patientMandatory = reactive({
       dateOfBirth: "",
-      socialSecurityNumber: "123456789",
+      socialSecurityNumber: "",
     });
 
     const { isSubmitButtonDisabled } = useSubmitButtonState(patientMandatory);
@@ -27,8 +28,8 @@ export default {
       viewID: 0,
       viewEnd: false,
 
-      patientFirstName: "Marie",
-      patientLastName: "Dupont",
+      patientFirstName: "",
+      patientLastName: "",
 
       reportURL: "",
     }
@@ -36,9 +37,10 @@ export default {
   },
   components: {
     Layout,
+    FooterModule,
     Widgets,
     CheckupText,
-    FooterModule
+    PatientTableModule
   },
   methods: {
     nextView() {
@@ -56,6 +58,16 @@ export default {
     constructURL() {
       this.reportURL = "staff-input?fn=" + this.patientFirstName + "&ln=" + this.patientLastName;
       this.$router.push(this.reportURL);
+    },
+    handlePatientInfo(patient) {
+      console.log("handling patient info from patientTable");
+      console.log(patient);
+      this.patientFirstName = patient.fName;
+      this.patientLastName = patient.lName;
+      this.patientMandatory.socialSecurityNumber = patient.socialSecnbr;
+      this.patientMandatory.dateOfBirth = patient.dateOfBirth;
+      this.viewID = 1;
+      this.viewEnd = true;
     }
   },
 }
@@ -71,8 +83,11 @@ export default {
 
         <!-- Title and Text muted -->
         <h2 class="text-primary text-uppercase">{{$t("t-selectpatient")}}</h2>
-        <p class="text-muted">{{$t("t-selectpatientinfotext")}}.</p>
+        <p class="text-muted">{{$t("t-medicselectinfo")}}.</p>
 
+        <PatientTableModule @patient-info="handlePatientInfo" />
+
+        <p class="text-muted">Si vous ne trouvez pas le patient, vous pouvez entrer ses informations ci-dessous.</p>
         <div class="card">
           <div class="card-body">
             <div class="row mb-3">
@@ -144,7 +159,6 @@ export default {
           <a class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="constructURL">{{$t("t-addareport")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></a>
         </div>
-
       </div>
     </div>
 

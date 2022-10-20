@@ -422,5 +422,6 @@
   "t-lookbugrep": "Resumen de todos los informes de errores",
   "t-looksugglist": "Vista general de todas las sugerencias",
   "t-lookorgalist": "Resumen de todas las organizaciones",
-  "t-openreports": "Abrir informes"
+  "t-openreports": "Abrir informes",
+  "t-medicselectinfo": "Aquí puede seleccionar un paciente de la tabla para consultar su información médica"
 }

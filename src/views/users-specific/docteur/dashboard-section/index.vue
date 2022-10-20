@@ -22,16 +22,10 @@ export default {
 <template>
   <Layout>
     <div class="row project-wrapper dashboard-form">
-      <div class="col-xxl-6">
-        <AddMedicalInformationModule />
-      </div>
-      <div class="col-xxl-6">
-        <SetupMeetingScheduleModule />
-      </div>
-      <div class="col-xxl-6">
+      <div class="col-xxl-3">
         <AddPatientModule />
-      </div>
-      <div class="col-xxl-6">
+        <AddMedicalInformationModule />
+        <SetupMeetingScheduleModule />
         <ManagePatientsModule />
       </div>
 

@@ -8,13 +8,20 @@ export default {
   <div class="card dashboardcard">
     <div class="card-body align-content-center align-items-center text-center">
       <div class="row">
-        <h1><em class="ri-folder-user-line text-muted mb-3"></em><em class="ri-add-line text-muted mb-3"></em>
+        <h1 class="d-none d-xl-block ms-1 mb-3 ff-secondary user-name-text"><em class="ri-folder-user-line"></em><em
+            class="ri-add-line"></em>
         </h1>
-        <h2 class="mb-3 text-center text-muted text-uppercase">{{$t("t-managepatients")}}</h2>
+        <h4 class="d-none d-xl-block ms-1 mb-3 ff-secondary fw-semibold user-name-text text-muted" data-key="t-addorga">
+          {{ $t('t-managepatients') }}
+        </h4>
         <div class="card-footer border-0">
           <div class="row">
             <div class="text-center">
-              <button class="btn btn-primary text-uppercase padd25around col-sm-6 fs-16">{{$t("t-manage")}}</button>
+              <!-- TODO: Link the correct route -->
+              <RouterLink to="/docteur/dashboard" class="btn btn-primary text-uppercase padd25around"
+                data-key="t-manage">
+                {{ $t('t-add') }}
+              </RouterLink>
             </div>
           </div>
         </div>
