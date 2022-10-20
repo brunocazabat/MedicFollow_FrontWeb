@@ -24,11 +24,13 @@ export default {
     return {
       value: ['javascript'],
 
-      viewID: 0,
-      viewEnd: false,
+      viewID: 1,
+      viewEnd: true,
 
-      patientFirstName: "",
-      patientLastName: "",
+      patientFirstName: "Marie",
+      patientLastName: "Dupont",
+
+      reportURL: "",
     }
 
   },
@@ -50,6 +52,13 @@ export default {
       if (this.viewID === 0) {
         this.viewEnd = false;
       }
+    },
+    constructURL() {
+      this.reportURL = "staff-input?fn=" + this.patientFirstName + "&ln=" + this.patientLastName;
+      this.$router.push(this.reportURL);
+      // const patientSingularURL = `patient/${this.patientID}`;
+      // const patientURL = `patient/26 + barbara + name`;
+      // this.reportURL = `${patientURL}-medical-information-3`;
     }
   },
 }
@@ -135,7 +144,7 @@ export default {
           <button class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="prevView()"><strong><em
                 class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
-          <a class="lh-1 btn btn-primary font-size-medium col-lg-3" href="/">{{$t("t-addareport")}}
+          <a class="lh-1 btn btn-primary font-size-medium col-lg-3" v-on:click="constructURL">{{$t("t-addareport")}}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></a>
         </div>
 

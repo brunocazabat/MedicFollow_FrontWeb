@@ -47,8 +47,14 @@ export default [
     component: () =>
       import("@/views/users-specific/docteur/medical-information/index.vue"),
   },
+  // STAFF INPUT
   {
-    path: "/docteur/staff-input",
+    path: "/docteur/staff-input/",
+    props: (route) => ({
+      patientID: route.query.q,
+      patientFName: route.query.fn,
+      patientLName: route.query.ln,
+    }),
     name: "docteur-staff-input",
     meta: {
       title: "Staff Input",
