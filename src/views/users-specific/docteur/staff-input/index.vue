@@ -7,6 +7,7 @@ import useVuelidate from '@vuelidate/core'
 import FieldModule from './fieldModule.vue'
 import Chat from "@/components/view-related/staff-input-components/chat.vue";
 import Calendar from "@/components/view-related/staff-input-components/calendar.vue"
+import Swal from "sweetalert2";
 
 export default {
   props: {
@@ -43,6 +44,9 @@ export default {
       // Patient Vars
       patientFirstName: "",
       patientLastName: "",
+
+      // Observation vars
+      generalObservation: "",
 
       // Fields Var
       inputFields: [
@@ -94,7 +98,50 @@ export default {
       if (this.viewID !== 1) {
         this.viewEnd = false;
       }
-    }
+    },
+    showSweetAlert() {
+      // Is the observation empty?
+      if (this.generalObservation.length > 0) {
+        // No
+        Swal.fire({
+          title: "Voulez-vous vraiment envoyer ce rapport?",
+          text: "Vous ne pourrez pas revenir en arrière!",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Oui, envoyer!",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire({
+              title: "Envoyé!",
+              text: "Votre rapport a été envoyé.",
+              icon: "success",
+              confirmButtonText: "Ok",
+            }).then((result) => {
+              if (result.isConfirmed) {
+                this.$router.push("/docteur/dashboard");
+              }
+            });
+          }
+        });
+      } else {
+        // Yes
+        Swal.fire({
+          icon: "warning",
+          title: "Vous n'avez pas rempli le rapport",
+          text: "Voulez-vous tout de même retourner à la page d'accueil?",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Oui",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            this.$router.push("/docteur/dashboard")
+          }
+        });
+      }
+    },
   },
   mounted() {
     window.scrollTo(0, 0);
@@ -175,7 +222,7 @@ export default {
                     {{$t("t-observationsheets")}}
                   </label>
                   <textarea class="form-control" id="patientObserveCardInput" rows="3"
-                    placeholder="Veuillez saisir le résumé..."></textarea>
+                    placeholder="Veuillez saisir le résumé..." v-model="generalObservation"></textarea>
                   <div class="invalid-feedback">
                     Please enter a message in the textarea.
                   </div>
@@ -247,8 +294,9 @@ export default {
           <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"><strong><em
                 class="ri-arrow-left-line center-items"></em></strong>
             {{$t("t-previousstep")}}</button>
-          <a class="lh-1 btn btn-primary font-size-medium col-sm-4" href="/">{{$t("t-continue")}}
-            <strong><em class="ri-arrow-right-line center-items"></em></strong></a>
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4"
+            v-on:click="showSweetAlert">{{$t("t-continue")}}
+            <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
         </div>
       </div>
 
