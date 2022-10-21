@@ -54,6 +54,7 @@ export const AuthGetters = mapGetters("auth", [
   "getlastname",
   "getfullname",
   "getheader",
+  "getuuid",
 ]);
 
 export const SecurityGetters = mapGetters("security", [
