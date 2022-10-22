@@ -69,7 +69,6 @@ export default {
     Calendar,
   },
   onMounted() {
-    console.log("name: " + this.patientFName);
     if (this.patientFName.length > 0) {
       this.patientFirstName = this.patientFName;
       this.patientLastName = this.patientLName;
@@ -154,7 +153,7 @@ export default {
 <template>
   <Layout>
 
-    <div class="project-wrapper mf-form-width">
+    <div class="project-wrapper">
       <!-- First Input Page -->
       <div v-if="viewID === 0">
         <!-- Title + paragraph -->
@@ -214,7 +213,7 @@ export default {
         <div class="p-2">
           <div class="card">
             <div class="card-body row">
-
+              <!-- INFOMATION DIV -->
               <div class="col-lg-6 mf-scrollable">
                 <!-- INPUT LATEST INFO -->
                 <div>
@@ -230,7 +229,7 @@ export default {
 
                 <hr>
 
-                <!-- NON MANDATORY FIELDS -->
+                <!-- NON MANDATORY FIELDS LOOP -->
                 <div class="basic-card-border mb-2">
                   <a class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
                     href="#patientNonMandatoryField" data-bs-toggle="collapse" role="button" aria-expanded="false"
@@ -244,7 +243,6 @@ export default {
                   <div class="collapse col-sm-12 basic-padding left-margin" id="patientNonMandatoryField">
                     <FieldModule v-for="field in inputFields" :key="field.id" :fieldName="field.title" />
                   </div>
-
                 </div>
 
                 <hr>
@@ -263,14 +261,12 @@ export default {
 
               </div>
 
-              <!-- CHAT -->
+              <!-- CHAT DIV -->
               <div class="col-lg-6">
                 <Chat />
               </div>
 
-              <div>
-                <Calendar />
-              </div>
+              <Calendar />
             </div>
           </div>
         </div>
