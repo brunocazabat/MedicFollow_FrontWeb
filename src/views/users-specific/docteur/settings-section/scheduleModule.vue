@@ -1,6 +1,5 @@
 <script>
 export default {
-  props: ['day'],
   page: {},
   data() {
     return {};
@@ -11,12 +10,10 @@ export default {
 };
 </script>
 
-
 <template>
-
-  <div id="mondayDiv" class="row">
+  <div class="row">
     <div class="col-lg-4 p-3">
-      <select id="mondaySchedule1" class="form-select">
+      <select id="scheduleValue1" class="form-select">
         <option value="00">00:00</option>
         <option value="01">01:00</option>
         <option value="02">02:00</option>
@@ -45,7 +42,7 @@ export default {
     </div>
 
     <div class="col-lg-4 p-3">
-      <select id="mondaySchedule2" class="form-select">
+      <select id="scheduleValue2" class="form-select">
         <option value="00">00:00</option>
         <option value="01">01:00</option>
         <option value="02">02:00</option>
