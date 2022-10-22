@@ -78,6 +78,12 @@ const chatMessagesData = [
     message: "Je viens de l'accepter, à Vendredi 15h.",
     time: "18:26",
   },
+  {
+    align: "left",
+    name: "François DUPONT",
+    message: "Est-ce que Marie va bientôt sortir?",
+    time: "11:00",
+  },
 ];
 
 export { chatData, chatMessagesData };

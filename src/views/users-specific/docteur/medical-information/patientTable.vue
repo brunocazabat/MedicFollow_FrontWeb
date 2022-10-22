@@ -7,8 +7,6 @@ export default {
     },
     methods: {
         emitInfo(patient) {
-            console.log("emitting patient info from patientTable");
-            console.log(patient);
             this.$emit("patientInfo", patient);
         },
     },

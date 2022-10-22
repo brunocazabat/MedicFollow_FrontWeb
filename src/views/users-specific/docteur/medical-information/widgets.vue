@@ -187,7 +187,7 @@ export default {
                     <div class="flex-shrink-0 me-2">
                       <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
                     </div>
-                    <div class="flex-grow-1">Victoire DUBOIS</div>
+                    <div class="flex-grow-1">Christophe DUBOIS</div>
                   </div>
                 </td>
                 <td>{{$t("t-rheumatologistintern")}}</td>

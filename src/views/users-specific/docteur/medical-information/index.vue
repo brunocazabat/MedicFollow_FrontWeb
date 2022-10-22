@@ -74,8 +74,6 @@ export default {
       this.$router.push(this.reportURL);
     },
     handlePatientInfo(patient) {
-      console.log("handling patient info from patientTable");
-      console.log(patient);
       this.patientFirstName = patient.fName;
       this.patientLastName = patient.lName;
       this.patientMandatory.socialSecurityNumber = patient.socialSecnbr;

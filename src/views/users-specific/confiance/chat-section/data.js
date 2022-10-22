@@ -20,7 +20,7 @@ const chatData = [
   {
     id: 3,
     // TODO: change pfp for Victoire
-    name: "DUBOIS Victoire",
+    name: "DUBOIS Christophe",
     message: "This theme is awesome!",
     time: "2",
     color: "success",
