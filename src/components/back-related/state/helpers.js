@@ -55,9 +55,12 @@ export const AuthGetters = mapGetters("auth", [
   "getfullname",
   "getheader",
   "getuuid",
+  "gettoken",
 ]);
 
 export const SecurityGetters = mapGetters("security", [
   "getisRecaptchaEnabled",
   "getisLocked",
 ]);
+
+export const ApiActions = mapGetters("fetchApi", ["getApiNoParam"]);

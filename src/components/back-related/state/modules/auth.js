@@ -100,6 +100,12 @@ export const getters = {
   getuuid(state) {
     return state.uuid;
   },
+  gettoken(state) {
+    return {
+      ContentType: "application/json",
+      Token: "Bearer " + state.token,
+    };
+  },
 };
 
 export const actions = {

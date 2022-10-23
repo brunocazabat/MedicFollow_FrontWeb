@@ -38,7 +38,7 @@ export default {
       this.constructURL = "medical-information?fn=" + patient.fName + "&ln=" + patient.lName;
       this.$router.push(this.constructURL);
     },
-  }
+  },
 }
 </script>
 

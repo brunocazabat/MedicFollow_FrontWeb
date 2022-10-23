@@ -112,7 +112,6 @@ export default {
       return patientsList.slice(from, to);
     },
     emitPatientInfo(patient) {
-      console.log("emitting patient info from tableSelectPatient");
       this.$emit("patientInfo", patient);
     },
   },

@@ -10,6 +10,10 @@ import CheckupText from "./checkup-text.vue";
 import useSubmitButtonState from "@/components/view-related/staff-input-components/useSubmitButtonState"
 import PatientTableModule from "./patientTable.vue";
 
+import usedPatient from "@/components/back-related/state/modules/usedpatient.js";
+import { ApiActions, AuthGetters } from "@/components/back-related/state/helpers";
+import axiosResult from "@/components/back-related/state/axiosResponse";
+import axios from "axios";
 
 export default {
   props: {
@@ -57,6 +61,8 @@ export default {
     PatientTableModule
   },
   methods: {
+    ...ApiActions,
+    ...AuthGetters,
     nextView() {
       this.viewID += 1;
       if (this.viewID === 1) {
@@ -73,26 +79,85 @@ export default {
       this.reportURL = "staff-input?fn=" + this.patientFirstName + "&ln=" + this.patientLastName;
       this.$router.push(this.reportURL);
     },
-    handlePatientInfo(patient) {
+    async handlePatientInfo(patient) {
+
+      // API call to get patient info
+      // let test = this.getApiNoParam("patient/medical")
+      // console.log("test")
+      // console.log(test)
+
+      // console.log("Header: " + this.getheader())
+
+
+      // Creating payload to send to the class
+      const selectedPatient = {
+        uuid: 0,
+        fName: this.patientFirstName,
+        lName: this.patientLastName,
+        socialSecurity: this.patientMandatory.socialSecurityNumber,
+        dob: this.patientMandatory.dateOfBirth,
+      }
+      // Setting the patient information
+      usedPatient.setPatient(selectedPatient)
+
+      // Setting the patient information
       this.patientFirstName = patient.fName;
       this.patientLastName = patient.lName;
-      this.patientMandatory.socialSecurityNumber = patient.socialSecnbr;
+      this.patientMandatory.socialSecurityNumber = patient.socialSecNbr;
       this.patientMandatory.dateOfBirth = patient.dateOfBirth;
       this.viewID = 1;
       this.viewEnd = true;
     },
-    checkPropsInfo() {
+    async checkPropsInfo() {
       if (this.patientFName !== undefined && this.patientLName !== undefined) {
         this.patientFirstName = this.patientFName;
         this.patientLastName = this.patientLName;
         this.viewID = 1;
         this.viewEnd = true;
       }
+
+      // test call api
+      let header = {
+        "token": this.gettoken().Token
+      }
+      console.log("header: " + header.token)
+
+      // let result = this.getApiNoParam("patient/medical")
+      // console.log("result: " + result.data)
+
+      try {
+        let response = await axios
+          .get("patient/medical", {
+            headers: {
+              "token": this.gettoken().Token
+            },
+          })
+          .then((response) => {
+            if (response.status === 200) {
+              axiosResult.setReturnValues(true, null);
+              console.log(response.data.patients);
+            } else {
+              axiosResult.setReturnValues({
+                result: false,
+                error: response.status,
+              });
+              console.log(response);
+            }
+          });
+        console.log(response);
+      } catch (error) {
+        axiosResult.setReturnValues({
+          result: false,
+          error: error.result,
+        });
+      }
+      console.log("axiosResult: " + axiosResult.getReturnValues().result)
     }
   },
   mounted() {
     window.scrollTo(0, 0);
     this.checkPropsInfo();
+    console.log("Mounted Header: " + this.getheader())
   }
 }
 </script>
