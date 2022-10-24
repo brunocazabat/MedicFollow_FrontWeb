@@ -1,5 +1,11 @@
 <script>
 export default {
+  props: {
+    patientArray: {
+      type: Array,
+      required: true
+    },
+  },
   name: "TableSelectPatient",
   data() {
     return {
@@ -168,9 +174,9 @@ export default {
             active: pageNumber == page,
             disabled: pageNumber == '...',
           }" v-for="(pageNumber, index) in pages.slice(
-            page - 1,
-            page + 5
-          )" :key="index" @click="page = pageNumber">
+  page - 1,
+  page + 5
+)" :key="index" @click="page = pageNumber">
             <a class="page" href="#">{{ pageNumber }}</a>
           </li>
         </ul>

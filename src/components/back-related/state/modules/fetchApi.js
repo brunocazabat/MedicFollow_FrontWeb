@@ -1,22 +1,21 @@
 import axios from "axios";
-import { AuthGetters } from "../helpers";
+// import { AuthGetters } from "../helpers";
 import axiosResult from "../axiosResponse";
 
 export const getters = {
-  ...AuthGetters,
-  async getApiNoParam(route) {
-    console.log("Token: " + this.gettoken().Token);
+  getApiNoParam(route, userToken) {
+    console.log("userToken: " + userToken);
     try {
-      let response = await axios
+      let response = axios
         .get(route, {
           headers: {
-            token: AuthGetters.gettoken().Token,
+            token: userToken,
           },
         })
         .then((response) => {
           if (response.status === 200) {
             axiosResult.setReturnValues(true, null);
-            console.log(response.data);
+            console.log("response in method: " + response.data);
             return response.data;
           } else {
             axiosResult.setReturnValues(false, response.status);
