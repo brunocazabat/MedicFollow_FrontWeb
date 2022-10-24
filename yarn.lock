@@ -9050,10 +9050,10 @@ vue-feather@^2.0.0:
   resolved "https://registry.yarnpkg.com/vue-feather/-/vue-feather-2.0.0.tgz#5bcae9908ab7b3ab3d1e821f8fd677f49830e4b4"
   integrity sha512-GBvxJWu2ycGTpB8duYWnc5S/TwWPPb2G5Ft2NbkwK1vZkUDUOTYqIb4Nh1HOL6A37Isfrd0Guun0lesS97PfxA==
 
-vue-flatpickr-component@^9.0.8:
-  version "9.0.8"
-  resolved "https://registry.yarnpkg.com/vue-flatpickr-component/-/vue-flatpickr-component-9.0.8.tgz#d8023ac6eef5b064922133acd8a63797e0598490"
-  integrity sha512-wuvG3ijNkGwUKP+F5l4Jai5za46pI7T2AQ+boPY0QB2Y4EP6hcaubfaYwMqrs4w69u8JCnqsKqGg+mWpqF5j3A==
+vue-flatpickr-component@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/vue-flatpickr-component/-/vue-flatpickr-component-10.0.0.tgz#08fee3c4225ed1ede72ba909c453522a5efbbd85"
+  integrity sha512-1l8DYSLwoyn+LoRz4lia0TcQQtXFAZpd99SiKYf4RO6f7JSIVX6PMYyGwEKpWZBJfxGBCZpTgeyMLDZwFFYyZg==
   dependencies:
     flatpickr "^4.6.13"
 
