@@ -3,13 +3,14 @@ import axios from "axios";
 import axiosResult from "../axiosResponse";
 
 export const getters = {
-  getApiNoParam(route, userToken) {
-    console.log("userToken: " + userToken);
+  getApiNoParam(route) {
+    // console.log("userToken: " + AuthGetters.gettoken());
     try {
       let response = axios
         .get(route, {
           headers: {
-            token: userToken,
+            token:
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVXVpZCI6IjEwYjMwNjFmLTUzY2ItNDBlOS05MmEzLWMyNzM0NDE3ODZhNiIsImlhdCI6MTY2NjYwNjUzNiwiZXhwIjoxNjY2NjEwMTM2fQ.N-p3NiR5DfGOVWqLazmR-6z82he1oHiYlqS8275Kaz0",
           },
         })
         .then((response) => {
@@ -25,6 +26,7 @@ export const getters = {
         });
       return response;
     } catch (error) {
+      console.log(error);
       axiosResult.setReturnValues(false, error.result);
       return error.result;
     }

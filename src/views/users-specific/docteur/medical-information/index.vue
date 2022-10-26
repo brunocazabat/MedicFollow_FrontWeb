@@ -128,7 +128,7 @@ export default {
       // }
       // console.log("token in checkProposInfo: " + header.token)
 
-      // let result = this.getApiNoParam("patient/medical", this.gettoken().Token)
+      // let result = await this.getApiNoParam("patient/medical")
       // console.log("result: " + result)
 
       try {
