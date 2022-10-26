@@ -1,10 +1,15 @@
 <script>
+// Importing general components
 import Layout from "@/components/view-related/layout/main.vue";
 import footermodule from "@/components/view-related/login-components/footer-module.vue";
 
+// Importing specific components
 import FeedbackModule from "./feedbackModules.vue"
 import BugReportModule from "./bugReportModules.vue"
 import ContactUsModule from "./contactUsModule.vue"
+
+
+// TODO: Correct a bug which makes the alert show if the fields are not filled
 
 export default {
   data() {

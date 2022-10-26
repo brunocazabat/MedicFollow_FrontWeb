@@ -1,10 +1,39 @@
 <script>
+// Importing general components
 import recaptcha from "@/components/view-related/widgets/recaptchav2.vue";
+import Swal from "sweetalert2";
 
 export default {
   components: {
     recaptcha
   },
+  methods: {
+    showSweetAlert() {
+      // Bug report Sweet Alert
+      Swal.fire({
+        title: "Voulez-vous vraiment envoyer ce rapport de bug?",
+        text: "Vous ne pourrez pas revenir en arrière!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Oui, envoyer!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: "Envoyé!",
+            text: "Votre rapport de bug a été envoyé.",
+            icon: "success",
+            confirmButtonText: "Ok",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              this.$router.push("/confiance/dashboard");
+            }
+          });
+        }
+      });
+    }
+  }
 };
 </script>
 
@@ -41,7 +70,8 @@ export default {
     <div class="p-3 mb-0">
       <div class="col-md-6">
         <label for="bugStepsInput" class="form-label" data-key="t-stepsreproduce">{{
-        $t("t-stepsreproduce") }}</label>
+            $t("t-stepsreproduce")
+        }}</label>
         <textarea type="text" class="form-control" rows="3" id="bugStepsInput" placeholder="Write the steps here..."
           required></textarea>
         <div class="invalid-feedback">
@@ -54,7 +84,8 @@ export default {
     <div class="p-3 mb-0">
       <div class="col-md-6">
         <label for="bugExpectedInput" class="form-label" data-key="t-expectedresult">{{
-        $t("t-expectedresult") }}</label>
+            $t("t-expectedresult")
+        }}</label>
         <input type="text" class="form-control" id="bugExpectedInput" placeholder="Write the expected result here..."
           required />
         <div class="invalid-feedback">
@@ -89,7 +120,8 @@ export default {
     <div class="mb-0 p-3">
       <div class="col-md-4">
         <label for="chooseBrowserSelect" class="form-label" data-key="t-selectbrowser">{{
-        $t("t-selectbrowser") }}</label>
+            $t("t-selectbrowser")
+        }}</label>
         <select class="form-select" id="chooseBrowserSelect" required>
           <option selected>Select browser...</option>
           <option value="chrome">Google Chrome</option>
@@ -108,7 +140,8 @@ export default {
     <div class="mb-0 p-3">
       <div class="col-md-4">
         <label for="chooseDeviceSelect" class="form-label" data-key="t-selectdevice">{{
-        $t("t-selectdevice") }}</label>
+            $t("t-selectdevice")
+        }}</label>
         <select class="form-select" id="chooseDeviceSelect" required>
           <option selected>Select device...</option>
           <option value="pc">PC</option>
@@ -175,7 +208,7 @@ export default {
     <!-- Submit button -->
     <div class="p-3 col-12">
       <div class="text-muted">
-        <button type="submit" class="btn btn-primary" data-key="t-submit">
+        <button v-on:click="showSweetAlert" type="submit" class="btn btn-primary" data-key="t-submit">
           {{ $t("t-submit") }}
         </button>
       </div>

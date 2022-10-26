@@ -1,6 +1,8 @@
 <script>
+// Importing general components
 import Slider from "@vueform/slider";
 import recaptcha from "@/components/view-related/widgets/recaptchav2.vue";
+import Swal from "sweetalert2";
 
 export default {
   data() {
@@ -35,6 +37,31 @@ export default {
         }
       }, 100);
     },
+    showSweetAlert() {
+      // Suggestion Sweet Alert
+      Swal.fire({
+        title: "Voulez-vous vraiment envoyer cette suggestion?",
+        text: "Vous ne pourrez pas revenir en arrière!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Oui, envoyer!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: "Envoyé!",
+            text: "Votre suggestion a été envoyé.",
+            icon: "success",
+            confirmButtonText: "Ok",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              this.$router.push("/confiance/dashboard");
+            }
+          });
+        }
+      });
+    }
   },
 };
 
@@ -105,7 +132,7 @@ export default {
 
         <div class="mb-3">
           <label for="sliderDashboard" class="form-label mb-4" data-key="t-dashboardslider">{{
-          $t("t-dashboardslider")
+              $t("t-dashboardslider")
           }}</label>
           <div class="p-3">
             <Slider id="sliderDashboard" v-model="sliderDashVal" />
@@ -114,7 +141,7 @@ export default {
 
         <div class="mb-3">
           <label for="sliderMedSum" class="form-label mb-4" data-key="t-visitsumslider">{{
-          $t("t-visitsumslider")
+              $t("t-visitsumslider")
           }}</label>
           <div class="p-3">
             <Slider id="sliderMedSum" v-model="sliderMedSumVal" />
@@ -131,7 +158,7 @@ export default {
 
         <div class="mb-3">
           <label for="sliderSettings" class="form-label mb-4" data-key="t-settingsslider">{{
-          $t("t-settingsslider")
+              $t("t-settingsslider")
           }}</label>
           <div class="p-3">
             <Slider id="sliderSettings" v-model="sliderSettingsVal" />
@@ -140,7 +167,7 @@ export default {
 
         <div class="mb-3">
           <label for="sliderWaiting" class="form-label mb-4" data-key="t-waitingslider">{{
-          $t("t-waitingslider")
+              $t("t-waitingslider")
           }}</label>
           <div class="p-3">
             <Slider id="sliderWaiting" v-model="sliderWaitingVal" />
@@ -149,7 +176,7 @@ export default {
 
         <div class="mb-0">
           <label for="sliderDesign" class="form-label mb-4" data-key="t-designslider">{{
-          $t("t-designslider")
+              $t("t-designslider")
           }}</label>
           <div class="p-3">
             <Slider id="sliderDesign" v-model="sliderDesignVal" />
@@ -210,7 +237,7 @@ export default {
     <!-- Submit button -->
     <div class="p-3 col-12">
       <div class="text-muted">
-        <button type="submit" class="btn btn-primary" data-key="t-submit">
+        <button v-on:click="showSweetAlert" type="submit" class="btn btn-primary" data-key="t-submit">
           {{ $t("t-submit") }}
         </button>
       </div>

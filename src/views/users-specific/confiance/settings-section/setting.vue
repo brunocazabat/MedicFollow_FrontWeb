@@ -1,11 +1,16 @@
 <script>
+// TODO: Sweet Alert --> Add mutiple options to the alert
+// TODO: Add reCaptcha component and import it here
+// TODO: Seperate the code into components
+
 import '@vueform/multiselect/themes/default.css'
 import 'flatpickr/dist/flatpickr.css'
 import { AuthGetters } from "@/components/back-related/state/helpers";
-
 import Layout from '@/components/view-related/layout/main.vue'
-
 import particlesmodule from "@/components/view-related/login-components/particles-module.vue";
+import Swal from "sweetalert2";
+
+
 
 export default {
   data() {
@@ -48,6 +53,19 @@ export default {
   },
   methods: {
     ...AuthGetters,
+    showSweetAlert() {
+      // Settings Sweet Alert
+      Swal.fire({
+        title: "Envoyé!",
+        text: "Vos paramètres ont été mis a jour.",
+        icon: "success",
+        confirmButtonText: "Ok",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          this.$router.push("/confiance/dashboard");
+        }
+      });
+    }
   },
 }
 </script>
@@ -178,7 +196,7 @@ export default {
                         <!--end col-->
                         <div class="col-lg-12">
                           <div class="hstack gap-2 justify-content-end">
-                            <button type="submit" class="btn btn-primary">
+                            <button v-on:click="showSweetAlert" type="submit" class="btn btn-primary">
                               Update
                             </button>
                             <button type="button" class="btn btn-soft-success">
@@ -230,7 +248,7 @@ export default {
                         <!--end col-->
                         <div class="col-lg-12">
                           <div class="mb-3">
-                            <button type="submit" class="btn btn-success">
+                            <button v-on:click="showSweetAlert" type="submit" class="btn btn-success">
                               Change Password
                             </button>
                           </div>
@@ -345,7 +363,7 @@ export default {
                       </ul>
                       <div class="col-lg-12">
                         <div class="hstack gap-2 justify-content-end">
-                          <button type="submit" class="btn btn-primary">
+                          <button v-on:click="showSweetAlert" type="submit" class="btn btn-primary">
                             Update
                           </button>
                           <button type="button" class="btn btn-soft-success">
