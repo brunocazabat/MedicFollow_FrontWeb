@@ -1,7 +1,6 @@
 <script>
 // Universal Imports
 import Layout from "@/components/view-related/layout/main.vue";
-import { FooterModule } from "@/components/view-related/login-components";
 import { CountTo } from "vue3-count-to";
 
 // Specific Imports
@@ -16,7 +15,6 @@ import {
 export default {
   components: {
     Layout,
-    FooterModule,
     AddPatientModule,
     AddMedicalInformationModule,
     ManagePatientsModule,
@@ -103,6 +101,5 @@ export default {
         </div>
       </div>
     </div>
-    <FooterModule />
   </Layout>
 </template>

@@ -145,7 +145,7 @@ export default {
   methods: {
     editdata(data) {
       document.getElementById("modal-id").style.display = "block";
-      document.getElementById("exampleModalLabel").innerHTML = "Edit Ticket";
+      document.getElementById("exampleModalLabel").innerHTML = "Edit Organisation";
       document.getElementById("orderId").value = data.id;
       document.getElementById("tasksTitle").value = data.title;
       document.getElementById("clientName").value = data.usertype;
@@ -560,9 +560,9 @@ export default {
                     active: pageNumber == page,
                     disabled: pageNumber == '...',
                   }" v-for="(pageNumber, index) in pages.slice(
-                    page - 1,
-                    page + 5
-                  )" :key="index" @click="page = pageNumber">
+  page - 1,
+  page + 5
+)" :key="index" @click="page = pageNumber">
                     <a class="page" href="#">{{ pageNumber }}</a>
                   </li>
                 </ul>
