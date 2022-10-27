@@ -15,7 +15,7 @@ import {
 import PatientTableModule from "../medical-information/patientTable.vue";
 import axiosResult from "@/components/back-related/state/axiosResponse";
 import axios from "axios";
-import { AuthGetters } from "@/components/back-related/state/helpers";
+import { AuthGetters, PatientGetters } from "@/components/back-related/state/helpers";
 
 export default {
   components: {
@@ -37,8 +37,9 @@ export default {
   },
   methods: {
     ...AuthGetters,
-    handleShowMedicalInformation(patient) {
-      this.constructURL = "medical-information?fn=" + patient.user.firstname + "&ln=" + patient.user.lastname;
+    ...PatientGetters,
+    handleShowMedicalInformation() {
+      this.constructURL = "medical-information?fn=" + this.getPatientFirstname() + "&ln=" + this.getPatientLastname();
       this.$router.push(this.constructURL);
     },
     async retrievePatientList() {
@@ -143,7 +144,7 @@ export default {
         </div>
       </div>
       <div class="col-xxl-7 ml3">
-        <PatientTableModule @patient-info="handleShowMedicalInformation" :patientArray="patientArray" />
+        <PatientTableModule @button-pressed="handleShowMedicalInformation" :patientArray="patientArray" />
       </div>
     </div>
   </Layout>

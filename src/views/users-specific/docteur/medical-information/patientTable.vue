@@ -12,10 +12,10 @@ export default {
     TablePatientModule,
   },
   methods: {
-    emitInfo(patient) {
-      this.$emit("patientInfo", patient);
-    },
-  },
+    emitButtonPressed() {
+      this.$emit("buttonPressed");
+    }
+  }
 };
 </script>
 
@@ -23,7 +23,7 @@ export default {
   <div class="row">
     <div class="col-lg-12">
       <div class="card" id="patientList">
-        <TablePatientModule @patient-info="emitInfo" :patientArray="patientArray" />
+        <TablePatientModule @button-pressed="emitButtonPressed" :patientArray="patientArray" />
       </div>
       <!--end card-->
     </div>

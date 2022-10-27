@@ -47,7 +47,7 @@ export default {
       patientLastName: "",
 
       // Observation vars
-      generalObservation: "test d'observation",
+      generalObservation: "",
 
       // Fields Var
       inputFields: [
@@ -97,6 +97,7 @@ export default {
     prevView() {
       this.viewID -= 1;
       if (this.viewID !== 1) {
+        this.setPatientClearAll();
         this.viewEnd = false;
       }
     },
@@ -141,6 +142,7 @@ export default {
                     confirmButtonText: "Ok",
                   }).then((result) => {
                     if (result.isConfirmed) {
+                      this.setPatientClearAll();
                       this.$router.push("/docteur/dashboard");
                     }
                   });
@@ -152,6 +154,7 @@ export default {
                 title: "Une erreur est survenue...",
                 text: error.reponse,
               });
+              this.setPatientClearAll();
             }
           }
         });
@@ -167,6 +170,7 @@ export default {
           confirmButtonText: "Oui",
         }).then((result) => {
           if (result.isConfirmed) {
+            this.setPatientClearAll();
             this.$router.push("/docteur/dashboard")
           }
         });
@@ -174,6 +178,17 @@ export default {
     },
   },
   mounted() {
+    if (this.getPatientUUID() === null) {
+      Swal.fire({
+        icon: "error",
+        title: "Une erreur est survenue...",
+        text: "Vous devez sélectionner un patient pour accéder à cette page",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          this.$router.push("/docteur/dashboard");
+        }
+      });
+    }
     window.scrollTo(0, 0);
     this.checkPatientInfo();
   }

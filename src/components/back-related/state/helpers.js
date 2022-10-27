@@ -72,6 +72,7 @@ export const PatientSetters = mapActions("patient", [
   "setPatientLastname",
   "setPatientDOB",
   "setPatientSocialNumber",
+  "setPatientClearAll",
 ]);
 
 export const PatientGetters = mapGetters("patient", [

@@ -48,7 +48,7 @@ export const getters = {
 };
 
 export const actions = {
-  async setClearAll({ commit }) {
+  async setPatientClearAll({ commit }) {
     commit("SET_PATIENT_UUID", null);
     commit("SET_PATIENT_FIRSTNAME", null);
     commit("SET_PATIENT_LASTNAME", null);

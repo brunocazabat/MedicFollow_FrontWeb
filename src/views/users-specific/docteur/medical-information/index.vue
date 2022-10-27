@@ -1,6 +1,5 @@
 <script>
 import Layout from "@/components/view-related/layout/main.vue";
-import FooterModule from "@/components/view-related/login-components/footer-module.vue";
 
 import { reactive } from "vue";
 import useVuelidate from '@vuelidate/core'
@@ -50,23 +49,6 @@ export default {
       patientFirstName: "",
       patientLastName: "",
       patientUUID: "",
-      selectedPatient: [
-        {
-          patient_uuid: "",
-          user_uuid: "",
-          firstname: "",
-          lastname: "",
-          dateOfBirth: "",
-          socialSecurityNumber: "",
-          email: "",
-          phoneNumber: "",
-          address: "",
-          city: "",
-        }
-      ],
-
-      // Creating URL to report section
-      reportURL: "",
 
       // Patient Table
       patientArray: [],
@@ -75,7 +57,6 @@ export default {
   },
   components: {
     Layout,
-    FooterModule,
     Widgets,
     CheckupText,
     PatientTableModule
@@ -94,54 +75,23 @@ export default {
     prevView() {
       this.viewID -= 1;
       if (this.viewID === 0) {
+        this.setPatientClearAll();
         this.viewEnd = false;
       }
     },
     constructURL() {
-      this.reportURL = "staff-input?fn=" + this.patientFirstName + "&ln=" + this.patientLastName;
-      this.$router.push(this.reportURL);
+      let reportURL = "";
+      reportURL = "staff-input?fn=" + this.getPatientFirstname() + "&ln=" + this.getPatientLastname();
+      this.$router.push(reportURL);
     },
-    async handlePatientInfo(patient) {
-
-      // API call to get patient info
-      // let test = this.getApiNoParam("patient/medical")
-      // console.log("test")
-      // console.log(test)
-
-      // console.log("Header: " + this.getheader())
-
-      // Setting the patient information
-      this.patientUUID = patient.uuid;
-      this.patientFirstName = patient.user.firstname;
-      this.patientLastName = patient.user.lastname;
-
-      this.setPatientUUID(this.patientUUID);
-      console.log("Store Patient UUID: " + this.getPatientUUID())
-      // TODO: Update the fields names when API is deployed
-      this.patientMandatory.socialSecurityNumber = patient.user.uuid;
-      this.patientMandatory.dateOfBirth = patient.dateOfBirth;
+    async handlePatientInfo() {
+      // Setting Patients Information
+      this.patientFirstName = this.getPatientFirstname();
+      this.patientLastName = this.getPatientLastname();
+      this.patientUUID = this.getPatientUUID();
+      // Displaying the next view
       this.viewID = 1;
       this.viewEnd = true;
-
-      // Creating payload to send to the class
-
-      this.selectedPatient = [
-        {
-          patient_uuid: patient.uuid,
-          user_uuid: patient.user.uuid,
-          firstname: patient.user.firstname,
-          lastname: patient.user.lastname,
-          dateOfBirth: patient.dateOfBirth,
-          socialSecurityNumber: patient.user.uuid,
-          email: patient.user.email,
-          phoneNumber: patient.user.phoneNumber,
-          address: patient.user.address,
-          city: patient.user.city,
-        }
-
-      ];
-      console.log("this.selectedPatient", this.selectedPatient)
-
     },
     async checkPropsInfo() {
       if (this.patientFName !== undefined && this.patientLName !== undefined) {
@@ -149,17 +99,10 @@ export default {
         this.patientLastName = this.patientLName;
         this.viewID = 1;
         this.viewEnd = true;
+        return;
       }
 
-      // test call api
-      // let header = {
-      //   token: this.gettoken().Token
-      // }
-      // console.log("token in checkProposInfo: " + header.token)
-
-      // let result = await this.getApiNoParam("patient/medical")
-      // console.log("result: " + result)
-
+      // Retrieving the patients list
       try {
         await axios
           .get("patient/medical", {
@@ -170,18 +113,15 @@ export default {
           .then((response) => {
             if (response.status === 200) {
               this.patientArray = response.data.patients;
-              axiosResult.setReturnValues(true, null);
             } else {
               axiosResult.setReturnValues({
                 result: false,
-                error: response.status,
               });
             }
           });
       } catch (error) {
         axiosResult.setReturnValues({
           result: false,
-          error: error.result,
         });
       }
     }
@@ -193,8 +133,6 @@ export default {
 }
 </script>
 
-<!-- TEMPLATE -->
-
 <template>
   <Layout>
     <div class="project-wrapper mf-form-width">
@@ -205,7 +143,7 @@ export default {
         <h2 class="text-primary text-uppercase">{{ $t("t-selectpatient") }}</h2>
         <p class="text-muted">{{ $t("t-medicselectinfo") }}.</p>
 
-        <PatientTableModule @patient-info="handlePatientInfo" :patientArray="patientArray" />
+        <PatientTableModule @button-pressed="handlePatientInfo" :patientArray="patientArray" />
 
         <p class="text-muted">Si vous ne trouvez pas le patient, vous pouvez entrer ses informations ci-dessous.</p>
         <div class="card">
@@ -257,7 +195,7 @@ export default {
         <p class="text-muted">{{ $t("t-medicinfodesc") }}</p>
 
         <Widgets />
-        <CheckupText :patientUuid="patientUUID" />
+        <CheckupText />
 
         <!-- TODO: Maybe add Calendar -->
       </div>
@@ -282,9 +220,6 @@ export default {
       </div>
     </div>
 
-    <FooterModule />
   </Layout>
-
-
 </template>
 

@@ -1,18 +1,11 @@
 <script>
 import dayjs from 'dayjs'
 import axios from "axios";
-import { AuthGetters } from "@/components/back-related/state/helpers";
+import { AuthGetters, PatientGetters } from "@/components/back-related/state/helpers";
 import Swal from 'sweetalert2';
 
 export default {
-  props: {
-    patientUuid: {
-      type: String,
-      required: true
-    },
-  },
-  components: {
-  },
+  components: {},
   data: function () {
     return {
       lastCheckup: null,
@@ -21,6 +14,7 @@ export default {
   },
   methods: {
     ...AuthGetters,
+    ...PatientGetters,
     showLocaleTime: function () {
       let lastCheckup = this;
       lastCheckup.localTime = new dayjs().format('HH:mm');
@@ -28,7 +22,7 @@ export default {
     },
     async getObservations() {
       // Constructing the request URL with patient uuid
-      let url = "patient/" + this.patientUuid + "/observation/";
+      let url = "patient/" + this.getPatientUUID() + "/observation/";
       // Axios call to get the observations
       try {
         await axios.get(url, {

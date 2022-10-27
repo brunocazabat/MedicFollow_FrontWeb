@@ -1,4 +1,6 @@
 <script>
+import { PatientSetters } from "@/components/back-related/state/helpers";
+
 export default {
   props: {
     patientArray: {
@@ -104,6 +106,7 @@ export default {
     this.setPages();
   },
   methods: {
+    ...PatientSetters,
     setPages() {
       let numberOfPages = Math.ceil(this.patientsList.length / this.perPage);
       for (let index = 1; index <= numberOfPages; index++) {
@@ -118,7 +121,12 @@ export default {
       return patientsList.slice(from, to);
     },
     emitPatientInfo(patient) {
-      this.$emit("patientInfo", patient);
+      this.setPatientUUID(patient.uuid);
+      this.setPatientFirstname(patient.user.firstname);
+      this.setPatientLastname(patient.user.lastname);
+      this.setPatientDOB(patient.user.dateOfBirth);
+      this.setPatientSocialNumber(patient.user.uuid);
+      this.$emit("buttonPressed");
     },
   },
 };
