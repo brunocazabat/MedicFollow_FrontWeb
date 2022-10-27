@@ -10,7 +10,6 @@ import CheckupText from "./checkup-text.vue";
 import useSubmitButtonState from "@/components/view-related/staff-input-components/useSubmitButtonState"
 import PatientTableModule from "./patientTable.vue";
 
-import usedPatient from "@/components/back-related/state/modules/usedpatient.js";
 import { ApiActions, AuthGetters } from "@/components/back-related/state/helpers";
 import axiosResult from "@/components/back-related/state/axiosResponse";
 import axios from "axios";
@@ -50,6 +49,21 @@ export default {
       // Selected Patient vars
       patientFirstName: "",
       patientLastName: "",
+      patientUUID: "",
+      selectedPatient: [
+        {
+          patient_uuid: "",
+          user_uuid: "",
+          firstname: "",
+          lastname: "",
+          dateOfBirth: "",
+          socialSecurityNumber: "",
+          email: "",
+          phoneNumber: "",
+          address: "",
+          city: "",
+        }
+      ],
 
       // Creating URL to report section
       reportURL: "",
@@ -94,25 +108,35 @@ export default {
 
       // console.log("Header: " + this.getheader())
 
-
-      // Creating payload to send to the class
-      const selectedPatient = {
-        uuid: 0,
-        fName: this.patientFirstName,
-        lName: this.patientLastName,
-        socialSecurity: this.patientMandatory.socialSecurityNumber,
-        dob: this.patientMandatory.dateOfBirth,
-      }
       // Setting the patient information
-      usedPatient.setPatient(selectedPatient)
-
-      // Setting the patient information
-      this.patientFirstName = patient.fName;
-      this.patientLastName = patient.lName;
-      this.patientMandatory.socialSecurityNumber = patient.socialSecNbr;
+      this.patientUUID = patient.uuid;
+      this.patientFirstName = patient.user.firstname;
+      this.patientLastName = patient.user.lastname;
+      // TODO: Update the fields names when API is deployed
+      this.patientMandatory.socialSecurityNumber = patient.user.uuid;
       this.patientMandatory.dateOfBirth = patient.dateOfBirth;
       this.viewID = 1;
       this.viewEnd = true;
+
+      // Creating payload to send to the class
+
+      this.selectedPatient = [
+        {
+          patient_uuid: patient.uuid,
+          user_uuid: patient.user.uuid,
+          firstname: patient.user.firstname,
+          lastname: patient.user.lastname,
+          dateOfBirth: patient.dateOfBirth,
+          socialSecurityNumber: patient.user.uuid,
+          email: patient.user.email,
+          phoneNumber: patient.user.phoneNumber,
+          address: patient.user.address,
+          city: patient.user.city,
+        }
+
+      ];
+      console.log("this.selectedPatient", this.selectedPatient)
+
     },
     async checkPropsInfo() {
       if (this.patientFName !== undefined && this.patientLName !== undefined) {
@@ -141,7 +165,6 @@ export default {
           .then((response) => {
             if (response.status === 200) {
               this.patientArray = response.data.patients;
-              console.log(this.patientArray[0].user);
               axiosResult.setReturnValues(true, null);
             } else {
               axiosResult.setReturnValues({
@@ -156,7 +179,6 @@ export default {
           error: error.result,
         });
       }
-      console.log("axiosResult: " + axiosResult.getReturnValues().result)
     }
   },
   mounted() {
@@ -230,7 +252,7 @@ export default {
         <p class="text-muted">{{ $t("t-medicinfodesc") }}</p>
 
         <Widgets />
-        <CheckupText />
+        <CheckupText :patientUuid="patientUUID" />
 
         <!-- TODO: Maybe add Calendar -->
       </div>

@@ -150,7 +150,7 @@ export default {
             <td class="user_type">{{ data.user.uuid }}</td>
             <td class="assignedto">{{ data.dateOfBirth }}</td>
             <td class="create_date">{{ data.create }}</td>
-            <td><button class="btn btn-primary" v-on:click="emitPatientInfo(data.user)">Consulter</button></td>
+            <td><button class="btn btn-primary" v-on:click="emitPatientInfo(data)">Consulter</button></td>
           </tr>
         </tbody>
       </table>

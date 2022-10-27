@@ -15,7 +15,7 @@ import {
 import PatientTableModule from "../medical-information/patientTable.vue";
 import axiosResult from "@/components/back-related/state/axiosResponse";
 import axios from "axios";
-import { ApiActions, AuthGetters } from "@/components/back-related/state/helpers";
+import { AuthGetters } from "@/components/back-related/state/helpers";
 
 export default {
   components: {
@@ -36,10 +36,9 @@ export default {
     }
   },
   methods: {
-    ...ApiActions,
     ...AuthGetters,
     handleShowMedicalInformation(patient) {
-      this.constructURL = "medical-information?fn=" + patient.firstname + "&ln=" + patient.lastname;
+      this.constructURL = "medical-information?fn=" + patient.user.firstname + "&ln=" + patient.user.lastname;
       this.$router.push(this.constructURL);
     },
     async retrievePatientList() {
