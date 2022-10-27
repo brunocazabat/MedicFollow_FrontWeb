@@ -13,6 +13,9 @@ import {
   ManagePatientsModule,
 } from "./buttonComponents";
 import PatientTableModule from "../medical-information/patientTable.vue";
+import axiosResult from "@/components/back-related/state/axiosResponse";
+import axios from "axios";
+import { ApiActions, AuthGetters } from "@/components/back-related/state/helpers";
 
 export default {
   components: {
@@ -29,13 +32,46 @@ export default {
   data() {
     return {
       constructURL: String,
+      patientArray: [],
     }
   },
   methods: {
+    ...ApiActions,
+    ...AuthGetters,
     handleShowMedicalInformation(patient) {
-      this.constructURL = "medical-information?fn=" + patient.fName + "&ln=" + patient.lName;
+      this.constructURL = "medical-information?fn=" + patient.firstname + "&ln=" + patient.lastname;
       this.$router.push(this.constructURL);
     },
+    async retrievePatientList() {
+      try {
+        await axios
+          .get("patient/medical", {
+            headers: {
+              token: this.gettoken().Token
+            },
+          })
+          .then((response) => {
+            if (response.status === 200) {
+              this.patientArray = response.data.patients;
+              axiosResult.setReturnValues(true, null);
+            } else {
+              axiosResult.setReturnValues({
+                result: false,
+                error: response.status,
+              });
+            }
+          });
+      } catch (error) {
+        axiosResult.setReturnValues({
+          result: false,
+          error: error.result,
+        });
+      }
+    }
+  },
+  mounted() {
+    // this.$store.dispatch("getPatients");
+    this.retrievePatientList();
   },
 }
 </script>
@@ -108,7 +144,7 @@ export default {
         </div>
       </div>
       <div class="col-xxl-7 ml3">
-        <PatientTableModule @patient-info="handleShowMedicalInformation" />
+        <PatientTableModule @patient-info="handleShowMedicalInformation" :patientArray="patientArray" />
       </div>
     </div>
   </Layout>

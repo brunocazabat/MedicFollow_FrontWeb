@@ -1,7 +1,6 @@
 <script>
 // General components imports
 import Layout from "@/components/view-related/layout/main.vue";
-import footermodule from "@/components/view-related/login-components/footer-module.vue";
 
 // Specific Components imports
 import ScheduleModule from "./scheduleModule.vue";
@@ -33,7 +32,6 @@ export default {
   },
   components: {
     Layout,
-    footermodule,
     ScheduleModule,
     DaysCheckModule,
   },
@@ -74,8 +72,8 @@ export default {
   <Layout>
     <div class="project-wrapper mf-form-width">
 
-      <h2 class="text-primary text-uppercase">{{$t("t-schedulesettings")}}</h2>
-      <p class="text-muted">{{$t("t-scheduleinfotext")}}.</p>
+      <h2 class="text-primary text-uppercase">{{ $t("t-schedulesettings") }}</h2>
+      <p class="text-muted">{{ $t("t-scheduleinfotext") }}.</p>
 
       <div class="card">
         <div class="card-body">
@@ -83,7 +81,7 @@ export default {
           <!-- TRUE/FALSE NEW MEETING -->
           <div id="yesnoDiv" class="p-3 card-body">
             <p class="font-size-medium">
-              {{$t("t-doyouacceptmeetings")}}
+              {{ $t("t-doyouacceptmeetings") }}
             </p>
             <!-- Padding -->
             <div class="col-6 row p-3">
@@ -91,13 +89,13 @@ export default {
               <!-- Yes -->
               <div class="form-check col-lg-2">
                 <input class="form-check-input" type="radio" id="yesGridCheck" value="YES" v-model="picked" />
-                <label class="form-check-label text-uppercase" for="yesGridCheck">{{$t("t-yes")}}</label>
+                <label class="form-check-label text-uppercase" for="yesGridCheck">{{ $t("t-yes") }}</label>
               </div>
 
               <!-- No -->
               <div class="form-check col-lg-2">
                 <input class="form-check-input" type="radio" id="noGridCheck" value="NO" v-model="picked" />
-                <label class="form-check-label text-uppercase" for="noGridCheck">{{$t("t-no")}}</label>
+                <label class="form-check-label text-uppercase" for="noGridCheck">{{ $t("t-no") }}</label>
               </div>
             </div>
           </div>
@@ -260,12 +258,11 @@ export default {
       <div class="p-3 mb-3 row align-right">
         <div class="space-in-between">
           <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"
-            :disabled="checkSchedules">{{$t("t-submit")}}</button>
+            :disabled="checkSchedules">{{ $t("t-submit") }}</button>
         </div>
       </div>
 
     </div>
-    <footermodule />
   </Layout>
 </template>
   

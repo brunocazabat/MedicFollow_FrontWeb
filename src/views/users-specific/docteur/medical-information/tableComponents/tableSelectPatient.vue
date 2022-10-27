@@ -76,7 +76,7 @@ export default {
   },
   computed: {
     displayedPosts() {
-      return this.paginate(this.patientsList);
+      return this.paginate(this.patientArray);
     },
     resultQuery() {
       if (this.searchQuery) {
@@ -142,15 +142,15 @@ export default {
         <tbody class="list form-check-all">
           <tr v-for="(data, index) of resultQuery" :key="index">
             <td class="id">
-              {{ data.lName }}
+              {{ data.user.lastname }}
             </td>
             <td class="tasks_name">
-              {{ data.fName }}
+              {{ data.user.firstname }}
             </td>
-            <td class="user_type">{{ data.socialSecNbr }}</td>
+            <td class="user_type">{{ data.user.uuid }}</td>
             <td class="assignedto">{{ data.dateOfBirth }}</td>
             <td class="create_date">{{ data.create }}</td>
-            <td><button class="btn btn-primary" v-on:click="emitPatientInfo(data)">Consulter</button></td>
+            <td><button class="btn btn-primary" v-on:click="emitPatientInfo(data.user)">Consulter</button></td>
           </tr>
         </tbody>
       </table>

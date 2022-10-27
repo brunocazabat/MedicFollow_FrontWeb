@@ -141,6 +141,7 @@ export default {
           .then((response) => {
             if (response.status === 200) {
               this.patientArray = response.data.patients;
+              console.log(this.patientArray[0].user);
               axiosResult.setReturnValues(true, null);
             } else {
               axiosResult.setReturnValues({
