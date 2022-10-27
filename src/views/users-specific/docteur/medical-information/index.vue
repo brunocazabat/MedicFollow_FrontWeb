@@ -10,7 +10,7 @@ import CheckupText from "./checkup-text.vue";
 import useSubmitButtonState from "@/components/view-related/staff-input-components/useSubmitButtonState"
 import PatientTableModule from "./patientTable.vue";
 
-import { ApiActions, AuthGetters } from "@/components/back-related/state/helpers";
+import { ApiActions, AuthGetters, PatientSetters, PatientGetters } from "@/components/back-related/state/helpers";
 import axiosResult from "@/components/back-related/state/axiosResponse";
 import axios from "axios";
 
@@ -83,6 +83,8 @@ export default {
   methods: {
     ...ApiActions,
     ...AuthGetters,
+    ...PatientSetters,
+    ...PatientGetters,
     nextView() {
       this.viewID += 1;
       if (this.viewID === 1) {
@@ -112,6 +114,9 @@ export default {
       this.patientUUID = patient.uuid;
       this.patientFirstName = patient.user.firstname;
       this.patientLastName = patient.user.lastname;
+
+      this.setPatientUUID(this.patientUUID);
+      console.log("Store Patient UUID: " + this.getPatientUUID())
       // TODO: Update the fields names when API is deployed
       this.patientMandatory.socialSecurityNumber = patient.user.uuid;
       this.patientMandatory.dateOfBirth = patient.dateOfBirth;

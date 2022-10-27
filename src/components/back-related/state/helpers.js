@@ -37,6 +37,7 @@ export const AuthActions = mapActions("auth", [
   "setLogOut",
   "setGetMe",
   "setUI",
+  "setPatientUUID",
 ]);
 
 export const SecurityActions = mapActions("security", [
@@ -64,3 +65,19 @@ export const SecurityGetters = mapGetters("security", [
 ]);
 
 export const ApiActions = mapGetters("fetchApi", ["getApiNoParam"]);
+
+export const PatientSetters = mapActions("patient", [
+  "setPatientUUID",
+  "setPatientFirstname",
+  "setPatientLastname",
+  "setPatientDOB",
+  "setPatientSocialNumber",
+]);
+
+export const PatientGetters = mapGetters("patient", [
+  "getPatientUUID",
+  "getPatientFirstname",
+  "getPatientLastname",
+  "getPatientDOB",
+  "getPatientSocialNumber",
+]);

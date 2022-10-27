@@ -1,13 +1,14 @@
 <script>
 import Layout from "@/components/view-related/layout/main.vue";
-import FooterModule from "@/components/view-related/login-components/footer-module.vue";
 import { reactive } from "vue";
 import useSubmitButtonState from "@/components/view-related/staff-input-components/useSubmitButtonState"
 import useVuelidate from '@vuelidate/core'
 import FieldModule from './fieldModule.vue'
 import Chat from "@/components/view-related/staff-input-components/chat.vue";
 import Calendar from "@/components/view-related/staff-input-components/calendar.vue"
+import { AuthGetters, PatientGetters } from "@/components/back-related/state/helpers";
 import Swal from "sweetalert2";
+import axios from "axios";
 
 export default {
   props: {
@@ -17,11 +18,11 @@ export default {
     },
     patientFName: {
       type: String,
-      required: false
+      required: true
     },
     patientLName: {
       type: String,
-      required: false
+      required: true
     }
   },
   setup() {
@@ -46,7 +47,7 @@ export default {
       patientLastName: "",
 
       // Observation vars
-      generalObservation: "",
+      generalObservation: "test d'observation",
 
       // Fields Var
       inputFields: [
@@ -63,7 +64,6 @@ export default {
   },
   components: {
     Layout,
-    FooterModule,
     FieldModule,
     Chat,
     Calendar,
@@ -77,6 +77,8 @@ export default {
     }
   },
   methods: {
+    ...AuthGetters,
+    ...PatientGetters,
     checkPatientInfo() {
       if (this.patientFName && this.patientLName) {
         this.patientFirstName = this.patientFName;
@@ -98,7 +100,7 @@ export default {
         this.viewEnd = false;
       }
     },
-    showSweetAlert() {
+    async sendObservationRequest() {
       // Is the observation empty?
       if (this.generalObservation.length > 0) {
         // No
@@ -110,18 +112,47 @@ export default {
           confirmButtonColor: "#3085d6",
           cancelButtonColor: "#d33",
           confirmButtonText: "Oui, envoyer!",
-        }).then((result) => {
+        }).then(async (result) => {
           if (result.isConfirmed) {
-            Swal.fire({
-              title: "Envoyé!",
-              text: "Votre rapport a été envoyé.",
-              icon: "success",
-              confirmButtonText: "Ok",
-            }).then((result) => {
-              if (result.isConfirmed) {
-                this.$router.push("/docteur/dashboard");
-              }
-            });
+            // Creating the request body
+            const data = {
+              content: this.generalObservation,
+            }
+
+            // Creating the request URL
+            const url = "patient/" + this.getPatientUUID() + "/observation";
+
+            // Sending the request
+            try {
+              await axios({
+                method: "post",
+                url: url,
+                headers: {
+                  "Content-Type": "application/json",
+                  token: this.gettoken().Token,
+                },
+                data: data,
+              }).then((response) => {
+                if (response.status === 201) {
+                  Swal.fire({
+                    title: "Rapport envoyé!",
+                    text: "Le rapport a été envoyé avec succès!",
+                    icon: "success",
+                    confirmButtonText: "Ok",
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      this.$router.push("/docteur/dashboard");
+                    }
+                  });
+                }
+              });
+            } catch (error) {
+              Swal.fire({
+                icon: "error",
+                title: "Une erreur est survenue...",
+                text: error.reponse,
+              });
+            }
           }
         });
       } else {
@@ -157,8 +188,8 @@ export default {
       <!-- First Input Page -->
       <div v-if="viewID === 0">
         <!-- Title + paragraph -->
-        <h2 class="text-primary text-uppercase">{{$t("t-selectpatient")}}</h2>
-        <p class="text-muted">{{$t("t-selectpatientinfotext")}}.</p>
+        <h2 class="text-primary text-uppercase">{{ $t("t-selectpatient") }}</h2>
+        <p class="text-muted">{{ $t("t-selectpatientinfotext") }}.</p>
         <div class="card">
           <div class="card-body">
 
@@ -167,7 +198,7 @@ export default {
               <!-- First name -->
               <div class="col-sm-6">
                 <label for="patientFirstName" class="form-label">{{
-                $t("t-firstname")
+                    $t("t-firstname")
                 }}</label>
                 <input type="text" class="form-control" id="patientFirstName" placeholder="Enter first name..."
                   v-model="patientFirstName" />
@@ -187,14 +218,14 @@ export default {
 
               <!-- Social Security Number -->
               <div class="col-sm-6">
-                <label for="patientSocialSecurityNumber" class="form-label">{{$t("t-socialsecuritynbr")}}</label>
+                <label for="patientSocialSecurityNumber" class="form-label">{{ $t("t-socialsecuritynbr") }}</label>
                 <input type="text" class="form-control" id="patientSocialSecurityNumber"
                   placeholder="Enter the social security number..." v-model="patientMandatory.socialSecurityNumber" />
               </div>
 
               <!-- Date of Birth / CHANGE FOR ACTUAL DATE PICKER -->
               <div class="col-sm-6">
-                <label for="patientDoB" class="form-label">{{$t("t-dateofbirth")}}</label>
+                <label for="patientDoB" class="form-label">{{ $t("t-dateofbirth") }}</label>
                 <input type="date" class="form-control" id="patientDoB" placeholder="Enter the date of birth..."
                   v-model="patientMandatory.dateOfBirth" />
               </div>
@@ -207,9 +238,9 @@ export default {
       <!-- INPUT MEDICAL INFORMATION -->
       <div class="row" v-if="viewID === 1">
         <!-- Title + paragraph -->
-        <h2 class="text-primary text-uppercase">{{$t("t-medicinfofor")}} <strong>{{patientLastName}}
-            {{patientFirstName}}</strong></h2>
-        <p class="text-muted">{{$t("t-writedownlastinfo")}}.</p>
+        <h2 class="text-primary text-uppercase">{{ $t("t-medicinfofor") }} <strong>{{ patientLastName }}
+            {{ patientFirstName }}</strong></h2>
+        <p class="text-muted">{{ $t("t-writedownlastinfo") }}.</p>
         <div class="p-2">
           <div class="card">
             <div class="card-body row">
@@ -218,7 +249,7 @@ export default {
                 <!-- INPUT LATEST INFO -->
                 <div>
                   <label for="patientObserveCardInput" class="form-label font-size-large">
-                    {{$t("t-observationsheets")}}
+                    {{ $t("t-observationsheets") }}
                   </label>
                   <textarea class="form-control" id="patientObserveCardInput" rows="3"
                     placeholder="Veuillez saisir le résumé..." v-model="generalObservation"></textarea>
@@ -234,7 +265,7 @@ export default {
                   <a class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
                     href="#patientNonMandatoryField" data-bs-toggle="collapse" role="button" aria-expanded="false"
                     aria-controls="patientNonMandatoryField">
-                    <span>{{$t("t-notmandatoryfields")}} <strong><em
+                    <span>{{ $t("t-notmandatoryfields") }} <strong><em
                           class="ri-arrow-down-line lh-1 center-items"></em></strong></span>
                   </a>
 
@@ -280,26 +311,25 @@ export default {
         <div class="space-in-between" v-if="viewEnd === false">
           <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"
             :disabled="viewID === 0"><strong><em class="ri-arrow-left-line center-items"></em></strong>
-            {{$t("t-previousstep")}}</button>
+            {{ $t("t-previousstep") }}</button>
           <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="nextView()"
-            :disabled="isSubmitButtonDisabled">{{$t("t-nextstep")}}
+            :disabled="isSubmitButtonDisabled">{{ $t("t-nextstep") }}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
         </div>
 
         <div class="space-in-between" v-else>
           <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"><strong><em
                 class="ri-arrow-left-line center-items"></em></strong>
-            {{$t("t-previousstep")}}</button>
-          <button class="lh-1 btn btn-primary font-size-medium col-sm-4"
-            v-on:click="showSweetAlert">{{$t("t-continue")}}
+            {{ $t("t-previousstep") }}</button>
+          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="sendObservationRequest">{{
+              $t("t-continue")
+          }}
             <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
         </div>
       </div>
 
 
     </div>
-
-    <FooterModule />
   </Layout>
 </template>
   
