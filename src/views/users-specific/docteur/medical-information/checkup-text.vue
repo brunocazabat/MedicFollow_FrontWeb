@@ -91,6 +91,14 @@ export default {
     parseHour(date) {
       return dayjs(date).format("HH:mm");
     },
+    // Method to display the four first letters of a string
+    displayFirstFourLetters(string) {
+      return string.substring(0, 4);
+    },
+    // Method to generate a PDF with observations
+    generatePDF() {
+      return true;
+    },
   },
   mounted() {
     this.getObservations();
@@ -106,6 +114,88 @@ export default {
       :lastVisitHour="lastCheckup.time"
       :lastVisitDate="lastCheckup.date"
     />
+
+    <!-- RECENT MEDICAL VISITS -->
+    <div class="col-xl-12">
+      <div class="card">
+        <div class="card-header align-items-center d-flex">
+          <h4 class="card-title mb-0 flex-grow-1" data-key="t-recentvisits">
+            {{ $t("t-recentvisits") }}
+          </h4>
+          <div class="flex-shrink-0">
+            <button
+              type="button"
+              class="btn btn-soft-info btn-sm"
+              :onClick="generatePDF"
+            >
+              <em class="ri-file-list-3-line align-middle"></em>
+              {{ $t("t-generatereport") }}
+            </button>
+          </div>
+        </div>
+        <!-- end card header -->
+
+        <div class="card-body">
+          <div class="table-responsive table-card">
+            <table
+              class="table table-borderless table-centered align-middle table-nowrap mb-0"
+              aria-label="Medical Visits Table"
+            >
+              <thead class="text-muted table-light">
+                <tr>
+                  <th scope="col" data-key="t-visitid">
+                    {{ $t("t-visitid") }}
+                  </th>
+                  <th scope="col" data-key="t-staffname">
+                    {{ $t("t-staffname") }}
+                  </th>
+                  <th scope="col" data-key="t-staffpos">
+                    {{ $t("t-staffpos") }}
+                  </th>
+                  <th scope="col" data-key="t-date">{{ $t("t-date") }}</th>
+                  <th scope="col" data-key="t-time">{{ $t("t-time") }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  v-for="(observation, index) in observationsArray"
+                  :key="index"
+                >
+                  <td>
+                    <a href="#" class="fw-medium link-primary text-uppercase"
+                      >#{{ displayFirstFourLetters(observation.uuid) }}</a
+                    >
+                  </td>
+                  <td>
+                    <div class="flex-grow-1">
+                      {{ displayFirstFourLetters(observation.author_uuid) }}
+                    </div>
+                  </td>
+                  <td>
+                    <div>Placeholder {{ observation.doctorPosition }}</div>
+                  </td>
+                  <td>
+                    <div>
+                      {{ parseDate(observation.date) }}
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      {{ parseHour(observation.date) }}
+                    </div>
+                  </td>
+                </tr>
+                <!-- end tr -->
+              </tbody>
+              <!-- end tbody -->
+            </table>
+            <!-- end table -->
+          </div>
+        </div>
+      </div>
+      <!-- .card-->
+    </div>
+
     <div
       class="card card-body"
       v-for="(observations, index) in observationsArray"
