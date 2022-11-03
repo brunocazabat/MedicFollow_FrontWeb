@@ -3,7 +3,7 @@
   "editor.formatOnSave": true,
   "[vue]": {
     "files.insertFinalNewline": false,
-    "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
     "files.insertFinalNewline": false,
