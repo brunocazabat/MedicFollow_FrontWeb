@@ -1,6 +1,4 @@
 <script>
-import dayjs from "dayjs";
-
 export default {
   props: {
     lastVisitHour: {
@@ -19,16 +17,8 @@ export default {
       localDate: " ",
     };
   },
-  methods: {
-    showLocaleTime: function () {
-      let lastCheckup = this;
-      lastCheckup.localTime = new dayjs().format("HH:mm");
-      lastCheckup.localDate = new dayjs().format("DD-MM-YYYY");
-    },
-  },
-  mounted() {
-    this.showLocaleTime();
-  },
+  methods: {},
+  mounted() {},
 };
 </script>
 

@@ -438,5 +438,6 @@
   "t-medicselectinfo": "Hier können Sie einen Patienten aus der Tabelle auswählen, um seine medizinischen Informationen zu überprüfen",
   "t-total": "in Summe.",
   "t-accesssettings": "Greifen Sie auf alle Einstellungen zu",
-  "t-accessdiscuss": "Greifen Sie auf alle Diskussionen zu"
+  "t-accessdiscuss": "Greifen Sie auf alle Diskussionen zu",
+  "t-author": "Autor"
 }

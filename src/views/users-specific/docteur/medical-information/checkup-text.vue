@@ -79,6 +79,7 @@ export default {
         });
       }
 
+      // Setting the last checkup date and time
       this.lastCheckup = {
         date: this.parseDate(this.observationsArray[0].date),
         time: this.parseHour(this.observationsArray[0].date),
@@ -98,7 +99,6 @@ export default {
 </script>
 
 <template>
-  <!-- TODO: Change VISIT (date and hour) to OBSERVATION (date and hour) -->
   <!-- TODO: Add the name of the person who sent the observation -->
 
   <div>
@@ -111,7 +111,7 @@ export default {
       v-for="(observations, index) in observationsArray"
       :key="index"
     >
-      <h6 class="mb-3 fw-semibold text-uppercase" data-key="t-summary">
+      <h6 class="mb-3 fw-semibold text-uppercase">
         {{ $t("t-summary") }}
       </h6>
       <ul class="ps-4 vstack gap-2">
@@ -120,25 +120,31 @@ export default {
 
       <div class="pt-3 border-top border-top-dashed mt-4">
         <div class="row">
-          <div class="col-lg-6 col-sm-6">
+          <div class="col-lg-4 col-sm-4">
             <div>
-              <p class="mb-2 text-uppercase fw-medium" data-key="t-visitdate">
+              <p class="mb-2 text-uppercase fw-medium">
                 {{ $t("t-visitdate") }}:
               </p>
               <h5 class="fs-15 mb-0">{{ parseDate(observations.date) }}</h5>
             </div>
           </div>
-          <div class="col-lg-6 col-sm-6">
+          <div class="col-lg-4 col-sm-4">
             <div>
-              <p class="mb-2 text-uppercase fw-medium" data-key="t-visittime">
+              <p class="mb-2 text-uppercase fw-medium">
                 {{ $t("t-visittime") }}:
               </p>
               <h5 class="fs-15 mb-0">{{ parseHour(observations.date) }}</h5>
             </div>
           </div>
+          <div class="col-lg-4 col-sm-4">
+            <div>
+              <p class="mb-2 text-uppercase fw-medium">{{ $t("t-author") }}:</p>
+              <h5 class="fs-15 mb-0">{{ observations.author_uuid }}</h5>
+            </div>
+          </div>
 
           <div class="pt-3 border-top border-top-dashed mt-4">
-            <h6 class="mb-3 fw-semibold text-uppercase" data-key="t-ressources">
+            <h6 class="mb-3 fw-semibold text-uppercase">
               {{ $t("t-ressources") }}:
             </h6>
             <div class="row g-3">
