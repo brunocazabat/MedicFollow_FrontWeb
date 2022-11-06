@@ -57,6 +57,7 @@ export const AuthGetters = mapGetters("auth", [
   "getheader",
   "getuuid",
   "gettoken",
+  "getorg_uuid",
 ]);
 
 export const SecurityGetters = mapGetters("security", [

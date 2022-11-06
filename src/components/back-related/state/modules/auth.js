@@ -13,6 +13,7 @@ export const state = {
   role2: sessionStorage.getItem("currentUserROLE2"),
   role3: sessionStorage.getItem("currentUserROLE3"),
   ui: sessionStorage.getItem("currentUserUI"),
+  org_uuid: sessionStorage.getItem("currentUserORG_UUID"),
 };
 
 export const mutations = {
@@ -60,6 +61,10 @@ export const mutations = {
     state.ui = ui;
     saveState("currentUserUI", ui);
   },
+  SET_ORG_UUID(state, org_uuid) {
+    state.org_uuid = org_uuid;
+    saveState("currentUserORG_UUID", org_uuid);
+  },
   SET_HEADERS(state, token) {
     state.headers = {
       "Content-Type": "application/json",
@@ -100,6 +105,9 @@ export const getters = {
   getuuid(state) {
     return state.uuid;
   },
+  getorg_uuid(state) {
+    return state.org_uuid;
+  },
   gettoken(state) {
     return {
       ContentType: "application/json",
@@ -135,7 +143,6 @@ export const actions = {
     try {
       let response = await axios.get("users/me", { headers: state.headers });
       if (response.status === 200) {
-        console.log(response.data);
         dispatch("setFirstName", response.data.firstname);
         dispatch("setLastName", response.data.lastname);
         if (response.data.phone) {
@@ -152,6 +159,7 @@ export const actions = {
             dispatch("setMultiRole", false);
             dispatch("setRole1", response.data.subType[0].type);
             dispatch("setUI", response.data.subType[0].type);
+            dispatch("setOrgUuid", response.data.subType[0].uuid);
           } else {
             dispatch("setMultiRole", true);
           }
@@ -175,6 +183,7 @@ export const actions = {
     commit("SET_ROLE2", null);
     commit("SET_ROLE3", null);
     commit("SET_UI", null);
+    commit("SET_ORG_UUID", null);
     commit("SET_HEADERS", null);
   },
 
@@ -220,6 +229,10 @@ export const actions = {
 
   async setUI({ commit }, ui) {
     commit("SET_UI", ui);
+  },
+
+  async setOrgUuid({ commit }, org_uuid) {
+    commit("SET_ORG_UUID", org_uuid);
   },
 
   async setHeaders({ commit }, token) {
