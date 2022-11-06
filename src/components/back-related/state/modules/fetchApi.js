@@ -4,7 +4,7 @@ import axiosResult from "../axiosResponse";
 
 export const getters = {
   getApiNoParam(route) {
-    // console.log("userToken: " + AuthGetters.gettoken());
+    // TODO: Function to fix after EIP console.log("userToken: " + AuthGetters.gettoken());
     try {
       let response = axios
         .get(route, {
