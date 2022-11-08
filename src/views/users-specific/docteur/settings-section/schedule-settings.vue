@@ -85,6 +85,27 @@ export default {
         return true;
       }
     },
+    // Method to GET if the doctor accepts appointments
+    async getAcceptAppointments() {
+      let url = "appointment/config/?orgUuid=" + this.getorg_uuid();
+
+      await axios
+        .get(url, {
+          headers: {
+            token: this.gettoken().Token,
+          },
+        })
+        .then((response) => {
+          if (response.data.enable == 1) {
+            this.picked = "YES";
+          } else {
+            this.picked = "NO";
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
     // Function to GET the schedules of the doctor
     async getDoctorSchedules() {
       let url = "appointment/config/workday/?orgUuid=" + this.getorg_uuid();
@@ -144,6 +165,7 @@ export default {
     },
   },
   mounted() {
+    this.getAcceptAppointments();
     this.getDoctorSchedules();
   },
 };
