@@ -8,6 +8,7 @@ import ScheduleModule from "./scheduleModule.vue";
 import DaysCheckModule from "./daysOfTheWeekCheck.vue";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { forEach } from "lodash";
 
 export default {
   data() {
@@ -162,6 +163,97 @@ export default {
         }
       });
       this.submitSchedulesDisabled = true;
+    },
+    // Function to send the schedules to the API
+    async sendSchedules() {
+      // let url = "appointment/config/workday/?orgUuid=" + this.getorg_uuid();
+
+      let payload = {
+        listWork: [
+          {
+            day: 1,
+            hour: [
+              [9, 12],
+              [17, 18],
+            ],
+          },
+        ],
+      };
+
+      // TODO: Make the payload work (Hour array is incorrect)
+      for (let i = 0; i < this.daysArray.length; i++) {
+        if (this.daysArray[i].scheduleVal) {
+          payload.listWork.push({
+            day: i + 1,
+            hour: forEach(this.schedulesArray[i].schedule, (schedule) => {
+              return [Number(schedule.start), Number(schedule.end)];
+            }),
+          });
+        }
+      }
+
+      console.log("Payload", payload);
+
+      // let data = {
+      //   monday: [],
+      //   tuesday: [],
+      //   wednesday: [],
+      //   thursday: [],
+      //   friday: [],
+      //   saturday: [],
+      //   sunday: [],
+      // };
+
+      // // Loop to fill the data object with the schedules
+      // for (let i = 0; i < this.daysArray.length; i++) {
+      //   if (this.daysArray[i].scheduleVal) {
+      //     for (let j = 0; j < this.daysArray[i].scheduleNbr; j++) {
+      //       data[this.daysArray[i].dayName.toLowerCase()].push({
+      //         start: this.schedulesArray[i].schedule[j].start,
+      //         end: this.schedulesArray[i].schedule[j].end,
+      //       });
+      //     }
+      //   }
+      // }
+
+      // // Sweet alert confirmation
+      // Swal.fire({
+      //   title: "Are you sure?",
+      //   text: "You won't be able to revert this!",
+      //   icon: "warning",
+      //   showCancelButton: true,
+      //   confirmButtonColor: "#3085d6",
+      //   cancelButtonColor: "#d33",
+      //   confirmButtonText: "Yes, submit it!",
+      // }).then((result) => {
+      //   if (result.isConfirmed) {
+      //     // Send the data to the API
+      //     axios
+      //       .put(url, data, {
+      //         headers: {
+      //           token: this.gettoken().Token,
+      //         },
+      //       })
+      //       .then((response) => {
+      //         if (response.status == 200) {
+      //           // Sweet alert success
+      //           Swal.fire(
+      //             "Submitted!",
+      //             "Your schedules have been submitted.",
+      //             "success"
+      //           );
+      //         }
+      //       })
+      //       .catch((error) => {
+      //         // Sweet alert error
+      //         Swal.fire({
+      //           icon: "error",
+      //           title: "Oops...",
+      //           text: "Something went wrong!... Error: " + error,
+      //         });
+      //       });
+      //   }
+      // });
     },
   },
   mounted() {
@@ -483,6 +575,12 @@ export default {
             :disabled="checkSchedules"
           >
             {{ $t("t-submit") }}
+          </button>
+          <button
+            class="lh-1 btn btn-primary font-size-medium col-sm-4"
+            v-on:click="sendSchedules()"
+          >
+            Test
           </button>
         </div>
       </div>
