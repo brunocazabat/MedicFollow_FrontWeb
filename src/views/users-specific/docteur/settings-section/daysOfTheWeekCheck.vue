@@ -4,13 +4,24 @@ export default {
   emits: ["update:modelValue"],
   data() {
     return {
-      localShow: this.modelValue,
+      localShow: false,
     };
   },
   methods: {
     updateCheck() {
       this.localShow = !this.localShow;
       this.$emit("update:modelValue", this.localShow);
+    },
+    updateLocalShow() {
+      this.localShow = this.modelValue;
+    },
+  },
+  watch: {
+    modelValue: {
+      handler: function () {
+        this.updateLocalShow();
+      },
+      immediate: true,
     },
   },
 };

@@ -8,11 +8,16 @@ import ScheduleModule from "./scheduleModule.vue";
 import DaysCheckModule from "./daysOfTheWeekCheck.vue";
 import axios from "axios";
 import Swal from "sweetalert2";
+// import { forEach } from "lodash";
 
 export default {
   data() {
     return {
       value: ["javascript"],
+
+      // const
+      startID: 0,
+      endID: 1,
 
       // Days value array
       daysArray: [
@@ -85,6 +90,32 @@ export default {
         return true;
       }
     },
+    // Method to GET if the doctor accepts appointments
+    async getAcceptAppointments() {
+      let url = "appointment/config/?orgUuid=" + this.getorg_uuid();
+
+      await axios
+        .get(url, {
+          headers: {
+            token: this.gettoken().Token,
+          },
+        })
+        .then((response) => {
+          if (response.data.enable == 1) {
+            this.picked = "YES";
+          } else {
+            this.picked = "NO";
+          }
+        })
+        .catch((error) => {
+          // Sweet Alert Error
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong! Error: " + error,
+          });
+        });
+    },
     // Function to GET the schedules of the doctor
     async getDoctorSchedules() {
       let url = "appointment/config/workday/?orgUuid=" + this.getorg_uuid();
@@ -103,7 +134,13 @@ export default {
                 this.daysArray[data[i].day - 1].scheduleVal = true;
                 this.daysArray[data[i].day - 1].scheduleNbr =
                   data[i].hour.length;
-                this.schedulesArray[data[i].day - 1].schedule = data[i].hour;
+                for (let j = 0; j < data[i].hour.length; j++) {
+                  this.schedulesArray[data[i].day - 1].schedule[j] = {
+                    id: j + 1,
+                    start: data[i].hour[j][0],
+                    end: data[i].hour[j][1],
+                  };
+                }
               }
             }
           });
@@ -132,18 +169,195 @@ export default {
         }
       });
     },
-    // This function should check if the doctor can submit the schedule
-    // TODO: Make it work (either $reactive or checking in the submit button itself)
-    checkSchedules() {
-      this.daysArray.forEach((day) => {
-        if (day.scheduleVal) {
-          this.submitSchedulesDisabled = false;
+    // Function to send the schedules to the API
+    async sendSchedules() {
+      let url = "appointment/config/workday/?orgUuid=" + this.getorg_uuid();
+
+      let payload = {
+        listWork: [],
+      };
+
+      if (this.checkSchedules() === false) {
+        return;
+      }
+
+      // Loop to create the payload
+      for (let i = 0; i < this.daysArray.length; i++) {
+        if (this.daysArray[i].scheduleVal) {
+          let hour = [];
+          for (let j = 0; j < this.daysArray[i].scheduleNbr; j++) {
+            hour.push([
+              Number(this.schedulesArray[i].schedule[j].start),
+              Number(this.schedulesArray[i].schedule[j].end),
+            ]);
+          }
+          payload.listWork.push({
+            day: i + 1,
+            hour: hour,
+          });
+        }
+      }
+
+      // Sweet alert confirmation
+      Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, submit it!",
+      }).then(async (result) => {
+        if (result.isConfirmed) {
+          if (this.sendAcceptAppointments() === false) {
+            return;
+          }
+          // Send the data to the API
+          await axios({
+            method: "put",
+            url: url,
+            data: payload,
+            headers: {
+              token: this.gettoken().Token,
+            },
+          })
+            .then((response) => {
+              if (response.status == 200) {
+                // Sweet alert success
+                Swal.fire(
+                  "Submitted!",
+                  "Your schedules have been submitted.",
+                  "success"
+                ) // refresh the page if press OK | TODO: Websocket
+                  .then((result) => {
+                    if (result.isConfirmed) {
+                      location.reload();
+                    }
+                  });
+              }
+            })
+            .catch((error) => {
+              // Sweet alert error
+              Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Something went wrong!... Error: " + error,
+              });
+            });
         }
       });
-      this.submitSchedulesDisabled = true;
+    },
+    // Function to update the schedule array
+    updateSchedule(value, day, index) {
+      if (value.id === this.startID) {
+        this.schedulesArray[day].schedule[index].start = value.value;
+      } else if (value.id === this.endID) {
+        this.schedulesArray[day].schedule[index].end = value.value;
+      }
+    },
+    // Function to disable the the send button if no day is selected
+    disableSendButton() {
+      let disable = true;
+
+      for (let i = 0; i < this.daysArray.length; i++) {
+        if (this.daysArray[i].scheduleVal) {
+          disable = false;
+        }
+      }
+      return disable;
+    },
+    // Function to check if the schedules are valid
+    checkSchedules() {
+      for (let i = 0; i < this.daysArray.length; i++) {
+        if (this.daysArray[i].scheduleVal) {
+          for (let j = 0; j < this.daysArray[i].scheduleNbr; j++) {
+            if (
+              j < this.daysArray[i].scheduleNbr - 1 &&
+              Number(this.schedulesArray[i].schedule[j].end) >
+                Number(this.schedulesArray[i].schedule[j + 1].start)
+            ) {
+              let dayString = this.daysArray[i].dayName;
+              // Sweet alert error
+              Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: `The end time of the ${dayString} schedule ${
+                  j + 1
+                } cannot be greater than the start time of the ${dayString} schedule ${
+                  j + 2
+                }!`,
+              });
+              return false;
+            }
+            // Else if the start time is greater than the end time
+            else if (
+              Number(this.schedulesArray[i].schedule[j].start) >
+              Number(this.schedulesArray[i].schedule[j].end)
+            ) {
+              let dayString = this.daysArray[i].dayName;
+              // Sweet alert error
+              Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: `The start time of the ${dayString} schedule ${
+                  j + 1
+                } cannot be greater than the end time of the ${dayString} schedule ${
+                  j + 1
+                }!`,
+              });
+              return false;
+            }
+          }
+        }
+      }
+      return true;
+    },
+    // Function to send to API if the user accepts appointments
+    async sendAcceptAppointments() {
+      let url = "appointment/config/?orgUuid=" + this.getorg_uuid();
+      let acceptAppointments;
+
+      if (this.picked === "YES") {
+        acceptAppointments = 1;
+      } else {
+        acceptAppointments = 0;
+      }
+
+      const payload = {
+        max: 5,
+        time: 30,
+        enable: acceptAppointments,
+      };
+
+      console.log(payload);
+
+      await axios({
+        method: "put",
+        url: url,
+        data: payload,
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then((response) => {
+          if (response.status == 200) {
+            return true;
+          }
+          return false;
+        })
+        .catch((error) => {
+          // Sweet alert error
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!... Error: " + error,
+          });
+          return false;
+        });
     },
   },
   mounted() {
+    this.getAcceptAppointments();
     this.getDoctorSchedules();
   },
 };
@@ -221,12 +435,13 @@ export default {
 
               <!-- Schedules -->
               <div
-                v-for="(index, counter) in daysArray.at(0).scheduleNbr"
+                v-for="(index, counter) in daysArray[0].scheduleNbr"
                 :key="index"
               >
                 <ScheduleModule
-                  :hour1="schedulesArray.at(0).schedule.at(counter).at(0)"
-                  :hour2="schedulesArray.at(0).schedule.at(counter).at(1)"
+                  :hour1="schedulesArray[0].schedule[counter].start"
+                  :hour2="schedulesArray[0].schedule[counter].end"
+                  @hour-update="updateSchedule($event, 0, counter)"
                 />
               </div>
 
@@ -259,8 +474,9 @@ export default {
                 :key="index"
               >
                 <ScheduleModule
-                  :hour1="schedulesArray.at(1).schedule.at(counter).at(0)"
-                  :hour2="schedulesArray.at(1).schedule.at(counter).at(1)"
+                  :hour1="schedulesArray[1].schedule[counter].start"
+                  :hour2="schedulesArray[1].schedule[counter].end"
+                  @hour-update="updateSchedule($event, 1, counter)"
                 />
               </div>
 
@@ -293,8 +509,9 @@ export default {
                 :key="index"
               >
                 <ScheduleModule
-                  :hour1="schedulesArray.at(2).schedule.at(counter).at(0)"
-                  :hour2="schedulesArray.at(2).schedule.at(counter).at(1)"
+                  :hour1="schedulesArray[2].schedule[counter].start"
+                  :hour2="schedulesArray[2].schedule[counter].end"
+                  @hour-update="updateSchedule($event, 2, counter)"
                 />
               </div>
 
@@ -327,8 +544,9 @@ export default {
                 :key="index"
               >
                 <ScheduleModule
-                  :hour1="schedulesArray.at(3).schedule.at(counter).at(0)"
-                  :hour2="schedulesArray.at(3).schedule.at(counter).at(1)"
+                  :hour1="schedulesArray[3].schedule[counter].start"
+                  :hour2="schedulesArray[3].schedule[counter].end"
+                  @hour-update="updateSchedule($event, 3, counter)"
                 />
               </div>
 
@@ -360,8 +578,9 @@ export default {
                 :key="index"
               >
                 <ScheduleModule
-                  :hour1="schedulesArray.at(4).schedule.at(counter).at(0)"
-                  :hour2="schedulesArray.at(4).schedule.at(counter).at(1)"
+                  :hour1="schedulesArray[4].schedule[counter].start"
+                  :hour2="schedulesArray[4].schedule[counter].end"
+                  @hour-update="updateSchedule($event, 4, counter)"
                 />
               </div>
 
@@ -394,8 +613,9 @@ export default {
                 :key="index"
               >
                 <ScheduleModule
-                  :hour1="schedulesArray.at(5).schedule.at(counter).at(0)"
-                  :hour2="schedulesArray.at(5).schedule.at(counter).at(1)"
+                  :hour1="schedulesArray[5].schedule[counter].start"
+                  :hour2="schedulesArray[5].schedule[counter].end"
+                  @hour-update="updateSchedule($event, 5, counter)"
                 />
               </div>
 
@@ -428,8 +648,9 @@ export default {
                 :key="index"
               >
                 <ScheduleModule
-                  :hour1="schedulesArray.at(6).schedule.at(counter).at(0)"
-                  :hour2="schedulesArray.at(6).schedule.at(counter).at(1)"
+                  :hour1="schedulesArray[6].schedule[counter].start"
+                  :hour2="schedulesArray[6].schedule[counter].end"
+                  @hour-update="updateSchedule($event, 6, counter)"
                 />
               </div>
 
@@ -457,8 +678,8 @@ export default {
         <div class="space-in-between">
           <button
             class="lh-1 btn btn-primary font-size-medium col-sm-4"
-            v-on:click="prevView()"
-            :disabled="checkSchedules"
+            v-on:click="sendSchedules"
+            :disabled="disableSendButton()"
           >
             {{ $t("t-submit") }}
           </button>
