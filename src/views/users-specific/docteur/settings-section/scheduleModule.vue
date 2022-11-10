@@ -3,8 +3,15 @@ export default {
   props: ["hour1", "hour2"],
   data() {
     return {
+      // const value of id
+      startID: 0,
+      endID: 1,
+
+      // const value of hour sent from parent
       localHour1: this.hour1,
       localHour2: this.hour2,
+
+      // Array of hours
       hoursArray: [
         {
           value: 0,
@@ -106,14 +113,30 @@ export default {
     };
   },
   components: {},
-  methods: {},
+  methods: {
+    // Emits the new value to the parent component on change
+    updateHour(event, id) {
+      // Object with the id and the event value
+      const val = {
+        id: id,
+        value: event.target.value,
+      };
+
+      // Emitting the new value to the parent component
+      this.$emit("hourUpdate", val);
+    },
+  },
 };
 </script>
 
 <template>
   <div class="row">
     <div class="col-lg-4 p-3">
-      <select id="scheduleValue1" class="form-select">
+      <select
+        id="scheduleValue1"
+        class="form-select"
+        @change="updateHour($event, startID)"
+      >
         <option
           v-for="hour in hoursArray"
           :value="hour.value"
@@ -126,7 +149,11 @@ export default {
     </div>
 
     <div class="col-lg-4 p-3">
-      <select id="scheduleValue2" class="form-select">
+      <select
+        id="scheduleValue2"
+        class="form-select"
+        @change="updateHour($event, endID)"
+      >
         <option
           v-for="hour in hoursArray"
           :value="hour.value"
