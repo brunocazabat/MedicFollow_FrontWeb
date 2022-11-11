@@ -1,7 +1,10 @@
 <script>
 import "@vueform/multiselect/themes/default.css";
 import "flatpickr/dist/flatpickr.css";
-import { AuthGetters } from "@/components/back-related/state/helpers";
+import {
+  AuthGetters,
+  AuthActions,
+} from "@/components/back-related/state/helpers";
 
 import Layout from "@/components/view-related/layout/main.vue";
 
@@ -57,6 +60,7 @@ export default {
   },
   methods: {
     ...AuthGetters,
+    ...AuthActions,
     // Method to check if the password is valid: 8 characters, 1 uppercase, 1 lowercase, 1 number, 1 special character
     checkPassword() {
       var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
@@ -119,6 +123,85 @@ export default {
               Swal.fire({
                 title: `${this.$t("t-error")}`,
                 text: `${this.$t("t-old-pass-not-match")}`,
+                icon: "error",
+                confirmButtonText: "OK",
+              });
+            }
+          });
+      }
+    },
+    // Method to check if the email is valid
+    checkEmail() {
+      var re = /\S+@\S+\.\S+/;
+
+      if (!re.test(this.user.email)) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `${this.$t("t-email-not-valid")}!`,
+        });
+        return false;
+      } else {
+        return true;
+      }
+    },
+    // Method to check if the phone number is valid and does not contain letters
+    checkPhone() {
+      var re = /^[0-9]+$/;
+
+      if (!re.test(this.user.phone)) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `${this.$t("t-phone-not-valid")}!`,
+        });
+        return false;
+      } else {
+        return true;
+      }
+    },
+    // Method to update the user's information
+    async updateUser() {
+      if (this.checkEmail() === true && this.checkPhone() === true) {
+        let url = "users/data";
+
+        // Checking if the email and phone numbers are valid
+        if (!this.checkEmail() || !this.checkPhone()) {
+          return;
+        }
+
+        await axios({
+          method: "put",
+          url: url,
+          data: {
+            email: this.user.email,
+            phone: this.user.phone,
+          },
+          headers: {
+            token: this.gettoken().Token,
+          },
+        })
+          .then((response) => {
+            if (response.status == 200) {
+              this.setEmail(this.user.email);
+              this.setPhone(this.user.phone);
+              // Displaying a success message
+              Swal.fire({
+                title: `${this.$t("t-success")}`,
+                text: `${this.$t("t-updatesucess")}.`,
+                icon: "success",
+                confirmButtonText: "OK",
+              });
+            }
+          })
+          .catch((error) => {
+            if (error.response.status === 462) {
+              // Email already exists in the database
+              Swal.fire({
+                title: `${this.$t("t-error")}`,
+                text: `${this.$t("t-error-occured")}.\nERROR CODE: ${
+                  error.response.status
+                }`,
                 icon: "error",
                 confirmButtonText: "OK",
               });
@@ -193,7 +276,7 @@ export default {
                       role="tab"
                     >
                       <em class="fas fa-home"></em>
-                      Personal Details
+                      {{ $t("t-personal-details") }}
                     </a>
                   </li>
                   <li class="nav-item">
@@ -204,7 +287,7 @@ export default {
                       role="tab"
                     >
                       <em class="far fa-user"></em>
-                      Change Password
+                      {{ $t("t-change-password") }}
                     </a>
                   </li>
                   <li class="nav-item">
@@ -215,7 +298,7 @@ export default {
                       role="tab"
                     >
                       <em class="far fa-envelope"></em>
-                      Privacy Policy
+                      {{ $t("t-privacy-policy") }}
                     </a>
                   </li>
                 </ul>
@@ -234,9 +317,9 @@ export default {
                         <!-- READONLY NAMES -->
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="firstnameInput" class="form-label"
-                              >First Name</label
-                            >
+                            <label for="firstnameInput" class="form-label">{{
+                              $t("t-firstname")
+                            }}</label>
                             <input
                               type="text"
                               class="form-control"
@@ -250,9 +333,9 @@ export default {
 
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="lastnameInput" class="form-label"
-                              >Last Name</label
-                            >
+                            <label for="lastnameInput" class="form-label">{{
+                              $t("t-lastname")
+                            }}</label>
                             <input
                               type="text"
                               class="form-control"
@@ -268,41 +351,39 @@ export default {
                         <!--end col-->
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="phonenumberInput" class="form-label"
-                              >Phone Number</label
-                            >
+                            <label for="phonenumberInput" class="form-label">{{
+                              $t("t-phone-number")
+                            }}</label>
                             <input
                               type="text"
                               class="form-control"
                               id="phonenumberInput"
                               placeholder="Enter your phone number"
-                              :value="this.user.phone"
-                              disabled
+                              v-model="this.user.phone"
                             />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="emailInput" class="form-label"
-                              >Email Address</label
-                            >
+                            <label for="emailInput" class="form-label">{{
+                              $t("t-email-address")
+                            }}</label>
                             <input
                               type="email"
                               class="form-control"
                               id="emailInput"
                               placeholder="Enter your email"
-                              :value="this.user.email"
-                              disabled
+                              v-model="this.user.email"
                             />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-4">
                           <div class="mb-3">
-                            <label for="cityInput" class="form-label"
-                              >City</label
-                            >
+                            <label for="cityInput" class="form-label">{{
+                              $t("t-city")
+                            }}</label>
                             <input
                               type="text"
                               class="form-control"
@@ -316,9 +397,9 @@ export default {
                         <!--end col-->
                         <div class="col-lg-4">
                           <div class="mb-3">
-                            <label for="countryInput" class="form-label"
-                              >Country</label
-                            >
+                            <label for="countryInput" class="form-label">{{
+                              $t("t-country")
+                            }}</label>
                             <input
                               type="text"
                               class="form-control"
@@ -332,9 +413,9 @@ export default {
                         <!--end col-->
                         <div class="col-lg-4">
                           <div class="mb-3">
-                            <label for="zipcodeInput" class="form-label"
-                              >Zip Code</label
-                            >
+                            <label for="zipcodeInput" class="form-label">{{
+                              $t("t-zip-code")
+                            }}</label>
                             <input
                               type="text"
                               class="form-control"
@@ -350,11 +431,15 @@ export default {
                         <!--end col-->
                         <div class="col-lg-12">
                           <div class="hstack gap-2 justify-content-end">
-                            <button type="submit" class="btn btn-primary">
-                              Update
+                            <button
+                              type="submit"
+                              class="btn btn-primary"
+                              @click="updateUser"
+                            >
+                              {{ $t("t-update") }}
                             </button>
                             <button type="button" class="btn btn-soft-success">
-                              Cancel
+                              {{ $t("t-cancel") }}
                             </button>
                           </div>
                         </div>
@@ -371,9 +456,9 @@ export default {
                       <div class="mb-3">
                         <div class="col-lg-6 mb-3">
                           <div>
-                            <label for="oldpasswordInput" class="form-label"
-                              >Old Password*</label
-                            >
+                            <label for="oldpasswordInput" class="form-label">{{
+                              $t("t-old-password")
+                            }}</label>
                             <input
                               type="password"
                               class="form-control"
@@ -387,9 +472,9 @@ export default {
                         <!--end col-->
                         <div class="col-lg-6 mb-3">
                           <div>
-                            <label for="newpasswordInput" class="form-label"
-                              >New Password*</label
-                            >
+                            <label for="newpasswordInput" class="form-label">{{
+                              $t("t-new-password")
+                            }}</label>
                             <input
                               type="password"
                               class="form-control"
@@ -403,8 +488,10 @@ export default {
                         <!--end col-->
                         <div class="col-lg-6 mb-3">
                           <div>
-                            <label for="confirmpasswordInput" class="form-label"
-                              >Confirm Password*</label
+                            <label
+                              for="confirmpasswordInput"
+                              class="form-label"
+                              >{{ $t("t-confirm-password") }}</label
                             >
                             <input
                               type="password"
@@ -422,7 +509,7 @@ export default {
                             <a
                               href="javascript:void(0);"
                               class="link-primary text-decoration-underline"
-                              >Forgot Password ?</a
+                              >{{ $t("t-forgot-password") }}</a
                             >
                           </div>
                         </div>
@@ -434,7 +521,7 @@ export default {
                               class="btn btn-success"
                               @click="updatePassword"
                             >
-                              Change Password
+                              {{ $t("t-change-password") }}
                             </button>
                           </div>
                         </div>
@@ -447,41 +534,9 @@ export default {
                   <!-- PRIVACY SETTINGS -->
                   <!--end tab-pane-->
                   <div class="tab-pane" id="privacy" role="tabpanel">
-                    <!-- <div class="mb-4 pb-2">
-                  <h5 class="card-title text-decoration-underline mb-3">
-                    Security:
-                  </h5>
-                  <div class="d-flex flex-column flex-sm-row mb-4 mb-sm-0">
-                    <div class="flex-grow-1">
-                      <h6 class="fs-14 mb-1">Two-factor Authentication</h6>
-                      <p class="text-muted">
-                        Two-factor authentication is an enhanced security
-                        meansur. Once enabled, you'll be required to give two
-                        types of identification when you log into Google
-                        Authentication and SMS are Supported.
-                      </p>
-                    </div>
-                    <div class="flex-shrink-0 ms-sm-3">
-                      <a href="javascript:void(0);" class="btn btn-sm btn-primary">Enable Two-facor Authentication</a>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-column flex-sm-row mb-4 mb-sm-0 mt-2">
-                    <div class="flex-grow-1">
-                      <h6 class="fs-14 mb-1">Backup Codes</h6>
-                      <p class="text-muted mb-sm-0">
-                        A backup code is automatically generated for you when
-                        you turn on two-factor authentication through your iOS
-                        or Android app.
-                      </p>
-                    </div>
-                    <div class="flex-shrink-0 ms-sm-3">
-                      <a href="javascript:void(0);" class="btn btn-sm btn-primary">Generate backup codes</a>
-                    </div>
-                  </div>
-                </div> -->
                     <div class="mb-3">
                       <h5 class="card-title text-decoration-underline mb-3">
-                        Application Notifications:
+                        {{ $t("t-application-notifications") }}
                       </h5>
                       <ul class="list-unstyled mb-0">
                         <li class="d-flex mt-0">
@@ -490,11 +545,10 @@ export default {
                               class="form-check-label fs-14"
                               for="desktopNotification"
                             >
-                              Show desktop notifications
+                              {{ $t("t-show-desktop-notifications") }}
                             </label>
                             <p class="text-muted">
-                              Get the Medic'Follow notifications on the web
-                              browser you are using.
+                              {{ $t("t-get-desktop-notifs") }}
                             </p>
                           </div>
                           <div class="flex-shrink-0">
@@ -515,11 +569,10 @@ export default {
                               class="form-check-label fs-14"
                               for="emailNotification"
                             >
-                              Show mobile notifications
+                              {{ $t("t-show-mobile-notifications") }}
                             </label>
                             <p class="text-muted">
-                              Get the notifications on the mobile application
-                              Medic'Follow.
+                              {{ $t("t-get-mobile-notifs") }}
                             </p>
                           </div>
                           <div class="flex-shrink-0">
@@ -539,10 +592,10 @@ export default {
                               class="form-check-label fs-14"
                               for="emailNotification"
                             >
-                              Show email notifications
+                              {{ $t("t-show-email-notifications") }}
                             </label>
                             <p class="text-muted">
-                              Get the Medic'Follow notifications by email.
+                              {{ $t("t-get-email-notifs") }}
                             </p>
                           </div>
                           <div class="flex-shrink-0">
@@ -562,11 +615,10 @@ export default {
                               class="form-check-label fs-14"
                               for="chatNotification"
                             >
-                              Show chat notifications
+                              {{ $t("t-show-chat-notifications") }}
                             </label>
                             <p class="text-muted">
-                              Receive a notification every time a new message is
-                              sent to you.
+                              {{ $t("t-get-chat-notifs") }}
                             </p>
                           </div>
                           <div class="flex-shrink-0">
@@ -584,21 +636,20 @@ export default {
                       <div class="col-lg-12">
                         <div class="hstack gap-2 justify-content-end">
                           <button type="submit" class="btn btn-primary">
-                            Update
+                            {{ $t("t-update") }}
                           </button>
                           <button type="button" class="btn btn-soft-success">
-                            Cancel
+                            {{ $t("t-cancel") }}
                           </button>
                         </div>
                       </div>
                     </div>
                     <div>
                       <h5 class="card-title text-decoration-underline mb-3">
-                        Delete This Account:
+                        {{ $t("t-delete-this-account") }}
                       </h5>
                       <p class="text-muted">
-                        To delete your account, please enter your current
-                        password and click on the "Close & Delete This Account":
+                        {{ $t("t-delete-instructions") }}
                       </p>
                       <div>
                         <input
@@ -614,11 +665,11 @@ export default {
                         <a
                           href="javascript:void(0);"
                           class="btn btn-soft-danger"
-                          >Close & Delete This Account</a
+                          >{{ $t("t-close-and-delete-this-account") }}</a
                         >
-                        <a href="javascript:void(0);" class="btn btn-light"
-                          >Cancel</a
-                        >
+                        <a href="javascript:void(0);" class="btn btn-light">{{
+                          $t("t-cancel")
+                        }}</a>
                       </div>
                     </div>
                   </div>

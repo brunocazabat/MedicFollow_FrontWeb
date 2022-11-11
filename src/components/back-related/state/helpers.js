@@ -38,6 +38,8 @@ export const AuthActions = mapActions("auth", [
   "setGetMe",
   "setUI",
   "setPatientUUID",
+  "setEmail",
+  "setPhone",
 ]);
 
 export const SecurityActions = mapActions("security", [
