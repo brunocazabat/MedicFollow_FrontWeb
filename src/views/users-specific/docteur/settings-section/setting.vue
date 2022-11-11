@@ -1,26 +1,35 @@
 <script>
-import '@vueform/multiselect/themes/default.css'
-import 'flatpickr/dist/flatpickr.css'
+import "@vueform/multiselect/themes/default.css";
+import "flatpickr/dist/flatpickr.css";
 import { AuthGetters } from "@/components/back-related/state/helpers";
 
-import Layout from '@/components/view-related/layout/main.vue'
+import Layout from "@/components/view-related/layout/main.vue";
 
 import particlesmodule from "@/components/view-related/login-components/particles-module.vue";
+
+import axios from "axios";
+import Swal from "sweetalert2";
 
 export default {
   data() {
     return {
-      value: ['javascript'],
-      user: [{
-        fullname: null,
-        firstname: null,
-        lastname: null,
-        email: null,
-        phone: null,
-        role: null,
-      },
+      value: ["javascript"],
+      user: [
+        {
+          fullname: null,
+          firstname: null,
+          lastname: null,
+          email: null,
+          phone: null,
+          role: null,
+        },
       ],
-    }
+
+      // Password state
+      newPassword: "",
+      oldPassword: "",
+      confirmPassword: "",
+    };
   },
   mounted() {
     if (this.getfullname()) {
@@ -44,12 +53,81 @@ export default {
   },
   components: {
     Layout,
-    particlesmodule
+    particlesmodule,
   },
   methods: {
     ...AuthGetters,
+    // Method to check if the password is valid: 8 characters, 1 uppercase, 1 lowercase, 1 number, 1 special character
+    checkPassword() {
+      var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+      if (this.newPassword === this.oldPassword) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `${this.$t("t-password-not-different-old")}!`,
+        });
+        return false;
+      } else if (this.newPassword !== this.confirmPassword) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `${this.$t("t-password-not-match")}!`,
+        });
+        return false;
+      } else if (!re.test(this.newPassword)) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `${this.$t("t-password-not-valid")}.`,
+        });
+        return false;
+      } else {
+        return true;
+      }
+    },
+    // Method to update the password if the new password is valid
+    async updatePassword() {
+      if (this.checkPassword() === true) {
+        let url = "users/password";
+
+        await axios({
+          method: "put",
+          url: url,
+          data: {
+            newPassword: this.newPassword,
+            oldPassword: this.oldPassword,
+          },
+          headers: {
+            token: this.gettoken().Token,
+          },
+        })
+          .then((response) => {
+            if (response.status == 200) {
+              // Displaying a success message
+              Swal.fire({
+                title: `${this.$t("t-success")}`,
+                text: `${this.$t("t-passupdatesucess")}`,
+                icon: "success",
+                confirmButtonText: "OK",
+              });
+            }
+          })
+          .catch((error) => {
+            if (error.response.status === 462) {
+              // Old password is different from the one in the database
+              Swal.fire({
+                title: `${this.$t("t-error")}`,
+                text: `${this.$t("t-old-pass-not-match")}`,
+                icon: "error",
+                confirmButtonText: "OK",
+              });
+            }
+          });
+      }
+    },
   },
-}
+};
 </script>
 
 <template>
@@ -58,19 +136,34 @@ export default {
       <particlesmodule />
       <div class="container p-3">
         <!-- Profile picture settings -->
-        <div class="row ">
-          <div class="col-xxl-3 ">
+        <div class="row">
+          <div class="col-xxl-3">
             <div class="card mt-n5 forms-background-pattern">
               <div class="card-body p-4">
                 <div class="text-center">
-                  <div class="profile-user position-relative d-inline-block mx-auto mb-4">
-                    <img src="@/assets/images/users/avatar-8.jpg"
+                  <div
+                    class="profile-user position-relative d-inline-block mx-auto mb-4"
+                  >
+                    <img
+                      src="@/assets/images/users/avatar-8.jpg"
                       class="rounded-circle avatar-xl img-thumbnail user-profile-image shadow"
-                      alt="user-profile-image" />
-                    <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
-                      <input id="profile-img-file-input" type="file" class="profile-img-file-input" />
-                      <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
-                        <span class="avatar-title rounded-circle bg-light text-body shadow">
+                      alt="user-profile-image"
+                    />
+                    <div
+                      class="avatar-xs p-0 rounded-circle profile-photo-edit"
+                    >
+                      <input
+                        id="profile-img-file-input"
+                        type="file"
+                        class="profile-img-file-input"
+                      />
+                      <label
+                        for="profile-img-file-input"
+                        class="profile-photo-edit avatar-xs"
+                      >
+                        <span
+                          class="avatar-title rounded-circle bg-light text-body shadow"
+                        >
                           <em class="ri-camera-fill"></em>
                         </span>
                       </label>
@@ -88,21 +181,39 @@ export default {
           <div class="col-xxl-9">
             <div class="card mt-xxl-n5">
               <div class="card-header">
-                <ul class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
+                <ul
+                  class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0"
+                  role="tablist"
+                >
                   <li class="nav-item">
-                    <a class="nav-link active" data-bs-toggle="tab" href="#personalDetails" role="tab">
+                    <a
+                      class="nav-link active"
+                      data-bs-toggle="tab"
+                      href="#personalDetails"
+                      role="tab"
+                    >
                       <em class="fas fa-home"></em>
                       Personal Details
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#changePassword" role="tab">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      href="#changePassword"
+                      role="tab"
+                    >
                       <em class="far fa-user"></em>
                       Change Password
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#privacy" role="tab">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      href="#privacy"
+                      role="tab"
+                    >
                       <em class="far fa-envelope"></em>
                       Privacy Policy
                     </a>
@@ -113,24 +224,43 @@ export default {
               <!-- PERSONNAL DETAILS -->
               <div class="card-body p-4 forms-background-pattern">
                 <div class="tab-content">
-                  <div class="tab-pane active" id="personalDetails" role="tabpanel">
+                  <div
+                    class="tab-pane active"
+                    id="personalDetails"
+                    role="tabpanel"
+                  >
                     <form action="javascript:void(0);">
                       <div class="row">
-
                         <!-- READONLY NAMES -->
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="firstnameInput" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstnameInput" placeholder=""
-                              :value="this.user.firstname" disabled />
+                            <label for="firstnameInput" class="form-label"
+                              >First Name</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="firstnameInput"
+                              placeholder=""
+                              :value="this.user.firstname"
+                              disabled
+                            />
                           </div>
                         </div>
 
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="lastnameInput" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lastnameInput" placeholder="Enter your lastname"
-                              :value="this.user.lastname" disabled />
+                            <label for="lastnameInput" class="form-label"
+                              >Last Name</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="lastnameInput"
+                              placeholder="Enter your lastname"
+                              :value="this.user.lastname"
+                              disabled
+                            />
                           </div>
                         </div>
 
@@ -138,41 +268,83 @@ export default {
                         <!--end col-->
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="phonenumberInput" class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" id="phonenumberInput"
-                              placeholder="Enter your phone number" :value="this.user.phone" disabled />
+                            <label for="phonenumberInput" class="form-label"
+                              >Phone Number</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="phonenumberInput"
+                              placeholder="Enter your phone number"
+                              :value="this.user.phone"
+                              disabled
+                            />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-6">
                           <div class="mb-3">
-                            <label for="emailInput" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="emailInput" placeholder="Enter your email"
-                              :value="this.user.email" disabled />
+                            <label for="emailInput" class="form-label"
+                              >Email Address</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="emailInput"
+                              placeholder="Enter your email"
+                              :value="this.user.email"
+                              disabled
+                            />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-4">
                           <div class="mb-3">
-                            <label for="cityInput" class="form-label">City</label>
-                            <input type="text" class="form-control" id="cityInput" placeholder="City" value="TBD"
-                              disabled />
+                            <label for="cityInput" class="form-label"
+                              >City</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="cityInput"
+                              placeholder="City"
+                              value="TBD"
+                              disabled
+                            />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-4">
                           <div class="mb-3">
-                            <label for="countryInput" class="form-label">Country</label>
-                            <input type="text" class="form-control" id="countryInput" placeholder="Country"
-                              value="France" disabled />
+                            <label for="countryInput" class="form-label"
+                              >Country</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="countryInput"
+                              placeholder="Country"
+                              value="France"
+                              disabled
+                            />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-4">
                           <div class="mb-3">
-                            <label for="zipcodeInput" class="form-label">Zip Code</label>
-                            <input type="text" class="form-control" minlength="5" maxlength="6" id="zipcodeInput"
-                              placeholder="Enter zipcode" value="TBD" disabled />
+                            <label for="zipcodeInput" class="form-label"
+                              >Zip Code</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              minlength="5"
+                              maxlength="6"
+                              id="zipcodeInput"
+                              placeholder="Enter zipcode"
+                              value="TBD"
+                              disabled
+                            />
                           </div>
                         </div>
                         <!--end col-->
@@ -199,38 +371,69 @@ export default {
                       <div class="mb-3">
                         <div class="col-lg-6 mb-3">
                           <div>
-                            <label for="oldpasswordInput" class="form-label">Old Password*</label>
-                            <input type="password" class="form-control" id="oldpasswordInput"
-                              placeholder="Enter current password" required />
+                            <label for="oldpasswordInput" class="form-label"
+                              >Old Password*</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="oldpasswordInput"
+                              placeholder="Enter current password"
+                              v-model="oldPassword"
+                              required
+                            />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-6 mb-3">
                           <div>
-                            <label for="newpasswordInput" class="form-label">New Password*</label>
-                            <input type="password" class="form-control" id="newpasswordInput"
-                              placeholder="Enter new password" required />
+                            <label for="newpasswordInput" class="form-label"
+                              >New Password*</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="newpasswordInput"
+                              placeholder="Enter new password"
+                              v-model="newPassword"
+                              required
+                            />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-6 mb-3">
                           <div>
-                            <label for="confirmpasswordInput" class="form-label">Confirm Password*</label>
-                            <input type="password" class="form-control" id="confirmpasswordInput"
-                              placeholder="Confirm password" required />
+                            <label for="confirmpasswordInput" class="form-label"
+                              >Confirm Password*</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="confirmpasswordInput"
+                              placeholder="Confirm password"
+                              v-model="confirmPassword"
+                              required
+                            />
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-12 mb-3">
                           <div class="mb-3">
-                            <a href="javascript:void(0);" class="link-primary text-decoration-underline">Forgot Password
-                              ?</a>
+                            <a
+                              href="javascript:void(0);"
+                              class="link-primary text-decoration-underline"
+                              >Forgot Password ?</a
+                            >
                           </div>
                         </div>
                         <!--end col-->
                         <div class="col-lg-12">
                           <div class="mb-3">
-                            <button type="submit" class="btn btn-success">
+                            <button
+                              type="submit"
+                              class="btn btn-success"
+                              @click="updatePassword"
+                            >
                               Change Password
                             </button>
                           </div>
@@ -283,38 +486,59 @@ export default {
                       <ul class="list-unstyled mb-0">
                         <li class="d-flex mt-0">
                           <div class="flex-grow-1">
-                            <label class="form-check-label fs-14" for="desktopNotification">
+                            <label
+                              class="form-check-label fs-14"
+                              for="desktopNotification"
+                            >
                               Show desktop notifications
                             </label>
                             <p class="text-muted">
-                              Get the Medic'Follow notifications on the web browser you are using.
+                              Get the Medic'Follow notifications on the web
+                              browser you are using.
                             </p>
                           </div>
                           <div class="flex-shrink-0">
                             <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" role="switch" id="desktopNotification"
-                                checked />
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                role="switch"
+                                id="desktopNotification"
+                                checked
+                              />
                             </div>
                           </div>
                         </li>
                         <li class="d-flex mt-2">
                           <div class="flex-grow-1">
-                            <label class="form-check-label fs-14" for="emailNotification">
+                            <label
+                              class="form-check-label fs-14"
+                              for="emailNotification"
+                            >
                               Show mobile notifications
                             </label>
                             <p class="text-muted">
-                              Get the notifications on the mobile application Medic'Follow.
+                              Get the notifications on the mobile application
+                              Medic'Follow.
                             </p>
                           </div>
                           <div class="flex-shrink-0">
                             <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" role="switch" id="emailNotification" />
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                role="switch"
+                                id="emailNotification"
+                              />
                             </div>
                           </div>
                         </li>
                         <li class="d-flex mt-2">
                           <div class="flex-grow-1">
-                            <label class="form-check-label fs-14" for="emailNotification">
+                            <label
+                              class="form-check-label fs-14"
+                              for="emailNotification"
+                            >
                               Show email notifications
                             </label>
                             <p class="text-muted">
@@ -323,22 +547,36 @@ export default {
                           </div>
                           <div class="flex-shrink-0">
                             <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" role="switch" id="emailNotification" />
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                role="switch"
+                                id="emailNotification"
+                              />
                             </div>
                           </div>
                         </li>
                         <li class="d-flex mt-2">
                           <div class="flex-grow-1">
-                            <label class="form-check-label fs-14" for="chatNotification">
+                            <label
+                              class="form-check-label fs-14"
+                              for="chatNotification"
+                            >
                               Show chat notifications
                             </label>
                             <p class="text-muted">
-                              Receive a notification every time a new message is sent to you.
+                              Receive a notification every time a new message is
+                              sent to you.
                             </p>
                           </div>
                           <div class="flex-shrink-0">
                             <div class="form-check form-switch">
-                              <input class="form-check-input" type="checkbox" role="switch" id="chatNotification" />
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                role="switch"
+                                id="chatNotification"
+                              />
                             </div>
                           </div>
                         </li>
@@ -359,17 +597,28 @@ export default {
                         Delete This Account:
                       </h5>
                       <p class="text-muted">
-                        To delete your account, please enter your current password and click on the "Close & Delete This
-                        Account":
+                        To delete your account, please enter your current
+                        password and click on the "Close & Delete This Account":
                       </p>
                       <div>
-                        <input type="password" class="form-control" id="passwordInput" placeholder="Enter your password"
-                          value="make@321654987" style="max-width: 265px" />
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="passwordInput"
+                          placeholder="Enter your password"
+                          value="make@321654987"
+                          style="max-width: 265px"
+                        />
                       </div>
                       <div class="hstack gap-2 mt-3">
-                        <a href="javascript:void(0);" class="btn btn-soft-danger">Close & Delete This
-                          Account</a>
-                        <a href="javascript:void(0);" class="btn btn-light">Cancel</a>
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-soft-danger"
+                          >Close & Delete This Account</a
+                        >
+                        <a href="javascript:void(0);" class="btn btn-light"
+                          >Cancel</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -381,7 +630,6 @@ export default {
           <!--end col-->
         </div>
         <!--end row-->
-
       </div>
     </div>
   </Layout>

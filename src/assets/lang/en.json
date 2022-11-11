@@ -439,5 +439,12 @@
   "t-total": "in total.",
   "t-accessdiscuss": "Access all discussions",
   "t-accesssettings": "Access all settings",
-  "t-author": "Author"
+  "t-author": "Author",
+  "t-success": "Success",
+  "t-passupdatesucess": "Password updated successfully",
+  "t-password-not-different-old": "Your new password must be different from your old password",
+  "t-password-not-match": "Your new password and confirmation password do not match",
+  "t-password-not-valid": "Your password must contain at least 8 characters, 1 uppercase, 1 lowercase, 1 number, 1 special character",
+  "t-error": "Error",
+  "t-old-pass-not-match": "The old password is not correct"
 }

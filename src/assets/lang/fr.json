@@ -439,5 +439,12 @@
   "t-total": "au total.",
   "t-accesssettings": "Accéder à tous les paramètres",
   "t-accessdiscuss": "Accéder à toutes les discussions",
-  "t-author": "Auteur"
+  "t-author": "Auteur",
+  "t-success": "Succès",
+  "t-passupdatesucess": "Mot de passe mis à jour avec succès",
+  "t-password-not-different-old": "Votre nouveau mot de passe doit être différent de votre ancien mot de passe",
+  "t-password-not-match": "Votre nouveau mot de passe et votre mot de passe de confirmation ne correspondent pas",
+  "t-password-not-valid": "Votre mot de passe doit contenir au moins 8 caractères, 1 majuscule, 1 minuscule, 1 chiffre, 1 caractère spécial",
+  "t-error": "Erreur",
+  "t-old-pass-not-match": "L'ancien mot de passe n'est pas correct"
 }
