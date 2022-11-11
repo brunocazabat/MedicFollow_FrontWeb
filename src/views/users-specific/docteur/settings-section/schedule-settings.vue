@@ -8,7 +8,6 @@ import ScheduleModule from "./scheduleModule.vue";
 import DaysCheckModule from "./daysOfTheWeekCheck.vue";
 import axios from "axios";
 import Swal from "sweetalert2";
-// import { forEach } from "lodash";
 
 export default {
   data() {
