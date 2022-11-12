@@ -36,7 +36,7 @@ export default {
       form: {
         message: "",
       },
-      username: `${this.getlastname().toUpperCase()} ${this.getfirstname()}`,
+      username: "",
       userLastName: this.getlastname(),
       userFirstName: this.getfirstname(),
       profile: require("@/assets/images/users/avatar-1.png"),
@@ -85,6 +85,8 @@ export default {
             }`,
           });
         });
+
+      console.log(this.conversationsArray);
     },
     // Method to retrieve the messages
     // TODO: Check if it works
@@ -155,8 +157,8 @@ export default {
           });
       }, 300);
     },
-    chatUsername(firstName, lastName, discussionUUID) {
-      this.username = `${lastName.toUpperCase()} ${firstName}`;
+    chatUsername(discussionTitle, discussionUUID) {
+      this.username = discussionTitle;
       this.discussionUUID = discussionUUID;
 
       // Clearing the chatMessagesData array
@@ -196,9 +198,7 @@ export default {
     // Method to setup pre-selected chat
     setupPreSelectedChat() {
       // Setting the username to be equal to the first conversation
-      this.username = `${this.conversationsArray[0].user.lastname.toUpperCase()} ${
-        this.conversationsArray[0].user.firstname
-      }`;
+      this.username = this.conversationsArray[0].title;
       this.discussionUUID = this.conversationsArray[0].uuid;
 
       // Clearing the chatMessagesData array
@@ -304,11 +304,11 @@ export default {
     // Executing the setupPreSelectedChat method with a 1 second delay to make sure the conversationsArray is filled
     setTimeout(() => {
       this.setupPreSelectedChat();
-    }, 1000);
+    }, 1500);
     var currentChatId = "users-chat";
     setTimeout(() => {
       this.scrollToBottom(currentChatId);
-    }, 1100);
+    }, 1600);
     document.getElementById("copyClipBoard").style.display = "none";
     var userChatElement = document.querySelectorAll(".user-chat");
     document.querySelectorAll(".chat-user-list li a").forEach(function (item) {
@@ -405,11 +405,7 @@ export default {
                 v-for="(conversation, key) in conversationsArray"
                 :key="key"
                 @click.once="
-                  chatUsername(
-                    conversation.user.lastname,
-                    conversation.user.lastname,
-                    conversation.uuid
-                  )
+                  chatUsername(conversation.user.title, conversation.uuid)
                 "
                 :class="{ active: username == conversation.user.firstname }"
               >
@@ -422,14 +418,13 @@ export default {
                         <div
                           class="avatar-title rounded-circle bg-danger userprofile"
                         >
-                          {{ conversation.user.firstname.charAt(0) }}
+                          {{ conversation.title.charAt(0).toUpperCase() }}
                         </div>
                       </div>
                     </div>
                     <div class="flex-grow-1 overflow-hidden">
                       <p class="text-truncate mb-1">
-                        {{ conversation.user.lastname.toUpperCase() }}
-                        {{ conversation.user.firstname }}
+                        {{ conversation.title }}
                       </p>
                     </div>
 
