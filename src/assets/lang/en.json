@@ -475,5 +475,6 @@
   "t-get-chat-notifs": "Receive a notification every time a new message is sent to you.",
   "t-delete-this-account": "Delete This Account:",
   "t-delete-instructions": "To delete your account, please enter your current password and click on the \"Close & Delete This Account\" button.",
-  "t-close-and-delete-this-account": "Close and Delete This Account"
+  "t-close-and-delete-this-account": "Close and Delete This Account",
+  "t-something-went-wrong": "Something went wrong"
 }

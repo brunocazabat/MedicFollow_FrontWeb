@@ -14,6 +14,7 @@ import Layout from "@/components/view-related/layout/main.vue";
 import dayjs from "dayjs";
 import { chatData, chatMessagesData } from "./data";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 export default {
   setup() {
@@ -26,13 +27,18 @@ export default {
       // Chat Data
       conversationsArray: [],
       messagesArray: [],
+      messageID: 0,
       chatData: chatData,
       chatMessagesData: chatMessagesData,
       submitted: false,
+      discussionUUID: "",
+
       form: {
         message: "",
       },
       username: `${this.getlastname().toUpperCase()} ${this.getfirstname()}`,
+      userLastName: this.getlastname(),
+      userFirstName: this.getfirstname(),
       profile: require("@/assets/images/users/avatar-1.png"),
     };
   },
@@ -62,23 +68,28 @@ export default {
           token: this.gettoken().Token,
         },
       })
-        .then((response) => {
+        .then(async (response) => {
           for (let i = 0; i < response.data.discussions.length; i++) {
             const element = response.data.discussions[i];
             this.conversationsArray.push(element);
+            await this.getMessages(element.uuid);
           }
         })
         .catch((error) => {
-          console.log(error);
+          // Sweet Alert Error about retrieving the conversations
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: `${this.$t("t-something-went-wrong")}./nError: ${
+              error.response.status
+            }`,
+          });
         });
-
-      // TODO: Remove this
-      console.log("Conversations", this.conversationsArray);
     },
     // Method to retrieve the messages
     // TODO: Check if it works
     async getMessages(discussionUuid) {
-      let url = `discussion/${discussionUuid}/`;
+      let url = `discussion/${discussionUuid}/messages/?page=1`;
 
       await axios({
         method: "get",
@@ -88,22 +99,34 @@ export default {
         },
       })
         .then((response) => {
-          for (let i = 0; i < response.data.discussions.length; i++) {
-            const element = response.data.discussions[i];
-            this.messagesArray.push(element);
+          if (response.status === 200) {
+            for (let i = 0; i < response.data.messages.length; i++) {
+              const element = response.data.messages[i];
+              // Pushing the element as an array into the message array and adding the messageID in the object
+              this.messagesArray.push({
+                messageID: element.disc_uuid,
+                messageInfo: element,
+              });
+            }
           }
+          this.messageID++;
         })
         .catch((error) => {
-          console.log(error);
+          // Sweet Alert Error about retrieving the messages
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: `${this.$t("t-something-went-wrong")}./nError: ${
+              error.response.status
+            }`,
+          });
         });
     },
     // Parsing date and time
     parseDate(date) {
       return dayjs(date).format("DD/MM/YY");
     },
-    /**
-     * Get the name of user
-     */
+    // Method to scroll to the bottom of the chat
     scrollToBottom(id) {
       setTimeout(function () {
         var simpleBar = document
@@ -132,17 +155,121 @@ export default {
           });
       }, 300);
     },
-    chatUsername(firstName, lastName) {
+    chatUsername(firstName, lastName, discussionUUID) {
       this.username = `${lastName.toUpperCase()} ${firstName}`;
-      this.usermessage = "Hello";
-      this.chatMessagesData = [];
-      const currentDate = new Date();
+      this.discussionUUID = discussionUUID;
 
-      this.chatMessagesData.push({
-        name: this.username,
-        message: this.usermessage,
-        time: currentDate.getHours() + ":" + currentDate.getMinutes(),
-      });
+      // Clearing the chatMessagesData array
+      this.chatMessagesData = [];
+      // Loop to push the messages into the chatMessagesData array
+      for (let i = 0; i < this.messagesArray.length; i++) {
+        const element = this.messagesArray[i];
+        if (element.messageID === discussionUUID) {
+          if (element.messageInfo.user.uuid == this.getuuid()) {
+            this.chatMessagesData.push({
+              message: element.messageInfo.cnt,
+              name: `${this.getlastname().toUpperCase()} ${this.getfirstname()}`,
+              time: this.parseHour(element.createdAt),
+              align: "right",
+            });
+          } else {
+            this.chatMessagesData.push({
+              message: element.messageInfo.cnt,
+              name: `${element.messageInfo.user.lastname.toUpperCase()} ${
+                element.messageInfo.user.firstname
+              }`,
+              time: this.parseHour(element.createdAt),
+              align: "left",
+            });
+          }
+        }
+      }
+
+      // reversing the array
+      this.chatMessagesData.reverse();
+    },
+    // Method to parse the hour
+    parseHour(hour) {
+      return dayjs(hour).format("HH:mm");
+    },
+
+    // Method to setup pre-selected chat
+    setupPreSelectedChat() {
+      // Setting the username to be equal to the first conversation
+      this.username = `${this.conversationsArray[0].user.lastname.toUpperCase()} ${
+        this.conversationsArray[0].user.firstname
+      }`;
+      this.discussionUUID = this.conversationsArray[0].uuid;
+
+      // Clearing the chatMessagesData array
+      this.chatMessagesData = [];
+      // Loop to push the messages into the chatMessagesData array
+      for (let i = 0; i < this.messagesArray.length; i++) {
+        const element = this.messagesArray[i];
+        if (element.messageID === this.conversationsArray[0].uuid) {
+          if (element.messageInfo.user.uuid == this.getuuid()) {
+            this.chatMessagesData.push({
+              message: element.messageInfo.cnt,
+              name: `${this.getlastname().toUpperCase()} ${this.getfirstname()}`,
+              time: this.parseHour(element.createdAt),
+              align: "right",
+            });
+          } else {
+            this.chatMessagesData.push({
+              message: element.messageInfo.cnt,
+              name: `${element.messageInfo.user.lastname.toUpperCase()} ${
+                element.messageInfo.user.firstname
+              }`,
+              time: this.parseHour(element.createdAt),
+              align: "left",
+            });
+          }
+        }
+      }
+
+      // reversing the array
+      this.chatMessagesData.reverse();
+    },
+
+    // Method to send a message
+    async sendMessage() {
+      let url = "messages/";
+
+      // regex to check if the text is not empty
+      let re = /\S/;
+      if (!re.test(this.form.message)) {
+        return;
+      }
+
+      const payload = {
+        discussionUuid: this.discussionUUID,
+        data: this.form.message,
+      };
+
+      await axios({
+        method: "post",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
+        data: payload,
+      })
+        .then((response) => {
+          if (response.status === 201) {
+            this.message = "";
+            this.scrollToBottom("users-chat");
+          }
+        })
+        .catch((error) => {
+          // Sweet alert showing code error
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: `${this.$t("t-something-went-wrong")}./nError: ${
+              error.response.status
+            }`,
+          });
+        });
     },
 
     /**
@@ -174,8 +301,14 @@ export default {
   },
   mounted() {
     this.getConversations();
+    // Executing the setupPreSelectedChat method with a 1 second delay to make sure the conversationsArray is filled
+    setTimeout(() => {
+      this.setupPreSelectedChat();
+    }, 1000);
     var currentChatId = "users-chat";
-    this.scrollToBottom(currentChatId);
+    setTimeout(() => {
+      this.scrollToBottom(currentChatId);
+    }, 1100);
     document.getElementById("copyClipBoard").style.display = "none";
     var userChatElement = document.querySelectorAll(".user-chat");
     document.querySelectorAll(".chat-user-list li a").forEach(function (item) {
@@ -274,7 +407,8 @@ export default {
                 @click.once="
                   chatUsername(
                     conversation.user.lastname,
-                    conversation.user.lastname
+                    conversation.user.lastname,
+                    conversation.uuid
                   )
                 "
                 :class="{ active: username == conversation.user.firstname }"
@@ -294,8 +428,8 @@ export default {
                     </div>
                     <div class="flex-grow-1 overflow-hidden">
                       <p class="text-truncate mb-1">
+                        {{ conversation.user.lastname.toUpperCase() }}
                         {{ conversation.user.firstname }}
-                        {{ conversation.user.lastname }}
                       </p>
                     </div>
 
@@ -305,146 +439,15 @@ export default {
                       </span>
                     </div>
                   </div>
+                  <!-- Displaying the last message as a text-muted p aligned on the right -->
+                  <div class="flex-shrink-0">
+                    <p class="text-truncate mb-1 text-muted text-end">
+                      {{ conversation.last_message }}
+                    </p>
+                  </div>
                 </a>
               </li>
             </SimpleBar>
-          </div>
-
-          <div class="d-flex align-items-center px-4 mt-4 pt-2 mb-2">
-            <div class="flex-grow-1">
-              <h4 class="mb-0 fs-11 text-muted text-uppercase">Channels</h4>
-            </div>
-            <div class="flex-shrink-0">
-              <div
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                title="Create group"
-              >
-                <!-- Button trigger modal -->
-                <button
-                  type="button"
-                  class="btn btn-soft-success btn-sm shadow-none"
-                >
-                  <em class="ri-add-line align-bottom"></em>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="chat-message-list">
-            <ul
-              class="list-unstyled chat-list chat-user-list mb-0"
-              id="channelList"
-            >
-              <li>
-                <a href="javascript: void(0);" class="unread-msg-user">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0"
-                    >
-                      <div class="avatar-xxs">
-                        <div
-                          class="avatar-title bg-light rounded-circle text-body"
-                        >
-                          #
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Landing Design</p>
-                    </div>
-                    <div class="flex-shrink-0">
-                      <span class="badge badge-soft-dark rounded p-1">7</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript: void(0);">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0"
-                    >
-                      <div class="avatar-xxs">
-                        <div
-                          class="avatar-title bg-light rounded-circle text-body"
-                        >
-                          #
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">General</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript: void(0);" class="unread-msg-user">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0"
-                    >
-                      <div class="avatar-xxs">
-                        <div
-                          class="avatar-title bg-light rounded-circle text-body"
-                        >
-                          #
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Project Tasks</p>
-                    </div>
-                    <div class="flex-shrink-0">
-                      <span class="badge badge-soft-dark rounded p-1">3</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="javascript: void(0);">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0"
-                    >
-                      <div class="avatar-xxs">
-                        <div
-                          class="avatar-title bg-light rounded-circle text-dark"
-                        >
-                          #
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Meeting</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript: void(0);">
-                  <div class="d-flex align-items-center">
-                    <div
-                      class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0"
-                    >
-                      <div class="avatar-xxs">
-                        <div
-                          class="avatar-title bg-light rounded-circle text-dark"
-                        >
-                          #
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex-grow-1 overflow-hidden">
-                      <p class="text-truncate mb-0">Reporting</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
           </div>
           <!-- End chat-message-list -->
         </div>
@@ -752,6 +755,7 @@ export default {
                           <button
                             type="submit"
                             class="btn btn-primary chat-send waves-effect waves-light shadow"
+                            @click="sendMessage"
                           >
                             <em class="ri-send-plane-2-fill align-bottom"></em>
                           </button>
