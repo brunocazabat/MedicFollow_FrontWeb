@@ -30,7 +30,6 @@ export const layoutComputed = {
     sidebarColor: (state) => state.sidebarColor,
   }),
 };
-// BALLEC
 
 export const AuthActions = mapActions("auth", [
   "setLogIn",
@@ -38,6 +37,8 @@ export const AuthActions = mapActions("auth", [
   "setGetMe",
   "setUI",
   "setPatientUUID",
+  "setEmail",
+  "setPhone",
 ]);
 
 export const SecurityActions = mapActions("security", [

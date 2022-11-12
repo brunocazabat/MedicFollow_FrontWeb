@@ -1,12 +1,16 @@
 <script>
 import Layout from "@/components/view-related/layout/main.vue";
 import { reactive } from "vue";
-import useSubmitButtonState from "@/components/view-related/staff-input-components/useSubmitButtonState"
-import useVuelidate from '@vuelidate/core'
-import FieldModule from './fieldModule.vue'
+import useSubmitButtonState from "@/components/view-related/staff-input-components/useSubmitButtonState";
+import useVuelidate from "@vuelidate/core";
+import FieldModule from "./fieldModule.vue";
 import Chat from "@/components/view-related/staff-input-components/chat.vue";
-import Calendar from "@/components/view-related/staff-input-components/calendar.vue"
-import { AuthGetters, PatientGetters } from "@/components/back-related/state/helpers";
+// import Calendar from "@/components/view-related/staff-input-components/calendar.vue"
+import {
+  AuthGetters,
+  PatientGetters,
+  PatientSetters,
+} from "@/components/back-related/state/helpers";
 import Swal from "sweetalert2";
 import axios from "axios";
 
@@ -14,16 +18,16 @@ export default {
   props: {
     patientID: {
       type: Number,
-      required: false
+      required: false,
     },
     patientFName: {
       type: String,
-      required: true
+      required: true,
     },
     patientLName: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   setup() {
     const patientMandatory = reactive({
@@ -36,7 +40,7 @@ export default {
   },
   data() {
     return {
-      value: ['javascript'],
+      value: ["javascript"],
 
       // Views Var
       viewID: 0,
@@ -58,15 +62,14 @@ export default {
         { id: 4, title: "Tension Artérielle", value: "" },
         { id: 5, title: "EVN", value: "" },
         { id: 6, title: "Traitements", value: "" },
-      ]
-
+      ],
     };
   },
   components: {
     Layout,
     FieldModule,
     Chat,
-    Calendar,
+    // Calendar,
   },
   onMounted() {
     if (this.patientFName.length > 0) {
@@ -79,6 +82,7 @@ export default {
   methods: {
     ...AuthGetters,
     ...PatientGetters,
+    ...PatientSetters,
     checkPatientInfo() {
       if (this.patientFName && this.patientLName) {
         this.patientFirstName = this.patientFName;
@@ -118,7 +122,7 @@ export default {
             // Creating the request body
             const data = {
               content: this.generalObservation,
-            }
+            };
 
             // Creating the request URL
             const url = "patient/" + this.getPatientUUID() + "/observation";
@@ -171,7 +175,7 @@ export default {
         }).then((result) => {
           if (result.isConfirmed) {
             this.setPatientClearAll();
-            this.$router.push("/docteur/dashboard")
+            this.$router.push("/docteur/dashboard");
           }
         });
       }
@@ -191,14 +195,12 @@ export default {
     }
     window.scrollTo(0, 0);
     this.checkPatientInfo();
-  }
+  },
 };
-
 </script>
-  
+
 <template>
   <Layout>
-
     <div class="project-wrapper">
       <!-- First Input Page -->
       <div v-if="viewID === 0">
@@ -207,54 +209,78 @@ export default {
         <p class="text-muted">{{ $t("t-selectpatientinfotext") }}.</p>
         <div class="card">
           <div class="card-body">
-
             <!-- Input fields -->
             <div class="row mb-3">
               <!-- First name -->
               <div class="col-sm-6">
                 <label for="patientFirstName" class="form-label">{{
-                    $t("t-firstname")
+                  $t("t-firstname")
                 }}</label>
-                <input type="text" class="form-control" id="patientFirstName" placeholder="Enter first name..."
-                  v-model="patientFirstName" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="patientFirstName"
+                  placeholder="Enter first name..."
+                  v-model="patientFirstName"
+                />
               </div>
 
               <!-- Last name -->
               <div class="col-sm-6">
-                <label for="patientLastName" class="form-label">{{ $t("t-lastname")
+                <label for="patientLastName" class="form-label">{{
+                  $t("t-lastname")
                 }}</label>
-                <input type="text" class="form-control" id="patientLastName" placeholder="Enter last name..."
-                  v-model="patientLastName" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="patientLastName"
+                  placeholder="Enter last name..."
+                  v-model="patientLastName"
+                />
               </div>
             </div>
 
             <!-- Social security number + Date of Birth -->
             <div class="row">
-
               <!-- Social Security Number -->
               <div class="col-sm-6">
-                <label for="patientSocialSecurityNumber" class="form-label">{{ $t("t-socialsecuritynbr") }}</label>
-                <input type="text" class="form-control" id="patientSocialSecurityNumber"
-                  placeholder="Enter the social security number..." v-model="patientMandatory.socialSecurityNumber" />
+                <label for="patientSocialSecurityNumber" class="form-label">{{
+                  $t("t-socialsecuritynbr")
+                }}</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="patientSocialSecurityNumber"
+                  placeholder="Enter the social security number..."
+                  v-model="patientMandatory.socialSecurityNumber"
+                />
               </div>
 
               <!-- Date of Birth / CHANGE FOR ACTUAL DATE PICKER -->
               <div class="col-sm-6">
-                <label for="patientDoB" class="form-label">{{ $t("t-dateofbirth") }}</label>
-                <input type="date" class="form-control" id="patientDoB" placeholder="Enter the date of birth..."
-                  v-model="patientMandatory.dateOfBirth" />
+                <label for="patientDoB" class="form-label">{{
+                  $t("t-dateofbirth")
+                }}</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="patientDoB"
+                  placeholder="Enter the date of birth..."
+                  v-model="patientMandatory.dateOfBirth"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-
       <!-- INPUT MEDICAL INFORMATION -->
       <div class="row" v-if="viewID === 1">
         <!-- Title + paragraph -->
-        <h2 class="text-primary text-uppercase">{{ $t("t-medicinfofor") }} <strong>{{ patientLastName }}
-            {{ patientFirstName }}</strong></h2>
+        <h2 class="text-primary text-uppercase">
+          {{ $t("t-medicinfofor") }}
+          <strong>{{ patientLastName }} {{ patientFirstName }}</strong>
+        </h2>
         <p class="text-muted">{{ $t("t-writedownlastinfo") }}.</p>
         <div class="p-2">
           <div class="card">
@@ -263,35 +289,60 @@ export default {
               <div class="col-lg-6 mf-scrollable">
                 <!-- INPUT LATEST INFO -->
                 <div>
-                  <label for="patientObserveCardInput" class="form-label font-size-large">
+                  <label
+                    for="patientObserveCardInput"
+                    class="form-label font-size-large"
+                  >
                     {{ $t("t-observationsheets") }}
                   </label>
-                  <textarea class="form-control" id="patientObserveCardInput" rows="3"
-                    placeholder="Veuillez saisir le résumé..." v-model="generalObservation"></textarea>
+                  <textarea
+                    class="form-control"
+                    id="patientObserveCardInput"
+                    rows="3"
+                    placeholder="Veuillez saisir le résumé..."
+                    v-model="generalObservation"
+                  ></textarea>
                   <div class="invalid-feedback">
                     Please enter a message in the textarea.
                   </div>
                 </div>
 
-                <hr>
+                <hr />
 
                 <!-- NON MANDATORY FIELDS LOOP -->
                 <div class="basic-card-border mb-2">
-                  <a class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
-                    href="#patientNonMandatoryField" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                    aria-controls="patientNonMandatoryField">
-                    <span>{{ $t("t-notmandatoryfields") }} <strong><em
-                          class="ri-arrow-down-line lh-1 center-items"></em></strong></span>
+                  <a
+                    class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
+                    href="#patientNonMandatoryField"
+                    data-bs-toggle="collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="patientNonMandatoryField"
+                  >
+                    <span
+                      >{{ $t("t-notmandatoryfields") }}
+                      <strong
+                        ><em
+                          class="ri-arrow-down-line lh-1 center-items"
+                        ></em></strong
+                    ></span>
                   </a>
 
-                  <hr class="mf-divider">
+                  <hr class="mf-divider" />
 
-                  <div class="collapse col-sm-12 basic-padding left-margin" id="patientNonMandatoryField">
-                    <FieldModule v-for="field in inputFields" :key="field.id" :fieldName="field.title" />
+                  <div
+                    class="collapse col-sm-12 basic-padding left-margin"
+                    id="patientNonMandatoryField"
+                  >
+                    <FieldModule
+                      v-for="field in inputFields"
+                      :key="field.id"
+                      :fieldName="field.title"
+                    />
                   </div>
                 </div>
 
-                <hr>
+                <hr />
 
                 <!-- FILE UPLOAD -->
                 <div class="mb-3">
@@ -300,11 +351,14 @@ export default {
                       {{ $t("t-questionuploaddoc") }}
                     </label>
                     <p class="text-muted mb-3">{{ $t("t-uploadexample") }}</p>
-                    <input class="form-control" type="file" id="feedbackFileUpload" accept=".pdf, ,jpg, .jpeg, .png">
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="feedbackFileUpload"
+                      accept=".pdf, ,jpg, .jpeg, .png"
+                    />
                   </div>
                 </div>
-
-
               </div>
 
               <!-- CHAT DIV -->
@@ -312,39 +366,50 @@ export default {
                 <Chat />
               </div>
 
-              <Calendar />
+              <!-- <Calendar /> -->
             </div>
           </div>
         </div>
-
-
       </div>
-
 
       <!-- Next and Prev Button -->
       <div class="p-3 mb-3 row">
         <div class="space-in-between" v-if="viewEnd === false">
-          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"
-            :disabled="viewID === 0"><strong><em class="ri-arrow-left-line center-items"></em></strong>
-            {{ $t("t-previousstep") }}</button>
-          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="nextView()"
-            :disabled="isSubmitButtonDisabled">{{ $t("t-nextstep") }}
-            <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
+          <button
+            class="lh-1 btn btn-primary font-size-medium col-sm-4"
+            v-on:click="prevView()"
+            :disabled="viewID === 0"
+          >
+            <strong><em class="ri-arrow-left-line center-items"></em></strong>
+            {{ $t("t-previousstep") }}
+          </button>
+          <button
+            class="lh-1 btn btn-primary font-size-medium col-sm-4"
+            v-on:click="nextView()"
+            :disabled="isSubmitButtonDisabled"
+          >
+            {{ $t("t-nextstep") }}
+            <strong><em class="ri-arrow-right-line center-items"></em></strong>
+          </button>
         </div>
 
         <div class="space-in-between" v-else>
-          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="prevView()"><strong><em
-                class="ri-arrow-left-line center-items"></em></strong>
-            {{ $t("t-previousstep") }}</button>
-          <button class="lh-1 btn btn-primary font-size-medium col-sm-4" v-on:click="sendObservationRequest">{{
-              $t("t-continue")
-          }}
-            <strong><em class="ri-arrow-right-line center-items"></em></strong></button>
+          <button
+            class="lh-1 btn btn-primary font-size-medium col-sm-4"
+            v-on:click="prevView()"
+          >
+            <strong><em class="ri-arrow-left-line center-items"></em></strong>
+            {{ $t("t-previousstep") }}
+          </button>
+          <button
+            class="lh-1 btn btn-primary font-size-medium col-sm-4"
+            v-on:click="sendObservationRequest"
+          >
+            {{ $t("t-continue") }}
+            <strong><em class="ri-arrow-right-line center-items"></em></strong>
+          </button>
         </div>
       </div>
-
-
     </div>
   </Layout>
 </template>
-  
