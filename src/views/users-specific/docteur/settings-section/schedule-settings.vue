@@ -106,7 +106,6 @@ export default {
           },
         })
         .then((response) => {
-          console.log("Config Reponse:", response);
           if (response.status === 200) {
             // Setting the radio box value
             if (response.data.enable == 1) {
@@ -363,7 +362,6 @@ export default {
         },
       })
         .then((response) => {
-          console.log("Send Response:", response);
           if (response.status == 200) {
             return true;
           }
