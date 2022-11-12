@@ -85,8 +85,6 @@ export default {
             }`,
           });
         });
-
-      console.log(this.conversationsArray);
     },
     // Method to retrieve the messages
     // TODO: Check if it works
