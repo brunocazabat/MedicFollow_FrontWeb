@@ -476,5 +476,7 @@
   "t-delete-this-account": "Delete This Account:",
   "t-delete-instructions": "To delete your account, please enter your current password and click on the \"Close & Delete This Account\" button.",
   "t-close-and-delete-this-account": "Close and Delete This Account",
-  "t-something-went-wrong": "Something went wrong"
+  "t-something-went-wrong": "Something went wrong",
+  "t-maxappointments": "Maximum appointments",
+  "t-timeperslot": "Time per appointment slot"
 }

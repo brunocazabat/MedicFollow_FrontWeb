@@ -64,6 +64,12 @@ export default {
       // Radio Box Var
       picked: "NO",
 
+      // Maximum numbers of schedules
+      maxSchedules: 5,
+
+      // Appointments time per slot
+      timePerSlot: 30,
+
       // Send button var
       submitSchedulesDisabled: true,
     };
@@ -100,10 +106,17 @@ export default {
           },
         })
         .then((response) => {
-          if (response.data.enable == 1) {
-            this.picked = "YES";
-          } else {
-            this.picked = "NO";
+          console.log("Config Reponse:", response);
+          if (response.status === 200) {
+            // Setting the radio box value
+            if (response.data.enable == 1) {
+              this.picked = "YES";
+            } else {
+              this.picked = "NO";
+            }
+            // Setting the time per slot and max schedules
+            this.maxSchedules = response.data.max;
+            this.timePerSlot = response.data.time;
           }
         })
         .catch((error) => {
@@ -322,13 +335,24 @@ export default {
         acceptAppointments = 0;
       }
 
+      // Checking if maxSchedules and timePerSlot are containing only numbers
+      // regex to check if only numbers in a string
+      let re = /^[0-9]+$/;
+      if (!re.test(this.maxSchedules) || !re.test(this.timePerSlot)) {
+        // Sweet alert error
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "The max schedules and time per slot must be numbers!",
+        });
+        return false;
+      }
+
       const payload = {
-        max: 5,
-        time: 30,
+        max: Number(this.maxSchedules),
+        time: Number(this.timePerSlot),
         enable: acceptAppointments,
       };
-
-      console.log(payload);
 
       await axios({
         method: "put",
@@ -339,6 +363,7 @@ export default {
         },
       })
         .then((response) => {
+          console.log("Send Response:", response);
           if (response.status == 200) {
             return true;
           }
@@ -373,7 +398,7 @@ export default {
       <div class="card">
         <div class="card-body">
           <!-- TRUE/FALSE NEW MEETING -->
-          <div id="yesnoDiv" class="p-3 card-body">
+          <div class="p-3 card-body">
             <p class="font-size-medium">
               {{ $t("t-doyouacceptmeetings") }}
             </p>
@@ -409,6 +434,35 @@ export default {
                   for="noGridCheck"
                   >{{ $t("t-no") }}</label
                 >
+              </div>
+            </div>
+            <!-- Input fields for the maxAppointments and timePerSlot -->
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="maxAppointments">{{
+                    $t("t-maxappointments")
+                  }}</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="maxAppointments"
+                    v-model="maxSchedules"
+                    placeholder="Max appointments"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="timePerSlot">{{ $t("t-timeperslot") }}</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="timePerSlot"
+                    v-model="timePerSlot"
+                    placeholder="Time per slot"
+                  />
+                </div>
               </div>
             </div>
           </div>
