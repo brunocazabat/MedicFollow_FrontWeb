@@ -13,11 +13,11 @@ export default {
   components: {
     Widgets,
   },
-  data: function () {
+  data() {
     return {
       lastCheckup: {
-        date: " ",
-        time: " ",
+        date: null,
+        time: null,
       },
       observationsArray: [],
     };
