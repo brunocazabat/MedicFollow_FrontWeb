@@ -1,56 +1,122 @@
 <script>
 // General imports
 import Layout from "@/components/view-related/layout/main.vue";
-import FooterModule from "@/components/view-related/login-components/footer-module.vue";
+import axios from "axios";
+import Swal from "sweetalert2";
 
 // Specific Components imports
-import Widgets from "./widgets.vue";
 import CheckupText from "./checkup-text.vue";
+import PatientTableModule from "./patientTable.vue";
+
+// State imports
+import {
+  ApiActions,
+  AuthGetters,
+  PatientSetters,
+  PatientGetters,
+} from "@/components/back-related/state/helpers";
 
 export default {
   data() {
     return {
-      title: "Medical Information",
-      items: [
-        {
-          text: "Medical Information",
-        },
-        {
-          text: "Latest",
-          active: true,
-        },
-      ],
-    }
+      // View vars
+      viewID: 0,
+      viewEnd: false,
+
+      // Selected Patient vars
+      patientInfo: {
+        firstName: null,
+        lastName: null,
+        socialNumber: null,
+        UUID: null,
+      },
+
+      // Patient Table
+      patientArray: [],
+    };
   },
   components: {
     Layout,
-    Widgets,
     CheckupText,
-    FooterModule
+    PatientTableModule,
   },
-}
+  methods: {
+    ...AuthGetters,
+    ...ApiActions,
+    ...PatientSetters,
+    ...PatientGetters,
+    // Method to retrieve the patients list
+    async getPatients() {
+      await axios({
+        method: "get",
+        url: "patient/",
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            this.patientArray = response.data.patients;
+          }
+        })
+        .catch((error) => {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: `${this.$t("t-something-went-wrong")}./nError: ${
+              error.response.status
+            }`,
+          });
+        });
+    },
+    // Method to handle the patient info when selected from the table
+    handlePatientInfo() {
+      this.patientInfo.firstName = this.getPatientFirstname();
+      this.patientInfo.lastName = this.getPatientLastname();
+      // TODO: Change the response to return the social number (when it's implemented)
+      this.patientInfo.socialNumber = this.getPatientUUID();
+      this.patientInfo.UUID = this.getPatientUUID();
+
+      // Displaying the next view
+      this.viewID = 1;
+      this.viewEnd = true;
+    },
+  },
+  mounted() {
+    window.scrollTo(0, 0);
+    this.getPatients();
+  },
+};
 </script>
 
 <!-- TEMPLATE -->
 
 <template>
   <Layout>
+    <div class="project-wrapper mf-form-width">
+      <!-- Showcasing the Patient List to the User -->
+      <div v-if="viewID === 0">
+        <h2 class="text-primary text-uppercase">{{ $t("t-selectpatient") }}</h2>
+        <p class="text-muted">{{ $t("t-medicselectinfo") }}.</p>
 
-    <div class="row project-wrapper mf-form-width">
-      <!-- Widgets -->
-      <div class="row">
-        <Widgets />
+        <PatientTableModule
+          @button-pressed="handlePatientInfo"
+          :patientArray="patientArray"
+        />
       </div>
-      <!-- Checkup Texts -->
-      <div class="row">
+
+      <!-- Showcasing the Checkup Text to the User -->
+      <div v-if="viewID === 1">
+        <h2 class="text-primary text-uppercase">
+          {{ $t("t-patientmedicinfo") }}
+          <strong
+            >{{ patientInfo.firstName }} {{ patientInfo.lastName }}</strong
+          >
+        </h2>
+        <p class="text-muted">{{ $t("t-medicinfodesc") }}</p>
+
         <CheckupText />
       </div>
-
-      <div>
-        <!-- Calendar -->
-      </div>
     </div>
-    <FooterModule />
   </Layout>
 </template>
-

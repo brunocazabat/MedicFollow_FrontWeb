@@ -14,8 +14,8 @@ import {
   PatientSetters,
   PatientGetters,
 } from "@/components/back-related/state/helpers";
-import axiosResult from "@/components/back-related/state/axiosResponse";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 export default {
   props: {
@@ -45,7 +45,7 @@ export default {
     return {
       value: ["javascript"],
 
-      // view vars
+      // View vars
       viewID: 0,
       viewEnd: false,
 
@@ -119,15 +119,16 @@ export default {
           .then((response) => {
             if (response.status === 200) {
               this.patientArray = response.data.patients;
-            } else {
-              axiosResult.setReturnValues({
-                result: false,
-              });
             }
           });
       } catch (error) {
-        axiosResult.setReturnValues({
-          result: false,
+        // Sweet alert error
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `${this.$t("t-something-went-wrong")}./nError: ${
+            error.response.status
+          }`,
         });
       }
     },
