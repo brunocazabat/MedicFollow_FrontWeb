@@ -478,5 +478,6 @@
   "t-close-and-delete-this-account": "Close and Delete This Account",
   "t-something-went-wrong": "Something went wrong",
   "t-maxappointments": "Maximum appointments",
-  "t-timeperslot": "Time per appointment slot"
+  "t-timeperslot": "Time per appointment slot",
+  "t-previous": "Previous"
 }

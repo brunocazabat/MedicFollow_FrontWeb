@@ -13,10 +13,11 @@ export default {
   components: {},
   data: function () {
     return {
-      localTime: " ",
-      localDate: " ",
+      localTime: null,
+      localDate: null,
     };
   },
+  // TODO: Get the next activity from the API
   methods: {},
   mounted() {},
 };

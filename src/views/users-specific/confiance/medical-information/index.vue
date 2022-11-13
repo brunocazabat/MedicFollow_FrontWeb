@@ -63,7 +63,7 @@ export default {
           Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: `${this.$t("t-something-went-wrong")}./nError: ${
+            text: `${this.$t("t-something-went-wrong")}.\r\nError: ${
               error.response.status
             }`,
           });
@@ -116,6 +116,21 @@ export default {
         <p class="text-muted">{{ $t("t-medicinfodesc") }}</p>
 
         <CheckupText />
+
+        <!-- TODO: Maybe add Calendar as well -->
+      </div>
+
+      <!-- Previous button -->
+      <div v-if="viewEnd === true">
+        <button
+          class="btn btn-primary btn-lg btn-block"
+          @click="
+            viewID = 0;
+            viewEnd = false;
+          "
+        >
+          {{ $t("t-previous") }}
+        </button>
       </div>
     </div>
   </Layout>
