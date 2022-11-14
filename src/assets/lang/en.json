@@ -483,5 +483,6 @@
   "t-error-getting-summary": "An error occured while getting the summary of the patient",
   "t-error-getting-organisations": "An error occured while getting the organisation list",
   "t-latest-announcement": "Latest announcement",
-  "t-read-more": "Read more"
+  "t-read-more": "Read more",
+  "t-mark-as-read": "Mark as read"
 }

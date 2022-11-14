@@ -483,5 +483,6 @@
   "t-timeperslot": "Zeit pro Terminfenster",
   "t-error-getting-organisations": "Beim Abrufen der Organisationsliste ist ein Fehler aufgetreten",
   "t-latest-announcement": "Neueste Ankündigung",
-  "t-read-more": "Weiterlesen"
+  "t-read-more": "Weiterlesen",
+  "t-mark-as-read": "als gelesen markieren"
 }

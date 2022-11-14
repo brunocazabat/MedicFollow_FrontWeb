@@ -483,5 +483,6 @@
   "t-timeperslot": "Temps par créneau de rendez-vous",
   "t-error-getting-organisations": "Une erreur s'est produite lors de l'obtention de la liste des organisations",
   "t-latest-announcement": "Dernière annonce",
-  "t-read-more": "Lire la suite"
+  "t-read-more": "Lire la suite",
+  "t-mark-as-read": "Marquer comme lu"
 }

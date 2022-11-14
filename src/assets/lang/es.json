@@ -483,5 +483,6 @@
   "t-timeperslot": "Tiempo por turno de cita",
   "t-error-getting-organisations": "Ocurrió un error al obtener la lista de organizaciones",
   "t-latest-announcement": "Último anuncio",
-  "t-read-more": "Lee mas"
+  "t-read-more": "Lee mas",
+  "t-mark-as-read": "Marcar como leído"
 }

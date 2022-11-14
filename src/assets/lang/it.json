@@ -483,5 +483,6 @@
   "t-timeperslot": "Orario per fascia oraria di appuntamento",
   "t-error-getting-organisations": "Si è verificato un errore durante il recupero dell'elenco dell'organizzazione",
   "t-latest-announcement": "Ultimo annuncio",
-  "t-read-more": "Leggi di più"
+  "t-read-more": "Leggi di più",
+  "t-mark-as-read": "segna come letto"
 }
