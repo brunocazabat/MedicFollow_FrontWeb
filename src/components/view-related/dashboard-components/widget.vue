@@ -13,8 +13,6 @@ import dayjs from "dayjs";
 import {
   AuthGetters,
   PatientSetters,
-  // To remove
-  PatientGetters,
 } from "@/components/back-related/state/helpers";
 
 export default {
@@ -56,7 +54,6 @@ export default {
   methods: {
     ...AuthGetters,
     ...PatientSetters,
-    ...PatientGetters,
     // Method to retrieve the patients list and setting the patient state to the first patient
     async getPatients() {
       await axios({
