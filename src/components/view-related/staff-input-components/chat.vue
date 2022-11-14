@@ -84,7 +84,7 @@ export default {
           Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: `${this.$t("t-something-went-wrong")}./nError: ${
+            text: `${this.$t("t-something-went-wrong")}.\nError: ${
               error.response.status
             }`,
           });
@@ -120,7 +120,7 @@ export default {
           Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: `${this.$t("t-something-went-wrong")}./nError: ${
+            text: `${this.$t("t-something-went-wrong")}.\nError: ${
               error.response.status
             }`,
           });
@@ -234,7 +234,7 @@ export default {
           Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: `${this.$t("t-something-went-wrong")}./nError: ${
+            text: `${this.$t("t-something-went-wrong")}.\nError: ${
               error.response.status
             }`,
           });
