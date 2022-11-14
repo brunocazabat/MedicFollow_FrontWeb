@@ -475,5 +475,10 @@
   "t-show-mobile-notifications": "Mobile Benachrichtigungen anzeigen",
   "t-update": "Aktualisieren",
   "t-updatesucess": "Ihre Daten wurden erfolgreich aktualisiert",
-  "t-zip-code": "Postleitzahl"
+  "t-zip-code": "Postleitzahl",
+  "t-error-getting-summary": "Beim Abrufen der Zusammenfassung des Patienten ist ein Fehler aufgetreten",
+  "t-maxappointments": "Maximale Termine",
+  "t-previous": "Vorherige",
+  "t-something-went-wrong": "Etwas ist schief gelaufen",
+  "t-timeperslot": "Zeit pro Terminfenster"
 }

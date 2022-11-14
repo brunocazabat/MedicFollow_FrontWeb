@@ -475,5 +475,10 @@
   "t-show-mobile-notifications": "Afficher les notifications mobiles",
   "t-update": "Mise à jour",
   "t-updatesucess": "Vos données ont été mises à jour avec succès",
-  "t-zip-code": "Code postal"
+  "t-zip-code": "Code postal",
+  "t-error-getting-summary": "Une erreur s'est produite lors de l'obtention du résumé du patient",
+  "t-maxappointments": "Rendez-vous maximum",
+  "t-previous": "Précédent",
+  "t-something-went-wrong": "Quelque chose s'est mal passé",
+  "t-timeperslot": "Temps par créneau de rendez-vous"
 }

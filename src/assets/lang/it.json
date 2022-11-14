@@ -475,5 +475,10 @@
   "t-show-mobile-notifications": "Mostra notifiche mobili",
   "t-update": "Aggiornare",
   "t-updatesucess": "I tuoi dati sono stati aggiornati con successo",
-  "t-zip-code": "Cap"
+  "t-zip-code": "Cap",
+  "t-error-getting-summary": "Si è verificato un errore durante il recupero del riepilogo del paziente",
+  "t-maxappointments": "Massimo appuntamenti",
+  "t-previous": "Precedente",
+  "t-something-went-wrong": "Qualcosa è andato storto",
+  "t-timeperslot": "Orario per fascia oraria di appuntamento"
 }
