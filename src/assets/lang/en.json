@@ -484,5 +484,9 @@
   "t-error-getting-organisations": "An error occured while getting the organisation list",
   "t-latest-announcement": "Latest announcement",
   "t-read-more": "Read more",
-  "t-mark-as-read": "Mark as read"
+  "t-mark-as-read": "Mark as read",
+  "t-no-new-notif": "You have no new notification",
+  "t-live-notifs-here": "Your notifications live here",
+  "t-new": "New",
+  "t-new-fornotif": "New"
 }
