@@ -13,6 +13,8 @@ import dayjs from "dayjs";
 import {
   AuthGetters,
   PatientSetters,
+  // To remove
+  PatientGetters,
 } from "@/components/back-related/state/helpers";
 
 export default {
@@ -54,6 +56,7 @@ export default {
   methods: {
     ...AuthGetters,
     ...PatientSetters,
+    ...PatientGetters,
     // Method to retrieve the patients list and setting the patient state to the first patient
     async getPatients() {
       await axios({
@@ -196,7 +199,7 @@ export default {
       this.setPatientSocialNumber(this.patientInfo.socialNumber);
 
       // Route to the patient observation page
-      this.$router.push("/medical-information/");
+      this.$router.push("medical-information/");
     },
   },
   mounted() {
@@ -255,17 +258,21 @@ export default {
                 </h4>
               </div>
               <div class="row">
-                <p class="text-muted text-truncate mb-0" style="width: 78%">
+                <p class="text-muted text-truncate mb-0" style="width: 75%">
                   {{ summary }}
                 </p>
-                <a
-                  class="text-muted text-truncate mb-0"
-                  style="width: 22%"
-                  v-on:click="setPatientStore"
-                  href="medical-information"
+                <button
+                  class="btn btn-outline-info btn-sm"
+                  style="
+                    width: 22%;
+                    height: 20px !important;
+                    padding-bottom: 0px !important;
+                    margin-bottom: 0px !important;
+                  "
+                  v-on:click="setPatientFromLocalStorage"
                 >
-                  {{ $t("t-read-more") }}
-                </a>
+                  <p style="margin-top: -2.5px">{{ $t("t-read-more") }}</p>
+                </button>
               </div>
             </div>
           </div>

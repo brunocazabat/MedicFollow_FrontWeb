@@ -81,9 +81,16 @@ export default {
       this.viewID = 1;
       this.viewEnd = true;
     },
+    // Method to check if the patient state in the store is set
+    checkPatientState() {
+      if (this.getPatientUUID()) {
+        this.handlePatientInfo();
+      }
+    },
   },
   mounted() {
     window.scrollTo(0, 0);
+    this.checkPatientState();
     this.getPatients();
   },
 };
