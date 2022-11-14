@@ -480,5 +480,8 @@
   "t-maxappointments": "Máximo de citas",
   "t-previous": "Anterior",
   "t-something-went-wrong": "Algo salió mal",
-  "t-timeperslot": "Tiempo por turno de cita"
+  "t-timeperslot": "Tiempo por turno de cita",
+  "t-error-getting-organisations": "Ocurrió un error al obtener la lista de organizaciones",
+  "t-latest-announcement": "Último anuncio",
+  "t-read-more": "Lee mas"
 }

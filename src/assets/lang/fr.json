@@ -480,5 +480,8 @@
   "t-maxappointments": "Rendez-vous maximum",
   "t-previous": "Précédent",
   "t-something-went-wrong": "Quelque chose s'est mal passé",
-  "t-timeperslot": "Temps par créneau de rendez-vous"
+  "t-timeperslot": "Temps par créneau de rendez-vous",
+  "t-error-getting-organisations": "Une erreur s'est produite lors de l'obtention de la liste des organisations",
+  "t-latest-announcement": "Dernière annonce",
+  "t-read-more": "Lire la suite"
 }

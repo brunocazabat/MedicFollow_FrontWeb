@@ -480,5 +480,8 @@
   "t-maxappointments": "Massimo appuntamenti",
   "t-previous": "Precedente",
   "t-something-went-wrong": "Qualcosa è andato storto",
-  "t-timeperslot": "Orario per fascia oraria di appuntamento"
+  "t-timeperslot": "Orario per fascia oraria di appuntamento",
+  "t-error-getting-organisations": "Si è verificato un errore durante il recupero dell'elenco dell'organizzazione",
+  "t-latest-announcement": "Ultimo annuncio",
+  "t-read-more": "Leggi di più"
 }

@@ -480,5 +480,8 @@
   "t-maxappointments": "Maximale Termine",
   "t-previous": "Vorherige",
   "t-something-went-wrong": "Etwas ist schief gelaufen",
-  "t-timeperslot": "Zeit pro Terminfenster"
+  "t-timeperslot": "Zeit pro Terminfenster",
+  "t-error-getting-organisations": "Beim Abrufen der Organisationsliste ist ein Fehler aufgetreten",
+  "t-latest-announcement": "Neueste Ankündigung",
+  "t-read-more": "Weiterlesen"
 }
