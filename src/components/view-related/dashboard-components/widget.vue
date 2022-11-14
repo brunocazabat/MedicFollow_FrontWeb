@@ -7,9 +7,13 @@ import {
 } from "@zhuowenli/vue-feather-icons";
 import axios from "axios";
 import Swal from "sweetalert2";
+import dayjs from "dayjs";
 
 // State imports
-import { AuthGetters } from "@/components/back-related/state/helpers";
+import {
+  AuthGetters,
+  PatientSetters,
+} from "@/components/back-related/state/helpers";
 
 export default {
   components: {
@@ -28,12 +32,28 @@ export default {
         patientUUID: null,
       },
 
+      // Organisation State
+      organisationInfo: {
+        name: null,
+        UUID: null,
+        extension: null,
+      },
+
       // Summary State
       summary: null,
+      latestNews: {
+        date: {
+          day: null,
+          hour: null,
+        },
+        title: null,
+        content: null,
+      },
     };
   },
   methods: {
     ...AuthGetters,
+    ...PatientSetters,
     // Method to retrieve the patients list and setting the patient state to the first patient
     async getPatients() {
       await axios({
@@ -46,10 +66,16 @@ export default {
         .then((response) => {
           if (response.status === 200) {
             this.setPatient(response.data.patients[0]);
+            this.getSummary();
           }
         })
         .catch((error) => {
-          console.log(error);
+          // Sweet Alert
+          Swal.fire({
+            title: "Erreur",
+            icon: "error",
+            text: `${this.$t("t-error-occured")}. Error: ${error}`,
+          });
         });
     },
     // Method to set the patient state
@@ -87,12 +113,96 @@ export default {
           });
         });
     },
+
+    // Method to retrieve the organisations list
+    async getOrganisationNews() {
+      await axios({
+        method: "get",
+        url: "organisation/all",
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then(async (response) => {
+          if (response.status === 200) {
+            this.organisationInfo.UUID = response.data.organisations[0].uuid;
+            this.organisationInfo.name = response.data.organisations[0].name;
+            this.organisationInfo.extension =
+              response.data.organisations[0].extension;
+
+            // Getting the latest news
+            await this.getLatestNews(this.organisationInfo.UUID);
+          }
+        })
+        .catch((error) => {
+          // Sweet Alert error occured getting the organisations
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: `${this.$t(
+              "t-error-getting-organisations"
+            )}. Error: ${error}`,
+          });
+        });
+    },
+    // Method to get the lastest news of the organisation
+    async getLatestNews(organisationUUID) {
+      let page = "1";
+      let url = `organisation/${organisationUUID}/news/?page=${page}`;
+
+      await axios({
+        method: "get",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            this.latestNews.date.day = this.parseDate(
+              response.data.news[0].createdAt
+            );
+            this.latestNews.date.hour = this.parseHour(
+              response.data.news[0].createdAt
+            );
+            this.latestNews.title = null;
+            this.latestNews.content = response.data.news[0].orgnews_message;
+          }
+        })
+        .catch((error) => {
+          // Sweet Alert error occured getting the organisations
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: `${this.$t(
+              "t-error-getting-organisations"
+            )}. Error: ${error}`,
+          });
+        });
+    },
+    // Method to parse a date
+    parseDate(date) {
+      return dayjs(date).format("DD/MM/YY");
+    },
+    // Method to parse an hour
+    parseHour(date) {
+      return dayjs(date).format("HH:mm");
+    },
+    // Method to set the patient store in the local storage
+    setPatientFromLocalStorage() {
+      this.setPatientUUID(this.patientInfo.patientUUID);
+      this.setPatientFirstname(this.patientInfo.firstName);
+      this.setPatientLastname(this.patientInfo.lastName);
+      this.setPatientSocialNumber(this.patientInfo.socialNumber);
+
+      // Route to the patient observation page
+      this.$router.push("/medical-information/");
+    },
   },
   mounted() {
+    this.setPatientClearAll();
     this.getPatients();
-    setTimeout(() => {
-      this.getSummary();
-    }, 400);
+    this.getOrganisationNews();
   },
 };
 </script>
@@ -109,10 +219,7 @@ export default {
               </span>
             </div>
             <div class="flex-grow-1 overflow-hidden ms-3">
-              <p
-                class="text-uppercase fw-medium text-muted text-truncate mb-3"
-                data-key="t-nextappoint"
-              >
+              <p class="text-uppercase fw-medium text-muted text-truncate mb-3">
                 {{ $t("t-nextappoint") }}:
               </p>
               <div class="d-flex align-items-center mb-3">
@@ -131,15 +238,12 @@ export default {
         <div class="card-body">
           <div class="d-flex align-items-center">
             <div class="avatar-sm flex-shrink-0">
-              <span class="avatar-title rounded-2 fs-2 bg-soft-info text-info">
+              <span class="avatar-title rounded-2 bg-soft-info text-info">
                 <UserIcon size="24"></UserIcon>
               </span>
             </div>
             <div class="flex-grow-1 overflow-hidden ms-3">
-              <p
-                class="text-uppercase fw-medium text-muted text-truncate mb-3"
-                data-key="t-lastinfo"
-              >
+              <p class="text-uppercase fw-medium text-muted mb-3">
                 {{ $t("t-lastinfo") }}:
               </p>
               <div class="d-flex align-items-center mb-3">
@@ -150,9 +254,19 @@ export default {
                   >
                 </h4>
               </div>
-              <p class="text-muted text-truncate mb-0" data-key="t-situation">
-                {{ summary }}
-              </p>
+              <div class="row">
+                <p class="text-muted text-truncate mb-0" style="width: 78%">
+                  {{ summary }}
+                </p>
+                <a
+                  class="text-muted text-truncate mb-0"
+                  style="width: 22%"
+                  v-on:click="setPatientStore"
+                  href="medical-information"
+                >
+                  {{ $t("t-read-more") }}
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -170,19 +284,16 @@ export default {
               </span>
             </div>
             <div class="flex-grow-1 overflow-hidden ms-3">
-              <p
-                class="text-uppercase fw-medium text-muted text-truncate mb-3"
-                data-key="t-covidwarn"
-              >
-                {{ $t("t-covidwarn") }}:
+              <p class="text-uppercase fw-medium text-muted text-truncate mb-3">
+                {{ $t("t-latest-announcement") }}:
               </p>
               <div class="d-flex align-items-center mb-3">
                 <h4 class="fs-4 flex-grow-1 mb-0">
-                  <span class="counter-value">Test</span>
+                  <span class="counter-value">{{ organisationInfo.name }}</span>
                 </h4>
               </div>
-              <p class="text-muted text-truncate mb-0" data-key="t-care">
-                {{ $t("t-care") }}
+              <p class="text-muted text-truncate mb-0">
+                {{ latestNews.content }}
               </p>
             </div>
           </div>
