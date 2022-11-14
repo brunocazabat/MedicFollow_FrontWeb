@@ -93,9 +93,6 @@ export default {
             }
           }
           await this.getMessages(this.conversationsArray.uuid);
-
-          console.log("Conversation:", this.conversationsArray);
-          console.log("Messages:", this.messagesArray);
         })
         .catch((error) => {
           // Sweet Alert Error about retrieving the conversations
@@ -197,7 +194,7 @@ export default {
             this.chatMessagesData.push({
               message: element.messageInfo.cnt,
               name: `${this.getlastname().toUpperCase()} ${this.getfirstname()}`,
-              time: this.parseHour(element.createdAt),
+              time: this.parseHour(element.messageInfo.createdAt),
               align: "right",
             });
           } else {
@@ -206,7 +203,7 @@ export default {
               name: `${element.messageInfo.user.lastname.toUpperCase()} ${
                 element.messageInfo.user.firstname
               }`,
-              time: this.parseHour(element.createdAt),
+              time: this.parseHour(element.messageInfo.createdAt),
               align: "left",
             });
           }
@@ -270,14 +267,6 @@ export default {
       if (this.v$.$invalid) {
         return;
       } else {
-        const message = this.form.message;
-        const currentDate = new Date();
-        this.chatMessagesData.push({
-          align: "right",
-          name: "Henry Wells",
-          message,
-          time: currentDate.getHours() + ":" + currentDate.getMinutes(),
-        });
         var currentChatId = "users-chat";
         this.scrollToBottom(currentChatId);
       }

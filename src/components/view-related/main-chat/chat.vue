@@ -169,7 +169,7 @@ export default {
             this.chatMessagesData.push({
               message: element.messageInfo.cnt,
               name: `${this.getlastname().toUpperCase()} ${this.getfirstname()}`,
-              time: this.parseHour(element.createdAt),
+              time: this.parseHour(element.messageInfo.createdAt),
               align: "right",
             });
           } else {
@@ -178,7 +178,7 @@ export default {
               name: `${element.messageInfo.user.lastname.toUpperCase()} ${
                 element.messageInfo.user.firstname
               }`,
-              time: this.parseHour(element.createdAt),
+              time: this.parseHour(element.messageInfo.createdAt),
               align: "left",
             });
           }
@@ -209,7 +209,7 @@ export default {
             this.chatMessagesData.push({
               message: element.messageInfo.cnt,
               name: `${this.getlastname().toUpperCase()} ${this.getfirstname()}`,
-              time: this.parseHour(element.createdAt),
+              time: this.parseHour(element.messageInfo.createdAt),
               align: "right",
             });
           } else {
@@ -218,7 +218,7 @@ export default {
               name: `${element.messageInfo.user.lastname.toUpperCase()} ${
                 element.messageInfo.user.firstname
               }`,
-              time: this.parseHour(element.createdAt),
+              time: this.parseHour(element.messageInfo.createdAt),
               align: "left",
             });
           }
