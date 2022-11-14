@@ -6,7 +6,7 @@ import {
   AlertTriangleIcon,
 } from "@zhuowenli/vue-feather-icons";
 import axios from "axios";
-// import Swal from "sweetalert2";
+import Swal from "sweetalert2";
 
 // State imports
 import { AuthGetters } from "@/components/back-related/state/helpers";
@@ -25,7 +25,11 @@ export default {
         lastName: null,
         socialNumber: null,
         UUID: null,
+        patientUUID: null,
       },
+
+      // Summary State
+      summary: null,
     };
   },
   methods: {
@@ -56,10 +60,39 @@ export default {
       // TODO: Change to social number when implemented in the backend
       this.patientInfo.socialNumber = patient.user.uuid;
       this.patientInfo.UUID = patient.user.uuid;
+      this.patientInfo.patientUUID = patient.uuid;
+    },
+    // Method to retrieve the summary of the patient
+    async getSummary() {
+      let url = `summary/activities?patient_uuid=${this.patientInfo.patientUUID}`;
+
+      await axios({
+        method: "get",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            this.summary = response.data.summary;
+          }
+        })
+        .catch((error) => {
+          // Sweet Alert error occured getting the summary
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: `${this.$t("t-error-getting-summary")}. Error: ${error}`,
+          });
+        });
     },
   },
   mounted() {
     this.getPatients();
+    setTimeout(() => {
+      this.getSummary();
+    }, 400);
   },
 };
 </script>
@@ -118,7 +151,7 @@ export default {
                 </h4>
               </div>
               <p class="text-muted text-truncate mb-0" data-key="t-situation">
-                {{ $t("t-situation") }}
+                {{ summary }}
               </p>
             </div>
           </div>

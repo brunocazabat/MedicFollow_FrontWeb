@@ -479,5 +479,6 @@
   "t-something-went-wrong": "Something went wrong",
   "t-maxappointments": "Maximum appointments",
   "t-timeperslot": "Time per appointment slot",
-  "t-previous": "Previous"
+  "t-previous": "Previous",
+  "t-error-getting-summary": "An error occured while getting the summary of the patient"
 }
