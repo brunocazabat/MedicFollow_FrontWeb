@@ -490,5 +490,6 @@
   "t-new": "Nouveau",
   "t-new-fornotif": "Nouveaux",
   "t-all": "Tout",
-  "t-view-all-chat": "Afficher toutes les discussions"
+  "t-view-all-chat": "Afficher toutes les discussions",
+  "t-write-here": "Ecrire ici..."
 }
