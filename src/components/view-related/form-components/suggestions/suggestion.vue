@@ -38,6 +38,9 @@ export default {
           value: 60,
         },
       },
+
+      // File var
+      file: [],
     };
   },
   components: {
@@ -59,6 +62,11 @@ export default {
           clearInterval(this.loader);
         }
       }, 100);
+    },
+
+    // Method to handle the file change
+    handleFileChange(file) {
+      this.file = file;
     },
   },
 };
@@ -173,7 +181,7 @@ export default {
           {{ $t("t-questionuploaddoc") }}
         </h3>
         <p class="text-muted mb-4">{{ $t("t-uploadexample") }}</p>
-        <DragDropComponent />
+        <DragDropComponent @file-change="handleFileChange(file)" />
       </div>
     </div>
 

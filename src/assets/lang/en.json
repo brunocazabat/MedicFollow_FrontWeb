@@ -491,5 +491,6 @@
   "t-new-fornotif": "New",
   "t-view-all-chat": "View all chats",
   "t-all": "All",
-  "t-write-here": "Write here..."
+  "t-write-here": "Write here...",
+  "t-select-or-drop-file": "Select or drop a file"
 }

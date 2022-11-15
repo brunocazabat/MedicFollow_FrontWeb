@@ -1,8 +1,14 @@
 <script>
+import BadgeList from "@/components/view-related/badge-list.vue";
+
 export default {
+  components: {
+    BadgeList,
+  },
+  emits: ["file-change"],
   data() {
     return {
-      file: null,
+      file: [],
     };
   },
   methods: {
@@ -18,8 +24,22 @@ export default {
       event.preventDefault();
       event.stopPropagation();
 
-      this.file = event.dataTransfer.files;
-      console.log("File: ", this.file);
+      // Looping through the files
+      for (let i = 0; i < event.dataTransfer.files.length; i++) {
+        // Creating data array
+        const data = {
+          name: event.dataTransfer.files[i].name,
+          size: event.dataTransfer.files[i].size,
+          type: event.dataTransfer.files[i].type,
+          binary: event.dataTransfer.files[i],
+        };
+
+        // Pushing the data to the file array
+        this.file.push(data);
+
+        // Emitting the file array
+        this.$emit("file-change", this.file);
+      }
     },
 
     // Method to transform the file.size in a human readable format
@@ -37,6 +57,14 @@ export default {
         ++u;
       } while (Math.abs(bytes) >= thresh && u < units.length - 1);
       return bytes.toFixed(1) + " " + units[u];
+    },
+
+    // Method to remove from the file array the file that has been dropped
+    removeFile(index) {
+      this.file.splice(index, 1);
+
+      // Emitting the file array
+      this.$emit("file-change", this.file);
     },
   },
 };
@@ -57,16 +85,23 @@ export default {
           type="file"
           v-on:change="handleUploadedFile($event)"
         />
-        <label class="large-size max-width" for="fileElem"
-          >Select or drop a file</label
-        >
+        <label class="large-size max-width" for="fileElem">{{
+          $t("t-select-or-drop-file")
+        }}</label>
       </div>
     </div>
   </div>
 
   <div v-if="file">
-    <p>{{ file[0].name }}</p>
-    <div></div>
+    <div v-for="(file, key) in file" :key="key">
+      <div class="file-name">
+        <BadgeList
+          :value="file.name"
+          :size="humanFileSize(file.size, true)"
+          @on-remove="removeFile(key)"
+        />
+      </div>
+    </div>
   </div>
 </template>
 

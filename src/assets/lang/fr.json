@@ -491,5 +491,6 @@
   "t-new-fornotif": "Nouveaux",
   "t-all": "Tout",
   "t-view-all-chat": "Afficher toutes les discussions",
-  "t-write-here": "Ecrire ici..."
+  "t-write-here": "Ecrire ici...",
+  "t-select-or-drop-file": "Sélectionner ou déposer un fichier"
 }
