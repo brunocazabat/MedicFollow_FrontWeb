@@ -492,5 +492,8 @@
   "t-view-all-chat": "View all chats",
   "t-all": "All",
   "t-write-here": "Write here...",
-  "t-select-or-drop-file": "Select or drop a file"
+  "t-select-or-drop-file": "Select or drop a file",
+  "t-appointments": "Appointments",
+  "t-chatwithdoctor": "Chat with doctors",
+  "t-suggest-success": "Your suggestion has been sent."
 }

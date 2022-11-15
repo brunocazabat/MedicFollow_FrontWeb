@@ -1,6 +1,10 @@
 <script>
 import Slider from "@vueform/slider";
 import recaptcha from "@/components/view-related/widgets/recaptchav2.vue";
+import axios from "axios";
+import Swal from "sweetalert2";
+
+import { AuthGetters } from "@/components/back-related/state/helpers";
 
 import DragDropComponent from "@/components/view-related/drag-drop/drag-drop.vue";
 
@@ -35,12 +39,50 @@ export default {
         },
         design: {
           name: `${this.$t("t-designslider")}`,
-          value: 60,
+          value: 50,
+        },
+      },
+
+      confianceSliders: {
+        dashboard: {
+          name: `${this.$t("t-dashboardslider")}`,
+          value: 50,
+        },
+        patientInfo: {
+          name: `${this.$t("t-visitsumslider")}`,
+          value: 50,
+        },
+        schedule: {
+          name: `${this.$t("t-appointments")}`,
+          value: 50,
+        },
+        calendar: {
+          name: `${this.$t("t-calslider")}`,
+          value: 50,
+        },
+        chat: {
+          name: `${this.$t("t-chatwithdoctor")}`,
+          value: 50,
+        },
+        settings: {
+          name: `${this.$t("t-settingsslider")}`,
+          value: 50,
+        },
+        design: {
+          name: `${this.$t("t-designslider")}`,
+          value: 50,
         },
       },
 
       // File var
       file: [],
+
+      // Suggestion vars
+      email: "",
+      country: "",
+      gender: "",
+      dob: "",
+      suggestion: "",
     };
   },
   components: {
@@ -49,6 +91,8 @@ export default {
     DragDropComponent,
   },
   methods: {
+    ...AuthGetters,
+
     // Range and label slider set range
     callbackRange(val) {
       this.sliderWithLabel.rangeValue = val;
@@ -66,7 +110,93 @@ export default {
 
     // Method to handle the file change
     handleFileChange(file) {
+      console.log("File changed", file);
       this.file = file;
+    },
+
+    // Method to check if the user is a 'docteur'
+    isDoctor() {
+      if (this.getuserType === "docteur") {
+        return true;
+      } else {
+        return false;
+      }
+    },
+
+    // Method to check if the user is a 'confiance'
+    isConfiance() {
+      if (this.getuserType() === "confiance") {
+        return true;
+      } else {
+        return false;
+      }
+    },
+
+    // Method to send the suggestion
+    async sendSuggestion() {
+      let url = `upload/suggest`;
+      let fileBinaryArray = [];
+
+      // Creating binary file array
+      for (let i = 0; i < this.file.length; i++) {
+        fileBinaryArray.push(this.file[i].binary);
+      }
+      console.log("fileBinaryArray", fileBinaryArray);
+
+      let formData = new FormData();
+      for (let i = 0; i < this.file.length; i++) {
+        formData.append("file", this.file[i].binary);
+      }
+
+      console.log("formData", formData.getAll("file"));
+
+      // let newFile = this.file[0].binary;
+      // retrieving the binary of the newFile var
+      //   let newFileBinary = newFile.slice(0, newFile.size, newFile.type);
+      let newFileBinary = new File([Blob], this.file[0].name, {
+        type: this.file[0].type,
+        lastModified: Date.now(),
+      });
+
+      console.log("newFileBinary", newFileBinary);
+
+      // Create the form data
+      const payload = {
+        file: newFileBinary,
+        suggest: `email: ${this.email}; country: ${this.country}; gender: ${this.gender}; dob: ${this.dob}; suggestion: ${this.suggestion}`,
+      };
+
+      // Send the suggestion
+      await axios({
+        method: "post",
+        url: url,
+        data: payload,
+        headers: {
+          "Content-Type": "multipart/form-data",
+          token: this.gettoken().Token,
+        },
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            // Show success message
+            Swal.fire({
+              title: this.$t("t-success"),
+              text: this.$t("t-suggest-success"),
+              icon: "success",
+              confirmButtonText: "OK",
+            });
+          }
+        })
+        .catch((error) => {
+          // Show error message
+          console.log(error);
+          // Swal.fire({
+          //   title: this.$t("t-error"),
+          //   text: this.$t("t-suggest-error"),
+          //   icon: "error",
+          //   confirmButtonText: "OK",
+          // });
+        });
     },
   },
 };
@@ -89,6 +219,7 @@ export default {
             class="form-control"
             id="feedbackEmailInput"
             placeholder="Enter your email"
+            v-model="email"
           />
           <label for="feedbackEmailInput">{{ $t("t-email") }}</label>
         </div>
@@ -103,6 +234,7 @@ export default {
             class="form-control"
             id="feedbackCountryInput"
             placeholder="Enter your country"
+            v-model="country"
             required
           />
           <label for="feedbackCountryInput">{{ $t("t-country") }}*</label>
@@ -114,7 +246,12 @@ export default {
         <label for="chooseGenderSelect" class="form-label"
           >{{ $t("t-gender") }}*</label
         >
-        <select class="form-select" id="chooseGenderSelect" required>
+        <select
+          class="form-select"
+          id="chooseGenderSelect"
+          v-model="gender"
+          required
+        >
           <option selected>{{ $t("t-selectgender") }}</option>
           <option value="male">{{ $t("t-male") }}</option>
           <option value="female">{{ $t("t-female") }}</option>
@@ -132,6 +269,7 @@ export default {
           type="date"
           class="form-control"
           id="feedbackDateInput"
+          v-model="dob"
           required
         />
       </div>
@@ -145,12 +283,39 @@ export default {
         <h3 class="font-size-14 mb-2 mt-0">{{ $t("t-areusatisfied") }}</h3>
         <p class="text-muted mb-4">{{ $t("t-satisfactioneval") }}</p>
 
-        <div class="mb-3" v-for="(slider, key) in doctorSliders" :key="key">
-          <label for="sliderDashboard" class="form-label mb-4">{{
-            slider.name
-          }}</label>
-          <div class="p-3">
-            <Slider v-model="slider.value" />
+        <div v-if="isDoctor() === true">
+          <div class="mb-3" v-for="(slider, key) in doctorSliders" :key="key">
+            <label for="label" class="form-label mb-4">{{ slider.name }}</label>
+            <div class="p-3">
+              <Slider v-model="slider.value" />
+            </div>
+          </div>
+        </div>
+
+        <div v-else-if="isConfiance() === true">
+          <div
+            class="mb-3"
+            v-for="(slider, key) in confianceSliders"
+            :key="key"
+          >
+            <label for="label" class="form-label mb-4">{{ slider.name }}</label>
+            <div class="p-3">
+              <Slider v-model="slider.value" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Change for more sliders when available in the BackEnd -->
+        <div v-else>
+          <div
+            class="mb-3"
+            v-for="(slider, key) in confianceSliders"
+            :key="key"
+          >
+            <label for="label" class="form-label mb-4">{{ slider.name }}</label>
+            <div class="p-3">
+              <Slider v-model="slider.value" />
+            </div>
           </div>
         </div>
       </div>
@@ -167,6 +332,7 @@ export default {
           class="form-control"
           rows="3"
           :placeholder="$t('t-write-here')"
+          v-model="suggestion"
           required
         ></textarea>
       </div>
@@ -181,7 +347,7 @@ export default {
           {{ $t("t-questionuploaddoc") }}
         </h3>
         <p class="text-muted mb-4">{{ $t("t-uploadexample") }}</p>
-        <DragDropComponent @file-change="handleFileChange(file)" />
+        <DragDropComponent v-model="file" />
       </div>
     </div>
 
@@ -213,7 +379,11 @@ export default {
     <!-- Submit button -->
     <div class="p-3 col-12">
       <div class="text-muted">
-        <button type="submit" class="btn btn-primary">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          v-on:click="sendSuggestion()"
+        >
           {{ $t("t-submit") }}
         </button>
       </div>

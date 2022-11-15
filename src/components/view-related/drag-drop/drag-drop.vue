@@ -2,19 +2,24 @@
 import BadgeList from "@/components/view-related/badge-list.vue";
 
 export default {
+  props: {
+    modelValue: {
+      type: Array,
+      default: () => [],
+    },
+  },
   components: {
     BadgeList,
   },
-  emits: ["file-change"],
+  emits: ["update:modelValue"],
   data() {
     return {
-      file: [],
+      file: this.modelValue,
     };
   },
   methods: {
     // Method to enable the dropping
     enableDrop(event) {
-      console.log("enableDrop");
       event.preventDefault();
       event.stopPropagation();
     },
@@ -38,7 +43,8 @@ export default {
         this.file.push(data);
 
         // Emitting the file array
-        this.$emit("file-change", this.file);
+        console.log("file emitted", this.file);
+        this.$emit("update:modelValue", this.file);
       }
     },
 
@@ -64,7 +70,7 @@ export default {
       this.file.splice(index, 1);
 
       // Emitting the file array
-      this.$emit("file-change", this.file);
+      this.$emit("update:modelValue", this.file);
     },
   },
 };
