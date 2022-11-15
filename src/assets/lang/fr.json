@@ -488,5 +488,7 @@
   "t-no-new-notif": "Vous n'avez pas de nouvelle notification",
   "t-live-notifs-here": "Vos notifications en direct ici",
   "t-new": "Nouveau",
-  "t-new-fornotif": "Nouveaux"
+  "t-new-fornotif": "Nouveaux",
+  "t-all": "Tout",
+  "t-view-all-chat": "Afficher toutes les discussions"
 }

@@ -485,5 +485,10 @@
   "t-latest-announcement": "Neueste Ankündigung",
   "t-read-more": "Weiterlesen",
   "t-mark-as-read": "als gelesen markieren",
-  "t-no-new-notif": "Sie haben keine neue Benachrichtigung"
+  "t-no-new-notif": "Sie haben keine neue Benachrichtigung",
+  "t-all": "Alle",
+  "t-live-notifs-here": "Ihre Benachrichtigungen sind hier live",
+  "t-new": "Neu",
+  "t-new-fornotif": "Neu",
+  "t-view-all-chat": "Alle Chats anzeigen"
 }
