@@ -190,20 +190,16 @@ export default {
 
     // Method to check if the user is a 'docteur'
     isDoctor() {
-      if (this.getuserType() === "docteur") {
-        return true;
-      } else {
-        return false;
-      }
+      return this.getuserType() === "docteur";
     },
 
     // Method to check if the user is a 'confiance'
     isConfiance() {
-      if (this.getuserType() === "confiance") {
-        return true;
-      } else {
-        return false;
-      }
+      return this.getuserType() === "confiance";
+    },
+
+    isLoggedUser() {
+      return this.getisloggedIn() === true;
     },
 
     // Method to send the bug report
@@ -258,7 +254,7 @@ export default {
 </script>
 
 <template>
-  <div class="row">
+  <div class="row" v-if="isLoggedUser()">
     <!-- ISSUE TITLE -->
     <div class="p-3 mb-0">
       <div class="col-md-6">
@@ -426,6 +422,60 @@ export default {
           {{ $t("t-submit") }}
         </button>
       </div>
+    </div>
+  </div>
+  <div class="row" v-if="!isLoggedUser()">
+    <!-- ISSUE TITLE -->
+    <h3 class="font-size-14 mb-2 mt-0" data-key="t-whatwasissue">
+      {{ $t("t-whatwasissue") }}
+    </h3>
+    <p class="text-muted mb-0">
+      {{
+        $t("t-write-it-as-a-title-for-instance-i-cannot-login-to-medicfollow")
+      }}
+    </p>
+
+    <InputComponent
+      type="text"
+      v-model="issueDesc"
+      :placeholder="$t('t-write-here')"
+      :required="true"
+    />
+
+    <InputComponent
+      type="text"
+      :label="$t('t-stepsreproduce')"
+      v-model="issueSteps"
+      :placeholder="$t('t-write-here')"
+      :required="true"
+      :rows="2"
+    />
+
+    <SelectComponent
+      :options="selectBrowser.options"
+      :selectedOption="selectedBrowser"
+      :title="$t('t-selectbrowser')"
+      v-model="selectedBrowser"
+      :required="true"
+      invalidFeedback="Select a browser"
+    />
+
+    <SelectComponent
+      :options="selectDevice.options"
+      :selectedOption="selectedDevice"
+      :title="$t('t-selectdevice')"
+      v-model="selectedDevice"
+      :required="true"
+      invalidFeedback="Select a device"
+    />
+
+    <Recaptcha class="mt-2" />
+
+    <!-- Submit button -->
+    <div class="text-muted mt-2">
+      <button type="submit" class="btn btn-primary">
+        {{ $t("t-submit") }}
+      </button>
     </div>
   </div>
 </template>
