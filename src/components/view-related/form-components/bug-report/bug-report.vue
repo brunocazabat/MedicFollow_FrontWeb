@@ -245,13 +245,12 @@ export default {
         })
         .catch((error) => {
           // Show error message
-          console.log(error);
-          // Swal.fire({
-          //   title: this.$t("t-error"),
-          //   text: this.$t("t-suggest-error"),
-          //   icon: "error",
-          //   confirmButtonText: "OK",
-          // });
+          Swal.fire({
+            title: this.$t("t-error"),
+            text: `${this.$t("t-bug-report-error")} Error: ${error}`,
+            icon: "error",
+            confirmButtonText: "OK",
+          });
         });
     },
   },
