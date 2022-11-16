@@ -508,5 +508,13 @@
   "t-email-input": "Geben sie ihre E-Mail Adresse ein",
   "t-suggestion": "Anregung",
   "t-suggest-error": "Beim Senden Ihres Vorschlags ist ein Fehler aufgetreten... Bitte versuchen Sie es erneut...",
-  "t-bug-report-error": "Beim Senden Ihres Fehlerberichts ist ein Fehler aufgetreten... Bitte versuchen Sie es erneut..."
+  "t-bug-report-error": "Beim Senden Ihres Fehlerberichts ist ein Fehler aufgetreten... Bitte versuchen Sie es erneut...",
+  "t-actions": "Aktionen",
+  "t-consult-actions": "Konsultieren",
+  "t-created-at": "Hergestellt in",
+  "t-error-getting-calendar": "Fehler beim Abrufen des Kalenders des Patienten",
+  "t-error-getting-next-activity": "Fehler beim Abrufen der nächsten Aktivität des Patienten",
+  "t-no-activity": "Es ist keine Aktivität geplant",
+  "t-no-patient-found": "Es tut uns leid! \nKeine Einträge gefunden...",
+  "t-you-will-be-notified": "Sie werden benachrichtigt, wenn eine Aktivität geplant ist"
 }

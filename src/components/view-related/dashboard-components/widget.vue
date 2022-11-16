@@ -13,6 +13,7 @@ import dayjs from "dayjs";
 import {
   AuthGetters,
   PatientSetters,
+  PatientGetters,
 } from "@/components/back-related/state/helpers";
 
 export default {
@@ -49,11 +50,16 @@ export default {
         title: null,
         content: null,
       },
+
+      nextActivity: {},
+
+      calUUID: null,
     };
   },
   methods: {
     ...AuthGetters,
     ...PatientSetters,
+    ...PatientGetters,
     // Method to retrieve the patients list and setting the patient state to the first patient
     async getPatients() {
       await axios({
@@ -198,11 +204,81 @@ export default {
       // Route to the patient observation page
       this.$router.push("medical-information/");
     },
+
+    // Getting the calendar of the patient
+    async getCalendar() {
+      let url = `calendar/?patient_uuid=${this.patientInfo.patientUUID}`;
+
+      await axios({
+        method: "get",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            console.log(response.data);
+            console.log(response.data[0].uuid);
+            this.calUUID = response.data[0].uuid;
+          }
+        })
+        .catch((error) => {
+          // Sweet Alert error occured getting the calendar
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: `${this.$t("t-error-getting-calendar")}. Error: ${error}`,
+          });
+        });
+    },
+
+    // Get next activity
+    async getNextActivity() {
+      // let calUUID = await this.getCalendar();
+      console.log("calUUID: ", this.calUUID);
+      let url = `calendar/NextActivity?calendar_uuid=${this.calUUID}`;
+
+      await axios({
+        method: "get",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            if (response.data.length === 0) {
+              this.nextActivity = null;
+            } else {
+              this.nextActivity = response.data;
+            }
+          }
+        })
+        .catch((error) => {
+          // Sweet Alert error occured getting the next activity
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: `${this.$t(
+              "t-error-getting-next-activity"
+            )}. Error: ${error}`,
+          });
+        });
+    },
   },
   mounted() {
     this.setPatientClearAll();
     this.getPatients();
     this.getOrganisationNews();
+    setTimeout(() => {
+      this.getCalendar();
+    }, 1000);
+    setTimeout(() => {
+      this.getNextActivity();
+    }, 1500);
+
+    console.log("nextActivity: ", this.nextActivity);
   },
 };
 </script>
@@ -222,12 +298,30 @@ export default {
               <p class="text-uppercase fw-medium text-muted text-truncate mb-3">
                 {{ $t("t-nextappoint") }}:
               </p>
-              <div class="d-flex align-items-center mb-3">
-                <h4 class="fs-4 flex-grow-1 mb-0">
-                  <span class="counter-value">Test Event 1</span>
-                </h4>
+              <div v-if="nextActivity.length === 0">
+                <div class="d-flex align-items-center mb-3">
+                  <h4 class="fs-4 flex-grow-1 mb-0">
+                    <span class="counter-value">
+                      {{ nextActivity.title }}
+                    </span>
+                  </h4>
+                </div>
+                <p class="text-muted mb-0">
+                  {{ nextActivity.start_date }} {{ nextActivity.start_time }}
+                </p>
               </div>
-              <p class="text-muted text-truncate mb-0">09-07-2022</p>
+              <div v-else>
+                <div class="d-flex align-items-center mb-3">
+                  <h4 class="fs-4 flex-grow-1 mb-0">
+                    <span class="counter-value">
+                      {{ $t("t-no-activity") }}
+                    </span>
+                  </h4>
+                </div>
+                <p class="text-muted text-truncate mb-0">
+                  {{ $t("t-you-will-be-notified") }}
+                </p>
+              </div>
             </div>
           </div>
         </div>

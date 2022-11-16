@@ -512,5 +512,9 @@
   "t-actions": "Actions",
   "t-created-at": "Created at",
   "t-consult-actions": "Consult",
-  "t-no-patient-found": "Sorry! No Result Found..."
+  "t-no-patient-found": "Sorry! No Result Found...",
+  "t-error-getting-calendar": "Error while getting the calendar of the patient",
+  "t-error-getting-next-activity": "Error while getting the next activity of the patient",
+  "t-no-activity": "There is no activity scheduled ",
+  "t-you-will-be-notified": "You will be notified when an activity is scheduled"
 }

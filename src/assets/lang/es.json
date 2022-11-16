@@ -507,5 +507,14 @@
   "t-country-input": "Introduce tu país",
   "t-email-input": "Introduce tu correo electrónico",
   "t-suggestion": "Sugerencia",
-  "t-suggest-error": "Hubo un error al enviar su sugerencia... Vuelva a intentarlo..."
+  "t-suggest-error": "Hubo un error al enviar su sugerencia... Vuelva a intentarlo...",
+  "t-actions": "Comportamiento",
+  "t-bug-report-error": "Hubo un error al enviar su informe de error... Inténtelo de nuevo...",
+  "t-consult-actions": "Consultar",
+  "t-created-at": "Creado en",
+  "t-error-getting-calendar": "Error al obtener el calendario del paciente",
+  "t-error-getting-next-activity": "Error al obtener la siguiente actividad del paciente",
+  "t-no-activity": "No hay actividad programada",
+  "t-no-patient-found": "¡Lo siento! \nNo se han encontrado resultados...",
+  "t-you-will-be-notified": "Se le notificará cuando se programe una actividad."
 }
