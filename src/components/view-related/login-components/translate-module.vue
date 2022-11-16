@@ -1,13 +1,14 @@
 <script>
 import i18n from "@/i18n.js";
 import adminmodule from "./admin-panel-log-module.vue";
+import bugReportPanelUnlogedVue from "./bug-report-panel-unloged.vue";
 
 /**
  * translate-module Component
  */
 export default {
   name: "translatemodule",
-  components: { adminmodule },
+  components: { adminmodule, bugReportPanelUnlogedVue },
   data() {
     return {
       languages: [
@@ -44,7 +45,7 @@ export default {
     };
   },
   mounted: function () {
-    this.start()
+    this.start();
   },
   methods: {
     start() {
@@ -65,7 +66,12 @@ export default {
           this.lan = "it";
           break;
       }
-      document.getElementById("header-lang-img").setAttribute("src", this.languages.find(x => x.language === this.lan).flag);
+      document
+        .getElementById("header-lang-img")
+        .setAttribute(
+          "src",
+          this.languages.find((x) => x.language === this.lan).flag
+        );
     },
     setLanguage(locale, country, flag) {
       this.lan = locale;
@@ -82,21 +88,45 @@ export default {
 <template>
   <div class="col-md-8 col-lg-6 col-xl-1">
     <div class="dropdown ms-1 topbar-head-dropdown header-item">
-      <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none"
-        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img id="header-lang-img" src="@/assets/images/flags/french.svg" alt="Header Language" height="26"
-          class="rounded" />
+      <button
+        type="button"
+        class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle shadow-none"
+        data-bs-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <img
+          id="header-lang-img"
+          src="@/assets/images/flags/french.svg"
+          alt="Header Language"
+          height="26"
+          class="rounded"
+        />
       </button>
       <div class="dropdown-menu">
         <!-- item-->
-        <a href="javascript:void(0);" v-for="(entry, i) in languages" :key="`Lang${i}`" :value="entry"
-          @click="setLanguage(entry.language, entry.title, entry.flag)" :class="{ active: lan === entry.language }"
-          class="dropdown-item notify-item language py-2" data-lang="fr" title="Francais">
-          <img :src="entry.flag" alt="user-image" class="me-2 rounded" height="18" />
+        <a
+          href="javascript:void(0);"
+          v-for="(entry, i) in languages"
+          :key="`Lang${i}`"
+          :value="entry"
+          @click="setLanguage(entry.language, entry.title, entry.flag)"
+          :class="{ active: lan === entry.language }"
+          class="dropdown-item notify-item language py-2"
+          data-lang="fr"
+          title="Francais"
+        >
+          <img
+            :src="entry.flag"
+            alt="user-image"
+            class="me-2 rounded"
+            height="18"
+          />
           <span class="align-middle">{{ entry.title }}</span>
         </a>
       </div>
     </div>
+    <bugReportPanelUnlogedVue />
   </div>
   <adminmodule />
 </template>
