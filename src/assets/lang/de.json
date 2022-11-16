@@ -507,5 +507,6 @@
   "t-country-input": "Geben Sie Ihr Land ein",
   "t-email-input": "Geben sie ihre E-Mail Adresse ein",
   "t-suggestion": "Anregung",
-  "t-suggest-error": "Beim Senden Ihres Vorschlags ist ein Fehler aufgetreten... Bitte versuchen Sie es erneut..."
+  "t-suggest-error": "Beim Senden Ihres Vorschlags ist ein Fehler aufgetreten... Bitte versuchen Sie es erneut...",
+  "t-bug-report-error": "Beim Senden Ihres Fehlerberichts ist ein Fehler aufgetreten... Bitte versuchen Sie es erneut..."
 }

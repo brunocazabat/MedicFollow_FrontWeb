@@ -507,5 +507,6 @@
   "t-country-input": "Inserisci il tuo paese",
   "t-email-input": "Inserisci il tuo indirizzo email",
   "t-suggestion": "Suggerimento",
-  "t-suggest-error": "Si è verificato un errore durante l'invio del suggerimento... Riprova..."
+  "t-suggest-error": "Si è verificato un errore durante l'invio del suggerimento... Riprova...",
+  "t-bug-report-error": "Si è verificato un errore durante l'invio della segnalazione di bug... Per favore riprova..."
 }

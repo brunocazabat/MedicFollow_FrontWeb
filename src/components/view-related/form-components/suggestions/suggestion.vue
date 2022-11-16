@@ -168,30 +168,10 @@ export default {
     // Method to send the suggestion
     async sendSuggestion() {
       let url = `upload/suggest`;
-      let fileBinaryArray = [];
-
-      // Creating binary file array
-      for (let i = 0; i < this.file.length; i++) {
-        fileBinaryArray.push(this.file[i].binary);
-      }
-      console.log("fileBinaryArray", fileBinaryArray);
-
-      let formData = new FormData();
-      for (let i = 0; i < this.file.length; i++) {
-        formData.append("file", this.file[i].binary);
-      }
-
-      console.log("formData", formData.getAll("file"));
-
-      // let newFile = this.file[0].binary;
-      // retrieving the binary of the newFile var
-      //   let newFileBinary = newFile.slice(0, newFile.size, newFile.type);
       let newFileBinary = new File([this.file[0].binary], this.file[0].name, {
         type: this.file[0].type,
         lastModified: Date.now(),
       });
-
-      console.log("newFileBinary", newFileBinary);
 
       // Create the form data
       const payload = {
@@ -222,13 +202,12 @@ export default {
         })
         .catch((error) => {
           // Show error message
-          console.log(error);
-          // Swal.fire({
-          //   title: this.$t("t-error"),
-          //   text: `${this.$t("t-suggest-error")} Error: ${error}`,
-          //   icon: "error",
-          //   confirmButtonText: "OK",
-          // });
+          Swal.fire({
+            title: this.$t("t-error"),
+            text: `${this.$t("t-suggest-error")} Error: ${error}`,
+            icon: "error",
+            confirmButtonText: "OK",
+          });
         });
     },
   },

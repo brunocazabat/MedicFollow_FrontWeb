@@ -507,5 +507,6 @@
   "t-email-input": "Enter your email",
   "t-country-input": "Enter your country",
   "t-suggestion": "Suggestion",
-  "t-suggest-error": "There was an error sending your suggestion... Please try again..."
+  "t-suggest-error": "There was an error sending your suggestion... Please try again...",
+  "t-bug-report-error": "There was an error sending your bug report... Please try again..."
 }
