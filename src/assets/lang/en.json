@@ -508,5 +508,9 @@
   "t-country-input": "Enter your country",
   "t-suggestion": "Suggestion",
   "t-suggest-error": "There was an error sending your suggestion... Please try again...",
-  "t-bug-report-error": "There was an error sending your bug report... Please try again..."
+  "t-bug-report-error": "There was an error sending your bug report... Please try again...",
+  "t-actions": "Actions",
+  "t-created-at": "Created at",
+  "t-consult-actions": "Consult",
+  "t-no-patient-found": "Sorry! No Result Found..."
 }

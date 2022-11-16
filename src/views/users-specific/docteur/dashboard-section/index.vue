@@ -13,9 +13,12 @@ import {
   ManagePatientsModule,
 } from "./buttonComponents";
 import PatientTableModule from "../medical-information/patientTable.vue";
-import axiosResult from "@/components/back-related/state/axiosResponse";
+import Swal from "sweetalert2";
 import axios from "axios";
-import { AuthGetters, PatientGetters } from "@/components/back-related/state/helpers";
+import {
+  AuthGetters,
+  PatientGetters,
+} from "@/components/back-related/state/helpers";
 
 export default {
   components: {
@@ -27,19 +30,23 @@ export default {
     PatientTableModule,
     CountTo,
     AccessSettings,
-    AccessChat
+    AccessChat,
   },
   data() {
     return {
       constructURL: String,
       patientArray: [],
-    }
+    };
   },
   methods: {
     ...AuthGetters,
     ...PatientGetters,
     handleShowMedicalInformation() {
-      this.constructURL = "medical-information?fn=" + this.getPatientFirstname() + "&ln=" + this.getPatientLastname();
+      this.constructURL =
+        "medical-information?fn=" +
+        this.getPatientFirstname() +
+        "&ln=" +
+        this.getPatientLastname();
       this.$router.push(this.constructURL);
     },
     async retrievePatientList() {
@@ -47,33 +54,29 @@ export default {
         await axios
           .get("patient/medical", {
             headers: {
-              token: this.gettoken().Token
+              token: this.gettoken().Token,
             },
           })
           .then((response) => {
             if (response.status === 200) {
               this.patientArray = response.data.patients;
-              axiosResult.setReturnValues(true, null);
-            } else {
-              axiosResult.setReturnValues({
-                result: false,
-                error: response.status,
-              });
             }
           });
       } catch (error) {
-        axiosResult.setReturnValues({
-          result: false,
-          error: error.result,
+        // Sweet Alert Error
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `${this.$t("t-error")}: ${error}`,
         });
       }
-    }
+    },
   },
   mounted() {
     // this.$store.dispatch("getPatients");
     this.retrievePatientList();
   },
-}
+};
 </script>
 
 <template>
@@ -85,14 +88,23 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between">
                 <div>
-                  <p class="fw-medium text-muted mb-0" data-key="t-">Patients dans le Service:</p>
+                  <p class="fw-medium text-muted mb-0" data-key="t-">
+                    Patients dans le Service:
+                  </p>
                   <h3 class="mt-4 ff-secondary fw-semibold" data-key="t-total">
-                    <count-to :duration="1000" :startVal="0" :endVal="95"></count-to> {{ $t('t-total') }}
+                    <count-to
+                      :duration="2000"
+                      :startVal="0"
+                      :endVal="patientArray.length"
+                    ></count-to>
+                    {{ $t("t-total") }}
                   </h3>
                 </div>
                 <div>
                   <div class="avatar-sm flex-shrink-0">
-                    <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                    <span
+                      class="avatar-title bg-soft-info text-info rounded-circle fs-4"
+                    >
                       <em class="mdi mdi-account"></em>
                     </span>
                   </div>
@@ -117,14 +129,23 @@ export default {
             <div class="card-body">
               <div class="d-flex justify-content-between">
                 <div>
-                  <p class="fw-medium text-muted mb-0" data-key="t-">Visites restantes:</p>
+                  <p class="fw-medium text-muted mb-0" data-key="t-">
+                    Visites restantes:
+                  </p>
                   <h3 class="mt-4 ff-secondary fw-semibold" data-key="t-remain">
-                    <count-to :duration="1000" :startVal="0" :endVal="8"></count-to> restantes.
+                    <count-to
+                      :duration="1000"
+                      :startVal="0"
+                      :endVal="8"
+                    ></count-to>
+                    restantes.
                   </h3>
                 </div>
                 <div>
                   <div class="avatar-sm flex-shrink-0">
-                    <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                    <span
+                      class="avatar-title bg-soft-info text-info rounded-circle fs-4"
+                    >
                       <em class="mdi mdi-account-check"></em>
                     </span>
                   </div>
@@ -144,7 +165,10 @@ export default {
         </div>
       </div>
       <div class="col-xxl-7 ml3">
-        <PatientTableModule @button-pressed="handleShowMedicalInformation" :patientArray="patientArray" />
+        <PatientTableModule
+          @button-pressed="handleShowMedicalInformation"
+          :patientArray="patientArray"
+        />
       </div>
     </div>
   </Layout>

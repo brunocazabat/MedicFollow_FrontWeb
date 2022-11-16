@@ -4,6 +4,10 @@ export const state = {
   patientLastname: sessionStorage.getItem("currentPatientLASTNAME"),
   patientDOB: sessionStorage.getItem("currentPatientDOB"),
   patientSocialNumber: sessionStorage.getItem("currentPatientSOCIALNUMBER"),
+  patientGender: sessionStorage.getItem("currentPatientGENDER"),
+  patientIsConscious: sessionStorage.getItem("currentPatientISCONSCIOUS"),
+  patientEmail: sessionStorage.getItem("currentPatientEMAIL"),
+  patientCreatedAt: sessionStorage.getItem("currentPatientCREATEDAT"),
 };
 
 export const mutations = {
@@ -27,6 +31,22 @@ export const mutations = {
     state.socialNumber = socialNumber;
     saveState("currentPatientSOCIALNUMBER", socialNumber);
   },
+  SET_PATIENT_GENDER(state, gender) {
+    state.gender = gender;
+    saveState("currentPatientGENDER", gender);
+  },
+  SET_PATIENT_ISCONSCIOUS(state, isConscious) {
+    state.isConscious = isConscious;
+    saveState("currentPatientISCONSCIOUS", isConscious);
+  },
+  SET_PATIENT_EMAIL(state, email) {
+    state.email = email;
+    saveState("currentPatientEMAIL", email);
+  },
+  SET_PATIENT_CREATEDAT(state, createdAt) {
+    state.createdAt = createdAt;
+    saveState("currentPatientCREATEDAT", createdAt);
+  },
 };
 
 export const getters = {
@@ -45,6 +65,18 @@ export const getters = {
   getPatientSocialNumber(state) {
     return state.socialNumber;
   },
+  getPatientGender(state) {
+    return state.gender;
+  },
+  getPatientIsConscious(state) {
+    return state.isConscious;
+  },
+  getPatientEmail(state) {
+    return state.email;
+  },
+  getPatientCreatedAt(state) {
+    return state.createdAt;
+  },
 };
 
 export const actions = {
@@ -54,6 +86,10 @@ export const actions = {
     commit("SET_PATIENT_LASTNAME", null);
     commit("SET_PATIENT_DOB", null);
     commit("SET_PATIENT_SOCIALNUMBER", null);
+    commit("SET_PATIENT_GENDER", null);
+    commit("SET_PATIENT_ISCONSCIOUS", null);
+    commit("SET_PATIENT_EMAIL", null);
+    commit("SET_PATIENT_CREATEDAT", null);
   },
   async setPatientUUID({ commit }, patientUUID) {
     commit("SET_PATIENT_UUID", patientUUID);
@@ -69,6 +105,18 @@ export const actions = {
   },
   async setPatientSocialNumber({ commit }, socialNumber) {
     commit("SET_PATIENT_SOCIALNUMBER", socialNumber);
+  },
+  async setPatientGender({ commit }, gender) {
+    commit("SET_PATIENT_GENDER", gender);
+  },
+  async setPatientIsConscious({ commit }, isConscious) {
+    commit("SET_PATIENT_ISCONSCIOUS", isConscious);
+  },
+  async setPatientEmail({ commit }, email) {
+    commit("SET_PATIENT_EMAIL", email);
+  },
+  async setPatientCreatedAt({ commit }, createdAt) {
+    commit("SET_PATIENT_CREATEDAT", createdAt);
   },
 };
 

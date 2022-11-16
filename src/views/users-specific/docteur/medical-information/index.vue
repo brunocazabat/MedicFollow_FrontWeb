@@ -90,7 +90,7 @@ export default {
         this.getPatientLastname();
       this.$router.push(reportURL);
     },
-    async handlePatientInfo() {
+    handlePatientInfo() {
       // Setting Patients Information
       this.patientFirstName = this.getPatientFirstname();
       this.patientLastName = this.getPatientLastname();
@@ -153,75 +153,6 @@ export default {
           @button-pressed="handlePatientInfo"
           :patientArray="patientArray"
         />
-
-        <p class="text-muted">
-          Si vous ne trouvez pas le patient, vous pouvez entrer ses informations
-          ci-dessous.
-        </p>
-        <div class="card">
-          <div class="card-body">
-            <div class="row mb-3">
-              <!-- First name -->
-              <div class="col-sm-6">
-                <label for="patientFirstName" class="form-label">{{
-                  $t("t-firstname")
-                }}</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="patientFirstName"
-                  placeholder="Enter first name..."
-                  v-model="patientFirstName"
-                />
-              </div>
-
-              <!-- Last name -->
-              <div class="col-sm-6">
-                <label for="patientLastName" class="form-label">{{
-                  $t("t-lastname")
-                }}</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="patientLastName"
-                  placeholder="Enter last name..."
-                  v-model="patientLastName"
-                />
-              </div>
-            </div>
-
-            <!-- Social security number + Date of Birth -->
-            <div class="row">
-              <!-- Social Security Number -->
-              <div class="col-sm-6">
-                <label for="patientSocialSecurityNumber" class="form-label">{{
-                  $t("t-socialsecuritynbr")
-                }}</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="patientSocialSecurityNumber"
-                  placeholder="Enter the social security number..."
-                  v-model="patientMandatory.socialSecurityNumber"
-                />
-              </div>
-
-              <!-- Date of Birth -->
-              <div class="col-sm-6">
-                <label for="patientDoB" class="form-label">{{
-                  $t("t-dateofbirth")
-                }}</label>
-                <input
-                  type="date"
-                  class="form-control"
-                  id="patientDoB"
-                  placeholder="Enter the date of birth..."
-                  v-model="patientMandatory.dateOfBirth"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div v-else-if="viewID === 1">
