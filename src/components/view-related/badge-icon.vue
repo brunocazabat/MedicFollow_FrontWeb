@@ -25,7 +25,7 @@ export default {
     {{ text }}
     <div class="icon cursor-pointer">
       <div class="btn btn-sm btn-icon" v-on:click="removeBadge">
-        <p>x</p>
+        <p>X</p>
       </div>
     </div>
   </div>
