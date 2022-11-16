@@ -41,11 +41,9 @@ export default {
 
         // Pushing the data to the file array
         this.file.push(data);
-
-        // Emitting the file array
-        console.log("file emitted", this.file);
-        this.$emit("update:modelValue", this.file);
       }
+      // Emitting the file array
+      this.$emit("update:modelValue", this.file);
     },
 
     // Method to transform the file.size in a human readable format
@@ -63,6 +61,23 @@ export default {
         ++u;
       } while (Math.abs(bytes) >= thresh && u < units.length - 1);
       return bytes.toFixed(1) + " " + units[u];
+    },
+
+    // Method to handle the file upload
+    handleUploadedFile(event) {
+      const element = event.currentTarget;
+
+      for (let i = 0; i < element.files.length; i++) {
+        const data = {
+          name: element.files[i].name,
+          size: element.files[i].size,
+          type: element.files[i].type,
+          binary: element.files[i],
+        };
+
+        this.file.push(data);
+      }
+      this.$emit("update:modelValue", this.file);
     },
 
     // Method to remove from the file array the file that has been dropped
