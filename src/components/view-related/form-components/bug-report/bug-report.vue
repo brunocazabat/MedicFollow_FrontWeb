@@ -1,13 +1,20 @@
 <script>
-import recaptcha from "@/components/view-related/widgets/recaptchav2.vue";
+// General Imports
+import axios from "axios";
+import Swal from "sweetalert2";
 
+// State Imports
+import { AuthGetters } from "@/components/back-related/state/helpers";
+
+// Components Imports
+import Recaptcha from "@/components/view-related/widgets/recaptchav2.vue";
 import DragDropComponent from "@/components/view-related/drag-drop/drag-drop.vue";
 import InputComponent from "@/components/view-related/input.vue";
 import SelectComponent from "@/components/view-related/select.vue";
 
 export default {
   components: {
-    recaptcha,
+    Recaptcha,
     DragDropComponent,
     InputComponent,
     SelectComponent,
@@ -20,34 +27,79 @@ export default {
         options: [
           {
             value: "1",
-            text: "Page d'accueil",
+            text: `${this.$t("t-home")}`,
           },
           {
             value: "2",
-            text: "Page de connexion",
+            text: `${this.$t("t-login-page")}`,
           },
           {
             value: "3",
-            text: "Page d'inscription",
+            text: `${this.$t("t-schedulesettings")}`,
           },
           {
             value: "4",
-            text: "Page de réinitialisation du mot de passe",
+            text: `${this.$t("t-medicalinformation")}`,
           },
           {
             value: "5",
-            text: "Page de réinitialisation du mot de passe réussie",
+            text: `${this.$t("t-staffinput")}`,
           },
           {
             value: "6",
-            text: "Page de réinitialisation du mot de passe échouée",
+            text: `${this.$t("t-managepatients")}`,
+          },
+          {
+            value: "7",
+            text: `${this.$t("t-calendar")}`,
+          },
+          {
+            value: "8",
+            text: `${this.$t("t-chat")}`,
+          },
+          {
+            value: "9",
+            text: `${this.$t("t-settings")}`,
           },
         ],
       },
 
-      selectedOptionPageDoctor: {
+      selectPageConfiance: {
+        options: [
+          {
+            value: "1",
+            text: `${this.$t("t-home")}`,
+          },
+          {
+            value: "2",
+            text: `${this.$t("t-login-page")}`,
+          },
+          {
+            value: "3",
+            text: `${this.$t("t-medicalinformation")}`,
+          },
+          {
+            value: "4",
+            text: `${this.$t("t-calendar")}`,
+          },
+          {
+            value: "5",
+            text: `${this.$t("t-chat")}`,
+          },
+          {
+            value: "6",
+            text: `${this.$t("t-settings")}`,
+          },
+          {
+            value: "7",
+            text: `${this.$t("t-takemeetingwithdoctor")}`,
+          },
+        ],
+      },
+
+      selectedOptionPage: {
         value: "1",
-        text: "Page d'accueil",
+        text: `${this.$t("t-home")}`,
       },
 
       // Select Browser
@@ -79,7 +131,7 @@ export default {
           },
           {
             value: "7",
-            text: "Autre",
+            text: `${this.$t("t-other")}`,
           },
         ],
       },
@@ -94,23 +146,23 @@ export default {
         options: [
           {
             value: "1",
-            text: "Ordinateur de bureau",
+            text: `${this.$t("t-desktop")}`,
           },
           {
             value: "2",
-            text: "Ordinateur portable",
+            text: `${this.$t("t-laptop")}`,
           },
           {
             value: "3",
-            text: "Tablette",
+            text: `${this.$t("t-tablet")}`,
           },
           {
             value: "4",
-            text: "Téléphone",
+            text: `${this.$t("t-phone")}`,
           },
           {
             value: "5",
-            text: "Autre",
+            text: `${this.$t("t-other")}`,
           },
         ],
       },
@@ -126,6 +178,100 @@ export default {
       issueActual: "",
       userEmailAddress: "",
     };
+  },
+  methods: {
+    ...AuthGetters,
+
+    // Method to handle the file change
+    handleFileChange(file) {
+      console.log("File changed", file);
+      this.file = file;
+    },
+
+    // Method to check if the user is a 'docteur'
+    isDoctor() {
+      if (this.getuserType() === "docteur") {
+        return true;
+      } else {
+        return false;
+      }
+    },
+
+    // Method to check if the user is a 'confiance'
+    isConfiance() {
+      if (this.getuserType() === "confiance") {
+        return true;
+      } else {
+        return false;
+      }
+    },
+
+    // Method to send the bug report
+    async sendBugReport() {
+      let url = `upload/report`;
+      let fileBinaryArray = [];
+
+      // Creating binary file array
+      for (let i = 0; i < this.file.length; i++) {
+        fileBinaryArray.push(this.file[i].binary);
+      }
+      console.log("fileBinaryArray", fileBinaryArray);
+
+      let formData = new FormData();
+      for (let i = 0; i < this.file.length; i++) {
+        formData.append("file", this.file[i].binary);
+      }
+
+      console.log("formData", formData.getAll("file"));
+
+      // let newFile = this.file[0].binary;
+      // retrieving the binary of the newFile var
+      //   let newFileBinary = newFile.slice(0, newFile.size, newFile.type);
+      let newFileBinary = new File([Blob], this.file[0].name, {
+        type: this.file[0].type,
+        lastModified: Date.now(),
+      });
+
+      console.log("newFileBinary", newFileBinary);
+
+      // Create the form data
+      const payload = {
+        file: newFileBinary,
+        suggest: `email: ${this.userEmailAddress}; issueDesc: ${this.issueDesc}; issueSteps: ${this.issueSteps}; issueExpected: ${this.issueExpected}; issueActual: ${this.issueActual}; selectedOptionPage: ${this.selectedOptionPage.text}; selectedBrowser: ${this.selectedBrowser.text}; selectedDevice: ${this.selectedDevice.text}`,
+      };
+
+      // Send the bug report
+      await axios({
+        method: "post",
+        url: url,
+        data: payload,
+        headers: {
+          "Content-Type": "multipart/form-data",
+          token: this.gettoken().Token,
+        },
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            // Show success message
+            Swal.fire({
+              title: this.$t("t-success"),
+              text: this.$t("t-suggest-success"),
+              icon: "success",
+              confirmButtonText: "OK",
+            });
+          }
+        })
+        .catch((error) => {
+          // Show error message
+          console.log(error);
+          // Swal.fire({
+          //   title: this.$t("t-error"),
+          //   text: this.$t("t-suggest-error"),
+          //   icon: "error",
+          //   confirmButtonText: "OK",
+          // });
+        });
+    },
   },
 };
 </script>
@@ -151,12 +297,24 @@ export default {
       </div>
     </div>
 
-    <div class="p-3">
+    <div class="p-3" v-if="isDoctor()">
       <SelectComponent
         :options="selectPageDoctor.options"
-        :selectedOption="selectedOptionPageDoctor"
+        :selectedOption="selectedOptionPage"
         :title="$t('t-pageofissue')"
-        v-model="selectedOptionPageDoctor"
+        v-model="selectedOptionPage"
+        :required="true"
+        invalidFeedback="Please input the title of the page where you encountered the issue in
+      this textarea"
+      />
+    </div>
+
+    <div class="p-3" v-else-if="isConfiance()">
+      <SelectComponent
+        :options="selectPageConfiance.options"
+        :selectedOption="selectedOptionPage"
+        :title="$t('t-pageofissue')"
+        v-model="selectedOptionPageConfiance"
         :required="true"
         invalidFeedback="Please input the title of the page where you encountered the issue in
       this textarea"
@@ -276,7 +434,7 @@ export default {
       </div>
     </div>
 
-    <recaptcha />
+    <Recaptcha />
 
     <!-- Submit button -->
     <div class="p-3 col-12">

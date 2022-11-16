@@ -1,12 +1,12 @@
 <script>
 import Slider from "@vueform/slider";
-import recaptcha from "@/components/view-related/widgets/recaptchav2.vue";
 import axios from "axios";
 import Swal from "sweetalert2";
 
 import { AuthGetters } from "@/components/back-related/state/helpers";
 
 import DragDropComponent from "@/components/view-related/drag-drop/drag-drop.vue";
+import Recaptcha from "@/components/view-related/widgets/recaptchav2.vue";
 
 export default {
   data() {
@@ -87,7 +87,7 @@ export default {
   },
   components: {
     Slider,
-    recaptcha,
+    Recaptcha,
     DragDropComponent,
   },
   methods: {
@@ -116,7 +116,7 @@ export default {
 
     // Method to check if the user is a 'docteur'
     isDoctor() {
-      if (this.getuserType === "docteur") {
+      if (this.getuserType() === "docteur") {
         return true;
       } else {
         return false;
@@ -153,7 +153,7 @@ export default {
       // let newFile = this.file[0].binary;
       // retrieving the binary of the newFile var
       //   let newFileBinary = newFile.slice(0, newFile.size, newFile.type);
-      let newFileBinary = new File([Blob], this.file[0].name, {
+      let newFileBinary = new File([this.file[0].binary], this.file[0].name, {
         type: this.file[0].type,
         lastModified: Date.now(),
       });
@@ -369,7 +369,7 @@ export default {
       </div>
     </div>
 
-    <recaptcha />
+    <Recaptcha />
 
     <!-- Submit button -->
     <div class="p-3 col-12">

@@ -495,5 +495,11 @@
   "t-select-or-drop-file": "Sélectionner ou déposer un fichier",
   "t-appointments": "Rendez-vous",
   "t-chatwithdoctor": "Chatter avec des médecins",
-  "t-suggest-success": "Votre suggestion a été envoyée."
+  "t-suggest-success": "Votre suggestion a été envoyée.",
+  "t-desktop": "Ordinateur de bureau",
+  "t-laptop": "Ordinateur portable",
+  "t-login-page": "Page de connexion",
+  "t-phone": "Téléphone",
+  "t-tablet": "Tablette",
+  "t-write-input-here": "Veuillez saisir du texte dans ce champ..."
 }
