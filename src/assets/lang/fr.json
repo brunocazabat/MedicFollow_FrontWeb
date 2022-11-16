@@ -501,5 +501,7 @@
   "t-login-page": "Page de connexion",
   "t-phone": "Téléphone",
   "t-tablet": "Tablette",
-  "t-write-input-here": "Veuillez saisir du texte dans ce champ..."
+  "t-write-input-here": "Veuillez saisir du texte dans ce champ...",
+  "t-input-page-issue": "Veuillez saisir le titre de la page où vous avez rencontré le problème dans cette zone de texte",
+  "t-write-it-as-a-title-for-instance-i-cannot-login-to-medicfollow": "Ecrivez-le en titre, par exemple : \"Je n'arrive pas à me connecter à Medic'Follow\"."
 }

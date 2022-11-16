@@ -490,5 +490,18 @@
   "t-live-notifs-here": "Ihre Benachrichtigungen sind hier live",
   "t-new": "Neu",
   "t-new-fornotif": "Neu",
-  "t-view-all-chat": "Alle Chats anzeigen"
+  "t-view-all-chat": "Alle Chats anzeigen",
+  "t-appointments": "Termine",
+  "t-chatwithdoctor": "Chatten Sie mit Ärzten",
+  "t-desktop": "Desktop-Computer",
+  "t-input-page-issue": "Bitte geben Sie in diesem Textfeld den Titel der Seite ein, auf der Sie auf das Problem gestoßen sind",
+  "t-laptop": "Laptop",
+  "t-login-page": "Loginseite",
+  "t-phone": "Smartphone",
+  "t-select-or-drop-file": "Wählen Sie eine Datei aus oder legen Sie sie ab",
+  "t-suggest-success": "Ihr Vorschlag wurde gesendet.",
+  "t-tablet": "Tablette",
+  "t-write-here": "Hier schreiben...",
+  "t-write-input-here": "Bitte geben Sie Text in dieses Feld ein...",
+  "t-write-it-as-a-title-for-instance-i-cannot-login-to-medicfollow": "Schreiben Sie es als Titel, zum Beispiel: \"Ich kann mich nicht bei Medic'Follow anmelden\"."
 }
