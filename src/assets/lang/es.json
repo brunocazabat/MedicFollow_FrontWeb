@@ -506,5 +506,6 @@
   "t-write-it-as-a-title-for-instance-i-cannot-login-to-medicfollow": "Escríbalo como título, por ejemplo: \"No puedo iniciar sesión en Medic'Follow\".",
   "t-country-input": "Introduce tu país",
   "t-email-input": "Introduce tu correo electrónico",
-  "t-suggestion": "Sugerencia"
+  "t-suggestion": "Sugerencia",
+  "t-suggest-error": "Hubo un error al enviar su sugerencia... Vuelva a intentarlo..."
 }

@@ -225,7 +225,7 @@ export default {
           console.log(error);
           // Swal.fire({
           //   title: this.$t("t-error"),
-          //   text: this.$t("t-suggest-error"),
+          //   text: `${this.$t("t-suggest-error")} Error: ${error}`,
           //   icon: "error",
           //   confirmButtonText: "OK",
           // });
