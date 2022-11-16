@@ -501,5 +501,7 @@
   "t-desktop": "Desktop computer",
   "t-laptop": "Laptop",
   "t-tablet": "Tablet",
-  "t-phone": "Smartphone"
+  "t-phone": "Smartphone",
+  "t-write-it-as-a-title-for-instance-i-cannot-login-to-medicfollow": "Write it as a title, for instance: \"I cannot login to Medic'Follow\".",
+  "t-input-page-issue": "Please input the title of the page where you encountered the issue in this textarea"
 }

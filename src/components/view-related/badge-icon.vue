@@ -23,10 +23,10 @@ export default {
 <template>
   <div class="badge" :class="type">
     {{ text }}
-    <div class="icon">
-      <button class="btn btn-sm btn-icon" v-on:click="removeBadge">
+    <div class="icon cursor-pointer">
+      <div class="btn btn-sm btn-icon" v-on:click="removeBadge">
         <p>x</p>
-      </button>
+      </div>
     </div>
   </div>
 </template>
@@ -54,6 +54,10 @@ export default {
   display: flex;
   align-items: center;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.cursor-pointer {
   cursor: pointer;
 }
 </style>
