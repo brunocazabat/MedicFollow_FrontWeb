@@ -127,8 +127,6 @@ export default {
 </template>
 
 <style>
-/* Style to make the width match the parent size */
-
 h6 {
   font-size: 12px;
   margin: 0;
