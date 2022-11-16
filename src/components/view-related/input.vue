@@ -37,6 +37,10 @@ export default {
       type: String,
       default: "",
     },
+    className: {
+      type: String,
+      default: "",
+    },
   },
   emits: ["update:modelValue"],
   data() {
@@ -53,19 +57,60 @@ export default {
 </script>
 
 <template>
-  <label for="label" class="form-label" data-key="t-pageofissue">{{
-    label
-  }}</label>
-  <input
-    :type="type"
-    class="form-control mb-2"
-    :rows="rows"
-    :placeholder="placeholder"
-    :required="required"
-    :disabled="disabled"
-    :readonly="readonly"
-    v-model="localValue"
-    v-on:input="updateValue"
-  />
+  <div v-if="className === 'form-floating'" :class="className">
+    <textarea
+      v-if="rows > 1"
+      :type="type"
+      class="form-control mb-2"
+      :rows="rows"
+      :placeholder="placeholder"
+      :required="required"
+      :disabled="disabled"
+      :readonly="readonly"
+      v-model="localValue"
+      v-on:input="updateValue"
+    ></textarea>
+    <input
+      v-else
+      :type="type"
+      class="form-control mb-2"
+      :placeholder="placeholder"
+      :required="required"
+      :disabled="disabled"
+      :readonly="readonly"
+      v-model="localValue"
+      v-on:input="updateValue"
+      id="inputText"
+    />
+    <label for="inputText" class="form-label">{{ label }}</label>
+  </div>
+
+  <div v-else :class="className">
+    <label for="inputText" class="form-label">{{ label }}</label>
+    <textarea
+      v-if="rows > 1"
+      :type="type"
+      class="form-control mb-2"
+      :rows="rows"
+      :placeholder="placeholder"
+      :required="required"
+      :disabled="disabled"
+      :readonly="readonly"
+      v-model="localValue"
+      v-on:input="updateValue"
+    ></textarea>
+    <input
+      v-else
+      :type="type"
+      class="form-control mb-2"
+      :placeholder="placeholder"
+      :required="required"
+      :disabled="disabled"
+      :readonly="readonly"
+      v-model="localValue"
+      v-on:input="updateValue"
+      id="inputText"
+    />
+  </div>
   <div class="invalid-feedback">{{ invalidFeedback }}.</div>
 </template>

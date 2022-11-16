@@ -495,5 +495,6 @@
   "t-select-or-drop-file": "Select or drop a file",
   "t-appointments": "Appointments",
   "t-chatwithdoctor": "Chat with doctors",
-  "t-suggest-success": "Your suggestion has been sent."
+  "t-suggest-success": "Your suggestion has been sent.",
+  "t-write-input-here": "Please input text in this field..."
 }

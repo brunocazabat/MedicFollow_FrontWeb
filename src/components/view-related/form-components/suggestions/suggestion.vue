@@ -342,13 +342,13 @@ export default {
 
     <!-- FILE UPLOAD -->
     <div class="p-3 mb-3">
-      <div class="col-md-12">
-        <h3 class="font-size-14 mb-2 mt-0">
-          {{ $t("t-questionuploaddoc") }}
-        </h3>
-        <p class="text-muted mb-4">{{ $t("t-uploadexample") }}</p>
-        <DragDropComponent v-model="file" />
-      </div>
+      <h3 class="font-size-14 mb-2 mt-0">
+        {{ $t("t-questionuploaddoc") }}
+      </h3>
+      <p class="text-muted mb-4">
+        {{ $t("t-uploadquestionexample") }}
+      </p>
+      <DragDropComponent v-model="file" />
     </div>
 
     <hr />
@@ -361,12 +361,7 @@ export default {
       <!-- Agree on ToU check box -->
       <div class="col-12">
         <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="feedbackGridCheck"
-            required
-          />
+          <input class="form-check-input" type="checkbox" required />
           <label class="form-check-label" for="feedbackGridCheck">
             {{ $t("t-havereadtou") }}*
           </label>
