@@ -1,12 +1,17 @@
 <script>
+// General Imports
 import Slider from "@vueform/slider";
 import axios from "axios";
 import Swal from "sweetalert2";
 
+// State Imports
 import { AuthGetters } from "@/components/back-related/state/helpers";
 
+// Components Imports
 import DragDropComponent from "@/components/view-related/drag-drop/drag-drop.vue";
 import Recaptcha from "@/components/view-related/widgets/recaptchav2.vue";
+import InputComponent from "@/components/view-related/input.vue";
+import SelectComponent from "@/components/view-related/select.vue";
 
 export default {
   data() {
@@ -74,6 +79,32 @@ export default {
         },
       },
 
+      genders: {
+        options: [
+          {
+            value: "1",
+            text: this.$t("t-male"),
+          },
+          {
+            value: "2",
+            text: this.$t("t-female"),
+          },
+          {
+            value: "3",
+            text: this.$t("t-prefernotsay"),
+          },
+          {
+            value: "4",
+            text: this.$t("t-other"),
+          },
+        ],
+      },
+
+      selectedGender: {
+        value: "1",
+        text: this.$t("t-male"),
+      },
+
       // File var
       file: [],
 
@@ -89,6 +120,8 @@ export default {
     Slider,
     Recaptcha,
     DragDropComponent,
+    InputComponent,
+    SelectComponent,
   },
   methods: {
     ...AuthGetters,
@@ -163,7 +196,7 @@ export default {
       // Create the form data
       const payload = {
         file: newFileBinary,
-        suggest: `email: ${this.email}; country: ${this.country}; gender: ${this.gender}; dob: ${this.dob}; suggestion: ${this.suggestion}`,
+        suggest: `email: ${this.email}; country: ${this.country}; gender: ${this.selectedGender.text}; dob: ${this.dob}; suggestion: ${this.suggestion}`,
       };
 
       // Send the suggestion
@@ -213,64 +246,42 @@ export default {
       <!-- EMAIL -->
       <!-- CHECK HOW TO MAKE SMALLER BOX -->
       <div class="col-lg-6">
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control"
-            id="feedbackEmailInput"
-            placeholder="Enter your email"
-            v-model="email"
-          />
-          <label for="feedbackEmailInput">{{ $t("t-email") }}</label>
-        </div>
+        <InputComponent
+          className="form-floating"
+          :label="$t('t-email')"
+          :placeholder="$t('t-email-input')"
+          v-model="email"
+        />
       </div>
 
       <!-- COUNTRY -->
       <!-- CHECK HOW TO MAKE SMALLER BOX -->
       <div class="col-lg-6 mb-4">
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control"
-            id="feedbackCountryInput"
-            placeholder="Enter your country"
-            v-model="country"
-            required
-          />
-          <label for="feedbackCountryInput">{{ $t("t-country") }}*</label>
-        </div>
+        <InputComponent
+          className="form-floating"
+          :label="$t('t-country') + ' *'"
+          :placeholder="$t('t-country-input')"
+          v-model="country"
+        />
       </div>
 
       <!-- GENDER LIST -->
       <div class="col-lg-6">
-        <label for="chooseGenderSelect" class="form-label"
-          >{{ $t("t-gender") }}*</label
-        >
-        <select
-          class="form-select"
-          id="chooseGenderSelect"
-          v-model="gender"
-          required
-        >
-          <option selected>{{ $t("t-selectgender") }}</option>
-          <option value="male">{{ $t("t-male") }}</option>
-          <option value="female">{{ $t("t-female") }}</option>
-          <option value="other">{{ $t("t-other") }}</option>
-          <option value="no-pref">{{ $t("t-prefernotsay") }}</option>
-        </select>
+        <SelectComponent
+          :options="genders.options"
+          :selectedOption="selectedGender"
+          :title="$t('t-gender') + ' *'"
+          :required="true"
+        />
       </div>
 
       <!-- BIRTH DATE SELECTION -->
       <div class="col-lg-6 mb-4">
-        <label for="feedbackDateInput" class="form-label"
-          >{{ $t("t-birthdate") }}*</label
-        >
-        <input
+        <InputComponent
           type="date"
-          class="form-control"
-          id="feedbackDateInput"
+          :label="$t('t-birthdate') + ' *'"
           v-model="dob"
-          required
+          :required="true"
         />
       </div>
     </div>
@@ -328,13 +339,14 @@ export default {
       <div class="col-md-12">
         <h3 class="font-size-14 mb-2 mt-0">{{ $t("t-howcanweimprove") }}</h3>
         <p class="text-muted mb-4">{{ $t("t-feedbackinfomsg") }}</p>
-        <textarea
-          class="form-control"
-          rows="3"
+
+        <InputComponent
+          :label="$t('t-suggestion') + ' *'"
           :placeholder="$t('t-write-here')"
           v-model="suggestion"
-          required
-        ></textarea>
+          :required="true"
+          :rows="3"
+        />
       </div>
     </div>
 
