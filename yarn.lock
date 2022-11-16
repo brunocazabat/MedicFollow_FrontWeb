@@ -6249,10 +6249,10 @@ map-obj@^4.0.0:
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-4.3.0.tgz#9304f906e93faae70880da102a9f1df0ea8bb05a"
   integrity sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==
 
-maska@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/maska/-/maska-1.5.0.tgz#6e2f6386d290ab7dc8b44cfc04f34891e06a1e25"
-  integrity sha512-BwZXzs5gHeu6wtn3iWFqrKRtcsM3sTpkHvfAngVNVNlN7tl9ZyQUeHTz11s9Sy7Bq1MoQ+xyR/+IzghY8nR84Q==
+maska@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/maska/-/maska-1.5.1.tgz#e5b0da1ffe911bfb226eefcfe7d2c7243dbcc8af"
+  integrity sha512-zYDAVZo8bL684k4lQ4CydbIIheyryE49Nw9TCbKm7EPpcMJb/KdftGwm/0rVXN0sxZByZiY39RYOvHoP5zTLAA==
 
 mdn-data@2.0.14:
   version "2.0.14"
