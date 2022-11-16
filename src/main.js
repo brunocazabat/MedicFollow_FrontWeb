@@ -14,8 +14,6 @@ import Maska from "maska";
 import VueFeather from "vue-feather";
 import Particles from "particles.vue3";
 
-import VueNativeNotification from "vue-native-notification";
-
 import VueCookieAcceptDecline from "vue-cookie-accept-decline";
 import "vue-cookie-accept-decline/dist/vue-cookie-accept-decline.css";
 
@@ -37,7 +35,6 @@ createApp(App)
   .use(router)
   .use(VueApexCharts)
   .use(BootstrapVue3)
-  .use(VueNativeNotification, { requestOnNotify: true })
   .component(VueFeather.type, VueFeather)
   .component("vue-cookie-accept-decline", VueCookieAcceptDecline)
   .use(Maska)
