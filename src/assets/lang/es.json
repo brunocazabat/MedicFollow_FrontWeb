@@ -503,5 +503,8 @@
   "t-tablet": "Tableta",
   "t-write-here": "Escriba aqui...",
   "t-write-input-here": "Por favor ingrese texto en este campo...",
-  "t-write-it-as-a-title-for-instance-i-cannot-login-to-medicfollow": "Escríbalo como título, por ejemplo: \"No puedo iniciar sesión en Medic'Follow\"."
+  "t-write-it-as-a-title-for-instance-i-cannot-login-to-medicfollow": "Escríbalo como título, por ejemplo: \"No puedo iniciar sesión en Medic'Follow\".",
+  "t-country-input": "Introduce tu país",
+  "t-email-input": "Introduce tu correo electrónico",
+  "t-suggestion": "Sugerencia"
 }
