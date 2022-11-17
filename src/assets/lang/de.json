@@ -516,5 +516,16 @@
   "t-error-getting-next-activity": "Fehler beim Abrufen der nächsten Aktivität des Patienten",
   "t-no-activity": "Es ist keine Aktivität geplant",
   "t-no-patient-found": "Es tut uns leid! \nKeine Einträge gefunden...",
-  "t-you-will-be-notified": "Sie werden benachrichtigt, wenn eine Aktivität geplant ist"
+  "t-you-will-be-notified": "Sie werden benachrichtigt, wenn eine Aktivität geplant ist",
+  "t-blood-pressure": "Blutdruck",
+  "t-do-you-still-want-to-return-to-the-homepage": "Möchten Sie immer noch zur Startseite zurückkehren?",
+  "t-do-you-want-to-send-this-report": "Möchten Sie diesen Bericht wirklich senden?",
+  "t-invalid-feedback": "Bitte geben Sie hier eine Nachricht ein...",
+  "t-report-sent": "Bericht gesendet!",
+  "t-temperature": "Temperatur",
+  "t-the-report-was-successfully-sent": "Der Bericht wurde erfolgreich gesendet.",
+  "t-treatments": "Behandlungen",
+  "t-yes-send-it": "Ja, senden Sie es!",
+  "t-you-cannot-go-back": "Du kannst nicht zurück!",
+  "t-you-did-not-fill-the-report": "Sie haben den Bericht nicht ausgefüllt"
 }

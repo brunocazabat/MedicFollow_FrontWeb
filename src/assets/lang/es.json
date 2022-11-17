@@ -516,5 +516,16 @@
   "t-error-getting-next-activity": "Error al obtener la siguiente actividad del paciente",
   "t-no-activity": "No hay actividad programada",
   "t-no-patient-found": "¡Lo siento! \nNo se han encontrado resultados...",
-  "t-you-will-be-notified": "Se le notificará cuando se programe una actividad."
+  "t-you-will-be-notified": "Se le notificará cuando se programe una actividad.",
+  "t-blood-pressure": "Presión arterial",
+  "t-do-you-still-want-to-return-to-the-homepage": "¿Todavía quieres volver a la página de inicio?",
+  "t-do-you-want-to-send-this-report": "¿Está seguro de que desea enviar este informe?",
+  "t-invalid-feedback": "Por favor ingrese un mensaje aquí...",
+  "t-report-sent": "¡Reporte enviado!",
+  "t-temperature": "La temperatura",
+  "t-the-report-was-successfully-sent": "El informe fue enviado con éxito.",
+  "t-treatments": "Tratos",
+  "t-yes-send-it": "¡Sí, envíalo!",
+  "t-you-cannot-go-back": "¡No puedes volver atrás!",
+  "t-you-did-not-fill-the-report": "No llenaste el reporte"
 }

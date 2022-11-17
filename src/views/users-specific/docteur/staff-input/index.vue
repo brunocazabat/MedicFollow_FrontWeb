@@ -7,6 +7,8 @@ import FieldModule from "./fieldModule.vue";
 import Chat from "@/components/view-related/staff-input-components/chat.vue";
 // import Calendar from "@/components/view-related/staff-input-components/calendar.vue"
 import PatientTableModule from "../medical-information/patientTable.vue";
+import InputModule from "@/components/view-related//input.vue";
+import DragDropComponent from "@/components/view-related/drag-drop/drag-drop.vue";
 
 import {
   AuthGetters,
@@ -57,17 +59,20 @@ export default {
 
       // Fields Var
       inputFields: [
-        { id: 0, title: "Rythme cardiaque", value: "" },
-        { id: 1, title: "Poul", value: "" },
-        { id: 2, title: "Saturation en oxygène", value: "" },
-        { id: 3, title: "Température", value: "" },
-        { id: 4, title: "Tension Artérielle", value: "" },
+        { id: 0, title: this.$t("t-heartbeat"), value: "" },
+        { id: 1, title: this.$t("t-pulse"), value: "" },
+        { id: 2, title: this.$t("t-oxygensaturation"), value: "" },
+        { id: 3, title: this.$t("t-temperature"), value: "" },
+        { id: 4, title: this.$t("t-blood-pressure"), value: "" },
         { id: 5, title: "EVN", value: "" },
-        { id: 6, title: "Traitements", value: "" },
+        { id: 6, title: this.$t("t-treatments"), value: "" },
       ],
 
       // Patient Table
       patientArray: [],
+
+      // File
+      file: [],
     };
   },
   components: {
@@ -75,6 +80,8 @@ export default {
     FieldModule,
     Chat,
     PatientTableModule,
+    InputModule,
+    DragDropComponent,
     // Calendar,
   },
   methods: {
@@ -132,13 +139,13 @@ export default {
       if (this.generalObservation.length > 0) {
         // No
         Swal.fire({
-          title: "Voulez-vous vraiment envoyer ce rapport?",
-          text: "Vous ne pourrez pas revenir en arrière!",
+          title: this.$t("t-do-you-want-to-send-this-report"),
+          text: this.$t("t-you-cannot-go-back"),
           icon: "warning",
           showCancelButton: true,
           confirmButtonColor: "#3085d6",
           cancelButtonColor: "#d33",
-          confirmButtonText: "Oui, envoyer!",
+          confirmButtonText: this.$t("t-yes-send-it"),
         }).then(async (result) => {
           if (result.isConfirmed) {
             // Creating the request body
@@ -162,8 +169,8 @@ export default {
               }).then((response) => {
                 if (response.status === 201) {
                   Swal.fire({
-                    title: "Rapport envoyé!",
-                    text: "Le rapport a été envoyé avec succès!",
+                    title: this.$t("t-report-sent"),
+                    text: this.$t("t-the-report-was-successfully-sent"),
                     icon: "success",
                     confirmButtonText: "Ok",
                   }).then((result) => {
@@ -177,8 +184,10 @@ export default {
             } catch (error) {
               Swal.fire({
                 icon: "error",
-                title: "Une erreur est survenue...",
-                text: error.reponse,
+                title: "Oops...",
+                text: `${this.$t("t-something-went-wrong")}. Error: ${
+                  error.response.status
+                }`,
               });
               this.setPatientClearAll();
             }
@@ -188,12 +197,12 @@ export default {
         // Yes
         Swal.fire({
           icon: "warning",
-          title: "Vous n'avez pas rempli le rapport",
-          text: "Voulez-vous tout de même retourner à la page d'accueil?",
+          title: this.$t("t-you-did-not-fill-the-report"),
+          text: this.$t("t-do-you-still-want-to-return-to-the-homepage"),
           showCancelButton: true,
           confirmButtonColor: "#3085d6",
           cancelButtonColor: "#d33",
-          confirmButtonText: "Oui",
+          confirmButtonText: `${this.$t("t-yes")}`,
         }).then((result) => {
           if (result.isConfirmed) {
             this.setPatientClearAll();
@@ -256,22 +265,14 @@ export default {
             <div class="col-lg-6 mf-scrollable">
               <!-- INPUT LATEST INFO -->
               <div>
-                <label
-                  for="patientObserveCardInput"
-                  class="form-label font-size-large"
-                >
-                  {{ $t("t-observationsheets") }}
-                </label>
-                <textarea
-                  class="form-control"
-                  id="patientObserveCardInput"
-                  rows="3"
-                  placeholder="Veuillez saisir le résumé..."
+                <InputModule
+                  :label="$t('t-observationsheets')"
+                  :placeholder="$t('t-write-here')"
+                  :rows="4"
                   v-model="generalObservation"
-                ></textarea>
-                <div class="invalid-feedback">
-                  Please enter a message in the textarea.
-                </div>
+                  :required="true"
+                  :invalidFeedback="$t('t-invalid-feedback')"
+                />
               </div>
 
               <hr />
@@ -318,12 +319,7 @@ export default {
                     {{ $t("t-questionuploaddoc") }}
                   </label>
                   <p class="text-muted mb-3">{{ $t("t-uploadexample") }}</p>
-                  <input
-                    class="form-control"
-                    type="file"
-                    id="feedbackFileUpload"
-                    accept=".pdf, ,jpg, .jpeg, .png"
-                  />
+                  <DragDropComponent v-model="file" />
                 </div>
               </div>
             </div>
