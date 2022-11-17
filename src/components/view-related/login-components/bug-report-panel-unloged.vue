@@ -1,7 +1,9 @@
 <script>
+import BugReportComponent from "@/components/view-related/form-components/bug-report/bug-report.vue";
+
 export default {
   name: "bugreportpanelunloged",
-  components: {},
+  components: { BugReportComponent },
   data() {
     return {};
   },
@@ -29,7 +31,9 @@ export default {
       </div>
     </button>
     <div class="dropdown-menu">
-      <div class="dropdown-item py-2">OUI</div>
+      <div class="p-3 py-2">
+        <BugReportComponent />
+      </div>
     </div>
   </div>
 </template>
