@@ -22,6 +22,7 @@ import "@vueform/slider/themes/default.css";
 
 import axios from "axios";
 axios.defaults.baseURL = "http://www.medicfollow.fr:8081/v1";
+// axios.defaults.baseURL = "http://localhost:8081/v1";
 
 import VueRecaptcha from "vue3-recaptcha-v2";
 
