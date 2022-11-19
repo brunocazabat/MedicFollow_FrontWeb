@@ -337,26 +337,7 @@ export default {
 
     <!-- Next and Prev Button -->
     <div class="p-3 mb-3 row">
-      <div class="space-in-between" v-if="viewEnd === false">
-        <button
-          class="lh-1 btn btn-primary font-size-medium col-sm-4"
-          v-on:click="prevView()"
-          :disabled="viewID === 0"
-        >
-          <strong><em class="ri-arrow-left-line center-items"></em></strong>
-          {{ $t("t-previousstep") }}
-        </button>
-        <button
-          class="lh-1 btn btn-primary font-size-medium col-sm-4"
-          v-on:click="nextView()"
-          :disabled="isSubmitButtonDisabled"
-        >
-          {{ $t("t-nextstep") }}
-          <strong><em class="ri-arrow-right-line center-items"></em></strong>
-        </button>
-      </div>
-
-      <div class="space-in-between" v-else>
+      <div class="space-in-between" v-if="viewEnd === true">
         <button
           class="lh-1 btn btn-primary font-size-medium col-sm-4"
           v-on:click="prevView()"
