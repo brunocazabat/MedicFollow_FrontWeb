@@ -527,5 +527,12 @@
   "t-the-report-was-successfully-sent": "Le rapport a été envoyé avec succès.",
   "t-yes-send-it": "Oui, envoyez-le !",
   "t-you-cannot-go-back": "Vous ne pouvez pas revenir en arrière !",
-  "t-you-did-not-fill-the-report": "Vous n'avez pas rempli le rapport"
+  "t-you-did-not-fill-the-report": "Vous n'avez pas rempli le rapport",
+  "t-downloads": "Téléchargements",
+  "t-file-name": "Nom de fichier",
+  "t-no-file-found": "Désolé, il n'y a pas de fichiers à afficher...",
+  "t-observation-id": "ID d'observation",
+  "t-size": "Taille",
+  "t-uploaded-date": "Date de dépôt",
+  "t-download": "Télécharger"
 }

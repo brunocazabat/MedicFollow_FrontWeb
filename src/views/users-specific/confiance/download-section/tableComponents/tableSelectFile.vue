@@ -1,48 +1,34 @@
 <script>
-import dayjs from "dayjs";
-
-import { PatientSetters } from "@/components/back-related/state/helpers";
-
 export default {
   props: {
-    patientArray: {
+    fileArray: {
       type: Array,
       required: true,
     },
   },
-  name: "TableSelectPatient",
+  name: "TableSelectFile",
   data() {
     return {
-      title: "Patients List",
+      title: "Files List",
       searchQuery: null,
       page: 1,
       perPage: 10,
       pages: [],
-      patientsList: [
-        {
-          lName: "RIVERS",
-          fName: "Joseph",
-          socialSecNbr: "16506303017",
-          dateOfBirth: "30/06/1965",
-          create: "29 Sep, 2022",
-        },
-      ],
     };
   },
   computed: {
     displayedPosts() {
-      return this.paginate(this.patientArray);
+      return this.paginate(this.fileArray);
     },
     resultQuery() {
       if (this.searchQuery) {
         const search = this.searchQuery.toLowerCase();
         return this.displayedPosts.filter((data) => {
           return (
-            data.lName.toLowerCase().includes(search) ||
-            data.fName.toLowerCase().includes(search) ||
-            data.socialSecNbr.toLowerCase().includes(search) ||
-            data.dateOfBirth.toLowerCase().includes(search) ||
-            data.create.toLowerCase().includes(search)
+            data.name.toLowerCase().includes(search) ||
+            data.size.toLowerCase().includes(search) ||
+            data.uploadDate.toLowerCase().includes(search) ||
+            data.observationID.toLowerCase().includes(search)
           );
         });
       } else {
@@ -59,35 +45,23 @@ export default {
     this.setPages();
   },
   methods: {
-    ...PatientSetters,
     setPages() {
-      let numberOfPages = Math.ceil(this.patientsList.length / this.perPage);
+      let numberOfPages = Math.ceil(this.fileArray.length / this.perPage);
       for (let index = 1; index <= numberOfPages; index++) {
         this.pages.push(index);
       }
     },
-    paginate(patientsList) {
+    paginate(filesList) {
       let page = this.page;
       let perPage = this.perPage;
       let from = page * perPage - perPage;
       let to = page * perPage;
-      return patientsList.slice(from, to);
+      return filesList.slice(from, to);
     },
-    emitPatientInfo(patient) {
-      this.setPatientUUID(patient.uuid);
-      this.setPatientFirstname(patient.user.firstname);
-      this.setPatientLastname(patient.user.lastname);
-      this.setPatientDOB(patient.birth_date);
-      this.setPatientSocialNumber(patient.unique_id);
-      this.setPatientGender(patient.gender);
-      this.setPatientEmail(patient.user.email);
-      this.setPatientIsConscious(patient.conscious);
-      this.$emit("buttonPressed");
-    },
-
-    // Method to parse the date
-    parseDate(date) {
-      return dayjs(date).format("DD/MM/YY");
+    emitFileInfo(file) {
+      /* TODO: Emit file info to parent component */
+      console.log("Emitted file info (tableSelectFile): ", file);
+      this.$emit("fileInfo", file);
     },
   },
 };
@@ -100,39 +74,30 @@ export default {
         <caption></caption>
         <thead>
           <tr>
-            <th class="sort" id="" data-sort="id">{{ $t("t-lastname") }}:</th>
-            <th class="sort" id="" data-sort="tasks_name">
-              {{ $t("t-firstname") }}:
+            <th class="sort" data-sort="name">{{ $t("t-file-name") }}:</th>
+            <th class="sort" data-sort="size">{{ $t("t-size") }}:</th>
+            <th class="sort" data-sort="uploadDate">
+              {{ $t("t-uploaded-date") }}:
             </th>
-            <th class="sort" id="" data-sort="user_type">
-              {{ $t("t-socialsecuritynbr") }}:
+            <th class="sort" data-sort="observationID">
+              {{ $t("t-observation-id") }}:
             </th>
-            <th class="sort" id="" data-sort="assignedto">
-              {{ $t("t-dateofbirth") }}:
-            </th>
-            <th class="sort" id="" data-sort="create_date">
-              {{ $t("t-created-at") }}:
-            </th>
-            <th>{{ $t("t-actions") }}:</th>
+            <th class="sort">{{ $t("t-actions") }}:</th>
           </tr>
         </thead>
         <tbody class="list form-check-all">
           <tr v-for="(data, index) of resultQuery" :key="index">
             <td class="id">
-              {{ data.user.lastname }}
+              {{ data.name }}
             </td>
             <td class="tasks_name">
-              {{ data.user.firstname }}
+              {{ data.size }}
             </td>
-            <td class="user_type">{{ data.unique_id }}</td>
-            <td class="assignedto">{{ parseDate(data.birth_date) }}</td>
-            <td class="create_date">{{ parseDate(data.createdAt) }}</td>
+            <td class="user_type">{{ data.uploadDate }}</td>
+            <td class="create_date">{{ data.observationID }}</td>
             <td>
-              <button
-                class="btn btn-primary"
-                v-on:click="emitPatientInfo(data)"
-              >
-                {{ $t("t-consult-actions") }}
+              <button class="btn btn-primary" v-on:click="emitFileInfo(data)">
+                {{ $t("t-download") }}
               </button>
             </td>
           </tr>
@@ -144,7 +109,7 @@ export default {
         :class="{ 'd-block': resultQuery.length == 0 }"
       >
         <div class="text-center">
-          <h5 class="mt-2">{{ $t("t-no-patient-found") }}</h5>
+          <h5 class="mt-2">{{ $t("t-no-file-found") }}</h5>
         </div>
       </div>
     </div>

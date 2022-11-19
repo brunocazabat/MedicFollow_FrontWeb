@@ -527,5 +527,12 @@
   "t-treatments": "Behandlungen",
   "t-yes-send-it": "Ja, senden Sie es!",
   "t-you-cannot-go-back": "Du kannst nicht zurück!",
-  "t-you-did-not-fill-the-report": "Sie haben den Bericht nicht ausgefüllt"
+  "t-you-did-not-fill-the-report": "Sie haben den Bericht nicht ausgefüllt",
+  "t-download": "Download",
+  "t-downloads": "Downloads",
+  "t-file-name": "Dateiname",
+  "t-no-file-found": "Entschuldigung, es gibt keine anzuzeigenden Dateien...",
+  "t-observation-id": "Beobachtungs-ID",
+  "t-size": "Größe",
+  "t-uploaded-date": "Datum des Hochladens"
 }

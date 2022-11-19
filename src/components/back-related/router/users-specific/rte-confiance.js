@@ -71,6 +71,20 @@ export default [
     component: () =>
       import("@/views/users-specific/confiance/chat-section/chat.vue"),
   },
+  // DOWNLOADS
+  {
+    path: "/confiance/download-section",
+    name: "confiance-download-section",
+    meta: {
+      title: "Downloads",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import(
+        "@/views/users-specific/confiance/download-section/download-page.vue"
+      ),
+  },
   // SETTINGS
   {
     path: "/confiance/settings",

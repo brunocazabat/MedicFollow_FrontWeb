@@ -527,5 +527,12 @@
   "t-treatments": "Tratos",
   "t-yes-send-it": "¡Sí, envíalo!",
   "t-you-cannot-go-back": "¡No puedes volver atrás!",
-  "t-you-did-not-fill-the-report": "No llenaste el reporte"
+  "t-you-did-not-fill-the-report": "No llenaste el reporte",
+  "t-download": "Descargar",
+  "t-downloads": "Descargas",
+  "t-file-name": "Nombre del archivo",
+  "t-no-file-found": "Lo sentimos, no hay archivos para mostrar...",
+  "t-observation-id": "ID de observación",
+  "t-size": "Tamaño",
+  "t-uploaded-date": "Fecha de carga"
 }

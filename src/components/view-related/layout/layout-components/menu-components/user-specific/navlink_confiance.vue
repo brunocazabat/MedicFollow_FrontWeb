@@ -1,7 +1,7 @@
 <script>
 export default {
-  name: 'NavLinkConfiance',
-}
+  name: "NavLinkConfiance",
+};
 </script>
 
 <template>
@@ -16,9 +16,14 @@ export default {
       </router-link>
     </li>
     <li class="nav-item">
-      <router-link class="nav-link menu-link" to="/confiance/medical-information">
+      <router-link
+        class="nav-link menu-link"
+        to="/confiance/medical-information"
+      >
         <em class="ri-information-line"></em>
-        <span style="padding: 7px" data-key="t-medicalinformation">{{ $t("t-medicalinformation") }}</span>
+        <span style="padding: 7px" data-key="t-medicalinformation">{{
+          $t("t-medicalinformation")
+        }}</span>
       </router-link>
     </li>
     <li class="nav-item">
@@ -30,7 +35,9 @@ export default {
     <li class="nav-item">
       <router-link class="nav-link menu-link" to="/confiance/calendar">
         <em class="ri-layout-grid-line"></em>
-        <span style="padding: 7px" data-key="t-calendar">{{ $t("t-calendar") }}</span>
+        <span style="padding: 7px" data-key="t-calendar">{{
+          $t("t-calendar")
+        }}</span>
       </router-link>
     </li>
     <li class="nav-item">
@@ -40,9 +47,17 @@ export default {
       </router-link>
     </li>
     <li class="nav-item">
+      <router-link class="nav-link menu-link" to="/confiance/download-section">
+        <em class="ri-file-download-line"></em>
+        <span style="padding: 7px">{{ $t("t-downloads") }}</span>
+      </router-link>
+    </li>
+    <li class="nav-item">
       <router-link class="nav-link menu-link" to="/confiance/settings">
         <em class="ri-user-settings-line"></em>
-        <span style="padding: 7px" data-key="t-settings">{{ $t("t-settings") }}</span>
+        <span style="padding: 7px" data-key="t-settings">{{
+          $t("t-settings")
+        }}</span>
       </router-link>
     </li>
     <!-- end Dashboard Menu -->
@@ -52,7 +67,9 @@ export default {
     <li class="nav-item">
       <router-link to="/confiance/bug-report" class="nav-link">
         <em class="ri-bug-fill"></em>
-        <span style="padding: 7px" data-key="t-report t-suggest">{{ $t("t-report") }} & {{ $t("t-suggest") }}</span>
+        <span style="padding: 7px" data-key="t-report t-suggest"
+          >{{ $t("t-report") }} & {{ $t("t-suggest") }}</span
+        >
       </router-link>
     </li>
   </ul>
