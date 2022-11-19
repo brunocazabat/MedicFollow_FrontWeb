@@ -13,7 +13,6 @@ export default {
   },
   methods: {
     emitButtonPressed(file) {
-      console.log("Emitted file info (fileTable): ", file);
       this.$emit("fileInfo", file);
     },
   },

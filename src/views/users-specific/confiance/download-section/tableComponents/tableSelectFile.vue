@@ -59,8 +59,6 @@ export default {
       return filesList.slice(from, to);
     },
     emitFileInfo(file) {
-      /* TODO: Emit file info to parent component */
-      console.log("Emitted file info (tableSelectFile): ", file);
       this.$emit("fileInfo", file);
     },
   },
