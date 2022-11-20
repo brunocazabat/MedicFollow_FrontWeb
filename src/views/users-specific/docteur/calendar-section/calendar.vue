@@ -123,8 +123,6 @@ export default {
     async getCalendar() {
       let url = `calendar/?patient_uuid=${this.getPatientUUID()}`;
 
-      console.log("URL: " + url);
-
       await axios({
         method: "get",
         url: url,
@@ -159,8 +157,6 @@ export default {
     ) {
       let url = `calendar/Activity?calendar_uuid=${this.calendar.uuid}&start_date=${startDate}&end_date=${endDate}`;
 
-      console.log("URL: " + url);
-
       await axios({
         method: "get",
         url: url,
@@ -176,7 +172,10 @@ export default {
             } else {
               this.activitiesArray = null;
             }
-            console.log("Activities: ", this.activitiesArray);
+            // Ordering the activities by date (ascending)
+            this.activitiesArray.sort((a, b) => {
+              return a.date > b.date ? 1 : -1;
+            });
           }
         })
         .catch((error) => {
@@ -212,7 +211,10 @@ export default {
             </div>
           </div>
           <div v-else-if="pageEnd && isPatientSet()">
-            <CalendarModule :activitiesArray="activitiesArray" />
+            <CalendarModule
+              :activitiesArray="activitiesArray"
+              :calendarUUID="calendar.uuid"
+            />
             <button v-on:click="previousPage" class="btn btn-primary">
               {{ $t("t-previous") }}
             </button>

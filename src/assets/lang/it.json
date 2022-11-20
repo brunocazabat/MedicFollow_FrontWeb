@@ -534,5 +534,10 @@
   "t-no-file-found": "Spiacenti, non ci sono file da visualizzare...",
   "t-observation-id": "ID di osservazione",
   "t-size": "Dimensione",
-  "t-uploaded-date": "data di caricamento"
+  "t-uploaded-date": "data di caricamento",
+  "t-activity-type": "Tipo di attività",
+  "t-description": "Descrizione",
+  "t-hour": "Ora",
+  "t-minute": "Minuto",
+  "t-title": "Titolo"
 }

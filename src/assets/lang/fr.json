@@ -534,5 +534,10 @@
   "t-observation-id": "ID d'observation",
   "t-size": "Taille",
   "t-uploaded-date": "Date de dépôt",
-  "t-download": "Télécharger"
+  "t-download": "Télécharger",
+  "t-activity-type": "Type d'activité",
+  "t-description": "La description",
+  "t-hour": "Heure",
+  "t-minute": "Minute",
+  "t-title": "Titre"
 }

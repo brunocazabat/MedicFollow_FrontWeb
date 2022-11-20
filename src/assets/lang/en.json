@@ -534,5 +534,10 @@
   "t-size": "Size",
   "t-uploaded-date": "Upload date",
   "t-observation-id": "Observation ID",
-  "t-download": "Download"
+  "t-download": "Download",
+  "t-title": "Title",
+  "t-description": "Description",
+  "t-activity-type": "Activity Type",
+  "t-minute": "Minute",
+  "t-hour": "Hour"
 }

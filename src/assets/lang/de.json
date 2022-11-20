@@ -534,5 +534,10 @@
   "t-no-file-found": "Entschuldigung, es gibt keine anzuzeigenden Dateien...",
   "t-observation-id": "Beobachtungs-ID",
   "t-size": "Größe",
-  "t-uploaded-date": "Datum des Hochladens"
+  "t-uploaded-date": "Datum des Hochladens",
+  "t-activity-type": "Aktivitätstyp",
+  "t-description": "Beschreibung",
+  "t-hour": "Stunde",
+  "t-minute": "Minute",
+  "t-title": "Titel"
 }

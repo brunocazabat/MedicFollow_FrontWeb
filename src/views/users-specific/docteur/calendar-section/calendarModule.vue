@@ -6,7 +6,6 @@ import { CalendarIcon } from "@zhuowenli/vue-feather-icons";
 
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
-import interactionPlugin, { Draggable } from "@fullcalendar/interaction";
 import bootstrapPlugin from "@fullcalendar/bootstrap";
 import listPlugin from "@fullcalendar/list";
 
@@ -24,6 +23,9 @@ import {
 
 import dayjs from "dayjs";
 
+import SelectModule from "@/components/view-related/select.vue";
+import InputModule from "@/components/view-related/input.vue";
+
 // import ModalModule from "@/components/view-related/modal.vue";
 
 import axios from "axios";
@@ -32,6 +34,10 @@ export default {
   props: {
     activitiesArray: {
       type: Array || null,
+      required: true,
+    },
+    calendarUUID: {
+      type: String,
       required: true,
     },
   },
@@ -65,13 +71,7 @@ export default {
         timeZone: "local",
         droppable: true,
         navLinks: true,
-        plugins: [
-          dayGridPlugin,
-          timeGridPlugin,
-          interactionPlugin,
-          bootstrapPlugin,
-          listPlugin,
-        ],
+        plugins: [dayGridPlugin, timeGridPlugin, bootstrapPlugin, listPlugin],
         themeSystem: "bootstrap",
         headerToolbar: {
           left: "prev,next today",
@@ -97,6 +97,122 @@ export default {
         eventsSet: this.handleEvents,
       },
       currentEvents: this.activitiesArray,
+
+      // Activity Types Array
+      activityTypesArray: [] || null,
+      selectedType: null,
+
+      newActivity: {
+        title: null,
+        category: null,
+        start: null,
+        end: null,
+        allDay: null,
+        description: null,
+        patientUUID: null,
+        doctorUUID: null,
+        activityTypeUUID: null,
+      },
+
+      // Variable to store date from DATE-PICKER as YYYY-MM-DD
+      selectedDate: null,
+
+      // Object array with every hour (from 0am to 11pm) with a value as string (0 to 23)
+      hoursArray: [
+        { value: "00", text: "00" },
+        { value: "01", text: "01" },
+        { value: "02", text: "02" },
+        { value: "03", text: "03" },
+        { value: "04", text: "04" },
+        { value: "05", text: "05" },
+        { value: "06", text: "06" },
+        { value: "07", text: "07" },
+        { value: "08", text: "08" },
+        { value: "09", text: "09" },
+        { value: "10", text: "10" },
+        { value: "11", text: "11" },
+        { value: "12", text: "12" },
+        { value: "13", text: "13" },
+        { value: "14", text: "14" },
+        { value: "15", text: "15" },
+        { value: "16", text: "16" },
+        { value: "17", text: "17" },
+        { value: "18", text: "18" },
+        { value: "19", text: "19" },
+        { value: "20", text: "20" },
+        { value: "21", text: "21" },
+        { value: "22", text: "22" },
+        { value: "23", text: "23" },
+      ],
+
+      // Object array of every minute (from 0 to 59) with a value as string (0 to 59)
+      minutesArray: [
+        { value: "00", text: "00" },
+        { value: "01", text: "01" },
+        { value: "02", text: "02" },
+        { value: "03", text: "03" },
+        { value: "04", text: "04" },
+        { value: "05", text: "05" },
+        { value: "06", text: "06" },
+        { value: "07", text: "07" },
+        { value: "08", text: "08" },
+        { value: "09", text: "09" },
+        { value: "10", text: "10" },
+        { value: "11", text: "11" },
+        { value: "12", text: "12" },
+        { value: "13", text: "13" },
+        { value: "14", text: "14" },
+        { value: "15", text: "15" },
+        { value: "16", text: "16" },
+        { value: "17", text: "17" },
+        { value: "18", text: "18" },
+        { value: "19", text: "19" },
+        { value: "20", text: "20" },
+        { value: "21", text: "21" },
+        { value: "22", text: "22" },
+        { value: "23", text: "23" },
+        { value: "24", text: "24" },
+        { value: "25", text: "25" },
+        { value: "26", text: "26" },
+        { value: "27", text: "27" },
+        { value: "28", text: "28" },
+        { value: "29", text: "29" },
+        { value: "30", text: "30" },
+        { value: "31", text: "31" },
+        { value: "32", text: "32" },
+        { value: "33", text: "33" },
+        { value: "34", text: "34" },
+        { value: "35", text: "35" },
+        { value: "36", text: "36" },
+        { value: "37", text: "37" },
+        { value: "38", text: "38" },
+        { value: "39", text: "39" },
+        { value: "40", text: "40" },
+        { value: "41", text: "41" },
+        { value: "42", text: "42" },
+        { value: "43", text: "43" },
+        { value: "44", text: "44" },
+        { value: "45", text: "45" },
+        { value: "46", text: "46" },
+        { value: "47", text: "47" },
+        { value: "48", text: "48" },
+        { value: "49", text: "49" },
+        { value: "50", text: "50" },
+        { value: "51", text: "51" },
+        { value: "52", text: "52" },
+        { value: "53", text: "53" },
+        { value: "54", text: "54" },
+        { value: "55", text: "55" },
+        { value: "56", text: "56" },
+        { value: "57", text: "57" },
+        { value: "58", text: "58" },
+        { value: "59", text: "59" },
+      ],
+
+      // Selected hour and minute from the dropdowns
+      selectedHour: { value: "08", text: "08" },
+      selectedMinute: { value: "00", text: "00" },
+
       showModal: false,
       eventModal: false,
       categories: categories,
@@ -119,24 +235,50 @@ export default {
     FullCalendar,
     SimpleBar,
     CalendarIcon,
+    SelectModule,
+    InputModule,
     // ModalModule,
   },
-  mounted() {
-    new Draggable(document.getElementById("external-events"), {
-      itemSelector: ".external-event",
-      eventData: function (eventEl) {
-        return {
-          title: eventEl.innerText,
-          start: new Date(),
-          className: eventEl.getAttribute("data-class"),
-        };
-      },
-    });
+  async mounted() {
     console.log("Activities Array in Module: ", this.activitiesArray);
+    await this.getActivityTypes();
+    console.log("Activities Array in Current: ", this.currentEvents);
+    this.initialEvents = this.activitiesArray;
+    console.log("Initial Events: ", this.initialEvents);
   },
   methods: {
     ...AuthGetters,
     ...PatientGetters,
+    // Method to retrieve the Activity types from the database
+    async getActivityTypes() {
+      let url = `activity/types/?organisation_uuid=${this.getorg_uuid()}`;
+
+      await axios({
+        method: "GET",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            // Loop to go through all types
+            for (let i = 0; i < response.data.length; i++) {
+              // Pushing the types to the array
+              this.activityTypesArray.push({
+                value: response.data[i].uuid,
+                text: response.data[i].activity_type_name,
+                desc: response.data[i].activity_type_desc,
+              });
+            }
+            this.selectedType = this.activityTypesArray[0];
+            console.log("Activity Types Array: ", this.activityTypesArray);
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
     // Method to send a request with a new acitivity to the database (for now placeholder)
     async sendNewActivity() {
       let url = "activity/";
@@ -146,13 +288,19 @@ export default {
       // }
       this.submit = true;
 
+      console.log("Date selected: ", this.selectedDate);
+      console.log("Time selected: ", this.selectedHour, this.selectedMinute);
+
+      let date = `${this.selectedDate} ${this.selectedHour.value}:${this.selectedMinute.value}:00`;
+      console.log("Date and time: ", date);
+
       // const newActivity = {
       const newActivity = {
-        date: "2022-11-24 14:37:45",
-        act_type_uuid: "b3a26662-cdcf-418f-aa9c-4ad6dd7caad6",
-        calendar_uuid: "6d632cd9-0e6c-4d5f-9979-6f131e0ce415",
-        title: "Opération du rein",
-        desc: "durée 3h, anesthésie générale",
+        date: date,
+        act_type_uuid: this.selectedType.value,
+        calendar_uuid: this.calendarUUID,
+        title: this.newActivity.title,
+        desc: this.newActivity.description,
       };
 
       await axios({
@@ -215,6 +363,7 @@ export default {
 
     // Method to parse the date
     parseDate(date) {
+      console.log("Date: ", date);
       return dayjs(date).format("DD-MM-YYYY");
     },
     // Method to parse the hour
@@ -378,49 +527,60 @@ export default {
               <div id="external-events">
                 <br />
                 <p class="text-muted">
-                  To create a new activity, you can drag and drop the activity
-                  and then edit it by clicking on it.
-                  <strong
-                    >BE SURE TO SAVE THE CALENDAR BY CLICKING ON THE 'SAVE'
-                    BUTTON</strong
-                  >
+                  To create a new activity, just input the fields below and
+                  click on "Create New Event".
                 </p>
-                <div
-                  class="external-event fc-event bg-soft-success text-success"
-                  data-class="bg-soft-success"
-                >
-                  <em
-                    class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                  ></em
-                  >New Event Planning
+                <InputModule
+                  className="form-floating"
+                  v-model="newActivity.title"
+                  :label="$t('t-title')"
+                  :placeholder="$t('t-write-here')"
+                  :required="true"
+                />
+
+                <InputModule
+                  className="form-floating"
+                  v-model="newActivity.description"
+                  :label="$t('t-description')"
+                  :placeholder="$t('t-write-here')"
+                  :required="true"
+                />
+
+                <!-- Date picker as YYYY-MM-DD -->
+                <InputModule
+                  v-model="selectedDate"
+                  :label="$t('t-date')"
+                  :required="true"
+                  type="date"
+                />
+
+                <!-- Hour and minute picker -->
+                <div class="row mb-2">
+                  <SelectModule
+                    class="col-sm-6"
+                    v-model="selectedHour"
+                    :title="$t('t-hour')"
+                    :required="true"
+                    :options="hoursArray"
+                    :selectedOption="selectedHour"
+                  />
+                  <SelectModule
+                    class="col-sm-6"
+                    v-model="selectedMinute"
+                    :title="$t('t-minute')"
+                    :required="true"
+                    :options="minutesArray"
+                    :selectedOption="selectedMinute"
+                  />
                 </div>
-                <div
-                  class="external-event fc-event bg-soft-info text-info"
-                  data-class="bg-soft-info"
-                >
-                  <em
-                    class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                  ></em
-                  >Meeting
-                </div>
-                <div
-                  class="external-event fc-event bg-soft-warning text-warning"
-                  data-class="bg-soft-warning"
-                >
-                  <em
-                    class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                  ></em
-                  >Generating Reports
-                </div>
-                <div
-                  class="external-event fc-event bg-soft-danger text-danger"
-                  data-class="bg-soft-danger"
-                >
-                  <em
-                    class="mdi mdi-checkbox-blank-circle font-size-11 me-2"
-                  ></em
-                  >Create New theme
-                </div>
+
+                <SelectModule
+                  v-model="newActivity.activityTypeUUID"
+                  :title="$t('t-activity-type')"
+                  :options="activityTypesArray"
+                  :required="true"
+                  :selectedOption="selectedType"
+                />
               </div>
             </div>
           </div>
@@ -434,7 +594,7 @@ export default {
             >
               <div
                 class="card mb-3"
-                v-for="event in currentEvents"
+                v-for="event in activitiesArray"
                 :key="event.uuid"
               >
                 <div class="card-body">
