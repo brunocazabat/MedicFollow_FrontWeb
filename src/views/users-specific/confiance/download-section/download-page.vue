@@ -114,7 +114,9 @@ export default {
           })
           .then((response) => {
             if (response.status === 200) {
+              console.log("response.data: ", response.data);
               this.observationsArray = response.data.observations;
+              console.log(this.observationsArray);
             } else {
               Swal.fire({
                 title: response.status + " - Erreur",
@@ -172,9 +174,8 @@ export default {
     this.getPatients();
     setTimeout(() => {
       this.getObservations();
-    }, 500);
+    }, 600);
     // this.setFileArray();
-    console.log("Observations Array: ", this.observationsArray);
   },
 };
 </script>
