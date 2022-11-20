@@ -495,6 +495,7 @@ export default {
     // Handling month change
     async handleDatesSet(event) {
       // Setting endDate to be equal to even.startStr + 29 days
+      let startDay = dayjs(event.startStr).format("YYYY-MM-DD");
       let endDate = dayjs(event.startStr).add(29, "day").format("YYYY-MM-DD");
       // Setting nextMonth var to be equal to even.startStr + 1 month
       let nextMonth = dayjs(event.startStr)
@@ -502,20 +503,13 @@ export default {
         .format("YYYY-MM-DD");
 
       let smallerDate = false;
-      // Checking if end date is lower than next month date
-      if (dayjs(endDate).isBefore(dayjs(event.endStr))) {
-        endDate = event.endStr;
-      }
 
       if (dayjs(endDate).isBefore(dayjs(nextMonth))) {
         smallerDate = true;
       }
 
-      let url = `calendar/Activity?calendar_uuid=${
-        this.calendarUUID
-      }&start_date=${this.parseDate(event.startStr)}&end_date=${this.parseDate(
-        endDate
-      )}`;
+      let url = `calendar/Activity?calendar_uuid=${this.calendarUUID}&start_date=${startDay}&end_date=${endDate}`;
+      console.log("1. URL", url);
 
       await axios({
         method: "get",
@@ -534,13 +528,14 @@ export default {
               this.currentEvents = null;
             }
 
+            console.log("First request done");
+
             // If smallerDate is true then call the API again with endDate and nextMonth and push the response.data to this.currentEvents and this.initialEvents
             if (smallerDate) {
-              let url = `calendar/Activity?calendar_uuid=${
-                this.calendarUUID
-              }&start_date=${this.parseDate(endDate)}&end_date=${this.parseDate(
-                nextMonth
-              )}`;
+              console.log("Second request started");
+              let url = `calendar/Activity?calendar_uuid=${this.calendarUUID}&start_date=${endDate}&end_date=${nextMonth}`;
+
+              console.log("2. URL", url);
 
               await axios({
                 method: "get",
