@@ -12,9 +12,8 @@ export default {
           <div class="text-center">
             <p class="mb-0 text-muted" data-key="t-footer t-footer-bis">
               &copy; {{ new Date().getFullYear() }} {{ $t("t-footer") }}
-              <em class="mdi mdi-heart text-danger"></em> {{
-              $t("t-footer-bis")
-              }}
+              <em class="mdi mdi-heart text-danger"></em>
+              {{ $t("t-footer-bis") }}
             </p>
           </div>
         </div>
