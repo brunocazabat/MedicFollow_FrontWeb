@@ -24,7 +24,10 @@ export default {
 </script>
 
 <template>
-  <div class="card">
+  <div
+    class="card"
+    style="background: inherit !important; box-shadow: none !important"
+  >
     <div class="card-body align-content-center align-items-center text-center">
       <RouterLink
         :to="link"
