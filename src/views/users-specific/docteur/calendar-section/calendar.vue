@@ -24,15 +24,6 @@ export default {
   },
   data() {
     return {
-      // Patient State
-      patientInfo: {
-        firstName: null,
-        lastName: null,
-        socialNumber: null,
-        UUID: null,
-        patientUUID: null,
-      },
-
       // Patient Array
       patientArray: [],
 
@@ -62,8 +53,6 @@ export default {
     ...PatientSetters,
     // Method to go to the next page (increment pageID, does not increment if equal or above to maxPageID and set pageEnd to true)
     async nextPage() {
-      console.log("User TOKEN: " + this.gettoken().Token);
-      console.log("Patient UUID: " + this.getPatientUUID());
       if (this.pageID < this.maxPageID) {
         if (this.pageID === 0) {
           await this.getCalendar();
@@ -82,6 +71,7 @@ export default {
         this.pageID--;
         this.pageEnd = false;
         this.setPatientClearAll();
+        this.activitiesArray = [];
       }
     },
     // Method to retrieve the patients list and setting the patient state to the first patient
@@ -96,15 +86,17 @@ export default {
         .then((response) => {
           if (response.status === 200) {
             this.patientArray = response.data.patients;
-            console.log("Patient Array: ", this.patientArray);
           }
         })
         .catch((error) => {
           // Sweet Alert
           Swal.fire({
-            title: "Erreur",
+            title: `${this.$t("t-error")}`,
+            text: `${this.$t("t-error-occured")}. Error: ${
+              error.response.status
+            }`,
             icon: "error",
-            text: `${this.$t("t-error-occured")}. Error: ${error}`,
+            confirmButtonText: "Ok",
           });
         });
     },
@@ -132,20 +124,21 @@ export default {
       })
         .then(async (response) => {
           if (response.status === 200) {
-            console.log("Data: ", response.data[0]);
             this.calendar.uuid = response.data[0].uuid;
             this.calendar.desc = response.data[0].desc;
             this.calendar.name = response.data[0].name;
-            console.log("Calendar: ", this.calendar);
             await this.getActivities();
           }
         })
         .catch((error) => {
           // Sweet Alert
           Swal.fire({
-            title: "Erreur",
+            title: `${this.$t("t-error")}`,
+            text: `${this.$t("t-error-occured")}. Error: ${
+              error.response.status
+            }`,
             icon: "error",
-            text: `${this.$t("t-error-occured")}. Error: ${error}`,
+            confirmButtonText: "Ok",
           });
         });
     },
@@ -166,7 +159,6 @@ export default {
       })
         .then((response) => {
           if (response.status === 200) {
-            console.log("Data: ", response.data);
             if (response.data.length > 0) {
               this.activitiesArray = response.data;
             } else {
@@ -181,9 +173,12 @@ export default {
         .catch((error) => {
           // Sweet Alert
           Swal.fire({
-            title: "Erreur",
+            title: `${this.$t("t-error")}`,
+            text: `${this.$t("t-error-occured")}. Error: ${
+              error.response.status
+            }`,
             icon: "error",
-            text: `${this.$t("t-error-occured")}. Error: ${error}`,
+            confirmButtonText: "Ok",
           });
         });
     },

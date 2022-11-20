@@ -2,7 +2,6 @@
 import Swal from "sweetalert2";
 import "@fullcalendar/core/vdom";
 import { SimpleBar } from "simplebar-vue3";
-import { CalendarIcon } from "@zhuowenli/vue-feather-icons";
 
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
@@ -234,17 +233,13 @@ export default {
   components: {
     FullCalendar,
     SimpleBar,
-    CalendarIcon,
     SelectModule,
     InputModule,
     // ModalModule,
   },
   async mounted() {
-    console.log("Activities Array in Module: ", this.activitiesArray);
     await this.getActivityTypes();
-    console.log("Activities Array in Current: ", this.currentEvents);
     this.initialEvents = this.activitiesArray;
-    console.log("Initial Events: ", this.initialEvents);
   },
   methods: {
     ...AuthGetters,
@@ -272,29 +267,26 @@ export default {
               });
             }
             this.selectedType = this.activityTypesArray[0];
-            console.log("Activity Types Array: ", this.activityTypesArray);
           }
         })
         .catch((error) => {
-          console.log(error);
+          Swal.fire({
+            title: `${this.$t("t-error")}`,
+            text: `${this.$t("t-something-went-wrong")}. Error: ${
+              error.response.status
+            }`,
+            icon: "error",
+            confirmButtonText: "Ok",
+          });
         });
     },
-    // Method to send a request with a new acitivity to the database (for now placeholder)
+    // Method to send a request with a new acitivity to the database
     async sendNewActivity() {
       let url = "activity/";
+      let date = `${this.selectedDate} ${this.selectedHour.value}:${this.selectedMinute.value}:00`;
       this.submitted = true;
-      // if (this.$v.$invalid) {
-      //   return;
-      // }
       this.submit = true;
 
-      console.log("Date selected: ", this.selectedDate);
-      console.log("Time selected: ", this.selectedHour, this.selectedMinute);
-
-      let date = `${this.selectedDate} ${this.selectedHour.value}:${this.selectedMinute.value}:00`;
-      console.log("Date and time: ", date);
-
-      // const newActivity = {
       const newActivity = {
         date: date,
         act_type_uuid: this.selectedType.value,
@@ -312,7 +304,6 @@ export default {
         },
       })
         .then((response) => {
-          console.log(response);
           if (response.status === 201) {
             Swal.fire({
               icon: "success",
@@ -323,12 +314,13 @@ export default {
           }
         })
         .catch((error) => {
-          console.log(error);
           this.submitted = false;
           this.submit = false;
           Swal.fire({
-            title: "Error!",
-            text: "Something went wrong",
+            title: `${this.$t("t-error")}`,
+            text: `${this.$t("t-something-went-wrong")}. Error: ${
+              error.response.status
+            }`,
             icon: "error",
             confirmButtonText: "Ok",
           });
@@ -363,7 +355,6 @@ export default {
 
     // Method to parse the date
     parseDate(date) {
-      console.log("Date: ", date);
       return dayjs(date).format("DD-MM-YYYY");
     },
     // Method to parse the hour
@@ -499,12 +490,6 @@ export default {
         timer: 1000,
       });
     },
-
-    // Saving the calendar (TODO, for now console logs 'initialEvents')
-    saveCalendar() {
-      // TODO: Save the calendar
-      console.log(this.activitiesArray);
-    },
   },
 };
 </script>
@@ -620,31 +605,12 @@ export default {
               </div>
             </SimpleBar>
           </div>
-          <div class="card shadow-none">
-            <div class="card-body bg-soft-info rounded">
-              <div class="d-flex">
-                <div class="flex-shrink-0">
-                  <CalendarIcon class="text-info icon-dual-info"></CalendarIcon>
-                </div>
-                <div class="flex-grow-1 ms-3">
-                  <h6 class="fs-15">Welcome to your Calendar!</h6>
-                  <p class="text-muted mb-0">
-                    Event that applications book will appear here. Click on an
-                    event to see the details and manage applicants event.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
           <!--end card-->
         </div>
         <div class="col-xl-9">
           <div class="card card-h-100">
             <div class="card-body">
               <FullCalendar :options="calendarOptions" />
-              <button class="btn btn-primary" v-on:click="saveCalendar">
-                Save Calendar
-              </button>
             </div>
           </div>
         </div>
