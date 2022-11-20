@@ -3,6 +3,73 @@ import store from "@/components/back-related/state/store";
 
 export default {
   name: "PageHeader",
+  data() {
+    return {
+      AdminLinks: [
+        {
+          text: "Admin Dashboard",
+          link: "/admin/dashboard",
+          click: "admin",
+        },
+        {
+          text: "Organisation Dashboard",
+          link: "/organisation/dashboard",
+          click: "organisation",
+        },
+        {
+          text: "Docteur Dashboard",
+          link: "/docteur/dashboard",
+          click: "docteur",
+        },
+        {
+          text: "Personnel Dashboard",
+          link: "/personnel/dashboard",
+          click: "personnel",
+        },
+        {
+          text: "Patient Dashboard",
+          link: "/patient/dashboard",
+          click: "patient",
+        },
+        {
+          text: "Confiance Dashboard",
+          link: "/confiance/dashboard",
+          click: "confiance",
+        },
+        {
+          text: "Proche Dashboard",
+          link: "/proche/dashboard",
+          click: "proche",
+        },
+      ],
+      NotifTests: [
+        {
+          text: "1",
+          notifContent: "Mise à jour de la situation de votre proche",
+          actionContent: "Veuillez consulter votre tableau de bord",
+          linkContent: "https://medicfollow.fr/login",
+        },
+        {
+          text: "2",
+          notifContent: "Mise à jour des visuels du site web",
+          actionContent: "Cliquer pour voir les nouveautés",
+          linkContent: "https://medicfollow.fr",
+        },
+        {
+          text: "3",
+          notifContent: "Test de notification 3",
+          actionContent: "Redirection vers google",
+          linkContent: "https://google.fr",
+        },
+        {
+          text: "4",
+          notifContent: "Test de notification 4",
+          actionContent: "Redirection vers Epitech eu",
+          linkContent: "https://www.epitech.eu/fr/",
+        },
+      ],
+    };
+  },
   methods: {
     activateheader() {
       return (
@@ -32,129 +99,32 @@ export default {
     <div class="col-12">
       <div class="page-title-box align-items-center">
         <div class="row">
-          <div
-            class="col-3"
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-            "
-          >
+          <div class="col-2 force-center">
             <h4 class="mb-sm-0">DASHBOARD SELECTOR ADMIN</h4>
           </div>
-          <div class="col-1">
+          <div class="col-1" v-for="items in AdminLinks">
             <RouterLink
-              to="/admin/dashboard"
-              class="btn btn-primary text-uppercase"
-              @click="modifyUIType('admin')"
+              :to="items.link"
+              class="btn btn-primary"
+              @click="modifyUIType(items.click)"
             >
-              Admin Dashboard
+              {{ items.text }}
             </RouterLink>
           </div>
-          <div class="col-1">
-            <RouterLink
-              to="/organisation/dashboard"
-              class="btn btn-primary text-uppercase"
-              @click="modifyUIType('organisation')"
-            >
-              Organisation Dashboard
-            </RouterLink>
-          </div>
-          <div class="col-1">
-            <RouterLink
-              to="/docteur/dashboard"
-              class="btn btn-primary text-uppercase"
-              @click="modifyUIType('docteur')"
-            >
-              Docteur Dashboard
-            </RouterLink>
-          </div>
-          <div class="col-1">
-            <RouterLink
-              to="/personnel/dashboard"
-              class="btn btn-primary text-uppercase"
-              @click="modifyUIType('personnel')"
-            >
-              Personnel Dashboard
-            </RouterLink>
-          </div>
-          <div class="col-1">
-            <RouterLink
-              to="/patient/dashboard"
-              class="btn btn-primary text-uppercase"
-              @click="modifyUIType('patient')"
-            >
-              Patient Dashboard
-            </RouterLink>
-          </div>
-          <div class="col-1">
-            <RouterLink
-              to="/confiance/dashboard"
-              class="btn btn-primary text-uppercase"
-              @click="modifyUIType('confiance')"
-            >
-              Confiance Dashboard
-            </RouterLink>
-          </div>
-          <div class="col-1">
-            <RouterLink
-              to="/proche/dashboard"
-              class="btn btn-primary text-uppercase"
-              @click="modifyUIType('proche')"
-            >
-              Proche Dashboard
-            </RouterLink>
-          </div>
-          <div class="col-2">
+          <div class="col-2 offset-1 force-center">
             Notifs Tests:
             <button
               class="btn btn-dark"
+              v-for="items in NotifTests"
               @click="
                 showNotification(
-                  'Mise à jour de la situation de votre proche',
-                  'Veuillez consulter votre tableau de bord',
-                  'https://medicfollow.fr/login'
+                  items.notifContent,
+                  items.actionContent,
+                  items.linkContent
                 )
               "
             >
-              1
-            </button>
-            <button
-              class="btn btn-dark"
-              @click="
-                showNotification(
-                  'Mise à jour des visuels du site web',
-                  'Cliquer pour voir les nouveautés',
-                  'https://medicfollow.fr'
-                )
-              "
-            >
-              2
-            </button>
-            <button
-              class="btn btn-dark"
-              @click="
-                showNotification(
-                  'Test de notification 3',
-                  'Redirection vers google',
-                  'https://google.fr'
-                )
-              "
-            >
-              3
-            </button>
-            <button
-              class="btn btn-dark"
-              @click="
-                showNotification(
-                  'Test de notification 4',
-                  'Redirection vers Epitech eu',
-                  'https://www.epitech.eu/fr/'
-                )
-              "
-            >
-              4
+              {{ items.text }}
             </button>
           </div>
         </div>
