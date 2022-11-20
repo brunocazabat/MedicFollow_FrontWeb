@@ -30,6 +30,7 @@ export default {
   >
     <div class="card-body align-content-center align-items-center text-center">
       <RouterLink
+        style="width: 100%; height: 100%"
         :to="link"
         class="btn btn-primary fs-16 text-uppercase padd5around"
         :data-key="translate"
