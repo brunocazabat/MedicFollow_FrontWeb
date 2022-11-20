@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import App from "./App.vue";
+import Myapp from "./App.vue";
 import router from "@/components/back-related/router/index.min.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,6 +14,15 @@ import Maska from "maska";
 import VueFeather from "vue-feather";
 import Particles from "particles.vue3";
 
+import VueCookies, { globalCookiesConfig } from "vue3-cookies";
+globalCookiesConfig({
+  expireTimes: "30d",
+  path: "/",
+  domain: "",
+  secure: "",
+  sameSite: "None",
+});
+
 import VueCookieAcceptDecline from "vue-cookie-accept-decline";
 import "vue-cookie-accept-decline/dist/vue-cookie-accept-decline.css";
 
@@ -21,8 +30,8 @@ import "@/assets/scss/config/material/app.scss";
 import "@vueform/slider/themes/default.css";
 
 import axios from "axios";
-axios.defaults.baseURL = "http://www.medicfollow.fr:8081/v1";
-// axios.defaults.baseURL = "http://localhost:8081/v1";
+axios.defaults.baseURL = process.env.VUE_APP_BACK_PROD; //EN PRODUCTION
+// axios.defaults.baseURL = process.env.VUE_APP_BACK_LOCALDEV; //EN DEV LOCAL
 
 import VueRecaptcha from "vue3-recaptcha-v2";
 
@@ -31,16 +40,17 @@ AOS.init({
   duration: 1000,
 });
 
-createApp(App)
+createApp(Myapp)
   .use(store)
   .use(router)
   .use(VueApexCharts)
   .use(BootstrapVue3)
   .component(VueFeather.type, VueFeather)
   .component("vue-cookie-accept-decline", VueCookieAcceptDecline)
+  .use(VueCookies)
   .use(Maska)
   .use(Particles)
   .use(i18n)
   .use(vClickOutside)
-  .use(VueRecaptcha, { siteKey: "6LdU_b0hAAAAAEOY4OZqGD3QfVjuXelZI-DeQhWU" }) // site key is required V2
+  .use(VueRecaptcha, { siteKey: "6LdU_b0hAAAAAEOY4OZqGD3QfVjuXelZI-DeQhWU" }) // V2 Localhost + Deployed
   .mount("#app");

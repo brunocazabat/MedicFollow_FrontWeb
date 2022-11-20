@@ -4,11 +4,6 @@ import BugReportComponent from "@/components/view-related/form-components/bug-re
 export default {
   name: "bugreportpanelunloged",
   components: { BugReportComponent },
-  data() {
-    return {};
-  },
-  mounted: function () {},
-  methods: {},
 };
 </script>
 
@@ -20,6 +15,7 @@ export default {
       data-bs-toggle="dropdown"
       aria-haspopup="true"
       aria-expanded="false"
+      title="Signaler un problème"
     >
       <div class="row">
         <img

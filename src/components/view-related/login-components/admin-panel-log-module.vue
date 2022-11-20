@@ -1,99 +1,79 @@
 <script>
 export default {
   name: "adminmodule",
-
+  data() {
+    return {
+      items: [
+        {
+          title: "/login",
+          to: "/login",
+        },
+        {
+          title: "/logout",
+          to: "/logout",
+        },
+        {
+          title: "/fgt-pwd",
+          to: "/forgot-password",
+        },
+        {
+          title: "/fgt-p-success",
+          to: "/forgot-password-success",
+        },
+        {
+          title: "/rgst-@",
+          to: "/register-mail",
+        },
+        {
+          title: "/rgst-@-success",
+          to: "/register-mail-success",
+        },
+        {
+          title: "/rgst-$",
+          to: "/register-fill",
+        },
+        {
+          title: "/rgst-$-success",
+          to: "/register-fill-success",
+        },
+        {
+          title: "/lockscreen",
+          to: "/lockscreen",
+        },
+        {
+          title: "/404",
+          to: "/404",
+        },
+        {
+          title: "/500",
+          to: "/500",
+        },
+        {
+          title: "/coming-soon",
+          to: "/coming-soon",
+        },
+        {
+          title: "/maintenance",
+          to: "/maintenance",
+        },
+      ],
+    };
+  },
   methods: {
     setadmin() {
       return process.env.VUE_APP_DEFAULT_AUTH === "DEV";
     },
-  }
+  },
 };
 </script>
 
 <template>
   <div class="col-md-8 col-lg-6 col-xl-2" v-if="setadmin()">
     <div class="card mt-4 p-4">
-      LOG IN OUT
+      Admin Panel
       <ul>
-        <li>
-          <router-link to="/login">
-            /login
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/logout">
-            /logout
-          </router-link>
-        </li>
-      </ul>
-      FORGET PASSWORD
-      <ul>
-        <li>
-          <router-link to="/forgot-password">
-            /fgt-pwd
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/forgot-password-success">
-            /fgt-p-success
-          </router-link>
-        </li>
-      </ul>
-      REGISTER MAIL
-      <ul>
-        <li>
-          <router-link to="/register-mail">
-            /rgst-@
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/register-mail-success">
-            /rgst-@-success
-          </router-link>
-        </li>
-      </ul>
-      REGISTER INFO
-      <ul>
-        <li>
-          <router-link to="/register-fill">
-            /rgst-$
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/register-fill-success">
-            /rgst-$-success
-          </router-link>
-        </li>
-      </ul>
-      LOCKSCREEN
-      <ul>
-        <li>
-          <router-link to="/lockscreen">
-            /lockscreen
-          </router-link>
-        </li>
-      </ul>
-      ERRORSCREEN
-      <ul>
-        <li>
-          <router-link to="/404">
-            /404
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/500">
-            /500
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/coming-soon">
-            /coming-soon
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/maintenance">
-            /maintenance
-          </router-link>
+        <li v-for="item in items" :key="item.title">
+          <router-link :to="item.to">{{ item.title }}</router-link>
         </li>
       </ul>
     </div>
