@@ -1,5 +1,4 @@
 import { createApp } from "vue";
-
 import Myapp from "./App.vue";
 import router from "@/components/back-related/router/index.min.js";
 import AOS from "aos";
