@@ -539,5 +539,20 @@
   "t-description": "Description",
   "t-activity-type": "Activity Type",
   "t-minute": "Minute",
-  "t-hour": "Hour"
+  "t-hour": "Hour",
+  "t-create-new-event": "Create New Event",
+  "t-create-new-event-info": "To create a new activity, just input the fields below and click on \"Create New Event\".",
+  "t-upcoming-events": "Upcoming Events",
+  "t-dont-miss-scheduled-events": "Don't miss scheduled events",
+  "t-event-has-been-saved": "Event has been saved",
+  "t-event-has-been-deleted": "Event has been deleted.",
+  "t-yes-delete-it": "Yes, delete it!",
+  "t-you-wont-be-able-to-delete-this": "You won't be able to delete this!",
+  "t-are-you-sure": "Are you sure?",
+  "t-feb": "February",
+  "t-june": "June",
+  "t-august": "August",
+  "t-october": "October",
+  "t-november": "November",
+  "t-december": "December"
 }

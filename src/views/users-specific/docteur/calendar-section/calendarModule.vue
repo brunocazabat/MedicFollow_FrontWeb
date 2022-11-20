@@ -72,6 +72,7 @@ export default {
         navLinks: true,
         plugins: [dayGridPlugin, timeGridPlugin, bootstrapPlugin, listPlugin],
         themeSystem: "bootstrap",
+        datesSet: this.handleDatesSet,
         headerToolbar: {
           left: "prev,next today",
           center: "title",
@@ -331,18 +332,18 @@ export default {
     },
     formatDate(date) {
       var monthNames = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
+        this.$t("t-JAN"),
+        this.$t("t-feb"),
+        this.$t("t-MARS"),
+        this.$t("t-AVRI"),
+        this.$t("t-MAI"),
+        this.$t("t-june"),
+        this.$t("t-JUIL"),
+        this.$t("t-august"),
+        this.$t("t-SEPT"),
+        this.$t("t-october"),
+        this.$t("t-november"),
+        this.$t("t-december"),
       ];
       var d = new Date(date),
         month = "" + monthNames[d.getMonth()],
@@ -456,17 +457,17 @@ export default {
 
     confirm() {
       Swal.fire({
-        title: "Are you sure?",
-        text: "You won't be able to delete this!",
+        title: this.$t("t-are-you-sure"),
+        text: this.$t("t-you-wont-be-able-to-delete-this"),
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#34c38f",
         cancelButtonColor: "#f46a6a",
-        confirmButtonText: "Yes, delete it!",
+        confirmButtonText: this.$t("t-yes-delete-it"),
       }).then((result) => {
         if (result.value) {
           this.deleteEvent();
-          Swal.fire("Deleted!", "Event has been deleted.", "success");
+          Swal.fire("Deleted!", this.$t("t-event-has-been-deleted"), "success");
         }
       });
     },
@@ -485,10 +486,112 @@ export default {
       Swal.fire({
         position: "center",
         icon: "success",
-        title: "Event has been saved",
+        title: this.$t("t-event-has-been-saved"),
         showConfirmButton: false,
         timer: 1000,
       });
+    },
+
+    // Handling month change
+    async handleDatesSet(event) {
+      // Setting endDate to be equal to even.startStr + 29 days
+      let endDate = dayjs(event.startStr).add(29, "day").format("YYYY-MM-DD");
+      // Setting nextMonth var to be equal to even.startStr + 1 month
+      let nextMonth = dayjs(event.startStr)
+        .add(1, "month")
+        .format("YYYY-MM-DD");
+
+      let smallerDate = false;
+      // Checking if end date is lower than next month date
+      if (dayjs(endDate).isBefore(dayjs(event.endStr))) {
+        endDate = event.endStr;
+      }
+
+      if (dayjs(endDate).isBefore(dayjs(nextMonth))) {
+        smallerDate = true;
+      }
+
+      let url = `calendar/Activity?calendar_uuid=${
+        this.calendarUUID
+      }&start_date=${this.parseDate(event.startStr)}&end_date=${this.parseDate(
+        endDate
+      )}`;
+
+      await axios({
+        method: "get",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then(async (response) => {
+          if (response.status === 200) {
+            if (response.data.length > 0) {
+              this.currentEvents = response.data;
+              this.initialEvents = response.data;
+            } else {
+              this.initialEvents = null;
+              this.currentEvents = null;
+            }
+
+            // If smallerDate is true then call the API again with endDate and nextMonth and push the response.data to this.currentEvents and this.initialEvents
+            if (smallerDate) {
+              let url = `calendar/Activity?calendar_uuid=${
+                this.calendarUUID
+              }&start_date=${this.parseDate(endDate)}&end_date=${this.parseDate(
+                nextMonth
+              )}`;
+
+              await axios({
+                method: "get",
+                url: url,
+                headers: {
+                  token: this.gettoken().Token,
+                },
+              })
+                .then((response) => {
+                  if (response.status === 200) {
+                    if (response.data.length > 0) {
+                      this.currentEvents = this.currentEvents.concat(
+                        response.data
+                      );
+                      this.initialEvents = this.initialEvents.concat(
+                        response.data
+                      );
+                    }
+                  }
+                })
+                .catch((error) => {
+                  Swal.fire({
+                    title: `${this.$t("t-error")}`,
+                    text: `${this.$t("t-error-occured")}. Error: ${
+                      error.response.status
+                    }`,
+                    icon: "error",
+                    confirmButtonText: "Ok",
+                  });
+                });
+            }
+            // Ordering the activities by date (ascending)
+            this.initialEvents.sort((a, b) => {
+              return a.date > b.date ? 1 : -1;
+            });
+            this.currentEvents.sort((a, b) => {
+              return a.date > b.date ? 1 : -1;
+            });
+          }
+        })
+        .catch((error) => {
+          // Sweet Alert
+          Swal.fire({
+            title: `${this.$t("t-error")}`,
+            text: `${this.$t("t-error-occured")}. Error: ${
+              error.response.status
+            }`,
+            icon: "error",
+            confirmButtonText: "Ok",
+          });
+        });
     },
   },
 };
@@ -506,14 +609,13 @@ export default {
                 id="btn-new-event"
                 @click="sendNewActivity()"
               >
-                <em class="mdi mdi-plus"></em> Create New Event
+                <em class="mdi mdi-plus"></em> {{ $t("t-create-new-event") }}
               </button>
 
               <div id="external-events">
                 <br />
                 <p class="text-muted">
-                  To create a new activity, just input the fields below and
-                  click on "Create New Event".
+                  {{ $t("t-create-new-event-info") }}
                 </p>
                 <InputModule
                   className="form-floating"
@@ -570,8 +672,8 @@ export default {
             </div>
           </div>
           <div>
-            <h5 class="mb-1">Upcoming Events</h5>
-            <p class="text-muted">Don't miss scheduled events</p>
+            <h5 class="mb-1">{{ $t("t-upcoming-events") }}</h5>
+            <p class="text-muted">{{ $t("t-dont-miss-scheduled-events") }}</p>
             <SimpleBar
               class="upcoming-events pe-2 me-n1 mb-3"
               data-simplebar="init"

@@ -539,5 +539,20 @@
   "t-description": "Descripción",
   "t-hour": "Hora",
   "t-minute": "Minuto",
-  "t-title": "Título"
+  "t-title": "Título",
+  "t-are-you-sure": "¿Está seguro?",
+  "t-august": "Agosto",
+  "t-create-new-event": "Crear nuevo evento",
+  "t-create-new-event-info": "Para crear una nueva actividad, simplemente ingrese los campos a continuación y haga clic en \"Crear nuevo evento\".",
+  "t-december": "Diciembre",
+  "t-dont-miss-scheduled-events": "No te pierdas los eventos programados",
+  "t-event-has-been-deleted": "El evento ha sido eliminado.",
+  "t-event-has-been-saved": "El evento ha sido guardado",
+  "t-feb": "Febrero",
+  "t-june": "Junio",
+  "t-november": "Noviembre",
+  "t-october": "Octubre",
+  "t-upcoming-events": "Próximos Eventos",
+  "t-yes-delete-it": "¡Sí, bórralo!",
+  "t-you-wont-be-able-to-delete-this": "¡No podrás borrar esto!"
 }

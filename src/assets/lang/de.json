@@ -539,5 +539,20 @@
   "t-description": "Beschreibung",
   "t-hour": "Stunde",
   "t-minute": "Minute",
-  "t-title": "Titel"
+  "t-title": "Titel",
+  "t-are-you-sure": "Bist du dir sicher?",
+  "t-august": "August",
+  "t-create-new-event": "Neues Ereignis erstellen",
+  "t-create-new-event-info": "Um eine neue Aktivität zu erstellen, füllen Sie einfach die Felder unten aus und klicken Sie auf „Neue Veranstaltung erstellen“.",
+  "t-december": "Dezember",
+  "t-dont-miss-scheduled-events": "Verpassen Sie keine geplanten Veranstaltungen",
+  "t-event-has-been-deleted": "Veranstaltung wurde gelöscht.",
+  "t-event-has-been-saved": "Ereignis wurde gespeichert",
+  "t-feb": "Februar",
+  "t-june": "Juni",
+  "t-november": "November",
+  "t-october": "Oktober",
+  "t-upcoming-events": "Kommende Veranstaltungen",
+  "t-yes-delete-it": "Ja, löschen!",
+  "t-you-wont-be-able-to-delete-this": "Sie können dies nicht löschen!"
 }
