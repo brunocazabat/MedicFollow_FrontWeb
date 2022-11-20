@@ -19,24 +19,30 @@ export default {
         <tableAdminVue />
       </div>
       <div class="col-xxl-3">
-        <!-- addDocVue -->
-        <GenericButton
-          link="/organisation/manage-doctors"
-          translate="t-adddocpers"
-          icon="mdi-folder-account"
-        />
-        <!-- modifDocVue -->
-        <GenericButton
-          link="/organisation/manage-doctors"
-          translate="t-moddocpers"
-          icon="mdi-folder-wrench"
-        />
-        <!-- modifyOrgaVue -->
-        <GenericButton
-          link="/organisation/settings"
-          translate="t-modifmyorga"
-          icon="mdi-cog-outline"
-        />
+        <div class="row pt-5">
+          <!-- addDocVue -->
+          <GenericButton
+            link="/organisation/manage-doctors"
+            translate="t-adddocpers"
+            icon="mdi-folder-account"
+          />
+        </div>
+        <div class="row pt-5">
+          <!-- modifDocVue -->
+          <GenericButton
+            link="/organisation/manage-doctors"
+            translate="t-moddocpers"
+            icon="mdi-folder-edit"
+          />
+        </div>
+        <div class="row pt-5">
+          <!-- modifyOrgaVue -->
+          <GenericButton
+            link="/organisation/settings"
+            translate="t-modifmyorga"
+            icon="mdi-cog-outline"
+          />
+        </div>
       </div>
     </div>
   </Layout>
