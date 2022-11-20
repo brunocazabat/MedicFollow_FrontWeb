@@ -31,8 +31,8 @@ import "@/assets/scss/config/material/app.scss";
 import "@vueform/slider/themes/default.css";
 
 import axios from "axios";
-axios.defaults.baseURL = "https://api.medicfollow.fr/v1";
-// axios.defaults.baseURL = "http://localhost:8081/v1";
+axios.defaults.baseURL = process.env.VUE_APP_BACK_PROD; //EN PRODUCTION
+// axios.defaults.baseURL = process.env.VUE_APP_BACK_LOCALDEV; //EN DEV LOCAL
 
 import VueRecaptcha from "vue3-recaptcha-v2";
 
