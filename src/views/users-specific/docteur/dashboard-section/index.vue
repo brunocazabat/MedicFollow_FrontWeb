@@ -3,15 +3,8 @@
 import Layout from "@/components/view-related/layout/main.vue";
 import { CountTo } from "vue3-count-to";
 
+import { GenericButton } from "@/components/view-related/dashboard-components";
 // Specific Imports
-import {
-  AccessSettings,
-  AccessChat,
-  AddPatientModule,
-  AddMedicalInformationModule,
-  SetupMeetingScheduleModule,
-  ManagePatientsModule,
-} from "./buttonComponents";
 import PatientTableModule from "../medical-information/patientTable.vue";
 import Swal from "sweetalert2";
 import axios from "axios";
@@ -23,14 +16,9 @@ import {
 export default {
   components: {
     Layout,
-    AddPatientModule,
-    AddMedicalInformationModule,
-    SetupMeetingScheduleModule,
-    ManagePatientsModule,
-    PatientTableModule,
     CountTo,
-    AccessSettings,
-    AccessChat,
+    GenericButton,
+    PatientTableModule,
   },
   data() {
     return {
@@ -114,13 +102,28 @@ export default {
           </div>
         </div>
         <div class="row pt-5">
-          <AddPatientModule />
+          <!-- AddPatientModule -->
+          <GenericButton
+            link="/docteur/manage-patients"
+            translate="t-addpatient"
+            icon="mdi-account-plus"
+          />
         </div>
         <div class="row">
-          <AddMedicalInformationModule />
+          <!-- AddMedicalInformationModule -->
+          <GenericButton
+            link="/docteur/staff-input"
+            translate="t-addmedicalinfo"
+            icon="mdi-pen-plus"
+          />
         </div>
         <div class="row">
-          <AccessSettings />
+          <!-- AccessSettings -->
+          <GenericButton
+            link="/docteur/settings"
+            translate="t-accesssettings"
+            icon="mdi-cog"
+          />
         </div>
       </div>
       <div class="col-xxl-2 ml1 mr2">
@@ -155,13 +158,28 @@ export default {
           </div>
         </div>
         <div class="row pt-5">
-          <ManagePatientsModule />
+          <!-- ManagePatientsModule -->
+          <GenericButton
+            link="/docteur/manage-patients"
+            translate="t-managepatients"
+            icon="mdi-account-edit"
+          />
         </div>
         <div class="row">
-          <SetupMeetingScheduleModule />
+          <!-- SetupMeetingScheduleModule -->
+          <GenericButton
+            link="/docteur/schedule-seetings"
+            translate="t-setupmeetingschedule"
+            icon="mdi-table-cog"
+          />
         </div>
         <div class="row">
-          <AccessChat />
+          <!-- AccessChat -->
+          <GenericButton
+            link="/docteur/chat"
+            translate="t-accessdiscuss"
+            icon="mdi-forum"
+          />
         </div>
       </div>
       <div class="col-xxl-7 ml3">

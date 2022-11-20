@@ -1,10 +1,22 @@
 <script>
 // IMPORT SECTIONS VITRINE
-import { navbar, intro, project, history, solutions, tarification, team, faq, contact, footervit, signupnow, counter } from "./components";
-
+import {
+  navbar,
+  intro,
+  project,
+  history,
+  solutions,
+  tarification,
+  team,
+  faq,
+  contact,
+  footervit,
+  signupnow,
+  counter,
+} from "./components";
 
 export default {
-  name: 'SiteVitrine',
+  name: "SiteVitrine",
   components: {
     navbar,
     intro,
@@ -17,15 +29,15 @@ export default {
     contact,
     footervit,
     signupnow,
-    counter
+    counter,
   },
   mounted() {
-    document.querySelector('.currentyear').innerHTML =
-      new Date().getFullYear() + ' © MedicFollow - MedicFollow'
-  }
-}
+    document.querySelector(".currentyear").innerHTML =
+      new Date().getFullYear() + " © MedicFollow - MedicFollow";
+  },
+};
 </script>
-  
+
 <template>
   <div class="layout-wrapper landing">
     <!-- NAVBAR -->
