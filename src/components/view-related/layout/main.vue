@@ -2,13 +2,26 @@
 import router from "@/components/back-related/router";
 import { SimpleBar } from "simplebar-vue3";
 import { layoutComputed } from "@/components/back-related/state/helpers";
-
-import { NavBar, MenuMedicFollow, RightBar, PageHeader } from "./layout-components";
+import {
+  NavBar,
+  MenuMedicFollow,
+  RightBar,
+  PageHeader,
+  Cookies,
+} from "./layout-components";
 import { footermodule } from "@/components/view-related/login-components";
+localStorage.setItem("hoverd", false);
 
-localStorage.setItem('hoverd', false);
 export default {
-  components: { NavBar, RightBar, footermodule, SimpleBar, MenuMedicFollow, PageHeader },
+  components: {
+    NavBar,
+    RightBar,
+    SimpleBar,
+    MenuMedicFollow,
+    PageHeader,
+    Cookies,
+    footermodule,
+  },
   data() {
     return {
       isMenuCondensed: false,
@@ -24,14 +37,23 @@ export default {
   },
   methods: {
     initActiveMenu() {
-      if (document.documentElement.getAttribute('data-sidebar-size') === 'sm-hover') {
-        localStorage.setItem('hoverd', true)
-        document.documentElement.setAttribute('data-sidebar-size', 'sm-hover-active');
-      } else if (document.documentElement.getAttribute('data-sidebar-size') === 'sm-hover-active') {
-        localStorage.setItem('hoverd', false)
-        document.documentElement.setAttribute('data-sidebar-size', 'sm-hover');
+      if (
+        document.documentElement.getAttribute("data-sidebar-size") ===
+        "sm-hover"
+      ) {
+        localStorage.setItem("hoverd", true);
+        document.documentElement.setAttribute(
+          "data-sidebar-size",
+          "sm-hover-active"
+        );
+      } else if (
+        document.documentElement.getAttribute("data-sidebar-size") ===
+        "sm-hover-active"
+      ) {
+        localStorage.setItem("hoverd", false);
+        document.documentElement.setAttribute("data-sidebar-size", "sm-hover");
       } else {
-        document.documentElement.setAttribute('data-sidebar-size', 'sm-hover');
+        document.documentElement.setAttribute("data-sidebar-size", "sm-hover");
       }
     },
     toggleMenu() {
@@ -61,13 +83,15 @@ export default {
     },
   },
   mounted() {
-    if (localStorage.getItem('hoverd') == 'true') {
-      document.documentElement.setAttribute('data-sidebar-size', 'sm-hover-active');
+    if (localStorage.getItem("hoverd") == "true") {
+      document.documentElement.setAttribute(
+        "data-sidebar-size",
+        "sm-hover-active"
+      );
     }
-    document.getElementById('overlay').addEventListener('click', () => {
-      document.body.classList.remove('vertical-sidebar-enable')
-    })
-
+    document.getElementById("overlay").addEventListener("click", () => {
+      document.body.classList.remove("vertical-sidebar-enable");
+    });
   },
 };
 </script>
@@ -84,29 +108,50 @@ export default {
           <div class="navbar-brand-box">
             <router-link to="/" class="logo logo-dark">
               <span class="logo-sm">
-                <img src="@/assets/images/logo/logo-short.png" alt="" height="25" />
+                <img
+                  src="@/assets/images/logo/logo-short.png"
+                  alt=""
+                  height="25"
+                />
               </span>
               <span class="logo-lg">
-                <img src="@/assets/images/logo/logo-long.png" alt="" height="30" />
+                <img
+                  src="@/assets/images/logo/logo-long.png"
+                  alt=""
+                  height="30"
+                />
               </span>
             </router-link>
 
             <router-link to="/" class="logo logo-light">
               <span class="logo-sm">
-                <img src="@/assets/images/logo/logo-short.png" alt="" height="25" />
+                <img
+                  src="@/assets/images/logo/logo-short.png"
+                  alt=""
+                  height="25"
+                />
               </span>
               <span class="logo-lg">
-                <img src="@/assets/images/logo/logo-long.png" alt="" height="30" />
+                <img
+                  src="@/assets/images/logo/logo-long.png"
+                  alt=""
+                  height="30"
+                />
               </span>
             </router-link>
           </div>
 
           <SimpleBar id="scrollbar" class="h-100" ref="scrollbar">
             <MenuMedicFollow></MenuMedicFollow>
-            <div class="text-center navbar-nav" style="position: absolute; bottom: 1px;">
+            <div
+              class="text-center navbar-nav"
+              style="position: absolute; bottom: 1px"
+            >
               <router-link to="/usage" class="nav-link menu-link">
                 <em class="ri-pages-line"></em>
-                <span style="padding: 7px" data-key="t-terms">{{ $t("t-terms") }}</span>
+                <span style="padding: 7px" data-key="t-terms">{{
+                  $t("t-terms")
+                }}</span>
               </router-link>
             </div>
           </SimpleBar>
@@ -120,12 +165,12 @@ export default {
       <!-- ============================================================== -->
 
       <div class="main-content">
-
         <div class="page-content">
           <PageHeader />
           <!-- Start Content-->
           <div class="container-fluid">
             <slot />
+            <Cookies />
           </div>
         </div>
         <footermodule />
