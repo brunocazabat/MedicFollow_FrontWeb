@@ -36,10 +36,6 @@ export const actions = {
   },
 };
 
-// ===
-// Private helpers
-// ===
-
 function saveState(key, value) {
   window.sessionStorage.setItem(key, value);
 }
