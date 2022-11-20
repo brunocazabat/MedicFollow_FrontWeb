@@ -33,6 +33,10 @@ export default {
       type: String,
       default: "",
     },
+    className: {
+      type: String,
+      default: "",
+    },
   },
   emits: ["update:modelValue"],
   data() {
@@ -56,27 +60,29 @@ export default {
 </script>
 
 <template>
-  <div class="form-group">
-    <div v-if="title.length > 0">
-      <label for="label">{{ title }}</label>
-    </div>
-    <select
-      data-testid="select"
-      :required="required"
-      :disabled="disabled"
-      :readonly="readonly"
-      @change="updateValue($event)"
-    >
-      <option
-        v-for="option in options"
-        :key="option.value"
-        :value="option.value"
-        :selected="option.value === selected.value"
+  <div :class="className">
+    <div class="form-group">
+      <div v-if="title.length > 0">
+        <label for="label">{{ title }}</label>
+      </div>
+      <select
+        data-testid="select"
+        :required="required"
+        :disabled="disabled"
+        :readonly="readonly"
+        @change="updateValue($event)"
       >
-        {{ option.text }}
-      </option>
-    </select>
-    <div class="invalid-feedback">{{ invalidFeedback }}.</div>
+        <option
+          v-for="option in options"
+          :key="option.value"
+          :value="option.value"
+          :selected="option.value === selected.value"
+        >
+          {{ option.text }}
+        </option>
+      </select>
+      <div class="invalid-feedback">{{ invalidFeedback }}.</div>
+    </div>
   </div>
 </template>
 
