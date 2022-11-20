@@ -94,6 +94,7 @@ export default {
         data-bs-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
+        title="Changer de langue"
       >
         <img
           id="header-lang-img"
