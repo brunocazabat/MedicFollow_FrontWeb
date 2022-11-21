@@ -696,9 +696,9 @@ export default {
           <p class="text-muted">{{ $t("t-dont-miss-scheduled-events") }}</p>
           <hr />
           <SimpleBar
+            style="max-height: 65vh"
             class="upcoming-events pe-2 me-n1"
             data-simplebar="init"
-            style="height: 50vh"
           >
             <div
               class="card"
