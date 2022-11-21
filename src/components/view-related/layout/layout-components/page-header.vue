@@ -102,7 +102,7 @@ export default {
           <div class="col-2 force-center">
             <h4 class="mb-sm-0">DASHBOARD SELECTOR ADMIN</h4>
           </div>
-          <div class="col-1" v-for="items in AdminLinks">
+          <div class="col-1" v-for="items in AdminLinks" :key="items">
             <RouterLink
               :to="items.link"
               class="btn btn-primary"
@@ -116,6 +116,7 @@ export default {
             <button
               class="btn btn-dark"
               v-for="items in NotifTests"
+              :key="items"
               @click="
                 showNotification(
                   items.notifContent,

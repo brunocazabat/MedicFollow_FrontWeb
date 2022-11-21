@@ -15,7 +15,7 @@ export default {
     <li class="menu-title fs-6">
       <span data-key="t-menu"> {{ $t("t-menu") }}</span>
     </li>
-    <li class="nav-item" v-for="items in options">
+    <li class="nav-item" v-for="items in options" :key="items">
       <router-link class="nav-link menu-link" :to="items.link">
         <em :class="'mdi mdi-' + items.icon + ' fs-4 p10rx'"></em>
         <span :data-key="'t-' + items.title">
