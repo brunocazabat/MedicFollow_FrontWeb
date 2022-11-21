@@ -23,14 +23,17 @@ export default {
     patientID: {
       type: Number,
       required: false,
+      default: 0,
     },
     patientFName: {
       type: String,
       required: false,
+      default: "",
     },
     patientLName: {
       type: String,
       required: false,
+      default: "",
     },
   },
   setup() {
@@ -147,22 +150,38 @@ export default {
           cancelButtonColor: "#d33",
           confirmButtonText: this.$t("t-yes-send-it"),
         }).then(async (result) => {
+          let newFileBinary = null;
+
           if (result.isConfirmed) {
+            if (this.file.length > 0) {
+              newFileBinary = new File(
+                [this.file[0].binary],
+                this.file[0].name,
+                {
+                  type: this.file[0].type,
+                  lastModified: Date.now(),
+                }
+              );
+            } else {
+              newFileBinary = null;
+            }
             // Creating the request body
             const data = {
+              file: newFileBinary,
               content: this.generalObservation,
             };
 
             // Creating the request URL
             const url = "patient/" + this.getPatientUUID() + "/observation";
 
+            console.log("data", data);
             // Sending the request
             try {
               await axios({
                 method: "post",
                 url: url,
                 headers: {
-                  "Content-Type": "application/json",
+                  "Content-Type": "multipart/form-data",
                   token: this.gettoken().Token,
                 },
                 data: data,
