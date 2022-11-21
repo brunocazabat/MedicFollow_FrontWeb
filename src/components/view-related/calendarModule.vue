@@ -604,8 +604,8 @@ export default {
 
 <template>
   <div class="row dashboard-form">
-    <div class="col-2">
-      <div class="card" v-if="isDoctor()">
+    <div class="col-2" v-if="isDoctor()">
+      <div class="card">
         <div class="card-body">
           <div class="row">
             <div class="col-10">
