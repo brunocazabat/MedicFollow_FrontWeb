@@ -460,6 +460,7 @@ export default {
                 id="chat-conversation"
                 data-simplebar
                 ref="current"
+                style="height: 50vh; background: inherit !important"
               >
                 <ul class="list-unstyled chat-conversation-list">
                   <li

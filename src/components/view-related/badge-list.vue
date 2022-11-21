@@ -31,7 +31,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 .badges {
   display: flex;
   column-gap: 10px;

@@ -21,17 +21,18 @@ export default {
 </script>
 
 <template>
-  <div class="badge" :class="type">
+  <div class="badge force-center" :class="type">
     {{ text }}
-    <div class="icon cursor-pointer">
-      <div class="btn btn-sm btn-icon" v-on:click="removeBadge">
-        <p>X</p>
-      </div>
+    <div
+      class="icon cursor-pointer btn btn-sm btn-icon force-center text-danger"
+      v-on:click="removeBadge"
+    >
+      <em class="mdi mdi-close fs-4"></em>
     </div>
   </div>
 </template>
 
-<style>
+<style scoped>
 .badge {
   padding: 0px 0 0 10px;
   display: flex;
@@ -49,15 +50,12 @@ export default {
 }
 
 .icon {
-  margin-left: 4px;
+  margin-left: 10px;
   padding-left: 0;
   display: flex;
   align-items: center;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
-}
-
-.cursor-pointer {
-  cursor: pointer;
+  box-shadow: none;
 }
 </style>

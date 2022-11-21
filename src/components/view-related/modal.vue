@@ -57,7 +57,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 .overlay {
   position: fixed;
   top: 0;

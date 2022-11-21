@@ -115,7 +115,7 @@ export default {
         Swal.fire({
           icon: "error",
           title: "Oops...",
-          text: `${this.$t("t-something-went-wrong")}./nError: ${
+          text: `${this.$t("t-something-went-wrong")}. Error: ${
             error.response.status
           }`,
         });
@@ -242,7 +242,6 @@ export default {
         <!-- Title and Text muted -->
         <h2 class="text-primary text-uppercase">{{ $t("t-selectpatient") }}</h2>
         <p class="text-muted">{{ $t("t-medicselectinfo") }}.</p>
-
         <PatientTableModule
           @button-pressed="handlePatientInfo"
           :patientArray="patientArray"
@@ -251,107 +250,97 @@ export default {
     </div>
 
     <!-- INPUT MEDICAL INFORMATION -->
-    <div class="row" v-if="viewID === 1">
+    <div class="project-wrapper dashboard-form row mb-3" v-if="viewID === 1">
       <!-- Title + paragraph -->
-      <h2 class="text-primary text-uppercase">
-        {{ $t("t-medicinfofor") }}
-        <strong>{{ patientLastName }} {{ patientFirstName }}</strong>
-      </h2>
-      <p class="text-muted">{{ $t("t-writedownlastinfo") }}.</p>
-      <div class="p-2">
-        <div class="card">
-          <div class="card-body row">
-            <!-- INFOMATION DIV -->
-            <div class="col-lg-6 mf-scrollable">
-              <!-- INPUT LATEST INFO -->
-              <div>
-                <InputModule
-                  :label="$t('t-observationsheets')"
-                  :placeholder="$t('t-write-here')"
-                  :rows="4"
-                  v-model="generalObservation"
-                  :required="true"
-                  :invalidFeedback="$t('t-invalid-feedback')"
-                />
-              </div>
-
-              <hr />
-
-              <!-- NON MANDATORY FIELDS LOOP -->
-              <div class="basic-card-border mb-2">
-                <a
-                  class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
-                  href="#patientNonMandatoryField"
-                  data-bs-toggle="collapse"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="patientNonMandatoryField"
-                >
-                  <span
-                    >{{ $t("t-notmandatoryfields") }}
-                    <strong
-                      ><em
-                        class="ri-arrow-down-line lh-1 center-items"
-                      ></em></strong
-                  ></span>
-                </a>
-
-                <hr class="mf-divider" />
-
-                <div
-                  class="collapse col-sm-12 basic-padding left-margin"
-                  id="patientNonMandatoryField"
-                >
-                  <FieldModule
-                    v-for="field in inputFields"
-                    :key="field.id"
-                    :fieldName="field.title"
-                  />
-                </div>
-              </div>
-
-              <hr />
-
-              <!-- FILE UPLOAD -->
-              <div class="mb-3">
-                <div class="col-md-12">
-                  <label class="font-size-large mb-0 mt-0">
-                    {{ $t("t-questionuploaddoc") }}
-                  </label>
-                  <p class="text-muted mb-3">{{ $t("t-uploadexample") }}</p>
-                  <DragDropComponent v-model="file" />
-                </div>
-              </div>
+      <div
+        class="card col mr2 p-2 mf-scrollable"
+        style="max-height: 70vh !important"
+      >
+        <div class="card-body">
+          <h3 class="text-primary text-uppercase">
+            {{ $t("t-medicinfofor") }}
+            <strong>{{ patientLastName }} {{ patientFirstName }}</strong>
+          </h3>
+          <p class="text-muted">{{ $t("t-writedownlastinfo") }}.</p>
+          <!-- INFOMATION DIV -->
+          <!-- INPUT LATEST INFO -->
+          <InputModule
+            class="p-2"
+            :label="$t('t-observationsheets')"
+            :placeholder="$t('t-write-here')"
+            :rows="4"
+            v-model="generalObservation"
+            :required="true"
+            :invalidFeedback="$t('t-invalid-feedback')"
+          />
+          <!-- NON MANDATORY FIELDS LOOP -->
+          <div class="basic-card-border mt-3 p-2">
+            <a
+              class="nav-link menu-link col-sm-12 font-size-medium two-percent-height force-center p-2 mb-3"
+              href="#patientNonMandatoryField"
+              data-bs-toggle="collapse"
+              role="button"
+              aria-expanded="false"
+              aria-controls="patientNonMandatoryField"
+            >
+              <span
+                >{{ $t("t-notmandatoryfields") }}
+                <strong
+                  ><em
+                    class="ri-arrow-down-line lh-1 center-items"
+                  ></em></strong
+              ></span>
+            </a>
+            <div
+              class="collapse col-sm-12 basic-padding left-margin"
+              id="patientNonMandatoryField"
+            >
+              <FieldModule
+                v-for="field in inputFields"
+                :key="field.id"
+                :fieldName="field.title"
+              />
             </div>
-
-            <!-- CHAT DIV -->
-            <div class="col-lg-6">
-              <Chat />
+          </div>
+          <hr />
+          <!-- FILE UPLOAD -->
+          <div class="mb-3">
+            <div class="col-md-12">
+              <label class="font-size-large mb-0 mt-0">
+                {{ $t("t-questionuploaddoc") }}
+              </label>
+              <p class="text-muted mb-3">{{ $t("t-uploadexample") }}</p>
+              <DragDropComponent v-model="file" />
             </div>
-
-            <!-- <Calendar /> -->
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Next and Prev Button -->
-    <div class="p-3 mb-3 row">
-      <div class="space-in-between" v-if="viewEnd === true">
-        <button
-          class="lh-1 btn btn-primary font-size-medium col-sm-4"
-          v-on:click="prevView()"
-        >
-          <strong><em class="ri-arrow-left-line center-items"></em></strong>
-          {{ $t("t-previousstep") }}
-        </button>
-        <button
-          class="lh-1 btn btn-primary font-size-medium col-sm-4"
-          v-on:click="sendObservationRequest"
-        >
-          {{ $t("t-continue") }}
-          <strong><em class="ri-arrow-right-line center-items"></em></strong>
-        </button>
+        <!-- <Calendar /> -->
+      </div>
+      <!-- CHAT DIV -->
+      <div class="card col ml2 p-2" style="max-height: 70vh !important">
+        <div class="card-body">
+          <Chat />
+        </div>
+      </div>
+      <!-- Next and Prev Button -->
+      <div class="p-3 mb-3 row">
+        <div class="space-in-between" v-if="viewEnd === true">
+          <button
+            class="lh-1 btn btn-primary font-size-medium col-sm-4"
+            v-on:click="prevView()"
+          >
+            <strong><em class="ri-arrow-left-line center-items"></em></strong>
+            {{ $t("t-previousstep") }}
+          </button>
+          <button
+            class="lh-1 btn btn-primary font-size-medium col-sm-4"
+            v-on:click="sendObservationRequest"
+          >
+            {{ $t("t-continue") }}
+            <strong><em class="ri-arrow-right-line center-items"></em></strong>
+          </button>
+        </div>
       </div>
     </div>
   </Layout>

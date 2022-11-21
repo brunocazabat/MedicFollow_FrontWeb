@@ -30,13 +30,13 @@ export default {
       event.stopPropagation();
 
       // Looping through the files
-      for (let i = 0; i < event.dataTransfer.files.length; i++) {
+      for (const element of event.dataTransfer.files) {
         // Creating data array
         const data = {
-          name: event.dataTransfer.files[i].name,
-          size: event.dataTransfer.files[i].size,
-          type: event.dataTransfer.files[i].type,
-          binary: event.dataTransfer.files[i],
+          name: element.name,
+          size: element.size,
+          type: element.type,
+          binary: element,
         };
 
         // Pushing the data to the file array
@@ -48,14 +48,14 @@ export default {
 
     // Method to transform the file.size in a human readable format
     humanFileSize(bytes, si) {
-      var thresh = si ? 1000 : 1024;
+      let thresh = si ? 1000 : 1024;
       if (Math.abs(bytes) < thresh) {
         return bytes + " B";
       }
-      var units = si
+      let units = si
         ? ["kB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"]
         : ["KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"];
-      var u = -1;
+      let u = -1;
       do {
         bytes /= thresh;
         ++u;
@@ -93,23 +93,21 @@ export default {
 
 <template>
   <div class="drag-drop">
-    <div class="filters">
-      <div
-        class="add-filter"
-        v-on:dragenter="enableDrop($event)"
-        v-on:dragover="enableDrop($event)"
-        v-on:drop="handleDrop($event)"
-      >
-        <input
-          id="fileElem"
-          class="fileElem"
-          type="file"
-          v-on:change="handleUploadedFile($event)"
-        />
-        <label class="large-size max-width" for="fileElem">{{
-          $t("t-select-or-drop-file")
-        }}</label>
-      </div>
+    <div
+      class="add-filter"
+      v-on:dragenter="enableDrop($event)"
+      v-on:dragover="enableDrop($event)"
+      v-on:drop="handleDrop($event)"
+    >
+      <input
+        id="fileElem"
+        class="fileElem"
+        type="file"
+        v-on:change="handleUploadedFile($event)"
+      />
+      <label class="large-size max-width" for="fileElem">
+        {{ $t("t-select-or-drop-file") }}<em class="mdi mdi-paperclip fs-1"></em
+      ></label>
     </div>
   </div>
 
@@ -140,17 +138,14 @@ h6 {
 }
 .max-width {
   width: 100%;
-  min-height: 150px;
-  display: flex;
+  min-height: 120px;
   min-width: 200px;
 }
 
 .drag-drop {
-  display: flex;
-}
-
-.filters {
-  max-width: 400px;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .add-filter {

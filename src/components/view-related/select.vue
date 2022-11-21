@@ -86,7 +86,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 .form-group {
   width: 100%;
 }
