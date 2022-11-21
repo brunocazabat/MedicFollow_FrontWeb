@@ -297,12 +297,10 @@ export default {
       this.form = {};
     },
   },
-  mounted() {
-    this.getConversations();
-    // Executing the setupPreSelectedChat method with a 1 second delay to make sure the conversationsArray is filled
-    setTimeout(() => {
-      this.setupPreSelectedChat();
-    }, 1500);
+  async mounted() {
+    await this.getConversations();
+    await this.setupPreSelectedChat();
+
     var currentChatId = "users-chat";
     setTimeout(() => {
       this.scrollToBottom(currentChatId);
@@ -402,10 +400,8 @@ export default {
                 class
                 v-for="(conversation, key) in conversationsArray"
                 :key="key"
-                @click.once="
-                  chatUsername(conversation.user.title, conversation.uuid)
-                "
-                :class="{ active: username == conversation.user.firstname }"
+                @click="chatUsername(conversation.title, conversation.uuid)"
+                :class="{ active: username == conversation.title }"
               >
                 <a href="javascript: void(0);">
                   <div class="d-flex align-items-center">
