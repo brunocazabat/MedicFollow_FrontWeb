@@ -191,29 +191,23 @@ export default {
 
 <template>
   <Layout>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div v-if="!pageEnd">
-            <h2 class="text-primary text-uppercase">
-              {{ $t("t-selectpatient") }}
-            </h2>
-            <TableSelectPatient
-              :patientArray="patientArray"
-              @button-pressed="nextPage"
-            />
-          </div>
-          <div v-else-if="pageEnd && isPatientSet()">
-            <CalendarModule
-              :activitiesArray="activitiesArray"
-              :calendarUUID="calendar.uuid"
-            />
-            <button v-on:click="previousPage" class="btn btn-primary">
-              {{ $t("t-previous") }}
-            </button>
-          </div>
-        </div>
-      </div>
+    <div class="container" v-if="!pageEnd">
+      <h2 class="text-primary text-uppercase">
+        {{ $t("t-selectpatient") }}
+      </h2>
+      <TableSelectPatient
+        :patientArray="patientArray"
+        @button-pressed="nextPage"
+      />
+    </div>
+    <div v-else-if="pageEnd && isPatientSet()">
+      <CalendarModule
+        :activitiesArray="activitiesArray"
+        :calendarUUID="calendar.uuid"
+      />
+      <button v-on:click="previousPage" class="btn btn-primary">
+        {{ $t("t-previous") }}
+      </button>
     </div>
   </Layout>
 </template>

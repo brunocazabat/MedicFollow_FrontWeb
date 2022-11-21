@@ -15,6 +15,8 @@ import useVuelidate from "@vuelidate/core";
 
 import { INITIAL_EVENTS, categories } from "./utils";
 
+import Popper from "vue3-popper";
+
 import {
   AuthGetters,
   PatientGetters,
@@ -55,17 +57,7 @@ export default {
   },
   data() {
     return {
-      title: "Calendar",
-      items: [
-        {
-          text: "Apps",
-          href: "/",
-        },
-        {
-          text: "Calendar",
-          active: true,
-        },
-      ],
+      hover: false,
       calendarOptions: {
         timeZone: "local",
         droppable: true,
@@ -236,6 +228,7 @@ export default {
     SimpleBar,
     SelectModule,
     InputModule,
+    Popper,
     // ModalModule,
   },
   async mounted() {
@@ -259,12 +252,12 @@ export default {
         .then((response) => {
           if (response.status === 200) {
             // Loop to go through all types
-            for (let i = 0; i < response.data.length; i++) {
+            for (const element of response.data) {
               // Pushing the types to the array
               this.activityTypesArray.push({
-                value: response.data[i].uuid,
-                text: response.data[i].activity_type_name,
-                desc: response.data[i].activity_type_desc,
+                value: element.uuid,
+                text: element.activity_type_name,
+                desc: element.activity_type_desc,
               });
             }
             this.selectedType = this.activityTypesArray[0];
@@ -330,8 +323,14 @@ export default {
       this.submit = false;
       this.showModal = false;
     },
+    mouseover: function () {
+      this.hover = true;
+    },
+    mouseleave: function () {
+      this.hover = false;
+    },
     formatDate(date) {
-      var monthNames = [
+      let monthNames = [
         this.$t("t-JAN"),
         this.$t("t-feb"),
         this.$t("t-MARS"),
@@ -345,7 +344,7 @@ export default {
         this.$t("t-november"),
         this.$t("t-december"),
       ];
-      var d = new Date(date),
+      let d = new Date(date),
         month = "" + monthNames[d.getMonth()],
         day = "" + d.getDate(),
         year = d.getFullYear();
@@ -593,128 +592,157 @@ export default {
 </script>
 
 <template>
-  <div class="row">
-    <div class="col-12">
-      <div class="row">
-        <div class="col-xl-3">
-          <div class="card card-h-100">
-            <div class="card-body">
+  <div class="row dashboard-form">
+    <div class="col-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-10">
               <button
-                class="btn btn-primary w-100"
+                class="btn btn-primary"
                 id="btn-new-event"
                 @click="sendNewActivity()"
               >
-                <em class="mdi mdi-plus"></em> {{ $t("t-create-new-event") }}
+                <div class="row">
+                  <em class="mdi mdi-plus fs-5"></em>
+                </div>
+                {{ $t("t-create-new-event") }}
               </button>
-
-              <div id="external-events">
-                <br />
-                <p class="text-muted">
-                  {{ $t("t-create-new-event-info") }}
-                </p>
-                <InputModule
-                  className="form-floating"
-                  v-model="newActivity.title"
-                  :label="$t('t-title')"
-                  :placeholder="$t('t-write-here')"
-                  :required="true"
-                />
-
-                <InputModule
-                  className="form-floating"
-                  v-model="newActivity.description"
-                  :label="$t('t-description')"
-                  :placeholder="$t('t-write-here')"
-                  :required="true"
-                />
-
-                <!-- Date picker as YYYY-MM-DD -->
-                <InputModule
-                  v-model="selectedDate"
-                  :label="$t('t-date')"
-                  :required="true"
-                  type="date"
-                />
-
-                <!-- Hour and minute picker -->
-                <div class="row mb-2">
-                  <SelectModule
-                    class="col-sm-6"
-                    v-model="selectedHour"
-                    :title="$t('t-hour')"
-                    :required="true"
-                    :options="hoursArray"
-                    :selectedOption="selectedHour"
-                  />
-                  <SelectModule
-                    class="col-sm-6"
-                    v-model="selectedMinute"
-                    :title="$t('t-minute')"
-                    :required="true"
-                    :options="minutesArray"
-                    :selectedOption="selectedMinute"
-                  />
-                </div>
-
-                <SelectModule
-                  v-model="newActivity.activityTypeUUID"
-                  :title="$t('t-activity-type')"
-                  :options="activityTypesArray"
-                  :required="true"
-                  :selectedOption="selectedType"
-                />
-              </div>
             </div>
-          </div>
-          <div>
-            <h5 class="mb-1">{{ $t("t-upcoming-events") }}</h5>
-            <p class="text-muted">{{ $t("t-dont-miss-scheduled-events") }}</p>
-            <SimpleBar
-              class="upcoming-events pe-2 me-n1 mb-3"
-              data-simplebar="init"
-              style="height: 400px"
+            <div
+              class="col-1 force-center"
+              v-on:mouseover="mouseover"
+              v-on:mouseleave="mouseleave"
             >
-              <div
-                class="card mb-3"
-                v-for="event in activitiesArray"
-                :key="event.uuid"
-              >
-                <div class="card-body">
-                  <div class="d-flex mb-3">
-                    <div class="flex-grow-1">
-                      <em class="bg-soft-primary"></em
-                      ><span class="fw-medium">{{
-                        this.parseDate(event.date)
-                      }}</span>
-                      <p class="text-muted mb-0">
-                        {{ this.parseHour(event.date) }}
-                      </p>
-                    </div>
-                    <div class="flex-shrink-0">
-                      <small class="badge badge-soft-primary ms-auto"></small>
-                    </div>
+              <Popper placement="right" :show="hover">
+                <em
+                  class="mdi mdi-information-variant badge-soft-warning fs-4"
+                ></em>
+                <template #content>
+                  <div
+                    class="card card-body fs-8"
+                    style="width: 250px !important"
+                  >
+                    {{ $t("t-create-new-event-info") }}
                   </div>
-                  <h6 class="card-title fs-16">{{ event.title }}</h6>
-                  <p class="text-muted text-truncate-two-lines mb-0">
-                    {{ event.desc }}
-                  </p>
-                </div>
-              </div>
-            </SimpleBar>
-          </div>
-          <!--end card-->
-        </div>
-        <div class="col-xl-9">
-          <div class="card card-h-100">
-            <div class="card-body">
-              <FullCalendar :options="calendarOptions" />
+                </template>
+              </Popper>
             </div>
+          </div>
+          <hr />
+          <div id="external-events">
+            <InputModule
+              className="form-floating pt-2"
+              v-model="newActivity.title"
+              :label="$t('t-title')"
+              :placeholder="$t('t-write-here')"
+              :required="true"
+            />
+
+            <InputModule
+              className="form-floating pt-2"
+              v-model="newActivity.description"
+              :label="$t('t-description')"
+              :placeholder="$t('t-write-here')"
+              :required="true"
+            />
+
+            <!-- Date picker as YYYY-MM-DD -->
+            <InputModule
+              className="pt-2"
+              v-model="selectedDate"
+              :label="$t('t-date')"
+              :required="true"
+              type="date"
+            />
+
+            <!-- Hour and minute picker -->
+            <div class="row mb-2 pt-2">
+              <SelectModule
+                class="col-sm-6"
+                v-model="selectedHour"
+                :title="$t('t-hour')"
+                :required="true"
+                :options="hoursArray"
+                :selectedOption="selectedHour"
+              />
+              <SelectModule
+                class="col-sm-6"
+                v-model="selectedMinute"
+                :title="$t('t-minute')"
+                :required="true"
+                :options="minutesArray"
+                :selectedOption="selectedMinute"
+              />
+            </div>
+
+            <SelectModule
+              class="pt-2"
+              v-model="newActivity.activityTypeUUID"
+              :title="$t('t-activity-type')"
+              :options="activityTypesArray"
+              :required="true"
+              :selectedOption="selectedType"
+            />
           </div>
         </div>
       </div>
-      <div style="clear: both"></div>
+      <!--end card-->
+    </div>
+    <div class="col-2 offset-1">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="mb-1 text-muted">{{ $t("t-upcoming-events") }}</h5>
+          <p class="text-muted">{{ $t("t-dont-miss-scheduled-events") }}</p>
+          <hr />
+          <SimpleBar
+            style="max-height: 65vh"
+            class="upcoming-events pe-2 me-n1"
+            data-simplebar="init"
+          >
+            <div
+              class="card"
+              style="
+                box-shadow: 5px 5px 5px #1dac90 !important;
+                border: 1px solid #1dac90 !important;
+              "
+              v-for="event in activitiesArray"
+              :key="event.uuid"
+            >
+              <div class="card-body">
+                <div class="d-flex mb-3">
+                  <div class="flex-grow-1">
+                    <em class="bg-soft-primary"></em
+                    ><span class="fw-medium">{{
+                      this.parseDate(event.date)
+                    }}</span>
+                    <p class="text-muted mb-0">
+                      {{ this.parseHour(event.date) }}
+                    </p>
+                  </div>
+                  <div class="flex-shrink-0">
+                    <small class="badge badge-soft-primary ms-auto"></small>
+                  </div>
+                </div>
+                <h6 class="card-title fs-16">{{ event.title }}</h6>
+                <p class="text-muted text-truncate-two-lines mb-0">
+                  {{ event.desc }}
+                </p>
+              </div>
+            </div>
+          </SimpleBar>
+        </div>
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="card">
+        <div class="card-body">
+          <FullCalendar :options="calendarOptions" />
+        </div>
+      </div>
     </div>
   </div>
+  <div style="clear: both"></div>
   <!-- <b-modal
     v-model="showModal"
     title="Add New Event"
