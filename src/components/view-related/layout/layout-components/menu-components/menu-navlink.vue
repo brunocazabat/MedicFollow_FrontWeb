@@ -1,56 +1,32 @@
 <script>
 import store from "@/components/back-related/state/store";
-
-import {
-  NavLinkAdmin,
-  NavLinkOrganisation,
-  NavLinkDocteur,
-  NavLinkPersonnel,
-  NavLinkPatient,
-  NavLinkConfiance,
-  NavLinkProche,
-} from "./user-specific"
-
+import GenericMenu from "./navlink_generic.vue";
+import navlinks from "./navlinks.min.js";
 
 export default {
   name: "menunavlink",
   components: {
-    NavLinkAdmin,
-    NavLinkOrganisation,
-    NavLinkDocteur,
-    NavLinkPersonnel,
-    NavLinkPatient,
-    NavLinkConfiance,
-    NavLinkProche,
+    GenericMenu,
   },
-  methods: {
-    activatemenu(type) {
-      return store.getters["auth/getuserUI"] == type;
+  data() {
+    return {
+      UserType: null,
+      MenuItems: navlinks,
+    };
+  },
+  computed: {
+    MatchedList: function () {
+      return this.MenuItems[this.UserType];
     },
+  },
+  mounted() {
+    this.UserType = store.getters["auth/getuserUI"];
   },
 };
 </script>
 
 <template>
-  <div class="container-fluid" v-if="activatemenu('admin')">
-    <NavLinkAdmin />
-  </div>
-  <div class="container-fluid" v-if="activatemenu('organisation')">
-    <NavLinkOrganisation />
-  </div>
-  <div class="container-fluid" v-if="activatemenu('docteur')">
-    <NavLinkDocteur />
-  </div>
-  <div class="container-fluid" v-if="activatemenu('personnel')">
-    <NavLinkPersonnel />
-  </div>
-  <div class="container-fluid" v-if="activatemenu('patient')">
-    <NavLinkPatient />
-  </div>
-  <div class="container-fluid" v-if="activatemenu('confiance')">
-    <NavLinkConfiance />
-  </div>
-  <div class="container-fluid" v-if="activatemenu('proche')">
-    <NavLinkProche />
+  <div class="container-fluid">
+    <GenericMenu :options="MatchedList" />
   </div>
 </template>
