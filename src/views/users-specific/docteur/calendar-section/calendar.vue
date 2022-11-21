@@ -194,16 +194,14 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div v-if="!pageEnd" class="card">
-            <div class="card-header">
-              <h3 class="card-title">{{ $t("t-selectpatient") }}</h3>
-            </div>
-            <div class="card-body">
-              <TableSelectPatient
-                :patientArray="patientArray"
-                @button-pressed="nextPage"
-              />
-            </div>
+          <div v-if="!pageEnd">
+            <h2 class="text-primary text-uppercase">
+              {{ $t("t-selectpatient") }}
+            </h2>
+            <TableSelectPatient
+              :patientArray="patientArray"
+              @button-pressed="nextPage"
+            />
           </div>
           <div v-else-if="pageEnd && isPatientSet()">
             <CalendarModule
