@@ -555,5 +555,8 @@
   "t-upcoming-events": "évènements à venir",
   "t-yes-delete-it": "Oui, supprimez-le !",
   "t-you-wont-be-able-to-delete-this": "Vous ne pourrez pas supprimer ceci !",
-  "t-reportandsuggest": "Rapport de bogue et suggestions"
+  "t-reportandsuggest": "Rapport de bogue et suggestions",
+  "t-confirm": "Confirmer",
+  "T-you-can-go-back-to-the-home-page-by-clicking-on-the-ok-button": "Vous pouvez revenir à la page d'accueil en cliquant sur le bouton \"OK\".",
+  "t-your-appointment-has-been-schedule-here-is-a-summary": "Votre rendez-vous a été fixé voici un résumé :"
 }

@@ -555,5 +555,8 @@
   "t-upcoming-events": "Prossimi eventi",
   "t-yes-delete-it": "Sì, eliminalo!",
   "t-you-wont-be-able-to-delete-this": "Non potrai eliminarlo!",
-  "t-reportandsuggest": "Segnalazione bug e suggerimenti"
+  "t-reportandsuggest": "Segnalazione bug e suggerimenti",
+  "T-you-can-go-back-to-the-home-page-by-clicking-on-the-ok-button": "Puoi tornare alla home page cliccando sul pulsante \"OK\".",
+  "t-confirm": "Confermare",
+  "t-your-appointment-has-been-schedule-here-is-a-summary": "Il tuo appuntamento è stato programmato ecco un riepilogo:"
 }

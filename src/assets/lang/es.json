@@ -555,5 +555,8 @@
   "t-upcoming-events": "Próximos Eventos",
   "t-yes-delete-it": "¡Sí, bórralo!",
   "t-you-wont-be-able-to-delete-this": "¡No podrás borrar esto!",
-  "t-reportandsuggest": "Informe de errores y sugerencias"
+  "t-reportandsuggest": "Informe de errores y sugerencias",
+  "T-you-can-go-back-to-the-home-page-by-clicking-on-the-ok-button": "Puede volver a la página de inicio haciendo clic en el botón \"Aceptar\".",
+  "t-confirm": "Confirmar",
+  "t-your-appointment-has-been-schedule-here-is-a-summary": "Su cita ha sido agendada aquí hay un resumen:"
 }

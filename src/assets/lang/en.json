@@ -555,5 +555,8 @@
   "t-october": "October",
   "t-november": "November",
   "t-december": "December",
-  "t-reportandsuggest": "Bug Report and Suggestions"
+  "t-reportandsuggest": "Bug Report and Suggestions",
+  "t-confirm": "Confirm",
+  "t-your-appointment-has-been-schedule-here-is-a-summary": "Your appointment has been schedule here is a summary:",
+  "T-you-can-go-back-to-the-home-page-by-clicking-on-the-ok-button": "You can go back to the home page by clicking on the \"OK\" button."
 }
