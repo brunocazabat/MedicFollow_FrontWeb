@@ -1,0 +1,235 @@
+const navLinks = {
+  /// ADMIN NAVLINKS
+  admin: [
+    {
+      title: "home",
+      icon: "home",
+      link: "/admin/dashboard",
+    },
+    {
+      title: "manageorgas",
+      icon: "folder-account",
+      link: "/admin/manage-orgas",
+    },
+    {
+      title: "seereports",
+      icon: "folder-alert",
+      link: "/admin/see-reports",
+    },
+    {
+      title: "settings",
+      icon: "cog",
+      link: "/admin/settings",
+    },
+  ],
+  /// ORGA NAVLINKS
+  organisation: [
+    {
+      title: "home",
+      icon: "home",
+      link: "/organisation/dashboard",
+    },
+    {
+      title: "managedoctor",
+      icon: "folder-account",
+      link: "/organisation/manage-doctors",
+    },
+    {
+      title: "settings",
+      icon: "cog",
+      link: "/organisation/settings",
+    },
+    {
+      title: "reportandsuggest",
+      icon: "bug-check",
+      link: "/organisation/bug-report",
+    },
+  ],
+  /// DOCTOR NAVLINKS
+  docteur: [
+    {
+      title: "home",
+      icon: "home",
+      link: "/docteur/dashboard",
+    },
+    {
+      title: "schedulesettings",
+      icon: "clock",
+      link: "/docteur/schedule-settings",
+    },
+    {
+      title: "medicalinformation",
+      icon: "book-information-variant",
+      link: "/docteur/medical-information",
+    },
+    {
+      title: "staffinput",
+      icon: "hospital-box",
+      link: "/docteur/staff-input",
+    },
+    {
+      title: "managepatients",
+      icon: "folder-account",
+      link: "/docteur/manage-patients",
+    },
+    {
+      title: "calendar",
+      icon: "calendar-month",
+      link: "/docteur/calendar",
+    },
+    {
+      title: "chat",
+      icon: "forum",
+      link: "/docteur/chat",
+    },
+    {
+      title: "settings",
+      icon: "cog",
+      link: "/docteur/settings",
+    },
+    {
+      title: "reportandsuggest",
+      icon: "bug-check",
+      link: "/docteur/bug-report",
+    },
+  ],
+  /// PERSONNEL NAVLINKS
+  personnel: [
+    {
+      title: "home",
+      icon: "home",
+      link: "/personnel/dashboard",
+    },
+    {
+      title: "medicalinformation",
+      icon: "book-information-variant",
+      link: "/personnel/medical-information",
+    },
+    {
+      title: "staffinput",
+      icon: "hospital-box",
+      link: "/personnel/staff-input",
+    },
+    {
+      title: "managepatients",
+      icon: "folder-account",
+      link: "/personnel/manage-patients",
+    },
+    {
+      title: "calendar",
+      icon: "calendar-month",
+      link: "/personnel/calendar",
+    },
+    {
+      title: "chat",
+      icon: "forum",
+      link: "/personnel/chat",
+    },
+    {
+      title: "settings",
+      icon: "cog",
+      link: "/personnel/settings",
+    },
+    {
+      title: "reportandsuggest",
+      icon: "bug-check",
+      link: "/personnel/bug-report",
+    },
+  ],
+  /// PATIENT NAVLINKS
+  patient: [
+    {
+      title: "home",
+      icon: "home",
+      link: "/patient/dashboard",
+    },
+    {
+      title: "medicalinformation",
+      icon: "book-information-variant",
+      link: "/patient/medical-information",
+    },
+    {
+      title: "calendar",
+      icon: "calendar-month",
+      link: "/patient/calendar",
+    },
+    {
+      title: "chat",
+      icon: "forum",
+      link: "/patient/chat",
+    },
+    {
+      title: "settings",
+      icon: "cog",
+      link: "/patient/settings",
+    },
+    {
+      title: "reportandsuggest",
+      icon: "bug-check",
+      link: "/patient/bug-report",
+    },
+  ],
+  /// CONFIANCE NAVLINKS
+  confiance: [
+    {
+      title: "home",
+      icon: "home",
+      link: "/confiance/dashboard",
+    },
+    {
+      title: "medicalinformation",
+      icon: "book-information-variant",
+      link: "/confiance/medical-information",
+    },
+    {
+      title: "takemeetingwithdoctor",
+      icon: "medical-bag",
+      link: "/confiance/online-meeting",
+    },
+    {
+      title: "calendar",
+      icon: "calendar-month",
+      link: "/confiance/calendar",
+    },
+    {
+      title: "chat",
+      icon: "forum",
+      link: "/confiance/chat",
+    },
+    {
+      title: "settings",
+      icon: "cog",
+      link: "/confiance/settings",
+    },
+    {
+      title: "reportandsuggest",
+      icon: "bug-check",
+      link: "/confiance/bug-report",
+    },
+  ],
+  /// PROCHE NAVLINKS
+  proche: [
+    {
+      title: "home",
+      icon: "home",
+      link: "/proche/dashboard",
+    },
+    {
+      title: "calendar",
+      icon: "calendar-month",
+      link: "/proche/calendar",
+    },
+    {
+      title: "settings",
+      icon: "cog",
+      link: "/proche/settings",
+    },
+    {
+      title: "reportandsuggest",
+      icon: "bug-check",
+      link: "/proche/bug-report",
+    },
+  ],
+};
+
+export default navLinks;

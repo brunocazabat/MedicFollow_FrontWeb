@@ -7,8 +7,7 @@ import {
   MenuMedicFollow,
   RightBar,
   PageHeader,
-  Cookies,
-} from "./layout-components";
+} from "@/components/view-related/layout/layout-components";
 import { footermodule } from "@/components/view-related/login-components";
 localStorage.setItem("hoverd", false);
 
@@ -19,7 +18,6 @@ export default {
     SimpleBar,
     MenuMedicFollow,
     PageHeader,
-    Cookies,
     footermodule,
   },
   data() {
@@ -118,7 +116,7 @@ export default {
                 <img
                   src="@/assets/images/logo/logo-long.png"
                   alt=""
-                  height="30"
+                  height="34"
                 />
               </span>
             </router-link>
@@ -135,7 +133,7 @@ export default {
                 <img
                   src="@/assets/images/logo/logo-long.png"
                   alt=""
-                  height="30"
+                  height="34"
                 />
               </span>
             </router-link>
@@ -148,8 +146,8 @@ export default {
               style="position: absolute; bottom: 1px"
             >
               <router-link to="/usage" class="nav-link menu-link">
-                <em class="ri-pages-line"></em>
-                <span style="padding: 7px" data-key="t-terms">{{
+                <em class="mdi mdi-book-open-page-variant fs-4"></em>
+                <span style="padding: 10px" data-key="t-terms">{{
                   $t("t-terms")
                 }}</span>
               </router-link>
@@ -170,7 +168,6 @@ export default {
           <!-- Start Content-->
           <div class="container-fluid">
             <slot />
-            <Cookies />
           </div>
         </div>
         <footermodule />

@@ -10,7 +10,7 @@ export default {
     :disableDecline="false"
     :showPostponeButton="false"
     elementId="myPanel1"
-    position="bottom"
+    position="bottom-right"
     ref="myPanel1"
     transitionName="slideFromBottom"
     type="floating"
