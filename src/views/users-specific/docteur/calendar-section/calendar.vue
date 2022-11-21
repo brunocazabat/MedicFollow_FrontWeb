@@ -14,7 +14,7 @@ import {
 
 // Components Imports
 import TableSelectPatient from "../medical-information/patientTable.vue";
-import CalendarModule from "./calendarModule.vue";
+import CalendarModule from "@/components/view-related/calendarModule.vue";
 
 export default {
   components: {

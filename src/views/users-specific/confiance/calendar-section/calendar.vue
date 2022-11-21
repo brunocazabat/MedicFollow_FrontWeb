@@ -1,427 +1,213 @@
 <script>
-import Swal from 'sweetalert2'
-import '@fullcalendar/core/vdom'
-import { SimpleBar } from 'simplebar-vue3'
-import { CalendarIcon } from '@zhuowenli/vue-feather-icons'
+// General Imports
+import Layout from "@/components/view-related/layout/main.vue";
+import axios from "axios";
+import Swal from "sweetalert2";
+import dayjs from "dayjs";
 
-import dayGridPlugin from '@fullcalendar/daygrid'
-import timeGridPlugin from '@fullcalendar/timegrid'
-import interactionPlugin, { Draggable } from '@fullcalendar/interaction'
-import bootstrapPlugin from '@fullcalendar/bootstrap'
-import listPlugin from '@fullcalendar/list'
+// State Imports
+import {
+  PatientGetters,
+  AuthGetters,
+  PatientSetters,
+} from "@/components/back-related/state/helpers";
 
-import FullCalendar from '@fullcalendar/vue3'
-
-import { required, helpers } from '@vuelidate/validators'
-import useVuelidate from '@vuelidate/core'
-
-import Layout from '@/components/view-related/layout/main.vue'
-
-import { INITIAL_EVENTS, categories } from './utils'
+// Components Imports
+import TableSelectPatient from "../../docteur/medical-information/patientTable.vue";
+import CalendarModule from "@/components/view-related/calendarModule.vue";
 
 export default {
-  setup() {
-    return { v$: useVuelidate() }
-  },
-  validations: {
-    event: {
-      title: {
-        required: helpers.withMessage('Title is required', required)
-      },
-      category: {
-        required: helpers.withMessage('Category is required', required)
-      }
-    }
+  components: {
+    Layout,
+    TableSelectPatient,
+    CalendarModule,
   },
   data() {
     return {
-      title: 'Calendar',
-      items: [
-        {
-          text: 'Apps',
-          href: '/'
-        },
-        {
-          text: 'Calendar',
-          active: true
-        }
-      ],
-      calendarOptions: {
-        timeZone: 'local',
-        droppable: true,
-        navLinks: true,
-        plugins: [
-          dayGridPlugin,
-          timeGridPlugin,
-          interactionPlugin,
-          bootstrapPlugin,
-          listPlugin
-        ],
-        themeSystem: 'bootstrap',
-        headerToolbar: {
-          left: 'prev,next today',
-          center: 'title',
-          right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
-        },
-        windowResize: () => {
-          this.getInitialView()
-        },
-        initialView: this.getInitialView(),
-        initialEvents: INITIAL_EVENTS,
-        editable: true,
-        selectable: true,
-        selectMirror: true,
-        dayMaxEvents: true,
-        weekends: true,
-        dateClick: this.dateClicked,
-        eventClick: this.editEvent,
-        eventsSet: this.handleEvents
+      // Patient Array
+      patientArray: [],
+
+      // Calendar State
+      calendar: {
+        uuid: null,
+        desc: null,
+        name: null,
       },
-      currentEvents: [],
-      showModal: false,
-      eventModal: false,
-      categories: categories,
-      submitted: false,
-      submit: false,
-      newEventData: {},
-      edit: {},
-      deleteId: {},
-      event: {
-        title: '',
-        category: ''
-      },
-      editevent: {
-        editTitle: '',
-        editcategory: ''
-      }
-    }
-  },
-  components: {
-    Layout,
-    FullCalendar,
-    SimpleBar,
-    CalendarIcon
-  },
-  mounted() {
-    new Draggable(document.getElementById('external-events'), {
-      itemSelector: '.external-event',
-      eventData: function (eventEl) {
-        return {
-          title: eventEl.innerText,
-          start: new Date(),
-          className: eventEl.getAttribute('data-class')
-        }
-      }
-    })
+
+      // Activities Array (can be null)
+      activitiesArray: [] || null,
+
+      // Page View State
+      pageID: 0,
+      maxPageID: 1,
+      pageEnd: false,
+
+      // Date State for calendar query (dateToday defaults to today and dateNextMonth default to 30 days from today)
+      dateToday: dayjs().format("YYYY-MM-DD"),
+      dateNextMonth: dayjs().add(30, "day").format("YYYY-MM-DD"),
+    };
   },
   methods: {
-    formatDate(date) {
-      var monthNames = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December'
-      ]
-      var d = new Date(date),
-        month = '' + monthNames[d.getMonth()],
-        day = '' + d.getDate(),
-        year = d.getFullYear()
-      if (month.length < 2) month = '0' + month
-      if (day.length < 2) day = '0' + day
-      return [day + ' ' + month, year].join(',')
-    },
-
-    getInitialView() {
-      if (window.innerWidth >= 768 && window.innerWidth < 1200) {
-        return 'timeGridWeek'
-      } else if (window.innerWidth <= 768) {
-        return 'listMonth'
-      } else {
-        return 'dayGridMonth'
-      }
-    },
-    /**
-     * Modal form submit
-     */
-    // eslint-disable-next-line no-unused-vars
-    handleSubmit(e) {
-      this.submitted = true
-
-      // stop here if form is invalid
-      this.v$.$touch()
-      if (this.v$.$invalid) {
-        return
-      } else {
-        const title = this.event.title
-        const category = this.event.category
-        let calendarApi = this.newEventData.view.calendar
-
-        this.currentEvents = calendarApi.addEvent({
-          id: this.newEventData.length + 1,
-          title,
-          start: this.newEventData.date,
-          end: this.newEventData.date,
-          classNames: [category]
-        })
-        this.successmsg()
-        this.showModal = false
-        this.newEventData = {}
-      }
-      this.submitted = false
-      this.event = {}
-    },
-    // eslint-disable-next-line no-unused-vars
-    hideModal(e) {
-      this.submitted = false
-      this.showModal = false
-      this.event = {}
-    },
-    /**
-     * Edit event modal submit
-     */
-    // eslint-disable-next-line no-unused-vars
-    editSubmit(e) {
-      this.submit = true
-      const editTitle = this.editevent.editTitle
-      const editcategory = this.editevent.editcategory
-
-      this.edit.setProp('title', editTitle)
-      this.edit.setProp('classNames', editcategory)
-      this.successmsg()
-      this.eventModal = false
-    },
-
-    /**
-     * Delete event
-     */
-    deleteEvent() {
-      this.edit.remove()
-      this.eventModal = false
-    },
-    /**
-     * Modal open for add event
-     */
-    dateClicked(info) {
-      this.newEventData = info
-      this.showModal = true
-    },
-    /**
-     * Modal open for edit event
-     */
-    editEvent(info) {
-      this.edit = info.event
-      this.editevent.editTitle = this.edit.title
-      this.editevent.editcategory = this.edit.classNames[0]
-      this.eventModal = true
-    },
-
-    closeModal() {
-      this.eventModal = false
-    },
-
-    confirm() {
-      Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to delete this!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#34c38f',
-        cancelButtonColor: '#f46a6a',
-        confirmButtonText: 'Yes, delete it!'
-      }).then((result) => {
-        if (result.value) {
-          this.deleteEvent()
-          Swal.fire('Deleted!', 'Event has been deleted.', 'success')
+    ...AuthGetters,
+    ...PatientGetters,
+    ...PatientSetters,
+    // Method to go to the next page (increment pageID, does not increment if equal or above to maxPageID and set pageEnd to true)
+    async nextPage() {
+      if (this.pageID < this.maxPageID) {
+        if (this.pageID === 0) {
+          await this.getCalendar();
         }
+        this.pageID++;
+        if (this.pageID == this.maxPageID) {
+          this.pageEnd = true;
+        }
+      } else {
+        this.pageEnd = true;
+      }
+    },
+    // Method to go to the previous page (decrement pageID, does not decrement if equal or below to 0)
+    previousPage() {
+      if (this.pageID > 0) {
+        this.pageID--;
+        this.pageEnd = false;
+        this.setPatientClearAll();
+        this.activitiesArray = [];
+      }
+    },
+    // Method to retrieve the patients list and setting the patient state to the first patient
+    async getPatients() {
+      await axios({
+        method: "get",
+        url: "patient",
+        headers: {
+          token: this.gettoken().Token,
+        },
       })
+        .then((response) => {
+          if (response.status === 200) {
+            this.patientArray = response.data.patients;
+          }
+        })
+        .catch((error) => {
+          // Sweet Alert
+          Swal.fire({
+            title: `${this.$t("t-error")}`,
+            text: `${this.$t("t-error-occured")}. Error: ${
+              error.response.status
+            }`,
+            icon: "error",
+            confirmButtonText: "Ok",
+          });
+        });
+    },
+    // Checking if the patient in the state is set
+    isPatientSet() {
+      if (this.getPatientUUID() != null) {
+        return true;
+      } else {
+        // Resetting pageID and pageEnd
+        this.pageID = 0;
+        this.pageEnd = false;
+        return false;
+      }
+    },
+    // Method to get the patient's calendar information
+    async getCalendar() {
+      let url = `calendar/?patient_uuid=${this.getPatientUUID()}`;
+
+      await axios({
+        method: "get",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then(async (response) => {
+          if (response.status === 200) {
+            this.calendar.uuid = response.data[0].uuid;
+            this.calendar.desc = response.data[0].desc;
+            this.calendar.name = response.data[0].name;
+            await this.getActivities();
+          }
+        })
+        .catch((error) => {
+          // Sweet Alert
+          Swal.fire({
+            title: `${this.$t("t-error")}`,
+            text: `${this.$t("t-error-occured")}. Error: ${
+              error.response.status
+            }`,
+            icon: "error",
+            confirmButtonText: "Ok",
+          });
+        });
     },
 
-    /**
-     * Show list of events
-     */
-    handleEvents(events) {
-      this.currentEvents = events
-    },
+    // Method to retrieve the patient's calendar's events
+    async getActivities(
+      startDate = this.dateToday,
+      endDate = this.dateNextMonth
+    ) {
+      let url = `calendar/Activity?calendar_uuid=${this.calendar.uuid}&start_date=${startDate}&end_date=${endDate}`;
 
-    /**
-     * Show successfull Save Dialog
-     */
-    successmsg() {
-      Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Event has been saved',
-        showConfirmButton: false,
-        timer: 1000
+      await axios({
+        method: "get",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
       })
-    }
-  }
-}
+        .then((response) => {
+          if (response.status === 200) {
+            if (response.data.length > 0) {
+              this.activitiesArray = response.data;
+            } else {
+              this.activitiesArray = null;
+            }
+            // Ordering the activities by date (ascending)
+            this.activitiesArray.sort((a, b) => {
+              return a.date > b.date ? 1 : -1;
+            });
+          }
+        })
+        .catch((error) => {
+          // Sweet Alert
+          Swal.fire({
+            title: `${this.$t("t-error")}`,
+            text: `${this.$t("t-error-occured")}. Error: ${
+              error.response.status
+            }`,
+            icon: "error",
+            confirmButtonText: "Ok",
+          });
+        });
+    },
+  },
+  mounted() {
+    this.getPatients();
+  },
+};
 </script>
 
 <template>
   <Layout>
-    <div class="row">
-      <div class="col-12">
-        <div class="row">
-          <div class="col-xl-3">
-            <div class="card card-h-100">
-              <div class="card-body">
-                <button class="btn btn-primary w-100" id="btn-new-event" @click="showModal = true">
-                  <em class="mdi mdi-plus"></em> Create New Event
-                </button>
-
-                <div id="external-events">
-                  <br />
-                  <p class="text-muted">
-                    Drag and drop your event or click in the calendar
-                  </p>
-                  <div class="external-event fc-event bg-soft-success text-success" data-class="bg-soft-success">
-                    <em class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></em>New Event Planning
-                  </div>
-                  <div class="external-event fc-event bg-soft-info text-info" data-class="bg-soft-info">
-                    <em class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></em>Meeting
-                  </div>
-                  <div class="external-event fc-event bg-soft-warning text-warning" data-class="bg-soft-warning">
-                    <em class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></em>Generating Reports
-                  </div>
-                  <div class="external-event fc-event bg-soft-danger text-danger" data-class="bg-soft-danger">
-                    <em class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></em>Create New theme
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h5 class="mb-1">Upcoming Events</h5>
-              <p class="text-muted">Don't miss scheduled events</p>
-              <SimpleBar class="upcoming-events pe-2 me-n1 mb-3" data-simplebar="init" style="height: 400px">
-                <div class="card mb-3" v-for="event in currentEvents" :key="event.id">
-                  <div class="card-body">
-                    <div class="d-flex mb-3">
-                      <div class="flex-grow-1">
-                        <em :class="`mdi mdi-checkbox-blank-circle me-2 ${event.classNames[0]} `"></em><span
-                          class="fw-medium">{{
-                          this.formatDate(event.start)
-                          }}</span>
-                      </div>
-                      <div class="flex-shrink-0">
-                        <small class="badge badge-soft-primary ms-auto"></small>
-                      </div>
-                    </div>
-                    <h6 class="card-title fs-16">{{ event.title }}</h6>
-                    <p class="text-muted text-truncate-two-lines mb-0">
-                      {{ event.description }}
-                    </p>
-                  </div>
-                </div>
-              </SimpleBar>
-            </div>
-            <div class="card shadow-none">
-              <div class="card-body bg-soft-info rounded">
-                <div class="d-flex">
-                  <div class="flex-shrink-0">
-                    <CalendarIcon class="text-info icon-dual-info"></CalendarIcon>
-                  </div>
-                  <div class="flex-grow-1 ms-3">
-                    <h6 class="fs-15">Welcome to your Calendar!</h6>
-                    <p class="text-muted mb-0">
-                      Event that applications book will appear here. Click on an
-                      event to see the details and manage applicants event.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--end card-->
-          </div>
-          <div class="col-xl-9">
-            <div class="card card-h-100">
-              <div class="card-body">
-                <FullCalendar :options="calendarOptions" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="clear: both"></div>
-      </div>
+    <div class="container" v-if="!pageEnd">
+      <h2 class="text-primary text-uppercase">
+        {{ $t("t-selectpatient") }}
+      </h2>
+      <TableSelectPatient
+        :patientArray="patientArray"
+        @button-pressed="nextPage"
+      />
     </div>
-    <b-modal v-model="showModal" title="Add New Event" title-class="text-black font-18" body-class="p-3" hide-footer>
-      <form @submit.prevent="handleSubmit">
-        <div class="row">
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="name">Event Name</label>
-              <input id="name" v-model="event.title" type="text" class="form-control" placeholder="Insert Event name"
-                :class="{ 'is-invalid': submitted && v$.event.title.$error }" />
-              <div v-if="submitted && v$.event.title.$error" class="invalid-feedback">
-                <span v-if="v$.event.title.required.$message">{{
-                v$.event.title.required.$message
-                }}</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="mb-3">
-              <label class="control-label">Category</label>
-              <select v-model="event.category" class="form-control" name="category"
-                :class="{ 'is-invalid': submitted && v$.event.category.errors }">
-                <option v-for="option in categories" :key="option.backgroundColor" :value="`${option.value}`">
-                  {{ option.name }}
-                </option>
-              </select>
-
-              <div v-if="submitted && v$.event.category.$error" class="invalid-feedback">
-                <span v-if="v$.event.category.required.$message">{{
-                v$.event.category.required.$message
-                }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-end pt-5 mt-3">
-          <b-button variant="light" @click="hideModal">Close</b-button>
-          <b-button type="submit" variant="success" class="ms-1">Create event</b-button>
-        </div>
-      </form>
-    </b-modal>
-
-    <!-- Edit Modal -->
-    <b-modal v-model="eventModal" title="Edit Event" title-class="text-black font-18" hide-footer body-class="p-3">
-      <form @submit.prevent="editSubmit">
-        <div class="row">
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="name">Event Name</label>
-              <input id="name1" v-model="editevent.editTitle" type="text" class="form-control"
-                placeholder="Insert Event name" />
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="mb-3">
-              <label class="control-label">Category</label>
-              <select v-model="editevent.editcategory" class="form-control" name="category">
-                <option v-for="option in categories" :key="option.backgroundColor" :value="`${option.value}`">
-                  {{ option.name }}
-                </option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="text-end p-3">
-          <b-button variant="light" @click="closeModal">Close</b-button>
-          <b-button class="ms-1" variant="danger" @click="confirm">Delete</b-button>
-          <b-button class="ms-1" variant="success" @click="editSubmit">Save</b-button>
-        </div>
-      </form>
-    </b-modal>
+    <div v-else-if="pageEnd && isPatientSet()">
+      <CalendarModule
+        :activitiesArray="activitiesArray"
+        :calendarUUID="calendar.uuid"
+      />
+      <button v-on:click="previousPage" class="btn btn-primary">
+        {{ $t("t-previous") }}
+      </button>
+    </div>
   </Layout>
 </template>

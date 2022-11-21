@@ -13,7 +13,10 @@ import FullCalendar from "@fullcalendar/vue3";
 import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 
-import { INITIAL_EVENTS, categories } from "./utils";
+import {
+  INITIAL_EVENTS,
+  categories,
+} from "../../views/users-specific/docteur/calendar-section/utils";
 
 import Popper from "vue3-popper";
 
@@ -232,12 +235,20 @@ export default {
     // ModalModule,
   },
   async mounted() {
-    await this.getActivityTypes();
+    if (this.isDoctor()) {
+      await this.getActivityTypes();
+    }
     this.initialEvents = this.activitiesArray;
   },
   methods: {
     ...AuthGetters,
     ...PatientGetters,
+
+    // Method to check if the user is a 'docteur'
+    isDoctor() {
+      return this.getuserType() === "docteur";
+    },
+
     // Method to retrieve the Activity types from the database
     async getActivityTypes() {
       let url = `activity/types/?organisation_uuid=${this.getorg_uuid()}`;
@@ -594,7 +605,7 @@ export default {
 <template>
   <div class="row dashboard-form">
     <div class="col-2">
-      <div class="card">
+      <div class="card" v-if="isDoctor()">
         <div class="card-body">
           <div class="row">
             <div class="col-10">
