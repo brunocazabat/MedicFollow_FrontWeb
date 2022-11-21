@@ -102,8 +102,8 @@ export default {
       return true;
     },
   },
-  mounted() {
-    this.getObservations();
+  async mounted() {
+    await this.getObservations();
   },
 };
 </script>
@@ -170,7 +170,8 @@ export default {
                   </td>
                   <td>
                     <div class="flex-grow-1">
-                      {{ displayFirstFourLetters(observation.author_uuid) }}
+                      {{ observation.author.lastname.toUpperCase() }}
+                      {{ observation.author.firstname }}
                     </div>
                   </td>
                   <td>
@@ -231,7 +232,10 @@ export default {
           <div class="col-lg-4 col-sm-4">
             <div>
               <p class="mb-2 text-uppercase fw-medium">{{ $t("t-author") }}:</p>
-              <h5 class="fs-15 mb-0">{{ observations.author_uuid }}</h5>
+              <h5 class="fs-15 mb-0">
+                {{ observations.author.lastname.toUpperCase() }}
+                {{ observations.author.firstname }}
+              </h5>
             </div>
           </div>
 
