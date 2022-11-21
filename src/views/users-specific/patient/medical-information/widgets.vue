@@ -1,30 +1,28 @@
 <script>
-import dayjs from 'dayjs'
+import dayjs from "dayjs";
 
 export default {
-  components: {
-  },
+  components: {},
   data: function () {
     return {
       localTime: " ",
-      localDate: " "
+      localDate: " ",
     };
   },
   methods: {
     showLocaleTime: function () {
       let lastCheckup = this;
-      lastCheckup.localTime = new dayjs().format('HH:mm');
-      lastCheckup.localDate = new dayjs().format('DD-MM-YYYY');
-    }
+      lastCheckup.localTime = new dayjs().format("HH:mm");
+      lastCheckup.localDate = new dayjs().format("DD-MM-YYYY");
+    },
   },
   mounted() {
-    this.showLocaleTime()
-  }
-}
+    this.showLocaleTime();
+  },
+};
 </script>
 
 <template>
-
   <div class="row">
     <div class="col-12">
       <div class="row">
@@ -32,14 +30,19 @@ export default {
           <div class="card">
             <div class="row g-0">
               <div class="col-md-4">
-                <img class="rounded-start img-fluid h-100 object-cover" src="@/assets/images/doctor-with-patient.jpg"
-                  alt="Card image" />
+                <img
+                  class="rounded-start img-fluid h-100 object-cover"
+                  src="@/assets/images/doctor-with-patient.jpg"
+                  alt="Card image"
+                />
               </div>
               <div class="col-md-8">
                 <div class="card-header">
-                  <h5 class="card-title text-uppercase mb-1" data-key="t-lastcheckup">{{
-                  $t("t-lastcheckup")
-                  }}:
+                  <h5
+                    class="card-title text-uppercase mb-1"
+                    data-key="t-lastcheckup"
+                  >
+                    {{ $t("t-lastcheckup") }}:
                   </h5>
                 </div>
 
@@ -54,7 +57,11 @@ export default {
                 </div>
 
                 <div class="card-footer">
-                  <a href="javascript:void(0);" class="link-dark mb-2" data-key="t-readsmy">
+                  <a
+                    href="javascript:void(0);"
+                    class="link-dark mb-2"
+                    data-key="t-readsmy"
+                  >
                     {{ $t("t-readsmy") }}
                     <em class="ri-arrow-right-s-line align-middle lh-1"></em>
                   </a>
@@ -65,22 +72,23 @@ export default {
           <!-- end card -->
         </div>
 
-
-
         <div class="col-xxl-6">
           <div class="card">
             <div class="row g-0">
-
               <div class="col-md-8">
                 <div class="card-header">
-                  <h5 class="card-title text-uppercase mb-1" data-key="t-nextappoint">{{
-                  $t("t-nextappoint")
-                  }}:
+                  <h5
+                    class="card-title text-uppercase mb-1"
+                    data-key="t-nextappoint"
+                  >
+                    {{ $t("t-nextappoint") }}:
                   </h5>
                 </div>
                 <div class="card-body">
                   <h4 class="fs-4 flex-grow-1 mb-4">
-                    <span class="counter-value">Appointement with Dr.BERNABEU</span>
+                    <span class="counter-value"
+                      >Appointement with Dr.BERNABEU</span
+                    >
                   </h4>
 
                   <p class="card-text mb-0">
@@ -89,36 +97,46 @@ export default {
                 </div>
 
                 <div class="card-footer">
-                  <a href="javascript:void(0);" class="link-dark mb-2" data-key="t-accesscal">
+                  <a
+                    href="javascript:void(0);"
+                    class="link-dark mb-2"
+                    data-key="t-accesscal"
+                  >
                     {{ $t("t-accesscal") }}
                     <em class="ri-arrow-right-s-line align-middle lh-1"></em>
                   </a>
                 </div>
               </div>
               <div class="col-md-4">
-                <img class="rounded-end img-fluid h-100 object-cover" src="@/assets/images/appointement-stethoscope.jpg"
-                  alt="Card image" />
+                <img
+                  class="rounded-end img-fluid h-100 object-cover"
+                  src="@/assets/images/appointement-stethoscope.jpg"
+                  alt="Card image"
+                />
               </div>
             </div>
           </div>
           <!-- end card -->
         </div>
-
       </div>
       <!-- end row -->
     </div>
-
   </div>
   <!-- end row -->
 
-
   <!-- RECENT MEDICAL VISITS -->
-  <div class="col-xl-8">
+  <div class="col">
     <div class="card">
       <div class="card-header align-items-center d-flex">
-        <h4 class="card-title mb-0 flex-grow-1" data-key="t-recentvisits">{{ $t("t-recentvisits") }}</h4>
+        <h4 class="card-title mb-0 flex-grow-1" data-key="t-recentvisits">
+          {{ $t("t-recentvisits") }}
+        </h4>
         <div class="flex-shrink-0">
-          <button type="button" class="btn btn-soft-info btn-sm shadow-none" data-key="t-generatereport">
+          <button
+            type="button"
+            class="btn btn-soft-info btn-sm shadow-none"
+            data-key="t-generatereport"
+          >
             <em class="ri-file-list-3-line align-middle"></em>
             {{ $t("t-generatereport") }}
           </button>
@@ -128,13 +146,19 @@ export default {
 
       <div class="card-body">
         <div class="table-responsive table-card">
-          <table class="table table-borderless table-centered align-middle table-nowrap mb-0"
-            aria-label="Medical Visits Table">
+          <table
+            class="table table-borderless table-centered align-middle table-nowrap mb-0"
+            aria-label="Medical Visits Table"
+          >
             <thead class="text-muted table-light">
               <tr>
                 <th scope="col" data-key="t-visitid">{{ $t("t-visitid") }}</th>
-                <th scope="col" data-key="t-staffname">{{ $t("t-staffname") }}</th>
-                <th scope="col" data-key="t-staffpos">{{ $t("t-staffpos") }}</th>
+                <th scope="col" data-key="t-staffname">
+                  {{ $t("t-staffname") }}
+                </th>
+                <th scope="col" data-key="t-staffpos">
+                  {{ $t("t-staffpos") }}
+                </th>
                 <th scope="col" data-key="t-date">{{ $t("t-date") }}</th>
                 <th scope="col" data-key="t-time">{{ $t("t-time") }}</th>
                 <th scope="col" data-key="t-status">{{ $t("t-status") }}</th>
@@ -143,15 +167,22 @@ export default {
             <tbody>
               <tr>
                 <td>
-                  <router-link to="/ecommerce/order-details" class="fw-medium link-primary">#VZ2112
+                  <router-link
+                    to="/ecommerce/order-details"
+                    class="fw-medium link-primary"
+                    >#2112
                   </router-link>
                 </td>
                 <td>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0 me-2">
-                      <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
+                      <img
+                        src="@/assets/images/users/avatar-2.jpg"
+                        alt=""
+                        class="avatar-xs rounded-circle shadow"
+                      />
                     </div>
-                    <div class="flex-grow-1">Alex Smith</div>
+                    <div class="flex-grow-1">Stephanie Clocki</div>
                   </div>
                 </td>
                 <td>Nurse</td>
@@ -164,13 +195,20 @@ export default {
               <!-- end tr -->
               <tr>
                 <td>
-                  <router-link to="/ecommerce/order-details" class="fw-medium link-primary">#VZ2111
+                  <router-link
+                    to="/ecommerce/order-details"
+                    class="fw-medium link-primary"
+                    >#2111
                   </router-link>
                 </td>
                 <td>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0 me-2">
-                      <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
+                      <img
+                        src="@/assets/images/users/avatar-7.jpg"
+                        alt=""
+                        class="avatar-xs rounded-circle shadow"
+                      />
                     </div>
                     <div class="flex-grow-1">Jansh Brown</div>
                   </div>
@@ -185,13 +223,20 @@ export default {
               <!-- end tr -->
               <tr>
                 <td>
-                  <router-link to="/ecommerce/order-details" class="fw-medium link-primary">#VZ2109
+                  <router-link
+                    to="/ecommerce/order-details"
+                    class="fw-medium link-primary"
+                    >#2109
                   </router-link>
                 </td>
                 <td>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0 me-2">
-                      <img src="@/assets/images/users/avatar-1.png" alt="" class="avatar-xs rounded-circle shadow" />
+                      <img
+                        src="@/assets/images/users/avatar-5.jpg"
+                        alt=""
+                        class="avatar-xs rounded-circle shadow"
+                      />
                     </div>
                     <div class="flex-grow-1">Ayaan Bowen</div>
                   </div>
@@ -213,7 +258,4 @@ export default {
     </div>
     <!-- .card-->
   </div>
-
-
-
 </template>

@@ -8,36 +8,22 @@ export default {
   components: {
     Layout,
     Widgets,
-    CheckupText
+    CheckupText,
   },
-}
+};
 </script>
 
 <!-- TEMPLATE -->
 
 <template>
   <Layout>
-
-    <div class="row project-wrapper">
-      <div class="col-xxl-8">
-        <div class="row">
-
-          <Widgets />
-
-        </div>
-        <div class="row">
-          <div class="col-xl-12">
-            <CheckupText />
-          </div>
-        </div>
+    <div class="dashboard-form">
+      <div class="row">
+        <Widgets />
       </div>
-
-      <div class="col-xxl-4">
-        <!-- Calendar -->
+      <div class="row">
+        <CheckupText />
       </div>
     </div>
   </Layout>
-
-
 </template>
-

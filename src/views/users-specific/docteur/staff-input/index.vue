@@ -314,7 +314,6 @@ export default {
             </div>
           </div>
         </div>
-
         <!-- <Calendar /> -->
       </div>
       <!-- CHAT DIV -->
