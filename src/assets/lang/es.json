@@ -527,5 +527,6 @@
   "t-treatments": "Tratos",
   "t-yes-send-it": "¡Sí, envíalo!",
   "t-you-cannot-go-back": "¡No puedes volver atrás!",
-  "t-you-did-not-fill-the-report": "No llenaste el reporte"
+  "t-you-did-not-fill-the-report": "No llenaste el reporte",
+  "t-reportandsuggest": "Informe de errores y sugerencias"
 }

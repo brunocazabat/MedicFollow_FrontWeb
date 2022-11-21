@@ -527,5 +527,6 @@
   "t-report-sent": "Report sent!",
   "t-the-report-was-successfully-sent": "The report was successfully sent.",
   "t-do-you-still-want-to-return-to-the-homepage": "Do you still want to return to the homepage?",
-  "t-you-did-not-fill-the-report": "You did not fill the report"
+  "t-you-did-not-fill-the-report": "You did not fill the report",
+  "t-reportandsuggest": "Bug Report and Suggestions"
 }

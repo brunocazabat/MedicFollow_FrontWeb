@@ -527,5 +527,6 @@
   "t-the-report-was-successfully-sent": "Le rapport a été envoyé avec succès.",
   "t-yes-send-it": "Oui, envoyez-le !",
   "t-you-cannot-go-back": "Vous ne pouvez pas revenir en arrière !",
-  "t-you-did-not-fill-the-report": "Vous n'avez pas rempli le rapport"
+  "t-you-did-not-fill-the-report": "Vous n'avez pas rempli le rapport",
+  "t-reportandsuggest": "Rapport de bogue et suggestions"
 }
