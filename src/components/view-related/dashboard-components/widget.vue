@@ -51,7 +51,7 @@ export default {
         content: null,
       },
 
-      nextActivity: {},
+      nextActivity: null,
 
       calUUID: null,
     };
@@ -248,14 +248,13 @@ export default {
       })
         .then((response) => {
           if (response.status === 200) {
-            if (response.data.length === 0) {
-              this.nextActivity = null;
-            } else {
-              this.nextActivity = response.data;
-            }
+            this.nextActivity = response.data;
           }
         })
         .catch((error) => {
+          if (error.response.status) {
+            this.nextActivity = null;
+          }
           // Sweet Alert error occured getting the next activity
           Swal.fire({
             icon: "error",
@@ -267,17 +266,12 @@ export default {
         });
     },
   },
-  mounted() {
-    this.setPatientClearAll();
-    this.getPatients();
-    this.getOrganisationNews();
-    setTimeout(() => {
-      this.getCalendar();
-    }, 1000);
-    setTimeout(() => {
-      this.getNextActivity();
-    }, 1500);
-
+  async mounted() {
+    await this.setPatientClearAll();
+    await this.getPatients();
+    await this.getOrganisationNews();
+    await this.getCalendar();
+    await this.getNextActivity();
     console.log("nextActivity: ", this.nextActivity);
   },
 };
@@ -298,16 +292,17 @@ export default {
               <p class="text-uppercase fw-medium text-muted text-truncate mb-3">
                 {{ $t("t-nextappoint") }}:
               </p>
-              <div v-if="nextActivity.length === 0">
+              <div v-if="nextActivity">
                 <div class="d-flex align-items-center mb-3">
                   <h4 class="fs-4 flex-grow-1 mb-0">
                     <span class="counter-value">
-                      {{ nextActivity.title }}
+                      {{ nextActivity.act_title }}
                     </span>
                   </h4>
                 </div>
                 <p class="text-muted mb-0">
-                  {{ nextActivity.start_date }} {{ nextActivity.start_time }}
+                  {{ parseDate(nextActivity.start_date) }}
+                  {{ parseHour(nextActivity.act_date) }}
                 </p>
               </div>
               <div v-else>
