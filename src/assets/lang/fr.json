@@ -521,12 +521,12 @@
   "t-blood-pressure": "Tension Artérielle",
   "t-treatments": "Traitements",
   "t-do-you-want-to-send-this-report": "Voulez-vous vraiment envoyer ce rapport?",
-  "t-do-you-still-want-to-return-to-the-homepage": "Souhaitez-vous toujours revenir à la page d'accueil ?",
+  "t-do-you-still-want-to-return-to-the-homepage": "Souhaitez-vous toujours revenir à la page d'accueil ?",
   "t-invalid-feedback": "Veuillez entrer un message ici...",
   "t-report-sent": "Rapport envoyé!",
   "t-the-report-was-successfully-sent": "Le rapport a été envoyé avec succès.",
   "t-yes-send-it": "Oui, envoyez-le !",
-  "t-you-cannot-go-back": "Vous ne pouvez pas revenir en arrière !",
+  "t-you-cannot-go-back": "Vous ne pouvez pas revenir en arrière !",
   "t-you-did-not-fill-the-report": "Vous n'avez pas rempli le rapport",
   "t-downloads": "Téléchargements",
   "t-file-name": "Nom de fichier",
@@ -554,5 +554,6 @@
   "t-october": "Octobre",
   "t-upcoming-events": "évènements à venir",
   "t-yes-delete-it": "Oui, supprimez-le !",
-  "t-you-wont-be-able-to-delete-this": "Vous ne pourrez pas supprimer ceci !"
+  "t-you-wont-be-able-to-delete-this": "Vous ne pourrez pas supprimer ceci !",
+  "t-reportandsuggest": "Rapport de bogue et suggestions"
 }

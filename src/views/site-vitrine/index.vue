@@ -15,6 +15,8 @@ import {
   counter,
 } from "./components";
 
+import { Cookies } from "@/components/view-related/layout/layout-components";
+
 export default {
   name: "SiteVitrine",
   components: {
@@ -30,6 +32,7 @@ export default {
     footervit,
     signupnow,
     counter,
+    Cookies,
   },
   mounted() {
     document.querySelector(".currentyear").innerHTML =
@@ -49,6 +52,8 @@ export default {
       <intro />
     </section>
     <!-- END INTRO -->
+
+    <Cookies />
 
     <!-- PROJECT -->
     <section class="section" id="project">

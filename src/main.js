@@ -24,7 +24,6 @@ globalCookiesConfig({
 });
 
 import VueCookieAcceptDecline from "vue-cookie-accept-decline";
-import "vue-cookie-accept-decline/dist/vue-cookie-accept-decline.css";
 
 import "@/assets/scss/config/material/app.scss";
 import "@vueform/slider/themes/default.css";

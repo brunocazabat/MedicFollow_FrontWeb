@@ -35,7 +35,7 @@ export default {
         class="btn btn-primary fs-16 text-uppercase padd5around"
         :data-key="translate"
       >
-        <em :class="'mdi ' + icon"></em><br />{{ translatetheword }}
+        <em :class="'mdi ' + icon + ' fs-4'"></em><br />{{ translatetheword }}
       </RouterLink>
     </div>
   </div>
