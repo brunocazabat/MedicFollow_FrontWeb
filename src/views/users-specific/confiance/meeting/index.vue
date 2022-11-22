@@ -75,7 +75,6 @@ export default {
           this.pageEnd = true;
         }
       } else {
-        console.log("Selected Hour: ", this.pickedAppointment);
         this.pageEnd = true;
       }
     },
@@ -88,8 +87,8 @@ export default {
     },
 
     // Method to parse the date
-    parseDate(date) {
-      return dayjs(date).format("DD-MM-YYYY");
+    parseDate(date, method = "DD-MM-YYYY") {
+      return dayjs(date).format(method);
     },
     // Method to parse the hour
     parseHour(date) {
@@ -115,28 +114,61 @@ export default {
         },
       })
         .then((response) => {
-          console.log(response);
-          Swal.fire({
-            title: "Appointment confirmed!",
-            text: `Your appointment has been confirmed. It is scheduled on the ${this.pickedAppointment}. If you made a mistake you can still cancel it by clicking on the 'Cancel Appointment' button.`,
-            showCancelButton: true,
-            cancelButtonText: "Cancel Appointment",
-            icon: "success",
-            confirmButtonText: "OK",
-          }).then((result) => {
-            if (result.isConfirmed) {
-              return true;
-            } else if (result.isDismissed) {
-              // TODO
-              // this.cancelAppointment();
-            }
-          });
+          if (response.status === 200) {
+            Swal.fire({
+              title: "Appointment confirmed!",
+              text: `Your appointment has been confirmed. It is scheduled on the ${this.pickedAppointment}. If you made a mistake you can still cancel it by clicking on the 'Cancel Appointment' button.`,
+              showCancelButton: true,
+              cancelButtonText: "Cancel Appointment",
+              icon: "success",
+              confirmButtonText: "OK",
+            }).then((result) => {
+              if (result.isConfirmed) {
+                return true;
+              } else if (result.isDismissed) {
+                // TODO
+                // this.cancelAppointment();
+              }
+            });
+          } else if (response.status === 401) {
+            // Error doctor is not free
+            Swal.fire({
+              title: "Error",
+              text: `${this.$t("t-doctor-not-free")}`,
+              icon: "error",
+              confirmButtonText: "OK",
+            }).then((result) => {
+              if (result.isConfirmed) {
+                // Refresh the page
+                window.location.reload();
+                return false;
+              }
+            });
+          }
         })
         .catch((error) => {
           console.log(error);
+          console.log("Status:", error.response.status);
+          if (error.response.status == 401) {
+            // Error doctor is not free
+            Swal.fire({
+              title: "Error",
+              text: `${this.$t("t-doctor-not-free")}`,
+              icon: "error",
+              confirmButtonText: "OK",
+            }).then((result) => {
+              if (result.isConfirmed) {
+                // Refresh the page
+                window.location.reload();
+                return false;
+              }
+            });
+          }
           Swal.fire({
             title: "Erreur",
-            text: "Une erreur est survenue lors de la prise du rendez-vous.",
+            text: `${this.$t("t-error-occured")}. Error: ${
+              error.response.status
+            }`,
             icon: "error",
             confirmButtonText: "OK",
           });
@@ -192,14 +224,19 @@ export default {
                 medic_uuid: response.data.appointments[i].medic_uuid,
                 patient_uuid: response.data.appointments[i].patient_uuid,
                 org_uuid: response.data.appointments[i].org_uuid,
-                date_start: this.parseDate(response.data.appointments[i].start),
-                date_end: this.parseDate(response.data.appointments[i].end),
+                date_start: this.parseDate(
+                  response.data.appointments[i].start,
+                  "YYYY-MM-DD"
+                ),
+                date_end: this.parseDate(
+                  response.data.appointments[i].end,
+                  "YYYY-MM-DD"
+                ),
                 hour_start: this.parseHour(response.data.appointments[i].start),
                 hour_end: this.parseHour(response.data.appointments[i].end),
               });
             }
           }
-          console.log("Appointments: ", this.appointmentsArray);
         })
         .catch((error) => {
           // Sweet Alert
@@ -215,8 +252,6 @@ export default {
     },
   },
   async mounted() {
-    console.log("Token: ", this.gettoken().Token);
-    console.log("Org UUID: ", this.getorg_uuid());
     await this.getPatients();
   },
 };
@@ -352,8 +387,8 @@ export default {
 
             <div
               class="basic-card-border col-sm-12 mb-2"
-              v-for="appointment in appointmentsArray"
-              :key="appointment.uuid"
+              v-for="(appointment, index) in appointmentsArray"
+              :key="index"
             >
               <a
                 class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
@@ -365,11 +400,10 @@ export default {
               >
                 <span>
                   {{ appointment.date_start }}
-                  <strong
-                    ><em
-                      class="ri-arrow-down-line lh-1 center-items"
-                    ></em></strong
-                ></span>
+                  <strong>
+                    <em class="ri-arrow-down-line lh-1 center-items"> </em>
+                  </strong>
+                </span>
               </a>
 
               <hr class="mf-divider" />
@@ -377,8 +411,8 @@ export default {
               <div
                 class="collapse col-sm-12 basic-padding left-margin"
                 id="meetingDateCollapse"
-                v-for="time in appointmentsArray"
-                :key="time.uuid"
+                v-for="(time, index) in appointmentsArray"
+                :key="index"
               >
                 <div
                   class="form-check"
