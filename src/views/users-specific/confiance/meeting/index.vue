@@ -7,6 +7,7 @@ import dayjs from "dayjs";
 
 // Components Imports
 import TableSelectPatient from "../../docteur/medical-information/patientTable.vue";
+import IncomingAppointments from "./tableShowAppointments.vue";
 
 // Store Imports
 import {
@@ -31,6 +32,7 @@ export default {
       appointmentsArray: [],
       searchType: "month",
       dateToday: dayjs().format("YYYY-MM-DD"),
+      tableAppointments: [],
 
       pageID: -1,
       viewEnd: false,
@@ -40,6 +42,7 @@ export default {
   components: {
     Layout,
     TableSelectPatient,
+    IncomingAppointments,
   },
   methods: {
     ...AuthGetters,
@@ -235,7 +238,18 @@ export default {
                 hour_start: this.parseHour(response.data.appointments[i].start),
                 hour_end: this.parseHour(response.data.appointments[i].end),
               });
+
+              this.tableAppointments.push({
+                with: response.data.appointments[i].medic_uuid,
+                date: this.parseDate(
+                  response.data.appointments[i].start,
+                  "YYYY-MM-DD"
+                ),
+                hour_start: this.parseHour(response.data.appointments[i].start),
+                hour_end: this.parseHour(response.data.appointments[i].end),
+              });
             }
+            console.log(this.appointmentsArray);
           }
         })
         .catch((error) => {
@@ -276,10 +290,12 @@ export default {
             <h2 class="text-primary text-uppercase">
               {{ $t("t-selectpatient") }}
             </h2>
-            <TableSelectPatient
-              :patientArray="patientArray"
-              @button-pressed="nextPage"
-            />
+            <div>
+              <TableSelectPatient
+                :patientArray="patientArray"
+                @button-pressed="nextPage"
+              />
+            </div>
           </div>
           <div v-if="pageID === 0">
             <!-- BUTTON TO CLICK TO SHOW DR. -->
@@ -313,6 +329,13 @@ export default {
                     >Dr. BERNABEU Simon</label
                   >
                 </div>
+              </div>
+              <hr />
+              <div>
+                <h2 class="text-primary text-uppercase">
+                  {{ $t("t-incoming-appointments") }}
+                </h2>
+                <IncomingAppointments :appointmentArray="tableAppointments" />
               </div>
             </div>
           </div>
