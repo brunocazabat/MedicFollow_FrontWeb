@@ -291,7 +291,7 @@ export default {
         :options="selectPageConfiance.options"
         :selectedOption="selectedOptionPage"
         :title="$t('t-pageofissue')"
-        v-model="selectedOptionPageConfiance"
+        v-model="selectedOptionPage"
         :required="true"
         :invalidFeedback="$t('t-input-page-issue')"
       />
