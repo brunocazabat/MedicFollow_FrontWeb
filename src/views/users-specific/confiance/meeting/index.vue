@@ -150,8 +150,6 @@ export default {
           }
         })
         .catch((error) => {
-          console.log(error);
-          console.log("Status:", error.response.status);
           if (error.response.status == 401) {
             // Error doctor is not free
             Swal.fire({
@@ -249,7 +247,6 @@ export default {
                 hour_end: this.parseHour(response.data.appointments[i].end),
               });
             }
-            console.log(this.appointmentsArray);
           }
         })
         .catch((error) => {

@@ -558,5 +558,8 @@
   "t-reportandsuggest": "Fehlerbericht und Vorschläge",
   "T-you-can-go-back-to-the-home-page-by-clicking-on-the-ok-button": "Durch Klicken auf die Schaltfläche „OK“ gelangen Sie zurück zur Startseite.",
   "t-confirm": "Bestätigen",
-  "t-your-appointment-has-been-schedule-here-is-a-summary": "Ihr Termin wurde geplant, hier ist eine Zusammenfassung:"
+  "t-your-appointment-has-been-schedule-here-is-a-summary": "Ihr Termin wurde geplant, hier ist eine Zusammenfassung:",
+  "t-chat-name": "Name des Chatrooms",
+  "t-doctor-not-free": "Der Arzt ist derzeit nicht frei.",
+  "t-incoming-appointments": "Eingehende Termine"
 }

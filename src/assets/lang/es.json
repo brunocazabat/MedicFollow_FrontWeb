@@ -558,5 +558,8 @@
   "t-reportandsuggest": "Informe de errores y sugerencias",
   "T-you-can-go-back-to-the-home-page-by-clicking-on-the-ok-button": "Puede volver a la página de inicio haciendo clic en el botón \"Aceptar\".",
   "t-confirm": "Confirmar",
-  "t-your-appointment-has-been-schedule-here-is-a-summary": "Su cita ha sido agendada aquí hay un resumen:"
+  "t-your-appointment-has-been-schedule-here-is-a-summary": "Su cita ha sido agendada aquí hay un resumen:",
+  "t-chat-name": "Nombre de la sala de chat",
+  "t-doctor-not-free": "El médico no está libre en este momento.",
+  "t-incoming-appointments": "Citas entrantes"
 }

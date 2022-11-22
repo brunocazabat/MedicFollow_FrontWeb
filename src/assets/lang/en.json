@@ -560,5 +560,6 @@
   "t-your-appointment-has-been-schedule-here-is-a-summary": "Your appointment has been schedule here is a summary:",
   "T-you-can-go-back-to-the-home-page-by-clicking-on-the-ok-button": "You can go back to the home page by clicking on the \"OK\" button.",
   "t-doctor-not-free": "The doctor is not free at this time.",
-  "t-incoming-appointments": "Incoming appointments"
+  "t-incoming-appointments": "Incoming appointments",
+  "t-chat-name": "Chat room name"
 }

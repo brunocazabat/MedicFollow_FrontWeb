@@ -558,5 +558,8 @@
   "t-reportandsuggest": "Segnalazione bug e suggerimenti",
   "T-you-can-go-back-to-the-home-page-by-clicking-on-the-ok-button": "Puoi tornare alla home page cliccando sul pulsante \"OK\".",
   "t-confirm": "Confermare",
-  "t-your-appointment-has-been-schedule-here-is-a-summary": "Il tuo appuntamento è stato programmato ecco un riepilogo:"
+  "t-your-appointment-has-been-schedule-here-is-a-summary": "Il tuo appuntamento è stato programmato ecco un riepilogo:",
+  "t-chat-name": "Nome della chat room",
+  "t-doctor-not-free": "Il dottore non è libero in questo momento.",
+  "t-incoming-appointments": "Appuntamenti in arrivo"
 }

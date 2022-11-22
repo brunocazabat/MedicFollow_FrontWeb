@@ -7,7 +7,11 @@ import {
 
 import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
-import { AuthGetters } from "@/components/back-related/state/helpers";
+import {
+  AuthGetters,
+  PatientSetters,
+  PatientGetters,
+} from "@/components/back-related/state/helpers";
 
 import Layout from "@/components/view-related/layout/main.vue";
 
@@ -15,6 +19,9 @@ import dayjs from "dayjs";
 import { chatData, chatMessagesData } from "./data";
 import axios from "axios";
 import Swal from "sweetalert2";
+
+import TableSelectPatient from "../../../views/users-specific/docteur/medical-information/tableComponents/tableSelectPatient.vue";
+import InputModule from "@/components/view-related/input.vue";
 
 export default {
   setup() {
@@ -40,6 +47,14 @@ export default {
       userLastName: this.getlastname(),
       userFirstName: this.getfirstname(),
       profile: require("@/assets/images/users/avatar-1.png"),
+
+      // Page Variables
+      pageID: 0,
+      HOME: 0,
+      CHAT_CREATION: 1,
+
+      chatName: "",
+      patientArray: [],
     };
   },
   components: {
@@ -47,6 +62,8 @@ export default {
     SearchIcon,
     InfoIcon,
     MoreVerticalIcon,
+    TableSelectPatient,
+    InputModule,
   },
   validations: {
     form: {
@@ -57,6 +74,14 @@ export default {
   },
   methods: {
     ...AuthGetters,
+    ...PatientSetters,
+    ...PatientGetters,
+
+    // Method to check if the user is a 'docteur'
+    isDoctor() {
+      return this.getuserType() === "docteur";
+    },
+
     // Method to retrieve the conversations
     async getConversations() {
       let url = "discussion/";
@@ -296,6 +321,77 @@ export default {
       this.submitted = false;
       this.form = {};
     },
+
+    // Mwthod to show the chat creation
+    async showChatCreation() {
+      this.pageID = this.CHAT_CREATION;
+      await this.getPatients();
+    },
+
+    // Method to show chat room
+    showChatRoom() {
+      this.pageID = this.HOME;
+    },
+
+    // Method to retrieve the patients list
+    async getPatients() {
+      await axios({
+        method: "get",
+        url: "patient/medical/",
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            this.patientArray = response.data.patients;
+          }
+        })
+        .catch((error) => {
+          // Sweet Alert
+          Swal.fire({
+            title: "Erreur",
+            icon: "error",
+            text: `${this.$t("t-error-occured")}. Error: ${error}`,
+          });
+        });
+    },
+
+    // Method to create a chat room
+    async createChatRoom() {
+      let url = `discussion/`;
+
+      const payload = {
+        patientUuid: this.getPatientUUID(),
+        title: this.chatName,
+      };
+
+      await axios({
+        method: "post",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
+        data: payload,
+      })
+        .then((response) => {
+          if (response.status === 201) {
+            this.setPatientClearAll();
+            // Refreshing the page
+            this.$router.go();
+          }
+        })
+        .catch((error) => {
+          // Sweet alert showing code error
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: `${this.$t("t-error-occured")}.\nError: ${
+              error.response.status
+            }`,
+          });
+        });
+    },
   },
   async mounted() {
     await this.getConversations();
@@ -305,7 +401,6 @@ export default {
     setTimeout(() => {
       this.scrollToBottom(currentChatId);
     }, 1600);
-    document.getElementById("copyClipBoard").style.display = "none";
     var userChatElement = document.querySelectorAll(".user-chat");
     document.querySelectorAll(".chat-user-list li a").forEach(function (item) {
       item.addEventListener("click", function () {
@@ -334,7 +429,10 @@ export default {
 
 <template>
   <Layout>
-    <div class="chat-wrapper d-lg-flex gap-1 mx-n4 mt-n4 p-1">
+    <div
+      class="chat-wrapper d-lg-flex gap-1 mx-n4 mt-n4 p-1"
+      v-if="pageID === HOME"
+    >
       <div class="chat-leftsidebar">
         <div class="px-4 pt-4 mb-4">
           <div class="d-flex align-items-start">
@@ -350,8 +448,10 @@ export default {
               >
                 <!-- Button trigger modal -->
                 <button
+                  v-if="isDoctor()"
                   type="button"
                   class="btn btn-soft-success btn-sm shadow-none"
+                  v-on:click="showChatCreation()"
                 >
                   <em class="ri-add-line align-bottom"></em>
                 </button>
@@ -688,13 +788,6 @@ export default {
 
                   <!-- end chat-conversation-list -->
                 </div>
-                <div
-                  class="alert alert-warning alert-dismissible copyclipboard-alert px-4 fade show"
-                  id="copyClipBoard"
-                  role="alert"
-                >
-                  Message copied
-                </div>
               </div>
 
               <!-- end chat-conversation -->
@@ -782,6 +875,38 @@ export default {
           </div>
         </div>
       </div>
+    </div>
+    <div v-else-if="pageID === CHAT_CREATION">
+      <h2 class="text-primary">Create a new chat</h2>
+      <p class="text-muted">
+        Input the chat room title then click on the "Consult" button to create
+        the chat room.
+      </p>
+      <div class="mb-2">
+        <InputModule
+          className="form-floating"
+          :label="$t('t-chat-name')"
+          v-model="chatName"
+          :required="true"
+          :placeholder="$t('t-write-here')"
+        />
+      </div>
+      <hr />
+      <TableSelectPatient
+        :patientArray="patientArray"
+        @button-pressed="createChatRoom()"
+      />
+
+      <button
+        class="btn btn-primary"
+        v-on:click="
+          () => {
+            this.pageID = this.HOME;
+          }
+        "
+      >
+        {{ $t("t-previous") }}
+      </button>
     </div>
     <!-- end chat-wrapper -->
   </Layout>

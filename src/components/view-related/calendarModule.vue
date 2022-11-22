@@ -519,7 +519,6 @@ export default {
       }
 
       let url = `calendar/Activity?calendar_uuid=${this.calendarUUID}&start_date=${startDay}&end_date=${endDate}`;
-      console.log("1. URL", url);
 
       await axios({
         method: "get",
@@ -538,14 +537,9 @@ export default {
               this.currentEvents = null;
             }
 
-            console.log("First request done");
-
             // If smallerDate is true then call the API again with endDate and nextMonth and push the response.data to this.currentEvents and this.initialEvents
             if (smallerDate) {
-              console.log("Second request started");
               let url = `calendar/Activity?calendar_uuid=${this.calendarUUID}&start_date=${endDate}&end_date=${nextMonth}`;
-
-              console.log("2. URL", url);
 
               await axios({
                 method: "get",

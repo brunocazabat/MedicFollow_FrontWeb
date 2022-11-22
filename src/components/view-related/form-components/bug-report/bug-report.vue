@@ -184,7 +184,6 @@ export default {
 
     // Method to handle the file change
     handleFileChange(file) {
-      console.log("File changed", file);
       this.file = file;
     },
 
@@ -209,8 +208,6 @@ export default {
         type: this.file[0].type,
         lastModified: Date.now(),
       });
-
-      console.log("newFileBinary", newFileBinary);
 
       // Create the form data
       const payload = {

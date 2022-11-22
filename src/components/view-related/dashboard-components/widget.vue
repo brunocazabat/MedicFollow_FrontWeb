@@ -218,8 +218,6 @@ export default {
       })
         .then((response) => {
           if (response.status === 200) {
-            console.log(response.data);
-            console.log(response.data[0].uuid);
             this.calUUID = response.data[0].uuid;
           }
         })
@@ -235,8 +233,6 @@ export default {
 
     // Get next activity
     async getNextActivity() {
-      // let calUUID = await this.getCalendar();
-      console.log("calUUID: ", this.calUUID);
       let url = `calendar/NextActivity?calendar_uuid=${this.calUUID}`;
 
       await axios({
@@ -272,7 +268,6 @@ export default {
     await this.getOrganisationNews();
     await this.getCalendar();
     await this.getNextActivity();
-    console.log("nextActivity: ", this.nextActivity);
   },
 };
 </script>

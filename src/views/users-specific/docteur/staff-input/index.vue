@@ -174,7 +174,6 @@ export default {
             // Creating the request URL
             const url = "patient/" + this.getPatientUUID() + "/observation";
 
-            console.log("data", data);
             // Sending the request
             try {
               await axios({
