@@ -54,7 +54,7 @@
     "sass-loader": "^13.2.0",
     "simplebar": "^5.3.8",
     "simplebar-vue3": "^0.2.0",
-    "sweetalert2": "^11.6.10",
+    "sweetalert2": "^11.6.11",
     "swiper": "^8.4.4",
     "vue": "3.2.45",
     "vue-cookie-accept-decline": "^6.1.0",
