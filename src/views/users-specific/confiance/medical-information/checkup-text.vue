@@ -7,6 +7,7 @@ import {
   PatientGetters,
 } from "@/components/back-related/state/helpers";
 import Swal from "sweetalert2";
+import html2pdf from "html2pdf.js";
 
 // Specific Components imports
 import Widgets from "./widgets.vue";
@@ -99,7 +100,17 @@ export default {
     },
     // Method to generate a PDF with observations
     generatePDF() {
-      return true;
+      html2pdf(document.getElementById("element-to-convert"), {
+        margin: 1,
+        // Filename is patient name + "observations" + today's date
+        filename:
+          this.getPatientLastname() +
+          "_" +
+          this.getPatientFirstname() +
+          "_observations_" +
+          dayjs().format("DD-MM-YYYY") +
+          ".pdf",
+      });
     },
   },
   async mounted() {
@@ -137,7 +148,7 @@ export default {
         </div>
         <!-- end card header -->
 
-        <div class="card-body">
+        <div class="card-body" id="element-to-convert">
           <div class="table-responsive table-card">
             <table
               class="table table-borderless table-centered align-middle table-nowrap mb-0"

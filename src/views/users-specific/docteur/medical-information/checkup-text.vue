@@ -8,6 +8,7 @@ import {
   PatientGetters,
 } from "@/components/back-related/state/helpers";
 import Swal from "sweetalert2";
+import html2pdf from "html2pdf.js";
 
 export default {
   components: {
@@ -96,8 +97,19 @@ export default {
       return string.substring(0, 4);
     },
     // Method to generate a PDF with observations
+    // Method to generate a PDF with observations
     generatePDF() {
-      return true;
+      html2pdf(document.getElementById("element-to-convert"), {
+        margin: 1,
+        // Filename is patient name + "observations" + today's date
+        filename:
+          this.getPatientLastname() +
+          "_" +
+          this.getPatientFirstname() +
+          "_observations_" +
+          dayjs().format("DD-MM-YYYY") +
+          ".pdf",
+      });
     },
   },
   async mounted() {
