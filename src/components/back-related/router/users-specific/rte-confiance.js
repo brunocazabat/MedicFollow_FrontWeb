@@ -59,6 +59,20 @@ export default [
     component: () =>
       import("@/views/users-specific/confiance/calendar-section/calendar.vue"),
   },
+  // INCOMING APPOINTMENTS
+  {
+    path: "/confiance/incoming-appointments",
+    name: "incoming-appointments",
+    meta: {
+      title: "Incoming Appointments",
+      authRequired: true,
+      onceLoggedIn,
+    },
+    component: () =>
+      import(
+        "@/views/users-specific/confiance/incoming-appointments/meetings.vue"
+      ),
+  },
   // CHAT
   {
     path: "/confiance/chat",

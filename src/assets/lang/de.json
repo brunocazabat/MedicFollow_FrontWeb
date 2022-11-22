@@ -561,5 +561,6 @@
   "t-your-appointment-has-been-schedule-here-is-a-summary": "Ihr Termin wurde geplant, hier ist eine Zusammenfassung:",
   "t-chat-name": "Name des Chatrooms",
   "t-doctor-not-free": "Der Arzt ist derzeit nicht frei.",
-  "t-incoming-appointments": "Eingehende Termine"
+  "t-incoming-appointments": "Eingehende Termine",
+  "t-select-doctor": "Wählen Sie einen Arzt aus"
 }

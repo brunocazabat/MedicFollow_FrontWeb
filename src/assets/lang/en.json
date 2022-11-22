@@ -561,5 +561,6 @@
   "T-you-can-go-back-to-the-home-page-by-clicking-on-the-ok-button": "You can go back to the home page by clicking on the \"OK\" button.",
   "t-doctor-not-free": "The doctor is not free at this time.",
   "t-incoming-appointments": "Incoming appointments",
-  "t-chat-name": "Chat room name"
+  "t-chat-name": "Chat room name",
+  "t-select-doctor": "Select a doctor"
 }

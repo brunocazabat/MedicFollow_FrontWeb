@@ -192,6 +192,11 @@ const navLinks = {
       link: "/confiance/calendar",
     },
     {
+      title: "calendar",
+      icon: "calendar-month",
+      link: "/confiance/incoming-appointments",
+    },
+    {
       title: "chat",
       icon: "forum",
       link: "/confiance/chat",

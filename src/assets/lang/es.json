@@ -561,5 +561,6 @@
   "t-your-appointment-has-been-schedule-here-is-a-summary": "Su cita ha sido agendada aquí hay un resumen:",
   "t-chat-name": "Nombre de la sala de chat",
   "t-doctor-not-free": "El médico no está libre en este momento.",
-  "t-incoming-appointments": "Citas entrantes"
+  "t-incoming-appointments": "Citas entrantes",
+  "t-select-doctor": "Seleccione un médico"
 }

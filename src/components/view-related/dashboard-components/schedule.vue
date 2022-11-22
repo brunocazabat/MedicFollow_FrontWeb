@@ -11,6 +11,7 @@ import {
 
 // Methods Imports
 import calendar from "./calendar";
+import schedules from "@/components/back-related/meeting";
 import dayjs from "dayjs";
 
 export default {
@@ -46,6 +47,7 @@ export default {
   },
   methods: {
     ...calendar,
+    ...schedules,
     ...AuthGetters,
     ...PatientGetters,
 
