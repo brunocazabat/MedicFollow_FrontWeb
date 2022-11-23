@@ -562,5 +562,6 @@
   "t-doctor-not-free": "Le médecin n'est pas libre pour le moment.",
   "t-incoming-appointments": "Rendez-vous entrants",
   "t-chat-name": "Nom de la salle de discussion",
-  "t-select-doctor": "Sélectionnez un médecin"
+  "t-select-doctor": "Sélectionnez un médecin",
+  "t-incoming-appointment": "Rendez-vous à l'approche"
 }

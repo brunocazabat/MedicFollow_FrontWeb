@@ -192,8 +192,8 @@ const navLinks = {
       link: "/confiance/calendar",
     },
     {
-      title: "calendar",
-      icon: "calendar-month",
+      title: "incoming-appointment",
+      icon: "calendar-alert",
       link: "/confiance/incoming-appointments",
     },
     {

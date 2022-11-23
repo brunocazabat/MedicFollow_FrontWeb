@@ -562,5 +562,6 @@
   "t-doctor-not-free": "The doctor is not free at this time.",
   "t-incoming-appointments": "Incoming appointments",
   "t-chat-name": "Chat room name",
-  "t-select-doctor": "Select a doctor"
+  "t-select-doctor": "Select a doctor",
+  "t-incoming-appointment": "Approaching Appointments"
 }

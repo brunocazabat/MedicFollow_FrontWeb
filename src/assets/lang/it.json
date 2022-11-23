@@ -562,5 +562,6 @@
   "t-chat-name": "Nome della chat room",
   "t-doctor-not-free": "Il dottore non è libero in questo momento.",
   "t-incoming-appointments": "Appuntamenti in arrivo",
-  "t-select-doctor": "Seleziona un medico"
+  "t-select-doctor": "Seleziona un medico",
+  "t-incoming-appointment": "Appuntamenti in avvicinamento"
 }
