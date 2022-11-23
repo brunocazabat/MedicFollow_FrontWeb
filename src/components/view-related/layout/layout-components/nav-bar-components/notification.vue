@@ -2,6 +2,7 @@
 import { SimpleBar } from "simplebar-vue3";
 import axios from "axios";
 import Swal from "sweetalert2";
+import dayjs from "dayjs";
 
 // State imports
 import { AuthGetters } from "@/components/back-related/state/helpers";
@@ -78,7 +79,39 @@ export default {
       })
         .then((response) => {
           if (response.status === 200) {
-            this.notifications = response.data.notifications;
+            this.notifications = [];
+            let length = response.data.notifications;
+            let today = dayjs();
+            for (let i = 0; i < length.length; i++) {
+              let time = today.diff(
+                dayjs(response.data.notifications[i].createdAt),
+                "minute"
+              );
+              // transforming time from a minute number to a readable string
+              if (time < 60) {
+                time = `${time} min ago`;
+              } else if (time >= 60 && time < 1440) {
+                time = `${Math.floor(time / 60)} hrs ago`;
+              } else if (time >= 1440 && time < 10080) {
+                time = `${Math.floor(time / 1440)} days ago`;
+              } else if (time >= 10080 && time < 43800) {
+                time = `${Math.floor(time / 10080)} weeks ago`;
+              } else if (time >= 43800 && time < 525600) {
+                time = `${Math.floor(time / 43800)} months ago`;
+              } else if (time >= 525600) {
+                time = `${Math.floor(time / 525600)} years ago`;
+              }
+              // Pushing in the notifications array
+              this.notifications.push({
+                uuid: response.data.notifications[i].uuid,
+                title: response.data.notifications[i].NotificationType.name,
+                content: response.data.notifications[i].data,
+                time: time,
+                checked: false,
+              });
+            }
+            console.log(response.data.notifications);
+            console.log("Notifications: ", this.notifications);
             this.notificationNbr = this.notifications.length;
           }
         })
@@ -86,25 +119,81 @@ export default {
           Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: `${this.$t("t-something-went-wrong")}.\r\nError: ${
-              error.response.status
-            }`,
+            text: `${this.$t("t-something-went-wrong")}.\r\nError: ${error}`,
           });
         });
     },
+
+    // Method to delete a notification
+    async deleteNotification(notifUUID) {
+      let url = `notification/${notifUUID}`;
+      let res = null;
+
+      console.log("Deleting notification: ", notifUUID);
+
+      await axios({
+        method: "delete",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            res = true;
+          }
+        })
+        .catch((error) => {
+          res = error;
+        });
+      return res;
+    },
+
     // Method to remove the motifications marked as read from the array
-    handleNotifications() {
+    async handleNotifications() {
+      let isReadAll = true;
       for (let i = 0; i < this.notifications.length; i++) {
         if (this.notifications[i].checked) {
-          this.notifications.splice(i, 1);
-          this.notificationNbr--;
+          isReadAll = false;
+          if (await this.deleteNotification(this.notifications[i].uuid)) {
+            this.notifications.splice(i, 1);
+            this.notificationNbr = this.notifications.length;
+          } else {
+            // Sweet Alert error and aborting the loop
+            await Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: `${this.$t("t-something-went-wrong")}`,
+            });
+            break;
+          }
         }
       }
+      if (isReadAll) {
+        this.markAllAsRead();
+      }
+    },
+    // Method to mark all the notifications as read
+    markAllAsRead() {
+      for (let i = 0; i < this.notifications.length; i++) {
+        this.notifications[i].checked = true;
+      }
+      this.handleNotifications();
+    },
+
+    // Method to parse a date
+    parseDate(date) {
+      return dayjs(date).format("DD/MM/YY");
+    },
+
+    // Method to parse a time
+    parseTime(time) {
+      return dayjs(time).format("HH:mm");
     },
   },
-  mounted() {
+  async mounted() {
     // To comment if you want to see with dummy data
-    // this.getNotifications();
+    await this.getNotifications();
   },
 };
 </script>
@@ -195,7 +284,6 @@ export default {
                     <a href="#!" class="stretched-link">
                       <h6 class="mt-0 mb-2 lh-base">
                         <strong>{{ notification.title }}</strong>
-                        {{ notification.content }}
                       </h6>
                     </a>
                     <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
