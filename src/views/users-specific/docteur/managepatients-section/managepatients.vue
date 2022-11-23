@@ -7,6 +7,14 @@ import "flatpickr/dist/flatpickr.css";
 
 import Layout from "@/components/view-related/layout/main.vue";
 import Swal from "sweetalert2";
+import managePatients from "./managePatients";
+
+// State Imports
+import { AuthGetters } from "@/components/back-related/state/helpers";
+
+// Importing the Input and Select
+import InputComponent from "@/components/view-related/input.vue";
+// import SelectComponent from "@/components/view-related/select.vue";
 
 export default {
   data() {
@@ -134,6 +142,18 @@ export default {
           status: "Normal",
         },
       ],
+
+      medicalGroupList: [],
+      selectedMedicalGroup: null,
+
+      familyList: [],
+      selectedFamily: null,
+
+      lastName: null,
+      firstName: null,
+      birthDate: null,
+      socialNumber: null,
+      conscious: null, // 1 = Oui, 2 = Non, 3 = Inconnu
     };
   },
   components: {
@@ -141,6 +161,8 @@ export default {
     CountTo,
     Multiselect,
     flatPickr,
+    InputComponent,
+    // SelectComponent,
   },
   computed: {
     displayedPosts() {
@@ -176,6 +198,11 @@ export default {
     },
   },
   methods: {
+    ...AuthGetters,
+    // Method to display first four letters of a string in uppercase
+    firstFourLetters(str) {
+      return str.substring(0, 4).toUpperCase();
+    },
     editdata(data) {
       document.getElementById("modal-id").style.display = "block";
       document.getElementById("exampleModalLabel").innerHTML = "Edit Ticket";
@@ -312,7 +339,7 @@ export default {
       return orgasList.slice(from, to);
     },
   },
-  mounted() {
+  async mounted() {
     let checkAll = document.getElementById("checkAll");
     if (checkAll) {
       checkAll.onclick = function () {
@@ -332,6 +359,12 @@ export default {
         }
       };
     }
+    this.medicalGroupList = await managePatients.getFamilyList(
+      this.gettoken().Token
+    );
+    this.familyList = await managePatients.getMedicalGroupList(
+      this.gettoken().Token
+    );
   },
 };
 </script>
@@ -813,113 +846,22 @@ export default {
           <form id="addform">
             <div class="modal-body">
               <div class="row g-3">
-                <div class="col-lg-12">
-                  <div id="modal-id">
-                    <label for="orderId" class="form-label">ID</label>
-                    <input
-                      type="text"
-                      id="orderId"
-                      class="form-control"
-                      placeholder="ID"
-                      value="#MDC62"
-                      readonly
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div>
-                    <label for="fnameInput-field" class="form-label"
-                      >Nom de Famille du Patient:</label
-                    >
-                    <input
-                      type="text"
-                      id="fnameInput"
-                      class="form-control"
-                      placeholder="Nom..."
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div>
-                    <label for="fnameInput-field" class="form-label"
-                      >Prenom du Patient:</label
-                    >
-                    <input
-                      type="text"
-                      id="fnameInput"
-                      class="form-control"
-                      placeholder="Prenom..."
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div>
-                    <label for="secuInput-field" class="form-label"
-                      >Numéro de Sécurité Sociale:</label
-                    >
-                    <input
-                      type="text"
-                      id="secuInput"
-                      class="form-control"
-                      placeholder="Numéro..."
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div>
-                    <label for="bdateInput-field" class="form-label"
-                      >Date de Naissance:</label
-                    >
-                    <flat-pickr
-                      v-model="date2"
-                      :config="config"
-                      class="form-control bg-light border-light"
-                      id="bdateInput"
-                    >
-                    </flat-pickr>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div>
-                    <label for="emailInput-field" class="form-label"
-                      >Email:</label
-                    >
-                    <input
-                      type="text"
-                      id="emailInput"
-                      class="form-control"
-                      placeholder="Email..."
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <label for="date-field" class="form-label">Crée le:</label>
-                  <flat-pickr
-                    v-model="date1"
-                    :config="config"
-                    class="form-control bg-light border-light"
-                    id="cdate"
-                  >
-                  </flat-pickr>
-                </div>
-                <div class="col-lg-6">
-                  <label for="ticket-status" class="form-label">Status:</label>
-                  <select
-                    class="form-control"
-                    data-plugin="choices"
-                    name="ticket-status"
-                    id="ticketstatus"
-                  >
-                    <option value="">Status</option>
-                    <option value="New">New</option>
-                    <option value="Waiting">Waiting</option>
-                    <option value="Closed">Closed</option>
-                    <option value="Open">Open</option>
-                  </select>
+                <div class="col-md-6">
+                  <InputComponent
+                    :label="$t('t-lastname')"
+                    :placeholder="$t('t-write-here')"
+                    :required="true"
+                    v-model="lastName"
+                    id="lastName"
+                  />
+
+                  <InputComponent
+                    :label="$t('t-firstname')"
+                    :placeholder="$t('t-write-here')"
+                    :required="true"
+                    v-model="firstName"
+                    id="firstName"
+                  />
                 </div>
               </div>
             </div>
