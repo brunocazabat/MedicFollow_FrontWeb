@@ -841,6 +841,7 @@ export default {
             data-bs-dismiss="modal"
             aria-label="Close"
             id="close-modal"
+            v-if="isDoctor()"
           ></button>
         </div>
         <div class="modal-body">
