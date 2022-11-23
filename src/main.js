@@ -7,6 +7,9 @@ import i18n from "./i18n.js";
 import store from "@/components/back-related/state/store";
 
 import BootstrapVue3 from "bootstrap-vue-3";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue-3/dist/bootstrap-vue-3.css";
+
 import vClickOutside from "click-outside-vue3";
 import VueApexCharts from "vue3-apexcharts";
 import Maska from "maska";
