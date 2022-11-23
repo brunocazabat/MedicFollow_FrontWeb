@@ -42,13 +42,6 @@ export default {
 </script>
 
 <template>
-  <head>
-    <title>MedicFollow</title>
-    <meta
-      name="google-site-verification"
-      content="ih_OTqEBRkx6-8E5GQrorRowEylr8pyU2j4_8otK4eQ"
-    />
-  </head>
   <div class="layout-wrapper landing">
     <!-- NAVBAR -->
     <navbar />
