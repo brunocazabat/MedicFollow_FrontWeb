@@ -7,7 +7,7 @@ export default {
   components: {
     Layout,
     TableAdminBug,
-    TableAdminSug
+    TableAdminSug,
   },
   methods: {
     makevisible(value) {
@@ -38,15 +38,29 @@ export default {
             <div class="table-responsive table-card">
               <ul class="nav nav-pills nav-justified custom-nav" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link fs-15 p-3 active" id="pills-bill-info-tab" data-bs-toggle="pill" type="button"
-                    role="tab" @click="makevisible('buglist')" data-key="t-lookbugrep">
-                    {{ $t('t-lookbugrep') }}
+                  <button
+                    class="nav-link fs-15 p-3 active"
+                    id="pills-bill-info-tab"
+                    data-bs-toggle="pill"
+                    type="button"
+                    role="tab"
+                    @click="makevisible('buglist')"
+                    data-key="t-lookbugrep"
+                  >
+                    {{ $t("t-lookbugrep") }}
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link fs-15 p-3" id="pills-payment-tab" data-bs-toggle="pill" type="button"
-                    role="tab" @click="makevisible('suggestlist')" data-key="t-looksugglist">
-                    {{ $t('t-looksugglist') }}
+                  <button
+                    class="nav-link fs-15 p-3"
+                    id="pills-payment-tab"
+                    data-bs-toggle="pill"
+                    type="button"
+                    role="tab"
+                    @click="makevisible('suggestlist')"
+                    data-key="t-looksugglist"
+                  >
+                    {{ $t("t-looksugglist") }}
                   </button>
                 </li>
               </ul>

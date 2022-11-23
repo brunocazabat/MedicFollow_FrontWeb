@@ -195,13 +195,19 @@ export default {
       let result = this.orgasList.findIndex(
         (o) => o.id == document.getElementById("orderId").value
       );
-      this.orgasList[result].fname = document.getElementById("fnameInput").value;
-      this.orgasList[result].pname = document.getElementById("pnameInput").value;
-      this.orgasList[result].client = document.getElementById("secuInput").value;
-      this.orgasList[result].email = document.getElementById("emailInput").value;
-      this.orgasList[result].birth = document.getElementById("bdateInput").value;
+      this.orgasList[result].fname =
+        document.getElementById("fnameInput").value;
+      this.orgasList[result].pname =
+        document.getElementById("pnameInput").value;
+      this.orgasList[result].client =
+        document.getElementById("secuInput").value;
+      this.orgasList[result].email =
+        document.getElementById("emailInput").value;
+      this.orgasList[result].birth =
+        document.getElementById("bdateInput").value;
       this.orgasList[result].create = document.getElementById("cdate").value;
-      this.orgasList[result].status = document.getElementById("ticketstatus").value;
+      this.orgasList[result].status =
+        document.getElementById("ticketstatus").value;
 
       document.getElementById("closemodal").click();
     },
@@ -342,7 +348,11 @@ export default {
                   Nombre Total de Patients.
                 </p>
                 <h2 class="mt-4 ff-secondary fw-semibold">
-                  <count-to :duration="1000" :startVal="0" :endVal="95"></count-to>
+                  <count-to
+                    :duration="1000"
+                    :startVal="0"
+                    :endVal="95"
+                  ></count-to>
                   au total.
                 </h2>
                 <p class="mb-0 text-muted">
@@ -354,7 +364,9 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                  <span
+                    class="avatar-title bg-soft-info text-info rounded-circle fs-4"
+                  >
                     <em class="mdi mdi-account-check-outline"></em>
                   </span>
                 </div>
@@ -375,7 +387,11 @@ export default {
                   Patients en attente d'acceptation.
                 </p>
                 <h2 class="mt-4 ff-secondary fw-semibold">
-                  <count-to :duration="1000" :startVal="0" :endVal="25"></count-to>
+                  <count-to
+                    :duration="1000"
+                    :startVal="0"
+                    :endVal="25"
+                  ></count-to>
                   en attente.
                 </h2>
                 <p class="mb-0 text-muted">
@@ -387,7 +403,9 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                  <span
+                    class="avatar-title bg-soft-info text-info rounded-circle fs-4"
+                  >
                     <em class="mdi mdi-account-plus-outline"></em>
                   </span>
                 </div>
@@ -407,7 +425,11 @@ export default {
                   Patients en attente de modifications.
                 </p>
                 <h2 class="mt-4 ff-secondary fw-semibold">
-                  <count-to :duration="1000" :startVal="0" :endVal="10"></count-to>
+                  <count-to
+                    :duration="1000"
+                    :startVal="0"
+                    :endVal="10"
+                  ></count-to>
                   en attente.
                 </h2>
                 <p class="mb-0 text-muted">
@@ -419,7 +441,9 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                  <span
+                    class="avatar-title bg-soft-info text-info rounded-circle fs-4"
+                  >
                     <em class="mdi mdi-account-edit-outline"></em>
                   </span>
                 </div>
@@ -439,7 +463,11 @@ export default {
                   Patients en attente de suppression.
                 </p>
                 <h2 class="mt-4 ff-secondary fw-semibold">
-                  <count-to :duration="1000" :startVal="0" :endVal="15"></count-to>
+                  <count-to
+                    :duration="1000"
+                    :startVal="0"
+                    :endVal="15"
+                  ></count-to>
                   en attente.
                 </h2>
                 <p class="mb-0 text-muted">
@@ -451,7 +479,9 @@ export default {
               </div>
               <div>
                 <div class="avatar-sm flex-shrink-0">
-                  <span class="avatar-title bg-soft-info text-info rounded-circle fs-4">
+                  <span
+                    class="avatar-title bg-soft-info text-info rounded-circle fs-4"
+                  >
                     <em class="mdi mdi-account-minus-outline"></em>
                   </span>
                 </div>
@@ -472,38 +502,58 @@ export default {
             <div class="d-flex align-items-center">
               <h5 class="card-title mb-0 flex-grow-1">Gérer les Patients</h5>
               <div class="flex-shrink-0">
-                <button class="btn btn-soft-danger me-1" @click="deleteMultiple">
+                <button
+                  class="btn btn-soft-danger me-1"
+                  @click="deleteMultiple"
+                >
                   <em class="ri-delete-bin-2-line"></em>
                 </button>
-                <button class="btn btn-danger add-btn" data-bs-toggle="modal" data-bs-target="#showModal"
-                  @click="addnew">
+                <button
+                  class="btn btn-danger add-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#showModal"
+                  @click="addnew"
+                >
                   <em class="ri-add-line align-bottom me-1"></em> Créer un
                   nouveau patient
                 </button>
               </div>
             </div>
           </div>
-          <div class="card-body border border-dashed border-end-0 border-start-0">
+          <div
+            class="card-body border border-dashed border-end-0 border-start-0"
+          >
             <form>
               <div class="row g-3">
                 <div class="col-xxl-5 col-sm-12">
                   <div class="search-box">
-                    <input type="text" class="form-control search bg-light border-light"
-                      placeholder="Chercher un patient ..." />
+                    <input
+                      type="text"
+                      class="form-control search bg-light border-light"
+                      placeholder="Chercher un patient ..."
+                    />
                     <em class="ri-search-line search-icon"></em>
                   </div>
                 </div>
                 <!--end col-->
 
                 <div class="col-xxl-3 col-sm-4">
-                  <flat-pickr v-model="date" :config="config" placeholder="Select date"
-                    class="form-control bg-light border-light"></flat-pickr>
+                  <flat-pickr
+                    v-model="date"
+                    :config="config"
+                    placeholder="Select date"
+                    class="form-control bg-light border-light"
+                  ></flat-pickr>
                 </div>
                 <!--end col-->
 
                 <div class="col-xxl-3 col-sm-4">
                   <div class="input-light">
-                    <Multiselect v-model="date1" :close-on-select="true" :searchable="true" :create-option="true"
+                    <Multiselect
+                      v-model="date1"
+                      :close-on-select="true"
+                      :searchable="true"
+                      :create-option="true"
                       :options="[
                         { value: '', label: 'Status' },
                         { value: 'All', label: 'All' },
@@ -511,12 +561,17 @@ export default {
                         { value: 'Waiting', label: 'Waiting' },
                         { value: 'Closed', label: 'Closed' },
                         { value: 'New', label: 'New' },
-                      ]" />
+                      ]"
+                    />
                   </div>
                 </div>
                 <!--end col-->
                 <div class="col-xxl-1 col-sm-4">
-                  <button type="button" class="btn btn-primary w-100" onclick="SearchData();">
+                  <button
+                    type="button"
+                    class="btn btn-primary w-100"
+                    onclick="SearchData();"
+                  >
                     <em class="ri-equalizer-fill me-1 align-bottom"></em>
                     Filtres
                   </button>
@@ -529,13 +584,21 @@ export default {
           <!--end card-body-->
           <div class="card-body">
             <div class="table-responsive table-card mb-0">
-              <table class="table align-middle table-nowrap mb-0" id="ticketTable">
+              <table
+                class="table align-middle table-nowrap mb-0"
+                id="ticketTable"
+              >
                 <caption></caption>
                 <thead>
                   <tr>
                     <th scope="col" style="width: 40px">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="checkAll" value="option" />
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="checkAll"
+                          value="option"
+                        />
                       </div>
                     </th>
                     <th class="sort" id="" data-sort="id">ID:</th>
@@ -559,11 +622,20 @@ export default {
                   <tr v-for="(data, index) of resultQuery" :key="index">
                     <th scope="row">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="chk_child" value="option1" />
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="chk_child"
+                          value="option1"
+                        />
                       </div>
                     </th>
                     <td class="id">
-                      <router-link to="/apps/tickets-details" class="fw-medium link-primary">{{ data.id }}</router-link>
+                      <router-link
+                        to="/apps/tickets-details"
+                        class="fw-medium link-primary"
+                        >{{ data.id }}</router-link
+                      >
                     </td>
                     <td class="tasks_name">{{ data.fname }}</td>
                     <td class="user_type">{{ data.pname }}</td>
@@ -572,32 +644,51 @@ export default {
                     <td class="tasks_name">{{ data.email }}</td>
                     <td class="create_date">{{ data.create }}</td>
                     <td class="status">
-                      <span class="badge text-uppercase" :class="{
-                        'badge-soft-warning': data.status == 'Waiting',
-                        'badge-soft-info': data.status == 'New',
-                        'badge-soft-success': data.status == 'Normal',
-                        'badge-soft-danger':
-                          data.status == 'Closed' ||
-                          data.status == 'Suspended',
-                      }">{{ data.status }}</span>
+                      <span
+                        class="badge text-uppercase"
+                        :class="{
+                          'badge-soft-warning': data.status == 'Waiting',
+                          'badge-soft-info': data.status == 'New',
+                          'badge-soft-success': data.status == 'Normal',
+                          'badge-soft-danger':
+                            data.status == 'Closed' ||
+                            data.status == 'Suspended',
+                        }"
+                        >{{ data.status }}</span
+                      >
                     </td>
                     <td>
                       <div class="dropdown">
-                        <button class="btn btn-soft-secondary btn-sm dropdown" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
+                        <button
+                          class="btn btn-soft-secondary btn-sm dropdown"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
                           <em class="ri-more-fill align-middle"></em>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                           <li>
-                            <a class="dropdown-item edit-item-btn" href="#showModal" data-bs-toggle="modal"
-                              @click="editdata(data)">
-                              <em class="ri-pencil-fill align-bottom me-2 text-muted"></em>
+                            <a
+                              class="dropdown-item edit-item-btn"
+                              href="#showModal"
+                              data-bs-toggle="modal"
+                              @click="editdata(data)"
+                            >
+                              <em
+                                class="ri-pencil-fill align-bottom me-2 text-muted"
+                              ></em>
                               Edit
                             </a>
                           </li>
                           <li>
-                            <a class="dropdown-item remove-item-btn" @click="deletedata(data)">
-                              <em class="ri-delete-bin-fill align-bottom me-2 text-muted"></em>
+                            <a
+                              class="dropdown-item remove-item-btn"
+                              @click="deletedata(data)"
+                            >
+                              <em
+                                class="ri-delete-bin-fill align-bottom me-2 text-muted"
+                              ></em>
                               Delete
                             </a>
                           </li>
@@ -607,7 +698,11 @@ export default {
                   </tr>
                 </tbody>
               </table>
-              <div class="noresult" style="display: none" :class="{ 'd-block': resultQuery.length == 0 }">
+              <div
+                class="noresult"
+                style="display: none"
+                :class="{ 'd-block': resultQuery.length == 0 }"
+              >
                 <div class="text-center">
                   <h5 class="mt-2">Sorry! No Result Found</h5>
                   <p class="text-muted mb-0">
@@ -619,28 +714,48 @@ export default {
             </div>
             <div class="d-flex justify-content-end mt-3">
               <div class="pagination-wrap hstack gap-2">
-                <a class="page-item pagination-prev disabled" href="#" v-if="page != 1" @click="page--">
+                <a
+                  class="page-item pagination-prev disabled"
+                  href="#"
+                  v-if="page != 1"
+                  @click="page--"
+                >
                   Previous
                 </a>
                 <ul class="pagination listjs-pagination mb-0">
-                  <li :class="{
-                    active: pageNumber == page,
-                    disabled: pageNumber == '...',
-                  }" v-for="(pageNumber, index) in pages.slice(
-                    page - 1,
-                    page + 5
-                  )" :key="index" @click="page = pageNumber">
+                  <li
+                    :class="{
+                      active: pageNumber == page,
+                      disabled: pageNumber == '...',
+                    }"
+                    v-for="(pageNumber, index) in pages.slice(
+                      page - 1,
+                      page + 5
+                    )"
+                    :key="index"
+                    @click="page = pageNumber"
+                  >
                     <a class="page" href="#">{{ pageNumber }}</a>
                   </li>
                 </ul>
-                <a class="page-item pagination-next" href="#" @click="page++" v-if="page < pages.length">
+                <a
+                  class="page-item pagination-next"
+                  href="#"
+                  @click="page++"
+                  v-if="page < pages.length"
+                >
                   Next
                 </a>
               </div>
             </div>
 
             <!-- Modal -->
-            <div class="modal fade flip" id="deleteOrder" tabindex="-1" aria-hidden="true">
+            <div
+              class="modal fade flip"
+              id="deleteOrder"
+              tabindex="-1"
+              aria-hidden="true"
+            >
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-body p-5 text-center">
@@ -651,8 +766,10 @@ export default {
                         from our database.
                       </p>
                       <div class="hstack gap-2 justify-content-center remove">
-                        <button class="btn btn-link link-success fw-medium text-decoration-none"
-                          data-bs-dismiss="modal">
+                        <button
+                          class="btn btn-link link-success fw-medium text-decoration-none"
+                          data-bs-dismiss="modal"
+                        >
                           <em class="ri-close-line me-1 align-middle"></em>
                           Close
                         </button>
@@ -674,13 +791,24 @@ export default {
       <!--end col-->
     </div>
     <!--end row-->
-    <div class="modal fade zoomIn" id="showModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div
+      class="modal fade zoomIn"
+      id="showModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content border-0">
           <div class="modal-header p-3 bg-soft-info">
             <h5 class="modal-title" id="exampleModalLabel"></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-              id="close-modal"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              id="close-modal"
+            ></button>
           </div>
           <form id="addform">
             <div class="modal-body">
@@ -688,49 +816,104 @@ export default {
                 <div class="col-lg-12">
                   <div id="modal-id">
                     <label for="orderId" class="form-label">ID</label>
-                    <input type="text" id="orderId" class="form-control" placeholder="ID" value="#MDC62" readonly />
+                    <input
+                      type="text"
+                      id="orderId"
+                      class="form-control"
+                      placeholder="ID"
+                      value="#MDC62"
+                      readonly
+                    />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div>
-                    <label for="fnameInput-field" class="form-label">Nom de Famille du Patient:</label>
-                    <input type="text" id="fnameInput" class="form-control" placeholder="Nom..." required />
+                    <label for="fnameInput-field" class="form-label"
+                      >Nom de Famille du Patient:</label
+                    >
+                    <input
+                      type="text"
+                      id="fnameInput"
+                      class="form-control"
+                      placeholder="Nom..."
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div>
-                    <label for="fnameInput-field" class="form-label">Prenom du Patient:</label>
-                    <input type="text" id="fnameInput" class="form-control" placeholder="Prenom..." required />
+                    <label for="fnameInput-field" class="form-label"
+                      >Prenom du Patient:</label
+                    >
+                    <input
+                      type="text"
+                      id="fnameInput"
+                      class="form-control"
+                      placeholder="Prenom..."
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div>
-                    <label for="secuInput-field" class="form-label">Numéro de Sécurité Sociale:</label>
-                    <input type="text" id="secuInput" class="form-control" placeholder="Numéro..." required />
+                    <label for="secuInput-field" class="form-label"
+                      >Numéro de Sécurité Sociale:</label
+                    >
+                    <input
+                      type="text"
+                      id="secuInput"
+                      class="form-control"
+                      placeholder="Numéro..."
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div>
-                    <label for="bdateInput-field" class="form-label">Date de Naissance:</label>
-                    <flat-pickr v-model="date2" :config="config" class="form-control bg-light border-light"
-                      id="bdateInput">
+                    <label for="bdateInput-field" class="form-label"
+                      >Date de Naissance:</label
+                    >
+                    <flat-pickr
+                      v-model="date2"
+                      :config="config"
+                      class="form-control bg-light border-light"
+                      id="bdateInput"
+                    >
                     </flat-pickr>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div>
-                    <label for="emailInput-field" class="form-label">Email:</label>
-                    <input type="text" id="emailInput" class="form-control" placeholder="Email..." required />
+                    <label for="emailInput-field" class="form-label"
+                      >Email:</label
+                    >
+                    <input
+                      type="text"
+                      id="emailInput"
+                      class="form-control"
+                      placeholder="Email..."
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <label for="date-field" class="form-label">Crée le:</label>
-                  <flat-pickr v-model="date1" :config="config" class="form-control bg-light border-light" id="cdate">
+                  <flat-pickr
+                    v-model="date1"
+                    :config="config"
+                    class="form-control bg-light border-light"
+                    id="cdate"
+                  >
                   </flat-pickr>
                 </div>
                 <div class="col-lg-6">
                   <label for="ticket-status" class="form-label">Status:</label>
-                  <select class="form-control" data-plugin="choices" name="ticket-status" id="ticketstatus">
+                  <select
+                    class="form-control"
+                    data-plugin="choices"
+                    name="ticket-status"
+                    id="ticketstatus"
+                  >
                     <option value="">Status</option>
                     <option value="New">New</option>
                     <option value="Waiting">Waiting</option>
@@ -742,13 +925,28 @@ export default {
             </div>
             <div class="modal-footer">
               <div class="hstack gap-2 justify-content-end">
-                <button type="button" class="btn btn-light" data-bs-dismiss="modal" id="closemodal">
+                <button
+                  type="button"
+                  class="btn btn-light"
+                  data-bs-dismiss="modal"
+                  id="closemodal"
+                >
                   Close
                 </button>
-                <button type="submit" class="btn btn-success" id="add-btn" @click="addorder">
+                <button
+                  type="submit"
+                  class="btn btn-success"
+                  id="add-btn"
+                  @click="addorder"
+                >
                   Add Ticket
                 </button>
-                <button type="button" class="btn btn-success" id="edit-btn" @click="updateorder">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="edit-btn"
+                  @click="updateorder"
+                >
                   Update
                 </button>
               </div>

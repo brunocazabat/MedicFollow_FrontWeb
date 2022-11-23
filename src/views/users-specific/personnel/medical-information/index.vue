@@ -17,27 +17,24 @@ export default {
           active: true,
         },
       ],
-    }
+    };
   },
   components: {
     Layout,
     Widgets,
-    CheckupText
+    CheckupText,
   },
-}
+};
 </script>
 
 <!-- TEMPLATE -->
 
 <template>
   <Layout>
-
     <div class="row project-wrapper">
       <div class="col-xxl-8">
         <div class="row">
-
           <Widgets />
-
         </div>
         <div class="row">
           <div class="col-xl-12">
@@ -51,7 +48,4 @@ export default {
       </div>
     </div>
   </Layout>
-
-
 </template>
-

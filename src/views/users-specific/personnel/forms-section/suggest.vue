@@ -90,21 +90,25 @@ export default {
         <div class="card">
           <div class="card-header align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">Feedback</h4>
-            <div class="flex-shrink-0">
-            </div>
+            <div class="flex-shrink-0"></div>
           </div>
           <!-- end card header -->
 
           <div class="card-body">
-
             <div class="live-preview">
               <form action="javascript:void(0);" class="row g-3">
-
                 <!-- Feedback message box -->
                 <div class="mb-6">
-                  <label for="VertimeassageInput" class="form-label">Message</label>
-                  <textarea class="form-control" id="VertimeassageInput" rows="3" placeholder="Enter your feedback here"
-                    required></textarea>
+                  <label for="VertimeassageInput" class="form-label"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="VertimeassageInput"
+                    rows="3"
+                    placeholder="Enter your feedback here"
+                    required
+                  ></textarea>
                   <div class="invalid-feedback">
                     Please enter a message in the textarea.
                   </div>
@@ -113,12 +117,17 @@ export default {
                 <!-- File Upload Dropzone -->
                 <div class="card-body">
                   <p class="text-muted">
-                    You can upload files to help us understand your Feeback better.
+                    You can upload files to help us understand your Feeback
+                    better.
                   </p>
 
                   <DropZone @drop.prevent="drop" @change="selectedFile" />
                   <ul class="list-unstyled mb-0" id="dropzone-preview">
-                    <div class="border rounded" v-for="(file, index) of files" :key="index">
+                    <div
+                      class="border rounded"
+                      v-for="(file, index) of files"
+                      :key="index"
+                    >
                       <div class="d-flex p-2">
                         <div class="flex-grow-1">
                           <div class="pt-1">
@@ -128,11 +137,18 @@ export default {
                             <p class="fs-13 text-muted mb-0" data-dz-size="">
                               <strong>{{ file.size / 1024 }}</strong> KB
                             </p>
-                            <strong class="error text-danger" data-dz-errormessage=""></strong>
+                            <strong
+                              class="error text-danger"
+                              data-dz-errormessage=""
+                            ></strong>
                           </div>
                         </div>
                         <div class="flex-shrink-0 ms-3">
-                          <button data-dz-remove="" class="btn btn-sm btn-danger" @click="deleteRecord">
+                          <button
+                            data-dz-remove=""
+                            class="btn btn-sm btn-danger"
+                            @click="deleteRecord"
+                          >
                             Delete
                           </button>
                         </div>
@@ -162,10 +178,15 @@ export default {
                 </div> -->
 
                 <div class="col-md-4">
-
                   <div class="col-auto">
-                    <label for="chooseCategorySelect" class="form-label">Category</label>
-                    <select class="form-select" id="chooseCategorySelect" required>
+                    <label for="chooseCategorySelect" class="form-label"
+                      >Category</label
+                    >
+                    <select
+                      class="form-select"
+                      id="chooseCategorySelect"
+                      required
+                    >
                       <option selected value="login">Login Page</option>
                       <option value="dashboard">Home Page</option>
                       <option value="calendar">Calendar Page</option>
@@ -182,42 +203,63 @@ export default {
 
                 <!-- Anonymous text -->
                 <p class="text-muted">
-                  Leave this part of this form <span class="fw-medium">unfilled</span> if you want to send this report
-                  anonymously, you could also fill only the information you wish to.
+                  Leave this part of this form
+                  <span class="fw-medium">unfilled</span> if you want to send
+                  this report anonymously, you could also fill only the
+                  information you wish to.
                 </p>
 
                 <!-- Full name box -->
                 <div class="col-lg-4">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="fullnamefloatingInput"
-                      placeholder="Enter your full name" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fullnamefloatingInput"
+                      placeholder="Enter your full name"
+                    />
                     <label for="fullnamefloatingInput">Full Name</label>
                   </div>
                 </div>
                 <!-- Email box -->
                 <div class="col-lg-4">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="emailfloatingInput" placeholder="Enter your email" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="emailfloatingInput"
+                      placeholder="Enter your email"
+                    />
                     <label for="emailfloatingInput">Email</label>
                   </div>
                 </div>
                 <!-- Country box -->
                 <div class="col-lg-4">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="countryfloatingInput"
-                      placeholder="Enter your country" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="countryfloatingInput"
+                      placeholder="Enter your country"
+                    />
                     <label for="countryfloatingInput">Country</label>
                   </div>
                 </div>
 
                 <!-- Agree on ToU text -->
                 <p class="text-muted">
-                  By sending us a Feedback, you are agreeing on using our <span class="fw-medium">Terms of Use</span>.
+                  By sending us a Feedback, you are agreeing on using our
+                  <span class="fw-medium">Terms of Use</span>.
                 </p>
                 <!-- Agree on ToU check box -->
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" required />
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck"
+                      required
+                    />
                     <label class="form-check-label" for="gridCheck">
                       I have read and accepted the Terms of Use
                     </label>
@@ -238,9 +280,7 @@ export default {
           </div>
         </div>
       </div>
-
     </div>
     <!--end row-->
-
   </Layout>
 </template>
