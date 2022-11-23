@@ -20,8 +20,7 @@ export default {
   data() {
     return {
       pickedDoctor: null,
-      visitedDoctor: "",
-      pickedAppointment: "",
+      pickedAppointment: null,
 
       // Patient Array
       patientArray: [],
@@ -74,6 +73,7 @@ export default {
             this.pickedDoctor,
             "week"
           );
+          console.log("freeSchedulesArray:", this.freeSchedulesArray);
         } else if (this.pageID === 2) {
           // Sweet alert to confirm the creation of the appointment
           Swal.fire({
@@ -122,9 +122,10 @@ export default {
     // Method to POST the appointment
     async sendAppointment() {
       let url = `appointment`;
+      let res = null;
 
       const payload = {
-        docteurUuid: "10b3061f-53cb-40e9-92a3-c273441786a6", // TODO: PUT CORRECT UUID
+        docteurUuid: this.pickedDoctor, // TODO: PUT CORRECT UUID
         date: this.pickedAppointment + ":00",
         patientUuid: this.getPatientUUID(),
       };
@@ -137,9 +138,9 @@ export default {
           token: this.gettoken().Token,
         },
       })
-        .then((response) => {
-          if (response.status === 200) {
-            Swal.fire({
+        .then(async (response) => {
+          if (response.status === 201) {
+            await Swal.fire({
               title: "Appointment confirmed!",
               text: `Your appointment has been confirmed. It is scheduled on the ${this.pickedAppointment}. If you made a mistake you can still cancel it by clicking on the 'Cancel Appointment' button.`,
               showCancelButton: true,
@@ -148,7 +149,7 @@ export default {
               confirmButtonText: "OK",
             }).then((result) => {
               if (result.isConfirmed) {
-                return true;
+                res = true;
               } else if (result.isDismissed) {
                 // TODO
                 // this.cancelAppointment();
@@ -165,7 +166,7 @@ export default {
               if (result.isConfirmed) {
                 // Refresh the page
                 window.location.reload();
-                return false;
+                res = false;
               }
             });
           }
@@ -182,7 +183,7 @@ export default {
               if (result.isConfirmed) {
                 // Refresh the page
                 window.location.reload();
-                return false;
+                res = false;
               }
             });
           }
@@ -194,8 +195,12 @@ export default {
             icon: "error",
             confirmButtonText: "OK",
           });
-          return false;
+          res = false;
         });
+
+      console.log("res:", res);
+
+      return res;
     },
 
     // Method to retrieve the patients list and setting the patient state to the first patient
@@ -374,40 +379,30 @@ export default {
           <!-- CHOOSE DATE AND TIME -->
           <div v-if="pageID === 2">
             <div class="p-3">
-              <p
-                class="form-label font-size-large"
-                data-key="t-choosemeetingdate"
-              >
+              <p class="form-label font-size-large">
                 <strong>{{ $t("t-choosemeetingdate") }}</strong>
               </p>
             </div>
 
             <div
               class="basic-card-border col-sm-12 mb-2"
-              v-for="(appointment, index) in appointmentsArray"
+              v-for="(appointment, index) in freeSchedulesArray"
               :key="index"
             >
-              <a
+              <div
                 class="nav-link menu-link col-sm-12 font-size-medium two-percent-height center-items"
-                href="#meetingDateCollapse"
-                data-bs-toggle="collapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="meetingDateCollapse"
               >
                 <span>
-                  {{ appointment.date_start }}
                   <strong>
-                    <em class="ri-arrow-down-line lh-1 center-items"> </em>
+                    {{ appointment.day }}
                   </strong>
                 </span>
-              </a>
+              </div>
 
               <hr class="mf-divider" />
 
               <div
-                class="collapse col-sm-12 basic-padding left-margin"
-                id="meetingDateCollapse"
+                class="col-sm-12 basic-padding left-margin"
                 v-for="(time, index) in freeSchedulesArray"
                 :key="index"
               >
@@ -421,7 +416,7 @@ export default {
                       class="form-check-input"
                       type="radio"
                       id="hourGridCheck"
-                      :value="hour[0] + ' ' + hour[1]"
+                      :value="time.day + ' ' + hour[0] + ':00:00'"
                       v-model="pickedAppointment"
                     />
                     <label
@@ -486,7 +481,7 @@ export default {
             :disabled="
               pageID === 3 ||
               (pickedDoctor === null && pageID === 0) ||
-              (pickedAppointment === '' && pageID === 2)
+              (pickedAppointment === null && pageID === 2)
             "
           >
             {{ $t("t-nextstep") }}
