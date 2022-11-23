@@ -41,6 +41,7 @@ export default {
         date: null,
         time: null,
       },
+      newSlots: [],
 
       pageID: -1,
       viewEnd: false,
@@ -56,6 +57,40 @@ export default {
     ...AuthGetters,
     ...PatientGetters,
     ...schedules,
+
+    // Method which takes 2 hours as parameter and returns an array of 30 minutes (slotStart = timeStart, slotEnd = timeStart + 30 minutes) slots between the 2 hours
+    getSlots(timeStart, timeEnd) {
+      let slots = [];
+      let start = new Date(null, null, null, parseInt(timeStart), 0, 0);
+      let end = new Date(null, null, null, parseInt(timeEnd), 0, 0);
+      let slotStart = dayjs(start).format("HH:mm");
+      let newEnd = start;
+      let slotEnd = dayjs(newEnd).format("HH:mm");
+      let counter = 1;
+
+      end = dayjs(end).format("HH:mm");
+
+      while (slotEnd < end) {
+        newEnd.setMinutes(newEnd.getMinutes() + 30);
+        slotEnd = null;
+        slotEnd = dayjs(newEnd).format("HH:mm");
+
+        slots.push({
+          slotStart: slotStart,
+          slotEnd: slotEnd,
+        });
+        start.setMinutes(start.getMinutes());
+        slotStart = null;
+        slotStart = dayjs(start).format("HH:mm");
+        counter++;
+        // Limiting to 30 slots per general slots
+        if (counter > 30) {
+          break;
+        }
+      }
+
+      return slots;
+    },
 
     // Method to display next page
     async nextPage() {
@@ -73,7 +108,15 @@ export default {
             this.pickedDoctor,
             "week"
           );
-          console.log("freeSchedulesArray:", this.freeSchedulesArray);
+          // Slicing the hour array to create a sub array of 30 minutes
+          for (let i = 0; i < this.freeSchedulesArray.length; i++) {
+            for (let j = 0; j < this.freeSchedulesArray[i].hour.length; j++) {
+              this.freeSchedulesArray[i].hour[j] = await this.getSlots(
+                this.freeSchedulesArray[i].hour[j][0],
+                this.freeSchedulesArray[i].hour[j][1]
+              );
+            }
+          }
         } else if (this.pageID === 2) {
           // Sweet alert to confirm the creation of the appointment
           Swal.fire({
@@ -125,7 +168,7 @@ export default {
       let res = null;
 
       const payload = {
-        docteurUuid: this.pickedDoctor, // TODO: PUT CORRECT UUID
+        docteurUuid: this.pickedDoctor,
         date: this.pickedAppointment + ":00",
         patientUuid: this.getPatientUUID(),
       };
@@ -197,8 +240,6 @@ export default {
           });
           res = false;
         });
-
-      console.log("res:", res);
 
       return res;
     },
@@ -412,18 +453,20 @@ export default {
                     v-for="(hour, index) in time.hour"
                     :key="index"
                   >
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      id="hourGridCheck"
-                      :value="time.day + ' ' + hour[0] + ':00:00'"
-                      v-model="pickedAppointment"
-                    />
-                    <label
-                      class="form-check-label font-size-medium"
-                      for="hourGridCheck"
-                      >{{ hour[0] + " - " + hour[1] }}</label
-                    >
+                    <div v-for="(slot, index) in hour" :key="index">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        id="timeList"
+                        :value="time.day + ' ' + slot.slotStart"
+                        v-model="pickedAppointment"
+                      />
+                      <label
+                        class="form-check-label font-size-medium"
+                        for="timeList"
+                        >{{ slot.slotStart + " - " + slot.slotEnd }}</label
+                      >
+                    </div>
                   </div>
                 </div>
               </div>

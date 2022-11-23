@@ -98,7 +98,7 @@ export default {
           id: i,
           content: [
             schArray[i].date,
-            schArray[i].hour_end + " - " + schArray[i].hour_end,
+            schArray[i].hour_start + " - " + schArray[i].hour_end,
           ],
         });
       }
