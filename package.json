@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve --port 3000 --host localhost",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "sitemap": "vue-cli-service sitemap"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^35.3.1",
@@ -21,7 +22,7 @@
     "@popperjs/core": "^2.11.2",
     "@simonwep/pickr": "^1.8.2",
     "@vue-leaflet/vue-leaflet": "^0.6.1",
-    "@vueform/multiselect": "^2.5.6",
+    "@vueform/multiselect": "^2.5.7",
     "@vueform/slider": "^2.1.5",
     "@vueform/toggle": "^2.1.2",
     "@vuelidate/core": "^2.0.0",
@@ -40,6 +41,7 @@
     "dotenv-webpack": "^8.0.1",
     "dropzone": "^6.0.0-beta.2",
     "echarts": "^5.4.0",
+    "esm": "^3.2.25",
     "feather-icons": "^4.29.0",
     "highlight.js": "^11.6.0",
     "html2pdf.js": "^0.10.1",
@@ -56,9 +58,9 @@
     "simplebar": "^5.3.8",
     "simplebar-vue3": "^0.2.0",
     "sweetalert2": "^11.6.10",
-    "swiper": "^8.4.4",
+    "swiper": "^8.4.5",
     "vue": "3.2.45",
-    "vue-cli-plugin-sitemap": "^2.3.0",
+    "vue-cli-plugin-sitemap": "~2.3.0",
     "vue-cookie-accept-decline": "^6.1.0",
     "vue-draggable-next": "^2.1.1",
     "vue-easy-lightbox": "^1.10.0",

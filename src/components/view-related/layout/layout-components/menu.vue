@@ -1,7 +1,5 @@
 <script>
-import {
-  layoutComputed
-} from "@/components/back-related/state/helpers";
+import { layoutComputed } from "@/components/back-related/state/helpers";
 import menunavlink from "./menu-components/menu-navlink.vue";
 
 export default {
@@ -107,30 +105,49 @@ export default {
     onRoutechange(ele) {
       this.initActiveMenu(ele.path);
       if (document.getElementsByClassName("mm-active").length > 0) {
-        const currentPosition = document.getElementsByClassName("mm-active")[0].offsetTop;
+        const currentPosition =
+          document.getElementsByClassName("mm-active")[0].offsetTop;
         if (currentPosition > 500)
           if (this.$refs.isSimplebar)
-            this.$refs.isSimplebar.value.getScrollElement().scrollTop = currentPosition + 300;
+            this.$refs.isSimplebar.value.getScrollElement().scrollTop =
+              currentPosition + 300;
       }
     },
 
     initActiveMenu(ele) {
       setTimeout(() => {
         if (document.querySelector("#navbar-nav")) {
-          let a = document.querySelector("#navbar-nav").querySelector('[href="' + ele + '"]');
+          let a = document
+            .querySelector("#navbar-nav")
+            .querySelector('[href="' + ele + '"]');
 
           if (a) {
             a.classList.add("active");
             let parentCollapseDiv = a.closest(".collapse.menu-dropdown");
             if (parentCollapseDiv) {
               parentCollapseDiv.classList.add("show");
-              parentCollapseDiv.parentElement.children[0].classList.add("active");
-              parentCollapseDiv.parentElement.children[0].setAttribute("aria-expanded", "true");
-              if (parentCollapseDiv.parentElement.closest(".collapse.menu-dropdown")) {
-                parentCollapseDiv.parentElement.closest(".collapse").classList.add("show");
-                if (parentCollapseDiv.parentElement.closest(".collapse").previousElementSibling)
-                  parentCollapseDiv.parentElement.closest(".collapse").previousElementSibling.classList.add(
-                    "active");
+              parentCollapseDiv.parentElement.children[0].classList.add(
+                "active"
+              );
+              parentCollapseDiv.parentElement.children[0].setAttribute(
+                "aria-expanded",
+                "true"
+              );
+              if (
+                parentCollapseDiv.parentElement.closest(
+                  ".collapse.menu-dropdown"
+                )
+              ) {
+                parentCollapseDiv.parentElement
+                  .closest(".collapse")
+                  .classList.add("show");
+                if (
+                  parentCollapseDiv.parentElement.closest(".collapse")
+                    .previousElementSibling
+                )
+                  parentCollapseDiv.parentElement
+                    .closest(".collapse")
+                    .previousElementSibling.classList.add("active");
               }
             }
           }
