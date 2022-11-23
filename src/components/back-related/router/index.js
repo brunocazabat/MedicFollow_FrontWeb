@@ -105,8 +105,6 @@ router.beforeResolve(async (routeTo, routeFrom, next) => {
     return;
   }
   document.title = routeTo.meta.title + " | " + appConfig.title;
-  document.head.innerHTML +=
-    '<meta name="google-site-verification" content="ih_OTqEBRkx6-8E5GQrorRowEylr8pyU2j4_8otK4eQ"/>';
   // If we reach this point, continue resolving the route.
   next();
 });
