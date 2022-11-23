@@ -564,5 +564,7 @@
   "t-chat-name": "Chat room name",
   "t-select-doctor": "Select a doctor",
   "t-incoming-appointment": "Approaching Appointments",
-  "t-incoming-appointments-desc": "Here you can see a summary of the next appointments you will have for this patient."
+  "t-incoming-appointments-desc": "Here you can see a summary of the next appointments you will have for this patient.",
+  "t-activity-edited": "The activity has been updated!",
+  "t-close": "Close"
 }

@@ -61,23 +61,29 @@ export default {
 .overlay {
   position: fixed;
   top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(160, 161, 171, 0.6);
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  justify-items: center;
+  justify-self: center;
   display: flex;
   z-index: 1;
 }
 
 .modal {
-  margin-top: 4rem;
+  margin-top: 10rem;
+  margin-left: 10rem;
+  justify-self: center;
   display: flex;
   background-color: #fff;
   flex-direction: column;
   border-radius: 4px;
   height: 20vh;
-  width: 40vh;
+  width: 80vh;
+  display: flex;
 }
 
 .header {

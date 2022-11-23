@@ -41,6 +41,10 @@ export default {
       type: String,
       default: "",
     },
+    id: {
+      type: String,
+      default: "",
+    },
   },
   emits: ["update:modelValue"],
   data() {
@@ -69,6 +73,7 @@ export default {
       :readonly="readonly"
       v-model="localValue"
       v-on:input="updateValue"
+      :id="id"
     ></textarea>
     <input
       v-else
@@ -80,7 +85,7 @@ export default {
       :readonly="readonly"
       v-model="localValue"
       v-on:input="updateValue"
-      id="inputText"
+      :id="id"
     />
     <label for="inputText" class="form-label">{{ label }}</label>
   </div>
@@ -98,6 +103,7 @@ export default {
       :readonly="readonly"
       v-model="localValue"
       v-on:input="updateValue"
+      :id="id"
     ></textarea>
     <input
       v-else
@@ -109,7 +115,7 @@ export default {
       :readonly="readonly"
       v-model="localValue"
       v-on:input="updateValue"
-      id="inputText"
+      :id="id"
     />
   </div>
   <div class="invalid-feedback">{{ invalidFeedback }}.</div>

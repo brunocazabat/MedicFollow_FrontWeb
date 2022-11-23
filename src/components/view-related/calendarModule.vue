@@ -13,10 +13,7 @@ import FullCalendar from "@fullcalendar/vue3";
 import { required, helpers } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
 
-import {
-  INITIAL_EVENTS,
-  categories,
-} from "../../views/users-specific/docteur/calendar-section/utils";
+import { categories } from "../../views/users-specific/docteur/calendar-section/utils";
 
 import Popper from "vue3-popper";
 
@@ -25,14 +22,11 @@ import {
   PatientGetters,
 } from "@/components/back-related/state/helpers";
 
+import axios from "axios";
 import dayjs from "dayjs";
 
 import SelectModule from "@/components/view-related/select.vue";
 import InputModule from "@/components/view-related/input.vue";
-
-// import ModalModule from "@/components/view-related/modal.vue";
-
-import axios from "axios";
 
 export default {
   props: {
@@ -68,6 +62,7 @@ export default {
         plugins: [dayGridPlugin, timeGridPlugin, bootstrapPlugin, listPlugin],
         themeSystem: "bootstrap",
         datesSet: this.handleDatesSet,
+        eventClick: this.editModalOpened,
         headerToolbar: {
           left: "prev,next today",
           center: "title",
@@ -78,8 +73,6 @@ export default {
         },
         initialView: this.getInitialView(),
 
-        test: INITIAL_EVENTS,
-        // initialEvents: INITIAL_EVENTS,
         initialEvents: this.activitiesArray,
 
         editable: true,
@@ -87,8 +80,7 @@ export default {
         selectMirror: true,
         dayMaxEvents: true,
         weekends: true,
-        dateClick: this.dateClicked,
-        eventClick: this.editEvent,
+        // dateClick: this.dateClicked,
         eventsSet: this.handleEvents,
       },
       currentEvents: this.activitiesArray,
@@ -96,6 +88,10 @@ export default {
       // Activity Types Array
       activityTypesArray: [] || null,
       selectedType: null,
+
+      ///////////// TO DELETE //////////////////////////
+
+      /////////////////////////////////////////////////
 
       newActivity: {
         title: null,
@@ -232,7 +228,6 @@ export default {
     SelectModule,
     InputModule,
     Popper,
-    // ModalModule,
   },
   async mounted() {
     if (this.isDoctor()) {
@@ -243,6 +238,77 @@ export default {
   methods: {
     ...AuthGetters,
     ...PatientGetters,
+
+    // Opening Modal
+    editModalOpened(info) {
+      document.getElementById("exampleModalLabel").innerHTML = "Edit";
+      document.getElementById("add-btn").style.display = "block";
+      document.getElementById("modalTitle").value = info.title;
+      document.getElementById("modalDesc").value = info.desc;
+      document.getElementById("modalHour").value = dayjs(info.date).format(
+        "HH"
+      );
+      document.getElementById("modalMinute").value = dayjs(info.date).format(
+        "mm"
+      );
+      this.newActivity.uuid = info.uuid;
+      this.selectedDate = dayjs(info.date).format("YYYY-MM-DD");
+      this.selectedHour = {
+        value: dayjs(info.date).format("HH"),
+        text: dayjs(info.date).format("HH"),
+      };
+      this.selectedMinute = {
+        value: dayjs(info.date).format("mm"),
+        text: dayjs(info.date).format("mm"),
+      };
+    },
+
+    // Method to edit an activity
+    async editActivity() {
+      let url = "activity/";
+      let date = `${this.selectedDate} ${this.selectedHour.value}:${this.selectedMinute.value}:00`;
+
+      const payload = {
+        activity_uuid: this.newActivity.uuid,
+        modifs: {
+          date: date,
+          type: this.selectedType,
+        },
+      };
+
+      await axios({
+        method: "put",
+        url: url,
+        data: payload,
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then(async (response) => {
+          if (response.status == 200) {
+            // Sweet alert success
+            await Swal.fire({
+              title: `${this.$t("t-success")}`,
+              text: `${this.$t("t-activity-edited")}`,
+              icon: "success",
+              showConfirmButton: true,
+              timer: 3000,
+            });
+            // Closing the modal which hs been opened with document.getElementById
+            document.getElementById("closemodal").click();
+          }
+        })
+        .catch((error) => {
+          Swal.fire({
+            title: `${this.$t("t-error")}`,
+            text: `${this.$t("t-something-went-wrong")}. Error: ${
+              error.response.status
+            }`,
+            icon: "error",
+            confirmButtonText: "Ok",
+          });
+        });
+    },
 
     // Method to check if the user is a 'docteur'
     isDoctor() {
@@ -445,7 +511,7 @@ export default {
      */
     dateClicked(info) {
       this.newEventData = info;
-      this.showModal = true;
+      this.eventModal = true;
     },
     /**
      * Modal open for edit event
@@ -453,6 +519,7 @@ export default {
     editEvent(info) {
       this.edit = info.event;
       this.editevent.editTitle = this.edit.title;
+      console.log("Edit title:", this.edit.title);
       this.editevent.editcategory = this.edit.classNames[0];
       this.eventModal = true;
     },
@@ -718,9 +785,17 @@ export default {
                 <div class="d-flex mb-3">
                   <div class="flex-grow-1">
                     <em class="bg-soft-primary"></em
-                    ><span class="fw-medium">{{
-                      this.parseDate(event.date)
-                    }}</span>
+                    ><span class="fw-medium"
+                      >{{ this.parseDate(event.date) }}
+                      <button
+                        class="ml-2 col-sm-3 btn btn-sm btn-info add-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#showModal"
+                        @click="editModalOpened(event)"
+                      >
+                        Edit
+                      </button>
+                    </span>
                     <p class="text-muted mb-0">
                       {{ this.parseHour(event.date) }}
                     </p>
@@ -748,140 +823,105 @@ export default {
     </div>
   </div>
   <div style="clear: both"></div>
-  <!-- <b-modal
-    v-model="showModal"
-    title="Add New Event"
-    title-class="text-black font-18"
-    body-class="p-3"
-    hide-footer
-  > -->
-  <!-- <div v-if="showModal">
-    <ModalModule
-      :close="true"
-      @close-modal="showModal = false"
-      title="Add New Event"
-    >
-      <h4>Hello</h4>
-      <input type="text" />
-      <template v-slot:footer>
-        <button type="button" class="btn btn-primary" v-on:click="saveActivity">
-          Save
-        </button>
-      </template>
-    </ModalModule>
-  </div> -->
-  <!-- <form @submit.prevent="handleSubmit">
-      <div class="row">
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="name">Event Name</label>
-            <input
-              id="name"
-              v-model="event.title"
-              type="text"
-              class="form-control"
-              placeholder="Insert Event name"
-              :class="{ 'is-invalid': submitted && v$.event.title.$error }"
-            />
-            <div
-              v-if="submitted && v$.event.title.$error"
-              class="invalid-feedback"
-            >
-              <span v-if="v$.event.title.required.$message">{{
-                v$.event.title.required.$message
-              }}</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label class="control-label">Category</label>
-            <select
-              v-model="event.category"
-              class="form-control"
-              name="category"
-              :class="{ 'is-invalid': submitted && v$.event.category.errors }"
-            >
-              <option
-                v-for="option in categories"
-                :key="option.backgroundColor"
-                :value="`${option.value}`"
-              >
-                {{ option.name }}
-              </option>
-            </select>
 
-            <div
-              v-if="submitted && v$.event.category.$error"
-              class="invalid-feedback"
-            >
-              <span v-if="v$.event.category.required.$message">{{
-                v$.event.category.required.$message
-              }}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-end pt-5 mt-3">
-        <b-button variant="light" @click="hideModal">Close</b-button>
-        <b-button type="submit" variant="success" class="ms-1"
-          >Create event</b-button
-        >
-      </div>
-    </form>
-  </b-modal> -->
-
-  <!-- Edit Modal -->
-  <!-- <b-modal
-    v-model="eventModal"
-    title="Edit Event"
-    title-class="text-black font-18"
-    hide-footer
-    body-class="p-3"
+  <div
+    class="modal fade zoomIn"
+    id="showModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
   >
-    <form @submit.prevent="editSubmit">
-      <div class="row">
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="name">Event Name</label>
-            <input
-              id="name1"
-              v-model="editevent.editTitle"
-              type="text"
-              class="form-control"
-              placeholder="Insert Event name"
-            />
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header p-3 bg-soft-info">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+            id="close-modal"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-lg-12">
+              <div class="row mb-2 pt-2">
+                <InputModule
+                  :label="$t('t-title')"
+                  :readonly="true"
+                  :disabled="true"
+                  id="modalTitle"
+                />
+                <InputModule
+                  :label="$t('t-description')"
+                  :readonly="true"
+                  :disabled="true"
+                  :rows="2"
+                  id="modalDesc"
+                />
+                <SelectModule
+                  class="col-sm-6"
+                  v-model="selectedHour"
+                  :title="$t('t-hour')"
+                  :required="true"
+                  :options="hoursArray"
+                  :selectedOption="selectedHour"
+                  id="modalHour"
+                />
+                <SelectModule
+                  class="col-sm-6"
+                  v-model="selectedMinute"
+                  :title="$t('t-minute')"
+                  :required="true"
+                  :options="minutesArray"
+                  :selectedOption="selectedMinute"
+                  id="modalMinute"
+                />
+              </div>
+              <SelectModule
+                class="pt-2"
+                v-model="newActivity.activityTypeUUID"
+                :title="$t('t-activity-type')"
+                :options="activityTypesArray"
+                :required="true"
+                :selectedOption="selectedType"
+                id="modalType"
+              />
+            </div>
           </div>
         </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label class="control-label">Category</label>
-            <select
-              v-model="editevent.editcategory"
-              class="form-control"
-              name="category"
+        <div class="modal-footer">
+          <!-- Button aligned on the left to delete -->
+          <div class="col-6">
+            <button
+              type="button"
+              class="btn btn-danger"
+              v-on:click="deleteActivity"
             >
-              <option
-                v-for="option in categories"
-                :key="option.backgroundColor"
-                :value="`${option.value}`"
-              >
-                {{ option.name }}
-              </option>
-            </select>
+              Delete
+            </button>
+          </div>
+
+          <div class="hstack gap-2 justify-content-end">
+            <button
+              type="button"
+              class="btn btn-light"
+              data-bs-dismiss="modal"
+              id="closemodal"
+            >
+              {{ $t("t-close") }}
+            </button>
+            <button
+              class="btn btn-success"
+              id="add-btn"
+              v-on:click="editActivity()"
+            >
+              {{ $t("t-update") }}
+            </button>
           </div>
         </div>
       </div>
-      <div class="text-end p-3">
-        <b-button variant="light" @click="closeModal">Close</b-button>
-        <b-button class="ms-1" variant="danger" @click="confirm"
-          >Delete</b-button
-        >
-        <b-button class="ms-1" variant="success" @click="editSubmit"
-          >Save</b-button
-        >
-      </div>
-    </form>
-  </b-modal> -->
+    </div>
+  </div>
 </template>

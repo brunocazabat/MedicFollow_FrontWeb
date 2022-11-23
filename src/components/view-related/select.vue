@@ -37,6 +37,10 @@ export default {
       type: String,
       default: "",
     },
+    id: {
+      type: String,
+      default: "",
+    },
   },
   emits: ["update:modelValue"],
   data() {
@@ -71,6 +75,7 @@ export default {
         :disabled="disabled"
         :readonly="readonly"
         @change="updateValue($event)"
+        :id="id"
       >
         <option
           v-for="option in options"
