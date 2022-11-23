@@ -9,6 +9,8 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import dayjs from "dayjs";
 
+import schedules from "@/components/back-related/meeting";
+
 // State imports
 import {
   AuthGetters,
@@ -51,7 +53,7 @@ export default {
         content: null,
       },
 
-      nextActivity: null,
+      nextAppointment: null,
 
       calUUID: null,
     };
@@ -60,6 +62,7 @@ export default {
     ...AuthGetters,
     ...PatientSetters,
     ...PatientGetters,
+    ...schedules,
     // Method to retrieve the patients list and setting the patient state to the first patient
     async getPatients() {
       await axios({
@@ -232,7 +235,7 @@ export default {
     },
 
     // Get next activity
-    async getNextActivity() {
+    async getNextAppointment() {
       let url = `calendar/NextActivity?calendar_uuid=${this.calUUID}`;
 
       await axios({
@@ -244,12 +247,12 @@ export default {
       })
         .then((response) => {
           if (response.status === 200) {
-            this.nextActivity = response.data;
+            this.nextAppointment = response.data;
           }
         })
         .catch((error) => {
           if (error.response.status) {
-            this.nextActivity = null;
+            this.nextAppointment = null;
           }
           // Sweet Alert error occured getting the next activity
           Swal.fire({
@@ -267,7 +270,25 @@ export default {
     await this.getPatients();
     await this.getOrganisationNews();
     await this.getCalendar();
-    await this.getNextActivity();
+    await this.getNextAppointment();
+    // YYYY-MM-DD date (today)
+    let today = dayjs().format("YYYY-MM-DD");
+    let doctors = await schedules.getDoctorList(
+      this.gettoken().Token,
+      this.patientInfo.patientUUID
+    );
+    let doctorUUID = doctors.doctors[0].uuid;
+    console.log(doctorUUID);
+    this.nextAppointment = await schedules.getAppointmentsOfFamily(
+      this.getorg_uuid(),
+      this.patientInfo.patientUUID,
+      doctorUUID,
+      today,
+      "month",
+      this.gettoken().Token
+    );
+    this.nextAppointment = this.nextAppointment[0];
+    console.log(this.nextAppointment);
   },
 };
 </script>
@@ -287,17 +308,17 @@ export default {
               <p class="text-uppercase fw-medium text-muted text-truncate mb-3">
                 {{ $t("t-nextappoint") }}:
               </p>
-              <div v-if="nextActivity">
+              <div v-if="nextAppointment">
                 <div class="d-flex align-items-center mb-3">
                   <h4 class="fs-4 flex-grow-1 mb-0">
                     <span class="counter-value">
-                      {{ nextActivity.act_title }}
+                      {{ parseDate(nextAppointment.date) }}
+                      {{ nextAppointment.hour_start }}
                     </span>
                   </h4>
                 </div>
                 <p class="text-muted mb-0">
-                  {{ parseDate(nextActivity.start_date) }}
-                  {{ parseHour(nextActivity.act_date) }}
+                  {{ nextAppointment.with }}
                 </p>
               </div>
               <div v-else>

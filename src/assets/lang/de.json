@@ -564,5 +564,8 @@
   "t-incoming-appointments": "Eingehende Termine",
   "t-select-doctor": "Wählen Sie einen Arzt aus",
   "t-incoming-appointment": "Annäherung an Termine",
-  "t-incoming-appointments-desc": "Hier sehen Sie eine Zusammenfassung der nächsten Termine, die Sie für diesen Patienten haben werden."
+  "t-incoming-appointments-desc": "Hier sehen Sie eine Zusammenfassung der nächsten Termine, die Sie für diesen Patienten haben werden.",
+  "t-activity-deleted": "Die Aktivität wurde gelöscht.",
+  "t-activity-edited": "Die Aktivität wurde aktualisiert!",
+  "t-close": "Nah dran"
 }

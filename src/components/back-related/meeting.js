@@ -75,8 +75,9 @@ const schedules = {
     userToken
   ) {
     let url = `appointment/calendar/?type=${searchType}&date=${date}&organisationUuid=${orgUUID}&patientUuid=${patientUUID}&doctorUuid=${doctorUUID}`;
-    // 10b3061f-53cb-40e9-92a3-c273441786a6
     let res = [];
+
+    console.log("URL: ", url);
 
     await axios({
       method: "get",
