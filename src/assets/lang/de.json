@@ -563,5 +563,6 @@
   "t-doctor-not-free": "Der Arzt ist derzeit nicht frei.",
   "t-incoming-appointments": "Eingehende Termine",
   "t-select-doctor": "Wählen Sie einen Arzt aus",
-  "t-incoming-appointment": "Annäherung an Termine"
+  "t-incoming-appointment": "Annäherung an Termine",
+  "t-incoming-appointments-desc": "Hier sehen Sie eine Zusammenfassung der nächsten Termine, die Sie für diesen Patienten haben werden."
 }

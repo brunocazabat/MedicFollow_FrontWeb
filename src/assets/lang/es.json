@@ -563,5 +563,6 @@
   "t-doctor-not-free": "El médico no está libre en este momento.",
   "t-incoming-appointments": "Citas entrantes",
   "t-select-doctor": "Seleccione un médico",
-  "t-incoming-appointment": "Acercándose a las citas"
+  "t-incoming-appointment": "Acercándose a las citas",
+  "t-incoming-appointments-desc": "Aquí puede ver un resumen de las próximas citas que tendrá para este paciente."
 }

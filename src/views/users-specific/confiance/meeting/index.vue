@@ -14,11 +14,12 @@ import {
   AuthGetters,
   PatientGetters,
 } from "@/components/back-related/state/helpers";
+import schedules from "@/components/back-related/meeting";
 
 export default {
   data() {
     return {
-      pickedDoctor: "",
+      pickedDoctor: null,
       visitedDoctor: "",
       pickedAppointment: "",
 
@@ -34,6 +35,14 @@ export default {
       dateToday: dayjs().format("YYYY-MM-DD"),
       tableAppointments: [],
 
+      // Free schedules variables
+      freeSchedulesArray: [],
+      selectedFreeSchedule: {
+        uuid: null,
+        date: null,
+        time: null,
+      },
+
       pageID: -1,
       viewEnd: false,
       maxPageID: 3,
@@ -47,11 +56,25 @@ export default {
   methods: {
     ...AuthGetters,
     ...PatientGetters,
+    ...schedules,
 
     // Method to display next page
     async nextPage() {
       if (this.pageID < this.maxPageID) {
-        if (this.pageID === 2) {
+        if (this.pageID == -1) {
+          this.doctorsArray = await schedules.getDoctorList(
+            this.gettoken().Token,
+            this.getPatientUUID()
+          );
+        } else if (this.pageID == 0) {
+          await this.getAppointments();
+          this.freeSchedulesArray = await schedules.getScheduleList(
+            this.gettoken().Token,
+            this.getPatientUUID(),
+            this.pickedDoctor,
+            "week"
+          );
+        } else if (this.pageID === 2) {
           // Sweet alert to confirm the creation of the appointment
           Swal.fire({
             title: `${this.$t("t-are-you-sure")} ${this.pickedAppointment}`,
@@ -72,9 +95,7 @@ export default {
         if (this.pageID !== 2) {
           this.pageID++;
         }
-        if (this.pageID === 0) {
-          await this.getAppointments();
-        } else if (this.pageID == this.maxPageID) {
+        if (this.pageID == this.maxPageID) {
           this.pageEnd = true;
         }
       } else {
@@ -208,7 +229,9 @@ export default {
     async getAppointments() {
       let url = `appointment/calendar/?type=${this.searchType}&date=${
         this.dateToday
-      }&organisationUuid=${this.getorg_uuid()}&patientUuid=${this.getPatientUUID()}&doctorUuid=10b3061f-53cb-40e9-92a3-c273441786a6`;
+      }&organisationUuid=${this.getorg_uuid()}&patientUuid=${this.getPatientUUID()}&doctorUuid=${
+        this.pickedDoctor
+      }`;
 
       await axios({
         method: "get",
@@ -312,27 +335,25 @@ export default {
 
               <!-- RADIO BOX DR. SELECTION -->
               <div class="col-sm-12 basic-padding left-margin">
-                <div class="form-check">
+                <div
+                  class="form-check"
+                  v-for="(doctor, index) in doctorsArray.doctors"
+                  :key="index"
+                >
                   <input
                     class="form-check-input"
                     type="radio"
-                    id="doc2GridCheck"
-                    value="Doc2"
+                    id="doctorList"
+                    :value="doctor.uuid"
                     v-model="pickedDoctor"
                   />
                   <label
                     class="form-check-label font-size-medium"
-                    for="doc2GridCheck"
-                    >Dr. BERNABEU Simon</label
+                    for="doctorList"
+                    >Dr. {{ doctor.lastname.toUpperCase() }}
+                    {{ doctor.firstname }}</label
                   >
                 </div>
-              </div>
-              <hr />
-              <div>
-                <h2 class="text-primary text-uppercase">
-                  {{ $t("t-incoming-appointments") }}
-                </h2>
-                <IncomingAppointments :appointmentArray="tableAppointments" />
               </div>
             </div>
           </div>
@@ -340,57 +361,13 @@ export default {
           <!-- CONSULTING DOCTOR QUESTION -->
           <div v-if="pageID === 1">
             <div class="p-3">
-              <p
-                class="form-label font-size-large"
-                data-key="t-haveyoumetdoctor"
-              >
-                <strong>{{ $t("t-haveyoumetdoctor") }}</strong>
+              <h2 class="text-primary text-uppercase mt-5">
+                {{ $t("t-incoming-appointments") }}
+              </h2>
+              <p class="text-muted">
+                {{ $t("t-incoming-appointments-desc") }}
               </p>
-            </div>
-
-            <div class="p-3">
-              <div class="row g-4">
-                <div class="col-lg-6">
-                  <div class="form-check card-radio">
-                    <input
-                      id="doctorConsulted"
-                      name="doctorConsulted"
-                      type="radio"
-                      class="form-check-input"
-                      value="YES"
-                      v-model="visitedDoctor"
-                    />
-                    <label class="form-check-label" for="doctorConsulted">
-                      <span class="fs-20 text-wrap d-block fw-semibold">{{
-                        $t("t-yes")
-                      }}</span>
-                      <span class="text-muted fw-normal text-wrap d-block">{{
-                        $t("t-ihaveconsulteddr")
-                      }}</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-check card-radio">
-                    <input
-                      id="doctorNeverConsulted"
-                      name="doctorNeverConsulted"
-                      type="radio"
-                      class="form-check-input"
-                      value="NO"
-                      v-model="visitedDoctor"
-                    />
-                    <label class="form-check-label" for="doctorNeverConsulted">
-                      <span class="fs-20 text-wrap d-block fw-semibold">{{
-                        $t("t-no")
-                      }}</span>
-                      <span class="text-muted fw-normal text-wrap d-block">{{
-                        $t("t-firsttimeconsulting")
-                      }}</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
+              <IncomingAppointments :appointmentArray="tableAppointments" />
             </div>
           </div>
 
@@ -431,25 +408,26 @@ export default {
               <div
                 class="collapse col-sm-12 basic-padding left-margin"
                 id="meetingDateCollapse"
-                v-for="(time, index) in appointmentsArray"
+                v-for="(time, index) in freeSchedulesArray"
                 :key="index"
               >
-                <div
-                  class="form-check"
-                  v-if="time.date_start === appointment.date_start"
-                >
-                  <div class="form-check">
+                <div class="form-check" v-if="time.day === appointment.day">
+                  <div
+                    class="form-check"
+                    v-for="(hour, index) in time.hour"
+                    :key="index"
+                  >
                     <input
                       class="form-check-input"
                       type="radio"
                       id="hourGridCheck"
-                      :value="time.date_start + ' ' + time.hour_start"
+                      :value="hour[0] + ' ' + hour[1]"
                       v-model="pickedAppointment"
                     />
                     <label
                       class="form-check-label font-size-medium"
                       for="hourGridCheck"
-                      >{{ time.hour_start + " - " + time.hour_end }}</label
+                      >{{ hour[0] + " - " + hour[1] }}</label
                     >
                   </div>
                 </div>
@@ -507,8 +485,7 @@ export default {
             v-on:click="nextPage()"
             :disabled="
               pageID === 3 ||
-              (pickedDoctor === '' && pageID === 0) ||
-              (visitedDoctor === '' && pageID === 1) ||
+              (pickedDoctor === null && pageID === 0) ||
               (pickedAppointment === '' && pageID === 2)
             "
           >

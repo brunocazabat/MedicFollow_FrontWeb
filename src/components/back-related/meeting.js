@@ -35,10 +35,34 @@ const schedules = {
   },
 
   // Retrieves the list of available schedules for a given doctor
-  getScheduleList(userToken, patientUUID, doctorUUID) {
-    // TODO
-    // Not implemented in the backend yet
-    console.log("Arugments: ", userToken, patientUUID, doctorUUID);
+  async getScheduleList(userToken, patientUUID, doctorUUID, type) {
+    let today = dayjs().format("YYYY-MM-DD");
+    let url = `appointment/disponibility/?type=${type}&date=${today}&patientUuid=${patientUUID}&doctorUuid=${doctorUUID}`;
+    let res = null;
+
+    await axios({
+      method: "get",
+      url: url,
+      headers: {
+        token: userToken,
+      },
+    })
+      .then((response) => {
+        if (response.status === 200) {
+          res = response.data.disponibility;
+        }
+      })
+      .catch((error) => {
+        // Sweet Alert
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: error,
+        });
+        res = error;
+      });
+
+    return res;
   },
 
   // Method to get the appointments slots

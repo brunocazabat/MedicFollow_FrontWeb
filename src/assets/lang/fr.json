@@ -563,5 +563,6 @@
   "t-incoming-appointments": "Rendez-vous entrants",
   "t-chat-name": "Nom de la salle de discussion",
   "t-select-doctor": "Sélectionnez un médecin",
-  "t-incoming-appointment": "Rendez-vous à l'approche"
+  "t-incoming-appointment": "Rendez-vous à l'approche",
+  "t-incoming-appointments-desc": "Ici vous pouvez voir un résumé des prochains rendez-vous que vous aurez pour ce patient."
 }
