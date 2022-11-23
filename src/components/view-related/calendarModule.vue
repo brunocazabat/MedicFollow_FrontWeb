@@ -351,6 +351,44 @@ export default {
           });
         });
     },
+
+    // Method to delete an activity
+    async deleteActivity() {
+      let url = `activity/?activity_uuid=${this.newActivity.uuid}`;
+
+      await axios({
+        method: "delete",
+        url: url,
+        headers: {
+          token: this.gettoken().Token,
+        },
+      })
+        .then(async (response) => {
+          if (response.status == 200) {
+            // Sweet alert success
+            await Swal.fire({
+              title: `${this.$t("t-success")}`,
+              text: `${this.$t("t-activity-deleted")}`,
+              icon: "success",
+              showConfirmButton: true,
+              timer: 3000,
+            });
+            // Closing the modal which hs been opened with document.getElementById
+            document.getElementById("closemodal").click();
+          }
+        })
+        .catch((error) => {
+          Swal.fire({
+            title: `${this.$t("t-error")}`,
+            text: `${this.$t("t-something-went-wrong")}. Error: ${
+              error.response.status
+            }`,
+            icon: "error",
+            confirmButtonText: "Ok",
+          });
+        });
+    },
+
     // Method to send a request with a new acitivity to the database
     async sendNewActivity() {
       let url = "activity/";
@@ -898,9 +936,9 @@ export default {
             <button
               type="button"
               class="btn btn-danger"
-              v-on:click="deleteActivity"
+              v-on:click="deleteActivity()"
             >
-              Delete
+              {{ $t("t-delete") }}
             </button>
           </div>
 

@@ -566,5 +566,6 @@
   "t-incoming-appointment": "Approaching Appointments",
   "t-incoming-appointments-desc": "Here you can see a summary of the next appointments you will have for this patient.",
   "t-activity-edited": "The activity has been updated!",
-  "t-close": "Close"
+  "t-close": "Close",
+  "t-activity-deleted": "The activity has been deleted."
 }
