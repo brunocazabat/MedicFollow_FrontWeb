@@ -202,6 +202,11 @@ const navLinks = {
       link: "/confiance/chat",
     },
     {
+      title: "downloads",
+      icon: "file-download",
+      link: "/confiance/download-section",
+    },
+    {
       title: "settings",
       icon: "cog",
       link: "/confiance/settings",
