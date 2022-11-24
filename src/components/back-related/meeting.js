@@ -90,6 +90,10 @@ const schedules = {
         if (response.status === 200) {
           for (let i = 0; i < response.data.appointments.length; i++) {
             res.push({
+              docName:
+                response.data.appointments[i].medic.lastname.toUpperCase() +
+                " " +
+                response.data.appointments[i].medic.firstname,
               with: response.data.appointments[i].medic_uuid,
               date: this.parseDate(
                 response.data.appointments[i].start,

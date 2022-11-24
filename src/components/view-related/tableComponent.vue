@@ -25,13 +25,8 @@ export default {
   },
   methods: {
     emitButtonPressed(data) {
-      console.log("Emitted data: ", data);
       this.$emit("buttonPressed", data);
     },
-  },
-  mounted() {
-    console.log("Props: ", this.columnArray);
-    console.log("Data: ", this.dataArray);
   },
 };
 </script>

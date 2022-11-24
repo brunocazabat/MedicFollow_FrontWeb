@@ -110,8 +110,6 @@ export default {
                 checked: false,
               });
             }
-            console.log(response.data.notifications);
-            console.log("Notifications: ", this.notifications);
             this.notificationNbr = this.notifications.length;
           }
         })
@@ -128,8 +126,6 @@ export default {
     async deleteNotification(notifUUID) {
       let url = `notification/${notifUUID}`;
       let res = null;
-
-      console.log("Deleting notification: ", notifUUID);
 
       await axios({
         method: "delete",

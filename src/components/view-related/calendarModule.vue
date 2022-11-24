@@ -557,7 +557,6 @@ export default {
     editEvent(info) {
       this.edit = info.event;
       this.editevent.editTitle = this.edit.title;
-      console.log("Edit title:", this.edit.title);
       this.editevent.editcategory = this.edit.classNames[0];
       this.eventModal = true;
     },

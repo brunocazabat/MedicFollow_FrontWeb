@@ -75,7 +75,6 @@ export default {
         .then((response) => {
           if (response.status === 200) {
             this.setPatient(response.data.patients[0]);
-            console.log(response.data.patients[0]);
           }
         })
         .catch((error) => {

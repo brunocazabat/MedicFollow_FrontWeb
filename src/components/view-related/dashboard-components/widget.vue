@@ -278,7 +278,6 @@ export default {
       this.patientInfo.patientUUID
     );
     let doctorUUID = doctors.doctors[0].uuid;
-    console.log(doctorUUID);
     this.nextAppointment = await schedules.getAppointmentsOfFamily(
       this.getorg_uuid(),
       this.patientInfo.patientUUID,
@@ -288,7 +287,6 @@ export default {
       this.gettoken().Token
     );
     this.nextAppointment = this.nextAppointment[0];
-    console.log(this.nextAppointment);
   },
 };
 </script>
@@ -312,13 +310,13 @@ export default {
                 <div class="d-flex align-items-center mb-3">
                   <h4 class="fs-4 flex-grow-1 mb-0">
                     <span class="counter-value">
-                      {{ parseDate(nextAppointment.date) }}
+                      {{ nextAppointment.date }} -
                       {{ nextAppointment.hour_start }}
                     </span>
                   </h4>
                 </div>
                 <p class="text-muted mb-0">
-                  {{ nextAppointment.with }}
+                  {{ nextAppointment.docName }}
                 </p>
               </div>
               <div v-else>
