@@ -98,7 +98,7 @@ export default {
         <tbody class="list form-check-all">
           <tr v-for="(data, index) of resultQuery" :key="index">
             <td class="id">
-              {{ data.with }}
+              {{ data.docName }}
             </td>
             <td class="assignedto">{{ data.date }}</td>
             <td class="create_date">

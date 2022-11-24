@@ -105,7 +105,7 @@ export default {
           this.freeSchedulesArray = await schedules.getScheduleList(
             this.gettoken().Token,
             this.getPatientUUID(),
-            this.pickedDoctor,
+            this.pickedDoctor.uuid,
             "week"
           );
           // Slicing the hour array to create a sub array of 30 minutes
@@ -168,7 +168,7 @@ export default {
       let res = null;
 
       const payload = {
-        docteurUuid: this.pickedDoctor,
+        docteurUuid: this.pickedDoctor.uuid,
         date: this.pickedAppointment + ":00",
         patientUuid: this.getPatientUUID(),
       };
@@ -276,7 +276,7 @@ export default {
       let url = `appointment/calendar/?type=${this.searchType}&date=${
         this.dateToday
       }&organisationUuid=${this.getorg_uuid()}&patientUuid=${this.getPatientUUID()}&doctorUuid=${
-        this.pickedDoctor
+        this.pickedDoctor.uuid
       }`;
 
       await axios({
@@ -290,6 +290,10 @@ export default {
           if (response.status === 200) {
             for (let i = 0; i < response.data.appointments.length; i++) {
               this.appointmentsArray.push({
+                docName:
+                  response.data.appointments[i].medic.lastname.toUpperCase() +
+                  " " +
+                  response.data.appointments[i].medic.firstname,
                 uuid: response.data.appointments[i].uuid,
                 medic_uuid: response.data.appointments[i].medic_uuid,
                 patient_uuid: response.data.appointments[i].patient_uuid,
@@ -307,6 +311,10 @@ export default {
               });
 
               this.tableAppointments.push({
+                docName:
+                  response.data.appointments[i].medic.lastname.toUpperCase() +
+                  " " +
+                  response.data.appointments[i].medic.firstname,
                 with: response.data.appointments[i].medic_uuid,
                 date: this.parseDate(
                   response.data.appointments[i].start,
@@ -390,7 +398,7 @@ export default {
                     class="form-check-input"
                     type="radio"
                     id="doctorList"
-                    :value="doctor.uuid"
+                    :value="doctor"
                     v-model="pickedDoctor"
                   />
                   <label
@@ -492,7 +500,7 @@ export default {
                         "t-your-appointment-has-been-schedule-here-is-a-summary"
                       )
                     }}
-                    {{ pickedDoctor }} - {{ pickedAppointment }}
+                    {{ pickedDoctor.docName }} - {{ pickedAppointment }}
                   </strong>
                 </p>
                 <p class="text-muted">
