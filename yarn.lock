@@ -6281,10 +6281,10 @@ map-obj@^4.0.0:
   resolved "https://registry.npmjs.org/map-obj/-/map-obj-4.3.0.tgz"
   integrity sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==
 
-maska@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.npmjs.org/maska/-/maska-1.5.1.tgz"
-  integrity sha512-zYDAVZo8bL684k4lQ4CydbIIheyryE49Nw9TCbKm7EPpcMJb/KdftGwm/0rVXN0sxZByZiY39RYOvHoP5zTLAA==
+maska@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/maska/-/maska-2.0.0.tgz#7815a36754fb2432886a7e90b132aa5baade9e58"
+  integrity sha512-HL9mBSwKZoNk+fTYA4OxKsMMt2qxOaEQBQjgVwBYc81RuabWVM10xS+m0lsmDn0f4XXDvYwDdgrCvsokxyLBnw==
 
 mdn-data@2.0.14:
   version "2.0.14"
