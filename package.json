@@ -31,7 +31,7 @@
     "aos": "^2.3.4",
     "apexcharts": "^3.36.3",
     "axios": "^1.2.1",
-    "bootstrap": "^5.2.2",
+    "bootstrap": "^5.2.3",
     "bootstrap-vue-3": "^0.4.11",
     "chart.js": "^3.7.0",
     "click-outside-vue3": "^4.0.1",
