@@ -74,40 +74,50 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
  ┃ ┃ ┃ ┗ 📜rte-proche.min.js
  ┃ ┃ ┣ 📜index.js
  ┃ ┃ ┗ 📜index.min.js
- ┃ ┗ 📂state
+ ┃ ┣ 📂state
  ┃ ┃ ┣ 📂modules
  ┃ ┃ ┃ ┣ 📜auth.js
+ ┃ ┃ ┃ ┣ 📜fetchApi.js
  ┃ ┃ ┃ ┣ 📜index.js
  ┃ ┃ ┃ ┣ 📜layout.js
  ┃ ┃ ┃ ┣ 📜notification.js
+ ┃ ┃ ┃ ┣ 📜patient.js
  ┃ ┃ ┃ ┗ 📜security.js
+ ┃ ┃ ┣ 📜axiosResponse.js
  ┃ ┃ ┣ 📜helpers.js
  ┃ ┃ ┗ 📜store.js
+ ┃ ┗ 📜meeting.js
  ┗ 📂view-related
  ┃ ┣ 📂dashboard-components
+ ┃ ┃ ┣ 📜calendar.js
  ┃ ┃ ┣ 📜chat.vue
+ ┃ ┃ ┣ 📜GenericButton.vue
  ┃ ┃ ┣ 📜index.js
  ┃ ┃ ┣ 📜schedule.vue
  ┃ ┃ ┗ 📜widget.vue
+ ┃ ┣ 📂drag-drop
+ ┃ ┃ ┗ 📜drag-drop.vue
+ ┃ ┣ 📂form-components
+ ┃ ┃ ┣ 📂bug-report
+ ┃ ┃ ┃ ┗ 📜bug-report.vue
+ ┃ ┃ ┣ 📂contact-us
+ ┃ ┃ ┃ ┗ 📜contact-us.vue
+ ┃ ┃ ┗ 📂suggestions
+ ┃ ┃ ┃ ┗ 📜suggestion.vue
  ┃ ┣ 📂layout
  ┃ ┃ ┣ 📂layout-components
  ┃ ┃ ┃ ┣ 📂menu-components
- ┃ ┃ ┃ ┃ ┣ 📂user-specific
- ┃ ┃ ┃ ┃ ┃ ┣ 📜index.js
- ┃ ┃ ┃ ┃ ┃ ┣ 📜navlink_admin.vue
- ┃ ┃ ┃ ┃ ┃ ┣ 📜navlink_confiance.vue
- ┃ ┃ ┃ ┃ ┃ ┣ 📜navlink_docteur.vue
- ┃ ┃ ┃ ┃ ┃ ┣ 📜navlink_organisation.vue
- ┃ ┃ ┃ ┃ ┃ ┣ 📜navlink_patient.vue
- ┃ ┃ ┃ ┃ ┃ ┣ 📜navlink_personnel.vue
- ┃ ┃ ┃ ┃ ┃ ┗ 📜navlink_proche.vue
- ┃ ┃ ┃ ┃ ┗ 📜menu-navlink.vue
+ ┃ ┃ ┃ ┃ ┣ 📜menu-navlink.vue
+ ┃ ┃ ┃ ┃ ┣ 📜navlinks.js
+ ┃ ┃ ┃ ┃ ┣ 📜navlinks.min.js
+ ┃ ┃ ┃ ┃ ┗ 📜navlink_generic.vue
  ┃ ┃ ┃ ┣ 📂nav-bar-components
  ┃ ┃ ┃ ┃ ┣ 📜dark-mode.vue
  ┃ ┃ ┃ ┃ ┣ 📜full-screen.vue
  ┃ ┃ ┃ ┃ ┣ 📜index.js
  ┃ ┃ ┃ ┃ ┣ 📜lang.vue
  ┃ ┃ ┃ ┃ ┗ 📜notification.vue
+ ┃ ┃ ┃ ┣ 📜cookies.vue
  ┃ ┃ ┃ ┣ 📜index.js
  ┃ ┃ ┃ ┣ 📜menu.vue
  ┃ ┃ ┃ ┣ 📜nav-bar.vue
@@ -116,21 +126,35 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
  ┃ ┃ ┗ 📜main.vue
  ┃ ┣ 📂login-components
  ┃ ┃ ┣ 📜admin-panel-log-module.vue
+ ┃ ┃ ┣ 📜bug-report-panel-unloged.vue
  ┃ ┃ ┣ 📜footer-module.vue
  ┃ ┃ ┣ 📜index.js
  ┃ ┃ ┣ 📜logo-header-module.vue
  ┃ ┃ ┣ 📜particles-module.vue
  ┃ ┃ ┗ 📜translate-module.vue
+ ┃ ┣ 📂main-chat
+ ┃ ┃ ┣ 📜chat.vue
+ ┃ ┃ ┗ 📜data.js
+ ┃ ┣ 📂setting-components
+ ┃ ┃ ┗ 📜setting.vue
  ┃ ┣ 📂staff-input-components
  ┃ ┃ ┣ 📜calendar.vue
  ┃ ┃ ┣ 📜chat.vue
  ┃ ┃ ┣ 📜data.js
  ┃ ┃ ┣ 📜useSubmitButtonState.js
  ┃ ┃ ┗ 📜utils.js
- ┃ ┗ 📂widgets
+ ┃ ┣ 📂widgets
  ┃ ┃ ┣ 📜dropZone.vue
  ┃ ┃ ┣ 📜lottie.vue
  ┃ ┃ ┗ 📜recaptchav2.vue
+ ┃ ┣ 📜badge-icon.vue
+ ┃ ┣ 📜badge-list.vue
+ ┃ ┣ 📜calendarModule.vue
+ ┃ ┣ 📜input.vue
+ ┃ ┣ 📜list-table.vue
+ ┃ ┣ 📜modal.vue
+ ┃ ┣ 📜select.vue
+ ┃ ┗ 📜tableComponent.vue
 ```
 
 ## Views
@@ -154,44 +178,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
  ┃ ┃ ┣ 📜team.vue
  ┃ ┃ ┣ 📜timeline.vue
  ┃ ┃ ┗ 📜usage.vue
- ┃ ┣ 📂images
- ┃ ┃ ┣ 📂banner
- ┃ ┃ ┃ ┣ 📜Banner_1.png
- ┃ ┃ ┃ ┣ 📜Banner_2.png
- ┃ ┃ ┃ ┣ 📜Banner_solution_1.jpg
- ┃ ┃ ┃ ┣ 📜Banner_solution_2.jpg
- ┃ ┃ ┃ ┗ 📜Home_banner.png
- ┃ ┃ ┣ 📂blog
- ┃ ┃ ┃ ┣ 📜drapeau-europeen.jpg
- ┃ ┃ ┃ ┣ 📜hopital_metz.jpg
- ┃ ┃ ┃ ┗ 📜hopital_perpignan.jpg
- ┃ ┃ ┣ 📂mocks
- ┃ ┃ ┃ ┣ 📜banner-1.png
- ┃ ┃ ┃ ┣ 📜banner-2.png
- ┃ ┃ ┃ ┗ 📜banner-3.png
- ┃ ┃ ┣ 📂shape
- ┃ ┃ ┃ ┣ 📜404-Error-02.png
- ┃ ┃ ┃ ┣ 📜404-Error-1.png
- ┃ ┃ ┃ ┣ 📜education-shape.png
- ┃ ┃ ┃ ┣ 📜shape1.png
- ┃ ┃ ┃ ┣ 📜shape2.png
- ┃ ┃ ┃ ┣ 📜shape3.png
- ┃ ┃ ┃ ┗ 📜testimonial.png
- ┃ ┃ ┣ 📂team
- ┃ ┃ ┃ ┣ 📜user-1.jpg
- ┃ ┃ ┃ ┣ 📜user-2.jpg
- ┃ ┃ ┃ ┣ 📜user-3.jpg
- ┃ ┃ ┃ ┣ 📜user-4.jpg
- ┃ ┃ ┃ ┣ 📜user-5.jpg
- ┃ ┃ ┃ ┣ 📜user-6.jpg
- ┃ ┃ ┃ ┣ 📜user-7.jpg
- ┃ ┃ ┃ ┗ 📜user-8.jpg
- ┃ ┃ ┣ 📜bruh.mp4
- ┃ ┃ ┣ 📜close.png
- ┃ ┃ ┣ 📜favicon-32x32.png
- ┃ ┃ ┣ 📜loader.svg
- ┃ ┃ ┣ 📜next.png
- ┃ ┃ ┗ 📜prev.png
  ┃ ┗ 📜index.vue
  ┣ 📂UNIVERSAL
  ┃ ┣ 📂errors-section
@@ -217,10 +203,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
  ┃ ┃ ┃ ┃ ┣ 📜table-admin-bug.vue
  ┃ ┃ ┃ ┃ ┣ 📜table-admin-org.vue
  ┃ ┃ ┃ ┃ ┗ 📜table-admin-sug.vue
- ┃ ┃ ┃ ┣ 📂side-admin-widgets
- ┃ ┃ ┃ ┃ ┣ 📜add-orga.vue
- ┃ ┃ ┃ ┃ ┣ 📜modif-orga.vue
- ┃ ┃ ┃ ┃ ┗ 📜reportsuggest.vue
  ┃ ┃ ┃ ┣ 📜index.vue
  ┃ ┃ ┃ ┗ 📜table-admin.vue
  ┃ ┃ ┣ 📂manageorgas-section
@@ -241,17 +223,29 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
  ┃ ┃ ┃ ┗ 📜data.js
  ┃ ┃ ┣ 📂dashboard-section
  ┃ ┃ ┃ ┗ 📜index.vue
+ ┃ ┃ ┣ 📂download-section
+ ┃ ┃ ┃ ┣ 📂tableComponents
+ ┃ ┃ ┃ ┃ ┗ 📜tableSelectFile.vue
+ ┃ ┃ ┃ ┣ 📜download-page.vue
+ ┃ ┃ ┃ ┣ 📜fileTable.vue
+ ┃ ┃ ┃ ┗ 📜getObservations.js
  ┃ ┃ ┣ 📂forms-section
  ┃ ┃ ┃ ┣ 📜bugreport.vue
  ┃ ┃ ┃ ┣ 📜bugReportModules.vue
  ┃ ┃ ┃ ┣ 📜contactUsModule.vue
  ┃ ┃ ┃ ┗ 📜feedbackModules.vue
+ ┃ ┃ ┣ 📂incoming-appointments
+ ┃ ┃ ┃ ┗ 📜meetings.vue
  ┃ ┃ ┣ 📂medical-information
+ ┃ ┃ ┃ ┣ 📂tableComponents
+ ┃ ┃ ┃ ┃ ┗ 📜tableSelectPatient.vue
  ┃ ┃ ┃ ┣ 📜checkup-text.vue
  ┃ ┃ ┃ ┣ 📜index.vue
+ ┃ ┃ ┃ ┣ 📜patientTable.vue
  ┃ ┃ ┃ ┗ 📜widgets.vue
  ┃ ┃ ┣ 📂meeting
- ┃ ┃ ┃ ┗ 📜index.vue
+ ┃ ┃ ┃ ┣ 📜index.vue
+ ┃ ┃ ┃ ┗ 📜tableShowAppointments.vue
  ┃ ┃ ┗ 📂settings-section
  ┃ ┃ ┃ ┗ 📜setting.vue
  ┃ ┣ 📂docteur
@@ -259,25 +253,23 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
  ┃ ┃ ┃ ┣ 📜calendar.vue
  ┃ ┃ ┃ ┗ 📜utils.js
  ┃ ┃ ┣ 📂chat-section
- ┃ ┃ ┃ ┣ 📜chat.vue
- ┃ ┃ ┃ ┗ 📜data.js
+ ┃ ┃ ┃ ┗ 📜chat.vue
  ┃ ┃ ┣ 📂dashboard-section
- ┃ ┃ ┃ ┣ 📜addMedicalInformation.vue
- ┃ ┃ ┃ ┣ 📜addPatient.vue
- ┃ ┃ ┃ ┣ 📜index.vue
- ┃ ┃ ┃ ┣ 📜managePatients.vue
- ┃ ┃ ┃ ┗ 📜setupMeeting.vue
+ ┃ ┃ ┃ ┗ 📜index.vue
  ┃ ┃ ┣ 📂forms-section
  ┃ ┃ ┃ ┣ 📜bugreport.vue
  ┃ ┃ ┃ ┣ 📜bugReportModules.vue
  ┃ ┃ ┃ ┣ 📜contactUsModule.vue
- ┃ ┃ ┃ ┣ 📜feedbackModules.vue
- ┃ ┃ ┃ ┗ 📜suggest.vue
+ ┃ ┃ ┃ ┗ 📜feedbackModules.vue
  ┃ ┃ ┣ 📂managepatients-section
+ ┃ ┃ ┃ ┣ 📜managePatients.js
  ┃ ┃ ┃ ┗ 📜managepatients.vue
  ┃ ┃ ┣ 📂medical-information
+ ┃ ┃ ┃ ┣ 📂tableComponents
+ ┃ ┃ ┃ ┃ ┗ 📜tableSelectPatient.vue
  ┃ ┃ ┃ ┣ 📜checkup-text.vue
  ┃ ┃ ┃ ┣ 📜index.vue
+ ┃ ┃ ┃ ┣ 📜patientTable.vue
  ┃ ┃ ┃ ┗ 📜widgets.vue
  ┃ ┃ ┣ 📂settings-section
  ┃ ┃ ┃ ┣ 📜daysOfTheWeekCheck.vue
@@ -290,13 +282,19 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
  ┃ ┃ ┃ ┗ 📜useSubmitButtonState.js
  ┃ ┣ 📂organisation
  ┃ ┃ ┣ 📂dashboard-section
- ┃ ┃ ┃ ┗ 📜index.vue
+ ┃ ┃ ┃ ┣ 📂components
+ ┃ ┃ ┃ ┃ ┗ 📜table-orga-doc.vue
+ ┃ ┃ ┃ ┣ 📜index.vue
+ ┃ ┃ ┃ ┗ 📜table-orga.vue
  ┃ ┃ ┣ 📂forms-section
  ┃ ┃ ┃ ┣ 📜bugreport.vue
  ┃ ┃ ┃ ┣ 📜bugReportModules.vue
  ┃ ┃ ┃ ┣ 📜contactUsModule.vue
  ┃ ┃ ┃ ┗ 📜feedbackModules.vue
  ┃ ┃ ┣ 📂managedoctors-section
+ ┃ ┃ ┃ ┣ 📂components
+ ┃ ┃ ┃ ┃ ┣ 📜manage-doctors-table.vue
+ ┃ ┃ ┃ ┃ ┗ 📜manage-personnel-table.vue
  ┃ ┃ ┃ ┗ 📜managedoctors.vue
  ┃ ┃ ┗ 📂settings-section
  ┃ ┃ ┃ ┗ 📜setting.vue
