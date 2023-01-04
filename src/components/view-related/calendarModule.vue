@@ -661,36 +661,40 @@ export default {
                       this.initialEvents = this.initialEvents.concat(
                         response.data
                       );
+                    } else {
+                      this.initialEvents = [];
+                      this.currentEvents = [];
                     }
                   }
                 })
                 .catch((error) => {
                   Swal.fire({
                     title: `${this.$t("t-error")}`,
-                    text: `${this.$t("t-error-occured")}. Error: ${
-                      error.response.status
-                    }`,
+                    text: `${this.$t("t-error-occured")}. Error: ${error}`,
                     icon: "error",
                     confirmButtonText: "Ok",
                   });
                 });
             }
             // Ordering the activities by date (ascending)
-            this.initialEvents.sort((a, b) => {
-              return a.date > b.date ? 1 : -1;
-            });
-            this.currentEvents.sort((a, b) => {
-              return a.date > b.date ? 1 : -1;
-            });
+            if (
+              this.currentEvents.length > 0 &&
+              this.initialEvents.length > 0
+            ) {
+              this.initialEvents.sort((a, b) => {
+                return a.date > b.date ? 1 : -1;
+              });
+              this.currentEvents.sort((a, b) => {
+                return a.date > b.date ? 1 : -1;
+              });
+            }
           }
         })
         .catch((error) => {
           // Sweet Alert
           Swal.fire({
             title: `${this.$t("t-error")}`,
-            text: `${this.$t("t-error-occured")}. Error: ${
-              error.response.status
-            }`,
+            text: `${this.$t("t-error-occured")}. Error: ${error}`,
             icon: "error",
             confirmButtonText: "Ok",
           });
@@ -931,7 +935,7 @@ export default {
         </div>
         <div class="modal-footer">
           <!-- Button aligned on the left to delete -->
-          <div class="col-6">
+          <div class="col-6 ml-auto">
             <button
               type="button"
               class="btn btn-danger"

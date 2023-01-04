@@ -35,7 +35,7 @@ export default {
       },
 
       // Activities Array (can be null)
-      activitiesArray: [] || null,
+      activitiesArray: [],
 
       // Page View State
       pageID: 0,
@@ -134,9 +134,7 @@ export default {
           // Sweet Alert
           Swal.fire({
             title: `${this.$t("t-error")}`,
-            text: `${this.$t("t-error-occured")}. Error: ${
-              error.response.status
-            }`,
+            text: `${this.$t("t-error-occured")}. Error: ${error}`,
             icon: "error",
             confirmButtonText: "Ok",
           });
@@ -162,7 +160,7 @@ export default {
             if (response.data.length > 0) {
               this.activitiesArray = response.data;
             } else {
-              this.activitiesArray = null;
+              this.activitiesArray = [];
             }
             // Ordering the activities by date (ascending)
             this.activitiesArray.sort((a, b) => {
