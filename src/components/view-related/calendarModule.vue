@@ -833,6 +833,7 @@ export default {
                         data-bs-toggle="modal"
                         data-bs-target="#showModal"
                         @click="editModalOpened(event)"
+                        v-if="isDoctor()"
                       >
                         Edit
                       </button>
@@ -885,7 +886,7 @@ export default {
             v-if="isDoctor()"
           ></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" v-if="isDoctor()">
           <div class="row g-3">
             <div class="col-lg-12">
               <div class="row mb-2 pt-2">
