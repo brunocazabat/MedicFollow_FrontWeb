@@ -1863,10 +1863,10 @@
   dependencies:
     "@types/node" "*"
 
-"@vue-leaflet/vue-leaflet@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.npmjs.org/@vue-leaflet/vue-leaflet/-/vue-leaflet-0.6.1.tgz"
-  integrity sha512-/sm0bdrdftXh5nSGEPsoKrJI1D/GtKiEsBo9X/TA2yu4lYTDcaem6U4t1Ea5CoLleiZRCNUrZr9PG/xHdUPXYA==
+"@vue-leaflet/vue-leaflet@^0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@vue-leaflet/vue-leaflet/-/vue-leaflet-0.8.1.tgz#0539955e775191f64aa50981762a2d1101075120"
+  integrity sha512-fPkySmxI86lUWY7arIV6UShK6tjXkygumLd81N5C2AH/s0gwsL37L+cOMfr+xvSG8KdBWCoHpCUNPpOMPa0IUA==
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.4.0":
   version "1.4.0"
