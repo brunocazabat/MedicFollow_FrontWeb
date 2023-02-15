@@ -4126,7 +4126,7 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-echarts@^5.2.2, echarts@^5.4.1:
+echarts@^5.4.0, echarts@^5.4.1:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/echarts/-/echarts-5.4.1.tgz#d7f65a584d78beff62568d878b16151b3381811c"
   integrity sha512-9ltS3M2JB0w2EhcYjCdmtrJ+6haZcW6acBolMGIuf01Hql1yrIV01L1aRj7jsaaIULJslEP9Z3vKlEmnJaWJVQ==
@@ -6076,7 +6076,7 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
-lodash-es@^4.17.11, lodash-es@^4.17.15, lodash-es@^4.17.21:
+lodash-es@^4.17.11, lodash-es@^4.17.15:
   version "4.17.21"
   resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
@@ -8955,7 +8955,7 @@ tslib@^1.9.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.1:
+tslib@^2.0.3, tslib@^2.1.0:
   version "2.4.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.4.1.tgz"
   integrity sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==
@@ -9391,15 +9391,6 @@ vue3-apexcharts@^1.4.1:
   resolved "https://registry.npmjs.org/vue3-apexcharts/-/vue3-apexcharts-1.4.1.tgz"
   integrity sha512-96qP8JDqB9vwU7bkG5nVU+E0UGQn7yYQVqUUCLQMYWDuQyu2vE77H/UFZ1yI+hwzlSTBKT9BqnNG8JsFegB3eg==
 
-vue3-component-base@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.npmjs.org/vue3-component-base/-/vue3-component-base-0.0.9.tgz"
-  integrity sha512-uuef43JSlsrpiZVto2GLklxWzvkrDBtbtz8z7dgRBl1aCnQ+JK5rbcwqlFhsDUmdy5oBnnYcbxS0r0K/1u5RYw==
-  dependencies:
-    lodash-es "^4.17.21"
-    tslib "^2.3.1"
-    vue "^3.2.26"
-
 vue3-cookies@^1.0.6:
   version "1.0.6"
   resolved "https://registry.npmjs.org/vue3-cookies/-/vue3-cookies-1.0.6.tgz"
@@ -9415,16 +9406,14 @@ vue3-count-to@^1.1.2:
     core-js "^3.8.1"
     vue-count-to "^1.0.13"
 
-vue3-echarts@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/vue3-echarts/-/vue3-echarts-1.0.4.tgz"
-  integrity sha512-e1aeb1zzr83NUMCHTyuWwdFw5d/cjCRR1bzZORMF/c6nULdkvvAEFQDyzEEqCLwivUbuke3/rkUcglxFoWjoTg==
+vue3-echarts@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/vue3-echarts/-/vue3-echarts-1.1.0.tgz#394d5d528fb0d1b4bcab5579d7b41493c8db8a43"
+  integrity sha512-nSISmvVYHRAcD5+RX9QwITWUuduGd7pcq+zDpuI4wADpr6fAU+t4liGupbUAquEvOBfN+8XZgWjGm6RIPRq/jw==
   dependencies:
-    echarts "^5.2.2"
+    echarts "^5.4.0"
     resize-observer-polyfill "^1.5.1"
-    tslib "^2.3.1"
-    vue "^3.2.26"
-    vue3-component-base "^0.0.9"
+    vue "^3.2.45"
 
 vue3-google-map@^0.15.0:
   version "0.15.0"
@@ -9457,7 +9446,7 @@ vue3-recaptcha-v2@^1.0.1:
   resolved "https://registry.npmjs.org/vue3-recaptcha-v2/-/vue3-recaptcha-v2-1.0.1.tgz"
   integrity sha512-nn7kcVTze/gRdb2kMEf9CAVpStXID+cKlt1tIWNR+K5OYER8cSfcm5Mz+9/w9gDgLTIdRPsGTiqssAD+L/4c/g==
 
-vue@3.2.47, vue@^3.0.0, vue@^3.0.0-beta.20, vue@^3.0.11, vue@^3.2.26:
+vue@3.2.47, vue@^3.0.0, vue@^3.0.0-beta.20, vue@^3.0.11, vue@^3.2.45:
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.47.tgz#3eb736cbc606fc87038dbba6a154707c8a34cff0"
   integrity sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==
