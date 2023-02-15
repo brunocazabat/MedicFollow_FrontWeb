@@ -90,7 +90,7 @@
     "@vue/cli-plugin-babel": "~5.0.8",
     "@vue/cli-plugin-eslint": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
-    "@vue/compiler-sfc": "^3.2.45",
+    "@vue/compiler-sfc": "^3.2.47",
     "eslint": "^8.29.0",
     "eslint-plugin-vue": "^9.8.0",
     "vue-html2pdf": "^1.8.0"
