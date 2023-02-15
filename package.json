@@ -11,7 +11,7 @@
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^35.3.2",
     "@ckeditor/ckeditor5-vue": "^4.0.1",
-    "@fullcalendar/bootstrap": "^5.10.1",
+    "@fullcalendar/bootstrap": "^5.11.4",
     "@fullcalendar/core": "^5.10.1",
     "@fullcalendar/daygrid": "^5.10.1",
     "@fullcalendar/interaction": "^5.10.1",
