@@ -1285,12 +1285,12 @@
   dependencies:
     tslib "^2.1.0"
 
-"@fullcalendar/core@^5.10.1", "@fullcalendar/core@~5.11.3":
-  version "5.11.3"
-  resolved "https://registry.npmjs.org/@fullcalendar/core/-/core-5.11.3.tgz"
-  integrity sha512-YUFxCvVJytUwFeXCx4J17kFMM7Ixwn9zBjVRw5NM2bMwgR6VAhSnlZc6yNQSOIy7Hj2TF0vDkO/4JNlTvxyAXw==
+"@fullcalendar/core@^5.10.1", "@fullcalendar/core@~5.11.4":
+  version "5.11.4"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/core/-/core-5.11.4.tgz#1ea0e3f8bee45d0c8dc82f9b018b8c074263cbd0"
+  integrity sha512-p1/GRIageomlyJpsMVi+Ig5TNo9t2sEYsLHe6zvtCLtpXK/l03veZukYyM/jou8VzT0VJp1f7yN8irc5VBgqxw==
   dependencies:
-    "@fullcalendar/common" "~5.11.3"
+    "@fullcalendar/common" "~5.11.4"
     preact "^10.0.5"
     tslib "^2.1.0"
 
@@ -1327,12 +1327,12 @@
     "@fullcalendar/daygrid" "~5.11.4"
     tslib "^2.1.0"
 
-"@fullcalendar/vue3@^5.10.1":
-  version "5.11.3"
-  resolved "https://registry.npmjs.org/@fullcalendar/vue3/-/vue3-5.11.3.tgz"
-  integrity sha512-/IjyTKXkdc3V5j1X9tajlMnGbWEbyruiQh9hU9EdKQfAcPze+aXpstdigoi4vYiTUvVsjvLGnaCgMgE+OZsyYw==
+"@fullcalendar/vue3@^5.11.4":
+  version "5.11.4"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/vue3/-/vue3-5.11.4.tgz#d4dfe09b22267095eb3640bf20c4de7c2d1269d4"
+  integrity sha512-60N23LArG8YWTr7N3dyPo7eNix8Un71zRkDKKqZa2l6ficLUfPSzmIiZN9UqtWxbKkfzNel/cdttdjDM6it8Cg==
   dependencies:
-    "@fullcalendar/core" "~5.11.3"
+    "@fullcalendar/core" "~5.11.4"
     tslib "^2.1.0"
 
 "@gar/promisify@^1.0.1", "@gar/promisify@^1.1.3":
