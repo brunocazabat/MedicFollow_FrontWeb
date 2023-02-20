@@ -1269,13 +1269,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fullcalendar/bootstrap@^5.11.4":
-  version "5.11.4"
-  resolved "https://registry.yarnpkg.com/@fullcalendar/bootstrap/-/bootstrap-5.11.4.tgz#8870915e5f4dd3fedd95c83bf14fd1a1f8d3d34f"
-  integrity sha512-IfBtsixKtDyludqxtiYtzlQ6Ozmaipovgl1Fz7EhjUDsm3wZ+So7YVu4yWSJL3DnFB40YjsyP8nqLTG+qPNIaA==
-  dependencies:
-    "@fullcalendar/common" "~5.11.4"
-    tslib "^2.1.0"
+"@fullcalendar/bootstrap@^6.1.4":
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/bootstrap/-/bootstrap-6.1.4.tgz#85afcd5e38296ac8a3438f4ea5d6ec7662731f7a"
+  integrity sha512-H75cBnL2uVs6sAofbdpD9mq69Se0AfkZ1sxo3i/39zJHbpj/kh+e1s28R8KPXToLxPTtetw6EE/dn3Md4Se51w==
 
 "@fullcalendar/common@~5.11.3", "@fullcalendar/common@~5.11.4":
   version "5.11.4"
