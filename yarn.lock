@@ -9296,10 +9296,10 @@ vue-draggable-next@^2.1.1:
   resolved "https://registry.npmjs.org/vue-draggable-next/-/vue-draggable-next-2.1.1.tgz"
   integrity sha512-f5lmA7t6LMaL4viR7dU30zzvqJzaKQs0ymL0Jy9UDT9uiZ2tXF3MzPzEvpTH2UODXZJkT+SnjeV1fXHMsgXLYA==
 
-vue-easy-lightbox@^1.11.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/vue-easy-lightbox/-/vue-easy-lightbox-1.11.0.tgz#1d448f8641ebd012d094d3b88a5a479555891d48"
-  integrity sha512-t9ouC2rHz/VMt/XSbnVgkED/7Dqe/DHrX6mW4AUj5Kt1PSr3czVk+ecBtF/Q4ivmSdkNJRk2/6D5PGcwxJuozQ==
+vue-easy-lightbox@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/vue-easy-lightbox/-/vue-easy-lightbox-1.12.0.tgz#c275547ba39e7788574335f28fe56b804d3cf163"
+  integrity sha512-An7R3Fr+veHhGcLS1ly+O8XLhayObckJ3t7jupQn9IxXUQH3qA1mkG5DuAg9n4gwzF3fDn+jcORQ3iTp3UdEDg==
 
 vue-eslint-parser@^9.0.1:
   version "9.1.0"
