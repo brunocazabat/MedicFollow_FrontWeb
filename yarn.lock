@@ -2267,10 +2267,10 @@
   resolved "https://registry.yarnpkg.com/@vueform/slider/-/slider-2.1.7.tgz#8e228bd18529980d34acf6711dd6afe053a8e23d"
   integrity sha512-wKyiVVN03RKTV2vp7r50PDq5hcM4kVVzUO2ex+BAAtrn5oX08iU5NzWTWCuH7dCkiLMDRUVravDu3B0NwaxZMQ==
 
-"@vueform/toggle@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.npmjs.org/@vueform/toggle/-/toggle-2.1.2.tgz"
-  integrity sha512-XNycfIUjtDTDnS9mtLk0dvbWjaazSWyafEjBbleJpFtFnlvTtqHGf786r0sXti0Lhi6uNF2V9GH/ZseE+y/tFg==
+"@vueform/toggle@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@vueform/toggle/-/toggle-2.1.4.tgz#a78fd0aa4cf9b47e71e5de9d3c8880285cb64123"
+  integrity sha512-tEITFf5wlqIWoCYZXJdoXvCnrc97weOu2csR/BEoROVvFu1zRsoK0wY1pJG7BR+g5zpGJneGSdLhMUsbx8y1yw==
 
 "@vuelidate/core@^2.0.0":
   version "2.0.0"
