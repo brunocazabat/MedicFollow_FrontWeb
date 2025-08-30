@@ -4,6 +4,7 @@ This is the code of the MedicFollow Front Vue JS web UI.
 The code is under the license Creative Commons BY-NC-ND 4.0:
 - Allows: People can read and share it with attribution.
 - Forbids: Commercial use (NC) and derivative works (ND).
+
 More informations under the license.txt file.
 
 Current Stakeholders of the Repository:
