@@ -17,7 +17,7 @@
     "@fullcalendar/interaction": "^5.10.1",
     "@fullcalendar/list": "^5.11.4",
     "@fullcalendar/timegrid": "^5.11.4",
-    "@fullcalendar/vue3": "^5.11.4",
+    "@fullcalendar/vue3": "^6.1.4",
     "@j-t-mcc/vue3-chartjs": "^1.3.0",
     "@popperjs/core": "^2.11.2",
     "@simonwep/pickr": "^1.8.2",
